@@ -22,9 +22,9 @@ Here’s how you do it:
 *   Before booting up the virtual machine, open the .vmx-file that resides inside the folder for the new virtual machine.
 *   Add the following line:
 
-> RemoteDisplay.vnc.enabled = TRUE  
-> RemoteDisplay.vnc.password = mypassword  
-> RemoteDisplay.vnc.port = 5900
+        RemoteDisplay.vnc.enabled = TRUE  
+        RemoteDisplay.vnc.password = mypassword  
+        RemoteDisplay.vnc.port = 5900
 
 *   Boot the virtual machine.
 
@@ -38,7 +38,7 @@ If you’re like me, you don’t have your VMware Servers on the same physical n
 
 To do this, open up the terminal and run the following command:
 
-> ssh -L 127.0.0.1:5900:192.168.10.2:5900 -N -vv username@remoteserver.com
+    ssh -L 127.0.0.1:5900:192.168.10.2:5900 -N -vv username@remoteserver.com
 
 In this case we create a tunnel on localhost’s port 5900 and point it towards a remote server. The remote VMware server listens on the IP address 192.168.10.2, and the we’re connecting to port 5900.
 

@@ -38,28 +38,28 @@ The process of setting up a replica set is simple and the instructions can be fo
 
 We also found it handy to set priorities for the two replica nodes. We can do this by simply bumping the node we prefer to be the primary to ’2′ using the following commands:
 
-cfg = rs.conf()
-cfg.members\[0\].priority = 2
-rs.reconfig(cfg)
+    cfg = rs.conf()
+    cfg.members\[0\].priority = 2
+    rs.reconfig(cfg)
 
 Please note that cfg.member\[N\] is the list item from the top (the first one being 0). It’s **not** the id. More information is available [here](http://www.mongodb.org/display/DOCS/Reconfiguring+when+Members+are+Up).
 
 In case you need to take down the primary server for maintenance, you should use the StepDown-command. This will gracefully force the primary server to step down. To do this, log into the server and issue the following command:
 
-use admin
-rs.stepDown()
+    use admin
+    rs.stepDown()
 
 Once you’ve validated that the server is ‘secondary’ you can shut the server down without worrying about dataloss.
 
 There are two other commands that you should also be aware about. The first command is:
 
-rs.status()
+    rs.status()
 
 This command gives you information about your replica set and replication.
 
 The second dommand is:
 
-db.serverStatus()
+    db.serverStatus()
 
 This will give you detailed information about the individual node.
 
@@ -79,23 +79,23 @@ You will also need to restart mongod with a few new flags.
 
 To spin up a regular mongod-node (primary or secondary), use this command (assuming the replica set name is ‘repl0′:
 
-sudo -u mongodb mongod --shardsvr --replSet repl0 --dbpath /mongo/repl0 --fork --logpath /var/log/mongodb/repl0.log
+    sudo -u mongodb mongod --shardsvr --replSet repl0 --dbpath /mongo/repl0 --fork --logpath /var/log/mongodb/repl0.log
 
 To spin up a config-server, use the following command (note oplogsize is set to 1 to minimize disk space being wasted):
 
-sudo -u mongodb mongod --configsvr --dbpath /mongo/configsvr --fork -–oplogSize 1 --logpath /var/log/mongodb/configsvr.log
+    sudo -u mongodb mongod --configsvr --dbpath /mongo/configsvr --fork -–oplogSize 1 --logpath /var/log/mongodb/configsvr.log
 
 Finally, you need to spin up the mongos (we assume node1, node2, node 4 and node5 are the config-servers):
 
-sudo -u mongodb mongos --configdb :,:,:,: --fork --logpath /var/log/mongodb/mongos.log 
+    sudo -u mongodb mongos --configdb :,:,:,: --fork --logpath /var/log/mongodb/mongos.log 
 
 Once you have all the servers up and running, it’s time to start sharding.
 
 Start by opening a mongo-session against one of the mongos-servers. Now we need to add the replica sets to the the shard:
 
-use admin
-db.runCommand( { addshard : "repl0/:,:,:", maxSize:10000/\*MB\*/ } );
-db.runCommand( { addshard : "repl1/:,:,:", maxSize:10000/\*MB\*/ } ); 
+    use admin
+    db.runCommand( { addshard : "repl0/:,:,:", maxSize:10000/\*MB\*/ } );
+    db.runCommand( { addshard : "repl1/:,:,:", maxSize:10000/\*MB\*/ } ); 
 
 The should add both replica sets to the shard. We also specified that the maximum storage each replica set should hold to 10GB. Please note that this is a soft limit, and the balancer will use this as a guideline to evenly spread the data.
 
@@ -103,16 +103,16 @@ Now we have prepared everything that needed preparation. Now it’s time to actu
 
 Once again, log into mongos, but now run the following commands:
 
-use admin
-db.runCommand( { enablesharding : "MyStuff" } );
+    use admin
+    db.runCommand( { enablesharding : "MyStuff" } );
 
 Next we need to tell Mongo how to shard the data. Let’s use the files_id:
 
-use MyStuff
-db.fs.chunks.ensureIndex( { files_id: 1 } );
-db.fs.files.ensureIndex( { files_id: 1 } );
-db.runCommand( { shardcollection : "db.fs.chunks", key : { files_id : 1 } } )
-db.runCommand( { shardcollection : "db.files.chunks", key : { files_id : 1 } } )
+    use MyStuff
+    db.fs.chunks.ensureIndex( { files_id: 1 } );
+    db.fs.files.ensureIndex( { files_id: 1 } );
+    db.runCommand( { shardcollection : "db.fs.chunks", key : { files_id : 1 } } )
+    db.runCommand( { shardcollection : "db.files.chunks", key : { files_id : 1 } } )
 
 Depending on your load, using files_id can be a bad idea as won’t evenly distribute the load across the nodes. However, this is a whole different topic.
 
@@ -120,18 +120,18 @@ Once you got everything setup, you might want to know more about how your system
 
 To get more information about your system, you might find the following commands useful:
 
-db.printShardingStatus()
-db.runCommand( { listShards : 1} );
+    db.printShardingStatus()
+    db.runCommand( { listShards : 1} );
 
 Another useful command, if you need to reorganize your setup, is removeshard:
 
-db.runCommand( { removeshard : "repl0" } );
+    db.runCommand( { removeshard : "repl0" } );
 
 It’s likely that you want to learn more about MongoDB before you get started. I would then recommend the following resource:
 
-*   [Sharding Introduction](http://www.mongodb.org/display/DOCS/Sharding+Introduction)
-*   [Configuring Sharding](http://www.mongodb.org/display/DOCS/Configuring+Sharding)
-*   [Choosing a Shard Key](http://www.mongodb.org/display/DOCS/Choosing+a+Shard+Key)
-*   [How to Choose a Shard Key: The Card Game](http://www.snailinaturtleneck.com/blog/2011/01/04/how-to-choose-a-shard-key-the-card-game/)
+* [Sharding Introduction](http://www.mongodb.org/display/DOCS/Sharding+Introduction)
+* [Configuring Sharding](http://www.mongodb.org/display/DOCS/Configuring+Sharding)
+* [Choosing a Shard Key](http://www.mongodb.org/display/DOCS/Choosing+a+Shard+Key)
+* [How to Choose a Shard Key: The Card Game](http://www.snailinaturtleneck.com/blog/2011/01/04/how-to-choose-a-shard-key-the-card-game/)
 
 Please note that I’m by no means a MongoDB guru, but feel free to drop a comment below, and I’ll try to answer.

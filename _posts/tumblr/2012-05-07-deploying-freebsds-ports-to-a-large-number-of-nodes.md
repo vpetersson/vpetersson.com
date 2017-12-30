@@ -22,10 +22,10 @@ Since portsnap simply talks over the HTTP-protocol (via ‘fetch’), we can uti
 
 **On Csh:**
 
-setenv http_proxy http://myserver:3128
+    setenv http_proxy http://myserver:3128
 
 **On Bash:**
 
-export http_proxy="http://myserver:3128"
+    export http_proxy="http://myserver:3128"
 
 While this is still not as KISS as simply exporting the ports-tree, it is better than just having a stand-along setup on each node. Also, keep in mind that both Squid and your NFS server are SPOFs. For a production environment, consider adding failover to both.

@@ -21,7 +21,7 @@ So I’m not 100% confident that this is a scam, but it sure looks like it. I’
 > to our link directory, could you please verify the description  
 > before it will go life at:
 > 
-> [http://www.xraider.com/links/show.php?aHR0cDovL3d3dy52aWt0b3JwZXRlcnNzb24uY29tLw==](http://www.xraider.com/links/show.php?aHR0cDovL3d3dy52aWt0b3JwZXRlcnNzb24uY29tLw==)
+> http://www.xraider.com/links/show.php?aHR0cDovL3d3dy52aWt0b3JwZXRlcnNzb24uY29tLw==
 > 
 > Talk soon,  
 > John Stahl

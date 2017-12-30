@@ -19,24 +19,24 @@ If you’re on Unix or Linux, chances are you already have Ghostscript installed
 
 Once you have Ghostscript installed, you can use this simple script.
 
-> #!/bin/bash  
-> \# Usage ./pdfsplitr.sh inputfile.pdf outputfile.pdf pagenumber  
-> \# Example: ./pdfsplitr.sh myfile.pdf myotherfile.pdf 2
-> 
-> GS=$(which gs)
-> 
-> \# Make sure Ghostscript is installed  
-> if \[\[ $GS = “” \]\]  
-> then  
-> echo “Ghostscript is not installed”  
-> exit  
-> fi
-> 
-> \# Run the actual conversion.  
-> $GS -sDEVICE=pdfwrite -q -dNOPAUSE -dBATCH -sOutputFile=$2 -dFirstPage=$3 -dLastPage=$3 $1
+    #!/bin/bash  
+    \# Usage ./pdfsplitr.sh inputfile.pdf outputfile.pdf pagenumber  
+    \# Example: ./pdfsplitr.sh myfile.pdf myotherfile.pdf 2
+    
+    GS=$(which gs)
+    
+    \# Make sure Ghostscript is installed  
+    if \[\[ $GS = “” \]\]  
+    then  
+    echo “Ghostscript is not installed”  
+    exit  
+    fi
+    
+    \# Run the actual conversion.  
+    $GS -sDEVICE=pdfwrite -q -dNOPAUSE -dBATCH -sOutputFile=$2 -dFirstPage=$3 -dLastPage=$3 $1
 
 The usage is really simple, if you save the script to ‘pdfsplitr.sh’, all you need to do (in addition to making it executable with ‘chmod +x pdfsplitr.sh’) is to provide it with the file you wish to split, the output-file and the page number, like this:
 
-> ./pdfsplitr.sh myoriginal.pdf mysplittedfile.pdf 2
+    ./pdfsplitr.sh myoriginal.pdf mysplittedfile.pdf 2
 
 Enjoy!

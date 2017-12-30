@@ -18,118 +18,109 @@ Let’s get started.
 
 **Note**: If you don’t have the ports-tree installed (/usr/ports), you can download it by simply running:
 
-> portsnap fetch extract
+    portsnap fetch extract
 
 **Install Apache**
 
-> /usr/ports/www/apache22  
-> make install  
-> echo -e “\\napache22_enable=\\”YES\\”” >> /etc/rc.conf
+    /usr/ports/www/apache22  
+    make install  
+    echo -e “\\napache22_enable=\\”YES\\”” >> /etc/rc.conf
 
 **Install Xapian with Xapian-Omega**
 
-> cd /usr/ports/www/xapian-omega  
-> make install
+    cd /usr/ports/www/xapian-omega  
+    make install
 
 **Install Xpdf**  
 Make sure to uncheck X11 and DRAW
 
-> cd /usr/ports/graphics/xpdf  
-> make install
+    cd /usr/ports/graphics/xpdf  
+    make install
 
 **Install Catdoc**  
 Uncheck WORDVIEW
 
-> cd /usr/ports/textproc/catdoc  
-> make install
+    cd /usr/ports/textproc/catdoc  
+    make install
 
 **Install Unzip**
 
-> cd /usr/ports/archivers/unzip  
-> make install
+    cd /usr/ports/archivers/unzip  
+    make install
 
 **Install Gzip**
 
-> cd /usr/ports/archivers/gzip  
-> make install
+    cd /usr/ports/archivers/gzip  
+    make install
 
 **Install Antiword**
 
-> cd /usr/ports/textproc/antiword  
-> make install
+    cd /usr/ports/textproc/antiword  
+    make install
 
 **Install Unrtf**
 
-> cd /usr/ports/textproc/unrtf  
-> make install
+    cd /usr/ports/textproc/unrtf  
+    make install
 
 **Install Catdvi**
 
-> cd /usr/ports/print/catdvi  
-> make install
+    cd /usr/ports/print/catdvi  
+    make install
 
 Next we need to edit Apache’s config-file (/usr/local/etc/apache22/httpd.conf)
 
 Change:
 
-> ScriptAlias /cgi-bin/ “/usr/local/www/apache22/cgi-bin/”
+    ScriptAlias /cgi-bin/ “/usr/local/www/apache22/cgi-bin/”
 
 Into:
 
-> ScriptAlias /cgi-bin/ “/usr/local/www/xapian-omega/cgi-bin/”
+    ScriptAlias /cgi-bin/ “/usr/local/www/xapian-omega/cgi-bin/”
 
 We also need to create a new config-file for Xapian. Create the file /usr/local/etc/apache22/Include/xapian.conf
 
->     
->     Alias /something /path/to/something
->     
->             Options Indexes
->             AllowOverride None
->             Order allow,deny
->             Allow from all
->     
->         AllowOverride None
->         Options None
->         Order allow,deny
->         Allow from all
->     
+
+        Alias /something /path/to/something
+
+                Options Indexes
+                AllowOverride None
+                Order allow,deny
+                Allow from all
+
+            AllowOverride None
+            Options None
+            Order allow,deny
+            Allow from all
+
 
 With all Apache configuration being done, let’s fire up Apache:
 
-> /usr/local/etc/rc.d/apache22 start
+    /usr/local/etc/rc.d/apache22 start
 
 Create the holding directory
 
-> mkdir -p /usr/local/lib/omega/data/
+    mkdir -p /usr/local/lib/omega/data/
 
 Copy over the templates. For some reason FreeBSD doesn’t do this by default.
 
-> cp -rfv /usr/ports/www/xapian-omega/work/xapian-omega-*/templates /usr/local/lib/omega/
+    cp -rfv /usr/ports/www/xapian-omega/work/xapian-omega-*/templates /usr/local/lib/omega/
 
 We also need to tell Xapian-Omega where to look for the files. Create the file /usr/local/www/xapian-omega/cgi-bin/omega.conf
 
-> \# Directory containing Xapian databases:  
-> database_dir /usr/local/lib/omega/data
-> 
-> \# Directory containing OmegaScript templates:  
-> template_dir /usr/local/lib/omega/templates
-> 
-> \# Directory to write Omega logs to:  
-> log_dir /var/log/omega
-> 
-> \# Directory containing any cdb files for the $lookup OmegaScript command:  
-> cdb_dir /var/lib/omega/cdb
+    \# Directory containing Xapian databases:  
+    database_dir /usr/local/lib/omega/data
+
+    \# Directory containing OmegaScript templates:  
+    template_dir /usr/local/lib/omega/templates
+
+    \# Directory to write Omega logs to:  
+    log_dir /var/log/omega
+
+    \# Directory containing any cdb files for the $lookup OmegaScript command:  
+    cdb_dir /var/lib/omega/cdb
 
 Create a search page. I’ll just use index.html in Apache’s default DocumentRoot (/usr/local/www/apache22/data/index.html).
 
->     
->     
->     
->     
->     
->     
->     
->      Match any word             
->      Match all words          
->     
->
+    Match any word
+    Match all words

@@ -18,22 +18,22 @@ Unfortunately UCARP’s [website](http://www.ucarp.org/project/ucarp) includes m
 
 First of all, you need to install UCARP from ports:
 
-cd /usr/ports/net/ucarp/ && make clean install
+    cd /usr/ports/net/ucarp/ && make clean install
 
 We now need to enable UCARP in rc.conf by adding the following:
 
-ucarp_enable="YES"
-ucarp_if="vtnet1"
-ucarp_vhid="1"
-ucarp_pass="carppass"
-ucarp_preempt="YES"
-ucarp_facility="daemon"
-ucarp_src="192.168.10.10"
-ucarp_addr="192.168.10.1"
-ucarp_advbase="2"
-ucarp_advskew="0"
-ucarp\_upscript="/usr/local/bin/ucarp\_up.sh"
-ucarp\_downscript="/usr/local/bin/ucarp\_down.sh"
+    ucarp_enable="YES"
+    ucarp_if="vtnet1"
+    ucarp_vhid="1"
+    ucarp_pass="carppass"
+    ucarp_preempt="YES"
+    ucarp_facility="daemon"
+    ucarp_src="192.168.10.10"
+    ucarp_addr="192.168.10.1"
+    ucarp_advbase="2"
+    ucarp_advskew="0"
+    ucarp\_upscript="/usr/local/bin/ucarp\_up.sh"
+    ucarp\_downscript="/usr/local/bin/ucarp\_down.sh"
 
 I’m not going to go into too much details about the above variables. You can read more about them [here](http://www.freebsd.org/cgi/man.cgi?query=carp&sektion=4). You will however most likely need to change _ucarp_if_, _ucarp_src_, _ucarp_addr_, _ucarp_advskew_, and _ucarp_advbase_ to match your environment. They’re mostly self-explanatory. The only somewhat confusing ones I guess would be _ucarp_src_, which is the host’s IP and _ucarp_advskew_, which determines priority (the lower value will become master).
 
@@ -41,27 +41,27 @@ Next, we need to create two script that will be triggered in the two different s
 
 **ucarp_up.sh**
 
-#!/bin/sh
+    #!/bin/sh
 
-\# Load variables from rc.conf
-. /etc/rc.subr
-load\_rc\_config ucarp
+    # Load variables from rc.conf
+    . /etc/rc.subr
+    load\_rc\_config ucarp
 
-/sbin/ifconfig $ucarp\_if alias $ucarp\_addr/32
+    /sbin/ifconfig $ucarp\_if alias $ucarp\_addr/32
 
 **ucarp_down.sh**
 
-#!/bin/sh
+    #!/bin/sh
 
-\# Load variables from rc.conf
-. /etc/rc.subr
-load\_rc\_config ucarp
+    # Load variables from rc.conf
+    . /etc/rc.subr
+    load\_rc\_config ucarp
 
-/sbin/ifconfig $ucarp\_if -alias $ucarp\_addr/32
+    /sbin/ifconfig $ucarp\_if -alias $ucarp\_addr/32
 
 With all of those files in place, you can simply start ucarp with:
 
-/usr/local/etc/rc.d/ucarp start
+    /usr/local/etc/rc.d/ucarp start
 
 Closing thoughts
 ----------------

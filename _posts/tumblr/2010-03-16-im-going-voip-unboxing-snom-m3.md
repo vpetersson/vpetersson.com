@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'I''m going VoIP - Unboxing Snom M3. '
+title: "I'm going VoIP - Unboxing Snom M3. "
 date: '2010-03-16T17:44:23+02:00'
 tags: []
 permalink: /post/92729911829/im-going-voip-unboxing-snom-m3

@@ -16,28 +16,28 @@ As it turns out, implementing a feature like this yourself isn’t really that h
 
 First, start by creating a function that checks for this:
 
-def adminAccess():
-    remoteaddr = request.environ.get('REMOTE_ADDR')
-    forwarded = request.environ.get('HTTP\_X\_FORWARDED_FOR')
+    def adminAccess():
+        remoteaddr = request.environ.get('REMOTE_ADDR')
+        forwarded = request.environ.get('HTTP\_X\_FORWARDED_FOR')
 
-    if (remoteaddr in accessList) or (forwarded in accessList):
-        return True
-    else:
-        return False
+        if (remoteaddr in accessList) or (forwarded in accessList):
+            return True
+        else:
+            return False
 
 Next, create a list of IPs that have access to the admin pages:
 
-accessList = \["123.123.123.123"\]
+    accessList = ["123.123.123.123"]
 
 Now, all you need to do is to add a check for this on each page you want to restrict access. For instance here’s a pointless admin-page that checks for your IP:
 
-@route('/admin')
-def admin_page():
-    if adminAccess():
-        pass
-    else:
-        return "Access denied"
+    @route('/admin')
+    def admin_page():
+        if adminAccess():
+            pass
+        else:
+            return "Access denied"
 
-    return "Yay! It worked!"
+        return "Yay! It worked!"
 
 That’s it. Pretty straight forward.

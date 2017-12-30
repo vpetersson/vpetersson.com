@@ -21,14 +21,14 @@ You might also want to copy the entire /home directory, so that the users get th
 
 Once you’ve copied the files to the new system, you also need to rebuild the password database. To do that, run:
 
-> pwd_mkdb -p /etc/master.passwd
+    pwd_mkdb -p /etc/master.passwd
 
 The easiest way to get all that data across is to copy them over SSH with scp. You will need to enable root-login in sshd, but other than that, it is very straight forward. Here’s an example of all of the above if you’re logged into the new server.
 
-> scp -r root@myoldserver:/usr/home/* /usr/home/  
-> scp root@myoldserver:/etc/passwd /etc/  
-> scp root@myoldserver:/etc/group /etc/  
-> scp root@myoldserver:/etc/master.passwd /etc/  
-> pwd_mkdb -p /etc/master.passwd
+    scp -r root@myoldserver:/usr/home/* /usr/home/  
+    scp root@myoldserver:/etc/passwd /etc/  
+    scp root@myoldserver:/etc/group /etc/  
+    scp root@myoldserver:/etc/master.passwd /etc/  
+    pwd_mkdb -p /etc/master.passwd
 
 Pretty simple, huh?

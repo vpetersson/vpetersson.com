@@ -24,8 +24,8 @@ We start by sync the data between the two servers without shutting down Cyrus.
 
 On the old server, run:
 
-> rsync -aP /var/imap root@mynewserver:/var/  
-> rsync -aP /usr/imap root@mynewserver:/usr/
+    rsync -aP /var/imap root@mynewserver:/var/  
+    rsync -aP /usr/imap root@mynewserver:/usr/
 
 This will copy all data across without you having to shut down Cyrus (ie no downtime). If you have a large mail storage, this can take some time. Please note that you need to run the command above as ‘root’ (or some other user with full read-permission to the data).
 
@@ -33,23 +33,23 @@ This will copy all data across without you having to shut down Cyrus (ie no down
 
 With the initial sync done, we have most of the data copied. We only need to do a final sync with Cyrus shut down. Hence, the first step is to shut down Cyrus on both sides. With Cyrus **shut down** on both servers, run the following on the source server:
 
-> rsync -aP –delete /var/imap root@mynewserver:/var/  
-> rsync -aP –delete /usr/imap root@mynewserver:/usr/
+    rsync -aP –delete /var/imap root@mynewserver:/var/  
+    rsync -aP –delete /usr/imap root@mynewserver:/usr/
 
 The final step on the source server is to extract the mailbox list. To do that, run the following:
 
-> sudo -u cyrus /usr/local/cyrus/bin/ctl_mboxlist -d > ~/mboxlist.txt  
-> scp ~/mboxlist.txt root@mynewserver:/root/
+    sudo -u cyrus /usr/local/cyrus/bin/ctl_mboxlist -d > ~/mboxlist.txt  
+    scp ~/mboxlist.txt root@mynewserver:/root/
 
 ### Final tweaks on the new server
 
 This is the part that took me time to find. Namely the database issues that occur when switching from 32bit to 64bit. Here are the commands that will recreate the various databases. On the new server, run:
 
-> sudo -u cyrus rm /var/imap/db/* /var/imap/db.backup1/* /var/imap/db.backup2/* /var/imap/deliver.db /var/imap/tls_sessions.db /var/imap/mailboxes.db  
-> sudo -u cyrus /usr/local/cyrus/bin/ctl\_mboxlist -u sudo -u cyrus /usr/local/cyrus/bin/ctl\_cyrusdb -r  
-> sudo -u cyrus /usr/local/cyrus/bin/tls_prune  
-> sudo -u cyrus /usr/local/cyrus/bin/ctl_cyrusdb -c  
-> sudo -u cyrus /usr/local/cyrus/bin/cyr_expire -E 3
+    sudo -u cyrus rm /var/imap/db/* /var/imap/db.backup1/* /var/imap/db.backup2/* /var/imap/deliver.db /var/imap/tls_sessions.db /var/imap/mailboxes.db  
+    sudo -u cyrus /usr/local/cyrus/bin/ctl\_mboxlist -u sudo -u cyrus /usr/local/cyrus/bin/ctl\_cyrusdb -r  
+    sudo -u cyrus /usr/local/cyrus/bin/tls_prune  
+    sudo -u cyrus /usr/local/cyrus/bin/ctl_cyrusdb -c  
+    sudo -u cyrus /usr/local/cyrus/bin/cyr_expire -E 3
 
 When you’ve executed all of those commands, you should be able to launch Cyrus successfully. Also, if you’re not on FreeBSD, you might need to change the path to the binaries.
 

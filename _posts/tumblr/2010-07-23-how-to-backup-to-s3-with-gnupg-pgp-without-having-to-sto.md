@@ -22,7 +22,7 @@ As it turns out, that is possible with GnuPG — just not with Duplicity (AFAIK)
 
 Assuming you’ve installed the public key (gpg –import your-public-key), all you need to for encrypting a file without entering the passphrase is as follows:
 
-> gpg –encrypt –recipient ‘the-email-in@your-key.net’ filename
+    gpg –encrypt –recipient ‘the-email-in@your-key.net’ filename
 
 Pretty easy, right?
 
@@ -30,24 +30,24 @@ If we want to pull that into a script, we just need [s3cmd](http://s3tools.org/s
 
 Here’s the script I ended up with. Please note that the path I backup only includes achieves generated from another backup script. Also, the archive only includes files with the extension tbz, bz2 and tar. I’m sure you could play with s3cmd’s ‘rexclude’ feature to write a pretty RegEx, but it wasn’t worth the time for me.
 
-> #!/bin/sh
-> 
-> \# Path to backup  
-> BACKUP=/path/to/backup/archive
-> 
-> for i in \`find $BACKUP -type f | grep -v .gpg\`  
-> do gpg –batch –encrypt –recipient ‘the-email-in@your-key.net’ $i  
-> done
-> 
-> \# S3 only allows 1GB files. To resolve that we use ‘split’ to break files larger than 1GB apart.  
-> \# When done splitting, we truncate the original file to save diskspace. We cannot delete it, as gpg will then re-create it next run.  
-> for j in \`find /path/to/backup/archive -size +1G |grep gpg\`;  
-> do  
-> split -a 1 -b 1G $j $j-  
-> truncate -s 0 $j  
-> done;
-> 
-> s3cmd sync -r $BACKUP –exclude=’.tbz’ –exclude=’.bz2′ –exclude=’.gz’ s3://your-bucket/\`hostname -s\`/
+    #!/bin/sh
+    
+    \# Path to backup  
+    BACKUP=/path/to/backup/archive
+    
+    for i in \`find $BACKUP -type f | grep -v .gpg\`  
+    do gpg –batch –encrypt –recipient ‘the-email-in@your-key.net’ $i  
+    done
+    
+    \# S3 only allows 1GB files. To resolve that we use ‘split’ to break files larger than 1GB apart.  
+    \# When done splitting, we truncate the original file to save diskspace. We cannot delete it, as gpg will then re-create it next run.  
+    for j in \`find /path/to/backup/archive -size +1G |grep gpg\`;  
+    do  
+    split -a 1 -b 1G $j $j-  
+    truncate -s 0 $j  
+    done;
+    
+    s3cmd sync -r $BACKUP –exclude=’.tbz’ –exclude=’.bz2′ –exclude=’.gz’ s3://your-bucket/\`hostname -s\`/
 
 Enjoy. If you have any comments, please let me know.
 

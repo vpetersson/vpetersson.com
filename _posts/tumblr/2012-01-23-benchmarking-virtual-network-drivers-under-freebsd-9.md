@@ -27,11 +27,11 @@ The FreeBSD virtual machines I used had 2GHz CPU, and 2GB of RAM. They also both
 
 The Iperf command I used on the server was:
 
-iperf -s
+    iperf -s
 
 and then on the client:
 
-iperf -i 1 -t 30 -c TheOtherNode
+    iperf -i 1 -t 30 -c TheOtherNode
 
 So what were the findings? As you can see below, the VirtIO-driver performed better than all other drivers across the board.
 

@@ -14,7 +14,7 @@ If so, here’s something you’ll enjoy.
 
 Just open up ~/.profile in your favorite editor, and add the following lines:
 
-alias foo="cd /some/long/path/that/takes/forever/to/type"
-alias bar="mycommand -with -lots -of -variables"
+    alias foo="cd /some/long/path/that/takes/forever/to/type"
+    alias bar="mycommand -with -lots -of -variables"
 
 Now you don’t need to type those long commands ever again. All you need to do is to typ ‘foo’ or ‘bar’. You can of course replace foo and bar with anything you want, as well as the command.

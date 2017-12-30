@@ -14,37 +14,36 @@ permalink: /post/92729917189/setting-up-monit-to-monitor-apache-and-postgresql-o
 
 For [Red iGone](http://www.redigone.com) we use Apache as the web-server, and PostgreSQL as the database. I wanted to configure Monit to keep an eye on these processes. As it turns out, setting up Monit was really straight-forward.
 
-I tried this on Ubuntu 9.10 and 10.04. If you try this on a different Ubuntu version (or other distribution), it is likely that you will need to make changes to apache.conf and postgresql.conf.  
-  
-\[flickr\]http://www.flickr.com/photos/vpetersson/4777587884/\[/flickr\]  
+I tried this on Ubuntu 9.10 and 10.04. If you try this on a different Ubuntu version (or other distribution), it is likely that you will need to make changes to apache.conf and postgresql.conf.
+
+![](https://farm5.staticflickr.com/4082/4777587884_23d7aa9958_z_d.jpg)
+
 _Monit in action._
 
 ### Install Monit
 
-Installing Monit on Ubuntu is dead simple. Just run:  
-`  
-sudo apt-get install monit  
-`
+Installing Monit on Ubuntu is dead simple. Just run:
+
+    sudo apt-get install monit
 
 ### Configure Monit
 
 Now let’s configure Monit. We start with the generic config-file. Open **/etc/monit/monitrc** in your favorite editor and add the following line:  
-`  
-include /etc/monit/conf.d/*  
-`
+
+    include /etc/monit/conf.d/*  
 
 **Important**: Change permission on the folder /etc/monit/conf.d as it will include your email password stored in plain text.  
-`  
-sudo chmod a-rwx,u=rwX -R /etc/monit/conf.d/  
-`
+
+    sudo chmod a-rwx,u=rwX -R /etc/monit/conf.d/  
+
 
 Next we need to edit **/etc/default/monit** and change “startup=0″ to “startup=1″.
 
 Now we’re ready to really start configuring Monit. Just to keep things, organized, I’ve broken down the Monit’s settings into three files:
 
-*   basic.conf
-*   apache.conf
-*   postgresql.conf
+* basic.conf
+* apache.conf
+* postgresql.conf
 
 In basic.conf I’ve put the generic Monit-configs, and then broken out Apache’s and PosgreSQL’s configs into their own files.
 
@@ -119,16 +118,16 @@ Final steps
 -----------
 
 Now that you have configured all the files, all that needs to be done is to fire up Monit and make verify that it is running. To launch Monit, simply run:  
-`  
-sudo /etc/init.d/monit start  
-`
+
+    sudo /etc/init.d/monit start  
+
 
 You can verify that Monit is running either by browsing to the webserver or checking /var/log/syslog. You should also receive an email that says that Monit is now running.
 
-Assuming everything went well, you also want to make sure that Monit actually starts a daemon if it is failing. A simple way to do that is to run:  
-`  
-sudo killall apache2  
-`
+Assuming everything went well, you also want to make sure that Monit actually starts a  daemon if it is failing. A simple way to do that is to run:  
+
+    sudo killall apache2  
+
 
 That should kill Apache. Monit should be able to detect that and fire it back up shortly. Again, you should be able to monitor Monit’s process either by email, the web-interface, or in /var/log/syslog.
 
