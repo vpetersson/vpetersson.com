@@ -11,7 +11,7 @@ permalink: /post/96629746439/how-to-not-screw-up-localization-on-websites
 ---
 Poorly implemented translations ‘logic’ is something that really grinds my gear. Today I ran across the new [Dyson 360 Eye](http://www.dyson360eye.com/) and it is a case study in how to **not** do website translations.
 
-Since I’m connected to a VPN in Switzerland, this is what I was presented with: ![](http://78.media.tumblr.com/8da97159c0883b608ed4befc503c38d2/tumblr_inline_nbdymqMeeW1skxjxc.png)
+Since I’m connected to a VPN in Switzerland, this is what I was presented with: ![](/tumblr_files/tumblr_inline_nbdymqMeeW1skxjxc.png)
 
 As you can see, the website is in German just because I connected through Switzerland. Now let’s analyze why this is bad.
 

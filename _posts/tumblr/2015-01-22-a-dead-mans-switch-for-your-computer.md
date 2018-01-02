@@ -68,7 +68,7 @@ Using some sort of wearable technology would clearly require more work than simp
 
 **Update 3:** After some additional research, I’ve found a number of OS X apps that can do this, including [TokenLock](https://itunes.apple.com/us/app/tokenlock/id402433482), [Keycard](https://itunes.apple.com/us/app/keycard/id578513438) and [HandyLock](http://www.netputing.com/applications/handylock/). Unfortunately all of these apps implement their own lock screen. This is presumably because they want to have the ability to unlock the system too using the same mechanism. The problem with this is that you significantly lower the security. The search goes on for an app that can _only_ lock down the system using the built-in tools. I’m not interested in unlocking it.
 
-**Update 4:** I finally found it! The app is called [Bluetooth Screen Lock](https://itunes.apple.com/us/app/bluetooth-screen-lock/id509251123). Unfortunately it doesn’t work with my Fitbit Flex, but it _does_ work just great with my Pebble. ![](http://78.media.tumblr.com/85bf3b87eb0844a1512e894ba5a68484/tumblr_inline_niuu6f5eIe1skxjxc.png)
+**Update 4:** I finally found it! The app is called [Bluetooth Screen Lock](https://itunes.apple.com/us/app/bluetooth-screen-lock/id509251123). Unfortunately it doesn’t work with my Fitbit Flex, but it _does_ work just great with my Pebble. ![](/tumblr_files/tumblr_inline_niuu6f5eIe1skxjxc.png)
 
 The one thing I did notice however (which is specific to the Pebble), is that you need to also pair the device with the computer. If not, you can only use it while the watch is Bluetooth Discovery mode (i.e. in the menu).
 

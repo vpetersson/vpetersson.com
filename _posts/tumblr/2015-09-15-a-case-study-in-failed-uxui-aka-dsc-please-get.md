@@ -16,7 +16,7 @@ I recently purchased your [T-link](http://www.dsc.com/index.php?n=products&o=vie
 
 Please take a look at this screenshot:
 
-![DSC DLS alarm software](http://78.media.tumblr.com/abc1eb4edddb4ad364f450ff22738bea/tumblr_inline_nuqfgtj0GQ1skxjxc_540.png)
+![DSC DLS alarm software](/tumblr_files/tumblr_inline_nuqfgtj0GQ1skxjxc_540.png)
 
 If it isn’t obvious what is wrong with this, let me spell this out for you.
 

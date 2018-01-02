@@ -19,7 +19,7 @@ To my surprise, it appears as Apple also realized that this was messy and decide
     $ sudo /Applications/Install\ OS\ X\ Yosemite\ Developer\ Preview.app/Contents/Resources/createinstallmedia --volume /Volumes/your_flash_drive / --applicationpath /Applications/Install\ OS\ X\ Yosemite\ Developer\ Preview.app/
     
 
-![](http://78.media.tumblr.com/7cde896336bb4a7a4b88d1cccaeebea9/tumblr_inline_nc4cdfJwWd1skxjxc.png)
+![](/tumblr_files/tumblr_inline_nc4cdfJwWd1skxjxc.png)
 
 **Protip:** If you want to speed things up, use a Class 10 SD card instead of an USB drive. These cards are faster than most vanilla USB drives, and any modern Mac will boot off of them just fine.
 

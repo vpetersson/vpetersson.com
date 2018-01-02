@@ -17,7 +17,7 @@ With the announcement of the strike, Lufthansa’s customer service lines were b
 
 The result looks like this:
 
-![](http://78.media.tumblr.com/52ecd2651f1db1d987cecfa7068847ea/tumblr_inline_nuddo9DjCQ1skxjxc_540.png)
+![](/tumblr_files/tumblr_inline_nuddo9DjCQ1skxjxc_540.png)
 
 Using the [Skype4Py Python module](https://pypi.python.org/pypi/Skype4Py), it was able to automate the redail process with realtive ease. While I wasn’t able to get it working on Mac OS X, I was able to get it running in an Ubuntu VM more or less out-of-the-box.
 
