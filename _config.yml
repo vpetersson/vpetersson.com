@@ -30,7 +30,9 @@ twitter_username: vpetersson
 github_username:  vpetersson
 
 google_analytics: UA-12090766-1
+
 disqus.shortname: vpeterss
+page.comments: true
 
 # Build settings
 markdown: kramdown
