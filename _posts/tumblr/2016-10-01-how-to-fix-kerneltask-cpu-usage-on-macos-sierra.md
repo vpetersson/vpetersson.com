@@ -8,6 +8,7 @@ tags:
 - kernel_task
 - usb-boot
 permalink: /post/151192357764/how-to-fix-kerneltask-cpu-usage-on-macos-sierra
+redirect_from: "/2017/12/21/2016-10-01-how-to-fix-kerneltask-cpu-usage-on-macos-sierra.html"
 ---
 In my post [How to fix kernel_task CPU usage on Yosemite](/2017/12/21/2014-10-16-how-to-fix-kerneltask-cpu-usage-on-yosemite.html), I first wrote about how a broken logic board can trigger high CPU usage from `kernel_task` as well as how to fix it. When El Capitan later were release, the issue [remained](/2017/12/21/2016-01-03-how-to-fix-kerneltask-cpu-usage-on-el-capitan.html).
 
