@@ -10,7 +10,7 @@ tags:
 - PGP
 - S3
 - s3cmd
-permalink: /post/92729918934/how-to-backup-to-s3-with-gnupg-pgp-without-having-to-sto
+redirect_from: /post/92729918934/how-to-backup-to-s3-with-gnupg-pgp-without-having-to-sto
 ---
 To increase the reliability of our backups at WireLoad, we wanted to utilize S3. Obviously we couldn’t just send our backups to S3 without encrypting them, so GnuPG was part of the equation from the beginning. As I started my research, I found a ton guides on how to utilize a variety of backup tools to get your backups delivered to S3. Some of the tools looked really promising. After reading the specs, [Duplicity](http://duplicity.nongnu.org/) stood out as the winner. It supported S3, encryption and the whole shebang. It even supported incremental backups. Bingo I thought. That’s perfect.
 

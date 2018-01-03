@@ -5,7 +5,7 @@ date: '2012-10-16T17:14:51+03:00'
 tags:
 - Raspberry Pi
 - Screenly
-permalink: /post/92729970829/screenly-pro-is-now-in-beta
+redirect_from: /post/92729970829/screenly-pro-is-now-in-beta
 ---
 A while ago I started hacking on Screenly, a digital signage solution for the Raspberry Pi. It has been a huge success with a lot of traction from the Raspberry Pi community.
 

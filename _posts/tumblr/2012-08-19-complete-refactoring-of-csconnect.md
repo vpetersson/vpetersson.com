@@ -6,7 +6,7 @@ tags:
 - CloudSigma
 - csconnect
 - Python
-permalink: /post/92729968184/complete-refactoring-of-csconnect
+redirect_from: /post/92729968184/complete-refactoring-of-csconnect
 ---
 A few months back I wrote [csconnect](https://github.com/vpetersson/csconnect) to make it easier for myself to logon to our Cloud Sigma-nodes. It’s a pretty simple application. All it does is to poll Cloud Sigma’s API and lookup the IPs for the node(s) specified.
 

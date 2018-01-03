@@ -3,7 +3,7 @@ layout: post
 title: Major update to Screenly
 date: '2013-02-21T15:34:41+02:00'
 tags: []
-permalink: /post/92729975369/major-update-to-screenly
+redirect_from: /post/92729975369/major-update-to-screenly
 ---
 ![Screenly_OSE_overview](http://viktorpetersson.com/wp-content/uploads/2013/02/Screenly_OSE_overview-600x432.png)
 

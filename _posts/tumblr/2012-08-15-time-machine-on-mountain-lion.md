@@ -6,7 +6,7 @@ tags:
 - Apple
 - Mac OS X
 - Time Machine
-permalink: /post/92729966909/time-machine-on-mountain-lion
+redirect_from: /post/92729966909/time-machine-on-mountain-lion
 ---
 ![](http://viktorpetersson.com/wp-content/uploads/2012/08/Time-Machine.png "Time Machine")
 

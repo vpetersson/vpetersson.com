@@ -4,7 +4,7 @@ title: Quiet - A great productivity app
 date: '2011-03-14T11:43:17+02:00'
 tags:
 - Quiet
-permalink: /post/92729944039/quiet-a-great-productivity-app
+redirect_from: /post/92729944039/quiet-a-great-productivity-app
 ---
 Last week we launched our second application for Mac OS X. The application is called Quiet and is the best productivity tool I have ever used. The idea behind Quiet is simple. If you were to remove all distractions and only focus on one task at the time, you get more work done. This is exactly what Quiet does. It simply allows you to focus.
 

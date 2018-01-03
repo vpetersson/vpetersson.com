@@ -6,7 +6,7 @@ tags:
 - screenly
 - Digital Signage
 - linux
-permalink: /post/103123494289/screenly-is-featured-in-the-latest-issue-of-linux
+redirect_from: /post/103123494289/screenly-is-featured-in-the-latest-issue-of-linux
 ---
 ![Linux User](/tumblr_files/tumblr_inline_nfces4YkL41skxjxc.png)
 

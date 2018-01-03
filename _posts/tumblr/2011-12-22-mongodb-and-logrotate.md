@@ -4,7 +4,7 @@ title: MongoDB and logrotate
 date: '2011-12-22T21:26:08+02:00'
 tags:
 - MongoDB
-permalink: /post/92729953474/mongodb-and-logrotate
+redirect_from: /post/92729953474/mongodb-and-logrotate
 ---
 I’ve been using MongoDB now for some time in production. It’s great, and I really love how easy it is to set up and scale with replica sets etc.
 

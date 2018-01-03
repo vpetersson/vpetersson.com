@@ -6,7 +6,7 @@ tags:
 - Apple
 - Mac OS X
 - Spotify
-permalink: /post/92729965694/a-permanent-fix-for-apples-playpause-hijacking-and-use-s
+redirect_from: /post/92729965694/a-permanent-fix-for-apples-playpause-hijacking-and-use-s
 ---
 I hate iTunes with passion. It’s bloated and annoying. However, since it is a major revenue stream for Apple, they try hard to push it into your face as often as possible.
 

@@ -8,7 +8,7 @@ tags:
 - jail
 - Linux
 - Ubuntu
-permalink: /post/92729923604/shouldnt-dependencies-on-core-components-be-isolated
+redirect_from: /post/92729923604/shouldnt-dependencies-on-core-components-be-isolated
 ---
 Local management tools are critical for most Linux and Unix distributions. For instance, if you delete Python 2.6 from your Ubuntu installation, it becomes more or less unusable. This is because most local management tools are written in Python. I have no problem with this. On the contrary, I think it makes a whole lot of sense to write management tools in a high-level language, such as Python or Ruby.
 

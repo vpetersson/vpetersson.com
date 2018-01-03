@@ -3,7 +3,7 @@ layout: post
 title: What's in your bag, Viktor?
 date: '2014-08-03T23:18:02+03:00'
 tags: []
-permalink: /post/93712480644/whats-in-your-bag-viktor
+redirect_from: /post/93712480644/whats-in-your-bag-viktor
 ---
 [What's in your bag, Viktor?](http://leannomads.tumblr.com/post/93698602869/whats-in-your-bag-viktor)  
 

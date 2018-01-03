@@ -6,7 +6,7 @@ tags:
 - ubuntu
 - canonical
 - linux
-permalink: /post/100077712854/cloudsigma-joins-ubuntu-certified-public-cloud
+redirect_from: /post/100077712854/cloudsigma-joins-ubuntu-certified-public-cloud
 ---
 [CloudSigma joins Ubuntu Certified Public Cloud](https://insights.ubuntu.com/2014/10/15/cloudsigma-joins-ubuntu-certified-public-cloud/)  
 

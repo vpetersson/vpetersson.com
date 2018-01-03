@@ -4,7 +4,7 @@ title: A "dead man's switch" for your computer?
 date: '2015-01-22T22:03:00+02:00'
 tags:
 - security
-permalink: /post/108852454049/a-dead-mans-switch-for-your-computer
+redirect_from: /post/108852454049/a-dead-mans-switch-for-your-computer
 ---
 In the last few weeks, a lot of details have been disclosed around [Ross Ulbricht’s arrest](http://arstechnica.com/tech-policy/2015/01/silk-road-trial-fbi-reveals-whats-on-ross-ulbrichts-computer-in-open-court/). For those not familiar with the matter, Ulbricht was arrested at a library in San Francisco some time ago with his laptop open. The agents managed to steal the laptop out of Ulbricht’s hands and therefore prevent him from locking the computer (which presumably had full-disk encryption).
 

@@ -3,7 +3,7 @@ layout: post
 title: On the Secure Messaging Community
 date: '2015-03-30T08:41:00+03:00'
 tags: []
-permalink: /post/115011708124/on-the-secure-messaging-community
+redirect_from: /post/115011708124/on-the-secure-messaging-community
 ---
 [On the Secure Messaging Community](http://blog.nadim.computer/post/114970275623/on-the-secure-messaging-community)  
 

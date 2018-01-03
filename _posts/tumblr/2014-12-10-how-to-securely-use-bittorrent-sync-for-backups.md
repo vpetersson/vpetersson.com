@@ -6,7 +6,7 @@ tags:
 - BitTorrent
 - BittTorrent Sync
 - backup
-permalink: /post/104842825089/how-to-securely-use-bittorrent-sync-for-backups
+redirect_from: /post/104842825089/how-to-securely-use-bittorrent-sync-for-backups
 ---
 [» How to securely use BitTorrent Sync for backups](https://www.cloudsigma.com/2014/12/10/how-to-securely-use-bittorrent-sync-for-backups/)  
 

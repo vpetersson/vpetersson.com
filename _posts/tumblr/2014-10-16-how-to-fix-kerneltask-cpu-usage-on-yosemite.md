@@ -6,7 +6,7 @@ tags:
 - mac os x
 - yosemite
 - os x
-permalink: /post/100148585299/how-to-fix-kerneltask-cpu-usage-on-yosemite
+redirect_from: /post/100148585299/how-to-fix-kerneltask-cpu-usage-on-yosemite
 ---
 Yesterday I had to hand in my almost new MacBook Pro (Retina) for repair due to a broken logic board. This meant that I had to go back to my old laptop for a little bit.
 
@@ -29,12 +29,11 @@ Rhys’ page includes a lot more details, but in summary, here’s what I did:
     # Find the model
     $ system_profiler -detailLevel mini | grep "Model Identifier:"
     Model Identifier: MacBookPro8,2
-    
+
     # Move and backup the file
     $ mkdir -p ~/backup
     $ cd /System/Library/Extensions/IOPlatformPluginFamily.kext/Contents/PlugIns/ACPI_SMC_PlatformPlugin.kext/Contents/Resources
     $ sudo mv MacBookPro8_2.plist ~/backup/
-    
 
 After moving the file above and rebooting the system, things looked a lot more sane. ![More sane kernel_task](/tumblr_files/tumblr_inline_ndj4y6oLJl1skxjxc.png)
 

@@ -6,7 +6,7 @@ tags:
 - Bottle
 - Heroku
 - Python
-permalink: /post/92729964659/access-control-in-bottle-by-ip
+redirect_from: /post/92729964659/access-control-in-bottle-by-ip
 ---
 If you haven’t heard of [Bottle](http://bottlepy.org/docs/stable/), it’s a lightweight web framework for Python. It is perfect if you have a small project that requires a web interface, but you don’t want to go all in with a complex framework like Django.
 

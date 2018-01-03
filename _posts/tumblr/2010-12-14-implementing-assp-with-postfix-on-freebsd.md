@@ -9,7 +9,7 @@ tags:
 - Postfix
 - SMTP
 - Spam
-permalink: /post/92729939994/implementing-assp-with-postfix-on-freebsd
+redirect_from: /post/92729939994/implementing-assp-with-postfix-on-freebsd
 ---
 In this article, I will walk you through the process of setting up [ASSP](http://assp.sourceforge.net/). If you’ve never heard of ASSP, it is a great anti-virus and spam-fighting proxy that sits in front of your SMTP server. Under the hood, ASSP includes a lot of intelligent spam logic, but you won’t really have to worry about it. All you really need to know is that it great at fighting spam and that it is easy to set up.
 

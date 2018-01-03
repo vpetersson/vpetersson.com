@@ -9,7 +9,7 @@ tags:
 - NAS
 - NFS
 - Samba
-permalink: /post/92729925214/setting-up-a-redundant-nas-with-hast-with-carp
+redirect_from: /post/92729925214/setting-up-a-redundant-nas-with-hast-with-carp
 ---
 One of the coolest new features in FreeBSD is [HAST](http://wiki.freebsd.org/HAST) (Highly Available Storage). In simple terms, it can be described as RAID1 (mirror) over TCP/IP (similar to DRBD on Linux, but native). You can simply have two physical nodes replicate data over the network. If you throw in [CARP](http://www.freebsd.org/doc/handbook/carp.html) (Common Address Redundancy Protocol) to the mix, you can create a very robust storage system on commodity hardware with automatic failover.
 

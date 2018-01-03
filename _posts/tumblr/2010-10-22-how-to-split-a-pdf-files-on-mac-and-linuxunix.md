@@ -7,7 +7,7 @@ tags:
 - Mac OS X
 - PDF
 - Unix
-permalink: /post/92729928384/how-to-split-a-pdf-files-on-mac-and-linuxunix
+redirect_from: /post/92729928384/how-to-split-a-pdf-files-on-mac-and-linuxunix
 ---
 There are a ton of tools out there for modifying PDF-files. Most of them are crappy, overpriced sharewares from mediocre developers looking to make cash from non-technical users. What most Mac-users perhaps do not know is that Mac OS comes with a ton of handy tools for modifying PDF files. For instance, with a few clicks, you can create an app that merges different PDF files into one file with Automator (I will post that app in a separate post).
 

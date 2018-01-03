@@ -5,7 +5,7 @@ date: '2011-08-15T18:04:54+03:00'
 tags:
 - FreeBSD
 - PosgreSQL
-permalink: /post/92729948959/fixing-su-unknown-login-pguser-on-freebsd
+redirect_from: /post/92729948959/fixing-su-unknown-login-pguser-on-freebsd
 ---
 Today as I was installing PostgreSQL 9.04 on a new server I encountered the following error:
 

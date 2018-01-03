@@ -5,7 +5,7 @@ date: '2011-06-18T19:49:02+03:00'
 tags:
 - Linux
 - Ubuntu
-permalink: /post/92729947349/rebuilding-a-linux-software-raid-array
+redirect_from: /post/92729947349/rebuilding-a-linux-software-raid-array
 ---
 The process is pretty straight forward, and I’m writing this as a ‘Note-to-self’ for future references than anything else. If anyone else find it useful, that’s great.
 

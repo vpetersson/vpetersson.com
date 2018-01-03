@@ -7,7 +7,7 @@ tags:
 - FreeBSD
 - MongoDB
 - Ubuntu
-permalink: /post/92729960064/comparing-mongodb-write-performance-on-centos-freebsd-an
+redirect_from: /post/92729960064/comparing-mongodb-write-performance-on-centos-freebsd-an
 ---
 Recently I wrote a post titled ‘[Notes on MongoDB, GridFS, sharding and deploying in the cloud](http://viktorpetersson.com/2012/01/29/notes-on-mongodb-gridfs-and-sharding-in-the-cloud/).’ I talked about various aspects of running MongoDB and how to scale it. One thing we really didn’t take into consideration was if MongoDB performed differently on different operating systems. I naively assumed that it would perform relatively similar. That was a very incorrect assumption. Here are my findings when I tested the write-performance.
 

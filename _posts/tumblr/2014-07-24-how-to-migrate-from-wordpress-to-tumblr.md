@@ -8,7 +8,7 @@ tags:
 - migration
 - migrate
 - nginx
-permalink: /post/92760339864/how-to-migrate-from-wordpress-to-tumblr
+redirect_from: /post/92760339864/how-to-migrate-from-wordpress-to-tumblr
 ---
 Today, I’ve spent a large chunk of my day migrating my blog from WordPress to Tumblr and [About.me](http://about.me/vpetersson).
 

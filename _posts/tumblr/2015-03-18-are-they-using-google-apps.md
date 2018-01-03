@@ -7,7 +7,7 @@ tags:
 - productivity
 - google
 - google hangout
-permalink: /post/113947203631/are-they-using-google-apps
+redirect_from: /post/113947203631/are-they-using-google-apps
 ---
 [Are they using Google Apps?](http://aretheyusinggoogleapps.com/)  
 

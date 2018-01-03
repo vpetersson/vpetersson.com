@@ -5,7 +5,7 @@ date: '2016-01-03T16:17:59+02:00'
 tags:
 - os x
 - mac os x
-permalink: /post/136535061619/how-to-fix-kerneltask-cpu-usage-on-el-capitan
+redirect_from: /post/136535061619/how-to-fix-kerneltask-cpu-usage-on-el-capitan
 ---
 Sometime ago, I wrote the blog post [How to fix kernel_task CPU usage on Yosemite](/2017/12/21/2014-10-16-how-to-fix-kerneltask-cpu-usage-on-yosemite.html). This post still receives a great amount of traction, so I wanted to post an update that reflects the covers how to do this on El Capitan.
 

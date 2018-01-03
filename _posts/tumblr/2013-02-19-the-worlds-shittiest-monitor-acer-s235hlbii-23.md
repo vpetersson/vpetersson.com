@@ -5,7 +5,7 @@ date: '2013-02-19T12:34:36+02:00'
 tags:
 - Acer
 - Raspberry Pi
-permalink: /post/92729974889/the-worlds-shittiest-monitor-acer-s235hlbii-23
+redirect_from: /post/92729974889/the-worlds-shittiest-monitor-acer-s235hlbii-23
 ---
 Ok, this a long rant, but I just need to warn anyone else looking to buy this monitor. It’s the worst piece of garbage I’ve ever owned. If you’re thinking about buy one, just don’t. Pretty much anything else you can get your hands on is better.
 

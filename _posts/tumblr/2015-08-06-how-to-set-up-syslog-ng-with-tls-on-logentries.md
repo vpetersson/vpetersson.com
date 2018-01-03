@@ -10,7 +10,7 @@ tags:
 - devops
 - ubuntu
 - debian
-permalink: /post/126006528524/how-to-set-up-syslog-ng-with-tls-on-logentries
+redirect_from: /post/126006528524/how-to-set-up-syslog-ng-with-tls-on-logentries
 ---
 After using Loggly for a few years, I stumbled across [Logentries](https://logentries.com/learnmore?code=82a5c804) (disclosure: referral link). What I was looking for was basically something that is more affordable when the volume increases, and Logentries is a lot more affordable than Loggly as you grow.
 

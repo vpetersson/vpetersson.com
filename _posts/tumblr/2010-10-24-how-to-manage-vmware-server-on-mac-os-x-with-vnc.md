@@ -5,7 +5,7 @@ date: '2010-10-24T14:24:36+03:00'
 tags:
 - Linux
 - VMware
-permalink: /post/92729928924/how-to-manage-vmware-server-on-mac-os-x-with-vnc
+redirect_from: /post/92729928924/how-to-manage-vmware-server-on-mac-os-x-with-vnc
 ---
 VMware Server is a great product. It’s free and works well with most guest operating systems. However, there is **one major drawback** – you cannot use the ‘console’ app on Mac OS X. For some strange reason, VMware decided to only make the required Firefox plug-in available for Linux and Windows. Given that Mac OS X is the OS of choice for most tech-savvy users I know, this decision makes no sense at all. While I rarely need the console for an existing virtual machine (other than if it fails to boot or something similar), it is obviously required to install the operating system onto the virtual machine.
 

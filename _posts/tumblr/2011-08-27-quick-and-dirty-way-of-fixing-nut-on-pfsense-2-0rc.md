@@ -6,7 +6,7 @@ tags:
 - FreeBSD
 - NUT
 - pfSense
-permalink: /post/92729949844/quick-and-dirty-way-of-fixing-nut-on-pfsense-2-0rc
+redirect_from: /post/92729949844/quick-and-dirty-way-of-fixing-nut-on-pfsense-2-0rc
 ---
 One of my favorite Open Source appliances is [pfSense](http://www.pfsense.org/). It can turn any old machine into a very powerful firewall/router in 10 minutes or less. Also, it comes with a very handy GUI and the fact that it is based on FreeBSD makes it even greater.
 

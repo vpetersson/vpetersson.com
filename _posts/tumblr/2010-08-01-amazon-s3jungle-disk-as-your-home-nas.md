@@ -6,7 +6,7 @@ tags:
 - Jungle Disk
 - S3
 - Samba
-permalink: /post/92729920124/amazon-s3jungle-disk-as-your-home-nas
+redirect_from: /post/92729920124/amazon-s3jungle-disk-as-your-home-nas
 ---
 This idea hit me this morning. Assuming you have a decent connection at home (not ADSL or Cable that is), [Amazon S3](http://aws.amazon.com/s3/) (or [Jungle Disk](https://www.jungledisk.com)) makes a pretty nice back-bone for a home NAS. It is fairly cheap and you will no longer worry about growing out of your array or failing disks. Yes, I reckon that if you store your data without encryption (even in a private bucket), it may leak out. However, as long as you’re not storing top-secret government files, I think you’ll be fine.
 

@@ -6,7 +6,7 @@ tags:
 - startup
 - lean
 - growthacking
-permalink: /post/114435766624/growth-hacking-for-lean-startups
+redirect_from: /post/114435766624/growth-hacking-for-lean-startups
 ---
 Just ran across this great slide deck today over at GrowthHackers.
 

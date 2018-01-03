@@ -7,7 +7,7 @@ tags:
 - python
 - banking
 - 1password
-permalink: /post/130291303584/introducing-natpass
+redirect_from: /post/130291303584/introducing-natpass
 ---
 After moving to London, I decided to go with [NatWest](http://www.natwest.com) as my bank. While it was a good experience at large, their online banking leavs a lot to be desired. Not only do they lack things like Two-Factor Authenciation (2FA), but they also have this _really_ frustrating login system.
 

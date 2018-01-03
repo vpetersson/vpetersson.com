@@ -6,7 +6,7 @@ tags:
 - Firefox
 - Swisscom
 - Travelling
-permalink: /post/92729950819/how-to-get-50-discount-on-swisscoms-hotspot-and-possibly
+redirect_from: /post/92729950819/how-to-get-50-discount-on-swisscoms-hotspot-and-possibly
 ---
 Last weekend I was staying at a Holiday Inn in the UK. As most geeks, one of the first thing I did after checking in was to hop on the wireless connection to pull down my email. Like many hotels, Holiday Inn outsource the management of their wireless guest network. This particular hotel was using a provider named [Swisscom](http://en.swisscom.ch/r) (I’m not sure if this true for all Holiday Inn hotels).  
   

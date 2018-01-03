@@ -5,7 +5,7 @@ date: '2012-02-27T20:24:28+02:00'
 tags:
 - FreeBSD
 - PostgreSQL
-permalink: /post/92729960624/the-pgha-project-has-moved-to-github
+redirect_from: /post/92729960624/the-pgha-project-has-moved-to-github
 ---
 I recently posted a rather lengthy article titled “High availability with PostgreSQL, PGPool-II and FreeBSD.” The article was a bi-product of setting this up and the blog-post was simply my own notes with some polish.
 

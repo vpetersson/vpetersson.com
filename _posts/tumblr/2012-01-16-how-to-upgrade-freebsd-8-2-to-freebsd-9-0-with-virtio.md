@@ -8,7 +8,7 @@ tags:
 - QEMU
 - VirtIO
 - Virtualization
-permalink: /post/92729954479/how-to-upgrade-freebsd-8-2-to-freebsd-9-0-with-virtio
+redirect_from: /post/92729954479/how-to-upgrade-freebsd-8-2-to-freebsd-9-0-with-virtio
 ---
 Some time ago, I wrote about [how to use Virtio with FreeBSD 8.2](/2011/10/20/how-to-use-virtio-on-freebsd-8-2/). As I pointed out in the article, the performance was not nearly as good in FreeBSD 8.2 as it was in 9.0-RC1. Hence I wanted to get all my nodes over to 9.0 as soon as possible to take use of the massive boost in I/O performance.
 

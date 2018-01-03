@@ -7,7 +7,7 @@ tags:
 - python
 - ubuntu
 - linux
-permalink: /post/128648706034/war-dialing-with-skype
+redirect_from: /post/128648706034/war-dialing-with-skype
 ---
 (Fine, this isn’t [war dialing](https://en.wikipedia.org/wiki/War_dialing) in the 90s context, but it made for a good title.)
 

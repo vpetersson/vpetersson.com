@@ -7,7 +7,7 @@ tags:
 - Nginx
 - Puppet
 - Ubuntu
-permalink: /post/92729974319/introducing-puppet-hosting-host-websites-with-sanity
+redirect_from: /post/92729974319/introducing-puppet-hosting-host-websites-with-sanity
 ---
 Since we started WireLoad, the number of websites we host have grown steadily. It’s a myriad of sites, ranging from product sites to websites belonging to friends and family. Many of them are WordPress-sites (just like this one), while others are more complicated. Some use databases, while others don’t. Since we’re often in a rush when we set up a site, documentation often suffers, and you have to spend time later on trying to decipher how things were set up.
 

@@ -4,7 +4,7 @@ title: Deploying FreeBSD's Ports to a large number of nodes
 date: '2012-05-07T16:22:24+03:00'
 tags:
 - FreeBSD
-permalink: /post/92729962769/deploying-freebsds-ports-to-a-large-number-of-nodes
+redirect_from: /post/92729962769/deploying-freebsds-ports-to-a-large-number-of-nodes
 ---
 Some time ago, I posted a [question](http://serverfault.com/questions/364556/how-do-you-manage-and-deploy-freebsds-ports-in-a-large-environment) on Serverfault about how people managed and deployed ports in a large environment. Despite a fair number of comment, nobody seemed to really have the anser to this (or at least that suited my needs). It simply appears to be the case that the built-in tools in FreeBSD (primarily portsnap and portupgrade) are not built for a shared ports-tree.
 

@@ -7,7 +7,7 @@ tags:
 - Django
 - FreeBSD
 - Note-to-self
-permalink: /post/92729924544/how-to-build-apache-and-modwsgi-with-python-2-7-on-free
+redirect_from: /post/92729924544/how-to-build-apache-and-modwsgi-with-python-2-7-on-free
 ---
 We’re probably not the only company switching to Python 2.7. Right now, we’re in the final phase of rolling out an updated version that uses Python 2.7. As I was setting up our servers, I ran into a few issues with packages who were hardcoded to use Python 2.6 or earlier.
 

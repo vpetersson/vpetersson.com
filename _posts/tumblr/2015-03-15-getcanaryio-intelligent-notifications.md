@@ -6,7 +6,7 @@ tags:
 - linux
 - backup
 - DevOps
-permalink: /post/113642397894/getcanaryio-intelligent-notifications
+redirect_from: /post/113642397894/getcanaryio-intelligent-notifications
 ---
 [GetCanary.io - Intelligent notifications](http://getcanary.io/)  
 

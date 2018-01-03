@@ -4,7 +4,7 @@ title: TripIt insecurely broadcasts sensitive travel details in calendar feeds; 
   destroy your vacation
 date: '2014-08-18T19:09:31+03:00'
 tags: []
-permalink: /post/95108873639/tripit-insecurely-broadcasts-sensitive-travel
+redirect_from: /post/95108873639/tripit-insecurely-broadcasts-sensitive-travel
 ---
 [TripIt insecurely broadcasts sensitive travel details in calendar feeds; could destroy your vacation](http://httpshaming.tumblr.com/post/94950343491/tripit-insecurely-broadcasts-sensitive-travel-details)  
 

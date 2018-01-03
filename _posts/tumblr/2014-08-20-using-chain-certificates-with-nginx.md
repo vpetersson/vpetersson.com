@@ -7,7 +7,7 @@ tags:
 - nginx
 - devops
 - note-to-self
-permalink: /post/95265939219/using-chain-certificates-with-nginx
+redirect_from: /post/95265939219/using-chain-certificates-with-nginx
 ---
 I’m a big fan of [Namecheap](http://namecheap.com). They offer cheap SSL certificates that does the trick just fine. For most my projects, I go for their cheapest option (usually ‘PossitiveSSL’).
 

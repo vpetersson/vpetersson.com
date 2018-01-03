@@ -6,7 +6,7 @@ tags:
 - Conference
 - Presentation
 - YippieMove
-permalink: /post/92729970279/join-me-at-gsocial-2-0
+redirect_from: /post/92729970279/join-me-at-gsocial-2-0
 ---
 ![](http://viktorpetersson.com/wp-content/uploads/2012/10/gSocial-NEW.jpg "gSocial")  
 [gSocial](http://gsocialconference.com/) is a conference for Google Apps resellers and ISVs. I attended the event last year, and I was really impressed. I’m back for the conference this year, but I will aslo be giving a talk.

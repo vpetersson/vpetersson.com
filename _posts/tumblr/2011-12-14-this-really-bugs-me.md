@@ -6,7 +6,7 @@ tags:
 - FreeBSD
 - Ghostscript
 - ImageMagick
-permalink: /post/92729951749/this-really-bugs-me
+redirect_from: /post/92729951749/this-really-bugs-me
 ---
 If you’ve ever tried to install [ImageMagick](http://www.imagemagick.org/) on FreeBSD, you’ve probably run into this issue too. You have a head-less box in some datacenter, you don’t want to bloat the machine with X11.
 

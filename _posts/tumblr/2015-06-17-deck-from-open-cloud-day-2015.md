@@ -7,7 +7,7 @@ tags:
 - open source
 - mainframe
 - ubuntu
-permalink: /post/121744724539/deck-from-open-cloud-day-2015
+redirect_from: /post/121744724539/deck-from-open-cloud-day-2015
 ---
 Yesterday I had the pleaseure to speak at [Open Cloud Day](http://www.ch-open.ch/events/aktuelle-events/160615-open-cloud-day-2015/) in Bern, Switzerland.
 

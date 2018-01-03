@@ -6,7 +6,7 @@ tags:
 - security
 - facebook
 - privacy
-permalink: /post/112216940529/thoughts-on-practical-privacy
+redirect_from: /post/112216940529/thoughts-on-practical-privacy
 ---
 Privacy is difficult in this day and age. On the one hand we want to limit what we provide these data hungry companies with and on the other hand, we don’t want to alienate ourselves from our friends.
 

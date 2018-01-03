@@ -6,7 +6,7 @@ tags:
 - Lion
 - Mac App Store
 - Mac OS X
-permalink: /post/92729947889/how-to-upgrade-from-mac-os-x-lion-gm-to-final-release
+redirect_from: /post/92729947889/how-to-upgrade-from-mac-os-x-lion-gm-to-final-release
 ---
 If you ran one of the beta releases of Mac OS X Lion, you probably ran into a problem when trying to upgrade to the [final release](http://itunes.apple.com/us/app/os-x-lion/id444303913?mt=12) of OS X Lion.
 

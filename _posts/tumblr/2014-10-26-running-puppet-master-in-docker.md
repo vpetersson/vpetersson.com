@@ -10,7 +10,7 @@ tags:
 - automation
 - container
 - linux
-permalink: /post/100997217139/running-puppet-master-in-docker
+redirect_from: /post/100997217139/running-puppet-master-in-docker
 ---
 In the past, I’ve relied a lot on Puppet for automation. That means that I have a fair number of Puppet masters at my disposals.
 

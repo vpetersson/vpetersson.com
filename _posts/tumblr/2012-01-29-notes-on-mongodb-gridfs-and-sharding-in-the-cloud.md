@@ -4,7 +4,7 @@ title: Notes on MongoDB, GridFS, sharding  and deploying in the cloud
 date: '2012-01-29T14:24:18+02:00'
 tags:
 - MongoDB
-permalink: /post/92729957389/notes-on-mongodb-gridfs-and-sharding-in-the-cloud
+redirect_from: /post/92729957389/notes-on-mongodb-gridfs-and-sharding-in-the-cloud
 ---
 [We](http://wireload.net)‘ve been using MongoDB in production for about six months with [YippieMove](http://www.yippiemove.com). It’s been an interesting experience and we’ve learned a lot.
 

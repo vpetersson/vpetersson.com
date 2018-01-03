@@ -7,7 +7,7 @@ tags:
 - life-hacks
 - geek
 - shell
-permalink: /post/131808587894/quickly-navigate-folders-in-your-shell-with-ccd
+redirect_from: /post/131808587894/quickly-navigate-folders-in-your-shell-with-ccd
 ---
 I’m a huge fan of [autojump](https://github.com/wting/autojump). It allows me to quickly navigate my filesystem in ways without having to type out every folder.
 

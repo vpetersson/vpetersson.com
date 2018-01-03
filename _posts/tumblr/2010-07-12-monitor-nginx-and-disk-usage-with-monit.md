@@ -7,7 +7,7 @@ tags:
 - Monit
 - Nginx
 - Ubuntu
-permalink: /post/92729917874/monitor-nginx-and-disk-usage-with-monit
+redirect_from: /post/92729917874/monitor-nginx-and-disk-usage-with-monit
 ---
 Yesterday I posted an article on [how to monitor Apache and PostgreSQL with Monit](http://viktorpetersson.com/2010/07/09/setting-up-monit-to-monitor-apache-and-postgresql-on-ubuntu/). After setting that up I was amazed how simple and flexible Monit was, so I moved on with two more tasks: monitor Nginx and disk usage.  
   

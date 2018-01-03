@@ -4,7 +4,7 @@ title: Screenly now has its own website
 date: '2013-01-22T16:52:48+02:00'
 tags:
 - Screenly
-permalink: /post/92729973694/screenly-now-has-its-own-website
+redirect_from: /post/92729973694/screenly-now-has-its-own-website
 ---
 I’m astonished by the amount of traction we’ve been seeing for Screenly. The Open Source-version is growing rapidly in traction, while the wait-list for the Pro-version is growing.
 

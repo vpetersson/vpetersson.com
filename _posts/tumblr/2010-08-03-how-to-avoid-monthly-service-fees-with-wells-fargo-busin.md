@@ -4,7 +4,7 @@ title: How to avoid monthly service fees with Wells Fargo (Business and Personal
 date: '2010-08-03T15:42:59+03:00'
 tags:
 - Wells Fargo
-permalink: /post/92729921194/how-to-avoid-monthly-service-fees-with-wells-fargo-busin
+redirect_from: /post/92729921194/how-to-avoid-monthly-service-fees-with-wells-fargo-busin
 ---
 I will rant a bit about how pathetic the U.S. banks are, so if you don’t want to read about that, jump down to ‘End Rant.’
 
