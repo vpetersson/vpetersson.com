@@ -3,7 +3,7 @@ layout: post
 title: Must-have applications for Mac OS X
 date: '2010-11-13T16:30:13+02:00'
 tags: []
-permalink: /post/92729931884/must-have-applications-for-mac-os-x
+redirect_from: /post/92729931884/must-have-applications-for-mac-os-x
 ---
 We all have our must-have apps. Whenever we re-install our system, these are the first apps we want to get in so that we can get back to business. From time to time we discover new apps that are really mind-blowing and we wonder how we survived without them. For me, 1Password and Visor are two apps like that.  
   

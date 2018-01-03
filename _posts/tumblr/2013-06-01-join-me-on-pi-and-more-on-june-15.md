@@ -5,7 +5,7 @@ date: '2013-06-01T10:29:07+03:00'
 tags:
 - Presentation
 - Raspberry Pi
-permalink: /post/92729975864/join-me-on-pi-and-more-on-june-15
+redirect_from: /post/92729975864/join-me-on-pi-and-more-on-june-15
 ---
 On June 15 I will be speaking at Pi and More in at Trier University in Germany.
 

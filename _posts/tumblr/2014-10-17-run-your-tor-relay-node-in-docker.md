@@ -7,7 +7,7 @@ tags:
 - tor
 - privacy
 - censorship
-permalink: /post/100192280434/run-your-tor-relay-node-in-docker
+redirect_from: /post/100192280434/run-your-tor-relay-node-in-docker
 ---
 [Tor](https://www.torproject.org) is a project that I really love to support. In this age of increased surveillance, Tor is needed more than ever.
 

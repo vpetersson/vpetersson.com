@@ -6,7 +6,7 @@ tags:
 - Grub
 - Lilo
 - Ubuntu
-permalink: /post/92729914274/hello-grub-you-suck
+redirect_from: /post/92729914274/hello-grub-you-suck
 ---
 In the last few weeks I had to set up a few new Linux servers. Since Ubuntu is my preferred Linux dist in recent years, 10.04 LTS was a natural choice.
 

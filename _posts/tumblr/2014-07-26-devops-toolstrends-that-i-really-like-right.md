@@ -10,7 +10,7 @@ tags:
 - fleet
 - etcd
 - systemd
-permalink: /post/92940969784/devops-toolstrends-that-i-really-like-right
+redirect_from: /post/92940969784/devops-toolstrends-that-i-really-like-right
 ---
 *   [**Docker**](https://www.docker.com/) and **Docker Hub** \- It’s awesome and it removes a lot of the complexity from traditional DevOps work. What’s funny is that while doing my migration to Tumblr, I found this [three year blog post](/2017/12/21/2010-08-28-shouldnt-dependencies-on-core-components-be-isolated.html) that pretty much describes Docker. Yes, it’s not too far from FreeBSD’s Jails, but it never had this momentum nor the toolset (which of course is a result of the momentum).
 *   [**CoreOS**](https://coreos.com/), **Etcd**, **Systemd** and **Fleet** \- Once you have started to fully embrace Docker, CoreOS and its components just makes a ton of sense. I really hope that this is where we’re heading. Once you’ve had a taste of `fleetctl`, you’re hooked.

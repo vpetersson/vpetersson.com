@@ -4,7 +4,7 @@ title: Want to learn about SEO?
 date: '2010-02-04T22:42:37+02:00'
 tags:
 - SEO
-permalink: /post/92729910909/want-to-learn-about-seo
+redirect_from: /post/92729910909/want-to-learn-about-seo
 ---
 If you’re new to Search Engine Optimization, or SEO, you might want to take a look at [this](http://www.google.com/webmasters/docs/search-engine-optimization-starter-guide.pdf) brief e-book from Google.
 

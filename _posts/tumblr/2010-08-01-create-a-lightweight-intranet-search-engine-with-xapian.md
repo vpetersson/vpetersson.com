@@ -5,7 +5,7 @@ date: '2010-08-01T23:42:50+03:00'
 tags:
 - FreeBSD
 - Xapian
-permalink: /post/92729920634/create-a-lightweight-intranet-search-engine-with-xapian
+redirect_from: /post/92729920634/create-a-lightweight-intranet-search-engine-with-xapian
 ---
 Recently I had to set up an intranet search engine to crawl trough thousands of PDF files. There are a ton of commercial solutions (read: $$$$) out there on the market, ranging from [Google Search Appliance](http://www.google.com/enterprise/search/gsa.html) to [IBM’s OmniFind](http://omnifind.ibm.yahoo.net/). There are also a few good Open Source engines, such as [Apache’s Lucene](http://lucene.apache.org/java/docs/index.html). The problem is that these are primarily intended for enterprises with server farms full of data. That’s really not what I was looking for. I was looking something simple that was easy to set up and maintain. That’s when I came across [Xapian](http://xapian.org/). It’s Open Source and lightweight. Combine Xapian with [Omega](http://xapian.org/docs/omega/overview.html) and you got exactly what I was looking for — A lightweight intranet search engine.
 

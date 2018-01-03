@@ -6,7 +6,7 @@ tags:
 - Mac OS X
 - NotesToSelf
 - Windows
-permalink: /post/92718706354/installing-windows-7-on-a-macbook-air
+redirect_from: /post/92718706354/installing-windows-7-on-a-macbook-air
 ---
 It’s blasphemy, I know. Why would anyone in their right state of mind do such thing?
 

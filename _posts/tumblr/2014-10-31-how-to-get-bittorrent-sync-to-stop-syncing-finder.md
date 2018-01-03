@@ -7,7 +7,7 @@ tags:
 - backup
 - backup software
 - os x
-permalink: /post/101437364464/how-to-get-bittorrent-sync-to-stop-syncing-finder
+redirect_from: /post/101437364464/how-to-get-bittorrent-sync-to-stop-syncing-finder
 ---
 I really like [BitTorrent Sync](https://www.btsync.com/en/). It’s a great alternative to Dropbox et al, without having to hand over your unencrypted data to a third party.
 

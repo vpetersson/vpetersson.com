@@ -8,7 +8,7 @@ tags:
 - Virtualization
 - VMware
 - Xen
-permalink: /post/92729922304/can-virtualbox-take-on-vmware-for-smbs
+redirect_from: /post/92729922304/can-virtualbox-take-on-vmware-for-smbs
 ---
 My experience with VMware goes way back. I think the first version I ever used was VMware Workstation 4.0 back in ’03. That’s seven years ago. Back then it was really cool as a proof-of-concept, but not very useful as the hardware didn’t have enough power (primarily RAM) to run multiple OS’es simultaneously (or, at least **my** hardware).
 

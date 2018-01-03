@@ -8,7 +8,7 @@ tags:
 - webmaster
 - SEO
 - DevOps
-permalink: /post/115153423414/how-to-parse-and-dump-a-sitemap
+redirect_from: /post/115153423414/how-to-parse-and-dump-a-sitemap
 ---
 When deling with website migrations, you sometimes need to map out the old content such that you can create your redirect to the new pages.
 

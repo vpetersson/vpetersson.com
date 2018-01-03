@@ -7,7 +7,7 @@ tags:
 - CS5
 - Illustrator
 - Photoshop
-permalink: /post/92729932389/how-to-recover-from-random-photoshop-font-crashes
+redirect_from: /post/92729932389/how-to-recover-from-random-photoshop-font-crashes
 ---
 Photoshop and Illustrator are somewhat of required apps today. You realize how much you need these apps when they decide to not play ball. This have happened to me a few times, and it often relate to fonts. Photoshop simply crashes when I bring up the font tool. Given that this is probably one of the most frequently used tools, this is a pretty big deal.
 

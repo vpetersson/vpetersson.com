@@ -6,7 +6,7 @@ tags:
 - DevOps
 - ansible
 - RedHat
-permalink: /post/144617729149/provisioner-ansible-london
+redirect_from: /post/144617729149/provisioner-ansible-london
 ---
 Here’s my deck from tonight’s talk at Ansible London.
 

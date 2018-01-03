@@ -4,7 +4,7 @@ title: Chronicle.IM is almost ready...
 date: '2010-07-17T14:34:22+03:00'
 tags:
 - Chronicle.IM
-permalink: /post/92729918419/chronicle-im-is-almost-ready
+redirect_from: /post/92729918419/chronicle-im-is-almost-ready
 ---
 Last night we rolled out a new version of [Chronicle.IM](http://www.chronicle.im) to the production servers. The product is not quite ready yet, but you can sign up with your email address if you want to be invited to the beta-version. Over the next few weeks we will start letting a few beta-testers in. If everything goes well, we will invite more.
 

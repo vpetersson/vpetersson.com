@@ -7,7 +7,7 @@ tags:
 - Mac OS X
 - SSH
 - Unix
-permalink: /post/92729939439/ssh-tips-how-to-create-ssh-bookmarks
+redirect_from: /post/92729939439/ssh-tips-how-to-create-ssh-bookmarks
 ---
 If you’re like me, you spend a lot of time in the terminal window. It’s not rare that I SSH into 10+ different servers in a day. Having easy-to-remember FQDN’s makes it easier, but sometimes that’s not possible. Sometimes you only have an IP to a server, perhaps the server has a really long FQDN, or perhaps SSH is running on some arbitrary port. That makes your life harder. Luckily there’s an easy fix for it.
 

@@ -5,7 +5,7 @@ date: '2010-10-03T22:52:12+03:00'
 tags:
 - Cyrus
 - FreeBSD
-permalink: /post/92729927834/moving-cyrus-from-a-32bit-to-a-64bit-server
+redirect_from: /post/92729927834/moving-cyrus-from-a-32bit-to-a-64bit-server
 ---
 I’ve you’ve read the past few articles I’ve published, you’ve probably figured out two things:
 

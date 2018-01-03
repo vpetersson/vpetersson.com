@@ -4,7 +4,7 @@ title: Countries and coffee consumption.
 date: '2012-01-28T13:37:22+02:00'
 tags:
 - Coffee
-permalink: /post/92729956159/countries-and-coffee-consumption
+redirect_from: /post/92729956159/countries-and-coffee-consumption
 ---
 I’m a coffee junkie. Like many of my fellow geeks, I consume way more than the average person. On a normal day, I drink somewhere between 5-10 cups perhaps. How much is that in relation to the population at large?
 

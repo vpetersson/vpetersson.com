@@ -8,7 +8,7 @@ tags:
 - ubuntu
 - linux
 - DevOps
-permalink: /post/101707677489/the-dangers-of-ufw-docker
+redirect_from: /post/101707677489/the-dangers-of-ufw-docker
 ---
 In recent years, I’ve transitioned over to using Ubuntu’s [UFW](https://help.ubuntu.com/community/UFW). In most cases, it gets the job done and it is easy to manage via provisioning tools like [Ansible](http://www.ansible.com).
 

@@ -6,7 +6,7 @@ tags:
 - Munin
 - Puppet
 - Ubuntu
-permalink: /post/92729967514/fixing-the-broken-nginx-plugins-in-ubuntu-optional-with
+redirect_from: /post/92729967514/fixing-the-broken-nginx-plugins-in-ubuntu-optional-with
 ---
 I love Munin. It’s a great monitoring tool, quick to set up, and doesn’t come with too many bloated requirements. It’s also very flexible and easy to write plugins for.
 

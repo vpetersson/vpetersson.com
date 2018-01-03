@@ -5,7 +5,7 @@ date: '2012-03-09T11:18:18+02:00'
 tags:
 - ImageMagick
 - Mac OS X
-permalink: /post/92729961269/how-to-quickly-slice-wallpapers-for-dual-screens
+redirect_from: /post/92729961269/how-to-quickly-slice-wallpapers-for-dual-screens
 ---
 In this day and age, many people use multi screens in their setup. I’m one of those people. One thing that really bugs me in OS X however, is that you cannot set one wallpaper to expand beyond one screen.
 

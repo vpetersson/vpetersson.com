@@ -3,7 +3,7 @@ layout: post
 title: Metrics on the big screen
 date: '2015-04-21T17:23:23+03:00'
 tags: []
-permalink: /post/117003117299/metrics-on-the-big-screen
+redirect_from: /post/117003117299/metrics-on-the-big-screen
 ---
 [hosted-graphite](http://blog.hostedgraphite.com/post/117001786117/metrics-on-the-big-screen):
 

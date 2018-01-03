@@ -6,7 +6,7 @@ tags:
 - ansible
 - docker
 - devops
-permalink: /post/148341424869/provisioner
+redirect_from: /post/148341424869/provisioner
 ---
 [Provisioner](https://provisioner.vpetersson.com/)  
 

@@ -4,7 +4,7 @@ title: How to turn in your Mac for repair without downtime.
 date: '2010-11-02T18:09:56+02:00'
 tags:
 - Mac OS X
-permalink: /post/92729930569/how-to-turn-in-your-mac-for-repair-without-downtime
+redirect_from: /post/92729930569/how-to-turn-in-your-mac-for-repair-without-downtime
 ---
 Let’s face it — all computers fail at one time or another. In my experience Apple computers break far less than PCs, and when they fail, Apple provide fast and great repairs. If you live in a country with Apple Stores, it’s even easier. When a PC breaks, you’re usually out of luck. Long hours on hold with some Indian call center awaits you and if you are able to convince them that your broken computer should be covered by the warranty, you are likely to spend weeks, if not months, without your computer.
 

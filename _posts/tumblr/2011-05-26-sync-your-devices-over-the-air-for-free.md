@@ -9,7 +9,7 @@ tags:
 - iOS
 - Mac OS X
 - Sync
-permalink: /post/92729946309/sync-your-devices-over-the-air-for-free
+redirect_from: /post/92729946309/sync-your-devices-over-the-air-for-free
 ---
 I hate wires. I particular hate having to use wires to syncing devices.
 

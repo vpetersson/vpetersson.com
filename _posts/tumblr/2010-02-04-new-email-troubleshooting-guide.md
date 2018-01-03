@@ -6,7 +6,7 @@ tags:
 - IMAP
 - POP3
 - SMTP
-permalink: /post/92729910299/new-email-troubleshooting-guide
+redirect_from: /post/92729910299/new-email-troubleshooting-guide
 ---
 I just published a guide on how to troubleshoot email over at [Email Service Guide](http://www.emailserviceguide.com/email-troubleshooting-guide/). It’s fairly straight forward, but does require a bit of technical skills.
 

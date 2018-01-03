@@ -6,7 +6,7 @@ tags:
 - CARP
 - CloudSigma
 - FreeBSD
-permalink: /post/92729944664/how-to-get-freebsds-carp-working-on-cloudsigma
+redirect_from: /post/92729944664/how-to-get-freebsds-carp-working-on-cloudsigma
 ---
 For a few months now, we’ve been working on migrating our physical architecture for YippieMove over to CloudSigma. We got everything up and running swiftly, with the exception of one thing: CARP.
 

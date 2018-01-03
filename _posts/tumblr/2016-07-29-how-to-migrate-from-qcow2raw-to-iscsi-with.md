@@ -7,7 +7,7 @@ tags:
 - qemu
 - virtualization
 - linux
-permalink: /post/148144459604/how-to-migrate-from-qcow2raw-to-iscsi-with
+redirect_from: /post/148144459604/how-to-migrate-from-qcow2raw-to-iscsi-with
 ---
 I recently had to migrate a number of VMs currently running on an NFS share to an iSCSI target. During my research, I was surprised how little documentation there was around this, so I decided to whip up this quick little piece about how to do it.
 

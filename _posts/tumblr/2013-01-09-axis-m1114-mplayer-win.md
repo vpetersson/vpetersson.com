@@ -5,7 +5,7 @@ date: '2013-01-09T20:53:00+02:00'
 tags:
 - axis
 - ip-cam
-permalink: /post/92729972699/axis-m1114-mplayer-win
+redirect_from: /post/92729972699/axis-m1114-mplayer-win
 ---
 I’m a long-time fan of Axis’ IP cameras. I’ve played with a few other IP cameras too, but I’ve never come across a camera with the performance and stability of Axis’ products.
 

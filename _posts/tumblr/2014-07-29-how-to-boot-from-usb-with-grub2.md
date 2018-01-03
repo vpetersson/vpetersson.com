@@ -8,7 +8,7 @@ tags:
 - usb-boot
 - grub2
 - linux
-permalink: /post/93191892924/how-to-boot-from-usb-with-grub2
+redirect_from: /post/93191892924/how-to-boot-from-usb-with-grub2
 ---
 Yesterday, I had to rescue a broken Ubuntu 14.04 installation by booting from USB. Unfortunately, I was unable to get into the BIOS to change the boot order (because of a BIOS password and a bad memory).
 

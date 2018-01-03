@@ -8,7 +8,7 @@ tags:
 - DevOps
 - shell
 - terminal
-permalink: /post/99041141869/autojump-blazing-fast-filesystem-navigation
+redirect_from: /post/99041141869/autojump-blazing-fast-filesystem-navigation
 ---
 [Autojump: blazing fast filesystem navigation](https://github.com/joelthelion/autojump)  
 

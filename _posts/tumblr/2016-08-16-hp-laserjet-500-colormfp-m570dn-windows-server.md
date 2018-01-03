@@ -6,7 +6,7 @@ tags:
 - Windows
 - note to self
 - printers
-permalink: /post/149023688109/hp-laserjet-500-colormfp-m570dn-windows-server
+redirect_from: /post/149023688109/hp-laserjet-500-colormfp-m570dn-windows-server
 ---
 (I try hard to stay away from Windows environments, but sometimes it’s unavoidable.)
 

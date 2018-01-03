@@ -6,7 +6,7 @@ tags:
 - Encryption
 - Mac OS X
 - Security
-permalink: /post/92729945174/how-to-travel-safely-with-your-computer
+redirect_from: /post/92729945174/how-to-travel-safely-with-your-computer
 ---
 Regardless if we travel in business or on a vacation, we tend to bring our computer with us (at least I do). Common sense tells us to not check in our computer, but there are other things that we really ought to do.
 

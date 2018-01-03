@@ -9,7 +9,7 @@ tags:
 - QEMU
 - VirtIO
 - Virtualization
-permalink: /post/92729951304/how-to-use-virtio-on-freebsd-8-2
+redirect_from: /post/92729951304/how-to-use-virtio-on-freebsd-8-2
 ---
 In the past few years, virtualization has been the big topic everybody keeps talking about. There are good reasons for that, but one thing that really annoys me as a hardcore FreeBSD-fan is how poorly FreeBSD performs virtualized.
 

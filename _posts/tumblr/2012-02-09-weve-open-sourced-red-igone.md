@@ -4,7 +4,7 @@ title: The story of Devify and Red iGone
 date: '2012-02-09T11:38:19+02:00'
 tags:
 - Red iGone
-permalink: /post/92729958914/weve-open-sourced-red-igone
+redirect_from: /post/92729958914/weve-open-sourced-red-igone
 ---
 About two years ago I started working on a project called [Red iGone](http://www.redigone.com) together with a [friend](http://stefan.blomqwist.com/) and we started the company [Devify](http://devify.com/). The objective of the first project was simple — we wanted to make it easy to remove red eyes from photos. We didn’t see any good solution in the market place that was both fast and easy to use. Red iGone was born as a web-app and it did pretty well for itself. We got coverage from some semi-big blogs and traffic picked up.
 

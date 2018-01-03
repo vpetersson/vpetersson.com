@@ -8,7 +8,7 @@ tags:
 - coreos
 - linux
 - DevOps
-permalink: /post/101267106239/an-introduction-to-server-provisioning-with
+redirect_from: /post/101267106239/an-introduction-to-server-provisioning-with
 ---
 [» An introduction to server provisioning with CloudInit](https://www.cloudsigma.com/2014/10/29/an-introduction-to-server-provisioning-with-cloudinit/)  
 

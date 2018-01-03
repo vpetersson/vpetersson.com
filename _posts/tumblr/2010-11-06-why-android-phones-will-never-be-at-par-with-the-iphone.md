@@ -6,7 +6,7 @@ tags:
 - Android
 - iOS
 - iPhone
-permalink: /post/92729931394/why-android-phones-will-never-be-at-par-with-the-iphone
+redirect_from: /post/92729931394/why-android-phones-will-never-be-at-par-with-the-iphone
 ---
 Yesterday I read an article titled “[Why Apple can’t beat Android](http://venturebeat.com/2010/11/05/why-apple-cant-beat-android/)” over at VentureBeat. It was an interesting read, and Mr. Grim argued in the article that Android is here to stay, and that Android will soon dominate the smartphone market. I do not disagree with Mr. Grim. It makes a whole lot of sense. In the opening of the article, Mr. Grim states that Windows is ‘Big, ugly, buggy, clunky, and everywhere.’ I think that’s spot on, and I also think this is where Android is heading.
 

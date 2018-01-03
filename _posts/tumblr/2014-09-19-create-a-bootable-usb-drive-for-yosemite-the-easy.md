@@ -8,8 +8,7 @@ tags:
 - '10.10'
 - usb-boot
 - mac os x
-permalink: /post/97840863794/create-a-bootable-usb-drive-for-yosemite-the-easy
-redirect_from: "/2017/12/21/2014-09-19-create-a-bootable-usb-drive-for-yosemite-the-easy.html"
+redirect_from: /post/97840863794/create-a-bootable-usb-drive-for-yosemite-the-easy
 ---
 Today I decided to take Yosemite for a spin on my old laptop.
 

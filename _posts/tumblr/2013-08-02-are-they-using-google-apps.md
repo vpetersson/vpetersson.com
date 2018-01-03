@@ -7,7 +7,7 @@ tags:
 - Google Apps
 - Google Hangout
 - UberConference
-permalink: /post/92719088149/are-they-using-google-apps
+redirect_from: /post/92719088149/are-they-using-google-apps
 ---
 ![Are they using Google Apps?](http://viktorpetersson.com/wp-content/uploads/2013/08/are_they_using_google_apps-600x298.png)
 
