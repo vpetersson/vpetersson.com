@@ -7,7 +7,7 @@ tags:
 - mac os x
 redirect_from: /post/136535061619/how-to-fix-kerneltask-cpu-usage-on-el-capitan
 ---
-Sometime ago, I wrote the blog post [How to fix kernel_task CPU usage on Yosemite](/2017/12/21/2014-10-16-how-to-fix-kerneltask-cpu-usage-on-yosemite.html). This post still receives a great amount of traction, so I wanted to post an update that reflects the covers how to do this on El Capitan.
+Sometime ago, I wrote the blog post [How to fix kernel_task CPU usage on Yosemite](/2014/10/16/how-to-fix-kerneltask-cpu-usage-on-yosemite.html). This post still receives a great amount of traction, so I wanted to post an update that reflects the covers how to do this on El Capitan.
 
 The process is largely the same, but requires a bit more work due to the changes to the additional security that El Capitan introduced to the file system with System Integration Protection (SIP).
 
@@ -33,7 +33,7 @@ That will disable SIP. In order for this to work, you now need to reboot your co
 Step 2: Fix the issue
 =====================
 
-Once your computer is booted, stara Terminal session and run the following commands (for more information, see the [original post](/2017/12/21/2014-10-16-how-to-fix-kerneltask-cpu-usage-on-yosemite.html):
+Once your computer is booted, stara Terminal session and run the following commands (for more information, see the [original post](/2014/10/16/how-to-fix-kerneltask-cpu-usage-on-yosemite.html):
 
     # Find the model
     $ system_profiler -detailLevel mini | grep "Model Identifier:"
@@ -56,4 +56,4 @@ Boot the computer in Recover Mode again by pressing Command + R on boot. Again, 
 
 Now reboot your computer and you should be all set.
 
-**Update:** If you’re having issues with mac OS Sierra, please [How to fix kernel_task CPU usage on macOS Sierra](/2017/12/21/2016-10-01-how-to-fix-kerneltask-cpu-usage-on-macos-sierra.html)
+**Update:** If you’re having issues with mac OS Sierra, please [How to fix kernel_task CPU usage on macOS Sierra](/2016/10/01/how-to-fix-kerneltask-cpu-usage-on-macos-sierra.html)

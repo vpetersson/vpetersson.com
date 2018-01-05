@@ -8,7 +8,7 @@ redirect_from: /post/92729957389/notes-on-mongodb-gridfs-and-sharding-in-the-clo
 ---
 [We](http://wireload.net)‘ve been using MongoDB in production for about six months with [YippieMove](http://www.yippiemove.com). It’s been an interesting experience and we’ve learned a lot.
 
-Contrary to many MongoDB deployments, we primarily use it for storing files in GridFS. We switched over to MongoDB after searching for a good distributed file system for years. Prior to MongoDB we used a regular NFS share, sitting on top of a [HAST](/2010/09/27/setting-up-a-redundant-nas-with-hast-with-carp/)-device. That worked great, but it didn’t allow us to scale horizontally the way a distributed file system allows.
+Contrary to many MongoDB deployments, we primarily use it for storing files in GridFS. We switched over to MongoDB after searching for a good distributed file system for years. Prior to MongoDB we used a regular NFS share, sitting on top of a [HAST](/2010/09/27/setting-up-a-redundant-nas-with-hast-with-carp.html)-device. That worked great, but it didn’t allow us to scale horizontally the way a distributed file system allows.
 
 Enter MongoDB. Just like most people playing around with MongoDB, we started out with a simple [Replica Set](http://www.mongodb.org/display/DOCS/Replica+Sets), but are now in the process of switching to a sharded setup.
 
