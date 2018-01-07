@@ -17,7 +17,7 @@ Sounds familiar? I’ve had a few of these, and today I finally had enough and d
 
 Here are the steps I took to migrate two of our old WordPress sites to static files.
 
-(Also take a look at my other post [How to migrate from WordPress to Tumblr](/2017/12/21/2014-07-24-how-to-migrate-from-wordpress-to-tumblr.html))
+(Also take a look at my other post [How to migrate from WordPress to Tumblr](/2014/07/24/how-to-migrate-from-wordpress-to-tumblr.html))
 
 Backup the files and database
 -----------------------------

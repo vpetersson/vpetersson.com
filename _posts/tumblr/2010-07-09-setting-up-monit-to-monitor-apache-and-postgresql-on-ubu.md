@@ -133,4 +133,4 @@ That should kill Apache. Monit should be able to detect that and fire it back up
 
 That’s it. Good luck!
 
-**Update:** I decided to extend this guide and wrote another article on [how to monitor Nginx and disk-usage](http://viktorpetersson.com/2010/07/12/monitor-nginx-and-disk-usage-with-monit/) with Monit.
+**Update:** I decided to extend this guide and wrote another article on [how to monitor Nginx and disk-usage](/2010/07/12/monitor-nginx-and-disk-usage-with-monit.html) with Monit.

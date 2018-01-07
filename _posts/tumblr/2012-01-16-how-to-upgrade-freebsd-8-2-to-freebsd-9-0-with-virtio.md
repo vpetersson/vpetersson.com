@@ -10,11 +10,11 @@ tags:
 - Virtualization
 redirect_from: /post/92729954479/how-to-upgrade-freebsd-8-2-to-freebsd-9-0-with-virtio
 ---
-Some time ago, I wrote about [how to use Virtio with FreeBSD 8.2](/2011/10/20/how-to-use-virtio-on-freebsd-8-2/). As I pointed out in the article, the performance was not nearly as good in FreeBSD 8.2 as it was in 9.0-RC1. Hence I wanted to get all my nodes over to 9.0 as soon as possible to take use of the massive boost in I/O performance.
+Some time ago, I wrote about [how to use Virtio with FreeBSD 8.2](/2011/10/20/how-to-use-virtio-on-freebsd-8-2.html). As I pointed out in the article, the performance was not nearly as good in FreeBSD 8.2 as it was in 9.0-RC1. Hence I wanted to get all my nodes over to 9.0 as soon as possible to take use of the massive boost in I/O performance.
 
 In this article I will walk you through the process of updating an existing system from FreeBSD 8.2 (without Virtio) to 9.0 with Virtio.
 
-If you’re just curious on how to get Virtio working on a fresh FreeBSD 9.0 installation, skip to [Step 2](#virtio).  
+If you’re just curious on how to get Virtio working on a fresh FreeBSD 9.0 installation, skip to [Step 2](#virtio).
 
 Step 1: The upgrade
 -------------------
@@ -68,6 +68,8 @@ I added the ‘p’-flag, as this allows you to run ‘portupgrade -afP’ on ot
 Finally, when you’ve done this, you can run (for the last time):
 
     freebsd-update install
+
+<a id="virtio"></a>
 
 Step 2: Installing Virtio
 -------------------------

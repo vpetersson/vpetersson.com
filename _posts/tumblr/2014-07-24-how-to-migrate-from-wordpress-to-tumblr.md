@@ -19,7 +19,7 @@ Before you ask why on earth I’d do this, let me just sum it up in a few bullet
 
 Now, you’re likely reading this post because you’re interested in the subject at hand, so let’s dive into it.
 
-(You may also find my article [How to deal with/archive an old WordPress site](/post/104338402244/how-to-deal-with-archive-an-old-wordpress-site) interesting)
+(You may also find my article [How to deal with/archive an old WordPress site](/2014/12/04/how-to-deal-witharchive-an-old-wordpress-site.html) interesting)
 
 Yet, before we start, there are a few pre-requisites for this to work:
 

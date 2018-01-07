@@ -35,4 +35,4 @@ This allowed me to install Yosemite just fine. Afterwards I could install Ubuntu
 
 To switch between the OS’s, I simply hold down the option key on boot.
 
-The only drawback with this approach as far as I can tell is that you lose the OS X recovery partition. For me however, that’s not a big deal, as I can always boot it off of a USB drive or SD card. A guide on how to create such device can be found [here](/2017/12/21/2014-09-19-create-a-bootable-usb-drive-for-yosemite-the-easy.html-way).
+The only drawback with this approach as far as I can tell is that you lose the OS X recovery partition. For me however, that’s not a big deal, as I can always boot it off of a USB drive or SD card. A guide on how to create such device can be found [here](/2014/09/18/create-a-bootable-usb-drive-for-yosemite-the-easy.html).

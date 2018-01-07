@@ -10,7 +10,7 @@ redirect_from: /post/100148585299/how-to-fix-kerneltask-cpu-usage-on-yosemite
 ---
 Yesterday I had to hand in my almost new MacBook Pro (Retina) for repair due to a broken logic board. This meant that I had to go back to my old laptop for a little bit.
 
-In preparation for this, I dusted off my old MacBook Pro this weekend so that I would have something from in the meantime. Since it was due for an upgrade, I decided to [install the Yosemite beta](/2017/12/21/2014-10-05-how-to-install-yosemite-and-ubuntu-linux.html-side-by-side) on it just to give it a try. After getting everything up and running, I did however notice that the laptop was rather unresponsive and sluggish.
+In preparation for this, I dusted off my old MacBook Pro this weekend so that I would have something from in the meantime. Since it was due for an upgrade, I decided to [install the Yosemite beta](/2014/10/05/how-to-install-yosemite-and-ubuntu-linux.html) on it just to give it a try. After getting everything up and running, I did however notice that the laptop was rather unresponsive and sluggish.
 
 After further analysis, I noticed that it was something odd with the `kernel_task` process hogging up resources, pegging the CPU at maximum utilization.
 
@@ -41,4 +41,4 @@ Please note that **this is risky business** and there might be side-effects. It 
 
 **Update:** After about a week, I can confirm that this had no negative impact at all as far as I can tell. Battery life and performance was improved.
 
-**Update 2:** Since El Capitan was released, a lot of people have been having issues applying this fix. Since it is a bit different, I’ve published a new post that covers how to do this on El Capitan: [How to fix kernel_task CPU usage on El Capitan](/2017/12/21/2016-01-03-how-to-fix-kerneltask-cpu-usage-on-el-capitan.html).
+**Update 2:** Since El Capitan was released, a lot of people have been having issues applying this fix. Since it is a bit different, I’ve published a new post that covers how to do this on El Capitan: [How to fix kernel_task CPU usage on El Capitan](/2016/01/03/how-to-fix-kerneltask-cpu-usage-on-el-capitan.html).
