@@ -17,4 +17,4 @@ Luckily, the same fix that I wrote about [El Capitan](/2016/01/03/how-to-fix-ker
 
 The only issue I had was that my system didn’t boot properly into recovery mode. Instead, I had to utilize a USB stick with the macOS Sierra installer on to be able to turn off System Integration Protection (SIP).
 
-If you run into the same problem, you can find the instructions for creating a bootable USB stick in my article [Create a bootable USB drive for Yosemite the easy way](/2014/09/19/create-a-bootable-usb-drive-for-yosemite-the-easy.html). You will of course have to replace “Install OS X Yosemite Developer Preview.app” with “Install mac OS Sierra.app”.
+If you run into the same problem, you can find the instructions for creating a bootable USB stick in my article [Create a bootable USB drive for Yosemite the easy way](/2014/09/18/create-a-bootable-usb-drive-for-yosemite-the-easy.html). You will of course have to replace “Install OS X Yosemite Developer Preview.app” with “Install mac OS Sierra.app”.
