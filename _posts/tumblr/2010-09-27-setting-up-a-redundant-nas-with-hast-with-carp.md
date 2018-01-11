@@ -9,7 +9,9 @@ tags:
 - NAS
 - NFS
 - Samba
-redirect_from: /post/92729925214/setting-up-a-redundant-nas-with-hast-with-carp
+redirect_from:
+- /post/92729925214/setting-up-a-redundant-nas-with-hast-with-carp
+- /2010/09/27/setting-up-a-redundant-nas-with-hast-with-carp/
 ---
 One of the coolest new features in FreeBSD is [HAST](http://wiki.freebsd.org/HAST) (Highly Available Storage). In simple terms, it can be described as RAID1 (mirror) over TCP/IP (similar to DRBD on Linux, but native). You can simply have two physical nodes replicate data over the network. If you throw in [CARP](http://www.freebsd.org/doc/handbook/carp.html) (Common Address Redundancy Protocol) to the mix, you can create a very robust storage system on commodity hardware with automatic failover.
 
@@ -46,7 +48,7 @@ Configure the kernel. In this case we use an AMD64 CPU, but you can replace that
 
 	cd /usr/src/sys/amd64/conf
 	mkdir /root/kernels/
-	cp GENERIC /root/kernels/MYKERNEL   
+	cp GENERIC /root/kernels/MYKERNEL
 	ln -s /root/kernels/MYKERNEL
 	joe MYKERNEL
 
@@ -96,8 +98,8 @@ And run:
 if you run ‘ifconfig carp0′ on either node, you will see if it is the primary or secondary node. Here’s from my secondary node.
 
 	carp0: flags=49 metric 0 mtu 1500
-	inet 192.168.10.10 netmask 0xffff0000 
-	carp: BACKUP vhid 1 advbase 1 advskew 20 
+	inet 192.168.10.10 netmask 0xffff0000
+	carp: BACKUP vhid 1 advbase 1 advskew 20
 
 You should also be able to ping 192.168.10.10 from a different host and have the primary node respond to the ping. If you restart the primary node, the secondary node should automatically be promoted to the primary node (eg. you can ping 192.168.10.10 from a different host and only lose one or two packages when you reboot the primary node).
 

@@ -7,7 +7,9 @@ tags:
 - DevOps
 - html
 - migration
-redirect_from: /post/104338402244/how-to-deal-witharchive-an-old-wordpress-site
+redirect_from:
+- /post/104338402244/how-to-deal-witharchive-an-old-wordpress-site
+- /post/104338402244/how-to-deal-with-archive-an-old-wordpress-site
 ---
 We all have those old blogs that we started some time ago with some grandiose vision. Unfortunately, the blog never really took off. Now it just sits there and generate a small amount of traffic every day. It’s enough to not shut it down, but not enough to invest a whole lot more resources into.
 
@@ -65,7 +67,7 @@ On the same server, I simply created a new folder and ran:
     $ cd static.my-wordpress-blog.com
     $ wget --mirror -nH -k -E http://www.my-wordpress-blog.com
     $ wget http://www.my-wordpress-blog.com/sitemap.xml
-    
+
 
 This will take some time. When done, you should have a complete static copy of your WordPress installation.
 

@@ -6,7 +6,9 @@ tags:
 - mac os x
 - yosemite
 - os x
-redirect_from: /post/100148585299/how-to-fix-kerneltask-cpu-usage-on-yosemite
+redirect_from:
+- /post/100148585299/how-to-fix-kerneltask-cpu-usage-on-yosemite
+- /2017/12/21/2014-10-16-how-to-fix-kerneltask-cpu-usage-on-yosemite.html
 ---
 Yesterday I had to hand in my almost new MacBook Pro (Retina) for repair due to a broken logic board. This meant that I had to go back to my old laptop for a little bit.
 
