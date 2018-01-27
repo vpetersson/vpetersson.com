@@ -13,11 +13,11 @@ tags:
 
 Many, many years ago, I used to be an avid user FreeBSD jails. They a great way to isolate services and boost security in the pre-Docker world. While I can't say I use FreeBSD much these days, I still run [pfSense](https://www.pfsense.org/) on more or less all my firewalls. It's easy to use, secure, and perhaps most importantly, very stable.
 
-Since pfSense is based on FreeBSD, its possible to run jails. I wouldn't encourage using this to run business critical applications, but I use it to run some minor non-external, non-essential services.
+Since pfSense is based on FreeBSD, its possible to run jails on it. I wouldn't encourage using this to run business critical applications, but I use it to run some minor non-external, non-essential services.
 
 In this tutorial, I will walk you through how to go from zero to jails on pfSense 2.4. We will also be using [ezjail](https://erdgeist.org/arts/software/ezjail) to simplify the management of the jails.
 
-## Creating a dedicated IP for the jail
+## Create a dedicated IP for the jail
 
 The first thing we need to do is to create a dedicated virtual IP for each jail. This is fairly straight forward in pfSense. Go to Firewall -> Virtual IPs and press 'Add.'
 
@@ -26,7 +26,7 @@ The first thing we need to do is to create a dedicated virtual IP for each jail.
 I would suggest that you only use the localhost interface, as I'm not sure what the security implications would be if you're exposing it to a WAN/LAN interface. I would also discourage from exposing any services in the jail. The reason for this is that if the service somehow gets compromised, the attacker would have free flow to all your network interfaces. It might be possible to mitigate this with firewall rules, but consider yourself warned.
 
 
-## Preparing the system
+## Prepare the system
 
 With the virtual IP(s) created, it's now time to prepare the server. Start by SSH'ing into the box and run the following commands.
 
@@ -63,7 +63,9 @@ $ ezjail-admin create labjail.local 'lo0|127.0.1.10'
 We also need to fix a bug in the configuration for it to work:
 
 ```
-$ sed -I -e 's/procfs_enable=\"YES\"/procfs_enable=\"NO\"/g' /usr/local/etc/ezjail/labjail_local
+$ sed -I \
+    -e 's/procfs_enable=\"YES\"/procfs_enable=\"NO\"/g' \
+    /usr/local/etc/ezjail/labjail_local
 ```
 
 We can now start the jail by running:
