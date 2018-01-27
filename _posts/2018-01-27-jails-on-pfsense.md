@@ -11,7 +11,7 @@ tags:
 
 **Disclosure:** *I have no idea how this impact the security of pfSense. There is probably a good reason why the jail service is disabled by default. Hence, beware that this might cause unexpected security issues as it is not a supported package.*
 
-Many, many years ago, I used to be an avid user FreeBSD jails. They a great way to isolate services and boost security in the pre-Docker world. While I can't say I use FreeBSD much these days, I still run [pfSense](https://www.pfsense.org/) on more or less all my firewalls. It's easy to use, secure, and perhaps most importantly, very stable.
+Many, many years ago, I used to be an avid user FreeBSD jails. They were a great way to isolate services and boost security in the pre-Docker world. While I can't say I use FreeBSD much these days, I still run [pfSense](https://www.pfsense.org/) on more or less all my firewalls. It's easy to use, secure, and perhaps most importantly, very stable.
 
 Since pfSense is based on FreeBSD, its possible to run jails on it. I wouldn't encourage using this to run business critical applications, but I use it to run some minor non-external, non-essential services.
 
