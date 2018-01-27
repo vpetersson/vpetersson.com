@@ -6,6 +6,7 @@ tags:
 - pfsense
 - freebsd
 - devops
+- jails
 ---
 
 **Disclosure:** *I have no idea how this impact the security of pfSense. There is probably a good reason why the jail service is disabled by default. Hence, beware that this might cause unexpected security issues as it is not a supported package.*
