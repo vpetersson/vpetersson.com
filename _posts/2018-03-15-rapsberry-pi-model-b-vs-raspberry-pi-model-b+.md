@@ -18,7 +18,7 @@ Today I got my hands on the new Raspberry Pi 3 Model B+. One of the most notable
 
 For the test, I used the classic network testing tool`iperf`. 
 
-So how did it go? Turns out that it is almost three times as fast.
+So how did it go? Turns out that it is almost three times as fast. It is nowhere near full Gigabit speed, but it still a nice performance improvement.
 
 ![](/assets/pi3-vs-pi3+.png)
 
