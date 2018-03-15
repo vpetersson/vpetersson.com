@@ -126,3 +126,8 @@ If however for some reason you only want to expose one VLAN to a given VM as an 
 ## Final notes
 
 This should hopefully help you get started with Open vSwitch. It's a big topic, so there's plenty to learn and this article by no means intends to cover it all. I would also encourage you again to take a look at SoulChild's great write-up on the [pfSense forum](https://forum.pfsense.org/index.php?topic=139045.0) if you're having any issues.
+
+
+## Update
+
+I have since posting this article moved to [Proxmox](https://www.proxmox.com/en/). While it doesn't support all OpenvSwitch features (such as trunking multiple VLANs on a single NIC to a VM), it is still worth it with the nice user interface and turn-key setup.
