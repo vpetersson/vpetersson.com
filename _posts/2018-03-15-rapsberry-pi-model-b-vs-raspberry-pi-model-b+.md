@@ -16,7 +16,7 @@ Today I got my hands on the new Raspberry Pi 3 Model B+. One of the most notable
  * One Gigabit switch
  * A Linux box to perform the test from (wired to the network)
 
-For the test, I used the classic network testing tool`iperf`. 
+For the test, I used the classic network testing tool `iperf`. 
 
 So how did it go? Turns out that it is almost three times as fast. It is nowhere near full Gigabit speed, but it is still a nice performance improvement.
 
