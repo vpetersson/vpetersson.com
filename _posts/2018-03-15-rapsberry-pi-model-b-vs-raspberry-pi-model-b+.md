@@ -1,6 +1,6 @@
 ---
 layout: post
-title: network performance: Raspberry Pi 3 Model B vs Raspberry Pi 3 Model B+
+title: Network Performance - Raspberry Pi 3 Model B vs Raspberry Pi 3 Model B+
 date: '2018-03-15T13:00:00+01:00'
 tags:
 - raspberry-pi
