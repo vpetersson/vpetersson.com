@@ -22,4 +22,4 @@ So how did it go? Turns out that it is almost three times as fast.
 
 ![](/assets/pi3-vs-pi3+.png)
 
-You can find the raw numbers [here]((https://gist.github.com/vpetersson/d6daa360bb207142faf6c555ff84b17f).
+You can find the raw numbers [here](https://gist.github.com/vpetersson/d6daa360bb207142faf6c555ff84b17f).
