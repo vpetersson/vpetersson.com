@@ -61,7 +61,7 @@ permalink: /media/
   </ul>
   <h1>Panel and speaking engagements</h1>
   <ul>
-    <li>Talk - Container Camp (2018), Melbourne, Australia (<a href="https://docs.google.com/presentation/d/1E1ZzkMmytOoW-aLkWlJzFT1MYLWE2RyAv0qOjQkxDt8/edit?usp=sharing">deck</a>)</li>
+    <li>Talk - Container Camp (2018), Melbourne, Australia ([deck](https://docs.google.com/presentation/d/1E1ZzkMmytOoW-aLkWlJzFT1MYLWE2RyAv0qOjQkxDt8/edit?usp=sharing"], [video](https://www.youtube.com/watch?v=PmWYTjr_Xso))</li>
     <li>Talk - Ansible London (2016), London, United Kingdom (<a href="http://t.umblr.com/redirect?z=https%3A%2F%2Fspeakerdeck.com%2Fvpetersson%2Fprovisioner-at-ansible-london&amp;t=OGMxYzFkYmZkN2Y2YjRlZmJiNTE5OTNjODA0N2VkY2JkYTE4MDU1OCxUbU4zdWpESg%3D%3D&amp;p=&amp;m=0">deck</a>)</li>
     <li>Panel - CloudExpo Europe (2016), London, UK</li>
     <li>Talk - IoT London (2016), London, United Kingdom (<a href="http://t.umblr.com/redirect?z=https%3A%2F%2Fspeakerdeck.com%2Fvpetersson%2Fscreenly-at-iot-london&amp;t=MDYzNzZmYTEyNzYwYzMxMWQwODZkMjY3ODNlY2E4NDE2MTJmOTFkYixUbU4zdWpESg%3D%3D&amp;p=&amp;m=0">deck</a>)</li>
