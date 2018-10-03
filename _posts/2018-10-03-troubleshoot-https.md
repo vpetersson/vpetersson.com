@@ -30,7 +30,7 @@ Assuming that still doesn't work, we may need to take a closer look at the SSL c
 
 ```
 $ openssl s_client \
-    -connect a.b.c.d:443
+    -connect a.b.c.d:443 \
     -servername some.domain.com \
     -showcerts
 [...]
