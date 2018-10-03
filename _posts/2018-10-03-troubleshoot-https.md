@@ -13,7 +13,7 @@ Troubleshooting an HTTPS connection can be somewhat challenging at times (in par
 
 Today, I had to troubleshoot a Kubernetes (Nginx) Ingress controller that was acting up for [Screenly](https://www.screenly.io). Having done this on more than one occasion, I decided to create a public Note-to-Self in order to avoid having to Google for the exact syntax in the future.
 
-For this task, my weapons of choice is `curl` and `openssl`.
+For this task, my weapons of choice are `curl` and `openssl`.
 
 The key we want to accomplish is to be able to explicitly specify the IP address to the load balancer in order to rule out any possible DNS issue.
 
