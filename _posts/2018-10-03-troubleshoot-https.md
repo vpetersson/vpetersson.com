@@ -39,3 +39,12 @@ $ openssl s_client \
 We do the same thing as we did with `curl`. By explicitly specifying the IP to the load balancer, as well as the domain that we are troubleshooting, we're able to get the load balancer to serve us the desired certificate.
 
 Some readers may be quick to point out that you can accomplish the same by altering your `/etc/hosts` file. This is correct, but IMHO this is a cleaner approach.
+
+
+**UPDATE:** It has come to my attention that recent versions of `curl` added the `--resolve` functionality. This removes the need for altering `/etc/hosts`. As such, we can now run:
+
+```
+$ curl -I \
+    --resolve 'some.domain.com:443:a.b.c.d' \
+    https://a.b.c.d
+```
