@@ -50,7 +50,7 @@ permalink: /media/
     <li>Panel - CloudExpo Europe (2015), London, UK</li>
     <li>Talk - Zadara Summit (2014), Las Vegas, NV (<a href="https://speakerdeck.com/vpetersson/cloudsigma-zadara-summit">deck</a>)</li>
     <li>Talk - Pi And More 3 (2013), Trier, Germany (<a href="https://speakerdeck.com/vpetersson/screenly-at-pi-and-more-3">deck</a>)</li>
-    <li>Talk - gSocial 2 (2013), Sunnyvale, CA (<a href=https://speakerdeck.com/vpetersson/email-migration-best-practices">deck</a>)</li>
+    <li>Talk - gSocial 2 (2013), Sunnyvale, CA (<a href="https://speakerdeck.com/vpetersson/email-migration-best-practices">deck</a>)</li>
     <li>Talk - NoSQL Road Show (2012), Basel, Switzerland (<a href="https://speakerdeck.com/vpetersson/mongodbs-replica-sets-painless-scaling-and-high-availability-ha">deck</a>)</li>
   </ul>
 </div>
