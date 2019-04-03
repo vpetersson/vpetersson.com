@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Media, Press and Conferences
+title: Media and Conferences
 permalink: /media/
 ---
 <div class="copy">
@@ -19,7 +19,7 @@ permalink: /media/
     <li>Juku.beats - <a href="http://t.umblr.com/redirect?z=http%3A%2F%2Fjukubeats.podbean.com%2Fe%2Finterview-with-viktor-petersson-vp-of-business-development-cloud-sigma%2F&amp;t=MWU5YTJmMzMwNTZjZmZiMTllM2ZlNDUzMTY3MjU4ODAyMTBkY2E2MSxUbU4zdWpESg%3D%3D&amp;p=&amp;m=0">Interview with Viktor Petersson (VP of Business Development, CloudSigma)</a>
     </li>
   </ul>
-  <h2>At WireLoad</h2>
+  <h2>At WireLoad (YippieMove/Blotter/Screenly)</h2>
   <ul>
     <li>TechCrunch - <a href="http://t.umblr.com/redirect?z=http%3A%2F%2Ftechcrunch.com%2F2012%2F02%2F07%2Fyippiemove-wants-to-become-the-twilio-of-email-migration%2F&amp;t=ZGI1YzA0MzViMDY5ODY1ZTc0OWZjODliODQyYzQ1YzUxODYyNjI5MixUbU4zdWpESg%3D%3D&amp;p=&amp;m=0">YippieMove Wants To Become The Twilio Of Email Migration</a>
     </li>
@@ -61,7 +61,7 @@ permalink: /media/
   </ul>
   <h1>Panel and speaking engagements</h1>
   <ul>
-    <li>Talk - Open Source Summit North America (2018), Vancouver, Canada (<a href="https://events.linuxfoundation.org/wp-content/uploads/2017/11/The-S-in-IoT-Stands-for-Security-Viktor-Petersson-Screenly-Andrew-Martin-Control-Plane.pdf">)</li>
+    <li>Talk - Open Source Summit North America (2018), Vancouver, Canada (<a href="https://events.linuxfoundation.org/wp-content/uploads/2017/11/The-S-in-IoT-Stands-for-Security-Viktor-Petersson-Screenly-Andrew-Martin-Control-Plane.pdf">deck</a>)</li>
     <li>Talk - Container Camp (2018), Melbourne, Australia (<a href="https://docs.google.com/presentation/d/1E1ZzkMmytOoW-aLkWlJzFT1MYLWE2RyAv0qOjQkxDt8/edit?usp=sharing">deck</a>, <a href="https://www.youtube.com/watch?v=PmWYTjr_Xso">video</a>)</li>
     <li>Talk - Ansible London (2016), London, United Kingdom (<a href="http://t.umblr.com/redirect?z=https%3A%2F%2Fspeakerdeck.com%2Fvpetersson%2Fprovisioner-at-ansible-london&amp;t=OGMxYzFkYmZkN2Y2YjRlZmJiNTE5OTNjODA0N2VkY2JkYTE4MDU1OCxUbU4zdWpESg%3D%3D&amp;p=&amp;m=0">deck</a>)</li>
     <li>Panel - CloudExpo Europe (2016), London, UK</li>

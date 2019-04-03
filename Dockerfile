@@ -10,4 +10,4 @@ ADD Gemfile.lock /usr/src/app
 RUN gem install bundle && \
     bundle && \
     bundle install
-CMD jekyll serve --host 0.0.0.0
+CMD jekyll serve --host 0.0.0.0 --incremental
