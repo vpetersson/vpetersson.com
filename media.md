@@ -16,7 +16,7 @@ permalink: /media/
   <h2>At WireLoad (YippieMove/Blotter/Screenly)</h2>
   <ul>
     <li>TechCrunch - <a href="https://techcrunch.com/2012/02/07/yippiemove-wants-to-become-the-twilio-of-email-migration/">YippieMove Wants To Become The Twilio Of Email Migration</a></li>
-    <li>CNET - <a href="https://www.cnet.com/news/yippie-move-migrates-all-your-e-mail-for-ten-bucks/"">Yippie Move migrates all your e-mail for ten bucks</a></li>
+    <li>CNET - <a href="https://www.cnet.com/news/yippie-move-migrates-all-your-e-mail-for-ten-bucks/">Yippie Move migrates all your e-mail for ten bucks</a></li>
     <li>GigaOM - <a href="https://gigaom.com/2008/08/14/yippiemove-email-portability/">YippieMove Offers Email Portability</a></li>
     <li>NyTeknik - <a href="https://www.nyteknik.se/digitalisering/flyttgubbe-pa-natet-for-over-din-e-post-6408650">Flyttgubbe på nätet för över din e-post</a> [Swedish]</li>
     <li>Sixteen:Nine - <a href="https://www.sixteen-nine.net/2014/03/24/screenly-qa-optimization-crucial-raspberry-pi-digital-signage/">Screenly Q&amp;A: Optimization Crucial For Raspberry Pi Digital Signage</a></li>
