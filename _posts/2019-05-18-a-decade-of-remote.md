@@ -6,13 +6,14 @@ tags:
 - startups
 - remote-work
 - productivity
+- digital-nomad
 ---
 
 While still in college (go [Broncos](https://www.santaclarabroncos.com)!), I teamed up with [@slevenbits](https://mobile.twitter.com/slevenbits) to create a startup. We were young, inexperienced and naive. Our first project was called YippieMail and it was an email aggregator. Simply put, YippieMail could display all your webmail accounts (i.e. Hotmail, Yahoo and Gmail etc) in the same web interface (this was before IMAP became widely supported amongst providers, so you couldn't use an email client). As inexperienced entrepreneurs, we did what the business books told you to do: write a business plan. Looking back at it, YippieMail was a pretty stupid idea, but it did land us meetings with Sequoia Capital and few other VCs on San Hill Road. Keep in mind that this was around the time [Meebo](https://en.m.wikipedia.org/wiki/Meebo) raised many millions from Sequia and DFJ to do the same thing but for Instant Messaging (IM), so at the time it probably did not seem as such of a bad idea.
 
 After some early hurdles (some technical and some funding related), we pivoted and created our first "real" product: [YippieMove](https://www.yippiemove.com) (RIP 2008-2019). While still in the email space, YippieMove focused on transferring (or migrating) email between different email systems (such as from Yahoo to Gmail). YippieMove managed to get a fair amount of growth over the years, and managed to attract customers like Harvard University, as well as a number of well known companies.
 
-It was in the early days of YippieMail and YippieMove my now decade-long remote experience began.
+It was in the early days of YippieMail and YippieMove my now decade-long remote experience began (some of which as a digital nomad).
 
 When we began working on YippieMail, @slevenbits was living in San Jose, and I was living in Mountain View. For those of you not familiar with the Bay Area, these to cities are not very far apart, but when you factor in the horrendous traffic conditions, it can easily take well over an hour to drive between the two (while it might only take 20-30 minutes without traffic). It was then we decided to work remotely rather than getting an office somewhere in between. Ever since, in all our subsequent ventures ([Blotter](https://www.wireload.net/products/blotter/), and then [Screenly](https://www.screenly.io)) have been remote-only.
 
