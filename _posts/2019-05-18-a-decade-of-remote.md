@@ -63,7 +63,7 @@ As you may have noticed above, I end my day at 19:30. After that I’m not allow
 ## Distractions kill productivity
 Kill the distractions. Working from home is challenging for a lot of people. It’s easy to get distracted by various things around the house, but for me the biggest distraction has always been the digital kind. Cal Newport nails this in his latest book [Digital Minimalism](https://www.amazon.co.uk/Digital-Minimalism-Living-Better-Technology/dp/0241341132), where he talks about how distracting mobile phones and social media can be. I’ve found this first hand. For a long time, I kept my phone next to me on the desk. However, every time the phone buzzed, I lost my focus. Even if I did not check the phone, it still got me distracted. The remedy for me was to simply move all my distractions to the living room (i.e. my phone and Apple Watch) and just check them periodically throughout the day.
 
-For the hackers out there, I’ve found that running something like [i3](https://i3wm.org/) is also great for cutting out noise on your desktop. I use this on my "developer workstation" (which is different from my other workstatioin).
+For the hackers out there, I’ve found that running something like [i3](https://i3wm.org/) is also great for cutting out noise on your desktop. I use this on my "developer workstation" (which is different from my other workstation).
 
 ## Don't skimp on equipment
 Last, but not least, I would recommend that you get some good equipment. You're going to spend a lot of time in front of your workstation so I recommend that you get:
