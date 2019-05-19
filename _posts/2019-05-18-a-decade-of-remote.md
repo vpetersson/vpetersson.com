@@ -39,9 +39,9 @@ The filtering process that tend to work well is to have rigorous screening quest
 
 Yes, this screening process will take a fair bit of time, but tools like Upwork makes it fairly quick to reject candidates that fail to put in the effort (or are clearly poor fits).
 
-From experience I am also very reluctant to work with agencies and prefer hiring contractors directly. The reason being that a number of agencies we've run across over the years have a small amount of talented engineers that will do the screening process and perhaps the first few weeks, and then they gradually shift the work over to a more junior person, while charging the same rate.
+From experience I am also very reluctant to work with agencies and prefer hiring team members directly. The reason being that a number of agencies we've run across over the years have a small amount of talented engineers that will do the screening process and perhaps the first few weeks, and then they gradually shift the work over to a more junior person, while charging the same rate.
 
-It's also worth mentioning that with the raise of the digital nomad movement, we've seen a lot more job boards that are "remote friendly," including [Angelist](https://angel.co) and a plethora of (IMHO overpriced) remote-focused job boards.
+It's also worth mentioning that with the raise of the digital nomad movement, there are a lot more job boards that are "remote friendly," including [Angelist](https://angel.co) and a plethora of (IMHO overpriced) remote-focused job boards.
 
 A final word of warning for people hiring remote team members: don't hire people who wants to join your company *just* because offer them to work remotely and subsequently have more flexibility. While not always true, it is sometimes an indicator of people who wants to coast along with minimal supervision (while perhaps getting their own business off the ground). What you really want is people who believe in the vision and product, and where remote is a perk, not a the reason why they want to join.
 
