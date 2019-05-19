@@ -99,4 +99,4 @@ If you are eager to learn more, I would recommend the following additional books
 * [Deep Work](https://www.amazon.co.uk/Deep-Work-Focused-Success-Distracted/dp/0349411905) by Cal Newport
 * [ReWork](https://basecamp.com/books/rework) by Jason Fried and David Heinemeier Hansson (DHH)
 
-Post comments [Hacker News](https://news.ycombinator.com/item?id=199538540).
+Post comments [Hacker News](https://news.ycombinator.com/item?id=19953854).
