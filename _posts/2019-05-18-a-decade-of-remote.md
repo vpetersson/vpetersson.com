@@ -14,7 +14,9 @@ After some early hurdles (some technical and some funding related), we pivoted a
 
 It was in the early days of YippieMail and YippieMove my now decade-long remote experience began.
 
-When we began working on YippieMail, @slevenbits was living in San Jose, and I was living in Mountain View. For those of you not familiar with the Bay Area, these to cities are not very far apart, but when you factor in the horrendous traffic conditions, it can easily take well over an hour to drive between the two (while it might only take 20-30 minutes without traffic). It was then we decided to work remotely rather than getting an office somewhere in between. Ever since, in all our subsequent ventures ([Blotter](https://www.wireload.net/products/blotter/), and then [Screenly](https://www.screenly.io)) have been remote-only. To this day, even though both @slevenbits and I both live in London, we only get together every other month or so in person to catch up. Moreover, in my new venture ([WoTT](https://www.wott.io)), we have adopted this remote philosophy even if both founders are located in London.
+When we began working on YippieMail, @slevenbits was living in San Jose, and I was living in Mountain View. For those of you not familiar with the Bay Area, these to cities are not very far apart, but when you factor in the horrendous traffic conditions, it can easily take well over an hour to drive between the two (while it might only take 20-30 minutes without traffic). It was then we decided to work remotely rather than getting an office somewhere in between. Ever since, in all our subsequent ventures ([Blotter](https://www.wireload.net/products/blotter/), and then [Screenly](https://www.screenly.io)) have been remote-only.
+
+To this day, even though both @slevenbits and I both live in London, we only get together every other month or so in person to catch up. Moreover, in my new venture ([WoTT](https://www.wott.io)), we have adopted this remote philosophy even if both founders are located in London.
 
 So what have I learned over this decade of working and running remote teams? Let’s dive in.
 
