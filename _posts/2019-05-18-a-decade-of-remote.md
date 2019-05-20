@@ -70,7 +70,7 @@ To make this more concrete, here’s my current daily schedule:
 
 As my good friend Milos ([@milosgajdos](https://twitter.com/milosgajdos)) pointed out while reading a draft of this post, an early start isn't for everyone. Shifting your day is perfectly fine too. The point is not when you start your day and when you wrap it, but building and sticking to habits that make you productive.
 
-If you want to learn more about the importance of habits, I strongly recommend reading [The Power of Habit](https://www.amazon.co.uk/Power-Habit-Why-What-Change/) by Charles Duhigg. Also, a word of warning, don't get obsessed with reading all about productivity. I've been a victim of productivity-porn myself, but I can tell you first-hand that you'll waste far more time reading about it than you'll ever save.
+If you want to learn more about the importance of habits, I strongly recommend reading [The Power of Habit](https://www.amazon.co.uk/Power-Habit-Why-What-Change/dp/1847946240/) by Charles Duhigg. Also, a word of warning, don't get obsessed with reading all about productivity. I've been a victim of productivity-porn myself, but I can tell you first-hand that you'll waste far more time reading about it than you'll ever save.
 
 ## Sleep matters (shocking, I know...)
 Perhaps not related to remote work itself, but more the startup culture. VC used beat it in to young and naive early 20-something kids that it was cool (and even expected) to frequently pull all-nighters and sleep under their desk. I feel like the tide has finally turned on this. Yes, you still have the Gary Vaynerchuk-wannabees out there with their hustle-porn, but I think (and hope) they are a dying breed.
