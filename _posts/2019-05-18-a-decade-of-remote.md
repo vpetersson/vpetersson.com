@@ -66,7 +66,7 @@ To make this more concrete, here’s my current daily schedule:
 * 19:30: End of my work day
 * 23:00: Bedtime
 
-**Clarification**: This does not necessarily mean I work 10 hours per day. I do take a lunch as well. Also, I am perfectly happy to wrap my day at 17:30 after a productive and sucessful day. The 19:30 hard stop, not as hard requirement for me to work to it every day.
+**Clarification**: This does not necessarily mean I work 10 hours per day every day (sometimes I do). I do take a lunch as well. Also, I am perfectly happy to wrap my day at 17:30 after a productive and sucessful day. The 19:30 hard stop, not as hard requirement for me to work to it every day.
 
 As my good friend Milos ([@milosgajdos](https://twitter.com/milosgajdos)) pointed out while reading a draft of this post, an early start isn't for everyone. Shifting your day is perfectly fine too. The point is not when you start your day and when you wrap it, but building and sticking to habits that make you productive.
 
