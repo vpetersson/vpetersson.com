@@ -37,13 +37,13 @@ Hiring remote means a larger talent pool. I’m hardly the first to point this o
 
 The filtering process that tend to work well is to have rigorous screening questions that actually requires a little bit of work and is unique. This will help you weed out all the candidates that simply put “Call me to discuss” in all the boxes (or worse).
 
-Yes, this screening process will take a fair bit of time, but tools like Upwork makes it fairly quick to reject candidates that fail to put in the effort (or are clearly poor fits).
+Yes, this screening process will take a fair bit of time, but tools like Upwork make it fairly quick to reject candidates that fail to put in the effort (or are clearly poor fits).
 
 From experience I am also very reluctant to work with agencies and prefer hiring team members directly. The reason being that a number of agencies we've run across over the years have a small amount of talented engineers that will do the screening process and perhaps the first few weeks, and then they gradually shift the work over to a more junior person, while charging the same rate.
 
 It's also worth mentioning that with the raise of the digital nomad movement, there are a lot more job boards that are "remote friendly," including [Angelist](https://angel.co) and a plethora of (IMHO overpriced) remote-focused job boards.
 
-A final word of warning for people hiring remote team members: don't hire people who wants to join your company *just* because offer them to work remotely and subsequently have more flexibility. While not always true, it is sometimes an indicator of people who wants to coast along with minimal supervision (while perhaps getting their own business off the ground). What you really want is people who believe in the vision and product, and where remote is a perk, not a the reason why they want to join.
+A final word of warning for people hiring remote team members: don't hire people who want to join your company *just* because you offer them to work remotely and subsequently have more flexibility. While not always true, it is sometimes an indicator of people who want to coast along with minimal supervision (while perhaps getting their own business off the ground). What you really want is people who believe in the vision and product, and where remote is a perk, not a the reason why they want to join.
 
 (I have intentionally not mentioned the legal structure of how to hire remote talent. IANAL so you probably should check with one to ensure you comply with the local laws.)
 
@@ -54,7 +54,7 @@ Remote work is likely easier for engineering than for other roles. In all my exp
 Remote work saves a lot of time. First, it should be said that remote work does not necessarily equal working from home. We’ve had plenty of team members over the years that preferred to work from a shared office (including myself for a period). To each and their own. If however you work from home, you can save a big chunk of time (and money) every day. When I had an office in Shoreditch, it took me 30-40 minutes each way. That adds up top a lot of time every week. These days I have a dedicated room as my home office (something I *strongly* recommend if working from home). This means that my morning commute is roughly 60 seconds, and that includes a detour to the kitchen to fetch myself a cup of joe. What you do with this time is up to you, but I usually dedicate this 1-1.5h every day to exercise.
 
 ## The power of routines and habits
-Habits will make or break you as a remote worker. As mentioned earlier, remote work is not for everyone. It requires a lot more self-discipline than a regular office job where you’re constantly "supervised." Over the years, I’ve experimented with a large number of habits, and at this point I’ve devised a set of habits that work pretty well for me (but they are likely to change as I keep experimenting). **The most important habit when working remotely from home is to mentally trigger a beginning and an end of the work day**. It’s easy to sit in your PJ or sweats all day just because you can, but it will likely backfire in the long-run.
+Habits will make or break you as a remote worker. As mentioned earlier, remote work is not for everyone. It requires a lot more self-discipline than a regular office job where you’re constantly "supervised." Over the years, I’ve experimented with a large number of habits, and at this point I’ve devised a set of habits that work pretty well for me (but they are likely to change as I keep experimenting). **The most important habit when working remotely from home is to mentally trigger a beginning and an end of the work day**. It’s easy to sit in your PJs or sweats all day just because you can, but it will likely backfire in the long-run.
 
 To make this more concrete, here’s my current daily schedule:
 
@@ -77,7 +77,7 @@ Perhaps not related to remote work itself, but more the startup culture. VC used
 
 What is however related to remote work is the the importance of wrapping up your day. As you may have noticed above, I end my day at 19:30. After that I’m not allowed into my office (unless there’s an emergency). I also try to keep my screen time to minimal in the evenings. In my younger years, I frequently worked late into the night. Yet, even if I clocked more hours, I got less done.
 
-Switching off very important, and it is a lot more challenging when you're working remotely.
+Switching off very is important, and it is a lot more challenging when you're working remotely.
 
 If you want to learn more on this, I recommend the book [Why We Sleep](https://www.amazon.co.uk/Why-We-Sleep-Science-Dreams/dp/0241269067) by Matthew Walker.
 
