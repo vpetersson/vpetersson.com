@@ -102,3 +102,6 @@ If you are eager to learn more, I would recommend the following additional books
 * [ReWork](https://basecamp.com/books/rework) by Jason Fried and David Heinemeier Hansson (DHH)
 
 [Discuss on Hacker News](https://news.ycombinator.com/item?id=19953854).
+
+## Looking to learn more?
+While you're here, I'm looking to write more content on this topic. You can [sign up here](http://eepurl.com/gtzNfb) to stay in touch.
