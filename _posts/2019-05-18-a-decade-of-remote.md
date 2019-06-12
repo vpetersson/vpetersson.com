@@ -9,6 +9,10 @@ tags:
 - digital-nomad
 ---
 
+## Looking to learn more?
+While you're here, I'm thinking about writing a book on this topic. [Sign up here](http://eepurl.com/gtzNfb) for updates.
+
+## Intro
 While still in college (go [Broncos](https://www.santaclarabroncos.com)!), I teamed up with Alex ([@slevenbits](https://mobile.twitter.com/slevenbits)) to create a startup. We were young, inexperienced and naive. Our first project was called YippieMail and it was an email aggregator. Simply put, YippieMail could display all your webmail accounts (i.e. Hotmail, Yahoo and Gmail etc) in the same web interface (this was before most email providers supported IMAP, so you couldn't use an email client). Looking back at it, YippieMail was a pretty stupid idea, but it did land us meetings with Sequoia Capital and few other VCs on Sand Hill Road. Keep in mind that this was around the time [Meebo](https://en.m.wikipedia.org/wiki/Meebo) raised many millions from Sequia and DFJ to do the same thing but for Instant Messaging (IM), so at the time it probably did not seem as such of a bad idea.
 
 It was in the early days of YippieMail, which was pivoted into [YippieMove](https://www.yippiemove.com) (RIP 2008-2019) my now decade-long remote experience began (some of which as a digital nomad).
@@ -103,5 +107,3 @@ If you are eager to learn more, I would recommend the following additional books
 
 [Discuss on Hacker News](https://news.ycombinator.com/item?id=19953854).
 
-## Looking to learn more?
-While you're here, I'm looking to write more content on this topic. You can [sign up here](http://eepurl.com/gtzNfb) to stay in touch.
