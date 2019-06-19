@@ -107,3 +107,4 @@ If you are eager to learn more, I would recommend the following additional books
 
 [Discuss on Hacker News](https://news.ycombinator.com/item?id=19953854).
 
+Read more in [Mental health and remote work]({{ site.url }}/2019/05/18/a-decade-of-remote.html).
