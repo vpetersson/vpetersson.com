@@ -105,6 +105,8 @@ If you are eager to learn more, I would recommend the following additional books
 * [Deep Work](https://www.amazon.co.uk/Deep-Work-Focused-Success-Distracted/dp/0349411905) by Cal Newport
 * [ReWork](https://basecamp.com/books/rework) by Jason Fried and David Heinemeier Hansson (DHH)
 
+Also, take a look at [How We Work at Screenly](https://www.screenly.io//blog/2016/11/23/how-we-work-at-screenly/), a blog post I wrote a few years ago, but it still has relevant information.
+
 [Discuss on Hacker News](https://news.ycombinator.com/item?id=19953854).
 
 Read more in [Mental health and remote work]({{ site.url }}/2019/05/18/a-decade-of-remote.html).
