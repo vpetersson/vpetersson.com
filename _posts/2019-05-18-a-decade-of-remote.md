@@ -2,6 +2,7 @@
 layout: post
 title: A Decade of Remote Work
 date: '2019-05-18T14:00:00+01:00'
+categories: remote-work
 tags:
 - startups
 - remote-work

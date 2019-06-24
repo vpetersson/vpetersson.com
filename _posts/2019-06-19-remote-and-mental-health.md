@@ -2,6 +2,7 @@
 layout: post
 title: Mental Health and Remote Work
 date: '2019-06-19T14:00:00+01:00'
+categories: remote-work
 tags:
 - startups
 - remote-work
