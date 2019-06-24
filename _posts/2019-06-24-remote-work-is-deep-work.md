@@ -32,6 +32,6 @@ Traditional managers first response to when they hear about Deep Work is to imme
 
 While there are a lot of benefits with Remote Work and Deep Work, it is not a silver bullet for the entire company. There are some functions where Deep Work may be unfavorable. The functions where Deep Work would be unfavorable would be roles such as sales, where it makes sense to cram people into an open office. Sales is much like the Manager’s schedule, where you have blocks of hours with little need for long stretches of focused work. Sales also tend to attract extroverts, and having them in the same room, where they essentially compete against each other with leaderboards can help drive the overall performance.
 
-I hope you found this useful. If you want to learn more about remote work, sign up to my [Remote Work newsletter](http://eepurl.com/gtzNfb). Also, you might find my article [Remote Work and Mental Health]({{ site.url }}/2019/06/19/remote-and-mental-health.html) useful if you are already working remotely.
+I hope you found this useful. If you want to learn more about remote work, sign up to my [Remote Work newsletter](http://eepurl.com/gtzNfb). Also, you might find more articles on remote work [here]({{ site.url }}/remote-work/).
 
 Kudos to my good friend [Philip](https://twitter.com/philfortuna) for the inspiration for this article and pointing out the link between PG’s post and Deep Work.

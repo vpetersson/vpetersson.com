@@ -110,4 +110,4 @@ Also, take a look at [How We Work at Screenly](https://www.screenly.io//blog/201
 
 [Discuss on Hacker News](https://news.ycombinator.com/item?id=19953854).
 
-Read more in [Mental health and remote work]({{ site.url }}/2019/05/18/a-decade-of-remote.html).
+You can find more remote work articles [here]({{ site.url }}/remote-work/).
