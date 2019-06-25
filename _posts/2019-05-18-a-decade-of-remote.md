@@ -8,6 +8,8 @@ tags:
 - remote-work
 - productivity
 - digital-nomad
+redirect_from:
+- /2019/05/18/a-decade-of-remote.html
 ---
 
 ## Looking to learn more?

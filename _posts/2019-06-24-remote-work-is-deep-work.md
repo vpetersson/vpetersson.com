@@ -8,6 +8,8 @@ tags:
 - remote-work
 - productivity
 - digital-nomad
+redirect_from:
+- /2019/06/24/remote-work-is-deep-work.html
 ---
 
 Over the last few years, two things that I’ve paid close attention to are Deep Work and Remote Work. In this article we will explore this and discover how closely these to concepts overlap.
@@ -26,7 +28,7 @@ Before we dive into how Remote Work can be somewhat of a requirement for Deep Wo
 
 This is why the office environment is kryptonite for focussed work (a.k.a. Deep Work). An office environment makes it *too easy* for peers (be your coworkers, your boss, or your boss’s boss) to just walk over to your desk and ask for something. This, of course, gets even worse in an office with an open floor plan.
 
-This leads us to the point why Remote Work is Deep Work. What’s the best way to prevent your coworkers to walk over and tap you on the shoulder? Well, if you work remotely, unless you happen to live neighbor with coworker, the probability of them walking over to you and knock on your door is close to nill. This is why I would argue that Remote Work is the best way to do Deep Work. If you want a stretch of six hours of uninterrupted work, all you need to do is to turn off your notifications.   
+This leads us to the point why Remote Work is Deep Work. What’s the best way to prevent your coworkers to walk over and tap you on the shoulder? Well, if you work remotely, unless you happen to live neighbor with coworker, the probability of them walking over to you and knock on your door is close to nill. This is why I would argue that Remote Work is the best way to do Deep Work. If you want a stretch of six hours of uninterrupted work, all you need to do is to turn off your notifications.
 
 Traditional managers first response to when they hear about Deep Work is to immediately retaliate with a comment about how they need to be able to get ahold of anyone immediately if there is an emergency. This is a natural reaction, but it is flawed. The reality is that very few “emergencies” are actually that urgent. They can usually wait a few hours. Moreover, if you have a company where you are constantly fighting emergencies, you have a far bigger problem on your hands. That’s a symptom of a highly dysfunctional company, where you really should put your energy into addressing this root cause.
 

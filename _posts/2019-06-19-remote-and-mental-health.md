@@ -8,6 +8,8 @@ tags:
 - remote-work
 - productivity
 - digital-nomad
+redirect_from:
+- /2019/06/19/remote-and-mental-health.html
 ---
 
 In recent years, we’ve started to see more people speaking out about mental health in the tech industry. This is great, as it is a topic that has been somewhat taboo in the past.
