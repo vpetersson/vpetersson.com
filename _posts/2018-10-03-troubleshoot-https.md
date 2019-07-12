@@ -46,5 +46,5 @@ Some readers may be quick to point out that you can accomplish the same by alter
 ```
 $ curl -I \
     --resolve 'some.domain.com:443:a.b.c.d' \
-    https://a.b.c.d
+    https://some.domain.com
 ```
