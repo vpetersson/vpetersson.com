@@ -21,6 +21,6 @@ So what's the secret to high productivity? **drumroll**
  * Eat healthy
  * **Bonus:** Cut out alcohol
 
-If you get these things right, the rest will follow. The mental clarity from a good night with multiple hours of deep sleep will run circles around all the other productivity hacks you're experimenting with.
+If you get these things right, the rest will follow. The mental clarity from a good night's sleep with multiple hours of deep sleep will run circles around all the other productivity hacks you're experimenting with.
 
 I know that it's not what you were looking for. Everyone wants a magic pill or tip that allows them to have the cake and eat it too.
