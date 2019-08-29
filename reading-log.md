@@ -6,6 +6,14 @@ title: My Reading Log
 
 This is mostly a note-to-self kind of page, but perhaps it is useful for someone else too `¯\_(ツ)_/¯`.
 
+# 2018
+
+* Influence by Robert Cialdini
+* Man's Search For Meaning by Viktor Frankl
+* Measure What Matters by John Doerr
+* Zero Trust Networks by Evan Gilman
+* Ghost In The Wires by Kevin Mitnick
+
 # 2019
 
 * The Master and Margarita by Mikhail Bulgakov
