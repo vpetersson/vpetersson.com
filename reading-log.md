@@ -12,6 +12,7 @@ Here's a partial list (i.e. what I could find in my Amazon history)
 
 * By Way of Deception by Victor Ostrovsky
 * Life 3.0 by Max Tegmark
+* Deep Work by Cal Newport
 
 # 2018
 
