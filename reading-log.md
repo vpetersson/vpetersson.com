@@ -6,8 +6,16 @@ title: My Reading Log
 
 This is mostly a note-to-self kind of page, but perhaps it is useful for someone else too `¯\_(ツ)_/¯`.
 
+Here's a partial list (i.e. what I could find in my Amazon history)
+
+# 2017
+
+* By Way of Deception by Victor Ostrovsky
+* Life 3.0 by Max Tegmark
+
 # 2018
 
+* Lost and Founder by Rand Fishkin
 * Influence by Robert Cialdini
 * Man's Search For Meaning by Viktor Frankl
 * Measure What Matters by John Doerr
