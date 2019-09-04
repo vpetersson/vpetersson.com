@@ -13,6 +13,7 @@ Here's a partial list (i.e. what I could find in my Amazon history)
 * By Way of Deception by Victor Ostrovsky
 * Life 3.0 by Max Tegmark
 * Deep Work by Cal Newport
+* Industries of the Future by Alec Ross
 
 # 2018
 
@@ -36,3 +37,4 @@ Here's a partial list (i.e. what I could find in my Amazon history)
 * Scale by Geoffrey West
 * The Paradox of Choice by Barry Schwartz
 * Cult of The Dead Cow by Joseph Menn
+* Prisoners of Geography by Tim Marshall
