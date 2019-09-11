@@ -131,11 +131,11 @@ kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: role-lockdown-secrets
-    namespace: lockdown-secrets
-    rules:
-    - apiGroups: [""] # "" indicates the core API group
-      resources: ["secrets"]
-      verbs: ["get", "watch", "list"]
+  namespace: lockdown-secrets
+rules:
+  - apiGroups: [""] # "" indicates the core API group
+    resources: ["secrets"]
+    verbs: ["get", "watch", "list"]
 ```
 
 As you can see, that provides explicit permission to read secrets. Other than that the setup is the same and you can find the full example [here](https://github.com/vpetersson/rbac-example/tree/master/only-secrets).
