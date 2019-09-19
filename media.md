@@ -4,7 +4,6 @@ title: Media and Conferences
 permalink: /media/
 ---
 <div class="copy">
-  <a href=""><h2 class="post-title">Media and conferences</h2></a>
   <h1>Mentions and interviews</h1>
   <h2>At CloudSigma</h2>
   <ul>
