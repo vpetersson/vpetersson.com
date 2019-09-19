@@ -38,3 +38,4 @@ Here's a partial list (i.e. what I could find in my Amazon history)
 * The Paradox of Choice by Barry Schwartz
 * Cult of The Dead Cow by Joseph Menn
 * Prisoners of Geography by Tim Marshall
+* Principles by Ray Dalio
