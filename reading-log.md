@@ -39,3 +39,4 @@ Here's a partial list (i.e. what I could find in my Amazon history)
 * Cult of The Dead Cow by Joseph Menn
 * Prisoners of Geography by Tim Marshall
 * Principles by Ray Dalio
+* Animal Farm by George Orwell
