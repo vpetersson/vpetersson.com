@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Install Ubuntu Core 18 on Proxmox
-date: '2018-10-03T13:00:00+01:00'
+date: '2019-10-03T13:00:00+01:00'
 tags:
 - proxmox
 - linux
