@@ -38,7 +38,7 @@ permalink: /media/
   </ul>
   <h1>Panel and speaking engagements</h1>
   <ul>
-    <li>Talk - Open Source Summit Europe (2019), Lyon, France (<a href="https://speakerdeck.com/vpetersson/the-s-in-iot-stands-for-security">deck</a>)</li>
+    <li>Talk - Open Source Summit Europe (2019), Lyon, France (<a href="https://speakerdeck.com/vpetersson/the-s-in-iot-stands-for-security">deck</a>, <a href="https://www.youtube.com/watch?v=7yN999B11Ms&list=PLbzoR-pLrL6pamOj4UifcMJf560Ph6mJp&index=43&t=0s">video</a>)</li>
     <li>Talk - Infosecurity Europe (2019), London, UK</li>
     <li>Talk - Open Source Summit North America (2018), Vancouver, Canada (<a href="https://events.linuxfoundation.org/wp-content/uploads/2017/11/The-S-in-IoT-Stands-for-Security-Viktor-Petersson-Screenly-Andrew-Martin-Control-Plane.pdf">deck</a>)</li>
     <li>Talk - Container Camp (2018), Melbourne, Australia (<a href="https://docs.google.com/presentation/d/1E1ZzkMmytOoW-aLkWlJzFT1MYLWE2RyAv0qOjQkxDt8/edit?usp=sharing">deck</a>, <a href="https://www.youtube.com/watch?v=PmWYTjr_Xso">video</a>)</li>
