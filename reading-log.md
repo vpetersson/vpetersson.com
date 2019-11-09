@@ -40,3 +40,4 @@ Here's a partial list (i.e. what I could find in my Amazon history)
 * Prisoners of Geography by Tim Marshall
 * Principles by Ray Dalio
 * Animal Farm by George Orwell
+* The Fish That Ate The Whale by Rich Cohen
