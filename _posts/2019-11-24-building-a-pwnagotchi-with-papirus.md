@@ -10,7 +10,7 @@ tags:
 
 ![](https://media.giphy.com/media/MM0Jrc8BHKx3y/source.gif)
 
-Security has been an interest for me for a long time. This is why [Pwnagotchi](https://pwnagotchi.ai/) peaked my interest. Using cheap hardware, you can create your own lightweight WiFi (and Bluetooth) sniffing device. Thanks to a known vulnerability in the WPA/WPA2 protocol, the Pwnagotchi can [capture the handshake](https://pwnagotchi.ai/intro/#wifi-handshakes-101), which we can then use to crack the passphrase (more on that later).
+Security has been an interest for me for a long time. This is why [Pwnagotchi](https://pwnagotchi.ai/) piqued my interest. Using cheap hardware, you can create your own lightweight WiFi (and Bluetooth) sniffing device. Thanks to a known vulnerability in the WPA/WPA2 protocol, the Pwnagotchi can [capture the handshake](https://pwnagotchi.ai/intro/#wifi-handshakes-101), which we can then use to crack the passphrase (more on that later).
 
 My personal interest in this was largely to test my own OpSec to ensure my own WiFi wasn't vulnerable to simple attacks like this. Fortunately, it wasn't.
 
