@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interview with Rimas Mocevicius on working remotely
+title: Interview with Rimas Mocevicius from JFrog on working remotely
 date: '2019-09-20T08:00:00+01:00'
 categories: remote-work
 tags:
@@ -16,7 +16,7 @@ In this series, I am intending to interview people who work remotely about their
 
 Without further ado, here is Rimas.
 
-### Tell me a bit more about yourself.
+### Can you tell me a bit more about yourself?
 
 I am first and foremost a big open source fan. I like good food, coffee, tea and of course and I cannot say no to cheesecake and halva. I have a love for travels (both for work and pleasure).
 

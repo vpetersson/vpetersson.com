@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interview with John Agosta on working remotely
+title: Interview with John Agosta from Canonical/Ubuntu on working remotely
 date: '2019-11-25T08:00:00+01:00'
 categories: remote-work
 tags:
@@ -10,11 +10,11 @@ tags:
 - digital-nomad
 ---
 
-In the latest article on [remote work]({{ site.url}}/remote-work/), I'm speaking to John Agosta from Canonical (the company behind Ubuntu). John and my paths have crossed multiple times over the last 6 or so years, starting when I was at a cloud company, and he was at the server division at Canonical, to more recently when he moved to the Ubuntu Core side, as I was building out [Screenly](https://www.screenly.io).
+In this interview on [remote work]({{ site.url}}/remote-work/), I'm speaking to John Agosta from Canonical (the company behind Ubuntu). John and my paths have crossed multiple times over the years, starting when I was at a cloud company, and he was at the server division at Canonical, to more recently when he moved to the Ubuntu Core side, as I was building out [Screenly](https://www.screenly.io).
 
-While Canonical isn't a fully remote company (they have multiple offices around the globe), a large part of their workforce is working from either partially or fully remotely. As such, I wanted to understand more about their internal structure for this. Because I've had a lot of communication with John over the years, and he's one of the fully remote team members, he's an ideal candidate to better understand the inner workings of Canonical's remote culture.
+While Canonical isn't a fully remote company (they have multiple offices around the globe), a large part of their workforce is working either partially or fully remotely. As such, I wanted to understand more about their internal structure for this. Because I've had a lot of communication with John over the years, and he's one of the fully remote team members, he's an ideal candidate to better understand the inner workings of Canonical's remote culture.
 
-### Tell me a bit more about yourself.
+### Can you tell me a bit more about yourself?
 
 I’m an old school software developer.  By that I mean, I started software development back in the days of mainframe computing; Fortran, C, assembler, and when 256K was a lot of memory, and 10MB was a large disk. I originally thought I would be an architect designing the next generation residential homes.  Little did I envision that the architecture I ended up loving more would utilize computer software building blocks. Over my three decade career I have stayed in the software development field as a developer, product manager, and deliver manager.
 
