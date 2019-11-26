@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interview with John Agosta from Canonical/Ubuntu on working remotely
-date: '2019-11-25T08:00:00+01:00'
+date: '2019-11-26T08:00:00+01:00'
 categories: remote-work
 tags:
 - startups
@@ -69,3 +69,24 @@ I have a sit/stand desk.  It is of decent size. It has a manual control that all
 ### What advice would you give to someone who has never worked remotely before and is about to join a remote company?
 
 Have a routine and a schedule. Don’t let the fact that work is always “here” get in the way of the things you like away from work.  This doesn’t mean you don’t absolutely love the work you are doing. It is more that you also need to get away from “work” to refresh your mind and help you be more productive at your work.
+
+### At Canonical, the teams often do in-person sprints and summits. How do you think these gatherings impact team spirit and productivity?
+
+These meetings are critical to spirit and productivity.  I suspect the brick and mortar businesses would also find the same as these meetings force the process to "stop" and "confirm" your directions are still valid, and provides a good "pivot" point as required. These meetings also build connection points between the business and technical areas.  All business and technical owners are present; thus allowing for quick iterations and not getting bogged down.
+
+This process builds strong relationships and connections, and an understanding around the important linkages and dependencies that otherwise take a longer time to build.   This results in building strong relations even among teams that may on the surface appear to be unrelated and disjoint.
+
+###  What is a good frequency for these in-person gatherings?
+
+Canonical does these on a quarterly basis for business roadmaps, and semi-annually for engineering teams. There are some people who need to attend both, so that is 6 times a year for a select few -- and that does get rather extensive so things may change in the future, however right now we have a number of strategies in flight so the increased frequency
+is currently necessary.
+
+
+### At these summits, what does the agenda look like?
+
+They are different depending upon an engineering versus a business summit.  I am not sure how much of this process is confidential given these are closed to anyone but those invited by Canonical.
+
+At a high level, business reviews have a combination of roadmap presentations from the different business units, breakouts for deep dive presentations that are open to any attendee. Everyday we close with "lightening talks", which is a series of 5 (10 max) minute presentation
+of a topic of interest -- these vary widely.
+
+At a high level, the engineering sprints typically have very short 30 minute intro for the day, and then each engineering team have own deep dive rooms.  Agendas vary based upon the team.  These are more of individual engineering teams co-locating their individual summits at the same place and time to work on very specific technical issues with advantage of other teams being present as required.  These meetings also close out the day with "lightening talks".
