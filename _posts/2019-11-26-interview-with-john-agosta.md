@@ -10,7 +10,7 @@ tags:
 - digital-nomad
 ---
 
-In this interview on [remote work]({{ site.url}}/remote-work/), I'm speaking to John Agosta from Canonical (the company behind Ubuntu). John and my paths have crossed multiple times over the years, starting when I was at a cloud company, and he was at the server division at Canonical, to more recently when he moved to the Ubuntu Core side, as I was building out [Screenly](https://www.screenly.io).
+In this interview on [remote work]({{ site.url}}/remote-work/), I'm speaking to John Agosta from Canonical (the company behind Ubuntu). As a long-time Canonical team member, John and my paths have crossed multiple times over the years, starting when I was at a cloud company, and he was at the server division at Canonical, to more recently when he moved to the Ubuntu Core (formerly known as Snappy) side, as I was building out [Screenly](https://www.screenly.io) where John now is the Program Manager.
 
 While Canonical isn't a fully remote company (they have multiple offices around the globe), a large part of their workforce is working either partially or fully remotely. As such, I wanted to understand more about their internal structure for this. Because I've had a lot of communication with John over the years, and he's one of the fully remote team members, he's an ideal candidate to better understand the inner workings of Canonical's remote culture.
 
