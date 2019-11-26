@@ -24,7 +24,8 @@ So what do you need to build your own Pwnagotchi? While it support multiple hard
 * A [PaPiRus Zero](https://uk.pi-supply.com/products/papirus-zero-epaper-screen-phat-pi-zero)
 * A [PaPiRus Zero Case](https://uk.pi-supply.com/products/papirus-zero-case) (I'm still waiting for this one as it's out of stock)
 * A battery pack (most will do just fine)
-* Two MicroUSB cables (one for data and one for power)
+* Two Micro USB cables
+  * Technically speaking, you only need one cable as you can power the device from the data port. However, having two cables allow you to drive say the Raspberry Pi from a battery pack and still read data from it without having to shut it down.
 
 (This was all generously sponsored by the fine folks over at Pi Supply)
 
