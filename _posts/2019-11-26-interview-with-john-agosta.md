@@ -90,3 +90,7 @@ At a high level, business reviews have a combination of roadmap presentations fr
 of a topic of interest -- these vary widely.
 
 At a high level, the engineering sprints typically have very short 30 minute intro for the day, and then each engineering team have own deep dive rooms.  Agendas vary based upon the team.  These are more of individual engineering teams co-locating their individual summits at the same place and time to work on very specific technical issues with advantage of other teams being present as required.  These meetings also close out the day with "lightening talks".
+
+## Looking to learn more?
+
+While you're here, I'm thinking about writing a book on this topic. [Sign up here](http://eepurl.com/gtzNfb) for updates.
