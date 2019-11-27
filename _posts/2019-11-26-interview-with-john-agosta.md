@@ -84,12 +84,11 @@ is currently necessary.
 
 ### At these summits, what does the agenda look like?
 
-They are different depending upon an engineering versus a business summit.  I am not sure how much of this process is confidential given these are closed to anyone but those invited by Canonical.
+They are different depending upon an engineering versus a business summit.
 
-At a high level, business reviews have a combination of roadmap presentations from the different business units, breakouts for deep dive presentations that are open to any attendee. Everyday we close with "lightening talks", which is a series of 5 (10 max) minute presentation
-of a topic of interest -- these vary widely.
+Business reviews have a combination of roadmap presentations from the different business units, breakouts for deep dive presentations that are open to any attendee. Everyday we close with "lightening talks", which is a series of 5 (10 max) minute presentation of a topic of interest -- these vary widely.
 
-At a high level, the engineering sprints typically have very short 30 minute intro for the day, and then each engineering team have own deep dive rooms.  Agendas vary based upon the team.  These are more of individual engineering teams co-locating their individual summits at the same place and time to work on very specific technical issues with advantage of other teams being present as required.  These meetings also close out the day with "lightening talks".
+The engineering sprints typically have very short 30 minute intro for the day, and then each engineering team have own deep dive rooms.  Agendas vary based upon the team.  These are more of individual engineering teams co-locating their individual summits at the same place and time to work on very specific technical issues with advantage of other teams being present as required.  These meetings also close out the day with "lightening talks".
 
 ## Looking to learn more?
 
