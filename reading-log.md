@@ -41,3 +41,4 @@ Here's a partial list (i.e. what I could find in my Amazon history)
 * Principles by Ray Dalio
 * Animal Farm by George Orwell
 * The Fish That Ate The Whale by Rich Cohen
+* Fictions by Jorge Luis Borges
