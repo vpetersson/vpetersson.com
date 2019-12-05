@@ -66,3 +66,9 @@ Other pro-tip for people new to Home Assistant:
 Since starting working this, I've modified the board to also include an air quality sensor ([CJMCU-811](https://www.amazon.co.uk/gp/product/B07RGLMS1J/)). I've also gone ahead and published [the schematics](https://easyeda.com/vpetersson/room-sensor).
 
 The next step is to solder this together on a smaller breadboard to reduce the footprint.
+
+## Update 2: Transferred to a proper board
+
+Today I finally received my breadboard and transferred the components. Looking pretty sleek.
+
+![](/assets/room-sensor.png)
