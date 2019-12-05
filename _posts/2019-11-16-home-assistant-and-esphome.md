@@ -71,4 +71,4 @@ The next step is to solder this together on a smaller breadboard to reduce the f
 
 Today I finally received my breadboard and transferred the components. Looking pretty sleek.
 
-![](/assets/room-sensor.png)
+![](/assets/room-sensor.jpeg)
