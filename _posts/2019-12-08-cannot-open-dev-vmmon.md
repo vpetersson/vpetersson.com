@@ -1,7 +1,7 @@
 ---
 layout: post
-title: VMWare Fusion error: cannot open /dev/vmmon
-date: '2019-10-03T13:00:00+01:00'
+title: VMWare Fusion error - cannot open /dev/vmmon
+date: '2019-12-08T13:00:00+01:00'
 tags:
 - vmware
 - fusion
