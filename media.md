@@ -25,26 +25,23 @@ permalink: /media/
 * Sixteen:Nine - [Podcast Interview](http://sixteennine.podbean.com/e/viktor-petersson-screenly/)
 * DailyDOOH - [Screenly + NEC interview](https://www.youtube.com/watch?v=LtFCOHrgvs4)
 
-## Other
-
-* FreeBSD’s [Highly Available Storage (HAST)](https://www.freebsd.org/doc/en/books/handbook/disks-hast.html)
-
-# Guest posts
-
-* BitTorrent - [Sync Dev: Securely Deploying Sync](https://www.resilio.com/blog/sync-dev-securely-deploying-sync)
-* BitTorrent - [Sync Dev: Using Sync For Backups In The Cloud (With Docker)](https://www.resilio.com/blog/sync-dev-using-sync-for-backups-in-the-cloud-with-docker)
-* Weave - [How Weave Net Enables a Global Docker Cluster with OnApp](https://www.weave.works/blog/weave-global-docker-cluster/)
-* Rave Publications - [Why Are We Not Talking About Digital Signage Security?](https://www.ravepubs.com/not-talking-digital-signage-security/)
 
 # Panel and speaking engagements
 
+## 2019
 * Talk - Docker London (2019), London, UK ([deck](https://speakerdeck.com/vpetersson/whats-mtls-at-docker-london))
 * Talk - Open Source Summit Europe (2019), Lyon, France ([deck](https://speakerdeck.com/vpetersson/the-s-in-iot-stands-for-security), [video](https://www.youtube.com/watch?v=7yN999B11Ms&list=PLbzoR-pLrL6pamOj4UifcMJf560Ph6mJp&index=43&t=0s))
 * Talk - Kubernetes London (2019), London, UK ([deck](https://speakerdeck.com/vpetersson/living-on-the-edge-at-kubernetes-london))
 * Talk - Infosecurity Europe (2019), London, UK
+
+## 2018
+
 * Talk - Open Source Summit North America (2018), Vancouver, Canada ([deck](https://events.linuxfoundation.org/wp-content/uploads/2017/11/The-S-in-IoT-Stands-for-Security-Viktor-Petersson-Screenly-Andrew-Martin-Control-Plane.pdf))
 * Talk - Container Camp (2018), Melbourne, Australia ([deck](https://docs.google.com/presentation/d/1E1ZzkMmytOoW-aLkWlJzFT1MYLWE2RyAv0qOjQkxDt8/edit?usp=sharing), [video](https://www.youtube.com/watch?v=PmWYTjr_Xso))
 * Talk - Ansible London (2016), London, UK ([deck](https://speakerdeck.com/vpetersson/provisioner-at-ansible-london))
+
+## Older
+
 * Panel - CloudExpo Europe (2016), London, UK
 * Talk - IoT London (2016), London, UK ([deck](https://speakerdeck.com/vpetersson/screenly-at-iot-london))
 * Talk - IoT Day @ BBVA Innovation Center (2015), Madrid, Spain ([deck](https://speakerdeck.com/vpetersson/iot-use-case-screenly))
@@ -55,3 +52,14 @@ permalink: /media/
 * Talk - Pi And More 3 (2013), Trier, Germany ([deck](https://speakerdeck.com/vpetersson/screenly-at-pi-and-more-3))
 * Talk - gSocial 2 (2013), Sunnyvale, CA ([deck](https://speakerdeck.com/vpetersson/email-migration-best-practices))
 * Talk - NoSQL Road Show (2012), Basel, Switzerland ([deck](https://speakerdeck.com/vpetersson/mongodbs-replica-sets-painless-scaling-and-high-availability-ha))
+
+## Other
+
+* FreeBSD’s [Highly Available Storage (HAST)](https://www.freebsd.org/doc/en/books/handbook/disks-hast.html)
+
+# Guest posts
+
+* BitTorrent - [Sync Dev: Securely Deploying Sync](https://www.resilio.com/blog/sync-dev-securely-deploying-sync)
+* BitTorrent - [Sync Dev: Using Sync For Backups In The Cloud (With Docker)](https://www.resilio.com/blog/sync-dev-using-sync-for-backups-in-the-cloud-with-docker)
+* Weave - [How Weave Net Enables a Global Docker Cluster with OnApp](https://www.weave.works/blog/weave-global-docker-cluster/)
+* Rave Publications - [Why Are We Not Talking About Digital Signage Security?](https://www.ravepubs.com/not-talking-digital-signage-security/)
