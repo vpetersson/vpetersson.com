@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /reading-log/
-title: My Reading Log
+title: Reading Log
 ---
 
 This is mostly a note-to-self kind of page, but perhaps it is useful for someone else too `¯\_(ツ)_/¯`.
