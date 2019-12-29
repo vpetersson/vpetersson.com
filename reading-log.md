@@ -26,6 +26,7 @@ Here's a partial list (i.e. what I could find in my Amazon history)
 
 # 2019
 
+* How To Be Right... in a World Gone Wrong by James O'Brien
 * The Master and Margarita by Mikhail Bulgakov
 * Zen Mind, Beginners Mind by Shunryū Suzuk
 * I, Robot by Isaac Asimov
