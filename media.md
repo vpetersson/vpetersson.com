@@ -28,17 +28,20 @@ permalink: /media/
 
 # Panel and speaking engagements
 
+## 2020
+* Talk - Cloud Native London, London, UK ([deck](https://speakerdeck.com/vpetersson/the-devsecops-iceberg-at-cloud-native-london))
+
 ## 2019
-* Talk - Docker London (2019), London, UK ([deck](https://speakerdeck.com/vpetersson/whats-mtls-at-docker-london))
-* Talk - Open Source Summit Europe (2019), Lyon, France ([deck](https://speakerdeck.com/vpetersson/the-s-in-iot-stands-for-security), [video](https://www.youtube.com/watch?v=7yN999B11Ms&list=PLbzoR-pLrL6pamOj4UifcMJf560Ph6mJp&index=43&t=0s))
-* Talk - Kubernetes London (2019), London, UK ([deck](https://speakerdeck.com/vpetersson/living-on-the-edge-at-kubernetes-london))
-* Talk - Infosecurity Europe (2019), London, UK
+* Talk - Docker London, London, UK ([deck](https://speakerdeck.com/vpetersson/whats-mtls-at-docker-london))
+* Talk - Open Source Summit Europe, Lyon, France ([deck](https://speakerdeck.com/vpetersson/the-s-in-iot-stands-for-security), [video](https://www.youtube.com/watch?v=7yN999B11Ms&list=PLbzoR-pLrL6pamOj4UifcMJf560Ph6mJp&index=43&t=0s))
+* Talk - Kubernetes London, London, UK ([deck](https://speakerdeck.com/vpetersson/living-on-the-edge-at-kubernetes-london))
+* Talk - Infosecurity Europe, London, UK
 
 ## 2018
 
-* Talk - Open Source Summit North America (2018), Vancouver, Canada ([deck](https://events.linuxfoundation.org/wp-content/uploads/2017/11/The-S-in-IoT-Stands-for-Security-Viktor-Petersson-Screenly-Andrew-Martin-Control-Plane.pdf))
-* Talk - Container Camp (2018), Melbourne, Australia ([deck](https://docs.google.com/presentation/d/1E1ZzkMmytOoW-aLkWlJzFT1MYLWE2RyAv0qOjQkxDt8/edit?usp=sharing), [video](https://www.youtube.com/watch?v=PmWYTjr_Xso))
-* Talk - Ansible London (2016), London, UK ([deck](https://speakerdeck.com/vpetersson/provisioner-at-ansible-london))
+* Talk - Open Source Summit North America, Vancouver, Canada ([deck](https://events.linuxfoundation.org/wp-content/uploads/2017/11/The-S-in-IoT-Stands-for-Security-Viktor-Petersson-Screenly-Andrew-Martin-Control-Plane.pdf))
+* Talk - Container Camp, Melbourne, Australia ([deck](https://docs.google.com/presentation/d/1E1ZzkMmytOoW-aLkWlJzFT1MYLWE2RyAv0qOjQkxDt8/edit?usp=sharing), [video](https://www.youtube.com/watch?v=PmWYTjr_Xso))
+* Talk - Ansible London, London, UK ([deck](https://speakerdeck.com/vpetersson/provisioner-at-ansible-london))
 
 ## Older
 
