@@ -29,7 +29,7 @@ permalink: /media/
 # Panel and speaking engagements
 
 ## 2020
-* Talk - Cloud Native London, London, UK ([deck](https://speakerdeck.com/vpetersson/the-devsecops-iceberg-at-cloud-native-london))
+* Talk - Cloud Native London, London, UK ([deck](https://speakerdeck.com/vpetersson/the-devsecops-iceberg-at-cloud-native-london), [video](https://youtu.be/BNnP4AmMdQE?t=130))
 
 ## 2019
 * Talk - Docker London, London, UK ([deck](https://speakerdeck.com/vpetersson/whats-mtls-at-docker-london))
