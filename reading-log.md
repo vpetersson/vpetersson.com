@@ -45,3 +45,7 @@ Here's a partial list (i.e. what I could find in my Amazon history)
 * Fictions by Jorge Luis Borges
 * Super Brain by Deepak Chopra and Rudolph E. Tanzi
 * Zen And The Art Of Motorcycle Maintenance by Robert M Parsig
+
+# 2020
+
+* Algorithms To Live By by Brian Christian and Tom Griffiths
