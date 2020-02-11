@@ -49,4 +49,4 @@ Here's a partial list (i.e. what I could find in my Amazon history)
 # 2020
 
 * Algorithms To Live By by Brian Christian and Tom Griffiths
-* Peak by Anders Ericsson & Robert Pool
+* Peak by Anders Ericsson and Robert Pool
