@@ -51,3 +51,4 @@ Here's a partial list (i.e. what I could find in my Amazon history)
 * Algorithms To Live By by Brian Christian and Tom Griffiths
 * Peak by Anders Ericsson and Robert Pool
 * The Value of Everything by Mariana Mazzucato
+* Grit by Angela Duckworth
