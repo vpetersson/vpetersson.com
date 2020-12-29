@@ -30,12 +30,13 @@ permalink: /media/
 
 ## 2020
 * Talk - Cloud Native London, London, UK ([deck](https://speakerdeck.com/vpetersson/the-devsecops-iceberg-at-cloud-native-london), [video](https://youtu.be/BNnP4AmMdQE?t=130))
+* Podcast - Balena's IoT Happy Hour ([YouTube](https://www.youtube.com/watch?v=SgCRvEP2KyA))
 
 ## 2019
 * Talk - Docker London, London, UK ([deck](https://speakerdeck.com/vpetersson/whats-mtls-at-docker-london))
 * Talk - Open Source Summit Europe, Lyon, France ([deck](https://speakerdeck.com/vpetersson/the-s-in-iot-stands-for-security), [video](https://www.youtube.com/watch?v=7yN999B11Ms&list=PLbzoR-pLrL6pamOj4UifcMJf560Ph6mJp&index=43&t=0s))
 * Talk - Kubernetes London, London, UK ([deck](https://speakerdeck.com/vpetersson/living-on-the-edge-at-kubernetes-london))
-* Talk - Infosecurity Europe, London, UK
+* Talk - InfoSecurity Europe, London, UK
 
 ## 2018
 
@@ -66,3 +67,5 @@ permalink: /media/
 * BitTorrent - [Sync Dev: Using Sync For Backups In The Cloud (With Docker)](https://www.resilio.com/blog/sync-dev-using-sync-for-backups-in-the-cloud-with-docker)
 * Weave - [How Weave Net Enables a Global Docker Cluster with OnApp](https://www.weave.works/blog/weave-global-docker-cluster/)
 * Rave Publications - [Why Are We Not Talking About Digital Signage Security?](https://www.ravepubs.com/not-talking-digital-signage-security/)
+* Weave - [Living on the Edge - How Screenly Monitors Edge IoT Devices with Prometheus](https://www.weave.works/blog/living-on-the-edge-how-screenly-monitors-edge-iot-devices-with-prometheus)
+* Docker - [Compiling Qt with Docker multi-stage and multi-platform](https://www.docker.com/blog/compiling-qt-with-docker-multi-stage-and-multi-platform/)
