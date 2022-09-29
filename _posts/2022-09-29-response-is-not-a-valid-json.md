@@ -10,7 +10,12 @@ tags:
 - note-to-self
 ---
 
-In the last 24 hours, I've spent an embarrassing amount of time trying to debug a simple WordPress installation. When saving any changes, I received `The response is not a valid JSON response`.
+In the last 24 hours, I've spent an embarrassing amount of time trying to debug a simple WordPress installation. When saving any changes, I received `The response is not a valid JSON response`. In addition, I also received weird symptoms I received was:
+
+* Getting 404s on requests to `/wp-json`
+  * Presumably the root cause for `The response is not a valid JSON response`
+* Strange redirect loops with the header `x-redirect-by: WordPress`
+  * Clearly a redirect originating from with in WordPress rather than Apache or Cloudflare
 
 After spending a long time researching this, I discovered about a hundred useless answers to why people received this. In retrospect, one of the common replies was that it was related to SSL. However, in my case SSL worked just fine, so that didn't make a lot of sense. Except that it was right on the money, in a convoluted way.
 
