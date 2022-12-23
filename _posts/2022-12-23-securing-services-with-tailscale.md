@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Securing and exposing local services with Tailscale an Nginx
+title: Securing and exposing local services with Tailscale and Nginx
 date: '2022-12-23T13:00:00+01:00'
 tags:
 - tailscale
