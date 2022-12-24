@@ -126,6 +126,14 @@ Setting up Tailscale on Proxmox was just like any other system. The somewhat tri
 ExecStartPost=pvenode cert set /etc/ssl/private/${HOSTNAME}.foobar.ts.net.crt /etc/ssl/private/${HOSTNAME}.foobar.ts.net.key --force 1 --restart 1
 ```
 
+Somewhat unrelated to the certificates, but in order to install Tailscale on an LXC container, you need to run it privileged mode as per [this document](https://tailscale.com/kb/1130/lxc-unprivileged/) and add to the config:
+
+```
+lxc.cgroup2.devices.allow: c 10:200 rwm
+lxc.mount.entry: /dev/net/tun dev/net/tun none bind,create=file
+```
+
+Do note that you can't move a container to privileged mode from unprivileged as this will break file permissions and other things in the container. The way to accomplish this is to take a backup of the container, and then **restore** the container as privileged.
 
 ## OPNsense
 

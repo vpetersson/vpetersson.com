@@ -3,7 +3,7 @@ services:
   web:
     build: .
     ports:
-     - "4000:4000"
+     - "8080:4000"
     volumes:
       - .:/usr/src/app
     command: jekyll serve --host 0.0.0.0 --incremental --limit_posts 15 --future --drafts
