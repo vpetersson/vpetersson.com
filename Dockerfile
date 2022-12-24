@@ -1,4 +1,4 @@
-FROM ruby:2.4.1-stretch
+FROM ruby:2-bullseye
 ENV LANG C.UTF-8
 RUN apt-get update -qq && \
     apt-get install -y build-essential
