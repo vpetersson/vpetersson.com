@@ -59,7 +59,7 @@ OnCalendar=monthly
 Unit=tailscale-cert.service
 
 [Install]
-WantedBy= basic.target
+WantedBy=basic.target
 ```
 
 With these two files created, you can fire up the service by hand to make sure it works:
@@ -118,6 +118,8 @@ http:
 
 You may also need to tweak your Nginx config for working with WebSocket.
 
+Finally, if you're intending to conect to a MariaDB/MySQL instance using TLS, [the official documentation](https://www.home-assistant.io/integrations/recorder/#mariadb-omit-pymysql-using-tls-encryption) is wrong. As [this forum post](https://community.home-assistant.io/t/mysql-through-an-ssl-connection/453607) correctly pointed out, instead of `;ssl=true`, you need to append `&ssl=true`.
+
 ## Proxmox
 
 Setting up Tailscale on Proxmox was just like any other system. The somewhat tricky part was to consume the certificate. To accomplish this, I added the following line after `ExecStart` in `/etc/systemd/system/tailscale-cert.service`, which instructs Proxmox to use the certificates issued from Tailscale:
@@ -135,6 +137,118 @@ lxc.mount.entry: /dev/net/tun dev/net/tun none bind,create=file
 
 Do note that you can't move a container to privileged mode from unprivileged as this will break file permissions and other things in the container. The way to accomplish this is to take a backup of the container, and then **restore** the container as privileged.
 
+## MariaDB/MySQL
+
+To use the certificate with MariaDB/MySQL, we need to modify our setup a little bit in order to accomidate for permissions.
+
+
+```yaml
+# /etc/systemd/system/tailscale-cert.service
+[Unit]
+Description=Tailscale SSL Service Renewal
+After=network.target
+After=syslog.target
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+Environment="HOSTNAME=mariadb"
+ExecStart=/usr/local/sbin/tailscale-mysql.sh
+[Install]
+WantedBy=multi-user.target
+```
+
+```bash
+#!/bin/bash
+set -euo pipefail
+IFS=$'\n\t'
+
+mkdir -p /etc/mysql/ssl
+tailscale cert \
+    --cert-file /etc/mysql/ssl/cert.crt \
+    --key-file /etc/mysql/ssl/cert.key \
+    ${HOSTNAME}.foobar.ts.net
+chown mysql:mysql -R /etc/mysql/ssl
+chmod 0660 /etc/mysql/ssl/cert*
+```
+
+With this done, we just need to tell MariaDB/MySQL to use these certificates:
+
+```yaml
+# /etc/mysql/mariadb.conf.d/50-server.cnf
+[...]
+# We need to point to a CA path instead of the CA file since we
+# are using a proper certificate.
+ssl-capath = /etc/ssl/certs/
+ssl-cert = /etc/mysql/ssl/cert.crt
+ssl-key = /etc/mysql/ssl/cert.key
+require-secure-transport = on
+
+# We don't want to allow lower ciphers than 1.2 as per NIST etc
+tls_version=TLSv1.2
+[...]
+```
+
+Finally, restart the service with `systemctl restart mysql`.
+
+You might also want to recreate your MySQL user and add the constraint `REQUIRE SSL;` to ensure the remote users only can connect using TLS (even though that should in theory also be done using `require-secure-transport`).
+
+
+## InfluxDB 2
+
+Much like MariaDB/MySQL, setting up InfluxDB requires a bit extra work with permission.
+
+We start with unit that fires a Bash script
+
+```yaml
+#/etc/systemd/system/tailscale-cert.service
+[Unit]
+Description=Tailscale SSL Service Renewal
+After=network.target
+After=syslog.target
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+Environment="HOSTNAME=influxdb"
+ExecStart=/usr/local/sbin/tailscale-influxdb.sh
+
+[Install]
+WantedBy=multi-user.target
+```
+
+We then create the bash script:
+```bash
+#!/bin/bash
+set -euo pipefail
+IFS=$'\n\t'
+
+mkdir -p /etc/influxdb/ssl
+tailscale cert \
+    --cert-file /etc/influxdb/ssl/cert.crt \
+    --key-file /etc/influxdb/ssl/cert.key \
+    ${HOSTNAME}.foobar.ts.net
+chown influxdb:influxdb -R /etc/influxdb/ssl
+chmod 0660 /etc/influxdb/ssl/cert*
+```
+
+Upon starting this script, we should now get our certificates in place. The only thing we need to do now is to edit the configuration file to have it consume our certificate:
+
+```toml
+# /etc/influxdb/config.toml
+bolt-path = "/var/lib/influxdb/influxd.bolt"
+engine-path = "/var/lib/influxdb/engine"
+tls-cert = "/etc/influxdb/ssl/cert.crt"
+tls-key =  "/etc/influxdb/ssl/cert.key"
+```
+
+Restarting the service will automatically make InfluxDB serve content over HTTPS. You shouldn't need to update the client configuration, as the port never changed.
+
+
 ## OPNsense
 
 I'm yet to add support for this. It should certainly be possible, but BSD isn't an officially supported platform. Moreover, because OPNSense uses its own CA for things like VPN configuration, it might be a bit more challenging.
+
+
