@@ -118,7 +118,21 @@ http:
 
 You may also need to tweak your Nginx config for working with WebSocket.
 
-Finally, if you're intending to conect to a MariaDB/MySQL instance using TLS, [the official documentation](https://www.home-assistant.io/integrations/recorder/#mariadb-omit-pymysql-using-tls-encryption) is wrong. As [this forum post](https://community.home-assistant.io/t/mysql-through-an-ssl-connection/453607) correctly pointed out, instead of `;ssl=true`, you need to append `&ssl=true`.
+### Home Assistant and MySQL with TLS
+
+If you're intending to conect to a MariaDB/MySQL instance using TLS, [the official documentation](https://www.home-assistant.io/integrations/recorder/#mariadb-omit-pymysql-using-tls-encryption) is wrong. As [this forum post](https://community.home-assistant.io/t/mysql-through-an-ssl-connection/453607) correctly pointed out, instead of `;ssl=true`, you need to append `&ssl=true`.
+
+### HomeAssistant and InfluxDB with TLS
+
+In order to use InfluxDB with TLS, you need to make the following changes to your Home Assistant YAML file:
+
+```yaml
+influxdb:
+  api_version: 2
+  ssl: true
+  host: influxdb.foobar.ts.net
+  port: 8086
+```
 
 ## Proxmox
 
@@ -244,8 +258,7 @@ tls-cert = "/etc/influxdb/ssl/cert.crt"
 tls-key =  "/etc/influxdb/ssl/cert.key"
 ```
 
-Restarting the service will automatically make InfluxDB serve content over HTTPS. You shouldn't need to update the client configuration, as the port never changed.
-
+Restarting the service will automatically make InfluxDB serve content over HTTPS.
 
 ## OPNsense
 
