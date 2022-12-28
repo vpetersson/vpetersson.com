@@ -122,6 +122,8 @@ You may also need to tweak your Nginx config for working with WebSocket.
 
 If you're intending to conect to a MariaDB/MySQL instance using TLS, [the official documentation](https://www.home-assistant.io/integrations/recorder/#mariadb-omit-pymysql-using-tls-encryption) is wrong. As [this forum post](https://community.home-assistant.io/t/mysql-through-an-ssl-connection/453607) correctly pointed out, instead of `;ssl=true`, you need to append `&ssl=true`.
 
+Do however note that Home Assistant *does not* actually verify the SSL certificate, thus making it vulnerable to a MiTM attack.
+
 ### HomeAssistant and InfluxDB with TLS
 
 In order to use InfluxDB with TLS, you need to make the following changes to your Home Assistant YAML file:
