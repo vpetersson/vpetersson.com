@@ -24,6 +24,7 @@ permalink: /media/
 * Sixteen:Nine - [Screenly’s Raspberry Pi-Powered Platform Shifting To New IoT Version Of Ubuntu Linux](https://www.sixteen-nine.net/2016/05/18/screenlys-raspberry-pi-powered-platform-shifting-to-new-iot-version-of-ubuntu-linux/)
 * Sixteen:Nine - [Podcast Interview](http://sixteennine.podbean.com/e/viktor-petersson-screenly/)
 * DailyDOOH - [Screenly + NEC interview](https://www.youtube.com/watch?v=LtFCOHrgvs4)
+* The Register - [Strong support for Snap and Ubuntu Core as Canonical meet IRL](https://www.theregister.com/2022/11/09/canonical_conference/)
 
 
 # Panel and speaking engagements
