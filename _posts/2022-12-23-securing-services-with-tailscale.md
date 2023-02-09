@@ -67,6 +67,7 @@ With these two files created, you can fire up the service by hand to make sure i
 ```bash
 $ systemctl daemon-reload
 $ systemctl start tailscale-cert.service
+$ systemctl enable tailscale-cert.timer
 ```
 
 If everything went well, you should now have your certificates in `/etc/ssl/private`.
