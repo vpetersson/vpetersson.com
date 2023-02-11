@@ -43,7 +43,8 @@ User=root
 Group=root
 WorkingDirectory=/etc/ssl/private/
 Environment="HOSTNAME=my-server"
-ExecStart=tailscale cert ${HOSTNAME}.foobar.ts.net
+Environment="DOMAIN=foobar.ts.net"
+ExecStart=tailscale cert ${HOSTNAME}.${DOMAIN}
 
 [Install]
 WantedBy=multi-user.target
