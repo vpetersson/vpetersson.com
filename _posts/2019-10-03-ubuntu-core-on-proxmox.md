@@ -33,4 +33,6 @@ Assuming everything went well, the drive should now be showing up as 'Unused Dis
 
 Before booting the VM, go to 'Options' -> 'Boot Order' to ensure that the harddrive is set to 'enabled' and has a boot order.
 
+You may also want go to 'Hardware' and add a 'TPM State' (v2) if you want to also use Secure Boot (and possibly even Full Disk Encryption).
+
 With this done, you should now be able to boot up your Ubuntu Core VM and be on your way.
