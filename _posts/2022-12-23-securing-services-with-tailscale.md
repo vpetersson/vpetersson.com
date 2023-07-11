@@ -57,10 +57,11 @@ Description=Renew Tailscale cert
 
 [Timer]
 OnCalendar=monthly
-Unit=tailscale-cert.service
+Unit=%i.service
+Persistent=true
 
 [Install]
-WantedBy=basic.target
+WantedBy=timers.target
 ```
 
 With these two files created, you can fire up the service by hand to make sure it works:
