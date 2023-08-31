@@ -32,7 +32,7 @@ permalink: /media/
 
 ## 2022
 
-* Talk - Ubuntu Deveeloper Summit, Prague, Czech Republic ([video](https://www.youtube.com/watch?v=fVkDqJzXKa0), [blog post](https://www.screenly.io/blog/2022/11/29/five-years-of-ubuntu-core/))
+* Talk - Ubuntu Developer Summit, Prague, Czech Republic ([video](https://www.youtube.com/watch?v=fVkDqJzXKa0), [blog post](https://www.screenly.io/blog/2022/11/29/five-years-of-ubuntu-core/))
 
 ## 2020
 * Talk - Cloud Native London, London, UK ([deck](https://speakerdeck.com/vpetersson/the-devsecops-iceberg-at-cloud-native-london), [video](https://youtu.be/BNnP4AmMdQE?t=130))
