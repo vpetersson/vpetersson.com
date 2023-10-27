@@ -58,6 +58,7 @@ permalink: /media/
 * Talk - IoT Day @ BBVA Innovation Center (2015), Madrid, Spain ([deck](https://speakerdeck.com/vpetersson/iot-use-case-screenly))
 * Talk - Open Cloud Day (2015), Bern, Switzerland ([deck](https://speakerdeck.com/vpetersson/server-evolution-from-mainframes-to-containers-and-paas), [video](https://www.youtube.com/watch?v=pHdc3f98Kxs&index=11&list=PLofS3lNZckseu0v_CP4XjgDUQxRKfF6gA))
 * Talk - ApacheCon North America (2015), Austin, TX ([deck](https://speakerdeck.com/vpetersson/an-introduction-to-cgroups-and-cgroupspy))
+* Talk - CloudExpo Europe (2025), London UK ([video](https://www.youtube.com/watch?v=BfCzbD1WXO8))
 * Panel - CloudExpo Europe (2015), London, UK
 * Talk - Zadara Summit (2014), Las Vegas, NV ([deck](https://speakerdeck.com/vpetersson/cloudsigma-zadara-summit))
 * Talk - Pi And More 3 (2013), Trier, Germany ([deck](https://speakerdeck.com/vpetersson/screenly-at-pi-and-more-3))
