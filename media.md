@@ -25,7 +25,7 @@ permalink: /media/
 * Sixteen:Nine - [Podcast Interview](http://sixteennine.podbean.com/e/viktor-petersson-screenly/)
 * DailyDOOH - [Screenly + NEC interview](https://www.youtube.com/watch?v=LtFCOHrgvs4)
 * The Register - [Strong support for Snap and Ubuntu Core as Canonical meet IRL](https://www.theregister.com/2022/11/09/canonical_conference/)
-* TechCrunch - [Screenly makes it easier to build interactive apps for its digital signage platform](https://www.producthunt.com/products/edge-apps)
+* TechCrunch - [Screenly makes it easier to build interactive apps for its digital signage platform](https://techcrunch.com/2023/08/30/screenly-makes-it-easier-to-build-interactive-apps-for-its-digital-signage-platform/)
 * Default Global Podcast - [Powering 10K Screens Worldwide: The Screenly Journey with Viktor Petersson](https://default.gogloby.io/viktor-petersson-interview/)
 * The Shobeir Show - [Episode 27](https://open.spotify.com/episode/2EMPYfIfS7RfBXdmGRMb3P?si=6286b660053e482d&nd=1)
 
