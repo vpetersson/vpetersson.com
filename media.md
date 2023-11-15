@@ -32,7 +32,7 @@ permalink: /media/
 ## 2023
 
 * Talk - Ubuntu Summit, Riga, Latvia ([deck](https://speakerdeck.com/vpetersson/from-pets-to-cattle))
-* Talk - #QSRNext, Virtual Conference ([deck](https://speakerdeck.com/vpetersson/beyond-just-a-menu-display))
+* Talk - #QSRNext, Virtual Conference ([deck](https://speakerdeck.com/vpetersson/beyond-just-a-menu-display), [video](https://www.youtube.com/watch?v=bkzFDTh_DdI))
 * Podcast - Default Global - [Powering 10K Screens Worldwide: The Screenly Journey with Viktor Petersson](https://default.gogloby.io/viktor-petersson-interview/)
 * Podcast - The Shobeir Show - [Episode 27](https://open.spotify.com/episode/2EMPYfIfS7RfBXdmGRMb3P?si=6286b660053e482d&nd=1)
 
