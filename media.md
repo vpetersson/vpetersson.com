@@ -7,8 +7,6 @@ permalink: /media/
 
 ## 2023
 
-* Press - Data Center Knowledge - [Currency Miners Cause Spot Shortages of Dedicated Servers](https://www.informationweek.com/cloud/cloud-storage/cloudsigma-one-tool-for-many-cloud-workloads/d/d-id/1114055)
-* Press - Information Week - [CloudSigma: One Tool For Many Cloud Workloads](https://www.informationweek.com/cloud/cloud-storage/cloudsigma-one-tool-for-many-cloud-workloads/d/d-id/1114055)
 * Talk - Ubuntu Summit, Riga, Latvia ([deck](https://speakerdeck.com/vpetersson/from-pets-to-cattle))
 * Talk - #QSRNext, Virtual Conference ([deck](https://speakerdeck.com/vpetersson/beyond-just-a-menu-display), [video](https://www.youtube.com/watch?v=bkzFDTh_DdI))
 * Podcast - The Shobeir Show - [Episode 27](https://open.spotify.com/episode/2EMPYfIfS7RfBXdmGRMb3P?si=6286b660053e482d&nd=1)
@@ -68,6 +66,8 @@ permalink: /media/
 
 ## 2012
 
+* Press - Data Center Knowledge - [Currency Miners Cause Spot Shortages of Dedicated Servers](https://www.informationweek.com/cloud/cloud-storage/cloudsigma-one-tool-for-many-cloud-workloads/d/d-id/1114055)
+* Press - Information Week - [CloudSigma: One Tool For Many Cloud Workloads](https://www.informationweek.com/cloud/cloud-storage/cloudsigma-one-tool-for-many-cloud-workloads/d/d-id/1114055)
 * Press - TechCrunch - [YippieMove Wants To Become The Twilio Of Email Migration](https://techcrunch.com/2012/02/07/yippiemove-wants-to-become-the-twilio-of-email-migration/)
 * Talk - NoSQL Road Show (2012), Basel, Switzerland ([deck](https://speakerdeck.com/vpetersson/mongodbs-replica-sets-painless-scaling-and-high-availability-ha))
 
