@@ -3,7 +3,8 @@ layout: default
 title: Media and Conferences
 permalink: /media/
 ---
-# Press, Mentions and interviews
+
+# Press, mentions and interviews
 
 ## 2023
 
