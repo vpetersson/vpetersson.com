@@ -9,15 +9,18 @@ permalink: /nerding-out-with-viktor/
 
 ## About
 
-Hosted by Viktor, a trailblazer in the realm of remote work and digital signage, this podcast is more than just a tech show; it's a journey into the heart of innovation. Viktor, who launched his first successful enterprise in college and now leads Screenly, brings his wealth of experience and visionary mindset to every episode.
+Join Viktor, a proud nerd and seasoned entrepreneur, whose academic journey at Santa Clara University in Silicon Valley sparked a career marked by innovation and foresight. From his college days, Viktor embarked on an entrepreneurial path, beginning with YippieMove, a groundbreaking email migration service, and continuing with a series of bootstrapped ventures.
 
-Nerding Out with Viktor is not just another tech podcast. It's a deep dive into the technologies that are shaping our world. Each episode features insightful conversations with leading tech experts, covering a spectrum of topics from AI and software development to breakthroughs in hardware and cybersecurity.
+Viktor's journey is characterized by his ability to identify and capitalize on uncharted opportunities. He co-created Blotter, a highly successful productivity app for macOS, and has been skillfully managing remote teams for over a decade, demonstrating visionary leadership well ahead of global trends.
 
-Viktor's entrepreneurial journey, from pioneering remote-only operations to revolutionizing digital signage with [Screenly](https://www.screenly.io) and [Anthias](https://anthias.screenly.io), sets the stage for engaging discussions. He brings a unique perspective, blending his business acumen with a genuine passion for technology. This podcast aims to educate and inspire, breaking down complex tech concepts into accessible, fascinating narratives.
+Leading his current venture, Screenly, which he also bootstrapped, Viktor has been dedicated to transforming the digital signage industry. Screenly, the company's flagship product, stands as the world's first developer-friendly digital signage solution, currently powering over 10,000 screens worldwide. Alongside this, the company developed Anthias, a top-ranked open-source digital signage solution, further cementing Viktor's reputation as an innovative force in the industry.
 
-Whether you're a tech enthusiast, a budding entrepreneur, or someone curious about the future of technology, Nerding Out with Viktor is your go-to source for compelling tech content. Join Viktor as he explores the cutting-edge of technology with the minds that are shaping its future.
+"Nerding Out with Viktor" captures this rich entrepreneurial spirit in a podcast format. The show features in-depth discussions with leading tech experts across diverse fields, from AI and software development to cybersecurity and hardware innovations. Viktor, drawing on his Silicon Valley education and his experiences in bootstrapping all his ventures, breaks down complex tech concepts into engaging and understandable dialogues.
 
-Subscribe now to Nerding Out with Viktor and become a part of a community where technology and entrepreneurial spirit converge.
+Whether you're a fellow tech nerd, an aspiring entrepreneur, or simply fascinated by the rapidly evolving tech landscape, "Nerding Out with Viktor" is your go-to podcast for stimulating, insightful conversations. Join Viktor as he delves into the minds of those shaping our technological future.
+
+Subscribe to "Nerding Out with Viktor" now and become part of a community where being a proud nerd and entrepreneurial innovation come together in captivating discussions.
+
 
 ## Links
 
