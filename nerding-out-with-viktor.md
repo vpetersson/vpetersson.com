@@ -21,14 +21,14 @@ Whether you're a fellow tech nerd, an aspiring entrepreneur, or simply fascinate
 
 Subscribe to "Nerding Out with Viktor" now and become part of a community where being a proud nerd and entrepreneurial innovation come together in captivating discussions.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PXHmgoPrmG4?si=Z1Gq8g6cgJ25JuYu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Links
 
 * [YouTube](https://www.youtube.com/@nerdingoutwithviktor )
-* Spotify (coming soon)
-* Apple Podcast (coming soon)
+* [Spotify](https://podcasters.spotify.com/pod/show/nerding-out-with-viktor)
+* [Apple Podcast](https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295)
 
 ## Episodes
 
 TBA
-
