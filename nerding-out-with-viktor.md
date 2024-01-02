@@ -25,9 +25,10 @@ Subscribe to "Nerding Out with Viktor" now and become part of a community where 
 
 ## Links
 
-* [YouTube](https://www.youtube.com/@nerdingoutwithviktor)
-* [Spotify](https://podcasters.spotify.com/pod/show/nerding-out-with-viktor)
 * [Apple Podcast](https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295)
+* [Spotify](https://podcasters.spotify.com/pod/show/nerding-out-with-viktor)
+* [YouTube](https://www.youtube.com/@nerdingoutwithviktor)
+* [RSS Feed](https://podcast.nerdingoutwithviktor.com/podcast_feed.xml)
 
 ## Episodes
 
