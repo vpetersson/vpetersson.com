@@ -25,10 +25,24 @@ Subscribe to "Nerding Out with Viktor" now and become part of a community where 
 
 ## Links
 
-* [YouTube](https://www.youtube.com/@nerdingoutwithviktor )
+* [YouTube](https://www.youtube.com/@nerdingoutwithviktor)
 * [Spotify](https://podcasters.spotify.com/pod/show/nerding-out-with-viktor)
 * [Apple Podcast](https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295)
 
 ## Episodes
 
-TBA
+### S01E01: Nerding out about security with Andrew Martin from ControlPlane
+
+In the inaugural episode of "Nerding Out With Viktor," we delve into the intricate world of Cloud Native security with guest Andy Martin from ControlPlane. As a seasoned security engineer, Andy brings a wealth of experience in servicing regulated industries such as finance and government, providing unique insights into the field.
+
+This episode covers a variety of engaging topics. We start with an introduction to Andy Martin and ControlPlane, where Andy discusses his journey in security engineering and the evolution of ControlPlane. The conversation then shifts to a review of the "Internet of Shit" conference talk, a memorable presentation given by Viktor and Andy, highlighting key insights and takeaways.
+
+Penetration Testing is another critical topic we explore, understanding its concept and the role it plays in assessing both digital and physical security systems. The episode also navigates through the intricacies of Social Engineering Attacks, discussing various forms including phishing and more sophisticated strategies.
+
+We delve into the ethics of hacking, examining the differences between Black Hat, White Hat, and Grey Hat hackers and their impact on cybersecurity. The debate of On-Prem vs. Cloud Security is also addressed, providing a critical analysis of the security aspects of both on-premise and cloud-based solutions.
+
+Further, we examine the relevance and limitations of Compliance and Certifications in Cybersecurity, specifically focusing on certifications like SOC 2 and ISO 27001. The episode also introduces the Zero Trust Security Model, offering insights into its importance and implementation in modern cybersecurity practices.
+
+A highlight of the episode is Andy conducting a practical Threat Modeling Exercise, showcasing real-time risk assessment strategies. Finally, we discuss Supply Chain Security and Software Bills of Materials (SBOMs), diving into the challenges and importance in software development.
+
+This episode is a treasure trove of information for cybersecurity professionals, IT enthusiasts, and anyone interested in the latest trends and practices in digital security. Don’t forget to subscribe, like, and share for more insightful discussions on "Nerding Out With Viktor."

@@ -1,7 +1,7 @@
-FROM ruby:2-bullseye
+FROM ruby:3.2-bullseye
 ENV LANG C.UTF-8
 RUN apt-get update -qq && \
-    apt-get install -y build-essential
+    apt-get install -y python3 build-essential
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 ENV NOKOGIRI_USE_SYSTEM_LIBRARIES true
