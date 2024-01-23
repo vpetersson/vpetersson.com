@@ -48,7 +48,7 @@ A highlight of the episode is Andy conducting a practical Threat Modeling Exerci
 
 This episode is a treasure trove of information for cybersecurity professionals, IT enthusiasts, and anyone interested in the latest trends and practices in digital security. Don’t forget to subscribe, like, and share for more insightful discussions on "Nerding Out With Viktor."
 
-### S01E01: Nerding out about Prometheus and observability with Julius Volz, PromLabs/Prometheus
+### S01E02: Nerding out about Prometheus and observability with Julius Volz, PromLabs/Prometheus
 
 
 This episode of Nerding Out With Viktor features an in-depth interview with Julius Volz, the co-founder of Prometheus and founder of PromLab. The discussion delves into the origins and development of Prometheus, an open-source monitoring system that has become the standard for metrics-based systems monitoring. Julius recounts his journey, starting from his days at Google, where he worked with Borgmon, to co-creating Prometheus to address the shortcomings in existing open-source monitoring systems.
