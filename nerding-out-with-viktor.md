@@ -47,3 +47,17 @@ Further, we examine the relevance and limitations of Compliance and Certificatio
 A highlight of the episode is Andy conducting a practical Threat Modeling Exercise, showcasing real-time risk assessment strategies. Finally, we discuss Supply Chain Security and Software Bills of Materials (SBOMs), diving into the challenges and importance in software development.
 
 This episode is a treasure trove of information for cybersecurity professionals, IT enthusiasts, and anyone interested in the latest trends and practices in digital security. Don’t forget to subscribe, like, and share for more insightful discussions on "Nerding Out With Viktor."
+
+### S01E01: Nerding out about Prometheus and observability with Julius Volz, PromLabs/Prometheus
+
+
+This episode of Nerding Out With Viktor features an in-depth interview with Julius Volz, the co-founder of Prometheus and founder of PromLab. The discussion delves into the origins and development of Prometheus, an open-source monitoring system that has become the standard for metrics-based systems monitoring. Julius recounts his journey, starting from his days at Google, where he worked with Borgmon, to co-creating Prometheus to address the shortcomings in existing open-source monitoring systems.
+
+Julius explains the technical aspects of Prometheus, including its dimensional data model, query language (PromQL), and how it handles time series data. Julius also addresses common mistakes new users make, particularly around metric design and the issue of "cardinality bombs". The conversation shifts to best practices in server monitoring, the role of Prometheus' alert manager, and the challenges of long-term data storage, highlighting solutions like Cortex and Thanos.
+
+Further, the interview covers the simplicity and flexibility of writing Prometheus exporters, even with minimal coding knowledge. Julius shares unique use cases of Prometheus, from monitoring wind power parks to shipping vessels and German train systems. He gives a live demonstration of PromQL, explaining functions like 'rate', 'irate', and 'increase', and their applications in real-world scenarios.
+
+The discussion then turns to future trends in observability, touching upon the role of eBPF in Prometheus, the integration with OpenTelemetry, and the evolution of the OpenMetrics project. Julius also talks about his current focus on providing Prometheus training through PromLabs, offering both live and self-paced courses.
+
+The episode is packed with technical insights, practical advice, and a comprehensive overview of Prometheus's role in the evolving landscape of systems monitoring and observability.
+
