@@ -8,7 +8,7 @@ permalink: /media/
 
 ## 2024
 
-* Talk - State of Open Con, London, UK ([deck](https://speakerdeck.com/vpetersson/state-of-open-con-24))
+* Talk - State of Open Con, London, UK ([deck](https://speakerdeck.com/vpetersson/state-of-open-con-24), [video](https://www.youtube.com/watch?v=vX-qK9mxKZI))
 
 ## 2023
 
