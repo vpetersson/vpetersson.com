@@ -6,6 +6,8 @@ permalink: /media/
 
 # Press, mentions and interviews
 
+## 2024
+
 ## 2023
 
 - Talk - Ubuntu Summit, Riga, Latvia ([deck](https://speakerdeck.com/vpetersson/from-pets-to-cattle), [video](https://www.youtube.com/watch?v=oeIkJD3cTtw))

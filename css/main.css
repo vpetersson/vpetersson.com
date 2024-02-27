@@ -16,26 +16,29 @@
   background-color: rgba(0, 2, 18,0.1); /* Change the color and adjust the opacity as needed */
 }
 
-nav{
+nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
 }
+
 .header-text {
   font-size: 91.1px;
   line-height: 93.32px;
   font-weight: 400;
 }
+
 body {
   font-family: "Anton";
   letter-spacing: 1.1px;
 }
+
 .nav-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
 
-.search{
+.search {
   font-size: 18px;
   font-family: "DM Sans";
 }
@@ -46,6 +49,7 @@ body {
   font-weight: 400;
   line-height: 21px;
 }
+
 .header-button {
   font-size: 16px;
   font-weight: 400;
@@ -57,17 +61,20 @@ body {
   letter-spacing: 1.1px;
   z-index: 1;
 }
+
 .main-heading {
   font-size: 32px;
   line-height: 38.4px;
   font-weight: 400;
 }
+
 .normal-content {
   font-size: 14px;
   font-family: "DM Sans";
   font-weight: 400;
   line-height: 18px;
 }
+
 .main-button {
   background: #5d5fef;
   font-size: 16px;
@@ -127,6 +134,7 @@ body {
   padding: 24px;
   background: rgba(26, 27, 42, 1);
 }
+
 .blog-content {
   font-size: 20px;
   font-weight: 400;
@@ -150,7 +158,8 @@ body {
   letter-spacing: 0.7px;
   color: rgba(255, 255, 255, 1);
 }
-.tag{
+
+.tag {
   padding: 4px 16px;
   border-radius: 32px;
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -158,6 +167,16 @@ body {
   line-height: 21px;
   color:rgba(255, 255, 255, 1);
   font-family: "Roboto";
+}
+
+.email{
+  padding: 8px 16px;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 18px;
+  line-height: 27px;
+  color:rgba(255, 255, 255, 1);
+  font-family: "DM Sans";
 }
 
 .mt-27 {
@@ -169,26 +188,25 @@ body {
   line-height: 36.13px;
 }
 
-.about-summary{
+.about-summary {
   font-size: 14px;
   line-height: 21px;
   font-family: "DM Sans";
 }
 
-.podcast-story-heading{
+.podcast-story-heading {
   font-size: 32px;
   line-height: 38px;
   font-weight: 400;
 }
 
-.share{
+.share {
   font-size: 16px;
   font-family: "Hanken Grotesk";
   font-weight: 600;
 }
 
-
-.podcast-summary{
+.podcast-summary {
   font-size: 14px;
   line-height: 21px;
   font-family: "DM Sans";
@@ -202,12 +220,14 @@ body {
     line-height: 187.52px;
     font-weight: 400;
   }
+
   .header-content {
     font-size: 18px;
     font-family: "DM Sans";
     font-weight: 400;
     line-height: 24px;
   }
+
   .header-button {
     font-size: 16px;
     font-weight: 400;
@@ -218,17 +238,20 @@ body {
     height: 48px;
     letter-spacing: 1.1px;
   }
+
   .main-heading {
     font-size: 48px;
     line-height: 57.6px;
     font-weight: 400;
   }
+
   .normal-content {
     font-size: 18px;
     font-family: "DM Sans";
     font-weight: 400;
     line-height: 27px;
   }
+
   .main-button {
     background: #5d5fef;
     font-size: 16px;
@@ -240,15 +263,17 @@ body {
     letter-spacing: 1.2px;
   }
 
-  .podcast-heading{
+  .podcast-heading {
     font-weight: 400;
     font-size: 40px;
     line-height: 38px;
   }
+
   .podcast-item-heading {
     font-size: 32px;
     line-height: 40px;
   }
+
   .podcast-item-button {
     background: #5d5fef;
     font-size: 16px;
@@ -288,12 +313,14 @@ body {
     padding: 24px;
     background: rgba(26, 27, 42, 1);
   }
+
   .blog-content {
     font-size: 20px;
     font-weight: 400;
     line-height: 34px;
     letter-spacing: 0.4px;
   }
+
   .blog-time {
     font-size: 12px;
     font-weight: 400;
@@ -308,15 +335,17 @@ body {
     line-height: 26px;
     letter-spacing: 0.4px;
   }
+
   .mt-27 {
     margin-top: 27px;
   }
-  .about-summary{
+
+  .about-summary {
     font-size: 18px;
     line-height: 27px;
   }
 
-  .tag{
+  .tag {
     padding: 4px 16px;
     border-radius: 32px;
     border: 1px solid rgba(255, 255, 255, 0.25);
@@ -326,16 +355,17 @@ body {
     margin-right: 12px;
   }
   
-  .podcast-story-heading{
+  .podcast-story-heading {
     font-size: 48px;
     line-height: 72px;
     font-weight: 400;
   }
+
   .mt-20 {
     margin-top: 20px;
   }
 
-  .share{
+  .share {
     font-size: 20px;
     line-height: 26px;
   }

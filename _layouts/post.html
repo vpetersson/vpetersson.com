@@ -50,22 +50,11 @@ layout: default
           
           </div>
             <div class="inline-block lg:flex flex-row">
+              {% for tag in page.tags %}
               <p class="inline-block tag h-[30px]">
-                  TAGS
+                  {{tag}}
               </p>
-              <p class="inline-block tag h-[30px]">
-                  LONGER TAGS
-              </p>
-              <p class="inline-block tag h-[30px]">
-                  TAGS
-              </p>
-              <p class="inline-block tag h-[30px]">
-                  LONGER TAGS
-              </p>
-              <p class="inline-block tag h-[30px]">
-                  TAGS
-              </p>
-                 
+              {% endfor %}
             </div>
       </div>
       </div>
