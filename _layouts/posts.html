@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{% include header.html %}
+<div class="home">
+  <div
+    class="bg-[url('/assets/background.png')] bg-no-repeat bg-cover h-[269px] sm:h-[374px] flex items-center justify-center"
+  >
+    <div>
+      <p
+        class="header-text text-white "
+      >
+        BLOG
+      </p>
+    </div>
+  </div>
+
+  <div class="bg-black blog-section">
+    <div class="w-[342px] xl:w-[1110px] m-auto">
+      <p class="podcast-heading text-white ">Blog Posts</p>
+      <div class="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 gap-8 mt-8">
+        {% for post in site.posts %}
+          <a
+            href="{{ post.url | relative_url }}"
+            class="blog-card w-[340] xl:w-[350px] rounded-lg text-white"
+          >
+            <p class="blog-content">{{ post.title | escape }}</p>
+            <p class="text-gray-400 blog-time pt-3">
+              {% assign date_format = site.minima.date_format | default: "%b %-d,
+              %Y" %}
+              <span class="post-meta">{{ post.date | date: date_format }}</span>
+            </p>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

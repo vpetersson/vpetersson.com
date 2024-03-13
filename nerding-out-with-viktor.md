@@ -6,7 +6,6 @@ permalink: /nerding-out-with-viktor/
 
 # Nerding Out with Viktor
 
-
 ## About
 
 Join Viktor, a proud nerd and seasoned entrepreneur, whose academic journey at Santa Clara University in Silicon Valley sparked a career marked by innovation and foresight. From his college days, Viktor embarked on an entrepreneurial path, beginning with YippieMove, a groundbreaking email migration service, and continuing with a series of bootstrapped ventures.
@@ -25,10 +24,10 @@ Subscribe to "Nerding Out with Viktor" now and become part of a community where 
 
 ## Links
 
-* [Apple Podcast](https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295)
-* [Spotify](https://podcasters.spotify.com/pod/show/nerding-out-with-viktor)
-* [YouTube](https://www.youtube.com/@nerdingoutwithviktor)
-* [RSS Feed](https://podcast.nerdingoutwithviktor.com/podcast_feed.xml)
+- [Apple Podcast](https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295)
+- [Spotify](https://podcasters.spotify.com/pod/show/nerding-out-with-viktor)
+- [YouTube](https://www.youtube.com/@nerdingoutwithviktor)
+- [RSS Feed](https://podcast.nerdingoutwithviktor.com/podcast_feed.xml)
 
 ## Episodes
 
@@ -50,7 +49,6 @@ This episode is a treasure trove of information for cybersecurity professionals,
 
 ### S01E02: Nerding out about Prometheus and observability with Julius Volz, PromLabs/Prometheus
 
-
 This episode of Nerding Out With Viktor features an in-depth interview with Julius Volz, the co-founder of Prometheus and founder of PromLab. The discussion delves into the origins and development of Prometheus, an open-source monitoring system that has become the standard for metrics-based systems monitoring. Julius recounts his journey, starting from his days at Google, where he worked with Borgmon, to co-creating Prometheus to address the shortcomings in existing open-source monitoring systems.
 
 Julius explains the technical aspects of Prometheus, including its dimensional data model, query language (PromQL), and how it handles time series data. Julius also addresses common mistakes new users make, particularly around metric design and the issue of "cardinality bombs". The conversation shifts to best practices in server monitoring, the role of Prometheus' alert manager, and the challenges of long-term data storage, highlighting solutions like Cortex and Thanos.
@@ -60,4 +58,3 @@ Further, the interview covers the simplicity and flexibility of writing Promethe
 The discussion then turns to future trends in observability, touching upon the role of eBPF in Prometheus, the integration with OpenTelemetry, and the evolution of the OpenMetrics project. Julius also talks about his current focus on providing Prometheus training through PromLabs, offering both live and self-paced courses.
 
 The episode is packed with technical insights, practical advice, and a comprehensive overview of Prometheus's role in the evolving landscape of systems monitoring and observability.
-

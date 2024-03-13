@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Home Assistant, ESPHome and JZK ESP-32S
-date: '2019-11-16T13:00:00+01:00'
+date: "2019-11-16T13:00:00+01:00"
 tags:
-- esp32
-- home-assistant
-- smart-home
-- note-to-self
+  - esp32
+  - home-assistant
+  - smart-home
+  - note-to-self
 ---
 
 Long story short, I've pimped out my apartment with a lot of Ikea Smart products, such that I can control (and automate) everything from [Home Assistant](https://www.home-assistant.io/). While I admittedly have a love-hate relationship with Home Assistant, it is generally speaking a pretty impressive software.
@@ -57,9 +57,9 @@ ota:
 
 Other pro-tip for people new to Home Assistant:
 
- * Don't use a Raspberry Pi if you're doing something beyond very basic. Instead use a virtual machine or similar.
- * [Switch to using MySQL](https://www.home-assistant.io/integrations/recorder/) instead of the default Sqlite3 database as the backend as it will significantly improve performance.
- * **Bonus:** Adopt [InfluxDB](https://www.home-assistant.io/integrations/influxdb/), which you can then consume from [Grafana](https://grafana.com/) for better visualization.
+- Don't use a Raspberry Pi if you're doing something beyond very basic. Instead use a virtual machine or similar.
+- [Switch to using MySQL](https://www.home-assistant.io/integrations/recorder/) instead of the default Sqlite3 database as the backend as it will significantly improve performance.
+- **Bonus:** Adopt [InfluxDB](https://www.home-assistant.io/integrations/influxdb/), which you can then consume from [Grafana](https://grafana.com/) for better visualization.
 
 ## Update 1: Air quality monitor
 
