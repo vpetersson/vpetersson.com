@@ -111,6 +111,7 @@ GEM
       bigdecimal (~> 3.1)
     typhoeus (1.4.1)
       ethon (>= 0.9.0)
+    webrick (1.8.1)
     yell (2.2.2)
     zeitwerk (2.6.13)
 
@@ -119,7 +120,7 @@ PLATFORMS
 
 DEPENDENCIES
   html-proofer
-  jekyll (~> 3.9.2)
+  jekyll (~> 3.9.3)
   jekyll-feed (~> 0.6)
   jekyll-paginate
   jekyll-redirect-from
@@ -127,6 +128,7 @@ DEPENDENCIES
   kramdown-parser-gfm
   minima (~> 2.0)
   tzinfo-data
+  webrick
 
 BUNDLED WITH
    2.4.19
