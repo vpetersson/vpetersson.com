@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Boostrapping Chronicles - Chapter 2
