@@ -2,6 +2,7 @@
 layout: post
 title: Boostrapping Chronicles - Chapter 1
 date: '2024-03-22T01:00:00+01:00'
+redirect_from: /2024/03/22/boostrapping-chronicles-chapter1.html
 tags:
 - boostrapping
 - startup
@@ -34,6 +35,8 @@ What I learned from this endeavor was a few things:
 3. Marketplaces are a powerful sales channel for small niche services. In today’s world, where G2/Capterra is fully gamified, I’m not sure where that leads. Back then, Google's own listings drove a large part of our revenue.
 4. Do Your Homework on TAM and GTM: The advantage of raising funds is it forces you to thoroughly understand your Total Addressable Market (TAM) and Go-To-Market (GTM) strategy. This exercise is invaluable. Often, developing the product is the straightforward part, while devising an effective GTM strategy is more complex. For us, the TAM for non-enterprise email migration proved too limited.
 5. Establish a Recurring Revenue Stream: While our channel sales did result in repeat business, they didn’t scale as much as we needed. In hindsight, pivoting to a backup service—which some of our clients used us for (hello, Naval!)—might have been a more sustainable model for generating recurring revenue.
+
+I also got to know Kevin Henrikson, who (fortunately) passed on investing in YippieMove, but turned out to become a friend, mentor and board member for Screenly.
 
 I’ll continue my lessons in Chapter 2 with my next experience with building Blotter.
 
