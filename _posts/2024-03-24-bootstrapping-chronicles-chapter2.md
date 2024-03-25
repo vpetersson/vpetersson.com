@@ -2,7 +2,7 @@
 ---
 layout: post
 title: Boostrapping Chronicles - Chapter 2
-date: '2024-03-25T01:00:00+01:00'
+date: '2024-03-24T01:00:00+01:00'
 tags:
 - boostrapping
 - startup
