@@ -635,7 +635,7 @@ layout: default
           <div class="max-sm:flex max-sm:py-3">
             <div class="share max-sm:py-0 py-4 text-white">Share:</div>
             <div class="flex max-sm:pl-3 space-x-4 max-sm:pt-2">
-              <a href="{{site.data.main.social.linkedIn}}"
+              <button onclick="share('{{site.data.main.social.linkedIn}}')"
                 ><svg
                   width="14"
                   height="14"
@@ -667,8 +667,8 @@ layout: default
                       />
                     </clipPath>
                   </defs>
-                  </svg></a>
-              <a href="{{site.data.main.social.twitter}}">
+                  </svg></button>
+              <button onclick="share('{{site.data.main.social.twitter}}')">
                 <svg
                   width="8"
                   height="15"
@@ -680,7 +680,7 @@ layout: default
                     d="M7.58666 0.582966L5.77778 0.580078C3.74557 0.580078 2.43227 1.92082 2.43227 3.99596V5.57092H0.61353C0.456369 5.57092 0.329102 5.6977 0.329102 5.85408V8.13601C0.329102 8.29239 0.456514 8.41903 0.61353 8.41903H2.43227V14.1771C2.43227 14.3334 2.55954 14.4601 2.7167 14.4601H5.08964C5.2468 14.4601 5.37407 14.3333 5.37407 14.1771V8.41903H7.5006C7.65776 8.41903 7.78503 8.29239 7.78503 8.13601L7.7859 5.85408C7.7859 5.779 7.75586 5.70708 7.7026 5.65395C7.64935 5.60081 7.57679 5.57092 7.50133 5.57092H5.37407V4.23581C5.37407 3.5941 5.52775 3.26834 6.36782 3.26834L7.58637 3.26791C7.74338 3.26791 7.87065 3.14113 7.87065 2.98489V0.865987C7.87065 0.709892 7.74353 0.583255 7.58666 0.582966Z"
                     fill="white"
                   /></svg></a>
-              <a href="{{site.data.main.social.twitter}}">
+              <button onclick="share('{{site.data.main.social.twitter}}')">
                 <svg
                   width="15"
                   height="15"
@@ -695,7 +695,7 @@ layout: default
                       d="M6.11511 7.68036L0.870483 1.16333H5.0246L8.26207 5.1913L11.7208 1.18147H14.0087L9.36826 6.56761L14.8705 13.4133H10.7288L7.22325 9.05733L3.48076 13.4013H1.18049L6.11511 7.68036ZM11.3324 12.2058L3.41765 2.37082H4.42045L12.3253 12.2058H11.3324Z"
                       fill="white"
                     />
-                  </g></svg></a>
+                  </g></svg></button>
             </div>
           </div>
         </div>

@@ -14,7 +14,9 @@ function toggle() {
     x.classList.add("block");
   }
 }
-
+function share(url){
+  navigator.clipboard.writeText(url);
+}
 function toggleSearch() {
   var x = document.getElementById("search-menu");
   if (x.classList.contains("block")) {
