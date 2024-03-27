@@ -23,7 +23,7 @@ One big issue we faced was the Mac App Store's rule against charging for app upd
 
 Eventually, we moved Blotter into maintenance mode, focusing only on essential updates due to the above limitation.
 
-It took until macOS Ventura in 2022 for Apple to introduce a feature like Blotter as part of the system, which felt like a nod to what we had built.
+It took until macOS Sonoma in 2023 for Apple to introduce a feature like Blotter as part of the system, which felt like a nod to what we had built.
 
 From Blotter, I learned a lot about the power and limitations of selling through an App Store. It's a great way to get your app out there, but it also puts a cap on how much you can grow.
 
