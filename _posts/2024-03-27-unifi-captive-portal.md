@@ -15,7 +15,7 @@ Lately, I've been doing some digging into captive portals - you know, these thin
 * You load a web page that usually requires you to tick a box or enter your email.
 * If the system is satisfied with the input above, you are sent to a page that returns HTTP status 200 (and usually a `success` message in the body), which tells the system that you're online.
 
-Now, I'm a massive UniFi fan. Over the years, I've migrated most of my networks over to UniFi equipment with [Dream Machine Pros](https://store.ui.com/us/en/collections/unifi-dream-machine/products/udm-pro) as the firewall. It's a great turn-key solution that largely just works. Prior to this, I usually relied on either a [pfSense](https://www.pfsense.org/) (or later [OPNsense](https://opnsense.org/)), but frankly, the UDM is just a great device that integrates seamlessly with all other UniFi hardware. That means provisioning a whole network is done in a few clicks.
+Now, I'm a massive UniFi fan. Over the years, I've migrated most of my networks over to UniFi equipment with [Dream Machine Pros](https://store.ui.com/us/en/collections/unifi-dream-machine/products/udm-pro) as the firewall. It's a great turn-key solution that largely just works. Prior to this, I usually relied on either a [pfSense](https://www.pfsense.org/) (and later [OPNsense](https://opnsense.org/)), but frankly, the UDM is just a great device that integrates seamlessly with all other UniFi hardware. That means provisioning a whole network is done in a few clicks.
 
 ## Captive portals and UniFi
 
@@ -32,7 +32,7 @@ What you notice when you start digging into these third-party tools is that they
 There is, however, a good reason why they ask for this. As it turns out, this is required for an External Portal Server to work; they need the ability to approve guests by issuing an API call to the console.
 
 When a user tries to access the WiFi, a GET request is sent to the external server that looks like this:
-http://externalportal.example.com?ap=access_point_mac&user_mac=user_mac_address&ssid=network_ssid&url=original_url_requested
+`http://externalportal.example.com?ap=access_point_mac&user_mac=user_mac_address&ssid=network_ssid&url=original_url_requested`
 
 Notice all those GET parameters:
 
@@ -61,7 +61,7 @@ Now, there are a few problems with this:
 * We need to be able to talk directly to the console (i.e., this is **not** unifi.ui.com), but rather the console directly.
 * We need to acquire a Bearer token (which is done by issuing a call to the `/api/auth/login` with a set of admin-level credentials).
 
-As you can see, this is why these tools need both direct access to your UniFi console and a set of credentials.
+As you can see, this is why these tools need both direct access to your UniFi console and a set of credentials. Some of them also use this to provision the External Portal Server configuration, which is somewhat neat.
 
 ## Is it possible to use External Portal sensibly?
 
