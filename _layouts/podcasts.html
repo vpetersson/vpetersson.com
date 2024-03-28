@@ -52,8 +52,7 @@ layout: default
             <div
               class="podcast-item-time mt-27 text-white hidden lg:block xl:block"
             >
-              20 DEC • 2020<span class="pl-4">1 hr 5 min</span
-              ><span class="pl-4">VIDEO</span>
+              {{ podcast.date | date: date_format }}
             </div>
           </div>
         </a>

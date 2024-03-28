@@ -628,9 +628,7 @@ layout: default
           <div
             class="flex pt-6 max-lg:py-6 max-lg:w-[234px] max-lg:h-[16px] font-dm-sans opacity-75 text-[#FFFFFF] leading-4 text-3 font-bold w-64 justify-between"
           >
-            <p class="blog-time">20 DEC • 2020</p>
-            <p class="blog-time">1 hr 5 min</p>
-            <p class="blog-time">VIDEO</p>
+            <p class="blog-time">{{ page.date | date: date_format }}</p>
           </div>
           <div class="max-sm:flex max-sm:py-3">
             <div class="share max-sm:py-0 py-4 text-white">Share:</div>
