@@ -16,6 +16,12 @@
   background-color: rgba(0, 2, 18,0.1); /* Change the color and adjust the opacity as needed */
 }
 
+ol, ul {
+  list-style: revert !important;
+  margin: revert !important;
+  padding: revert !important;
+}
+
 nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
