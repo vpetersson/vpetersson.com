@@ -15,6 +15,10 @@ nav:
     link: /podcast
   - name: BLOG
     link: /blog
+  - name: READING LOG
+    link: /reading-log/
+  - name: REMOTE WORK
+    link: /remote-work/
 
 social:
   twitter: https://twitter.com/vpetersson

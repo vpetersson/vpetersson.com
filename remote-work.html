@@ -1,14 +1,46 @@
 ---
-layout: page
+layout: default
 permalink: /remote-work/
 title: Remote Work
 ---
-
-<div id="archives">
-  {% for post in site.categories.remote-work %}
-  <li>
-    <span>{{ post.date | date_to_string }}</span> &nbsp;
-    <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
-  {% endfor %}
+{% include header.html %}
+<div class="home">
+  <div
+    class="bg-[url('/assets/background.png')] bg-no-repeat bg-cover h-[269px] sm:h-[374px] flex items-center justify-center"
+  >
+    <div>
+      <p class="header-text text-white">REMOTE WORK</p>
+    </div>
+  </div>
+  
+  <div class="w-full bg-[#1A1B2A] lg:bg-[#000212]">
+    <div
+      class="w-full lg:w-[1225px] m-auto max-sm:py-8 space-y-8 m-auto flex flex-col py-12 tracking-[-0.58px]"
+    >
+      {% for post in site.categories.remote-work %}
+      <div
+        class="flex max-sm:w-[341px] flex-col w-[1225.37px] lg:flex-row"
+      >
+        <div
+          class="max-sm:px-6 max-sm:py-3 md:px-0 md:pr-0 max-sm:w-[341px] w-[358px] font-normal Leading-[40px] tracking-[-0.56px] text-[32px] text-blue-500"
+        >
+        </div>
+        <div
+          class="space-y-3 max-sm:space-y-0 max-sm:w-[341px] w-[864.37px] text-[Roboto] text-xs xl:text-base text-white"
+        >
+        <span>{{ post.date | date_to_string }} - </span> &nbsp;
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
 </div>
+  <!-- <div id="archives">
+    {% for post in site.categories.remote-work %}
+    <li>
+      <span>{{ post.date | date_to_string }}</span> &nbsp;
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </div>
+</div> -->
