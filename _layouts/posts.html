@@ -35,22 +35,24 @@ layout: default
         {% endfor %}
       </div>
       <!-- Pagination links -->
-      <div class="pagination">
-        1
+      <div class="pagination text-white mt-8 text-center">
         {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path }}" class="previous">
-            Previous
+          <a href="{{ paginator.previous_page_path }}" class="mx-4">
+            <i class="fa fa-angle-left" style="font-size:36px"></i>
           </a>
         {% else %}
-          <span class="previous">Previous</span>
+          <span class="mx-4">
+            <i class="fa fa-angle-left" style="font-size:36px"></i></span>
         {% endif %}
-        <span class="page_number ">
+        <span class="page_number " style="font-size:24px">
           Page: {{ paginator.page }} of {{ paginator.total_pages }}
         </span>
         {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+          <a href="{{ paginator.next_page_path }}" class="mx-4">
+            <i class="fa fa-angle-right" style="font-size:36px"></i></a>
         {% else %}
-          <span class="next ">Next</span>
+          <span class="mx-4 ">
+            <i class="fa fa-angle-right" style="font-size:36px"></i></span>
         {% endif %}
       </div>
     </div>
