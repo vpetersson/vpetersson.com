@@ -150,11 +150,11 @@
               </svg>
 
               <input
-                type="search"
+                type="text"
+                id="search-input"
                 class="relative m-0 -mr-0.5 block min-w-0 lg:w-1/2 md:w-1/4 flex flex-auto w-auto bg-transparent bg-clip-padding px-3 py-[0.25rem] search text-neutral-700 outline-none ease-in-out focus:z-[3] focus:text-neutral-700 focus:outline-none dark:text-neutral-200 dark:placeholder:text-neutral-200"
                 placeholder="Search"
                 aria-label="Search"
-                aria-describedby="button-addon1"
               />
 
               <!--Search button-->
@@ -266,6 +266,8 @@
       <!-- Mobile menu, show/hide based on menu state. -->
     </div>
   </nav>
+  
+  <ul id="results-container"></ul>
   <div
     class="lg:flex lg:flex-row lg:max-h-screen xl:max-h-screen max-h-full xl:flex xl:flex-row"
   >
@@ -532,3 +534,35 @@
     </div>
   </div>
 </div>
+
+
+
+
+<script src="/js/search.js"></script>
+<script>
+    window.simpleJekyllSearch = new SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: true
+    })
+</script>
+<style>
+  #search-container {
+      display: inline-block;
+  }
+  #results-container {
+      list-style: none !important;
+      margin: 0;
+      position: absolute;
+      top: 60px;
+      right: 50px;
+      background: #fff;
+  }
+  #results-container li {
+      padding: 10px;
+  }
+</style>

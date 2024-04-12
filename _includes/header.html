@@ -110,7 +110,7 @@
           <div class="grid grid-cols-12">
             <div
               class="flex flex-wrap col-span-8 xl:col-span-7 lg:col-span-7 md:col-span-5 border border-gray-500 rounded-lg"
-            >
+              >
               <svg
                 width="34px"
                 height="38px"
@@ -150,13 +150,13 @@
               </svg>
 
               <input
-                type="search"
+                type="text"
+                id="search-input"
                 class="relative m-0 -mr-0.5 block min-w-0 lg:w-1/2 md:w-1/4 flex flex-auto w-auto bg-transparent bg-clip-padding px-3 py-[0.25rem] search text-neutral-700 outline-none ease-in-out focus:z-[3] focus:text-neutral-700 focus:outline-none dark:text-neutral-200 dark:placeholder:text-neutral-200"
                 placeholder="Search"
                 aria-label="Search"
                 aria-describedby="button-addon1"
               />
-
               <!--Search button-->
             </div>
             <div
@@ -266,6 +266,8 @@
       <!-- Mobile menu, show/hide based on menu state. -->
     </div>
   </nav>
+  
+  <ul id="results-container"></ul>
 </div>
 
 <div
@@ -428,7 +430,7 @@
 >
   <div class="w-[342px] m-auto">
     <div class="pb-[24px]">
-      <div
+      <div id="search-container"
         class="h-[68px] flex items-center justify-end"
         style="border-bottom: 1px solid rgba(0, 0, 0, 0.1)"
       >
@@ -455,10 +457,12 @@
           />
         </svg>
 
-        <input
+        <input 
+        id="search-input"
           class="w-[270px] bg-transparent bg-clip-padding px-3 search text-neutral-700 outline-none ease-in-out focus:z-[3] focus:text-neutral-700 focus:outline-none dark:text-neutral-200 dark:placeholder:text-neutral-200"
           placeholder="Search"
         />
+
         <button
           type="button"
           onclick="toggleSearch()"
@@ -491,4 +495,35 @@
       <!-- ... Mobile menu items ... -->
     </div>
   </div>
+  <ul id="results-container"></ul>
 </div>
+
+
+<script src="/js/search.js"></script>
+<script>
+    window.simpleJekyllSearch = new SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: true
+    })
+</script>
+<style>
+  #search-container {
+      display: inline-block;
+  }
+  #results-container {
+      list-style: none !important;
+      margin: 0;
+      position: absolute;
+      top: 60px;
+      right: 50px;
+      background: #fff;
+  }
+  #results-container li {
+      padding: 10px;
+  }
+</style>
