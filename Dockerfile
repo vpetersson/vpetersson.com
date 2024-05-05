@@ -1,4 +1,4 @@
-FROM ruby:3.2-bullseye
+FROM ruby:3.3-bookworm
 ENV LANG C.UTF-8
 RUN apt-get update -qq && \
     apt-get install -y python3 build-essential
