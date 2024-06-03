@@ -1,0 +1,51 @@
+<div class="bg-secondaryBG px-6 py-[60px] lg:px-[145px] lg:pt-[100px] lg:pb-[73px]">
+  <div class="w-full xl:max-w-[1110px] m-auto">
+    <h3 class="text-[32px] lg:text-[40px] text-white">Latest Podcast</h3>
+    {% assign limit = include.limit | default: site.podcasts.size %}
+    {% for podcast in site.podcasts limit:limit %}
+    <div class="w-full flex flex-col lg:flex-row gap-4 my-8">
+      <div
+        class="w-full lg:w-[300px] xl:w-[445px]"
+      >
+        <img
+          src="{{podcast.image}}"
+          class="object-cover object-center block w-full h-full rounded-2xl"
+          alt="podcast cover image"
+          class="rounded-lg"
+        />
+      </div>
+      <div class="flex flex-1 flex-col gap-6 lg:gap-7 flex-grow">
+        <h4
+          class="text-2xl lg:text-[32px] text-white lg:leading-10 tracking-[0.75px]"
+        >
+          {{podcast.title}}
+        </h4>
+        <p>
+          {{podcast.description}}
+        </p>
+        <div>
+          <a
+            href="{{ podcast.url | relative_url }}"
+            class="text-white rounded-full bg-btnPrimary text-base py-3 px-6 uppercase inline-block"
+          >
+            Read More
+          </a>
+        </div>
+        <p
+          class="text-white hidden lg:flex gap-4 text-xs uppercase font-bold"
+        >
+          <span>20 DEC • 2020</span><span>1 hr 5 min</span><span>VIDEO</span>
+      </p>
+      </div>
+    </div>
+    <hr class="border-[#d3d3d366]" />
+    {% endfor %}
+    {% if include.limit and include.limit < site.podcasts.size %}
+    <div class="mt-8 flex justify-center lg:justify-start">
+      <a href="/podcast" class="text-base py-3 px-6 bg-btnSecondary uppercase text-white rounded-full text-center">
+        View All Podcasts
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</div>

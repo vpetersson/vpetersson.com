@@ -17,10 +17,10 @@ layout: default
       <p class="text-white podcast-heading">Latest Podcast</p>
 
       {% for podcast in site.podcasts limit:3 %}
-      <div class="my-8">
+      <div>
         <a
           href="{{ podcast.url | relative_url }}"
-          class="w-[342px] lg:w-full xl:w-full xl:flex xl:flex-row my-8"
+          class="w-full flex flex-row md:flex-col my-8"
         >
           <div
             class="xl:w-[445px] xl:h-[284px] w-[342px] h-[288px] lg:w-[445px] lg:h-[284px]"
@@ -63,7 +63,7 @@ layout: default
       <div class="mt-8 flex justify-center lg:justify-start xl:justify-start">
         <a
           href="/podcast"
-          class="all-posts-button text-white rounded-full text-center"
+          class="button rounded-full"
         >
           VIEW ALL PODCASTS
         </a>
@@ -86,7 +86,7 @@ layout: default
           PLAY ON
         </p>
         <div class="max-lg:hidden flex justify-self-end space-x-3 mt-2">
-          <a href="{{site.data.main.social.youtube}}" class="w-[40px] h-[40px] flex items-center justify-center bg-[#5D5FEF]  rounded-md">
+          <a href="{{site.data.main.social.youtube}}" class="button w-[40px] h-[40px] flex items-center justify-center bg-[#5D5FEF]  rounded-md">
             <svg
               width="22.8"
               height="16"

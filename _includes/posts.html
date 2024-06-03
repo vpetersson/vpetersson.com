@@ -1,0 +1,27 @@
+<div class="bg-primaryBG px-6 lg:px-36 py-[60px] lg:py-[100px]">
+  <div class="w-full xl:max-w-[1110px] m-auto">
+    <h3 class="text-[32px] lg:text-[40px] text-white">Blog Posts</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-8">
+      {% assign limit = include.limit | default: site.posts.size %}
+      {% for post in site.posts limit:limit %}
+        <a
+          href="{{ post.url | relative_url }}"
+          class="bg-secondaryBG h-[177px] p-6 flex flex-col justify-between w-full xl:w-[350px] rounded-lg text-white"
+        >
+          <h4 class="text-xl leading-[34px] tracking-[0.4px]">{{ post.title | escape | truncate: 180 }}</h4>
+          <p class="mt-3">
+            {% assign date_format = site.minima.date_format | default: "%b %-d. %Y" %}
+            <span class="text-gray-400 text-xs uppercase font-bold">{{ post.date | date: date_format }}</span>
+          </p>
+        </a>
+      {% endfor %}
+    </div>
+    {% if include.limit and include.limit < site.posts.size %}
+    <div class="mt-8 flex justify-center lg:justify-start xl:justify-start">
+      <a href="/blog" class="button text-white rounded-full text-center uppercase">
+        View All Posts
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,116 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+  color: $text-primary;
+  font-family: "Anton";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $text-heading;
+  font-family: "Anton";
+}
+
+h2 {
+  font-size: rem(32px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: rem(48px);
+  }
+}
+
+p {
+  font-family: "DM Sans";
+  font-size: rem(14px);
+  font-style: normal;
+  font-weight: 400;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: rem(18px);
+  }
+}
+
+button {
+  background-color: $btn-primary;
+  color: $white;
+  border-radius: 9999px;
+  display: inline-block;
+  font-family: "Anton";
+  font-size: rem(16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 1.6px;
+  padding: rem(12px) rem(24px);
+  text-transform: uppercase;
+  text-align: center;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+button.normal {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+a.button {
+  @extend button
+}
+
+.hero {
+  @include page-header('/assets/images/site/bg-home.png');
+}
+
+.blog-listings-header {
+  @include page-header('/assets/images/site/bg-blog.png');
+  background-color: $bg-primary;
+  padding: rem(80px) 0;
+
+  @media (min-width: $breakpoint-lg) {
+    padding: rem(61px) 0;
+  }
+}
+
+.podcast-listings-header {
+  @include page-header('/assets/images/site/bg-podcast.png');
+  background-color: $bg-primary;
+  padding: rem(80px) 0;
+
+  @media (min-width: $breakpoint-lg) {
+    padding: rem(61px) 0;
+  }
+}
+
+.about-header {
+  @include page-header('/assets/images/site/bg-home.png');
+  background-color: $bg-primary;
+  padding: rem(80px) 0;
+
+  @media (min-width: $breakpoint-lg) {
+    padding: rem(61px) 0;
+  }
+}
+
+.event-type {
+  border-radius: rem(32px);
+  padding: rem(2px) rem(12px);
+}
+
+.event-talk {
+  border: 1px solid #EFBD5D;
+}
+
+.event-podcast {
+  border: 1px solid #5D5FEF;
+}
+
+.event-press {
+  border: 1px solid #5DEF7D;
+}
+

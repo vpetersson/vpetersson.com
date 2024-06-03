@@ -24,6 +24,10 @@ paginate: 9
 twitter_username: vpetersson
 github_username: vpetersson
 
+sass:
+  style: compressed
+  sourcemap: never
+
 google_analytics: UA-12090766-1
 
 disqus.shortname: vpeterss
