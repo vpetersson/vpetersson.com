@@ -21,13 +21,12 @@ So what do you need to build your own Pwnagotchi? While it support multiple hard
 * A Raspberry Pi Zero W
   * **Please note that you will not be able to sniff 5Ghz WiFi with the Raspberry Pi Zero W**, as it only support 2.4Ghz. To sniff 5Ghz WiFi, you need to either use a Raspberry Pi 3 Model B+/4 Model B (which draws much more power) or potentially use a USB WiFi adaptor.
 * An SD card
-* A [PaPiRus Zero](https://uk.pi-supply.com/products/papirus-zero-epaper-screen-phat-pi-zero)
-* A [PaPiRus Zero Case](https://uk.pi-supply.com/products/papirus-zero-case) (I'm still waiting for this one as it's out of stock)
+* A PaPiRus Zero
+  * You probably want to get a [Waveshare](https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT) one instead, as this is the officially suported display
+* A PaPiRus Zero Case
 * A battery pack (most will do just fine)
 * Two Micro USB cables
   * Technically speaking, you only need one cable as you can power the device from the data port. However, having two cables allow you to drive say the Raspberry Pi from a battery pack and still read data from it without having to shut it down.
-
-(This was all generously sponsored by the fine folks over at Pi Supply)
 
 Once you have all your parts, simply go ahead and [flash out the disk image](https://pwnagotchi.ai/installation/#flashing-an-image) to your SD card.
 
