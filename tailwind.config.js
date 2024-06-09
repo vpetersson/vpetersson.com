@@ -20,7 +20,8 @@ module.exports = {
       altPrimaryText: '#000212',
       btnPrimary: '#5D5FEF',
       btnSecondary: 'rgba(93, 95, 239, 0.20)',
-      'white-alpha-20': 'rgba(255, 255, 255, 0.2)'
+      'white-alpha-20': 'rgba(255, 255, 255, 0.2)',
+      'white-alpha-25': 'rgba(255, 255, 255, 0.25)'
     },
     extend: {},
   },

@@ -11,7 +11,7 @@ nav:
   - name: ABOUT
     link: /about
   - name: NERDING OUT WITH VIKTOR
-    link: /podcast
+    link: /podcasts
   - name: BLOG
     link: /blog
 
@@ -23,3 +23,9 @@ social:
   spotify: https://podcasters.spotify.com/pod/show/nerding-out-with-viktor
   youtube: https://www.youtube.com/@nerdingoutwithviktor
   apple: https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295
+
+podcast:
+  apple: https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295
+  spotify: https://podcasters.spotify.com/pod/show/nerding-out-with-viktor
+  youtube: https://www.youtube.com/@nerdingoutwithviktor
+  rss: https://podcast.nerdingoutwithviktor.com/podcast_feed.xml

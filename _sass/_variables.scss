@@ -2,9 +2,12 @@ $base-font-size: 16px;
 
 // Colors
 $white: #FFF;
+$purple: #5D5FEF;
+
 $text-heading: $white;
 $text-primary: #D6D6D6;
-$btn-primary: #5D5FEF;
+$btn-primary: $purple;
+$link: $purple;
 $bg-primary: #000212;
 
 // Define breakpoints

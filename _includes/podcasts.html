@@ -7,8 +7,9 @@
       <div
         class="w-full lg:w-[300px] xl:w-[445px]"
       >
+        {% assign podcast_image = page.image | default: "/assets/images/site/podcast.png" %}
         <img
-          src="{{podcast.image}}"
+          src="{{podcast_image}}"
           class="object-cover object-center block w-full h-full rounded-2xl"
           alt="podcast cover image"
           class="rounded-lg"
@@ -18,7 +19,11 @@
         <h4
           class="text-2xl lg:text-[32px] text-white lg:leading-10 tracking-[0.75px]"
         >
-          {{podcast.title}}
+          <a
+            href="{{ podcast.url | relative_url }}"
+          >
+            {{podcast.title}}
+          </a>
         </h4>
         <p>
           {{podcast.description}}
@@ -34,11 +39,16 @@
         <p
           class="text-white hidden lg:flex gap-4 text-xs uppercase font-bold"
         >
-          <span>20 DEC • 2020</span><span>1 hr 5 min</span><span>VIDEO</span>
+          <span>{{ podcast.date | date: "%d %^b • %Y" }}</span>
+          {% if podcast.duration %}
+            <span>{{ podcast.duration | format_duration }}</span>
+          {% endif %}
       </p>
       </div>
     </div>
-    <hr class="border-[#d3d3d366]" />
+    {% unless forloop.last %}
+      <hr class="border-[#d3d3d366]" />
+    {% endunless %}
     {% endfor %}
     {% if include.limit and include.limit < site.podcasts.size %}
     <div class="mt-8 flex justify-center lg:justify-start">

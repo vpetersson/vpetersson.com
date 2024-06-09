@@ -47,9 +47,10 @@ button {
   padding: rem(12px) rem(24px);
   text-transform: uppercase;
   text-align: center;
+  transition: opacity 0.3s;
 
   &:hover {
-    color: $white;
+    opacity: 0.8;
   }
 }
 
@@ -67,7 +68,7 @@ a.button {
   @include page-header('/assets/images/site/bg-home.png');
 }
 
-.blog-listings-header {
+.blog-header {
   @include page-header('/assets/images/site/bg-blog.png');
   background-color: $bg-primary;
   padding: rem(80px) 0;
@@ -77,7 +78,7 @@ a.button {
   }
 }
 
-.podcast-listings-header {
+.podcast-header {
   @include page-header('/assets/images/site/bg-podcast.png');
   background-color: $bg-primary;
   padding: rem(80px) 0;
@@ -115,3 +116,219 @@ a.button {
   border: 1px solid #5DEF7D;
 }
 
+
+/* Blog Styles */
+
+.blog-post, .podcast-page {
+  font-family: "DM Sans";
+
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: $white;
+    line-height: 1.2;
+    margin-bottom: rem(16px);
+  }
+
+  h1 {
+    font-size: rem(60);
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: rem(40);
+  }
+
+  h3 {
+    font-size: rem(32);
+  }
+
+  h4 {
+    font-size: rem(20);
+  }
+
+  h5 {
+    font-size: rem(16);
+  }
+
+  h6 {
+    font-size: rem(12);
+  }
+
+  /* Paragraphs */
+  p {
+    margin-bottom: rem(16px);
+  }
+
+  /* Links */
+  a {
+    color: $white;
+    text-decoration: underline;
+    transition: color 0.2s;
+
+    &:hover {
+      opacity: 0.8;
+      text-decoration: none;
+    }
+  }
+
+  /* Lists */
+  ul, ol {
+    margin-bottom: 16px;
+    padding-left: 0;
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
+
+  /* Task Lists */
+  ul {
+    list-style-type: none;
+
+    li {
+      position: relative;
+      padding-left: 20px;
+      
+      input {
+        position: absolute;
+        left: 0;
+        top: 6px;
+      }
+    }
+  }
+
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 16px;
+    border-radius: 8px;
+  }
+
+  /* Image captions */
+  img + em {
+    display: block;
+    font-size: 0.875em;
+    color: #7f8c8d;
+    text-align: center;
+    margin-top: -12px;
+    margin-bottom: 16px;
+  }
+
+  /* Videos */
+  iframe {
+    max-width: 100%;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 3px solid $white;
+    margin: 0 auto;
+  }
+
+  /* Blockquotes */
+  blockquote {
+    margin: 16px 0;
+    padding: 16px;
+    background: $bg-primary;
+    border-left: 4px solid $purple;
+    color: $white;
+    font-style: italic;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  /* Code */
+  code {
+    background: $purple;
+    padding: 2px 4px;
+    font-size: 0.875em;
+    border-radius: 4px;
+  }
+
+  pre {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 16px;
+    overflow-x: auto;
+    border-radius: 4px;
+    margin-bottom: 16px;
+
+    code {
+      background: transparent;
+      padding: 0;
+    }
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background: #3498db;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background: #f4f4f4;
+    }
+  }
+
+  /* Quotes */
+  blockquote:before {
+    content: '\201C';
+    font-size: 4em;
+    color: #ecf0f1;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+  }
+
+  blockquote:after {
+    content: '\201D';
+    font-size: 4em;
+    color: #ecf0f1;
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+  }
+
+  /* Additional margin and padding for readability */
+  .container p, .container h1, .container h2, .container h3, .container h4, .container h5, .container h6, .container ul, .container ol, .container blockquote, .container pre, .container table {
+    margin-bottom: 16px;
+  }
+
+  /* Adjust spacing for horizontal rules */
+  hr {
+    margin: 32px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+
+  .tags {
+    a {
+      color: $white;
+      
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.podcast-page {
+  .author-img {
+    border-radius: 100%;
+    width: 158px;
+    height: 162px;
+  }
+}
