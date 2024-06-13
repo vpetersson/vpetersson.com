@@ -7,6 +7,8 @@ description: This episode of Nerding Out With Viktor features an in-depth interv
 image: /assets/images/site/podcast.png
 youtube: https://youtube.com
 spotify: https://youtube.com
+apple: https://youtube.com
+amazon: https://youtube.com
 ---
 
 Hello folks, Viktor here! I’m thrilled to bring two exciting updates to you all today.

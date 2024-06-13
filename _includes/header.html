@@ -5,8 +5,17 @@
     </a>
     {% include nav.html %}
   </div>
-  <div class="hidden lg:block">
-    {% include social-links.html %}
-  </div>
-  {% include nav-mobile.html %}
+  <div class="flex gap-2 justify-between items-center">
+    <div class="header-search hidden lg:block">
+      <form action="/search" method="get">
+        <input class="search expandright" id="searchright" type="search" name="query" placeholder="Search">
+        <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+      </form>
+    </div>
+
+    <div class="hidden lg:block">
+      {% include social-links.html %}
+    </div>
+      {% include nav-mobile.html %}
+    </div>
 </header>
