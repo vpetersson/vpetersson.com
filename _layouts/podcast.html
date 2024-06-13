@@ -47,22 +47,22 @@ layout: default
         <span class="uppercase text-xl leading-[1.6px] mr-5">Play On</span>
         <span class="flex flex-1 gap-3">
           {% if page.youtube %}
-            <a href="{{ podcast_links.youtube }}" target="_blank" rel="noopener noreferrer">
+            <a href="{{ page.youtube }}" target="_blank" rel="noopener noreferrer">
               <img src="/assets/images/site/podcast-youtube-dark.svg" alt="Listen to podcast on YouTube" />
             </a>
           {% endif %}
           {% if page.spotify %}
-            <a href="{{ podcast_links.spotify }}" target="_blank" rel="noopener noreferrer">
+            <a href="{{ page.spotify }}" target="_blank" rel="noopener noreferrer">
               <img src="/assets/images/site/podcast-spotify-dark.svg" alt="Listen to podcast on Spotify" />
             </a>
           {% endif %}
           {% if page.apple %}
-            <a href="{{ podcast_links.apple }}" target="_blank" rel="noopener noreferrer">
+            <a href="{{ page.apple }}" target="_blank" rel="noopener noreferrer">
               <img src="/assets/images/site/podcast-apple-dark.svg" alt="Listen to podcast on Apple" />
             </a>
           {% endif %}
           {% if page.amazon %}
-            <a href="{{ podcast_links.amazon }}" target="_blank" rel="noopener noreferrer">
+            <a href="{{ page.amazon }}" target="_blank" rel="noopener noreferrer">
               <img src="/assets/images/site/podcast-amazon-dark.svg" alt="Listen to podcast on Amazon music" />
             </a>
           {% endif %}
