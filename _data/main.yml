@@ -14,6 +14,8 @@ nav:
     link: /podcasts
   - name: BLOG
     link: /blog
+  - name: Viktopia Studio
+    link: https://studio.viktopia.io/
 
 social:
   twitter: https://twitter.com/vpetersson
