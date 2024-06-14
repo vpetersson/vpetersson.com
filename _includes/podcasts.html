@@ -4,16 +4,14 @@
     {% assign limit = include.limit | default: site.podcasts.size %}
     {% assign podcasts = site.podcasts | reverse %}
     {% for podcast in podcasts limit:limit %}
-    <div class="w-full flex flex-col lg:flex-row gap-4 my-8">
+    <div class="w-full flex flex-col md:flex-row gap-4 my-8">
       <div
-        class="w-full lg:w-[300px] xl:w-[445px]"
+        class="w-full md:w-[200px] lg:w-[300px] xl:w-[350px] bg-white rounded-2xl"
       >
-        {% assign podcast_image = page.image | default: "/assets/images/site/podcast.png" %}
         <img
-          src="{{podcast_image}}"
-          class="object-cover object-center block w-full h-full rounded-2xl"
+          src="/assets/images/site/podcast-snippet.jpg"
+          class="object-contain object-center block w-full h-full rounded-2xl"
           alt="podcast cover image"
-          class="rounded-lg"
         />
       </div>
       <div class="flex flex-1 flex-col gap-6 lg:gap-7 flex-grow">

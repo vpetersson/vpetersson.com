@@ -22,7 +22,7 @@ layout: default
     </div>
     <div class="lg:hidden">
       <div class="flex mb-6 gap-[35px]">
-        <img class="author-img !rounded-full !w-[64px] !h-[64px]" src="/assets/images/site/talk-sm.jpg" />
+        <img class="author-img !rounded-full !w-[64px] !h-[64px]" src="/assets/images/site/talk-sm.png" />
         <div>{% include podcast-links.html %}</div>
       </div>
       <div>
@@ -38,9 +38,13 @@ layout: default
       </div>
     </div>
     <div class="flex-1">
-      <div class="mb-5">
-        {% assign image = page.image | default: "/assets/images/site/podcast.png" %}
-        <img src="{{ image }}" alt="Podcast Image" />
+      <div class="mb-5 relative">
+        {% assign image = page.image | default: "/assets/images/site/podcast-cover.jpg" %}
+        <img class="rounded-2xl" src="{{ image }}" alt="Podcast Image" />
+        <div class="absolute bottom-6 left-6 uppercase text-white">
+          <div class="text-sm">Episode {{page.episode}}</div>
+          <div class="text-2xl">{{page.guest}}</div>
+        </div>
       </div>
       <h2 class="mb-5">{{page.title}}</h2>
       <div class="mb-5 flex items-center">
