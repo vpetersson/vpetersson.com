@@ -552,6 +552,12 @@ video {
 .inset-0 {
   inset: 0px;
 }
+.bottom-6 {
+  bottom: 1.5rem;
+}
+.left-6 {
+  left: 1.5rem;
+}
 .isolate {
   isolation: isolate;
 }
@@ -1263,10 +1269,6 @@ video {
 
   .xl\:w-\[350px\] {
     width: 350px;
-  }
-
-  .xl\:w-\[445px\] {
-    width: 445px;
   }
 
   .xl\:w-\[480px\] {
