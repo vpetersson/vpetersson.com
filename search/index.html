@@ -18,7 +18,7 @@ title: Search Results
   window.store = {
     {% for post in site.posts %}
       "{{ post.url | slugify }}": {
-        "title": "{{ post.title | xml_escape }}",
+        "title": "{{ post.title | xml_escape | strip_html | strip_newlines }}",
         "content": {{ post.content | strip_html | strip_newlines | jsonify }},
         "url": "{{ post.url | xml_escape }}",
         "type": "post"
@@ -31,7 +31,7 @@ title: Search Results
 
     {% for podcast in site.podcasts %}
       "{{ podcast.url | slugify }}": {
-        "title": "{{ podcast.title | xml_escape }}",
+        "title": "{{ podcast.title | xml_escape | strip_html | strip_newlines }}",
         "content": {{ podcast.content | strip_html | strip_newlines | jsonify }},
         "url": "{{ podcast.url | xml_escape }}",
         "type": "podcast"

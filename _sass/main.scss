@@ -116,6 +116,18 @@ a.button {
   border: 1px solid #5DEF7D;
 }
 
+.event-panel {
+  border: 1px solid #ef955d;
+}
+
+.event-other {
+  border: 1px solid #ef5dca;
+}
+
+.event-guest-post {
+  border: 1px solid #5dbeef;
+}
+
 
 /* Blog Styles */
 
@@ -174,7 +186,7 @@ a.button {
   /* Lists */
   ul, ol {
     margin-bottom: 16px;
-    padding-left: 0;
+    padding-left: 16px;
 
     li {
       margin-bottom: 8px;
@@ -183,17 +195,29 @@ a.button {
 
   /* Task Lists */
   ul {
-    list-style-type: none;
-
+    list-style: disc;
     li {
       position: relative;
-      padding-left: 20px;
+      padding-left: 4px;
       
       input {
         position: absolute;
         left: 0;
         top: 6px;
       }
+    }
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  .task-list {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      padding-left: 20px;
     }
   }
 
@@ -315,6 +339,12 @@ a.button {
   }
 
   .tags {
+    list-style: none;
+
+    li {
+      padding: rem(4px) rem(16px);
+    }
+  
     a {
       color: $white;
       
@@ -328,7 +358,7 @@ a.button {
 .podcast-page {
   .author-img {
     border-radius: 100%;
-    width: 158px;
+    width: 162px;
     height: 162px;
   }
 }

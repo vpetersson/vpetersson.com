@@ -2,7 +2,8 @@
   <div class="w-full xl:max-w-[1110px] m-auto">
     <h3 class="text-[32px] lg:text-[40px] text-white">Latest Podcast</h3>
     {% assign limit = include.limit | default: site.podcasts.size %}
-    {% for podcast in site.podcasts limit:limit %}
+    {% assign podcasts = site.podcasts | reverse %}
+    {% for podcast in podcasts limit:limit %}
     <div class="w-full flex flex-col lg:flex-row gap-4 my-8">
       <div
         class="w-full lg:w-[300px] xl:w-[445px]"

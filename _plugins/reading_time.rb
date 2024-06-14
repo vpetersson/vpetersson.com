@@ -3,7 +3,7 @@
 module Jekyll
   module ReadingTimeFilter
     # Average reading speed in words per minute
-    WORDS_PER_MINUTE = 200
+    WORDS_PER_MINUTE = 183
 
     def reading_time(input)
       words = input.split.size
