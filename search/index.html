@@ -25,11 +25,11 @@ title: Search Results
       }
       {% unless forloop.last %},{% endunless %}
     {% endfor %}
-    {% if site.posts.size > 0 and site.podcasts.size > 0 %}
+    {% if site.posts.size > 0 and site.podcast.size > 0 %}
     ,
     {% endif %}
 
-    {% for podcast in site.podcasts %}
+    {% for podcast in site.podcast %}
       "{{ podcast.url | slugify }}": {
         "title": "{{ podcast.title | xml_escape | strip_html | strip_newlines }}",
         "content": {{ podcast.content | strip_html | strip_newlines | jsonify }},

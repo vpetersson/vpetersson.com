@@ -1,59 +1,33 @@
 <div class="bg-secondaryBG px-6 py-[60px] lg:px-[145px] lg:pt-[100px] lg:pb-[73px]">
   <div class="w-full xl:max-w-[1110px] m-auto">
     <h3 class="text-[32px] lg:text-[40px] text-white">Latest Podcast</h3>
-    {% assign limit = include.limit | default: site.podcasts.size %}
-    {% assign podcasts = site.podcasts | reverse %}
-    {% for podcast in podcasts limit:limit %}
-    <div class="w-full flex flex-col md:flex-row gap-4 my-8">
-      <div
-        class="w-full md:w-[200px] lg:w-[300px] xl:w-[350px] bg-white rounded-2xl"
-      >
-        <img
-          src="/assets/images/site/podcast-snippet.jpg"
-          class="object-contain object-center block w-full h-full rounded-2xl"
-          alt="podcast cover image"
-        />
-      </div>
-      <div class="flex flex-1 flex-col gap-6 lg:gap-7 flex-grow">
-        <h4
-          class="text-2xl lg:text-[32px] text-white lg:leading-10 tracking-[0.75px]"
-        >
-          <a
-            href="{{ podcast.url | relative_url }}"
-          >
-            {{podcast.title}}
-          </a>
-        </h4>
-        <p>
-          {{podcast.description}}
-        </p>
-        <div>
-          <a
-            href="{{ podcast.url | relative_url }}"
-            class="text-white rounded-full bg-btnPrimary text-base py-3 px-6 uppercase inline-block"
-          >
-            Read More
-          </a>
-        </div>
-        <p
-          class="text-white hidden lg:flex gap-4 text-xs uppercase font-bold"
-        >
-          <span>{{ podcast.date | date: "%d %^b • %Y" }}</span>
-          {% if podcast.duration %}
-            <span>{{ podcast.duration | format_duration }}</span>
-          {% endif %}
-      </p>
-      </div>
-    </div>
-    {% unless forloop.last %}
-      <hr class="border-[#d3d3d366]" />
-    {% endunless %}
-    {% endfor %}
-    {% if include.limit and include.limit < site.podcasts.size %}
+    {% assign limit = include.limit | default: site.podcast.size %}
+    {% assign podcasts = site.podcast | reverse %}
+    {% assign paginate = include.paginate %}
+
+    {% if paginate %}
+      {% for podcast in paginator.posts %}
+        {% include podcast-card.html podcast=podcast %}
+      {% endfor %}
+    {% else %}
+      {% for podcast in podcasts limit:limit %}
+        {% include podcast-card.html podcast=podcast %}
+        {% unless forloop.last %}
+          <hr class="border-[#d3d3d366]" />
+        {% endunless %}
+      {% endfor %}
+    {% endif %}
+    {% if include.limit and include.limit < site.podcast.size %}
     <div class="mt-8 flex justify-center lg:justify-start">
       <a href="/podcast" class="text-base py-3 px-6 bg-btnSecondary uppercase text-white rounded-full text-center">
         View All Podcasts
       </a>
+    </div>
+    {% endif %}
+    
+    {% if paginate %}
+    <div class="mt-12">
+      {% include pagination.html paginator=paginator %}
     </div>
     {% endif %}
   </div>

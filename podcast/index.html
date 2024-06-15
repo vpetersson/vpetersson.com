@@ -1,10 +1,16 @@
 ---
 layout: default
 title: Viktor's ramblings | Viktor on entrepreneurship, Dev(Sec)Ops, remote work, and other geeky stuff.
+pagination:
+  enabled: true
+  collection: podcast
+  permalink: /page/:num/
+  per_page: 5
+  sort_reverse: true
 ---
 {% include podcast-header.html %}
 <div>
-  {% include podcasts.html %}
+  {% include podcasts.html paginate=true %}
 </div>
 <div class="bg-primaryBG py-[60px] px-6">
   <div class="flex flex-col md:flex-row items-center w-full xl:max-w-[1110px] m-auto justify-between gap-8 lg:gap-[155px]">
