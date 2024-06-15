@@ -12,7 +12,7 @@ nav:
     link: /podcast
   - name: BLOG
     link: /blog
-  - name: Viktopia Studio
+  - name: VIKTOPIA STUDIO
     link: https://studio.viktopia.io/
 
 social:
@@ -22,10 +22,12 @@ social:
   github: https://github.com/vpetersson
   spotify: https://podcasters.spotify.com/pod/show/nerding-out-with-viktor
   youtube: https://www.youtube.com/@nerdingoutwithviktor
-  apple: https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295
+  apple: |
+    https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295
 
 podcast:
-  apple: https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295
+  apple: |
+    https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295
   spotify: https://podcasters.spotify.com/pod/show/nerding-out-with-viktor
   youtube: https://www.youtube.com/@nerdingoutwithviktor
   rss: https://podcast.nerdingoutwithviktor.com/podcast_feed.xml
