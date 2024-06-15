@@ -36,6 +36,8 @@ page.comments: true
 collections:
   podcasts:
     output: true
+  tags:
+    output: true
 
 # Build settings
 markdown: kramdown
