@@ -1,0 +1,93 @@
+---
+layout: default
+---
+{% include podcast-header.html %}
+<div class="bg-secondaryBG pt-[42px] pb-[60px] px-[25px] md:px-[120px] xl:pt-[80px] xl:pb-[130px]">
+  <div class="flex flex-col lg:flex-row lg:gap-[50px] xl:gap-[106px] md:max-w-[1110px] xl:mx-auto">
+    <div class="hidden lg:block lg:w-[210px] xl:w-[309px]">
+      <div class="mb-6">
+        <img class="author-img rounded-full w-[162px] h-[162px]" src="/assets/images/site/talk-sm.png" />
+      </div>
+      <p class="text-sm mb-6">
+        Join Viktor, a proud nerd and seasoned entrepreneur, whose academic journey at Santa Clara University in Silicon Valley sparked a career marked by innovation and foresight. From his college days, Viktor embarked on an entrepreneurial path, beginning with YippieMove, a groundbreaking email migration service, and continuing with a series of bootstrapped ventures.
+      </p>
+      <div class="mb-6">
+        <h4 class="mb-2">Links</h4>
+        <div>{% include podcast-links.html %}</div>
+      </div>
+      <div class="mb-6">
+        <h4 class="mb-2">Follow Me</h4>
+        <div>{% include social-links.html %}</div>
+      </div>
+    </div>
+    <div class="lg:hidden">
+      <div class="flex mb-6 gap-[35px]">
+        <img class="author-img !rounded-full !w-[64px] !h-[64px]" src="/assets/images/site/talk-sm.png" />
+        <div>{% include podcast-links.html %}</div>
+      </div>
+      <div>
+        <div class="mb-6 flex gap-[35px]">
+          <div>
+            <h4 class="mb-2">Follow Me</h4>
+            <div>{% include social-links.html vertical=true %}</div>
+          </div>
+          <p class="text-sm md:text-lg mb-6 flex-1 items-center">
+            Join Viktor, a proud nerd and seasoned entrepreneur, whose academic journey at Santa Clara University in Silicon Valley sparked a career marked by innovation and foresight. From his college days, Viktor embarked on an entrepreneurial path, beginning with YippieMove, a groundbreaking email migration service, and continuing with a series of bootstrapped ventures.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <div class="mb-5 relative">
+        {% assign image = page.image | default: "/assets/images/site/podcast-cover.jpg" %}
+        <img class="rounded-2xl" src="{{ image }}" alt="Podcast Image" />
+        <div class="absolute bottom-6 left-6 uppercase text-white">
+          <div class="text-sm">Episode {{page.episode}}</div>
+          <div class="text-2xl">{{page.guest}}</div>
+        </div>
+      </div>
+      <h2 class="mb-5">{{page.title}}</h2>
+      <div class="mb-5 flex items-center">
+        <span class="uppercase text-xl leading-[1.6px] mr-5">Play On</span>
+        <span class="flex flex-1 gap-3">
+          {% if page.youtube %}
+            <a href="{{ page.youtube }}" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/images/site/podcast-youtube-dark.svg" alt="Listen to podcast on YouTube" />
+            </a>
+          {% endif %}
+          {% if page.spotify %}
+            <a href="{{ page.spotify }}" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/images/site/podcast-spotify-dark.svg" alt="Listen to podcast on Spotify" />
+            </a>
+          {% endif %}
+          {% if page.apple %}
+            <a href="{{ page.apple }}" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/images/site/podcast-apple-dark.svg" alt="Listen to podcast on Apple" />
+            </a>
+          {% endif %}
+          {% if page.amazon %}
+            <a href="{{ page.amazon }}" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/images/site/podcast-amazon-dark.svg" alt="Listen to podcast on Amazon music" />
+            </a>
+          {% endif %}
+        </span>
+      </div>
+      <div class="mb-5 flex gap-4 text-xs uppercase font-['DM Sans']">
+        <span>
+          {{ page.date | date: "%d %^b • %Y" }}
+        </span>
+        {% if page.duration %}
+          <span>
+            {{ page.duration | format_duration }}
+          </span>
+        {% endif %}
+      </div>
+      <div class="mb-6">
+        {% include share-buttons.html %}
+      </div>
+      <div class="podcast-page">
+        {{content}}
+      </div>
+    </div>
+  </div>
+</div>

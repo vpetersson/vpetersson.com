@@ -20,9 +20,23 @@ baseurl: "" # the subpath of your site, e.g. /blog
 #baseurl: "blog.viktorpetersson.com"
 url: "http://blog.viktorpetersson.com" # the base hostname & protocol for your site, e.g. http://example.com
 # url: "https://vpetersson.github.io/blog.viktorpetersson.com"
-
 twitter_username: vpetersson
-github_username:  vpetersson
+github_username: vpetersson
+
+pagination:
+  enabled: true
+
+collections:
+  podcast:
+    output: true
+  tags:
+    output: true
+
+permalink: date
+
+sass:
+  style: compressed
+  sourcemap: never
 
 google_analytics: G-DKGDZ1Y2LL
 
@@ -31,11 +45,13 @@ page.comments: true
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-paginate-v2
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

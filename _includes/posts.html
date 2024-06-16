@@ -1,0 +1,30 @@
+<div class="bg-primaryBG px-6 lg:px-36 py-[60px] lg:py-[100px]">
+  <div class="w-full xl:max-w-[1110px] m-auto">
+    <h3 class="text-[32px] lg:text-[40px] text-white">Blog Posts</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-8">
+      {% assign limit = include.limit | default: site.posts.size %}
+      {% assign paginate = include.paginate %}
+      {% if paginate %}
+        {% for post in paginator.posts %}
+          {% include post-card.html post=post %}
+        {% endfor %}
+      {% else %}
+        {% for post in site.posts limit:limit %}
+          {% include post-card.html post=post %}
+        {% endfor %}
+      {% endif %}
+    </div>
+    {% if include.limit and include.limit < site.posts.size %}
+    <div class="mt-8 flex justify-center lg:justify-start xl:justify-start">
+      <a href="/blog" class="button text-white rounded-full text-center uppercase">
+        View All Posts
+      </a>
+    </div>
+    {% endif %}
+    {% if paginate %}
+    <div class="mt-12">
+      {% include pagination.html paginator=paginator %}
+    </div>
+    {% endif %}
+  </div>
+</div>

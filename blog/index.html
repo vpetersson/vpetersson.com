@@ -1,0 +1,13 @@
+---
+layout: default
+title: Viktor's ramblings | Viktor on entrepreneurship, Dev(Sec)Ops, remote work, and other geeky stuff.
+pagination:
+  enabled: true
+  permalink: /page/:num/
+  per_page: 12
+  sort_reverse: true
+---
+{% include blog-header.html %}
+<div>
+  {% include posts.html paginate=true %}
+</div>

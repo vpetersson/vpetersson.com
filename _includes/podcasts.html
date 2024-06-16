@@ -1,0 +1,34 @@
+<div class="bg-secondaryBG px-6 py-[60px] lg:px-[145px] lg:pt-[100px] lg:pb-[73px]">
+  <div class="w-full xl:max-w-[1110px] m-auto">
+    <h3 class="text-[32px] lg:text-[40px] text-white">Latest Podcast</h3>
+    {% assign limit = include.limit | default: site.podcast.size %}
+    {% assign podcasts = site.podcast | reverse %}
+    {% assign paginate = include.paginate %}
+
+    {% if paginate %}
+      {% for podcast in paginator.posts %}
+        {% include podcast-card.html podcast=podcast %}
+      {% endfor %}
+    {% else %}
+      {% for podcast in podcasts limit:limit %}
+        {% include podcast-card.html podcast=podcast %}
+        {% unless forloop.last %}
+          <hr class="border-[#d3d3d366]" />
+        {% endunless %}
+      {% endfor %}
+    {% endif %}
+    {% if include.limit and include.limit < site.podcast.size %}
+    <div class="mt-8 flex justify-center lg:justify-start">
+      <a href="/podcast" class="text-base py-3 px-6 bg-btnSecondary uppercase text-white rounded-full text-center">
+        View All Podcasts
+      </a>
+    </div>
+    {% endif %}
+    
+    {% if paginate %}
+    <div class="mt-12">
+      {% include pagination.html paginator=paginator %}
+    </div>
+    {% endif %}
+  </div>
+</div>

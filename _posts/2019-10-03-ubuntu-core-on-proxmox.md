@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Install Ubuntu Core 18/22 on Proxmox
+title: 'Install Ubuntu Core 18/22 on Proxmox'
 date: '2019-10-03T13:00:00+01:00'
 tags:
 - proxmox

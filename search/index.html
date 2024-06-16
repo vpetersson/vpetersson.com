@@ -1,0 +1,45 @@
+---
+layout: default
+title: Search Results
+---
+
+<div class="bg-secondaryBG px-6 py-[60px] lg:px-[145px] lg:pt-[100px] lg:pb-[73px] min-h-[600px]">
+  <div class="w-full xl:max-w-[680px] m-auto">
+    <form class="text-center mb-20" action="/search" method="get">
+      <input class="mr-2 mb-2 md:mb-0 py-3 px-4 rounded-lg text-altPrimaryText w-full md:w-[300px]" type="text" id="search-box" placeholder="Search" name="query">
+      <button type="submit" class="w-full md:w-auto">Search</button>
+    </form>
+    
+    <ul id="search-results" class="search-results"></ul>
+  </div>
+</div>
+
+<script>
+  window.store = {
+    {% for post in site.posts %}
+      "{{ post.url | slugify }}": {
+        "title": "{{ post.title | xml_escape | strip_html | strip_newlines }}",
+        "content": {{ post.content | strip_html | strip_newlines | jsonify }},
+        "url": "{{ post.url | xml_escape }}",
+        "type": "post"
+      }
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    {% if site.posts.size > 0 and site.podcast.size > 0 %}
+    ,
+    {% endif %}
+
+    {% for podcast in site.podcast %}
+      "{{ podcast.url | slugify }}": {
+        "title": "{{ podcast.title | xml_escape | strip_html | strip_newlines }}",
+        "content": {{ podcast.content | strip_html | strip_newlines | jsonify }},
+        "url": "{{ podcast.url | xml_escape }}",
+        "type": "podcast"
+      }
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+
+  };
+</script>
+<script src="/assets/js/lunr.min.js"></script>
+<script src="/assets/js/search.js"></script>

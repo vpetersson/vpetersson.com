@@ -1,0 +1,5 @@
+<nav class="hidden lg:flex gap-6">
+  {% for item in site.data.main.nav %}
+    <a href="{{item.link}}" class="text-white uppercase">{{item.name}}</a>
+  {% endfor %}
+</nav>

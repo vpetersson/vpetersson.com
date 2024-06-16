@@ -1,0 +1,40 @@
+---
+layout: default
+title: Viktor's ramblings | Viktor on entrepreneurship, Dev(Sec)Ops, remote work, and other geeky stuff.
+pagination:
+  enabled: true
+  collection: podcast
+  permalink: /page/:num/
+  per_page: 5
+  sort_reverse: true
+
+redirect_from: /nerding-out-with-viktor/
+---
+{% include podcast-header.html %}
+<div>
+  {% include podcasts.html paginate=true %}
+</div>
+<div class="bg-primaryBG py-[60px] px-6">
+  <div class="flex flex-col md:flex-row items-center w-full xl:max-w-[1110px] m-auto justify-between gap-8 lg:gap-[155px]">
+    <div class="flex-1">
+      <h3 class="mb-8 text-[32px] lg:text-[48px]">The story behind the podcast</h3>
+      <p class="mb-8">
+        Hey there! I'm Viktor, a proud nerd and seasoned entrepreneur with a knack for quirky innovation. From launching YippieMove, a pioneering email migration service, to co-creating Blotter, a top 10 Mac App Store productivity app, my journey has been all about embracing uncharted opportunities. Now, I lead Screenly, a leading secure digital signage product trusted by NASA, and developed Anthias, a top-ranked open-source digital signage solution. "Nerding Out with Viktor" is where I dive into the tech world, breaking down complex concepts with leading experts. Join me for some fun and insightful conversations!
+      </p>
+      <div>
+        <h5 class="mb-3">Play On</h5>
+        {% include podcast-links.html img_variant=dark %}
+      </div>
+    </div>
+    <div
+      class="flex-1 md:w-[480px]"
+    >
+      <img
+        src="/assets/images/site/user.png"
+        class="object-cover object-center block w-full h-full rounded-2xl"
+        alt="podcast cover image"
+        class="rounded-lg"
+      />
+    </div>
+  </div>
+</div>

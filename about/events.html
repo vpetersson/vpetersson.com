@@ -1,0 +1,42 @@
+<h2 class="text-left xl:text-center mb-12">Press, mentions and interviews</h2>
+{% for year_data in site.data.events %}
+  <div class="flex flex-col xl:flex-row gap-6 xl:gap-[200px] {% unless forloop.last %}mb-20{% endunless %}">
+    <h3 class="text-[#5D5FEF] text-[32px]">{{ year_data.year }}</h3>
+    <ul>
+      {% for event in year_data.events %}
+        <li class="flex mb-3 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-{{event.type | replace: ' ', '-'}} event-type uppercase text-center text-sm">
+              {{ event.type }}
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <span class="flex-1">{{ event.title | markdownify }}</span>
+            <div class="flex gap-2 items-center">
+              {% if event.deck %}
+                <a href="{{event.deck}}" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              {% endif %}
+              {% if event.video %}
+                <a href="{{event.video}}" target="_new">
+                  <img src="/assets/images/site/video.svg" alt="view video" />
+                </a>
+              {% endif %}
+              {% if event.spotify %}
+                <a href="{{event.spotify}}" target="_new">
+                  <img src="/assets/images/site/spotify.svg" alt="listen to podcast" />
+                </a>
+              {% endif %}
+              {% if event.link %}
+                <a href="{{event.link}}" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}
