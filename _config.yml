@@ -32,7 +32,7 @@ collections:
   tags:
     output: true
 
-permalink: pretty
+permalink: date
 
 sass:
   style: compressed
