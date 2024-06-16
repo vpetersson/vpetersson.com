@@ -1,0 +1,32 @@
+{% assign podcast_links = site.data.main.podcast %}
+{% assign img_variant = include.img_variant | default: 'white' %}
+
+<div>
+  <div class="flex gap-3">
+    {% if podcast_links.youtube %}
+      <a href="{{ podcast_links.youtube }}" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/images/site/podcast-youtube-{{ img_variant }}.svg" alt="Listen to podcast on YouTube" />
+      </a>
+    {% endif %}
+    {% if podcast_links.spotify %}
+      <a href="{{ podcast_links.spotify }}" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/images/site/podcast-spotify-{{ img_variant }}.svg" alt="Listen to podcast on Spotify" />
+      </a>
+    {% endif %}
+    {% if podcast_links.apple %}
+      <a href="{{ podcast_links.apple }}" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/images/site/podcast-apple-{{ img_variant }}.svg" alt="Listen to podcast on Apple" />
+      </a>
+    {% endif %}
+    {% if podcast_links.amazon %}
+      <a href="{{ podcast_links.amazon }}" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/images/site/podcast-amazon-{{ img_variant }}.svg" alt="Listen to podcast on Amazon music" />
+      </a>
+    {% endif %}
+    {% if podcast_links.rss %}
+      <a href="{{ podcast_links.rss }}" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/images/site/podcast-rss-{{ img_variant }}.svg" alt="RSS Feed" />
+      </a>
+    {% endif %}
+  </div>
+</div>

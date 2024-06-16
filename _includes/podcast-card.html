@@ -1,0 +1,42 @@
+{% assign podcast = include.podcast %}
+<div class="w-full flex flex-col md:flex-row gap-4 my-8">
+  <div
+    class="w-full md:w-[200px] lg:w-[300px] xl:w-[350px] bg-white rounded-2xl"
+  >
+    <img
+      src="/assets/images/site/podcast-snippet.jpg"
+      class="object-contain object-center block w-full h-full rounded-2xl"
+      alt="podcast cover image"
+    />
+  </div>
+  <div class="flex flex-1 flex-col gap-6 lg:gap-7 flex-grow">
+    <h4
+      class="text-2xl lg:text-[32px] text-white lg:leading-10 tracking-[0.75px]"
+    >
+      <a
+        href="{{ podcast.url | relative_url }}"
+      >
+        {{podcast.title}}
+      </a>
+    </h4>
+    <p>
+      {{podcast.description}}
+    </p>
+    <div>
+      <a
+        href="{{ podcast.url | relative_url }}"
+        class="text-white rounded-full bg-btnPrimary text-base py-3 px-6 uppercase inline-block"
+      >
+        Read More
+      </a>
+    </div>
+    <p
+      class="text-white hidden lg:flex gap-4 text-xs uppercase font-bold"
+    >
+      <span>{{ podcast.date | date: "%d %^b • %Y" }}</span>
+      {% if podcast.duration %}
+        <span>{{ podcast.duration | format_duration }}</span>
+      {% endif %}
+  </p>
+  </div>
+</div>

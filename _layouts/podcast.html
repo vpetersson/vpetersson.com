@@ -1,710 +1,92 @@
 ---
 layout: default
 ---
-
-{% include header.html %}
-<div class="home">
-  <div
-    class="bg-[url('/assets/Background-with-text.png')] bg-no-repeat bg-cover h-[269px] sm:h-[374px] flex items-center justify-center"
-  >
-    <div>
-      <p class="header-text text-white">PODCAST</p>
+{% include podcast-header.html %}
+<div class="bg-secondaryBG pt-[42px] pb-[60px] px-[25px] md:px-[120px] xl:pt-[80px] xl:pb-[130px]">
+  <div class="flex flex-col lg:flex-row lg:gap-[50px] xl:gap-[106px] md:max-w-[1110px] xl:mx-auto">
+    <div class="hidden lg:block lg:w-[210px] xl:w-[309px]">
+      <div class="mb-6">
+        <img class="author-img rounded-full w-[162px] h-[162px]" src="/assets/images/site/talk-sm.png" />
+      </div>
+      <p class="text-sm mb-6">
+        Join Viktor, a proud nerd and seasoned entrepreneur, whose academic journey at Santa Clara University in Silicon Valley sparked a career marked by innovation and foresight. From his college days, Viktor embarked on an entrepreneurial path, beginning with YippieMove, a groundbreaking email migration service, and continuing with a series of bootstrapped ventures.
+      </p>
+      <div class="mb-6">
+        <h4 class="mb-2">Links</h4>
+        <div>{% include podcast-links.html %}</div>
+      </div>
+      <div class="mb-6">
+        <h4 class="mb-2">Follow Me</h4>
+        <div>{% include social-links.html %}</div>
+      </div>
     </div>
-  </div>
-  <div class="bg-gray-900 flex max-lg:justify-center">
-    <div
-      class="w-full lg:justify-evenly max-lg:w-[340px] flex flex-wrap md:flex-wrap md:p-2 lg:py-[80px]"
-    >
-      <div class="max-lg:w-[342px] max-lg:py-4 pt-[23px] w-[309px]">
-        <div class="flex max-lg:w-[342px] lg:flex-col max-lg:space-x-7">
-          <img
-            src="/assets/user.png"
-            alt=""
-            class="max-lg:h-[64px] max-lg:w-[64px] h-[162px] w-[162px] rounded-full mb-4"
-          />
-          <div class="lg:hidden py-4 flex space-x-2 px-8">
-            <a
-              href="{{site.data.main.social.youtube}}"
-              class="h-[40px] w-[40px] border border-white border-opacity-[25%] flex justify-center items-center rounded-md"
-            >
-              <svg
-                viewBox="0 -3 20 20"
-                width="22.8px"
-                height="16px"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                fill="#000000"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <title>youtube [#168]</title>
-                  <desc>Created with Sketch.</desc>
-                  <defs></defs>
-                  <g
-                    id="Page-1"
-                    stroke="none"
-                    stroke-width="1"
-                    fill="none"
-                    fill-rule="evenodd"
-                  >
-                    <g
-                      id="Dribbble-Light-Preview"
-                      transform="translate(-300.000000, -7442.000000)"
-                      fill="#000000"
-                    >
-                      <g
-                        id="icons"
-                        transform="translate(56.000000, 160.000000)"
-                      >
-                        <path
-                          d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638
-                    ,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,
-                    7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 
-                    C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532
-                     261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289"
-                          id="youtube-[#168]"
-                          fill="#ffffff"
-                        ></path>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </a>
-            <a
-              href="{{site.data.main.social.spotify}}"
-              class="h-[40px] w-[40px] border border-white border-opacity-[25%] flex justify-center items-center rounded-md"
-            >
-              <svg
-                viewBox="0 0 20 20"
-                width="20.01px"
-                height="20.01px"
-                fill="none"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <title>spotify [#162]</title>
-                  <desc>Created with Sketch.</desc>
-                  <defs></defs>
-                  <g
-                    id="Page-1"
-                    stroke="none"
-                    stroke-width="1"
-                    fill="none"
-                    fill-rule="evenodd"
-                  >
-                    <g
-                      id="Dribbble-Light-Preview"
-                      transform="translate(-140.000000, -7479.000000)"
-                      fill="#000000"
-                    >
-                      <g
-                        id="icons"
-                        transform="translate(56.000000, 160.000000)"
-                      >
-                        <path
-                          d="M99.915,7327.865 C96.692,7325.951 91.375,7325.775 88.297,7326.709 C87.803,7326.858 87.281,7326.58 87.131,7326.085 C86.981,7325.591 87.26,7325.069 87.754,7324.919 C91.287,7323.846 97.159,7324.053 100.87,7326.256 C101.314,7326.52 101.46,7327.094 101.196,7327.538 C100.934,7327.982 100.358,7328.129 99.915,7327.865 L99.915,7327.865 Z M99.81,7330.7 C99.584,7331.067 99.104,7331.182 98.737,7330.957 C96.05,7329.305 91.952,7328.827 88.773,7329.792 C88.36,7329.916 87.925,7329.684 87.8,7329.272 C87.676,7328.86 87.908,7328.425 88.32,7328.3 C91.951,7327.198 96.466,7327.732 99.553,7329.629 C99.92,7329.854 100.035,7330.334 99.81,7330.7 L99.81,7330.7 Z M98.586,7333.423 C98.406,7333.717 98.023,7333.81 97.729,7333.63 C95.381,7332.195 92.425,7331.871 88.944,7332.666 C88.609,7332.743 88.274,7332.533 88.198,7332.197 C88.121,7331.862 88.33,7331.528 88.667,7331.451 C92.476,7330.58 95.743,7330.955 98.379,7332.566 C98.673,7332.746 98.766,7333.129 98.586,7333.423 L98.586,7333.423 Z M94,7319 C88.477,7319 84,7323.477 84,7329 C84,7334.523 88.477,7339 94,7339 C99.523,7339 104,7334.523 104,7329 C104,7323.478 99.523,7319.001 94,7319.001 L94,7319 Z"
-                          id="spotify-[#162]"
-                          fill="#ffffff"
-                        ></path>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </a>
-            <a
-              href="{{site.data.main.social.apple}}"
-              class="h-[40px] w-[40px] border border-white border-opacity-[25%] flex justify-center items-center rounded-md"
-            >
-              <svg
-                width="20.56px"
-                height="22.58px"
-                viewBox="-32 0 512 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M267.429 488.563C262.286 507.573 242.858 512 224 512c-18.857 0-38.286-4.427-43.428-23.437C172.927 460.134 160 388.898 160 355.75c0-35.156 31.142-43.75 64-43.75s64 8.594 64 43.75c0 32.949-12.871 104.179-20.571 132.813zM156.867 288.554c-18.693-18.308-29.958-44.173-28.784-72.599 2.054-49.724 42.395-89.956 92.124-91.881C274.862 121.958 320 165.807 320 220c0 26.827-11.064 51.116-28.866 68.552-2.675 2.62-2.401 6.986.628 9.187 9.312 6.765 16.46 15.343 21.234 25.363 1.741 3.654 6.497 4.66 9.449 1.891 28.826-27.043 46.553-65.783 45.511-108.565-1.855-76.206-63.595-138.208-139.793-140.369C146.869 73.753 80 139.215 80 220c0 41.361 17.532 78.7 45.55 104.989 2.953 2.771 7.711 1.77 9.453-1.887 4.774-10.021 11.923-18.598 21.235-25.363 3.029-2.2 3.304-6.566.629-9.185zM224 0C100.204 0 0 100.185 0 224c0 89.992 52.602 165.647 125.739 201.408 4.333 2.118 9.267-1.544 8.535-6.31-2.382-15.512-4.342-30.946-5.406-44.339-.146-1.836-1.149-3.486-2.678-4.512-47.4-31.806-78.564-86.016-78.187-147.347.592-96.237 79.29-174.648 175.529-174.899C320.793 47.747 400 126.797 400 224c0 61.932-32.158 116.49-80.65 147.867-.999 14.037-3.069 30.588-5.624 47.23-.732 4.767 4.203 8.429 8.535 6.31C395.227 389.727 448 314.187 448 224 448 100.205 347.815 0 224 0zm0 160c-35.346 0-64 28.654-64 64s28.654 64 64 64 64-28.654 64-64-28.654-64-64-64z"
-                    fill="#ffffff"
-                  ></path>
-                </g>
-              </svg>
-            </a>
-            <a
-              href="{{site.data.main.social.spotify}}"
-              class="h-[40px] w-[40px] border border-white border-opacity-[25%] flex justify-center items-center rounded-md"
-            >
-              <svg
-                width="22"
-                height="23"
-                viewBox="0 0 22 23"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.55638 22.5802C5.52068 22.5802 7.11293 20.988 7.11293 19.0237C7.11293 17.0595 5.52068 15.4673 3.55638 15.4673C1.59228 15.4673 0 17.0595 0 19.0237C0 20.988 1.59228 22.5802 3.55638 22.5802Z"
-                  fill="white"
-                />
-                <path
-                  d="M3.38464 0.580078V3.96575C11.7951 3.96575 18.6144 10.785 18.6144 19.1955H22C22 8.91872 13.6614 0.580078 3.38464 0.580078ZM3.38464 7.35154V10.7372C8.05047 10.7372 11.8429 14.5296 11.8429 19.1955H15.2286C15.2286 12.6513 9.92877 7.35154 3.38464 7.35154Z"
-                  fill="white"
-                />
-              </svg>
-            </a>
+    <div class="lg:hidden">
+      <div class="flex mb-6 gap-[35px]">
+        <img class="author-img !rounded-full !w-[64px] !h-[64px]" src="/assets/images/site/talk-sm.png" />
+        <div>{% include podcast-links.html %}</div>
+      </div>
+      <div>
+        <div class="mb-6 flex gap-[35px]">
+          <div>
+            <h4 class="mb-2">Follow Me</h4>
+            <div>{% include social-links.html vertical=true %}</div>
           </div>
-          <p
-            class="text-left max-lg:hidden w-[309px] podcast-summary text-white"
-          >
-            {{site.data.main.podcast_summary}}
+          <p class="text-sm md:text-lg mb-6 flex-1 items-center">
+            Join Viktor, a proud nerd and seasoned entrepreneur, whose academic journey at Santa Clara University in Silicon Valley sparked a career marked by innovation and foresight. From his college days, Viktor embarked on an entrepreneurial path, beginning with YippieMove, a groundbreaking email migration service, and continuing with a series of bootstrapped ventures.
           </p>
-        </div>
-        <div class="lg:hidden flex w-[342px]">
-          <div class="w-[100px]">
-            <h1
-              class="font-[Anton] text-[18px] font-normal text-white leading-[27px] mb-2"
-            >
-              Follow me
-            </h1>
-            <div class="space-y-2">
-              <a
-                href="{{site.data.main.social.twitter}}"
-                class="h-[40px] w-[40px] border border-white border-opacity-[25%] flex justify-center items-center rounded-md"
-              >
-                <svg
-                  width="16"
-                  height="17"
-                  viewBox="0 0 16 17"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M5.99386 8.69486L0 1.24683H4.74756L8.44753 5.85023L12.4004 1.26755H15.0151L9.71175 7.42314L16 15.2468H11.2666L7.2603 10.2685L2.98317 15.233H0.354296L5.99386 8.69486ZM11.9565 13.8668L2.91105 2.62682H4.0571L13.0912 13.8668H11.9565Z"
-                    fill="white"
-                  />
-                </svg>
-              </a>
-              <a
-                href="{{site.data.main.social.github}}"
-                class="h-[40px] w-[40px] border border-white border-opacity-[25%] flex justify-center items-center rounded-md"
-              >
-                <svg
-                  width="21"
-                  height="20"
-                  viewBox="0 0 21 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10.0862 0.833721C7.68071 0.809278 5.36398 1.74089 3.6451 3.42383C1.92623 5.10676 0.945878 7.40329 0.919495 9.80872C0.928763 11.7097 1.54028 13.5588 2.66621 15.0905C3.79215 16.6222 5.37456 17.7576 7.18616 18.3337C7.6445 18.4171 7.81116 18.1421 7.81116 17.9004C7.81116 17.6587 7.81116 17.1254 7.81116 16.3754C5.26116 16.9171 4.71949 15.1754 4.71949 15.1754C4.54974 14.6286 4.18886 14.1613 3.70283 13.8587C2.86949 13.3087 3.76949 13.3171 3.76949 13.3171C4.05754 13.3556 4.33312 13.4588 4.57559 13.619C4.81805 13.7792 5.02109 13.9922 5.16949 14.2421C5.4281 14.6905 5.85244 15.0195 6.35117 15.1582C6.8499 15.2969 7.38316 15.2342 7.83616 14.9837C7.88275 14.5274 8.0894 14.1023 8.4195 13.7837C6.38616 13.5587 4.25283 12.7921 4.25283 9.35039C4.23464 8.45262 4.56636 7.58298 5.17783 6.92539C4.89935 6.15461 4.93223 5.30565 5.26949 4.55872C5.26949 4.55872 6.0445 4.31705 7.7695 5.47539C9.27107 5.07525 10.8513 5.07525 12.3528 5.47539C14.1028 4.31705 14.8528 4.55872 14.8528 4.55872C15.1901 5.30565 15.223 6.15461 14.9445 6.92539C15.5702 7.57093 15.9199 8.43473 15.9195 9.33372C15.9195 12.7837 13.7695 13.5421 11.7528 13.7671C11.9736 13.9814 12.1442 14.2421 12.2523 14.5303C12.3604 14.8185 12.4032 15.127 12.3778 15.4337V17.8921C12.3778 17.8921 12.5445 18.4171 13.0028 18.3254C14.8093 17.7457 16.3864 16.61 17.5088 15.0805C18.6313 13.551 19.2417 11.7059 19.2528 9.80872C19.2264 7.40329 18.2461 5.10676 16.5272 3.42383C14.8083 1.74089 12.4916 0.809278 10.0862 0.833721Z"
-                    fill="white"
-                  />
-                </svg>
-              </a>
-              <a
-                href="{{site.data.main.social.linkedIn}}"
-                class="h-[40px] w-[40px] border border-white border-opacity-[25%] flex justify-center items-center rounded-md"
-              >
-                <svg
-                  width="23"
-                  height="23"
-                  viewBox="0 0 23 23"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M2.48143 0.780029C1.58985 0.780029 0.866577 1.48128 0.866577 2.3452V21.0653C0.866577 21.9293 1.58993 22.63 2.48143 22.63H21.1017C21.9936 22.63 22.7165 21.9293 22.7165 21.0651V2.3452C22.7165 1.48128 21.9936 0.780029 21.1017 0.780029H2.48143ZM7.5064 9.2287V19.0656H4.23675V9.2287H7.5064ZM7.72191 6.18652C7.72191 7.13051 7.01221 7.88587 5.87226 7.88587L5.85083 7.88578C4.75347 7.88578 4.04403 7.13042 4.04403 6.18644C4.04403 5.22103 4.77489 4.48675 5.89394 4.48675C7.01221 4.48675 7.70057 5.22103 7.72191 6.18652ZM12.5856 19.0656H9.31619C9.31619 19.0656 9.35903 10.1519 9.31636 9.22904H12.5858V10.6214C13.0205 9.95129 13.7983 8.99808 15.5326 8.99808C17.6837 8.99808 19.2965 10.4041 19.2965 13.4254V19.0656H16.0272V13.8037C16.0272 12.4812 15.5538 11.5792 14.371 11.5792C13.4675 11.5792 12.9295 12.1875 12.6933 12.7751C12.6069 12.9849 12.5856 13.2792 12.5856 13.5728V19.0656Z"
-                    fill="white"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <p class="w-[242px] px-6 text-[14px] podcast-summary text-white">
-            {{site.data.main.podcast_summary}}
-          </p>
-        </div>
-        <div class="max-lg:hidden lg:mt-[24px]">
-          <h1
-            class="font-[Anton] text-[16px] leading-[27px] font-normal text-white mb-2"
-          >
-            Links
-          </h1>
-
-          <div class="flex space-x-2">
-            <a
-              href="{{site.data.main.social.youtube}}"
-              class="h-[40px] w-[40px] border border-white border-opacity-[25%] flex justify-center items-center rounded-md"
-            >
-              <svg
-                viewBox="0 -3 20 20"
-                width="22.8px"
-                height="16px"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                fill="#000000"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <title>youtube [#168]</title>
-                  <desc>Created with Sketch.</desc>
-                  <defs></defs>
-                  <g
-                    id="Page-1"
-                    stroke="none"
-                    stroke-width="1"
-                    fill="none"
-                    fill-rule="evenodd"
-                  >
-                    <g
-                      id="Dribbble-Light-Preview"
-                      transform="translate(-300.000000, -7442.000000)"
-                      fill="#000000"
-                    >
-                      <g
-                        id="icons"
-                        transform="translate(56.000000, 160.000000)"
-                      >
-                        <path
-                          d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638
-                            ,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,
-                            7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 
-                            C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532
-                             261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289"
-                          id="youtube-[#168]"
-                          fill="#ffffff"
-                        ></path>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </a>
-            <a
-              href="{{site.data.main.social.spotify}}"
-              class="h-[40px] w-[40px] border border-white border-opacity-[25%] flex justify-center items-center rounded-md"
-            >
-              <svg
-                viewBox="0 0 20 20"
-                width="20.01px"
-                height="20.01px"
-                fill="none"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <title>spotify [#162]</title>
-                  <desc>Created with Sketch.</desc>
-                  <defs></defs>
-                  <g
-                    id="Page-1"
-                    stroke="none"
-                    stroke-width="1"
-                    fill="none"
-                    fill-rule="evenodd"
-                  >
-                    <g
-                      id="Dribbble-Light-Preview"
-                      transform="translate(-140.000000, -7479.000000)"
-                      fill="#000000"
-                    >
-                      <g
-                        id="icons"
-                        transform="translate(56.000000, 160.000000)"
-                      >
-                        <path
-                          d="M99.915,7327.865 C96.692,7325.951 91.375,7325.775 88.297,7326.709 C87.803,7326.858 87.281,7326.58 87.131,7326.085 C86.981,7325.591 87.26,7325.069 87.754,7324.919 C91.287,7323.846 97.159,7324.053 100.87,7326.256 C101.314,7326.52 101.46,7327.094 101.196,7327.538 C100.934,7327.982 100.358,7328.129 99.915,7327.865 L99.915,7327.865 Z M99.81,7330.7 C99.584,7331.067 99.104,7331.182 98.737,7330.957 C96.05,7329.305 91.952,7328.827 88.773,7329.792 C88.36,7329.916 87.925,7329.684 87.8,7329.272 C87.676,7328.86 87.908,7328.425 88.32,7328.3 C91.951,7327.198 96.466,7327.732 99.553,7329.629 C99.92,7329.854 100.035,7330.334 99.81,7330.7 L99.81,7330.7 Z M98.586,7333.423 C98.406,7333.717 98.023,7333.81 97.729,7333.63 C95.381,7332.195 92.425,7331.871 88.944,7332.666 C88.609,7332.743 88.274,7332.533 88.198,7332.197 C88.121,7331.862 88.33,7331.528 88.667,7331.451 C92.476,7330.58 95.743,7330.955 98.379,7332.566 C98.673,7332.746 98.766,7333.129 98.586,7333.423 L98.586,7333.423 Z M94,7319 C88.477,7319 84,7323.477 84,7329 C84,7334.523 88.477,7339 94,7339 C99.523,7339 104,7334.523 104,7329 C104,7323.478 99.523,7319.001 94,7319.001 L94,7319 Z"
-                          id="spotify-[#162]"
-                          fill="#ffffff"
-                        ></path>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </a>
-            <a
-              href="{{site.data.main.social.apple}}"
-              class="h-[40px] w-[40px] border border-white border-opacity-[25%] flex justify-center items-center rounded-md"
-            >
-              <svg
-                width="20.56px"
-                height="22.58px"
-                viewBox="-32 0 512 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M267.429 488.563C262.286 507.573 242.858 512 224 512c-18.857 0-38.286-4.427-43.428-23.437C172.927 460.134 160 388.898 160 355.75c0-35.156 31.142-43.75 64-43.75s64 8.594 64 43.75c0 32.949-12.871 104.179-20.571 132.813zM156.867 288.554c-18.693-18.308-29.958-44.173-28.784-72.599 2.054-49.724 42.395-89.956 92.124-91.881C274.862 121.958 320 165.807 320 220c0 26.827-11.064 51.116-28.866 68.552-2.675 2.62-2.401 6.986.628 9.187 9.312 6.765 16.46 15.343 21.234 25.363 1.741 3.654 6.497 4.66 9.449 1.891 28.826-27.043 46.553-65.783 45.511-108.565-1.855-76.206-63.595-138.208-139.793-140.369C146.869 73.753 80 139.215 80 220c0 41.361 17.532 78.7 45.55 104.989 2.953 2.771 7.711 1.77 9.453-1.887 4.774-10.021 11.923-18.598 21.235-25.363 3.029-2.2 3.304-6.566.629-9.185zM224 0C100.204 0 0 100.185 0 224c0 89.992 52.602 165.647 125.739 201.408 4.333 2.118 9.267-1.544 8.535-6.31-2.382-15.512-4.342-30.946-5.406-44.339-.146-1.836-1.149-3.486-2.678-4.512-47.4-31.806-78.564-86.016-78.187-147.347.592-96.237 79.29-174.648 175.529-174.899C320.793 47.747 400 126.797 400 224c0 61.932-32.158 116.49-80.65 147.867-.999 14.037-3.069 30.588-5.624 47.23-.732 4.767 4.203 8.429 8.535 6.31C395.227 389.727 448 314.187 448 224 448 100.205 347.815 0 224 0zm0 160c-35.346 0-64 28.654-64 64s28.654 64 64 64 64-28.654 64-64-28.654-64-64-64z"
-                    fill="#ffffff"
-                  ></path>
-                </g>
-              </svg>
-            </a>
-            <a
-              href="{{site.data.main.social.youtube}}"
-              class="h-[40px] w-[40px] border border-white border-opacity-[25%] flex justify-center items-center rounded-md"
-            >
-              <svg
-                width="22"
-                height="23"
-                viewBox="0 0 22 23"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.55638 22.5802C5.52068 22.5802 7.11293 20.988 7.11293 19.0237C7.11293 17.0595 5.52068 15.4673 3.55638 15.4673C1.59228 15.4673 0 17.0595 0 19.0237C0 20.988 1.59228 22.5802 3.55638 22.5802Z"
-                  fill="white"
-                />
-                <path
-                  d="M3.38464 0.580078V3.96575C11.7951 3.96575 18.6144 10.785 18.6144 19.1955H22C22 8.91872 13.6614 0.580078 3.38464 0.580078ZM3.38464 7.35154V10.7372C8.05047 10.7372 11.8429 14.5296 11.8429 19.1955H15.2286C15.2286 12.6513 9.92877 7.35154 3.38464 7.35154Z"
-                  fill="white"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="mt-4 lg:mt-[24px] max-lg:hidden">
-          <h1
-            class="font-[Anton] text-[18px] font-normal text-white leading-[27px] mb-2"
-          >
-            Follow me
-          </h1>
-          <div class="flex space-x-2">
-            <a
-              href="{{site.data.main.social.twitter}}"
-              class="h-[40px] w-[40px] border border-white border-opacity-[25%] flex justify-center items-center rounded-md"
-            >
-              <svg
-                width="16"
-                height="17"
-                viewBox="0 0 16 17"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M5.99386 8.69486L0 1.24683H4.74756L8.44753 5.85023L12.4004 1.26755H15.0151L9.71175 7.42314L16 15.2468H11.2666L7.2603 10.2685L2.98317 15.233H0.354296L5.99386 8.69486ZM11.9565 13.8668L2.91105 2.62682H4.0571L13.0912 13.8668H11.9565Z"
-                  fill="white"
-                />
-              </svg>
-            </a>
-            <a
-              href="{{site.data.main.social.github}}"
-              class="h-[40px] w-[40px] border border-white border-opacity-[25%] flex justify-center items-center rounded-md"
-            >
-              <svg
-                width="21"
-                height="20"
-                viewBox="0 0 21 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10.0862 0.833721C7.68071 0.809278 5.36398 1.74089 3.6451 3.42383C1.92623 5.10676 0.945878 7.40329 0.919495 9.80872C0.928763 11.7097 1.54028 13.5588 2.66621 15.0905C3.79215 16.6222 5.37456 17.7576 7.18616 18.3337C7.6445 18.4171 7.81116 18.1421 7.81116 17.9004C7.81116 17.6587 7.81116 17.1254 7.81116 16.3754C5.26116 16.9171 4.71949 15.1754 4.71949 15.1754C4.54974 14.6286 4.18886 14.1613 3.70283 13.8587C2.86949 13.3087 3.76949 13.3171 3.76949 13.3171C4.05754 13.3556 4.33312 13.4588 4.57559 13.619C4.81805 13.7792 5.02109 13.9922 5.16949 14.2421C5.4281 14.6905 5.85244 15.0195 6.35117 15.1582C6.8499 15.2969 7.38316 15.2342 7.83616 14.9837C7.88275 14.5274 8.0894 14.1023 8.4195 13.7837C6.38616 13.5587 4.25283 12.7921 4.25283 9.35039C4.23464 8.45262 4.56636 7.58298 5.17783 6.92539C4.89935 6.15461 4.93223 5.30565 5.26949 4.55872C5.26949 4.55872 6.0445 4.31705 7.7695 5.47539C9.27107 5.07525 10.8513 5.07525 12.3528 5.47539C14.1028 4.31705 14.8528 4.55872 14.8528 4.55872C15.1901 5.30565 15.223 6.15461 14.9445 6.92539C15.5702 7.57093 15.9199 8.43473 15.9195 9.33372C15.9195 12.7837 13.7695 13.5421 11.7528 13.7671C11.9736 13.9814 12.1442 14.2421 12.2523 14.5303C12.3604 14.8185 12.4032 15.127 12.3778 15.4337V17.8921C12.3778 17.8921 12.5445 18.4171 13.0028 18.3254C14.8093 17.7457 16.3864 16.61 17.5088 15.0805C18.6313 13.551 19.2417 11.7059 19.2528 9.80872C19.2264 7.40329 18.2461 5.10676 16.5272 3.42383C14.8083 1.74089 12.4916 0.809278 10.0862 0.833721Z"
-                  fill="white"
-                />
-              </svg>
-            </a>
-            <a
-              href="{{site.data.main.social.linkedIn}}"
-              class="h-[40px] w-[40px] border border-white border-opacity-[25%] flex justify-center items-center rounded-md"
-            >
-              <svg
-                width="23"
-                height="23"
-                viewBox="0 0 23 23"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M2.48143 0.780029C1.58985 0.780029 0.866577 1.48128 0.866577 2.3452V21.0653C0.866577 21.9293 1.58993 22.63 2.48143 22.63H21.1017C21.9936 22.63 22.7165 21.9293 22.7165 21.0651V2.3452C22.7165 1.48128 21.9936 0.780029 21.1017 0.780029H2.48143ZM7.5064 9.2287V19.0656H4.23675V9.2287H7.5064ZM7.72191 6.18652C7.72191 7.13051 7.01221 7.88587 5.87226 7.88587L5.85083 7.88578C4.75347 7.88578 4.04403 7.13042 4.04403 6.18644C4.04403 5.22103 4.77489 4.48675 5.89394 4.48675C7.01221 4.48675 7.70057 5.22103 7.72191 6.18652ZM12.5856 19.0656H9.31619C9.31619 19.0656 9.35903 10.1519 9.31636 9.22904H12.5858V10.6214C13.0205 9.95129 13.7983 8.99808 15.5326 8.99808C17.6837 8.99808 19.2965 10.4041 19.2965 13.4254V19.0656H16.0272V13.8037C16.0272 12.4812 15.5538 11.5792 14.371 11.5792C13.4675 11.5792 12.9295 12.1875 12.6933 12.7751C12.6069 12.9849 12.5856 13.2792 12.5856 13.5728V19.0656Z"
-                  fill="white"
-                />
-              </svg>
-            </a>
-          </div>
         </div>
       </div>
-      <div
-        class="w-[342px] lg:w-[783px] max-lg:mt-[-100px] lg:h-[1188px] space-y-2"
-      >
-        <div class="w-full lg:w-[665px] lg:h-[746px]">
-          <img
-            src="{{page.image}}"
-            alt=""
-            class="w-full lg:h-[382px] h-[288px] rounded-md mb-4"
-          />
-          <div
-            class="font-[Anton] px-[-30px] text-white max-lg:leading-[36.13px] leading-[56px] font-normal max-lg:py-2 lg:px-0 max-lg:text-[24px] text-[40px]"
-          >
-            {{page.title}}
-          </div>
-          <div class="mt-4 flex space-x-3">
-            <div class="h-[40px] flex items-center">
-              <p
-                class="text-white font-[Anton] tracking-[10%] text-[14px] leading-[24px] font-normal"
-              >
-                PLAY ON
-              </p>
-            </div>
-            <div class="flex space-x-2 lg:w-[146.67px]">
-              <a
-                href="{{site.data.main.social.youtube}}"
-                class="bg-[#5D5FEF] h-[40px] w-[40px] border-opacity-[25%] flex justify-center items-center rounded-md"
-              >
-                <svg
-                  viewBox="0 -3 20 20"
-                  width="22.8px"
-                  height="16px"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  fill="#000000"
-                >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <title>youtube [#168]</title>
-                    <desc>Created with Sketch.</desc>
-                    <defs></defs>
-                    <g
-                      id="Page-1"
-                      stroke="none"
-                      stroke-width="1"
-                      fill="none"
-                      fill-rule="evenodd"
-                    >
-                      <g
-                        id="Dribbble-Light-Preview"
-                        transform="translate(-300.000000, -7442.000000)"
-                        fill="#000000"
-                      >
-                        <g
-                          id="icons"
-                          transform="translate(56.000000, 160.000000)"
-                        >
-                          <path
-                            d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638
-                        ,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,
-                        7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 
-                        C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532
-                         261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289"
-                            id="youtube-[#168]"
-                            fill="#ffffff"
-                          ></path>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-              </a>
-              <a
-                href="{{site.data.main.social.spotify}}"
-                class="bg-[#5D5FEF] h-[40px] w-[40px] border-opacity-[25%] flex justify-center items-center rounded-md"
-              >
-                <svg
-                  viewBox="0 0 20 20"
-                  width="20.01px"
-                  height="20.01px"
-                  fill="none"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <title>spotify [#162]</title>
-                    <desc>Created with Sketch.</desc>
-                    <defs></defs>
-                    <g
-                      id="Page-1"
-                      stroke="none"
-                      stroke-width="1"
-                      fill="none"
-                      fill-rule="evenodd"
-                    >
-                      <g
-                        id="Dribbble-Light-Preview"
-                        transform="translate(-140.000000, -7479.000000)"
-                        fill="#000000"
-                      >
-                        <g
-                          id="icons"
-                          transform="translate(56.000000, 160.000000)"
-                        >
-                          <path
-                            d="M99.915,7327.865 C96.692,7325.951 91.375,7325.775 88.297,7326.709 C87.803,7326.858 87.281,7326.58 87.131,7326.085 C86.981,7325.591 87.26,7325.069 87.754,7324.919 C91.287,7323.846 97.159,7324.053 100.87,7326.256 C101.314,7326.52 101.46,7327.094 101.196,7327.538 C100.934,7327.982 100.358,7328.129 99.915,7327.865 L99.915,7327.865 Z M99.81,7330.7 C99.584,7331.067 99.104,7331.182 98.737,7330.957 C96.05,7329.305 91.952,7328.827 88.773,7329.792 C88.36,7329.916 87.925,7329.684 87.8,7329.272 C87.676,7328.86 87.908,7328.425 88.32,7328.3 C91.951,7327.198 96.466,7327.732 99.553,7329.629 C99.92,7329.854 100.035,7330.334 99.81,7330.7 L99.81,7330.7 Z M98.586,7333.423 C98.406,7333.717 98.023,7333.81 97.729,7333.63 C95.381,7332.195 92.425,7331.871 88.944,7332.666 C88.609,7332.743 88.274,7332.533 88.198,7332.197 C88.121,7331.862 88.33,7331.528 88.667,7331.451 C92.476,7330.58 95.743,7330.955 98.379,7332.566 C98.673,7332.746 98.766,7333.129 98.586,7333.423 L98.586,7333.423 Z M94,7319 C88.477,7319 84,7323.477 84,7329 C84,7334.523 88.477,7339 94,7339 C99.523,7339 104,7334.523 104,7329 C104,7323.478 99.523,7319.001 94,7319.001 L94,7319 Z"
-                            id="spotify-[#162]"
-                            fill="#ffffff"
-                          ></path>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-              </a>
-              <a
-                href="{{site.data.main.social.apple}}"
-                class="bg-[#5D5FEF] h-[40px] w-[40px] border-opacity-[25%] flex justify-center items-center rounded-md"
-              >
-                <svg
-                  width="20.56px"
-                  height="22.58px"
-                  viewBox="-32 0 512 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <path
-                      d="M267.429 488.563C262.286 507.573 242.858 512 224 512c-18.857 0-38.286-4.427-43.428-23.437C172.927 460.134 160 388.898 160 355.75c0-35.156 31.142-43.75 64-43.75s64 8.594 64 43.75c0 32.949-12.871 104.179-20.571 132.813zM156.867 288.554c-18.693-18.308-29.958-44.173-28.784-72.599 2.054-49.724 42.395-89.956 92.124-91.881C274.862 121.958 320 165.807 320 220c0 26.827-11.064 51.116-28.866 68.552-2.675 2.62-2.401 6.986.628 9.187 9.312 6.765 16.46 15.343 21.234 25.363 1.741 3.654 6.497 4.66 9.449 1.891 28.826-27.043 46.553-65.783 45.511-108.565-1.855-76.206-63.595-138.208-139.793-140.369C146.869 73.753 80 139.215 80 220c0 41.361 17.532 78.7 45.55 104.989 2.953 2.771 7.711 1.77 9.453-1.887 4.774-10.021 11.923-18.598 21.235-25.363 3.029-2.2 3.304-6.566.629-9.185zM224 0C100.204 0 0 100.185 0 224c0 89.992 52.602 165.647 125.739 201.408 4.333 2.118 9.267-1.544 8.535-6.31-2.382-15.512-4.342-30.946-5.406-44.339-.146-1.836-1.149-3.486-2.678-4.512-47.4-31.806-78.564-86.016-78.187-147.347.592-96.237 79.29-174.648 175.529-174.899C320.793 47.747 400 126.797 400 224c0 61.932-32.158 116.49-80.65 147.867-.999 14.037-3.069 30.588-5.624 47.23-.732 4.767 4.203 8.429 8.535 6.31C395.227 389.727 448 314.187 448 224 448 100.205 347.815 0 224 0zm0 160c-35.346 0-64 28.654-64 64s28.654 64 64 64 64-28.654 64-64-28.654-64-64-64z"
-                      fill="#ffffff"
-                    ></path>
-                  </g>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div
-            class="flex pt-6 max-lg:py-6 max-lg:w-[234px] max-lg:h-[16px] font-dm-sans opacity-75 text-[#FFFFFF] leading-4 text-3 font-bold w-64 justify-between"
-          >
-            <p class="blog-time">20 DEC • 2020</p>
-            <p class="blog-time">1 hr 5 min</p>
-            <p class="blog-time">VIDEO</p>
-          </div>
-          <div class="max-sm:flex max-sm:py-3">
-            <div class="share max-sm:py-0 py-4 text-white">Share:</div>
-            <div class="flex max-sm:pl-3 space-x-4 max-sm:pt-2">
-              <a href="{{site.data.main.social.linkedIn}}"
-                ><svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g opacity="0.8" clip-path="url(#clip0_1_708)">
-                    <path
-                      d="M13.3256 13.8345V13.8339H13.329V8.96737C13.329 6.58662 12.8139 4.75269 10.0168 4.75269C8.67216 4.75269 7.7698 5.48692 7.40141 6.18301H7.36252V4.97495H4.71045V13.8339H7.47198V9.44728C7.47198 8.29229 7.69201 7.17545 9.12945 7.17545C10.5458 7.17545 10.5669 8.49354 10.5669 9.52136V13.8345H13.3256Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M0.211182 4.99097H2.97605V13.8499H0.211182V4.99097Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M1.60135 0.580078C0.717331 0.580078 0 1.29386 0 2.17351C0 3.05316 0.717331 3.78187 1.60135 3.78187C2.48538 3.78187 3.20271 3.05316 3.20271 2.17351C3.20215 1.29386 2.48482 0.580078 1.60135 0.580078V0.580078Z"
-                      fill="white"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_1_708">
-                      <rect
-                        width="13.329"
-                        height="13.27"
-                        fill="white"
-                        transform="translate(0 0.580078)"
-                      />
-                    </clipPath>
-                  </defs>
-                  </svg></a>
-              <a href="{{site.data.main.social.twitter}}">
-                <svg
-                  width="8"
-                  height="15"
-                  viewBox="0 0 8 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.58666 0.582966L5.77778 0.580078C3.74557 0.580078 2.43227 1.92082 2.43227 3.99596V5.57092H0.61353C0.456369 5.57092 0.329102 5.6977 0.329102 5.85408V8.13601C0.329102 8.29239 0.456514 8.41903 0.61353 8.41903H2.43227V14.1771C2.43227 14.3334 2.55954 14.4601 2.7167 14.4601H5.08964C5.2468 14.4601 5.37407 14.3333 5.37407 14.1771V8.41903H7.5006C7.65776 8.41903 7.78503 8.29239 7.78503 8.13601L7.7859 5.85408C7.7859 5.779 7.75586 5.70708 7.7026 5.65395C7.64935 5.60081 7.57679 5.57092 7.50133 5.57092H5.37407V4.23581C5.37407 3.5941 5.52775 3.26834 6.36782 3.26834L7.58637 3.26791C7.74338 3.26791 7.87065 3.14113 7.87065 2.98489V0.865987C7.87065 0.709892 7.74353 0.583255 7.58666 0.582966Z"
-                    fill="white"
-                  /></svg></a>
-              <a href="{{site.data.main.social.twitter}}">
-                <svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g opacity="0.8">
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M6.11511 7.68036L0.870483 1.16333H5.0246L8.26207 5.1913L11.7208 1.18147H14.0087L9.36826 6.56761L14.8705 13.4133H10.7288L7.22325 9.05733L3.48076 13.4013H1.18049L6.11511 7.68036ZM11.3324 12.2058L3.41765 2.37082H4.42045L12.3253 12.2058H11.3324Z"
-                      fill="white"
-                    />
-                  </g></svg></a>
-            </div>
-          </div>
+    </div>
+    <div class="flex-1">
+      <div class="mb-5 relative">
+        {% assign image = page.image | default: "/assets/images/site/podcast-cover.jpg" %}
+        <img class="rounded-2xl" src="{{ image }}" alt="Podcast Image" />
+        <div class="absolute bottom-6 left-6 uppercase text-white">
+          <div class="text-sm">Episode {{page.episode}}</div>
+          <div class="text-2xl">{{page.guest}}</div>
         </div>
-
-        <div
-          class="normal-content w-full font-normal h-[442px] max-lg:w-[342px] max-lg:h-[754px] opacity-[80%] text-white text-[16px] leading-[26px] max-lg:text-[14px] py-2"
-        >
-          {{page.content}}
-        </div>
+      </div>
+      <h2 class="mb-5">{{page.title}}</h2>
+      <div class="mb-5 flex items-center">
+        <span class="uppercase text-xl leading-[1.6px] mr-5">Play On</span>
+        <span class="flex flex-1 gap-3">
+          {% if page.youtube %}
+            <a href="{{ page.youtube }}" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/images/site/podcast-youtube-dark.svg" alt="Listen to podcast on YouTube" />
+            </a>
+          {% endif %}
+          {% if page.spotify %}
+            <a href="{{ page.spotify }}" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/images/site/podcast-spotify-dark.svg" alt="Listen to podcast on Spotify" />
+            </a>
+          {% endif %}
+          {% if page.apple %}
+            <a href="{{ page.apple }}" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/images/site/podcast-apple-dark.svg" alt="Listen to podcast on Apple" />
+            </a>
+          {% endif %}
+          {% if page.amazon %}
+            <a href="{{ page.amazon }}" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/images/site/podcast-amazon-dark.svg" alt="Listen to podcast on Amazon music" />
+            </a>
+          {% endif %}
+        </span>
+      </div>
+      <div class="mb-5 flex gap-4 text-xs uppercase font-['DM Sans']">
+        <span>
+          {{ page.date | date: "%d %^b • %Y" }}
+        </span>
+        {% if page.duration %}
+          <span>
+            {{ page.duration | format_duration }}
+          </span>
+        {% endif %}
+      </div>
+      <div class="mb-6">
+        {% include share-buttons.html %}
+      </div>
+      <div class="podcast-page">
+        {{content}}
       </div>
     </div>
   </div>
