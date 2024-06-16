@@ -23,7 +23,6 @@ jobs:
 
       - name: Build content
         run: |
-          docker run --rm -v $(pwd):/usr/src/app web npm run build:css
           docker run --rm -v $(pwd):/usr/src/app web bundle exec jekyll build
 
       - name: Upload Artifact
