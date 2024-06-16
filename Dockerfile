@@ -23,7 +23,7 @@ RUN gem install bundle && \
 # Install Node.js dependencies including specific npm version and Tailwind CSS
 ADD package.json /usr/src/app
 ADD package-lock.json /usr/src/app
-RUN npm install -g yarn
+RUN npm install
 
 #CMD jekyll serve --host 0.0.0.0 --incremental
 CMD ["sh", "-c", "npm run watch:css & bundle exec jekyll serve --host 0.0.0.0 --incremental"]
