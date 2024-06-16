@@ -11,7 +11,7 @@ jobs:
     permissions:
       contents: read
       deployments: write
-    name: Deploy to Cloudflare Pages
+    name: Deploy to GitHub Pages
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -23,7 +23,7 @@ jobs:
 
       - name: Build content
         run: |
-          docker run --rm -v $(pwd):/usr/src/app web npm run build:css -d
+          docker run --rm -v $(pwd):/usr/src/app web npm run build:css
           docker run --rm -v $(pwd):/usr/src/app web bundle exec jekyll build
 
       - name: Upload Artifact
