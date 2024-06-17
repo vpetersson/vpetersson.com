@@ -640,14 +640,8 @@ video {
 .inline-block {
   display: inline-block;
 }
-.inline {
-  display: inline;
-}
 .flex {
   display: flex;
-}
-.table {
-  display: table;
 }
 .grid {
   display: grid;
@@ -952,9 +946,6 @@ video {
 .capitalize {
   text-transform: capitalize;
 }
-.italic {
-  font-style: italic;
-}
 .leading-\[1\.6px\] {
   line-height: 1.6px;
 }
@@ -997,13 +988,6 @@ video {
 .blur {
   --tw-blur: blur(8px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 }
 @media (min-width: 768px) {
 
