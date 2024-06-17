@@ -23,6 +23,10 @@ url: "http://blog.viktorpetersson.com" # the base hostname & protocol for your s
 twitter_username: vpetersson
 github_username: vpetersson
 
+social:
+  image: "/assets/images/site/talk.jpg"
+  twitter: vpetersson
+
 pagination:
   enabled: true
 
