@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: Entrepreneurship
+tag-name: entrepreneurship
 ---

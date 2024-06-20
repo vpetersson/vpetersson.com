@@ -18,7 +18,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Viktor on entrepreneurship, Dev(Sec)Ops, remote work, and other geeky stuff.
 baseurl: "" # the subpath of your site, e.g. /blog
 #baseurl: "blog.viktorpetersson.com"
-url: "https://blog.viktorpetersson.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://vpetersson.com" # the base hostname & protocol for your site, e.g. http://example.com
 # url: "https://vpetersson.github.io/blog.viktorpetersson.com"
 twitter_username: vpetersson
 github_username: vpetersson
@@ -42,7 +42,7 @@ sass:
   style: compressed
   sourcemap: never
 
-google_analytics: G-DKGDZ1Y2LL
+google_analytics: G-ZY6ZNLNNC8
 
 disqus.shortname: vpeterss
 page.comments: true
