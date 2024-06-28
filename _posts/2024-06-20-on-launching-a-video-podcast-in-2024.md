@@ -67,6 +67,8 @@ I use [Riverside.fm](https://riverside.fm/) for recording. Despite its Chrome-on
 
 For editing, I rely on [ScreenFlow](https://www.telestream.net/screenflow/overview.htm). While Riverside offers basic editing tools, they’re limited and buggy for anything beyond short snippets. ScreenFlow, a tool I’ve used for screencasts over the years, provides the features I need without the complexity of professional editing software like Final Cut Pro X or Adobe Premiere Pro.
 
+Once I'm done editing, I use [MacWhisper](https://goodsnooze.gumroad.com/l/macwhisper) to generate a transcript from the episode. I then use this transcript in ChatGPT to generate summaries based on a set of prompts that I've tweaked.
+
 ## Navigating Distribution Challenges
 
 Distributing audio podcasts is easy, but video podcast distribution is more complicated. While there’s an RSS standard for video podcasts, it’s not widely supported. YouTube and Spotify require manual uploads, with Spotify only accepting h264 encoded videos, adding another layer of complexity.
