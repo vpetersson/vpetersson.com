@@ -73,6 +73,10 @@ For now, I might develop a simple Python application to test the waters, as you 
 
 My initial idea of creating a SaaS product around this (I even bought the domain [CaptivePortalConnect.com](https://captiveportalconnect.com/) for the purpose) is likely not worth pursuing due to the fragile (and insecure) approach required.
 
+## Update (2024-07-01)
+
+I *thought* I had made a [breakthrough](https://github.com/woodjme/unifi-hotspot/issues/68#issuecomment-2143952594) in the API access confinement by leveraging the new (and of course undocumented) 'hotspotoperator' permission (rather than having to use a full-blown admin account), it turned out that this [didn't work](https://github.com/woodjme/unifi-hotspot/issues/68#event-13343000818) in the end (kudos to [@woodjme](https://github.com/woodjme))..
+
 ## References
 
 * [unifi-hotspot](https://github.com/woodjme/unifi-hotspot) - NodeJS based captive portal that can feed to Google Sheets. Looks very promising.
