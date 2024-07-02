@@ -1,0 +1,15 @@
+{% if page.video_content_url %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "{{ page.video_title | default: page.title | escape }}",
+    "description": "{{ page.video_description | default: page.description | escape }}",
+    "thumbnailUrl": "{{ page.video_thumbnail_url | escape }}",
+    "uploadDate": "{{ page.video_upload_date | escape }}",
+    "duration": "{{ page.video_duration | escape }}",
+    "embedUrl": "{{ page.video_embed_url | escape }}",
+    "contentUrl": "{{ page.video_content_url | escape }}"
+  }
+  </script>
+{% endif %}
