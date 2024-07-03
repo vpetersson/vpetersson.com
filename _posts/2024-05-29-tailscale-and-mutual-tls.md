@@ -23,10 +23,13 @@ If you installed Tailscale using the App Store on macOS, it does come with the C
 I whipped up a quick helper script that generates the certificate, along with a simple snippet that generates a PKCS#12 bundle, which is what Firefox, for instance, requires for client certificates.
 
 ```bash
-#!/bin/bash
+#!/bin/bash -ex
 
 TS="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
-FQDN=$(hostname -f)
+
+# Return the FQDN from Tailscale with some magic
+FQDN=$($TS status --json | jq -r '.Self.DNSName' | sed s/.$//g)
+
 CERT_PATH="$HOME/Library/Containers/io.tailscale.ipn.macos/Data"
 
 echo "Issuing certificates..."
