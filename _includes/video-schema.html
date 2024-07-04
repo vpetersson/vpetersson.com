@@ -1,15 +1,18 @@
-{% if page.video_content_url %}
+{% if page.youtube %}
+  {% assign video_id = page.youtube | extract_youtube_id %}
+  {% assign formatted_date = page.date | date: "%Y-%m-%dT%H:%M:%SZ" %}
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "VideoObject",
-    "name": "{{ page.video_title | default: page.title | escape }}",
-    "description": "{{ page.video_description | default: page.description | escape }}",
-    "thumbnailUrl": "{{ page.video_thumbnail_url | escape }}",
-    "uploadDate": "{{ page.video_upload_date | escape }}",
-    "duration": "{{ page.video_duration | escape }}",
-    "embedUrl": "{{ page.video_embed_url | escape }}",
-    "contentUrl": "{{ page.video_content_url | escape }}"
+    "name": "{{ page.title | escape }}",
+    "description": "{{ page.description | escape }}",
+    "thumbnailUrl": "https://i.ytimg.com/vi/{{video_id}}/default.jpg",
+    "uploadDate": "{{ formatted_date }}",
+    "duration": "{{ page.duration | to_iso8601_duration }}",
+    "embedUrl": "https://www.youtube.com/embed/{{video_id}}",
+    "contentUrl": "{{ page.youtube | escape }}"
   }
   </script>
 {% endif %}
