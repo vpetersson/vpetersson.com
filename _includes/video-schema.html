@@ -1,4 +1,4 @@
-{% if page.video_content_url %}
+{% if page.video_embed_url %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -9,7 +9,7 @@
     "uploadDate": "{{ page.video_upload_date | escape }}",
     "duration": "{{ page.video_duration | escape }}",
     "embedUrl": "{{ page.video_embed_url | escape }}",
-    "contentUrl": "{{ page.video_content_url | escape }}"
+    "contentUrl": "{{ page.youtube | escape }}"
   }
   </script>
 {% endif %}
