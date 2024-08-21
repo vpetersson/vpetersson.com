@@ -70,3 +70,8 @@ exclude:
   - vendor/ruby/
   - bin/
   - Dockerfile
+  - CNAME
+  - docker-compose.yml
+  - CNAME
+  - package.json
+  - package-lock.json
