@@ -34,7 +34,7 @@
       title: The Register - Strong support for Snap and Ubuntu Core as Canonical meet IRL
       link: https://www.theregister.com/2022/11/09/canonical_conference/
     - type: podcast
-      title: Ubuntu Summit, Prague, Czech Republic (video, blog post)
+      title: Ubuntu Summit, Prague, Czech Republic
       video: https://www.youtube.com/watch?v=fVkDqJzXKa0
       link: https://www.screenly.io/blog/2022/11/29/five-years-of-ubuntu-core/
 
@@ -45,7 +45,7 @@
       deck: https://speakerdeck.com/vpetersson/the-devsecops-iceberg-at-cloud-native-london
       video: https://youtu.be/BNnP4AmMdQE?t=130
     - type: podcast
-      title: Balena's IoT Happy Hour (YouTube)
+      title: Balena's IoT Happy Hour
       video: https://www.youtube.com/watch?v=SgCRvEP2KyA
 
 - year: 2019
@@ -89,9 +89,9 @@
       title: Sixteen:Nine - Screenly's Raspberry Pi-Powered Platform Shifting To New IoT Version Of Ubuntu Linux
       link: https://www.sixteen-nine.net/2016/05/18/screenlys-raspberry-pi-powered-platform-shifting-to-new-iot-version-of-ubuntu-linux/
     - type: panel
-      title: CloudExpo Europe (2016), London, UK
+      title: CloudExpo Europe, London, UK
     - type: talk
-      title: IoT London (2016), London, UK
+      title: IoT London, London, UK
       deck: https://speakerdeck.com/vpetersson/screenly-at-iot-london
 - year: 2015
   events:
@@ -99,20 +99,20 @@
       title: Syncsort - Interview with Viktor Petersson, VP of Business Development for IAAS provider CloudSigma
       link: https://blog.syncsort.com/2015/01/big-data/interview-viktor-petersson-vp-business-development-iaas-provider-cloudsigma/
     - type: talk
-      title: IoT Day @ BBVA Innovation Center (2015), Madrid, Spain
+      title: IoT Day @ BBVA Innovation Center, Madrid, Spain
       deck: https://speakerdeck.com/vpetersson/iot-use-case-screenly
     - type: talk
-      title: Open Cloud Day (2015), Bern, Switzerland
+      title: Open Cloud Day, Bern, Switzerland
       deck: https://speakerdeck.com/vpetersson/server-evolution-from-mainframes-to-containers-and-paas
       video: https://www.youtube.com/watch?v=pHdc3f98Kxs&index=11&list=PLofS3lNZckseu0v_CP4XjgDUQxRKfF6gA
     - type: talk
-      title: ApacheCon North America (2015), Austin, TX
+      title: ApacheCon North America, Austin, TX
       deck: https://speakerdeck.com/vpetersson/an-introduction-to-cgroups-and-cgroupspy
     - type: talk
-      title: CloudExpo Europe (2015), London UK
+      title: CloudExpo Europe, London UK
       video: https://www.youtube.com/watch?v=BfCzbD1WXO8
     - type: panel
-      title: CloudExpo Europe (2015), London, UK
+      title: CloudExpo Europe, London, UK
 - year: 2014
   events:
     - type: press
@@ -122,10 +122,10 @@
       title: Ubuntu Insights - CloudSigma joins Ubuntu Certified Public Cloud
       link: https://blog.ubuntu.com/2014/10/15/cloudsigma-joins-ubuntu-certified-public-cloud
     - type: talk
-      title: Zadara Summit (2014), Las Vegas, NV
+      title: Kubernetes London, London, UK
       deck: https://speakerdeck.com/vpetersson/living-on-the-edge-at-kubernetes-london
     - type: talk
-      title: Zadara Summit (2014), Las Vegas, NV
+      title: Zadara Summit, Las Vegas, NV
       link: https://speakerdeck.com/vpetersson/cloudsigma-zadara-summit
 - year: 2013
   events:
@@ -133,10 +133,10 @@
       title: Sixteen:Nine - Screenly Serves Up Raspberry Pi As Alternative To Android Players
       link: https://www.sixteen-nine.net/2013/05/03/screenly-serves-raspberry-pi-alternative-android-players/
     - type: talk
-      title: Pi And More 3 (2013), Trier, Germany
+      title: Pi And More 3, Trier, Germany
       deck: https://speakerdeck.com/vpetersson/screenly-at-pi-and-more-3
     - type: talk
-      title: gSocial 2 (2013), Sunnyvale, CA
+      title: gSocial 2, Sunnyvale, CA
       deck: https://speakerdeck.com/vpetersson/email-migration-best-practices
 - year: 2012
   events:
