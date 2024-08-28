@@ -4,6 +4,10 @@
       title: State of Open Con, London, UK
       deck: https://speakerdeck.com/vpetersson/state-of-open-con-24
       video: https://www.youtube.com/watch?v=vX-qK9mxKZI
+    - type: talk
+      title: BSides, Bristol, UK
+    - type: talk
+      title: SBOM-o-Rama, Denver, US
 - year: 2023
   events:
     - type: talk
@@ -184,5 +188,5 @@
     - type: guest post
       title: Docker - Compiling Qt with Docker Using Caching
       link: https://www.docker.com/blog/compiling-qt-with-docker-using-caching/
-    
-    
+
+
