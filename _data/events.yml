@@ -5,7 +5,8 @@
       deck: https://speakerdeck.com/vpetersson/state-of-open-con-24
       video: https://www.youtube.com/watch?v=vX-qK9mxKZI
     - type: talk
-      title: "Upcoming: BSides, Bristol, UK"
+      title: "BSides, Bristol, UK"
+      deck: https://speakerdeck.com/vpetersson/navigating-the-sbom-landscape-formats-relevance-and-tooling-in-2024-at-bsides-bristol-24
     - type: talk
       title: "Upcoming: SBOM-a-Rama, Denver, US"
 - year: 2023
