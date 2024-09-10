@@ -9,6 +9,9 @@
       deck: https://speakerdeck.com/vpetersson/navigating-the-sbom-landscape-formats-relevance-and-tooling-in-2024-at-bsides-bristol-24
     - type: talk
       title: "Upcoming: SBOM-a-Rama, Denver, US"
+    - type: talk
+      title: "Upcoming: London DevOps"
+
 - year: 2023
   events:
     - type: talk
