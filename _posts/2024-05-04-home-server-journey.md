@@ -80,3 +80,35 @@ I’m also still using my external USB drive setup as I haven’t gotten around 
 This compact setup is designed to be robust, scalable, and capable of handling substantial data loads and various server tasks efficiently. The choice of components ensures that the server is future-proofed and can accommodate additional expansions or upgrades as needed.
 
 As things stand, the only thing that bothers me (other than the lack of TPM based FDE) is the noise level. Compared to its predecessor, it is a lot louder. This can probably be rectified with a quieter CPU fan, but that's a problem for the future.
+
+### Update
+
+I've now added 4x 4TB 3.5" SATA (7200 RPM) drives to the system. So far everything seems to work great.
+
+This is what I used to create my tank:
+
+```bash
+$ zpool create -o ashift=12 <my tank name> \
+    mirror \
+        /dev/disk/by-id/<disk 1> \
+        /dev/disk/by-id/<disk 2> \
+    mirror \
+        /dev/disk/by-id/<disk 3> \
+        /dev/disk/by-id/<disk 4>
+```
+
+I also ended up setting up an encrypted dataset that I use for some VMs, as well as for backups.
+
+```bash
+$ zfs create \
+    -o encryption=on \
+    -o keylocation=prompt \
+    -o keyformat=passphrase \
+    <my tank name>/encrypted
+```
+
+The performance so far looks very reasonable with a max at ~250MB/s (for writes), which is suffient for backups and some less read/write intensive VMs.
+
+To migrate over the data from my old ZFS tank, I just used the built-in tool in Proxmox. It was just a matter of stopping the VM/CT, move it and start it back up.
+
+So far, the only drawback is that I need to manually enter the passphrase to mount the encrypted ZFS volume, which prevents some VMs from booting up automatically on say a power failure.
