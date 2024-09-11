@@ -107,6 +107,12 @@ $ zfs create \
     <my tank name>/encrypted
 ```
 
+When you reboot the box, you now need to run:
+
+```bash
+$ zfs load-key -r <my tank name>/encrypted
+```
+
 The performance so far looks very reasonable with a max at ~250MB/s (for writes), which is suffient for backups and some less read/write intensive VMs.
 
 To migrate over the data from my old ZFS tank, I just used the built-in tool in Proxmox. It was just a matter of stopping the VM/CT, move it and start it back up.
