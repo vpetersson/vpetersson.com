@@ -8,7 +8,8 @@
       title: "BSides, Bristol, UK"
       deck: https://speakerdeck.com/vpetersson/navigating-the-sbom-landscape-formats-relevance-and-tooling-in-2024-at-bsides-bristol-24
     - type: talk
-      title: "Upcoming: SBOM-a-Rama, Denver, US"
+      title: "SBOM-a-Rama, Denver, US"
+      deck: https://github.com/vpetersson/vpetersson.com/blob/master/presentations/2024/sbom-a-rama.pdf
     - type: talk
       title: "Upcoming: London DevOps"
 
