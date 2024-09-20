@@ -10,6 +10,9 @@
     - type: talk
       title: "SBOM-a-Rama, Denver, US"
       deck: https://github.com/vpetersson/vpetersson.com/blob/master/presentations/2024/sbom-a-rama.pdf
+    - type: press
+      title: "InfoQ: New Platform sbomify Streamlines Making Software Inventories for SBOMs"
+      link: "https://www.infoq.com/news/2024/09/sbomify-inventories-sboms/"
     - type: talk
       title: "London DevOps #85, London, UK"
       deck: https://github.com/vpetersson/vpetersson.com/blob/master/presentations/2024/london_devops_85.pdf
