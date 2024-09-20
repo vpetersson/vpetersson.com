@@ -50,7 +50,7 @@
 - year: 2021
   events:
     - type: guest post
-      title: Docker - Compiling Qt with Docker Using Caching
+      title: "Docker: Compiling Qt with Docker Using Caching"
       link: https://www.docker.com/blog/compiling-qt-with-docker-using-caching/
 
 - year: 2020
