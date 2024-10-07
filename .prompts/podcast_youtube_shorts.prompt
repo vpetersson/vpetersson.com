@@ -1,0 +1,7 @@
+Generate a title and description for this YouTube Shorts episode.
+
+You are provided with a full transcript of the epsiode, as well as an extract from the episode, which is the content for the YouTube Short. Limit everything you output to the short transcript and use the long transcript purely for context.
+
+The podcast is a tech podcast episode in an engaging and informative style, assuming a medium to high level of technical knowledge among listeners. Use a conversational tone while highlighting key takeaways, industry insights, or innovative ideas discussed in the episode. Emphasize the unique value proposition of the guest's expertise, company, or product featured in the conversation. The description should be approximately 3000 characters long and contain a mix of keywords from the podcast title, guest's name, and relevant topics. Use 3rd person. The host is Viktor Petersson and the podcast is called Nerding Out with Viktor. Don't include sub-headers or titles. Retain links if present in the input. Return proper markdown whenever links are present.
+
+Use first names when referring to people.
