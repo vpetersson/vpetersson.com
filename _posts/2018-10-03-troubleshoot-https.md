@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Troubleshoot HTTPS with curl and openssl
+title: Troubleshoot HTTPS with curl
 date: '2018-10-03T13:00:00+01:00'
 tags:
 - kubernetes
@@ -13,7 +13,7 @@ Troubleshooting an HTTPS connection can be somewhat challenging at times (in par
 
 Today, I had to troubleshoot a Kubernetes (Nginx) Ingress controller that was acting up for [Screenly](https://www.screenly.io). Having done this on more than one occasion, I decided to create a public Note-to-Self in order to avoid having to Google for the exact syntax in the future.
 
-For this task, my weapons of choice are `curl` and `openssl`.
+For this task, my weapon of choice is `curl`.
 
 The key we want to accomplish is to be able to explicitly specify the IP address to the load balancer in order to rule out any possible DNS issue.
 
@@ -26,22 +26,9 @@ $ curl -I \
 [...]
 ```
 
-Assuming that still doesn't work, we may need to take a closer look at the SSL certificate that is being served. To do that, we can use good 'ol OpenSSL:
+Assuming that still doesn't work, we may need to take a closer look at the SSL certificate that by adding `-w %{certs}`.
 
-```
-$ openssl s_client \
-    -connect a.b.c.d:443 \
-    -servername some.domain.com \
-    -showcerts
-[...]
-```
-
-We do the same thing as we did with `curl`. By explicitly specifying the IP to the load balancer, as well as the domain that we are troubleshooting, we're able to get the load balancer to serve us the desired certificate.
-
-Some readers may be quick to point out that you can accomplish the same by altering your `/etc/hosts` file. This is correct, but IMHO this is a cleaner approach.
-
-
-**UPDATE:** It has come to my attention that recent versions of `curl` added the `--resolve` functionality. This removes the need for altering `/etc/hosts`. As such, we can now run:
+Recent versions of `curl` added the `--resolve` functionality, which is handy. You can then do something like this:
 
 ```
 $ curl -I \
