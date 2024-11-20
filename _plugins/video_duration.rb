@@ -1,13 +1,10 @@
-# _plugins/duration_filter.rb
+# frozen_string_literal: true
 
 module Jekyll
+  # Filter to convert time format to ISO 8601 duration format
   module VideoDurationFilter
-    # Convert minutes and seconds to ISO 8601 duration format
     def to_iso8601_duration(input)
-      input = input.to_s
-      minutes, seconds = input.split(':').map(&:to_i)
-
-      # Default seconds to 0 if not provided
+      minutes, seconds = input.to_s.split(':').map(&:to_i)
       seconds ||= 0
 
       total_seconds = (minutes * 60) + seconds
@@ -15,11 +12,16 @@ module Jekyll
       minutes = (total_seconds % 3600) / 60
       seconds = total_seconds % 60
 
-      duration = 'PT'
-      duration += "#{hours}H" if hours > 0
-      duration += "#{minutes}M" if minutes > 0
-      duration += "#{seconds}S" if seconds > 0
+      build_duration_string(hours, minutes, seconds)
+    end
 
+    private
+
+    def build_duration_string(hours, minutes, seconds)
+      duration = 'PT'
+      duration += "#{hours}H" unless hours.zero?
+      duration += "#{minutes}M" unless minutes.zero?
+      duration += "#{seconds}S" unless seconds.zero?
       duration
     end
   end
