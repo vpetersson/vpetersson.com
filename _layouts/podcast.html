@@ -39,12 +39,25 @@ layout: default
     </div>
     <div class="flex-1">
       <div class="mb-5 relative">
-        {% assign image = page.image | default: "/assets/images/site/podcast-cover.jpg" %}
-        <img class="rounded-2xl" src="{{ image }}" alt="Podcast Image" />
-        <div class="absolute bottom-6 left-6 uppercase text-white">
-          <div class="text-sm">Episode {{page.episode}}</div>
-          <div class="text-2xl">{{page.guest}}</div>
-        </div>
+        {% if page.youtube %}
+          <div class="video-container">
+            <iframe
+              width="100%"
+              height="400"
+              src="https://www.youtube.com/embed/{{ page.youtube | split: '=' | last }}"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        {% else %}
+          {% assign image = page.image | default: "/assets/images/site/podcast-cover.jpg" %}
+          <img class="rounded-2xl" src="{{ image }}" alt="Podcast Image" />
+          <div class="absolute bottom-6 left-6 uppercase text-white">
+            <div class="text-sm">Episode {{page.episode}}</div>
+            <div class="text-2xl">{{page.guest}}</div>
+          </div>
+        {% endif %}
       </div>
       <h2 class="mb-5">{{page.title}}</h2>
       <div class="mb-5 flex items-center">
@@ -118,7 +131,24 @@ layout: default
     </div>
   </div>
 </div>
+
 <style>
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
   .transcript {
     margin: 2em 0;
     max-width: 800px;
@@ -176,4 +206,5 @@ layout: default
     color: #fff;
   }
 </style>
+
 {% include video-schema.html %}
