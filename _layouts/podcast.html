@@ -88,9 +88,92 @@ layout: default
       <div class="podcast-page">
         {{content}}
 
-        <i>Found an error or typo? File PR against <a href="https://github.com/vpetersson/vpetersson.com/tree/master/{{ page.path }}" rel="nofollow">this file</a>.</i>
+        {% assign transcript = page.path | load_transcript %}
+        {% if transcript and transcript.size > 0 %}
+          <div class="transcript">
+            <h2>Transcript</h2>
+            <details>
+              <summary>Show/Hide Transcript</summary>
+              <div class="transcript-entries">
+                {% for entry in transcript %}
+                  <div class="transcript-entry">
+                    <div class="transcript-meta">
+                      <span class="timestamp">[{{ entry.timestamp }}]</span>
+                      <span class="speaker">{{ entry.speaker }}</span>
+                    </div>
+                    <div class="text">{{ entry.text }}</div>
+                  </div>
+                {% endfor %}
+              </div>
+            </details>
+          </div>
+        {% endif %}
+
+        {% assign github_base = "https://github.com/vpetersson/vpetersson.com/blob/master" %}
+        {% assign episode_number = page.path | split: '/' | last | split: '.' | first | downcase %}
+        <p class="file-pr">
+          Found an error or typo? File PR against <a href="{{ github_base }}/{{ page.path }}">this file</a>{% if transcript and transcript.size > 0 %} or the <a href="{{ github_base }}/_transcript/{{ episode_number }}.json">transcript</a>{% endif %}.
+        </p>
       </div>
     </div>
   </div>
 </div>
+<style>
+  .transcript {
+    margin: 2em 0;
+    max-width: 800px;
+  }
+
+  .transcript h2 {
+    margin-bottom: 1em;
+    color: #fff;
+  }
+
+  .transcript details {
+    margin-bottom: 1em;
+  }
+
+  .transcript summary {
+    cursor: pointer;
+    color: #fff;
+    padding: 0.5em 0;
+  }
+
+  .transcript summary:hover {
+    opacity: 0.8;
+  }
+
+  .transcript-entry {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 1em;
+    margin: 1em 0;
+    padding: 0.5em 0;
+  }
+
+  .transcript-meta {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5em;
+  }
+
+  .timestamp {
+    color: #fff;
+    font-family: monospace;
+    font-size: 0.9em;
+    white-space: nowrap;
+  }
+
+  .speaker {
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+  }
+
+  .text {
+    line-height: 1.5;
+    font-style: italic;
+    color: #fff;
+  }
+</style>
 {% include video-schema.html %}
