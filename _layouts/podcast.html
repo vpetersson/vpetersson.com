@@ -59,6 +59,7 @@ layout: default
           </div>
         {% endif %}
       </div>
+
       <h2 class="mb-5">{{page.title}}</h2>
       <div class="mb-5 flex items-center">
         <span class="uppercase text-xl leading-[1.6px] mr-5">Play On</span>
@@ -85,19 +86,16 @@ layout: default
           {% endif %}
         </span>
       </div>
+
       <div class="mb-5 flex gap-4 text-xs uppercase font-['DM Sans']">
-        <span>
-          {{ page.date | date: "%d %^b • %Y" }}
-        </span>
+        <span>{{ page.date | date: "%d %^b • %Y" }}</span>
         {% if page.duration %}
-          <span>
-            {{ page.duration | format_duration }}
-          </span>
+          <span>{{ page.duration | format_duration }}</span>
         {% endif %}
       </div>
-      <div class="mb-6">
-        {% include share-buttons.html %}
-      </div>
+
+      <div class="mb-6">{% include share-buttons.html %}</div>
+
       <div class="podcast-page">
         {{content}}
 
@@ -131,11 +129,12 @@ layout: default
     </div>
   </div>
 </div>
+{% include video-schema.html %}
 
 <style>
   .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     border-radius: 1rem;
@@ -151,7 +150,7 @@ layout: default
 
   .transcript {
     margin: 2em 0;
-    max-width: 800px;
+    width: 100%;
   }
 
   .transcript h2 {
@@ -175,14 +174,22 @@ layout: default
 
   .transcript-entry {
     display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 1em;
+    grid-template-columns: 1fr;
+    gap: 0.5em;
     margin: 1em 0;
     padding: 0.5em 0;
   }
 
+  @media (min-width: 768px) {
+    .transcript-entry {
+      grid-template-columns: 150px 1fr;
+      gap: 1em;
+    }
+  }
+
   .transcript-meta {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     gap: 0.5em;
   }
@@ -205,6 +212,14 @@ layout: default
     font-style: italic;
     color: #fff;
   }
-</style>
 
-{% include video-schema.html %}
+  @media (max-width: 767px) {
+    .transcript-meta {
+      margin-bottom: 0.25em;
+    }
+
+    .text {
+      padding-left: 1em;
+    }
+  }
+</style>
