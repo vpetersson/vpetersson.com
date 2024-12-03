@@ -27,8 +27,8 @@
       title: "EE Times Europe Magazine: Cybersecurity Legislation Driving SBOMs"
       link: https://www.eetimes.eu/cybersecurity-legislation-driving-sboms/
     - type: talk
-      title: "[Upcoming] CycloneDX / Transparency Exchange API (TEA)'s KoalaCon"
-      link: https://www.eventbrite.se/e/introducing-the-owasp-transparency-exchange-api-tea-tickets-1057016768609
+      title: "CycloneDX / Transparency Exchange API (TEA)'s KoalaCon"
+      video: https://www.youtube.com/watch?v=NStzYW4WnEE
 
 - year: 2023
   events:
