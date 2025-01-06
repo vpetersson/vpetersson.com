@@ -14,13 +14,12 @@ The problem with ZoneMinder though, in my opinion, is that it is overkill for mo
 
 After running into some issues with ZoneMinder I decided to write a lightweight alternative, namely [KISS-surveillance](https://github.com/vpetersson/KISS-surveillance). It doesn’t even offer a fraction of all features ZoneMinder does, but it come with a few major benefits:
 
-*   Uses a fraction of the resources of ZoneMinder.
-*   Fast and easy to setup.
-*   No database-requirement. Just plain files.
-*   Only uses simple UNIX-tools like wget, crontab and Supervisor.
-*   If you want to view the images from a web-browser, simply configure the web-server of your choice to do an index on the given folder (I prefer Nginx).
+* Uses a fraction of the resources of ZoneMinder.
+* Fast and easy to setup.
+* No database-requirement. Just plain files.
+* Only uses simple UNIX-tools like wget, crontab and Supervisor.
+* If you want to view the images from a web-browser, simply configure the web-server of your choice to do an index on the given folder (I prefer Nginx).
 
-  
 ![](http://viktorpetersson.com/wp-content/uploads/2012/01/KISS-surveillance-600x493.png "KISS-surveillance")
 
 I’ve used this tool now for a few months now without any issues whatsoever. It might not be pretty, but it is simple and reliable, which for me is all I need when it comes to video surveillance.

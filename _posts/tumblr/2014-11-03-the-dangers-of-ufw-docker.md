@@ -96,9 +96,9 @@ It is expected that Docker tampers with the firewall rules to some extent. It is
 
 So what’s the moral of the story here?
 
-*   UFW doesn’t tell you `iptables` _true_ state (not shocking, but still).
-*   **Never** use the `-p` option (or `-P`) in Docker for something you don’t want to be public.
-*   **Only** bind on either the loopback interface or an internal IP.
+* UFW doesn’t tell you `iptables` _true_ state (not shocking, but still).
+* **Never** use the `-p` option (or `-P`) in Docker for something you don’t want to be public.
+* **Only** bind on either the loopback interface or an internal IP.
 
 Update
 ------

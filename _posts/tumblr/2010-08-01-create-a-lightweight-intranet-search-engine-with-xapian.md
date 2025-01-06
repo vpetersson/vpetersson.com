@@ -13,7 +13,6 @@ This howto will walk you trough how to set up Xapian with Omega on FreeBSD. The 
 
 I’ve called the path we’re going to index (recursively) ‘/path/to/something’. This can be either a local path or something mounted from a remote server. Also, as you’ll see below, a lot of dependencies are installed. This is to increase the number of file-format Xapian will index. It should be able to index PDF-files, Word-files, RTF-files, in addition to plain-text files.
 
-  
 Let’s get started.
 
 **Note**: If you don’t have the ports-tree installed (/usr/ports), you can download it by simply running:
@@ -80,7 +79,6 @@ Into:
 
 We also need to create a new config-file for Xapian. Create the file /usr/local/etc/apache22/Include/xapian.conf
 
-
         Alias /something /path/to/something
 
                 Options Indexes
@@ -92,7 +90,6 @@ We also need to create a new config-file for Xapian. Create the file /usr/local/
             Options None
             Order allow,deny
             Allow from all
-
 
 With all Apache configuration being done, let’s fire up Apache:
 

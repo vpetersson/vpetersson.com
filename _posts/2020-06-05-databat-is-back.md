@@ -18,7 +18,6 @@ A lot of things have changed since I last touched the project, which allowed me 
 
 The idea is to keep the project hybrid, where the code that goes on the Raspberry Pi open source, but it can be configured to report data into a central interface, which will be useful for users with multiple devices (similar to the model we use at [Screenly](https://screenly.io)).
 
-
 **Recent updates:**
 
 * Refactored runtime to use Docker (and Docker-compose), which is compatible with [Balena](https://balena.io)

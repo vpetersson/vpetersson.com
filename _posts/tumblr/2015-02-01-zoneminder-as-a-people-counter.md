@@ -18,8 +18,8 @@ Using ZoneMinder, we should in theory be able to create a people counter. In a p
 
 Here’s what you would do:
 
-*   Configure your camera(s) in ZoneMinder.
-*   Define two zones narrow zones such that all people will pass through both zones (let’s call these “z1” and “z2”).
+* Configure your camera(s) in ZoneMinder.
+* Define two zones narrow zones such that all people will pass through both zones (let’s call these “z1” and “z2”).
 
 For instance, if a person comes into the store, they’d first pass through z1, and then z2. If they were to leave the store, the customer would pass z2 and then z1.
 

@@ -68,9 +68,9 @@ WantedBy=timers.target
 With these two files created, you can manually start the service to ensure it works:
 
 ```bash
-$ systemctl daemon-reload
-$ systemctl start tailscale-cert.service
-$ systemctl enable tailscale-cert.timer
+systemctl daemon-reload
+systemctl start tailscale-cert.service
+systemctl enable tailscale-cert.timer
 ```
 
 If everything went well, you should now have your certificates in `/etc/ssl/private`.
@@ -102,7 +102,7 @@ server {
 }
 ```
 
-You should now be able to navigate to your server using a **proper** SSL certificate at the address https://my-server.foobar.ts.net. Pretty neat.
+You should now be able to navigate to your server using a **proper** SSL certificate at the address <https://my-server.foobar.ts.net>. Pretty neat.
 
 There's even an [official Nginx auth](https://tailscale.com/blog/tailscale-auth-nginx/) that can be used. I haven't experimented with this yet, but it could presumably be used to further secure your Nginx reverse proxies.
 

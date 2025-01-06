@@ -16,8 +16,8 @@ To restore access, you need to to jump in to your PostgreSQL container (`kubectl
 
 From within the container, run the following commands:
 ```
-$ sed -i 's/md5/trust/' /opt/bitnami/postgresql/conf/pg_hba.conf
-$ pkill -HUP postgres
+sed -i 's/md5/trust/' /opt/bitnami/postgresql/conf/pg_hba.conf
+pkill -HUP postgres
 ```
 
 This will allow us to access the PostgreSQL server **without** authentication and reload the config.

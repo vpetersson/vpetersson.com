@@ -32,7 +32,7 @@ Enable ASSP and Clamav by adding the following to /etc/rc.conf
 
 Add your domains from Postfix to ASSP:
 
-> postconf | grep -e ^virtual\_alias\_domains.* -e ^mydestination.* | perl -pe “s/^(mydestination|virtual\_alias\_domains)\\s=\\s(.*)$/\\2/g; s/\\s/\\n/g;” > /usr/local/share/assp/files/localdomains.txt
+> postconf | grep -e ^virtual\_alias\_domains.*-e ^mydestination.* | perl -pe “s/^(mydestination|virtual\_alias\_domains)\\s=\\s(.*)$/\\2/g; s/\\s/\\n/g;” > /usr/local/share/assp/files/localdomains.txt
 
 (This simply extract the settings from Postfix and insert them to ASSP)
 
@@ -44,25 +44,25 @@ Now start the two services:
 
 ### Configure ASSP
 
-Now we need to make some changes to ASSP. By default, ASSP’s webserver listen on port 55555, so you need to point your browser to your server and this port. (eg. http://yourhostname:55555).
+Now we need to make some changes to ASSP. By default, ASSP’s webserver listen on port 55555, so you need to point your browser to your server and this port. (eg. <http://yourhostname:55555>).
 
 The default username is root and the password is ‘nospam4me’
 
 Go ahead and make the following changes:
 
-*   Second SMTP Listen Port: 587
-*   All TestModes ON: True
+* Second SMTP Listen Port: 587
+* All TestModes ON: True
 
 You need this set for about a week while you train ASSP.
 
-*   Prepend Spam Subject: \[Spam\]
-*   Accept All Mail: The IP or hostname of your server
-*   Local Domains: file:files/localdomains.txt
-*   Local Domains,IPs and Hostnames: The IP or hostname of your server
-*   Use ClamAV: True
-*   Modify ClamAV Module: False
-*   Port or file socket for ClamAV: /var/run/clamav/clamd.sock
-*   Web Admin Password: Your password
+* Prepend Spam Subject: \[Spam\]
+* Accept All Mail: The IP or hostname of your server
+* Local Domains: file:files/localdomains.txt
+* Local Domains,IPs and Hostnames: The IP or hostname of your server
+* Use ClamAV: True
+* Modify ClamAV Module: False
+* Port or file socket for ClamAV: /var/run/clamav/clamd.sock
+* Web Admin Password: Your password
 
 Press ‘Apply changes’.
 
@@ -91,12 +91,12 @@ Verify that all the services are running with
 
 If not, take a look in the following log-files:
 
-*   `/var/log/maillog`
-*   `/var/log/assp/maillog.txt`
+* `/var/log/maillog`
+* `/var/log/assp/maillog.txt`
 
 ### Training ASSP
 
-Once you got ASSP up and running, you are likely to get a lot of valid emails marked as spam the first days. That’s normal. ASSP needs some training. If you run across a message that was marked as spam but was indeed a valid message, simply forward it to **assp-notspam@assp.local**. In a similar fashion, if you run across a spam message that ASSP failed to detect as spam, simply forward it to **assp-spam@assp.local**.
+Once you got ASSP up and running, you are likely to get a lot of valid emails marked as spam the first days. That’s normal. ASSP needs some training. If you run across a message that was marked as spam but was indeed a valid message, simply forward it to **<assp-notspam@assp.local>**. In a similar fashion, if you run across a spam message that ASSP failed to detect as spam, simply forward it to **<assp-spam@assp.local>**.
 
 After about a week or so of training (depending on your volume), you can go ahead and disable ‘All TestModes’ in the web interface.
 

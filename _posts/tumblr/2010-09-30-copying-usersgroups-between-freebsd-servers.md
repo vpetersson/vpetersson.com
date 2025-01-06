@@ -13,9 +13,9 @@ If you’re on FreeBSD, the task is pretty trivial. I’m sure it’s pretty str
   
 There are three files you need to copy from the old to the new server. These are:
 
-*   /etc/passwd
-*   /etc/group
-*   /etc/master.passwd
+* /etc/passwd
+* /etc/group
+* /etc/master.passwd
 
 You might also want to copy the entire /home directory, so that the users get their user data across.
 

@@ -63,11 +63,10 @@ Since Very Static failed, I resorted to the good old tool `wget` to fetch a copy
 
 On the same server, I simply created a new folder and ran:
 
-    $ mkdir static.my-wordpress-blog.com
-    $ cd static.my-wordpress-blog.com
-    $ wget --mirror -nH -k -E http://www.my-wordpress-blog.com
-    $ wget http://www.my-wordpress-blog.com/sitemap.xml
-
+    mkdir static.my-wordpress-blog.com
+    cd static.my-wordpress-blog.com
+    wget --mirror -nH -k -E http://www.my-wordpress-blog.com
+    wget http://www.my-wordpress-blog.com/sitemap.xml
 
 This will take some time. When done, you should have a complete static copy of your WordPress installation.
 

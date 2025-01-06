@@ -33,8 +33,8 @@ Spin up two containers without cgroup policy
 
 Let’s start by launching two containers that each will max out the CPU (by running `md5sum /dev/urandom`).
 
-    $ docker run -d busybox md5sum /dev/urandom
-    $ docker run -d busybox md5sum /dev/urandom
+    docker run -d busybox md5sum /dev/urandom
+    docker run -d busybox md5sum /dev/urandom
     
 
 ![Docker containers running without cgroup policy](/tumblr_files/tumblr_inline_nmbyklbgPw1skxjxc_540.png)

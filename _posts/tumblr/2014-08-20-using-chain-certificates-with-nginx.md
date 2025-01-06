@@ -15,4 +15,4 @@ Every time I deploy one of these certificates however, I screw up the order of t
 
 After extracting the zip-file you get from Namecheap, simply run this command to create your certificate:
 
-    $ cat STAR_*.crt AddTrust*.crt COMODORS*.crt  > foobar.com.crt
+    cat STAR_*.crt AddTrust*.crt COMODORS*.crt  > foobar.com.crt

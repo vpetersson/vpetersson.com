@@ -53,8 +53,8 @@ Once you’ve run this, you’ll get the message:
 Completing this upgrade requires removing old shared object files.
 
 Please rebuild all installed 3rd party software (e.g., programs
-installed from the ports tree) and then run 
-`/usr/sbin/freebsd-update install`  again to 
+installed from the ports tree) and then run
+`/usr/sbin/freebsd-update install`  again to
 finish installing updates.
 
 This is of course a massive pain in the butt, but you need to do this nonetheless. Depending on how many packages from ports you have installed, this may take everything from a few minutes to a **long** time.

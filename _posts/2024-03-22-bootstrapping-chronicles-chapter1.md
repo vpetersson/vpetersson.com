@@ -39,4 +39,3 @@ What I learned from this endeavor was a few things:
 I also got to know Kevin Henrikson, who (fortunately) passed on investing in YippieMove, but turned out to become a friend, mentor and board member for Screenly.
 
 I’ll continue my lessons in Chapter 2 with my next experience with building Blotter.
-

@@ -9,8 +9,8 @@ redirect_from: /post/92729927834/moving-cyrus-from-a-32bit-to-a-64bit-server
 ---
 I’ve you’ve read the past few articles I’ve published, you’ve probably figured out two things:
 
-*   I love FreeBSD.
-*   I’m in the process of moving a bunch of servers.
+* I love FreeBSD.
+* I’m in the process of moving a bunch of servers.
 
 This time I’ll walk you trough how to move [Cyrus-IMAP](http://www.cyrusimap.org/) between a 32bit server to a 64bit server. In my case, on FreeBSD. Unfortunately the process is not as straight-forward as I imagined it to be. With these instructions, you will hopefully save yourself the hours I spend troubleshooting the issue.
 

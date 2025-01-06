@@ -1,0 +1,19 @@
+FROM node:20-slim
+
+# Install linting tools globally
+RUN npm install -g \
+    stylelint \
+    stylelint-config-standard \
+    stylelint-config-tailwindcss \
+    htmlhint \
+    eslint \
+    eslint-config-standard \
+    eslint-plugin-import \
+    eslint-plugin-n \
+    eslint-plugin-promise \
+    markdownlint-cli
+
+WORKDIR /app
+
+ENTRYPOINT ["/bin/sh"]
+CMD ["/app/scripts/lint-all.sh"]

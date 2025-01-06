@@ -17,15 +17,15 @@ Instead, I figured, if I write a Bash-script that automatically creates a symlin
 
 So how did this script look you may ask. This is how:
 
-	#!/bin/bash
-	MODEM=$(cat /var/log/messages |grep "GSM modem (1-port) converter now attached to" | tail -n 3 | head -n 1 | perl -pe "s/.\*GSM modem \\(1-port\\) converter now attached to (ttyUSB.\*)$/\\1/g;")
-	CURRENT=$(ls -l /dev/modem | awk '{print $10}' | perl -pe "s/\\/dev\\/(ttyUSB.*)$/\\1/g;")
+ #!/bin/bash
+ MODEM=$(cat /var/log/messages |grep "GSM modem (1-port) converter now attached to" | tail -n 3 | head -n 1 | perl -pe "s/.\*GSM modem \\(1-port\\) converter now attached to (ttyUSB.\*)$/\\1/g;")
+ CURRENT=$(ls -l /dev/modem | awk '{print $10}' | perl -pe "s/\\/dev\\/(ttyUSB.*)$/\\1/g;")
 
-	if \[ $CURRENT != $MODEM \];
-	then
-		rm /dev/modem
-		ln -s /dev/$MODEM /dev/modem
-	fi
+ if \[ $CURRENT != $MODEM \];
+ then
+  rm /dev/modem
+  ln -s /dev/$MODEM /dev/modem
+ fi
 
 I never said it was pretty, but it does indeed work. If you wonder what the ‘head’ and ‘tail’ part is all about, it is because the system creates three paths, but only the first one works.
 

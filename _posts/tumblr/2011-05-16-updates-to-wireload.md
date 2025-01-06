@@ -9,9 +9,9 @@ redirect_from: /post/92729945794/updates-to-wireload
 
 With all of this success, we knew that we had to do two things that we’ve had in mind to do for some time:
 
-*   Convert WireLoad from a California LLC to a Delaware C-Corp
-*   Redesign our website for [wireload.net](http://wireload.net)
-*   Create a logo for WireLoad
+* Convert WireLoad from a California LLC to a Delaware C-Corp
+* Redesign our website for [wireload.net](http://wireload.net)
+* Create a logo for WireLoad
 
 Now we have done this, and we feel a whole lot better. That said, 2011 is far from over and we have plans of doing some pretty amazing new things the year, so stay tuned. Now I just need to take care of this website, as this design is both broken and getting kinda old.
 

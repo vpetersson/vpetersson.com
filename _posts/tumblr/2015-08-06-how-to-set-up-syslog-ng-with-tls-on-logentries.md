@@ -38,7 +38,7 @@ In theory, you should now verify the hashes, but I wasn’t able to get mine to 
 
 With these certificates, we now need to generate a combined certificate that we’ll ship to the nodes. To do this, simply run:
 
-    $ cat {intermediate.crt,api.crt} > logentries_full.crt
+    cat {intermediate.crt,api.crt} > logentries_full.crt
     
 
 If you’re lazy, you can also fetch mine from [here](https://gist.githubusercontent.com/vpetersson/e9965d8e27aa0a2a71c7/raw/c911ec6bb11c4866ff7c8cdc01052d8998887bf2/gistfile1.txt).
@@ -96,7 +96,7 @@ If you’re having issues getting this started, the first thing to do is to chec
 
 You might also want to sniff the traffic to verify that the traffic sent out actually is encrypted. You can do that easily with `tcpdump` as follows:
 
-    $ tcpdump -A dst api.logentries.com
+    tcpdump -A dst api.logentries.com
     
 
 Happy hacking!

@@ -20,7 +20,6 @@ Make sure you deselect Java, VX and X11, as you don’t need them if you’re on
 
     make install
 
-  
 Now, let’s build Rabbit:
 
     cd /usr/ports/net/rabbitmq  

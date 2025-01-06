@@ -16,7 +16,7 @@ While I’ve switched most of my workloads to [Docker](https://www.docker.com), 
 
 Setting this up on Ubuntu 14.04 (Trusty Tahr) is very straight forward. All you need to do is to run:
 
-    $ sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
+    sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
     
 
 Assuming everything went well, you should now be up and running and can list your VMs (there are of course none):
@@ -51,7 +51,7 @@ _Due to [this](http://serverfault.com/questions/590114/vanilla-ubuntu-vm-builder
 
 Creating the VM will take some time. Once it has been created you can start the VM using `virsh` with:
 
-    $ virsh start test
+    virsh start test
     
 
 In order to `ssh` into the server, we need to find the server IP. There are a few ways to find this, but here’s the best technique I’ve found:
@@ -64,7 +64,7 @@ In order to `ssh` into the server, we need to find the server IP. There are a fe
 
 Next, `ssh` into the VM:
 
-    $ ssh ubuntu@<the VM IP>
+    ssh ubuntu@<the VM IP>
     
 
 _The password is defined above as ‘default’_
@@ -89,7 +89,7 @@ As you probably noticed, those are a fair amount of variables we need to pass on
 
 With this config file, we can create a VM by simply running:
 
-    $ sudo vmbuilder kvm ubuntu -c myfile.cfg
+    sudo vmbuilder kvm ubuntu -c myfile.cfg
     
 
 A more complete config file, along with important hooks for re-generating SSH host keys on first boot can be found [here](https://help.ubuntu.com/community/JeOSVMBuilder#Using_configuration_files).
@@ -99,7 +99,7 @@ There’s a lot more to `virsh` and `vmbuilder`, but this should help you get st
 Caveats
 -------
 
-*   In `virsh` VMs are referred to as 'domains.’ This might be a bit confusing at first.
-*   To stop and delete a VM in `virsh`, run `destroy test` and then `undefine test --managed-save`.
-*   You probably want to use the `--mem`, `--cpus` and `--rootsize` options when using `vmbuilder` (see the [man page](http://manpages.ubuntu.com/manpages/trusty/en/man1/vmbuilder.1.html)).
-*   Using the `--hostname` is handy when creating new VMs can be very handy.
+* In `virsh` VMs are referred to as 'domains.’ This might be a bit confusing at first.
+* To stop and delete a VM in `virsh`, run `destroy test` and then `undefine test --managed-save`.
+* You probably want to use the `--mem`, `--cpus` and `--rootsize` options when using `vmbuilder` (see the [man page](http://manpages.ubuntu.com/manpages/trusty/en/man1/vmbuilder.1.html)).
+* Using the `--hostname` is handy when creating new VMs can be very handy.

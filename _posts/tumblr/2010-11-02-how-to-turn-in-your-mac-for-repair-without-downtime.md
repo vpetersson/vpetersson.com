@@ -14,24 +14,23 @@ Last week I was faced with this problem. After speaking with Apple on the phone,
 
 After spending some time thinking how I could resolve this, I came up with a surprisingly effective solution that gave me literally no downtime. This is what you need:
 
-*   A spare Mac
+* A spare Mac
 
 Doesn’t matter if it is a desktop or laptop, as long as it is the same architecture (Intel/PowerPC). I used a Mac Mini.
 
-*   An empty USB disk of the size, or greater than, the drive in your computer
+* An empty USB disk of the size, or greater than, the drive in your computer
 
-  
 Now do the following:
 
-*   Shutdown your computer
-*   Boot it on your Mac OS installation disk
-*   Launch Disk Utility within the installer
-*   Format the USB disk with one ‘Mac OS Extended (Journaled)’-partition of the same size as your internal drive.
-*   Make sure that the partition scheme is set to ‘GUID’
-*   Go to the ‘Restore’-tab
-*   Drag your regular boot-partition into the ‘Source’-field
-*   Drag the newly created partition into the ‘Destination’-field
-*   Press ‘Restore’
+* Shutdown your computer
+* Boot it on your Mac OS installation disk
+* Launch Disk Utility within the installer
+* Format the USB disk with one ‘Mac OS Extended (Journaled)’-partition of the same size as your internal drive.
+* Make sure that the partition scheme is set to ‘GUID’
+* Go to the ‘Restore’-tab
+* Drag your regular boot-partition into the ‘Source’-field
+* Drag the newly created partition into the ‘Destination’-field
+* Press ‘Restore’
 
 This will clone the entire disk of your computer to the USB-drive. This process will probably take 10h+, so it is good thing to do before you leave the office for the night.
 

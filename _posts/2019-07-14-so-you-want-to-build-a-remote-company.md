@@ -36,11 +36,11 @@ Ok, so you have now incorporated and are ready to start building your company. T
 
 While I will try to avoid recommend any particular tool, and rather give categories of tools that I find required for day-to-day activity of a software company. These categories of generally look something like this:
 
- * External communication (i.e. email, these platforms usually come with calendar as well)
- * Internal communication (such as Slack for text based, and some other video conferencing app)
- * Code hosting (such as Github or Gitlab)
- * Project management (Github now does a good-enough job for this these days IMHO)
- * Design review tool (this is often overlooked, but tools like [InVision](https://www.invisionapp.com/) makes a massive difference when reviewing product and website design)
+* External communication (i.e. email, these platforms usually come with calendar as well)
+* Internal communication (such as Slack for text based, and some other video conferencing app)
+* Code hosting (such as Github or Gitlab)
+* Project management (Github now does a good-enough job for this these days IMHO)
+* Design review tool (this is often overlooked, but tools like [InVision](https://www.invisionapp.com/) makes a massive difference when reviewing product and website design)
 
 Finally, don’t get tempted to run things yourself. **Go for hosted solutions**. While it might seem tempting to run service X yourself, because “*a VM on Digital Ocean only cost $Y per month, while the hosted version cost $Z per month*” (where Z>Y). Unless you’re operating at **very large** scale, this rarely ever makes sense. Thing break, and you **will** end up spending a lot of time maintaining said server(s), have downtime, and/or forget to take proper backups, which will lead to data and productivity loss.
 
@@ -52,12 +52,12 @@ Let’s start with sourcing. While sites like Upwork has received a bad rap beca
 
 Here are my tips for when hiring on Upwork:
 
- * Ask questions where applicants are required to write a proper answer. The key here is to rule out applicants that simply applies to a large number of roles without effort.
- * Cover letters are overrated. A set of well-crafted questions will give you a lot more insight into the candidate than a cover letter where the candidate raves about how amazing your company is (and where 90% of the content is re-used).
- * Sneak in a test in the job description to test for attention to details. This can take a lot of forms, but for instance, you could say that they need to include a certain word in their application, or apply using a special process.
- * Look at their Github profile and/or portfolio. Their prior work usually tell you a good amount about a person. Do however note that there are great applicants that have little to show for their work because they ware not allowed to share it due to their previous employer.
- * You get what you pay for. Yes, pricing arbitrage is still a real thing, but you’d be foolish if you assume that a talented developer in say Russia will not sooner or later realize his/her market rate. You can still find great talent at a large discount compared to your local market, but don’t expect a developer that cost $8/h in India to be comparable to a developer that cost $30/h in Russia. Global markets like Upworks help establish fairly sensible equilibriums between quality and price (in particular with the review process).
- * Never hire contractors affiliated with agencies. I outlined why in the initial blog post, but in short, you want a direct relationship without a proxy being involved.
+* Ask questions where applicants are required to write a proper answer. The key here is to rule out applicants that simply applies to a large number of roles without effort.
+* Cover letters are overrated. A set of well-crafted questions will give you a lot more insight into the candidate than a cover letter where the candidate raves about how amazing your company is (and where 90% of the content is re-used).
+* Sneak in a test in the job description to test for attention to details. This can take a lot of forms, but for instance, you could say that they need to include a certain word in their application, or apply using a special process.
+* Look at their Github profile and/or portfolio. Their prior work usually tell you a good amount about a person. Do however note that there are great applicants that have little to show for their work because they ware not allowed to share it due to their previous employer.
+* You get what you pay for. Yes, pricing arbitrage is still a real thing, but you’d be foolish if you assume that a talented developer in say Russia will not sooner or later realize his/her market rate. You can still find great talent at a large discount compared to your local market, but don’t expect a developer that cost $8/h in India to be comparable to a developer that cost $30/h in Russia. Global markets like Upworks help establish fairly sensible equilibriums between quality and price (in particular with the review process).
+* Never hire contractors affiliated with agencies. I outlined why in the initial blog post, but in short, you want a direct relationship without a proxy being involved.
 
 The above tips, combined with ruthless screening should help you find those diamonds in a rough that are still out there on Upwork.
 

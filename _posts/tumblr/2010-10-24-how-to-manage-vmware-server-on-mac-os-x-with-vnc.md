@@ -14,19 +14,17 @@ Until recently, I had to either remotely log into a Windows or Linux machine (or
 
 _VNC connection directly to a VMware virtual machine._
 
-  
-  
 Here’s how you do it:
 
-*   Create a new virtual machine in VMware Server.
-*   Before booting up the virtual machine, open the .vmx-file that resides inside the folder for the new virtual machine.
-*   Add the following line:
+* Create a new virtual machine in VMware Server.
+* Before booting up the virtual machine, open the .vmx-file that resides inside the folder for the new virtual machine.
+* Add the following line:
 
         RemoteDisplay.vnc.enabled = TRUE  
         RemoteDisplay.vnc.password = mypassword  
         RemoteDisplay.vnc.port = 5900
 
-*   Boot the virtual machine.
+* Boot the virtual machine.
 
 This will start a VNC server on port 5900. You can use a regular desktop client to connect to it. You can even use the built-in VNC client on Mac OS X (“Go” -> “Connect to Server” -> “vnc://\[IP to your server\]:0″).
 

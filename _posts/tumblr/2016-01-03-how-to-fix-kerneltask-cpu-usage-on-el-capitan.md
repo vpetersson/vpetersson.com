@@ -15,10 +15,10 @@ The process is largely the same, but requires a bit more work due to the changes
 
 The tl;dr is as follows:
 
-*   Boot up the system in Recovery Mode (Cmd+R on boot). Start a Terminal window and run `csrutil disable`.
-*   Reboot the system as normal and follow the same steps as in the original guide.
-*   Reboot the system again into Recover Mode and enable SIP by running `csrutil enable`.
-*   Reboot the system.
+* Boot up the system in Recovery Mode (Cmd+R on boot). Start a Terminal window and run `csrutil disable`.
+* Reboot the system as normal and follow the same steps as in the original guide.
+* Reboot the system again into Recover Mode and enable SIP by running `csrutil enable`.
+* Reboot the system.
 
 Step 1: Disable System Integration Protection (SIP)
 ===================================================
@@ -27,8 +27,7 @@ First, shut down your computer. Then power the computer on and boot it into [Rec
 
 Once the computer is done booting, bring up a Terminal window (Utility -> Terminal). With that done, simply run the following command:
 
-    $ csrutil disable
-
+    csrutil disable
 
 That will disable SIP. In order for this to work, you now need to reboot your computer into regular mode (i.e. not anoter Recover Mode boot).
 
@@ -45,7 +44,6 @@ Once your computer is booted, stara Terminal session and run the following comma
     $ cd /System/Library/Extensions/IOPlatformPluginFamily.kext/Contents/PlugIns/ACPI_SMC_PlatformPlugin.kext/Contents/Resources
     $ sudo mv MacBookPro8_2.plist MacBookPro8_2.bak
 
-
 With that done, it’s time to go back into Recover Mode again, so shut down your computer.
 
 Step 3: Re-enable SIP
@@ -53,8 +51,7 @@ Step 3: Re-enable SIP
 
 Boot the computer in Recover Mode again by pressing Command + R on boot. Again, open a Terminal window, but this time, run the following command:
 
-    $ csrutil enable
-
+    csrutil enable
 
 Now reboot your computer and you should be all set.
 

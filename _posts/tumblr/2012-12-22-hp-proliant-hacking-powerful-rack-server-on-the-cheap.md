@@ -18,11 +18,11 @@ The first thing you may notice is that the server ships without hard drives. HP 
 
 It also turns out that the on-board RAID-controller is just a crappy software controller that performs poorly under Linux. To remedy these shortcomings, I added a few extra things to my shopping list:
 
-*   4 x 4 GB RAM (I went for HP’s, as they weren’t too overpriced)
-*   4 x 2TB SATA 7200 RPM drives
-*   1 x Adaptec 2405
-*   2 x SATA extenders (0.5m)
-*   Optional: USB CD/DVD reader (for installation)
+* 4 x 4 GB RAM (I went for HP’s, as they weren’t too overpriced)
+* 4 x 2TB SATA 7200 RPM drives
+* 1 x Adaptec 2405
+* 2 x SATA extenders (0.5m)
+* Optional: USB CD/DVD reader (for installation)
 
 With these extensions, we’re able to create a pretty beefy server with 16GB RAM and 2TB of usable storage backed with (hardware) RAID 10.
 

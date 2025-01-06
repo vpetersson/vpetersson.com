@@ -33,4 +33,5 @@ Having healthy relationships with your friends is important, but for many people
 Take care of your mental health and carve out time to stay in touch with your friends and family. Mental health is something that we easily overlook in our busy lives. If you do not feel well mentally, there is no shame in seeking out professional help. There are a number of professionals who even offer remote sessions.
 
 ## Looking to learn more?
+
 While you're here, I'm thinking about writing a book on the topic of remote work. [Sign up here](http://eepurl.com/gtzNfb) for updates.

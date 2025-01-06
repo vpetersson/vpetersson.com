@@ -93,7 +93,6 @@ Here’s a button styled using Markdown and CSS:
 
 <button class="btn">Click Me!</button>
 
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
 
 <blockquote cite="http://www.worldwildlife.org/who/index.html">

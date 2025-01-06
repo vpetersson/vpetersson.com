@@ -32,7 +32,7 @@ The script looks as follows:
 
 Just change `GCE_PROJECT` to match your setup, and then run:
 
-    $ source /path/to/script.sh
+    source /path/to/script.sh
     
 
 You can now run Ansible with the GCE inventory file.

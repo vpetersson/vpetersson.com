@@ -14,7 +14,7 @@ Yet, since this was one of the first Python-programs I ever wrote (beyond Hello 
 
 It works more or less the same. The only differences are that:
 
-*   I feel a lot better knowing the code is prettier ![:)](http://viktorpetersson.com/wp-includes/images/smilies/icon_smile.gif)
-*   It now uses a config-file to host the Cloud Sigma-credentials (instead of being stored in the actual script)
+* I feel a lot better knowing the code is prettier ![:)](http://viktorpetersson.com/wp-includes/images/smilies/icon_smile.gif)
+* It now uses a config-file to host the Cloud Sigma-credentials (instead of being stored in the actual script)
 
 You can grab csconnect from its [Github-repo](https://github.com/vpetersson/csconnect).

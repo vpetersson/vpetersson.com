@@ -17,7 +17,6 @@ The final result is a module I named [Puppet-hosting](https://github.com/vpeters
 
 Here’s an example of how it can look:
 
-    
     hosting::site { 'My Website':
       type        => 'wordpress',
       url         => 'mysite.net',

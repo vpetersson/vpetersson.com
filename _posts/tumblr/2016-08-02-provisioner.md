@@ -16,8 +16,8 @@ I’m still trying to think of more use cases, so that’s part of what I will b
 
 Here are some use cases that I’m thinking of:
 
-*   Bootstrap remote servers (original concept)
-*   CI/CD assistance for pushing out playbooks to remote servers (store SSH Keys in Provisioner)
-    *   Perhaps integrating with Hashicorp Vault?
-*   IFTT or similar integration (?)
-*   PaaS support (Heroku/Deis etc) for easier deployment
+* Bootstrap remote servers (original concept)
+* CI/CD assistance for pushing out playbooks to remote servers (store SSH Keys in Provisioner)
+  * Perhaps integrating with Hashicorp Vault?
+* IFTT or similar integration (?)
+* PaaS support (Heroku/Deis etc) for easier deployment

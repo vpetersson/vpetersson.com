@@ -36,7 +36,6 @@ Now let’s configure Monit. We start with the generic config-file. Open **/etc/
 
     sudo chmod a-rwx,u=rwX -R /etc/monit/conf.d/  
 
-
 Next we need to edit **/etc/default/monit** and change “startup=0″ to “startup=1″.
 
 Now we’re ready to really start configuring Monit. Just to keep things, organized, I’ve broken down the Monit’s settings into three files:
@@ -53,19 +52,19 @@ In basic.conf I’ve put the generic Monit-configs, and then broken out Apache�
 
 > set daemon 60  
 > set logfile syslog facility log_daemon
-> 
+>
 > set mailserver smtp.gmail.com port 587  
-> username “user@domain.com” password “password”  
+> username “<user@domain.com>” password “password”  
 > using tlsv1  
 > with timeout 30 seconds
-> 
-> set alert admin@domain.com
-> 
+>
+> set alert <admin@domain.com>
+>
 > set httpd port 2812 and  
 > use address localhost  
 > allow localhost  
 > allow admin:monit
-> 
+>
 > check system localhost  
 > if loadavg (1min) > 4 then alert  
 > if loadavg (5min) > 2 then alert  
@@ -121,13 +120,11 @@ Now that you have configured all the files, all that needs to be done is to fire
 
     sudo /etc/init.d/monit start  
 
-
 You can verify that Monit is running either by browsing to the webserver or checking /var/log/syslog. You should also receive an email that says that Monit is now running.
 
 Assuming everything went well, you also want to make sure that Monit actually starts a  daemon if it is failing. A simple way to do that is to run:  
 
     sudo killall apache2  
-
 
 That should kill Apache. Monit should be able to detect that and fire it back up shortly. Again, you should be able to monitor Monit’s process either by email, the web-interface, or in /var/log/syslog.
 

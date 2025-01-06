@@ -76,11 +76,10 @@ These meetings are critical to spirit and productivity.  I suspect the brick and
 
 This process builds strong relationships and connections, and an understanding around the important linkages and dependencies that otherwise take a longer time to build.   This results in building strong relations even among teams that may on the surface appear to be unrelated and disjoint.
 
-###  What is a good frequency for these in-person gatherings?
+### What is a good frequency for these in-person gatherings?
 
 Canonical does these on a quarterly basis for business roadmaps, and semi-annually for engineering teams. There are some people who need to attend both, so that is 6 times a year for a select few -- and that does get rather extensive so things may change in the future, however right now we have a number of strategies in flight so the increased frequency
 is currently necessary.
-
 
 ### At these summits, what does the agenda look like?
 

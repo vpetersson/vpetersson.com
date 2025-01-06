@@ -21,8 +21,8 @@ Desktop
 
 If you’re concerned about sharing data with Google, then use Firefox. Regardless of your browser, you should _really_ get these two plugins:
 
-*   [Ghostery](https://www.ghostery.com/en/): Regain control over your browser and block beacons etc.
-*   EFF’s [HTTPS Everywhere](https://www.eff.org/https-everywhere): Only HTTPS wherever possibly.
+* [Ghostery](https://www.ghostery.com/en/): Regain control over your browser and block beacons etc.
+* EFF’s [HTTPS Everywhere](https://www.eff.org/https-everywhere): Only HTTPS wherever possibly.
 
 For Facebook, I’ve moved to using the [Tor Browser](https://www.torproject.org/projects/torbrowser.html.en) exclusively. I then use Facebook’s [Onion address](https://www.facebookcorewwwi.onion) to access the service. I realize the irony of using Facebook over Tor, but it will at least prevent GeoIP lookups and sandbox Facebook to one browser.
 

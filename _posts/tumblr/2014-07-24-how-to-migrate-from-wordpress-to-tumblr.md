@@ -14,8 +14,8 @@ Today, I’ve spent a large chunk of my day migrating my blog from WordPress to 
 
 Before you ask why on earth I’d do this, let me just sum it up in a few bullet points:
 
-*   I hate PHP and managing WordPress sites. Yes, it has gotten a lot better lately, but it’s still a big pain in the ass.
-*   Most of the content I generate is either on other blogs, or fed via Twitter. As a result, I don’t blog too much.
+* I hate PHP and managing WordPress sites. Yes, it has gotten a lot better lately, but it’s still a big pain in the ass.
+* Most of the content I generate is either on other blogs, or fed via Twitter. As a result, I don’t blog too much.
 
 Now, you’re likely reading this post because you’re interested in the subject at hand, so let’s dive into it.
 
@@ -23,16 +23,16 @@ Now, you’re likely reading this post because you’re interested in the subjec
 
 Yet, before we start, there are a few pre-requisites for this to work:
 
-*   You’re moving from one subdomain (or domain) to another. In my case, I’m moving from ‘viktorpetersson.com’ to 'blog.viktorpetersson.com’
-*   Your old blog will still be online (the redirect and images will still be served from here)
-*   You use Nginx as your web server (but this can probably be changed pretty easily by adjusting the rewrite rules in the script).
-*   You already have Tumblr up and running with your subdomain/domain.
-*   You need a Tumblr API key. You can sign up for this [here](https://api.tumblr.com/console).
+* You’re moving from one subdomain (or domain) to another. In my case, I’m moving from ‘viktorpetersson.com’ to 'blog.viktorpetersson.com’
+* Your old blog will still be online (the redirect and images will still be served from here)
+* You use Nginx as your web server (but this can probably be changed pretty easily by adjusting the rewrite rules in the script).
+* You already have Tumblr up and running with your subdomain/domain.
+* You need a Tumblr API key. You can sign up for this [here](https://api.tumblr.com/console).
 
 The backbone of my migration was two WordPress plugins, so let’s get started by installing them:
 
-*   [Google XML Sitemaps](http://www.arnebrachhold.de/redir/sitemap-home/)
-*   [Tumblr Crosspost](https://github.com/meitar/tumblr-crosspostr/#readme)
+* [Google XML Sitemaps](http://www.arnebrachhold.de/redir/sitemap-home/)
+* [Tumblr Crosspost](https://github.com/meitar/tumblr-crosspostr/#readme)
 
 Start by installing these plug-ins into your WordPress site. Make sure to also activate them.
 
@@ -67,13 +67,13 @@ Start by fetching [this](https://gist.github.com/vpetersson/83da37e80702078e7775
 
 You need to update the following:
 
-*   tumblr_blog
-*   wordpress_site
-*   source_file
-*   `<consumer_key>`
-*   `<consumer_secret>`
-*   `<oauth_token>`
-*   `<oauth_secret>`
+* tumblr_blog
+* wordpress_site
+* source_file
+* `<consumer_key>`
+* `<consumer_secret>`
+* `<oauth_token>`
+* `<oauth_secret>`
 
 With that done, you should be able to simply run the script. The script should spit out redirect rules that you can install on your Nginx configuration.
 

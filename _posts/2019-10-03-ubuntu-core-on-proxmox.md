@@ -15,18 +15,18 @@ There are good [installation instruction](https://ubuntu.com/download/iot/kvm) f
 
 Before we begin, go ahead and create a VM in Proxmox's interface. Make sure to do the following selections:
 
- * Select 'Do not use any media' for the installation drive
- * Set the BIOS to 'OVMF (UEFI)'
- * Remove the default disk that is added (we'll import one later)
- * Set the CPU/RAM configuration as per your desired, but one core and 512MB RAM should be plenty
+* Select 'Do not use any media' for the installation drive
+* Set the BIOS to 'OVMF (UEFI)'
+* Remove the default disk that is added (we'll import one later)
+* Set the CPU/RAM configuration as per your desired, but one core and 512MB RAM should be plenty
 
 Once done, take note of the VM ID (as we'll need that below) and what pool (you can use `pvesm status` to list your pools) you want to use. With this information, it's now time to SSH into the server and download the disk image and import it Proxmox.
 
 ```
-$ wget http://cdimage.ubuntu.com/ubuntu-core/18/stable/current/ubuntu-core-18-amd64.img.xz
-$ unxz ubuntu-core-18-amd64.img.xz
-$ qm importdisk $VM-ID ubuntu-core-18-amd64.img $DRIVE-POOL
-$ rm ubuntu-core-18-amd64.img
+wget http://cdimage.ubuntu.com/ubuntu-core/18/stable/current/ubuntu-core-18-amd64.img.xz
+unxz ubuntu-core-18-amd64.img.xz
+qm importdisk $VM-ID ubuntu-core-18-amd64.img $DRIVE-POOL
+rm ubuntu-core-18-amd64.img
 ```
 
 Assuming everything went well, the drive should now be showing up as 'Unused Disk 0' under the VM. Attach the drive as a `virtio` (to get the best performance).

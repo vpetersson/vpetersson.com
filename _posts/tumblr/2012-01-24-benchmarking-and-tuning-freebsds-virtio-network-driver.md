@@ -29,21 +29,21 @@ For each test, I ran five different sub-tests, namely one wich each of the follo
 
 The actual tests used Iperf, and ran the following command on the server:
 
-	iperf -s -w $WINDOW
+ iperf -s -w $WINDOW
 
 and then the following Bash-script on the client:
 
-	#!/usr/local/bin/bash
-	WINDOW=$1
-	OUT=$2
-	x=1
-	while \[ $x -le 5 \]
-	do
-		echo "Starting test $x"
-		iperf -i 1 -t 30 -w $WINDOW -c TheOtherNode >> $OUT
-		sleep 60
-		x=$(( $x + 1 ))
-	done
+ #!/usr/local/bin/bash
+ WINDOW=$1
+ OUT=$2
+ x=1
+ while \[ $x -le 5 \]
+ do
+  echo "Starting test $x"
+  iperf -i 1 -t 30 -w $WINDOW -c TheOtherNode >> $OUT
+  sleep 60
+  x=$(( $x + 1 ))
+ done
 
 The variable ‘$WINDOW’ is, as you might have already figured out, the TCP window size for the given test. This test gives me a total of 155 data-points for each test (31*5).
 
@@ -59,9 +59,9 @@ The reason I chose these variables were simply because the article [Enabling Hig
 
 In test 1, I wanted to benchmark a vanilla FreeBSD 9 installation with the VirtIO network driver. The default values for the tuning-variables were used. These were:
 
-	kern.ipc.maxsockbuf=2097152
-	net.inet.tcp.sendbuf_max=2097152
-	net.inet.tcp.recvbuf_max=2097152
+ kern.ipc.maxsockbuf=2097152
+ net.inet.tcp.sendbuf_max=2097152
+ net.inet.tcp.recvbuf_max=2097152
 
 \[easychart type=“vertbar” height=“400” title=“Throughput in MBits/sec” groupnames=“Average, Median, Min, Max” valuenames=“64k,128k,512k,1024k,1536k” group1values=“209.98,220.12,227.74,237.30,212.92” group2values=“180.00,200.00,216.00,234.00,200.00” group3values=“145.00,161.00,132.00,105.00,139.00” group4values=“304.00,373.00,402.00,422.00,349.00”\]
 
@@ -69,9 +69,9 @@ In test 1, I wanted to benchmark a vanilla FreeBSD 9 installation with the VirtI
 
 In test 2, I increased the kern.ipc.maxsockbuf see what impact that would have on the performance. The new settings would then be:
 
-	kern.ipc.maxsockbuf=4000000
-	net.inet.tcp.sendbuf_max=2097152
-	net.inet.tcp.recvbuf_max=2097152
+ kern.ipc.maxsockbuf=4000000
+ net.inet.tcp.sendbuf_max=2097152
+ net.inet.tcp.recvbuf_max=2097152
 
 The change was made to both servers.
 
@@ -81,9 +81,9 @@ The change was made to both servers.
 
 The last test, I left kern.ipc.maxsockbuf set the above value, but I also increased net.inet.tcp.sendbuf\_max and net.inet.tcp.recvbuf\_max. The settings were then:
 
-	kern.ipc.maxsockbuf=4000000
-	net.inet.tcp.sendbuf_max=16777216
-	net.inet.tcp.recvbuf_max=16777216
+ kern.ipc.maxsockbuf=4000000
+ net.inet.tcp.sendbuf_max=16777216
+ net.inet.tcp.recvbuf_max=16777216
 
 Similarly to in test 2, the change was applied to both servers.
 

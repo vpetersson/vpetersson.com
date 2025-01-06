@@ -14,8 +14,8 @@ Yesterday, I had to rescue a broken Ubuntu 14.04 installation by booting from US
 
 Fortunately, since I was able to get to Grub, it was still possible. Here’s how I did it:
 
-*   Create a bootable USB drive (using something like [Startup Disk Creator](https://apps.ubuntu.com/cat/applications/usb-creator-gtk/). Before taking the drive out, locate where the `vmlinuz` and `initrd.*` files are located. You’ll need them later.
-*   Insert the USB drive and boot the system. When you get to Grub, press _c_ to get to the ‘command-line’ option.
+* Create a bootable USB drive (using something like [Startup Disk Creator](https://apps.ubuntu.com/cat/applications/usb-creator-gtk/). Before taking the drive out, locate where the `vmlinuz` and `initrd.*` files are located. You’ll need them later.
+* Insert the USB drive and boot the system. When you get to Grub, press _c_ to get to the ‘command-line’ option.
 
 Here is where it gets a bit tricky. In my case, I knew the root partition on the USB disk was `/dev/sda1`, yours may vary.
 

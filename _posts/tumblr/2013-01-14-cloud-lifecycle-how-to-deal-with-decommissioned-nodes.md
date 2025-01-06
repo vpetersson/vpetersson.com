@@ -17,9 +17,9 @@ What people don’t think about however is that most cloud vendors use regular m
 
 Therefore, before I decommission any drives in the cloud, this is what I do:
 
-*   Power off the system
-*   Change the boot device to a Live CD (most linux-distributions will do)
-*   Run [shred](http://manpages.ubuntu.com/manpages/intrepid/man1/shred.1.html) on the device
-*   Power off the system and delete the drive
+* Power off the system
+* Change the boot device to a Live CD (most linux-distributions will do)
+* Run [shred](http://manpages.ubuntu.com/manpages/intrepid/man1/shred.1.html) on the device
+* Power off the system and delete the drive
 
 While shredding the drive will take a fair amount of time, we know that even if a malicious user is provisioned the same disk blocks, they won’t find any of your data.

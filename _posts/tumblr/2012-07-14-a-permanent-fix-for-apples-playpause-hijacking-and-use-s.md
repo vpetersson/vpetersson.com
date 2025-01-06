@@ -16,10 +16,9 @@ As long as you don’t touch any other Apple products, Spotify will take over th
 
 Fortunately, I just found a solution. It isn’t perfect, but it’s better than anything else I’ve found.
 
-*   Start by going to “System Preferences” -> “Keyboard” and select “Use all F1, F2, etc. keys as standard function keys”
-*   Next, download the application [Shortcuts](http://itunes.apple.com/us/app/shortcuts/id402271673?mt=12) from Mac App Store
+* Start by going to “System Preferences” -> “Keyboard” and select “Use all F1, F2, etc. keys as standard function keys”
+* Next, download the application [Shortcuts](http://itunes.apple.com/us/app/shortcuts/id402271673?mt=12) from Mac App Store
 
-  
 Within Shortcuts, you now need to create two Apple Scripts: one for play/pause, and one for next track.
 
 The Play/Pause script looks like this:

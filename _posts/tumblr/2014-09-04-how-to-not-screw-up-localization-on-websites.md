@@ -41,6 +41,6 @@ What should I do?
 
 It’s easy to criticize, so let’s give Dyson some constructive feedback instead:
 
-*   Don’t use the same URL for all languages. Use proper suffix (such as `/de` or a separate subdomain).
-*   Use proper redirects for each language to not upset thy mighty Google Bot.
-*   Give the user a choice to set the language themselves (regardless how good you think your logic is).
+* Don’t use the same URL for all languages. Use proper suffix (such as `/de` or a separate subdomain).
+* Use proper redirects for each language to not upset thy mighty Google Bot.
+* Give the user a choice to set the language themselves (regardless how good you think your logic is).

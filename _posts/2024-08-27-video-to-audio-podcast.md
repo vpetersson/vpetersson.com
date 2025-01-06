@@ -19,7 +19,6 @@ Once the RSS feed was uploaded, the final step was to add it to [Spotify](https:
 
 Here's the complete GitHub actions workflow file I'm using for building and generating my podcasts for both video and audio.
 
-
 ```yaml
 ---
 name: Publish nightly

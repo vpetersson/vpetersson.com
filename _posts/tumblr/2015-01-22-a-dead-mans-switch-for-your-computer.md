@@ -20,8 +20,8 @@ Hardware
 
 Using just things we have laying around, we should be able to design the most primitive version. All you really need is a USB stick and some strings (or lanyard)
 
-*   Format your USB drive with a some random file on.
-*   Make a bracelet out of strings or a lanyard. The string from the bracelet must be long enough such that it isn’t in the way while you’re typing/working. Imagine a modified version of [this](https://www.etsy.com/listing/84615477/scandinavian-usb-stick-leather-braided).
+* Format your USB drive with a some random file on.
+* Make a bracelet out of strings or a lanyard. The string from the bracelet must be long enough such that it isn’t in the way while you’re typing/working. Imagine a modified version of [this](https://www.etsy.com/listing/84615477/scandinavian-usb-stick-leather-braided).
 
 Software
 --------

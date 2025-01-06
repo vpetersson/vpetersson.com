@@ -66,7 +66,6 @@ E: Sub-process /usr/bin/dpkg returned an error code (1)
 
 After wasting far too much time trying to debug this, I found that there was an easy solution: simply remount `/boot`.
 
-
 ```
 > $ sudo umount /boot
 > $ sudo mount /boot

@@ -17,7 +17,6 @@ Since this is a low-powered computer with a rather powerful GPU (Nvidia ION), I 
 
 **cam0.sh**
 
-    
     #!/bin/bash
     sleep 5
     while [ true ]
@@ -29,7 +28,6 @@ Since this is a low-powered computer with a rather powerful GPU (Nvidia ION), I 
 
 **cam1.sh**
 
-    
     #!/bin/bash
     sleep 5
     while [ true ]

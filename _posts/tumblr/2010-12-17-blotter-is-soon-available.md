@@ -19,10 +19,10 @@ _Blotter in action._
 
 There are a few things that makes Blotter really awesome.
 
-*   It does not consume much resources (barely any really).
-*   It connects directly with iCal, so no configuration is required.
-*   It sits on top of your desktop without being bothering you. It simply sits on top of your wall paper, but nothing happens if you click on it for instance. It just sits there.
-*   It’s flexible. You can configure it in several different modes and positions on the desktop.
+* It does not consume much resources (barely any really).
+* It connects directly with iCal, so no configuration is required.
+* It sits on top of your desktop without being bothering you. It simply sits on top of your wall paper, but nothing happens if you click on it for instance. It just sits there.
+* It’s flexible. You can configure it in several different modes and positions on the desktop.
 
 When App Store for Mac launches on January 6, you know at least one application that you need to get. I’ve been using Blotter for a few weeks now, and it’s hard to live without it. No longer do I miss meetings and events because I forgot to check the calendar (and/or set an alarm).
 

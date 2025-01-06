@@ -14,15 +14,14 @@ While you could just use something like [Transmit](http://panic.com/transmit/) o
 
 Here’s what I’m thinking:
 
-*   Install Ubuntu (or your favorite Linux distribution) on a server (virtual or physical)
-*   Install [s3fs](http://code.google.com/p/s3fs/) if you’re S3 or the Jungle Disk for Linux.
+* Install Ubuntu (or your favorite Linux distribution) on a server (virtual or physical)
+* Install [s3fs](http://code.google.com/p/s3fs/) if you’re S3 or the Jungle Disk for Linux.
 
 If you’re using S3, create a private bucket. I’m not sure how that works on Jungle Disk.
 
-*   Mount the remote drive to something like /shared
-*   Install and configure Samba to share /shared to the local network
+* Mount the remote drive to something like /shared
+* Install and configure Samba to share /shared to the local network
 
-  
 Simple as that. You can now access the S3/Jungle Disk share as you would with a regular physic NAS. Granted, I haven’t tried this myself, but it should work in theory at least. The only problem I can foresee is the latency issue. Also, you can obviously not expect LAN speed to the storage back-end, but if you have a decent connection you should be able to get at least a few MB/sec. That should be sufficient for browsing pictures and even stream a (non HD) movie.
 
 As a bonus, you can just copy the virtual machine you set up above to another network and have access to the same files from there.

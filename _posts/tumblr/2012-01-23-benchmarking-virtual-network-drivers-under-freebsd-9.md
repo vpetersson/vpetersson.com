@@ -16,11 +16,10 @@ Luckily, that’s rather easy to find the answer to. I spun up two FreeBSD 9 nod
 
 I had three different network drivers that I wanted to benchmark:
 
-*   Intel PRO/1000 (Intel 82540EM chipset)
-*   RealTek RTL8139
-*   VirtIO (QEMU/KVM)
+* Intel PRO/1000 (Intel 82540EM chipset)
+* RealTek RTL8139
+* VirtIO (QEMU/KVM)
 
-  
 One would of course assume that the VirtIO driver would outperform the others, but I wanted to see if that assumption was true, and if so, by how much.
 
 The FreeBSD virtual machines I used had 2GHz CPU, and 2GB of RAM. They also both used a VirtIO block-device as storage.

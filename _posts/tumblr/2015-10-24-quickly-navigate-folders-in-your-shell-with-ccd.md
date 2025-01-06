@@ -15,13 +15,13 @@ There is however one task that I frequently that I wanted to make more efficient
 
 Normally, this would simply be:
 
-    $ mkdir foo
-    $ cd foo
+    mkdir foo
+    cd foo
     
 
 This feels somewhat inefficient, so I wrote a little tool to help with this called `ccd`:
 
-    $ ccd foo
+    ccd foo
     
 
 The tool is very simple, but saves me a number of keystrokes every day. There are two pieces to the tool: one bash script and one entry in `~/.profile`.
