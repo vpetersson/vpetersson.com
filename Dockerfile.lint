@@ -15,5 +15,12 @@ RUN npm install -g \
 
 WORKDIR /app
 
+# Copy linting configurations and script
+COPY .stylelintrc.json .htmlhintrc .eslintrc.json .markdownlint.json ./
+COPY scripts/lint-all.sh ./scripts/
+
+# Ensure the script is executable
+RUN chmod +x ./scripts/lint-all.sh
+
 ENTRYPOINT ["/bin/sh"]
 CMD ["/app/scripts/lint-all.sh"]

@@ -2,8 +2,10 @@
 name: Lint
 
 on:  # yamllint disable-line rule:truthy
-  push: null
-  pull_request: null
+  push:
+    branches:
+      - master  # only run on push to master
+  pull_request:  # run on all PRs
 
 jobs:
   lint:
@@ -20,4 +22,4 @@ jobs:
       - name: Build and run linters
         run: |
           docker build -t site-linters -f Dockerfile.lint .
-          docker run --rm site-linters
+          docker run --rm -v ${PWD}:/app site-linters
