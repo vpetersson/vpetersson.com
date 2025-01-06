@@ -1,23 +1,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="content-language" content="en">
+
   <title>{{ page.title }}</title>
-  <meta name="description" content="{{ page.description | default: site.description }}">
-  <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="{{ page.title | default: site.title }}">
-  <meta property="og:description" content="{{ page.description | default: site.description }}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <meta property="og:image" content="{{ page.image | default: site.social.image | absolute_url }}">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
-  <!-- Twitter Card Meta Tags -->
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}{{ site.social.image }}{% endif %}">
+
+  <!-- LinkedIn -->
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="article:author" content="https://www.linkedin.com/in/{{ site.social.linkedin }}">
+  {% if page.layout == 'post' %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  {% endif %}
+
+  <!-- X (formerly Twitter) -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ page.title | default: site.title }}">
-  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
-  <meta name="twitter:image" content="{{ page.image | default: site.social.image | absolute_url }}">
   <meta name="twitter:site" content="@{{ site.social.twitter }}">
+  <meta name="twitter:creator" content="@{{ site.social.twitter }}">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}{{ site.social.image }}{% endif %}">
 
+  <!-- Social Profile Links -->
+  <link rel="me" href="https://github.com/{{ site.social.github }}">
+  <link rel="me" href="https://www.linkedin.com/in/{{ site.social.linkedin }}">
+  <link rel="me" href="https://hachyderm.io/{{ site.social.mastodon }}">
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Viktor Petersson",
+    "url": "{{ site.url }}",
+    "image": "{{ site.url }}{{ site.social.image }}",
+    "sameAs": [
+      "https://github.com/{{ site.social.github }}",
+      "https://www.linkedin.com/in/{{ site.social.linkedin }}",
+      "https://hachyderm.io/{{ site.social.mastodon }}",
+      "https://x.com/{{ site.social.twitter }}"
+    ]
+  }
+  </script>
+
+  <!-- Custom meta tags -->
+  {% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}">
+  {% endif %}
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -25,10 +64,11 @@
       href="https://fonts.googleapis.com/css?family=Anton|DM Sans|Roboto|Hanken+Grotesk"
     />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/native.css' | relative_url }}">
-
 
   {% include google-analytics.html %}
 </head>

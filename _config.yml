@@ -20,12 +20,17 @@ baseurl: "" # the subpath of your site, e.g. /blog
 #baseurl: "blog.viktorpetersson.com"
 url: "https://vpetersson.com" # the base hostname & protocol for your site, e.g. http://example.com
 # url: "https://vpetersson.github.io/blog.viktorpetersson.com"
-twitter_username: vpetersson
-github_username: vpetersson
+
+# SEO settings
+canonical_url: "https://vpetersson.com"
+enforce_ssl: vpetersson.com   # without https:// and any subdomains
 
 social:
   image: "/assets/images/site/talk.jpg"
   twitter: vpetersson
+  github: vpetersson
+  linkedin: vpetersson
+  mastodon: "@vpetersson@hachyderm.io"
 
 pagination:
   enabled: true
@@ -75,3 +80,50 @@ exclude:
   - CNAME
   - package.json
   - package-lock.json
+
+# Sitemap settings
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      sitemap:
+        changefreq: "monthly"
+        priority: 0.3
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      sitemap:
+        changefreq: "monthly"
+        priority: 0.7
+  -
+    scope:
+      path: "_podcast"
+      type: "podcast"
+    values:
+      sitemap:
+        changefreq: "weekly"
+        priority: 0.8
+  -
+    scope:
+      path: "index.html"
+    values:
+      sitemap:
+        changefreq: "daily"
+        priority: 1.0
+  -
+    scope:
+      path: "blog/index.html"
+    values:
+      sitemap:
+        changefreq: "daily"
+        priority: 0.9
+  -
+    scope:
+      path: "podcast/index.html"
+    values:
+      sitemap:
+        changefreq: "daily"
+        priority: 0.9

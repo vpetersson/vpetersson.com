@@ -1,0 +1,75 @@
+<!-- Podcast episode schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "{{ page.title }}",
+  "description": {{ page.description | jsonify }},
+  "uploadDate": "{{ page.date | date_to_xmlschema }}",
+  "duration": "PT{{ page.duration }}M",
+  "thumbnailUrl": "https://i.ytimg.com/vi/{{ page.youtube | extract_youtube_id }}/default.jpg",
+  "embedUrl": "https://www.youtube.com/embed/{{ page.youtube | extract_youtube_id }}",
+  "contentUrl": "{{ page.youtube }}",
+  "url": "{{ site.url }}{{ page.url }}",
+  "mainEntityOfPage": "{{ site.url }}{{ page.url }}",
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  {% if page.guest %}
+  "actor": {
+    "@type": "Person",
+    "name": "{{ page.guest }}"
+  },
+  {% endif %}
+  "author": {
+    "@type": "Person",
+    "name": "Viktor Petersson",
+    "url": "{{ site.url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nerding Out with Viktor",
+    "url": "{{ site.url }}/podcast/"
+  },
+  "isPartOf": {
+    "@type": "PodcastSeries",
+    "name": "Nerding Out with Viktor",
+    "url": "{{ site.url }}/podcast/",
+    "inLanguage": "en",
+    "isAccessibleForFree": true
+  },
+  "episodeNumber": {{ page.episode }},
+  "sameAs": [
+    {% if page.spotify %}"{{ page.spotify }}"{% endif %}
+    {% if page.apple %}{% if page.spotify %},{% endif %}"{{ page.apple }}"{% endif %}
+    {% if page.amazon %}{% if page.spotify or page.apple %},{% endif %}"{{ page.amazon }}"{% endif %}
+  ]
+}
+</script>
+
+<!-- Breadcrumbs schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.url }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Podcast",
+      "item": "{{ site.url }}/podcast/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ page.title }}",
+      "item": "{{ site.url }}{{ page.url }}"
+    }
+  ]
+}
+</script>
