@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
@@ -8,12 +8,12 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.9.3"
+gem 'jekyll', '~> 3.9.3'
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minima", "~> 2.0"
+gem 'minima', '~> 2.0'
 
-gem "kramdown-parser-gfm"
+gem 'kramdown-parser-gfm'
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -21,20 +21,20 @@ gem "kramdown-parser-gfm"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.6"
-  gem "jekyll-redirect-from"
-  gem "jekyll-sitemap"
-  gem "jekyll-paginate-v2"
+  gem 'jekyll-feed', '~> 0.6'
+  gem 'jekyll-paginate-v2'
+  gem 'jekyll-redirect-from'
+  gem 'jekyll-sitemap'
 end
 
 gem 'html-proofer'
-gem 'webrick'
 gem 'rexml', '~> 3.3.9'
+gem 'webrick'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
-gem "csv", "~> 3.3"
-gem "base64", "~> 0.2.0"
+gem 'base64', '~> 0.2.0'
+gem 'csv', '~> 3.3'
 
-gem "bundler-audit", "~> 0.9.2"
+gem 'bundler-audit', '~> 0.9.2'
