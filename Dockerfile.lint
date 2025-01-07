@@ -13,11 +13,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm ci
 
-# Copy linting configurations
-COPY .stylelintrc.json .htmlhintrc .eslintrc.js .markdownlint.json ./
-
-# Copy and make the lint script executable
-COPY scripts/lint-all.sh ./scripts/
-RUN chmod +x ./scripts/lint-all.sh
+# Copy all source files
+COPY . .
 
 CMD ["./scripts/lint-all.sh"]
