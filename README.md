@@ -41,3 +41,28 @@ The linting configuration is defined in:
 - `.htmlhintrc` - HTML rules
 - `.eslintrc.json` - JavaScript rules
 - `.markdownlint.json` - Markdown rules
+
+## Security Audits
+
+The project uses security auditing tools for both Ruby and Node.js dependencies.
+
+### Ruby Dependencies
+
+To check for security vulnerabilities in Ruby gems:
+
+```bash
+# Run bundler-audit inside Docker
+docker compose run --rm web bash -c "gem install bundler-audit && bundle-audit check --update"
+```
+
+### Node.js Dependencies
+
+To check for security vulnerabilities in npm packages:
+
+```bash
+# Run npm audit inside Docker
+docker compose run --rm web npm audit
+
+# To automatically fix vulnerabilities when possible
+docker compose run --rm web npm audit fix
+```

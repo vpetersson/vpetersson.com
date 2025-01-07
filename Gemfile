@@ -36,3 +36,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "csv", "~> 3.3"
 gem "base64", "~> 0.2.0"
+
+gem "bundler-audit", "~> 0.9.2"
