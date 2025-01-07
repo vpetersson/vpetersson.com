@@ -13,10 +13,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
 
-      - name: Build and run linters
-        run: |
-          docker build -t site-linters -f Dockerfile.lint .
-          docker run --rm -v ${PWD}:/app site-linters
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.x'
+
+      - name: Install RuboCop
+        run: gem install rubocop
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Run linters
+        run: PATH="$PWD/node_modules/.bin:$PATH" ./bin/lint-all.sh
