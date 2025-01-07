@@ -14,7 +14,7 @@ On Ubuntu, Munin comes with most (non-custom) plugins I use. Unfortunately, the 
 
 The fix however, is very easy. All you need to do is to add the URL to the Munin’s plugin configuration file. This can be done using the following command:
 
- if [[ $(cat /etc/munin/plugin-conf.d/munin-node | grep "nginx") = "" ]]; then echo -e "\\n\[nginx*\]\\nenv.url http://localhost/nginx_status" >> /etc/munin/plugin-conf.d/munin-node; fi
+ if [[ $(cat /etc/munin/plugin-conf.d/munin-node | grep "nginx") = "" ]]; then echo -e "\\n\[nginx*\]\\nenv.url <http://localhost/nginx_status>" >> /etc/munin/plugin-conf.d/munin-node; fi
 
 This can be run as many times as you’d like, as it only appends the config-snippet if it’s not there already.
 
@@ -45,9 +45,10 @@ In my case, I wanted to push this out using Puppet, so I have the following bloc
   require => Package\['munin-node'\],
  }
 
- # Fixes a bug in the plugin and configures it to poll using localhost
+## Fixes a bug in the plugin and configures it to poll using localhost
+
  exec { 'activate\_nginx\_munin':
-  command => 'bash -c if \[\[ $(cat /etc/munin/plugin-conf.d/munin-node | grep "nginx") = "" \]\]; then echo "\\n\[nginx*\]\\nenv.url http://localhost/nginx_status" >> /etc/munin/plugin-conf.d/munin-node; fi',
+  command => 'bash -c if \[\[ $(cat /etc/munin/plugin-conf.d/munin-node | grep "nginx") = "" \]\]; then echo "\\n\[nginx*\]\\nenv.url <http://localhost/nginx_status>" >> /etc/munin/plugin-conf.d/munin-node; fi',
   user    => 'root',
   require => \[
    File\['nginx_status'\],

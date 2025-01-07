@@ -32,9 +32,7 @@
 html,
 :host {
   line-height: 1.5; /* 1 */
-  text-size-adjust: 100%; /* 2 */
-  tab-size: 4; /* 3 */
-  tab-size: 4;
+  text-size-adjust: 100%; /* 2 */ /* 3 */
      tab-size: 4; /* 3 */
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
   font-feature-settings: normal; /* 5 */
@@ -69,7 +67,6 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 */
 
 abbr:where([title]) {
-  text-decoration: underline dotted;
           text-decoration: underline dotted;
 }
 
@@ -925,17 +922,14 @@ video {
 }
 
 .object-contain {
-  object-fit: contain;
      object-fit: contain;
 }
 
 .object-cover {
-  object-fit: cover;
      object-fit: cover;
 }
 
 .object-center {
-  object-position: center;
      object-position: center;
 }
 
@@ -1024,7 +1018,7 @@ video {
 }
 
 .font-\[Inter\] {
-  font-family: Inter;
+  font-family: Inter, sans-serif;
 }
 
 .text-2xl {

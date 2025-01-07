@@ -30,22 +30,26 @@ I would suggest that you only use the localhost interface, as I'm not sure what 
 With the virtual IP(s) created, it's now time to prepare the server. Start by SSH'ing into the box and run the following commands.
 
 Install ezjail package:
+
 ```
 pkg add http://pkg.freebsd.org/freebsd:11:x86:64/latest/All/ezjail-3.4.2.txz
 ```
 
 Brute force link to make jails to work:
+
 ```
 ln -s /lib/libkvm.so.7 /lib/libkvm.so.6
 ```
 
 Download missing jail file:
+
 ```
 curl -o /etc/rc.d/jail https://raw.githubusercontent.com/freebsd/freebsd/stable/11/etc/rc.d/jail
 chmod +x /etc/rc.d/jail
 ```
 
 Enable and initiate ezjail:
+
 ```
 echo 'ezjail_enable="YES"' | tee -a /etc/rc.conf.local
 ezjail-admin install

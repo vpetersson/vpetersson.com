@@ -1,26 +1,32 @@
 FROM node:20-slim
 
-# Install linting tools globally
+# Install Ruby and RuboCop
+RUN apt-get update && \
+    apt-get install -y ruby ruby-dev && \
+    gem install rubocop && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Install Node.js linting tools
 RUN npm install -g \
     stylelint \
     stylelint-config-standard \
     stylelint-config-tailwindcss \
     htmlhint \
-    eslint \
+    eslint@8.56.0 \
     eslint-config-standard \
     eslint-plugin-import \
     eslint-plugin-n \
     eslint-plugin-promise \
     markdownlint-cli
 
-WORKDIR /app
+# Copy linting configurations
+COPY .stylelintrc.json .htmlhintrc .eslintrc.js .markdownlint.json ./
 
-# Copy linting configurations and script
-COPY .stylelintrc.json .htmlhintrc .eslintrc.json .markdownlint.json ./
+# Copy and make the linting script executable
 COPY scripts/lint-all.sh ./scripts/
-
-# Ensure the script is executable
 RUN chmod +x ./scripts/lint-all.sh
 
-ENTRYPOINT ["/bin/sh"]
-CMD ["/app/scripts/lint-all.sh"]
+CMD ["./scripts/lint-all.sh"]

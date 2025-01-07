@@ -12,30 +12,27 @@ This got me thinking; why don’t we have **Dead Man’s Switches** for computer
 
 Having such device would not only be useful if you’re a high profile target (like Ulbricht), but also to conveniently lock your computer in an office environment.
 
-Using a USB stick
-=================
+## Using a USB stick
 
-Hardware
---------
+### Hardware
 
 Using just things we have laying around, we should be able to design the most primitive version. All you really need is a USB stick and some strings (or lanyard)
 
 * Format your USB drive with a some random file on.
 * Make a bracelet out of strings or a lanyard. The string from the bracelet must be long enough such that it isn’t in the way while you’re typing/working. Imagine a modified version of [this](https://www.etsy.com/listing/84615477/scandinavian-usb-stick-leather-braided).
 
-Software
---------
+### Software
 
 With the hardware ready, we now need a daemon or similar that runs on your computer and checks for this file. If this file disappears (i.e. you remove the USB device), the computer will lock down.
 
 Here’s an example of a very primitive version of such script. All it does is to check for the file every second, and if it is absent, it will lock the computer (assuming you’re using OS X):
 
     #!/bin/bash
-    
+
     # Where is the file located?
     # Should be something like "/Volumes/<disk label>/<file name> on OS X.
     WATCHFILE="/path/to/file"
-    
+
     while true; do
         if [ -f "$WATCHFILE" ]; then
             sleep 1
@@ -43,12 +40,10 @@ Here’s an example of a very primitive version of such script. All it does is t
             /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
         fi
     done
-    
 
 _(This script is clearly more meant as a proof-of-concept than for usage in a high security environment.)_
 
-Using wearables
-===============
+## Using wearables
 
 There are a lot of issues with the approach above. First and foremost, it is likely not be very comfortable to work with a strap around your wrist all day. You’re also likely to accidentally drag your laptop off of your desk in an unexpected move.
 

@@ -12,7 +12,7 @@ Enter [HP ProLiant DL-120](http://h10010.www1.hp.com/wwpc/us/en/sm/WF06b/15351-1
 
 Photos of the setup can be found [here](https://plus.google.com/photos/102112347693505491575/albums/5824880631135958625?authkey=CNeWsJ6r67PABQ).  
 
-### The extras.
+### The extras
 
 The first thing you may notice is that the server ships without hard drives. HP want you to buy their ridiculously overpriced server-disks (which are basically regular SATA/SAS drives in a plastic enclosure). I opted out for this and went for regular drives (and I couldn’t find any compatible DIY plastic enclosures). Since we’re not using these enclosures, this means that we won’t be able to hotswap drives unfortunately. Personally I think that was a reasonable compromise.
 
@@ -26,7 +26,7 @@ It also turns out that the on-board RAID-controller is just a crappy software co
 
 With these extensions, we’re able to create a pretty beefy server with 16GB RAM and 2TB of usable storage backed with (hardware) RAID 10.
 
-### What you’re giving up.
+### What you’re giving up
 
 First and foremost, you’re giving up the ability to hotswap drives by opting out for the HP’s stock-hard drives. This also means that you won’t have any HDD leds in the front. While I would much liked that, we’re a lot of extra disk space in return. Yet, all-in-all, I’m willing to give that up to save a few hundred dollars per server.
 
@@ -37,10 +37,10 @@ To install the hard drives, you first you need to remove all of the plastic plac
 
 Installing the memory should be very straight forward.
 
-### Initialize the RAID array.
+### Initialize the RAID array
 
 This one took me some time to figure out. While booting up, the HP’s BIOS will display “Press any key to view Option ROM messages.” I didn’t really connect the dots here, but this is what you need to do to get to Adaptec’s BIOS.
 
-### Wrapping up.
+### Wrapping up
 
 Now, with the RAID initialized, all you need to do is to add your USB cd/dvd drive and boot into your favorite Linux distribution, which should detect your hardware without any extra drivers.

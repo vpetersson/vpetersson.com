@@ -12,7 +12,7 @@
         appendString += '<p class="search-content">' + item.content.substring(0, 150) + '...</p>';
         appendString += '<p class="search-content-type">' + item.type + '</p></li>';
         if (i !== results.length) {
-          appendString +=  '<hr class="search-result-separator border-[#d3d3d366]" />'
+          appendString +=  '<hr class="search-result-separator border-[#d3d3d366]" />';
         }
       }
 
@@ -38,7 +38,7 @@
   var searchTerm = getQueryVariable('query');
 
   if (searchTerm) {
-    document.getElementById('search-box').setAttribute("value", searchTerm);
+    document.getElementById('search-box').setAttribute('value', searchTerm);
 
     // Initalize lunr with the fields it will be searching on. I've given title
     // a boost of 10 to indicate matches on this field are more important.

@@ -36,8 +36,7 @@ The backbone of my migration was two WordPress plugins, so let’s get started b
 
 Start by installing these plug-ins into your WordPress site. Make sure to also activate them.
 
-Migrating the content to Tumblr
-===============================
+## Migrating the content to Tumblr
 
 Thanks to the plugin **Tumblr Crosspostr**, migrating the content over to Tumblr is a breeze. First, you need to configure the plug-in by adding your Tumblr API keys.
 
@@ -45,8 +44,7 @@ Before we begin the migration/import, make sure you don’t have the setting in 
 
 With that done, go to **Tools** -\> **Tumblrize Archive** -\> **Tumblrize Everything!**.
 
-Getting a list of source pages
-==============================
+## Getting a list of source pages
 
 Once you’ve installed the sitemap-plugin, you should be able to go to [http://your-site.com/sitemap.xml](http://your-site.com/sitemap.xml) and copy and paste the content of into a text-file on your computer.
 
@@ -56,10 +54,8 @@ It should look something like:
     http://viktorpetersson.com/2013/08/02/are-they-using-google-apps/   20% Monthly 2013-08-02 13:21
     http://viktorpetersson.com/2013/06/15/my-presentation-from-pi-and-more-3/   20% Monthly 2013-06-16 09:03
     http://viktorpetersson.com/2013/06/01/join-me-on-pi-and-more-on-june-15/
-    
 
-Generating redirects
-====================
+## Generating redirects
 
 Next, let’s do put work some Python magic. Thanks to [pytumblr](https://github.com/tumblr/pytumblr), this part is a breeze.
 

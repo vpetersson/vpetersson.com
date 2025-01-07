@@ -20,8 +20,7 @@ The tl;dr is as follows:
 * Reboot the system again into Recover Mode and enable SIP by running `csrutil enable`.
 * Reboot the system.
 
-Step 1: Disable System Integration Protection (SIP)
-===================================================
+## Step 1: Disable System Integration Protection (SIP)
 
 First, shut down your computer. Then power the computer on and boot it into [Recovery Mode](https://support.apple.com/en-gb/HT201314) by holding down Command + R.
 
@@ -31,8 +30,7 @@ Once the computer is done booting, bring up a Terminal window (Utility -> Termin
 
 That will disable SIP. In order for this to work, you now need to reboot your computer into regular mode (i.e. not anoter Recover Mode boot).
 
-Step 2: Fix the issue
-=====================
+## Step 2: Fix the issue
 
 Once your computer is booted, stara Terminal session and run the following commands (for more information, see the [original post](/2014/10/16/how-to-fix-kerneltask-cpu-usage-on-yosemite.html):
 
@@ -46,8 +44,7 @@ Once your computer is booted, stara Terminal session and run the following comma
 
 With that done, it’s time to go back into Recover Mode again, so shut down your computer.
 
-Step 3: Re-enable SIP
-=====================
+## Step 3: Re-enable SIP
 
 Boot the computer in Recover Mode again by pressing Command + R on boot. Again, open a Terminal window, but this time, run the following command:
 

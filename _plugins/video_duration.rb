@@ -16,9 +16,9 @@ module Jekyll
       seconds = total_seconds % 60
 
       duration = 'PT'
-      duration += "#{hours}H" if hours > 0
-      duration += "#{minutes}M" if minutes > 0
-      duration += "#{seconds}S" if seconds > 0
+      duration += "#{hours}H" if hours.positive?
+      duration += "#{minutes}M" if minutes.positive?
+      duration += "#{seconds}S" if seconds.positive?
 
       duration
     end

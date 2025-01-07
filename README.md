@@ -1,6 +1,6 @@
-## vpetersson.com
+# blog.viktorpetersson.com
 
-### Adding new gems
+## Adding new gems
 
 To add new gems to the project:
 
@@ -9,7 +9,7 @@ To add new gems to the project:
 docker compose run --rm web bundle add jekyll-seo-tag  # Replace with the gem you want to add
 ```
 
-### Updating dependencies
+## Updating dependencies
 
 To update all dependencies in the lockfile:
 
@@ -17,7 +17,7 @@ To update all dependencies in the lockfile:
 docker compose run --rm web bundle update
 ```
 
-### Running Linters
+## Running Linters
 
 The project uses Docker-based linting for CSS, HTML, JavaScript, and Markdown files. To run the linters:
 
@@ -36,6 +36,7 @@ docker run --rm -v ${PWD}:/app site-linters markdownlint "**/*.md"
 ```
 
 The linting configuration is defined in:
+
 - `.stylelintrc.json` - CSS rules
 - `.htmlhintrc` - HTML rules
 - `.eslintrc.json` - JavaScript rules

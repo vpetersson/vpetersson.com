@@ -114,7 +114,7 @@ While having good equipment is always important, you tend to have more control o
 * A standing desk (I use [this](https://www.ikea.com/us/en/catalog/products/S29022520/) one from Ikea)
 * A good ergonomic keyboard
 
-## That’s a wrap!
+## That’s a wrap
 
 That’s it. At least for now. I’m sure there are things that I have missed, but it should hopefully be useful for other (new and old) remote workers out there.
 

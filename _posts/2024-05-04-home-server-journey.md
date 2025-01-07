@@ -67,7 +67,7 @@ I briefly entertained going down the [NixOS](https://nixos.org/) route instead o
 
 I’m also still using my external USB drive setup as I haven’t gotten around to ordering the 3.5" drives yet. My plan is to configure ZFS across these new drives with TPM-backed Full Disk Encryption for added security (and to save time on shredding drives when they start failing). I will add an update later with details about this.
 
-### Final Bill of Materials (BOM) for the New Server Setup:
+### Final Bill of Materials (BOM) for the New Server Setup
 
 * **Case**: [Jonsbo N2](https://www.aliexpress.com/item/1005004980577095.html)
   * Compact form factor ideal for multiple internal drives.

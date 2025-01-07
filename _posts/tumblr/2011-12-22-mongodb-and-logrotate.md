@@ -25,7 +25,7 @@ There is however a way to use MongoDB with logrotate. It’s just a bit more mes
   sharedscripts
   postrotate
    killall -SIGUSR1 mongod
-   find /var/log/mongodb/ -type f -regex ".*\\.\\(log.\[0-9\].*-\[0-9\].*\\)" -exec rm {} \\;
+   find /var/log/mongodb/ -type f -regex "._\\.\\(log.\[0-9\]._-\[0-9\].*\\)" -exec rm {} \\;
   endscript
  }
 

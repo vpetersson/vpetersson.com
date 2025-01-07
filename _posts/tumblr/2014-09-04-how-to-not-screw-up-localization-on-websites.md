@@ -15,8 +15,7 @@ Since I’m connected to a VPN in Switzerland, this is what I was presented with
 
 As you can see, the website is in German just because I connected through Switzerland. Now let’s analyze why this is bad.
 
-Location != language
-====================
+## Location != language
 
 Your location isn’t really a great way to determine the language for a user. For instance, there are plenty of companies that route all their internal traffic through a central end-point for all their remote offices. Using this approach, all them will see the language of the country the end-point is located.
 
@@ -24,20 +23,17 @@ There are of course a ton of other situations that would break this logic too, s
 
 A far better approach is to look at the locale of the browser, and user that as the basis. That way, you can serve the user with the language s/he prefers (regardless of location).
 
-Use proper URLs
-===============
+## Use proper URLs
 
 Another thing you can notice in the Dyson example is that URL doesn’t change with the locale. For instance, one would expect something like `dyson360eye.com/de` or `dyson360eye.de` for the German version. Instead, you just have the German version being served under `dyson360eye.com`. Beyond being a horrible thing from an SEO perspective, it is also confusing for the users.
 
-Give the users a choice
-=======================
+## Give the users a choice
 
 Even if you have a good implementation for auto-probing for the users’ language (either using GeoIP or locale), you should still give the users a choice to override this.
 
 In the case of Dyson, there is no way for me to change the language, **nor** override it manually by altering the URL.
 
-What should I do?
-=================
+## What should I do?
 
 It’s easy to criticize, so let’s give Dyson some constructive feedback instead:
 

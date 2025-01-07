@@ -22,6 +22,7 @@ As often happens with tech projects, this turned out to be a lot more complicate
 I must now admit that I’ve spent/wasted (depending on how you look at it) countless hours getting things to a state where I’m happy. Hopefully this article will save you some time if you’re looking to accomplish the same.
 
 At the end of this article, you should be able to:
+
 * Not screw up your [Home Assistant](https://www.home-assistant.io/) setup like I did
 * Configure Home Assistant to work with your IKEA Tradfri lights
 * Setup Flux with IKEA Tradfri lights
@@ -35,6 +36,7 @@ If you’re just diving into home automation, you will likely be somewhat overwh
 Unfortunately, neither the IKEA app, nor Apple’s Home.app provided me what I wanted, so I had to keep looking. What I landed on was Home Assistant (HA), which has arguably become the most popular (open source) home automation platform.
 
 I must admit that I have a love-hate relationship with HA. While it is a very powerful platform that integrates with almost anything under the sun, it suffers from the same problem as many open source projects do:
+
 * (Sometimes) outdated documentation
 * Poor quality control
 
@@ -96,6 +98,7 @@ While we’re on the topic of databases, I’ve also configured my HA to send me
 While there are countless "smart bulbs" out there, I settled on the IKEA Tradfri, largely because they were cost effective (a fraction of the cost of Philips Hue). When you setup something like Flux, it’s important to know which lights you have. For instance, the setup for Philips Hue uses a different `mode`.
 
 What’s important to point out is that IKEA lights come in two different versions (as far as I know):
+
 * One that only provides shades of warm white (e.g. [this one](https://www.ikea.com/gb/en/p/tradfri-led-bulb-gu10-400-lumen-wireless-dimmable-warm-white-60420041/))
 * One that provides shades of white *and* yellow (e.g. [this one](https://www.ikea.com/gb/en/p/tradfri-led-bulb-gu10-400-lumen-wireless-dimmable-white-spectrum-90408603/))
 
@@ -152,6 +155,7 @@ As someone that [works from home](/remote-work/), I’m in control of my work en
 (Since publishing the blog post, I’ve received a number of requests from people who wanted the same. As many users just wanted this off-the-shelf and not solder together the components, I’ve teamed up with the fine folks at Pi Supply to manufacture the sensor. You can pre-order from [here](https://uk.pi-supply.com/products/iot-home-air-quality-sensor-for-home-assistant).)
 
 With these sensors live, I’m able to do things like:
+
 * Visualize the historical temperature/humidity/VOC/CO2 values
 * Automate the fan in my office, such that it turns on/off automatically when either the temperature or CO2 level reaches a certain threshold
 
@@ -168,11 +172,13 @@ Setting this up was straight forward, and the details can be found [here](https:
 The reason why I wanted to setup Presence Detection was such that I can trigger automation when arriving or leaving the home.
 
 For instance, when I leave, the following things happen:
+
 * All lights turn off
 * The music is paused on my Sonos
 * I turn off all outlets with smart plugs
 
 Similarly, when I arrive home, the following thing happens:
+
 * Flux gets re-enabled (disabled when away)
 * All lights turn on
 * The outlets are turn on again

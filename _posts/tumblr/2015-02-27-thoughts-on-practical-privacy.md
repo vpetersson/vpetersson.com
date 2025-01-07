@@ -16,8 +16,7 @@ The problem is that most of your friends will likely be on Facebook (and communi
 
 Here are some measures I’ve taken to improve my privacy.
 
-Desktop
-=======
+## Desktop
 
 If you’re concerned about sharing data with Google, then use Firefox. Regardless of your browser, you should _really_ get these two plugins:
 
@@ -26,15 +25,13 @@ If you’re concerned about sharing data with Google, then use Firefox. Regardle
 
 For Facebook, I’ve moved to using the [Tor Browser](https://www.torproject.org/projects/torbrowser.html.en) exclusively. I then use Facebook’s [Onion address](https://www.facebookcorewwwi.onion) to access the service. I realize the irony of using Facebook over Tor, but it will at least prevent GeoIP lookups and sandbox Facebook to one browser.
 
-Mobile
-======
+## Mobile
 
 Make sure to remove all Facebook applications (both Messenger and the main app). These are major violators of your privacy. You may also want to remove WhatsApp. If you need to access Facebook on the go, use the web version.
 
 You may also want to disable the location service when you don’t need it.
 
-Instant Messaging
-=================
+## Instant Messaging
 
 For most people, instant messaging is part of your everyday routine. There are however good and bad ones. EFF have put together a [Secure Messaging Scorecard](https://www.eff.org/secure-messaging-scorecard) that ranks various messaging apps.
 

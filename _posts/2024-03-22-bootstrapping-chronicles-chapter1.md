@@ -30,6 +30,7 @@ While still in college in the early 2000s, Alex and I created our first business
 Fast forward a few years, and we ended up pivoting to self-served email migrations for SMB and colleges (we had Harvard and a few other big names as customers). In the end, it was a business that flatlined early. Our only saving grace was that we rode on a wave of Google Apps (now Google Workspace) adoption, and Google didn’t have any tooling for this.
 
 What I learned from this endeavor was a few things:
+
 1. Never build a business selling to students. Their willingness to pay is minimal at best and they don’t value their time.
 2. Channel sales made our business viable (shoutout to Crisantos among others).
 3. Marketplaces are a powerful sales channel for small niche services. In today’s world, where G2/Capterra is fully gamified, I’m not sure where that leads. Back then, Google's own listings drove a large part of our revenue.

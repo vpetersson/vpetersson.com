@@ -4,7 +4,7 @@ module Jekyll
       mins = minutes.to_i
       hours = mins / 60
       remaining_minutes = mins % 60
-      if hours > 0
+      if hours.positive?
         "#{hours} hour#{'s' if hours > 1} #{remaining_minutes} min#{'s' if remaining_minutes != 1}"
       else
         "#{remaining_minutes} min#{'s' if remaining_minutes != 1}"

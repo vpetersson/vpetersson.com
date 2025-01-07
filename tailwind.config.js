@@ -8,7 +8,7 @@ module.exports = {
     './_posts/**/*.html',
     '*.html',
     './*.html',
-    './**/*.html',
+    './**/*.html'
   ],
   content: [],
   theme: {
@@ -23,8 +23,8 @@ module.exports = {
       'white-alpha-20': 'rgba(255, 255, 255, 0.2)',
       'white-alpha-25': 'rgba(255, 255, 255, 0.25)'
     },
-    extend: {},
+    extend: {}
   },
-  plugins: [],
-}
+  plugins: []
+};
 
