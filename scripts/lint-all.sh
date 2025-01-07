@@ -13,22 +13,22 @@ fi
 EXIT_CODE=0
 
 echo "\nRunning CSS linting..."
-if ! ./node_modules/.bin/stylelint "**/*.css" $FIX_ARG; then
+if ! stylelint "**/*.css" $FIX_ARG; then
     EXIT_CODE=1
 fi
 
 echo "\nRunning HTML linting..."
-if ! ./node_modules/.bin/htmlhint "**/*.html"; then
+if ! htmlhint "**/*.html"; then
     EXIT_CODE=1
 fi
 
 echo "\nRunning JavaScript linting..."
-if ! ./node_modules/.bin/eslint . --ext .js $FIX_ARG; then
+if ! eslint . --ext .js $FIX_ARG; then
     EXIT_CODE=1
 fi
 
 echo "\nRunning Markdown linting..."
-if ! ./node_modules/.bin/markdownlint "**/*.md" --ignore "node_modules/**" $FIX_ARG; then
+if ! markdownlint "**/*.md" --ignore "node_modules/**" $FIX_ARG; then
     EXIT_CODE=1
 fi
 
