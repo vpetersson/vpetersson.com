@@ -15,109 +15,125 @@ I’ve called the path we’re going to index (recursively) ‘/path/to/somethin
 
 Let’s get started.
 
-**Note**: If you don’t have the ports-tree installed (/usr/ports), you can download it by simply running:
+First, we need to update the ports tree:
 
-    portsnap fetch extract
+```bash
+portsnap fetch extract
+```
 
-**Install Apache**
+Next, install Apache:
 
-    /usr/ports/www/apache22  
-    make install  
-    echo -e “\\napache22_enable=\\”YES\\”” >> /etc/rc.conf
+```bash
+cd /usr/ports/www/apache22
+make install
+echo -e "\napache22_enable=\"YES\"" >> /etc/rc.conf
+```
 
-**Install Xapian with Xapian-Omega**
+Install Xapian:
 
-    cd /usr/ports/www/xapian-omega  
-    make install
+```bash
+cd /usr/ports/www/xapian-omega
+make install
+```
 
-**Install Xpdf**  
-Make sure to uncheck X11 and DRAW
+Install PDF support:
 
-    cd /usr/ports/graphics/xpdf  
-    make install
+```bash
+cd /usr/ports/graphics/xpdf
+make install
+```
 
-**Install Catdoc**  
-Uncheck WORDVIEW
+Install Word document support:
 
-    cd /usr/ports/textproc/catdoc  
-    make install
+```bash
+cd /usr/ports/textproc/catdoc
+make install
+```
 
-**Install Unzip**
+Install ZIP support:
 
-    cd /usr/ports/archivers/unzip  
-    make install
+```bash
+cd /usr/ports/archivers/unzip
+make install
+```
 
-**Install Gzip**
+Install GZIP support:
 
-    cd /usr/ports/archivers/gzip  
-    make install
+```bash
+cd /usr/ports/archivers/gzip
+make install
+```
 
-**Install Antiword**
+Install Word document support:
 
-    cd /usr/ports/textproc/antiword  
-    make install
+```bash
+cd /usr/ports/textproc/antiword
+make install
+```
 
-**Install Unrtf**
+Install RTF support:
 
-    cd /usr/ports/textproc/unrtf  
-    make install
+```bash
+cd /usr/ports/textproc/unrtf
+make install
+```
 
-**Install Catdvi**
+Install DVI support:
 
-    cd /usr/ports/print/catdvi  
-    make install
+```bash
+cd /usr/ports/print/catdvi
+make install
+```
 
-Next we need to edit Apache’s config-file (/usr/local/etc/apache22/httpd.conf)
+Add the following to your Apache configuration:
 
-Change:
+```text
+ScriptAlias /cgi-bin/ "/usr/local/www/apache22/cgi-bin/"
+```
 
-    ScriptAlias /cgi-bin/ “/usr/local/www/apache22/cgi-bin/”
+Or if you want to use a different path:
 
-Into:
+```text
+ScriptAlias /cgi-bin/ "/usr/local/www/xapian-omega/cgi-bin/"
+```
 
-    ScriptAlias /cgi-bin/ “/usr/local/www/xapian-omega/cgi-bin/”
+Start Apache:
 
-We also need to create a new config-file for Xapian. Create the file /usr/local/etc/apache22/Include/xapian.conf
+```bash
+/usr/local/etc/rc.d/apache22 start
+```
 
-        Alias /something /path/to/something
+Create the data directory:
 
-                Options Indexes
-                AllowOverride None
-                Order allow,deny
-                Allow from all
+```bash
+mkdir -p /usr/local/lib/omega/data/
+```
 
-            AllowOverride None
-            Options None
-            Order allow,deny
-            Allow from all
+Copy the templates:
 
-With all Apache configuration being done, let’s fire up Apache:
+```bash
+cp -rfv /usr/ports/www/xapian-omega/work/xapian-omega-*/templates /usr/local/lib/omega/
+```
 
-    /usr/local/etc/rc.d/apache22 start
+Configure Omega by adding the following to your configuration:
 
-Create the holding directory
+```text
+# Directory containing Xapian databases:
+database_dir /usr/local/lib/omega/data
 
-    mkdir -p /usr/local/lib/omega/data/
+# Directory containing OmegaScript templates:
+template_dir /usr/local/lib/omega/templates
 
-Copy over the templates. For some reason FreeBSD doesn’t do this by default.
+# Directory to write Omega logs to:
+log_dir /var/log/omega
 
-    cp -rfv /usr/ports/www/xapian-omega/work/xapian-omega-*/templates /usr/local/lib/omega/
+# Directory containing any cdb files for the $lookup OmegaScript command:
+cdb_dir /var/lib/omega/cdb
+```
 
-We also need to tell Xapian-Omega where to look for the files. Create the file /usr/local/www/xapian-omega/cgi-bin/omega.conf
+Add the following to your search form:
 
-    \# Directory containing Xapian databases:  
-    database_dir /usr/local/lib/omega/data
-
-    \# Directory containing OmegaScript templates:  
-    template_dir /usr/local/lib/omega/templates
-
-    \# Directory to write Omega logs to:  
-    log_dir /var/log/omega
-
-    \# Directory containing any cdb files for the $lookup OmegaScript command:  
-    cdb_dir /var/lib/omega/cdb
-
-Create a search page. I’ll just use index.html in Apache’s default DocumentRoot (/usr/local/www/apache22/data/index.html).
-
-    Match any word
-    Match all words
+```text
+Match any word
+Match all words
+```

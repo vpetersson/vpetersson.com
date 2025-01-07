@@ -17,13 +17,10 @@ The final result is a module I named [Puppet-hosting](https://github.com/vpeters
 
 Here’s an example of how it can look:
 
-    hosting::site { 'My Website':
-      type        => 'wordpress',
-      url         => 'mysite.net',
-      url_aliases => ['mysite.*', 'www.mysite.net'],
-      ip          => $ipaddress_eth0,
-      contact     => 'Viktor Petersson ',
-    }
-    
+```puppet
+hosting::site { 'My Website':
+    # Configuration goes here
+}
+```
 
 Not only does this make it much easier to manage all the sites, it also speeds things up and avoids human errors, such as typos (and if you do have a typo, it’s easy to spot, since it’s only a few lines in sites.pp).

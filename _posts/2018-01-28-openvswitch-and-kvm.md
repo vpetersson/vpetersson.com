@@ -31,20 +31,20 @@ In this article, we're going to use the example of setting up a pfSense box as a
 
 With the architecture planned out, let's get down and dirty and start by installing Open vSwitch on the server:
 
-```
+```bash
 sudo apt-get install openvswitch-switch
 ```
 
 Next, we need to configure Open vSwitch. First, we'll create a bridge called `ovsbridge` using the following command:
 
-```
+```bash
 sudo ovs-vsctl add-br ovsbridge
 sudo ovs-vsctl set port ovsbridge tag=200
 ```
 
 With that done, you now need to modify your `/etc/network/interfaces` file. It most likely looked something similar to this now:
 
-```
+```text
 auto eno1
     iface eno1 inet static
     address 192.168.200.4
@@ -55,7 +55,7 @@ auto eno1
 
 Now, in order for this to work with Open vSwitch, we need to make some changes to it and make it look like this:
 
-```
+```text
 auto eno1
 iface eno1 inet manual
 
@@ -69,7 +69,7 @@ iface ovsbridge inet static
 
 Once done, we need to make a risky change. We now need to move the interface into the bridge and restart the server
 
-```
+```bash
 $ sudo ovs-vsctl add-port ovsbridge eno1 \
     tag=200 trunk=100,201,202 && \
     sudo reboot now
@@ -77,7 +77,7 @@ $ sudo ovs-vsctl add-port ovsbridge eno1 \
 
 If you're lucky, the server now comes back online and is accessible remotely directly. If not, you may need to delete the bridge and add it again slightly differently (depending on your switch):
 
-```
+```bash
 $ sudo ovs-vsctl add-port ovsbridge eno1 \
     tag=200 trunk=100,201,202 \
     vlan_mode=native-tagged && \
@@ -88,7 +88,7 @@ $ sudo ovs-vsctl add-port ovsbridge eno1 \
 
 You can now create the pfSense VM using your preferred method. Mine is a combination `virt-manager` and `virsh`. Once you start the VM, edit the VM definition using `virsh edit`. Since we want to expose the VM to all our VLANs, we want to edit the network interface section to look something like this:
 
-```
+```xml
 <interface type='bridge'>
   <mac address='XX:YY:ZZ:ZZ:YY:ZZ'/>
   <source bridge='ovsbridge'/>
@@ -111,7 +111,7 @@ When you now boot up the VM, you should be able to access all of the specified V
 
 If however for some reason you only want to expose one VLAN to a given VM as an untagged VLAN, you can do so by using the following snippet:
 
-```
+```xml
 <source bridge='ovsbridge'/>
 <vlan>
   <tag id='200'/>

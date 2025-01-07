@@ -28,14 +28,16 @@ As crazy as this may sound, it did indeed do the trick. My laptop is now **a lot
 
 Rhys’ page includes a lot more details, but in summary, here’s what I did:
 
-    # Find the model
-    $ system_profiler -detailLevel mini | grep "Model Identifier:"
-    Model Identifier: MacBookPro8,2
+```bash
+# Find the model
+$ system_profiler -detailLevel mini | grep "Model Identifier:"
+Model Identifier: MacBookPro8,2
 
-    # Move and backup the file
-    $ mkdir -p ~/backup
-    $ cd /System/Library/Extensions/IOPlatformPluginFamily.kext/Contents/PlugIns/ACPI_SMC_PlatformPlugin.kext/Contents/Resources
-    $ sudo mv MacBookPro8_2.plist ~/backup/
+# Move and backup the file
+$ mkdir -p ~/backup
+$ cd /System/Library/Extensions/IOPlatformPluginFamily.kext/Contents/PlugIns/ACPI_SMC_PlatformPlugin.kext/Contents/Resources
+$ sudo mv MacBookPro8_2.plist ~/backup/
+```
 
 After moving the file above and rebooting the system, things looked a lot more sane. ![More sane kernel_task](/tumblr_files/tumblr_inline_ndj4y6oLJl1skxjxc.png)
 
@@ -44,3 +46,7 @@ Please note that **this is risky business** and there might be side-effects. It 
 **Update:** After about a week, I can confirm that this had no negative impact at all as far as I can tell. Battery life and performance was improved.
 
 **Update 2:** Since El Capitan was released, a lot of people have been having issues applying this fix. Since it is a bit different, I’ve published a new post that covers how to do this on El Capitan: [How to fix kernel_task CPU usage on El Capitan](/2016/01/03/how-to-fix-kerneltask-cpu-usage-on-el-capitan.html).
+
+```bash
+sudo sysctl debug.lowpri_throttle_enabled=0
+```

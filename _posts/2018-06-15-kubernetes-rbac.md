@@ -35,13 +35,13 @@ This is vastly simplified, but that should hopefully help you wrap your head aro
 
 First, we create namespace to stash our deployment into:
 
-```
+```bash
 kubectl create ns lockdown
 ```
 
 Next, we need to create a service account (which we will call 'sa-lockdown'):
 
-```
+```bash
 kubectl create serviceaccount --namespace lockdown sa-lockdown
 ```
 
@@ -49,7 +49,7 @@ We now need to create the [role](https://github.com/vpetersson/rbac-example/blob
 
 The role will look like this:
 
-```
+```yaml
 kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
@@ -66,7 +66,7 @@ The important part here to note is that we simply do not define any explicit rul
 
 Next, we need to define a RoleBinding to map the Role to the Service Account we created earlier:
 
-```
+```yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
@@ -84,7 +84,7 @@ Apply the role using `kubectl create -f rolebinding.yaml`.
 
 With that applied, we can now check the permission using the `can-` feature:
 
-```
+```bash
 $ kubectl auth can-i get pods \
         --namespace lockdown \
         --as system:serviceaccount:lockdown:sa-lockdown
@@ -93,7 +93,7 @@ no
 
 Lastly, we can create our Nginx deployment:
 
-```
+```yaml
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
@@ -123,7 +123,7 @@ That's it. You are now running a fully locked down Nginx container (as far as RB
 
 Many (most?) deployments require things like ConfigMaps and Secrets. As such, we need to modify our approach slightly and grant explicit access to this. Fortunately, this is very straight forward too. All we really need to do (in addition to creating the Secrets) is to modify our role definition to look something like this:
 
-```
+```yaml
 kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:

@@ -13,40 +13,42 @@ The process is pretty straight forward, and I’m writing this as a ‘Note-to-s
 
 Start by identifying the device as the system know it (ie. /dev/sdX or /dev/hdX). The following commands should provide you with the information:
 
-    cat /proc/mdstat
+```bash
+cat /proc/mdstat
+```
 
-    mdadm --detail /dev/mdX
+You can also get more details by running:
 
-    cat /var/log/messages | grep -e "/dev/hd" -e "/dev/sd"
+```bash
+mdadm --detail /dev/mdX
+```
 
-Once you’ve identified the drive, you want to know something more about this drive, as /dev/sdX doesn’t really tell us how the drive looks like. In my case, I have three identical drives, so the following command didn’t help me much, but maybe it does for you.
+Next, check your logs to see what drive failed:
 
-    hdparm -i /dev/sdX
+```bash
+cat /var/log/messages | grep -e "/dev/hd" -e "/dev/sd"
+```
 
-That should give you both the model, brand and in some cases even the serial number. Hence this should be plenty to identify the drive physically.
+You can also get more details about your drive by running:
 
-### Replace the drive
+```bash
+hdparm -i /dev/sdX
+```
 
-Not much to be said here. I assume you already know this, but you need a drive of equal size or larger.
+Once you've identified the failed drive and replaced it with a new one, you need to copy the partition table from the working drive to the new drive:
 
-### Partition the new drive
+```bash
+sfdisk -d /dev/sdY | sfdisk /dev/sdX
+```
 
-If your system boot up in degraded mode, then just boot up your system. If not, boot it off of a Live CD (I used Ubuntu’s LiveCD in ‘Rescue mode’).
+With the partition table in place, you can now add the drive back to the array:
 
-Once you’ve made it to a console, the first thing we need to do is to partition the new hard drive. The easiest way to do this is to use sfdisk and use one of the existing disks as the template.
+```bash
+mdadm /dev/mdZ -a /dev/sdX1
+```
 
-    sfdisk -d /dev/sdY | sfdisk /dev/sdX
+You can now monitor the rebuild process by running:
 
-(where sdY is a working drive in the array, and sdX is your new drive)
-
-### Rebuilding the array
-
-The final step is to add the new drive to the array. Doing this is surprisingly easy. Just type the following command:
-
-    mdadm /dev/mdZ -a /dev/sdX1
-
-(assuming you want to add the partition sdX1 to the RAID array mdZ)
-
-Of that went fine, the system will now automatically rebuild the array. You can monitor the status by running the following command:
-
-    cat /proc/mdstat
+```bash
+cat /proc/mdstat
+```

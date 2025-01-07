@@ -26,7 +26,6 @@ To do this, you will need to do the following
     $ echo 'DOCKER_OPTS="--exec-driver=lxc"' \
         | sudo tee -a /etc/default/docker
     $ sudo service docker restart
-    
 
 Spin up two containers without cgroup policy
 --------------------------------------------
@@ -35,7 +34,6 @@ Let’s start by launching two containers that each will max out the CPU (by run
 
     docker run -d busybox md5sum /dev/urandom
     docker run -d busybox md5sum /dev/urandom
-    
 
 ![Docker containers running without cgroup policy](/tumblr_files/tumblr_inline_nmbyklbgPw1skxjxc_540.png)
 
@@ -52,7 +50,6 @@ Start container with low priority:
         --lxc-conf="lxc.cgroup.cpu.shares=250" \ 
         --lxc-conf="lxc.cgroup.cpuset.cpus=0" \
         busybox md5sum /dev/urandom
-    
 
 Start container with high priority:
 
@@ -60,7 +57,6 @@ Start container with high priority:
         --lxc-conf="lxc.cgroup.cpu.shares=750" \ 
         --lxc-conf="lxc.cgroup.cpuset.cpus=0" \
         busybox md5sum /dev/urandom
-    
 
 ![Docker containers running with cgroup policy](/tumblr_files/tumblr_inline_nmbyk9EJyj1skxjxc_540.png)
 

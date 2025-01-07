@@ -27,19 +27,21 @@ With the hardware ready, we now need a daemon or similar that runs on your compu
 
 Here’s an example of a very primitive version of such script. All it does is to check for the file every second, and if it is absent, it will lock the computer (assuming you’re using OS X):
 
-    #!/bin/bash
+```bash
+#!/bin/bash
 
-    # Where is the file located?
-    # Should be something like "/Volumes/<disk label>/<file name> on OS X.
-    WATCHFILE="/path/to/file"
+# Where is the file located?
+# Should be something like "/Volumes/<disk label>/<file name> on OS X.
+WATCHFILE="/path/to/file"
 
-    while true; do
-        if [ -f "$WATCHFILE" ]; then
-            sleep 1
-        else
-            /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
-        fi
-    done
+while true; do
+    if [ -f "$WATCHFILE" ]; then
+        sleep 1
+    else
+        /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
+    fi
+done
+```
 
 _(This script is clearly more meant as a proof-of-concept than for usage in a high security environment.)_
 

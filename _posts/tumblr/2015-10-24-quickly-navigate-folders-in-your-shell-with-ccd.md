@@ -17,19 +17,17 @@ Normally, this would simply be:
 
     mkdir foo
     cd foo
-    
 
 This feels somewhat inefficient, so I wrote a little tool to help with this called `ccd`:
 
     ccd foo
-    
 
 The tool is very simple, but saves me a number of keystrokes every day. There are two pieces to the tool: one bash script and one entry in `~/.profile`.
 
 ### ~/bin/ccd.sh
 
     #!/bin/bash
-    
+
     ARG="$1"
     if [ ! -d "$ARG"  ]; then
         echo "Creating $ARG."
@@ -37,9 +35,8 @@ The tool is very simple, but saves me a number of keystrokes every day. There ar
     else
         echo "$ARG already exists."
     fi
-    
+
     cd "$(pwd)/$1"
-    
 
 Once you have installed the script, just set the right permission with `chmod +x ~/bin/ccd.sh`
 
@@ -48,6 +45,10 @@ Once you have installed the script, just set the right permission with `chmod +x
 Lastly, you will need to add the following entry to your `~/.profile` file:
 
     alias ccd="source ~/bin/ccd.sh"
-    
 
 Finally, either reload your shell, or run `source ~/.profile`.
+
+    cd /usr/local/src/
+    git clone https://github.com/vpetersson/ccd.git
+    cd ccd
+    sudo make install

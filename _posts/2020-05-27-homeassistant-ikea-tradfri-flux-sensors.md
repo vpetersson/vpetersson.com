@@ -50,16 +50,16 @@ In summary, I strongly recommend that you setup HA in a VM rather than a Raspber
 
 Launching HA on a VM with Docker installed is very straight forward. Here’s the launch script that I’m using:
 
-```
+```bash
 #!/bin/bash
 
 VERSION=stable
 
 echo "Upgrading from: $(docker inspect home-assistant | jq '.[0].Image')"
-docker pull homeassistant/home-assistant:${VERSION}
-docker kill home-assistant
-docker rm home-assistant
-docker run \
+$ docker pull homeassistant/home-assistant:${VERSION}
+$ docker kill home-assistant
+$ docker rm home-assistant
+$ docker run \
     --init -d \
     --restart always \
     --name="home-assistant" \
@@ -69,11 +69,11 @@ docker run \
     homeassistant/home-assistant:${VERSION}
 
 # These steps may no longer be needed
-docker exec home-assistant pip3 install --no-cache-dir -q --upgrade pip
-docker exec home-assistant pip3 install --no-cache-dir -q -U pymysql
+$ docker exec home-assistant pip3 install --no-cache-dir -q --upgrade pip
+$ docker exec home-assistant pip3 install --no-cache-dir -q -U pymysql
 
 echo "Now running: $(docker inspect home-assistant | jq '.[0].Image')"
-docker system prune -f
+$ docker system prune -f
 ```
 
 You can find more information on how to run HA with Docker [here](https://www.home-assistant.io/docs/installation/docker/).
@@ -120,7 +120,7 @@ Since I have both types of IKEA lights, I need to have two distinct Flux configu
 
 For the yellow+white spectrum lights, the configuration looks like this:
 
-```
+```yaml
 switch:
   - platform: flux
     lights:
@@ -134,7 +134,7 @@ switch:
 
 For the yellow-only lights, the configuration looks like this:
 
-```
+```yaml
   - platform: flux
     lights:
       - light.tradfri_bulb

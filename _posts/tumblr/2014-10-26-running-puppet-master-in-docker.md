@@ -34,7 +34,6 @@ To create your own Puppet master using my container, all you need to do is to ru
       -v /path/to/modules:/etc/puppet/modules \
       -v /path/to/manifests:/etc/puppet/manifests \
       -t vpetersson/puppetmaster
-    
 
 The command above might seem a bit overwhelming, and you can find more detailed information about the command and how to use the container over at its home at [github](https://github.com/vpetersson/docker-puppetmaster).
 

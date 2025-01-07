@@ -23,13 +23,11 @@ Since Grub uses a slightly different device mapper, let’s use it to find the p
 
     grub> ls
     (hd0) (hd0,msdos5) (hd1) (hd1,msdos0)
-    
 
 This will show you the available devices. In my case, the relevant partition was `(hd1,msdos1)`. Now, let’s use this information, along with our knowledge of where the `vmlinuz` and `initrd` files are to boot the system:
 
     grub> linux (hd1,msdos1)/install/vmlinuz root=/dev/sdb1
     grub> initrd (hd1,msdos1)/install/initrd.gz
     grub> boot
-    
 
 That’s it. You should now be able to boot straight into Ubuntu. This should even work if your BIOS doesn’t support booting off of USB.

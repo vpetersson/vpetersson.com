@@ -32,14 +32,12 @@ In theory, you should now verify the hashes, but I wasn’t able to get mine to 
     $ md5 *.crt
     MD5 (api.crt) = 9107ba5545a000ea06cd5fd046102c14
     MD5 (intermediate.crt) = 413a2acb5b07cd49cbf916eefcf3ba33
-    
 
 (Please note that this of course will change whenver Logentries updates their certificates.)
 
 With these certificates, we now need to generate a combined certificate that we’ll ship to the nodes. To do this, simply run:
 
     cat {intermediate.crt,api.crt} > logentries_full.crt
-    
 
 If you’re lazy, you can also fetch mine from [here](https://gist.githubusercontent.com/vpetersson/e9965d8e27aa0a2a71c7/raw/c911ec6bb11c4866ff7c8cdc01052d8998887bf2/gistfile1.txt).
 
@@ -47,7 +45,6 @@ The md5sum for this certificate should be:
 
     $ md5 logentries_full.crt
     MD5 (logentries_full.crt) = 3918fcd927bb98fa2c23a46e5a4b7820
-    
 
 (Again, this will of course also change whenver Logentries updates their certificates.)
 
@@ -80,7 +77,6 @@ Now create the file `/etc/syslog-ng/conf.d/22-logentries.conf` and populate it w
     log {
       source(s_all); destination(d_network_logentries);
     };
-    
 
 Replace YOURTOKEN with the actual token from Logentries. You also might change some elements in this file to better fit your needs, but what’s important here is the destination-block, which is what is dealing with the TLS aspect.
 
@@ -92,11 +88,9 @@ Troubleshooting
 If you’re having issues getting this started, the first thing to do is to check the actual logs. There should be a line similar to this if it worked:
 
     Syslog connection established; fd='11', server='AF_INET(a.b.c.d:20000)', local='AF_INET(0.0.0.0:0)'
-    
 
 You might also want to sniff the traffic to verify that the traffic sent out actually is encrypted. You can do that easily with `tcpdump` as follows:
 
     tcpdump -A dst api.logentries.com
-    
 
 Happy hacking!

@@ -17,8 +17,8 @@ Here's the problem:
 * You are trying to upgrade your Raspberry Pi to the latest version
 * When you upgrade the kernel, it chokes with an error like this:
 
-```
-> $ sudo apt upgrade
+```bash
+$ sudo apt upgrade
 Reading package lists... Done
 Building dependency tree
 Reading state information... Done
@@ -66,9 +66,9 @@ E: Sub-process /usr/bin/dpkg returned an error code (1)
 
 After wasting far too much time trying to debug this, I found that there was an easy solution: simply remount `/boot`.
 
-```
-> $ sudo umount /boot
-> $ sudo mount /boot
+```bash
+sudo umount /boot
+sudo mount /boot
 ```
 
 Now, I don't know what the exact root cause is, but it's likely something to do with the fact that `/boot` is mounted as vfat and for whatever reason there is some kind of lock or similar that happens after you've run the device for some time.

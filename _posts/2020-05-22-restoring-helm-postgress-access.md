@@ -16,7 +16,7 @@ To restore access, you need to to jump in to your PostgreSQL container (`kubectl
 
 From within the container, run the following commands:
 
-```
+```bash
 sed -i 's/md5/trust/' /opt/bitnami/postgresql/conf/pg_hba.conf
 pkill -HUP postgres
 ```
@@ -25,7 +25,7 @@ This will allow us to access the PostgreSQL server **without** authentication an
 
 Next, login to the PostgreSQL server and set a password:
 
-```
+```sql
 $ psql -h 127.0.0.1 -U postgres
 psql (11.5)
 Type "help" for help.
@@ -37,7 +37,7 @@ postgres=# \q
 
 Finally, kill the PostgreSQL server, which should automatically terminate your connection:
 
-```
+```bash
 $ pkill postgres
 command terminated with exit code 137
 ```

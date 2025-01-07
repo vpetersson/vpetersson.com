@@ -31,26 +31,26 @@ With the virtual IP(s) created, it's now time to prepare the server. Start by SS
 
 Install ezjail package:
 
-```
+```bash
 pkg add http://pkg.freebsd.org/freebsd:11:x86:64/latest/All/ezjail-3.4.2.txz
 ```
 
 Brute force link to make jails to work:
 
-```
+```bash
 ln -s /lib/libkvm.so.7 /lib/libkvm.so.6
 ```
 
 Download missing jail file:
 
-```
+```bash
 curl -o /etc/rc.d/jail https://raw.githubusercontent.com/freebsd/freebsd/stable/11/etc/rc.d/jail
 chmod +x /etc/rc.d/jail
 ```
 
 Enable and initiate ezjail:
 
-```
+```bash
 echo 'ezjail_enable="YES"' | tee -a /etc/rc.conf.local
 ezjail-admin install
 ```
@@ -59,13 +59,13 @@ ezjail-admin install
 
 Next up, let's create a jail called 'labjail.local' with the IP 127.0.1.10:
 
-```
+```bash
 ezjail-admin create labjail.local 'lo0|127.0.1.10'
 ```
 
 We also need to fix a bug in the configuration for it to work:
 
-```
+```bash
 $ sed -I \
     -e 's/procfs_enable=\"YES\"/procfs_enable=\"NO\"/g' \
     /usr/local/etc/ezjail/labjail_local
@@ -73,13 +73,13 @@ $ sed -I \
 
 We can now start the jail by running:
 
-```
+```bash
 ezjail start labjail.local
 ```
 
 We can also verify the result by running:
 
-```
+```bash
 $ ezjail list
 STA JID  IP              Hostname                       Root Directory
 --- ---- --------------- ------------------------------ ------------------------
@@ -90,7 +90,7 @@ DR  1    127.0.1.10      labjail.local                  /usr/jails/labjail.local
 
 Once the jail is up and running, you can access it by running:
 
-```
+```bash
 ezjail console labjail.local
 ```
 

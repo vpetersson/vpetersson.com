@@ -28,12 +28,10 @@ The script looks as follows:
     export GCE_PEM_FILE_PATH=~/.gce/$GCE_PROJECT\.json
     export GCE_EMAIL=$(grep client_email $GCE_PEM_FILE_PATH | sed -e 's/  "client_email": "//g' -e 's/",//g')
     gcloud config set project $GCE_PROJECT
-    
 
 Just change `GCE_PROJECT` to match your setup, and then run:
 
     source /path/to/script.sh
-    
 
 You can now run Ansible with the GCE inventory file.
 

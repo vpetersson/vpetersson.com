@@ -31,7 +31,7 @@ The way it works is rather elegant. When you enable MagicDNS, you get a domain a
 
 Just like with regular Let's Encrypt certificates, these are semi short-lived and thus need to be renewed periodically. As such, we need to automate this renewal on all our hosts with a simple systemd service:
 
-```yaml
+```systemd
 # /etc/systemd/system/tailscale-cert.service
 [Unit]
 Description=Tailscale SSL Service Renewal
@@ -51,7 +51,7 @@ ExecStart=tailscale cert ${HOSTNAME}.${DOMAIN}
 WantedBy=multi-user.target
 ```
 
-```yaml
+```systemd
 # /etc/systemd/system/tailscale-cert.timer
 [Unit]
 Description=Renew Tailscale cert
@@ -143,13 +143,13 @@ influxdb:
 
 Setting up Tailscale on Proxmox was just like any other system. The somewhat tricky part was to consume the certificate. To accomplish this, I added the following line after `ExecStart` in `/etc/systemd/system/tailscale-cert.service`, which instructs Proxmox to use the certificates issued from Tailscale:
 
-```yaml
+```systemd
 ExecStartPost=pvenode cert set /etc/ssl/private/${HOSTNAME}.foobar.ts.net.crt /etc/ssl/private/${HOSTNAME}.foobar.ts.net.key --force 1 --restart 1
 ```
 
 Somewhat unrelated to the certificates, but in order to install Tailscale on an LXC container, you need to run it in privileged mode as per [this document](https://tailscale.com/kb/1130/lxc-unprivileged/) and add to the config:
 
-```
+```config
 lxc.cgroup2.devices.allow: c 10:200 rwm
 lxc.mount.entry: /dev/net/tun dev/net/tun none bind,create=file
 ```
@@ -160,7 +160,7 @@ Note that you can't move a container to privileged mode from unprivileged, as th
 
 To use the certificate with MariaDB/MySQL, we need to modify our setup slightly to accommodate permissions.
 
-```yaml
+```systemd
 # /etc/systemd/system/tailscale-cert.service
 [Unit]
 Description=Tailscale SSL Service Renewal
@@ -218,7 +218,7 @@ Much like MariaDB/MySQL, setting up InfluxDB requires a bit extra work with perm
 
 We start with a unit that fires a Bash script
 
-```yaml
+```systemd
 #/etc/systemd/system/tailscale-cert.service
 [Unit]
 Description=Tailscale SSL Service Renewal

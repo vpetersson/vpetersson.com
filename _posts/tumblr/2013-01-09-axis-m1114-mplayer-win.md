@@ -24,7 +24,6 @@ Since this is a low-powered computer with a rather powerful GPU (Nvidia ION), I 
         mplayer -nosound -display :0 -quiet -vo vdpau -vc ffh264vdpau -fs rtsp://cam0/axis-media/media.amp?videocodec=h264 -rtsp-stream-over-tcp -hardframedrop
         sleep 2
     done
-    
 
 **cam1.sh**
 
@@ -35,7 +34,6 @@ Since this is a low-powered computer with a rather powerful GPU (Nvidia ION), I 
         mplayer -nosound -display :0.1 -quiet -vo vdpau -vc ffh264vdpau -fs rtsp://cam1/axis-media/media.amp?videocodec=h264 -rtsp-stream-over-tcp -hardframedrop
         sleep 2
     done
-    
 
 Simple as pie! Even with two streams, the computer is at 99% idle. Also, even if the power goes out, the computer will automatically boot up and show the stream.
 

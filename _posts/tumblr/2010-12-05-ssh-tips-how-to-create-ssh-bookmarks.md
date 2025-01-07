@@ -14,8 +14,8 @@ If you’re like me, you spend a lot of time in the terminal window. It’s not 
 Many people do not know that SSH comes with a bookmarkish feature out-of-the-box. All you need to do is to open up _~/.ssh/config_ (create it if it doesn’t exist) and add something like this:
 
 > host foobar  
->  hostname aaa.bbb.ccc.ddd  
->  port 2224
+> hostname aaa.bbb.ccc.ddd  
+> port 2224
 
 (Please note that the second and third lines are indented with a space.)
 

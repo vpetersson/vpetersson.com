@@ -22,7 +22,7 @@ Before we begin, go ahead and create a VM in Proxmox's interface. Make sure to d
 
 Once done, take note of the VM ID (as we'll need that below) and what pool (you can use `pvesm status` to list your pools) you want to use. With this information, it's now time to SSH into the server and download the disk image and import it Proxmox.
 
-```
+```bash
 wget http://cdimage.ubuntu.com/ubuntu-core/18/stable/current/ubuntu-core-18-amd64.img.xz
 unxz ubuntu-core-18-amd64.img.xz
 qm importdisk $VM-ID ubuntu-core-18-amd64.img $DRIVE-POOL
