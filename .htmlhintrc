@@ -19,5 +19,6 @@
   "space-tab-mixed-disabled": "space",
   "id-class-ad-disabled": false,
   "href-abs-or-rel": false,
-  "attr-unsafe-chars": true
+  "attr-unsafe-chars": true,
+  "ignore": "_site/**"
 }

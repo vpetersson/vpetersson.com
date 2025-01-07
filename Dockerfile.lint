@@ -9,23 +9,14 @@ RUN apt-get update && \
 
 WORKDIR /app
 
-# Install Node.js linting tools
-RUN npm install -g \
-    stylelint \
-    stylelint-config-standard \
-    stylelint-config-tailwindcss \
-    htmlhint \
-    eslint@8.56.0 \
-    eslint-config-standard \
-    eslint-plugin-import \
-    eslint-plugin-n \
-    eslint-plugin-promise \
-    markdownlint-cli
+# Copy package files and install dependencies
+COPY package*.json ./
+RUN npm ci
 
 # Copy linting configurations
 COPY .stylelintrc.json .htmlhintrc .eslintrc.js .markdownlint.json ./
 
-# Copy and make the linting script executable
+# Copy and make the lint script executable
 COPY scripts/lint-all.sh ./scripts/
 RUN chmod +x ./scripts/lint-all.sh
 

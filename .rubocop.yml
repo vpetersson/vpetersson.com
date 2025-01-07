@@ -1,6 +1,8 @@
 AllCops:
   NewCops: enable
   TargetRubyVersion: 3.0
+  Exclude:
+    - '_site/**/*'
 
 Style/StringLiterals:
   Enabled: true

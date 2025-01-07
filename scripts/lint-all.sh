@@ -12,28 +12,28 @@ fi
 
 EXIT_CODE=0
 
-echo -e "\nRunning CSS linting..."
-if ! stylelint "**/*.css" --ignore-pattern "_site/**" $FIX_ARG; then
+echo "\nRunning CSS linting..."
+if ! ./node_modules/.bin/stylelint "**/*.css" $FIX_ARG; then
     EXIT_CODE=1
 fi
 
-echo -e "\nRunning HTML linting..."
-if ! htmlhint "**/*.html" --ignore "_site/**"; then
+echo "\nRunning HTML linting..."
+if ! ./node_modules/.bin/htmlhint "**/*.html"; then
     EXIT_CODE=1
 fi
 
-echo -e "\nRunning JavaScript linting..."
-if ! eslint "**/*.js" --ignore-pattern "_site/**" $FIX_ARG; then
+echo "\nRunning JavaScript linting..."
+if ! ./node_modules/.bin/eslint . --ext .js $FIX_ARG; then
     EXIT_CODE=1
 fi
 
-echo -e "\nRunning Markdown linting..."
-if ! markdownlint "**/*.md" --ignore "_site/**" $FIX_ARG; then
+echo "\nRunning Markdown linting..."
+if ! ./node_modules/.bin/markdownlint "**/*.md" --ignore "node_modules/**" $FIX_ARG; then
     EXIT_CODE=1
 fi
 
-echo -e "\nRunning Ruby linting..."
-if ! find . -name "*.rb" -not -path "./_site/*" -exec rubocop $([[ -n "$FIX_ARG" ]] && echo "-A") {} +; then
+echo "\nRunning Ruby linting..."
+if ! find . -name "*.rb" -exec rubocop $([[ -n "$FIX_ARG" ]] && echo "-A") {} +; then
     EXIT_CODE=1
 fi
 

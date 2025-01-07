@@ -2,12 +2,15 @@
   "name": "blog",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/vpetersson/blog.viktorpetersson.com.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vpetersson/blog.viktorpetersson.com.git"
+  },
   "author": "Devan Thakur <devanthakur89@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build:css": "./node_modules/.bin/postcss _assets/css/tailwind.css -o assets/css/styles.css",
-    "watch:css": "./node_modules/.bin/postcss _assets/css/tailwind.css -o assets/css/styles.css --watch",
+    "build:css": "postcss _assets/css/tailwind.css -o assets/css/styles.css",
+    "watch:css": "postcss _assets/css/tailwind.css -o assets/css/styles.css --watch",
     "lint": "scripts/lint-all.sh"
   },
   "dependencies": {
@@ -27,5 +30,11 @@
     "stylelint": "^16.2.1",
     "stylelint-config-standard": "^36.0.0",
     "stylelint-config-tailwindcss": "^0.0.7"
-  }
+  },
+  "description": "## Adding new gems",
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/vpetersson/blog.viktorpetersson.com/issues"
+  },
+  "homepage": "https://github.com/vpetersson/blog.viktorpetersson.com#readme"
 }

@@ -3,6 +3,7 @@
     "stylelint-config-standard",
     "stylelint-config-tailwindcss"
   ],
+  "ignoreFiles": ["_site/**"],
   "rules": {
     "declaration-block-single-line-max-declarations": 1,
     "block-no-empty": true,

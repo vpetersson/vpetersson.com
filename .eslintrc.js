@@ -1,15 +1,10 @@
 module.exports = {
-  'env': {
-    'browser': true,
-    'es2021': true
+  env: {
+    browser: true,
+    es2021: true
   },
-  'parserOptions': {
-    'ecmaVersion': 'latest',
-    'sourceType': 'module'
-  },
-  'rules': {
-    'no-console': 'warn',
-    'semi': ['error', 'always'],
-    'quotes': ['error', 'single']
+  ignorePatterns: ['assets/js/lunr.min.js'],
+  rules: {
+    'no-console': 'warn'
   }
 };
