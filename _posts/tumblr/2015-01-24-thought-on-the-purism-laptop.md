@@ -14,9 +14,9 @@ Today I stumbled across the [Purism](http://puri.sm/)’s Librem 15 laptop. It�
 
 At first glance, it looks pretty good. However after diving into the details, it falls short on a few points.
 
-*   The keyboard layout. A number pad? Is this a laptop designed for accountants? Those are probably the only people still using the number pad. Also, because of this the ‘center’ of the keyboard is moved to the left, which makes it look unbalanced.
-*   A CD drive? How often do you _really_ use a CD drive? I use a few time a year tops. For those few occasions, it’s easier to use an external drive. The extra weight does not justify this.
-*   The form factor. 13" is the new 15". People carry their laptops with them everywhere these days. Weight and size matters a lot. Most people I know are either using 11" or 13" laptops.
+* The keyboard layout. A number pad? Is this a laptop designed for accountants? Those are probably the only people still using the number pad. Also, because of this the ‘center’ of the keyboard is moved to the left, which makes it look unbalanced.
+* A CD drive? How often do you _really_ use a CD drive? I use a few time a year tops. For those few occasions, it’s easier to use an external drive. The extra weight does not justify this.
+* The form factor. 13" is the new 15". People carry their laptops with them everywhere these days. Weight and size matters a lot. Most people I know are either using 11" or 13" laptops.
 
 Don’t get me wrong, I _really_ want these guys to succeed. The task of creating a laptop from scratch is far from trivial, so I salute them. Unfortunately the points above are show-stoppers for me.
 

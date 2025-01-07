@@ -12,4 +12,3 @@ I’m excited to announce that we’ve released a major update to Screenly. As y
 You can take the new interface for a spin [here](http://ose.demo.screenlyapp.com). For upgrade instructions, please take a look [here](http://www.screenlyapp.com/ose.html#upgrade).
 
 More information about Screenly is available [here](http://www.screenlyapp.com).
-

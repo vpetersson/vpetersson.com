@@ -18,33 +18,33 @@ Enter [Open vSwitch](http://openvswitch.org/). Contrary to Bridge interfaces, Op
 
 Before we begin, you will need the following:
 
- * A layer 2 switch (with VLAN support)
- * A modern server with Ubuntu 16.04 installed (the instructions will likely be similar on other OSes too)
- * Physical access to the server (with a keyboard) in case something goes wrong
+* A layer 2 switch (with VLAN support)
+* A modern server with Ubuntu 16.04 installed (the instructions will likely be similar on other OSes too)
+* Physical access to the server (with a keyboard) in case something goes wrong
 
 In this article, we're going to use the example of setting up a pfSense box as a VM with multiple VLANs exposed. We will assume the following VLAN setup and that you've already configured this in the switch:
 
- * VLAN 100 - WAN
- * VLAN 200 - LAN 1 (default)
- * VLAN 201 - LAN 2
- * VLAN 202 - LAN 3
+* VLAN 100 - WAN
+* VLAN 200 - LAN 1 (default)
+* VLAN 201 - LAN 2
+* VLAN 202 - LAN 3
 
 With the architecture planned out, let's get down and dirty and start by installing Open vSwitch on the server:
 
-```
-$ sudo apt-get install openvswitch-switch
+```bash
+sudo apt-get install openvswitch-switch
 ```
 
 Next, we need to configure Open vSwitch. First, we'll create a bridge called `ovsbridge` using the following command:
 
-```
-$ sudo ovs-vsctl add-br ovsbridge
-$ sudo ovs-vsctl set port ovsbridge tag=200
+```bash
+sudo ovs-vsctl add-br ovsbridge
+sudo ovs-vsctl set port ovsbridge tag=200
 ```
 
 With that done, you now need to modify your `/etc/network/interfaces` file. It most likely looked something similar to this now:
 
-```
+```text
 auto eno1
     iface eno1 inet static
     address 192.168.200.4
@@ -55,7 +55,7 @@ auto eno1
 
 Now, in order for this to work with Open vSwitch, we need to make some changes to it and make it look like this:
 
-```
+```text
 auto eno1
 iface eno1 inet manual
 
@@ -69,7 +69,7 @@ iface ovsbridge inet static
 
 Once done, we need to make a risky change. We now need to move the interface into the bridge and restart the server
 
-```
+```bash
 $ sudo ovs-vsctl add-port ovsbridge eno1 \
     tag=200 trunk=100,201,202 && \
     sudo reboot now
@@ -77,7 +77,7 @@ $ sudo ovs-vsctl add-port ovsbridge eno1 \
 
 If you're lucky, the server now comes back online and is accessible remotely directly. If not, you may need to delete the bridge and add it again slightly differently (depending on your switch):
 
-```
+```bash
 $ sudo ovs-vsctl add-port ovsbridge eno1 \
     tag=200 trunk=100,201,202 \
     vlan_mode=native-tagged && \
@@ -88,8 +88,7 @@ $ sudo ovs-vsctl add-port ovsbridge eno1 \
 
 You can now create the pfSense VM using your preferred method. Mine is a combination `virt-manager` and `virsh`. Once you start the VM, edit the VM definition using `virsh edit`. Since we want to expose the VM to all our VLANs, we want to edit the network interface section to look something like this:
 
-
-```
+```xml
 <interface type='bridge'>
   <mac address='XX:YY:ZZ:ZZ:YY:ZZ'/>
   <source bridge='ovsbridge'/>
@@ -110,10 +109,9 @@ You can now create the pfSense VM using your preferred method. Mine is a combina
 
 When you now boot up the VM, you should be able to access all of the specified VLANs in pfSense's setup and define them as outlined above.
 
-
 If however for some reason you only want to expose one VLAN to a given VM as an untagged VLAN, you can do so by using the following snippet:
 
-```
+```xml
 <source bridge='ovsbridge'/>
 <vlan>
   <tag id='200'/>
@@ -126,7 +124,6 @@ If however for some reason you only want to expose one VLAN to a given VM as an 
 ## Final notes
 
 This should hopefully help you get started with Open vSwitch. It's a big topic, so there's plenty to learn and this article by no means intends to cover it all. I would also encourage you again to take a look at SoulChild's great write-up on the [pfSense forum](https://forum.pfsense.org/index.php?topic=139045.0) if you're having any issues.
-
 
 ## Update
 

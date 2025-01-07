@@ -25,32 +25,32 @@ I whipped up a quick helper script that generates the certificate, along with a 
 ```bash
 #!/bin/bash -ex
 
-TS="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+$ TS="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 
 # Return the FQDN from Tailscale with some magic
-FQDN=$($TS status --json | jq -r '.Self.DNSName' | sed s/.$//g)
+$ FQDN=$($TS status --json | jq -r '.Self.DNSName' | sed s/.$//g)
 
-CERT_PATH="$HOME/Library/Containers/io.tailscale.ipn.macos/Data"
+$ CERT_PATH="$HOME/Library/Containers/io.tailscale.ipn.macos/Data"
 
-echo "Issuing certificates..."
-"$TS" cert "$FQDN"
+$ echo "Issuing certificates..."
+$ "$TS" cert "$FQDN"
 
-echo "Generating PKCS#12 bundle..."
-echo "You will need to enter a password here, which you will later use when importing the certificate"
-openssl pkcs12 -export \
+$ echo "Generating PKCS#12 bundle..."
+$ echo "You will need to enter a password here, which you will later use when importing the certificate"
+$ openssl pkcs12 -export \
     -out "$CERT_PATH/$FQDN.p12" \
     -inkey "$CERT_PATH/$FQDN.key" \
     -in "$CERT_PATH/$FQDN.crt" \
     -name "Tailscale cert"
 
 # Verify certificate
-echo "Let's verify the .p12 file for good measure."
-openssl pkcs12 -info \
+$ echo "Let's verify the .p12 file for good measure."
+$ openssl pkcs12 -info \
     -in "$CERT_PATH/$FQDN.p12"
 
-echo "Opening folder..."
-echo "Now you can import this certificate into Firefox."
-open "$CERT_PATH"
+$ echo "Opening folder..."
+$ echo "Now you can import this certificate into Firefox."
+$ open "$CERT_PATH"
 ```
 
 If you're on Linux, you should be able to just use the `tailscale cert` command to output your certificate to a directory of your choice and then run the `openssl pkcs12` command to generate the PKCS#12 bundle.

@@ -63,4 +63,5 @@ It’s also important to not burn yourself out. If you have to stay late and wor
 My favorite tools right now include Slack, plain old email, Zoom, Git, and shared google docs.
 
 ## Looking to learn more?
+
 While you're here, I'm thinking about writing a book on this topic. [Sign up here](http://eepurl.com/gtzNfb) for updates.

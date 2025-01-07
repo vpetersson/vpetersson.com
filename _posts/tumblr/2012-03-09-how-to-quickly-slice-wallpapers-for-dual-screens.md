@@ -15,11 +15,11 @@ Now, in order to properly use these, you need to slice the image into two images
 
 Instead, let’s use the good ‘ol tool [ImageMagick](http://www.imagemagick.org/) (you can install it using [Homebrew](http://mxcl.github.com/homebrew/)).
 
-convert source.jpg -crop 1920x1080 sliced.jpg 
+convert source.jpg -crop 1920x1080 sliced.jpg
 
 And voilá — you know got two images. One for each screen:
 
-*   sliced-0.jpg
-*   sliced-1.jpg
+* sliced-0.jpg
+* sliced-1.jpg
 
 That wasn’t very hard, was it? If you have screens of different resolutions, that is a bit trickier, but ImageMagick should still be able to do it.

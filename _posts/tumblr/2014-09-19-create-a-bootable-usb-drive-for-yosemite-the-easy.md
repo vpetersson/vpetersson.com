@@ -16,8 +16,7 @@ Since installing from USB is the only way to do a _clean_ install, I started goo
 
 To my surprise, it appears as Apple also realized that this was messy and decided to bake in a solution for this. It isn’t however completely obvious, but here is the command:
 
-    $ sudo /Applications/Install\ OS\ X\ Yosemite\ Developer\ Preview.app/Contents/Resources/createinstallmedia --volume /Volumes/your_flash_drive / --applicationpath /Applications/Install\ OS\ X\ Yosemite\ Developer\ Preview.app/
-
+    sudo /Applications/Install\ OS\ X\ Yosemite\ Developer\ Preview.app/Contents/Resources/createinstallmedia --volume /Volumes/your_flash_drive / --applicationpath /Applications/Install\ OS\ X\ Yosemite\ Developer\ Preview.app/
 
 ![](/tumblr_files/tumblr_inline_nc4cdfJwWd1skxjxc.png)
 

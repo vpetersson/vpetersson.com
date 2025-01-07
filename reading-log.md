@@ -8,14 +8,14 @@ This is mostly a note-to-self kind of page, but perhaps it is useful for someone
 
 Here's a partial list (i.e. what I could find in my Amazon history)
 
-# 2017
+## 2017
 
 - By Way of Deception by Victor Ostrovsky
 - Life 3.0 by Max Tegmark
 - Deep Work by Cal Newport
 - Industries of the Future by Alec Ross
 
-# 2018
+## 2018
 
 - Lost and Founder by Rand Fishkin
 - Influence by Robert Cialdini
@@ -24,7 +24,7 @@ Here's a partial list (i.e. what I could find in my Amazon history)
 - Zero Trust Networks by Evan Gilman
 - Ghost In The Wires by Kevin Mitnick
 
-# 2019
+## 2019
 
 - How To Be Right... in a World Gone Wrong by James O'Brien
 - The Master and Margarita by Mikhail Bulgakov
@@ -46,7 +46,7 @@ Here's a partial list (i.e. what I could find in my Amazon history)
 - Super Brain by Deepak Chopra and Rudolph E. Tanzi
 - Zen And The Art Of Motorcycle Maintenance by Robert M Parsig
 
-# 2020
+## 2020
 
 - Algorithms To Live By by Brian Christian and Tom Griffiths
 - Peak by Anders Ericsson and Robert Pool

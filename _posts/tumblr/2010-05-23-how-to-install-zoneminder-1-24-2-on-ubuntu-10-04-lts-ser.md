@@ -10,19 +10,17 @@ redirect_from: /post/92729916079/how-to-install-zoneminder-1-24-2-on-ubuntu-10-0
 ---
 Last week I published a new version of my [ZoneMinder Virtual Appliance](http://viktorpetersson.com/open-source/zoneminder-virtual-appliance). The virtual appliance is great if you want to easily deploy ZoneMinder without having to spend time setting it up. However, in some situations, you want to run ZoneMinder directly on the hardware. Perhaps you need better performance or simply need to capture video streams from V4L-devices.
 
-Since I already spent the time getting it running, I thought I’d share the instructions for getting it running. It’s pretty straight forward, but there are a few minor things that took me some time to get around.  
-  
-    \[flickr-gallery mode=“photoset” photoset=“72157624119100112”\]
+Since I already spent the time getting it running, I thought I'd share the instructions for getting it running. It's pretty straight forward, but there are a few minor things that took me some time to get around.
 
-Installation
-============
+    \[flickr-gallery mode="photoset" photoset="72157624119100112"\]
 
-**Optional:** I personally prefer to install the ‘minimal’ version of Ubuntu. You can install this mode by simply hitting F4 right at boot.
+## Installation
 
-Other than the installing the ‘minimal’ system, the only things you would need to keep in mind are to install “LAMP” and “OpenSSH” under the Software selection. You will also need to pick a MySQL password, which will be used later.
+**Optional:** I personally prefer to install the 'minimal' version of Ubuntu. You can install this mode by simply hitting F4 right at boot.
 
-Configuration
-=============
+Other than the installing the 'minimal' system, the only things you would need to keep in mind are to install "LAMP" and "OpenSSH" under the Software selection. You will also need to pick a MySQL password, which will be used later.
+
+## Configuration
 
 Upgrade the package repository:
 
@@ -50,8 +48,8 @@ Resolve a bug (discussed more [here](http://www.zoneminder.com/forums/viewtopic.
 
     joe src/zm_utils.cpp
 
-(or your favorite editor)  
-Add the line ‘#include ‘ on row 22 (or somewhere in that general area). To exit and save with Joe, press _ctrl+k x_.
+(or your favorite editor)
+Add the line 'include ' on row 22 (or somewhere in that general area). To exit and save with Joe, press _ctrl+k x_.
 
 Build and install Zoneminder
 
@@ -60,20 +58,20 @@ Build and install Zoneminder
 
 Configure the database:
 
-    mysql -uroot -p 
+    mysql -uroot -p
 
 Install Cambozola:
 
     cd
-    wget [http://www.charliemouse.com:8080/code/cambozola/cambozola-latest.tar.gz](http://www.charliemouse.com:8080/code/cambozola/cambozola-latest.tar.gz) 
-    tar xvfz cambozola-latest.tar.gz 
+    wget [http://www.charliemouse.com:8080/code/cambozola/cambozola-latest.tar.gz](http://www.charliemouse.com:8080/code/cambozola/cambozola-latest.tar.gz)
+    tar xvfz cambozola-latest.tar.gz
     sudo cp cambozola-*/dist/cambozola.jar /var/www/zm/
 
 Make Zoneminder the root-page in Apache:
 
     sudo joe /etc/apache2/sites-enabled/000-default
 
-Change “DocumentRoot /var/www” to “DocumentRoot /var/www/zm” and “Directory /var/www/” to “Directory /var/www/zm/”
+Change "DocumentRoot /var/www" to "DocumentRoot /var/www/zm" and "Directory /var/www/" to "Directory /var/www/zm/".
 
 Restart Apache:
 
@@ -100,6 +98,6 @@ Install the startup-script (from the [official site](http://www.zoneminder.com/w
     sudo update-rc.d zm defaults
     sudo /etc/init.d/zm start
 
-That’s it. You should now have a fully working version of ZoneMinder. All you need to do now is to point your browser to the IP address of the server.
+That's it. You should now have a fully working version of ZoneMinder. All you need to do now is to point your browser to the IP address of the server.
 
-**Update**: Thanks to Peter for pointing out that that there is a newer version of Cambozola. The guide has been updated to reflect this.
+**Update**: Thanks to Peter for pointing out that there is a newer version of Cambozola. The guide has been updated to reflect this.

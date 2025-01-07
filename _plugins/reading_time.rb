@@ -8,7 +8,7 @@ module Jekyll
     def reading_time(input)
       words = input.split.size
       minutes = (words / WORDS_PER_MINUTE.to_f).ceil
-      pluralize(minutes, "minute")
+      pluralize(minutes, 'minute')
     end
 
     private
@@ -17,7 +17,7 @@ module Jekyll
       if number == 1
         "1 #{singular}"
       else
-        "#{number} #{plural || singular + 's'}"
+        "#{number} #{plural || "#{singular}s"}"
       end
     end
   end

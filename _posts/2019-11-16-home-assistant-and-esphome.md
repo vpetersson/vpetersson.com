@@ -19,7 +19,7 @@ As someone who haven't spent a ton of time with embedded hardware, it took me a 
 
 For those who bought the JZK ESP-32S ESP32, here is the configuration that I ended up for in ESPHome:
 
-```
+```yaml
 esphome:
   name: office
   platform: ESP32

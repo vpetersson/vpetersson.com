@@ -13,13 +13,13 @@ Last weekend I was staying at a Holiday Inn in the UK. As most geeks, one of the
 The wireless plans were as follows:  
 **Business 24 hour – £15**
 
-*   ‘unlimited’ data access, but 250MB per session (whatever that is defined by).
-*   Prioritized bandwidth
+* ‘unlimited’ data access, but 250MB per session (whatever that is defined by).
+* Prioritized bandwidth
 
 **Economy 24 hour – £12**
 
-*   500 MB data transfer
-*   256kbit connection
+* 500 MB data transfer
+* 256kbit connection
 
 I went for the ‘Business 24 hour’ plan without much hesitation. Later that night I spoke to my friend who was staying at the same hotel and also hopped online, but on his iPad. He said that he only paid £7 for 24 hour access. I thought that was odd, but interesting. Was it the case that Swisscom actually charged less for data on an iOS device than on a regular laptop?
 

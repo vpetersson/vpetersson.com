@@ -66,20 +66,25 @@ plugins:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - bin/
-  - Dockerfile
-  - CNAME
-  - docker-compose.yml
-  - CNAME
+  - node_modules/
+  - vendor/
+  - .eslintrc.js
+  - .htmlhintrc
+  - .markdownlint.json
+  - .stylelintrc.json
   - package.json
   - package-lock.json
+  - Dockerfile.lint
+  - scripts/lint-all.sh
+  - .github/
+  - .git/
+  - .gitignore
+  - README.md
 
 # Sitemap settings
 defaults:

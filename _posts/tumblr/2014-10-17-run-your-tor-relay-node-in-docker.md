@@ -19,12 +19,14 @@ If you don’t want to take the risk of running your own Exit Node, you can stil
 
 With Docker installed, all you need to do is to run the following:
 
-    $ sudo docker run -d \
-        -p :9001:9001 \
-        --restart=always \
-        --name=torrelay \
-        -t vpetersson/torrelay
-    
+```bash
+$ docker run -d \
+    -p 9001:9001 \
+    -v /etc/localtime:/etc/localtime:ro \
+    -v /data/tor:/var/lib/tor \
+    --name tor-relay \
+    vpetersson/tor-relay
+```
 
 This will create a Tor Relay Node. All you need to do is to open up your firewall, such that the Docker container is reachable on port 9001.
 

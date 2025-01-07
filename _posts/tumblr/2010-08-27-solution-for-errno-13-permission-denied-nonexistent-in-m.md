@@ -20,10 +20,10 @@ As it turns out ‘/nonexisten’ is the home-directory for ‘www’ on FreeBSD
 Some people out there suggest that you change www’s home-directory and give it write-access. I suggest a different approach: Extract the compressed egg-files. I wrote a simple Bash-script to take care of the task:
 
 > #!/bin/sh
-> 
+>
 > \# The path to your site-packages directory.  
 > SITEPACKAGES=/usr/local/lib/python2.7/site-packages
-> 
+>
 > for i in $(find $SITEPACKAGES -type f -maxdepth 1 |grep .egg |grep -v egg-info); do  
 > unzip $i -d $SITEPACKAGES  
 > rm -rf $SITEPACKAGES/EGG-INFO  

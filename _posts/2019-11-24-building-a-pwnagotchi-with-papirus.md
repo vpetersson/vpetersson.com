@@ -32,7 +32,7 @@ Once you have all your parts, simply go ahead and [flash out the disk image](htt
 
 Since we are using a PaPiRus display, we need to make some [configuration changes](https://pwnagotchi.ai/configuration/). The configuration file will look something like this:
 
-```
+```yaml
 main:
   name: 'pwnagotchi'
   whitelist:
@@ -66,7 +66,7 @@ We now need to first convert the `.pcap` file(s) to a `.hccapx` file(s), as well
 
 If you've followed the instructions, you should be able to do this:
 
-```
+```bash
 $ hashcat -m 2500 foobar.hccapx rockyou.txt
 [...]
 ```

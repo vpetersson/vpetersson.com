@@ -19,18 +19,17 @@ The key we want to accomplish is to be able to explicitly specify the IP address
 
 First, we can use `curl` to get the HEAD. The key here is that we pass on the desired domain/sub-domain using the 'HOST' header. We also specify the IP address of the load balancer directly (a.b.c.d):
 
-```
+```bash
 $ curl -I \
     -H "HOST: some.domain.com" \
     https://a.b.c.d
-[...]
 ```
 
 Assuming that still doesn't work, we may need to take a closer look at the SSL certificate that by adding `-w %{certs}`.
 
 Recent versions of `curl` added the `--resolve` functionality, which is handy. You can then do something like this:
 
-```
+```bash
 $ curl -I \
     --resolve 'some.domain.com:443:a.b.c.d' \
     https://some.domain.com

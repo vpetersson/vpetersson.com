@@ -17,7 +17,6 @@ The bug-report isn’t that helpful either. You’ll only get something like:
 > Exception Codes: KERN\_INVALID\_ADDRESS at 0×0000000000000108  
 > Crashed Thread: 0 Dispatch queue: com.apple.main-thread
 
-  
 Yeah, that’s hardly enough to even figure out that it the underlaying reason may be a corrupt font. A quick Google query showed that I was hardly the only person having this issue. There are numerous posts on Adobe’s forum on this, but few useful answers.
 
 One of the most common suggestions is to [remove duplicate fonts in Font Book](http://docs.info.apple.com/article.html?path=FontBook/2.2/en/5285.html). While I found a few duplicates, that didn’t do the trick.

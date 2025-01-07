@@ -32,7 +32,10 @@ What you notice when you start digging into these third-party tools is that they
 There is, however, a good reason why they ask for this. As it turns out, this is required for an External Portal Server to work; they need the ability to approve guests by issuing an API call to the console.
 
 When a user tries to access the WiFi, a GET request is sent to the external server that looks like this:
-`http://externalportal.example.com?ap=access_point_mac&user_mac=user_mac_address&ssid=network_ssid&url=original_url_requested`
+
+```http
+GET http://externalportal.example.com?ap=access_point_mac&user_mac=user_mac_address&ssid=network_ssid&url=original_url_requested
+```
 
 Notice all those GET parameters:
 
@@ -43,10 +46,11 @@ Notice all those GET parameters:
 
 With that information, the external portal then needs to issue back a POST request to the console that looks something like this:
 
-```
+```http
 POST /api/s/<site_name>/cmd/stamgr
 Authorization: Bearer <API_Token>
 Content-Type: application/json
+
 {
    "cmd": "authorize-guest",
    "mac": "<user_mac_address>",

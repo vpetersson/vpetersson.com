@@ -5,8 +5,34 @@ on:
   push:
     branches:
       - master
+
 jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3.0'
+
+      - name: Install RuboCop
+        run: gem install rubocop
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Run linters
+        run: PATH="$PWD/node_modules/.bin:$PATH" ./bin/lint-all.sh
+
   deploy:
+    needs: lint
     runs-on: ubuntu-latest
     permissions:
       contents: read

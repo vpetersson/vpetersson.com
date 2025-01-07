@@ -15,16 +15,17 @@ If you've used PostgreSQL in Kubernetes with Helm, chance are you've [locked you
 To restore access, you need to to jump in to your PostgreSQL container (`kubectl exec -ti your-postgres-container -n your-namespace bash`) and temporarily alter the authentication. This of course is not ideal, so we want to move as swiftly as possible.
 
 From within the container, run the following commands:
-```
-$ sed -i 's/md5/trust/' /opt/bitnami/postgresql/conf/pg_hba.conf
-$ pkill -HUP postgres
+
+```bash
+sed -i 's/md5/trust/' /opt/bitnami/postgresql/conf/pg_hba.conf
+pkill -HUP postgres
 ```
 
 This will allow us to access the PostgreSQL server **without** authentication and reload the config.
 
 Next, login to the PostgreSQL server and set a password:
 
-```
+```sql
 $ psql -h 127.0.0.1 -U postgres
 psql (11.5)
 Type "help" for help.
@@ -36,7 +37,7 @@ postgres=# \q
 
 Finally, kill the PostgreSQL server, which should automatically terminate your connection:
 
-```
+```bash
 $ pkill postgres
 command terminated with exit code 137
 ```

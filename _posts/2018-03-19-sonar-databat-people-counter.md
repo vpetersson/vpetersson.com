@@ -19,6 +19,6 @@ It should also be said that I'm well aware that there are plenty of commercial p
 
 Here are some things I have on the roadmap:
 
- * Add support for collecting metrics over WiFi
- * Create a proper RESTful API for report data
- * Sprinkle ML magic on the dataset to see what shows up :)
+* Add support for collecting metrics over WiFi
+* Create a proper RESTful API for report data
+* Sprinkle ML magic on the dataset to see what shows up :)

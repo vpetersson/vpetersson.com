@@ -10,9 +10,9 @@ Last week we launched our second application for Mac OS X. The application is ca
 
 Let’s say you’re writing an important email that requires 100% of your attention. You would then simply bring up Quiet, and pick ‘Focus on Mail’ (assuming you’re using Apple Mail). Quiet would then bring up your Mail window on a black background. But that’s not it. In addition, Quiet will also do the following:
 
-*   Put you in away mode on IM (Adium, iChat and Skype)
-*   Disable the new-mail notification sound from Mail.App
-*   Disable Growl
+* Put you in away mode on IM (Adium, iChat and Skype)
+* Disable the new-mail notification sound from Mail.App
+* Disable Growl
 
 Once you exit the ‘focus-mode’, everything will revert to normal.
 
