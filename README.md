@@ -19,20 +19,20 @@ docker compose run --rm web bundle update
 
 ## Running Linters
 
-The project uses Docker-based linting for CSS, HTML, JavaScript, and Markdown files. To run the linters:
+The project uses linters for CSS, HTML, JavaScript, and Markdown files. To run the linters:
 
 ```bash
-# Build the linter image (only needed once)
-docker build -t site-linters -f Dockerfile.lint .
+# Install dependencies
+npm ci
 
 # Run all linters
-docker run --rm -v ${PWD}:/app site-linters
+PATH="$PWD/node_modules/.bin:$PATH" ./bin/lint-all.sh
 
 # Run specific linters
-docker run --rm -v ${PWD}:/app site-linters stylelint "**/*.css"
-docker run --rm -v ${PWD}:/app site-linters htmlhint "**/*.html"
-docker run --rm -v ${PWD}:/app site-linters eslint "**/*.js"
-docker run --rm -v ${PWD}:/app site-linters markdownlint "**/*.md"
+PATH="$PWD/node_modules/.bin:$PATH" stylelint "**/*.css"
+PATH="$PWD/node_modules/.bin:$PATH" htmlhint "**/*.html"
+PATH="$PWD/node_modules/.bin:$PATH" eslint "**/*.js"
+PATH="$PWD/node_modules/.bin:$PATH" markdownlint "**/*.md"
 ```
 
 The linting configuration is defined in:
