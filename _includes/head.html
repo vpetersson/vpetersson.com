@@ -4,6 +4,14 @@
   <meta name="robots" content="index, follow">
   <meta http-equiv="content-language" content="en">
 
+  <!-- Resource Hints -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="{{ '/assets/css/styles.css' | relative_url }}" as="style">
+  <link rel="preload" href="{{ '/assets/css/main.css' | relative_url }}" as="style">
+
   <title>{{ page.title }}</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 

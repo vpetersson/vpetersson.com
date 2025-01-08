@@ -2,7 +2,7 @@ module Jekyll
   class WebPPictureTag < Liquid::Tag
     def initialize(tag_name, markup, tokens)
       super
-      @markup = markup.strip
+      @markup = markup
     end
 
     def render(context)
@@ -17,13 +17,19 @@ module Jekyll
         alt = alt.gsub(/^['"]|['"]$/, '')
         css_class = css_class.gsub(/^['"]|['"]$/, '')
 
-        # Create WebP path
+        # Get the site source directory
+        site = context.registers[:site]
+        source = site.source
+
+        # Create WebP path with same structure as original
         webp_path = path.sub(/\.(jpg|jpeg|png)$/i, '.webp')
 
         # Build the picture tag
         picture = "<picture>\n"
-        picture += "  <source srcset=\"#{webp_path}\" type=\"image/webp\">\n"
-        picture += "  <img src=\"#{path}\" alt=\"#{alt}\" class=\"#{css_class}\">\n"
+        if File.exist?(File.join(source, '.webp-cache', webp_path))
+          picture += "  <source srcset=\"#{webp_path}\" type=\"image/webp\">\n"
+        end
+        picture += "  <img src=\"#{path}\" alt=\"#{alt}\" class=\"#{css_class}\" loading=\"lazy\">\n"
         picture += "</picture>"
 
         picture
