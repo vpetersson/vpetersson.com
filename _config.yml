@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Viktor's ramblings
+title: Viktor's Tech Musings & Security Paranoia
 description: >- # this means to ignore newlines until "baseurl:"
-  Viktor on entrepreneurship, Dev(Sec)Ops, remote work, and other geeky stuff.
+  Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.
 baseurl: "" # the subpath of your site, e.g. /blog
 #baseurl: "blog.viktorpetersson.com"
 url: "https://vpetersson.com" # the base hostname & protocol for your site, e.g. http://example.com
@@ -25,6 +25,10 @@ url: "https://vpetersson.com" # the base hostname & protocol for your site, e.g.
 canonical_url: "https://vpetersson.com"
 enforce_ssl: vpetersson.com   # without https:// and any subdomains
 
+# Tag settings
+tag_permalink_style: pretty
+tag_case_sensitive: false
+
 pagination:
   enabled: true
 
@@ -33,6 +37,7 @@ collections:
     output: true
   tags:
     output: true
+    permalink: /tags/:name/
 
 permalink: date
 

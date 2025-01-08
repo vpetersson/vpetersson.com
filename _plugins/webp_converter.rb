@@ -1,5 +1,6 @@
 require 'fileutils'
 require 'jekyll'
+require 'set'
 
 module Jekyll
   class WebPConverter < Jekyll::Generator
@@ -7,6 +8,8 @@ module Jekyll
     priority :low
 
     def generate(site)
+      @processed_files ||= Set.new
+
       # Create cache directory
       cache_dir = File.join(site.source, '.webp-cache')
       FileUtils.mkdir_p(cache_dir)
@@ -24,6 +27,10 @@ module Jekyll
         rel_path = img.sub(source + '/', '')
         webp_path = rel_path.sub(/\.(jpg|jpeg|png)$/i, '.webp')
         cache_path = File.join(cache_dir, webp_path)
+
+        # Skip if we've already processed this file in this run
+        next if @processed_files.include?(cache_path)
+        @processed_files.add(cache_path)
 
         # Ensure cache subdirectory exists
         FileUtils.mkdir_p(File.dirname(cache_path))

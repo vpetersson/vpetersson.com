@@ -33,6 +33,23 @@ p {
   }
 }
 
+ul {
+  list-style: none;
+  font-family: "DM Sans";
+  color: $text-primary;
+
+  li {
+    position: relative;
+    padding-left: 1em;
+
+    &:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+
 button {
   background-color: $btn-primary;
   color: $white;
@@ -199,7 +216,7 @@ a.button {
     li {
       position: relative;
       padding-left: 4px;
-      
+
       input {
         position: absolute;
         left: 0;
@@ -344,10 +361,10 @@ a.button {
     li {
       padding: rem(4px) rem(16px);
     }
-  
+
     a {
       color: $white;
-      
+
       &:hover {
         opacity: 0.8;
       }
@@ -412,7 +429,7 @@ a.button {
     -ms-user-select: none;
     user-select: none;
   }
-  
+
   .button:hover {
     transition-duration: 0.4s;
     -moz-transition-duration: 0.4s;
@@ -430,7 +447,7 @@ a.button {
     -o-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
   }
-  
+
   .searchbutton {
     background-color: transparent;
     position: absolute;
@@ -439,7 +456,7 @@ a.button {
     margin: 0;
     padding: 0;
   }
-  
+
   .search:focus + .searchbutton {
     transition-duration: 0.4s;
     -moz-transition-duration: 0.4s;
@@ -450,7 +467,7 @@ a.button {
     border-bottom-right-radius: 8px;
     color: black;
   }
-  
+
   .search {
     position: absolute;
     left: 49px;
@@ -468,7 +485,7 @@ a.button {
     -webkit-transition-duration: 0.4s;
     -o-transition-duration: 0.4s;
   }
-  
+
   .search:focus {
     width: 200px; /* Bar width+1px */
     padding: 0 16px 0 0;
@@ -477,12 +494,12 @@ a.button {
       width: 363px;
     }
   }
-  
+
   .expandright {
     left: auto;
     right: 49px; /* Button width-1px */
   }
-  
+
   .expandright:focus {
     padding: 0 0 0 16px;
   }
