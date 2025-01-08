@@ -25,13 +25,6 @@ url: "https://vpetersson.com" # the base hostname & protocol for your site, e.g.
 canonical_url: "https://vpetersson.com"
 enforce_ssl: vpetersson.com   # without https:// and any subdomains
 
-social:
-  image: "/assets/images/site/talk.jpg"
-  twitter: vpetersson
-  github: vpetersson
-  linkedin: vpetersson
-  mastodon: "@vpetersson@hachyderm.io"
-
 pagination:
   enabled: true
 
@@ -77,9 +70,12 @@ exclude:
   - Dockerfile
   - CNAME
   - docker-compose.yml
-  - CNAME
   - package.json
   - package-lock.json
+
+# Include additional files
+include:
+  - video-sitemap.xml
 
 # Sitemap settings
 defaults:

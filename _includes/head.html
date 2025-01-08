@@ -12,27 +12,27 @@
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  <meta property="og:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}{{ site.social.image }}{% endif %}">
+  <meta property="og:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}{{ site.data.main.social.image }}{% endif %}">
 
   <!-- LinkedIn -->
   <meta property="og:site_name" content="{{ site.title }}">
-  <meta property="article:author" content="https://www.linkedin.com/in/{{ site.social.linkedin }}">
+  <meta property="article:author" content="{{ site.data.main.social.linkedIn }}">
   {% if page.layout == 'post' %}
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
   {% endif %}
 
   <!-- X (formerly Twitter) -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@{{ site.social.twitter }}">
-  <meta name="twitter:creator" content="@{{ site.social.twitter }}">
+  <meta name="twitter:site" content="@{{ site.data.main.social.twitter }}">
+  <meta name="twitter:creator" content="@{{ site.data.main.social.twitter }}">
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="twitter:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}{{ site.social.image }}{% endif %}">
+  <meta name="twitter:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}{{ site.data.main.social.image }}{% endif %}">
 
   <!-- Social Profile Links -->
-  <link rel="me" href="https://github.com/{{ site.social.github }}">
-  <link rel="me" href="https://www.linkedin.com/in/{{ site.social.linkedin }}">
-  <link rel="me" href="https://hachyderm.io/{{ site.social.mastodon }}">
+  <link rel="me" href="{{ site.data.main.social.github }}">
+  <link rel="me" href="{{ site.data.main.social.linkedIn }}">
+  <link rel="me" href="{{ site.data.main.social.mastodon }}">
 
   <!-- Schema.org Person -->
   <script type="application/ld+json">
@@ -41,12 +41,12 @@
     "@type": "Person",
     "name": "Viktor Petersson",
     "url": "{{ site.url }}",
-    "image": "{{ site.url }}{{ site.social.image }}",
+    "image": "{{ site.url }}{{ site.data.main.social.image }}",
     "sameAs": [
-      "https://github.com/{{ site.social.github }}",
-      "https://www.linkedin.com/in/{{ site.social.linkedin }}",
-      "https://hachyderm.io/{{ site.social.mastodon }}",
-      "https://x.com/{{ site.social.twitter }}"
+      "{{ site.data.main.social.github }}",
+      "{{ site.data.main.social.linkedIn }}",
+      "{{ site.data.main.social.mastodon }}",
+      "{{ site.data.main.social.x }}"
     ]
   }
   </script>

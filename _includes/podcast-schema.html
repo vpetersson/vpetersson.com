@@ -2,7 +2,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "VideoObject",
+  "@type": ["VideoObject", "PodcastEpisode"],
   "name": "{{ page.title }}",
   "description": {{ page.description | jsonify }},
   "uploadDate": "{{ page.date | date_to_xmlschema }}",
@@ -30,14 +30,14 @@
     "name": "Nerding Out with Viktor",
     "url": "{{ site.url }}/podcast/"
   },
-  "isPartOf": {
+  "partOfSeries": {
     "@type": "PodcastSeries",
     "name": "Nerding Out with Viktor",
     "url": "{{ site.url }}/podcast/",
     "inLanguage": "en",
     "isAccessibleForFree": true
   },
-  "episodeNumber": {{ page.episode }},
+  "position": {{ page.episode }},
   "sameAs": [
     {% if page.spotify %}"{{ page.spotify }}"{% endif %}
     {% if page.apple %}{% if page.spotify %},{% endif %}"{{ page.apple }}"{% endif %}
