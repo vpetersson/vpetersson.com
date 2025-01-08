@@ -7,7 +7,7 @@ layout: default
   <div class="flex flex-col lg:flex-row lg:gap-[50px] xl:gap-[106px] md:max-w-[1110px] xl:mx-auto">
     <div class="hidden lg:block lg:w-[210px] xl:w-[309px]">
       <div class="mb-6">
-        <img class="author-img rounded-full w-[162px] h-[162px]" src="/assets/images/site/talk-sm.png" />
+        {% picture /assets/images/site/talk-sm.png "Podcast Host" "author-img rounded-full w-[162px] h-[162px]" %}
       </div>
       <p class="text-sm mb-6">
         Join Viktor, a proud nerd and seasoned entrepreneur, whose academic journey at Santa Clara University in Silicon Valley sparked a career marked by innovation and foresight. From his college days, Viktor embarked on an entrepreneurial path, beginning with YippieMove, a groundbreaking email migration service, and continuing with a series of bootstrapped ventures.
@@ -23,7 +23,7 @@ layout: default
     </div>
     <div class="lg:hidden">
       <div class="flex mb-6 gap-[35px]">
-        <img class="author-img !rounded-full !w-[64px] !h-[64px]" src="/assets/images/site/talk-sm.png" />
+        {% picture /assets/images/site/talk-sm.png "Podcast Host" "author-img !rounded-full !w-[64px] !h-[64px]" %}
         <div>{% include podcast-links.html %}</div>
       </div>
       <div>
@@ -53,7 +53,7 @@ layout: default
           </div>
         {% else %}
           {% assign image = page.image | default: "/assets/images/site/podcast-cover.jpg" %}
-          <img class="rounded-2xl" src="{{ image }}" alt="Podcast Image" />
+          {% picture {{ image }} "Podcast Image" "rounded-2xl" %}
           <div class="absolute bottom-6 left-6 uppercase text-white">
             <div class="text-sm">Episode {{page.episode}}</div>
             <div class="text-2xl">{{page.guest}}</div>
