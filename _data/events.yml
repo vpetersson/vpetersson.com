@@ -18,6 +18,7 @@
     - type: talk
       title: "London DevOps #85, London, UK"
       deck: https://github.com/vpetersson/vpetersson.com/blob/master/presentations/2024/london_devops_85.pdf
+      video: https://www.youtube.com/watch?v=AHwLGAeh2ts
     - type: press
       title: "TechTarget: U.S. Army, Lockheed Martin detail SBOM progress"
       link: https://www.techtarget.com/searchitoperations/feature/366611692/US-Army-Lockheed-Martin-detail-SBOM-progress
