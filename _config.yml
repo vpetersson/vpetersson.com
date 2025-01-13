@@ -18,7 +18,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.
 baseurl: "" # the subpath of your site, e.g. /blog
 #baseurl: "blog.viktorpetersson.com"
-url: "https://vpetersson.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://vpetersson.com" # the base hostname & protocol for your site
 # url: "https://vpetersson.github.io/blog.viktorpetersson.com"
 
 # SEO settings
