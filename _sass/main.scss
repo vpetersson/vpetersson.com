@@ -41,12 +41,6 @@ ul {
   li {
     position: relative;
     padding-left: 1em;
-
-    &:before {
-      content: "•";
-      position: absolute;
-      left: 0;
-    }
   }
 }
 
@@ -210,25 +204,31 @@ a.button {
     }
   }
 
-  /* Task Lists */
   ul {
     list-style: disc;
-    li {
-      position: relative;
-      padding-left: 4px;
 
-      input {
-        position: absolute;
-        left: 0;
-        top: 6px;
+    ul {
+      list-style: circle;
+
+      ul {
+        list-style: square;
       }
     }
   }
 
   ol {
     list-style: decimal;
+
+    ol {
+      list-style: lower-alpha;
+
+      ol {
+        list-style: lower-roman;
+      }
+    }
   }
 
+  /* Task Lists */
   .task-list {
     list-style: none;
     padding-left: 0;
