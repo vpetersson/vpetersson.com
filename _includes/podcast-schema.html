@@ -14,11 +14,15 @@
   "mainEntityOfPage": "{{ site.url }}{{ page.url }}",
   "inLanguage": "en",
   "isFamilyFriendly": true,
-  {% if page.guest %}
-  "actor": {
-    "@type": "Person",
-    "name": "{{ page.guest }}"
-  },
+  {% if page.guests %}
+  "actors": [
+    {% for guest in page.guests %}
+    {
+      "@type": "Person",
+      "name": "{{ guest }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
   {% endif %}
   "author": {
     "@type": "Person",
@@ -35,9 +39,11 @@
     "name": "Nerding Out with Viktor",
     "url": "{{ site.url }}/podcast/",
     "inLanguage": "en",
-    "isAccessibleForFree": true
+    "isAccessibleForFree": true,
+    "seasonNumber": {{ page.season }}
   },
-  "position": {{ page.episode }},
+  "episodeNumber": {{ page.episode }},
+  "seasonNumber": {{ page.season }},
   "sameAs": [
     {% if page.spotify %}"{{ page.spotify }}"{% endif %}
     {% if page.apple %}{% if page.spotify %},{% endif %}"{{ page.apple }}"{% endif %}

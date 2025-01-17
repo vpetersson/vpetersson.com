@@ -55,8 +55,8 @@ layout: default
           {% assign image = page.image | default: "/assets/images/site/podcast-cover.webp" %}
           <img src="{{ image }}" alt="Podcast Image" class="rounded-2xl">
           <div class="absolute bottom-6 left-6 uppercase text-white">
-            <div class="text-sm">Episode {{page.episode}}</div>
-            <div class="text-2xl">{{page.guest}}</div>
+            <div class="text-sm">Season {{page.season}} • Episode {{page.episode}}</div>
+            <div class="text-2xl">{% for guest in page.guests %}{{ guest }}{% unless forloop.last %}, {% endunless %}{% endfor %}</div>
           </div>
         {% endif %}
       </div>
