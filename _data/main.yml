@@ -1,5 +1,5 @@
 headline: Building secure, scalable systems with a healthy dose of paranoia and a passion for getting things right.
-header_image: /assets/user-gray.png
+header_image: /assets/user-gray.webp
 about_summary: I'm a tech entrepreneur who turned my Silicon Valley education into a series of successful bootstrapped ventures. Starting with YippieMove, an email migration service I built during my time at Santa Clara University, I've consistently identified and capitalized on technical opportunities others missed. <br> I've been running remote teams for over a decade, well before it became the norm, and built Blotter, a highly successful productivity app for macOS. <br> <br>Today, I lead Screenly, the world's first developer-friendly digital signage platform that powers over 10,000 screens globally. We also created Anthias, a leading open-source digital signage solution. My focus is on building secure, scalable systems and helping others do the same.
 podcast_summary: Join me for deep dives into technology, entrepreneurship, and security. Drawing from my experience building and scaling companies, I explore the intersection of business and technology with fellow entrepreneurs and technical leaders.
 
@@ -19,7 +19,7 @@ nav:
 
 
 social:
-  image: "/assets/images/site/talk.jpg"
+  image: "/assets/images/site/talk.webp"
   twitter: vpetersson
   x: https://twitter.com/vpetersson
   linkedIn: https://www.linkedin.com/in/vpetersson/

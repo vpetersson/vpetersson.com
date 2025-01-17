@@ -1,6 +1,10 @@
-FROM ruby:3.3-bookworm
+FROM ruby:3-bookworm
 ENV LANG C.UTF-8
-RUN apt-get update -qq && \
+
+# Install system dependencies
+RUN rm -rf /var/lib/apt/lists/* && \
+    apt-get clean && \
+    apt-get update -qq && \
     apt-get install -y python3 build-essential curl webp
 
 # Install nvm (Node Version Manager)

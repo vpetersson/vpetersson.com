@@ -76,11 +76,11 @@ a.button {
 }
 
 .hero {
-  @include page-header('/assets/images/site/bg-home.png');
+  @include page-header('/assets/images/site/bg-home.webp');
 }
 
 .blog-header {
-  @include page-header('/assets/images/site/bg-blog.png');
+  @include page-header('/assets/images/site/bg-blog.webp');
   background-color: $bg-primary;
   padding: rem(80px) 0;
 
@@ -90,7 +90,7 @@ a.button {
 }
 
 .podcast-header {
-  @include page-header('/assets/images/site/bg-podcast.png');
+  @include page-header('/assets/images/site/bg-podcast.webp');
   background-color: $bg-primary;
   padding: rem(80px) 0;
 
@@ -100,7 +100,7 @@ a.button {
 }
 
 .about-header {
-  @include page-header('/assets/images/site/bg-home.png');
+  @include page-header('/assets/images/site/bg-home.webp');
   background-color: $bg-primary;
   padding: rem(80px) 0;
 
