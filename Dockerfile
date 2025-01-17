@@ -5,7 +5,8 @@ ENV LANG C.UTF-8
 RUN rm -rf /var/lib/apt/lists/* && \
     apt-get clean && \
     apt-get update -qq && \
-    apt-get install -y python3 build-essential curl webp
+    apt-get install -y python3 build-essential curl webp \
+    libxml2-dev libxslt-dev
 
 # Install nvm (Node Version Manager)
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash \
@@ -21,7 +22,6 @@ ENV NOKOGIRI_USE_SYSTEM_LIBRARIES true
 ADD Gemfile /usr/src/app
 ADD Gemfile.lock /usr/src/app
 RUN gem install bundle && \
-    bundle && \
     bundle install
 
 # Install Node.js dependencies including specific npm version and Tailwind CSS
