@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How I Use Home Assistant in 2025
-date: '2025-04-01T01:00:00+01:00'
+date: '2025-01-22T01:00:00+01:00'
 tags:
 - home-assistant
 - home-automation
