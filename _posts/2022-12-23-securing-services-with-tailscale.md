@@ -35,17 +35,15 @@ Just like with regular Let's Encrypt certificates, these are semi short-lived an
 # /etc/systemd/system/tailscale-cert.service
 [Unit]
 Description=Tailscale SSL Service Renewal
-After=network.target
-After=syslog.target
+After=network.target syslog.target
 
 [Service]
 Type=oneshot
 User=root
 Group=root
 WorkingDirectory=/etc/ssl/private/
-Environment="HOSTNAME=my-server"
-Environment="DOMAIN=foobar.ts.net"
-ExecStart=tailscale cert ${HOSTNAME}.${DOMAIN}
+EnvironmentFile=/etc/default/tailscale-cert
+ExecStart=/usr/bin/tailscale cert ${HOSTNAME}.${DOMAIN}
 
 [Install]
 WantedBy=multi-user.target
@@ -54,15 +52,22 @@ WantedBy=multi-user.target
 ```yaml
 # /etc/systemd/system/tailscale-cert.timer
 [Unit]
-Description=Renew Tailscale cert
+Description=Renew Tailscale SSL Certificates
 
 [Timer]
-OnCalendar=monthly
-Unit=%i.service
+OnCalendar=weekly
+Unit=tailscale-cert.service
 Persistent=true
 
 [Install]
 WantedBy=timers.target
+```
+
+```yaml
+# /etc/default/tailscale-cert
+# Configuration for Tailscale SSL Renewal
+HOSTNAME=my-server
+DOMAIN=foobar.ts.net
 ```
 
 With these two files created, you can manually start the service to ensure it works:
@@ -281,7 +286,7 @@ Next, delete all existing self-signed certificates by running `sudo find -type f
 We now need to set up a symlink to our existing Tailscale certificates to a place where CUPS is looking for them (i.e. `/etc/cups/ssl`). This is done by running:
 
 ```bash
-sudo ln -s /etc/ssl/private/my-box.foobar.ts.net.ts.net.{crt,key} /etc/cups/ssl/
+sudo ln -s /etc/ssl/private/my-box.foobar.ts.net.{crt,key} /etc/cups/ssl/
 ```
 
 Finally, we need to make some tweaks to `/etc/cups/cupsd.conf`:
