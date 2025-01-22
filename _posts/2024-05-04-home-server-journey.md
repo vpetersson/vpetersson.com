@@ -17,18 +17,18 @@ Around that time, WD Labs - a now defunct R&D division of Western Digital focuse
 
 ![WD Labs Pi Drive (opened)](/assets/wd-pi-drive-open.jpg)
 
-The Pi Drive was designed for a single 2.5" drive. I decided to mod it to hold two 1TB drives, set up as ZFS mirrors for redundancy. Running [OpenMediaVault](https://www.openmediavault.org/) (OMV), this setup worked alright, albeit the Pi 3’s USB 2.0 ports were a bottleneck, maxing out at 480mbps across both drives. Although slow, it was a solid entry into the world of network-attached storage using ZFS raid.
+The Pi Drive was designed for a single 2.5" drive. I decided to mod it to hold two 1TB drives, set up as ZFS mirrors for redundancy. Running [OpenMediaVault](https://www.openmediavault.org/) (OMV), this setup worked alright, albeit the Pi 3's USB 2.0 ports were a bottleneck, maxing out at 480mbps across both drives. Although slow, it was a solid entry into the world of network-attached storage using ZFS raid.
 
 ![WD Labs Pi Drive (closed)](/assets/wd-pi-drive-closed.jpg)
 
 I still see discussions on Reddit and other forums where people consider using a Pi for NAS solutions. Based on my experiences, my advice would be to steer clear of using a Pi for this purpose—it's much more practical and efficient to invest in a cheap NUC instead.
 
 ### Upgrading and Expanding
-As my tinkering expanded (including my [home automation]({{site.url}}/2020/05/25/homeassistant-ikea-tradfri-flux-sensors.html)), the Pi’s limitations became apparent. I needed a more robust system, so I upgraded to a NUC equipped with an i5 processor and 32GB of RAM running [Proxmox](https://proxmox.com/en/). I migrated the ZFS pool from the Pi, expanded it by adding another drive while maintaining the original drives. In order to keep things tidy (and get good air flow), my friend [Ivan](https://twitter.com/ipedrazas) 3D printed a great stand that could hold up to four 2.5" drives.
+As my tinkering expanded (including my [home automation]({{site.url}}/2020/05/25/homeassistant-ikea-tradfri-flux-sensors.html)), the Pi's limitations became apparent. I needed a more robust system, so I upgraded to a NUC equipped with an i5 processor and 32GB of RAM running [Proxmox](https://proxmox.com/en/). I migrated the ZFS pool from the Pi, expanded it by adding another drive while maintaining the original drives. In order to keep things tidy (and get good air flow), my friend [Ivan](https://twitter.com/ipedrazas) 3D printed a great stand that could hold up to four 2.5" drives.
 
 ![3D printed 2.5" drive stand](/assets/3d-printed-drive-stand.jpg)
 
-Over the years, I’ve had to replace at least four dead/failing 2.5" drives, but ZFS made these changes seamless without any data loss. Despite adding an SSD as cache, the setup underperformed due to USB bandwidth limitations, and the NUC eventually succumbed to the constant heavy load.
+Over the years, I've had to replace at least four dead/failing 2.5" drives, but ZFS made these changes seamless without any data loss. Despite adding an SSD as cache, the setup underperformed due to USB bandwidth limitations, and the NUC eventually succumbed to the constant heavy load.
 
 ### NUC to Protectli
 When my NUC eventually gave in, I just happened to have a Protectli [FW6E-0](https://eu.protectli.com/product/fw6e/) on hand from another project. It came equipped with an Intel i7 processor and I had added 32GB of RAM, making it a suitable candidate to take over my home server duties. I moved my ZFS pool to this new machine and continued running Proxmox. This setup proved robust, handling my requirements well for about two years, but eventually, I felt the need for a more integrated solution to consolidate several devices into one solid, future-proof system.
@@ -58,7 +58,7 @@ After spending a few hours both with Debian and Proxmox (which is based on Debia
 
 I briefly entertained going down the [NixOS](https://nixos.org/) route instead of Proxmox, after having my friend Jon sold me on the benefits of Nix and NixOS over beers (and on [my podcast](https://www.youtube.com/watch?v=9l-U2NwbKOc)) for some time. His post "[Secure Boot & TPM-backed Full Disk Encryption on NixOS](https://jnsgr.uk/2024/04/nixos-secure-boot-tpm-fde/)" definitely makes for a compelling argument, but I ended up sticking to Proxmox for now due to time limitations.
 
-I’m also still using my external USB drive setup as I haven’t gotten around to ordering the 3.5" drives yet. My plan is to configure ZFS across these new drives with TPM-backed Full Disk Encryption for added security (and to save time on shredding drives when they start failing). I will add an update later with details about this.
+I'm also still using my external USB drive setup as I haven't gotten around to ordering the 3.5" drives yet. My plan is to configure ZFS across these new drives with TPM-backed Full Disk Encryption for added security (and to save time on shredding drives when they start failing). I will add an update later with details about this.
 
 ### Final Bill of Materials (BOM) for the New Server Setup:
 
@@ -96,6 +96,8 @@ $ zpool create -o ashift=12 <my tank name> \
         /dev/disk/by-id/<disk 3> \
         /dev/disk/by-id/<disk 4>
 ```
+
+If you want to learn more about ZFS and its capabilities, I highly recommend checking out [my podcast episode with Allan Jude]({{site.url}}/podcast/S01E25.html), where we dive deep into ZFS architecture, features, and best practices.
 
 I also ended up setting up an encrypted dataset that I use for some VMs, as well as for backups.
 
