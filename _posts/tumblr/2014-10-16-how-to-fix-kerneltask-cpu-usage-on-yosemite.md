@@ -16,7 +16,7 @@ In preparation for this, I dusted off my old MacBook Pro this weekend so that I 
 
 After further analysis, I noticed that it was something odd with the `kernel_task` process hogging up resources, pegging the CPU at maximum utilization.
 
-![kernel_task hogging resources](/tumblr_files/tumblr_inline_ndj4vrolbe1skxjxc.png)
+![kernel_task hogging resources](/tumblr_files/tumblr_inline_ndj4vrolbe1skxjxc.webp)
 
 Spending a few minutes on thy mighty Google, I found multiple other people who were having similar issues across Mac models and OS X versions.
 
@@ -37,7 +37,7 @@ Rhys’ page includes a lot more details, but in summary, here’s what I did:
     $ cd /System/Library/Extensions/IOPlatformPluginFamily.kext/Contents/PlugIns/ACPI_SMC_PlatformPlugin.kext/Contents/Resources
     $ sudo mv MacBookPro8_2.plist ~/backup/
 
-After moving the file above and rebooting the system, things looked a lot more sane. ![More sane kernel_task](/tumblr_files/tumblr_inline_ndj4y6oLJl1skxjxc.png)
+After moving the file above and rebooting the system, things looked a lot more sane. ![More sane kernel_task](/tumblr_files/tumblr_inline_ndj4y6oLJl1skxjxc.webp)
 
 Please note that **this is risky business** and there might be side-effects. It did do the trick for me, but **I don’t take any responsibility for damaged hardware**. It’s all on you.
 

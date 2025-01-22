@@ -16,7 +16,7 @@ In addition to automation, I wanted [f.lux](https://justgetflux.com/)/Flux/Night
 
 As often happens with tech projects, this turned out to be a lot more complicated.
 
-![](/assets/home-assisant-overview.png)
+![](/assets/home-assisant-overview.webp)
 *Screenshot of one of the views in Home Assistant*
 
 I must now admit that I’ve spent/wasted (depending on how you look at it) countless hours getting things to a state where I’m happy. Hopefully this article will save you some time if you’re looking to accomplish the same.
@@ -84,7 +84,7 @@ My recommendation is that you start with MySQL/MariaDB right away, as you will h
 ## Configure Home Assistant to send metrics to InfluxDB
 While we’re on the topic of databases, I’ve also configured my HA to send metric data to [InfluxDB](https://www.home-assistant.io/integrations/influxdb/). Using this configuration, I’m able to visualize HA data (such as temperature) in Grafana (which can retrieve data from InfluxDB).
 
-![](/assets/grafana-home-assistant.png)
+![](/assets/grafana-home-assistant.webp)
 *Example of Home Assistant sensor data being rendered in Grafana (via InfluxDB)*
 
 
@@ -149,7 +149,7 @@ With these sensors live, I’m able to do things like:
 * Visualize the historical temperature/humidity/VOC/CO2 values
 * Automate the fan in my office, such that it turns on/off automatically when either the temperature or CO2 level reaches a certain threshold
 
-![](/assets/home-assistant-history.png)
+![](/assets/home-assistant-history.webp)
 
 Again, make sure you’ve configured the MySQL/MariaDB recorder before you start adding sensors, as your HA will quickly become sluggish as the data builds up (in particular if you’re trying to get a histogram or similar).
 

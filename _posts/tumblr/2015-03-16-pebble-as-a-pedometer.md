@@ -11,7 +11,7 @@ redirect_from: /post/113789570969/pebble-as-a-pedometer
 ---
 For some time, I’ve worn both my Pebble and a Fitbit Flex. Since the Pebble comes with a built-in pedometer, this bothered me a lot. As a digital nomad, you’re always looking at ways to reduce the things you carry around and I’m now happy to report that I have retired my Fitbit.
 
-![](/tumblr_files/tumblr_inline_nlb8qzinZ91skxjxc.png)
+![](/tumblr_files/tumblr_inline_nlb8qzinZ91skxjxc.webp)
 
 There has long been various pedometer watchfaces available for the Pebble. However, none of them (to my knowledge) could actually do anything with the data. At least to me, it is then rather pointless.  
 

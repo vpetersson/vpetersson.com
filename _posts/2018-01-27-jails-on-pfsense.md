@@ -21,7 +21,7 @@ In this tutorial, I will walk you through how to go from zero to jails on pfSens
 
 The first thing we need to do is to create a dedicated virtual IP for each jail. This is fairly straight forward in pfSense. Go to Firewall -> Virtual IPs and press 'Add.'
 
-![Add a Virtual IP](/assets/pfsense_virtual_ip.png)
+![Add a Virtual IP](/assets/pfsense_virtual_ip.webp)
 
 I would suggest that you only use the localhost interface, as I'm not sure what the security implications would be if you're exposing it to a WAN/LAN interface. I would also discourage from exposing any services in the jail. The reason for this is that if the service somehow gets compromised, the attacker would have free flow to all your network interfaces. It might be possible to mitigate this with firewall rules, but consider yourself warned.
 

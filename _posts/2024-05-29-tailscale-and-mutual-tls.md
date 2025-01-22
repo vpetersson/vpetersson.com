@@ -106,7 +106,7 @@ Assuming this worked, you should now be able to move on to your browser and auth
 
 Simply enter `https://my-server.ts-network.ts.net` and you should get a prompt like this:
 
-![Using Tailscale certificate for Mutual TLS (mTLS) in Firefox](/assets/mtls-with-tailscale.png)
+![Using Tailscale certificate for Mutual TLS (mTLS) in Firefox](/assets/mtls-with-tailscale.webp)
 
 Congrats! You've now successfully authenticated using your Tailscale client certificate in your browser.
 

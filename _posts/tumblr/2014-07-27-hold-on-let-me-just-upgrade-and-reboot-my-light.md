@@ -9,6 +9,6 @@ tags:
 - internet of things
 redirect_from: /post/93033295389/hold-on-let-me-just-upgrade-and-reboot-my-light
 ---
-![](/tumblr_files/tumblr_n9dwt7mk481thwdtao1_1280.png)  
+![](/tumblr_files/tumblr_n9dwt7mk481thwdtao1_1280.webp)  
 
 Hold on, let me just upgrade and reboot my light bulbs…

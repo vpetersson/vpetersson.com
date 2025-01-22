@@ -10,7 +10,7 @@ redirect_from: /post/108993953964/thought-on-the-purism-laptop
 ---
 Today I stumbled across the [Purism](http://puri.sm/)’s Librem 15 laptop. It’s a [crowd sourced](https://www.crowdsupply.com/purism/librem-laptop) laptop that is, as the name implies, pure. No proprietary or firmware or software. I _really_ like this idea, as it improves security by a lot.
 
-![](/tumblr_files/tumblr_inline_nioe4yPZK61skxjxc.jpg)
+![](/tumblr_files/tumblr_inline_nioe4yPZK61skxjxc.webp)
 
 At first glance, it looks pretty good. However after diving into the details, it falls short on a few points.
 

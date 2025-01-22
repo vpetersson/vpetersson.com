@@ -21,7 +21,7 @@ Now, I'm a massive UniFi fan. Over the years, I've migrated most of my networks 
 
 Bringing this back to the topic of captive portals, UniFi's console does allow you to provision captive portals out-of-the-box (called 'Hotspot Portal'). However, their support is rather limited. Usually, the reason any commercial WiFi deployment would want to use a captive portal for their WiFi is to capture email addresses (for marketing), or to set tracking pixels (for remarketing). UniFi's default captive portal does not allow you to do either of this, making it somewhat moot to enable.
 
-![UniFi's built-in hotspot/captive portal](/assets/unifi-built-in-captive-portal.png)
+![UniFi's built-in hotspot/captive portal](/assets/unifi-built-in-captive-portal.webp)
 
 What they do support, however, is something they call 'External Portal Server,' which allows you to integrate a third-party captive portal with the UniFi hardware. This is all neat until you start digging into the details. Or should I say, the lack of details. You see, UniFi provides absolutely *zero* documentation on this. There are, however, third-party services/libraries that have reverse-engineered how this flow works, but it's less than ideal.
 

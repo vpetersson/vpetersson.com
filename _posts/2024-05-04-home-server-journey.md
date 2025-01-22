@@ -15,25 +15,25 @@ Back when I was living in a snug studio flat in London, I began my home server a
 ### Early Stages
 Around that time, WD Labs - a now defunct R&D division of Western Digital focused on innovative projects for the Raspberry Pi - sent me a Pi Drive. They were a great bunch to collaborate with at [Screenly](https://www.screenly.io), always pushing the envelope on what could be achieved with Pi.
 
-![WD Labs Pi Drive (opened)](/assets/wd-pi-drive-open.jpg)
+![WD Labs Pi Drive (opened)](/assets/wd-pi-drive-open.webp)
 
 The Pi Drive was designed for a single 2.5" drive. I decided to mod it to hold two 1TB drives, set up as ZFS mirrors for redundancy. Running [OpenMediaVault](https://www.openmediavault.org/) (OMV), this setup worked alright, albeit the Pi 3's USB 2.0 ports were a bottleneck, maxing out at 480mbps across both drives. Although slow, it was a solid entry into the world of network-attached storage using ZFS raid.
 
-![WD Labs Pi Drive (closed)](/assets/wd-pi-drive-closed.jpg)
+![WD Labs Pi Drive (closed)](/assets/wd-pi-drive-closed.webp)
 
 I still see discussions on Reddit and other forums where people consider using a Pi for NAS solutions. Based on my experiences, my advice would be to steer clear of using a Pi for this purpose—it's much more practical and efficient to invest in a cheap NUC instead.
 
 ### Upgrading and Expanding
 As my tinkering expanded (including my [home automation]({{site.url}}/2020/05/25/homeassistant-ikea-tradfri-flux-sensors.html)), the Pi's limitations became apparent. I needed a more robust system, so I upgraded to a NUC equipped with an i5 processor and 32GB of RAM running [Proxmox](https://proxmox.com/en/). I migrated the ZFS pool from the Pi, expanded it by adding another drive while maintaining the original drives. In order to keep things tidy (and get good air flow), my friend [Ivan](https://twitter.com/ipedrazas) 3D printed a great stand that could hold up to four 2.5" drives.
 
-![3D printed 2.5" drive stand](/assets/3d-printed-drive-stand.jpg)
+![3D printed 2.5" drive stand](/assets/3d-printed-drive-stand.webp)
 
 Over the years, I've had to replace at least four dead/failing 2.5" drives, but ZFS made these changes seamless without any data loss. Despite adding an SSD as cache, the setup underperformed due to USB bandwidth limitations, and the NUC eventually succumbed to the constant heavy load.
 
 ### NUC to Protectli
 When my NUC eventually gave in, I just happened to have a Protectli [FW6E-0](https://eu.protectli.com/product/fw6e/) on hand from another project. It came equipped with an Intel i7 processor and I had added 32GB of RAM, making it a suitable candidate to take over my home server duties. I moved my ZFS pool to this new machine and continued running Proxmox. This setup proved robust, handling my requirements well for about two years, but eventually, I felt the need for a more integrated solution to consolidate several devices into one solid, future-proof system.
 
-![Protectli FW6e-0](/assets/protectli-fw6e-0.jpg)
+![Protectli FW6e-0](/assets/protectli-fw6e-0.webp)
 
 ### Evaluating and Finalizing the New Setup
 In my search for a consolidated solution, I evaluated setting up a beefy compute node alongside something like a Synology NAS. However, I decided against this arrangement due to my previous (bad) experiences with running VMs on Synology NASes over iSCSI. Since my VMs can comfortably fit across a few SSDs, I decided to look for an all-in-one solution, where I'd use the spinning drives for backups. Perhaps equally importantly, a decent spec'd Synology NAS would cost me almost as much as the final setup I ended up with (but then I'd still have to add the compute node).
@@ -42,14 +42,14 @@ After extensive research, I chose the Jonsbo N2 case for its compact yet accommo
 
 The next challenge was selecting the right motherboard. All the options I considered required some form of compromise. I was particularly looking for a motherboard with at least two PCI slots to accommodate an additional NIC for Link Aggregation Group (LAGG) with the onboard NIC and an M2 expansion card. Ultimately, I had to make a tough choice and forego LAGG due to slot limitations, settling on the ASROCK B550M-ITX/ac, which could handle my AMD Ryzen 7 5700G after a crucial BIOS update (more on that below).
 
-![Jonsbo N2](/assets/jonsbo-n2.jpg)
+![Jonsbo N2](/assets/jonsbo-n2.webp)
 
 ### And of Course Something Went Wrong
 While this should have been flagged in my research, it turns out the B550M-ITX/ac supports the AMD Ryzen 7 5700G, but not without a BIOS update. The motherboard supports "instant flash," a straightforward method, but lacks support for more sophisticated flashing methods like "BIOS Flashback" or "Q-Flash." These methods would have allowed me to update the BIOS without needing a supported CPU installed. After scouring countless Reddit threads and tech forums for a solution, I realized that my only option was to procure a cheaper Ryzen 3 processor solely to perform the BIOS update. This workaround, although not ideal, was necessary to get my server running with the intended CPU.
 
 I also evaluated the Ryzen 9, but since the motherboard only had one PCIe port, I was unable to fit a dedicated GPU. This left me to choose from AMD CPUs with built-in GPUs, where the 5700G is currently one of the fastest options available. The decision aligns with a future upgrade path, where I plan to swap out the CPU and motherboard for newer ITX models as they become available, ensuring that the server can continue to meet evolving performance demands.
 
-![Jonsbo N2 (top)](/assets/jonsbo-n2-top.jpeg)
+![Jonsbo N2 (top)](/assets/jonsbo-n2-top.webp)
 
 ### Security Considerations and Future Plans
 In my pursuit of a secure and efficient server, I really wanted TPM-backed Full Disk Encryption (FDE) for all drives along with Secure Boot (which is now supported natively in Proxmox). The complexities of implementation and reliability issues led me to give up on FDE for the root drive for now. The state of TPM-backed FDE in Linux is depressingly primitive compared to macOS and Windows, where such security measures "just work" seamlessly.

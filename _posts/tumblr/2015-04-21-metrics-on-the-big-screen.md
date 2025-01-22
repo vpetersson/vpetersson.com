@@ -11,7 +11,7 @@ redirect_from: /post/117003117299/metrics-on-the-big-screen
 >   
 > Sometimes this can be a bit of a pain - you need to devote some machine to power the dashboard and pipe it to the TV as well as the hassle of setting it up. Enter Screenly!
 > 
-> ![image](/tumblr_files/tumblr_inline_nmr13oDHr61rwljgd_540.png)
+> ![image](/tumblr_files/tumblr_inline_nmr13oDHr61rwljgd_540.webp)
 > 
 >   
 > 

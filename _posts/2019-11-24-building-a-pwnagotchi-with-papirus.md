@@ -16,7 +16,7 @@ My personal interest in this was largely to test my own OpSec to ensure my own W
 
 So what do you need to build your own Pwnagotchi? While it support multiple hardware, I used the following to build mine:
 
-![](/assets/pwnagotchi-parts.jpeg)
+![](/assets/pwnagotchi-parts.webp)
 
 * A Raspberry Pi Zero W
   * **Please note that you will not be able to sniff 5Ghz WiFi with the Raspberry Pi Zero W**, as it only support 2.4Ghz. To sniff 5Ghz WiFi, you need to either use a Raspberry Pi 3 Model B+/4 Model B (which draws much more power) or potentially use a USB WiFi adaptor.
@@ -52,7 +52,7 @@ ui:
 
 With this done, you should now have your own Pwnagotchi up and running and start showing data on the screen.
 
-![](/assets/pwnagotchi-running.jpeg)
+![](/assets/pwnagotchi-running.webp)
 
 Please note that you should leave your device up and running for at least 30 minutes during the first boot for it to get properly configured, as it needs to do a fair bit of processing.
 

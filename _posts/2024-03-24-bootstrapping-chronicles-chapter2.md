@@ -17,7 +17,7 @@ That's how we came up with Blotter. It was a simple yet smart idea: a calendar t
 Blotter was ready for the Mac App Store's first day and it was a hit. It ranked among the top 10 productivity apps in the US, only beaten by Apple's own applications briefly. We also made the top 10 store wide in numerous location worldwide. Over the course of a few years, we kept improving Blotter, fixing early shortcuts in the implementation (with a lot of help from Ilya Kulakov).
 Blotter on the Top 10 list in Productivity, only beaten by Apple's own applications.
 
-![](/assets/blotter-top-10.png)
+![](/assets/blotter-top-10.webp)
 
 One big issue we faced was the Mac App Store's rule against charging for app updates. This meant we couldn't earn from new versions of Blotter unless we released it as a completely new app. This was a massive challenge for us, as it really limited out options. Mind you, Blotter was a few years by now, and there was willingness to pay for an updated version.
 

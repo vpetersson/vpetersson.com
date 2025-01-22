@@ -37,7 +37,7 @@ Let’s start by launching two containers that each will max out the CPU (by run
     $ docker run -d busybox md5sum /dev/urandom
     
 
-![Docker containers running without cgroup policy](/tumblr_files/tumblr_inline_nmbyklbgPw1skxjxc_540.png)
+![Docker containers running without cgroup policy](/tumblr_files/tumblr_inline_nmbyklbgPw1skxjxc_540.webp)
 
 As expected, we can see that these containers fully utilize one core each.
 
@@ -62,7 +62,7 @@ Start container with high priority:
         busybox md5sum /dev/urandom
     
 
-![Docker containers running with cgroup policy](/tumblr_files/tumblr_inline_nmbyk9EJyj1skxjxc_540.png)
+![Docker containers running with cgroup policy](/tumblr_files/tumblr_inline_nmbyk9EJyj1skxjxc_540.webp)
 
 As you can see, it worked! Happy hacking!
 

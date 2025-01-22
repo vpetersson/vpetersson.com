@@ -20,6 +20,6 @@ For the test, I used the classic network testing tool `iperf`.
 
 So how did it go? Turns out that it is almost three times as fast. It is nowhere near full Gigabit speed, but it is still a nice performance improvement.
 
-![](/assets/pi3-vs-pi3+.png)
+![](/assets/pi3-vs-pi3+.webp)
 
 The data is in Mbits/sec. You can find the raw numbers [here](https://gist.github.com/vpetersson/d6daa360bb207142faf6c555ff84b17f).

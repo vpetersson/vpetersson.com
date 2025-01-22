@@ -15,7 +15,7 @@ One thing I've been meaning to do for some time is to log the temperature in var
 
 As someone who haven't spent a ton of time with embedded hardware, it took me a little while to get this all working. Most of the time however was spent trying to get my [JZK ESP-32S ESP32](https://www.amazon.co.uk/gp/product/B071JR9WS9/) to properly read the sensor. Due to very poor documentation for the board, I wasted a lot of time. However, after finding [these schematics](https://duino4projects.com/esp32-devkit-v1-pinout/) I was able to get it to work on D25.
 
-![](/assets/home-assistant-and-eshome.png)
+![](/assets/home-assistant-and-eshome.webp)
 
 For those who bought the JZK ESP-32S ESP32, here is the configuration that I ended up for in ESPHome:
 
@@ -71,4 +71,4 @@ The next step is to solder this together on a smaller breadboard to reduce the f
 
 Today I finally received my breadboard and transferred the components. Looking pretty sleek.
 
-![](/assets/room-sensor.jpeg)
+![](/assets/room-sensor.webp)
