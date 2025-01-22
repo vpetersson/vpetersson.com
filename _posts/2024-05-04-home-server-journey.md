@@ -74,7 +74,7 @@ I'm also still using my external USB drive setup as I haven't gotten around to o
 * **Additional Storage**:
    * 3x M2 NVME drives for VMs in a [Linkreal PCIe x16 to 4-Port M.2 NVMe SSD Adapter](https://www.aliexpress.com/item/1005003877778925.html).
      * Due to a limitation in the BIOS/motherboard, it appears as I'm only able to use 3 out of the 4 M2 drive slots.
-   * *@TODO*: 4x 4TB 3.5" SATA 7200 RPM drives (connected straigh to the motherboard).
+   * 4x 4TB 3.5" SATA 7200 RPM drives (connected straight to the motherboard).
      * This will either be a Stripe + Mirror ZFS pool (or possibly RAIDZ1 with a hot spare).
 
 This compact setup is designed to be robust, scalable, and capable of handling substantial data loads and various server tasks efficiently. The choice of components ensures that the server is future-proofed and can accommodate additional expansions or upgrades as needed.
@@ -115,7 +115,7 @@ When you reboot the box, you now need to run:
 $ zfs load-key -r <my tank name>/encrypted
 ```
 
-The performance so far looks very reasonable with a max at ~250MB/s (for writes), which is suffient for backups and some less read/write intensive VMs.
+The performance so far looks very reasonable with a max at ~250MB/s (for writes), which is sufficient for backups and some less read/write intensive VMs.
 
 To migrate over the data from my old ZFS tank, I just used the built-in tool in Proxmox. It was just a matter of stopping the VM/CT, move it and start it back up.
 
