@@ -259,6 +259,69 @@ if __name__ == "__main__":
 
 It's been a huge time-saver. Sure, I still do some manual debugging, but I also use Cursor to assist with the troubleshooting. For instance, if something breaks in Home Assistant, I feed the logs into Cursor and ask it to help me fix the error. It's surprisingly effective.
 
+## IKEA Advice
+
+After extensive testing, I've optimized my adaptive lighting configurations for different IKEA bulb types. Here are my recommended settings that provide smooth transitions while maintaining good visibility throughout the day.
+
+### Dimmable white spectrum
+
+For IKEA's *LED bulb GU10 345 lumen, smart/wireless dimmable white spectrum* bulbs.
+
+```yaml
+  - name: adapt_brightness_standard_color_temp
+    lights:
+      - light.light_1
+      - light.light_2
+    min_brightness: 50
+    max_brightness: 100
+    min_color_temp: 2202
+    max_color_temp: 4000
+    sleep_brightness: 1
+    sleep_color_temp: 2202
+    transition: 45
+    interval: 90
+    initial_transition: 1
+    prefer_rgb_color: false
+```
+
+### Dimmable color and white spectrum
+
+For the *LED bulb E27 806 lumen, wireless dimmable color and white spectrum/globe opal white* bulbs.
+
+```yaml
+  - name: adapt_brightness_extended_color_temp
+    lights:
+      - light.light_3
+      - light.light_4
+    min_brightness: 70
+    max_brightness: 100
+    min_color_temp: 2000
+    max_color_temp: 6535
+    sleep_brightness: 1
+    sleep_color_temp: 2000
+    transition: 45
+    interval: 90
+    initial_transition: 1
+    prefer_rgb_color: false
+```
+
+### Dimmable warm white
+
+For the basic *LED bulb GU10 345 lumen, smart/wireless dimmable warm white* bulbs.
+
+```yaml
+  - name: adapt_brightness_brightness_only
+    lights:
+      - light.light_5
+      - light.light_6
+    min_brightness: 50
+    max_brightness: 100
+    sleep_brightness: 1
+    transition: 45
+    interval: 90
+    initial_transition: 1
+```
+
 ## Next Steps: Smart TRVs
 
 Now that the lighting is running smoothly, my next big smart home project is upgrading all my radiators with Zigbee-based smart TRVs (thermostatic radiator valves). The goal is to have each room in my home maintain an optimal temperature by reading from the central Nest thermostat. In older British homes like mine, temperature control isn't very granular, so having each radiator adjust itself is a major comfort and efficiency boost.
