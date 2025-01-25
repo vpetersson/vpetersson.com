@@ -21,7 +21,7 @@ When I moved into a house, my Home Assistant installation grew significantly: mo
 
 ### Adaptive Lighting: Moving Beyond Flux
 
-One of the crucial features for me is **Adaptive Lighting**. Initially, I used [Flux](/2020/05/25/homeassistant-ikea-tradfri-flux-sensors.html) (an older solution for synchronizing lights with the time of day), but I've recently migrated to the new Adaptive Lighting integration available through HACS (Home Assistant Community Store). This newer system is much more sophisticated and has better capabilities for adjusting color temperature and brightness throughout the day.
+One of the crucial features for me is **Adaptive Lighting**. Initially, I used Flux (an older solution for synchronizing lights with the time of day - see [my guide on Home Assistant, Flux and sensors](/2020/05/25/homeassistant-ikea-tradfri-flux-sensors.html)), but I've since migrated to the new Adaptive Lighting integration available through HACS (Home Assistant Community Store). This newer system is much more sophisticated, offering better control over color temperature and brightness throughout the day.
 
 Managing this setup comes with two main challenges. First, neither Flux nor Adaptive Lighting can target light groups. Instead, you need to explicitly list every single light entity in your configuration. This becomes particularly tedious when you have dozens of lights that you want to manage together. It would have been much more convenient to just point the integration to a group and have it handle all the lights within that group automatically.
 
