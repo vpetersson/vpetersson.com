@@ -1,6 +1,6 @@
-<div class="bg-secondaryBG px-6 py-[60px] lg:px-[145px] lg:pt-[100px] lg:pb-[73px]">
+<div class="bg-primaryBG px-6 py-[60px] lg:px-[145px] lg:pt-[100px] lg:pb-[73px]">
   <div class="w-full xl:max-w-[1110px] m-auto">
-    <h3 class="text-[32px] lg:text-[40px] text-white">Latest Podcast</h3>
+    <h3 class="text-[32px] lg:text-[40px] text-white">Latest Podcast Episodes</h3>
     {% assign limit = include.limit | default: site.podcast.size %}
     {% assign podcasts = site.podcast | reverse %}
     {% assign paginate = include.paginate %}
@@ -24,7 +24,7 @@
       </a>
     </div>
     {% endif %}
-    
+
     {% if paginate %}
     <div class="mt-12">
       {% include pagination.html paginator=paginator %}

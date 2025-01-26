@@ -1,15 +1,6 @@
 {% assign podcast = include.podcast %}
-<div class="w-full flex flex-col md:flex-row gap-4 my-8">
-  <div
-    class="w-full md:w-[200px] lg:w-[300px] xl:w-[350px] bg-white rounded-2xl"
-  >
-    <img
-      src="/assets/images/site/podcast-snippet.webp"
-      class="object-contain object-center block w-full h-full rounded-2xl"
-      alt="podcast cover image"
-    />
-  </div>
-  <div class="flex flex-1 flex-col gap-6 lg:gap-7 flex-grow">
+<div class="w-full flex flex-col md:flex-row gap-4 my-8 bg-secondaryBG p-8 rounded-lg">
+  <div class="flex flex-1 flex-col gap-6 lg:gap-7">
     <div class="flex flex-col gap-2">
       <div class="text-white text-sm uppercase">
         Season {{ podcast.season }} • Episode {{ podcast.episode }}
