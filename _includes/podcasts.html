@@ -5,6 +5,7 @@
     {% assign podcasts = site.podcast | reverse %}
     {% assign paginate = include.paginate %}
 
+    <div class="flex flex-col gap-8">
     {% if paginate %}
       {% for podcast in paginator.posts %}
         {% include podcast-card.html podcast=podcast %}
@@ -12,11 +13,9 @@
     {% else %}
       {% for podcast in podcasts limit:limit %}
         {% include podcast-card.html podcast=podcast %}
-        {% unless forloop.last %}
-          <hr class="border-[#d3d3d366]" />
-        {% endunless %}
       {% endfor %}
     {% endif %}
+    </div>
     {% if include.limit and include.limit < site.podcast.size %}
     <div class="mt-8 flex justify-center lg:justify-start">
       <a href="/podcast" class="text-base py-3 px-6 bg-btnSecondary uppercase text-white rounded-full text-center">
