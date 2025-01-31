@@ -999,6 +999,9 @@ video {
 .leading-\[34px\] {
   line-height: 34px;
 }
+.tracking-\[0\.2em\] {
+  letter-spacing: 0.2em;
+}
 .tracking-\[0\.4px\] {
   letter-spacing: 0.4px;
 }
