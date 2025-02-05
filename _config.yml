@@ -29,6 +29,8 @@ enforce_ssl: vpetersson.com   # without https:// and any subdomains
 tag_permalink_style: pretty
 tag_case_sensitive: false
 
+future: false
+
 pagination:
   enabled: true
 
