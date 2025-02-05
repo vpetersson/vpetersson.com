@@ -2,13 +2,19 @@
   <div class="w-full xl:max-w-[1110px] m-auto">
     <h3 class="text-[32px] lg:text-[40px] text-white">Latest Podcast Episodes</h3>
     {% assign limit = include.limit | default: site.podcast.size %}
-    {% assign podcasts = site.podcast | reverse %}
+    {% if site.future != true %}
+      {% assign podcasts = site.podcast | where_exp: "podcast", "podcast.date <= site.time" | reverse %}
+    {% else %}
+      {% assign podcasts = site.podcast | reverse %}
+    {% endif %}
     {% assign paginate = include.paginate %}
 
     <div class="flex flex-col gap-8">
     {% if paginate %}
       {% for podcast in paginator.posts %}
-        {% include podcast-card.html podcast=podcast %}
+        {% if site.future or podcast.date <= site.time %}
+          {% include podcast-card.html podcast=podcast %}
+        {% endif %}
       {% endfor %}
     {% else %}
       {% for podcast in podcasts limit:limit %}

@@ -3,13 +3,20 @@
     <h3 class="text-[32px] lg:text-[40px] text-white">Latest Blog Posts</h3>
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-8">
       {% assign limit = include.limit | default: site.posts.size %}
+      {% if site.future != true %}
+        {% assign filtered_posts = site.posts | where_exp: "post", "post.date <= site.time" %}
+      {% else %}
+        {% assign filtered_posts = site.posts %}
+      {% endif %}
       {% assign paginate = include.paginate %}
       {% if paginate %}
         {% for post in paginator.posts %}
-          {% include post-card.html post=post %}
+          {% if site.future or post.date <= site.time %}
+            {% include post-card.html post=post %}
+          {% endif %}
         {% endfor %}
       {% else %}
-        {% for post in site.posts limit:limit %}
+        {% for post in filtered_posts limit:limit %}
           {% include post-card.html post=post %}
         {% endfor %}
       {% endif %}
