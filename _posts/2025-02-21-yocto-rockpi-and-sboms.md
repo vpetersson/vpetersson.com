@@ -20,9 +20,7 @@ As with many single-board computers (SBCs) from China, the issue often isn't the
 I wanted to use one of the RockPi 4 boards I had for a simple print server. It's not a customer product, of course, but let's assume it was. Since it has the option to add eMMC storage, I find it more reliable than Raspberry Pi (I know the Raspberry Pi 5 allows for proper storage). However, given that I neither trust the Radxa disk images nor did I want to set things up on an already EoL Linux distribution, I started doing some digging. As it turns out, the RockPi is supported in Yocto.
 
 Say what you want about Raspberry Pi, but you can still download an up-to-date OS that runs on the Pi 1.
-
 In this article, I will show you not only how to build a disk image with Yocto (in this case for the Rock Pi 4, but it can easily be adjusted for other boards), but we will also talk a bit about how Yocto generates SBOMs (hint: it's really clever) and where to find your SBOMs.
-
 ## What is Yocto anyways?
 
 The Yocto Project is an open-source framework for building custom Linux distributions tailored to embedded systems. It provides a flexible, modular build system based on BitBake and OpenEmbedded, enabling developers to create highly optimized and reproducible Linux images for specific hardware. Yocto is widely used in industries like automotive, IoT, and networking due to its ability to support diverse architectures and long-term maintenance needs. With its layered architecture, extensive BSP support, and strong focus on customization, Yocto is a powerful tool for developers looking to build and maintain embedded Linux systems efficiently.
@@ -150,7 +148,7 @@ One limitation of the current disk image for Rock Pi is that you don't have a fu
 Some things I'm planning to add in the future:
 * Add support for Tailscale (there's a [meta-tailscale](https://github.com/ChristophHandschuh/meta-tailscale) layer)
 * Add support for auto disk expansion
-* Verify that WiFi works as expected
+* Add WiFi support
 
 ## Resources
 
