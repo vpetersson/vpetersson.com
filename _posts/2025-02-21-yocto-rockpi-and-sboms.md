@@ -137,6 +137,8 @@ $ tar --zstd -xvf \
 
 Do note that this will generate a lot of files. You will find a file called `index.json` in there, which links to all other SBOMs using document linking.
 
+(Check out my article [Mastering SBOM Generation with Yocto](https://sbomify.com/2025/02/21/mastering-sbom-generation-with-yocto/) for more details on the SBOMs.)
+
 ## On running in production
 
 If you are intending to run this in production, please do not just copy the above. These images are configured for lab or test mode. Yocto is very well suited for production images, but you need to harden them and also have an OTA strategy in place. Alternatively, I can recommend [Balena](https://www.balena.io/), which uses Yocto under the hood and also supports the Rock Pi.
