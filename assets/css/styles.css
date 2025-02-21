@@ -584,6 +584,10 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .my-\[60px\] {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -816,6 +820,9 @@ video {
 }
 .border-b {
   border-bottom-width: 1px;
+}
+.border-\[\#d3d3d366\] {
+  border-color: #d3d3d366;
 }
 .border-white-alpha-20 {
   border-color: rgba(255, 255, 255, 0.2);
