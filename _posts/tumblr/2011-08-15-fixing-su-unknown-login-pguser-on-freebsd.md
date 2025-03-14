@@ -7,6 +7,7 @@ tags:
 - PosgreSQL
 redirect_from: /post/92729948959/fixing-su-unknown-login-pguser-on-freebsd
 ---
+
 Today as I was installing PostgreSQL 9.04 on a new server I encountered the following error:
 
     \[root@host ~\]# /usr/local/etc/rc.d/postgresql initdb

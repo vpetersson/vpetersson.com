@@ -6,13 +6,14 @@ tags:
 - Quiet
 redirect_from: /post/92729944039/quiet-a-great-productivity-app
 ---
+
 Last week we launched our second application for Mac OS X. The application is called Quiet and is the best productivity tool I have ever used. The idea behind Quiet is simple. If you were to remove all distractions and only focus on one task at the time, you get more work done. This is exactly what Quiet does. It simply allows you to focus.
 
 Let’s say you’re writing an important email that requires 100% of your attention. You would then simply bring up Quiet, and pick ‘Focus on Mail’ (assuming you’re using Apple Mail). Quiet would then bring up your Mail window on a black background. But that’s not it. In addition, Quiet will also do the following:
 
-*   Put you in away mode on IM (Adium, iChat and Skype)
-*   Disable the new-mail notification sound from Mail.App
-*   Disable Growl
+- Put you in away mode on IM (Adium, iChat and Skype)
+- Disable the new-mail notification sound from Mail.App
+- Disable Growl
 
 Once you exit the ‘focus-mode’, everything will revert to normal.
 

@@ -23,9 +23,9 @@ Please do note that you need to have an RBAC enabled cluster for this to work. `
 
 RBAC can be used for many things, but in this article we will purely focus on the runtime side of RBAC and not for cluster authentication. With that in mind, there are three main concepts that you need to keep in mind:
 
- * Role: A role is what defines the actual RBAC permission
- * Service Account: This is what you associate with your deployment (or similar)
- * RoleBinding: This is what applies the Role to the Service Account
+- Role: A role is what defines the actual RBAC permission
+- Service Account: This is what you associate with your deployment (or similar)
+- RoleBinding: This is what applies the Role to the Service Account
 
 This is vastly simplified, but that should hopefully help you wrap your head around the concept.
 
@@ -93,7 +93,6 @@ no
 
 Lastly, we can create our Nginx deployment:
 
-
 ```
 apiVersion: extensions/v1beta1
 kind: Deployment
@@ -120,9 +119,7 @@ Again, apply this using `kubectl create -f deployment.yaml`.
 
 That's it. You are now running a fully locked down Nginx container (as far as RBAC goes at least).
 
-
 ## RBAC with Secrets enabled
-
 
 Many (most?) deployments require things like ConfigMaps and Secrets. As such, we need to modify our approach slightly and grant explicit access to this. Fortunately, this is very straight forward too. All we really need to do (in addition to creating the Secrets) is to modify our role definition to look something like this:
 

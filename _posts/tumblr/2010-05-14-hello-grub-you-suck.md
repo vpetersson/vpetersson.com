@@ -8,6 +8,7 @@ tags:
 - Ubuntu
 redirect_from: /post/92729914274/hello-grub-you-suck
 ---
+
 In the last few weeks I had to set up a few new Linux servers. Since Ubuntu is my preferred Linux dist in recent years, 10.04 LTS was a natural choice.
 
 Ubuntu 10.04 LTS is a great Linux distribution, with one exception: Grub. I really mean it. Grub is probably the worst boot loader to date. Is so bad that it could equally well be replaced with the following shell script:

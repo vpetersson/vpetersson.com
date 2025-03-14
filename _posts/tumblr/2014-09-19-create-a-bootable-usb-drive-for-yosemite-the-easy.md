@@ -10,6 +10,7 @@ tags:
 - mac os x
 redirect_from: /post/97840863794/create-a-bootable-usb-drive-for-yosemite-the-easy
 ---
+
 Today I decided to take Yosemite for a spin on my old laptop.
 
 Since installing from USB is the only way to do a _clean_ install, I started googling around for exact steps (which were somewhat messy).
@@ -17,7 +18,6 @@ Since installing from USB is the only way to do a _clean_ install, I started goo
 To my surprise, it appears as Apple also realized that this was messy and decided to bake in a solution for this. It isn’t however completely obvious, but here is the command:
 
     $ sudo /Applications/Install\ OS\ X\ Yosemite\ Developer\ Preview.app/Contents/Resources/createinstallmedia --volume /Volumes/your_flash_drive / --applicationpath /Applications/Install\ OS\ X\ Yosemite\ Developer\ Preview.app/
-
 
 ![](/tumblr_files/tumblr_inline_nc4cdfJwWd1skxjxc.webp)
 

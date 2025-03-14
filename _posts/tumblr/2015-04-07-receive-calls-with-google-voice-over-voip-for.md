@@ -9,6 +9,7 @@ tags:
 - digital nomad
 redirect_from: /post/115749865249/receive-calls-with-google-voice-over-voip-for
 ---
+
 I’ve been using Google Voice for a long time. In fact, I started using it back when it was called Grand Central (which was an acquisition). It’s a great product, and I really love it. Unfortunately it has more or less been left untouched for the last few years.
 
 If you’re in the U.S., Google Voice works great. You can just forward your Google Voice to your cell phone and you will automatically receive calls there.

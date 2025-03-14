@@ -12,6 +12,7 @@ tags:
 - remote working
 redirect_from: /post/94148699589/introducing-nomadsimsio
 ---
+
 A while back, I stumbled across [NomadList](http://nomadlist.io/). It’s basically a crowd sourced list of cities around the world ranked by how good they are for remote working.
 
 That got me thinking. One of the pain points I’ve had over the years when traveling is finding the best local mobile carrier for pre-paid cards. Wouldn’t it be great if there was a crowd sourced database for this?

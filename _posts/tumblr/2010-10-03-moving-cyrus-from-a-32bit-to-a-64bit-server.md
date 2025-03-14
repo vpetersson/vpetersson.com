@@ -7,16 +7,17 @@ tags:
 - FreeBSD
 redirect_from: /post/92729927834/moving-cyrus-from-a-32bit-to-a-64bit-server
 ---
+
 I’ve you’ve read the past few articles I’ve published, you’ve probably figured out two things:
 
-*   I love FreeBSD.
-*   I’m in the process of moving a bunch of servers.
+- I love FreeBSD.
+- I’m in the process of moving a bunch of servers.
 
 This time I’ll walk you trough how to move [Cyrus-IMAP](http://www.cyrusimap.org/) between a 32bit server to a 64bit server. In my case, on FreeBSD. Unfortunately the process is not as straight-forward as I imagined it to be. With these instructions, you will hopefully save yourself the hours I spend troubleshooting the issue.
 
 My first approach was to simply copy all the data from the old server to the new one. That didn’t quite do the trick. Cyrus wouldn’t launch properly, as it could not read the 32bit data properly. After some research I found out that the problem is Cyrus’ internal database is locked for the given architecture. Therefor you need to rebuild the data on the 64bit server.
 
-Here’s the full approach I took, step-by-step. I will assume that you have your configdirectory set to /var/imap and partition-default to /usr/imap. If not, you’ll have to adjust that below. I also assume that you’ve copied your Cyrus config files (imapd.conf and cyrus.conf) across ahead of time.  
+Here’s the full approach I took, step-by-step. I will assume that you have your configdirectory set to /var/imap and partition-default to /usr/imap. If not, you’ll have to adjust that below. I also assume that you’ve copied your Cyrus config files (imapd.conf and cyrus.conf) across ahead of time.
 
 ### Initial sync
 

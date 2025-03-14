@@ -18,16 +18,16 @@ Enter [Open vSwitch](http://openvswitch.org/). Contrary to Bridge interfaces, Op
 
 Before we begin, you will need the following:
 
- * A layer 2 switch (with VLAN support)
- * A modern server with Ubuntu 16.04 installed (the instructions will likely be similar on other OSes too)
- * Physical access to the server (with a keyboard) in case something goes wrong
+- A layer 2 switch (with VLAN support)
+- A modern server with Ubuntu 16.04 installed (the instructions will likely be similar on other OSes too)
+- Physical access to the server (with a keyboard) in case something goes wrong
 
 In this article, we're going to use the example of setting up a pfSense box as a VM with multiple VLANs exposed. We will assume the following VLAN setup and that you've already configured this in the switch:
 
- * VLAN 100 - WAN
- * VLAN 200 - LAN 1 (default)
- * VLAN 201 - LAN 2
- * VLAN 202 - LAN 3
+- VLAN 100 - WAN
+- VLAN 200 - LAN 1 (default)
+- VLAN 201 - LAN 2
+- VLAN 202 - LAN 3
 
 With the architecture planned out, let's get down and dirty and start by installing Open vSwitch on the server:
 
@@ -88,7 +88,6 @@ $ sudo ovs-vsctl add-port ovsbridge eno1 \
 
 You can now create the pfSense VM using your preferred method. Mine is a combination `virt-manager` and `virsh`. Once you start the VM, edit the VM definition using `virsh edit`. Since we want to expose the VM to all our VLANs, we want to edit the network interface section to look something like this:
 
-
 ```
 <interface type='bridge'>
   <mac address='XX:YY:ZZ:ZZ:YY:ZZ'/>
@@ -110,7 +109,6 @@ You can now create the pfSense VM using your preferred method. Mine is a combina
 
 When you now boot up the VM, you should be able to access all of the specified VLANs in pfSense's setup and define them as outlined above.
 
-
 If however for some reason you only want to expose one VLAN to a given VM as an untagged VLAN, you can do so by using the following snippet:
 
 ```
@@ -126,7 +124,6 @@ If however for some reason you only want to expose one VLAN to a given VM as an 
 ## Final notes
 
 This should hopefully help you get started with Open vSwitch. It's a big topic, so there's plenty to learn and this article by no means intends to cover it all. I would also encourage you again to take a look at SoulChild's great write-up on the [pfSense forum](https://forum.pfsense.org/index.php?topic=139045.0) if you're having any issues.
-
 
 ## Update
 

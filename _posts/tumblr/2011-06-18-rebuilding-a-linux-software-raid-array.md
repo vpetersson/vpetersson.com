@@ -7,6 +7,7 @@ tags:
 - Ubuntu
 redirect_from: /post/92729947349/rebuilding-a-linux-software-raid-array
 ---
+
 The process is pretty straight forward, and I’m writing this as a ‘Note-to-self’ for future references than anything else. If anyone else find it useful, that’s great.
 
 ### Identify the broken drive

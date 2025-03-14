@@ -9,6 +9,7 @@ tags:
 - Note-to-self
 redirect_from: /post/92729924544/how-to-build-apache-and-modwsgi-with-python-2-7-on-free
 ---
+
 We’re probably not the only company switching to Python 2.7. Right now, we’re in the final phase of rolling out an updated version that uses Python 2.7. As I was setting up our servers, I ran into a few issues with packages who were hardcoded to use Python 2.6 or earlier.
 
 Both [Chronicle](http://www.chronicle.im) and [YippieMove](http://www.yippiemove.com) are using Django, and use on Apache with mod_wsgi. When building these two packages, we found out that were both hardcoded to use Python 2.6 or earlier. Fortunately, there’s a simple solution for it.

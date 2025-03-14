@@ -5,7 +5,8 @@ date: '2015-03-30T08:41:00+03:00'
 tags: []
 redirect_from: /post/115011708124/on-the-secure-messaging-community
 ---
-[On the Secure Messaging Community](http://blog.nadim.computer/post/114970275623/on-the-secure-messaging-community)  
+
+[On the Secure Messaging Community](http://blog.nadim.computer/post/114970275623/on-the-secure-messaging-community)
 
 [nadimkobeissi](http://blog.nadim.computer/post/114970275623/on-the-secure-messaging-community):
 

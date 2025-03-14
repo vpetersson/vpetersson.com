@@ -8,6 +8,7 @@ tags:
 - Time Machine
 redirect_from: /post/92729966909/time-machine-on-mountain-lion
 ---
+
 ![](http://viktorpetersson.com/wp-content/uploads/2012/08/Time-Machine.png "Time Machine")
 
 I’m not sure if I’m the only one having issues with Time Machine, but it has been completely broken for me since I upgraded to Mountain Lion. As you can see above, Time Machine basically freezes and reports outrageous ETA statistic.

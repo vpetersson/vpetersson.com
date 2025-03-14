@@ -8,6 +8,7 @@ tags:
 - Mac OS X
 redirect_from: /post/92729947889/how-to-upgrade-from-mac-os-x-lion-gm-to-final-release
 ---
+
 If you ran one of the beta releases of Mac OS X Lion, you probably ran into a problem when trying to upgrade to the [final release](http://itunes.apple.com/us/app/os-x-lion/id444303913?mt=12) of OS X Lion.
 
 When I tried to upgrade one of my dev-machines, I was prompted with an error saying “A newer version of this app is already installed on this computer”

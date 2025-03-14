@@ -8,6 +8,7 @@ tags:
 - backup
 redirect_from: /post/105631466134/sync-dev-securely-deploying-sync
 ---
-[Sync Dev: Securely Deploying Sync](http://blog.bittorrent.com/2014/12/18/sync-dev-securely-deploying-sync/)  
+
+[Sync Dev: Securely Deploying Sync](http://blog.bittorrent.com/2014/12/18/sync-dev-securely-deploying-sync/)
 
 BitTorrent’s blog re-posted by Sync article today.

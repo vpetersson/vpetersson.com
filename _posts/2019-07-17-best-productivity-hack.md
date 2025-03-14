@@ -16,10 +16,10 @@ As someone who have paid attention to this for the last decade, and spent far to
 
 So what's the secret to high productivity? **drumroll**
 
- * Get your sleep
- * Exercise regularly
- * Eat healthy
- * **Bonus:** Cut out alcohol
+- Get your sleep
+- Exercise regularly
+- Eat healthy
+- **Bonus:** Cut out alcohol
 
 If you get these things right, the rest will follow. The mental clarity from a good night's sleep with multiple hours of deep sleep will run circles around all the other productivity hacks you're experimenting with.
 

@@ -9,6 +9,7 @@ tags:
 - os x
 redirect_from: /post/101437364464/how-to-get-bittorrent-sync-to-stop-syncing-finder
 ---
+
 I really like [BitTorrent Sync](https://www.btsync.com/en/). It’s a great alternative to Dropbox et al, without having to hand over your unencrypted data to a third party.
 
 Unfortunately, the default configuration in BitTorrent Sync for Mac OS X is somewhat odd. As it turns out, it syncs all of Finder’s meta data. As you can imagine, this means a lot of pointless syncing.

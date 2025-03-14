@@ -10,6 +10,7 @@ redirect_from:
 - /post/100148585299/how-to-fix-kerneltask-cpu-usage-on-yosemite
 - /2017/12/21/2014-10-16-how-to-fix-kerneltask-cpu-usage-on-yosemite.html
 ---
+
 Yesterday I had to hand in my almost new MacBook Pro (Retina) for repair due to a broken logic board. This meant that I had to go back to my old laptop for a little bit.
 
 In preparation for this, I dusted off my old MacBook Pro this weekend so that I would have something from in the meantime. Since it was due for an upgrade, I decided to [install the Yosemite beta](/2014/10/05/how-to-install-yosemite-and-ubuntu-linux.html) on it just to give it a try. After getting everything up and running, I did however notice that the laptop was rather unresponsive and sluggish.

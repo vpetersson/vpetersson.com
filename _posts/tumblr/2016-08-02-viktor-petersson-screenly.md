@@ -6,6 +6,7 @@ tags:
 - Digital Signage
 redirect_from: /post/148339711188/viktor-petersson-screenly
 ---
-[Viktor Petersson, Screenly](http://sixteennine.podbean.com/e/viktor-petersson-screenly/)  
+
+[Viktor Petersson, Screenly](http://sixteennine.podbean.com/e/viktor-petersson-screenly/)
 
 I was recently interviewed by Dave Haynes of Sixteen:Nine about Screenly.

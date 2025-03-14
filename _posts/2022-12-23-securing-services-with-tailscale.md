@@ -18,8 +18,8 @@ It's clearly a much more refined product than ZeroTier. The user interface and u
 
 There isn't much to write about how to add a machine to Tailscale, as that part is straightforward. What I will focus on in this article is how to use two really neat features in Tailscale to solve the problem in the opening paragraph:
 
-* [MagicDNS](https://tailscale.com/kb/1081/magicdns/)
-* [SSL Certificates](https://tailscale.com/kb/1153/enabling-https/) (powered by Let's Encrypt)
+- [MagicDNS](https://tailscale.com/kb/1081/magicdns/)
+- [SSL Certificates](https://tailscale.com/kb/1153/enabling-https/) (powered by Let's Encrypt)
 
 Together, this is a game changer.
 
@@ -130,7 +130,7 @@ You may also need to tweak your Nginx config for working with WebSocket.
 
 If you're intending to connect to a MariaDB/MySQL instance using TLS, [the official documentation](https://www.home-assistant.io/integrations/recorder/#mariadb-omit-pymysql-using-tls-encryption) is incorrect. As [this forum post](https://community.home-assistant.io/t/mysql-through-an-ssl-connection/453607) correctly points out, instead of `;ssl=true`, you need to append `&ssl=true`.
 
-However, note that Home Assistant *does not* actually verify the SSL certificate, thus making it vulnerable to a MiTM attack.
+However, note that Home Assistant _does not_ actually verify the SSL certificate, thus making it vulnerable to a MiTM attack.
 
 ### Home Assistant and InfluxDB with TLS
 
@@ -291,9 +291,9 @@ sudo ln -s /etc/ssl/private/my-box.foobar.ts.net.{crt,key} /etc/cups/ssl/
 
 Finally, we need to make some tweaks to `/etc/cups/cupsd.conf`:
 
-* Modify the `ServerAlias` stanza to match your Tailscale hostname, such as `ServerAlias my-box.foobar.ts.net.ts.net`
-* Set the `Listen` stanza to only listen on the Tailscale interface, by doing `Listen my-box.foobar.ts.net.ts.net`
-* We also probably want to set `Browsing On` so that we can easier find the printers
+- Modify the `ServerAlias` stanza to match your Tailscale hostname, such as `ServerAlias my-box.foobar.ts.net.ts.net`
+- Set the `Listen` stanza to only listen on the Tailscale interface, by doing `Listen my-box.foobar.ts.net.ts.net`
+- We also probably want to set `Browsing On` so that we can easier find the printers
 
 Lastly, we need to edit all the relevant `<location>` blocks and add `allow all` to the configuration. Initially, I was planning to use the `@IF(tailscale0)` macro ([cupsd.conf](https://www.cups.org/doc/man-cupsd.conf.html)), but I wasn't able to get this working and didn't dive much further into it.
 

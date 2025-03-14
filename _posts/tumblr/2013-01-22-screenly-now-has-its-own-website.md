@@ -6,6 +6,7 @@ tags:
 - Screenly
 redirect_from: /post/92729973694/screenly-now-has-its-own-website
 ---
+
 I’m astonished by the amount of traction we’ve been seeing for Screenly. The Open Source-version is growing rapidly in traction, while the wait-list for the Pro-version is growing.
 
 Given the amount of traction, we’ve now allocated more resources from WireLoad towards Screenly. The first priority right now is a cleanup of the code base and to improve the user interface for Screenly OSE.

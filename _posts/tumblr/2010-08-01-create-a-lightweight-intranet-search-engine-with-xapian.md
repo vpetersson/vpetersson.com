@@ -7,13 +7,13 @@ tags:
 - Xapian
 redirect_from: /post/92729920634/create-a-lightweight-intranet-search-engine-with-xapian
 ---
+
 Recently I had to set up an intranet search engine to crawl trough thousands of PDF files. There are a ton of commercial solutions (read: $$$$) out there on the market, ranging from [Google Search Appliance](http://www.google.com/enterprise/search/gsa.html) to [IBM’s OmniFind](http://omnifind.ibm.yahoo.net/). There are also a few good Open Source engines, such as [Apache’s Lucene](http://lucene.apache.org/java/docs/index.html). The problem is that these are primarily intended for enterprises with server farms full of data. That’s really not what I was looking for. I was looking something simple that was easy to set up and maintain. That’s when I came across [Xapian](http://xapian.org/). It’s Open Source and lightweight. Combine Xapian with [Omega](http://xapian.org/docs/omega/overview.html) and you got exactly what I was looking for — A lightweight intranet search engine.
 
 This howto will walk you trough how to set up Xapian with Omega on FreeBSD. The version I used was FreeBSD 8.1, but I’m sure any recent version of FreeBSD (7.x>) will do. Please note that I do expect you to know your way around FreeBSD, so I’m not going to spend time on simple tasks like how to edit files etc. I also assume you already got your system up and running.
 
 I’ve called the path we’re going to index (recursively) ‘/path/to/something’. This can be either a local path or something mounted from a remote server. Also, as you’ll see below, a lot of dependencies are installed. This is to increase the number of file-format Xapian will index. It should be able to index PDF-files, Word-files, RTF-files, in addition to plain-text files.
 
-  
 Let’s get started.
 
 **Note**: If you don’t have the ports-tree installed (/usr/ports), you can download it by simply running:
@@ -31,13 +31,13 @@ Let’s get started.
     cd /usr/ports/www/xapian-omega  
     make install
 
-**Install Xpdf**  
+**Install Xpdf**\
 Make sure to uncheck X11 and DRAW
 
     cd /usr/ports/graphics/xpdf  
     make install
 
-**Install Catdoc**  
+**Install Catdoc**\
 Uncheck WORDVIEW
 
     cd /usr/ports/textproc/catdoc  
@@ -80,7 +80,6 @@ Into:
 
 We also need to create a new config-file for Xapian. Create the file /usr/local/etc/apache22/Include/xapian.conf
 
-
         Alias /something /path/to/something
 
                 Options Indexes
@@ -92,7 +91,6 @@ We also need to create a new config-file for Xapian. Create the file /usr/local/
             Options None
             Order allow,deny
             Allow from all
-
 
 With all Apache configuration being done, let’s fire up Apache:
 

@@ -9,6 +9,7 @@ tags:
 - linux
 redirect_from: /post/128648706034/war-dialing-with-skype
 ---
+
 (Fine, this isn’t [war dialing](https://en.wikipedia.org/wiki/War_dialing) in the 90s context, but it made for a good title.)
 
 As furious I am with Lufhansa’s [strike](http://www.independent.co.uk/news/business/lufthansa-passengers-grounded-as-pilots-launch-two-day-strike-10491256.html), it did give me time to write a fun script.

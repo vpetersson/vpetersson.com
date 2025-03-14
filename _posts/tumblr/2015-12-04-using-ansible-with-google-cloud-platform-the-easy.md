@@ -13,6 +13,7 @@ tags:
 - google compute engine
 redirect_from: /post/134533191074/using-ansible-with-google-cloud-platform-the-easy
 ---
+
 For some time, [Ansible](http://www.ansible.com/) has been my configuration management of choice and we use it for both [Screenly](http://www.screenlyapp.com) and [YippieMove](http://www.yippiemove.com). Since both of these services are running on Google Compute Engine, we’re using Ansible’s [dynamic inventory](http://docs.ansible.com/ansible/intro_dynamic_inventory.html) for GCE.
 
 (Behind the scenes, this dynamic inventory is using [Apache Libcloud](https://libcloud.apache.org/), which is a great Python library for interacting with various providers.)
@@ -28,12 +29,10 @@ The script looks as follows:
     export GCE_PEM_FILE_PATH=~/.gce/$GCE_PROJECT\.json
     export GCE_EMAIL=$(grep client_email $GCE_PEM_FILE_PATH | sed -e 's/  "client_email": "//g' -e 's/",//g')
     gcloud config set project $GCE_PROJECT
-    
 
 Just change `GCE_PROJECT` to match your setup, and then run:
 
     $ source /path/to/script.sh
-    
 
 You can now run Ansible with the GCE inventory file.
 

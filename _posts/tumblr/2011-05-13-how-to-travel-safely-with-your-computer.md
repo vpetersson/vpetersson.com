@@ -8,12 +8,13 @@ tags:
 - Security
 redirect_from: /post/92729945174/how-to-travel-safely-with-your-computer
 ---
+
 Regardless if we travel in business or on a vacation, we tend to bring our computer with us (at least I do). Common sense tells us to not check in our computer, but there are other things that we really ought to do.
 
 The first thing you want to do is to use disk encryption. The reason for this is simple: if you lose your laptop, nobody can access your files. This really isn’t as difficult as it may sound to set up. Mac OS X comes with two built-in types of disk encryption:
 
-*   [Encrypted disk images](http://support.apple.com/kb/ht1578)
-*   [FileVault](http://docs.info.apple.com/article.html?path=Mac/10.4/en/mh1906.html) (encrypted home directory).
+- [Encrypted disk images](http://support.apple.com/kb/ht1578)
+- [FileVault](http://docs.info.apple.com/article.html?path=Mac/10.4/en/mh1906.html) (encrypted home directory).
 
 The encrypted disk image is great if you just want to protect a few files, but FileVault is better if you want to protect all your files. It should however be noted that FileVault comes with a pretty major drawback: it only allows you to do TimeMachine backups when you are logged out of your account.
 

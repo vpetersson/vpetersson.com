@@ -11,23 +11,24 @@ tags:
 - Spam
 redirect_from: /post/92729939994/implementing-assp-with-postfix-on-freebsd
 ---
+
 In this article, I will walk you through the process of setting up [ASSP](http://assp.sourceforge.net/). If you’ve never heard of ASSP, it is a great anti-virus and spam-fighting proxy that sits in front of your SMTP server. Under the hood, ASSP includes a lot of intelligent spam logic, but you won’t really have to worry about it. All you really need to know is that it great at fighting spam and that it is easy to set up.
 
 In this article I assume that you already got Postfix in place, but you can use ASSP with any other SMTP server, as it simply sits as a proxy between the user and the SMTP server. In essence, what you need to do is to re-bind your SMTP server to another port (eg. 125) or IP (eg. 127.0.0.1) and have ASSP listen on the public interface and relay the messages to your SMTP server.
 
-Let’s get started.  
+Let’s get started.
 
 ### Install ASSP
 
 We start by installing ASSP. Since this guide is for FreeBSD, we will use the ports-system. However, if you’re on a different platform, you can simply install ASSP from source.
 
-> cd /usr/ports/mail/assp/  
+> cd /usr/ports/mail/assp/\
 > make install
 
 Enable ASSP and Clamav by adding the following to /etc/rc.conf
 
-> clamav\_clamd\_enable=”YES”  
-> clamav\_freshclam\_enable=”YES”  
+> clamav\_clamd\_enable=”YES”\
+> clamav\_freshclam\_enable=”YES”\
 > assp_enable=”YES”
 
 Add your domains from Postfix to ASSP:
@@ -38,8 +39,8 @@ Add your domains from Postfix to ASSP:
 
 Now start the two services:
 
-> /usr/local/etc/rc.d/assp start  
-> /usr/local/etc/rc.d/clamav-clamd start  
+> /usr/local/etc/rc.d/assp start\
+> /usr/local/etc/rc.d/clamav-clamd start\
 > /usr/local/etc/rc.d/ clamav-freshclam start
 
 ### Configure ASSP
@@ -50,19 +51,19 @@ The default username is root and the password is ‘nospam4me’
 
 Go ahead and make the following changes:
 
-*   Second SMTP Listen Port: 587
-*   All TestModes ON: True
+- Second SMTP Listen Port: 587
+- All TestModes ON: True
 
 You need this set for about a week while you train ASSP.
 
-*   Prepend Spam Subject: \[Spam\]
-*   Accept All Mail: The IP or hostname of your server
-*   Local Domains: file:files/localdomains.txt
-*   Local Domains,IPs and Hostnames: The IP or hostname of your server
-*   Use ClamAV: True
-*   Modify ClamAV Module: False
-*   Port or file socket for ClamAV: /var/run/clamav/clamd.sock
-*   Web Admin Password: Your password
+- Prepend Spam Subject: \[Spam\]
+- Accept All Mail: The IP or hostname of your server
+- Local Domains: file:files/localdomains.txt
+- Local Domains,IPs and Hostnames: The IP or hostname of your server
+- Use ClamAV: True
+- Modify ClamAV Module: False
+- Port or file socket for ClamAV: /var/run/clamav/clamd.sock
+- Web Admin Password: Your password
 
 Press ‘Apply changes’.
 
@@ -82,7 +83,7 @@ You also need to comment out the following line by simply adding a ‘#’ to th
 
 Now we need to restart both Postfix and ASSP to apply the changes (the sequence here is important):
 
-> /usr/local/etc/rc.d/postfix restart  
+> /usr/local/etc/rc.d/postfix restart\
 > /usr/local/etc/rc.d/assp restart
 
 Verify that all the services are running with
@@ -91,8 +92,8 @@ Verify that all the services are running with
 
 If not, take a look in the following log-files:
 
-*   `/var/log/maillog`
-*   `/var/log/assp/maillog.txt`
+- `/var/log/maillog`
+- `/var/log/assp/maillog.txt`
 
 ### Training ASSP
 

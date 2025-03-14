@@ -8,6 +8,7 @@ tags:
 - printers
 redirect_from: /post/149023688109/hp-laserjet-500-colormfp-m570dn-windows-server
 ---
+
 (I try hard to stay away from Windows environments, but sometimes it’s unavoidable.)
 
 Recently I ran across a strange issue with a HP LaserJet 500 colorMFP M570dn. The printer worked great for years, then all of the sudden, it started to act up. Applying the latest firmware didn’t solve the issue, so it started probing.

@@ -29,8 +29,8 @@ From Blotter, I learned a lot about the power and limitations of selling through
 
 Looking back at the success of Blotter, it really came down to two things:
 
-* Only do one (or few) thing(s), but do it well (the UNIX philosophy).
-* Making the UI beautiful.
+- Only do one (or few) thing(s), but do it well (the UNIX philosophy).
+- Making the UI beautiful.
 
 Looking back at it, I’m not sure we could have done much more with Blotter. The biggest lesson was the lack of recurring revenue. Some macOS apps have tried to solve this by charging a subscription model, but I’m personally not a fan of this Apps I used to love (like [Git Tower](https://www.git-tower.com/mac)) adopted this and I stopped using it. While I happily pay for plenty of SaaS products, I just mentally struggle with a recurring charge for a desktop applications.
 

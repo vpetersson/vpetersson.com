@@ -8,6 +8,7 @@ tags:
 - SSH
 redirect_from: /post/92729963354/new-project-csconnect-py
 ---
+
 In the last few years, [we](http://wireload.net)‘ve spent a lot of time migrating away from all our physical servers and into the cloud. This has been a very interesting task, that presented its own set of challenges, but it has certainly been worth it.
 
 One of the issues though with working in a public cloud environment is that you don’t necessarily have the same static IP configuration as you do with dedicated hardware. When you power off a node, and spin it back up (or clone a new server for that sake), it’s likely that it will switch IP. This is at least the case with CloudSigma, which is what we are using for a large part of our server needs.

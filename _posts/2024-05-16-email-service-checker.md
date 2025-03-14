@@ -15,16 +15,16 @@ Email Service Checker takes the original idea a step further by providing a comp
 
 ## Key Features of Email Service Checker
 
-* Identify Email Providers: Quickly find out if a domain is using popular email services like Google Workspace, Microsoft 365, Zoho Mail, and more.
-* Sales Prospecting: Use this tool to discover the email infrastructure of your potential clients, helping you tailor your sales pitch and communication strategy accordingly.
-* User-Friendly Interface: Simply enter a domain or email address, and Email Service Checker will provide you with the relevant email provider information in an easy-to-read format.
-* Open Source and Community-Driven: We believe in the power of community and open-source development. You can contribute to the project on GitHub and help us improve the service for everyone.
+- Identify Email Providers: Quickly find out if a domain is using popular email services like Google Workspace, Microsoft 365, Zoho Mail, and more.
+- Sales Prospecting: Use this tool to discover the email infrastructure of your potential clients, helping you tailor your sales pitch and communication strategy accordingly.
+- User-Friendly Interface: Simply enter a domain or email address, and Email Service Checker will provide you with the relevant email provider information in an easy-to-read format.
+- Open Source and Community-Driven: We believe in the power of community and open-source development. You can contribute to the project on GitHub and help us improve the service for everyone.
 
 ## How It Works
 
-* Enter Domain or Email: Visit [emailservicechecker.com](https://emailservicechecker.com) and enter the domain or email address you want to check.
-* Get Instant Results: Our tool will quickly analyze the domain’s MX records and provide you with the email provider information.
-* Use for Sales Prospecting: Leverage this information to understand your prospects better and tailor your outreach efforts for maximum impact.
+- Enter Domain or Email: Visit [emailservicechecker.com](https://emailservicechecker.com) and enter the domain or email address you want to check.
+- Get Instant Results: Our tool will quickly analyze the domain’s MX records and provide you with the email provider information.
+- Use for Sales Prospecting: Leverage this information to understand your prospects better and tailor your outreach efforts for maximum impact.
 
 ## Get Started Today
 

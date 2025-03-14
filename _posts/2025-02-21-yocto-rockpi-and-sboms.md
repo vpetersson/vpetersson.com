@@ -13,7 +13,7 @@ tags:
 
 ---
 
-**TLDR**: *I wanted to generate an up-to-date disk image for a Rock Pi 4 using Yocto that included CUPS and Docker to both get a better understanding of Yocto and test the new SBOM generation feature.*
+**TLDR**: _I wanted to generate an up-to-date disk image for a Rock Pi 4 using Yocto that included CUPS and Docker to both get a better understanding of Yocto and test the new SBOM generation feature._
 
 As with many single-board computers (SBCs) from China, the issue often isn't the board itself but rather the software. RockPi from Radxa is no exception. If you go and download the [latest disk images](https://wiki.radxa.com/Rock4/downloads) for this board, you will notice that they are all end-of-life (EoL). However, these boards are still great and work very well for many applications. This should be top of mind if you are building a product that uses any of these devices.
 
@@ -21,6 +21,7 @@ I wanted to use one of the RockPi 4 boards I had for a simple print server. It's
 
 Say what you want about Raspberry Pi, but you can still download an up-to-date OS that runs on the Pi 1.
 In this article, I will show you not only how to build a disk image with Yocto (in this case for the Rock Pi 4, but it can easily be adjusted for other boards), but we will also talk a bit about how Yocto generates SBOMs (hint: it's really clever) and where to find your SBOMs.
+
 ## What is Yocto anyways?
 
 The Yocto Project is an open-source framework for building custom Linux distributions tailored to embedded systems. It provides a flexible, modular build system based on BitBake and OpenEmbedded, enabling developers to create highly optimized and reproducible Linux images for specific hardware. Yocto is widely used in industries like automotive, IoT, and networking due to its ability to support diverse architectures and long-term maintenance needs. With its layered architecture, extensive BSP support, and strong focus on customization, Yocto is a powerful tool for developers looking to build and maintain embedded Linux systems efficiently.
@@ -33,16 +34,16 @@ Since Yocto builds everything from source and is essentially a package manager, 
 
 Before we dive in, here are some key terms in Yocto that you probably want to understand:
 
-* **Poky** – The reference distribution of the Yocto Project, containing the OpenEmbedded build system, BitBake, and a set of metadata
-* **Scarthgap** – The codename for the Yocto Project 5.0 release
-* **Mickledore** – The codename for Yocto 4.2
-* **Kirkstone** – The codename for Yocto 4.0, a long-term support (LTS) release
-* **Dunfell** – The codename for Yocto 3.1, another LTS release
-* **Layers** – Modular additions to the base Yocto version that provide extra functionality
-* **BitBake** – The build tool used by Yocto to process recipes and generate images
-* **OpenEmbedded (OE)** – The build framework Yocto is based on
-* **Recipes** (.bb files) – Build instructions for individual packages or applications
-* **BSP** (Board Support Package) – A set of metadata and configurations for specific hardware platforms
+- **Poky** – The reference distribution of the Yocto Project, containing the OpenEmbedded build system, BitBake, and a set of metadata
+- **Scarthgap** – The codename for the Yocto Project 5.0 release
+- **Mickledore** – The codename for Yocto 4.2
+- **Kirkstone** – The codename for Yocto 4.0, a long-term support (LTS) release
+- **Dunfell** – The codename for Yocto 3.1, another LTS release
+- **Layers** – Modular additions to the base Yocto version that provide extra functionality
+- **BitBake** – The build tool used by Yocto to process recipes and generate images
+- **OpenEmbedded (OE)** – The build framework Yocto is based on
+- **Recipes** (.bb files) – Build instructions for individual packages or applications
+- **BSP** (Board Support Package) – A set of metadata and configurations for specific hardware platforms
 
 ## Building a disk image with Yocto
 
@@ -148,12 +149,13 @@ If you are intending to run this in production, please do not just copy the abov
 One limitation of the current disk image for Rock Pi is that you don't have a functional TTY. You can SSH in, or you could use a serial console, but the regular TTY doesn't work and I haven't spent much time trying to figure out why. Also, the disk system doesn't automatically expand to use all available space on the eMMC/SD.
 
 Some things I'm planning to add in the future:
-* Add support for Tailscale (there's a [meta-tailscale](https://github.com/ChristophHandschuh/meta-tailscale) layer)
-* Add support for auto disk expansion
-* Add WiFi support
+
+- Add support for Tailscale (there's a [meta-tailscale](https://github.com/ChristophHandschuh/meta-tailscale) layer)
+- Add support for auto disk expansion
+- Add WiFi support
 
 ## Resources
 
-* [Yocto Project Documentation](https://docs.yoctoproject.org/)
-* [Adding Docker to Yocto Project](https://kacperstapor.com/blog/24-11-2024/adding-docker-to-yocto-project)
-* [RAUC on Rockchip](https://www.konsulko.com/rauc-on-rockchip)
+- [Yocto Project Documentation](https://docs.yoctoproject.org/)
+- [Adding Docker to Yocto Project](https://kacperstapor.com/blog/24-11-2024/adding-docker-to-yocto-project)
+- [RAUC on Rockchip](https://www.konsulko.com/rauc-on-rockchip)

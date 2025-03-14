@@ -7,6 +7,7 @@ tags:
 - RabbitMQ
 redirect_from: /post/92729924064/how-to-get-rabbitmq-1-8-to-work-on-freebsd
 ---
+
 **Update:** Thanks to Phillip (the maintainer of the package), this issue has now been resolved for RabbitMQ 2.0. The instructions below still applies if you for some reason prefer to run RabbitMQ 1.8.
 
 This post might be irrelevant as soon as the port maintainer resolves this issue, but as I’m writing this, th**is bug will prevent you from running** RabbitMQ successfully.
@@ -20,7 +21,6 @@ Make sure you deselect Java, VX and X11, as you don’t need them if you’re on
 
     make install
 
-  
 Now, let’s build Rabbit:
 
     cd /usr/ports/net/rabbitmq  

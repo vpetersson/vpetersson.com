@@ -6,16 +6,16 @@ tags:
 - MongoDB
 redirect_from: /post/92729957389/notes-on-mongodb-gridfs-and-sharding-in-the-cloud
 ---
+
 [We](http://wireload.net)‘ve been using MongoDB in production for about six months with [YippieMove](http://www.yippiemove.com). It’s been an interesting experience and we’ve learned a lot.
 
 Contrary to many MongoDB deployments, we primarily use it for storing files in GridFS. We switched over to MongoDB after searching for a good distributed file system for years. Prior to MongoDB we used a regular NFS share, sitting on top of a [HAST](/2010/09/27/setting-up-a-redundant-nas-with-hast-with-carp.html)-device. That worked great, but it didn’t allow us to scale horizontally the way a distributed file system allows.
 
 Enter MongoDB. Just like most people playing around with MongoDB, we started out with a simple [Replica Set](http://www.mongodb.org/display/DOCS/Replica+Sets), but are now in the process of switching to a sharded setup.
 
-In the post, I will go over some of the things we’ve learned when using MongoDB.  
+In the post, I will go over some of the things we’ve learned when using MongoDB.
 
-Running MongoDB in the Cloud
-----------------------------
+## Running MongoDB in the Cloud
 
 One major thing to keep in mind when deploying MongoDB is that it matters a lot if you are deploying in a public cloud or on dedicated server. We deployed in a public cloud. While we did get good performance compared to many other cloud vendors, the performance were of course not at par with beefy dedicated servers (but came with other benefits instead).
 
@@ -29,8 +29,7 @@ The setup we ended up then with was as follows:
 
 ![](http://viktorpetersson.com/upload/primary_secondary_arbiter.png "Primary, Secondary and Arbiter")
 
-Replica Set
------------
+## Replica Set
 
 Setting up a Replica Set with MongoDB is very straight forward. It is recommended that you use three servers for a replica set. Two of which should be more or less dedicated to MongoDB, while the third is the arbiter, and can run on another server that isn’t necessarily dedicated to MongoDB. The arbiter isn’t resource intense, and is only used to keep track of the other two servers and vote for which one should be the primary.
 
@@ -63,12 +62,11 @@ The second dommand is:
 
 This will give you detailed information about the individual node.
 
-Let the sharding begin
-----------------------
+## Let the sharding begin
 
 Sharding is a bit more tricky than setting up a simple replica set, but a lot easier than sharding a sequel database. While it is not necessary that each member of a shard is a replica set, it is highly recommended for redundancy purposes. Hence, the way you should be thinking about sharding in MongoDB as a way to consolidate multiple replica sets.
 
-Here’s an illustration of how one would expand the replica set we described above with a shard.  
+Here’s an illustration of how one would expand the replica set we described above with a shard.\
 ![](http://viktorpetersson.com/upload/shard.png "Sharded")
 
 Let’s now assume that you have two replica sets configured and ready to go. How do you turn them into a shard?
@@ -87,7 +85,7 @@ To spin up a config-server, use the following command (note oplogsize is set to 
 
 Finally, you need to spin up the mongos (we assume node1, node2, node 4 and node5 are the config-servers):
 
-    sudo -u mongodb mongos --configdb :,:,:,: --fork --logpath /var/log/mongodb/mongos.log 
+    sudo -u mongodb mongos --configdb :,:,:,: --fork --logpath /var/log/mongodb/mongos.log
 
 Once you have all the servers up and running, it’s time to start sharding.
 
@@ -95,7 +93,7 @@ Start by opening a mongo-session against one of the mongos-servers. Now we need 
 
     use admin
     db.runCommand( { addshard : "repl0/:,:,:", maxSize:10000/\*MB\*/ } );
-    db.runCommand( { addshard : "repl1/:,:,:", maxSize:10000/\*MB\*/ } ); 
+    db.runCommand( { addshard : "repl1/:,:,:", maxSize:10000/\*MB\*/ } );
 
 The should add both replica sets to the shard. We also specified that the maximum storage each replica set should hold to 10GB. Please note that this is a soft limit, and the balancer will use this as a guideline to evenly spread the data.
 
@@ -129,9 +127,9 @@ Another useful command, if you need to reorganize your setup, is removeshard:
 
 It’s likely that you want to learn more about MongoDB before you get started. I would then recommend the following resource:
 
-* [Sharding Introduction](http://www.mongodb.org/display/DOCS/Sharding+Introduction)
-* [Configuring Sharding](http://www.mongodb.org/display/DOCS/Configuring+Sharding)
-* [Choosing a Shard Key](http://www.mongodb.org/display/DOCS/Choosing+a+Shard+Key)
-* [How to Choose a Shard Key: The Card Game](http://www.snailinaturtleneck.com/blog/2011/01/04/how-to-choose-a-shard-key-the-card-game/)
+- [Sharding Introduction](http://www.mongodb.org/display/DOCS/Sharding+Introduction)
+- [Configuring Sharding](http://www.mongodb.org/display/DOCS/Configuring+Sharding)
+- [Choosing a Shard Key](http://www.mongodb.org/display/DOCS/Choosing+a+Shard+Key)
+- [How to Choose a Shard Key: The Card Game](http://www.snailinaturtleneck.com/blog/2011/01/04/how-to-choose-a-shard-key-the-card-game/)
 
 Please note that I’m by no means a MongoDB guru, but feel free to drop a comment below, and I’ll try to answer.

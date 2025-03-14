@@ -10,7 +10,7 @@ tags:
 
 Over the last decade, I've spun up quite a few landing pages to gauge interest for upcoming products and features. Back in the day, there were platforms like [Launchrock](https://www.launchrock.com/) that made it simple to collect email addresses and maintain a waitlist. While Launchrock (and later [Typeform](https://www.typeform.com/), etc.) provided decent user experiences at the time, the end goal was always the same: **collect user data into a spreadsheet (or CRM).**
 
-Nowadays, I still want the same functionality (i.e., capturing emails and other user info), but I want it to *look native* on my site. Embedding a big Google Form or Typeform often looks clunky because it's just an iframe that's visually out of sync with the rest of the site.
+Nowadays, I still want the same functionality (i.e., capturing emails and other user info), but I want it to _look native_ on my site. Embedding a big Google Form or Typeform often looks clunky because it's just an iframe that's visually out of sync with the rest of the site.
 
 ## The Problem
 
@@ -18,9 +18,10 @@ When I launched [Notipus](https://notipus.com), I faced this problem again. How 
 
 Of course, one could solve this by spinning up a simple backend service to handle form submissions, but I wanted to avoid the overhead of maintaining yet another service. The goal was to keep things simple and leverage existing infrastructure.
 
-I discovered a solution using **Google Apps Script** that effectively acts as a wrapper for a Google Form. This means I can collect submissions from a *native* HTML form on my site and directly post it to a Google Form, which then writes to the associated Google Sheet.
+I discovered a solution using **Google Apps Script** that effectively acts as a wrapper for a Google Form. This means I can collect submissions from a _native_ HTML form on my site and directly post it to a Google Form, which then writes to the associated Google Sheet.
 
 ## The Repo
+
 If you want to see this in the wild, take a look at the GitHub repo: [Viktopia/notipus.com](https://github.com/Viktopia/notipus.com). In particular, check out the form implementation ([form.html](https://github.com/Viktopia/notipus.com/blob/master/form.html)).
 
 ## The Script
@@ -120,8 +121,8 @@ function getFormDetails() {
    - Click **Deploy > New deployment**.
    - Choose **Type**: "Web app".
    - Make sure you set:
-     - **Execute the app as**: *Me* (i.e., your Google account).
-     - **Who has access**: *Anyone*.
+     - **Execute the app as**: _Me_ (i.e., your Google account).
+     - **Who has access**: _Anyone_.
    - Once deployed, you'll get a `webApp URL`. This is the endpoint you'll POST (or GET) to with your form fields.
 5. **Grant Permissions**: The first time you deploy, you'll be asked to grant permissions. Since this script writes to the Form and the associated Sheet on your behalf, the permission request is expected.
 

@@ -8,10 +8,11 @@ tags:
 - pfSense
 redirect_from: /post/92729949844/quick-and-dirty-way-of-fixing-nut-on-pfsense-2-0rc
 ---
+
 One of my favorite Open Source appliances is [pfSense](http://www.pfsense.org/). It can turn any old machine into a very powerful firewall/router in 10 minutes or less. Also, it comes with a very handy GUI and the fact that it is based on FreeBSD makes it even greater.
 
-While version 2.0 isn’t stable yet, the 2.0RC is more or less considered stable. It’s also a major update to the 1.2-branch. I’ve used 2.0 on two ‘production’ firewalls now, and I think it more reliable than 1.2.  
-  
+While version 2.0 isn’t stable yet, the 2.0RC is more or less considered stable. It’s also a major update to the 1.2-branch. I’ve used 2.0 on two ‘production’ firewalls now, and I think it more reliable than 1.2.
+
 There is however one major problem that bugs me with 2.0 — The Nut-package ([Network UPS](http://www.networkupstools.org/)) is broken.
 
 While I probably should have created a proper fix for the problem instead of this quick-and-dirty fix, I can’t find the time to do so.

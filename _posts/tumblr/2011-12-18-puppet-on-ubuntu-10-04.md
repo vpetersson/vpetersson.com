@@ -8,6 +8,7 @@ tags:
 - Ubuntu
 redirect_from: /post/92729952849/puppet-on-ubuntu-10-04
 ---
+
 Yesterday I decided that it’s about time to learn [Puppet](http://puppetlabs.com/). I’ve had my eye on both Puppet and [Chef](http://wiki.opscode.com/display/chef/Home) for some time now. Yesterday after reading this [Quora](http://www.quora.com/What-are-the-key-reasons-to-choose-Puppet-over-Chef-or-vice-versa)-thread and this [blog](http://devopsanywhere.blogspot.com/2011/10/puppet-vs-chef-fight.html)-post, I decided to go with Puppet.
 
 After downloading their test-VM and going through the [tutorial](http://docs.puppetlabs.com/learning/), I pretty quickly fell in love with the simplicity and structure. Puppet is straight forward and rather intuitive.

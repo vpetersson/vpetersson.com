@@ -6,10 +6,11 @@ tags:
 - Coffee
 redirect_from: /post/92729956159/countries-and-coffee-consumption
 ---
+
 I’m a coffee junkie. Like many of my fellow geeks, I consume way more than the average person. On a normal day, I drink somewhere between 5-10 cups perhaps. How much is that in relation to the population at large?
 
-To find the answer, let’s turn to Wikipedia’s [List of countries by coffee consumption per capita](http://en.wikipedia.org/wiki/List_of_countries_by_coffee_consumption_per_capita). Let’s assume that all the data in there are true. Let’s also make the assumption that one serving of coffee is about 6 grams of coffee beans.  
-  
+To find the answer, let’s turn to Wikipedia’s [List of countries by coffee consumption per capita](http://en.wikipedia.org/wiki/List_of_countries_by_coffee_consumption_per_capita). Let’s assume that all the data in there are true. Let’s also make the assumption that one serving of coffee is about 6 grams of coffee beans.
+
 In the graph below, I’ve included the top 6 countries, plus Italien and the United States (as they were interesting references).
 
 \[easychart type=“vertbar” height=“400” title=“Coffee Cups Consumed per Capita and Day” groupnames=“Finland, Norway, Iceland, Denmark, Netherlands, Sweden, Italy, United States” valuenames=“” group1values=“5.48” group2values=“4.52” group3values=“4.11” group4values=“3.97” group5values=“3.84” group6values=“3.74” group7values=“2.69” group8values=“1.92”\]

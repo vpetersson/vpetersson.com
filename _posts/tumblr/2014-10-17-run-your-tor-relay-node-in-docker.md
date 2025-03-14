@@ -9,6 +9,7 @@ tags:
 - censorship
 redirect_from: /post/100192280434/run-your-tor-relay-node-in-docker
 ---
+
 [Tor](https://www.torproject.org) is a project that I really love to support. In this age of increased surveillance, Tor is needed more than ever.
 
 Unfortunately, your own Tor Exit Node can put you in a lot of trouble due to the fact that Tor being used for all kinds of abuses. This is unfortunately a the reality of anonymity; some people will abuse it.
@@ -24,7 +25,6 @@ With Docker installed, all you need to do is to run the following:
         --restart=always \
         --name=torrelay \
         -t vpetersson/torrelay
-    
 
 This will create a Tor Relay Node. All you need to do is to open up your firewall, such that the Docker container is reachable on port 9001.
 

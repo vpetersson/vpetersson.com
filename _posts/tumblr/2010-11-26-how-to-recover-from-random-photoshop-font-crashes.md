@@ -9,15 +9,15 @@ tags:
 - Photoshop
 redirect_from: /post/92729932389/how-to-recover-from-random-photoshop-font-crashes
 ---
+
 Photoshop and Illustrator are somewhat of required apps today. You realize how much you need these apps when they decide to not play ball. This have happened to me a few times, and it often relate to fonts. Photoshop simply crashes when I bring up the font tool. Given that this is probably one of the most frequently used tools, this is a pretty big deal.
 
 The bug-report isn’t that helpful either. You’ll only get something like:
 
-> Exception Type: EXC\_BAD\_ACCESS (SIGSEGV)  
-> Exception Codes: KERN\_INVALID\_ADDRESS at 0×0000000000000108  
+> Exception Type: EXC\_BAD\_ACCESS (SIGSEGV)\
+> Exception Codes: KERN\_INVALID\_ADDRESS at 0×0000000000000108\
 > Crashed Thread: 0 Dispatch queue: com.apple.main-thread
 
-  
 Yeah, that’s hardly enough to even figure out that it the underlaying reason may be a corrupt font. A quick Google query showed that I was hardly the only person having this issue. There are numerous posts on Adobe’s forum on this, but few useful answers.
 
 One of the most common suggestions is to [remove duplicate fonts in Font Book](http://docs.info.apple.com/article.html?path=FontBook/2.2/en/5285.html). While I found a few duplicates, that didn’t do the trick.

@@ -10,6 +10,7 @@ tags:
 - tweak
 redirect_from: /post/100669319779/keyboard-hacks-for-os-x
 ---
+
 Every time I install OS X, I get very frustrated with the default keyboard settings. Perhaps the most frustrating one is how slow the navigation is when you’re using the arrow keys to move around in text blocks.
 
 Fortunately, it is easy to change the settings. To make the keyboard navigation faster, you need to toggle the following two settings:

@@ -9,6 +9,7 @@ tags:
 - usb-boot
 redirect_from: /post/151192357764/how-to-fix-kerneltask-cpu-usage-on-macos-sierra
 ---
+
 In my post [How to fix kernel_task CPU usage on Yosemite](/2014/10/16/how-to-fix-kerneltask-cpu-usage-on-yosemite.html), I first wrote about how a broken logic board can trigger high CPU usage from `kernel_task` as well as how to fix it. When El Capitan later were release, the issue [remained](/2016/01/03/how-to-fix-kerneltask-cpu-usage-on-el-capitan.html).
 
 Now, with macOS Sierra out, I upgraded my old MacBook Pro (8,2) as well. As expected, the issue remained the same.

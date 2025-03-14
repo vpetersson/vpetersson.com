@@ -8,6 +8,7 @@ tags:
 - Spotify
 redirect_from: /post/92729965694/a-permanent-fix-for-apples-playpause-hijacking-and-use-s
 ---
+
 I hate iTunes with passion. It’s bloated and annoying. However, since it is a major revenue stream for Apple, they try hard to push it into your face as often as possible.
 
 Since I started using Spotify a few years back, I don’t think I’ve used iTunes to play music once (only to upgrade iOS-devices before the over-the-air-updates came out).
@@ -16,10 +17,9 @@ As long as you don’t touch any other Apple products, Spotify will take over th
 
 Fortunately, I just found a solution. It isn’t perfect, but it’s better than anything else I’ve found.
 
-*   Start by going to “System Preferences” -> “Keyboard” and select “Use all F1, F2, etc. keys as standard function keys”
-*   Next, download the application [Shortcuts](http://itunes.apple.com/us/app/shortcuts/id402271673?mt=12) from Mac App Store
+- Start by going to “System Preferences” -> “Keyboard” and select “Use all F1, F2, etc. keys as standard function keys”
+- Next, download the application [Shortcuts](http://itunes.apple.com/us/app/shortcuts/id402271673?mt=12) from Mac App Store
 
-  
 Within Shortcuts, you now need to create two Apple Scripts: one for play/pause, and one for next track.
 
 The Play/Pause script looks like this:

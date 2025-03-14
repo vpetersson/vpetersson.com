@@ -9,7 +9,8 @@ tags:
 - google hangout
 redirect_from: /post/113947203631/are-they-using-google-apps
 ---
-[Are they using Google Apps?](http://aretheyusinggoogleapps.com/)  
+
+[Are they using Google Apps?](http://aretheyusinggoogleapps.com/)
 
 Google Hangouts is great tool for video conferences…if the other party is also on the Google stack (Gmail or Google Apps). If they’re not, it it’s a dead end.
 

@@ -12,6 +12,7 @@ tags:
 - linux
 redirect_from: /post/100997217139/running-puppet-master-in-docker
 ---
+
 In the past, I’ve relied a lot on Puppet for automation. That means that I have a fair number of Puppet masters at my disposals.
 
 Puppet is a Ruby based application. As many Ruby based applications, it depends on a fairly large number of other libraries. Having to install all these packages on a brand new server is a pity.
@@ -34,7 +35,6 @@ To create your own Puppet master using my container, all you need to do is to ru
       -v /path/to/modules:/etc/puppet/modules \
       -v /path/to/manifests:/etc/puppet/manifests \
       -t vpetersson/puppetmaster
-    
 
 The command above might seem a bit overwhelming, and you can find more detailed information about the command and how to use the container over at its home at [github](https://github.com/vpetersson/docker-puppetmaster).
 

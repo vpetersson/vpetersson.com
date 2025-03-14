@@ -18,15 +18,15 @@ Back in 2009, Paul Graham, wrote an essay titled [Maker’s schedule, Manager’
 
 What PG is describing is really Deep Work, something that Cal Newport popularized in his book by the same name. Newport outlines the importance of cutting out noise and building good habits (I wrote more about my habits in [A Decade of Remote Work]({{ site.url }}/2019/05/18/a-decade-of-remote.html)). Reading Deep Work was somewhat of a game changer for me personally, as it reinforced many concepts that I’ve had found working in my own life, such as:
 
-* Using the Pomodorro Technique
-* Batching email twice per day
-* Clustering meetings for one or two days per week
+- Using the Pomodorro Technique
+- Batching email twice per day
+- Clustering meetings for one or two days per week
 
 Newport backs this up with both anecdotal evidence of how some of the greatest thinkers in history worked as well as with scientific findings.
 
-Before we dive into how Remote Work can be somewhat of a requirement for Deep Work, let’s take a step back and explore why Deep Work is needed and for *whom* it is needed. As PG points out, the “Manager’s schedule” is based on the fact that a single task is will not take more than a few hours at most, and that most of the time is spent in meetings (usually booked with hourly slots). This is the opposite of Deep Work. Deep Work would be if you’re working on some complex programming task or perhaps a writing project where you need many hours of uninterrupted focus. The *content switching cost* is extremely high. A single interruption from coworker knocking on your shoulder asking you for some piece of information or to grab a coffee can literally set you back an hour or two just to regain that flow and focus. (It is not a coincident why so many developers are happy to spend a few hundred bucks on a pair of good noise cancelling headphones when they are forced to work in an open office environment.)
+Before we dive into how Remote Work can be somewhat of a requirement for Deep Work, let’s take a step back and explore why Deep Work is needed and for _whom_ it is needed. As PG points out, the “Manager’s schedule” is based on the fact that a single task is will not take more than a few hours at most, and that most of the time is spent in meetings (usually booked with hourly slots). This is the opposite of Deep Work. Deep Work would be if you’re working on some complex programming task or perhaps a writing project where you need many hours of uninterrupted focus. The _content switching cost_ is extremely high. A single interruption from coworker knocking on your shoulder asking you for some piece of information or to grab a coffee can literally set you back an hour or two just to regain that flow and focus. (It is not a coincident why so many developers are happy to spend a few hundred bucks on a pair of good noise cancelling headphones when they are forced to work in an open office environment.)
 
-This is why the office environment is kryptonite for focussed work (a.k.a. Deep Work). An office environment makes it *too easy* for peers (be your coworkers, your boss, or your boss’s boss) to just walk over to your desk and ask for something. This, of course, gets even worse in an office with an open floor plan.
+This is why the office environment is kryptonite for focussed work (a.k.a. Deep Work). An office environment makes it _too easy_ for peers (be your coworkers, your boss, or your boss’s boss) to just walk over to your desk and ask for something. This, of course, gets even worse in an office with an open floor plan.
 
 This leads us to the point why Remote Work is Deep Work. What’s the best way to prevent your coworkers to walk over and tap you on the shoulder? Well, if you work remotely, unless you happen to live neighbor with coworker, the probability of them walking over to you and knock on your door is close to nill. This is why I would argue that Remote Work is the best way to do Deep Work. If you want a stretch of six hours of uninterrupted work, all you need to do is to turn off your notifications.
 

@@ -7,15 +7,16 @@ tags:
 - Note-to-self
 redirect_from: /post/92729926614/copying-usersgroups-between-freebsd-servers
 ---
+
 Sometimes you want to move **all** users and groups from one server to another without having to recreate all users. Let’s say you are retiring an old server and moving to a new server. If you’ve had the server for a while and have lots of users on it, the last thing you want to do is to recreate all users and assign new passwords.
 
-If you’re on FreeBSD, the task is pretty trivial. I’m sure it’s pretty straight forward on Linux too, but these instructions only apply to FreeBSD. In my case I was moving the users from a FreeBSD 7.1 system to a brand new FreeBSD 8.1 server.  
-  
+If you’re on FreeBSD, the task is pretty trivial. I’m sure it’s pretty straight forward on Linux too, but these instructions only apply to FreeBSD. In my case I was moving the users from a FreeBSD 7.1 system to a brand new FreeBSD 8.1 server.
+
 There are three files you need to copy from the old to the new server. These are:
 
-*   /etc/passwd
-*   /etc/group
-*   /etc/master.passwd
+- /etc/passwd
+- /etc/group
+- /etc/master.passwd
 
 You might also want to copy the entire /home directory, so that the users get their user data across.
 

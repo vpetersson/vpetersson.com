@@ -10,10 +10,11 @@ tags:
 - UCARP
 redirect_from: /post/92729959439/freebsd-failover-in-the-cloud-ucarp-to-the-rescue
 ---
+
 I’m a big fan of FreeBSD. However, as painful it is to admit, it isn’t always the best OS to run in the cloud. Compared to Linux, you will get worse network and disk performance even with Virtio installed. There are also other issues. For instance, it is likely that you won’t get [CARP](http://www.freebsd.org/doc/handbook/carp.html) to fully work (while this works perfectly fine with OpenBSD’s CARP, and Linux’s VRRP). I have [written about workarounds](http://viktorpetersson.com/2011/03/23/how-to-get-freebsds-carp-working-on-cloudsigma/) for this issue in the past, but they do not seem to work equally well in FreeBSD 9.0.
 
-Luckily, there is a userland implementation of CARP called UCARP that works better than CARP. It’s also very similar to CARP when it comes to configuration.  
-  
+Luckily, there is a userland implementation of CARP called UCARP that works better than CARP. It’s also very similar to CARP when it comes to configuration.
+
 Unfortunately UCARP’s [website](http://www.ucarp.org/project/ucarp) includes more or less zero documentation, so I’ll help you get started. I won’t talk too much about what CARP is, as I assume you already know that if you’re reading this. There is however one major difference between CARP and UCARP — UCARP doesn’t have its own dedicated interface. Instead it relies on IP aliases that are brought up and down with the scripts below.
 
 First of all, you need to install UCARP from ports:
@@ -63,8 +64,7 @@ With all of those files in place, you can simply start ucarp with:
 
     /usr/local/etc/rc.d/ucarp start
 
-Closing thoughts
-----------------
+## Closing thoughts
 
 Once you’ve gotten the UCARP working, it’s time to tie it into your desired workflow. Contrary to CARP, which relies on dev.d for triggar-actions, you will use ucarp\_up.sh and ucarp\_down.sh.
 

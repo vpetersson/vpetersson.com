@@ -7,6 +7,7 @@ tags:
 - Raspberry Pi
 redirect_from: /post/92729975864/join-me-on-pi-and-more-on-june-15
 ---
+
 On June 15 I will be speaking at Pi and More in at Trier University in Germany.
 
 The event is all about Raspberry Pi, and I’m really excited to be part of the event.

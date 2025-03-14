@@ -8,21 +8,20 @@ tags:
 - ZoneMinder
 redirect_from: /post/92729916079/how-to-install-zoneminder-1-24-2-on-ubuntu-10-04-lts-ser
 ---
+
 Last week I published a new version of my [ZoneMinder Virtual Appliance](http://viktorpetersson.com/open-source/zoneminder-virtual-appliance). The virtual appliance is great if you want to easily deploy ZoneMinder without having to spend time setting it up. However, in some situations, you want to run ZoneMinder directly on the hardware. Perhaps you need better performance or simply need to capture video streams from V4L-devices.
 
-Since I already spent the time getting it running, I thought I’d share the instructions for getting it running. It’s pretty straight forward, but there are a few minor things that took me some time to get around.  
-  
+Since I already spent the time getting it running, I thought I’d share the instructions for getting it running. It’s pretty straight forward, but there are a few minor things that took me some time to get around.
+
     \[flickr-gallery mode=“photoset” photoset=“72157624119100112”\]
 
-Installation
-============
+# Installation
 
 **Optional:** I personally prefer to install the ‘minimal’ version of Ubuntu. You can install this mode by simply hitting F4 right at boot.
 
 Other than the installing the ‘minimal’ system, the only things you would need to keep in mind are to install “LAMP” and “OpenSSH” under the Software selection. You will also need to pick a MySQL password, which will be used later.
 
-Configuration
-=============
+# Configuration
 
 Upgrade the package repository:
 
@@ -50,7 +49,7 @@ Resolve a bug (discussed more [here](http://www.zoneminder.com/forums/viewtopic.
 
     joe src/zm_utils.cpp
 
-(or your favorite editor)  
+(or your favorite editor)\
 Add the line ‘#include ‘ on row 22 (or somewhere in that general area). To exit and save with Joe, press _ctrl+k x_.
 
 Build and install Zoneminder
@@ -60,7 +59,7 @@ Build and install Zoneminder
 
 Configure the database:
 
-    mysql -uroot -p 
+    mysql -uroot -p
 
 Install Cambozola:
 

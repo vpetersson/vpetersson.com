@@ -12,8 +12,8 @@ tags:
 
 Lately, I've been doing some digging into captive portals - you know, these things that pop up when you try to connect to the WiFi at a coffee shop or hotel. In essence, they are very simple:
 
-* You load a web page that usually requires you to tick a box or enter your email.
-* If the system is satisfied with the input above, you are sent to a page that returns HTTP status 200 (and usually a `success` message in the body), which tells the system that you're online.
+- You load a web page that usually requires you to tick a box or enter your email.
+- If the system is satisfied with the input above, you are sent to a page that returns HTTP status 200 (and usually a `success` message in the body), which tells the system that you're online.
 
 Now, I'm a massive UniFi fan. Over the years, I've migrated most of my networks over to UniFi equipment with [Dream Machine Pros](https://store.ui.com/us/en/collections/unifi-dream-machine/products/udm-pro) as the firewall. It's a great turn-key solution that largely just works. Prior to this, I usually relied on either a [pfSense](https://www.pfsense.org/) (and later [OPNsense](https://opnsense.org/)), but frankly, the UDM is just a great device that integrates seamlessly with all other UniFi hardware. That means provisioning a whole network is done in a few clicks.
 
@@ -23,7 +23,7 @@ Bringing this back to the topic of captive portals, UniFi's console does allow y
 
 ![UniFi's built-in hotspot/captive portal](/assets/unifi-built-in-captive-portal.webp)
 
-What they do support, however, is something they call 'External Portal Server,' which allows you to integrate a third-party captive portal with the UniFi hardware. This is all neat until you start digging into the details. Or should I say, the lack of details. You see, UniFi provides absolutely *zero* documentation on this. There are, however, third-party services/libraries that have reverse-engineered how this flow works, but it's less than ideal.
+What they do support, however, is something they call 'External Portal Server,' which allows you to integrate a third-party captive portal with the UniFi hardware. This is all neat until you start digging into the details. Or should I say, the lack of details. You see, UniFi provides absolutely _zero_ documentation on this. There are, however, third-party services/libraries that have reverse-engineered how this flow works, but it's less than ideal.
 
 ## Using External Portal Servers
 
@@ -36,10 +36,10 @@ When a user tries to access the WiFi, a GET request is sent to the external serv
 
 Notice all those GET parameters:
 
-* ap=access_point_mac
-* user_mac=user_mac_address
-* ssid=network_ssid
-* url=original_url_requested
+- ap=access_point_mac
+- user_mac=user_mac_address
+- ssid=network_ssid
+- url=original_url_requested
 
 With that information, the external portal then needs to issue back a POST request to the console that looks something like this:
 
@@ -58,8 +58,8 @@ Notice that we need to pass the MAC address back, along with how long the sessio
 
 Now, there are a few problems with this:
 
-* We need to be able to talk directly to the console (i.e., this is **not** unifi.ui.com), but rather the console directly.
-* We need to acquire a Bearer token (which is done by issuing a call to the `/api/auth/login` with a set of admin-level credentials).
+- We need to be able to talk directly to the console (i.e., this is **not** unifi.ui.com), but rather the console directly.
+- We need to acquire a Bearer token (which is done by issuing a call to the `/api/auth/login` with a set of admin-level credentials).
 
 As you can see, this is why these tools need both direct access to your UniFi console and a set of credentials. Some of them also use this to provision the External Portal Server configuration, which is somewhat neat.
 
@@ -75,11 +75,11 @@ My initial idea of creating a SaaS product around this (I even bought the domain
 
 ## Update (2024-07-01)
 
-I *thought* I had made a [breakthrough](https://github.com/woodjme/unifi-hotspot/issues/68#issuecomment-2143952594) in the API access confinement by leveraging the new (and of course undocumented) 'hotspotoperator' permission (rather than having to use a full-blown admin account), it turned out that this [didn't work](https://github.com/woodjme/unifi-hotspot/issues/68#event-13343000818) in the end (kudos to [@woodjme](https://github.com/woodjme))..
+I _thought_ I had made a [breakthrough](https://github.com/woodjme/unifi-hotspot/issues/68#issuecomment-2143952594) in the API access confinement by leveraging the new (and of course undocumented) 'hotspotoperator' permission (rather than having to use a full-blown admin account), it turned out that this [didn't work](https://github.com/woodjme/unifi-hotspot/issues/68#event-13343000818) in the end (kudos to [@woodjme](https://github.com/woodjme))..
 
 ## References
 
-* [unifi-hotspot](https://github.com/woodjme/unifi-hotspot) - NodeJS based captive portal that can feed to Google Sheets. Looks very promising.
-* [UniFi API Client](https://github.com/Art-of-WiFi/UniFi-API-client) - A PHP based UniFi client that is actively maintained by [Art of WiFi](https://artofwifi.net), who offer captive portals as a service (based on the library).
-* [aiounifi](https://github.com/Kane610/aiounifi) - Python based UniFi library used by Home Assistant.
-* [unificontrol](https://github.com/nickovs/unificontrol) - Another Python based UniFi library.
+- [unifi-hotspot](https://github.com/woodjme/unifi-hotspot) - NodeJS based captive portal that can feed to Google Sheets. Looks very promising.
+- [UniFi API Client](https://github.com/Art-of-WiFi/UniFi-API-client) - A PHP based UniFi client that is actively maintained by [Art of WiFi](https://artofwifi.net), who offer captive portals as a service (based on the library).
+- [aiounifi](https://github.com/Kane610/aiounifi) - Python based UniFi library used by Home Assistant.
+- [unificontrol](https://github.com/nickovs/unificontrol) - Another Python based UniFi library.

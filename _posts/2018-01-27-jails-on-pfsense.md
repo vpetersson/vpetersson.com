@@ -9,7 +9,7 @@ tags:
 - jails
 ---
 
-**Disclosure:** *I have no idea how this impact the security of pfSense. There is probably a good reason why the jail service is disabled by default. Hence, beware that this might cause unexpected security issues as it is not a supported package.*
+**Disclosure:** _I have no idea how this impact the security of pfSense. There is probably a good reason why the jail service is disabled by default. Hence, beware that this might cause unexpected security issues as it is not a supported package._
 
 Many, many years ago, I used to be an avid user FreeBSD jails. They were a great way to isolate services and boost security in the pre-Docker world. While I can't say I use FreeBSD much these days, I still run [pfSense](https://www.pfsense.org/) on more or less all my firewalls. It's easy to use, secure, and perhaps most importantly, very stable.
 
@@ -25,28 +25,31 @@ The first thing we need to do is to create a dedicated virtual IP for each jail.
 
 I would suggest that you only use the localhost interface, as I'm not sure what the security implications would be if you're exposing it to a WAN/LAN interface. I would also discourage from exposing any services in the jail. The reason for this is that if the service somehow gets compromised, the attacker would have free flow to all your network interfaces. It might be possible to mitigate this with firewall rules, but consider yourself warned.
 
-
 ## Prepare the system
 
 With the virtual IP(s) created, it's now time to prepare the server. Start by SSH'ing into the box and run the following commands.
 
 Install ezjail package:
+
 ```
 $ pkg add http://pkg.freebsd.org/freebsd:11:x86:64/latest/All/ezjail-3.4.2.txz
 ```
 
 Brute force link to make jails to work:
+
 ```
 $ ln -s /lib/libkvm.so.7 /lib/libkvm.so.6
 ```
 
 Download missing jail file:
+
 ```
 $ curl -o /etc/rc.d/jail https://raw.githubusercontent.com/freebsd/freebsd/stable/11/etc/rc.d/jail
 $ chmod +x /etc/rc.d/jail
 ```
 
 Enable and initiate ezjail:
+
 ```
 $ echo 'ezjail_enable="YES"' | tee -a /etc/rc.conf.local
 $ ezjail-admin install

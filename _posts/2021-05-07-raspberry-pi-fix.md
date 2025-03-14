@@ -14,8 +14,8 @@ I've run into the following error myself a number of time in recent time, and ju
 
 Here's the problem:
 
-* You are trying to upgrade your Raspberry Pi to the latest version
-* When you upgrade the kernel, it chokes with an error like this:
+- You are trying to upgrade your Raspberry Pi to the latest version
+- When you upgrade the kernel, it chokes with an error like this:
 
 ```
 > $ sudo apt upgrade
@@ -65,7 +65,6 @@ E: Sub-process /usr/bin/dpkg returned an error code (1)
 ```
 
 After wasting far too much time trying to debug this, I found that there was an easy solution: simply remount `/boot`.
-
 
 ```
 > $ sudo umount /boot

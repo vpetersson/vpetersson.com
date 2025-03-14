@@ -20,7 +20,7 @@ Please note that the advice below is largely focused around software companies, 
 
 Many first-time entrepreneurs find the process of creating a company a daunting task. It’s understandable. Depending on your jurisdiction, the complexity of starting a company varies. This of course is added on top of the mountain of things that a first-time entrepreneur needs to be get familiarized with (such as product development, potential fund raising, hiring etc).
 
-While [IANAL](https://en.m.wikipedia.org/wiki/IANAL), my non-legal advice would be to try to keep things simple. If you expect your customers to be based in the US, it makes sense for your company to be incorporated in the US. If your customers are expected to be based in the EU, then incorporating in EU makes sense. Note that I haven’t mentioned at all where *you* are based.
+While [IANAL](https://en.m.wikipedia.org/wiki/IANAL), my non-legal advice would be to try to keep things simple. If you expect your customers to be based in the US, it makes sense for your company to be incorporated in the US. If your customers are expected to be based in the EU, then incorporating in EU makes sense. Note that I haven’t mentioned at all where _you_ are based.
 
 Having run companies in multiple countries by now, I can say that operating headache of a company in the US is a lot lower than it is in the EU (Sweden was a major PITA). I have no personal experience of running companies in Asia, but presumably Hong Kong and Singapore are good places.
 
@@ -28,7 +28,7 @@ Depending on where you decide to incorporate, I would recommend [Stripe Atlas](h
 
 Also do note that if for instance you are looking to tap into a government scheme for fundraising/financing, such as SEIS in the UK, you likely need to be incorporated in the given country.
 
-The bottom line is that try to keep things simple for both yourself and your customers. Contrary to the common advice you will receive from your local advisors, this does not mean that you’re stuck to incorporating in the country you’re from/live in. If anything, this likely makes you *less* attractive to future investors/buyers than if you’re incorporated as say a Delaware C-Corp (which is the golden standard for tech startups).
+The bottom line is that try to keep things simple for both yourself and your customers. Contrary to the common advice you will receive from your local advisors, this does not mean that you’re stuck to incorporating in the country you’re from/live in. If anything, this likely makes you _less_ attractive to future investors/buyers than if you’re incorporated as say a Delaware C-Corp (which is the golden standard for tech startups).
 
 ## Tools for collaboration
 
@@ -36,28 +36,28 @@ Ok, so you have now incorporated and are ready to start building your company. T
 
 While I will try to avoid recommend any particular tool, and rather give categories of tools that I find required for day-to-day activity of a software company. These categories of generally look something like this:
 
- * External communication (i.e. email, these platforms usually come with calendar as well)
- * Internal communication (such as Slack for text based, and some other video conferencing app)
- * Code hosting (such as Github or Gitlab)
- * Project management (Github now does a good-enough job for this these days IMHO)
- * Design review tool (this is often overlooked, but tools like [InVision](https://www.invisionapp.com/) makes a massive difference when reviewing product and website design)
+- External communication (i.e. email, these platforms usually come with calendar as well)
+- Internal communication (such as Slack for text based, and some other video conferencing app)
+- Code hosting (such as Github or Gitlab)
+- Project management (Github now does a good-enough job for this these days IMHO)
+- Design review tool (this is often overlooked, but tools like [InVision](https://www.invisionapp.com/) makes a massive difference when reviewing product and website design)
 
-Finally, don’t get tempted to run things yourself. **Go for hosted solutions**. While it might seem tempting to run service X yourself, because “*a VM on Digital Ocean only cost $Y per month, while the hosted version cost $Z per month*” (where Z>Y). Unless you’re operating at **very large** scale, this rarely ever makes sense. Thing break, and you **will** end up spending a lot of time maintaining said server(s), have downtime, and/or forget to take proper backups, which will lead to data and productivity loss.
+Finally, don’t get tempted to run things yourself. **Go for hosted solutions**. While it might seem tempting to run service X yourself, because “_a VM on Digital Ocean only cost $Y per month, while the hosted version cost $Z per month_” (where Z>Y). Unless you’re operating at **very large** scale, this rarely ever makes sense. Thing break, and you **will** end up spending a lot of time maintaining said server(s), have downtime, and/or forget to take proper backups, which will lead to data and productivity loss.
 
 ## Hiring
 
-I briefly touched on hiring in my initial blog post. It’s a topic worth exploring further, as it is far from trivial and *will* consume a huge part of your time as an entrepreneur.  
+I briefly touched on hiring in my initial blog post. It’s a topic worth exploring further, as it is far from trivial and _will_ consume a huge part of your time as an entrepreneur.
 
 Let’s start with sourcing. While sites like Upwork has received a bad rap because of the poor quality of the majority of the candidates, it is still one of the best places to recruiting talent. Yes, you will receive a large number of unqualified applicants, but there are ways to work around this. The reason why I personally like Upwork is because of the massive talent pool. In recent years, there has been a big increase of job boards that focuses on remote workers. However, they tend to just be more expensive and more polished versions of Upwork (don’t get me started on Upwork’s horrible and insanely buggy user interface) with smaller talent pools. So, used right, Upwork can be used to find qualified team members.
 
 Here are my tips for when hiring on Upwork:
 
- * Ask questions where applicants are required to write a proper answer. The key here is to rule out applicants that simply applies to a large number of roles without effort.
- * Cover letters are overrated. A set of well-crafted questions will give you a lot more insight into the candidate than a cover letter where the candidate raves about how amazing your company is (and where 90% of the content is re-used).
- * Sneak in a test in the job description to test for attention to details. This can take a lot of forms, but for instance, you could say that they need to include a certain word in their application, or apply using a special process.
- * Look at their Github profile and/or portfolio. Their prior work usually tell you a good amount about a person. Do however note that there are great applicants that have little to show for their work because they ware not allowed to share it due to their previous employer.
- * You get what you pay for. Yes, pricing arbitrage is still a real thing, but you’d be foolish if you assume that a talented developer in say Russia will not sooner or later realize his/her market rate. You can still find great talent at a large discount compared to your local market, but don’t expect a developer that cost $8/h in India to be comparable to a developer that cost $30/h in Russia. Global markets like Upworks help establish fairly sensible equilibriums between quality and price (in particular with the review process).
- * Never hire contractors affiliated with agencies. I outlined why in the initial blog post, but in short, you want a direct relationship without a proxy being involved.
+- Ask questions where applicants are required to write a proper answer. The key here is to rule out applicants that simply applies to a large number of roles without effort.
+- Cover letters are overrated. A set of well-crafted questions will give you a lot more insight into the candidate than a cover letter where the candidate raves about how amazing your company is (and where 90% of the content is re-used).
+- Sneak in a test in the job description to test for attention to details. This can take a lot of forms, but for instance, you could say that they need to include a certain word in their application, or apply using a special process.
+- Look at their Github profile and/or portfolio. Their prior work usually tell you a good amount about a person. Do however note that there are great applicants that have little to show for their work because they ware not allowed to share it due to their previous employer.
+- You get what you pay for. Yes, pricing arbitrage is still a real thing, but you’d be foolish if you assume that a talented developer in say Russia will not sooner or later realize his/her market rate. You can still find great talent at a large discount compared to your local market, but don’t expect a developer that cost $8/h in India to be comparable to a developer that cost $30/h in Russia. Global markets like Upworks help establish fairly sensible equilibriums between quality and price (in particular with the review process).
+- Never hire contractors affiliated with agencies. I outlined why in the initial blog post, but in short, you want a direct relationship without a proxy being involved.
 
 The above tips, combined with ruthless screening should help you find those diamonds in a rough that are still out there on Upwork.
 

@@ -9,20 +9,21 @@ tags:
 - Ubuntu
 redirect_from: /post/92729917874/monitor-nginx-and-disk-usage-with-monit
 ---
-Yesterday I posted an article on [how to monitor Apache and PostgreSQL with Monit](http://viktorpetersson.com/2010/07/09/setting-up-monit-to-monitor-apache-and-postgresql-on-ubuntu/). After setting that up I was amazed how simple and flexible Monit was, so I moved on with two more tasks: monitor Nginx and disk usage.  
-  
+
+Yesterday I posted an article on [how to monitor Apache and PostgreSQL with Monit](http://viktorpetersson.com/2010/07/09/setting-up-monit-to-monitor-apache-and-postgresql-on-ubuntu/). After setting that up I was amazed how simple and flexible Monit was, so I moved on with two more tasks: monitor Nginx and disk usage.
+
 This article assumes that you’ve set up Monit in accordance with the previous article. It also assumes that you’re on Ubuntu 9.10 or 10.04. If you use a different Linux or Unix flavor, you will probably need to modify a few paths.
 
 #### Nginx
 
 (/etc/monit/conf.d/nginx.conf)
 
-> check process nginx with pidfile /var/run/nginx.pid  
-> group www  
-> start program = “/etc/init.d/nginx start”  
-> stop program = “/etc/init.d/nginx stop”  
-> if children > 250 then restart  
-> if loadavg(5min) greater than 10 for 8 cycles then stop  
+> check process nginx with pidfile /var/run/nginx.pid\
+> group www\
+> start program = “/etc/init.d/nginx start”\
+> stop program = “/etc/init.d/nginx stop”\
+> if children > 250 then restart\
+> if loadavg(5min) greater than 10 for 8 cycles then stop\
 > if 3 restarts within 5 cycles then timeout
 
 [Download](http://viktorpetersson.com/upload/monit/nginx.conf)
@@ -31,12 +32,12 @@ This article assumes that you’ve set up Monit in accordance with the previous 
 
 (/etc/monit/conf.d/diskusage.conf)
 
-> check filesystem md3 with path /dev/md3  
-> group server  
-> if failed permission 660 then unmonitor  
-> if failed uid root then unmonitor  
-> if failed gid disk then unmonitor  
-> if space usage > 80 % then alert  
+> check filesystem md3 with path /dev/md3\
+> group server\
+> if failed permission 660 then unmonitor\
+> if failed uid root then unmonitor\
+> if failed gid disk then unmonitor\
+> if space usage > 80 % then alert\
 > if inode usage > 80 % then alert
 
 [Download](http://viktorpetersson.com/upload/monit/diskusage.conf)

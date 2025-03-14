@@ -265,61 +265,61 @@ After extensive testing, I've optimized my adaptive lighting configurations for 
 
 ### Dimmable white spectrum
 
-For IKEA's *LED bulb GU10 345 lumen, smart/wireless dimmable white spectrum* bulbs.
+For IKEA's _LED bulb GU10 345 lumen, smart/wireless dimmable white spectrum_ bulbs.
 
 ```yaml
-  - name: adapt_brightness_standard_color_temp
-    lights:
-      - light.light_1
-      - light.light_2
-    min_brightness: 50
-    max_brightness: 100
-    min_color_temp: 2202
-    max_color_temp: 4000
-    sleep_brightness: 1
-    sleep_color_temp: 2202
-    transition: 45
-    interval: 90
-    initial_transition: 1
-    prefer_rgb_color: false
+- name: adapt_brightness_standard_color_temp
+  lights:
+    - light.light_1
+    - light.light_2
+  min_brightness: 50
+  max_brightness: 100
+  min_color_temp: 2202
+  max_color_temp: 4000
+  sleep_brightness: 1
+  sleep_color_temp: 2202
+  transition: 45
+  interval: 90
+  initial_transition: 1
+  prefer_rgb_color: false
 ```
 
 ### Dimmable color and white spectrum
 
-For the *LED bulb E27 806 lumen, wireless dimmable color and white spectrum/globe opal white* bulbs.
+For the _LED bulb E27 806 lumen, wireless dimmable color and white spectrum/globe opal white_ bulbs.
 
 ```yaml
-  - name: adapt_brightness_extended_color_temp
-    lights:
-      - light.light_3
-      - light.light_4
-    min_brightness: 70
-    max_brightness: 100
-    min_color_temp: 2000
-    max_color_temp: 6535
-    sleep_brightness: 1
-    sleep_color_temp: 2000
-    transition: 45
-    interval: 90
-    initial_transition: 1
-    prefer_rgb_color: false
+- name: adapt_brightness_extended_color_temp
+  lights:
+    - light.light_3
+    - light.light_4
+  min_brightness: 70
+  max_brightness: 100
+  min_color_temp: 2000
+  max_color_temp: 6535
+  sleep_brightness: 1
+  sleep_color_temp: 2000
+  transition: 45
+  interval: 90
+  initial_transition: 1
+  prefer_rgb_color: false
 ```
 
 ### Dimmable warm white
 
-For the basic *LED bulb GU10 345 lumen, smart/wireless dimmable warm white* bulbs.
+For the basic _LED bulb GU10 345 lumen, smart/wireless dimmable warm white_ bulbs.
 
 ```yaml
-  - name: adapt_brightness_brightness_only
-    lights:
-      - light.light_5
-      - light.light_6
-    min_brightness: 50
-    max_brightness: 100
-    sleep_brightness: 1
-    transition: 45
-    interval: 90
-    initial_transition: 1
+- name: adapt_brightness_brightness_only
+  lights:
+    - light.light_5
+    - light.light_6
+  min_brightness: 50
+  max_brightness: 100
+  sleep_brightness: 1
+  transition: 45
+  interval: 90
+  initial_transition: 1
 ```
 
 ## Next Steps: Smart TRVs

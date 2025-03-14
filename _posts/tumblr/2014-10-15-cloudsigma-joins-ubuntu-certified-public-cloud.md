@@ -8,6 +8,7 @@ tags:
 - linux
 redirect_from: /post/100077712854/cloudsigma-joins-ubuntu-certified-public-cloud
 ---
-[CloudSigma joins Ubuntu Certified Public Cloud](https://insights.ubuntu.com/2014/10/15/cloudsigma-joins-ubuntu-certified-public-cloud/)  
+
+[CloudSigma joins Ubuntu Certified Public Cloud](https://insights.ubuntu.com/2014/10/15/cloudsigma-joins-ubuntu-certified-public-cloud/)
 
 Happy to announce a partnership deal that I’ve been working with for some time.

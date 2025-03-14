@@ -10,17 +10,17 @@ tags:
 - VirtIO
 redirect_from: /post/92729955009/benchmarking-virtual-network-drivers-under-freebsd-9
 ---
+
 With the launch of FreeBSD 9, I was curious to learn how the VirtIO driver performed. I’ve seen a significant boost in disk performance, but how about the network driver?
 
 Luckily, that’s rather easy to find the answer to. I spun up two FreeBSD 9 nodes on [CloudSigma](http://cloudsigma.com/) and configured them with VirIO (just like in [this guide](http://viktorpetersson.com/2012/01/16/how-to-upgrade-freebsd-8-2-to-freebsd-9-0-with-virtio/)) and a private network. Once they were up and running, I installed [Iperf](http://sourceforge.net/projects/iperf/) and started testing away.
 
 I had three different network drivers that I wanted to benchmark:
 
-*   Intel PRO/1000 (Intel 82540EM chipset)
-*   RealTek RTL8139
-*   VirtIO (QEMU/KVM)
+- Intel PRO/1000 (Intel 82540EM chipset)
+- RealTek RTL8139
+- VirtIO (QEMU/KVM)
 
-  
 One would of course assume that the VirtIO driver would outperform the others, but I wanted to see if that assumption was true, and if so, by how much.
 
 The FreeBSD virtual machines I used had 2GHz CPU, and 2GB of RAM. They also both used a VirtIO block-device as storage.

@@ -10,14 +10,14 @@ tags:
 - Virtualization
 redirect_from: /post/92729954479/how-to-upgrade-freebsd-8-2-to-freebsd-9-0-with-virtio
 ---
+
 Some time ago, I wrote about [how to use Virtio with FreeBSD 8.2](/2011/10/20/how-to-use-virtio-on-freebsd-8-2.html). As I pointed out in the article, the performance was not nearly as good in FreeBSD 8.2 as it was in 9.0-RC1. Hence I wanted to get all my nodes over to 9.0 as soon as possible to take use of the massive boost in I/O performance.
 
 In this article I will walk you through the process of updating an existing system from FreeBSD 8.2 (without Virtio) to 9.0 with Virtio.
 
 If you’re just curious on how to get Virtio working on a fresh FreeBSD 9.0 installation, skip to [Step 2](#virtio).
 
-Step 1: The upgrade
--------------------
+## Step 1: The upgrade
 
 Let’s get right to it. Here’s the first step in the upgrade process:
 
@@ -53,8 +53,8 @@ Once you’ve run this, you’ll get the message:
 Completing this upgrade requires removing old shared object files.
 
 Please rebuild all installed 3rd party software (e.g., programs
-installed from the ports tree) and then run 
-`/usr/sbin/freebsd-update install`  again to 
+installed from the ports tree) and then run
+`/usr/sbin/freebsd-update install` again to
 finish installing updates.
 
 This is of course a massive pain in the butt, but you need to do this nonetheless. Depending on how many packages from ports you have installed, this may take everything from a few minutes to a **long** time.
@@ -71,8 +71,7 @@ Finally, when you’ve done this, you can run (for the last time):
 
 <a id="virtio"></a>
 
-Step 2: Installing Virtio
--------------------------
+## Step 2: Installing Virtio
 
 Nowadays, Virtio is available in ports. That’s of course great, as that reduces the burdan of installing it. All you need to do is to run:
 

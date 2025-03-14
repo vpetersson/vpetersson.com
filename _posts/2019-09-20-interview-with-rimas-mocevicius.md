@@ -30,8 +30,8 @@ I’m currently based out of London, UK (a.k.a. Brexit nation)
 
 ### Can you describe your home setup?
 
-* A large standing desk that can be adjusted for either standing or sitting. it allows chose when to sit or stand.
-* A big external screen for the MacBook, external keyboard and trackpad
+- A large standing desk that can be adjusted for either standing or sitting. it allows chose when to sit or stand.
+- A big external screen for the MacBook, external keyboard and trackpad
 
 A setup like this provides a great work space both in terms of ergonomics and productivity. By also having a docked laptop, it allows for easy travels, where you simply just bring the laptop without having to worry about syncing data.
 
@@ -63,4 +63,5 @@ It’s also important to not burn yourself out. If you have to stay late and wor
 My favorite tools right now include Slack, plain old email, Zoom, Git, and shared google docs.
 
 ## Looking to learn more?
+
 While you're here, I'm thinking about writing a book on this topic. [Sign up here](http://eepurl.com/gtzNfb) for updates.

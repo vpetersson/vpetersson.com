@@ -10,6 +10,7 @@ tags:
 - Zendesk
 redirect_from: /post/92729963844/munin-plugin-for-zendesk
 ---
+
 In recent time, I’ve really started to appreciate Munin. I’ve deployed Munin in multiple architectures already, and I still get impressed every time by how easy it is to setup.
 
 I also really like how easy it is to write plugins. For a crash-course in writing plugins for Munin, take a look at [this](http://munin-monitoring.org/wiki/HowToWritePlugins) page.

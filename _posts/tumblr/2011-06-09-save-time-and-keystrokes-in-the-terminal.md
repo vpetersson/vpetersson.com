@@ -8,6 +8,7 @@ tags:
 - Unix
 redirect_from: /post/92729946829/save-time-and-keystrokes-in-the-terminal
 ---
+
 Do you have a few long commands that you keep typing in the terminal? Things like ‘cd /some/long/path/that/takes/forever/to/type’ or ‘mycommand -with -lots -of -variables’?
 
 If so, here’s something you’ll enjoy.

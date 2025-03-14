@@ -9,6 +9,7 @@ tags:
 - 1password
 redirect_from: /post/130291303584/introducing-natpass
 ---
+
 After moving to London, I decided to go with [NatWest](http://www.natwest.com) as my bank. While it was a good experience at large, their online banking leavs a lot to be desired. Not only do they lack things like Two-Factor Authenciation (2FA), but they also have this _really_ frustrating login system.
 
 Well, today I had enough and whipped up a CLI tool that allows you to generate the data that they ask for by reading it in from 1Password (using [1pass](https://pypi.python.org/pypi/1pass/0.2.1)).
