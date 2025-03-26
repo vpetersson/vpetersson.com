@@ -1,1 +1,3530 @@
-[{"sentence":"Welcome to this latest episode of Nerding up with Victor.","startTime":"00:01","endTime":"00:04","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Today we're diving deep into the exciting world of 5G and 4G technologies with a special focus on open source innovation that is reshaping the telecom industry.","startTime":"00:04","endTime":"00:14","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Our journey will take us through cutting edge projects like Magma and SD Core.","startTime":"00:14","endTime":"00:19","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"I'm thrilled to have a distinguished guest with me today, Guillaume Ballinger from Canonical.","startTime":"00:19","endTime":"00:23","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Before joining Canonical, where he now leads to 4G and 5G management of private networks and projects, Guillaume hone his expertise at Bell.","startTime":"00:23","endTime":"00:31","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"His expertise and insights are invaluable in understanding how open source is influencing the evolution of 4G and 5G networks.","startTime":"00:31","endTime":"00:39","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So gear up for an exciting conversation that promises to deepen your understanding of these technologies and the impact on the world around us.","startTime":"00:39","endTime":"00:46","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So welcome to the show, Guillaume.","startTime":"00:46","endTime":"00:48","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Very excited to have you on the show.","startTime":"00:48","endTime":"00:50","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Thank you, Victor.","startTime":"00:50","endTime":"00:51","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Thanks.","startTime":"00:51","endTime":"00:51","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So did a quick intro.","startTime":"00:53","endTime":"00:54","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Is there anything you would like to add to that intro to help listeners better understand who you are and perhaps the vantage point you're coming from?","startTime":"00:54","endTime":"01:01","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yes, of course.","startTime":"01:01","endTime":"01:02","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So, yes, as you mentioned, I'm working at Canonical.","startTime":"01:02","endTime":"01:05","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"I've been here for two years now.","startTime":"01:05","endTime":"01:07","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"I'm engineering manager leading our 5G private mobile network offering.","startTime":"01:08","endTime":"01:14","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So the way Canonical works typically is that we work closely with upstream community and we work at automation and packaging of that software to make it as easy as possible to deploy, but more importantly to conduct all the lifecycle operation of that software.","startTime":"01:14","endTime":"01:34","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So here I'm talking about scaling, upgrading and integrating with observability and other necessary components that you may have in your infrastructure.","startTime":"01:34","endTime":"01:41","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And I'm happy to answer any other question you may have.","startTime":"01:42","endTime":"01:45","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Perfect.","startTime":"01:45","endTime":"01:45","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Let's dive into the whole packaging side of things later on because I think that's kind of interesting and I kind of want to dive into that as well.","startTime":"01:45","endTime":"01:51","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"But the reason why I wanted to do an episode on 5G and 4G and LT and all these technologies because I, I think we're at almost like a pivotal moment right now with the evolution of 5G, where I think 5G might possibly be the new WI Fi if you fast forward 10 years out.","startTime":"01:51","endTime":"02:11","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"And I think the big game changer, at least for me.","startTime":"02:11","endTime":"02:14","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"And what I got really excited about is with esims, because with esims you're no longer locked into a singular carrier.","startTime":"02:14","endTime":"02:23","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So.","startTime":"02:23","endTime":"02:23","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So you can have three.","startTime":"02:23","endTime":"02:24","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"I had, I've had three or more three sims in my phone for a while and you can now use mvno.","startTime":"02:24","endTime":"02:30","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So mobile virtual network operator that can serve a specific niche.","startTime":"02:31","endTime":"02:35","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"They don't have to have a countrywide coverage.","startTime":"02:35","endTime":"02:37","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"They can have super good coverage in a small area you're in perhaps, or even a coffee shop or so on.","startTime":"02:37","endTime":"02:42","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So I'm just one of the pastor and say like, does this kind of.","startTime":"02:43","endTime":"02:46","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"How do you see this?","startTime":"02:46","endTime":"02:47","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Is this something that you would agree with as a thesis or how would you basically see this world shaping up?","startTime":"02:47","endTime":"02:54","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah, well, it's hard to tell.","startTime":"02:54","endTime":"02:56","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"It's always hard to predict the future in those areas.","startTime":"02:56","endTime":"03:00","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"5G and Wi Fi at the moment serve different purposes and are very much a set of different technologies.","startTime":"03:00","endTime":"03:07","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And 5G, it's a set of spectrum.","startTime":"03:07","endTime":"03:12","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So here if we talk about the air aspect of it and each country has their own ways to acquire part of that spectrum, and it costs a lot of money for any given company to have access to that spectrum.","startTime":"03:12","endTime":"03:25","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"There's also a set of licenses that are required if you are to implement your own 5G radios that you would have to pay to company like Qualcomm.","startTime":"03:25","endTime":"03:37","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"At the end of the day, this means that operating 5G is much more expensive than operating WI fi.","startTime":"03:37","endTime":"03:43","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So this is something that has to change over time if you want to get closer and closer to WI Fi in terms of cost.","startTime":"03:43","endTime":"03:49","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"That being said, I mean, they both serve.","startTime":"03:50","endTime":"03:52","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"There's also lots of commonalities between the two.","startTime":"03:53","endTime":"03:55","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"At the end of the day, the goal is to go have access to the Internet and most people don't really care about how they gain that access as long as it's the cheaper and reliable option.","startTime":"03:55","endTime":"04:04","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So it's definitely a possibility.","startTime":"04:05","endTime":"04:06","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"But I see a set of things that need to happen in order for us to be there.","startTime":"04:06","endTime":"04:11","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Yeah, I mean the legal part is obviously a massive part of 5G in general.","startTime":"04:11","endTime":"04:16","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"I think in the US you is probably leading the way with the CBRS spectrum where you can deploy without having these licenses.","startTime":"04:16","endTime":"04:23","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"I'm not sure you want to speak a bit about that and just enlighten people on what that means and how that kind of what that means for someone who wants to deploy a 5G router.","startTime":"04:23","endTime":"04:32","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"5G private 5G, for instance.","startTime":"04:32","endTime":"04:35","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah.","startTime":"04:35","endTime":"04:36","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So in the US, CBRS stands for citizens Broadband Radio Service.","startTime":"04:36","endTime":"04:40","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So it's a somewhat new service that the US is, has been starting.","startTime":"04:40","endTime":"04:46","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"It's around five years old, but very much implementation is starting in the past two years.","startTime":"04:46","endTime":"04:52","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And the main idea, so I spoke about spectrum earlier and the main idea here is that if you have your own private mobile network company, you don't have to purchase spectrum.","startTime":"04:52","endTime":"05:01","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"That's a huge deal because if you look at spectrum costs in the US it's in the hundreds of millions of dollars for just a small band for a given geography.","startTime":"05:01","endTime":"05:11","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So most people, most company cannot even dream of purchasing a part of that spectrum.","startTime":"05:11","endTime":"05:16","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And the idea of CBRS is that you can use part of that spectrum without purchasing it.","startTime":"05:17","endTime":"05:23","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So the way it works is you have companies that work with the FCC in the us that's the regulatory body that owns those processes.","startTime":"05:23","endTime":"05:33","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And those companies are.","startTime":"05:34","endTime":"05:35","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So Google is one of them, for example.","startTime":"05:35","endTime":"05:37","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And they have a service called a spectrum access service.","startTime":"05:37","endTime":"05:41","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And if you want to use those bands, you have to integrate with this service and they will tell you exactly which band you are allowed to use and when and then you can integrate with that.","startTime":"05:41","endTime":"05:49","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"This is groundbreaking in the sense that it is completely new.","startTime":"05:49","endTime":"05:52","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"It's the first and only country as far as I know that has such a system.","startTime":"05:52","endTime":"05:56","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And the main outcome hopefully will be that a reduced cost in operating 5G.","startTime":"05:57","endTime":"06:04","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"This is huge.","startTime":"06:04","endTime":"06:05","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"I don't know if other countries are going to follow through.","startTime":"06:06","endTime":"06:10","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"In Europe there's been some bans that have been allocated to specific companies.","startTime":"06:10","endTime":"06:15","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"I think Daimler and a bunch of others did purchase some small part of the spectrum, but there's no such system where anybody, any company can just operate their own 5G network.","startTime":"06:16","endTime":"06:30","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"That's really exciting.","startTime":"06:31","endTime":"06:32","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Yeah, I think there have been some pilots.","startTime":"06:32","endTime":"06:33","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"I think Sweden among other countries had some kind of pilots where you could apply for very small building level spectrums.","startTime":"06:33","endTime":"06:42","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So the right to use the spectrum within a given building or a campus.","startTime":"06:42","endTime":"06:46","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"But yeah, it's not something you could deploy across a country for instance, but they will be like a much reduced price.","startTime":"06:46","endTime":"06:52","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"That obviously and kind of fits into the narrative that maybe your office would offer a, or college would offer a 5G service rather than use WI fi because those would be far cheaper and far more efficient to achieve.","startTime":"06:52","endTime":"07:05","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So let's dive in a little more to like the status quo before we dive into the open source world.","startTime":"07:06","endTime":"07:12","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"I'm curious about.","startTime":"07:12","endTime":"07:13","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"You talk about these extreme costs for the spectrum, but the spectrum is one part of it.","startTime":"07:13","endTime":"07:18","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Important part obviously.","startTime":"07:18","endTime":"07:19","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"But talk a bit more to me about the hardware setup.","startTime":"07:19","endTime":"07:22","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"How does a AT&T or a bell or insert blank carrier.","startTime":"07:22","endTime":"07:28","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"How do their infrastructure look like for the end user or like end to end really?","startTime":"07:28","endTime":"07:33","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah, sure.","startTime":"07:33","endTime":"07:34","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So when we talk about 5G we talk about two different parts.","startTime":"07:34","endTime":"07:38","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"We talk about what is called the core network and then the radio network.","startTime":"07:38","endTime":"07:41","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"I'll start with the core network.","startTime":"07:42","endTime":"07:43","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So the core network is the part that most people typically don't know about.","startTime":"07:44","endTime":"07:47","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"It's Not a well known aspect of 5G.","startTime":"07:47","endTime":"07:50","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And this core network is very much the equipment and logic that makes your 5G network function.","startTime":"07:51","endTime":"07:59","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So in this part of the network you have all the logic related to authentication, authorization, charging policies.","startTime":"07:59","endTime":"08:07","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So it is more or less software that runs on a computer.","startTime":"08:08","endTime":"08:11","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So in terms of hardware, you need computers, it's very much as simple as that.","startTime":"08:11","endTime":"08:17","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"As we get closer to the radios, one component of that core network is called the userplane function.","startTime":"08:18","endTime":"08:24","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So this one is the component part of the core network through which user traffic goes through.","startTime":"08:25","endTime":"08:31","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So this one, when you make any usage of your cell phone, the packets that go out of your phone will go through this function.","startTime":"08:31","endTime":"08:41","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So this one, typically you would have a bit more specialized hardware in order to minimize the latency and time that packets need to be processed in this component.","startTime":"08:41","endTime":"08:52","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"But for the rest of the core network, it's just generic computers.","startTime":"08:52","endTime":"08:56","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So in the user space, that's where the traditional telco vendors are, like Ericsson, Nokia, Huawei, that's where these guys have a significant market share.","startTime":"08:56","endTime":"09:07","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Right.","startTime":"09:07","endTime":"09:08","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"And then I guess the control plane, I guess is the other side.","startTime":"09:09","endTime":"09:12","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Is that fully standardized or like every kind of carrier roll their own system or how does that look right now?","startTime":"09:12","endTime":"09:20","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Okay, so historically it used to be that companies, the examples that you mentioned would sell you physical hardware to install.","startTime":"09:21","endTime":"09:31","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So they would call a company like BT or Bell Canada and they would install those boxes, physical boxes there.","startTime":"09:31","endTime":"09:39","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Now with 5G, the code itself, the software itself is based on specifications written by 3Gpp.","startTime":"09:40","endTime":"09:51","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So what Nokia, Ericsson and others do is they will implement those standards.","startTime":"09:51","endTime":"09:57","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So it is fairly standard in that sense that they have to.","startTime":"09:57","endTime":"10:00","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Well, they don't have to, but they follow those standards.","startTime":"10:00","endTime":"10:03","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"What changes is even though they do write implementation of such standards, they also have other integrations that are not part of these standards.","startTime":"10:03","endTime":"10:14","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"An example of this is what they call their network management system.","startTime":"10:14","endTime":"10:18","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So 5G is a set of different functions, something like 12 different network functions.","startTime":"10:18","endTime":"10:24","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"If you want to configure those, you would typically need either a user interface or a set of APIs that to do so.","startTime":"10:24","endTime":"10:33","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So those companies will sell you this network management function and that's how they make money.","startTime":"10:33","endTime":"10:41","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"At the end of the day, with those integrations, you don't just buy a generic network function, you buy a platform that comes with monitoring, that comes with a nice UI to configure it.","startTime":"10:41","endTime":"10:54","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And more importantly, it comes with 24 hours 7 support from them.","startTime":"10:55","endTime":"10:59","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"If your network crashes, you have somebody to call for help.","startTime":"10:59","endTime":"11:03","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Right?","startTime":"11:03","endTime":"11:03","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Okay.","startTime":"11:03","endTime":"11:04","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Okay.","startTime":"11:05","endTime":"11:06","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So that's the status quo.","startTime":"11:06","endTime":"11:08","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Before we dive into kind of the nitty gritty details of what this all means, I'm curious about going through some different type terminologies that some of them already been mentioned.","startTime":"11:08","endTime":"11:19","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"But just for clarity before we dive into the details.","startTime":"11:19","endTime":"11:23","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So we already covered 5G and the fact that it's actually a family of protocols rather than a singular protocol.","startTime":"11:23","endTime":"11:28","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Right.","startTime":"11:28","endTime":"11:29","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So we can dive into that a little bit.","startTime":"11:29","endTime":"11:30","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Do you want to a few words about what those standards are?","startTime":"11:30","endTime":"11:32","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Because you already alluded to the fact that there's an IoT version, there is a regular mobile version, but then there are other families as well.","startTime":"11:32","endTime":"11:40","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Right.","startTime":"11:40","endTime":"11:40","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"For other use cases, do you want to zoom in a little bit on that?","startTime":"11:40","endTime":"11:43","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"On 5G specifically?","startTime":"11:43","endTime":"11:45","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Yes.","startTime":"11:45","endTime":"11:46","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yes.","startTime":"11:46","endTime":"11:46","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Let's start with the 5G part.","startTime":"11:46","endTime":"11:47","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah, sure.","startTime":"11:48","endTime":"11:48","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So I mean, 5G, I mentioned earlier the core network.","startTime":"11:48","endTime":"11:52","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So like 5G is a set of network functions and communication protocol that those network functions should follow to communicate together.","startTime":"11:52","endTime":"12:01","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So that's for the core network.","startTime":"12:01","endTime":"12:02","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"5G is also the set of frequency on the radio side and the protocols on the radio side that have to be followed between the radio and the modem on your cell phone.","startTime":"12:02","endTime":"12:16","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So 5G is all of that.","startTime":"12:16","endTime":"12:18","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So it's more than just one specification.","startTime":"12:18","endTime":"12:20","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"It's a set of specifications that companies and implementations have to follow.","startTime":"12:20","endTime":"12:27","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Yeah.","startTime":"12:29","endTime":"12:29","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So you have.","startTime":"12:29","endTime":"12:30","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah, okay, that makes sense.","startTime":"12:30","endTime":"12:31","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Let's talk more about the specific ones because I think one thing I didn't know about was particular about the lower consumer cases, like IoT versions for 5G, for instance, how widely.","startTime":"12:31","endTime":"12:44","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"I know there's a standard for it.","startTime":"12:44","endTime":"12:45","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Is that something that's widely deployed today or is that something that is just a theory or a protocol designed by gsma?","startTime":"12:45","endTime":"12:52","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"I presume it is.","startTime":"12:52","endTime":"12:53","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Or how is that actually.","startTime":"12:53","endTime":"12:54","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah, do you want to talk a bit about that?","startTime":"12:55","endTime":"12:56","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Because I'm curious about those use cases.","startTime":"12:56","endTime":"12:57","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"The truth is I'm not familiar with this.","startTime":"12:58","endTime":"13:00","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"I'm not sure what's the IoT specific standard for 5G.","startTime":"13:00","endTime":"13:04","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So you may be.","startTime":"13:04","endTime":"13:05","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Yeah, there's a low energy concept for 5G essentially to compete more with Lora for lower energy consumption.","startTime":"13:05","endTime":"13:15","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So low bandwidth, higher range and low energy consumption.","startTime":"13:15","endTime":"13:18","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"But yeah, that's.","startTime":"13:18","endTime":"13:19","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"We can skip over that part.","startTime":"13:19","endTime":"13:21","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"That's fine.","startTime":"13:21","endTime":"13:21","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"4G and LTE are obviously different generations and different type of end user communication methods to the towers.","startTime":"13:22","endTime":"13:31","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Do you want to differentiate between the two of them and talk a bit more about what they are and how they are different?","startTime":"13:32","endTime":"13:37","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah.","startTime":"13:37","endTime":"13:37","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So for each of the generations of wireless communication, there is A set of standards that define both the core network and the radio network.","startTime":"13:37","endTime":"13:48","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"4G had its own set of components that are part of a mobile network.","startTime":"13:48","endTime":"13:56","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And LTE was an evolution to 4G that was compatible with 4G that introduced some new components.","startTime":"13:56","endTime":"14:02","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"For example, one of those components was called the epc, the Evolved Packet Core.","startTime":"14:02","endTime":"14:09","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So it was an evolution of 4G.","startTime":"14:10","endTime":"14:12","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"5G itself is a completely new design, a completely new set of functions and functionality part of that core network.","startTime":"14:12","endTime":"14:20","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And if you were to implement 5G, the core part, you would have to do it from scratch.","startTime":"14:20","endTime":"14:26","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Okay, so lte is basically 4G 4.5G essentially.","startTime":"14:26","endTime":"14:30","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"It's in between 4G and 5G essentially for higher throughput.","startTime":"14:30","endTime":"14:34","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Got it.","startTime":"14:34","endTime":"14:34","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Oh yeah.","startTime":"14:34","endTime":"14:35","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Cool.","startTime":"14:35","endTime":"14:35","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"One thing that pops up a lot when doing research about this, and it's something that spans all network technologies.","startTime":"14:36","endTime":"14:45","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Sdn, like software defined, networking.","startTime":"14:45","endTime":"14:47","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"That's a big concept.","startTime":"14:47","endTime":"14:48","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"How far is that being pushed on this?","startTime":"14:49","endTime":"14:53","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Because I know on switch level, like on server side, that's kind of commonplace these days.","startTime":"14:53","endTime":"14:58","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"But how far is that deployed and used in this context here?","startTime":"14:58","endTime":"15:02","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah, so as I mentioned earlier, it used to be the case that you were to purchase a physical box from a company that would take the role of a given network function.","startTime":"15:02","endTime":"15:13","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"If we talk about 5G now, what you are purchasing from those companies is essentially software that will install a generic hardware.","startTime":"15:13","endTime":"15:23","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So you would very much buy a server from a company like hp, Dell or whatever server company you prefer and install your 5G network functions from Cisco, Nokia or whoever on those physical boxes.","startTime":"15:23","endTime":"15:42","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"In this sense, it is software.","startTime":"15:42","endTime":"15:43","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Now, not all of those component of the components that are part of 5G network are only software.","startTime":"15:45","endTime":"15:50","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Some of them need to be, like I said, hardware accelerated earlier.","startTime":"15:50","endTime":"15:54","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So software defined is very much like a trend that instead of buying physical boxes for something, you write software and you install it on boxes for routers and switches.","startTime":"15:56","endTime":"16:07","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"It is still the case that physical switch is faster than a software switch.","startTime":"16:08","endTime":"16:13","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"But depending on your use case, that may be fine.","startTime":"16:13","endTime":"16:15","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"It really depends on what you're trying to achieve.","startTime":"16:15","endTime":"16:18","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"How about SDR software defined radio?","startTime":"16:18","endTime":"16:20","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Is that something that enter the space as well with like where you can redefine the spectrums basically in software using sophisticated silicon.","startTime":"16:21","endTime":"16:28","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Really?","startTime":"16:28","endTime":"16:28","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Right.","startTime":"16:28","endTime":"16:29","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Or sophisticated hardware.","startTime":"16:29","endTime":"16:30","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah, yeah.","startTime":"16:30","endTime":"16:32","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"That's getting more and more popularity.","startTime":"16:32","endTime":"16:36","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"I mean, even if you take like Qualcomm's offering, in the world of radio, it is very much software defined.","startTime":"16:37","endTime":"16:46","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So for the world of 5G, there is something called open ran, where it is a set of specifications so that you would implement so you would write code that satisfies those implementations and you would.","startTime":"16:48","endTime":"16:59","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And that code can run on generic hardware.","startTime":"16:59","endTime":"17:03","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So you can have an intel chip or you could have a chip that is actually made specifically for that.","startTime":"17:03","endTime":"17:08","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"For that purpose.","startTime":"17:08","endTime":"17:10","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And yes, 34 radio is a trend in the industry where you can write code on that radio.","startTime":"17:11","endTime":"17:17","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And there's more and more like smaller projects that are.","startTime":"17:18","endTime":"17:22","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"You could yourself buy such a radio and write code on it for yourself.","startTime":"17:23","endTime":"17:27","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"There's a project, for example, called Bladerf is exactly in this space where you buy a radio for something like 500 bucks and you use their project for GitHub and install it.","startTime":"17:27","endTime":"17:38","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"It's like a hack orf similar thing for radio.","startTime":"17:38","endTime":"17:42","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Got it.","startTime":"17:42","endTime":"17:42","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Okay, cool.","startTime":"17:42","endTime":"17:44","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"One thing that you've mentioned a few times now is that it's becoming standardized and it's like it's.","startTime":"17:44","endTime":"17:50","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"You're running on commodity PCs now.","startTime":"17:51","endTime":"17:53","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"And obviously that is a nice transition over to the software side of things.","startTime":"17:53","endTime":"17:59","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"And there are two projects that I kind of want to do a kind of talk a bit about.","startTime":"17:59","endTime":"18:03","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"One of them is Magma and that one is SD Core.","startTime":"18:04","endTime":"18:06","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Magma, if I'm mistaken, probably came out of Meta and has had a quick rise and a quick fall from what I gathered.","startTime":"18:07","endTime":"18:16","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Do you want to speak a bit about Magma?","startTime":"18:16","endTime":"18:19","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"How it's what it accomplished and why it failed in the end.","startTime":"18:19","endTime":"18:25","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Really?","startTime":"18:25","endTime":"18:25","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah, sure.","startTime":"18:26","endTime":"18:27","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So yeah, Magma is.","startTime":"18:27","endTime":"18:28","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"I mean it's still out there.","startTime":"18:29","endTime":"18:30","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"It's a 4G and 5G private mobile network that was led by Facebook at the time and at some point Meta.","startTime":"18:30","endTime":"18:39","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So it started at Facebook or actually was announced by Facebook connectivity in 2013.","startTime":"18:39","endTime":"18:45","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"But the first commits showed up on GitHub in 2019 and most of those commits were made by Facebook employees.","startTime":"18:46","endTime":"18:57","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So this was very much led by Facebook.","startTime":"18:57","endTime":"18:59","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Now, in terms of why they were spending any effort on it's generally to increase connectivity in the world.","startTime":"19:00","endTime":"19:11","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And that next part is speculation so that more people can install Facebook on their phone.","startTime":"19:11","endTime":"19:16","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So now in 2022, there's been a huge round of layoffs at Meta and they completely reshuffled the projects and focuses of the company and the whole Facebook connectivity.","startTime":"19:18","endTime":"19:31","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So not just Magma, but every project under that umbrella stopped being funded.","startTime":"19:31","endTime":"19:37","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Now, to facilitate the transition, they did pay a firm in Germany to help with this transition.","startTime":"19:38","endTime":"19:44","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So they would continue to work for a specific amount of time for I think it was one year.","startTime":"19:45","endTime":"19:50","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"But that funding stopped at some point in March 2023.","startTime":"19:50","endTime":"19:54","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And at this point it is a community led project in the sense that Facebook doesn't spend any engineering effort on it.","startTime":"19:56","endTime":"20:04","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"But the truth is the amount of commit has drastically decreased.","startTime":"20:04","endTime":"20:07","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Right.","startTime":"20:08","endTime":"20:08","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"I mean, now, what brought this project to this situation?","startTime":"20:09","endTime":"20:15","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"It's always hard to know for sure.","startTime":"20:15","endTime":"20:17","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"I'm not behind the scenes at Facebook, but one thing that has to be said is that Facebook didn't make any money directly from this project.","startTime":"20:17","endTime":"20:25","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So when things go rough and you need to find projects to cut, makes sense from a business point of view to cut these categories of projects.","startTime":"20:26","endTime":"20:35","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Yeah, that makes lots of.","startTime":"20:36","endTime":"20:38","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah, guys.","startTime":"20:38","endTime":"20:39","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Sorry.","startTime":"20:39","endTime":"20:39","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah.","startTime":"20:40","endTime":"20:40","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And in terms of growth, I mean, Magma didn't.","startTime":"20:40","endTime":"20:43","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"There's been a lot of excitement around Magma when it started, but for the last couple of years, I mean, the amount of users and companies implementing it didn't grow that much.","startTime":"20:43","endTime":"20:55","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So I suspect they felt that's a good time to let go.","startTime":"20:55","endTime":"21:00","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"If I'm not mistaken, Amazon's 5G offering did use Magma at one point, I believe.","startTime":"21:01","endTime":"21:08","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Their private 5G offering.","startTime":"21:08","endTime":"21:10","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Maybe you have more insight to me than me on that one.","startTime":"21:10","endTime":"21:14","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah, well, supposedly all of that is not public, so I don't know for sure what they did use or they're currently using.","startTime":"21:15","endTime":"21:22","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"This could have been part of a exploratory phase or actually implementation.","startTime":"21:23","endTime":"21:27","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Yeah, I don't know more.","startTime":"21:27","endTime":"21:28","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Okay, fair enough.","startTime":"21:28","endTime":"21:29","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah.","startTime":"21:30","endTime":"21:30","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Because obviously had they pushed ahead there, they could obviously have the manpower to and revenue stream to actually maintain such project.","startTime":"21:30","endTime":"21:37","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Right.","startTime":"21:37","endTime":"21:38","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"They would have much bigger incentives than Facebook.","startTime":"21:38","endTime":"21:41","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Cool.","startTime":"21:43","endTime":"21:43","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Let's talk about SD Core, which is the new kid on the block, it sounds like.","startTime":"21:44","endTime":"21:49","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Well, maybe not new, but what has taken over a lot of the traction from Magma from what I gathered.","startTime":"21:49","endTime":"21:56","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah, well, so Magma was a.","startTime":"21:56","endTime":"21:59","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Or it still is a 4G and 5G private mobile network.","startTime":"21:59","endTime":"22:03","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So it is a set of technologies that are bundled in a package as of SD Core.","startTime":"22:03","endTime":"22:10","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And also another implementation that comes from an European organization called OAI Open Air Interface.","startTime":"22:10","endTime":"22:16","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Those two projects aim to be much closer to the actual 5G standards.","startTime":"22:16","endTime":"22:20","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So those are actually like, you read the 5G specs and you implement them in code.","startTime":"22:21","endTime":"22:25","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"They don't do much more than that.","startTime":"22:25","endTime":"22:27","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"This is both a pro and a con.","startTime":"22:28","endTime":"22:30","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"It's a pro in the sense that it is really following the specs.","startTime":"22:30","endTime":"22:34","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"You can be pretty confident that it is compatible with anything else that is also following the specs.","startTime":"22:34","endTime":"22:38","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"But Magma was trying to be more than that in the sense that it also contained a nice user interface.","startTime":"22:39","endTime":"22:45","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"An integration with.","startTime":"22:46","endTime":"22:48","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Earlier we spoke about cbrs, Magma came with integration with Spectrum Access Systems, all of those that are not necessarily part of a 5G specification.","startTime":"22:48","endTime":"22:57","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Now, SD Core is a project led by the Open Networking foundation and it is an implementation of 5G core specification.","startTime":"22:57","endTime":"23:09","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So all of the network functions that are part of 5G Core.","startTime":"23:09","endTime":"23:13","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So those 12 or so network functions are being implemented in GO code.","startTime":"23:13","endTime":"23:17","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And us like Canonical as a company, we package and distribute those as well.","startTime":"23:19","endTime":"23:27","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Okay, so what in terms of deploying your own?","startTime":"23:27","endTime":"23:32","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Because I know they were like a juju deployment mechanism for.","startTime":"23:32","endTime":"23:36","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"For Magma for instance, which I presume is kind of dead in the water now, or it might go into maintenance mode, I would imagine.","startTime":"23:37","endTime":"23:43","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Has the offering around SD Core replaced that from the Canonicals roadmap?","startTime":"23:43","endTime":"23:51","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"In terms of what you guys are pushing on your end or how do you guys see the world there?","startTime":"23:51","endTime":"23:56","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah, yeah, we're in the process of doing that.","startTime":"23:56","endTime":"23:58","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So we so did.","startTime":"23:58","endTime":"24:00","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"This is the type of project that takes a while, but we are in the process of doing this.","startTime":"24:00","endTime":"24:05","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"We are also involved in the actual upstream project.","startTime":"24:06","endTime":"24:10","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So we work with the upstream community to improve the actual software that is distributed and we also package it and distribute it to make it as easy as possible to operate.","startTime":"24:10","endTime":"24:22","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So I mean, if you are to follow the upstream deployment of the project, this is done through helm charts on Kubernetes and it works.","startTime":"24:22","endTime":"24:34","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"What we are trying to offer here is a more universal way to deploy SD Core.","startTime":"24:34","endTime":"24:42","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"For example, in the option project, there's only one distribution of K8s that is part of this deployment script.","startTime":"24:42","endTime":"24:48","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"In our case, we have compatibility with any cloud kubernetes.","startTime":"24:48","endTime":"24:53","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So if you're using AWS's Kubernetes offering or if you're using your own personal microkits on your laptop, both work with this approach.","startTime":"24:53","endTime":"25:00","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"If you want to scale and upgrade, we offer those paths as well.","startTime":"25:01","endTime":"25:05","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Okay, so speak to me a bit more about like if I wanted to deploy my own.","startTime":"25:06","endTime":"25:11","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Let's assume for a second that I am in the us because it makes decisions a lot easier around cbrs and you have your own.","startTime":"25:11","endTime":"25:17","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"You can use a CBRS spectrum.","startTime":"25:18","endTime":"25:20","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"What does it take for me to set up my own 5G network at home from scratch if I wanted to run my own?","startTime":"25:21","endTime":"25:26","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Imagine for a second I live in the middle of nowhere, I have Starlink, but I have zero connectivity.","startTime":"25:27","endTime":"25:32","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So I want to set up my own 5G network at home.","startTime":"25:33","endTime":"25:35","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Walk me through how that would look in terms of end to end.","startTime":"25:35","endTime":"25:38","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah, sure.","startTime":"25:38","endTime":"25:39","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So from the core network part of the story, you would need a computer.","startTime":"25:39","endTime":"25:44","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And if it is just for yourself, you would very much be okay with something like Intel NUC or Just a really small computer that has a relatively modern CPU in it.","startTime":"25:45","endTime":"25:58","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And this computer would run all of your 5G core network.","startTime":"25:58","endTime":"26:03","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Now you would also.","startTime":"26:04","endTime":"26:05","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So on this computer you would install a, ideally a Linux distribution and you would install kubernetes on top of it.","startTime":"26:06","endTime":"26:15","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And you would use something like a juju but not forced.","startTime":"26:16","endTime":"26:20","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"You could use also HELM or something else to both deploy and operate your 5G network.","startTime":"26:20","endTime":"26:26","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So all you need is this one computer on which you install this software.","startTime":"26:26","endTime":"26:29","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"That's for the core network.","startTime":"26:30","endTime":"26:31","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Now you also need a radio that you would buy from a radio vendor.","startTime":"26:31","endTime":"26:38","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Those tend to be a bit more expensive they that were talking about cost for 5G a bit earlier you would have to spend between $1,000 and $20,000 for such a 5G radios.","startTime":"26:38","endTime":"26:49","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Those are quite expensive depending on if it is outdoor, indoor and the specific technologies that are in this radio.","startTime":"26:49","endTime":"26:56","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"That could vary.","startTime":"26:56","endTime":"26:57","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"But those are essentially the two things that you need.","startTime":"26:58","endTime":"27:02","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"The core network is going to be pretty cheap in this story very much.","startTime":"27:04","endTime":"27:08","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"You're going to spend most of your budget this radio equipment.","startTime":"27:08","endTime":"27:12","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Right.","startTime":"27:12","endTime":"27:13","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"And then okay, so I have the software stack installed.","startTime":"27:13","endTime":"27:17","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"I always need to connect my phone, right.","startTime":"27:18","endTime":"27:20","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So walk me through the process of I guess issuing ESIMS or SIMS bootstrapping.","startTime":"27:20","endTime":"27:28","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Like how does that process look like if you want to run your own infrastructure.","startTime":"27:28","endTime":"27:31","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah, for physical sim you would need to have a SIEM writer.","startTime":"27:31","endTime":"27:36","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So a small piece of equipment that can write SIMS SIM cards.","startTime":"27:36","endTime":"27:40","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And on your core network you would have to register.","startTime":"27:41","endTime":"27:44","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Okay, I have this new SIM for this new user.","startTime":"27:44","endTime":"27:47","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"This is the set of policy that I want this user to follow.","startTime":"27:47","endTime":"27:52","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"For example, I could give you a 20Mbps speed with a certain priority.","startTime":"27:52","endTime":"27:57","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So there's a concept of priority in 5G and 4G which decides like okay, well when this person and this person talk, this one has priority where that type of stuff.","startTime":"27:57","endTime":"28:06","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And so yeah, you would need to write that SIM and register it in your core network and install this SIM in your phone and you should be good to go.","startTime":"28:07","endTime":"28:17","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"That's for sim.","startTime":"28:18","endTime":"28:19","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"For esim, the story is a bit more complicated.","startTime":"28:19","endTime":"28:23","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"I haven't worked much with ESIMS yet.","startTime":"28:23","endTime":"28:25","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"This is still to go, still to come.","startTime":"28:25","endTime":"28:28","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"But it depends from what I understand on what is your cell phone.","startTime":"28:28","endTime":"28:33","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"For example, the process of becoming a carrier of ESIM on an iPhone versus on Android phone is different with Apple.","startTime":"28:34","endTime":"28:46","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"As far as I understand, you need to be somewhat of a partner with them.","startTime":"28:46","endTime":"28:49","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So I cannot go on my own and become a 5G carrier for some Android it seems a bit more straightforward, but like I said, I haven't gone through this process for either of those.","startTime":"28:49","endTime":"28:58","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So I'm not certain this process.","startTime":"28:58","endTime":"29:01","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Okay.","startTime":"29:01","endTime":"29:02","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"And then I guess you have some kind of serial number that.","startTime":"29:02","endTime":"29:06","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"From the SIM card, I presume that.","startTime":"29:06","endTime":"29:07","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Or how's like what's the cryptography of this Vahan?","startTime":"29:07","endTime":"29:10","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Like when you write that SIM card, like is it a.","startTime":"29:10","endTime":"29:12","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Is it a private key that goes on there and the public key that you register?","startTime":"29:12","endTime":"29:15","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Or like what does the cryptography side look.","startTime":"29:15","endTime":"29:17","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Look like?","startTime":"29:17","endTime":"29:18","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Correct, it's a public key, publicly private key system where you would.","startTime":"29:18","endTime":"29:22","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Yeah, it's exactly that at the end of the day.","startTime":"29:23","endTime":"29:25","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And whenever you register that SIM card on your core network, you would register its public key.","startTime":"29:25","endTime":"29:31","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So both sides have a public and private key.","startTime":"29:31","endTime":"29:33","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Right.","startTime":"29:33","endTime":"29:34","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So it's very much.","startTime":"29:35","endTime":"29:36","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"It's not so different from any HTTPs communication.","startTime":"29:36","endTime":"29:39","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Right.","startTime":"29:40","endTime":"29:40","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So it's basically like a small local PKI essentially that you can.","startTime":"29:40","endTime":"29:44","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Okay, so you.","startTime":"29:45","endTime":"29:46","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"And are there like clis for this or like is it all API based or the uis for like if you wanted to build this yourself, like what does that look like in terms of experience?","startTime":"29:46","endTime":"29:56","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So on the core side to add and register sim.","startTime":"29:59","endTime":"30:01","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So this part is very much not part of the 5G specification.","startTime":"30:02","endTime":"30:06","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So each company implements their own approach to subscriber management.","startTime":"30:06","endTime":"30:12","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"But if we talk about our distribution of SD core, like we write our own network management system where you can create network slices, create network device groups and create subscribers.","startTime":"30:13","endTime":"30:27","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And so it is a front end written in NEXT JS that people can use to configure their network.","startTime":"30:27","endTime":"30:35","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So yeah, it is a pretty nice front end with this purpose.","startTime":"30:36","endTime":"30:39","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Now the process of writing SIM cards itself.","startTime":"30:39","endTime":"30:43","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"There's companies that sell their own SIM riders.","startTime":"30:44","endTime":"30:48","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"I don't know of any nice open source project there.","startTime":"30:48","endTime":"30:54","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"There is some really smaller projects.","startTime":"30:54","endTime":"30:56","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"There's something called PYSIM out there which comes with a CLI to help you write sim.","startTime":"30:56","endTime":"31:00","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"If you have a SIM writer.","startTime":"31:00","endTime":"31:01","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"I haven't worked with it yet.","startTime":"31:01","endTime":"31:03","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"This part is.","startTime":"31:04","endTime":"31:05","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"I think people will tend to go directly through esim, but there needs to be a bit more of an open source approach to it, which likely will go through Android before Apple.","startTime":"31:05","endTime":"31:15","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Right.","startTime":"31:16","endTime":"31:16","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So it sounds like it's not super straightforward given the state of the project today.","startTime":"31:16","endTime":"31:21","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"To build your own 5G network in your house.","startTime":"31:21","endTime":"31:25","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"It requires obviously hardware, but that's inevitable I guess for the time being.","startTime":"31:25","endTime":"31:29","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Well, forever I guess.","startTime":"31:29","endTime":"31:31","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"But cost wise, I meant.","startTime":"31:31","endTime":"31:33","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"But there are like how do you.","startTime":"31:33","endTime":"31:34","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Like, do you.","startTime":"31:34","endTime":"31:35","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Because it is like is it kind of proof of concept level, quality or is it like stable production level?","startTime":"31:35","endTime":"31:43","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"How do you rate the stability or maturity I guess of this?","startTime":"31:43","endTime":"31:46","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah, today I would call it like an mvp.","startTime":"31:46","endTime":"31:51","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"You could deploy it, you can use it to run subscribers.","startTime":"31:51","endTime":"31:55","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"I would discourage you from running high super critical load on it.","startTime":"31:55","endTime":"32:02","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Like I would very much discourage you from using 911 calls.","startTime":"32:02","endTime":"32:07","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And this network, it's still in early stage.","startTime":"32:07","endTime":"32:09","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"We started working with SD core a couple of months ago.","startTime":"32:10","endTime":"32:13","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So it's still very early development phase.","startTime":"32:14","endTime":"32:16","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"But as we go through user validation we will gain feedback and improve the product for sure.","startTime":"32:18","endTime":"32:25","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Cool.","startTime":"32:26","endTime":"32:26","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So we talked about before we turn the table to some other things later on, but before we do, I'm curious about.","startTime":"32:26","endTime":"32:33","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"We talk about data routing and that's obviously very similar to network routing in general.","startTime":"32:33","endTime":"32:39","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"How about phone call routing?","startTime":"32:40","endTime":"32:42","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"How does that work?","startTime":"32:42","endTime":"32:42","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Because that's usually tied to your SIM card and you usually get identity there.","startTime":"32:43","endTime":"32:47","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"How does that whole interface with the rest of the world?","startTime":"32:47","endTime":"32:50","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"I have my own interface.","startTime":"32:50","endTime":"32:51","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"I can run network data.","startTime":"32:52","endTime":"32:53","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"But what if one actually make phone calls?","startTime":"32:53","endTime":"32:55","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"How do I actually register that and how would that actually work?","startTime":"32:55","endTime":"32:58","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah, you would need to.","startTime":"32:58","endTime":"33:00","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So here we only touch about the SDCore really does only the data part.","startTime":"33:00","endTime":"33:05","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So we haven't yet worked on this phone aspect of it.","startTime":"33:06","endTime":"33:11","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Again this is the type of projects that is going to come up fairly soon.","startTime":"33:11","endTime":"33:16","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"But right now you would need to integrate with a mobile network operators system for managing those phone calls.","startTime":"33:16","endTime":"33:25","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So yeah, coming up, but not currently possible.","startTime":"33:25","endTime":"33:27","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Got it.","startTime":"33:28","endTime":"33:29","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Okay.","startTime":"33:29","endTime":"33:29","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So obviously this is very much in the research phase of where you are at canonical, how you see and obviously strategic bet obviously for the future.","startTime":"33:30","endTime":"33:40","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Talk to me a bit more about how you see private 5G being deployed in the conversation you guys are having with and who's actually interested in this is this companies and campuses that are mostly interested in these conversations or other conversations with mobile carriers that are looking to deploy this as well.","startTime":"33:40","endTime":"34:02","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah, those are two sides of the coin for us in terms of private 5G.","startTime":"34:02","endTime":"34:08","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So for companies there's a bunch of factories that are Interested in having 5G mines, earth rigs anywhere that is typically poorly served or that you want isolation from the rest of the world in your 5G network.","startTime":"34:08","endTime":"34:23","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Those are all potential customers and they're good use cases for us in the sense that in terms of it's not running critical infrastructure like the.","startTime":"34:24","endTime":"34:32","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"I mean it's not a hospital.","startTime":"34:33","endTime":"34:34","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"But that being said, hospital are also good use cases for private 5G.","startTime":"34:36","endTime":"34:40","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And then there's private, then there's mobile networks for Mobile network operators.","startTime":"34:41","endTime":"34:46","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So a company like BT or Bell, they receive requests from companies that are interested in private mobile networks.","startTime":"34:46","endTime":"34:54","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Most enterprises don't necessarily have the skill in house to operate such private mobile networks, which of course makes sense.","startTime":"34:54","endTime":"35:02","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"But they want 5G connectivity, so they would call a company like Bell and ask them to run that for them.","startTime":"35:02","endTime":"35:09","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So it is a case where Bell Canada would spend much less money by running a private mobile network than running their more country wide grade 5G network.","startTime":"35:09","endTime":"35:25","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So those two cases are possible for private mobile network.","startTime":"35:25","endTime":"35:28","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Right?","startTime":"35:29","endTime":"35:29","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"And yeah, that all makes sense.","startTime":"35:29","endTime":"35:32","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"And in terms of architecture, the actual antenna piece I guess is a network connected device.","startTime":"35:32","endTime":"35:43","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Can that then just talk to some cloud interface?","startTime":"35:43","endTime":"35:47","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Or is latency so important that you need to have all the other pieces on site as well?","startTime":"35:47","endTime":"35:53","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Or how does that infrastructure look like for something like this?","startTime":"35:53","endTime":"35:56","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"So for some part of the system, latency is super important.","startTime":"35:58","endTime":"36:04","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So the antenna will typically talk to the component I talked earlier about called the user plane function.","startTime":"36:04","endTime":"36:11","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And this user plane function will be close to those antennas.","startTime":"36:11","endTime":"36:15","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Physically close, right?","startTime":"36:15","endTime":"36:16","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Not necessarily.","startTime":"36:16","endTime":"36:17","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And then that physically close number depends on your use case.","startTime":"36:18","endTime":"36:22","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"You may want it to be in the same building, you may want it to be in the same city.","startTime":"36:23","endTime":"36:27","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"That depends on your latency requirements.","startTime":"36:27","endTime":"36:29","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And then the rest of the core network is not going to impact latency as much.","startTime":"36:29","endTime":"36:35","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So the rest of the core network is going to be responsible to tell the user plane function and the radio whether or not the user is allowed to use the network.","startTime":"36:35","endTime":"36:43","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And they're going to manage the session, but they're not going to impact latency as much.","startTime":"36:44","endTime":"36:49","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So part of it can just be on a cloud system.","startTime":"36:49","endTime":"36:52","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So most of the core network can run on AWS or Google Cloud.","startTime":"36:52","endTime":"36:55","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"The user plane function will typically run closer, like maybe in your factory.","startTime":"36:55","endTime":"37:00","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And then you can have a couple of antennas in your factory that are linked through that userplane function with either fiber or ethernet cable, depending on the load that requires.","startTime":"37:00","endTime":"37:12","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Right.","startTime":"37:13","endTime":"37:13","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Do you see a world where aws, Google, all these guys are essentially going to go head to head and compete with the traditional telcos because they have the infrastructure always run the control plane better so than the telcos would and have far higher scale and would do it more effectively and cheaply.","startTime":"37:13","endTime":"37:36","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Is that a scenario you see playing out or how do you see the world there?","startTime":"37:37","endTime":"37:41","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah, well, it's a possibility.","startTime":"37:41","endTime":"37:43","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"I know Google tried it a little bit.","startTime":"37:43","endTime":"37:47","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"For some part of it is possible.","startTime":"37:48","endTime":"37:49","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"I mean most of the telcos are now going through a phase where they are moving a lot of Their private clouds to the public cloud.","startTime":"37:49","endTime":"37:58","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So clearly the public cloud has something that they don't currently have.","startTime":"37:59","endTime":"38:02","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"However, a big part of operating a telco is laying fiber, cutting trees and installing radios.","startTime":"38:03","endTime":"38:10","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And I don't see Google going in that direction.","startTime":"38:10","endTime":"38:13","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So most of that part of the work, I still see a place for Taco, but for running servers.","startTime":"38:14","endTime":"38:19","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Definitely a place for the cloud.","startTime":"38:19","endTime":"38:21","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Yeah.","startTime":"38:22","endTime":"38:23","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"And that's kind of like you said, Google played with that.","startTime":"38:23","endTime":"38:27","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"I think Amazon had something they called curbside something, a service that I think they were using for some of their.","startTime":"38:27","endTime":"38:34","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Was it Alexa?","startTime":"38:34","endTime":"38:35","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"They use some backend as well.","startTime":"38:35","endTime":"38:37","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"I think they use some of their devices to create like a semi telco, but I think it was based on lora rather than 5G, I think.","startTime":"38:37","endTime":"38:45","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"I'm not sure you've seen anything about that project.","startTime":"38:45","endTime":"38:47","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"I haven't seen it, but definitely, I mean they're getting more and more in the space of telcos, they clearly all want the telco business.","startTime":"38:47","endTime":"38:54","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"This is billions of dollars worth of money, but they are getting it.","startTime":"38:55","endTime":"38:59","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"I mean, if you look at a company like Google, they are currently working on a project called Nephio, which is a open source automation project and it's fully open source, but they work on these kind of projects to attract the telco so that they run their workload on Google cloud instead of another cloud or on their own private clouds.","startTime":"38:59","endTime":"39:27","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Tacos still have currently huge clouds to maintain, so thousands and thousands of servers that they run throughout the country to run those 5G network services.","startTime":"39:27","endTime":"39:38","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And clouds are more than happy to take that workload.","startTime":"39:38","endTime":"39:42","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Yeah, absolutely.","startTime":"39:42","endTime":"39:43","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"I can definitely imagine that.","startTime":"39:43","endTime":"39:44","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"And I think that's particularly with the commoditization of the infrastructure and if you can use things like.","startTime":"39:44","endTime":"39:53","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"If I'm mistaken, I believe Google's home hubs, I believe they have a level of SDR in them where they can probably not do 5G perhaps, but you can envision generation three or four out where they would have support for this built into their home hubs.","startTime":"39:53","endTime":"40:08","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Right.","startTime":"40:08","endTime":"40:08","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"And then it's definitely an interesting development.","startTime":"40:08","endTime":"40:13","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"I think this is super interesting and I think we've covered a lot of grounds and I'm not sure there's anything else you think it's worth bringing up in terms of the development and how you guys are working on and what people can learn more and how people can help develop and test this out themselves.","startTime":"40:13","endTime":"40:29","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah, so most of the projects we talked about are open source.","startTime":"40:30","endTime":"40:33","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So both enterprises, but also individual can work on those.","startTime":"40:33","endTime":"40:38","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"They tend to be really fun for university projects.","startTime":"40:39","endTime":"40:42","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"The sense that people can work on their own during, for example, their master's degree, add some feature and then having this feature merge at the end.","startTime":"40:43","endTime":"40:51","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Those are exciting for this purpose.","startTime":"40:52","endTime":"40:53","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"And on the other side of things, what as a company we're trying to do is bring those to a step that they become actual products where you are confident to run high critical workloads.","startTime":"40:53","endTime":"41:04","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So, I mean, to learn more, you can go on the ONF website, you can look at Linux foundation networking, you can look at Open Air interface, or if you really want it, you can read the actual 5G specs.","startTime":"41:04","endTime":"41:18","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"But I suspect that's not free.","startTime":"41:18","endTime":"41:20","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Yeah.","startTime":"41:21","endTime":"41:21","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"And how far do you think Canonical, or you guys in general are from having this as a commodity item in the sense that just like you would deploy Kubernetes, you could Deploy your own 5G stack.","startTime":"41:21","endTime":"41:36","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"How far do you think that is away?","startTime":"41:36","endTime":"41:38","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Very close.","startTime":"41:40","endTime":"41:41","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"I mean, to run data, you can already do it.","startTime":"41:41","endTime":"41:44","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"So this is gonna.","startTime":"41:44","endTime":"41:46","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"It is a work in progress and it's never gonna be fully finished, but yeah, it's a matter of months, not a matter of years.","startTime":"41:46","endTime":"41:54","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"That's amazing.","startTime":"41:55","endTime":"41:55","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Yeah, I'm definitely looking forward to give that a go.","startTime":"41:56","endTime":"41:58","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"And hopefully the legislative side of things in Europe will make it easier.","startTime":"41:58","endTime":"42:03","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"I'm not sure how things are in Canada, but I think it's in the UK at least.","startTime":"42:03","endTime":"42:06","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"It's still difficult to get those approvals.","startTime":"42:06","endTime":"42:08","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"It's similar and it's very much similar across the world.","startTime":"42:08","endTime":"42:12","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Perfect.","startTime":"42:13","endTime":"42:14","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"This has been super insightful for me, Guillaume.","startTime":"42:14","endTime":"42:17","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"I'm very happy for you to have joined me on the show and yeah, thank you so much for coming there and have a good one.","startTime":"42:18","endTime":"42:24","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Thank you so much.","startTime":"42:24","endTime":"42:25","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Thank you very much.","startTime":"42:25","endTime":"42:26","speaker_name":"Guillaume Bélanger","speaker_id":1},{"sentence":"Cheers.","startTime":"42:26","endTime":"42:26","speaker_name":"Viktor Petersson","speaker_id":0},{"sentence":"Bye.","startTime":"42:26","endTime":"42:26","speaker_name":"Guillaume Bélanger","speaker_id":1}]
+[
+  {
+    "sentence": "Welcome to this latest episode of Nerding up with Victor.",
+    "startTime": "00:01",
+    "endTime": "00:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Today we're diving deep into the exciting world of 5G and 4G technologies with a special focus on open source innovation that is reshaping the telecom industry.",
+    "startTime": "00:04",
+    "endTime": "00:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Our journey will take us through cutting edge projects like Magma and SD Core.",
+    "startTime": "00:14",
+    "endTime": "00:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm thrilled to have a distinguished guest with me today, Guillaume Ballinger from Canonical.",
+    "startTime": "00:19",
+    "endTime": "00:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Before joining Canonical, where he now leads to 4G and 5G management of private networks and projects, Guillaume hone his expertise at Bell.",
+    "startTime": "00:23",
+    "endTime": "00:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "His expertise and insights are invaluable in understanding how open source is influencing the evolution of 4G and 5G networks.",
+    "startTime": "00:31",
+    "endTime": "00:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So gear up for an exciting conversation that promises to deepen your understanding of these technologies and the impact on the world around us.",
+    "startTime": "00:39",
+    "endTime": "00:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So welcome to the show, Guillaume.",
+    "startTime": "00:46",
+    "endTime": "00:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Very excited to have you on the show.",
+    "startTime": "00:48",
+    "endTime": "00:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Thank you, Victor.",
+    "startTime": "00:50",
+    "endTime": "00:51",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Thanks.",
+    "startTime": "00:51",
+    "endTime": "00:51",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So did a quick intro.",
+    "startTime": "00:53",
+    "endTime": "00:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is there anything you would like to add to that intro to help listeners better understand who you are and perhaps the vantage point you're coming from?",
+    "startTime": "00:54",
+    "endTime": "01:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, of course.",
+    "startTime": "01:01",
+    "endTime": "01:02",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, yes, as you mentioned, I'm working at Canonical.",
+    "startTime": "01:02",
+    "endTime": "01:05",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I've been here for two years now.",
+    "startTime": "01:05",
+    "endTime": "01:07",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm engineering manager leading our 5G private mobile network offering.",
+    "startTime": "01:08",
+    "endTime": "01:14",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the way Canonical works typically is that we work closely with upstream community and we work at automation and packaging of that software to make it as easy as possible to deploy, but more importantly to conduct all the lifecycle operation of that software.",
+    "startTime": "01:14",
+    "endTime": "01:34",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So here I'm talking about scaling, upgrading and integrating with observability and other necessary components that you may have in your infrastructure.",
+    "startTime": "01:34",
+    "endTime": "01:41",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I'm happy to answer any other question you may have.",
+    "startTime": "01:42",
+    "endTime": "01:45",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Perfect.",
+    "startTime": "01:45",
+    "endTime": "01:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Let's dive into the whole packaging side of things later on because I think that's kind of interesting and I kind of want to dive into that as well.",
+    "startTime": "01:45",
+    "endTime": "01:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But the reason why I wanted to do an episode on 5G and 4G and LT and all these technologies because I, I think we're at almost like a pivotal moment right now with the evolution of 5G, where I think 5G might possibly be the new WI Fi if you fast forward 10 years out.",
+    "startTime": "01:51",
+    "endTime": "02:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think the big game changer, at least for me.",
+    "startTime": "02:11",
+    "endTime": "02:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And what I got really excited about is with esims, because with esims you're no longer locked into a singular carrier.",
+    "startTime": "02:14",
+    "endTime": "02:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So.",
+    "startTime": "02:23",
+    "endTime": "02:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you can have three.",
+    "startTime": "02:23",
+    "endTime": "02:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I had, I've had three or more three sims in my phone for a while and you can now use mvno.",
+    "startTime": "02:24",
+    "endTime": "02:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So mobile virtual network operator that can serve a specific niche.",
+    "startTime": "02:31",
+    "endTime": "02:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They don't have to have a countrywide coverage.",
+    "startTime": "02:35",
+    "endTime": "02:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They can have super good coverage in a small area you're in perhaps, or even a coffee shop or so on.",
+    "startTime": "02:37",
+    "endTime": "02:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I'm just one of the pastor and say like, does this kind of.",
+    "startTime": "02:43",
+    "endTime": "02:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How do you see this?",
+    "startTime": "02:46",
+    "endTime": "02:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is this something that you would agree with as a thesis or how would you basically see this world shaping up?",
+    "startTime": "02:47",
+    "endTime": "02:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, well, it's hard to tell.",
+    "startTime": "02:54",
+    "endTime": "02:56",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's always hard to predict the future in those areas.",
+    "startTime": "02:56",
+    "endTime": "03:00",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "5G and Wi Fi at the moment serve different purposes and are very much a set of different technologies.",
+    "startTime": "03:00",
+    "endTime": "03:07",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And 5G, it's a set of spectrum.",
+    "startTime": "03:07",
+    "endTime": "03:12",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So here if we talk about the air aspect of it and each country has their own ways to acquire part of that spectrum, and it costs a lot of money for any given company to have access to that spectrum.",
+    "startTime": "03:12",
+    "endTime": "03:25",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's also a set of licenses that are required if you are to implement your own 5G radios that you would have to pay to company like Qualcomm.",
+    "startTime": "03:25",
+    "endTime": "03:37",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "At the end of the day, this means that operating 5G is much more expensive than operating WI fi.",
+    "startTime": "03:37",
+    "endTime": "03:43",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So this is something that has to change over time if you want to get closer and closer to WI Fi in terms of cost.",
+    "startTime": "03:43",
+    "endTime": "03:49",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That being said, I mean, they both serve.",
+    "startTime": "03:50",
+    "endTime": "03:52",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's also lots of commonalities between the two.",
+    "startTime": "03:53",
+    "endTime": "03:55",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "At the end of the day, the goal is to go have access to the Internet and most people don't really care about how they gain that access as long as it's the cheaper and reliable option.",
+    "startTime": "03:55",
+    "endTime": "04:04",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's definitely a possibility.",
+    "startTime": "04:05",
+    "endTime": "04:06",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I see a set of things that need to happen in order for us to be there.",
+    "startTime": "04:06",
+    "endTime": "04:11",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I mean the legal part is obviously a massive part of 5G in general.",
+    "startTime": "04:11",
+    "endTime": "04:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think in the US you is probably leading the way with the CBRS spectrum where you can deploy without having these licenses.",
+    "startTime": "04:16",
+    "endTime": "04:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm not sure you want to speak a bit about that and just enlighten people on what that means and how that kind of what that means for someone who wants to deploy a 5G router.",
+    "startTime": "04:23",
+    "endTime": "04:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "5G private 5G, for instance.",
+    "startTime": "04:32",
+    "endTime": "04:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "04:35",
+    "endTime": "04:36",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So in the US, CBRS stands for citizens Broadband Radio Service.",
+    "startTime": "04:36",
+    "endTime": "04:40",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's a somewhat new service that the US is, has been starting.",
+    "startTime": "04:40",
+    "endTime": "04:46",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's around five years old, but very much implementation is starting in the past two years.",
+    "startTime": "04:46",
+    "endTime": "04:52",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the main idea, so I spoke about spectrum earlier and the main idea here is that if you have your own private mobile network company, you don't have to purchase spectrum.",
+    "startTime": "04:52",
+    "endTime": "05:01",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's a huge deal because if you look at spectrum costs in the US it's in the hundreds of millions of dollars for just a small band for a given geography.",
+    "startTime": "05:01",
+    "endTime": "05:11",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So most people, most company cannot even dream of purchasing a part of that spectrum.",
+    "startTime": "05:11",
+    "endTime": "05:16",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the idea of CBRS is that you can use part of that spectrum without purchasing it.",
+    "startTime": "05:17",
+    "endTime": "05:23",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the way it works is you have companies that work with the FCC in the us that's the regulatory body that owns those processes.",
+    "startTime": "05:23",
+    "endTime": "05:33",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And those companies are.",
+    "startTime": "05:34",
+    "endTime": "05:35",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So Google is one of them, for example.",
+    "startTime": "05:35",
+    "endTime": "05:37",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they have a service called a spectrum access service.",
+    "startTime": "05:37",
+    "endTime": "05:41",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if you want to use those bands, you have to integrate with this service and they will tell you exactly which band you are allowed to use and when and then you can integrate with that.",
+    "startTime": "05:41",
+    "endTime": "05:49",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is groundbreaking in the sense that it is completely new.",
+    "startTime": "05:49",
+    "endTime": "05:52",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's the first and only country as far as I know that has such a system.",
+    "startTime": "05:52",
+    "endTime": "05:56",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the main outcome hopefully will be that a reduced cost in operating 5G.",
+    "startTime": "05:57",
+    "endTime": "06:04",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is huge.",
+    "startTime": "06:04",
+    "endTime": "06:05",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't know if other countries are going to follow through.",
+    "startTime": "06:06",
+    "endTime": "06:10",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In Europe there's been some bans that have been allocated to specific companies.",
+    "startTime": "06:10",
+    "endTime": "06:15",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think Daimler and a bunch of others did purchase some small part of the spectrum, but there's no such system where anybody, any company can just operate their own 5G network.",
+    "startTime": "06:16",
+    "endTime": "06:30",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's really exciting.",
+    "startTime": "06:31",
+    "endTime": "06:32",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I think there have been some pilots.",
+    "startTime": "06:32",
+    "endTime": "06:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think Sweden among other countries had some kind of pilots where you could apply for very small building level spectrums.",
+    "startTime": "06:33",
+    "endTime": "06:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So the right to use the spectrum within a given building or a campus.",
+    "startTime": "06:42",
+    "endTime": "06:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But yeah, it's not something you could deploy across a country for instance, but they will be like a much reduced price.",
+    "startTime": "06:46",
+    "endTime": "06:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That obviously and kind of fits into the narrative that maybe your office would offer a, or college would offer a 5G service rather than use WI fi because those would be far cheaper and far more efficient to achieve.",
+    "startTime": "06:52",
+    "endTime": "07:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So let's dive in a little more to like the status quo before we dive into the open source world.",
+    "startTime": "07:06",
+    "endTime": "07:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm curious about.",
+    "startTime": "07:12",
+    "endTime": "07:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You talk about these extreme costs for the spectrum, but the spectrum is one part of it.",
+    "startTime": "07:13",
+    "endTime": "07:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Important part obviously.",
+    "startTime": "07:18",
+    "endTime": "07:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But talk a bit more to me about the hardware setup.",
+    "startTime": "07:19",
+    "endTime": "07:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How does a AT&T or a bell or insert blank carrier.",
+    "startTime": "07:22",
+    "endTime": "07:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How do their infrastructure look like for the end user or like end to end really?",
+    "startTime": "07:28",
+    "endTime": "07:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, sure.",
+    "startTime": "07:33",
+    "endTime": "07:34",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So when we talk about 5G we talk about two different parts.",
+    "startTime": "07:34",
+    "endTime": "07:38",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We talk about what is called the core network and then the radio network.",
+    "startTime": "07:38",
+    "endTime": "07:41",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'll start with the core network.",
+    "startTime": "07:42",
+    "endTime": "07:43",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the core network is the part that most people typically don't know about.",
+    "startTime": "07:44",
+    "endTime": "07:47",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's Not a well known aspect of 5G.",
+    "startTime": "07:47",
+    "endTime": "07:50",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this core network is very much the equipment and logic that makes your 5G network function.",
+    "startTime": "07:51",
+    "endTime": "07:59",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So in this part of the network you have all the logic related to authentication, authorization, charging policies.",
+    "startTime": "07:59",
+    "endTime": "08:07",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it is more or less software that runs on a computer.",
+    "startTime": "08:08",
+    "endTime": "08:11",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So in terms of hardware, you need computers, it's very much as simple as that.",
+    "startTime": "08:11",
+    "endTime": "08:17",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "As we get closer to the radios, one component of that core network is called the userplane function.",
+    "startTime": "08:18",
+    "endTime": "08:24",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So this one is the component part of the core network through which user traffic goes through.",
+    "startTime": "08:25",
+    "endTime": "08:31",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So this one, when you make any usage of your cell phone, the packets that go out of your phone will go through this function.",
+    "startTime": "08:31",
+    "endTime": "08:41",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So this one, typically you would have a bit more specialized hardware in order to minimize the latency and time that packets need to be processed in this component.",
+    "startTime": "08:41",
+    "endTime": "08:52",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But for the rest of the core network, it's just generic computers.",
+    "startTime": "08:52",
+    "endTime": "08:56",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So in the user space, that's where the traditional telco vendors are, like Ericsson, Nokia, Huawei, that's where these guys have a significant market share.",
+    "startTime": "08:56",
+    "endTime": "09:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "09:07",
+    "endTime": "09:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then I guess the control plane, I guess is the other side.",
+    "startTime": "09:09",
+    "endTime": "09:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is that fully standardized or like every kind of carrier roll their own system or how does that look right now?",
+    "startTime": "09:12",
+    "endTime": "09:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay, so historically it used to be that companies, the examples that you mentioned would sell you physical hardware to install.",
+    "startTime": "09:21",
+    "endTime": "09:31",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they would call a company like BT or Bell Canada and they would install those boxes, physical boxes there.",
+    "startTime": "09:31",
+    "endTime": "09:39",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now with 5G, the code itself, the software itself is based on specifications written by 3Gpp.",
+    "startTime": "09:40",
+    "endTime": "09:51",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So what Nokia, Ericsson and others do is they will implement those standards.",
+    "startTime": "09:51",
+    "endTime": "09:57",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it is fairly standard in that sense that they have to.",
+    "startTime": "09:57",
+    "endTime": "10:00",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, they don't have to, but they follow those standards.",
+    "startTime": "10:00",
+    "endTime": "10:03",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What changes is even though they do write implementation of such standards, they also have other integrations that are not part of these standards.",
+    "startTime": "10:03",
+    "endTime": "10:14",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "An example of this is what they call their network management system.",
+    "startTime": "10:14",
+    "endTime": "10:18",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So 5G is a set of different functions, something like 12 different network functions.",
+    "startTime": "10:18",
+    "endTime": "10:24",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you want to configure those, you would typically need either a user interface or a set of APIs that to do so.",
+    "startTime": "10:24",
+    "endTime": "10:33",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So those companies will sell you this network management function and that's how they make money.",
+    "startTime": "10:33",
+    "endTime": "10:41",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "At the end of the day, with those integrations, you don't just buy a generic network function, you buy a platform that comes with monitoring, that comes with a nice UI to configure it.",
+    "startTime": "10:41",
+    "endTime": "10:54",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And more importantly, it comes with 24 hours 7 support from them.",
+    "startTime": "10:55",
+    "endTime": "10:59",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If your network crashes, you have somebody to call for help.",
+    "startTime": "10:59",
+    "endTime": "11:03",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "11:03",
+    "endTime": "11:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay.",
+    "startTime": "11:03",
+    "endTime": "11:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay.",
+    "startTime": "11:05",
+    "endTime": "11:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that's the status quo.",
+    "startTime": "11:06",
+    "endTime": "11:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Before we dive into kind of the nitty gritty details of what this all means, I'm curious about going through some different type terminologies that some of them already been mentioned.",
+    "startTime": "11:08",
+    "endTime": "11:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But just for clarity before we dive into the details.",
+    "startTime": "11:19",
+    "endTime": "11:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So we already covered 5G and the fact that it's actually a family of protocols rather than a singular protocol.",
+    "startTime": "11:23",
+    "endTime": "11:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "11:28",
+    "endTime": "11:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So we can dive into that a little bit.",
+    "startTime": "11:29",
+    "endTime": "11:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Do you want to a few words about what those standards are?",
+    "startTime": "11:30",
+    "endTime": "11:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because you already alluded to the fact that there's an IoT version, there is a regular mobile version, but then there are other families as well.",
+    "startTime": "11:32",
+    "endTime": "11:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "11:40",
+    "endTime": "11:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "For other use cases, do you want to zoom in a little bit on that?",
+    "startTime": "11:40",
+    "endTime": "11:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "On 5G specifically?",
+    "startTime": "11:43",
+    "endTime": "11:45",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "11:45",
+    "endTime": "11:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "11:46",
+    "endTime": "11:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Let's start with the 5G part.",
+    "startTime": "11:46",
+    "endTime": "11:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, sure.",
+    "startTime": "11:48",
+    "endTime": "11:48",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I mean, 5G, I mentioned earlier the core network.",
+    "startTime": "11:48",
+    "endTime": "11:52",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So like 5G is a set of network functions and communication protocol that those network functions should follow to communicate together.",
+    "startTime": "11:52",
+    "endTime": "12:01",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's for the core network.",
+    "startTime": "12:01",
+    "endTime": "12:02",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "5G is also the set of frequency on the radio side and the protocols on the radio side that have to be followed between the radio and the modem on your cell phone.",
+    "startTime": "12:02",
+    "endTime": "12:16",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So 5G is all of that.",
+    "startTime": "12:16",
+    "endTime": "12:18",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's more than just one specification.",
+    "startTime": "12:18",
+    "endTime": "12:20",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's a set of specifications that companies and implementations have to follow.",
+    "startTime": "12:20",
+    "endTime": "12:27",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "12:29",
+    "endTime": "12:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you have.",
+    "startTime": "12:29",
+    "endTime": "12:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, okay, that makes sense.",
+    "startTime": "12:30",
+    "endTime": "12:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Let's talk more about the specific ones because I think one thing I didn't know about was particular about the lower consumer cases, like IoT versions for 5G, for instance, how widely.",
+    "startTime": "12:31",
+    "endTime": "12:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I know there's a standard for it.",
+    "startTime": "12:44",
+    "endTime": "12:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is that something that's widely deployed today or is that something that is just a theory or a protocol designed by gsma?",
+    "startTime": "12:45",
+    "endTime": "12:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I presume it is.",
+    "startTime": "12:52",
+    "endTime": "12:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or how is that actually.",
+    "startTime": "12:53",
+    "endTime": "12:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, do you want to talk a bit about that?",
+    "startTime": "12:55",
+    "endTime": "12:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because I'm curious about those use cases.",
+    "startTime": "12:56",
+    "endTime": "12:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The truth is I'm not familiar with this.",
+    "startTime": "12:58",
+    "endTime": "13:00",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm not sure what's the IoT specific standard for 5G.",
+    "startTime": "13:00",
+    "endTime": "13:04",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you may be.",
+    "startTime": "13:04",
+    "endTime": "13:05",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, there's a low energy concept for 5G essentially to compete more with Lora for lower energy consumption.",
+    "startTime": "13:05",
+    "endTime": "13:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So low bandwidth, higher range and low energy consumption.",
+    "startTime": "13:15",
+    "endTime": "13:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But yeah, that's.",
+    "startTime": "13:18",
+    "endTime": "13:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We can skip over that part.",
+    "startTime": "13:19",
+    "endTime": "13:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's fine.",
+    "startTime": "13:21",
+    "endTime": "13:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "4G and LTE are obviously different generations and different type of end user communication methods to the towers.",
+    "startTime": "13:22",
+    "endTime": "13:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Do you want to differentiate between the two of them and talk a bit more about what they are and how they are different?",
+    "startTime": "13:32",
+    "endTime": "13:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "13:37",
+    "endTime": "13:37",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So for each of the generations of wireless communication, there is A set of standards that define both the core network and the radio network.",
+    "startTime": "13:37",
+    "endTime": "13:48",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "4G had its own set of components that are part of a mobile network.",
+    "startTime": "13:48",
+    "endTime": "13:56",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And LTE was an evolution to 4G that was compatible with 4G that introduced some new components.",
+    "startTime": "13:56",
+    "endTime": "14:02",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "For example, one of those components was called the epc, the Evolved Packet Core.",
+    "startTime": "14:02",
+    "endTime": "14:09",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it was an evolution of 4G.",
+    "startTime": "14:10",
+    "endTime": "14:12",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "5G itself is a completely new design, a completely new set of functions and functionality part of that core network.",
+    "startTime": "14:12",
+    "endTime": "14:20",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if you were to implement 5G, the core part, you would have to do it from scratch.",
+    "startTime": "14:20",
+    "endTime": "14:26",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay, so lte is basically 4G 4.5G essentially.",
+    "startTime": "14:26",
+    "endTime": "14:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's in between 4G and 5G essentially for higher throughput.",
+    "startTime": "14:30",
+    "endTime": "14:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Got it.",
+    "startTime": "14:34",
+    "endTime": "14:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Oh yeah.",
+    "startTime": "14:34",
+    "endTime": "14:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Cool.",
+    "startTime": "14:35",
+    "endTime": "14:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "One thing that pops up a lot when doing research about this, and it's something that spans all network technologies.",
+    "startTime": "14:36",
+    "endTime": "14:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Sdn, like software defined, networking.",
+    "startTime": "14:45",
+    "endTime": "14:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's a big concept.",
+    "startTime": "14:47",
+    "endTime": "14:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How far is that being pushed on this?",
+    "startTime": "14:49",
+    "endTime": "14:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because I know on switch level, like on server side, that's kind of commonplace these days.",
+    "startTime": "14:53",
+    "endTime": "14:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But how far is that deployed and used in this context here?",
+    "startTime": "14:58",
+    "endTime": "15:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, so as I mentioned earlier, it used to be the case that you were to purchase a physical box from a company that would take the role of a given network function.",
+    "startTime": "15:02",
+    "endTime": "15:13",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If we talk about 5G now, what you are purchasing from those companies is essentially software that will install a generic hardware.",
+    "startTime": "15:13",
+    "endTime": "15:23",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you would very much buy a server from a company like hp, Dell or whatever server company you prefer and install your 5G network functions from Cisco, Nokia or whoever on those physical boxes.",
+    "startTime": "15:23",
+    "endTime": "15:42",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In this sense, it is software.",
+    "startTime": "15:42",
+    "endTime": "15:43",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, not all of those component of the components that are part of 5G network are only software.",
+    "startTime": "15:45",
+    "endTime": "15:50",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Some of them need to be, like I said, hardware accelerated earlier.",
+    "startTime": "15:50",
+    "endTime": "15:54",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So software defined is very much like a trend that instead of buying physical boxes for something, you write software and you install it on boxes for routers and switches.",
+    "startTime": "15:56",
+    "endTime": "16:07",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It is still the case that physical switch is faster than a software switch.",
+    "startTime": "16:08",
+    "endTime": "16:13",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But depending on your use case, that may be fine.",
+    "startTime": "16:13",
+    "endTime": "16:15",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It really depends on what you're trying to achieve.",
+    "startTime": "16:15",
+    "endTime": "16:18",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How about SDR software defined radio?",
+    "startTime": "16:18",
+    "endTime": "16:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is that something that enter the space as well with like where you can redefine the spectrums basically in software using sophisticated silicon.",
+    "startTime": "16:21",
+    "endTime": "16:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Really?",
+    "startTime": "16:28",
+    "endTime": "16:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "16:28",
+    "endTime": "16:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or sophisticated hardware.",
+    "startTime": "16:29",
+    "endTime": "16:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, yeah.",
+    "startTime": "16:30",
+    "endTime": "16:32",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's getting more and more popularity.",
+    "startTime": "16:32",
+    "endTime": "16:36",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, even if you take like Qualcomm's offering, in the world of radio, it is very much software defined.",
+    "startTime": "16:37",
+    "endTime": "16:46",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So for the world of 5G, there is something called open ran, where it is a set of specifications so that you would implement so you would write code that satisfies those implementations and you would.",
+    "startTime": "16:48",
+    "endTime": "16:59",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that code can run on generic hardware.",
+    "startTime": "16:59",
+    "endTime": "17:03",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you can have an intel chip or you could have a chip that is actually made specifically for that.",
+    "startTime": "17:03",
+    "endTime": "17:08",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "For that purpose.",
+    "startTime": "17:08",
+    "endTime": "17:10",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And yes, 34 radio is a trend in the industry where you can write code on that radio.",
+    "startTime": "17:11",
+    "endTime": "17:17",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And there's more and more like smaller projects that are.",
+    "startTime": "17:18",
+    "endTime": "17:22",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You could yourself buy such a radio and write code on it for yourself.",
+    "startTime": "17:23",
+    "endTime": "17:27",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's a project, for example, called Bladerf is exactly in this space where you buy a radio for something like 500 bucks and you use their project for GitHub and install it.",
+    "startTime": "17:27",
+    "endTime": "17:38",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's like a hack orf similar thing for radio.",
+    "startTime": "17:38",
+    "endTime": "17:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Got it.",
+    "startTime": "17:42",
+    "endTime": "17:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay, cool.",
+    "startTime": "17:42",
+    "endTime": "17:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "One thing that you've mentioned a few times now is that it's becoming standardized and it's like it's.",
+    "startTime": "17:44",
+    "endTime": "17:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You're running on commodity PCs now.",
+    "startTime": "17:51",
+    "endTime": "17:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And obviously that is a nice transition over to the software side of things.",
+    "startTime": "17:53",
+    "endTime": "17:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And there are two projects that I kind of want to do a kind of talk a bit about.",
+    "startTime": "17:59",
+    "endTime": "18:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "One of them is Magma and that one is SD Core.",
+    "startTime": "18:04",
+    "endTime": "18:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Magma, if I'm mistaken, probably came out of Meta and has had a quick rise and a quick fall from what I gathered.",
+    "startTime": "18:07",
+    "endTime": "18:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Do you want to speak a bit about Magma?",
+    "startTime": "18:16",
+    "endTime": "18:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How it's what it accomplished and why it failed in the end.",
+    "startTime": "18:19",
+    "endTime": "18:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Really?",
+    "startTime": "18:25",
+    "endTime": "18:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, sure.",
+    "startTime": "18:26",
+    "endTime": "18:27",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So yeah, Magma is.",
+    "startTime": "18:27",
+    "endTime": "18:28",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean it's still out there.",
+    "startTime": "18:29",
+    "endTime": "18:30",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's a 4G and 5G private mobile network that was led by Facebook at the time and at some point Meta.",
+    "startTime": "18:30",
+    "endTime": "18:39",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it started at Facebook or actually was announced by Facebook connectivity in 2013.",
+    "startTime": "18:39",
+    "endTime": "18:45",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But the first commits showed up on GitHub in 2019 and most of those commits were made by Facebook employees.",
+    "startTime": "18:46",
+    "endTime": "18:57",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So this was very much led by Facebook.",
+    "startTime": "18:57",
+    "endTime": "18:59",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, in terms of why they were spending any effort on it's generally to increase connectivity in the world.",
+    "startTime": "19:00",
+    "endTime": "19:11",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that next part is speculation so that more people can install Facebook on their phone.",
+    "startTime": "19:11",
+    "endTime": "19:16",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So now in 2022, there's been a huge round of layoffs at Meta and they completely reshuffled the projects and focuses of the company and the whole Facebook connectivity.",
+    "startTime": "19:18",
+    "endTime": "19:31",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So not just Magma, but every project under that umbrella stopped being funded.",
+    "startTime": "19:31",
+    "endTime": "19:37",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, to facilitate the transition, they did pay a firm in Germany to help with this transition.",
+    "startTime": "19:38",
+    "endTime": "19:44",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they would continue to work for a specific amount of time for I think it was one year.",
+    "startTime": "19:45",
+    "endTime": "19:50",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But that funding stopped at some point in March 2023.",
+    "startTime": "19:50",
+    "endTime": "19:54",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And at this point it is a community led project in the sense that Facebook doesn't spend any engineering effort on it.",
+    "startTime": "19:56",
+    "endTime": "20:04",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But the truth is the amount of commit has drastically decreased.",
+    "startTime": "20:04",
+    "endTime": "20:07",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "20:08",
+    "endTime": "20:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, now, what brought this project to this situation?",
+    "startTime": "20:09",
+    "endTime": "20:15",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's always hard to know for sure.",
+    "startTime": "20:15",
+    "endTime": "20:17",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm not behind the scenes at Facebook, but one thing that has to be said is that Facebook didn't make any money directly from this project.",
+    "startTime": "20:17",
+    "endTime": "20:25",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So when things go rough and you need to find projects to cut, makes sense from a business point of view to cut these categories of projects.",
+    "startTime": "20:26",
+    "endTime": "20:35",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, that makes lots of.",
+    "startTime": "20:36",
+    "endTime": "20:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, guys.",
+    "startTime": "20:38",
+    "endTime": "20:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Sorry.",
+    "startTime": "20:39",
+    "endTime": "20:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "20:40",
+    "endTime": "20:40",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And in terms of growth, I mean, Magma didn't.",
+    "startTime": "20:40",
+    "endTime": "20:43",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's been a lot of excitement around Magma when it started, but for the last couple of years, I mean, the amount of users and companies implementing it didn't grow that much.",
+    "startTime": "20:43",
+    "endTime": "20:55",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I suspect they felt that's a good time to let go.",
+    "startTime": "20:55",
+    "endTime": "21:00",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If I'm not mistaken, Amazon's 5G offering did use Magma at one point, I believe.",
+    "startTime": "21:01",
+    "endTime": "21:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Their private 5G offering.",
+    "startTime": "21:08",
+    "endTime": "21:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Maybe you have more insight to me than me on that one.",
+    "startTime": "21:10",
+    "endTime": "21:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, well, supposedly all of that is not public, so I don't know for sure what they did use or they're currently using.",
+    "startTime": "21:15",
+    "endTime": "21:22",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This could have been part of a exploratory phase or actually implementation.",
+    "startTime": "21:23",
+    "endTime": "21:27",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I don't know more.",
+    "startTime": "21:27",
+    "endTime": "21:28",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay, fair enough.",
+    "startTime": "21:28",
+    "endTime": "21:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "21:30",
+    "endTime": "21:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because obviously had they pushed ahead there, they could obviously have the manpower to and revenue stream to actually maintain such project.",
+    "startTime": "21:30",
+    "endTime": "21:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "21:37",
+    "endTime": "21:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They would have much bigger incentives than Facebook.",
+    "startTime": "21:38",
+    "endTime": "21:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Cool.",
+    "startTime": "21:43",
+    "endTime": "21:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Let's talk about SD Core, which is the new kid on the block, it sounds like.",
+    "startTime": "21:44",
+    "endTime": "21:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, maybe not new, but what has taken over a lot of the traction from Magma from what I gathered.",
+    "startTime": "21:49",
+    "endTime": "21:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, well, so Magma was a.",
+    "startTime": "21:56",
+    "endTime": "21:59",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Or it still is a 4G and 5G private mobile network.",
+    "startTime": "21:59",
+    "endTime": "22:03",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it is a set of technologies that are bundled in a package as of SD Core.",
+    "startTime": "22:03",
+    "endTime": "22:10",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And also another implementation that comes from an European organization called OAI Open Air Interface.",
+    "startTime": "22:10",
+    "endTime": "22:16",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Those two projects aim to be much closer to the actual 5G standards.",
+    "startTime": "22:16",
+    "endTime": "22:20",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So those are actually like, you read the 5G specs and you implement them in code.",
+    "startTime": "22:21",
+    "endTime": "22:25",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They don't do much more than that.",
+    "startTime": "22:25",
+    "endTime": "22:27",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is both a pro and a con.",
+    "startTime": "22:28",
+    "endTime": "22:30",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's a pro in the sense that it is really following the specs.",
+    "startTime": "22:30",
+    "endTime": "22:34",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can be pretty confident that it is compatible with anything else that is also following the specs.",
+    "startTime": "22:34",
+    "endTime": "22:38",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But Magma was trying to be more than that in the sense that it also contained a nice user interface.",
+    "startTime": "22:39",
+    "endTime": "22:45",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "An integration with.",
+    "startTime": "22:46",
+    "endTime": "22:48",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Earlier we spoke about cbrs, Magma came with integration with Spectrum Access Systems, all of those that are not necessarily part of a 5G specification.",
+    "startTime": "22:48",
+    "endTime": "22:57",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, SD Core is a project led by the Open Networking foundation and it is an implementation of 5G core specification.",
+    "startTime": "22:57",
+    "endTime": "23:09",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So all of the network functions that are part of 5G Core.",
+    "startTime": "23:09",
+    "endTime": "23:13",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So those 12 or so network functions are being implemented in GO code.",
+    "startTime": "23:13",
+    "endTime": "23:17",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And us like Canonical as a company, we package and distribute those as well.",
+    "startTime": "23:19",
+    "endTime": "23:27",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay, so what in terms of deploying your own?",
+    "startTime": "23:27",
+    "endTime": "23:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because I know they were like a juju deployment mechanism for.",
+    "startTime": "23:32",
+    "endTime": "23:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "For Magma for instance, which I presume is kind of dead in the water now, or it might go into maintenance mode, I would imagine.",
+    "startTime": "23:37",
+    "endTime": "23:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Has the offering around SD Core replaced that from the Canonicals roadmap?",
+    "startTime": "23:43",
+    "endTime": "23:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "In terms of what you guys are pushing on your end or how do you guys see the world there?",
+    "startTime": "23:51",
+    "endTime": "23:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, yeah, we're in the process of doing that.",
+    "startTime": "23:56",
+    "endTime": "23:58",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we so did.",
+    "startTime": "23:58",
+    "endTime": "24:00",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is the type of project that takes a while, but we are in the process of doing this.",
+    "startTime": "24:00",
+    "endTime": "24:05",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We are also involved in the actual upstream project.",
+    "startTime": "24:06",
+    "endTime": "24:10",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we work with the upstream community to improve the actual software that is distributed and we also package it and distribute it to make it as easy as possible to operate.",
+    "startTime": "24:10",
+    "endTime": "24:22",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I mean, if you are to follow the upstream deployment of the project, this is done through helm charts on Kubernetes and it works.",
+    "startTime": "24:22",
+    "endTime": "24:34",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What we are trying to offer here is a more universal way to deploy SD Core.",
+    "startTime": "24:34",
+    "endTime": "24:42",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "For example, in the option project, there's only one distribution of K8s that is part of this deployment script.",
+    "startTime": "24:42",
+    "endTime": "24:48",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In our case, we have compatibility with any cloud kubernetes.",
+    "startTime": "24:48",
+    "endTime": "24:53",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you're using AWS's Kubernetes offering or if you're using your own personal microkits on your laptop, both work with this approach.",
+    "startTime": "24:53",
+    "endTime": "25:00",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you want to scale and upgrade, we offer those paths as well.",
+    "startTime": "25:01",
+    "endTime": "25:05",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay, so speak to me a bit more about like if I wanted to deploy my own.",
+    "startTime": "25:06",
+    "endTime": "25:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Let's assume for a second that I am in the us because it makes decisions a lot easier around cbrs and you have your own.",
+    "startTime": "25:11",
+    "endTime": "25:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You can use a CBRS spectrum.",
+    "startTime": "25:18",
+    "endTime": "25:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What does it take for me to set up my own 5G network at home from scratch if I wanted to run my own?",
+    "startTime": "25:21",
+    "endTime": "25:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Imagine for a second I live in the middle of nowhere, I have Starlink, but I have zero connectivity.",
+    "startTime": "25:27",
+    "endTime": "25:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I want to set up my own 5G network at home.",
+    "startTime": "25:33",
+    "endTime": "25:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Walk me through how that would look in terms of end to end.",
+    "startTime": "25:35",
+    "endTime": "25:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, sure.",
+    "startTime": "25:38",
+    "endTime": "25:39",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So from the core network part of the story, you would need a computer.",
+    "startTime": "25:39",
+    "endTime": "25:44",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if it is just for yourself, you would very much be okay with something like Intel NUC or Just a really small computer that has a relatively modern CPU in it.",
+    "startTime": "25:45",
+    "endTime": "25:58",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this computer would run all of your 5G core network.",
+    "startTime": "25:58",
+    "endTime": "26:03",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now you would also.",
+    "startTime": "26:04",
+    "endTime": "26:05",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So on this computer you would install a, ideally a Linux distribution and you would install kubernetes on top of it.",
+    "startTime": "26:06",
+    "endTime": "26:15",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you would use something like a juju but not forced.",
+    "startTime": "26:16",
+    "endTime": "26:20",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You could use also HELM or something else to both deploy and operate your 5G network.",
+    "startTime": "26:20",
+    "endTime": "26:26",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So all you need is this one computer on which you install this software.",
+    "startTime": "26:26",
+    "endTime": "26:29",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's for the core network.",
+    "startTime": "26:30",
+    "endTime": "26:31",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now you also need a radio that you would buy from a radio vendor.",
+    "startTime": "26:31",
+    "endTime": "26:38",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Those tend to be a bit more expensive they that were talking about cost for 5G a bit earlier you would have to spend between $1,000 and $20,000 for such a 5G radios.",
+    "startTime": "26:38",
+    "endTime": "26:49",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Those are quite expensive depending on if it is outdoor, indoor and the specific technologies that are in this radio.",
+    "startTime": "26:49",
+    "endTime": "26:56",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That could vary.",
+    "startTime": "26:56",
+    "endTime": "26:57",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But those are essentially the two things that you need.",
+    "startTime": "26:58",
+    "endTime": "27:02",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The core network is going to be pretty cheap in this story very much.",
+    "startTime": "27:04",
+    "endTime": "27:08",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You're going to spend most of your budget this radio equipment.",
+    "startTime": "27:08",
+    "endTime": "27:12",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "27:12",
+    "endTime": "27:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then okay, so I have the software stack installed.",
+    "startTime": "27:13",
+    "endTime": "27:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I always need to connect my phone, right.",
+    "startTime": "27:18",
+    "endTime": "27:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So walk me through the process of I guess issuing ESIMS or SIMS bootstrapping.",
+    "startTime": "27:20",
+    "endTime": "27:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like how does that process look like if you want to run your own infrastructure.",
+    "startTime": "27:28",
+    "endTime": "27:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, for physical sim you would need to have a SIEM writer.",
+    "startTime": "27:31",
+    "endTime": "27:36",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So a small piece of equipment that can write SIMS SIM cards.",
+    "startTime": "27:36",
+    "endTime": "27:40",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And on your core network you would have to register.",
+    "startTime": "27:41",
+    "endTime": "27:44",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay, I have this new SIM for this new user.",
+    "startTime": "27:44",
+    "endTime": "27:47",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is the set of policy that I want this user to follow.",
+    "startTime": "27:47",
+    "endTime": "27:52",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "For example, I could give you a 20Mbps speed with a certain priority.",
+    "startTime": "27:52",
+    "endTime": "27:57",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there's a concept of priority in 5G and 4G which decides like okay, well when this person and this person talk, this one has priority where that type of stuff.",
+    "startTime": "27:57",
+    "endTime": "28:06",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so yeah, you would need to write that SIM and register it in your core network and install this SIM in your phone and you should be good to go.",
+    "startTime": "28:07",
+    "endTime": "28:17",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's for sim.",
+    "startTime": "28:18",
+    "endTime": "28:19",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "For esim, the story is a bit more complicated.",
+    "startTime": "28:19",
+    "endTime": "28:23",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I haven't worked much with ESIMS yet.",
+    "startTime": "28:23",
+    "endTime": "28:25",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is still to go, still to come.",
+    "startTime": "28:25",
+    "endTime": "28:28",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it depends from what I understand on what is your cell phone.",
+    "startTime": "28:28",
+    "endTime": "28:33",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "For example, the process of becoming a carrier of ESIM on an iPhone versus on Android phone is different with Apple.",
+    "startTime": "28:34",
+    "endTime": "28:46",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "As far as I understand, you need to be somewhat of a partner with them.",
+    "startTime": "28:46",
+    "endTime": "28:49",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I cannot go on my own and become a 5G carrier for some Android it seems a bit more straightforward, but like I said, I haven't gone through this process for either of those.",
+    "startTime": "28:49",
+    "endTime": "28:58",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I'm not certain this process.",
+    "startTime": "28:58",
+    "endTime": "29:01",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay.",
+    "startTime": "29:01",
+    "endTime": "29:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then I guess you have some kind of serial number that.",
+    "startTime": "29:02",
+    "endTime": "29:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "From the SIM card, I presume that.",
+    "startTime": "29:06",
+    "endTime": "29:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or how's like what's the cryptography of this Vahan?",
+    "startTime": "29:07",
+    "endTime": "29:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like when you write that SIM card, like is it a.",
+    "startTime": "29:10",
+    "endTime": "29:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is it a private key that goes on there and the public key that you register?",
+    "startTime": "29:12",
+    "endTime": "29:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or like what does the cryptography side look.",
+    "startTime": "29:15",
+    "endTime": "29:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Look like?",
+    "startTime": "29:17",
+    "endTime": "29:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Correct, it's a public key, publicly private key system where you would.",
+    "startTime": "29:18",
+    "endTime": "29:22",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, it's exactly that at the end of the day.",
+    "startTime": "29:23",
+    "endTime": "29:25",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And whenever you register that SIM card on your core network, you would register its public key.",
+    "startTime": "29:25",
+    "endTime": "29:31",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So both sides have a public and private key.",
+    "startTime": "29:31",
+    "endTime": "29:33",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "29:33",
+    "endTime": "29:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's very much.",
+    "startTime": "29:35",
+    "endTime": "29:36",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not so different from any HTTPs communication.",
+    "startTime": "29:36",
+    "endTime": "29:39",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "29:40",
+    "endTime": "29:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's basically like a small local PKI essentially that you can.",
+    "startTime": "29:40",
+    "endTime": "29:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay, so you.",
+    "startTime": "29:45",
+    "endTime": "29:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And are there like clis for this or like is it all API based or the uis for like if you wanted to build this yourself, like what does that look like in terms of experience?",
+    "startTime": "29:46",
+    "endTime": "29:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So on the core side to add and register sim.",
+    "startTime": "29:59",
+    "endTime": "30:01",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So this part is very much not part of the 5G specification.",
+    "startTime": "30:02",
+    "endTime": "30:06",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So each company implements their own approach to subscriber management.",
+    "startTime": "30:06",
+    "endTime": "30:12",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But if we talk about our distribution of SD core, like we write our own network management system where you can create network slices, create network device groups and create subscribers.",
+    "startTime": "30:13",
+    "endTime": "30:27",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so it is a front end written in NEXT JS that people can use to configure their network.",
+    "startTime": "30:27",
+    "endTime": "30:35",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So yeah, it is a pretty nice front end with this purpose.",
+    "startTime": "30:36",
+    "endTime": "30:39",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now the process of writing SIM cards itself.",
+    "startTime": "30:39",
+    "endTime": "30:43",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's companies that sell their own SIM riders.",
+    "startTime": "30:44",
+    "endTime": "30:48",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't know of any nice open source project there.",
+    "startTime": "30:48",
+    "endTime": "30:54",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There is some really smaller projects.",
+    "startTime": "30:54",
+    "endTime": "30:56",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's something called PYSIM out there which comes with a CLI to help you write sim.",
+    "startTime": "30:56",
+    "endTime": "31:00",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you have a SIM writer.",
+    "startTime": "31:00",
+    "endTime": "31:01",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I haven't worked with it yet.",
+    "startTime": "31:01",
+    "endTime": "31:03",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This part is.",
+    "startTime": "31:04",
+    "endTime": "31:05",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think people will tend to go directly through esim, but there needs to be a bit more of an open source approach to it, which likely will go through Android before Apple.",
+    "startTime": "31:05",
+    "endTime": "31:15",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "31:16",
+    "endTime": "31:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it sounds like it's not super straightforward given the state of the project today.",
+    "startTime": "31:16",
+    "endTime": "31:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "To build your own 5G network in your house.",
+    "startTime": "31:21",
+    "endTime": "31:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It requires obviously hardware, but that's inevitable I guess for the time being.",
+    "startTime": "31:25",
+    "endTime": "31:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, forever I guess.",
+    "startTime": "31:29",
+    "endTime": "31:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But cost wise, I meant.",
+    "startTime": "31:31",
+    "endTime": "31:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But there are like how do you.",
+    "startTime": "31:33",
+    "endTime": "31:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, do you.",
+    "startTime": "31:34",
+    "endTime": "31:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because it is like is it kind of proof of concept level, quality or is it like stable production level?",
+    "startTime": "31:35",
+    "endTime": "31:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How do you rate the stability or maturity I guess of this?",
+    "startTime": "31:43",
+    "endTime": "31:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, today I would call it like an mvp.",
+    "startTime": "31:46",
+    "endTime": "31:51",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You could deploy it, you can use it to run subscribers.",
+    "startTime": "31:51",
+    "endTime": "31:55",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I would discourage you from running high super critical load on it.",
+    "startTime": "31:55",
+    "endTime": "32:02",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like I would very much discourage you from using 911 calls.",
+    "startTime": "32:02",
+    "endTime": "32:07",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this network, it's still in early stage.",
+    "startTime": "32:07",
+    "endTime": "32:09",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We started working with SD core a couple of months ago.",
+    "startTime": "32:10",
+    "endTime": "32:13",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's still very early development phase.",
+    "startTime": "32:14",
+    "endTime": "32:16",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But as we go through user validation we will gain feedback and improve the product for sure.",
+    "startTime": "32:18",
+    "endTime": "32:25",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Cool.",
+    "startTime": "32:26",
+    "endTime": "32:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So we talked about before we turn the table to some other things later on, but before we do, I'm curious about.",
+    "startTime": "32:26",
+    "endTime": "32:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We talk about data routing and that's obviously very similar to network routing in general.",
+    "startTime": "32:33",
+    "endTime": "32:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How about phone call routing?",
+    "startTime": "32:40",
+    "endTime": "32:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How does that work?",
+    "startTime": "32:42",
+    "endTime": "32:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because that's usually tied to your SIM card and you usually get identity there.",
+    "startTime": "32:43",
+    "endTime": "32:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How does that whole interface with the rest of the world?",
+    "startTime": "32:47",
+    "endTime": "32:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I have my own interface.",
+    "startTime": "32:50",
+    "endTime": "32:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I can run network data.",
+    "startTime": "32:52",
+    "endTime": "32:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But what if one actually make phone calls?",
+    "startTime": "32:53",
+    "endTime": "32:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How do I actually register that and how would that actually work?",
+    "startTime": "32:55",
+    "endTime": "32:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, you would need to.",
+    "startTime": "32:58",
+    "endTime": "33:00",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So here we only touch about the SDCore really does only the data part.",
+    "startTime": "33:00",
+    "endTime": "33:05",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we haven't yet worked on this phone aspect of it.",
+    "startTime": "33:06",
+    "endTime": "33:11",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Again this is the type of projects that is going to come up fairly soon.",
+    "startTime": "33:11",
+    "endTime": "33:16",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But right now you would need to integrate with a mobile network operators system for managing those phone calls.",
+    "startTime": "33:16",
+    "endTime": "33:25",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So yeah, coming up, but not currently possible.",
+    "startTime": "33:25",
+    "endTime": "33:27",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Got it.",
+    "startTime": "33:28",
+    "endTime": "33:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay.",
+    "startTime": "33:29",
+    "endTime": "33:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So obviously this is very much in the research phase of where you are at canonical, how you see and obviously strategic bet obviously for the future.",
+    "startTime": "33:30",
+    "endTime": "33:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Talk to me a bit more about how you see private 5G being deployed in the conversation you guys are having with and who's actually interested in this is this companies and campuses that are mostly interested in these conversations or other conversations with mobile carriers that are looking to deploy this as well.",
+    "startTime": "33:40",
+    "endTime": "34:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, those are two sides of the coin for us in terms of private 5G.",
+    "startTime": "34:02",
+    "endTime": "34:08",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So for companies there's a bunch of factories that are Interested in having 5G mines, earth rigs anywhere that is typically poorly served or that you want isolation from the rest of the world in your 5G network.",
+    "startTime": "34:08",
+    "endTime": "34:23",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Those are all potential customers and they're good use cases for us in the sense that in terms of it's not running critical infrastructure like the.",
+    "startTime": "34:24",
+    "endTime": "34:32",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean it's not a hospital.",
+    "startTime": "34:33",
+    "endTime": "34:34",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But that being said, hospital are also good use cases for private 5G.",
+    "startTime": "34:36",
+    "endTime": "34:40",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then there's private, then there's mobile networks for Mobile network operators.",
+    "startTime": "34:41",
+    "endTime": "34:46",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So a company like BT or Bell, they receive requests from companies that are interested in private mobile networks.",
+    "startTime": "34:46",
+    "endTime": "34:54",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Most enterprises don't necessarily have the skill in house to operate such private mobile networks, which of course makes sense.",
+    "startTime": "34:54",
+    "endTime": "35:02",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But they want 5G connectivity, so they would call a company like Bell and ask them to run that for them.",
+    "startTime": "35:02",
+    "endTime": "35:09",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it is a case where Bell Canada would spend much less money by running a private mobile network than running their more country wide grade 5G network.",
+    "startTime": "35:09",
+    "endTime": "35:25",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So those two cases are possible for private mobile network.",
+    "startTime": "35:25",
+    "endTime": "35:28",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "35:29",
+    "endTime": "35:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And yeah, that all makes sense.",
+    "startTime": "35:29",
+    "endTime": "35:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And in terms of architecture, the actual antenna piece I guess is a network connected device.",
+    "startTime": "35:32",
+    "endTime": "35:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Can that then just talk to some cloud interface?",
+    "startTime": "35:43",
+    "endTime": "35:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or is latency so important that you need to have all the other pieces on site as well?",
+    "startTime": "35:47",
+    "endTime": "35:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or how does that infrastructure look like for something like this?",
+    "startTime": "35:53",
+    "endTime": "35:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So for some part of the system, latency is super important.",
+    "startTime": "35:58",
+    "endTime": "36:04",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the antenna will typically talk to the component I talked earlier about called the user plane function.",
+    "startTime": "36:04",
+    "endTime": "36:11",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this user plane function will be close to those antennas.",
+    "startTime": "36:11",
+    "endTime": "36:15",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Physically close, right?",
+    "startTime": "36:15",
+    "endTime": "36:16",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Not necessarily.",
+    "startTime": "36:16",
+    "endTime": "36:17",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then that physically close number depends on your use case.",
+    "startTime": "36:18",
+    "endTime": "36:22",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You may want it to be in the same building, you may want it to be in the same city.",
+    "startTime": "36:23",
+    "endTime": "36:27",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That depends on your latency requirements.",
+    "startTime": "36:27",
+    "endTime": "36:29",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then the rest of the core network is not going to impact latency as much.",
+    "startTime": "36:29",
+    "endTime": "36:35",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the rest of the core network is going to be responsible to tell the user plane function and the radio whether or not the user is allowed to use the network.",
+    "startTime": "36:35",
+    "endTime": "36:43",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they're going to manage the session, but they're not going to impact latency as much.",
+    "startTime": "36:44",
+    "endTime": "36:49",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So part of it can just be on a cloud system.",
+    "startTime": "36:49",
+    "endTime": "36:52",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So most of the core network can run on AWS or Google Cloud.",
+    "startTime": "36:52",
+    "endTime": "36:55",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The user plane function will typically run closer, like maybe in your factory.",
+    "startTime": "36:55",
+    "endTime": "37:00",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then you can have a couple of antennas in your factory that are linked through that userplane function with either fiber or ethernet cable, depending on the load that requires.",
+    "startTime": "37:00",
+    "endTime": "37:12",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "37:13",
+    "endTime": "37:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Do you see a world where aws, Google, all these guys are essentially going to go head to head and compete with the traditional telcos because they have the infrastructure always run the control plane better so than the telcos would and have far higher scale and would do it more effectively and cheaply.",
+    "startTime": "37:13",
+    "endTime": "37:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is that a scenario you see playing out or how do you see the world there?",
+    "startTime": "37:37",
+    "endTime": "37:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, well, it's a possibility.",
+    "startTime": "37:41",
+    "endTime": "37:43",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I know Google tried it a little bit.",
+    "startTime": "37:43",
+    "endTime": "37:47",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "For some part of it is possible.",
+    "startTime": "37:48",
+    "endTime": "37:49",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean most of the telcos are now going through a phase where they are moving a lot of Their private clouds to the public cloud.",
+    "startTime": "37:49",
+    "endTime": "37:58",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So clearly the public cloud has something that they don't currently have.",
+    "startTime": "37:59",
+    "endTime": "38:02",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "However, a big part of operating a telco is laying fiber, cutting trees and installing radios.",
+    "startTime": "38:03",
+    "endTime": "38:10",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I don't see Google going in that direction.",
+    "startTime": "38:10",
+    "endTime": "38:13",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So most of that part of the work, I still see a place for Taco, but for running servers.",
+    "startTime": "38:14",
+    "endTime": "38:19",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Definitely a place for the cloud.",
+    "startTime": "38:19",
+    "endTime": "38:21",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "38:22",
+    "endTime": "38:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that's kind of like you said, Google played with that.",
+    "startTime": "38:23",
+    "endTime": "38:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think Amazon had something they called curbside something, a service that I think they were using for some of their.",
+    "startTime": "38:27",
+    "endTime": "38:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Was it Alexa?",
+    "startTime": "38:34",
+    "endTime": "38:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They use some backend as well.",
+    "startTime": "38:35",
+    "endTime": "38:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think they use some of their devices to create like a semi telco, but I think it was based on lora rather than 5G, I think.",
+    "startTime": "38:37",
+    "endTime": "38:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm not sure you've seen anything about that project.",
+    "startTime": "38:45",
+    "endTime": "38:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I haven't seen it, but definitely, I mean they're getting more and more in the space of telcos, they clearly all want the telco business.",
+    "startTime": "38:47",
+    "endTime": "38:54",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is billions of dollars worth of money, but they are getting it.",
+    "startTime": "38:55",
+    "endTime": "38:59",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, if you look at a company like Google, they are currently working on a project called Nephio, which is a open source automation project and it's fully open source, but they work on these kind of projects to attract the telco so that they run their workload on Google cloud instead of another cloud or on their own private clouds.",
+    "startTime": "38:59",
+    "endTime": "39:27",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Tacos still have currently huge clouds to maintain, so thousands and thousands of servers that they run throughout the country to run those 5G network services.",
+    "startTime": "39:27",
+    "endTime": "39:38",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And clouds are more than happy to take that workload.",
+    "startTime": "39:38",
+    "endTime": "39:42",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, absolutely.",
+    "startTime": "39:42",
+    "endTime": "39:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I can definitely imagine that.",
+    "startTime": "39:43",
+    "endTime": "39:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think that's particularly with the commoditization of the infrastructure and if you can use things like.",
+    "startTime": "39:44",
+    "endTime": "39:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If I'm mistaken, I believe Google's home hubs, I believe they have a level of SDR in them where they can probably not do 5G perhaps, but you can envision generation three or four out where they would have support for this built into their home hubs.",
+    "startTime": "39:53",
+    "endTime": "40:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "40:08",
+    "endTime": "40:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then it's definitely an interesting development.",
+    "startTime": "40:08",
+    "endTime": "40:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think this is super interesting and I think we've covered a lot of grounds and I'm not sure there's anything else you think it's worth bringing up in terms of the development and how you guys are working on and what people can learn more and how people can help develop and test this out themselves.",
+    "startTime": "40:13",
+    "endTime": "40:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, so most of the projects we talked about are open source.",
+    "startTime": "40:30",
+    "endTime": "40:33",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So both enterprises, but also individual can work on those.",
+    "startTime": "40:33",
+    "endTime": "40:38",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They tend to be really fun for university projects.",
+    "startTime": "40:39",
+    "endTime": "40:42",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The sense that people can work on their own during, for example, their master's degree, add some feature and then having this feature merge at the end.",
+    "startTime": "40:43",
+    "endTime": "40:51",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Those are exciting for this purpose.",
+    "startTime": "40:52",
+    "endTime": "40:53",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And on the other side of things, what as a company we're trying to do is bring those to a step that they become actual products where you are confident to run high critical workloads.",
+    "startTime": "40:53",
+    "endTime": "41:04",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, I mean, to learn more, you can go on the ONF website, you can look at Linux foundation networking, you can look at Open Air interface, or if you really want it, you can read the actual 5G specs.",
+    "startTime": "41:04",
+    "endTime": "41:18",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I suspect that's not free.",
+    "startTime": "41:18",
+    "endTime": "41:20",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "41:21",
+    "endTime": "41:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And how far do you think Canonical, or you guys in general are from having this as a commodity item in the sense that just like you would deploy Kubernetes, you could Deploy your own 5G stack.",
+    "startTime": "41:21",
+    "endTime": "41:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How far do you think that is away?",
+    "startTime": "41:36",
+    "endTime": "41:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Very close.",
+    "startTime": "41:40",
+    "endTime": "41:41",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, to run data, you can already do it.",
+    "startTime": "41:41",
+    "endTime": "41:44",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So this is gonna.",
+    "startTime": "41:44",
+    "endTime": "41:46",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It is a work in progress and it's never gonna be fully finished, but yeah, it's a matter of months, not a matter of years.",
+    "startTime": "41:46",
+    "endTime": "41:54",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's amazing.",
+    "startTime": "41:55",
+    "endTime": "41:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I'm definitely looking forward to give that a go.",
+    "startTime": "41:56",
+    "endTime": "41:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And hopefully the legislative side of things in Europe will make it easier.",
+    "startTime": "41:58",
+    "endTime": "42:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm not sure how things are in Canada, but I think it's in the UK at least.",
+    "startTime": "42:03",
+    "endTime": "42:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's still difficult to get those approvals.",
+    "startTime": "42:06",
+    "endTime": "42:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's similar and it's very much similar across the world.",
+    "startTime": "42:08",
+    "endTime": "42:12",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Perfect.",
+    "startTime": "42:13",
+    "endTime": "42:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "This has been super insightful for me, Guillaume.",
+    "startTime": "42:14",
+    "endTime": "42:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm very happy for you to have joined me on the show and yeah, thank you so much for coming there and have a good one.",
+    "startTime": "42:18",
+    "endTime": "42:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Thank you so much.",
+    "startTime": "42:24",
+    "endTime": "42:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Thank you very much.",
+    "startTime": "42:25",
+    "endTime": "42:26",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Cheers.",
+    "startTime": "42:26",
+    "endTime": "42:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Bye.",
+    "startTime": "42:26",
+    "endTime": "42:26",
+    "speaker_name": "Guillaume Bélanger",
+    "speaker_id": 1
+  }
+]
