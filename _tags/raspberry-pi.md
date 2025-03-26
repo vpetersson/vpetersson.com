@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: Raspberry Pi
+tag-name: raspberry-pi
 ---

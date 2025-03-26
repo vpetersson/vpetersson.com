@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: python
+tag-name: Python
 ---

@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: Startup
+tag-name: startup
 ---

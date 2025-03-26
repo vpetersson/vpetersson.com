@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: Digital Signage
+tag-name: digital signage
 ---

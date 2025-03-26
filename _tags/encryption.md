@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: encryption
+tag-name: Encryption
 ---

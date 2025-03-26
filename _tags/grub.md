@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: grub
+tag-name: Grub
 ---

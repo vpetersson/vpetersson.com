@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: video surveillance
+tag-name: Video Surveillance
 ---

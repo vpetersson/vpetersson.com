@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: google
+tag-name: Google
 ---

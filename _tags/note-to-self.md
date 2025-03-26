@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: Note-to-self
+tag-name: note-to-self
 ---

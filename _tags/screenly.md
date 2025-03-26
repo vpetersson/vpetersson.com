@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: screenly
+tag-name: Screenly
 ---

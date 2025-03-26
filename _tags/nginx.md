@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: Nginx
+tag-name: nginx
 ---

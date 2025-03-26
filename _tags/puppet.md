@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: puppet
+tag-name: Puppet
 ---

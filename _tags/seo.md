@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: seo
+tag-name: SEO
 ---

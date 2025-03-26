@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: privacy
+tag-name: Privacy
 ---

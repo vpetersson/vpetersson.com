@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: qemu
+tag-name: QEMU
 ---

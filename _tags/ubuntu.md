@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: Ubuntu
+tag-name: ubuntu
 ---

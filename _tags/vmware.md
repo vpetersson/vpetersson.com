@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: VMware
+tag-name: vmware
 ---

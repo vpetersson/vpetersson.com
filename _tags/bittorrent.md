@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: BitTorrent
+tag-name: bittorrent
 ---

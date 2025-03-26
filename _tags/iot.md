@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: IoT
+tag-name: iot
 ---

@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: mac os x
+tag-name: Mac OS X
 ---

@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: DevOps
+tag-name: devops
 ---

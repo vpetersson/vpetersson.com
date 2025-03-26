@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: FreeBSD
+tag-name: freebsd
 ---

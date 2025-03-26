@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag-name: google hangout
+tag-name: Google Hangout
 ---
