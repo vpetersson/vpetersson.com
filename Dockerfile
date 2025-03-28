@@ -1,5 +1,5 @@
 FROM ruby:3-bookworm
-ENV LANG C.UTF-8
+ENV LANG=C.UTF-8
 
 # Install system dependencies
 RUN rm -rf /var/lib/apt/lists/* && \
@@ -16,7 +16,7 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash \
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 
-ENV NOKOGIRI_USE_SYSTEM_LIBRARIES true
+ENV NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
 # Install Ruby dependencies
 ADD Gemfile /usr/src/app
