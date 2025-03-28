@@ -6,3 +6,4 @@ node_modules
 .aider*
 # WebP cache
 .webp-cache/
+_tags/*
