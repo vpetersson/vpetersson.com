@@ -12,7 +12,7 @@ tags:
 
 I recently helped a team migrate their Git repositories from Phabricator to GitHub. While Phabricator was a great tool that combined code reviews, task management, and repository hosting, its official deprecation in 2021 has left many teams looking for alternatives.
 
-While moving directly from Phabricator to Phorge is often the simplest path (here's a [migration guide](https://we.phorge.it/w/phorge/migration_guide/)), some teams prefer to keep their project management in Phabricator/Phorge while leveraging GitHub's CI/CD capabilities. Here's how we handled the Git migration:
+While moving directly from Phabricator to Phorge is often the simplest path (here's a [migration guide](https://we.phorge.it/w/why_migrating_from_phabricator_to_phorge/)), some teams prefer to keep their project management in Phabricator/Phorge while leveraging GitHub's CI/CD capabilities. Here's how we handled the Git migration:
 
 ### The Migration Process
 
