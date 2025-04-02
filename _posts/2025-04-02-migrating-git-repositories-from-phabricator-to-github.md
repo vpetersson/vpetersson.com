@@ -23,11 +23,13 @@ Start by creating (a private), bare repository on GitHub for each repo you want 
 #### 2. Creating a Dedicated Mirroring User
 
 For security reasons, we created a dedicated GitHub user (we called it `foobar-bot`) specifically for repository mirroring. This is better than using personal accounts because:
+
 - It keeps the mirroring credentials separate from personal accounts
 - It makes it easier to manage permissions
 - It provides better audit trails
 
 The setup involves:
+
 - Creating a new SSH key pair
 - Adding the public key to the bot's GitHub account
 - Storing the private key in Phabricator's credential store
