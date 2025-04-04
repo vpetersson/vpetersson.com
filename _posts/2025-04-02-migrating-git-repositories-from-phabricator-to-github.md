@@ -68,7 +68,7 @@ This configuration keeps everything in sync while maintaining proper access cont
 
 ### Edge Cases
 
-One constraint with GitHub that you *may* run into is the file size limit. Due to the way `git` is designed, you can't just *delete* files in the git history without impacting various hashes. More on this can be found [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository).
+One constraint with GitHub that you _may_ run into is the file size limit. Due to the way `git` is designed, you can't just _delete_ files in the git history without impacting various hashes. More on this can be found [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository).
 
 #### Soft limits
 
@@ -92,7 +92,7 @@ remote: error: GH001: Large files detected. You may want to try Git Large File S
 To github.com:[redacted].git
 ```
 
-Now, you need to be careful here and read over the GitHub page linked above. It is *possible* to delete files from the git history, but not without consequences. The most important consequence is that you will be impacting hashes. So for instance, if you've used a hash in your CI/CD pipeline, this will **change** when you take the steps below.
+Now, you need to be careful here and read over the GitHub page linked above. It is _possible_ to delete files from the git history, but not without consequences. The most important consequence is that you will be impacting hashes. So for instance, if you've used a hash in your CI/CD pipeline, this will **change** when you take the steps below.
 
 #### Removing files
 
