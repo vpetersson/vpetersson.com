@@ -98,4 +98,4 @@ After fifteen years, remote work continues to evolve, but foundational principle
 
 In conclusion, remote work isn't easy, but it offers unmatched flexibility and freedom when done correctly. It requires continuous refinement, thoughtful adaptation, and clear, intentional practices. As remote work matures further, I'm excited to see how teams worldwide continue to adapt and thrive.
 
-And for the love of god, don't force your company to use Microsoft Teams.
+And for the love of god, don't force your team to use Microsoft Teams.
