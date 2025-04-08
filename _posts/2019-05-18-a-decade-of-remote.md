@@ -123,4 +123,4 @@ Also, take a look at [How We Work at Screenly](https://www.screenly.io//blog/201
 
 [Discuss on Hacker News](https://news.ycombinator.com/item?id=19953854).
 
-You can find more remote work articles [here]({{ site.url }}/remote-work/).
+If you found this article interesting, you will probably enjoy my newer article [A decade and a half of remote work]({{ site.url }}/remote-work/2025/04/07/a-decade-and-a-half-of-remote-work.html).

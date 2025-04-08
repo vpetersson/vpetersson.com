@@ -1053,6 +1053,12 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.hover\:bg-btnPrimary\/80:hover {
+  background-color: rgb(93 95 239 / 0.8);
+}
+.hover\:text-white\/80:hover {
+  color: rgb(255 255 255 / 0.8);
+}
 @media (min-width: 768px) {
 
   .md\:mx-\[120px\] {
