@@ -10,9 +10,6 @@ title: Viktor's ramblings | Viktor on entrepreneurship, Dev(Sec)Ops, remote work
       <div class="w-full lg:w-[471px] pl-10 lg:pl-[80px]">
         <div class="text-[91px] xl:text-[186px] leading-[109px] xl:leading-[224px] uppercase mb-6 lg:mb-8">Viktor</div>
         <p class="mb-6 lg:mb-8 max-w-xs xl:max-w-md">I share my experiences with DevSecOps, Linux systems, remote work culture, and the technical challenges of building secure, scalable products.</p>
-        <div>
-          <a class="button" href="/podcast">Nerding Out With Viktor</a>
-        </div>
       </div>
     </div>
     <div class="lg:w-1/2 self-end lg:self-auto">
@@ -23,24 +20,7 @@ title: Viktor's ramblings | Viktor on entrepreneurship, Dev(Sec)Ops, remote work
       />
     </div>
   </div>
-  <div
-    class="flex flex-col lg:flex-row-reverse mx-6 md:mx-[145px] my-[60px] lg:my-[120px] gap-[34px] lg:gap-[80px] xl:gap-[135px]  lg:max-w-[1110px] md:items-center"
-  >
-    <div class="flex-1">
-      <h2 class="text-altPrimaryText">Hey! I'm a tech entrepreneur who loves diving deep into complex systems</h2>
-      <p class="pt-4 text-altPrimaryText">From building YippieMove's email migration engine to scaling Screenly's digital signage platform, I've tackled fascinating technical challenges. Join me as I share insights from my journey through my blog and podcast.</p>
-      <button class="main-button text-white mt-[32px] main-button rounded-full">
-        <a href="/about">My Story</a>
-      </button>
-    </div>
-    <div class="w-100 lg:w-[300px] xl:w-[480px]">
-      <img
-        src="/assets/images/site/talk.webp"
-        alt="Viktor Petersson"
-        class="object-cover object-center block w-full h-full rounded-md"
-      />
-    </div>
-  </div>
+  {% include subscription-block.html %}
   {% include podcasts.html limit=3 %}
   {% include posts.html limit=6 %}
   <a rel="me" href="https://hachyderm.io/@vpetersson">Mastodon</a>

@@ -846,6 +846,18 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-\[\#1DB954\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 185 84 / var(--tw-bg-opacity));
+}
+.bg-\[\#FA243C\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 36 60 / var(--tw-bg-opacity));
+}
+.bg-\[\#FF0000\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
 }
@@ -1053,8 +1065,22 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .hover\:bg-btnPrimary\/80:hover {
   background-color: rgb(93 95 239 / 0.8);
+}
+.hover\:bg-\[\#1DB954\]\/90:hover {
+  background-color: rgb(29 185 84 / 0.9);
+}
+.hover\:bg-\[\#FA243C\]\/90:hover {
+  background-color: rgb(250 36 60 / 0.9);
+}
+.hover\:bg-\[\#FF0000\]\/90:hover {
+  background-color: rgb(255 0 0 / 0.9);
 }
 .hover\:text-white\/80:hover {
   color: rgb(255 255 255 / 0.8);
