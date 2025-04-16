@@ -83,6 +83,7 @@ exclude:
 # Include additional files
 include:
   - video-sitemap.xml
+  - _transcript
 
 # Sitemap settings
 defaults:
