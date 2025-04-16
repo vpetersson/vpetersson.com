@@ -48,6 +48,9 @@ jobs:
         run: |
           docker run --rm -v $(pwd):/usr/src/app web bundle exec jekyll build
 
+      - name: Copy transcripts
+        run: cp -r _transcript _site/transcript
+
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
