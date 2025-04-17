@@ -83,6 +83,7 @@ I'm also still using my external USB drive setup as I haven't gotten around to o
     - Due to a limitation in the BIOS/motherboard, it appears as I'm only able to use 3 out of the 4 M2 drive slots.
   - 4x 4TB 3.5" SATA 7200 RPM drives (connected straight to the motherboard).
     - This will either be a Stripe + Mirror ZFS pool (or possibly RAIDZ1 with a hot spare).
+- **KVM**: PiKVM V4 Mini
 
 This compact setup is designed to be robust, scalable, and capable of handling substantial data loads and various server tasks efficiently. The choice of components ensures that the server is future-proofed and can accommodate additional expansions or upgrades as needed.
 
@@ -127,3 +128,9 @@ The performance so far looks very reasonable with a max at ~250MB/s (for writes)
 To migrate over the data from my old ZFS tank, I just used the built-in tool in Proxmox. It was just a matter of stopping the VM/CT, move it and start it back up.
 
 So far, the only drawback is that I need to manually enter the passphrase to mount the encrypted ZFS volume, which prevents some VMs from booting up automatically on say a power failure.
+
+### Update 2
+
+One of the drawbacks with using a consumer grade motherboard/server is that they generally speaking do not come with an IPMI. This can be a bit of a PITA when you want to tweak BIOS settings (or fix a boot problem).
+
+To solve for this, I decided to get myself a [PiKVM](https://pikvm.org/) V4 Mini and attach to the server. So far I'm pretty impressed with it. The UI works well and you are even able to connect it to Tailscale. If you're looking to solve for this problem, I can definitely recommend one of these.
