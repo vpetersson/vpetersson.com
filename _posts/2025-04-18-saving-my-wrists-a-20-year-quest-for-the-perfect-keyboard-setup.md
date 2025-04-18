@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Saving My Wrists - A 20-Year Quest for the Perfect Keyboard Setup
-date: '2025-04-18T11:52:44+00:00'
+date: '2025-04-18T00:52:44+00:00'
 tags:
 - keyboard
 - ergonomics
