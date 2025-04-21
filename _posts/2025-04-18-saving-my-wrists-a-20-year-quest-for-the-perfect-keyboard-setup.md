@@ -14,12 +14,12 @@ tags:
 
 I've been using split keyboards for about 20 years now, a journey sparked by the all-too-common wrist pain that plagues many a nerd hunched over a standard keyboard. This quest for ergonomic nirvana led me down a rabbit hole of different keyboards, culminating in my current mechanical setup, and even prompted me to switch my mouse to my *left* hand (more on that curious habit later). My first split keyboard was the Microsoft Natural Keyboard back in the late 90s.
 
-![Microsoft Natural Keyboard](/assets/ms_natural_keyboard.webp)
-*Not my actual keyboard, but this is where it all started*
+![Microsoft Natural Keyboard](/assets/dreamhack.webp)
+*Me asleep at Dreamhack (circa) '98 on my MS Natural Keyboard with a Jolt Cola tower in the backdrop. This back when Dreamhack was cool, i.e. before it was taken over by gamers.*
 
-When I started college (go [Broncos](https://www.scu.edu/)!) and moved to the US, I left my split keyboard at home in favor of a shiny new PowerBook G4 (replacing my trusty old ThinkPad T20 running Gentoo).
+When I started college (go [Broncos](https://www.scu.edu/)!) and moved to the US, I left my split keyboard at home in favor of a shiny new PowerBook G4 (replacing my trusty old ThinkPad T20 running [Gentoo](https://www.gentoo.org/)).
 
-Not long after, my wrists started acting up from typing too much on the built-in keyboard. That eventually led to a [ganglion cyst](https://www.nhs.uk/conditions/ganglion/0). After having that treated a few times, I figured it was time to revisit the keyboard situation.
+Not long after, my wrists started acting up from typing too much on the built-in keyboard. That eventually led to a [ganglion cyst](https://www.nhs.uk/conditions/ganglion/). After having that treated a few times, I figured it was time to revisit the keyboard situation.
 
 What I really needed was a portable, split keyboard that could fit in my bag alongside my laptop. It had to be small and light. I ended up getting a Goldtouch Go.
 
@@ -29,7 +29,7 @@ What I really needed was a portable, split keyboard that could fit in my bag alo
 This keyboard served me well. It was small and portable. But when I wrapped up college and started working more from a regular desk (instead of hopping between coffee shops and class), it was time to upgrade. I wanted something heavier that could also tilt upwards to reduce strain on my wrists. I ended up getting another Goldtouch keyboard — this time the big brother of the Go, with the incredibly catchy name SKR-4200U Mac. It was a step up and lasted me another few years. Unfortunately, the lever for locking the keyboard into position eventually snapped off, which meant the keyboard would move slightly when typing. This mechanical failure, combined with the ever-present desire for better ergonomics, pushed me towards the next evolution.
 
 ![Goldtouch](/assets/goldtouch.webp)
-*My beaten up Goldtouch keyboard with the leaver broken*
+*My beaten up Goldtouch keyboard with the leaver broken.*
 
 ## Enter mechanical keyboards
 
@@ -42,13 +42,14 @@ So now we've narrowed the keyboard selection to split keyboards that are also me
 What I ended up with was a Kinesis Freestyle Pro with Cherry MX Brown switches. I went all-in and got the extras (wrist padding and the tilt kit) to optimize the setup. I've had this keyboard for about five years now, and I really rate it. It's solid. But recently, the itch to try something new came back after a few folks around me got new keyboards.
 
 ![Kinesis Freestyle Pro](/assets/freestyle_pro.webp)
-*This is my current setup. Kinesis Frestyle Pro with a Magic Trackpad on the left (see below)*
+*This is my current setup. Kinesis Frestyle Pro with a Magic Trackpad on the left (see below).*
 
 I've heard great things about Bastard Keyboard's [Charybdis MK2](https://bastardkb.com/product/charybdis-mk2-prebuilt-preorder/) and splitkb's [Halcyon Corne](https://splitkb.com/collections/keyboard-kits/products/halcyon-corne). Then there's ZSA's [Moonlander](https://www.zsa.io/moonlander) and a bunch of other DIY kits.
 
 If you keep going down the keyboard rabbit hole, many roads lead to soldering your own keyboard or going ultra-minimal and using "layers" instead of having a full set of physical keys. As much as I geek out over that stuff, that's probably where I draw the line — even if it is objectively more efficient.
 
 In summary, here's the gear I've used over the years:
+
 * Microsoft Natural Keyboard (from the late 90s)
 * A split Logitech keyboard (from the early 00s)
 * Goldtouch Go
