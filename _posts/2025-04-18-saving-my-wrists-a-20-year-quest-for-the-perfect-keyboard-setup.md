@@ -15,7 +15,7 @@ tags:
 I've been using split keyboards for about 20 years now, a journey sparked by the all-too-common wrist pain that plagues many a nerd hunched over a standard keyboard. This quest for ergonomic nirvana led me down a rabbit hole of different keyboards, culminating in my current mechanical setup, and even prompted me to switch my mouse to my *left* hand (more on that curious habit later). My first split keyboard was the Microsoft Natural Keyboard back in the late 90s.
 
 ![Microsoft Natural Keyboard](/assets/dreamhack.webp)
-*Me asleep at Dreamhack (circa) '98 on my MS Natural Keyboard with a Jolt Cola tower in the backdrop. This back when Dreamhack was cool, i.e. before it was taken over by gamers.*
+*Me asleep at Dreamhack (circa) '98 on my MS Natural Keyboard with a Jolt Cola tower in the backdrop. This was back when Dreamhack was cool, i.e. before it was taken over by gamers.*
 
 When I started college (go [Broncos](https://www.scu.edu/)!) and moved to the US, I left my split keyboard at home in favor of a shiny new PowerBook G4 (replacing my trusty old ThinkPad T20 running [Gentoo](https://www.gentoo.org/)).
 
