@@ -4,6 +4,9 @@
     - type: panel
       link: https://digitalsignagesummit.org/newfront/sessions/560
       title: "[Upcoming] Digital Signage Summit Europe: AI & Trust / Cybersecurity / Challenges, Munich, Germany"
+    - type: podcast
+      title: "Founder Mode: Remote Boundaries – Saying No Without Burning Bridges with Viktor Petersson "
+      video: https://www.youtube.com/watch?v=EaHqs_WCvfU
     - type: talk
       title: "DevOps Exchange, London, UK"
       video: https://www.youtube.com/watch?v=O0Xmoxtd0-w
@@ -127,7 +130,7 @@
 
 - year: 2016
   events:
-    - type: press
+    - type: podcast
       title: "Sixteen:Nine: Podcast Interview"
       link: http://sixteennine.podbean.com/e/viktor-petersson-screenly/
     - type: press
