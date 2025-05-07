@@ -14,19 +14,19 @@ When I first created Sonar, the goal was simple: track Bluetooth Low Energy devi
 
 ### What's New
 
-* **Modern service architecture**
+- **Modern service architecture**
   Sonar has been fully migrated from its original Django codebase to a lean FastAPI service, with the old `manage.py` and Django apps removed and a new `app/main.py` powering all BLE scanning logic.
 
-* **Improved code quality**
+- **Improved code quality**
   We've adopted Ruff for linting and import sorting, and fortified the test suite with Pytest (including async tests and coverage checks). The new `requirements-test.txt` lists `pytest`, `pytest-asyncio`, `pytest-cov`, and `ruff`, ensuring consistent style and at least 80 percent coverage.
 
-* **Docker-first deployments**
+- **Docker-first deployments**
   Sonar now ships with a production `Dockerfile` for building a container image and a simplified `docker-compose.yml` that sets up the BLE scanner with persistent storage and hardware access.
 
-* **Simplified API**
+- **Simplified API**
   A new set of REST endpoints in `app/api/endpoints.py` covers device listing (`/devices`), counts (`/count`), manufacturer stats (`/manufacturers`), scan control (`/scan`), and health checks (`/health`), all returning JSON with robust error handling.
 
-* **Removed legacy code**
+- **Removed legacy code**
   The old Django analytics application, static assets (like jQuery bundles), and deprecated Balena/Raspbian scripts have been stripped away, leaving a focused, modern codebase.
 
 ### Getting Started
