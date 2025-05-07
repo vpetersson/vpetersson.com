@@ -24,7 +24,7 @@ When I first created Sonar, the goal was simple: track Bluetooth Low Energy devi
   Sonar now ships with a production `Dockerfile` for building a container image and a simplified `docker-compose.yml` that sets up the BLE scanner with persistent storage and hardware access.
 
 - **Simplified API**
-  A new set of REST endpoints in `app/api/endpoints.py` covers device listing (`/devices`), counts (`/count`), manufacturer stats (`/manufacturers`), scan control (`/scan`), and health checks (`/health`), all returning JSON with robust error handling.
+  A new set of REST endpoints in `app/api/endpoints.py` provides comprehensive device monitoring capabilities. The `/latest` endpoint returns current scan results and historical statistics, `/time-series` offers detailed 24-hour data with customizable intervals, and `/health` provides system status checks. All endpoints return well-structured JSON responses with robust error handling.
 
 - **Removed legacy code**
   The old Django analytics application, static assets (like jQuery bundles), and deprecated Balena/Raspbian scripts have been stripped away, leaving a focused, modern codebase.
