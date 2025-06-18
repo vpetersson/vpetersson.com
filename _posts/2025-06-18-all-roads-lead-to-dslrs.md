@@ -19,9 +19,9 @@ Video was more of a headache. The Brio was okay for video calls, but the color b
 
 By now, I'd also had a bunch of guests on the show. The difference between setups is clear as day. People using DSLRs just look better. Even the best webcams can't compete to even an entry-level DSLR when it comes to sharpness and depth of field. Here are some examples of people I've interviewed who have great DSLR setups:
 
-* [The Systems Behind Managing High-Performing Remote Teams with Jon Seager]({{ site.url }}/podcast/S02E11.html)
-* [Exploring the Depths of Linux and Open Source Innovation with Mark Shuttleworth]({{ site.url }}/podcast/S01E13.html)
-* [Nerding out about Prometheus and Observability with Julius Volz]({{ site.url }}/podcast/S01E02.html)
+- [The Systems Behind Managing High-Performing Remote Teams with Jon Seager]({{ site.url }}/podcast/S02E11.html)
+- [Exploring the Depths of Linux and Open Source Innovation with Mark Shuttleworth]({{ site.url }}/podcast/S01E13.html)
+- [Nerding out about Prometheus and Observability with Julius Volz]({{ site.url }}/podcast/S01E02.html)
 
 ## Attempt 2: GoPro
 
