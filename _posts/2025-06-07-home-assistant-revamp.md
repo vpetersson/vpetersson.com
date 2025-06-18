@@ -79,7 +79,7 @@ If you want full control and don’t mind a steep learning curve, skip gateways 
 
 The easy route is a gateway such as IKEA’s. It works out of the box and is user-friendly, but locks you to one vendor. If you don’t have grandiose plans, this path serves well. I switched only because adaptive lighting kept nagging me and I wanted smart radiator controllers, but the migration was anything but painless.
 
-If you go  down the HA+Z2A appaorach, here's my `docker-compose.yml` file that I use to setup the stack:
+If you go down the HA+Z2A appaorach, here's my `docker-compose.yml` file that I use to setup the stack:
 
 ```yaml
 services:

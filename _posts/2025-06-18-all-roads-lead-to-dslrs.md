@@ -5,7 +5,7 @@ tags: [podcast, video, equipment]
 
 ---
 
-I've been running my video podcast [Nerding out with Viktor]({{ site.url}}}/podcast/) for about a year and a half now, with just under 50 episodes published.
+I've been running my video podcast [Nerding out with Viktor]({{ site.url }}/podcast/) for about a year and a half now, with just under 50 episodes published.
 
 When I [started out]({{ site.url }}/2024/06/20/on-launching-a-video-podcast-in-2024.html), I tried to keep things simple and cheap. I used my Logitech Brio 4K webcam - a webcam that I picked up during COVID. Not long after, I upgraded the audio by adding a dedicated microphone, the Audio-Technica ATR2100x-USB. It did the job early on, but the sound still wasn't quite crisp. Eventually, I gave in and bought the Shure MV7 (USB), which is the go-to mic for many podcasters. That one stuck and I've had no audio issues since.
 
@@ -19,9 +19,9 @@ Video was more of a headache. The Brio was okay for video calls, but the color b
 
 By now, I'd also had a bunch of guests on the show. The difference between setups is clear as day. People using DSLRs just look better. Even the best webcams can't compete to even an entry-level DSLR when it comes to sharpness and depth of field. Here are some examples of people I've interviewed who have great DSLR setups:
 
-* [The Systems Behind Managing High-Performing Remote Teams with Jon Seager]({{ site.url }}/podcast/S02E11.html)
-* [Exploring the Depths of Linux and Open Source Innovation with Mark Shuttleworth]({{ site.url }}}}/podcast/S01E13.html)
-* [Nerding out about Prometheus and Observability with Julius Volz]({{ site.url }}/podcast/S01E02.html)
+- [The Systems Behind Managing High-Performing Remote Teams with Jon Seager]({{ site.url }}/podcast/S02E11.html)
+- [Exploring the Depths of Linux and Open Source Innovation with Mark Shuttleworth]({{ site.url }}/podcast/S01E13.html)
+- [Nerding out about Prometheus and Observability with Julius Volz]({{ site.url }}/podcast/S01E02.html)
 
 ## Attempt 2: GoPro
 

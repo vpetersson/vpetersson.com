@@ -1,6 +1,9 @@
 ---
 - year: 2025
   events:
+    - type: podcast
+      link: https://system76.transistor.fm/19
+      title: "System76 Transmission Log: Linux Hardware, Open Source Summit, and a chat with Screenly"
     - type: panel
       link: https://digitalsignagesummit.org/newfront/sessions/560
       title: "Digital Signage Summit Europe: AI & Trust / Cybersecurity / Challenges, Munich, Germany"
