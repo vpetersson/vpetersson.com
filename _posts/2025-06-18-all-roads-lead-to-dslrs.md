@@ -43,18 +43,18 @@ Next up was the Elgato Facecam Pro. It looked promising and had solid reviews. I
 
 ## Attempt 4: Sony ZV-E10
 
-Eventually, I gave in and bought a DSLR. I went with the Sony ZV-E10. And wow. What a difference.
+Eventually, I gave in and bought a dedicated camera. I went with the Sony ZV-E10—technically a mirrorless camera rather than a DSLR. And wow. What a difference.
 
 ![Sony ZV-E10](/assets/sony-zv-e10.webp)
 
 There's no comparison. The video quality is on a completely different level. I picked it because ChatGPT recommended it (yes, really), and also because it was discounted at the time. It might be getting a bit old, but it's still a fantastic camera.
 
-It's not cheap. You'll spend more than you would on any webcam or GoPro, but you're getting a proper DSLR camera, not just a webcam. You can grab the kit with the lens for £699 directly from Sony. I opted to buy the body only and paired it with the Sigma 16mm f/1.4 DC DN Contemporary lens. That pushed the price up a bit, but I think it was worth it.
+It's not cheap. You'll spend more than you would on any webcam or GoPro, but you're getting a proper camera—technically mirrorless, but in the same league as a DSLR—not just a webcam. You can grab the kit with the lens for £699 directly from Sony. I opted to buy the body only and paired it with the Sigma 16mm f/1.4 DC DN Contemporary lens. That pushed the price up a bit, but I think it was worth it.
 
 What surprised me the most was how easy it was to get going. I figured I'd need an HDMI capture card, but plugging it in via USB just worked. macOS detected it right away - no drivers, no fuss.
 
 ## The takeaway
 
-If you care about image quality, all roads really do lead to a DSLR. Webcams just can't compete, no matter the price. There are some decent ones out there, but they all come with compromises. Lenses are big (and heavy) for a reason. You can't fake physics in software. At least not yet.
+If you care about image quality, all roads really do lead to a DSLR – or at least a mirrorless camera. Webcams just can't compete, no matter the price. There are some decent ones out there, but they all come with compromises. Lenses are big (and heavy) for a reason. You can't fake physics in software. At least not yet.
 
-Don't get me wrong - if all you just want something that looks OK on a video call, a webcam is sufficient. But if you want to have something that really comes across as crisp and professional in 4K, you'll end up with a DSLR.
+Don't get me wrong - if all you just want something that looks OK on a video call, a webcam is sufficient. But if you want to have something that really comes across as crisp and professional in 4K, you'll end up with a DSLR or a mirrorless camera.
