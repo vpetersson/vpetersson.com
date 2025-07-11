@@ -25,18 +25,26 @@ jobs:
           toolchain: stable
           components: rustfmt, clippy
 
-      - name: Cache Rust dependencies
+      - name: Cache Rust and dprint
         uses: actions/cache@v4
         with:
           path: |
             ~/.cargo/registry
             ~/.cargo/git
-            target
-          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+            ~/.cargo/bin
+          key: ${{ runner.os }}-cargo-dprint-${{ hashFiles('.dprint.json') }}
           restore-keys: |
+            ${{ runner.os }}-cargo-dprint-
             ${{ runner.os }}-cargo-
+
       - name: Install dprint
-        run: cargo install dprint
+        run: |
+          if ! command -v dprint &> /dev/null; then
+            echo "dprint not found, installing..."
+            cargo install dprint
+          else
+            echo "dprint already installed, skipping installation"
+          fi
 
       - name: Run dprint check
         run: dprint check "**/*.md"
