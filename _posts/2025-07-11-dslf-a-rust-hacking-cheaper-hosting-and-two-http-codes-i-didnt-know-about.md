@@ -17,8 +17,8 @@ In the process I learned that HTTP has two “new” redirect codes that slipped
 | 301      | 308      | **Yes**                |
 | 302      | 307      | **Yes**                |
 
-*301* and *302* can turn a POST into a GET.
-*307* and *308* guarantee the original method sticks. Neat.
+_301_ and _302_ can turn a POST into a GET.
+_307_ and _308_ guarantee the original method sticks. Neat.
 
 DSLF defaults to the classic pair, but you can switch to the modern ones with a single flag.
 
@@ -61,8 +61,8 @@ Point `fly.toml` at `vpetersson/dslf`, hit `fly deploy`, and you’re live for p
 
 ## What I haven’t done yet
 
-* **Load testing** – numbers will come later once I point k6 at it.
-* **Click counts** – might add an optional flag, but only if it stays lightweight.
+- **Load testing** – numbers will come later once I point k6 at it.
+- **Click counts** – might add an optional flag, but only if it stays lightweight.
 
 ---
 
