@@ -17,7 +17,6 @@ dprint check "**/*.md"
 
 ## Test build
 
-
 ```bash
 bundle install
 bundle exec jekyll build
