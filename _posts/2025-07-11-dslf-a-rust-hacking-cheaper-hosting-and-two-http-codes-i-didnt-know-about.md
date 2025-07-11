@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "DSLF – a rust hacking, cheaper hosting, and two HTTP codes I didn’t know about"
-date: '2025-07-11T18:00:00Z'
+date: '2025-07-11T00:00:00Z'
 tags: [rust, http, fly.io, open-source]
 ---
 
