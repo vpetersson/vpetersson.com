@@ -1,11 +1,9 @@
 {% if page.tags %}
-  <ul class="tags flex gap-3">
+  <div class="tags">
     {% for tag in page.tags %}
-      <li class="rounded-full py-1 px-4 border border-white-alpha-25">
-        <a class="uppercase text-sm text-white" href="{{ site.baseurl }}/tags/{{ tag | downcase | slugify }}">
-          {{ tag }}
-        </a>
-      </li>
+      <a href="{{ site.baseurl }}/tags/{{ tag | downcase | slugify }}" class="tag">
+        {{ tag }}
+      </a>
     {% endfor %}
-  </ul>
+  </div>
 {% endif %}

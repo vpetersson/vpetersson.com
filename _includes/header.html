@@ -1,21 +1,36 @@
-<header class="p-8 flex justify-between bg-primaryBG border-b border-white-alpha-20">
+<!-- Skip Navigation -->
+<a href="#main-content" class="skip-navigation">Skip to main content</a>
+
+<header class="p-8 flex justify-between bg-primaryBG border-b border-white-alpha-20" role="banner">
   <div class="flex gap-10 justify-between items-center">
-    <a href="/">
-      <img src="/assets/images/site/logo-white.svg" alt="Viktor Petersson logo" />
+    <a href="/" aria-label="Viktor Petersson - Home">
+      <img src="/assets/images/site/logo-white.svg" alt="Viktor Petersson logo" width="120" height="40" />
     </a>
     {% include nav.html %}
   </div>
   <div class="flex gap-2 justify-between items-center">
     <div class="header-search hidden lg:block">
-      <form action="/search" method="get">
-        <input class="search expandright" id="searchright" type="search" name="query" placeholder="Search">
-        <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+      <form action="/search" method="get" role="search">
+        <label for="searchright" class="sr-only">Search the site</label>
+        <input
+          class="search expandright"
+          id="searchright"
+          type="search"
+          name="query"
+          placeholder="Search"
+          aria-label="Search"
+        >
+        <button class="button searchbutton" type="submit" aria-label="Submit search">
+          <span class="mglass" aria-hidden="true">&#9906;</span>
+        </button>
       </form>
     </div>
 
     <div class="hidden lg:block">
       {% include social-links.html %}
     </div>
-      {% include nav-mobile.html %}
-    </div>
+
+    <!-- Use modern mobile navigation -->
+    {% include nav-mobile-modern.html %}
+  </div>
 </header>

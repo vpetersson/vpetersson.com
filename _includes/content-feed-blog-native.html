@@ -1,0 +1,49 @@
+{% assign show_pagination = include.paginate | default: false %}
+
+<section class="content-feed-native">
+  <div class="content-feed-container">
+    <!-- Content List -->
+    <div class="content-list">
+      {% if show_pagination %}
+        {% for post in paginator.posts %}
+          {% include content-card-native.html content=post type='post' %}
+        {% endfor %}
+      {% else %}
+        {% for post in site.posts limit:10 %}
+          {% include content-card-native.html content=post type='post' %}
+        {% endfor %}
+      {% endif %}
+    </div>
+
+    <!-- Pagination -->
+    {% if show_pagination %}
+      {% include pagination.html paginator=paginator %}
+    {% endif %}
+  </div>
+</section>
+
+<style>
+.content-feed-native {
+  background: var(--color-gray-900);
+  padding: var(--space-16) var(--space-6);
+}
+
+.content-feed-container {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* Gap is handled by margin-bottom in cards */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content-feed-native {
+    padding: var(--space-12) var(--space-4);
+  }
+}
+</style>

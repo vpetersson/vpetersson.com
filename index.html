@@ -4,24 +4,10 @@ title: Viktor's ramblings | Viktor on entrepreneurship, Dev(Sec)Ops, remote work
 ---
 
 <div>
-  <div class="hero flex flex-col lg:flex-row text-white">
-    <div class="lg:w-1/2 pt-[54px] md:pt-[40px] px-6 md:pl-[115px] md:pr-0">
-      <div class="text-[91px] xl:text-[186px] leading-[109px] xl:leading-[224px] uppercase text-white">Meet</div>
-      <div class="w-full lg:w-[471px] pl-10 lg:pl-[80px]">
-        <div class="text-[91px] xl:text-[186px] leading-[109px] xl:leading-[224px] uppercase mb-6 lg:mb-8">Viktor</div>
-        <p class="mb-6 lg:mb-8 max-w-xs xl:max-w-md">I share my experiences with DevSecOps, Linux systems, remote work culture, and the technical challenges of building secure, scalable products.</p>
-      </div>
-    </div>
-    <div class="lg:w-1/2 self-end lg:self-auto">
-      <img
-        src="{{site.data.main.header_image}}"
-        alt="Meet Viktor"
-        class="md:h-[600px] xl:h-[800px]"
-      />
-    </div>
-  </div>
+  {% include hero-modern.html %}
   {% include subscription-block.html %}
-  {% include podcasts.html limit=3 %}
-  {% include posts.html limit=6 %}
-  <a rel="me" href="https://hachyderm.io/@vpetersson">Mastodon</a>
+  <main id="latest-content">
+    {% include content-feed-native.html limit=8 %}
+  </main>
+  <a rel="me" href="https://hachyderm.io/@vpetersson" class="sr-only">Mastodon</a>
 </div>
