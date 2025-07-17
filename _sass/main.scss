@@ -10,6 +10,8 @@
 body {
   color: $text-primary;
   font-family: "Anton";
+  min-width: 320px;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1115,8 +1117,12 @@ a.button {
   }
 
   .search:focus {
-    width: 200px; /* Bar width+1px */
+    width: 150px; /* Bar width+1px */
     padding: 0 16px 0 0;
+
+    @media (min-width: $breakpoint-sm) {
+      width: 200px;
+    }
 
     @media (min-width: $breakpoint-xl) {
       width: 363px;
