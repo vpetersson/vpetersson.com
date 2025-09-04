@@ -1,0 +1,384 @@
+{% assign content = include.content %}
+{% assign type = include.type %}
+
+<article class="unified-content-card" data-content-type="{{ type }}s">
+  <!-- Content Type Badge -->
+  <div class="content-type-badge">
+    {% if type == 'podcast' %}
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M12 2a8 8 0 0 1 0 12M8 2a8 8 0 0 1 0 12M4 6v4"/>
+      </svg>
+      <span>Podcast</span>
+    {% else %}
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M14 2H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM3 12l3-3 2 2 4-4"/>
+      </svg>
+      <span>Blog Post</span>
+    {% endif %}
+  </div>
+
+  <!-- Main Content -->
+  <div class="card-content">
+    <header class="card-header">
+      {% if type == 'podcast' %}
+        <div class="podcast-meta">
+          <span class="season-episode">S{{ content.season }}E{{ content.episode }}</span>
+          {% if content.guests %}
+            <span class="guests">with {% for guest in content.guests %}{{ guest }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <h3 class="card-title">
+        <a href="{{ content.url | relative_url }}" class="card-title-link">
+          {{ content.title | escape }}
+        </a>
+      </h3>
+
+      <!-- Tags/Topics -->
+      {% if content.tags.size > 0 %}
+      <div class="card-tags">
+        {% for tag in content.tags limit:3 %}
+          <a href="{{ site.baseurl }}/tags/{{ tag | downcase | slugify }}" class="tag">{{ tag }}</a>
+        {% endfor %}
+        {% if content.tags.size > 3 %}
+          <span class="tag-more">+{{ content.tags.size | minus:3 }}</span>
+        {% endif %}
+      </div>
+      {% endif %}
+    </header>
+
+    <!-- Description/Excerpt -->
+    <div class="card-description">
+      {% if content.description %}
+        <p>{{ content.description | strip_html | truncatewords: 25 }}</p>
+      {% elsif content.excerpt %}
+        <p>{{ content.excerpt | strip_html | truncatewords: 25 }}</p>
+      {% else %}
+        <p>{{ content.content | strip_html | truncatewords: 25 }}</p>
+      {% endif %}
+    </div>
+
+    <!-- Meta Information -->
+    <div class="card-meta">
+      <div class="meta-primary">
+        <time datetime="{{ content.date | date_to_xmlschema }}" class="card-date">
+          {{ content.date | date: "%b %d, %Y" }}
+        </time>
+
+        {% if type == 'podcast' and content.duration %}
+          <span class="duration">{{ content.duration | format_duration }}</span>
+        {% elsif type == 'post' and content.content %}
+          <span class="reading-time">{{ content.content | reading_time }}</span>
+        {% endif %}
+      </div>
+
+      <a href="{{ content.url | relative_url }}" class="card-action"
+         aria-label="{% if type == 'podcast' %}Listen to episode{% else %}Read article{% endif %}: {{ content.title }}">
+        {% if type == 'podcast' %}
+          Listen
+        {% else %}
+          Read
+        {% endif %}
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M6 12l4-4-4-4"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Hover Overlay -->
+  <a href="{{ content.url | relative_url }}" class="card-overlay" aria-hidden="true">
+    <div class="overlay-content">
+      <span class="overlay-text">
+        {% if type == 'podcast' %}View Episode{% else %}Read Article{% endif %}
+      </span>
+    </div>
+  </a>
+</article>
+
+<style>
+.unified-content-card {
+  background: var(--color-gray-800);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--color-primary);
+
+    .card-overlay {
+      opacity: 1;
+    }
+
+    .card-title-link {
+      color: var(--color-primary);
+    }
+  }
+}
+
+.content-type-badge {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-2);
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: var(--radius-full);
+  z-index: 2;
+  box-shadow: var(--shadow-sm);
+  opacity: 0.9;
+
+  span {
+    line-height: 1;
+  }
+
+  svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.card-content {
+  padding: var(--space-6);
+  padding-right: calc(var(--space-6) + 30px); /* Space for badge */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  min-height: 280px; /* Ensure consistent card heights */
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.podcast-meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-300);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.season-episode {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.guests {
+  color: var(--color-gray-300);
+}
+
+.card-title {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-white);
+}
+
+.card-title-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.card-description {
+  flex: 1;
+  min-height: 60px; /* Ensure minimum height for consistency */
+  display: flex;
+  align-items: flex-start;
+
+  p {
+    margin: 0;
+    color: var(--color-gray-300);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-gray-700);
+}
+
+.meta-primary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+
+  @media (min-width: 480px) {
+    flex-direction: row;
+    gap: var(--space-3);
+  }
+}
+
+.card-date,
+.duration,
+.reading-time {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-300);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.card-action {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+
+  &:hover {
+    color: var(--color-white);
+
+    svg {
+      transform: translateX(2px);
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+
+  svg {
+    transition: transform var(--transition-fast);
+  }
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--color-primary), rgba(93, 95, 239, 0.8));
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  text-decoration: none;
+  border-radius: var(--radius-xl);
+
+  &:focus-visible {
+    outline: 3px solid var(--color-white);
+    outline-offset: 2px;
+  }
+}
+
+.overlay-content {
+  text-align: center;
+  color: var(--color-white);
+}
+
+.overlay-text {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .unified-content-card {
+    margin-bottom: var(--space-4);
+  }
+
+  .card-content {
+    padding: var(--space-4);
+    padding-right: calc(var(--space-4) + 60px); /* Ensure space for badge */
+    gap: var(--space-3);
+    min-height: 240px; /* Smaller min-height on mobile */
+  }
+
+  .content-type-badge {
+    top: var(--space-2);
+    right: var(--space-2);
+    padding: var(--space-1) var(--space-2);
+    font-size: 9px; /* Slightly smaller on mobile */
+  }
+
+  .card-title {
+    font-size: var(--font-size-base);
+  }
+
+  .card-description p {
+    font-size: var(--font-size-sm);
+  }
+
+  .card-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+}
+
+/* Podcast-specific styling */
+.unified-content-card[data-content-type="podcasts"] {
+  .content-type-badge {
+    background: #10b981; /* Green for podcasts */
+  }
+
+  .card-action {
+    &:hover {
+      color: #10b981;
+    }
+  }
+}
+
+/* Blog post-specific styling */
+.unified-content-card[data-content-type="posts"] {
+  .content-type-badge {
+    background: var(--color-primary); /* Purple for blog posts */
+  }
+}
+</style>

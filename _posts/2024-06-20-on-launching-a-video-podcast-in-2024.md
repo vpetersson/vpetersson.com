@@ -9,6 +9,8 @@ tags:
 - entrepreneurship
 ---
 
+**Update:** Check out my blog post [All Roads Lead to DSLRs]({{ site.url }}/2025/06/18/all-roads-lead-to-dslrs.html)
+
 _This blog post is inspired by the new wave of "Build in the Open" movement, where I want to share my experience and data._
 
 In 2023, I embarked on a new adventure: launching a podcast. The idea was simple yet exciting — bring friends and experts to discuss topics they're passionate about, building my personal brand and promoting [Screenly](https://www.screenly.io) and [Viktopia Studio](https://studio.viktopia.io/) along the way.
