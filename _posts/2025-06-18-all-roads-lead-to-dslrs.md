@@ -55,7 +55,6 @@ What surprised me the most was how easy it was to get going. I figured I'd need 
 
 **Update:** I can't belive it took me this long to figure it out but if you have a "Mark I" (i.e. first iteration) of the ZV-E10, it will only do 720p over USB. If you want 4k, you need to use a HDMI capturing card. It took me several months to realize this, as I was convinced it was a limitation in Riverside (which I use for podcast recordings). Only when I tested this hypothesis did I realize that the limitation was on my end.
 
-
 ## The takeaway
 
 If you care about image quality, all roads really do lead to a DSLR – or at least a mirrorless camera. Webcams just can't compete, no matter the price. There are some decent ones out there, but they all come with compromises. Lenses are big (and heavy) for a reason. You can't fake physics in software. At least not yet.
