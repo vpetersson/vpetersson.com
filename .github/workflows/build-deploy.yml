@@ -48,22 +48,11 @@ jobs:
           load: true
           tags: web:latest
           cache-from: type=local,src=/tmp/.buildx-cache
-          cache-to: type=local,dest=/tmp/.buildx-cache-new,mode=max
-
-      - name: Move cache
-        run: |
-          rm -rf /tmp/.buildx-cache
-          mv /tmp/.buildx-cache-new /tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache,mode=max
 
       - name: Build content
         run: |
-          # For PRs, test the full build including CSS
-          if [ "${{ github.event_name }}" = "pull_request" ]; then
-            docker run --rm -v $(pwd):/usr/src/app web sh -c "bun run build:css && bundle exec jekyll build"
-          else
-            # For push/schedule, use the standard build process
-            docker run --rm -v $(pwd):/usr/src/app web sh -c "bundle exec jekyll build && cp -r _transcript _site/transcript"
-          fi
+          docker run --rm -v $(pwd):/usr/src/app web sh -c "bun run build:css && bundle exec jekyll build && cp -r _transcript _site/transcript"
 
       - name: Test Build Output
         run: |
