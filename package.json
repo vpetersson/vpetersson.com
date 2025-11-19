@@ -6,8 +6,8 @@
   "author": "Devan Thakur <devanthakur89@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build:css": "postcss _assets/css/tailwind.css -o assets/css/styles.css",
-    "watch:css": "postcss _assets/css/tailwind.css -o assets/css/styles.css --watch"
+    "build:css": "bun x postcss _assets/css/tailwind.css -o assets/css/styles.css",
+    "watch:css": "bun x postcss _assets/css/tailwind.css -o assets/css/styles.css --watch"
   },
   "dependencies": {
     "autoprefixer": "^10.4.19",
