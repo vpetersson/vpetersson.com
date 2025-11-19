@@ -1,0 +1,107 @@
+---
+name: PR Build & Test
+
+on:
+  pull_request:
+    branches:
+      - master
+    # Exclude paths that don't affect the build
+    paths-ignore:
+      - '**.md'
+      - 'README.md'
+      - 'LICENSE'
+      - '.gitignore'
+
+jobs:
+  build-and-test:
+    name: Build & Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Cache Docker layers
+        uses: actions/cache@v4
+        with:
+          path: /tmp/.buildx-cache
+          key: ${{ runner.os }}-buildx-pr-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-buildx-pr-
+            ${{ runner.os }}-buildx-
+
+      - name: Build Docker container
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          load: true
+          tags: blog-pr:latest
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache-new,mode=max
+
+      - name: Move cache
+        run: |
+          rm -rf /tmp/.buildx-cache
+          mv /tmp/.buildx-cache-new /tmp/.buildx-cache
+
+      - name: Test CSS Build
+        run: |
+          docker run --rm -v $(pwd):/usr/src/app blog-pr:latest bun run build:css
+
+      - name: Verify CSS Output
+        run: |
+          test -f assets/css/styles.css || (echo "CSS build failed - styles.css not found" && exit 1)
+          echo "✅ CSS build successful"
+
+      - name: Test Jekyll Build
+        run: |
+          docker run --rm -v $(pwd):/usr/src/app blog-pr:latest bundle exec jekyll build
+
+      - name: Verify Jekyll Build Output
+        run: |
+          test -d _site || (echo "Jekyll build failed - _site directory not found" && exit 1)
+          test -f _site/index.html || (echo "Jekyll build failed - index.html not found" && exit 1)
+          test -f _site/assets/css/styles.css || (echo "CSS not found in _site" && exit 1)
+          echo "✅ Jekyll build successful"
+
+      - name: Test for Sass Deprecation Warnings
+        run: |
+          # Run Jekyll build and capture output
+          BUILD_OUTPUT=$(docker run --rm -v $(pwd):/usr/src/app blog-pr:latest bundle exec jekyll build 2>&1)
+
+          # Check for Sass deprecation warnings
+          if echo "$BUILD_OUTPUT" | grep -i "ruby sass has reached end-of-life"; then
+            echo "❌ Sass deprecation warnings found:"
+            echo "$BUILD_OUTPUT" | grep -i "sass"
+            exit 1
+          else
+            echo "✅ No Sass deprecation warnings found"
+          fi
+
+      - name: Run Markdown Lint (if .md files changed)
+        run: |
+          # Check if any .md files were changed in this PR
+          if git diff --name-only origin/master...HEAD | grep -q '\.md$'; then
+            echo "Markdown files changed, running lint..."
+            docker run --rm -v $(pwd):/usr/src/app blog-pr:latest sh -c "
+              if ! command -v dprint &> /dev/null; then
+                cargo install dprint
+              fi
+              dprint check '**/*.md'
+            "
+          else
+            echo "No markdown files changed, skipping lint"
+          fi
+
+      - name: Upload Build Artifacts (for debugging)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failed-build-artifacts
+          path: |
+            _site/
+            assets/css/styles.css
+          retention-days: 7
