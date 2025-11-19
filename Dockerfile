@@ -29,8 +29,9 @@ ADD bun.lock /usr/local/bun-deps/
 WORKDIR /usr/local/bun-deps
 RUN bun install --frozen-lockfile
 
-# Add the installed binaries to PATH
+# Add the installed binaries to PATH and set NODE_PATH for module resolution
 ENV PATH="/usr/local/bun-deps/node_modules/.bin:$PATH"
+ENV NODE_PATH="/usr/local/bun-deps/node_modules"
 
 # Switch back to app directory
 WORKDIR /usr/src/app
