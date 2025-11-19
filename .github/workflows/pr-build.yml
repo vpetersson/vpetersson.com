@@ -47,18 +47,9 @@ jobs:
           rm -rf /tmp/.buildx-cache
           mv /tmp/.buildx-cache-new /tmp/.buildx-cache
 
-      - name: Test CSS Build
+      - name: Build content
         run: |
-          docker run --rm -v $(pwd):/usr/src/app blog-pr:latest bun run build:css
-
-      - name: Verify CSS Output
-        run: |
-          test -f assets/css/styles.css || (echo "CSS build failed - styles.css not found" && exit 1)
-          echo "✅ CSS build successful"
-
-      - name: Test Jekyll Build
-        run: |
-          docker run --rm -v $(pwd):/usr/src/app blog-pr:latest bundle exec jekyll build
+          docker run --rm -v $(pwd):/usr/src/app blog-pr:latest sh -c "bun run build:css && bundle exec jekyll build"
 
       - name: Verify Jekyll Build Output
         run: |
@@ -69,7 +60,7 @@ jobs:
 
       - name: Test for Sass Deprecation Warnings
         run: |
-          # Run Jekyll build and capture output
+          # Run Jekyll build and capture output to check for Sass warnings
           BUILD_OUTPUT=$(docker run --rm -v $(pwd):/usr/src/app blog-pr:latest bundle exec jekyll build 2>&1)
 
           # Check for Sass deprecation warnings
