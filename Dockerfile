@@ -8,10 +8,9 @@ RUN rm -rf /var/lib/apt/lists/* && \
     apt-get install -y python3 build-essential curl webp \
     libxml2-dev libxslt-dev
 
-# Install nvm (Node Version Manager)
-RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash \
-    && apt-get update -qq \
-    && apt-get install nodejs -y
+# Install Bun
+RUN curl -fsSL https://bun.sh/install | bash
+ENV PATH="/root/.bun/bin:$PATH"
 
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
@@ -24,12 +23,12 @@ ADD Gemfile.lock /usr/src/app
 RUN gem install bundle && \
     bundle install
 
-# Install Node.js dependencies including specific npm version and Tailwind CSS
+# Install Bun dependencies including Tailwind CSS
 ADD package.json /usr/src/app
-ADD package-lock.json /usr/src/app
-RUN npm ci
+ADD bun.lock /usr/src/app
+RUN bun install --frozen-lockfile
 
 #CMD jekyll serve --host 0.0.0.0 --incremental
-CMD ["sh", "-c", "npm run build:css && (npm run watch:css & bundle exec jekyll serve --host 0.0.0.0 --incremental)"]
+CMD ["sh", "-c", "bun run build:css && (bun run watch:css & bundle exec jekyll serve --host 0.0.0.0 --incremental)"]
 
 EXPOSE 4000
