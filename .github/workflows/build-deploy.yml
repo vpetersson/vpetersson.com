@@ -47,7 +47,7 @@ jobs:
           context: .
           load: true
           tags: web:latest
-          cache-from: type=local,src=/tmp/.buildx-cache
+          no-cache: true
           cache-to: type=local,dest=/tmp/.buildx-cache,mode=max
 
       - name: Build content
