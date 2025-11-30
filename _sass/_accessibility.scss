@@ -83,18 +83,18 @@ select:focus:not(:focus-visible) {
 /* High Contrast Mode Support */
 @media (prefers-contrast: high) {
   :root {
-    --color-primary: #0000FF;
-    --color-white: #FFFFFF;
-    --color-gray-900: #000000;
-    --color-gray-300: #CCCCCC;
+    --color-primary: #00F;
+    --color-white: #FFF;
+    --color-gray-900: #000;
+    --color-gray-300: #CCC;
   }
 }
 
 /* Color Scheme Support */
 @media (prefers-color-scheme: light) {
   :root {
-    --color-background: #FFFFFF;
-    --color-text: #000000;
+    --color-background: #FFF;
+    --color-text: #000;
     --color-surface: #F8F9FA;
   }
 }

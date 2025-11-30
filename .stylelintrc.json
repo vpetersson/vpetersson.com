@@ -1,0 +1,12 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "font-family-no-missing-generic-family-keyword": null,
+    "no-descending-specificity": null,
+    "declaration-block-single-line-max-declarations": null,
+    "scss/at-extend-no-missing-placeholder": null,
+    "scss/at-function-pattern": null,
+    "property-no-deprecated": null,
+    "media-feature-range-notation": "prefix"
+  }
+}

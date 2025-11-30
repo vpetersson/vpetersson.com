@@ -7,12 +7,27 @@
   "license": "MIT",
   "scripts": {
     "build:css": "bun x postcss _assets/css/tailwind.css -o assets/css/styles.css",
-    "watch:css": "bun x postcss _assets/css/tailwind.css -o assets/css/styles.css --watch"
+    "watch:css": "bun x postcss _assets/css/tailwind.css -o assets/css/styles.css --watch",
+    "lint": "bun run lint:markdown && bun run lint:scss",
+    "lint:markdown": "dprint check \"**/*.md\"",
+    "lint:markdown:fix": "dprint fmt \"**/*.md\"",
+    "lint:scss": "stylelint \"**/*.scss\"",
+    "lint:scss:fix": "stylelint \"**/*.scss\" --fix"
   },
   "dependencies": {
     "autoprefixer": "^10.4.19",
+    "browserslist": "^4.28.0",
+    "caniuse-lite": "^1.0.30001757",
     "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
-    "tailwindcss": "^3.4.3"
+    "tailwindcss": "^3.4.3",
+    "update-browserslist-db": "^1.1.4"
+  },
+  "devDependencies": {
+    "dprint": "^0.50.2",
+    "postcss-html": "^1.8.0",
+    "postcss-scss": "^4.0.9",
+    "stylelint": "^16.26.1",
+    "stylelint-config-standard-scss": "^16.0.0"
   }
 }

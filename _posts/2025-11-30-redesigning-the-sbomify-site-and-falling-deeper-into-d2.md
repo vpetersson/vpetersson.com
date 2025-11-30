@@ -13,9 +13,9 @@ One of the things I enjoy most is that I can quickly write out the basic diagram
 
 ## The Problem: Keeping Diagrams in Sync
 
-The sbomify site itself is a fairly unorthodox Jekyll setup running on GitHub Pages. Over the last year, I’ve added more and more rendered `d2` diagrams across articles and pages. That created a maintenance headache: keeping SVGs in sync across posts is tedious. Yes, you *can* reuse assets, but minor edits accumulate, and the overhead grows quickly.
+The sbomify site itself is a fairly unorthodox Jekyll setup running on GitHub Pages. Over the last year, I’ve added more and more rendered `d2` diagrams across articles and pages. That created a maintenance headache: keeping SVGs in sync across posts is tedious. Yes, you _can_ reuse assets, but minor edits accumulate, and the overhead grows quickly.
 
-The obvious question became: *why not just use `d2` directly in the content?*
+The obvious question became: _why not just use `d2` directly in the content?_
 
 ## Experimenting With Native `d2` in Markdown
 
@@ -27,9 +27,9 @@ Instead, I took a more pragmatic path.
 
 I added a build step that runs during CI (and locally) to render `d2` diagrams using [`bun run build:d2`](https://github.com/sbomify/sbomify.com/#building-diagrams), which in turn calls on [`watch-d2.ts`](https://github.com/sbomify/sbomify.com/blob/master/scripts/watch-d2.ts). While I was at it, I moved all diagram styling into a [theme](https://github.com/sbomify/sbomify.com/blob/master/_d2/theme.d2). That means:
 
-* Diagrams are significantly smaller
-* The style is consistent everywhere
-* Updating the styling automatically updates every diagram site-wide
+- Diagrams are significantly smaller
+- The style is consistent everywhere
+- Updating the styling automatically updates every diagram site-wide
 
 It’s a clean setup, and it removes an entire class of maintenance problems.
 

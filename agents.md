@@ -3,7 +3,6 @@ name: lint-and-build-website
 version: "1.0.0"
 description: >
   Passes only when lints and builds cleanly
-
 ---
 
 # Lint and test
