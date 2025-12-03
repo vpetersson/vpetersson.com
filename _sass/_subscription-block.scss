@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
 // Subscription block container
 .subscription-block {
   padding: 3rem 0;

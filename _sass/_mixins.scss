@@ -1,14 +1,15 @@
 // _sass/_mixins.scss
 
-@import 'variables';
+@use 'sass:math';
+@use 'variables' as *;
 
 /* px to rem */
 @function stripUnit($value) {
-  @return $value / ($value * 0 + 1);
+  @return math.div($value, ($value * 0 + 1));
 }
 
 @function rem($pxValue) {
-  @return #{stripUnit($pxValue) / stripUnit($base-font-size)}rem;
+  @return #{math.div(stripUnit($pxValue), stripUnit($base-font-size))}rem;
 }
 
 /* page header */

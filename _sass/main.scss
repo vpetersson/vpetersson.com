@@ -1,9 +1,9 @@
-@import 'design-tokens';
-@import 'accessibility';
-@import 'variables';
-@import 'mixins';
-@import 'hero-modern';
-@import 'subscription-block';
+@use 'design-tokens';
+@use 'accessibility';
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'hero-modern';
+@use 'subscription-block';
 
 /* Global Styles */
 
