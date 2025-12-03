@@ -6,7 +6,7 @@ Jekyll::Hooks.register :posts, :post_write do |post|
 
   tags = post['tags'].reject { |t| t.empty? }
   tags.each do |tag|
-    hyphenated_tag = tag.gsub(' ', '-')
+    hyphenated_tag = tag.gsub(' ', '-').downcase
     generate_tag_file(tag, hyphenated_tag) unless all_existing_tags.include?(hyphenated_tag)
   end
 end
