@@ -2,7 +2,7 @@ Jekyll::Hooks.register :posts, :post_write do |post|
   all_existing_tags = Dir.entries("_tags")
                          .map { |t| t.match(/(.*).md/) }
                          .compact
-                         .map { |m| m[1] }
+                         .map { |m| m[1].downcase }
 
   tags = post['tags'].reject { |t| t.empty? }
   tags.each do |tag|
