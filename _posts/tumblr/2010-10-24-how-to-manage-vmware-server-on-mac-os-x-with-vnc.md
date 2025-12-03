@@ -11,7 +11,7 @@ redirect_from: /post/92729928924/how-to-manage-vmware-server-on-mac-os-x-with-vn
 VMware Server is a great product. It’s free and works well with most guest operating systems. However, there is **one major drawback** – you cannot use the ‘console’ app on Mac OS X. For some strange reason, VMware decided to only make the required Firefox plug-in available for Linux and Windows. Given that Mac OS X is the OS of choice for most tech-savvy users I know, this decision makes no sense at all. While I rarely need the console for an existing virtual machine (other than if it fails to boot or something similar), it is obviously required to install the operating system onto the virtual machine.
 
 Until recently, I had to either remotely log into a Windows or Linux machine (or even more ironically, open it in a local virtual machine). Luckily there is a workaround: the built in VNC-support. It is a bit annoying to have to do this, but it’s probably faster than having to log into a remote machine just to access the console.\
-![](http://viktorpetersson.com/wp-content/uploads/2010/10/VNC-on-Mac-OS-600x478.png "VNC on Mac OS")
+![](https://vpetersson.com/wp-content/uploads/2010/10/VNC-on-Mac-OS-600x478.png "VNC on Mac OS")
 
 _VNC connection directly to a VMware virtual machine._
 

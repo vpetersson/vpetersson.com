@@ -75,12 +75,12 @@ layout: default
               <img src="/assets/images/site/podcast-spotify-dark.svg" alt="Listen to podcast on Spotify" />
             </a>
           {% endif %}
-          {% if page.apple %}
+          {% if page.apple and page.apple != "" %}
             <a href="{{ page.apple }}" target="_blank" rel="noopener noreferrer">
               <img src="/assets/images/site/podcast-apple-dark.svg" alt="Listen to podcast on Apple" />
             </a>
           {% endif %}
-          {% if page.amazon %}
+          {% if page.amazon and page.amazon != "" %}
             <a href="{{ page.amazon }}" target="_blank" rel="noopener noreferrer">
               <img src="/assets/images/site/podcast-amazon-dark.svg" alt="Listen to podcast on Amazon music" />
             </a>

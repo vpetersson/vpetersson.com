@@ -2,7 +2,6 @@
 layout: post
 title: "All Roads Lead to DSLRs"
 tags: [podcast, video, equipment]
-
 ---
 
 I've been running my video podcast [Nerding out with Viktor]({{ site.url }}/podcast/) for about a year and a half now, with just under 50 episodes published.

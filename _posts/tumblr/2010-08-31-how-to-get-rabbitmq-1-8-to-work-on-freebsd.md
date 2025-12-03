@@ -39,7 +39,7 @@ Now we can start RabbitMQ:
 Finally, we need to fix the bug that I was referring to in the opening of the article. To do this, we need to get the rabbitmqctl-file from RabbitMQ 2.0. I’ve uploaded extracted it for you and made it available for download, but you can as well get it from the tar-ball [here](http://www.rabbitmq.com/releases/rabbitmq-server/v2.0.0/rabbitmq-server-generic-unix-2.0.0.tar.gz).
 
     cd ~  
-    fetch [http://viktorpetersson.com/upload/rabbitmqctl](http://viktorpetersson.com/upload/rabbitmqctl)  
+    fetch [https://vpetersson.com/upload/rabbitmqctl](https://vpetersson.com/upload/rabbitmqctl)  
     chmod +x rabbitmqctl  
     mv /usr/local/sbin/rabbitmqctl /usr/local/sbin/rabbitmqctl.bak  
     mv rabbitmqctl /usr/local/sbin/rabbitmqctl

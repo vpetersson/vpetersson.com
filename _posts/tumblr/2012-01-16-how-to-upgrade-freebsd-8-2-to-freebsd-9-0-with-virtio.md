@@ -69,9 +69,7 @@ Finally, when you’ve done this, you can run (for the last time):
 
     freebsd-update install
 
-<a id="virtio"></a>
-
-## Step 2: Installing Virtio
+## Step 2: Installing Virtio {#virtio}
 
 Nowadays, Virtio is available in ports. That’s of course great, as that reduces the burdan of installing it. All you need to do is to run:
 

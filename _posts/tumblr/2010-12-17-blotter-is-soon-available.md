@@ -14,7 +14,7 @@ One of the biggest announcement Apple made in recent time was the announcement o
 
 We (as in [WireLoad](http://wireload.net)) wanted to be apart of this from the start, and got busy thinking about applications that we would like to see ourselves. The result is [Blotter](http://www.blotterapp.com) — an application that sits on top of your desktop and displays your calendar.
 
-![](http://viktorpetersson.com/wp-content/uploads/2010/12/blotter-calendar-on-leaf-full-600x375.jpg "blotter-calendar-on-leaf-full")
+![](https://vpetersson.com/wp-content/uploads/2010/12/blotter-calendar-on-leaf-full-600x375.jpg "blotter-calendar-on-leaf-full")
 
 _Blotter in action._
 

@@ -27,7 +27,7 @@ To cope with this, we changed our strategy a bit and turned one of the secondari
 
 The setup we ended up then with was as follows:
 
-![](http://viktorpetersson.com/upload/primary_secondary_arbiter.png "Primary, Secondary and Arbiter")
+![](https://vpetersson.com/upload/primary_secondary_arbiter.png "Primary, Secondary and Arbiter")
 
 ## Replica Set
 
@@ -67,7 +67,7 @@ This will give you detailed information about the individual node.
 Sharding is a bit more tricky than setting up a simple replica set, but a lot easier than sharding a sequel database. While it is not necessary that each member of a shard is a replica set, it is highly recommended for redundancy purposes. Hence, the way you should be thinking about sharding in MongoDB as a way to consolidate multiple replica sets.
 
 Here’s an illustration of how one would expand the replica set we described above with a shard.\
-![](http://viktorpetersson.com/upload/shard.png "Sharded")
+![](https://vpetersson.com/upload/shard.png "Sharded")
 
 Let’s now assume that you have two replica sets configured and ready to go. How do you turn them into a shard?
 

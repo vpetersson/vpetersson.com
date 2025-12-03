@@ -74,7 +74,7 @@ In basic.conf I’ve put the generic Monit-configs, and then broken out Apache�
 > if cpu usage (system) > 30% then alert\
 > if cpu usage (wait) > 20% then alert
 
-[Download](http://viktorpetersson.com/upload/monit/basic.conf)
+[Download](https://vpetersson.com/upload/monit/basic.conf)
 
 The above file is configured to send email using Google Apps or Gmail. Just change your username and password according to your needs. I’ve also enabled Monit’s webserver that allows you to view Monit’s status directly in your browser. Access is restricted to localhost and you need to login with the username ‘admin’ and password ‘monit.
 
@@ -92,7 +92,7 @@ I prefer to restrict access to just localhost, and then use a SSH-tunnel to gain
 > if loadavg(5min) greater than 10 for 8 cycles then stop\
 > if 3 restarts within 5 cycles then timeout
 
-[Download](http://viktorpetersson.com/upload/monit/apache.conf)
+[Download](https://vpetersson.com/upload/monit/apache.conf)
 
 This is pretty straight forward. Assuming you use the Apache-distribution that came with Ubuntu, you shouldn’t need to modify anything.
 
@@ -110,7 +110,7 @@ This is pretty straight forward. Assuming you use the Apache-distribution that c
 > if failed host localhost port 5432 protocol pgsql then alert\
 > if 5 restarts within 5 cycles then timeout
 
-[Download](http://viktorpetersson.com/upload/monit/postgresql.conf)
+[Download](https://vpetersson.com/upload/monit/postgresql.conf)
 
 The same thing applies here. Assuming you used the PosgreSQL-version (8.4) that came with Ubuntu, you shouldn’t need to modify anything here.
 

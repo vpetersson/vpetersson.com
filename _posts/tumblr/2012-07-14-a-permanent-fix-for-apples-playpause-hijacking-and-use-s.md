@@ -32,7 +32,7 @@ tell application "Spotify" to next track
 
 Now simply just bind these scripts to your Play/Pause button (F8) and Next button (F9).
 
-![](http://viktorpetersson.com/wp-content/uploads/2012/07/Shortcuts-600x413.png "Shortcuts")
+![](https://vpetersson.com/wp-content/uploads/2012/07/Shortcuts-600x413.png "Shortcuts")
 
 **Note**: I’m not using the regular F8/F9 mapping, as I’m not using an Apple keyboard.
 

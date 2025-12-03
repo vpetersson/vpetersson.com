@@ -13,4 +13,4 @@ As of a few hours, [Blotter](http://www.blotterapp.com/) is [available](http://i
 
 Check it out right away!
 
-![](http://viktorpetersson.com/wp-content/uploads/2011/01/Blotter-600x475.png "Blotter")
+![](https://vpetersson.com/wp-content/uploads/2011/01/Blotter-600x475.png "Blotter")

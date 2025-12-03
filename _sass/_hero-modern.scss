@@ -116,7 +116,7 @@
 
 .cta-primary {
   background: #5D5FEF;
-  color: #FFFFFF;
+  color: #FFF;
   padding: 1rem 2rem;
   border-radius: 9999px;
   text-decoration: none;
@@ -137,7 +137,7 @@
   }
 
   &:hover {
-    background: #FFFFFF;
+    background: #FFF;
     color: #5D5FEF;
     transform: scale(1.05);
   }
@@ -150,7 +150,7 @@
 
 .cta-secondary {
   background: transparent;
-  color: #FFFFFF;
+  color: #FFF;
   padding: 1rem 2rem;
   border: 2px solid #374151;
   border-radius: 9999px;
@@ -296,6 +296,7 @@
   0%, 100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }

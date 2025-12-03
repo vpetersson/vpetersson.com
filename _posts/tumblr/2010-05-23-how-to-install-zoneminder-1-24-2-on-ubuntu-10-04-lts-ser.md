@@ -9,7 +9,7 @@ tags:
 redirect_from: /post/92729916079/how-to-install-zoneminder-1-24-2-on-ubuntu-10-04-lts-ser
 ---
 
-Last week I published a new version of my [ZoneMinder Virtual Appliance](http://viktorpetersson.com/open-source/zoneminder-virtual-appliance). The virtual appliance is great if you want to easily deploy ZoneMinder without having to spend time setting it up. However, in some situations, you want to run ZoneMinder directly on the hardware. Perhaps you need better performance or simply need to capture video streams from V4L-devices.
+Last week I published a new version of my [ZoneMinder Virtual Appliance](https://vpetersson.com/open-source/zoneminder-virtual-appliance). The virtual appliance is great if you want to easily deploy ZoneMinder without having to spend time setting it up. However, in some situations, you want to run ZoneMinder directly on the hardware. Perhaps you need better performance or simply need to capture video streams from V4L-devices.
 
 Since I already spent the time getting it running, I thought I’d share the instructions for getting it running. It’s pretty straight forward, but there are a few minor things that took me some time to get around.
 
@@ -94,7 +94,7 @@ Add the following lines at the end:
 
 Install the startup-script (from the [official site](http://www.zoneminder.com/wiki/index.php/Debian_init.d)):
 
-    sudo wget [http://viktorpetersson.com/upload/zm](http://viktorpetersson.com/upload/zm) -O /etc/init.d/zm
+    sudo wget [https://vpetersson.com/upload/zm](https://vpetersson.com/upload/zm) -O /etc/init.d/zm
     sudo chmod +x /etc/init.d/zm
     sudo update-rc.d zm defaults
     sudo /etc/init.d/zm start

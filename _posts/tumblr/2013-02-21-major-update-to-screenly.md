@@ -6,7 +6,7 @@ tags: []
 redirect_from: /post/92729975369/major-update-to-screenly
 ---
 
-![Screenly_OSE_overview](http://viktorpetersson.com/wp-content/uploads/2013/02/Screenly_OSE_overview-600x432.png)
+![Screenly_OSE_overview](https://vpetersson.com/wp-content/uploads/2013/02/Screenly_OSE_overview-600x432.png)
 
 I’m excited to announce that we’ve released a major update to Screenly. As you can see in the screenshot above, we’ve given the user interface a major overhaul. The workflow is significantly more streamlined, and a lot prettier.
 

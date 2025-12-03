@@ -2,7 +2,6 @@
 layout: post
 title: "From Gateway to Dongle: Lessons from My Home Assistant Overhaul"
 tags: [homeassisstant, iot]
-
 ---
 
 I’ve previously written about my experiences with Home Assistant [here]({{ site.url }}/2020/05/25/homeassistant-ikea-tradfri-flux-sensors.html) and [here]({{ site.url }}/2025/01/22/how-i-use-home-assistant-in-2025.html). This article follows up on those posts and describes my current setup.

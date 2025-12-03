@@ -17,5 +17,5 @@ On the topic of Time Machine, OS X Lion also introduced a new feature when it co
 As I was setting up my encrypted Time Machine-drive, I took a closer look how this was done. As it turns out, Time Machine is using a new partition type in OS X Lion to accomplish this. What’s even better is that you can do this on any drive.
 
 All you need to do is to re-format the partition in Disk Utility, and select ‘Encrypted.’\
-![](http://viktorpetersson.com/wp-content/uploads/2011/08/encrypt.png "encrypt")\
+![](https://vpetersson.com/wp-content/uploads/2011/08/encrypt.png "encrypt")\
 Now you can easily encrypt all your external drives, while making it entirely seamless for day-to-day operations. If you chose to store the passphrase in your keychain, you won’t even notice that the disk is encrypted (other than perhaps less I/O throughput and more CPU usage).

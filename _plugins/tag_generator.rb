@@ -2,11 +2,11 @@ Jekyll::Hooks.register :posts, :post_write do |post|
   all_existing_tags = Dir.entries("_tags")
                          .map { |t| t.match(/(.*).md/) }
                          .compact
-                         .map { |m| m[1] }
+                         .map { |m| m[1].downcase }
 
   tags = post['tags'].reject { |t| t.empty? }
   tags.each do |tag|
-    hyphenated_tag = tag.gsub(' ', '-')
+    hyphenated_tag = tag.gsub(' ', '-').downcase
     generate_tag_file(tag, hyphenated_tag) unless all_existing_tags.include?(hyphenated_tag)
   end
 end

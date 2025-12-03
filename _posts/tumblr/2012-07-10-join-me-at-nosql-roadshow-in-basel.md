@@ -8,7 +8,7 @@ tags:
 redirect_from: /post/92729965149/join-me-at-nosql-roadshow-in-basel
 ---
 
-![](http://viktorpetersson.com/wp-content/uploads/2012/07/nosql-basel-2012-600x109.png "nosql-basel-2012")
+![](https://vpetersson.com/wp-content/uploads/2012/07/nosql-basel-2012-600x109.png "nosql-basel-2012")
 
 If you have nothing booked for August 30th, I suggest you mark it ‘busy’ in your calendar, as that’s the date for [NoSQL Road Show](http://nosqlroadshow.com/) in Basel, Switzerland.
 

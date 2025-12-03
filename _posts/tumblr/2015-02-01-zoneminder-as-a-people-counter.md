@@ -13,7 +13,7 @@ In recent years, it has become fairly common within the retail space to use (IP-
 
 There are numerous commercial solutions out there that are capable of doing this. I have however not been able to find any complete open source product that can track foot traffic (at least not bi-directional). I did find a few examples of OpenCV based projects, such as [this one](https://www.youtube.com/watch?v=OWab2_ete7s), but no source code.
 
-That got me thinking; [ZoneMinder](http://www.zoneminder.com/) is a popular open source video surveillance tool. Since I spent some time developing a [Virtual Machine](/zoneminder-va), I’m somewhat familiar with it. Not only does it support a large number of cameras (both V4L devices and IP cameras), it also comes with a number of trigger and alert abilities.
+That got me thinking; [ZoneMinder](http://www.zoneminder.com/) is a popular open source video surveillance tool. Since I spent some time developing a Virtual Machine, I'm somewhat familiar with it. Not only does it support a large number of cameras (both V4L devices and IP cameras), it also comes with a number of trigger and alert abilities.
 
 Using ZoneMinder, we should in theory be able to create a people counter. In a perfect world, the camera would be located in a hallway and pointed directly down from the ceiling, but it should work otherwise too.
 

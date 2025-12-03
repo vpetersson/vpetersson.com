@@ -171,11 +171,11 @@ Open /etc/devd.conf and add the following on both nodes:
     	action "/usr/local/sbin/carp-hast-switch slave";
     };
 
-When the link goes up or down, we call on the script carp-hast-switch. You can find the script [here](http://viktorpetersson.com/upload/carp-hast-switch). The only thing you should need to modify is the ‘resources’-line.
+When the link goes up or down, we call on the script carp-hast-switch. You can find the script [here](https://vpetersson.com/upload/carp-hast-switch). The only thing you should need to modify is the ‘resources’-line.
 
 Here are the commands for fetching the file, if you’re lazy:
 
-    wget [http://viktorpetersson.com/upload/carp-hast-switch](http://viktorpetersson.com/upload/carp-hast-switch) -O /usr/local/sbin/carp-hast-switch
+    wget [https://vpetersson.com/upload/carp-hast-switch](https://vpetersson.com/upload/carp-hast-switch) -O /usr/local/sbin/carp-hast-switch
     chmod +x /usr/local/sbin/carp-hast-switch
 
 When you’ve added the dev.d configs, restart the devd demon on both nodes:

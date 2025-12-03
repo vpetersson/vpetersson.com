@@ -22,7 +22,7 @@ Just as a disclosure, I’ve only tried the I/O driver on [CloudSigma](http://ww
 
 ## Grab the source code
 
-I spoke briefly about how to compile the kernel in [this](http://viktorpetersson.com/2010/09/27/setting-up-a-redundant-nas-with-hast-with-carp/) article, but you only need to fetch the source code. You don’t actually need to recompile the system like the article says.
+I spoke briefly about how to compile the kernel in [this](https://vpetersson.com/2010/09/27/setting-up-a-redundant-nas-with-hast-with-carp/) article, but you only need to fetch the source code. You don’t actually need to recompile the system like the article says.
 
 ## Grab the Virtio-patch
 
@@ -70,4 +70,4 @@ Verify the result by manually looking in /etc/fstab. If everything looks fine, y
 
 **Credits:** [Keep Da Link](http://kdl.nobugware.com/post/2011/10/14/freebsd-90-guest-virtio-support-in-KVM/).
 
-**Update:** I wrote a new post titled [How to upgrade FreeBSD 8.2 to FreeBSD 9.0 with Virtio](http://viktorpetersson.com/2012/01/16/how-to-upgrade-freebsd-8-2-to-freebsd-9-0-with-virtio/). You should really take a look at that post instead, as the steps are much easier.
+**Update:** I wrote a new post titled [How to upgrade FreeBSD 8.2 to FreeBSD 9.0 with Virtio](https://vpetersson.com/2012/01/16/how-to-upgrade-freebsd-8-2-to-freebsd-9-0-with-virtio/). You should really take a look at that post instead, as the steps are much easier.

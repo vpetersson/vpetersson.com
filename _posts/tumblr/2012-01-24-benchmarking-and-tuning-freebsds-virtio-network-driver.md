@@ -11,7 +11,7 @@ tags:
 redirect_from: /post/92729955554/benchmarking-and-tuning-freebsds-virtio-network-driver
 ---
 
-In the [previous post](http://viktorpetersson.com/2012/01/23/benchmarking-virtual-network-drivers-under-freebsd-9/), I benchmarked three different virtual network drivers under FreeBSD. The clear winner was, perhaps not very surprisingly, the VirtIO network driver.
+In the [previous post](https://vpetersson.com/2012/01/23/benchmarking-virtual-network-drivers-under-freebsd-9/), I benchmarked three different virtual network drivers under FreeBSD. The clear winner was, perhaps not very surprisingly, the VirtIO network driver.
 
 In this article I will do some further benchmarking and try to optimize the driver further. Similarly to in the last post, I will use two FreeBSD 9.0 boxes with 2GB RAM and 2GHz CPU. Both nodes are set up with a private network and running in a public cloud (at CloudSigma).
 
