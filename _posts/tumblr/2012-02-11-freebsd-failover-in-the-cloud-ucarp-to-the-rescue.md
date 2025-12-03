@@ -11,7 +11,7 @@ tags:
 redirect_from: /post/92729959439/freebsd-failover-in-the-cloud-ucarp-to-the-rescue
 ---
 
-I’m a big fan of FreeBSD. However, as painful it is to admit, it isn’t always the best OS to run in the cloud. Compared to Linux, you will get worse network and disk performance even with Virtio installed. There are also other issues. For instance, it is likely that you won’t get [CARP](http://www.freebsd.org/doc/handbook/carp.html) to fully work (while this works perfectly fine with OpenBSD’s CARP, and Linux’s VRRP). I have [written about workarounds](http://viktorpetersson.com/2011/03/23/how-to-get-freebsds-carp-working-on-cloudsigma/) for this issue in the past, but they do not seem to work equally well in FreeBSD 9.0.
+I’m a big fan of FreeBSD. However, as painful it is to admit, it isn’t always the best OS to run in the cloud. Compared to Linux, you will get worse network and disk performance even with Virtio installed. There are also other issues. For instance, it is likely that you won’t get [CARP](http://www.freebsd.org/doc/handbook/carp.html) to fully work (while this works perfectly fine with OpenBSD’s CARP, and Linux’s VRRP). I have [written about workarounds](https://vpetersson.com/2011/03/23/how-to-get-freebsds-carp-working-on-cloudsigma/) for this issue in the past, but they do not seem to work equally well in FreeBSD 9.0.
 
 Luckily, there is a userland implementation of CARP called UCARP that works better than CARP. It’s also very similar to CARP when it comes to configuration.
 

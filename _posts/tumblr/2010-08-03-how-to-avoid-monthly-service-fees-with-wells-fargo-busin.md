@@ -22,7 +22,7 @@ Pretty silly, I know, but it’s well worth a few minutes to save you a few latt
 Here’s how you do it. Log into your account, click “Schedule an automatic transfer” in the left bar under “Transfers & Payments.” Once there, just schedule the transfer as described above.
 
 When done, the result should look something like this:\
-![Wells Fargo Monthly Fee](http://viktorpetersson.com/wp-content/uploads/2010/08/wellsfargo-600x201.png "Wells Fargo Monthly Fee")
+![Wells Fargo Monthly Fee](https://vpetersson.com/wp-content/uploads/2010/08/wellsfargo-600x201.png "Wells Fargo Monthly Fee")
 
 **Note**: I can not guarantee that this works in any way. It works for me, and I have an account with Well Fargo in California.
 

@@ -18,4 +18,4 @@ Now we have done this, and we feel a whole lot better. That said, 2011 is far fr
 
 I leave you with a screenshot of the new [WireLoad.net](http://wireload.net) website.
 
-![The new WireLoad.net](http://viktorpetersson.com/wp-content/uploads/2011/05/wireload_net-600x442.png "The new WireLoad.net")
+![The new WireLoad.net](https://vpetersson.com/wp-content/uploads/2011/05/wireload_net-600x442.png "The new WireLoad.net")

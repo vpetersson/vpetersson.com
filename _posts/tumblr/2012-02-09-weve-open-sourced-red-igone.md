@@ -15,4 +15,4 @@ Enter iOS 5. When Apple introduced iOS 5, we realized that Apple just killed our
 
 Since all three of us were involved with other projects, and this wasn’t the primary company for any of us, we decided to shut down the company. But what about Red iGone? What should we do with it? We felt that the most reasonable thing to do at that point was to simply open source the entire project. So we did. As a result, you can now find the entire code base for everything from the web app, to the iOS apps and the back-end on [Github](https://github.com/teamdevify/Red-iGone) and it’s all licensed under GPLv3.
 
-And that’s the story of Devify. ![:)](http://viktorpetersson.com/wp-includes/images/smilies/icon_smile.gif)
+And that’s the story of Devify. ![:)](https://vpetersson.com/wp-includes/images/smilies/icon_smile.gif)

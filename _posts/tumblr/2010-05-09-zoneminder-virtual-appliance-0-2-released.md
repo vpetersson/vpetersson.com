@@ -11,4 +11,4 @@ ZoneMinder is a great piece software. It is a very powerful video surveillance t
 
 Today I just released version 0.2. It is using the latest LTS version of Ubuntu (10.04) and ZoneMinder 1.24.2. I’ve also reduced the size of the VM significantly. The new version is about 1GB extracted and around 350MB compressed.
 
-For more information about the VM and how to download it, please visit [this page](http://viktorpetersson.com/open-source/zoneminder-virtual-appliance).
+For more information about the VM and how to download it, please visit [this page](https://vpetersson.com/open-source/zoneminder-virtual-appliance).

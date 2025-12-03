@@ -26,7 +26,7 @@ So how do you get your Spotify to become more intelligent with Lastify?
 - Create a [Last.FM](http://www.last.fm/)-account.
 - Enable ‘Scrobbling’ to your Last.FM account in Spotify by going into the preferences.
 
-![](http://viktorpetersson.com/wp-content/uploads/2011/01/Scrobbling-in-Spotify-600x421.png "Scrobbling in Spotify")
+![](https://vpetersson.com/wp-content/uploads/2011/01/Scrobbling-in-Spotify-600x421.png "Scrobbling in Spotify")
 
 - Run Spotify with the Scrobbling enabled for a few days so that it can collect some data on your music taste. You can verify that the music is being submitted by visiting Last.FM.
 - When you have enough data collected in Last.FM, head over to [Lastify](http://lastify.nl/) and enter your Last.FM username. Lastify will then generate a custom playlist for you based on your taste. When it first launches, it will only include one track, but don’t worry, give it some time and it will be populated.

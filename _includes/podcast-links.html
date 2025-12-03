@@ -14,12 +14,12 @@
         <img src="/assets/images/site/podcast-spotify-{{ img_variant }}.svg" alt="Listen to podcast on Spotify" />
       </a>
     {% endif %}
-    {% if podcast_links.apple %}
+    {% if podcast_links.apple and podcast_links.apple != "" %}
       <a href="{{ podcast_links.apple }}" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Apple', '{{ source | replace: "'", "\\'" }}')">
         <img src="/assets/images/site/podcast-apple-{{ img_variant }}.svg" alt="Listen to podcast on Apple" />
       </a>
     {% endif %}
-    {% if podcast_links.amazon %}
+    {% if podcast_links.amazon and podcast_links.amazon != "" %}
       <a href="{{ podcast_links.amazon }}" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Amazon', '{{ source | replace: "'", "\\'" }}')">
         <img src="/assets/images/site/podcast-amazon-{{ img_variant }}.svg" alt="Listen to podcast on Amazon music" />
       </a>

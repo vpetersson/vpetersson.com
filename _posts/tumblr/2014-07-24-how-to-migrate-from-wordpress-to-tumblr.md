@@ -51,10 +51,10 @@ Once you’ve installed the sitemap-plugin, you should be able to go to [http://
 
 It should look something like:
 
-    http://viktorpetersson.com/ 100%    Daily   2013-08-02 13:21
-    http://viktorpetersson.com/2013/08/02/are-they-using-google-apps/   20% Monthly 2013-08-02 13:21
-    http://viktorpetersson.com/2013/06/15/my-presentation-from-pi-and-more-3/   20% Monthly 2013-06-16 09:03
-    http://viktorpetersson.com/2013/06/01/join-me-on-pi-and-more-on-june-15/
+    https://vpetersson.com/ 100%    Daily   2013-08-02 13:21
+    https://vpetersson.com/2013/08/02/are-they-using-google-apps/   20% Monthly 2013-08-02 13:21
+    https://vpetersson.com/2013/06/15/my-presentation-from-pi-and-more-3/   20% Monthly 2013-06-16 09:03
+    https://vpetersson.com/2013/06/01/join-me-on-pi-and-more-on-june-15/
 
 # Generating redirects
 

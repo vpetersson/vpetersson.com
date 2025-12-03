@@ -13,7 +13,7 @@ redirect_from: /post/92729955009/benchmarking-virtual-network-drivers-under-free
 
 With the launch of FreeBSD 9, I was curious to learn how the VirtIO driver performed. I’ve seen a significant boost in disk performance, but how about the network driver?
 
-Luckily, that’s rather easy to find the answer to. I spun up two FreeBSD 9 nodes on [CloudSigma](http://cloudsigma.com/) and configured them with VirIO (just like in [this guide](http://viktorpetersson.com/2012/01/16/how-to-upgrade-freebsd-8-2-to-freebsd-9-0-with-virtio/)) and a private network. Once they were up and running, I installed [Iperf](http://sourceforge.net/projects/iperf/) and started testing away.
+Luckily, that’s rather easy to find the answer to. I spun up two FreeBSD 9 nodes on [CloudSigma](http://cloudsigma.com/) and configured them with VirIO (just like in [this guide](https://vpetersson.com/2012/01/16/how-to-upgrade-freebsd-8-2-to-freebsd-9-0-with-virtio/)) and a private network. Once they were up and running, I installed [Iperf](http://sourceforge.net/projects/iperf/) and started testing away.
 
 I had three different network drivers that I wanted to benchmark:
 
@@ -41,4 +41,4 @@ It should be said that the benchmarks I did only benchmarked traffic in one dire
 
 While I performed these benchmarks on CloudSigma’s architecture, since they are running KVM/Qemu, they should be a good indicator of general performance under KVM/Qemu.
 
-If you found this interesting, you’ll probably also like the article [Benchmarking and tuning FreeBSD’s VirtIO network driver](http://viktorpetersson.com/2012/01/24/benchmarking-and-tuning-freebsds-virtio-network-driver/).
+If you found this interesting, you’ll probably also like the article [Benchmarking and tuning FreeBSD’s VirtIO network driver](https://vpetersson.com/2012/01/24/benchmarking-and-tuning-freebsds-virtio-network-driver/).

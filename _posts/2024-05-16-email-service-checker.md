@@ -11,8 +11,6 @@ A decade ago, I created "Are They Using Google Apps" to address a simple yet cru
 
 Email Service Checker takes the original idea a step further by providing a comprehensive tool that allows you to determine the email service provider a domain or email address is using. This tool is perfect for sales teams and professionals who need to understand the email stack of their prospects for more targeted and effective outreach.
 
-![Email Service Checker](/assets/email-service-checker.webp)
-
 ## Key Features of Email Service Checker
 
 - Identify Email Providers: Quickly find out if a domain is using popular email services like Google Workspace, Microsoft 365, Zoho Mail, and more.

@@ -19,7 +19,7 @@ Once you exit the ‘focus-mode’, everything will revert to normal.
 
 Here’s an example of how Quiet looks like in action:
 
-![Writing an important email in Quiet](http://viktorpetersson.com/wp-content/uploads/2011/03/Quiet_email-600x375.png "Writing an important email in Quiet")
+![Writing an important email in Quiet](https://vpetersson.com/wp-content/uploads/2011/03/Quiet_email-600x375.png "Writing an important email in Quiet")
 
 I found it’s amazing how much work you’ll get done once you’ve removed all distractions.
 

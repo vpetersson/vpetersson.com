@@ -16,6 +16,6 @@ You try to install the no-X11-version of Image Magick:
     cd /usr/ports/graphics/ImageMagick-nox11 && make install
 
 The next thing you know, you the dependency ‘print/ghostscript9-nox11′ gets installed. Notice that this is the ‘no-x11′ version. Yet, look at the fifth option from the top:\
-![FreeBSD Ports-failure](http://viktorpetersson.com/wp-content/uploads/2011/12/Screen-Shot-2011-12-14-at-1.34.06-PM.png "FreeBSD Ports-failure")
+![FreeBSD Ports-failure](https://vpetersson.com/wp-content/uploads/2011/12/Screen-Shot-2011-12-14-at-1.34.06-PM.png "FreeBSD Ports-failure")
 
 Isn’t it pretty obvious that I **don’t** want X11 if I install the ‘nox11′ port? Why is that even an option?
