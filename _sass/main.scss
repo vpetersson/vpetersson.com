@@ -671,7 +671,7 @@ a.button {
    }
 
    /* Responsive code block improvements */
-   @media (width <= 768px) {
+   @media (max-width: 768px) {
      .code-block-wrapper {
        margin: 1.5rem -1rem;
        border-radius: 0;
@@ -697,7 +697,7 @@ a.button {
    }
 
    /* Improve readability on small screens */
-   @media (width <= 480px) {
+   @media (max-width: 480px) {
      .code-block-wrapper {
        margin: 1rem -0.5rem;
      }

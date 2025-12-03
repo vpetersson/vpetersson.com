@@ -6,8 +6,10 @@
   "author": "Devan Thakur <devanthakur89@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build:css": "bun x postcss _assets/css/tailwind.css -o assets/css/styles.css",
+    "build:css": "bun run build:sass && bun x postcss _assets/css/tailwind.css -o assets/css/styles.css",
+    "build:sass": "bun x sass --load-path=_sass _sass/main.scss assets/css/main.css --style=compressed --no-source-map",
     "watch:css": "bun x postcss _assets/css/tailwind.css -o assets/css/styles.css --watch",
+    "watch:sass": "bun x sass --watch --load-path=_sass _sass/main.scss assets/css/main.css --no-source-map",
     "lint": "bun run lint:markdown && bun run lint:scss",
     "lint:markdown": "dprint check \"**/*.md\"",
     "lint:markdown:fix": "dprint fmt \"**/*.md\"",
@@ -27,6 +29,7 @@
     "dprint": "^0.50.2",
     "postcss-html": "^1.8.0",
     "postcss-scss": "^4.0.9",
+    "sass": "^1.94.2",
     "stylelint": "^16.26.1",
     "stylelint-config-standard-scss": "^16.0.0"
   }

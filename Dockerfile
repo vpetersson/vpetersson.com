@@ -6,7 +6,7 @@ RUN rm -rf /var/lib/apt/lists/* && \
     apt-get clean && \
     apt-get update -qq && \
     apt-get install -y python3 build-essential curl webp \
-    libxml2-dev libxslt-dev
+    libxml2-dev libxslt-dev watchman
 
 # Install Bun
 RUN curl -fsSL https://bun.sh/install | bash

@@ -5,6 +5,8 @@ on:
     branches:
       - master
   pull_request:
+    branches:
+      - master
     paths:
       - '**/*.md'
       - '**/*.scss'
@@ -69,4 +71,4 @@ jobs:
 
       - name: Run HTML Proofer
         run: |
-          docker run --rm -v ${{ github.workspace }}:/usr/src/app vpetersson:test sh -c "git config --global --add safe.directory /usr/src/app && bundle exec jekyll build && bundle exec htmlproofer ./_site --disable-external"
+          docker run --rm -v ${{ github.workspace }}:/usr/src/app vpetersson:test sh -c "git config --global --add safe.directory /usr/src/app && bun run build:css && bundle exec jekyll build && bundle exec htmlproofer ./_site --disable-external"
