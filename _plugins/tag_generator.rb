@@ -43,16 +43,20 @@ module Jekyll
       Jekyll.logger.info 'TagGenerator:', "Generated #{new_tags.size} new tag pages" if new_tags.any?
 
       # Now manually read and process the tag files as collection documents
-      site.collections['tags'].docs.clear if site.collections['tags']
-      
-      Dir.glob(File.join(tags_dir, '*.md')).each do |tag_file|
-        doc = Jekyll::Document.new(
-          tag_file,
-          site: site,
-          collection: site.collections['tags']
-        )
-        doc.read
-        site.collections['tags'].docs << doc
+      if site.collections['tags']
+        site.collections['tags'].docs.clear
+        
+        Dir.glob(File.join(tags_dir, '*.md')).each do |tag_file|
+          doc = Jekyll::Document.new(
+            tag_file,
+            site: site,
+            collection: site.collections['tags']
+          )
+          doc.read
+          site.collections['tags'].docs << doc
+        end
+      else
+        Jekyll.logger.warn 'TagGenerator:', 'Tags collection not configured in _config.yml'
       end
     end
 
