@@ -32,7 +32,7 @@ module Jekyll
       # Generate missing tag files
       new_tags = []
       all_tags.each do |tag|
-        tag_slug = tag.gsub(' ', '-').downcase
+        tag_slug = slugify(tag)
         next if existing_tags.include?(tag_slug)
 
         tag_file = File.join(tags_dir, "#{tag_slug}.md")
@@ -58,8 +58,13 @@ module Jekyll
 
     private
 
+    def slugify(tag)
+      # Use Jekyll's built-in slugify for consistency with templates
+      Jekyll::Utils.slugify(tag.to_s, mode: 'default')
+    end
+
     def tag_page_content(tag, site)
-      tag_slug = tag.gsub(' ', '-').downcase
+      tag_slug = slugify(tag)
       site_title = site.config['title'] || "Viktor's Tech Musings"
       site_url = site.config['url'] || 'https://vpetersson.com'
       
