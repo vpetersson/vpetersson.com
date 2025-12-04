@@ -4,8 +4,9 @@ module Jekyll
       # Extract episode number (e.g., s01e14 from _podcast/S01E14.md)
       episode_number = File.basename(episode_path, '.*').downcase
 
-      # Build the transcript path (relative to site root)
-      transcript_path = File.join('_transcript', "#{episode_number}.json")
+      # Build the transcript path (absolute, based on site source)
+      site_source = @context.registers[:site].source
+      transcript_path = File.join(site_source, '_transcript', "#{episode_number}.json")
 
       # Check if file exists
       unless File.exist?(transcript_path)
