@@ -3,18 +3,18 @@
   'use strict';
 
   // Only run if we have code blocks
-  const codeBlocks = document.querySelectorAll('pre code, .highlight pre code');
+  const codeBlocks = document.querySelectorAll<HTMLElement>('pre code, .highlight pre code');
   if (!codeBlocks.length) return;
 
   // Function to get language from class names
-  function getLanguage(element) {
+  function getLanguage(element: HTMLElement): string {
     const classList = element.className || '';
     const match = classList.match(/language-(\w+)/);
     return match ? match[1] : 'text';
   }
 
   // Function to create copy button
-  function createCopyButton() {
+  function createCopyButton(): HTMLButtonElement {
     const button = document.createElement('button');
     button.className = 'copy-button';
     button.textContent = 'Copy';
@@ -23,7 +23,7 @@
   }
 
   // Function to create language label
-  function createLanguageLabel(language) {
+  function createLanguageLabel(language: string): HTMLSpanElement {
     const label = document.createElement('span');
     label.className = 'language-label';
     label.textContent = language;
@@ -31,7 +31,7 @@
   }
 
   // Function to create code block header
-  function createCodeHeader(language, copyButton) {
+  function createCodeHeader(language: string, copyButton: HTMLButtonElement): HTMLDivElement {
     const header = document.createElement('div');
     header.className = 'code-block-header';
     header.appendChild(createLanguageLabel(language));
@@ -40,12 +40,12 @@
   }
 
   // Function to wrap code block
-  function wrapCodeBlock(preElement, header) {
+  function wrapCodeBlock(preElement: HTMLPreElement, header: HTMLDivElement): HTMLDivElement {
     const wrapper = document.createElement('div');
     wrapper.className = 'code-block-wrapper';
 
     // Insert wrapper before pre element
-    preElement.parentNode.insertBefore(wrapper, preElement);
+    preElement.parentNode?.insertBefore(wrapper, preElement);
 
     // Move pre element into wrapper
     wrapper.appendChild(header);
@@ -55,7 +55,7 @@
   }
 
   // Function to copy text to clipboard
-  async function copyToClipboard(text) {
+  async function copyToClipboard(text: string): Promise<boolean> {
     try {
       if (navigator.clipboard && window.isSecureContext) {
         await navigator.clipboard.writeText(text);
@@ -81,7 +81,7 @@
   }
 
   // Function to show copy feedback
-  function showCopyFeedback(button, success) {
+  function showCopyFeedback(button: HTMLButtonElement, success: boolean): void {
     const originalText = button.textContent;
     button.textContent = success ? 'Copied!' : 'Failed';
     button.style.background = success ? '#5D5FEF' : '#ef4444';
@@ -98,7 +98,7 @@
 
   // Process each code block
   codeBlocks.forEach((codeElement) => {
-    const preElement = codeElement.closest('pre');
+    const preElement = codeElement.closest<HTMLPreElement>('pre');
     if (!preElement || preElement.dataset.enhanced) return;
 
     // Mark as enhanced to avoid double-processing
@@ -125,24 +125,23 @@
   });
 
   // Add keyboard shortcut for copying (Ctrl/Cmd + Shift + C when focused on code block)
-  document.addEventListener('keydown', (e) => {
+  document.addEventListener('keydown', (e: KeyboardEvent) => {
     if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'C') {
       const focusedElement = document.activeElement;
-      const codeBlock = focusedElement.closest('.code-block-wrapper');
+      const codeBlock = focusedElement?.closest<HTMLElement>('.code-block-wrapper');
       if (codeBlock) {
         e.preventDefault();
-        const copyButton = codeBlock.querySelector('.copy-button');
+        const copyButton = codeBlock.querySelector<HTMLButtonElement>('.copy-button');
         if (copyButton) copyButton.click();
       }
     }
   });
 
   // Make code blocks focusable for keyboard users
-  document.querySelectorAll('.code-block-wrapper pre').forEach(pre => {
+  document.querySelectorAll<HTMLPreElement>('.code-block-wrapper pre').forEach(pre => {
     if (!pre.hasAttribute('tabindex')) {
       pre.setAttribute('tabindex', '0');
       pre.setAttribute('aria-label', 'Code block - press Ctrl+Shift+C to copy');
     }
   });
-
 })();

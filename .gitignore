@@ -7,3 +7,6 @@ node_modules
 # WebP cache
 .webp-cache/
 _tags/*
+# Generated JavaScript from TypeScript
+assets/js/*.js
+!assets/js/lunr.min.js
