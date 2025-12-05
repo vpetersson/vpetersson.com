@@ -83,6 +83,10 @@ exclude:
 # Include additional files
 include:
   - video-sitemap.xml
+  - assets/css/fontawesome-core.css
+  - assets/css/fontawesome-solid.css
+  - assets/css/fontawesome-brands.css
+  - assets/webfonts
 
 # Sitemap settings
 defaults:
