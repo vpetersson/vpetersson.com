@@ -49,6 +49,7 @@ bun run build
 ```
 
 This generates:
+
 - TypeScript → JavaScript in `assets/js/`
 - Font Awesome CSS in `assets/css/`
 - Font Awesome webfonts in `assets/webfonts/`
