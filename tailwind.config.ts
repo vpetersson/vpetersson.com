@@ -1,14 +1,18 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
   content: [
     './_includes/**/*.html',
     './_layouts/**/*.html',
     './_pages/**/*.html',
     './_posts/**/*.md',
     './_posts/**/*.html',
-    '*.html',
     './*.html',
-    './**/*.html',
+    './about/**/*.html',
+    './blog/**/*.html',
+    './consulting/**/*.html',
+    './podcast/**/*.html',
+    './search/**/*.html',
   ],
   theme: {
     colors: {
@@ -25,5 +29,6 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};
 
+export default config;

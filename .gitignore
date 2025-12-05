@@ -7,3 +7,9 @@ node_modules
 # WebP cache
 .webp-cache/
 _tags/*
+# Generated JavaScript from TypeScript
+assets/js/*.js
+
+# Font Awesome files (copied from node_modules)
+assets/css/fontawesome-*.css
+assets/webfonts/
