@@ -1,51 +1,101 @@
-// Progressive enhancement for code blocks
-(function() {
+/**
+ * Progressive enhancement for code blocks
+ * Adds copy buttons, language labels, and keyboard shortcuts
+ */
+(function initializeCodeBlocks(): void {
   'use strict';
 
+  const CONFIG = {
+    FEEDBACK_DURATION_MS: 2000,
+    DEFAULT_LANGUAGE: 'text',
+    KEYBOARD_SHORTCUT: {
+      CTRL_KEY: true,
+      SHIFT_KEY: true,
+      KEY: 'C',
+    },
+    COLORS: {
+      SUCCESS: '#5D5FEF',
+      ERROR: '#ef4444',
+      TEXT: '#ffffff',
+    },
+  } as const;
+
+  const SELECTORS = {
+    CODE_BLOCKS: 'pre code, .highlight pre code',
+    CODE_WRAPPER: '.code-block-wrapper',
+    COPY_BUTTON: '.copy-button',
+  } as const;
+
+  const CLASSES = {
+    COPY_BUTTON: 'copy-button',
+    LANGUAGE_LABEL: 'language-label',
+    CODE_HEADER: 'code-block-header',
+    CODE_WRAPPER: 'code-block-wrapper',
+  } as const;
+
+  const LANGUAGE_PATTERN = /language-(\w+)/;
+
   // Only run if we have code blocks
-  const codeBlocks = document.querySelectorAll<HTMLElement>('pre code, .highlight pre code');
+  const codeBlocks = document.querySelectorAll<HTMLElement>(SELECTORS.CODE_BLOCKS);
   if (!codeBlocks.length) return;
 
-  // Function to get language from class names
+  /**
+   * Extracts the programming language from element class names
+   */
   function getLanguage(element: HTMLElement): string {
     const classList = element.className || '';
-    const match = classList.match(/language-(\w+)/);
-    return match ? match[1] : 'text';
+    const match = classList.match(LANGUAGE_PATTERN);
+    return match?.[1] ?? CONFIG.DEFAULT_LANGUAGE;
   }
 
-  // Function to create copy button
+  /**
+   * Creates a copy button element with accessibility attributes
+   */
   function createCopyButton(): HTMLButtonElement {
     const button = document.createElement('button');
-    button.className = 'copy-button';
+    button.type = 'button';
+    button.className = CLASSES.COPY_BUTTON;
     button.textContent = 'Copy';
     button.setAttribute('aria-label', 'Copy code to clipboard');
     return button;
   }
 
-  // Function to create language label
+  /**
+   * Creates a language label element
+   */
   function createLanguageLabel(language: string): HTMLSpanElement {
     const label = document.createElement('span');
-    label.className = 'language-label';
+    label.className = CLASSES.LANGUAGE_LABEL;
     label.textContent = language;
+    label.setAttribute('aria-label', `Code language: ${language}`);
     return label;
   }
 
-  // Function to create code block header
+  /**
+   * Creates a code block header containing language label and copy button
+   */
   function createCodeHeader(language: string, copyButton: HTMLButtonElement): HTMLDivElement {
     const header = document.createElement('div');
-    header.className = 'code-block-header';
+    header.className = CLASSES.CODE_HEADER;
     header.appendChild(createLanguageLabel(language));
     header.appendChild(copyButton);
     return header;
   }
 
-  // Function to wrap code block
+  /**
+   * Wraps a code block with a container div
+   */
   function wrapCodeBlock(preElement: HTMLPreElement, header: HTMLDivElement): HTMLDivElement {
     const wrapper = document.createElement('div');
-    wrapper.className = 'code-block-wrapper';
+    wrapper.className = CLASSES.CODE_WRAPPER;
+
+    const parent = preElement.parentNode;
+    if (!parent) {
+      throw new Error('Code block has no parent node');
+    }
 
     // Insert wrapper before pre element
-    preElement.parentNode?.insertBefore(wrapper, preElement);
+    parent.insertBefore(wrapper, preElement);
 
     // Move pre element into wrapper
     wrapper.appendChild(header);
@@ -54,52 +104,85 @@
     return wrapper;
   }
 
-  // Function to copy text to clipboard
+  /**
+   * Copies text to clipboard using modern API with fallback
+   */
   async function copyToClipboard(text: string): Promise<boolean> {
     try {
+      // Use modern Clipboard API if available
       if (navigator.clipboard && window.isSecureContext) {
         await navigator.clipboard.writeText(text);
         return true;
-      } else {
-        // Fallback for older browsers
-        const textArea = document.createElement('textarea');
-        textArea.value = text;
-        textArea.style.position = 'fixed';
-        textArea.style.left = '-999999px';
-        textArea.style.top = '-999999px';
-        document.body.appendChild(textArea);
-        textArea.focus();
-        textArea.select();
-        const result = document.execCommand('copy');
-        textArea.remove();
-        return result;
       }
-    } catch (err) {
-      console.error('Failed to copy text: ', err);
+      
+      // Fallback for older browsers or non-secure contexts
+      return copyToClipboardFallback(text);
+    } catch (error) {
+      console.error('Failed to copy text:', error);
       return false;
     }
   }
 
-  // Function to show copy feedback
-  function showCopyFeedback(button: HTMLButtonElement, success: boolean): void {
-    const originalText = button.textContent;
-    button.textContent = success ? 'Copied!' : 'Failed';
-    button.style.background = success ? '#5D5FEF' : '#ef4444';
-    button.style.borderColor = success ? '#5D5FEF' : '#ef4444';
-    button.style.color = '#ffffff';
-
-    setTimeout(() => {
-      button.textContent = originalText;
-      button.style.background = '';
-      button.style.borderColor = '';
-      button.style.color = '';
-    }, 2000);
+  /**
+   * Fallback clipboard copy method for older browsers
+   */
+  function copyToClipboardFallback(text: string): boolean {
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.style.cssText = 'position:fixed;left:-999999px;top:-999999px;';
+    textArea.setAttribute('aria-hidden', 'true');
+    
+    document.body.appendChild(textArea);
+    
+    try {
+      textArea.focus();
+      textArea.select();
+      const result = document.execCommand('copy');
+      return result;
+    } catch (error) {
+      console.error('Fallback copy failed:', error);
+      return false;
+    } finally {
+      document.body.removeChild(textArea);
+    }
   }
 
-  // Process each code block
-  codeBlocks.forEach((codeElement) => {
+  /**
+   * Shows visual feedback on the copy button
+   */
+  function showCopyFeedback(button: HTMLButtonElement, success: boolean): void {
+    const originalText = button.textContent;
+    const originalAriaLabel = button.getAttribute('aria-label');
+    
+    // Update button state
+    button.textContent = success ? 'Copied!' : 'Failed';
+    button.setAttribute('aria-label', success ? 'Code copied to clipboard' : 'Copy failed');
+    button.style.backgroundColor = success ? CONFIG.COLORS.SUCCESS : CONFIG.COLORS.ERROR;
+    button.style.borderColor = success ? CONFIG.COLORS.SUCCESS : CONFIG.COLORS.ERROR;
+    button.style.color = CONFIG.COLORS.TEXT;
+    button.disabled = true;
+
+    // Reset after delay
+    setTimeout(() => {
+      button.textContent = originalText;
+      if (originalAriaLabel) {
+        button.setAttribute('aria-label', originalAriaLabel);
+      }
+      button.style.backgroundColor = '';
+      button.style.borderColor = '';
+      button.style.color = '';
+      button.disabled = false;
+    }, CONFIG.FEEDBACK_DURATION_MS);
+  }
+
+  /**
+   * Enhances a single code block with copy functionality
+   */
+  function enhanceCodeBlock(codeElement: HTMLElement): void {
     const preElement = codeElement.closest<HTMLPreElement>('pre');
-    if (!preElement || preElement.dataset.enhanced) return;
+    if (!preElement || preElement.dataset.enhanced) {
+      return;
+    }
 
     // Mark as enhanced to avoid double-processing
     preElement.dataset.enhanced = 'true';
@@ -111,37 +194,73 @@
     const copyButton = createCopyButton();
 
     // Add copy functionality
-    copyButton.addEventListener('click', async () => {
-      const code = codeElement.textContent || codeElement.innerText || '';
-      const success = await copyToClipboard(code);
-      showCopyFeedback(copyButton, success);
-    });
+    copyButton.addEventListener(
+      'click',
+      async (event: MouseEvent) => {
+        event.preventDefault();
+        const code = codeElement.textContent ?? '';
+        const success = await copyToClipboard(code);
+        showCopyFeedback(copyButton, success);
+      },
+      { passive: false }
+    );
 
     // Create header
     const header = createCodeHeader(language, copyButton);
 
     // Wrap the code block
-    wrapCodeBlock(preElement, header);
-  });
+    try {
+      wrapCodeBlock(preElement, header);
+    } catch (error) {
+      console.error('Failed to enhance code block:', error);
+    }
+  }
 
-  // Add keyboard shortcut for copying (Ctrl/Cmd + Shift + C when focused on code block)
-  document.addEventListener('keydown', (e: KeyboardEvent) => {
-    if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'C') {
+  // Process each code block
+  codeBlocks.forEach(enhanceCodeBlock);
+
+  /**
+   * Handles keyboard shortcuts for code block copying
+   */
+  function handleKeyboardShortcut(event: KeyboardEvent): void {
+    const { CTRL_KEY, SHIFT_KEY, KEY } = CONFIG.KEYBOARD_SHORTCUT;
+    
+    if (
+      (event.ctrlKey || event.metaKey) === CTRL_KEY &&
+      event.shiftKey === SHIFT_KEY &&
+      event.key === KEY
+    ) {
       const focusedElement = document.activeElement;
-      const codeBlock = focusedElement?.closest<HTMLElement>('.code-block-wrapper');
+      const codeBlock = focusedElement?.closest<HTMLElement>(SELECTORS.CODE_WRAPPER);
+      
       if (codeBlock) {
-        e.preventDefault();
-        const copyButton = codeBlock.querySelector<HTMLButtonElement>('.copy-button');
-        if (copyButton) copyButton.click();
+        event.preventDefault();
+        const copyButton = codeBlock.querySelector<HTMLButtonElement>(SELECTORS.COPY_BUTTON);
+        copyButton?.click();
       }
     }
-  });
+  }
 
-  // Make code blocks focusable for keyboard users
-  document.querySelectorAll<HTMLPreElement>('.code-block-wrapper pre').forEach(pre => {
-    if (!pre.hasAttribute('tabindex')) {
-      pre.setAttribute('tabindex', '0');
-      pre.setAttribute('aria-label', 'Code block - press Ctrl+Shift+C to copy');
-    }
-  });
+  /**
+   * Makes code blocks focusable and accessible for keyboard users
+   */
+  function makeCodeBlocksAccessible(): void {
+    const enhancedBlocks = document.querySelectorAll<HTMLPreElement>(
+      `${SELECTORS.CODE_WRAPPER} pre`
+    );
+    
+    enhancedBlocks.forEach((pre) => {
+      if (!pre.hasAttribute('tabindex')) {
+        pre.setAttribute('tabindex', '0');
+        pre.setAttribute('role', 'region');
+        pre.setAttribute('aria-label', 'Code block - press Ctrl+Shift+C to copy');
+      }
+    });
+  }
+
+  // Add keyboard shortcut listener
+  document.addEventListener('keydown', handleKeyboardShortcut);
+
+  // Make code blocks accessible
+  makeCodeBlocksAccessible();
 })();

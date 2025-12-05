@@ -7,9 +7,12 @@ const config: Config = {
     './_pages/**/*.html',
     './_posts/**/*.md',
     './_posts/**/*.html',
-    '*.html',
     './*.html',
-    './**/*.html',
+    './about/**/*.html',
+    './blog/**/*.html',
+    './consulting/**/*.html',
+    './podcast/**/*.html',
+    './search/**/*.html',
   ],
   theme: {
     colors: {

@@ -9,4 +9,7 @@ node_modules
 _tags/*
 # Generated JavaScript from TypeScript
 assets/js/*.js
-!assets/js/lunr.min.js
+
+# Font Awesome files (copied from node_modules)
+assets/css/fontawesome-*.css
+assets/webfonts/
