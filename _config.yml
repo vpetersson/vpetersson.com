@@ -79,14 +79,24 @@ exclude:
   - docker-compose.yml
   - package.json
   - package-lock.json
+  - bun.lock
+  - tsconfig.json
+  - build.ts
+  - src
 
-# Include additional files
+# Include additional files (forces inclusion even if in .gitignore)
 include:
   - video-sitemap.xml
+  # Font Awesome (generated from node_modules)
   - assets/css/fontawesome-core.css
   - assets/css/fontawesome-solid.css
   - assets/css/fontawesome-brands.css
   - assets/webfonts
+  # Generated JavaScript (compiled from TypeScript)
+  - assets/js/main.js
+  - assets/js/search.js
+  - assets/js/code-blocks.js
+  - assets/js/hero-parallax.js
 
 # Sitemap settings
 defaults:

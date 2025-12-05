@@ -42,16 +42,31 @@ bun run lint
 
 ## Build
 
-Build TypeScript, Sass, and CSS:
+### Build TypeScript, Sass, and CSS
 
 ```bash
 bun run build
 ```
 
-## Test Jekyll Build
+This generates:
+- TypeScript → JavaScript in `assets/js/`
+- Font Awesome CSS in `assets/css/`
+- Font Awesome webfonts in `assets/webfonts/`
+- Compiled Sass and PostCSS
+
+### Build Jekyll site
 
 ```bash
 bundle exec jekyll build
+```
+
+Jekyll will automatically include the generated files because they're listed in `_config.yml` under `include`.
+
+### Full build (CI/CD)
+
+```bash
+# Build assets first, then Jekyll
+bun run build && bundle exec jekyll build
 ```
 
 ## Optional validation
