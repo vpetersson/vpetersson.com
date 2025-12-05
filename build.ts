@@ -26,7 +26,11 @@ if (!existsSync(cssDir)) {
   await mkdir(cssDir, { recursive: true });
 }
 
-const fontawesomeCss = './node_modules/@fortawesome/fontawesome-free/css';
+// Check both local node_modules and Docker location
+const nodeModulesPath = existsSync('./node_modules/@fortawesome')
+  ? './node_modules'
+  : '/usr/local/bun-deps/node_modules';
+const fontawesomeCss = `${nodeModulesPath}/@fortawesome/fontawesome-free/css`;
 const cssFiles = {
   'fontawesome.min.css': 'fontawesome-core.css',
   'solid.min.css': 'fontawesome-solid.css',
@@ -48,7 +52,7 @@ if (!existsSync(webfontsDir)) {
   await mkdir(webfontsDir, { recursive: true });
 }
 
-const fontawesomeWebfonts = './node_modules/@fortawesome/fontawesome-free/webfonts';
+const fontawesomeWebfonts = `${nodeModulesPath}/@fortawesome/fontawesome-free/webfonts`;
 const webfontFiles = [
   'fa-solid-900.woff2',
   'fa-solid-900.ttf',
