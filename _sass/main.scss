@@ -256,6 +256,16 @@ a.button {
     }
   }
 
+  .tag {
+    text-decoration: none;
+    color: var(--color-primary);
+
+    &:hover {
+      color: var(--color-white);
+      text-decoration: none;
+    }
+  }
+
   /* Lists */
   ul, ol {
     margin-bottom: 1.5rem;
