@@ -6,13 +6,23 @@ module Jekyll
 
       # Build the transcript path (absolute, based on site source)
       site_source = @context.registers[:site].source
-      transcript_path = File.join(site_source, '_transcript', "#{episode_number}.json")
+      transcript_dir = File.join(site_source, '_transcript')
+
+      # Find the file case-insensitively to handle filesystem differences
+      transcript_filename = nil
+      if File.directory?(transcript_dir)
+        transcript_filename = Dir.entries(transcript_dir).find do |entry|
+          entry.downcase == "#{episode_number}.json"
+        end
+      end
 
       # Check if file exists
-      unless File.exist?(transcript_path)
+      unless transcript_filename
         Jekyll.logger.warn "TranscriptLoader:", "No transcript found for #{episode_number}"
         return []
       end
+
+      transcript_path = File.join(transcript_dir, transcript_filename)
 
       begin
         require 'json'
@@ -32,6 +42,45 @@ module Jekyll
       rescue StandardError => e
         Jekyll.logger.error "TranscriptLoader:", "Error loading #{episode_number}: #{e.message}"
         []
+      end
+    end
+  end
+
+  class TranscriptFile < StaticFile
+    def initialize(site, base, dir, name, dest_dir, dest_name)
+      super(site, base, dir, name)
+      @dest_dir = dest_dir
+      @dest_name = dest_name
+    end
+
+    def destination(dest)
+      File.join(dest, @dest_dir, @dest_name)
+    end
+  end
+
+  class TranscriptGenerator < Generator
+    safe true
+    priority :low
+
+    def generate(site)
+      src_dir = '_transcript'
+      dest_dir = 'transcript'
+      full_src_dir = File.join(site.source, src_dir)
+
+      return unless File.directory?(full_src_dir)
+
+      Dir.foreach(full_src_dir) do |entry|
+        next if entry == '.' || entry == '..'
+        next unless entry.downcase.end_with?('.json')
+
+        site.static_files << TranscriptFile.new(
+          site,
+          site.source,
+          src_dir,
+          entry,
+          dest_dir,
+          entry.downcase
+        )
       end
     end
   end
