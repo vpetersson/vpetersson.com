@@ -138,8 +138,9 @@ import type { SearchStore } from './types';
       this.field('content');
 
       // Add all items from the store to the index
-      Object.entries(store).forEach(([key, item]) => {
-        this.add({
+      const self = this;
+      Object.entries(store).forEach(function([key, item]) {
+        self.add({
           id: key,
           title: item.title,
           author: item.author ?? '',
@@ -155,13 +156,18 @@ import type { SearchStore } from './types';
    */
   function performSearch(): void {
     const searchTerm = getQueryParameter(CONFIG.SEARCH_PARAM);
+    const searchBox = document.getElementById(ELEMENT_IDS.SEARCH_BOX) as HTMLInputElement | null;
+
+    // Auto-focus the search box for better UX
+    if (searchBox) {
+      searchBox.focus();
+    }
 
     if (!searchTerm) {
       return;
     }
 
-    // Update search box value
-    const searchBox = document.getElementById(ELEMENT_IDS.SEARCH_BOX) as HTMLInputElement | null;
+    // Update search box value if there's a search term
     if (searchBox) {
       searchBox.value = searchTerm;
     }
