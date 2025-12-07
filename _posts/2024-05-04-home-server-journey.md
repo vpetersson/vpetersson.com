@@ -134,3 +134,11 @@ So far, the only drawback is that I need to manually enter the passphrase to mou
 One of the drawbacks with using a consumer grade motherboard/server is that they generally speaking do not come with an IPMI. This can be a bit of a PITA when you want to tweak BIOS settings (or fix a boot problem).
 
 To solve for this, I decided to get myself a [PiKVM](https://pikvm.org/) V4 Mini and attach to the server. So far I'm pretty impressed with it. The UI works well and you are even able to connect it to Tailscale. If you're looking to solve for this problem, I can definitely recommend one of these.
+
+### Update 3
+
+Remember how I mentioned the noise level being a problem? Well, the fan that came with the Jonsbo case has been driving me crazy for ages. Not only is it incredibly loud, but it also doesn't do any fan control—it just runs at full blast all the time.
+
+However, when I came across [Brian Moses' DIY NAS: 2026 Edition](https://blog.briancmoses.com/2025/11/diy-nas-2026-edition.html), I realized I could swap my fan for a [Noctua NF-A12x25 PWM](https://www.amazon.com/dp/B09C6DQDNT?tag=diynas2026-20&language=en_US).
+
+The only caveat was that in my Jonsbo case, the Noctua fan was too thick to fit inside the case, so I had to mount it on the outside where it pokes out a bit. However, when I connected this fan directly to the motherboard, the noise level went down to almost nothing. It's been a game-changer for my home server setup, and I can now barely hear it running.
