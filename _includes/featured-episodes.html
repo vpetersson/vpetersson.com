@@ -1,0 +1,65 @@
+{% assign featured_episodes = site.podcast | where: "featured", true | sort: "date" | reverse %}
+
+{% if featured_episodes.size > 0 %}
+<section class="featured-episodes-section">
+  <div class="featured-episodes-container">
+    <div class="featured-episodes-header">
+      <h2 class="featured-episodes-title">Featured Episodes</h2>
+      <p class="featured-episodes-subtitle">Some of our most popular conversations with industry leaders</p>
+    </div>
+    <div class="featured-episodes-grid">
+      {% for episode in featured_episodes %}
+        {% include featured-episode-card.html episode=episode %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<style>
+.featured-episodes-section {
+  background: var(--color-gray-900);
+  padding: var(--space-12) var(--space-4);
+
+  @media (min-width: 768px) {
+    padding: var(--space-16) var(--space-6);
+  }
+}
+
+.featured-episodes-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featured-episodes-header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.featured-episodes-title {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--color-white);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.featured-episodes-subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-300);
+  margin: 0;
+}
+
+.featured-episodes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+</style>
