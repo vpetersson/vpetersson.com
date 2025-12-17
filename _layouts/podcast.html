@@ -40,7 +40,7 @@ layout: default
     </div>
     <div class="flex-1">
       <div class="mb-5 relative">
-        {% if page.youtube %}
+        {% if page.youtube and page.youtube != "" %}
           <div class="video-container">
             <iframe
               width="100%"
@@ -65,12 +65,12 @@ layout: default
       <div class="mb-5 flex items-center">
         <span class="uppercase text-xl leading-[1.6px] mr-5">Play On</span>
         <span class="flex flex-1 gap-3">
-          {% if page.youtube %}
+          {% if page.youtube and page.youtube != "" %}
             <a href="{{ page.youtube }}" target="_blank" rel="noopener noreferrer">
               <img src="/assets/images/site/podcast-youtube-dark.svg" alt="Listen to podcast on YouTube" />
             </a>
           {% endif %}
-          {% if page.spotify %}
+          {% if page.spotify and page.spotify != "" %}
             <a href="{{ page.spotify }}" target="_blank" rel="noopener noreferrer">
               <img src="/assets/images/site/podcast-spotify-dark.svg" alt="Listen to podcast on Spotify" />
             </a>
