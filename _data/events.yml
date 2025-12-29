@@ -6,6 +6,7 @@
       location: Brussels, Belgium
       title: "CRA-Ready SBOMs: A Practical Blueprint for High-Quality Generation"
       upcoming: true
+      link: https://fosdem.org/2026/schedule/event/UYTGWA-sbom-generation/
     - type: talk
       event: QCon London
       location: London, UK
