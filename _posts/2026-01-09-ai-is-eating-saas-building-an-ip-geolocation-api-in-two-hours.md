@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI is Eating SaaS: Building an IP Geolocation API in Two Hours"
-date: '2025-01-09T12:00:00Z'
+date: '2026-01-09T12:00:00Z'
 tags:
 - rust
 - ai
