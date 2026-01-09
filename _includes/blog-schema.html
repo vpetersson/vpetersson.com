@@ -13,8 +13,9 @@
   "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
   "author": {
     "@type": "Person",
+    "@id": "{{ site.url }}/about/#person",
     "name": "Viktor Petersson",
-    "url": "{{ site.url }}"
+    "url": "{{ site.url }}/about/"
   },
   "publisher": {
     "@type": "Organization",

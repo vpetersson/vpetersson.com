@@ -26,8 +26,9 @@
   {% endif %}
   "author": {
     "@type": "Person",
+    "@id": "{{ site.url }}/about/#person",
     "name": "Viktor Petersson",
-    "url": "{{ site.url }}"
+    "url": "{{ site.url }}/about/"
   },
   "publisher": {
     "@type": "Organization",
@@ -39,11 +40,9 @@
     "name": "Nerding Out with Viktor",
     "url": "{{ site.url }}/podcast/",
     "inLanguage": "en",
-    "isAccessibleForFree": true,
-    "seasonNumber": {{ page.season }}
+    "isAccessibleForFree": true
   },
   "episodeNumber": {{ page.episode }},
-  "seasonNumber": {{ page.season }},
   "sameAs": [
     {% if page.spotify and page.spotify != "" %}"{{ page.spotify }}"{% endif %}
     {% if page.apple and page.apple != "" %}{% if page.spotify and page.spotify != "" %},{% endif %}"{{ page.apple }}"{% endif %}
