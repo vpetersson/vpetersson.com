@@ -97,6 +97,7 @@ include:
   - assets/js/search.js
   - assets/js/code-blocks.js
   - assets/js/hero-parallax.js
+  - assets/js/github-stars.js
 
 # Sitemap settings
 defaults:

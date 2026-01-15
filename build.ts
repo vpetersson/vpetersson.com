@@ -12,7 +12,8 @@ await Bun.build({
     './src/main.ts',
     './src/search.ts', 
     './src/code-blocks.ts',
-    './src/hero-parallax.ts'
+    './src/hero-parallax.ts',
+    './src/github-stars.ts'
   ],
   outdir: './assets/js',
   target: 'browser',
