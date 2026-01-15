@@ -1,0 +1,103 @@
+---
+layout: default
+title: Projects | Viktor Petersson's portfolio of projects and open source work
+---
+{% include page-header.html title="Projects" %}
+<div class="bg-secondaryBG">
+  <div class="xl:max-w-[1110px] mx-auto px-4 sm:px-6 md:px-[120px] pt-[40px] xl:pt-[60px] pb-[60px]">
+    
+    <!-- Intro text -->
+    <div class="mb-12">
+      <p class="text-lg mb-3">
+        I'm passionate about building secure, scalable systems and creating tools that solve real problems. My work spans from commercial ventures to open-source projects, with successful open-source projects graduating into Viktopia Studio for continued development and support.
+      </p>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- sbomify -->
+      <div class="bg-primaryBG rounded-lg p-6 hover:shadow-lg transition-shadow duration-200">
+        <h3 class="text-xl font-bold mb-3">sbomify</h3>
+        <p class="text-base mb-4 leading-relaxed">
+          Your security artifact hub. Generate, manage, and share SBOMs and compliance documents with stakeholders. Available as self-hosted or cloud service.
+        </p>
+        <a href="https://sbomify.com" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 transition-colors text-sm">
+          Visit site <i class="fas fa-external-link-alt fa-xs ml-1"></i>
+        </a>
+      </div>
+
+      <!-- Screenly -->
+      <div class="bg-primaryBG rounded-lg p-6 hover:shadow-lg transition-shadow duration-200">
+        <h3 class="text-xl font-bold mb-3">Screenly</h3>
+        <p class="text-base mb-4 leading-relaxed">
+          The secure digital signage company.
+        </p>
+        <a href="https://screenly.com" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 transition-colors text-sm">
+          Visit site <i class="fas fa-external-link-alt fa-xs ml-1"></i>
+        </a>
+      </div>
+
+      <!-- Viktopia Studio -->
+      <div class="bg-primaryBG rounded-lg p-6 hover:shadow-lg transition-shadow duration-200">
+        <h3 class="text-xl font-bold mb-3">Viktopia Studio</h3>
+        <p class="text-base mb-4 leading-relaxed">
+          Home for open source projects that graduate from experiments to sustainable ventures.
+        </p>
+        <a href="https://studio.viktopia.io" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 transition-colors text-sm">
+          Visit site <i class="fas fa-external-link-alt fa-xs ml-1"></i>
+        </a>
+      </div>
+
+      <!-- DSLF -->
+      <div class="bg-primaryBG rounded-lg p-6 hover:shadow-lg transition-shadow duration-200">
+        <h3 class="text-xl font-bold mb-3">DSLF</h3>
+        <p class="text-base mb-4 leading-relaxed">
+          Damn Small Link Forwarder - A blazing fast, self-hosted link shortener and LinkTree alternative written in Rust.
+        </p>
+        <div class="flex flex-col gap-2">
+          <a href="https://301.vpetersson.com" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 transition-colors text-sm">
+            <i class="fas fa-link mr-1"></i> View demo <i class="fas fa-external-link-alt fa-xs ml-1"></i>
+          </a>
+          <a href="https://github.com/vpetersson/dslf" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 transition-colors text-sm">
+            <i class="fab fa-github mr-1"></i> View on GitHub <i class="fas fa-external-link-alt fa-xs ml-1"></i>
+          </a>
+          <a href="/2026/01/14/ai-is-killing-saas-part-2-linktree-link-shorteners-and-the-leverage-you-buy-back" class="text-blue-400 hover:text-blue-300 transition-colors text-sm">
+            <i class="fas fa-file-alt fa-xs mr-1"></i> Read the blog post
+          </a>
+        </div>
+      </div>
+
+      <!-- Podcast RSS Generator -->
+      <div class="bg-primaryBG rounded-lg p-6 hover:shadow-lg transition-shadow duration-200">
+        <h3 class="text-xl font-bold mb-3">Podcast RSS Generator</h3>
+        <p class="text-base mb-4 leading-relaxed">
+          Tool for generating podcast RSS feeds. Powers <a href="/podcast" class="text-blue-400 hover:text-blue-300 underline">Nerding Out with Viktor</a>.
+        </p>
+        <a href="https://github.com/vpetersson/podcast-rss-generator" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 transition-colors text-sm">
+          <i class="fab fa-github mr-1"></i> View on GitHub <i class="fas fa-external-link-alt fa-xs ml-1"></i>
+        </a>
+      </div>
+
+      <!-- IP Geolocation -->
+      <div class="bg-primaryBG rounded-lg p-6 hover:shadow-lg transition-shadow duration-200">
+        <h3 class="text-xl font-bold mb-3">IP Geolocation</h3>
+        <p class="text-base mb-4 leading-relaxed">
+          Self-hosted IP geolocation API built in Rust. A drop-in replacement for commercial services, providing sub-millisecond response times with zero external dependencies.
+        </p>
+        <div class="flex flex-col gap-2">
+          <a href="https://geoip.vpetersson.com" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 transition-colors text-sm">
+            <i class="fas fa-globe mr-1"></i> View demo <i class="fas fa-external-link-alt fa-xs ml-1"></i>
+          </a>
+          <a href="https://github.com/vpetersson/ipgeolocation" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 transition-colors text-sm">
+            <i class="fab fa-github mr-1"></i> View on GitHub <i class="fas fa-external-link-alt fa-xs ml-1"></i>
+          </a>
+          <a href="/2026/01/09/ai-is-eating-saas-building-an-ip-geolocation-api-in-two-hours" class="text-blue-400 hover:text-blue-300 transition-colors text-sm">
+            <i class="fas fa-file-alt fa-xs mr-1"></i> Read the blog post
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

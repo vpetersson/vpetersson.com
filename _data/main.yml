@@ -8,6 +8,8 @@ nav:
     link: /
   - name: ABOUT
     link: /about
+  - name: PROJECTS
+    link: /projects
   - name: CONSULTING
     link: /consulting
   - name: PODCAST
