@@ -98,8 +98,6 @@ docker build -t my-links .
 docker run -p 3000:3000 my-links
 ```
 
-The numbers: ~5MB binary, <10MB RAM, 50k+ requests/sec on modest hardware.
-
 ## The Tally
 
 Three SaaS tools replaced at Screenly in the last few months:
