@@ -2,16 +2,16 @@
 - year: 2026
   events:
     - type: talk
-      event: FOSDEM
-      location: Brussels, Belgium
-      title: "CRA-Ready SBOMs: A Practical Blueprint for High-Quality Generation"
-      video: https://video.fosdem.org/2026/ud2208/UYTGWA-sbom-generation.av1.webm
-    - type: talk
       event: QCon London
       location: London, UK
       title: "From Chaos to Clarity: Modern SBOM Practices That Actually Work"
       link: https://qconlondon.com/presentation/mar2026/chaos-clarity-modern-sbom-practices-actually-work
       upcoming: true
+    - type: talk
+      event: FOSDEM
+      location: Brussels, Belgium
+      title: "CRA-Ready SBOMs: A Practical Blueprint for High-Quality Generation"
+      video: https://video.fosdem.org/2026/ud2208/UYTGWA-sbom-generation.av1.webm
 
 - year: 2025
   events:
