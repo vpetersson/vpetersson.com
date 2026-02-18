@@ -4,7 +4,6 @@ title = "Viktor's Tech Musings & Security Paranoia"
 enableRobotsTXT = true
 enableGitInfo = false
 timeout = "60s"
-ignoreFiles = ["^_posts"]
 
 [params]
   description = "Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale."

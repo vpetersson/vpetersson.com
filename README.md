@@ -1,18 +1,28 @@
 ## vpetersson.com
 
-### Adding new gems
+Hugo-based personal site combining a tech blog, video podcast, and professional portfolio. Hosted on GitHub Pages.
 
-To add new gems to the project:
+### Development
 
 ```bash
-# Add a new gem using docker compose
-docker compose run --rm web bundle add jekyll-seo-tag  # Replace with the gem you want to add
+# Install dependencies
+bun install
+
+# Local development (live reload on localhost:1313)
+hugo serve
+
+# Production build
+hugo --minify
 ```
 
-### Updating dependencies
-
-To update all dependencies in the lockfile:
+### Linting
 
 ```bash
-docker compose run --rm web bundle update
+# Run all linters
+bun run lint
+
+# Individual linters
+bun run lint:markdown
+bun run lint:scss
+bun run typecheck
 ```
