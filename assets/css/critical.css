@@ -9,7 +9,7 @@
   font-family: 'Anton';
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
+  font-display: optional;
   src: url('/fonts/anton-v25-latin-regular.woff2') format('woff2');
 }
 @font-face {

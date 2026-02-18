@@ -112,7 +112,7 @@
   {{ if hugo.IsProduction }}{{ $critical = $critical | minify }}{{ end }}
   <style>{{ $critical.Content | safeCSS }}</style>
 
-  {{/* Full CSS bundle loaded asynchronously */}}
+  {{/* Full CSS bundle (render-blocking to prevent CLS) */}}
   {{ $sass := resources.Get "css/main.scss" | toCSS }}
   {{ $tailwind := resources.Get "css/tailwind.css" | css.TailwindCSS }}
   {{ $native := resources.Get "css/native.css" }}
@@ -120,8 +120,7 @@
   {{ if hugo.IsProduction }}
     {{ $styles = $styles | minify | fingerprint }}
   {{ end }}
-  <link rel="preload" href="{{ $styles.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="{{ $styles.RelPermalink }}"></noscript>
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 
   {{ partial "google-analytics.html" . }}
 
