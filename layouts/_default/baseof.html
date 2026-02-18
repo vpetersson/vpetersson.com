@@ -9,12 +9,16 @@
     </main>
     {{ partial "footer.html" . }}
     {{ $main := resources.Get "js/main.ts" | js.Build (dict "targetPath" "js/main.js" "minify" hugo.IsProduction) }}
-    {{ $codeBlocks := resources.Get "js/code-blocks.ts" | js.Build (dict "targetPath" "js/code-blocks.js" "minify" hugo.IsProduction) }}
     {{ if hugo.IsProduction }}
       {{ $main = $main | fingerprint }}
-      {{ $codeBlocks = $codeBlocks | fingerprint }}
     {{ end }}
     <script src="{{ $main.RelPermalink }}" defer></script>
-    <script src="{{ $codeBlocks.RelPermalink }}" defer></script>
+    {{ if or (eq .Section "blog") (eq .Section "podcast") }}
+      {{ $codeBlocks := resources.Get "js/code-blocks.ts" | js.Build (dict "targetPath" "js/code-blocks.js" "minify" hugo.IsProduction) }}
+      {{ if hugo.IsProduction }}
+        {{ $codeBlocks = $codeBlocks | fingerprint }}
+      {{ end }}
+      <script src="{{ $codeBlocks.RelPermalink }}" defer></script>
+    {{ end }}
   </body>
 </html>

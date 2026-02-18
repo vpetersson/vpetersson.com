@@ -1,12 +1,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="index, follow">
-  <meta http-equiv="content-language" content="en">
 
-  <!-- Resource hints for third-party origins -->
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-  <link rel="preconnect" href="https://img.youtube.com" crossorigin>
+  {{/* Critical CSS inlined for fast FCP */}}
+  {{ $critical := resources.Get "css/critical.css" }}
+  {{ if hugo.IsProduction }}{{ $critical = $critical | minify }}{{ end }}
+  <style>{{ $critical.Content | safeCSS }}</style>
+
+  {{/* Primary CSS: above-fold styles (render-blocking, small) */}}
+  {{ $sass := resources.Get "css/main.scss" | toCSS }}
+  {{ $tailwind := resources.Get "css/tailwind.css" | css.TailwindCSS }}
+  {{ $primary := slice $sass $tailwind | resources.Concat "css/primary.css" }}
+  {{ if hugo.IsProduction }}
+    {{ $primary = $primary | minify | fingerprint }}
+  {{ end }}
+  <link rel="stylesheet" href="{{ $primary.RelPermalink }}">
+
+  {{/* Deferred CSS: page-specific styles (non-render-blocking) */}}
+  {{ $deferred := resources.Get "css/deferred.scss" | toCSS }}
+  {{ $native := resources.Get "css/native.css" }}
+  {{ $deferredBundle := slice $deferred $native | resources.Concat "css/deferred-bundle.css" }}
+  {{ if hugo.IsProduction }}
+    {{ $deferredBundle = $deferredBundle | minify | fingerprint }}
+  {{ end }}
+  <link rel="stylesheet" href="{{ $deferredBundle.RelPermalink }}" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="{{ $deferredBundle.RelPermalink }}"></noscript>
 
   {{/* Preload LCP hero image on homepage */}}
   {{ if .IsHome }}
@@ -23,7 +41,9 @@
   {{ if .IsHome }}
   <link rel="preload" href="/fonts/anton-v25-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
   {{ end }}
+  {{ if not .IsHome }}
   <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  {{ end }}
 
   {{/* Title: unique per page type */}}
   {{ if .IsHome }}
@@ -31,6 +51,9 @@
   {{ else }}
   <title>{{ .Title }} | {{ site.Title }}</title>
   {{ end }}
+
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="content-language" content="en">
 
   {{/* Description: use page description, then summary, then site default */}}
   {{ $description := site.Params.description }}
@@ -107,22 +130,13 @@
   <meta name="keywords" content="{{ . }}">
   {{ end }}
 
-  {{/* Critical CSS inlined for fast FCP */}}
-  {{ $critical := resources.Get "css/critical.css" }}
-  {{ if hugo.IsProduction }}{{ $critical = $critical | minify }}{{ end }}
-  <style>{{ $critical.Content | safeCSS }}</style>
+  <link rel="canonical" href="{{ .Permalink }}" />
 
-  {{/* Full CSS bundle (render-blocking to prevent CLS) */}}
-  {{ $sass := resources.Get "css/main.scss" | toCSS }}
-  {{ $tailwind := resources.Get "css/tailwind.css" | css.TailwindCSS }}
-  {{ $native := resources.Get "css/native.css" }}
-  {{ $styles := slice $sass $tailwind $native | resources.Concat "css/bundle.css" }}
-  {{ if hugo.IsProduction }}
-    {{ $styles = $styles | minify | fingerprint }}
+  <!-- Resource hints for third-party origins -->
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  {{ if or .IsHome (eq .Section "podcast") }}
+  <link rel="preconnect" href="https://img.youtube.com" crossorigin>
   {{ end }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 
   {{ partial "google-analytics.html" . }}
-
-  <link rel="canonical" href="{{ .Permalink }}" />
 </head>

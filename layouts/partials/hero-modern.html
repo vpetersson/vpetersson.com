@@ -96,4 +96,11 @@
 
 {{ $heroParallax := resources.Get "js/hero-parallax.ts" | js.Build (dict "targetPath" "js/hero-parallax.js" "minify" hugo.IsProduction) }}
 {{ if hugo.IsProduction }}{{ $heroParallax = $heroParallax | fingerprint }}{{ end }}
-<script src="{{ $heroParallax.RelPermalink }}" defer></script>
+<script>
+if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+  var s = document.createElement('script');
+  s.src = '{{ $heroParallax.RelPermalink }}';
+  s.defer = true;
+  document.body.appendChild(s);
+}
+</script>
