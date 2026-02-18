@@ -2,6 +2,8 @@
 slug: homeassistant-ikea-tradfri-flux-sensors
 title: Achieving success with Home Assistant, Flux and sensors
 date: '2020-05-25T13:00:00+01:00'
+aliases:
+  - /2020/05/27/homeassistant-ikea-tradfri-flux-sensors/
 tags:
 - home-assistant
 - home-automation
@@ -151,7 +153,7 @@ For the yellow-only lights, the configuration looks like this:
 
 ## Monitoring air quality
 
-As someone that [works from home](/remote-work/), I’m in control of my work environment. I want to ensure that it is optimized both for ergonomics and for health at large. One thing that I’ve been curious about for some time has been the impact of air quality. Many moons ago, I purchased a [Foobot](https://foobot.io/) to get some insight into this. While it did the job, and it does indeed integrate with HA, it was a bit cost prohibitive to put one of these in every room (not to mention that it is rather large). To solve this problem, I decided to [build my own](https://blog.viktorpetersson.com/2019/11/16/home-assistant-and-esphome.html) that is both smaller and cheaper.
+As someone that [works from home](/remote-work/), I’m in control of my work environment. I want to ensure that it is optimized both for ergonomics and for health at large. One thing that I’ve been curious about for some time has been the impact of air quality. Many moons ago, I purchased a [Foobot](https://foobot.io/) to get some insight into this. While it did the job, and it does indeed integrate with HA, it was a bit cost prohibitive to put one of these in every room (not to mention that it is rather large). To solve this problem, I decided to [build my own](/2019/11/16/home-assistant-and-esphome/) that is both smaller and cheaper.
 
 (Since publishing the blog post, I’ve received a number of requests from people who wanted the same. As many users just wanted this off-the-shelf and not solder together the components, I’ve teamed up with the fine folks at Pi Supply to manufacture the sensor. You can pre-order from [here](https://uk.pi-supply.com/products/iot-home-air-quality-sensor-for-home-assistant).)
 

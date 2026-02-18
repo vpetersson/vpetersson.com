@@ -3,6 +3,8 @@ slug: video-to-audio-podcast
 title: |
     Nerding Out with Viktor is now available as audio-only, a.k.a Turning my video podcast into an audio podcast
 date: '2024-06-27T01:00:00+01:00'
+aliases:
+  - /2024/08/27/video-to-audio-podcast/
 tags:
 - podcast
 - startup
