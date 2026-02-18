@@ -3,4 +3,3 @@ Allow: /
 
 Sitemap: {{ "sitemap.xml" | absURL }}
 Sitemap: {{ "video-sitemap.xml" | absURL }}
-LLMs: {{ "llms.txt" | absURL }}
