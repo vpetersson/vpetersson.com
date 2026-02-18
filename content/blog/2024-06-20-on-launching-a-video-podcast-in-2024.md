@@ -36,7 +36,7 @@ Additionally, YouTube’s new Podcast feature, launched around the same time as 
 
 ## Six-Month Check-In: The Ups and Downs
 
-At the six-month mark, my podcast is a work in progress. I’ve hosted notable guests like [Eben Upton](/podcast/S01E12/) and [Mark Shuttleworth](/podcast/S01E13/), yet my subscriber and viewer numbers remain modest. I believe that with continued consistency, the podcast will gain momentum over the next six months, creating a flywheel effect.
+At the six-month mark, my podcast is a work in progress. I’ve hosted notable guests like [Eben Upton](/podcast/s01e12/) and [Mark Shuttleworth](/podcast/s01e13/), yet my subscriber and viewer numbers remain modest. I believe that with continued consistency, the podcast will gain momentum over the next six months, creating a flywheel effect.
 
 ### Current Statistics
 

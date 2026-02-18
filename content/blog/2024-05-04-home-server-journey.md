@@ -105,7 +105,7 @@ $ zpool create -o ashift=12 <my tank name> \
         /dev/disk/by-id/<disk 4>
 ```
 
-If you want to learn more about ZFS and its capabilities, I highly recommend checking out [my podcast episode with Allan Jude](/podcast/S01E25/), where we dive deep into ZFS architecture, features, and best practices.
+If you want to learn more about ZFS and its capabilities, I highly recommend checking out [my podcast episode with Allan Jude](/podcast/s01e25/), where we dive deep into ZFS architecture, features, and best practices.
 
 I also ended up setting up an encrypted dataset that I use for some VMs, as well as for backups.
 
