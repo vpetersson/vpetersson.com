@@ -4,8 +4,25 @@
   <meta name="robots" content="index, follow">
   <meta http-equiv="content-language" content="en">
 
+  <!-- Resource hints for third-party origins -->
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://img.youtube.com" crossorigin>
+
+  {{/* Preload LCP hero image on homepage */}}
+  {{ if .IsHome }}
+    {{ $heroImg := resources.Get site.Data.main.header_image }}
+    {{ $hero250 := $heroImg.Resize "250x webp" }}
+    {{ $hero300 := $heroImg.Resize "300x webp" }}
+    {{ $hero400 := $heroImg.Resize "400x webp" }}
+    <link rel="preload" as="image" type="image/webp" fetchpriority="high"
+      imagesrcset="{{ $hero250.RelPermalink }} 250w, {{ $hero300.RelPermalink }} 300w, {{ $hero400.RelPermalink }} 400w"
+      imagesizes="(max-width: 480px) 250px, (max-width: 768px) 300px, 400px">
+  {{ end }}
+
   <!-- Self-hosted fonts: preload critical font for LCP -->
+  {{ if .IsHome }}
   <link rel="preload" href="/fonts/anton-v25-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  {{ end }}
   <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 
   {{/* Title: unique per page type */}}
@@ -90,7 +107,12 @@
   <meta name="keywords" content="{{ . }}">
   {{ end }}
 
-  {{/* CSS Pipeline: Sass + Tailwind concatenated */}}
+  {{/* Critical CSS inlined for fast FCP */}}
+  {{ $critical := resources.Get "css/critical.css" }}
+  {{ if hugo.IsProduction }}{{ $critical = $critical | minify }}{{ end }}
+  <style>{{ $critical.Content | safeCSS }}</style>
+
+  {{/* Full CSS bundle loaded asynchronously */}}
   {{ $sass := resources.Get "css/main.scss" | toCSS }}
   {{ $tailwind := resources.Get "css/tailwind.css" | css.TailwindCSS }}
   {{ $native := resources.Get "css/native.css" }}
@@ -98,7 +120,8 @@
   {{ if hugo.IsProduction }}
     {{ $styles = $styles | minify | fingerprint }}
   {{ end }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+  <link rel="preload" href="{{ $styles.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ $styles.RelPermalink }}"></noscript>
 
   {{ partial "google-analytics.html" . }}
 

@@ -44,13 +44,26 @@
 
       <div class="hero-visual">
         <div class="hero-image-container">
+          {{ $heroImg := resources.Get site.Data.main.header_image }}
+          {{ $hero250 := $heroImg.Resize "250x webp" }}
+          {{ $hero300 := $heroImg.Resize "300x webp" }}
+          {{ $hero400 := $heroImg.Resize "400x webp" }}
+          {{ $hero500 := $heroImg.Resize "500x webp" }}
+          {{ $hero800 := $heroImg.Resize "800x webp" }}
           <img
-            src="{{ site.Data.main.header_image }}"
+            src="{{ $hero400.RelPermalink }}"
+            srcset="{{ $hero250.RelPermalink }} 250w,
+                    {{ $hero300.RelPermalink }} 300w,
+                    {{ $hero400.RelPermalink }} 400w,
+                    {{ $hero500.RelPermalink }} 500w,
+                    {{ $hero800.RelPermalink }} 800w"
+            sizes="(max-width: 480px) 250px, (max-width: 768px) 300px, 400px"
             alt="Viktor Petersson"
             class="hero-image"
             loading="eager"
-            width="400"
-            height="500"
+            fetchpriority="high"
+            width="{{ $hero400.Width }}"
+            height="{{ $hero400.Height }}"
           />
           <div class="image-decoration" aria-hidden="true">
             <div class="decoration-dot dot-1"></div>

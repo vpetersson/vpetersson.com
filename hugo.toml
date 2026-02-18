@@ -61,7 +61,7 @@ ignoreFiles = ["^_posts"]
     [minify.tdewolff.html]
       keepWhitespace = false
     [minify.tdewolff.css]
-      keepCSS2 = true
+      version = 2
 
 # Module mounts for node_modules access
 [module]

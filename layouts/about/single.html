@@ -6,7 +6,8 @@
   "@id": "{{ site.BaseURL }}about/#person",
   "name": "Viktor Petersson",
   "url": "{{ site.BaseURL }}about/",
-  "image": "{{ site.BaseURL }}{{ site.Data.main.header_image }}",
+  {{ $aboutImg := resources.Get site.Data.main.header_image }}
+  "image": "{{ $aboutImg.Permalink }}",
   "jobTitle": "Tech Entrepreneur",
   "sameAs": [
     "{{ site.Data.main.social.x }}",
@@ -27,7 +28,9 @@
     {{/* Part A: Hero intro */}}
     <div class="about-bio-grid">
       <div>
-        <img src="{{ site.Data.main.header_image }}" alt="Viktor Petersson" class="about-portrait" width="400" height="500" loading="lazy">
+        {{ $portraitImg := resources.Get site.Data.main.header_image }}
+        {{ $portrait400 := $portraitImg.Resize "400x webp" }}
+        <img src="{{ $portrait400.RelPermalink }}" alt="Viktor Petersson" class="about-portrait" width="{{ $portrait400.Width }}" height="{{ $portrait400.Height }}" loading="lazy">
       </div>
       <div>
         <h2 class="about-name">Viktor Petersson</h2>

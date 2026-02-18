@@ -1,96 +1,66 @@
 /**
- * Mobile menu functionality with accessibility improvements
+ * Mobile menu functionality (modern nav) with accessibility
  */
 (function initializeMobileMenu(): void {
   'use strict';
 
-  const SELECTORS = {
-    OPEN_BUTTON: '.open-menu',
-    CLOSE_BUTTON: '.close-menu',
-    MENU: '.mobile-menu',
-  } as const;
+  const menuToggle = document.querySelector<HTMLElement>('[data-menu-toggle]');
+  const menuPanel = document.querySelector<HTMLElement>('[data-menu-panel]');
+  const menuBackdrop = document.querySelector<HTMLElement>('[data-menu-backdrop]');
+  const menuClose = document.querySelector<HTMLElement>('[data-menu-close]');
+  const menuLinks = document.querySelectorAll<HTMLElement>('.mobile-menu-link');
 
-  const CLASSES = {
-    HIDDEN: 'hidden',
-  } as const;
+  if (!menuToggle || !menuPanel || !menuBackdrop || !menuClose) return;
 
-  const KEYS = {
-    ESCAPE: 'Escape',
-  } as const;
+  let isOpen = false;
 
-  /**
-   * Opens the mobile menu and sets appropriate ARIA attributes
-   */
-  function openMenu(menu: HTMLElement, openBtn: HTMLElement): void {
-    menu.classList.remove(CLASSES.HIDDEN);
-    menu.setAttribute('aria-hidden', 'false');
-    openBtn.setAttribute('aria-expanded', 'true');
-    
-    // Focus the first focusable element in the menu
-    const firstFocusable = menu.querySelector<HTMLElement>(
-      'a, button, input, [tabindex]:not([tabindex="-1"])'
-    );
-    firstFocusable?.focus();
+  function openMenu(): void {
+    isOpen = true;
+    menuToggle!.setAttribute('aria-expanded', 'true');
+    menuPanel!.classList.add('is-open');
+    menuBackdrop!.classList.add('is-visible');
+    document.body.style.overflow = 'hidden';
+    const firstLink = menuPanel!.querySelector<HTMLElement>('.mobile-menu-link');
+    if (firstLink) firstLink.focus();
   }
 
-  /**
-   * Closes the mobile menu and sets appropriate ARIA attributes
-   */
-  function closeMenu(menu: HTMLElement, openBtn: HTMLElement): void {
-    menu.classList.add(CLASSES.HIDDEN);
-    menu.setAttribute('aria-hidden', 'true');
-    openBtn.setAttribute('aria-expanded', 'false');
-    
-    // Return focus to the open button
-    openBtn.focus();
+  function closeMenu(): void {
+    isOpen = false;
+    menuToggle!.setAttribute('aria-expanded', 'false');
+    menuPanel!.classList.remove('is-open');
+    menuBackdrop!.classList.remove('is-visible');
+    document.body.style.overflow = '';
+    menuToggle!.focus();
   }
 
-  /**
-   * Initialize mobile menu with all event handlers
-   */
-  function initMobileMenu(): void {
-    const openBtn = document.querySelector<HTMLElement>(SELECTORS.OPEN_BUTTON);
-    const closeBtn = document.querySelector<HTMLElement>(SELECTORS.CLOSE_BUTTON);
-    const menu = document.querySelector<HTMLElement>(SELECTORS.MENU);
+  function toggleMenu(): void {
+    isOpen ? closeMenu() : openMenu();
+  }
 
-    if (!openBtn || !closeBtn || !menu) {
-      console.warn('Mobile menu elements not found');
-      return;
+  menuToggle.addEventListener('click', toggleMenu);
+  menuClose.addEventListener('click', closeMenu);
+  menuBackdrop.addEventListener('click', closeMenu);
+  menuLinks.forEach(link => link.addEventListener('click', closeMenu));
+
+  document.addEventListener('keydown', (e: KeyboardEvent) => {
+    if (e.key === 'Escape' && isOpen) closeMenu();
+  });
+
+  // Focus trap within menu panel
+  menuPanel.addEventListener('keydown', (e: KeyboardEvent) => {
+    if (e.key === 'Tab') {
+      const focusable = menuPanel!.querySelectorAll<HTMLElement>(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
     }
-
-    // Set initial ARIA attributes
-    menu.setAttribute('aria-hidden', 'true');
-    openBtn.setAttribute('aria-expanded', 'false');
-    openBtn.setAttribute('aria-controls', menu.id || 'mobile-menu');
-
-    // Open menu handler
-    openBtn.addEventListener('click', () => openMenu(menu, openBtn), { passive: true });
-
-    // Close menu handler
-    closeBtn.addEventListener('click', () => closeMenu(menu, openBtn), { passive: true });
-
-    // Close menu on Escape key
-    document.addEventListener('keydown', (event: KeyboardEvent) => {
-      if (event.key === KEYS.ESCAPE && !menu.classList.contains(CLASSES.HIDDEN)) {
-        closeMenu(menu, openBtn);
-      }
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener('click', (event: MouseEvent) => {
-      const target = event.target as Node;
-      if (!menu.classList.contains(CLASSES.HIDDEN) && 
-          !menu.contains(target) && 
-          !openBtn.contains(target)) {
-        closeMenu(menu, openBtn);
-      }
-    });
-  }
-
-  // Initialize on DOM ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initMobileMenu);
-  } else {
-    initMobileMenu();
-  }
+  });
 })();
