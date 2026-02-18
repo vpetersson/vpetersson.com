@@ -5,6 +5,7 @@
 (function initializeCodeBlocks(): void {
   'use strict';
 
+  function init(): void {
   const CONFIG = {
     FEEDBACK_DURATION_MS: 2000,
     DEFAULT_LANGUAGE: 'text',
@@ -331,4 +332,12 @@
   }
 
   wrapTables();
+  } // end init()
+
+  // Defer initialization to reduce TBT — run when browser is idle
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(init);
+  } else {
+    setTimeout(init, 200);
+  }
 })();

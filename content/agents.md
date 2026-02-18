@@ -3,7 +3,7 @@ name: lint-and-build-website
 version: "3.0.0"
 description: >
   Passes only when lints and builds cleanly
-_build:
+build:
   render: never
   list: never
 ---

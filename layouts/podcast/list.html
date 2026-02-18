@@ -15,11 +15,13 @@
       </div>
     </div>
     <div class="podcast-hero-image">
+      {{ $podImg := resources.Get site.Data.main.header_image }}
+      {{ $pod400 := $podImg.Resize "400x webp" }}
       <img
-        src="{{ site.Data.main.header_image }}"
+        src="{{ $pod400.RelPermalink }}"
         alt="Viktor Petersson"
-        width="400"
-        height="500"
+        width="{{ $pod400.Width }}"
+        height="{{ $pod400.Height }}"
         loading="lazy"
       />
     </div>
