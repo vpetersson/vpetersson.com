@@ -18,7 +18,7 @@
     - type: podcast
       publication: System76 Transmission Log
       title: "Linux Hardware, Open Source Summit, and a chat with Screenly"
-      link: https://system76.transistor.fm/19
+      spotify: https://open.spotify.com/episode/7w3q7K75vSukYJFN8XWMsC
     - type: panel
       event: Digital Signage Summit Europe
       location: Munich, Germany
@@ -82,7 +82,7 @@
     - type: press
       publication: EE Times Europe Magazine
       title: "Cybersecurity Legislation Driving SBOMs"
-      link: https://www.eetimes.eu/cybersecurity-legislation-driving-sboms/
+      link: https://www.eetimes.com/cybersecurity-legislation-driving-sboms/
     - type: talk
       event: "CycloneDX / Transparency Exchange API (TEA)'s KoalaCon"
       video: https://www.youtube.com/watch?v=NStzYW4WnEE
@@ -223,7 +223,6 @@
     - type: press
       publication: Syncsort
       title: "Interview with Viktor Petersson, VP of Business Development for IAAS provider CloudSigma"
-      link: https://blog.syncsort.com/2015/01/big-data/interview-viktor-petersson-vp-business-development-iaas-provider-cloudsigma/
     - type: talk
       event: IoT Day @ BBVA Innovation Center
       location: Madrid, Spain
@@ -240,7 +239,6 @@
     - type: talk
       event: CloudExpo Europe
       location: London, UK
-      video: https://www.youtube.com/watch?v=BfCzbD1WXO8
     - type: panel
       event: CloudExpo Europe
       location: London, UK
