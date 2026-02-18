@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="blog-header">
+  <h2 class="uppercase text-[48px] md:text-[91px] lg:text-[140px] xl:text-[186px] text-white text-center">
+    Tags
+  </h2>
+</div>
+
+<div class="bg-primaryBG px-6 lg:px-36 py-[60px] lg:py-[100px]">
+  <div class="w-full xl:max-w-[1110px] m-auto">
+    <div class="flex flex-wrap gap-4">
+      {{ range .Data.Terms.Alphabetical }}
+        <a href="{{ .Page.RelPermalink }}" class="tag">
+          {{ .Page.Title }} ({{ .Count }})
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

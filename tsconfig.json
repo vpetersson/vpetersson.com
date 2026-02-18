@@ -10,12 +10,11 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "noEmit": false,
-    "outDir": "./assets/js",
-    "rootDir": "./src",
+    "noEmit": true,
+    "rootDir": "./assets/js",
     "declaration": false,
     "sourceMap": false
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "_site", "assets/js/**/*.js"]
+  "include": ["assets/js/**/*"],
+  "exclude": ["node_modules", "public", "resources"]
 }

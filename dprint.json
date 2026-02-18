@@ -1,6 +1,6 @@
 {
   "includes": ["**/*.md"],
-  "excludes": ["**/node_modules", "**/*-lock.json", "_site", ".jekyll-cache"],
+  "excludes": ["**/node_modules", "**/*-lock.json", "public", "resources"],
   "plugins": [
     "https://plugins.dprint.dev/markdown-0.17.8.wasm"
   ]

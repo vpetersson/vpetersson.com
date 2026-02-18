@@ -1,0 +1,6491 @@
+[
+  {
+    "sentence": "Thanks for having me.",
+    "startTime": "00:04",
+    "endTime": "00:05",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So, yeah, absolutely.",
+    "startTime": "00:06",
+    "endTime": "00:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Very happy to have you on.",
+    "startTime": "00:07",
+    "endTime": "00:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We've been trading emails, had a few calls over the last like six months and there's a lot of overlap.",
+    "startTime": "00:09",
+    "endTime": "00:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the big reason why I wanted to have you on the show and do a bit of a kind of a devex SDLC kind of episode today.",
+    "startTime": "00:14",
+    "endTime": "00:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you have good experience in this domain and I kind of wanted to maybe kick it off there with what you're doing today and then we can dive into bigger trends industry.",
+    "startTime": "00:23",
+    "endTime": "00:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But you are the founder of a company called Earthly and so maybe we can start off there with a quick intro to Earthly to just kind of level the expectation of the conversations going forward.",
+    "startTime": "00:33",
+    "endTime": "00:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay, perfect.",
+    "startTime": "00:44",
+    "endTime": "00:45",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "00:45",
+    "endTime": "00:46",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So, hi everyone.",
+    "startTime": "00:46",
+    "endTime": "00:47",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm.",
+    "startTime": "00:47",
+    "endTime": "00:48",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm Vlad.",
+    "startTime": "00:48",
+    "endTime": "00:49",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm the CEO of Earthly.",
+    "startTime": "00:49",
+    "endTime": "00:51",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We've been building this company over the last five years or so.",
+    "startTime": "00:51",
+    "endTime": "00:54",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We've been focusing around the area of managing the SDLC ecosystem better.",
+    "startTime": "00:54",
+    "endTime": "00:58",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Our first product that we built is a framework to write better CI cd and that took off as an open source project.",
+    "startTime": "00:58",
+    "endTime": "01:06",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's now at 11,000 stars on GitHub, is being used by big companies such as Adobe and Roche and a bunch of other big names like that.",
+    "startTime": "01:06",
+    "endTime": "01:17",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And currently we're building our second product which is kind of more aligned with the SDLC and perhaps the supply chain that I know Victor is a big fan of.",
+    "startTime": "01:17",
+    "endTime": "01:30",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Our new product called Lunar is about managing the SDLC at scale in big organizations and managing engineering practices in these organizations.",
+    "startTime": "01:30",
+    "endTime": "01:41",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Good stuff.",
+    "startTime": "01:42",
+    "endTime": "01:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's a lot to unpack there.",
+    "startTime": "01:42",
+    "endTime": "01:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So what I find really interesting is kind of like taking a bigger step at this whole wave of companies, I guess that's trying to tackle this CICD pipeline.",
+    "startTime": "01:44",
+    "endTime": "01:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think it's kind of hard.",
+    "startTime": "01:54",
+    "endTime": "01:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Can't have a really conversation without mentioning Dagger from solving I guess as well did something similar in this space.",
+    "startTime": "01:56",
+    "endTime": "02:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And my impression is my impression, but this is coming from people coming from Fang, largely looking at what does the state of CI look like for non faang companies.",
+    "startTime": "02:03",
+    "endTime": "02:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I believe that's kind of what we started conversation like a few months back.",
+    "startTime": "02:17",
+    "endTime": "02:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "02:22",
+    "endTime": "02:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like this is kind of like your ex Googler.",
+    "startTime": "02:22",
+    "endTime": "02:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So is like maybe like we start there like how is the CI pipeline different at Fang or Google?",
+    "startTime": "02:25",
+    "endTime": "02:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean I guess you can really speak about Google versus the rest of us, right?",
+    "startTime": "02:33",
+    "endTime": "02:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like maybe that's a good starting point.",
+    "startTime": "02:37",
+    "endTime": "02:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, exactly.",
+    "startTime": "02:39",
+    "endTime": "02:40",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, it's a huge difference.",
+    "startTime": "02:40",
+    "endTime": "02:42",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "02:42",
+    "endTime": "02:42",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So if you might have read articles about Google and Facebook and Twitter or X, I guess these days you might have seen that they have a significant investment internal developer infrastructure.",
+    "startTime": "02:42",
+    "endTime": "02:55",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think Google started this trend.",
+    "startTime": "02:55",
+    "endTime": "02:57",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They invented this technology called Basel to.",
+    "startTime": "02:57",
+    "endTime": "03:00",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Basically they started off with a bunch of make files, and those make files were kind of getting unwieldy.",
+    "startTime": "03:00",
+    "endTime": "03:06",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They have this massive mono repo where they shove everything, every single programming language, every single piece of code that they write, and initially it was all managed by a bunch of make files.",
+    "startTime": "03:06",
+    "endTime": "03:16",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Now imagine how quickly that gets out of control, right?",
+    "startTime": "03:16",
+    "endTime": "03:19",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "03:19",
+    "endTime": "03:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so, I don't know, maybe 15 years ago or maybe a bit more, they invested in a dedicated internal tool that you might call maybe a CI.",
+    "startTime": "03:20",
+    "endTime": "03:29",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But this was pre Jenkins era perhaps, right.",
+    "startTime": "03:29",
+    "endTime": "03:31",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So like it was very early on.",
+    "startTime": "03:31",
+    "endTime": "03:34",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And essentially it's a build system that understands deeply the dependencies between the different components in the organization.",
+    "startTime": "03:34",
+    "endTime": "03:41",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "03:41",
+    "endTime": "03:42",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it can do a lot of incremental building, it can do remote building, and it can do heavy caching, which is critical for C code bases that Google was actually heavy on.",
+    "startTime": "03:42",
+    "endTime": "03:53",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so a lot of that sort of central type of investment resulted in a very sort of standardized type of developer infrastructure.",
+    "startTime": "03:53",
+    "endTime": "04:04",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that has been actually a massive sort of productivity enhancer for Google.",
+    "startTime": "04:04",
+    "endTime": "04:11",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And if you remember back in the day, Google was the hottest thing to work for.",
+    "startTime": "04:11",
+    "endTime": "04:15",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Part of that was because they had really getting that really, well, like the developer infrastructure, making developers happy, productive and so on.",
+    "startTime": "04:16",
+    "endTime": "04:26",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Now, outside of Google, in parallel, something else was happening.",
+    "startTime": "04:26",
+    "endTime": "04:30",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Containers were coming along.",
+    "startTime": "04:30",
+    "endTime": "04:32",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Google actually internally was kind of, I guess, late or maybe never even took on containers the same way.",
+    "startTime": "04:32",
+    "endTime": "04:38",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But containers outside of FAANG in general created a very different type of shift towards heavy microservice use and freedom for each microservice to be defined completely differently in its own specific way.",
+    "startTime": "04:38",
+    "endTime": "04:54",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "04:54",
+    "endTime": "04:54",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that meant, you know, there's more decoupling, that means you can have more freedom within each team to innovate better.",
+    "startTime": "04:54",
+    "endTime": "05:02",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But at the same time, that creates massive chaos when it comes to the developer infrastructure.",
+    "startTime": "05:02",
+    "endTime": "05:07",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "05:07",
+    "endTime": "05:08",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's decoupling, but also like a really complex mesh of interdependencies that are really hard to test in your CI pipeline.",
+    "startTime": "05:08",
+    "endTime": "05:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "05:16",
+    "endTime": "05:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Exactly.",
+    "startTime": "05:16",
+    "endTime": "05:17",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "05:17",
+    "endTime": "05:18",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Testing is just tip of the iceberg, Right.",
+    "startTime": "05:18",
+    "endTime": "05:20",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "When you think about, you know, how do you insert now compliance or how do you insert additional verification that maybe individual teams are not thinking about, but at scale.",
+    "startTime": "05:20",
+    "endTime": "05:30",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You're now wondering whether every single team is following the proper engineering standards that your organization wants to abide by.",
+    "startTime": "05:30",
+    "endTime": "05:37",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "05:37",
+    "endTime": "05:37",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Whether that's driven by compliance or, I don't know, maybe protecting your reputation, avoiding incidents in production, preventing security incidents.",
+    "startTime": "05:37",
+    "endTime": "05:46",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so on all of those things are difficult now to kind of enforce.",
+    "startTime": "05:46",
+    "endTime": "05:51",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's just a big sea of heterogeneous sort of different things that.",
+    "startTime": "05:51",
+    "endTime": "05:57",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And basically you no longer have a single insertion point.",
+    "startTime": "05:57",
+    "endTime": "06:00",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think that's the biggest sort of drawback of this sort of movement.",
+    "startTime": "06:00",
+    "endTime": "06:05",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "06:05",
+    "endTime": "06:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the docker file is almost like the modern make file.",
+    "startTime": "06:06",
+    "endTime": "06:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "06:09",
+    "endTime": "06:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's of the modern CI pipeline and the dev environment.",
+    "startTime": "06:09",
+    "endTime": "06:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And yes, one of the biggest pain points that I've seen is GitHub Action has become kind of the norm for CI these days, I would argue.",
+    "startTime": "06:13",
+    "endTime": "06:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the problem is that you can't run this locally, like you can't run GitHub Actions locally, which means that every time you just want to test things, as things are running on CI, you need to push to CI.",
+    "startTime": "06:23",
+    "endTime": "06:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that kind of like, adds a lot of latency when you just want to see if things are working.",
+    "startTime": "06:38",
+    "endTime": "06:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's the other side of this whole wave of new CI tooling, I would say, like CI agnostic tooling that could also run locally, like maybe speak a bit about how you see that as well.",
+    "startTime": "06:43",
+    "endTime": "06:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, for sure.",
+    "startTime": "06:54",
+    "endTime": "06:55",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The history of CI, I guess, started becoming mainstream with Jenkins.",
+    "startTime": "06:56",
+    "endTime": "07:01",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Jenkins was probably the first popular implementation of such a system.",
+    "startTime": "07:01",
+    "endTime": "07:04",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I guess it was called Hudson back in the day.",
+    "startTime": "07:05",
+    "endTime": "07:07",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But over time we kind of organically grew in this direction, where CI and local dev stack are two completely different things.",
+    "startTime": "07:07",
+    "endTime": "07:16",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "07:16",
+    "endTime": "07:16",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that hasn't really changed.",
+    "startTime": "07:16",
+    "endTime": "07:18",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And there were some innovations in the field.",
+    "startTime": "07:18",
+    "endTime": "07:20",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Perhaps companies like CircleCI and others have sort of taken Jenkins and made it a SaaS like you no longer have to kind of manage it.",
+    "startTime": "07:20",
+    "endTime": "07:29",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's also much more isolated.",
+    "startTime": "07:29",
+    "endTime": "07:31",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Every single job starts from scratch with a completely new blank slate and.",
+    "startTime": "07:31",
+    "endTime": "07:35",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so on.",
+    "startTime": "07:35",
+    "endTime": "07:35",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And these were good innovations, good sort of steps forward, but we never really integrated the magic of containers into this whole experience.",
+    "startTime": "07:35",
+    "endTime": "07:45",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And the beauty of Containers is that it runs consistently no matter where you execute it.",
+    "startTime": "07:45",
+    "endTime": "07:50",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "07:50",
+    "endTime": "07:50",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's a big thing.",
+    "startTime": "07:51",
+    "endTime": "07:52",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You kind of isolate its dependencies and so on.",
+    "startTime": "07:52",
+    "endTime": "07:54",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "For that reason, we haven't really taken the CI experience to put it on the developer's laptop as well, which is part actually of our mission.",
+    "startTime": "07:55",
+    "endTime": "08:04",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "With our first product, we allow companies to essentially develop their cicd pipelines on their laptops and be able to test and execute those CICD pipelines on their laptops.",
+    "startTime": "08:04",
+    "endTime": "08:16",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And when they're ready, they can push it up to GitHub and it's pretty much guaranteed that it's going to work, because you've run all of that in containers through the magic of Earthly, we found that to be a good enabler for debugging CICD failures, which are oftentimes very difficult to reproduce.",
+    "startTime": "08:16",
+    "endTime": "08:33",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But also developing new CI CD pipelines much faster.",
+    "startTime": "08:34",
+    "endTime": "08:37",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You no longer have to wait for git commit over and over again.",
+    "startTime": "08:37",
+    "endTime": "08:41",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Do that long cycle like that.",
+    "startTime": "08:41",
+    "endTime": "08:43",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Finally, there's something to be said about cross team collaboration.",
+    "startTime": "08:44",
+    "endTime": "08:48",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We mentioned about microservices where every team has its own dev stack and that means each team has difficulty reproducing the build of the other team.",
+    "startTime": "08:49",
+    "endTime": "08:58",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There is perhaps a readme there.",
+    "startTime": "08:58",
+    "endTime": "08:59",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You have to follow line by line, configure this file and this other file and so on.",
+    "startTime": "08:59",
+    "endTime": "09:04",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Whereas with Earthly, everything is containerized, you just run this one command and everything just works.",
+    "startTime": "09:04",
+    "endTime": "09:10",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "09:10",
+    "endTime": "09:10",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you never have to kind of wonder how exactly you're going to get this other project set up.",
+    "startTime": "09:10",
+    "endTime": "09:15",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that has been very powerful for our open source users.",
+    "startTime": "09:15",
+    "endTime": "09:19",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, And I think, I mean this as CIs evolved, like if you go back into the days of like early day Jenkins, right.",
+    "startTime": "09:19",
+    "endTime": "09:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "CI was just a bash executor, right.",
+    "startTime": "09:28",
+    "endTime": "09:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That was like you just ran a bunch of shell scripts in like a sequence that's no longer true.",
+    "startTime": "09:31",
+    "endTime": "09:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like look at git, look at a modern CI pipeline on GitHub.",
+    "startTime": "09:37",
+    "endTime": "09:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like you have GitHub Actions module.",
+    "startTime": "09:40",
+    "endTime": "09:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You do this, you do that, you pull in caching from here.",
+    "startTime": "09:42",
+    "endTime": "09:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like it's so much more complex than way back when you're not dealing with a dsl, essentially it's almost a dsl.",
+    "startTime": "09:45",
+    "endTime": "09:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, Exactly.",
+    "startTime": "09:55",
+    "endTime": "09:57",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think in many ways some of the same basic concepts have remained similar.",
+    "startTime": "09:58",
+    "endTime": "10:05",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "10:06",
+    "endTime": "10:07",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Now we write in YAML, it's no longer exactly like a bash sort of line by line, execute this and execute that.",
+    "startTime": "10:07",
+    "endTime": "10:14",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And yeah, we have caching, although I would argue that caching is still kind of rudimentary.",
+    "startTime": "10:14",
+    "endTime": "10:20",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And we found that, you know, if you actually invest in understanding the dependencies between projects and you have a system that really can leverage that heavily, you can get to like 10x faster CI builds just by doing that.",
+    "startTime": "10:20",
+    "endTime": "10:33",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "10:33",
+    "endTime": "10:34",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that's part of what Earthly actually also delivers.",
+    "startTime": "10:34",
+    "endTime": "10:37",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The other thing I've seen in recent CI sort of environments is that there is use of plugins.",
+    "startTime": "10:38",
+    "endTime": "10:44",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "10:44",
+    "endTime": "10:45",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's kind of natural.",
+    "startTime": "10:45",
+    "endTime": "10:46",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And recently there was this vulnerability in, I was going to say change files.",
+    "startTime": "10:46",
+    "endTime": "10:53",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "10:53",
+    "endTime": "10:53",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "10:53",
+    "endTime": "10:54",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And before that, some years ago, there was codecov.",
+    "startTime": "10:55",
+    "endTime": "10:57",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "10:57",
+    "endTime": "10:58",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Things that you put in your CI and there's very little governance around.",
+    "startTime": "10:58",
+    "endTime": "11:02",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like people care a lot about what you put in production, but maybe aren't so careful about what they're putting in their CI, right?",
+    "startTime": "11:02",
+    "endTime": "11:08",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There's no S bomb for CI cd, right?",
+    "startTime": "11:09",
+    "endTime": "11:11",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or there is, but people don't.",
+    "startTime": "11:11",
+    "endTime": "11:13",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Funny enough, there is a conversation I read this week actually on the system analyst about actually defining this stuff before.",
+    "startTime": "11:13",
+    "endTime": "11:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think they call it a P bomb, like a pipeline bomb essentially.",
+    "startTime": "11:20",
+    "endTime": "11:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But you're absolutely correct, right?",
+    "startTime": "11:23",
+    "endTime": "11:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In particular in the world we live in with Cursor, that I would imagine Cursor is probably writing a lot of the GitHub action files these days.",
+    "startTime": "11:25",
+    "endTime": "11:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's just like write me this pipeline and it just pulls in various modules and one of the first thing I always do is like, okay, cool, but do we need this or can we actually do ourselves?",
+    "startTime": "11:33",
+    "endTime": "11:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That is the first thing, right?",
+    "startTime": "11:46",
+    "endTime": "11:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And also like, and if we do need it, what's the security track record?",
+    "startTime": "11:47",
+    "endTime": "11:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like how many, Even if you use like something very rudimentary, like how many GitHub stars does this have?",
+    "startTime": "11:52",
+    "endTime": "11:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like obviously in the change of change log, perhaps not very good as a proxy, but at least is a proxy rather than a project out there with like five stars on GitHub that we have no audit trailer at all.",
+    "startTime": "11:57",
+    "endTime": "12:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh yeah, Even the more popular ones, you know, we've seen some really low level stuff that is extremely popular, basically ubiquitous and you know, after many years of exposure, we just figured out, oh, there was a vulnerability here all along, right.",
+    "startTime": "12:11",
+    "endTime": "12:30",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And you don't know what kind of like state funded foreign government has been leveraging that all along or you just don't know.",
+    "startTime": "12:30",
+    "endTime": "12:40",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's kind of like this big unknown sort of risk you're kind of taking.",
+    "startTime": "12:40",
+    "endTime": "12:43",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "12:44",
+    "endTime": "12:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's it, right?",
+    "startTime": "12:44",
+    "endTime": "12:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like it's.",
+    "startTime": "12:45",
+    "endTime": "12:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There are so many levels of abstraction involved, right?",
+    "startTime": "12:46",
+    "endTime": "12:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So like if you look at the anatomy of one of these modules, like it's the basic GitHub module, like it's probably, let's say for instance, written in Ruby, also Ruby in npm, like in JavaScript.",
+    "startTime": "12:50",
+    "endTime": "13:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "13:02",
+    "endTime": "13:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like will it probably pulling in like 50 or 150 different dependencies which in turn all might be have their own vulnerability track record, right?",
+    "startTime": "13:03",
+    "endTime": "13:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's such a complex space to do proper security audits on, right.",
+    "startTime": "13:12",
+    "endTime": "13:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You kind of need like, not only do you need to pin the mod you're using, I know Open SF got some tools around this for pinning a hash against the version or all that stuff, right.",
+    "startTime": "13:18",
+    "endTime": "13:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's great, but you also need corresponding like an S BOM essentially against that hash.",
+    "startTime": "13:30",
+    "endTime": "13:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you can all say, okay, cool, this has this.",
+    "startTime": "13:36",
+    "endTime": "13:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But also this actually is included in there.",
+    "startTime": "13:38",
+    "endTime": "13:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if there is a CV in there, you can actually find this.",
+    "startTime": "13:40",
+    "endTime": "13:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But that's.",
+    "startTime": "13:44",
+    "endTime": "13:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "13:45",
+    "endTime": "13:45",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Now it becomes such a tremendously complex problem to just run your CI.",
+    "startTime": "13:45",
+    "endTime": "13:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, exactly.",
+    "startTime": "13:51",
+    "endTime": "13:52",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Especially that we want to insert all of the security verification in CI CD when perhaps the goal of each individual application team is to ship features and not to be held back by security scanners and all that.",
+    "startTime": "13:53",
+    "endTime": "14:09",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think that's where there is a bit of misunderstanding between central teams like platform and security and so on and the individual feature or application teams.",
+    "startTime": "14:09",
+    "endTime": "14:20",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think in that regard, a lot of times the responsibility of owning the CI CD pipeline is kind of shared.",
+    "startTime": "14:20",
+    "endTime": "14:27",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "14:27",
+    "endTime": "14:27",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So like the platform team or the security team wants to insert a security tool and the application team doesn't even acknowledge the PR whatsoever.",
+    "startTime": "14:27",
+    "endTime": "14:36",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They're just, you know, full steam ahead.",
+    "startTime": "14:36",
+    "endTime": "14:37",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We have to ship this or whatever.",
+    "startTime": "14:37",
+    "endTime": "14:38",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, right.",
+    "startTime": "14:38",
+    "endTime": "14:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it takes, we've heard from companies.",
+    "startTime": "14:39",
+    "endTime": "14:42",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We were doing this industry research last year.",
+    "startTime": "14:42",
+    "endTime": "14:44",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Sometimes it takes a year for PRs that are submitted by the central teams to get merged into all of the projects.",
+    "startTime": "14:44",
+    "endTime": "14:52",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The long tail is insane.",
+    "startTime": "14:52",
+    "endTime": "14:54",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And all that time you're kind of exposed and don't even know what exactly your posture is all around your organization.",
+    "startTime": "14:54",
+    "endTime": "15:01",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We found that to be a big issue because there's individual tools to extract S BOMs for different types of languages, containers, and you kind of skin the cat in so many ways.",
+    "startTime": "15:03",
+    "endTime": "15:15",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But currently there are no good tools out there to understand whether those tools have actually been implemented everywhere within the organization.",
+    "startTime": "15:15",
+    "endTime": "15:24",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "One thing.",
+    "startTime": "15:24",
+    "endTime": "15:25",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "15:25",
+    "endTime": "15:25",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And the other thing is how do we make this shared CI CD pipeline have clear boundaries about who owns what?",
+    "startTime": "15:25",
+    "endTime": "15:33",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, perhaps the platform team does need to own some piece of that to be able to answer verification.",
+    "startTime": "15:33",
+    "endTime": "15:37",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "15:38",
+    "endTime": "15:38",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "15:38",
+    "endTime": "15:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And there's also like not all CI runs are equal either.",
+    "startTime": "15:39",
+    "endTime": "15:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "15:43",
+    "endTime": "15:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because if the attack vectors are different, right.",
+    "startTime": "15:44",
+    "endTime": "15:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you have a run that just does something to your checked out code base and doesn't actually write anything back or ship any artifacts or ship any binaries or ship anything.",
+    "startTime": "15:49",
+    "endTime": "16:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like the blast rate is done as pretty slim, right?",
+    "startTime": "16:00",
+    "endTime": "16:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Sure.",
+    "startTime": "16:02",
+    "endTime": "16:02",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You could do something nasty.",
+    "startTime": "16:02",
+    "endTime": "16:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Maybe you can leak the secrets.",
+    "startTime": "16:04",
+    "endTime": "16:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay, sure, that's bad, but it's not going to have any significant security issues on you actually what you actually ship into your customers.",
+    "startTime": "16:06",
+    "endTime": "16:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "16:16",
+    "endTime": "16:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So yeah, that's another element that is so much more complex in this pipeline because you can't like it's hard to I guess programmatically detect that in the pipeline, what it does.",
+    "startTime": "16:17",
+    "endTime": "16:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, exactly.",
+    "startTime": "16:29",
+    "endTime": "16:31",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you touched on a great point here.",
+    "startTime": "16:31",
+    "endTime": "16:33",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "A lot of the companies that need to insert this very strict type of verification, oftentimes invest in central CI CD templates.",
+    "startTime": "16:33",
+    "endTime": "16:41",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So every project would have to import that.",
+    "startTime": "16:41",
+    "endTime": "16:43",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that means you're going to get all or nothing.",
+    "startTime": "16:43",
+    "endTime": "16:46",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You either import that and you're going to get the whole shebang of security verification.",
+    "startTime": "16:46",
+    "endTime": "16:50",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it's going to be extremely restrictive.",
+    "startTime": "16:50",
+    "endTime": "16:52",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Even though maybe, like you're saying your application might not be even talking to the Internet, maybe it's not even handling any user data, it might be just an internal thing.",
+    "startTime": "16:52",
+    "endTime": "17:00",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "17:00",
+    "endTime": "17:00",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Maybe not shipping anything at all.",
+    "startTime": "17:01",
+    "endTime": "17:02",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And in that regard, you need a way to create scope for what you care about.",
+    "startTime": "17:04",
+    "endTime": "17:10",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "17:10",
+    "endTime": "17:10",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Have a definition of scope.",
+    "startTime": "17:10",
+    "endTime": "17:12",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What's in scope for this type of compliance, what's in scope for handling pii, what's in scope for things that are exposed to the Internet and so on, and all of these different things you probably want to treat differently because you want to have as much agility as possible in general.",
+    "startTime": "17:12",
+    "endTime": "17:28",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But for the things that are more sensitive, you.",
+    "startTime": "17:29",
+    "endTime": "17:31",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You can afford to kind of insert that scanner, maybe takes 20 extra minutes of your, you know, CI time or whatever.",
+    "startTime": "17:31",
+    "endTime": "17:38",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But you have to kind of treat these differently.",
+    "startTime": "17:38",
+    "endTime": "17:40",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, yeah.",
+    "startTime": "17:41",
+    "endTime": "17:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's such a complex thing to apply this blueprint across all these things.",
+    "startTime": "17:43",
+    "endTime": "17:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because I guess the benefit with the old style CI where everything was a bash script, was that there was limited attack vectors in that sense.",
+    "startTime": "17:48",
+    "endTime": "17:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "17:56",
+    "endTime": "17:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, there were like fewer things that were easier to audit, I guess, in many ways.",
+    "startTime": "17:57",
+    "endTime": "18:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "18:01",
+    "endTime": "18:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But now we have this level of abstraction.",
+    "startTime": "18:02",
+    "endTime": "18:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You have like the CI modules that you're calling on, you have docker files that you need to be audited.",
+    "startTime": "18:05",
+    "endTime": "18:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You have like, there are so many possible attack vectors.",
+    "startTime": "18:10",
+    "endTime": "18:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And not only that, like, how do you even audit that?",
+    "startTime": "18:13",
+    "endTime": "18:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "18:16",
+    "endTime": "18:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, what version, like, are you running an UL Docker container with like, I don't know, like an node version that's not even.",
+    "startTime": "18:16",
+    "endTime": "18:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's eul, Right?",
+    "startTime": "18:22",
+    "endTime": "18:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, right, yes.",
+    "startTime": "18:23",
+    "endTime": "18:25",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's so complicated.",
+    "startTime": "18:25",
+    "endTime": "18:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "18:27",
+    "endTime": "18:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So how do you, like, exactly.",
+    "startTime": "18:27",
+    "endTime": "18:29",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How are you approaching this as a problem space?",
+    "startTime": "18:29",
+    "endTime": "18:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "18:32",
+    "endTime": "18:33",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, the way we've been sort of the mantra we've been operating on with this new product has been, you know, there's a lot of monitoring that goes in production.",
+    "startTime": "18:33",
+    "endTime": "18:42",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, you have logs, you have metrics, you have instrumentation, you have alerts and firewalls and policies and so on, but there's nothing like that for the sdlc.",
+    "startTime": "18:42",
+    "endTime": "18:53",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The stuff that happens before production, that has been our guiding light towards what we're building here.",
+    "startTime": "18:53",
+    "endTime": "18:59",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We're basically building monitoring for sdlc.",
+    "startTime": "18:59",
+    "endTime": "19:03",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What does that mean you have to understand what exactly is being built and how it is being built throughout your sdlc?",
+    "startTime": "19:03",
+    "endTime": "19:11",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like I mentioned, there's that high degree of diversity within each project.",
+    "startTime": "19:11",
+    "endTime": "19:15",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You want to be able to insert centrally this verification without having to integrate with individual projects one at a time, where you're depending upon each team to adopt your templates or your additional gates or whatnot.",
+    "startTime": "19:15",
+    "endTime": "19:28",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You need to have independent control of some of these general gates and be able to select.",
+    "startTime": "19:28",
+    "endTime": "19:35",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I want to apply these to the services that are in scope for this compliance versus I want to.",
+    "startTime": "19:35",
+    "endTime": "19:41",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I want to enforce these things in this other way.",
+    "startTime": "19:41",
+    "endTime": "19:45",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "For things that maybe have different kinds of requirements from the compliance or security perspective.",
+    "startTime": "19:45",
+    "endTime": "19:51",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Having this ability to insert in a single spot and create a system of record of the posture of each application.",
+    "startTime": "19:51",
+    "endTime": "20:01",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "When I mean system of record, I mean things like, is your application properly tested?",
+    "startTime": "20:02",
+    "endTime": "20:07",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is your application using the right security scanners, Is your application perhaps handling this kind of data or in scope for this other compliance and so on.",
+    "startTime": "20:07",
+    "endTime": "20:18",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All of this posture information can then be used as a way to monitor things.",
+    "startTime": "20:19",
+    "endTime": "20:24",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How is code coverage deviating over time and so on?",
+    "startTime": "20:25",
+    "endTime": "20:28",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or are you handling your vulnerabilities within the right timeframe?",
+    "startTime": "20:28",
+    "endTime": "20:31",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I believe for many compliances is like 30 days for critical vulnerabilities, for example.",
+    "startTime": "20:32",
+    "endTime": "20:36",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Then you create policies based on these things.",
+    "startTime": "20:37",
+    "endTime": "20:39",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You can say things like, if your code coverage is not 80% or whatever, initially I'm going to monitor it, but over time I might even enforce it and give you feedback in your pr.",
+    "startTime": "20:39",
+    "endTime": "20:51",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "As soon as you open a PR and affect your code coverage, I will block your PR and be able to insert myself as a platform team without ever having to edit your CI cd.",
+    "startTime": "20:52",
+    "endTime": "21:05",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "21:05",
+    "endTime": "21:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I've heard of people doing similar things with like.",
+    "startTime": "21:06",
+    "endTime": "21:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I know there are banks out there who are using like dependency track, for instance, to do like audit on SBOMs.",
+    "startTime": "21:09",
+    "endTime": "21:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then they tie that into their policy agents to say, oh, if you have any cvs, block the deployment.",
+    "startTime": "21:14",
+    "endTime": "21:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "21:20",
+    "endTime": "21:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes, yes.",
+    "startTime": "21:21",
+    "endTime": "21:22",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But that's also a little bit flawed because what if you already have that vulnerability and now you actually, you're improving the posture but you're still blocking the improvement, right?",
+    "startTime": "21:22",
+    "endTime": "21:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, it gets a little bit tricky.",
+    "startTime": "21:33",
+    "endTime": "21:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Exactly.",
+    "startTime": "21:34",
+    "endTime": "21:35",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You need what we call gradual enforcement.",
+    "startTime": "21:35",
+    "endTime": "21:37",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that is like each control you want to enforce has to be treated differently and we have like different levels.",
+    "startTime": "21:37",
+    "endTime": "21:45",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So for example, you could initially just monitor things whether they're, you know, in a good state or not, and perhaps use offline sort of, I would call it an offline sort of campaigns where you kind of advocate for this new practice within the engineering teams.",
+    "startTime": "21:45",
+    "endTime": "21:59",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, send them GitHub issues, send them JIRA tickets and whatnot, and get the percentage higher and higher.",
+    "startTime": "21:59",
+    "endTime": "22:06",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then when it's close to 100% or maybe 80, 90%, you announce that you're going to start blocking PRs.",
+    "startTime": "22:06",
+    "endTime": "22:12",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "22:12",
+    "endTime": "22:13",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And maybe after you start blocking PRs, then the next step is perhaps blocking production.",
+    "startTime": "22:13",
+    "endTime": "22:17",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But sometimes there's, especially in the security space, there's going to be false positives and you want to be careful with blocking things unnecessarily.",
+    "startTime": "22:17",
+    "endTime": "22:26",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So some things will forever stay in this mode where you kind of monitor things, but not necessarily strictly enforce them.",
+    "startTime": "22:26",
+    "endTime": "22:33",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And you kind of couple that with the security team helping out, triage all the false positives and all that.",
+    "startTime": "22:33",
+    "endTime": "22:39",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But we've seen this.",
+    "startTime": "22:40",
+    "endTime": "22:41",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's hard to have a hard and fast rule for everything.",
+    "startTime": "22:42",
+    "endTime": "22:45",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And you need the flexibility to be able to say, these policies I want to be very strict about because I know they're going to cause incidents, whereas the other policies, I want to be more flexible because they could be false positive and such.",
+    "startTime": "22:45",
+    "endTime": "22:59",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "22:59",
+    "endTime": "23:00",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There's a lot to unpack there.",
+    "startTime": "23:00",
+    "endTime": "23:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the one thing that I'm curious about how you're approaching is the whole, like, problem of building.",
+    "startTime": "23:01",
+    "endTime": "23:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "23:07",
+    "endTime": "23:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because, like, how do you monitor a build?",
+    "startTime": "23:08",
+    "endTime": "23:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because you essentially, in order to do it properly, you can need to monitor every single request that your build does outbound.",
+    "startTime": "23:11",
+    "endTime": "23:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "23:21",
+    "endTime": "23:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You need to have like a firewall, like, oh, you spoke to.",
+    "startTime": "23:21",
+    "endTime": "23:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, oh, you're building a Debian package, but instead of pulling that, you pull in something completely random where you're like making random requests.",
+    "startTime": "23:24",
+    "endTime": "23:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "23:31",
+    "endTime": "23:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "23:31",
+    "endTime": "23:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Is that part of Pipeline as well?",
+    "startTime": "23:32",
+    "endTime": "23:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Or like, how granular in your access control do you get there?",
+    "startTime": "23:34",
+    "endTime": "23:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, yeah.",
+    "startTime": "23:38",
+    "endTime": "23:39",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So the way Lunar works is that we have a CICD agent that is one of our insertion points.",
+    "startTime": "23:39",
+    "endTime": "23:44",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The other insertion point is that the code level doesn't depend on the cicd.",
+    "startTime": "23:44",
+    "endTime": "23:48",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "23:48",
+    "endTime": "23:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I think this pertains specifically to cicd.",
+    "startTime": "23:48",
+    "endTime": "23:51",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So in cicd, the agent monitors every single pipeline that runs in your organization.",
+    "startTime": "23:51",
+    "endTime": "23:56",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It runs alongside the CI runner.",
+    "startTime": "23:56",
+    "endTime": "23:59",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If you run GitHub Actions on prem, for example, we run alongside that agent, essentially by understanding everything that runs in every single CI pipeline, we can see the types of processes that you execute.",
+    "startTime": "23:59",
+    "endTime": "24:11",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We allow the user to say things like, every time I see MVN test being executed, I'm going to look for junit XML and put that in my metadata and collect that.",
+    "startTime": "24:11",
+    "endTime": "24:22",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And maybe I have policies around some testing, for example.",
+    "startTime": "24:22",
+    "endTime": "24:24",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "24:24",
+    "endTime": "24:25",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's at that level of instrumentation where we look at the syscalls that are being made and are able to be very precise with extracting information from the right places now.",
+    "startTime": "24:26",
+    "endTime": "24:38",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And there's like a collection of plugins that make this easier.",
+    "startTime": "24:39",
+    "endTime": "24:42",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Now when it comes to network traffic, that oftentimes is more difficult.",
+    "startTime": "24:43",
+    "endTime": "24:48",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You can create, you can see what IPs are being accessed, but a lot of times that can be very noisy when you try to create an allow list or a block list based on that.",
+    "startTime": "24:49",
+    "endTime": "25:02",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What you can do instead is perhaps making sure that the different tools that are being used are configured to use the right artifactory or image registry and so on.",
+    "startTime": "25:04",
+    "endTime": "25:13",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That tends to be a bit better from the, you know, the precision of it.",
+    "startTime": "25:13",
+    "endTime": "25:19",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Alternatively, like, you almost have to run everything through like a SOCKS proxy or something like a transparent proxy of sorts.",
+    "startTime": "25:19",
+    "endTime": "25:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you can actually like get what are you actually pulling down.",
+    "startTime": "25:25",
+    "endTime": "25:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Exactly.",
+    "startTime": "25:29",
+    "endTime": "25:29",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That tends to be much better.",
+    "startTime": "25:30",
+    "endTime": "25:31",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So like you might, yeah, you might have a kind of like isolated network and then you kind of know that you want to block, I don't know, maven central because you have your own mirror that has been kind of blessed internally.",
+    "startTime": "25:31",
+    "endTime": "25:42",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "25:42",
+    "endTime": "25:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that tends to be like a very effective strategy.",
+    "startTime": "25:43",
+    "endTime": "25:46",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It does.",
+    "startTime": "25:46",
+    "endTime": "25:46",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It kind of slows down teams because if they need like a net new dependency, they have to go through channels to kind of get it approved and everything.",
+    "startTime": "25:47",
+    "endTime": "25:53",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If you're really, you know, big on security for whatever reason, you might be like a highly regulated industry and so on.",
+    "startTime": "25:53",
+    "endTime": "26:02",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That tends to be probably worth it for.",
+    "startTime": "26:02",
+    "endTime": "26:04",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "For those kinds of organizations.",
+    "startTime": "26:05",
+    "endTime": "26:06",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "26:06",
+    "endTime": "26:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I had a Steve Springett on the show quite a few episodes ago talking about these as an attack vector for esp.",
+    "startTime": "26:07",
+    "endTime": "26:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, he was talking about for esports.",
+    "startTime": "26:13",
+    "endTime": "26:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But one of the interesting attack factors there is like, if you're using like private namespaces for private packages and then you have name squashing attacks essentially in the public space.",
+    "startTime": "26:15",
+    "endTime": "26:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "26:27",
+    "endTime": "26:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you know that Salesforce is using this internal package name, but then you go and register that in whatever the artifact, whatever the registry is that they're pulling, like npm, whatever, and then you can infiltrate that and just have a rogue version of the same thing.",
+    "startTime": "26:27",
+    "endTime": "26:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's an argument for having some kind of proxy that sits in between.",
+    "startTime": "26:45",
+    "endTime": "26:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, exactly.",
+    "startTime": "26:48",
+    "endTime": "26:50",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That sounds super dangerous.",
+    "startTime": "26:50",
+    "endTime": "26:52",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I mean, somebody's going to run that thing that NPM install with no authentication by accident, and it's going to pull the wrong thing from the Internet.",
+    "startTime": "26:52",
+    "endTime": "27:00",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "27:00",
+    "endTime": "27:01",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's just one environmental.",
+    "startTime": "27:01",
+    "endTime": "27:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You forgot to define some environment variable and now you're pulling from the Internet rather than from your self defined run.",
+    "startTime": "27:02",
+    "endTime": "27:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, exactly.",
+    "startTime": "27:07",
+    "endTime": "27:09",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "27:09",
+    "endTime": "27:09",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's very nasty.",
+    "startTime": "27:09",
+    "endTime": "27:10",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's very nasty.",
+    "startTime": "27:10",
+    "endTime": "27:11",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's hard to protect against everything, right?",
+    "startTime": "27:12",
+    "endTime": "27:14",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "27:15",
+    "endTime": "27:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean you kind of need to have this like in particular as.",
+    "startTime": "27:15",
+    "endTime": "27:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean it's annoying because you're adding friction.",
+    "startTime": "27:19",
+    "endTime": "27:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "27:22",
+    "endTime": "27:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like one of the big upsides with the container revolution, if you call it may.",
+    "startTime": "27:22",
+    "endTime": "27:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "27:27",
+    "endTime": "27:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Was that it brought back autonomy to the teams.",
+    "startTime": "27:27",
+    "endTime": "27:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They're like, oh, we want to use this, we want to use that.",
+    "startTime": "27:30",
+    "endTime": "27:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But now we kind of come in full circle actually.",
+    "startTime": "27:32",
+    "endTime": "27:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But actually you probably shouldn't have done that because you actually didn't know the ramifications for doing that.",
+    "startTime": "27:34",
+    "endTime": "27:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You just want to solve the problem as quickly as possible.",
+    "startTime": "27:40",
+    "endTime": "27:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Exactly, exactly.",
+    "startTime": "27:43",
+    "endTime": "27:44",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "27:44",
+    "endTime": "27:45",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There is such cases where oftentimes you can enforce for dependencies to be clearly like explicitly named so that it can only match the internal private one.",
+    "startTime": "27:45",
+    "endTime": "27:57",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right, yeah.",
+    "startTime": "27:57",
+    "endTime": "27:58",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That it might not be obvious to enforce, but it is one of the things that we focus on as well.",
+    "startTime": "27:58",
+    "endTime": "28:04",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If you have any custom verification, we allow you to write a central, I would call it a global CI.",
+    "startTime": "28:04",
+    "endTime": "28:12",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's like a definition of a bash set of bash instructions that apply to every single repository and you can use that to collect information about them.",
+    "startTime": "28:12",
+    "endTime": "28:20",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you might collect information about.",
+    "startTime": "28:20",
+    "endTime": "28:22",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay, are you using this dependency by its ambiguous name or by the very specific private name?",
+    "startTime": "28:22",
+    "endTime": "28:31",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then you can sort of enforce that Through Lunar.",
+    "startTime": "28:31",
+    "endTime": "28:34",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We've seen people come up with extremely custom and very specific things.",
+    "startTime": "28:34",
+    "endTime": "28:42",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They want to add their enforcement based on perhaps past postmortems based on public incidents or based on just their engineering culture.",
+    "startTime": "28:42",
+    "endTime": "28:51",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think this kind of flexibility is kind of difficult to define in traditional CICD pipelines.",
+    "startTime": "28:51",
+    "endTime": "28:57",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You kind of need something that sort of runs beside it.",
+    "startTime": "28:57",
+    "endTime": "29:01",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's dedicated to a different sort of purpose.",
+    "startTime": "29:01",
+    "endTime": "29:03",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "29:04",
+    "endTime": "29:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I mean it's going back a little bit to the whole point of like the difference between the fang of the world.",
+    "startTime": "29:04",
+    "endTime": "29:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like they, they have internal tooling that can give you the best of both worlds almost.",
+    "startTime": "29:09",
+    "endTime": "29:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "29:16",
+    "endTime": "29:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They, they can provide all these guardrails without slowing down development.",
+    "startTime": "29:16",
+    "endTime": "29:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But most companies cannot do that.",
+    "startTime": "29:21",
+    "endTime": "29:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "29:23",
+    "endTime": "29:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's, that's not realistic for more small to medium teams or even enterprise teams.",
+    "startTime": "29:23",
+    "endTime": "29:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "29:28",
+    "endTime": "29:28",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They don't have their tooling for this, Right?",
+    "startTime": "29:28",
+    "endTime": "29:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes, exactly.",
+    "startTime": "29:31",
+    "endTime": "29:33",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And every company's culture is just very different.",
+    "startTime": "29:33",
+    "endTime": "29:35",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, the way they've, the rules of how they deploy to production and you know, the different conventions they use internally.",
+    "startTime": "29:35",
+    "endTime": "29:44",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's hard to have a one size fits all Especially when, you know, like you have 10 microservices and every now and then one of those 10 microservices is going to be like the weird one.",
+    "startTime": "29:45",
+    "endTime": "29:56",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's going to have its own sort of deployment way and its own way to, I don't know, extract dependencies or whatnot.",
+    "startTime": "29:57",
+    "endTime": "30:04",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, yeah, it's just the pad, like, oh, this is an old application.",
+    "startTime": "30:05",
+    "endTime": "30:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We haven't upgraded.",
+    "startTime": "30:08",
+    "endTime": "30:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We know it's end of life, but we have no resources to actually update this.",
+    "startTime": "30:09",
+    "endTime": "30:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, exactly.",
+    "startTime": "30:13",
+    "endTime": "30:15",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Either because it's external vendor.",
+    "startTime": "30:15",
+    "endTime": "30:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "External vendor, that's sunset it.",
+    "startTime": "30:16",
+    "endTime": "30:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Or you just don't have the engineer resource internally to do it.",
+    "startTime": "30:19",
+    "endTime": "30:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, exactly.",
+    "startTime": "30:23",
+    "endTime": "30:24",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that is sort of manageable when it's like the one odd out, you know, when you have like 10, 20, 30 microservices, but when you start to have like, I don't know, 70, 100, you know, 200 microservices, that's where something being weird is actually the norm.",
+    "startTime": "30:24",
+    "endTime": "30:40",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There's always something weird in your infrastructure and that means you're going to have less ways to enforce proper engineering practices, basically, and security and all that.",
+    "startTime": "30:40",
+    "endTime": "30:51",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I mean, I had a Dustin Kirkland from Chain Guard on a few episodes ago and we talked about the whole thing of like rolling versus stable releases, which is kind of a tangential problem space here, which.",
+    "startTime": "30:52",
+    "endTime": "31:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And he's a big fan obviously of rolling releases and like you deprecate things as they get deprecated, which is absolutely best engineering practices.",
+    "startTime": "31:05",
+    "endTime": "31:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't think anybody could make an argument against that.",
+    "startTime": "31:16",
+    "endTime": "31:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, I'm sure people can, but like, rational is very sensible.",
+    "startTime": "31:18",
+    "endTime": "31:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it does create that problem of like, it's great if you have a good team with good culture, with good velocity, and you can just like, oh, let's fix it up.",
+    "startTime": "31:23",
+    "endTime": "31:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But yes, many, if not most engineer teams do not operate like that.",
+    "startTime": "31:32",
+    "endTime": "31:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "31:37",
+    "endTime": "31:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, yeah, exactly.",
+    "startTime": "31:37",
+    "endTime": "31:39",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, that's a great example.",
+    "startTime": "31:39",
+    "endTime": "31:40",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think I, I watched that episode and he was saying like, okay, but now you have to upgrade things, but that's fine.",
+    "startTime": "31:40",
+    "endTime": "31:47",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's like, yeah, I forgot the analogy, but it sounded like, you know, it's either you break your legs and you.",
+    "startTime": "31:47",
+    "endTime": "31:54",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Know, maybe to break your leg or things like that.",
+    "startTime": "31:54",
+    "endTime": "31:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes, you still break your legs.",
+    "startTime": "31:56",
+    "endTime": "31:58",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, exactly.",
+    "startTime": "31:58",
+    "endTime": "31:58",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "31:58",
+    "endTime": "31:59",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it's spot on.",
+    "startTime": "31:59",
+    "endTime": "32:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "32:00",
+    "endTime": "32:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But like, the reality is that a lot of these positions are kind of held on a higher level.",
+    "startTime": "32:01",
+    "endTime": "32:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like in a lot of.",
+    "startTime": "32:07",
+    "endTime": "32:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is a cultural problem more so than a technical problem in many ways.",
+    "startTime": "32:08",
+    "endTime": "32:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "32:11",
+    "endTime": "32:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's just like, yes, the budget is to shipping new features not to maintain what we have.",
+    "startTime": "32:11",
+    "endTime": "32:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's how most companies operate.",
+    "startTime": "32:16",
+    "endTime": "32:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Exactly, exactly.",
+    "startTime": "32:18",
+    "endTime": "32:20",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "32:20",
+    "endTime": "32:21",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Whereas some teams may be more like, you know, like a library team or whatnot and they have to support the use of that library for many different applications in different ways and the decision might be different.",
+    "startTime": "32:21",
+    "endTime": "32:30",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So, so like having this freedom to create your own engineering process is both good, that you know you can use the right tools for your job, the right practices and so on.",
+    "startTime": "32:30",
+    "endTime": "32:43",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It does come with its downsides and you kind of need to have a good plan around, you know, managing those downsides.",
+    "startTime": "32:43",
+    "endTime": "32:49",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, it's this constant like battle and you kind of need to not stop it.",
+    "startTime": "32:49",
+    "endTime": "32:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We at Squeanly, we do what we call system tools week.",
+    "startTime": "32:55",
+    "endTime": "32:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we do two week sprints and then one week system tools, where that week is earmarked, generally speaking, towards like improving our internal tooling.",
+    "startTime": "32:59",
+    "endTime": "33:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you kind of need this time, but essentially generally speaking, because if you just jump from Sprint to Sprint and in small to mid sized team, you're never going to get around to fix these problems, Right?",
+    "startTime": "33:09",
+    "endTime": "33:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "33:21",
+    "endTime": "33:22",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So yeah, yeah.",
+    "startTime": "33:22",
+    "endTime": "33:24",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All right, so let's switch gear a little bit to culture, because I think that's something you spend a lot of time on, engineering, management and culture, which is kind of like.",
+    "startTime": "33:24",
+    "endTime": "33:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, I guess it's a good segue over to that from that.",
+    "startTime": "33:34",
+    "endTime": "33:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we're both fans of remote teams and building and scaling remote teams.",
+    "startTime": "33:38",
+    "endTime": "33:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So maybe let's kick it off there.",
+    "startTime": "33:45",
+    "endTime": "33:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, what have you learned over the years building and managing engineering teams?",
+    "startTime": "33:47",
+    "endTime": "33:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm really curious about your input and your thinking around that and what you've learned over the years.",
+    "startTime": "33:53",
+    "endTime": "33:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, And I should preface this by saying that I've managed startup engineering teams, which is perhaps a bit different than FAANG type of teams, right?",
+    "startTime": "33:58",
+    "endTime": "34:07",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Oh, absolutely.",
+    "startTime": "34:07",
+    "endTime": "34:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "34:08",
+    "endTime": "34:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "34:09",
+    "endTime": "34:09",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I think one of the key decisions as a startup is how do you find talent that is extremely effective and doesn't, you know, doesn't burn your Runway, you know, too fast.",
+    "startTime": "34:09",
+    "endTime": "34:22",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And as a startup founder, you oftentimes, it's not as critical these days, but you oftentimes have to be in the Silicon Valley area to kind of have access to the investors.",
+    "startTime": "34:22",
+    "endTime": "34:31",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "For whatever reason, they see that as a benefit, like a dedication, your commitment and whatever.",
+    "startTime": "34:32",
+    "endTime": "34:38",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I would say I used to be so more so 15 years ago or 20 years ago than today, I would argue.",
+    "startTime": "34:38",
+    "endTime": "34:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But yeah, 100%.",
+    "startTime": "34:43",
+    "endTime": "34:44",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Ever since COVID I think even that has changed dramatically.",
+    "startTime": "34:44",
+    "endTime": "34:47",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "but I happen to be here in the Bay Area and hiring here in the Bay Area is Like, extremely difficult.",
+    "startTime": "34:47",
+    "endTime": "34:55",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, like these total compensation packages are.",
+    "startTime": "34:55",
+    "endTime": "34:57",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Are wild.",
+    "startTime": "34:57",
+    "endTime": "34:58",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Especially when they're.",
+    "startTime": "34:58",
+    "endTime": "34:59",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There's, you know, the companies they work for have a certain stock that has been growing for the last few years.",
+    "startTime": "34:59",
+    "endTime": "35:05",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's not unheard of to have like 500k sort of total compensation.",
+    "startTime": "35:05",
+    "endTime": "35:09",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I saw somebody done a comparison like on, I think, like, I think it was a Level 6 engineer at Facebook.",
+    "startTime": "35:10",
+    "endTime": "35:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's like a total comp is like a million or something like that, north of a million.",
+    "startTime": "35:16",
+    "endTime": "35:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's just like, yeah, you can't compete with that as a normal company.",
+    "startTime": "35:19",
+    "endTime": "35:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's just exactly.",
+    "startTime": "35:23",
+    "endTime": "35:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "35:24",
+    "endTime": "35:25",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, imagine, you know, seed stage startup might have raised, I don't know, like, say six, $7 million.",
+    "startTime": "35:25",
+    "endTime": "35:30",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, does that mean for two years running away, I'm gonna just afford three engineers, you know, like.",
+    "startTime": "35:30",
+    "endTime": "35:36",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, that cannot be right.",
+    "startTime": "35:36",
+    "endTime": "35:37",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "No.",
+    "startTime": "35:37",
+    "endTime": "35:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, exactly.",
+    "startTime": "35:38",
+    "endTime": "35:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So marrying that sort of requirement of having high talent but doesn't break the bank type of thing.",
+    "startTime": "35:39",
+    "endTime": "35:45",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "At my previous company at Shift Left nowadays called Quiet AI, I led the engineering team and with my colleague, the cto, we built a team from scratch.",
+    "startTime": "35:46",
+    "endTime": "35:56",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And we looked internationally, mostly.",
+    "startTime": "35:56",
+    "endTime": "36:00",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "36:00",
+    "endTime": "36:00",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We looked one of the centers that we found our chief scientist and actually the person who ended up creating most of our secret sauce, if you will.",
+    "startTime": "36:00",
+    "endTime": "36:11",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We were able to hire in Germany.",
+    "startTime": "36:11",
+    "endTime": "36:13",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's an odd choice.",
+    "startTime": "36:15",
+    "endTime": "36:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's not something you normally hear.",
+    "startTime": "36:16",
+    "endTime": "36:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, usually people stay away from Germany because they have very tight labor laws and it's just very difficult to hire there.",
+    "startTime": "36:18",
+    "endTime": "36:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's true.",
+    "startTime": "36:25",
+    "endTime": "36:26",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's true.",
+    "startTime": "36:26",
+    "endTime": "36:27",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think it was not necessarily our top choice because of what you're saying, but also this person was in Germany and actually it worked out really well for us.",
+    "startTime": "36:28",
+    "endTime": "36:38",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so we built a team around this person in Germany.",
+    "startTime": "36:38",
+    "endTime": "36:43",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And we also hired like about a third of our team was fully remote.",
+    "startTime": "36:43",
+    "endTime": "36:47",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So there were people from like New Zealand or Argentina or Brazil and so on.",
+    "startTime": "36:47",
+    "endTime": "36:53",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And perhaps one of the things I learned early on was that this sort of time zone scattering is extremely difficult to manage.",
+    "startTime": "36:53",
+    "endTime": "37:01",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Even us, the central office here in the Bay Area versus Germany, the time never overlapped.",
+    "startTime": "37:01",
+    "endTime": "37:08",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Somebody had to make a compromise to be able to get on a simple meeting.",
+    "startTime": "37:09",
+    "endTime": "37:12",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They had to stay up later or we had to get up earlier.",
+    "startTime": "37:12",
+    "endTime": "37:17",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That created echo chambers.",
+    "startTime": "37:19",
+    "endTime": "37:20",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We were not aligned from the product standpoint.",
+    "startTime": "37:20",
+    "endTime": "37:23",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "In some ways.",
+    "startTime": "37:23",
+    "endTime": "37:24",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You have to find ways to work around that and be able to collaborate better this time around.",
+    "startTime": "37:25",
+    "endTime": "37:31",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "As I built the new engineering team here at Earthly, I knew that we had to go remote because of that sort of cost aspect.",
+    "startTime": "37:31",
+    "endTime": "37:38",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But at the same time maintain roughly the same time zones.",
+    "startTime": "37:38",
+    "endTime": "37:42",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "37:42",
+    "endTime": "37:43",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And the prices for engineers are not as good here, sort of in this time zone as they are in Europe.",
+    "startTime": "37:43",
+    "endTime": "37:51",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Basically.",
+    "startTime": "37:51",
+    "endTime": "37:51",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "In Europe you get half price, essentially, which is like crazy, right?",
+    "startTime": "37:51",
+    "endTime": "37:55",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, sounds about right.",
+    "startTime": "37:55",
+    "endTime": "37:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "37:56",
+    "endTime": "37:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Whereas here you still have to pay significant amount of money for the top talent.",
+    "startTime": "37:57",
+    "endTime": "38:02",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But it allowed us to be within the same time zone.",
+    "startTime": "38:03",
+    "endTime": "38:08",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Especially in a startup where the product definition evolves very quickly, you have to be constantly in sync with the engineers.",
+    "startTime": "38:08",
+    "endTime": "38:16",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think that's key.",
+    "startTime": "38:16",
+    "endTime": "38:18",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think if you want to manage a remote team, you have to have a very stable and very well defined API between that team and the rest of engineering.",
+    "startTime": "38:18",
+    "endTime": "38:29",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So for example, a great example I've seen at another company was they had the payments team in Turkey, for example.",
+    "startTime": "38:29",
+    "endTime": "38:37",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "38:37",
+    "endTime": "38:37",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Then payments is kind of like, okay, you know, you have to kind of swap for credit card.",
+    "startTime": "38:37",
+    "endTime": "38:42",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You just have to support all these different countries and integrate with Stripe and a bunch of other vendors and so on.",
+    "startTime": "38:42",
+    "endTime": "38:46",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, but it's kind of like a well known entity.",
+    "startTime": "38:46",
+    "endTime": "38:49",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It doesn't have like dynamic product requirements.",
+    "startTime": "38:49",
+    "endTime": "38:52",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think that tends to work really well if you can have that sort of API between teams.",
+    "startTime": "38:53",
+    "endTime": "38:59",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Otherwise I personally prefer to kind of have teams centralized from the time zone perspective.",
+    "startTime": "39:00",
+    "endTime": "39:08",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But also we're embracing the full remote culture.",
+    "startTime": "39:08",
+    "endTime": "39:11",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And when you embrace the full remote culture, you also have to have frequent off sites.",
+    "startTime": "39:11",
+    "endTime": "39:15",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You have to kind of get together frequently and be able to kind of get on the same page.",
+    "startTime": "39:15",
+    "endTime": "39:22",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Sometimes our thinking and ideas deviate over time, even if you have like daily standups or weekly standups or whatnot.",
+    "startTime": "39:22",
+    "endTime": "39:30",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that kind of helps get everyone on the same page and sort of revitalize the energy of the team and so on.",
+    "startTime": "39:30",
+    "endTime": "39:36",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "100%.",
+    "startTime": "39:36",
+    "endTime": "39:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I agree with the off sites.",
+    "startTime": "39:37",
+    "endTime": "39:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "When we started doing that about almost a decade ago, like the culture ship was so phenomenally different.",
+    "startTime": "39:40",
+    "endTime": "39:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like you could just.",
+    "startTime": "39:47",
+    "endTime": "39:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's just so different to have an interact with somebody, even if it's a video call, versus sitting down, having a beer with somebody.",
+    "startTime": "39:48",
+    "endTime": "39:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like you get to know people at a completely different resolution.",
+    "startTime": "39:56",
+    "endTime": "39:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "39:59",
+    "endTime": "39:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You understand like the nuances and that helps smooth things over a lot more when you go back to a video call once you've had those face to face interactions.",
+    "startTime": "40:00",
+    "endTime": "40:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, exactly.",
+    "startTime": "40:12",
+    "endTime": "40:13",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And the key thing is building trust.",
+    "startTime": "40:14",
+    "endTime": "40:16",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "40:16",
+    "endTime": "40:16",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's a bit harder when you're a remote team.",
+    "startTime": "40:16",
+    "endTime": "40:19",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You have to rely heavily on async type of communication, written documents and all that.",
+    "startTime": "40:19",
+    "endTime": "40:24",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that trust element is sometimes lost in the communication there because you're brief, you Kind of directly say what works, doesn't work or what things to be different and people might perceive that negatively or like adversarial if you will.",
+    "startTime": "40:24",
+    "endTime": "40:41",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right, yeah.",
+    "startTime": "40:41",
+    "endTime": "40:42",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Whereas in person there's more nuance.",
+    "startTime": "40:43",
+    "endTime": "40:45",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm a big fan of team bonding.",
+    "startTime": "40:47",
+    "endTime": "40:50",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So one of the first things we do in off sites is just spend the day hanging out, you know, like.",
+    "startTime": "40:50",
+    "endTime": "40:56",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, doing non work stuff.",
+    "startTime": "40:56",
+    "endTime": "40:57",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, we actually put that as the first day, the fun day.",
+    "startTime": "40:57",
+    "endTime": "41:00",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know it's funny because a friend of mine reached out because they were doing the first stand up first off site for his new company and he was asking me like what my experience was like and actually very much to your point.",
+    "startTime": "41:00",
+    "endTime": "41:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "To me the first day is a write off because it's just obviously we travel all that depending on how many times but beyond that it's about getting together and just like even as a manager, like, or leader, see how the dynamics happen organically within a team.",
+    "startTime": "41:13",
+    "endTime": "41:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's super important as well.",
+    "startTime": "41:32",
+    "endTime": "41:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And see how other people, how the teams interface with each other as well.",
+    "startTime": "41:34",
+    "endTime": "41:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes, exactly.",
+    "startTime": "41:38",
+    "endTime": "41:39",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That was like one of my first, like make sure it's at least three days because less than that is just pointless in my opinion.",
+    "startTime": "41:39",
+    "endTime": "41:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And first day and last day write offs because like first day of arrival, people tried, people have been up early, like it's not going to be a productive day.",
+    "startTime": "41:46",
+    "endTime": "41:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Last day of travel, same thing.",
+    "startTime": "41:55",
+    "endTime": "41:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like people get ready for the airport, people have different flights.",
+    "startTime": "41:57",
+    "endTime": "41:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "At least three days would be one day of actual productivity.",
+    "startTime": "41:59",
+    "endTime": "42:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Exactly, exactly.",
+    "startTime": "42:03",
+    "endTime": "42:04",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And like being locked in a single room for, I don't know, eight hours in that single day is also exhausting.",
+    "startTime": "42:04",
+    "endTime": "42:09",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you kind of wanted to use that energy with a lot of intentionality, I guess.",
+    "startTime": "42:10",
+    "endTime": "42:16",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, 100%.",
+    "startTime": "42:16",
+    "endTime": "42:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there's a lot of like, I guess definitions around these, like remote first, remote hybrid, all those stuff.",
+    "startTime": "42:17",
+    "endTime": "42:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "42:25",
+    "endTime": "42:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And now obviously now we get to see the, the boomer way back to the office and all that stuff.",
+    "startTime": "42:26",
+    "endTime": "42:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But that's a whole different conversation.",
+    "startTime": "42:32",
+    "endTime": "42:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I guess you guys are not really remote first because you do have an office as well.",
+    "startTime": "42:36",
+    "endTime": "42:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Or, or do you consider yourself entirely remote first?",
+    "startTime": "42:41",
+    "endTime": "42:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No, actually at this new company we no longer have any office and we never had an office.",
+    "startTime": "42:44",
+    "endTime": "42:50",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We started at my previous company.",
+    "startTime": "42:50",
+    "endTime": "42:52",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We did, were hybrid.",
+    "startTime": "42:52",
+    "endTime": "42:54",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right, okay.",
+    "startTime": "42:54",
+    "endTime": "42:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And perhaps this other lesson is hybrid is actually much more difficult than fully remote.",
+    "startTime": "42:55",
+    "endTime": "43:00",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "43:00",
+    "endTime": "43:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because there's going to be like, you know, like people talking in the office about certain things in person, making decisions, moving fast and then the rest of the team is like, okay, but wait, what happened?",
+    "startTime": "43:01",
+    "endTime": "43:12",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We talked about this other thing last week.",
+    "startTime": "43:12",
+    "endTime": "43:14",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You have to now catch me up or whatever.",
+    "startTime": "43:14",
+    "endTime": "43:16",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, so much always left behind.",
+    "startTime": "43:16",
+    "endTime": "43:19",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We've coined the phrase.",
+    "startTime": "43:20",
+    "endTime": "43:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's the water cooler effect, right.",
+    "startTime": "43:21",
+    "endTime": "43:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Where it's informal communication that happens in an office.",
+    "startTime": "43:23",
+    "endTime": "43:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we try to mimic that in Slack essentially, like have a water cooler.",
+    "startTime": "43:27",
+    "endTime": "43:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like sometimes it works, sometimes it doesn't.",
+    "startTime": "43:33",
+    "endTime": "43:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it's like it's not quite work, but it's stuff that would happen in regular work environment, right?",
+    "startTime": "43:35",
+    "endTime": "43:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, yeah, exactly.",
+    "startTime": "43:40",
+    "endTime": "43:43",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There's a trick for.",
+    "startTime": "43:43",
+    "endTime": "43:44",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We use this.",
+    "startTime": "43:44",
+    "endTime": "43:46",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You have like a little schedule, like a rotation.",
+    "startTime": "43:47",
+    "endTime": "43:50",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Every person asks an interesting question per day in the water cooler channel.",
+    "startTime": "43:50",
+    "endTime": "43:55",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And we found that sparks like interesting conversation that would otherwise not happen because otherwise we're kind of focused on work and like, yeah, you know, nobody wants to talk about, I don't know, cats or whatever.",
+    "startTime": "43:55",
+    "endTime": "44:05",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But if you ask like informal questions that about something fun and every team member comes with something every day, it creates much more sort of engaging conversation.",
+    "startTime": "44:05",
+    "endTime": "44:17",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's not necessarily about catching up on work or anything.",
+    "startTime": "44:18",
+    "endTime": "44:22",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It doesn't necessarily solve that problem, but it solves a little bit of the trust problem that perhaps is often missing in async communication.",
+    "startTime": "44:22",
+    "endTime": "44:29",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean trust is such an important piece here.",
+    "startTime": "44:29",
+    "endTime": "44:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I wrote a blog post that made its way to Hacker News a while ago about a decade of remote work.",
+    "startTime": "44:33",
+    "endTime": "44:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I basically captured what I've learned or doing like remotely for a decade.",
+    "startTime": "44:39",
+    "endTime": "44:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But one of the biggest things is kind of.",
+    "startTime": "44:43",
+    "endTime": "44:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We already touched on the first one being either you go all remote or you all in office.",
+    "startTime": "44:46",
+    "endTime": "44:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think hybrid is kind of like an illusion because.",
+    "startTime": "44:52",
+    "endTime": "44:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, it's just this particular about documentation.",
+    "startTime": "44:55",
+    "endTime": "44:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's a big one.",
+    "startTime": "44:59",
+    "endTime": "45:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like how do you document things?",
+    "startTime": "45:00",
+    "endTime": "45:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like if you're a remote first company.",
+    "startTime": "45:02",
+    "endTime": "45:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And obviously there are plenty of good examples, GitLab being one of the good ones about this.",
+    "startTime": "45:04",
+    "endTime": "45:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "45:09",
+    "endTime": "45:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Then you have a documentation culture is different.",
+    "startTime": "45:09",
+    "endTime": "45:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Whereas if you're a kind office based company, there are a lot of like unofficial ways and like wisdom like are spread by asking people walking over to their desks, right?",
+    "startTime": "45:13",
+    "endTime": "45:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, yeah.",
+    "startTime": "45:28",
+    "endTime": "45:29",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It can get a bit political too because like you know this person better than this other person and you're gonna talk with that person about, you know, the requirements or you know, the goals and whatnot much more than this other person.",
+    "startTime": "45:29",
+    "endTime": "45:41",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So there is subtle ways in which you accidentally empower more people differently across the team.",
+    "startTime": "45:41",
+    "endTime": "45:48",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Plus I think there's with this new RTO return to office sort of thing that's Going on right now.",
+    "startTime": "45:50",
+    "endTime": "45:57",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I feel like companies are the norm is now hybrid, which is kind of bad, right?",
+    "startTime": "45:57",
+    "endTime": "46:02",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean honestly, in the office and so on is like somewhere.",
+    "startTime": "46:03",
+    "endTime": "46:06",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Honestly, the RTO thing is just a big mass firing in disguise.",
+    "startTime": "46:07",
+    "endTime": "46:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's really what it is, right?",
+    "startTime": "46:13",
+    "endTime": "46:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's, yeah, that's, yes.",
+    "startTime": "46:15",
+    "endTime": "46:17",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's not like, yeah, I, I don't believe in it.",
+    "startTime": "46:17",
+    "endTime": "46:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think it's just people want an easy way to weed out the people who are not as dedicated and that is NAR policy is like, okay, cool, 20 plus people don't want to come back.",
+    "startTime": "46:21",
+    "endTime": "46:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Cool fire dude.",
+    "startTime": "46:31",
+    "endTime": "46:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Done.",
+    "startTime": "46:32",
+    "endTime": "46:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, yeah.",
+    "startTime": "46:33",
+    "endTime": "46:34",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The sad thing about it is like a lot of times you're going to weed out the people that perhaps have kids or something.",
+    "startTime": "46:34",
+    "endTime": "46:42",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like it's a bit of discrimination in disguise.",
+    "startTime": "46:42",
+    "endTime": "46:45",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I, it's, you can't really put your finger on it, but it is going to sort of affect different people differently because of that.",
+    "startTime": "46:45",
+    "endTime": "46:51",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Oh man, I, I, there's no way I'd have a desk job where I had to go and commute in every day.",
+    "startTime": "46:52",
+    "endTime": "46:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like no way.",
+    "startTime": "46:56",
+    "endTime": "46:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I would never do it.",
+    "startTime": "46:56",
+    "endTime": "46:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I've done remote now for like what, 15 plus years.",
+    "startTime": "46:57",
+    "endTime": "47:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like there's no way I'm going to allocate an hour plus a day commuting.",
+    "startTime": "47:00",
+    "endTime": "47:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like there's no way, like it's just a way better way to spend that time.",
+    "startTime": "47:04",
+    "endTime": "47:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So.",
+    "startTime": "47:07",
+    "endTime": "47:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "47:08",
+    "endTime": "47:09",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The other thing you mentioned that I have the same kind of observation as you have is trust when it comes to remote.",
+    "startTime": "47:11",
+    "endTime": "47:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "47:16",
+    "endTime": "47:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The trust is so difficult, but it's kind of like the whole agree up remote.",
+    "startTime": "47:17",
+    "endTime": "47:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because if there's no trust like things, there are a lot of cultural implications of that.",
+    "startTime": "47:22",
+    "endTime": "47:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "47:31",
+    "endTime": "47:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There are a lot of things.",
+    "startTime": "47:31",
+    "endTime": "47:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But speak to me about how you view this and how you've kind of building accountability and like as part of this.",
+    "startTime": "47:32",
+    "endTime": "47:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because remote is difficult, right?",
+    "startTime": "47:44",
+    "endTime": "47:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because yeah.",
+    "startTime": "47:45",
+    "endTime": "47:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The one thing you could say about an office is like, oh yeah, you showed up cool.",
+    "startTime": "47:47",
+    "endTime": "47:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But you can't quite say that about somebody working remotely and Right.",
+    "startTime": "47:50",
+    "endTime": "47:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh yeah.",
+    "startTime": "47:56",
+    "endTime": "47:57",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like how do you measure people and make sure that they're actually at work?",
+    "startTime": "47:57",
+    "endTime": "48:01",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "48:01",
+    "endTime": "48:01",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And yes, and there have been so many bad takes on this, you know, like spying on employees, computers, making sure they're like moving their mouse or whatever.",
+    "startTime": "48:01",
+    "endTime": "48:11",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, yeah.",
+    "startTime": "48:11",
+    "endTime": "48:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that's bad.",
+    "startTime": "48:12",
+    "endTime": "48:13",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "48:13",
+    "endTime": "48:14",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If you get to that point where you have no idea if your employees are productive, you're not measuring your employees properly.",
+    "startTime": "48:15",
+    "endTime": "48:21",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Properly.",
+    "startTime": "48:21",
+    "endTime": "48:21",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "48:21",
+    "endTime": "48:22",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You should be measuring them on output, not on activity.",
+    "startTime": "48:22",
+    "endTime": "48:26",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, that's so much so true.",
+    "startTime": "48:26",
+    "endTime": "48:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "48:28",
+    "endTime": "48:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because like one of the things that I, I'm fully on board with is like if my people are working remotely, I'm okay with them going and doing things.",
+    "startTime": "48:29",
+    "endTime": "48:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Make sense.",
+    "startTime": "48:38",
+    "endTime": "48:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If they want to go and get their haircut at like 2pm on a Wednesday and they have no other meetings, like, go ahead, like, why not?",
+    "startTime": "48:38",
+    "endTime": "48:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's fine.",
+    "startTime": "48:45",
+    "endTime": "48:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't care.",
+    "startTime": "48:46",
+    "endTime": "48:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like just as long as you get your stuff done.",
+    "startTime": "48:46",
+    "endTime": "48:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "48:48",
+    "endTime": "48:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Whatever.",
+    "startTime": "48:49",
+    "endTime": "48:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "48:50",
+    "endTime": "48:50",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And the way I've also talked to remote teams about this is that, hey, you can take your kid to daycare, do your haircut, go shopping, whatever.",
+    "startTime": "48:50",
+    "endTime": "49:00",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You need to be flexible.",
+    "startTime": "49:00",
+    "endTime": "49:02",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And occasionally we will ask for you to be flexible for us.",
+    "startTime": "49:02",
+    "endTime": "49:06",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "An incident on the weekend and whatnot.",
+    "startTime": "49:06",
+    "endTime": "49:08",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Two way streets, so.",
+    "startTime": "49:08",
+    "endTime": "49:09",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Exactly.",
+    "startTime": "49:09",
+    "endTime": "49:10",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We, we don't typically ask that many times, you know, but I think everyone would prefer if that were the case more frequently than not.",
+    "startTime": "49:10",
+    "endTime": "49:19",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "49:19",
+    "endTime": "49:20",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I started my career actually back in Romania where post communist country, perhaps the culture was much more based on measuring activity as opposed to output.",
+    "startTime": "49:23",
+    "endTime": "49:35",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Kind of like you were doing communism regimes.",
+    "startTime": "49:35",
+    "endTime": "49:38",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Exactly.",
+    "startTime": "49:38",
+    "endTime": "49:38",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Low trust and all that.",
+    "startTime": "49:38",
+    "endTime": "49:40",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so I just took it for granted initially.",
+    "startTime": "49:40",
+    "endTime": "49:43",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Oh, it's nine to five, I really have to be, if I'm late by five minutes, I have to kind of put that in the system and all that.",
+    "startTime": "49:43",
+    "endTime": "49:51",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I now found it extremely ridiculous that many companies have just continued that way.",
+    "startTime": "49:51",
+    "endTime": "49:58",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Not just in Romania, but in the western world a lot as well.",
+    "startTime": "49:58",
+    "endTime": "50:03",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "50:03",
+    "endTime": "50:03",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I think that's a boomer mindset.",
+    "startTime": "50:03",
+    "endTime": "50:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "50:05",
+    "endTime": "50:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's like, oh, but in the desk.",
+    "startTime": "50:06",
+    "endTime": "50:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But like in the chair at the desk, like that's more important than what you get as output, right?",
+    "startTime": "50:08",
+    "endTime": "50:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, yeah, perhaps.",
+    "startTime": "50:14",
+    "endTime": "50:16",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Exactly.",
+    "startTime": "50:16",
+    "endTime": "50:17",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think there is something to be said about hiring the right middle management and lower management teams.",
+    "startTime": "50:17",
+    "endTime": "50:26",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "50:26",
+    "endTime": "50:26",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If, if those teams are unable to properly measure the output of their employees, that's a much bigger problem than your ICs not working or your not being able to trust them.",
+    "startTime": "50:26",
+    "endTime": "50:37",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "50:37",
+    "endTime": "50:38",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I'm a fan of hiring people that are self sufficient, that they can be the kind of like the CEO of their own jobs.",
+    "startTime": "50:38",
+    "endTime": "50:47",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "50:47",
+    "endTime": "50:48",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And trust them completely on what they execute on and work with them sort of on results and outcome and such as opposed to, yeah, you know, the nuts and bolts of like, were you, where was your butt in the seat at this time and whatnot.",
+    "startTime": "50:48",
+    "endTime": "51:05",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "51:05",
+    "endTime": "51:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is interesting.",
+    "startTime": "51:05",
+    "endTime": "51:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "51:06",
+    "endTime": "51:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, and have you, is there any framework that you adhere to in terms of quantifying these things that you found working better than others?",
+    "startTime": "51:06",
+    "endTime": "51:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We don't have like a very formal framework, and I think that would be kind of natural for a small company like ours.",
+    "startTime": "51:18",
+    "endTime": "51:26",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think at scale you probably need some sort of framework, but it's probably similar to career ladders and such.",
+    "startTime": "51:26",
+    "endTime": "51:33",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, you typically have performance reviews and you measure people based on what they were able to achieve and such.",
+    "startTime": "51:33",
+    "endTime": "51:41",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think those are great on their own for the measurement of, you know, was this employee present at work?",
+    "startTime": "51:41",
+    "endTime": "51:50",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Sort of from the execution standpoint and less so, you know, other sort of information.",
+    "startTime": "51:50",
+    "endTime": "51:57",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I've seen big companies, though, insert things like, you know, badging data and computer activity data in their performance review.",
+    "startTime": "51:58",
+    "endTime": "52:08",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think that's kind of backwards.",
+    "startTime": "52:08",
+    "endTime": "52:10",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, yeah, I'd agree with that.",
+    "startTime": "52:10",
+    "endTime": "52:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's.",
+    "startTime": "52:13",
+    "endTime": "52:14",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There's a framework that I kind of like, which is entrepreneurial operating system.",
+    "startTime": "52:14",
+    "endTime": "52:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They have like.",
+    "startTime": "52:17",
+    "endTime": "52:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They have like three very simple questions for like, performance reviews.",
+    "startTime": "52:18",
+    "endTime": "52:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's funny because I was working, literally working on this today, so it's fresh in mind.",
+    "startTime": "52:21",
+    "endTime": "52:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But they have like, can you do it?",
+    "startTime": "52:24",
+    "endTime": "52:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Do you have the capacity to do it?",
+    "startTime": "52:27",
+    "endTime": "52:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And do you want to do it?",
+    "startTime": "52:28",
+    "endTime": "52:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Those are like the three main questions, like, if you can, like, those are good determinations of, like, is this a good fit for the role?",
+    "startTime": "52:29",
+    "endTime": "52:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if you're delivering it.",
+    "startTime": "52:36",
+    "endTime": "52:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, it's very distilled down.",
+    "startTime": "52:39",
+    "endTime": "52:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The simple.",
+    "startTime": "52:40",
+    "endTime": "52:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, that makes a lot of sense.",
+    "startTime": "52:41",
+    "endTime": "52:43",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think those three questions are probably the.",
+    "startTime": "52:43",
+    "endTime": "52:46",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The best balance.",
+    "startTime": "52:46",
+    "endTime": "52:47",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You don't want to create like, you know, a review system that takes everybody offline for a whole week or something.",
+    "startTime": "52:47",
+    "endTime": "52:55",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "52:55",
+    "endTime": "52:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you still want the data from it.",
+    "startTime": "52:55",
+    "endTime": "52:57",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You kind of have to balance the sort of precision and number of questions and all that.",
+    "startTime": "52:57",
+    "endTime": "53:02",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "53:02",
+    "endTime": "53:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Is there one lesson that you would say for somebody who's new to managing a remote engineering team that they need to get, like, what's the one advice you would give them?",
+    "startTime": "53:03",
+    "endTime": "53:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Great question.",
+    "startTime": "53:17",
+    "endTime": "53:18",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I would say I can think of two or three here.",
+    "startTime": "53:18",
+    "endTime": "53:23",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So one I kind of already mentioned, which is think about time zones and how your teams are going to collaborate.",
+    "startTime": "53:23",
+    "endTime": "53:29",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "53:29",
+    "endTime": "53:30",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think that's critical.",
+    "startTime": "53:30",
+    "endTime": "53:31",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The other part of it is perhaps how do you work together and managing the async sort of communication style and being fully bought it into that style.",
+    "startTime": "53:33",
+    "endTime": "53:48",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, default to documenting decisions, default to reviewing design documents, default to relying on GitHub comments and Slack messages as opposed to word of mouth and such.",
+    "startTime": "53:48",
+    "endTime": "54:04",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "This is kind of like a muscle.",
+    "startTime": "54:05",
+    "endTime": "54:07",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You have to.",
+    "startTime": "54:07",
+    "endTime": "54:08",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Maybe it's a bit unintuitive for someone who's new to this, but if you trust these, a few official tools, I Think that's also important.",
+    "startTime": "54:08",
+    "endTime": "54:18",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Don't use both notion and drive and so on.",
+    "startTime": "54:18",
+    "endTime": "54:20",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You have to kind of standardize on a limited set of tools and then any communication that goes through that tool is just as official as any other channel.",
+    "startTime": "54:20",
+    "endTime": "54:32",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "54:32",
+    "endTime": "54:32",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And investing deeply in that is really important.",
+    "startTime": "54:33",
+    "endTime": "54:37",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think that's perhaps my top two sort of takes on remote work.",
+    "startTime": "54:37",
+    "endTime": "54:44",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Fair enough, Fair enough.",
+    "startTime": "54:44",
+    "endTime": "54:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "All right, let's switch a bit more gear to something that is kind of more back to your story before, which is AI in the pipeline, I guess, and more specifically in the sdlc really.",
+    "startTime": "54:46",
+    "endTime": "55:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I, I'm curious about your take on that.",
+    "startTime": "55:00",
+    "endTime": "55:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like I, I foresee a world where AI will write code and AI will review code and then we have agents talking to agents and then there's probably some human loop somewhere to review and make sure that nothing crazy is going on.",
+    "startTime": "55:03",
+    "endTime": "55:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But talk to him more about how you see that shifting given that you are deep inside the STLC world.",
+    "startTime": "55:17",
+    "endTime": "55:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Really.",
+    "startTime": "55:25",
+    "endTime": "55:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "55:26",
+    "endTime": "55:27",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There's a few ways this could go towards.",
+    "startTime": "55:27",
+    "endTime": "55:29",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "55:29",
+    "endTime": "55:29",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think it's hard to really predict the future, but I can think of the far future type of system is where they're no longer software engineers, they're more like PM's writing prompts.",
+    "startTime": "55:29",
+    "endTime": "55:44",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "55:44",
+    "endTime": "55:44",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And iterating with a system.",
+    "startTime": "55:44",
+    "endTime": "55:46",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it's sort of all taken care of behind the scenes.",
+    "startTime": "55:46",
+    "endTime": "55:48",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Perhaps in such an environment there's more reason to standardize the tech stack.",
+    "startTime": "55:48",
+    "endTime": "55:53",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like if the AI is going to write everything, why not write it in a single programming language?",
+    "startTime": "55:53",
+    "endTime": "55:57",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And maybe it's like extremely geared towards AI type of workloads.",
+    "startTime": "55:57",
+    "endTime": "56:03",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So maybe it's still transparent so you can see and audit the logic behind the scenes and so on.",
+    "startTime": "56:03",
+    "endTime": "56:09",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's still human readable, but it's not as necessarily as diverse.",
+    "startTime": "56:09",
+    "endTime": "56:13",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that's one possible option.",
+    "startTime": "56:14",
+    "endTime": "56:15",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think in the short and medium term there's going to be a lot of hybrid work between human and machine, if you will.",
+    "startTime": "56:15",
+    "endTime": "56:23",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And in this hybrid work, kind of like with self driving cars, the problem would be so much easier if there were no humans on the street.",
+    "startTime": "56:23",
+    "endTime": "56:30",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "56:30",
+    "endTime": "56:30",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You couldn't have beacons and we have no car accidents.",
+    "startTime": "56:30",
+    "endTime": "56:35",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Exactly, yeah.",
+    "startTime": "56:35",
+    "endTime": "56:37",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And the uncertainty of it all just goes away tremendously.",
+    "startTime": "56:37",
+    "endTime": "56:42",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "56:42",
+    "endTime": "56:42",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that is kind of similar with AI.",
+    "startTime": "56:43",
+    "endTime": "56:45",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "56:45",
+    "endTime": "56:45",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You still have to rely a lot on human engineers and this might be the norm for a very long time for all we know.",
+    "startTime": "56:46",
+    "endTime": "56:54",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We have no idea how fast it's to evolve.",
+    "startTime": "56:54",
+    "endTime": "56:56",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "56:56",
+    "endTime": "56:56",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And in this short and medium sort of time span we probably need to treat computers with the same care as sort of an engineer to some extent.",
+    "startTime": "56:56",
+    "endTime": "57:07",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So either that way you say like, you know, an AI agent is an engineer and you apply the same principles.",
+    "startTime": "57:07",
+    "endTime": "57:14",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Somebody has to review their code, you have to scan their for their stuff for vulnerabilities, you have to enforce engineering standards and so on.",
+    "startTime": "57:14",
+    "endTime": "57:21",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so that's one way to see it.",
+    "startTime": "57:22",
+    "endTime": "57:24",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or perhaps the AI is like an extension of the human and everything the human authors is with the help of AI.",
+    "startTime": "57:24",
+    "endTime": "57:31",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think that is where we are right now.",
+    "startTime": "57:31",
+    "endTime": "57:33",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "57:33",
+    "endTime": "57:34",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And the human might be a little bit sometimes careless about what the AI introduces.",
+    "startTime": "57:34",
+    "endTime": "57:41",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And for that reason you need even more verification on top to make sure that no strange things have been introduced, no vulnerabilities have been sort of added to the code base.",
+    "startTime": "57:41",
+    "endTime": "57:54",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Maybe whatever training the AI had was a bit out of date and using old dependencies or whatnot.",
+    "startTime": "57:55",
+    "endTime": "58:01",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Exactly.",
+    "startTime": "58:03",
+    "endTime": "58:04",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "58:04",
+    "endTime": "58:04",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You want to make sure you're not sort of behind the curve of what security today is in terms of dependencies and all that, or engineering practices that are specific to your company.",
+    "startTime": "58:04",
+    "endTime": "58:17",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think in the short term there's much bigger need for this kind of guardrails and verification and making sure everything is abiding according to engineering standards and security standards that you want to enforce in your organization.",
+    "startTime": "58:17",
+    "endTime": "58:35",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So yeah, I think over time we're kind of learning as an industry how to manage all this.",
+    "startTime": "58:36",
+    "endTime": "58:44",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But definitely it's a huge shift that is perhaps changing our mindsets the way we think about SDLC and all that.",
+    "startTime": "58:44",
+    "endTime": "58:53",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I mean, I'm a big subscriber of your first vision.",
+    "startTime": "58:53",
+    "endTime": "58:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "58:56",
+    "endTime": "58:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think engineers will essentially become managers of AI agents.",
+    "startTime": "58:56",
+    "endTime": "59:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, right.",
+    "startTime": "59:02",
+    "endTime": "59:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And, but this is the important part because I'm sure you saw this broke this week as were recording on Twitter, this guy who wrote some Microsoft, wrote some Sauce product and that is like, oh, holy shit.",
+    "startTime": "59:03",
+    "endTime": "59:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "People are injecting stuff into my database, they're bypassing payments.",
+    "startTime": "59:16",
+    "endTime": "59:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I have no idea what this, my code base does.",
+    "startTime": "59:19",
+    "endTime": "59:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's like he was a non engineer who written some piece of software using Cursor, essentially, or the likes of Cursor.",
+    "startTime": "59:21",
+    "endTime": "59:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "59:28",
+    "endTime": "59:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's just like there is a scenario where we will have these AIs who can write good enough code autonomously that a non engineer can manage.",
+    "startTime": "59:28",
+    "endTime": "59:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I think that's pretty far out, right?",
+    "startTime": "59:42",
+    "endTime": "59:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It is, it is.",
+    "startTime": "59:45",
+    "endTime": "59:46",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And going at it with a naive mindset like I imagine a non technical CEO is going to assume.",
+    "startTime": "59:46",
+    "endTime": "59:54",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay, we have to kind of heavily rely on AI now to be efficient and they're going to just create a lot of chaos, you know, because like that AI is going to write stuff that is pretty much a black box for everyone else.",
+    "startTime": "59:54",
+    "endTime": "01:00:07",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it's going to be riddled with vulnerabilities and like duplicated code, no logic complete.",
+    "startTime": "01:00:07",
+    "endTime": "01:00:14",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's the funny thing.",
+    "startTime": "01:00:14",
+    "endTime": "01:00:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like if you think about logically, it's probably cheaper for an LLM to write new code than to maintain existing code.",
+    "startTime": "01:00:15",
+    "endTime": "01:00:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh yeah, 100%, yes.",
+    "startTime": "01:00:23",
+    "endTime": "01:00:25",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it will.",
+    "startTime": "01:00:25",
+    "endTime": "01:00:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's just got to duplicate everything like a third time, right?",
+    "startTime": "01:00:27",
+    "endTime": "01:00:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes, yes, exactly.",
+    "startTime": "01:00:30",
+    "endTime": "01:00:32",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:00:32",
+    "endTime": "01:00:32",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I had this conversation with some friends a few weeks ago and I'm basically like, my big bet is that in the next 12 months we're going to have a lot of these companies that managed to build a product, manage to capture revenue, and then they realized they have no idea how the price written, what it does behind the scenes.",
+    "startTime": "01:00:33",
+    "endTime": "01:00:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's completely a black box to your point.",
+    "startTime": "01:00:53",
+    "endTime": "01:00:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then they're gonna, well, they're gonna be in for a world of pain and there are probably gonna be a lot of people who gotta make a lot of money trying to savage the disaster that is their code base.",
+    "startTime": "01:00:56",
+    "endTime": "01:01:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh yeah, oh yeah, exactly.",
+    "startTime": "01:01:10",
+    "endTime": "01:01:11",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And catching up from that, you're just kind of digging a hole for yourself.",
+    "startTime": "01:01:12",
+    "endTime": "01:01:16",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And getting out of that hole is going to be very expensive at the end of the day.",
+    "startTime": "01:01:16",
+    "endTime": "01:01:19",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like the original goal might have been to save money, but you know what, it's not actually going to work out that way in the long term.",
+    "startTime": "01:01:19",
+    "endTime": "01:01:27",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "No, I mean there's an argument that is that, well, these product would have not existed otherwise, so therefore it's a net benefit.",
+    "startTime": "01:01:27",
+    "endTime": "01:01:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But you can still, like there is probably like a happy medium.",
+    "startTime": "01:01:33",
+    "endTime": "01:01:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like you still need like AI is not going to replace engineers anytime soon.",
+    "startTime": "01:01:37",
+    "endTime": "01:01:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's going to 10x good engineers, but it's probably going to hurt shitty engineers.",
+    "startTime": "01:01:42",
+    "endTime": "01:01:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh yeah, exactly.",
+    "startTime": "01:01:48",
+    "endTime": "01:01:50",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And a lot of companies that are not engineering culture first, you're not necessarily seen as tech companies.",
+    "startTime": "01:01:50",
+    "endTime": "01:01:59",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They happen to depend on tech.",
+    "startTime": "01:01:59",
+    "endTime": "01:02:01",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Just because just about every company on earth nowadays depends on tech.",
+    "startTime": "01:02:01",
+    "endTime": "01:02:04",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And having an engineering team in house, I feel like those are the companies that are gonna suffer more from this, you know.",
+    "startTime": "01:02:04",
+    "endTime": "01:02:11",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, it's really hard.",
+    "startTime": "01:02:11",
+    "endTime": "01:02:13",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Even in today's market where, you know, people are laying off engineers like crazy.",
+    "startTime": "01:02:13",
+    "endTime": "01:02:18",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Even today it's still hard to get top engineering talent to kind of drive engineering culture properly in all these organizations.",
+    "startTime": "01:02:19",
+    "endTime": "01:02:27",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And yeah, they're gonna be in trouble.",
+    "startTime": "01:02:27",
+    "endTime": "01:02:30",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Hopefully, you know, it's.",
+    "startTime": "01:02:31",
+    "endTime": "01:02:32",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We will manage as an industry.",
+    "startTime": "01:02:33",
+    "endTime": "01:02:34",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But the writing is on the wall.",
+    "startTime": "01:02:34",
+    "endTime": "01:02:38",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "In some way, 100%.",
+    "startTime": "01:02:38",
+    "endTime": "01:02:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if you.",
+    "startTime": "01:02:40",
+    "endTime": "01:02:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Actually, for me, I think if you follow the money, you get very close to the truth here.",
+    "startTime": "01:02:40",
+    "endTime": "01:02:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because the people that are most bullish and most vocal about this, like, oh, AI.",
+    "startTime": "01:02:46",
+    "endTime": "01:02:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "All code written by AI in the next five years.",
+    "startTime": "01:02:50",
+    "endTime": "01:02:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Almost everybody who says makes those bold claims are either writing tools that are writing or in the AI ecosystem and directly benefit from it.",
+    "startTime": "01:02:54",
+    "endTime": "01:03:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Or there are people who want to basically slash your entire engineering budget and not hire engineers.",
+    "startTime": "01:03:04",
+    "endTime": "01:03:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "01:03:11",
+    "endTime": "01:03:11",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, yeah, exactly.",
+    "startTime": "01:03:11",
+    "endTime": "01:03:13",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "One of these two visions is kind of crazy in the short term.",
+    "startTime": "01:03:14",
+    "endTime": "01:03:18",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, yeah, exactly.",
+    "startTime": "01:03:18",
+    "endTime": "01:03:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No, it's, it's going to be an interesting ride.",
+    "startTime": "01:03:20",
+    "endTime": "01:03:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean there is a scenario where the LMS and the tools will catch up and by the time this disaster of a tornado will hit the tools, we're good enough to fix themselves.",
+    "startTime": "01:03:22",
+    "endTime": "01:03:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's a possible scenario.",
+    "startTime": "01:03:36",
+    "endTime": "01:03:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I guess we can't rule that out.",
+    "startTime": "01:03:38",
+    "endTime": "01:03:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "01:03:40",
+    "endTime": "01:03:41",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And in case.",
+    "startTime": "01:03:41",
+    "endTime": "01:03:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Fantastic.",
+    "startTime": "01:03:42",
+    "endTime": "01:03:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And maybe that was the right bet then.",
+    "startTime": "01:03:42",
+    "endTime": "01:03:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, exactly.",
+    "startTime": "01:03:45",
+    "endTime": "01:03:47",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's like that, yeah.",
+    "startTime": "01:03:47",
+    "endTime": "01:03:49",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The curve of like, you know, intelligent people making one decision and like.",
+    "startTime": "01:03:49",
+    "endTime": "01:03:54",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, yeah.",
+    "startTime": "01:03:54",
+    "endTime": "01:03:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The average.",
+    "startTime": "01:03:55",
+    "endTime": "01:03:56",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's like there's going to be a decision that makes sense for the most intelligent and the least intelligent ones and if that comes to become the truth, it's going to be interesting.",
+    "startTime": "01:03:56",
+    "endTime": "01:04:08",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But yeah, for now I'd say from my perspective, I would be more careful than.",
+    "startTime": "01:04:08",
+    "endTime": "01:04:15",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:04:16",
+    "endTime": "01:04:17",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The immediate current state of affairs with AI feels like not ready yet.",
+    "startTime": "01:04:18",
+    "endTime": "01:04:24",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, you can sort of create demos where you build from scratch with AI and sort of have mini games and such and they're maybe bug free mostly and they're safe, that's fine.",
+    "startTime": "01:04:24",
+    "endTime": "01:04:37",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But managing something bigger than that, it's just not real yet.",
+    "startTime": "01:04:37",
+    "endTime": "01:04:42",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I would challenge a little bit because I think Cursor and the likes of are fantastic at doing busy work and just like refactoring busy work.",
+    "startTime": "01:04:43",
+    "endTime": "01:04:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:04:53",
+    "endTime": "01:04:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Stuff that would take you forever to do.",
+    "startTime": "01:04:54",
+    "endTime": "01:04:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it's not super complicated.",
+    "startTime": "01:04:55",
+    "endTime": "01:04:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can describe it easily.",
+    "startTime": "01:04:57",
+    "endTime": "01:04:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Where they struggle is when things gets too complicated.",
+    "startTime": "01:04:59",
+    "endTime": "01:05:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:05:02",
+    "endTime": "01:05:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because the context window is just not big enough to.",
+    "startTime": "01:05:03",
+    "endTime": "01:05:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes, it's not there.",
+    "startTime": "01:05:06",
+    "endTime": "01:05:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:05:08",
+    "endTime": "01:05:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Which is why they just rather write new code than actually refactor the existing code.",
+    "startTime": "01:05:08",
+    "endTime": "01:05:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because it's too expensive to read in all the context.",
+    "startTime": "01:05:13",
+    "endTime": "01:05:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes, exactly.",
+    "startTime": "01:05:16",
+    "endTime": "01:05:18",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:05:19",
+    "endTime": "01:05:20",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They're just not going to follow all the requirements and maybe that will be surprising.",
+    "startTime": "01:05:20",
+    "endTime": "01:05:23",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You have to have strong tests for all the requirements and all that still takes a lot of work.",
+    "startTime": "01:05:24",
+    "endTime": "01:05:30",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:05:30",
+    "endTime": "01:05:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And not the security is crazy.",
+    "startTime": "01:05:32",
+    "endTime": "01:05:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The amount of times I've had cursory.",
+    "startTime": "01:05:34",
+    "endTime": "01:05:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's injecting and editing a lock file and managing dependencies.",
+    "startTime": "01:05:36",
+    "endTime": "01:05:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, whoa, hold on a second.",
+    "startTime": "01:05:39",
+    "endTime": "01:05:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Don't just change things.",
+    "startTime": "01:05:41",
+    "endTime": "01:05:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But yeah, like it's, it's a crazy world.",
+    "startTime": "01:05:45",
+    "endTime": "01:05:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I mean, I'm still bullish on the fact that this is gonna be a net benefit and there's no, I mean, I'm 100 sure there's not benefit.",
+    "startTime": "01:05:48",
+    "endTime": "01:05:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:05:55",
+    "endTime": "01:05:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's just, I think it's too naive and there are too many people that are too naive about what things can do today.",
+    "startTime": "01:05:55",
+    "endTime": "01:06:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's just like, yeah, they will be able to do at some point, but we're not there yet.",
+    "startTime": "01:06:02",
+    "endTime": "01:06:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Today.",
+    "startTime": "01:06:06",
+    "endTime": "01:06:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's a tool that allows good engineers to better but not non engineers to become engineers.",
+    "startTime": "01:06:06",
+    "endTime": "01:06:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's the other thing I'm wondering as well.",
+    "startTime": "01:06:15",
+    "endTime": "01:06:17",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What does the next generation of engineers, what does that look like?",
+    "startTime": "01:06:18",
+    "endTime": "01:06:22",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right, because there's less need for the junior engineers.",
+    "startTime": "01:06:22",
+    "endTime": "01:06:26",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "01:06:26",
+    "endTime": "01:06:26",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The AIs can do a lot of that.",
+    "startTime": "01:06:26",
+    "endTime": "01:06:29",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But now there's going to be maybe like a skills gap because those junior engineers will not become senior engineers.",
+    "startTime": "01:06:29",
+    "endTime": "01:06:36",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or maybe they're fine on the trajectory that maybe AI will get better faster than they would anyway.",
+    "startTime": "01:06:36",
+    "endTime": "01:06:41",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So maybe there's less need for senior engineers.",
+    "startTime": "01:06:41",
+    "endTime": "01:06:44",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, I mean, I would argue most likely there's less in need for junior engineers.",
+    "startTime": "01:06:45",
+    "endTime": "01:06:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "01:06:49",
+    "endTime": "01:06:50",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I mean this is a fantastic point, right?",
+    "startTime": "01:06:50",
+    "endTime": "01:06:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I've done a lot of hiring over the years and one of the things I have been surprised by, I mean, I'm getting old, but I'm hiring fresh grads these days.",
+    "startTime": "01:06:52",
+    "endTime": "01:07:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, I'm surprised by how many of them do not understand fundamentals anymore.",
+    "startTime": "01:07:01",
+    "endTime": "01:07:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh yeah, yes, right, exactly.",
+    "startTime": "01:07:07",
+    "endTime": "01:07:09",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, because the CS education, okay, there are the good schools, like there's the Stanford of the world and all those, of course they have like world class engineering schools.",
+    "startTime": "01:07:09",
+    "endTime": "01:07:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But for the bulk volume of engineering schools, like I've had like people coming out of CS program, like you have to teach them how to use like git.",
+    "startTime": "01:07:20",
+    "endTime": "01:07:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's like, what the hell have you been doing for the last four years?",
+    "startTime": "01:07:29",
+    "endTime": "01:07:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Exactly.",
+    "startTime": "01:07:34",
+    "endTime": "01:07:35",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There's so many abstraction levels that make things so much easier for us, the engineers that we kind of forgot where we came from.",
+    "startTime": "01:07:36",
+    "endTime": "01:07:44",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And now that's a knowledge gap that is gonna affect people, I think.",
+    "startTime": "01:07:44",
+    "endTime": "01:07:49",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, because I would imagine we're like roughly the same age and we grew up in, grew up using like Linux early on.",
+    "startTime": "01:07:49",
+    "endTime": "01:07:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like you grew up learning a lot of those things by doing and Like I have no CS degree but I've schooled CS people a lot because just I've been exposed to it for so long.",
+    "startTime": "01:07:58",
+    "endTime": "01:08:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, you just learned lower level stuff by virtue of playing around with it.",
+    "startTime": "01:08:09",
+    "endTime": "01:08:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:08:14",
+    "endTime": "01:08:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's.",
+    "startTime": "01:08:15",
+    "endTime": "01:08:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, that knowledge gap is very real today and I think it's going to be even.",
+    "startTime": "01:08:15",
+    "endTime": "01:08:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's going to be 100 start in like 5, 10 years.",
+    "startTime": "01:08:21",
+    "endTime": "01:08:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, with these level abstractions.",
+    "startTime": "01:08:25",
+    "endTime": "01:08:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, yeah, exactly.",
+    "startTime": "01:08:27",
+    "endTime": "01:08:29",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You're going to be building with REACT or like AI agents and so on and you have no idea how HTML works or HTTP.",
+    "startTime": "01:08:29",
+    "endTime": "01:08:36",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So like yeah, today, yeah.",
+    "startTime": "01:08:37",
+    "endTime": "01:08:42",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Whilst today we're like annoyed that new hire newer graduates do not understand like the Linux kernel or whatever.",
+    "startTime": "01:08:42",
+    "endTime": "01:08:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like that's going to be like move like five level abstraction further and they're like it's going to be so high level that the Linux kernel is like Cobalt to us essentially.",
+    "startTime": "01:08:52",
+    "endTime": "01:09:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, yeah, exactly.",
+    "startTime": "01:09:04",
+    "endTime": "01:09:05",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, yes.",
+    "startTime": "01:09:05",
+    "endTime": "01:09:06",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because yeah, you could argue the previous generation are complaining that we don't know how punch cards work or whatever.",
+    "startTime": "01:09:07",
+    "endTime": "01:09:13",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right, exactly.",
+    "startTime": "01:09:13",
+    "endTime": "01:09:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, yeah, it's an interest analogy.",
+    "startTime": "01:09:14",
+    "endTime": "01:09:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "but this has been super interesting.",
+    "startTime": "01:09:17",
+    "endTime": "01:09:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think we covered a lot of good ground here and I'm very happy about what we got covered.",
+    "startTime": "01:09:21",
+    "endTime": "01:09:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So thank you so much for coming on the show.",
+    "startTime": "01:09:25",
+    "endTime": "01:09:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Before we wrap, are there any closing notes, any shout outs you want to do people want to learn more about Earthly or so on?",
+    "startTime": "01:09:28",
+    "endTime": "01:09:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, well, thank you for having me.",
+    "startTime": "01:09:36",
+    "endTime": "01:09:39",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And, and yeah, if you're interested in improving your engineering excellence, your engineering standards or managing SDLC at scale in your organization, check out earthly.dev dev and yeah, hit me up.",
+    "startTime": "01:09:39",
+    "endTime": "01:09:52",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I love to talk to you.",
+    "startTime": "01:09:52",
+    "endTime": "01:09:53",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So many thanks Victor.",
+    "startTime": "01:09:54",
+    "endTime": "01:09:56",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Amazing.",
+    "startTime": "01:09:56",
+    "endTime": "01:09:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Perfect.",
+    "startTime": "01:09:57",
+    "endTime": "01:09:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Thanks for watching bud.",
+    "startTime": "01:09:57",
+    "endTime": "01:09:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Have a good one.",
+    "startTime": "01:09:58",
+    "endTime": "01:09:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Talk soon.",
+    "startTime": "01:09:59",
+    "endTime": "01:10:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Cheers.",
+    "startTime": "01:10:00",
+    "endTime": "01:10:00",
+    "speaker_name": "Vlad A. Ionescu",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All right.",
+    "startTime": "01:10:03",
+    "endTime": "01:10:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think we covered a lot of ground though.",
+    "startTime": "01:10:03",
+    "endTime": "01:10:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That was, that was actually really good.",
+    "startTime": "01:10:04",
+    "endTime": "01:10:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think it was a lot of good stuff there.",
+    "startTime": "01:10:05",
+    "endTime": "01:10:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This episode will go live not the next Friday, but the Friday after I think because I have another one that I need to pipeline before that is very timely but sounds good.",
+    "startTime": "01:10:09",
+    "endTime": "01:10:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  }
+]

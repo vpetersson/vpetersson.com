@@ -1,0 +1,102 @@
+baseURL = "https://vpetersson.com"
+languageCode = "en"
+title = "Viktor's Tech Musings & Security Paranoia"
+enableRobotsTXT = true
+enableGitInfo = false
+timeout = "60s"
+ignoreFiles = ["^_posts"]
+
+[params]
+  description = "Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale."
+  googleAnalytics = "G-ZY6ZNLNNC8"
+
+# Permalink structure to match Jekyll's date permalink style
+[permalinks]
+  [permalinks.page]
+    blog = "/:year/:month/:day/:slug/"
+  [permalinks.section]
+    blog = "/blog/"
+    podcast = "/podcast/"
+
+# Taxonomies
+[taxonomies]
+  tag = "tags"
+
+# Pagination
+[pagination]
+  pagerSize = 10
+
+# Markup configuration
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)'], ['$', '$']]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    noClasses = false
+    style = "monokai"
+
+# Output formats
+[outputFormats]
+  [outputFormats.VideoSitemap]
+    baseName = "video-sitemap"
+    mediaType = "application/xml"
+    isPlainText = true
+
+# Home page output formats
+[outputs]
+  home = ["HTML", "RSS", "VideoSitemap"]
+  section = ["HTML", "RSS"]
+
+# Minification
+[minify]
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepWhitespace = false
+    [minify.tdewolff.css]
+      keepCSS2 = true
+
+# Module mounts for node_modules access
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "node_modules/lunr"
+    target = "assets/js/vendor/lunr"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "data"
+    target = "data"
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+
+# Related content configuration
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "date"
+    weight = 10
+
+# Sitemap configuration
+[sitemap]
+  changeFreq = "monthly"
+  priority = 0.5

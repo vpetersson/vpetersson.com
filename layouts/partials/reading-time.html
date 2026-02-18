@@ -1,0 +1,3 @@
+{{- $words := .WordCount -}}
+{{- $minutes := math.Ceil (div (float $words) 183.0) | int -}}
+{{- printf "%d min read" $minutes -}}

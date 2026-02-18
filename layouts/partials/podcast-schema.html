@@ -1,0 +1,89 @@
+{{/* Extract YouTube video ID */}}
+{{ $youtube_id := "" }}
+{{ with .Params.youtube }}
+  {{ $youtube_id = replaceRE `.*[?&]v=([^&]+).*` "$1" . }}
+{{ end }}
+
+<!-- Podcast episode schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["VideoObject", "PodcastEpisode"],
+  "name": "{{ .Title }}",
+  "description": {{ with .Description }}{{ . | jsonify }}{{ else }}{{ .Summary | plainify | truncate 300 | jsonify }}{{ end }},
+  "uploadDate": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "duration": "PT{{ .Params.duration }}M",
+  "thumbnailUrl": "https://i.ytimg.com/vi/{{ $youtube_id }}/default.jpg",
+  "embedUrl": "https://www.youtube.com/embed/{{ $youtube_id }}",
+  "contentUrl": "{{ .Params.youtube }}",
+  "url": "{{ .Permalink }}",
+  "mainEntityOfPage": "{{ .Permalink }}",
+  "inLanguage": "en",
+  "isFamilyFriendly": true,
+  {{ with .Params.guests }}
+  "actors": [
+    {{ range $i, $guest := . }}
+    {{ if $i }},{{ end }}
+    {
+      "@type": "Person",
+      "name": "{{ $guest }}"
+    }
+    {{ end }}
+  ],
+  {{ end }}
+  "author": {
+    "@type": "Person",
+    "@id": "{{ site.BaseURL }}about/#person",
+    "name": "Viktor Petersson",
+    "url": "{{ site.BaseURL }}about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nerding Out with Viktor",
+    "url": "{{ "podcast/" | absURL }}"
+  },
+  "partOfSeries": {
+    "@type": "PodcastSeries",
+    "name": "Nerding Out with Viktor",
+    "url": "{{ "podcast/" | absURL }}",
+    "inLanguage": "en",
+    "isAccessibleForFree": true
+  },
+  "episodeNumber": {{ .Params.episode }},
+  "seasonNumber": {{ .Params.season }},
+  "sameAs": [
+    {{ $first := true }}
+    {{- with .Params.spotify }}{{ if not $first }},{{ end }}"{{ . }}"{{ $first = false }}{{ end -}}
+    {{- with .Params.apple }}{{ if not $first }},{{ end }}"{{ . }}"{{ $first = false }}{{ end -}}
+    {{- with .Params.amazon }}{{ if not $first }},{{ end }}"{{ . }}"{{ $first = false }}{{ end -}}
+  ]
+}
+</script>
+
+<!-- Breadcrumbs schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.BaseURL }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Podcast",
+      "item": "{{ "podcast/" | absURL }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+  ]
+}
+</script>

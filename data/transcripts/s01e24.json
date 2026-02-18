@@ -1,0 +1,6631 @@
+[
+  {
+    "sentence": "Welcome back to another episode of Nerding out with Victor.",
+    "startTime": "00:01",
+    "endTime": "00:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Today I have Ken Munro with me on the show and he's going to speak all about pen testing and security.",
+    "startTime": "00:04",
+    "endTime": "00:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So welcome to the show.",
+    "startTime": "00:10",
+    "endTime": "00:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Hey, nice to meet you.",
+    "startTime": "00:12",
+    "endTime": "00:13",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How's it going?",
+    "startTime": "00:13",
+    "endTime": "00:14",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Good, good.",
+    "startTime": "00:14",
+    "endTime": "00:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So we first met at Bsides Bristol, what a few months ago.",
+    "startTime": "00:14",
+    "endTime": "00:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We both spoke there and I caught your talk about hacking planes, which I thought was a fantastic talk.",
+    "startTime": "00:18",
+    "endTime": "00:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it definitely opened my eyes up to like the security in that space in general.",
+    "startTime": "00:24",
+    "endTime": "00:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think that something I can wanna kick the show off with.",
+    "startTime": "00:29",
+    "endTime": "00:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like what?",
+    "startTime": "00:32",
+    "endTime": "00:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How did you even get into the space of hacking airplanes?",
+    "startTime": "00:33",
+    "endTime": "00:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's a great story.",
+    "startTime": "00:38",
+    "endTime": "00:39",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So my background, I was supposed to be a commercial pilot.",
+    "startTime": "00:39",
+    "endTime": "00:42",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So back in the day I first started working, oh my gosh, in the 90s in the antivirus industry.",
+    "startTime": "00:43",
+    "endTime": "00:48",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I was using that to fund my pilot's license.",
+    "startTime": "00:48",
+    "endTime": "00:52",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I got up and I was supposed to go commercial and the company I was working for at the time went belly up and that was the end of my commercial pilot's career.",
+    "startTime": "00:52",
+    "endTime": "00:59",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So yeah, given the number of near accidents I caused, that's probably actually a good thing for all you passengers out there.",
+    "startTime": "00:59",
+    "endTime": "01:06",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I do still fly general aviation, so light aircraft does crazy things in crazy places.",
+    "startTime": "01:06",
+    "endTime": "01:10",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But yeah, no more commercial flying.",
+    "startTime": "01:10",
+    "endTime": "01:14",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So instead I ended up starting a pen testing firm.",
+    "startTime": "01:15",
+    "endTime": "01:18",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "A long time ago now and end of the 2000 and tens, my sort of two passions started to come back together.",
+    "startTime": "01:18",
+    "endTime": "01:25",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'd say collide, but that doesn't sound great in flying, does it?",
+    "startTime": "01:25",
+    "endTime": "01:28",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And one of my colleagues, an amazing guy called Alex Lomas, who's also a general aviation pilot, but also an aeronautical engineer and a really good pen tester.",
+    "startTime": "01:31",
+    "endTime": "01:41",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We started chatting and Raspberry had a lot of common interest in planes.",
+    "startTime": "01:41",
+    "endTime": "01:44",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Where'd you go with this?",
+    "startTime": "01:45",
+    "endTime": "01:46",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How do you go about lent hack planes?",
+    "startTime": "01:47",
+    "endTime": "01:49",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We picked up the phone to one of the breakers yards in the UK and said, those planes that come and land at your place and don't fly again, what happens?",
+    "startTime": "01:51",
+    "endTime": "02:00",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, they sit around until we take them apart and that's about it.",
+    "startTime": "02:01",
+    "endTime": "02:06",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We said, well, okay, if I'm never going to fly again.",
+    "startTime": "02:06",
+    "endTime": "02:08",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If we gave you some cash to pay for the power, so running the power unit, could we come and have a learn?",
+    "startTime": "02:08",
+    "endTime": "02:15",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They were like, yeah, knock yourselves out, go for it.",
+    "startTime": "02:15",
+    "endTime": "02:17",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "At this really weird situation where we rocked up first time to one of the airport breakers and they said, well, what do you want to have a go at?",
+    "startTime": "02:18",
+    "endTime": "02:27",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We said, what have you got?",
+    "startTime": "02:27",
+    "endTime": "02:28",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, we've got some 737s and some A320s.",
+    "startTime": "02:28",
+    "endTime": "02:31",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I was like, great, off we go.",
+    "startTime": "02:31",
+    "endTime": "02:33",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we literally turned up with some laptops, a bunch of connectors, some scopes, and just started learning because there's really not very much online about how you hack a plane.",
+    "startTime": "02:33",
+    "endTime": "02:46",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The good news is it's actually very difficult and long may it stay that way.",
+    "startTime": "02:46",
+    "endTime": "02:48",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But, yeah, we just started learning.",
+    "startTime": "02:49",
+    "endTime": "02:51",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then, as we all know, the world went sideways with COVID which was awful for everybody.",
+    "startTime": "02:52",
+    "endTime": "02:58",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But there was this kind of weird silver lining in the airplane cybersecurity space was that the breakage yards got really backed up.",
+    "startTime": "02:58",
+    "endTime": "03:06",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Really backed up.",
+    "startTime": "03:06",
+    "endTime": "03:07",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And also I think some of them were struggling with it because no one wanted to buy the parts because no one was flying airplanes.",
+    "startTime": "03:07",
+    "endTime": "03:14",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so that's kind of when things accelerated a bit for us is we had, for example, British Airways, entire 747 fleet was retired early.",
+    "startTime": "03:15",
+    "endTime": "03:24",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they were all laid up.",
+    "startTime": "03:24",
+    "endTime": "03:26",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Believe it or not, were actually offered one for just over a quarter of a million dollars.",
+    "startTime": "03:27",
+    "endTime": "03:30",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But parking was going to be a problem.",
+    "startTime": "03:30",
+    "endTime": "03:32",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I don't know.",
+    "startTime": "03:36",
+    "endTime": "03:37",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think we struggled to get that one in the driveway.",
+    "startTime": "03:37",
+    "endTime": "03:39",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So.",
+    "startTime": "03:39",
+    "endTime": "03:39",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes, but it just meant that from chasing down to one of the breakers yards to hopefully get your hands on a plane to learn a bunch of stuff, and then you'd need to go away and really understand what you found, think about exploits and packaging attacks to come back a month later and find the plane was in bits.",
+    "startTime": "03:39",
+    "endTime": "03:58",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But now we had the breaker's yards backed up.",
+    "startTime": "03:58",
+    "endTime": "04:01",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So actually the planes that we got to look at were still there six months, 12 months, 18 months later, because there was no market for the parts.",
+    "startTime": "04:01",
+    "endTime": "04:10",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They were backed up in terms of taking them apart.",
+    "startTime": "04:10",
+    "endTime": "04:14",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's when things start to get really interesting and things start to accelerate for us.",
+    "startTime": "04:14",
+    "endTime": "04:18",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's super fascinating.",
+    "startTime": "04:19",
+    "endTime": "04:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "04:20",
+    "endTime": "04:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But you got your keys to, well, your fidget keys to the planes.",
+    "startTime": "04:20",
+    "endTime": "04:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And where do you start?",
+    "startTime": "04:25",
+    "endTime": "04:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How much did you know about internal communication?",
+    "startTime": "04:27",
+    "endTime": "04:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like possible attack vectors?",
+    "startTime": "04:31",
+    "endTime": "04:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like even you mentioned cabling and ports and all that.",
+    "startTime": "04:33",
+    "endTime": "04:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like even that is probably.",
+    "startTime": "04:37",
+    "endTime": "04:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "These are not things that you have.",
+    "startTime": "04:39",
+    "endTime": "04:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "These are not USB or ethernet cables.",
+    "startTime": "04:41",
+    "endTime": "04:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I presume that you plug into these, like internal system.",
+    "startTime": "04:43",
+    "endTime": "04:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They're probably a lot of custom casing, couple of custom cases, custom cabling and all that, right?",
+    "startTime": "04:46",
+    "endTime": "04:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, absolutely right.",
+    "startTime": "04:51",
+    "endTime": "04:52",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, before we go there, I should say, look, we talk about hacking planes.",
+    "startTime": "04:52",
+    "endTime": "04:55",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's actually insanely difficult.",
+    "startTime": "04:55",
+    "endTime": "04:57",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And a lot of that has to do with the thought that the manufacturers have given to it.",
+    "startTime": "04:57",
+    "endTime": "05:01",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And Airbus aren't stupid.",
+    "startTime": "05:01",
+    "endTime": "05:02",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They get cyber and there's a lot of effort put into segmenting the plane network.",
+    "startTime": "05:02",
+    "endTime": "05:08",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the bit in the back where you and I sit, right, that's considered a very dirty network.",
+    "startTime": "05:08",
+    "endTime": "05:13",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The wireless networks we connect to, they're untrusted.",
+    "startTime": "05:13",
+    "endTime": "05:16",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's called the passenger and information entertainment services domain.",
+    "startTime": "05:16",
+    "endTime": "05:20",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And what goes on there, frankly, who cares, because it's no different to a wifi hotspot, a cafe, whatever.",
+    "startTime": "05:20",
+    "endTime": "05:28",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Then things get a bit more interesting when you go to the halfway house, which is the information services domain, aisd.",
+    "startTime": "05:29",
+    "endTime": "05:35",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's where in some planes you have slightly more privilege for members of the cabin crew to do stuff.",
+    "startTime": "05:35",
+    "endTime": "05:40",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So when you walk onto a plane and you look left or right as you walk on, you probably see a panel there and that's the panel that the cabin crew have more access to and can do a bit more.",
+    "startTime": "05:40",
+    "endTime": "05:51",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you might remember an old 747, certainly on BA and a few other operators, they had a little terminal under the stairs and that could do quite a bit more.",
+    "startTime": "05:51",
+    "endTime": "06:00",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That was called the cabin management terminal.",
+    "startTime": "06:00",
+    "endTime": "06:02",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you could do things like send messages.",
+    "startTime": "06:02",
+    "endTime": "06:04",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Funniest bit of all, one of the planes we worked on, 2020, this was running windows NT351 on that terminal.",
+    "startTime": "06:05",
+    "endTime": "06:12",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "06:15",
+    "endTime": "06:16",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so that's the bit that kind of in the middle and then you get to what we call the aircraft control domain.",
+    "startTime": "06:16",
+    "endTime": "06:20",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's, you know, that's the flight controls.",
+    "startTime": "06:20",
+    "endTime": "06:22",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that bit is essentially completely isolated.",
+    "startTime": "06:22",
+    "endTime": "06:25",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there is no practical way, as has been suggested in the media, of hacking an airplane from the seat in coach.",
+    "startTime": "06:26",
+    "endTime": "06:32",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Just doesn't work.",
+    "startTime": "06:32",
+    "endTime": "06:34",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So even you spoke about wifi, but even the infotainment device in the headrest in front of you, that's all on the same threat, I guess.",
+    "startTime": "06:34",
+    "endTime": "06:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Network.",
+    "startTime": "06:46",
+    "endTime": "06:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, absolutely right.",
+    "startTime": "06:46",
+    "endTime": "06:47",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's all in the passenger entertainment services domain.",
+    "startTime": "06:47",
+    "endTime": "06:51",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So historically, you might remember if you get unlucky in economy and you get the seat with a box underneath the seat in front that's basically an ethernet hub.",
+    "startTime": "06:51",
+    "endTime": "07:03",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So essentially that's switching old video protocols.",
+    "startTime": "07:03",
+    "endTime": "07:07",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I've actually got one in a box just there randomly, but it's in bits.",
+    "startTime": "07:07",
+    "endTime": "07:11",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I won't bother.",
+    "startTime": "07:11",
+    "endTime": "07:12",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But again, turning back the clock, last one of those we took apart was running docsis.",
+    "startTime": "07:13",
+    "endTime": "07:17",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So really old cable protocols that you won't have seen for years.",
+    "startTime": "07:17",
+    "endTime": "07:22",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's essentially just a switch.",
+    "startTime": "07:22",
+    "endTime": "07:24",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there'll be a media server on the plane, older servers, there'll be a set of disks and they'll be distributing video content out to your seat.",
+    "startTime": "07:24",
+    "endTime": "07:32",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "More recently, you've tended to Find that seatback device is now going to be android tablet, basically dressed up.",
+    "startTime": "07:32",
+    "endTime": "07:40",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I'm sure many of you seen those Android icons when you power it up.",
+    "startTime": "07:40",
+    "endTime": "07:44",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What's the worst you could do with that?",
+    "startTime": "07:46",
+    "endTime": "07:48",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There have been a few demonstrated hacks and in fact, we've successfully done it ourselves as well.",
+    "startTime": "07:50",
+    "endTime": "07:54",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But what could you do?",
+    "startTime": "07:54",
+    "endTime": "07:56",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "All you've got access to is the video content, so I suppose you could stream some porn.",
+    "startTime": "07:56",
+    "endTime": "08:03",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that accidentally happened a little while ago.",
+    "startTime": "08:04",
+    "endTime": "08:06",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I see.",
+    "startTime": "08:07",
+    "endTime": "08:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's more like in the Rickrolling domain of attack.",
+    "startTime": "08:08",
+    "endTime": "08:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Nothing serious can actually come from that.",
+    "startTime": "08:13",
+    "endTime": "08:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, there was an interesting discussion we had at an aviation cyber event with one of the airlines and we're trying to work out if you broadcast something that caused everyone to panic, could you create a fire safety incident?",
+    "startTime": "08:15",
+    "endTime": "08:29",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, it'd be pretty scary, but could you broadcast something that said, hey, the plane's been hijacked, you need to break into the cockpit, don't trust the crew, or there's a bomb at the front of the plane, run to the back.",
+    "startTime": "08:30",
+    "endTime": "08:41",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So then you end up with this challenge.",
+    "startTime": "08:43",
+    "endTime": "08:44",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You end up with the plane out of weight and balance.",
+    "startTime": "08:44",
+    "endTime": "08:46",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So with everyone in the back actually forces the nose up.",
+    "startTime": "08:46",
+    "endTime": "08:49",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And in certain plane types, in certain flight configurations, you could cause it to nose up and stall.",
+    "startTime": "08:49",
+    "endTime": "08:54",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But practically that's very difficult.",
+    "startTime": "08:54",
+    "endTime": "08:57",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I would only apply at very specific parts of the flight when the fuel tanks are quite empty.",
+    "startTime": "08:57",
+    "endTime": "09:02",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I don't think that system.",
+    "startTime": "09:02",
+    "endTime": "09:05",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't think that the infotainment system is really a practical safety.",
+    "startTime": "09:05",
+    "endTime": "09:10",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Safety.",
+    "startTime": "09:10",
+    "endTime": "09:11",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Relevant vector.",
+    "startTime": "09:11",
+    "endTime": "09:12",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "09:12",
+    "endTime": "09:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay.",
+    "startTime": "09:13",
+    "endTime": "09:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you, I guess excluded that from your experiments relatively quickly.",
+    "startTime": "09:14",
+    "endTime": "09:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And after done some assessments, so you moved on.",
+    "startTime": "09:18",
+    "endTime": "09:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Oh, no, we hacked them.",
+    "startTime": "09:20",
+    "endTime": "09:22",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Come on.",
+    "startTime": "09:23",
+    "endTime": "09:24",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The opportunity knocked.",
+    "startTime": "09:24",
+    "endTime": "09:26",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, you know, we've got some video which I think you might have seen at BSides.",
+    "startTime": "09:26",
+    "endTime": "09:29",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Gig is we successfully managed to get every seat back seat showing, I think.",
+    "startTime": "09:29",
+    "endTime": "09:37",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What was it?",
+    "startTime": "09:37",
+    "endTime": "09:38",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was the pilot episod Scorpion.",
+    "startTime": "09:38",
+    "endTime": "09:40",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We managed to get streaming.",
+    "startTime": "09:40",
+    "endTime": "09:42",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was more to prove a point that you could.",
+    "startTime": "09:43",
+    "endTime": "09:46",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Is there a practical impact to that?",
+    "startTime": "09:46",
+    "endTime": "09:48",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No, not really.",
+    "startTime": "09:48",
+    "endTime": "09:48",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was fun to do.",
+    "startTime": "09:49",
+    "endTime": "09:50",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, yeah, fair enough.",
+    "startTime": "09:50",
+    "endTime": "09:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And in your talk, you kind of moved on to kind of go into what you call electric flight bag is what you kind of ended up as a real attack vector.",
+    "startTime": "09:52",
+    "endTime": "10:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "10:02",
+    "endTime": "10:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "10:02",
+    "endTime": "10:03",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you are have physical access to plane, access to cockpit systems, access to the cargo hold, access to the avionics bay, which is very unlikely, it's virtually impossible in flight.",
+    "startTime": "10:03",
+    "endTime": "10:16",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And even if you had that sort of access, you'd still Having to be injecting onto three separate networks concurrently with incredible precision timing, which is on the bounds of practicality.",
+    "startTime": "10:17",
+    "endTime": "10:30",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So a real world hack of aircraft control domain is.",
+    "startTime": "10:30",
+    "endTime": "10:33",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not there.",
+    "startTime": "10:34",
+    "endTime": "10:35",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's really not there.",
+    "startTime": "10:36",
+    "endTime": "10:37",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And despite in the Netflix MH370 documentary where they suggested a Russian special ops team took control of the plane, just no.",
+    "startTime": "10:37",
+    "endTime": "10:46",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So instead we spent our time looking at some of the connected systems that planes now use.",
+    "startTime": "10:47",
+    "endTime": "10:52",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, the reason that planes are connected is for you and me, we want to watch movies in the back, we want to get our email when we're flying around.",
+    "startTime": "10:52",
+    "endTime": "10:59",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So passenger connectivity is important, but actually in terms of safety, connectivity is really important for modern airplanes.",
+    "startTime": "10:59",
+    "endTime": "11:06",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it could be things as simple as weather routing, so you're avoiding turbulence or getting the best tailwind.",
+    "startTime": "11:06",
+    "endTime": "11:13",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we're using less fuel and less carbon dioxide through to simple things like calculating weight and balance.",
+    "startTime": "11:13",
+    "endTime": "11:20",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Or the one that was most important to us was around what we call engine performance.",
+    "startTime": "11:20",
+    "endTime": "11:25",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that gets to your point about electronic flight bags.",
+    "startTime": "11:25",
+    "endTime": "11:28",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now the efb, if you ever poked your head in the cockpit when you board, you'll probably see the pilots are working on a tablet together.",
+    "startTime": "11:29",
+    "endTime": "11:36",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that tablet is the electronic flight bag.",
+    "startTime": "11:36",
+    "endTime": "11:39",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it replaces kilograms of paper that we used to carry around.",
+    "startTime": "11:39",
+    "endTime": "11:43",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I used to have to carry a physical approach chart, so it's the map that tells you how to land.",
+    "startTime": "11:43",
+    "endTime": "11:50",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I used to have to carry charts of the airspace so I could navigate correctly.",
+    "startTime": "11:50",
+    "endTime": "11:56",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I needed maps of the airport, charts of the airport so I could taxi correctly.",
+    "startTime": "11:57",
+    "endTime": "12:01",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And those are incredibly heavy and also very complicated to update because by law, what's called the Airac update cycle mandates that they're updated every 28 days or so.",
+    "startTime": "12:01",
+    "endTime": "12:13",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "12:13",
+    "endTime": "12:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Which can you imagine the complexity of pushing bits of paper around the world?",
+    "startTime": "12:14",
+    "endTime": "12:17",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So every pilot's got the latest maps.",
+    "startTime": "12:17",
+    "endTime": "12:19",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the overhead of that, the practicality, that was huge.",
+    "startTime": "12:22",
+    "endTime": "12:24",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So what we use nowadays, we do it all online.",
+    "startTime": "12:24",
+    "endTime": "12:26",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We use electronic flight bags to download those apps, to download those maps so that we don't have to carry around reams of paper that quickly gets out of date.",
+    "startTime": "12:26",
+    "endTime": "12:35",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it saves a fortune, saves weight, which saves fuel and makes us more efficient.",
+    "startTime": "12:35",
+    "endTime": "12:40",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we then started going, hang on, all right, these connected tablets, how secure are they?",
+    "startTime": "12:42",
+    "endTime": "12:47",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's when things got really interesting.",
+    "startTime": "12:47",
+    "endTime": "12:49",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "12:50",
+    "endTime": "12:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "To give you some examples.",
+    "startTime": "12:51",
+    "endTime": "12:53",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the average electronic flight backs probably got between 10 and 20 different applications on them.",
+    "startTime": "12:53",
+    "endTime": "12:59",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And probably the most common is going to be a charting application.",
+    "startTime": "13:00",
+    "endTime": "13:03",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So something that products from people like Jeppesen or Lufthansa systems, they're very popular charting applications.",
+    "startTime": "13:03",
+    "endTime": "13:11",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But the one that intrigued us was what's called the performance calculator.",
+    "startTime": "13:11",
+    "endTime": "13:14",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, when you're sat there at the end of the Runway on your plane, it's about to go, what you might not appreciate is that we very rarely use full power, right?",
+    "startTime": "13:14",
+    "endTime": "13:25",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the reason we don't use full power is it wears the engines quite a bit when we're caning them.",
+    "startTime": "13:25",
+    "endTime": "13:29",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It burns a lot of fuel, so it's expensive, and it chucks out a lot of carbon dioxide when we don't want to do that, right?",
+    "startTime": "13:29",
+    "endTime": "13:35",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if the Runway is long enough and what we call the density altitude, so that's the thickness of the air is good, and maybe we've got a nice headwind and we're not too heavy, we'll do what's called a performance calculation.",
+    "startTime": "13:35",
+    "endTime": "13:49",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In the case of Airbus, that's called a.",
+    "startTime": "13:50",
+    "endTime": "13:52",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's called a flex temp.",
+    "startTime": "13:54",
+    "endTime": "13:55",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And when you actually look at the throttles on an Airbus plane, you'll see a setting that says flx, that's flex temp.",
+    "startTime": "13:56",
+    "endTime": "14:02",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And at Boeing, it's called the D rate.",
+    "startTime": "14:02",
+    "endTime": "14:05",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And probably in Boeing, it's a bit more logical.",
+    "startTime": "14:05",
+    "endTime": "14:07",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What we're saying is we de rate from 100% down to whatever D rate percentage we want of thrust.",
+    "startTime": "14:07",
+    "endTime": "14:12",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so we're sat there in the Runway, pilots go, right, my D rate or flex temp is X.",
+    "startTime": "14:12",
+    "endTime": "14:17",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Put the correct amount of power and the plane trundles off down the Runway, reaches V1, which we can brake safely, go past that, get to VR rotation speed, and finally we get to V2, which is the point at which we can safely climb away with one engine.",
+    "startTime": "14:17",
+    "endTime": "14:30",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The gap between V1 and V2, scary place.",
+    "startTime": "14:30",
+    "endTime": "14:33",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If it goes wrong, you're going off the end.",
+    "startTime": "14:33",
+    "endTime": "14:35",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But anyway, so that calculator is really important, and that's one of the core applications on your efb.",
+    "startTime": "14:38",
+    "endTime": "14:44",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And one of the first vulnerabilities we found was in one of the Boeing performance calculators called opt, or the Onboard Performance Tool, very well known in Boeing types.",
+    "startTime": "14:45",
+    "endTime": "14:53",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it takes lots and lots of data.",
+    "startTime": "14:53",
+    "endTime": "14:55",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The obvious ones like Runway length, weight, wind direction, so crosswind, headwind, tailwind, but lots of other things like which things on the plane that use power are working.",
+    "startTime": "14:56",
+    "endTime": "15:08",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So are you going to have your air conditioning packs running because they use a bit of power, and that then spits out all the data we need to make a safe departure.",
+    "startTime": "15:08",
+    "endTime": "15:15",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And what we discovered early on was the ability, effectively, it wasn't protecting its own data very well.",
+    "startTime": "15:15",
+    "endTime": "15:21",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So There was no signing mechanism on the database, which meant you could tamper with the data and therefore pilots would potentially use wrong data.",
+    "startTime": "15:21",
+    "endTime": "15:28",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the simplest example of that is we could make the Runway appear longer than it actually was.",
+    "startTime": "15:28",
+    "endTime": "15:33",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "15:33",
+    "endTime": "15:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Which of course, so the plane thinks it's got longer to get up to speed and therefore commands use of less power.",
+    "startTime": "15:33",
+    "endTime": "15:39",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "15:41",
+    "endTime": "15:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that's scary.",
+    "startTime": "15:41",
+    "endTime": "15:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But in terms of the communication between this device and that, your plane, are they completely air gapped or are they like, are they actually on the same wifi or how is intercommunication looking?",
+    "startTime": "15:44",
+    "endTime": "15:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, are they air gapped?",
+    "startTime": "15:55",
+    "endTime": "15:56",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes, but not always.",
+    "startTime": "15:57",
+    "endTime": "16:00",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So when you get onto a plane, you see the pilot using a tablet.",
+    "startTime": "16:02",
+    "endTime": "16:05",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Typically that tablet is air gapped.",
+    "startTime": "16:05",
+    "endTime": "16:07",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It may have Internet access through the sat comms, but there's no practical route from that tablet back into the systems.",
+    "startTime": "16:07",
+    "endTime": "16:13",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And there's some good reasons for that, is it means you're not exposing the airplane, excuse me, to the security of Android or iOS or Windows tablets.",
+    "startTime": "16:13",
+    "endTime": "16:22",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So what will happen is the pilots will take the data needs, spit it into the iPad, typically for safety and security reasons, they'll then switch and check the data input and then go, okay, I agree.",
+    "startTime": "16:22",
+    "endTime": "16:32",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Calculate what's my D rate.",
+    "startTime": "16:32",
+    "endTime": "16:35",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, okay, so that's great.",
+    "startTime": "16:35",
+    "endTime": "16:37",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then they transpose it into the flight management systems to program them to use the right amount of power.",
+    "startTime": "16:37",
+    "endTime": "16:43",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Problem is, sometimes pilots make mistakes even when you cross check.",
+    "startTime": "16:44",
+    "endTime": "16:48",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Very occasionally we've seen cases where pilots have made the same mistake in the calculation or made the same mistake transposing it.",
+    "startTime": "16:48",
+    "endTime": "16:55",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's very rare, but it does happen.",
+    "startTime": "16:55",
+    "endTime": "16:57",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And every one of those is investigated.",
+    "startTime": "16:57",
+    "endTime": "16:58",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you'll see that the most common flaw is forgetting to change the weight of the plane when you've done a hot, an interim stop.",
+    "startTime": "16:59",
+    "endTime": "17:10",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And there's a very sad instant in Nova Scotia, I think it was, where some cargo pilots of a cargo 747 didn't change the weight of the plane between landing and filling up the cargo.",
+    "startTime": "17:10",
+    "endTime": "17:24",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They got the weight wrong by, I think, £100,000.",
+    "startTime": "17:24",
+    "endTime": "17:27",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The error wasn't seen by either the captain or the co pilot.",
+    "startTime": "17:27",
+    "endTime": "17:31",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Didn't get a cross check by the loadmaster, and very sadly, that plane never actually took off and crashed into the end of the Runway and everyone very sadly died, which is awful.",
+    "startTime": "17:32",
+    "endTime": "17:41",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And again, the pilots were at the end of a long duty day, they were tired.",
+    "startTime": "17:43",
+    "endTime": "17:48",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's quite easy to make a mistake, and that's to your point.",
+    "startTime": "17:48",
+    "endTime": "17:51",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Are the EFBs connected or not?",
+    "startTime": "17:52",
+    "endTime": "17:53",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And one way to reduce the ability to make mistakes at Transposition is to connect them.",
+    "startTime": "17:54",
+    "endTime": "18:00",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's what a couple of the latest plane types.",
+    "startTime": "18:00",
+    "endTime": "18:03",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the Airbus A350 has an A semi installed electronic flight back.",
+    "startTime": "18:03",
+    "endTime": "18:07",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the idea being is you actually remove that layer of error.",
+    "startTime": "18:08",
+    "endTime": "18:11",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But of course the next you then create a potential vector.",
+    "startTime": "18:11",
+    "endTime": "18:14",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "18:14",
+    "endTime": "18:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You no longer have an air gap.",
+    "startTime": "18:15",
+    "endTime": "18:16",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "18:17",
+    "endTime": "18:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right, interesting.",
+    "startTime": "18:17",
+    "endTime": "18:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so that tech vector is essentially to remotely kind of attack these devices and then tamp with the data on.",
+    "startTime": "18:20",
+    "endTime": "18:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, with data on the device and then basically tamper with the data points there.",
+    "startTime": "18:29",
+    "endTime": "18:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that was the most serious attack vector you found so far, or did you find anything else in your findings on hacking planes in general?",
+    "startTime": "18:34",
+    "endTime": "18:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, so that was just one example.",
+    "startTime": "18:43",
+    "endTime": "18:45",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that was Boeing's OPT package.",
+    "startTime": "18:45",
+    "endTime": "18:46",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We also found very similar sets of vulnerabilities in a similar Airbus product.",
+    "startTime": "18:46",
+    "endTime": "18:51",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We also found a couple of vulnerabilities in Airbus products, one of which wasn't just a local attack.",
+    "startTime": "18:52",
+    "endTime": "18:58",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It could be done over WI fi.",
+    "startTime": "18:58",
+    "endTime": "19:00",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So WI fi attacks man in the middle.",
+    "startTime": "19:00",
+    "endTime": "19:02",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Not really practical anymore, are they?",
+    "startTime": "19:02",
+    "endTime": "19:04",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, modern application design, HSTS, etc.",
+    "startTime": "19:04",
+    "endTime": "19:07",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Man in the middle doesn't really work.",
+    "startTime": "19:08",
+    "endTime": "19:09",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You would hope, but they still do.",
+    "startTime": "19:10",
+    "endTime": "19:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, except.",
+    "startTime": "19:12",
+    "endTime": "19:14",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So one of the apps we looked at, Airbus, had intentionally disabled application transport security, which amazingly re enabled a man in the middle attack.",
+    "startTime": "19:14",
+    "endTime": "19:21",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So yeah, you remove the one protection that stops man in the middle working.",
+    "startTime": "19:22",
+    "endTime": "19:26",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "19:27",
+    "endTime": "19:28",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the logic there being that I guess they are using some untrusted network where those would fail.",
+    "startTime": "19:28",
+    "endTime": "19:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So they might want the fallback.",
+    "startTime": "19:36",
+    "endTime": "19:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, well, we challenged them on this.",
+    "startTime": "19:38",
+    "endTime": "19:41",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was a bit of interesting disclosure.",
+    "startTime": "19:41",
+    "endTime": "19:43",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Obviously the practicality of a man in the middle tack.",
+    "startTime": "19:45",
+    "endTime": "19:47",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Normally if you're actually targeting someone specifically, you've really got to follow them.",
+    "startTime": "19:47",
+    "endTime": "19:50",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But there's a really weird quirk in aviation, is that pilots typically always go to the same layover of a hotel.",
+    "startTime": "19:50",
+    "endTime": "19:56",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And every plane that's coming down route, the pilot, the airline will have a contract with whichever hotel and they'll go to the same hotel.",
+    "startTime": "19:56",
+    "endTime": "20:02",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you go to an airport hotel on a particular night, you know that a pilot from airline X is there.",
+    "startTime": "20:03",
+    "endTime": "20:08",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it might even be more than that because we are creature habits.",
+    "startTime": "20:09",
+    "endTime": "20:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And if you are staying at the same with hello over and over, you might even stay at the same room over and over.",
+    "startTime": "20:12",
+    "endTime": "20:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "20:16",
+    "endTime": "20:16",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Which makes it quite easy to target pilots if that's what you wanted to do.",
+    "startTime": "20:16",
+    "endTime": "20:21",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's just this weird quirk.",
+    "startTime": "20:22",
+    "endTime": "20:23",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, Airbus did fix that vulnerability quite quickly once we flagged it.",
+    "startTime": "20:23",
+    "endTime": "20:26",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We think it was there because one of their airline clients was probably having Some compatibility problems, but like all these things, maybe they enabled something and then forgot to disable it once the problem had been troubleshot.",
+    "startTime": "20:26",
+    "endTime": "20:37",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Familiar story, isn't it?",
+    "startTime": "20:38",
+    "endTime": "20:39",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "20:39",
+    "endTime": "20:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that brings me to my next talking point here.",
+    "startTime": "20:40",
+    "endTime": "20:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I was curious about responsible disclosures.",
+    "startTime": "20:43",
+    "endTime": "20:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How did that work in the aviation industry?",
+    "startTime": "20:46",
+    "endTime": "20:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I presume people weren't too happy about people digging in their trash, so to speak.",
+    "startTime": "20:49",
+    "endTime": "20:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, it's always a difficult one, disclosing vulnerabilities.",
+    "startTime": "20:55",
+    "endTime": "20:57",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, certainly in many industries which perhaps aren't that familiar with disclosures, they react in quite a hostile way sometimes.",
+    "startTime": "20:57",
+    "endTime": "21:07",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I get it though.",
+    "startTime": "21:07",
+    "endTime": "21:08",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, we are perceived to be criticizing everything they've worked and put blood, sweat and tears into creating.",
+    "startTime": "21:08",
+    "endTime": "21:13",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you're effectively telling them their baby's ugly.",
+    "startTime": "21:13",
+    "endTime": "21:15",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "21:15",
+    "endTime": "21:16",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Who's going to like that?",
+    "startTime": "21:17",
+    "endTime": "21:19",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But actually we started to see a change.",
+    "startTime": "21:19",
+    "endTime": "21:22",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We're seeing better responses.",
+    "startTime": "21:23",
+    "endTime": "21:24",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And actually I want to give Boeing a hat tip here.",
+    "startTime": "21:24",
+    "endTime": "21:27",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And given they're experiencing some other challenges in the market right now, I think they could do with some good pr, frankly.",
+    "startTime": "21:27",
+    "endTime": "21:33",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Boeing were really good.",
+    "startTime": "21:34",
+    "endTime": "21:36",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "When we disclose those vulnerabilities to them, they were incredibly responsive.",
+    "startTime": "21:36",
+    "endTime": "21:40",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They acknowledged, validated the vulnerability within about three days, as I recall, which is impressive.",
+    "startTime": "21:41",
+    "endTime": "21:47",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The challenging bit.",
+    "startTime": "21:48",
+    "endTime": "21:49",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They said, yeah, great, we found the vulnerability.",
+    "startTime": "21:50",
+    "endTime": "21:52",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We agree with you.",
+    "startTime": "21:52",
+    "endTime": "21:53",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Thank you.",
+    "startTime": "21:53",
+    "endTime": "21:53",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's going to take us two years to fix it.",
+    "startTime": "21:53",
+    "endTime": "21:55",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We're like, what?",
+    "startTime": "21:55",
+    "endTime": "21:56",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No, no.",
+    "startTime": "21:57",
+    "endTime": "21:58",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Google Project Zero says you get 90 days, then we go public.",
+    "startTime": "21:58",
+    "endTime": "22:00",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "22:00",
+    "endTime": "22:01",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they said, yeah, but the problem is that code is certified, so we have to go.",
+    "startTime": "22:02",
+    "endTime": "22:08",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Even if we make one tiny change to remove the vulnerability, you find we've got to go and recertify the code, which means we have to test it in every possible scenario that an airplane could experience to make sure we don't accidentally bring in a bug that blue screens it.",
+    "startTime": "22:09",
+    "endTime": "22:22",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And these are not, we're not talking integration tests here.",
+    "startTime": "22:22",
+    "endTime": "22:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We're talking everything right going all the way back through.",
+    "startTime": "22:26",
+    "endTime": "22:30",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because what could be worse, we found a vulnerability, but by fixing it, they introduced something that bricks a plane.",
+    "startTime": "22:30",
+    "endTime": "22:35",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Of course, of course.",
+    "startTime": "22:35",
+    "endTime": "22:36",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that was a learning point for us.",
+    "startTime": "22:36",
+    "endTime": "22:38",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Actually, that was one of the very first vulnerabilities we disclosed in aviation.",
+    "startTime": "22:38",
+    "endTime": "22:41",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And were like, Boeing came back and they got in touch with us every month and said, proactively, said, look, this is where we're at, this is what we're doing, this is how we're getting on with it.",
+    "startTime": "22:41",
+    "endTime": "22:49",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think in the end it took just shy of two years to fix.",
+    "startTime": "22:49",
+    "endTime": "22:52",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But that was a massive learning point for us.",
+    "startTime": "22:52",
+    "endTime": "22:54",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it meant that when we started the next disclosure, I think were a lot more accommodating and understanding that.",
+    "startTime": "22:54",
+    "endTime": "23:00",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You see, it takes time in planes because safety is king.",
+    "startTime": "23:00",
+    "endTime": "23:04",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Security is really important, but safety is king.",
+    "startTime": "23:05",
+    "endTime": "23:07",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, no, I get that.",
+    "startTime": "23:08",
+    "endTime": "23:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, and I've had previous guests on the podcast speaking about like hardware firmware, for instance.",
+    "startTime": "23:09",
+    "endTime": "23:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "23:15",
+    "endTime": "23:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that like even something like a bias or disclosing issues involve in firmware in general.",
+    "startTime": "23:15",
+    "endTime": "23:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, yeah, what we are used to in the software world is very different from what in the firmware world.",
+    "startTime": "23:22",
+    "endTime": "23:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "23:27",
+    "endTime": "23:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like you're talking a year or so.",
+    "startTime": "23:28",
+    "endTime": "23:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think that's what they want to actually fix these things.",
+    "startTime": "23:30",
+    "endTime": "23:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So, yeah, I definitely see that it is more complicated, for sure.",
+    "startTime": "23:33",
+    "endTime": "23:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And yeah, so the other thing I want to chat about, because you had some press around this recently, relatively recently, about GPS spoofing in planes, which I found interesting.",
+    "startTime": "23:39",
+    "endTime": "23:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "23:50",
+    "endTime": "23:50",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I'm familiar with the concept, but how would that even go about to work?",
+    "startTime": "23:51",
+    "endTime": "23:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "23:57",
+    "endTime": "23:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because there are some territories that are actually voided entirely by certain airlines for that reason.",
+    "startTime": "23:57",
+    "endTime": "24:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "24:02",
+    "endTime": "24:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So let's talk a bit about that because I found that super fascinating, kind of in the realm of security of planes.",
+    "startTime": "24:02",
+    "endTime": "24:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, a real surprise.",
+    "startTime": "24:08",
+    "endTime": "24:10",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was an eye opener for me right now.",
+    "startTime": "24:10",
+    "endTime": "24:12",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I've been around aviation for nearly 30 years now.",
+    "startTime": "24:12",
+    "endTime": "24:15",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I was there as GPS first emerged in the cockpit of light airplanes.",
+    "startTime": "24:17",
+    "endTime": "24:20",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I was there when GPS first started taking over inertial reference systems, for example.",
+    "startTime": "24:20",
+    "endTime": "24:25",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we have been well aware of GPS jamming for years.",
+    "startTime": "24:26",
+    "endTime": "24:31",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it was more of a problem in maritime actually.",
+    "startTime": "24:31",
+    "endTime": "24:33",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you go to certain installations around the Black Sea and all of a sudden you either GPS would drop out or you get a very coarse position spoof.",
+    "startTime": "24:33",
+    "endTime": "24:41",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you might be 20 nautical miles away on GPS compared to where you thought you were.",
+    "startTime": "24:41",
+    "endTime": "24:46",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And certainly over the last few years, things have really picked up and there's some very good data from the Ops group, which is a collaboration between lots of airlines, where they've got a group together that analyzes frequency impacts.",
+    "startTime": "24:47",
+    "endTime": "24:59",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And there's a fantastic report they've published since I gave my talk at DEFCON this summer, which actually even that opened my eyes even further.",
+    "startTime": "24:59",
+    "endTime": "25:07",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, so what's the problem?",
+    "startTime": "25:07",
+    "endTime": "25:09",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We think about GPS spoofing as being, okay, my plane GPS says I'm in the wrong place.",
+    "startTime": "25:10",
+    "endTime": "25:17",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay, well, that's fine.",
+    "startTime": "25:17",
+    "endTime": "25:18",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I can look out of the window or I can dial in my radio nav aids, or I can talk to the ground and everything's fine.",
+    "startTime": "25:18",
+    "endTime": "25:23",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But actually, it's a lot more complicated than that.",
+    "startTime": "25:24",
+    "endTime": "25:26",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And lots of weird side effects have been happening when planes have been experiencing jamming and spoofing.",
+    "startTime": "25:26",
+    "endTime": "25:31",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the first problem we noticed were a number of planes would fly through an area of jamming or an area of spoofing caused problems to the pilots, particularly if they're flying relatively close to perceived hostile airspace.",
+    "startTime": "25:32",
+    "endTime": "25:47",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Wouldn't take long to get out of position.",
+    "startTime": "25:47",
+    "endTime": "25:49",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But once they come through the area of spoofing, they were having problems in that the GPS wouldn't reacquire.",
+    "startTime": "25:50",
+    "endTime": "25:56",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that was intriguing because you've come from a position where you knew where you were, your GPS was accurate, you came to the spoofing area, you get out the far side, great, everything's fine.",
+    "startTime": "25:57",
+    "endTime": "26:07",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not.",
+    "startTime": "26:07",
+    "endTime": "26:08",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And one of the reasons for that is your GPS almanac.",
+    "startTime": "26:08",
+    "endTime": "26:11",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's the bit that tells the GPS receiver roughly where to look for the satellites so it can acquire them.",
+    "startTime": "26:12",
+    "endTime": "26:17",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That almanac was out of date.",
+    "startTime": "26:17",
+    "endTime": "26:18",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So in certain older airplane types, the GPS receiver, which in this case is what's called an MMR or multimode receiver, kind of didn't quite know where to look and therefore couldn't reacquire GPS while it's hacking along at, say, 550 miles an hour.",
+    "startTime": "26:19",
+    "endTime": "26:32",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that caused some problems.",
+    "startTime": "26:32",
+    "endTime": "26:34",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that couldn't be reset until the plane was on the ground.",
+    "startTime": "26:35",
+    "endTime": "26:37",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Everything was stationary.",
+    "startTime": "26:37",
+    "endTime": "26:38",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you could then reset the almanac plane, go, oh, yeah, I can see.",
+    "startTime": "26:38",
+    "endTime": "26:41",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I can see the satellites again.",
+    "startTime": "26:41",
+    "endTime": "26:42",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "26:42",
+    "endTime": "26:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that caused problems.",
+    "startTime": "26:43",
+    "endTime": "26:45",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So planes would be potentially on the ground for maintenance for a time, so they couldn't depart.",
+    "startTime": "26:45",
+    "endTime": "26:51",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And another weird thing started happening.",
+    "startTime": "26:51",
+    "endTime": "26:53",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we think of GPS being that source of position, and the reason we use GPS is more accurate.",
+    "startTime": "26:54",
+    "endTime": "27:02",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's more accurate than all the international reference systems we used to use.",
+    "startTime": "27:02",
+    "endTime": "27:05",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So inertial reference was typically, most recently spinning laser gyros, and they could accept the detect acceleration, deceleration and gave you pretty accurate position.",
+    "startTime": "27:05",
+    "endTime": "27:17",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you could fly over the Atlantic from the UK to the US coming towards jfk, and you might be just one nautical mile out of position.",
+    "startTime": "27:17",
+    "endTime": "27:24",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They were that accurate.",
+    "startTime": "27:24",
+    "endTime": "27:25",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But of course, GPS is better.",
+    "startTime": "27:25",
+    "endTime": "27:27",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "27:27",
+    "endTime": "27:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so of course, what you do, you update your inertial reference system with the better source of navigation, which is gps.",
+    "startTime": "27:28",
+    "endTime": "27:35",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Hang on a minute.",
+    "startTime": "27:35",
+    "endTime": "27:36",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We've now got a problem because we've now got a GPS that's had a position, that's now updated our inertial reference system.",
+    "startTime": "27:36",
+    "endTime": "27:42",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That was our backup system.",
+    "startTime": "27:42",
+    "endTime": "27:43",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Domino effect.",
+    "startTime": "27:45",
+    "endTime": "27:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "27:47",
+    "endTime": "27:47",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we've now lost our secondary navigational aid as well.",
+    "startTime": "27:47",
+    "endTime": "27:51",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Interesting.",
+    "startTime": "27:53",
+    "endTime": "27:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All right, Interesting problem.",
+    "startTime": "27:54",
+    "endTime": "27:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Space for sure.",
+    "startTime": "27:56",
+    "endTime": "27:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But let's go back to like, I mean, jamming is pretty obvious how that works.",
+    "startTime": "27:57",
+    "endTime": "28:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Just basically send the signal stronger than whatever you're trying to pick up on and like jam the receiving signal that you're trying to pick up on.",
+    "startTime": "28:01",
+    "endTime": "28:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that's pretty straightforward in terms of spoofing when it comes to gps.",
+    "startTime": "28:11",
+    "endTime": "28:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How does it actually work from a technical perspective?",
+    "startTime": "28:15",
+    "endTime": "28:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I'm not going to go into that because I don't want to be accused of showing people how easy it is to spoof planes.",
+    "startTime": "28:18",
+    "endTime": "28:25",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But you will find a matter of few minutes on YouTube and a software defined radio and you probably have enough to do it quite effectively.",
+    "startTime": "28:25",
+    "endTime": "28:32",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the scary bit is you probably know GPS have very weak signal, so it doesn't take very much to do it.",
+    "startTime": "28:32",
+    "endTime": "28:38",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So let's not go into that in too much detail, shall we?",
+    "startTime": "28:38",
+    "endTime": "28:41",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Fair enough.",
+    "startTime": "28:41",
+    "endTime": "28:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All right, that's fair enough.",
+    "startTime": "28:42",
+    "endTime": "28:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All right, let's.",
+    "startTime": "28:45",
+    "endTime": "28:46",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, well, there's definitely more to go on the whole GPS thing as well, because we've seen this weird situation where we're seeing a secondary navigational mode be affected, poisoning if you like.",
+    "startTime": "28:46",
+    "endTime": "28:57",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So when that happens, so the last thing we've got at our disposal is what we call radio navigation, and that's where we use beacons on the ground.",
+    "startTime": "28:57",
+    "endTime": "29:07",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "A good example of this, you might have heard what's called a VOR or a very high frequency omnidirectional radio range that was invented in the US in the late 40s and we still use them.",
+    "startTime": "29:07",
+    "endTime": "29:16",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if you actually look at the airways across various continents, they typically meet at points where there's a vor, so it's fine.",
+    "startTime": "29:16",
+    "endTime": "29:24",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we've lost gps, we've lost inertial reference, we can use old school radio navigation, except there's a problem because those VORS are really expensive to maintain, so they're gradually being retired.",
+    "startTime": "29:24",
+    "endTime": "29:36",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We've now got a problem where we've lost our primary, our secondary and now our tertiary net mode of navigation.",
+    "startTime": "29:38",
+    "endTime": "29:43",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So old school, they're now starting to be retired because they're expensive to run.",
+    "startTime": "29:44",
+    "endTime": "29:48",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it gets worse.",
+    "startTime": "29:49",
+    "endTime": "29:51",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, so that's navigation at altitude.",
+    "startTime": "29:51",
+    "endTime": "29:53",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "29:53",
+    "endTime": "29:54",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And those VORs can also be used to what's called a non precision approach, where we can approach as long as there's enough visibility, we can come through cloud and land safely.",
+    "startTime": "29:54",
+    "endTime": "30:03",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we then move on to instrument landing systems, which, as I'm sure you know, allow the plane to land when it's foggy.",
+    "startTime": "30:03",
+    "endTime": "30:09",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Those instrument landing systems are really expensive to run and calibrate and Keep running.",
+    "startTime": "30:10",
+    "endTime": "30:15",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So particularly in perhaps secondary airports around.",
+    "startTime": "30:15",
+    "endTime": "30:18",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So perhaps, you know, regional airports around the world, they're starting to be retarded because GPS is more accurate.",
+    "startTime": "30:18",
+    "endTime": "30:24",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "30:24",
+    "endTime": "30:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But hang on, we've now got a spoofing problem and there's even a documented case in Estonia airfield called Tartu.",
+    "startTime": "30:26",
+    "endTime": "30:33",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It might be Finland.",
+    "startTime": "30:34",
+    "endTime": "30:34",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Trying to remember Tartu Airport.",
+    "startTime": "30:34",
+    "endTime": "30:36",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can read up on it, where they actually had to retire the approach for a period of time because they're very close to the Russian border and there was so much spoofing going on and they've retired instrument landing system.",
+    "startTime": "30:36",
+    "endTime": "30:45",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Planes couldn't land there for a while.",
+    "startTime": "30:45",
+    "endTime": "30:46",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's happened.",
+    "startTime": "30:46",
+    "endTime": "30:47",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, so that's a problem.",
+    "startTime": "30:47",
+    "endTime": "30:51",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then you start getting into other crazy things.",
+    "startTime": "30:52",
+    "endTime": "30:54",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So your primary navigation GPS has gone down.",
+    "startTime": "30:54",
+    "endTime": "30:56",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Your secondary navigational inertial reference isn't working anymore.",
+    "startTime": "30:56",
+    "endTime": "31:00",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So.",
+    "startTime": "31:00",
+    "endTime": "31:00",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So your ground receivers aren't working anymore because they've been retired because they're expensive.",
+    "startTime": "31:00",
+    "endTime": "31:04",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So what you do, well, the last thing you've got is you can speak to the controller on the ground and go, hey, tell me which way to go.",
+    "startTime": "31:04",
+    "endTime": "31:10",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's called a radar vector.",
+    "startTime": "31:10",
+    "endTime": "31:11",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so the controller goes, oh, you're all right, I've got you on primary radar, secondary radar, turn right, bearing 270.",
+    "startTime": "31:11",
+    "endTime": "31:18",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "31:19",
+    "endTime": "31:20",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Great.",
+    "startTime": "31:20",
+    "endTime": "31:21",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Maintain altitude X.",
+    "startTime": "31:21",
+    "endTime": "31:22",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Great.",
+    "startTime": "31:22",
+    "endTime": "31:22",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you go the right way and everything's fine.",
+    "startTime": "31:22",
+    "endTime": "31:24",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Except that GPS spoofing happens in defined areas, so it's going to happen to lots of planes at once.",
+    "startTime": "31:24",
+    "endTime": "31:30",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And there's been some really interesting research to show that controller workload can increase by five times for one plane, requiring radar vectors.",
+    "startTime": "31:30",
+    "endTime": "31:39",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So all of a sudden you've gone from controllers very happy to massively overworked with a bunch of planes all experiencing the same problem, all needing radar vectors.",
+    "startTime": "31:39",
+    "endTime": "31:48",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that then creates problems where overloaded controller can make mistakes.",
+    "startTime": "31:48",
+    "endTime": "31:53",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh, wow.",
+    "startTime": "31:53",
+    "endTime": "31:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But it gets worse.",
+    "startTime": "31:56",
+    "endTime": "31:57",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh, dear.",
+    "startTime": "32:00",
+    "endTime": "32:01",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So now, and this is really where I was going with the talk at DEFCON was we think about GPS position, all right, we think of spoofing and jamming as loss of position.",
+    "startTime": "32:01",
+    "endTime": "32:11",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But actually, gps, as you well know, is actually simply a very precise source of time.",
+    "startTime": "32:11",
+    "endTime": "32:15",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "32:16",
+    "endTime": "32:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All right, so where does the airplane source its time from?",
+    "startTime": "32:17",
+    "endTime": "32:21",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, it used to source it from a local clock.",
+    "startTime": "32:21",
+    "endTime": "32:23",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "32:24",
+    "endTime": "32:25",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Even the most precise clocks on planes, very slowly, they drift a little bit over time.",
+    "startTime": "32:25",
+    "endTime": "32:30",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Particularly as we're flying at altitude and high speed, you see a very small amount of clock drift.",
+    "startTime": "32:31",
+    "endTime": "32:35",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So what, you update it from gps.",
+    "startTime": "32:35",
+    "endTime": "32:38",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "32:38",
+    "endTime": "32:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So the primary source of time sync in most modern airplanes is light to be gps.",
+    "startTime": "32:40",
+    "endTime": "32:45",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Based and we saw a really interesting incident that I won't go into detail of who or what or when because it's quite sensitive.",
+    "startTime": "32:45",
+    "endTime": "32:51",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Is a plane experienced not just position spoofing, but experienced a time spoof.",
+    "startTime": "32:51",
+    "endTime": "32:57",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "GPS is time and they spoofed the time into the future.",
+    "startTime": "32:58",
+    "endTime": "33:02",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And of course because GPS was a single trusted source of time, it then effectively updated various other systems and caused a lot of the digital certificates on the airplane to expire.",
+    "startTime": "33:02",
+    "endTime": "33:11",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So now all your communications have gone as well.",
+    "startTime": "33:12",
+    "endTime": "33:16",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because a good example, sorry is control the pilot data link which requires very precise price time.",
+    "startTime": "33:16",
+    "endTime": "33:23",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can't be more than a second adrift for the digital communications between the controller and the pilot to work.",
+    "startTime": "33:23",
+    "endTime": "33:28",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But there's lots of other things think about.",
+    "startTime": "33:28",
+    "endTime": "33:30",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There was a case where the cabin WI fi went down.",
+    "startTime": "33:30",
+    "endTime": "33:33",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Why?",
+    "startTime": "33:34",
+    "endTime": "33:34",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because the source of time was wrong.",
+    "startTime": "33:34",
+    "endTime": "33:36",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So all the certificates were expired.",
+    "startTime": "33:36",
+    "endTime": "33:37",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well the ones strictly expired because it was the future.",
+    "startTime": "33:38",
+    "endTime": "33:40",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But yeah, they just weren't valid.",
+    "startTime": "33:40",
+    "endTime": "33:43",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then that gets even more complicated because you've now got a bunch of clocks on the plane that are now updated from the GPS clock that are now out of date.",
+    "startTime": "33:44",
+    "endTime": "33:52",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But time GPS particularly is protected from rolling back.",
+    "startTime": "33:52",
+    "endTime": "33:57",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can roll full, but you can't roll back.",
+    "startTime": "33:57",
+    "endTime": "33:59",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So this caused a lot of trouble because for the first time a bunch of components on a plane had to be reflashed to get the time back to the correct point in time so the plane could then fly again.",
+    "startTime": "34:00",
+    "endTime": "34:11",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that caused an outage on the plane for a significant period of time.",
+    "startTime": "34:11",
+    "endTime": "34:13",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It took a couple of weeks of downtime.",
+    "startTime": "34:13",
+    "endTime": "34:15",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh yeah.",
+    "startTime": "34:16",
+    "endTime": "34:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's mind blowing.",
+    "startTime": "34:17",
+    "endTime": "34:19",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the instructions right now, so if you go to the.",
+    "startTime": "34:19",
+    "endTime": "34:22",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What's called the quick reference handbook.",
+    "startTime": "34:22",
+    "endTime": "34:23",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's on the EFB that we talked about.",
+    "startTime": "34:23",
+    "endTime": "34:25",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if I'm experiencing GPS spoofing, what I do first thing to do is change the clock to local plane time.",
+    "startTime": "34:25",
+    "endTime": "34:31",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you're not using GPS anymore.",
+    "startTime": "34:31",
+    "endTime": "34:33",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But that involves the pilots to be like on it.",
+    "startTime": "34:33",
+    "endTime": "34:36",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You're flying a plane, you're doing something else.",
+    "startTime": "34:36",
+    "endTime": "34:38",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "All of something weird happens with gps.",
+    "startTime": "34:38",
+    "endTime": "34:39",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh, got to do that.",
+    "startTime": "34:40",
+    "endTime": "34:40",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "By which time it could easily.",
+    "startTime": "34:41",
+    "endTime": "34:42",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Time sync is like milliseconds to take to complete.",
+    "startTime": "34:42",
+    "endTime": "34:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "34:46",
+    "endTime": "34:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You just need one packet to come through really.",
+    "startTime": "34:47",
+    "endTime": "34:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And there's some also some good advice coming out about, you know, if you're going to be entering an area of known spoofing, you'll switch to local clock anyway.",
+    "startTime": "34:49",
+    "endTime": "34:56",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's good.",
+    "startTime": "34:56",
+    "endTime": "34:57",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it's still.",
+    "startTime": "34:57",
+    "endTime": "34:58",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It worries me that it's reliant on the Pilots.",
+    "startTime": "34:58",
+    "endTime": "35:00",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "35:00",
+    "endTime": "35:00",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now the good news is that there is a future for all this and that's what we call hybrid gps.",
+    "startTime": "35:00",
+    "endTime": "35:06",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we correlate GPS from satellites with certain position broadcasts from the ground as well.",
+    "startTime": "35:06",
+    "endTime": "35:14",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "A good example of that.",
+    "startTime": "35:15",
+    "endTime": "35:16",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Remember those radio based navigational layers I talked about?",
+    "startTime": "35:16",
+    "endTime": "35:18",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What we do is we actually correlate GPS with where the radio transmitter on the ground is as well, which is great because that allows us to check.",
+    "startTime": "35:18",
+    "endTime": "35:27",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, hang on, there's a coarse error in my position and time up here and the ground based navigator is saying I'm there, that's just radius.",
+    "startTime": "35:27",
+    "endTime": "35:34",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, so you could in theory spoof that as well.",
+    "startTime": "35:34",
+    "endTime": "35:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But it's two things, right?",
+    "startTime": "35:36",
+    "endTime": "35:37",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, fair enough.",
+    "startTime": "35:37",
+    "endTime": "35:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, it's more complicated and actually the ground based nav aids have got a lot of radio power, so you need a big transmitter to overwhelm that.",
+    "startTime": "35:39",
+    "endTime": "35:46",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But this is again where I'm worried about ground based nav aids being retired because we're retiring them for reasons of cost because GPS was better.",
+    "startTime": "35:46",
+    "endTime": "35:55",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But actually now we're finding out that GPS is quite vulnerable to certain attacks.",
+    "startTime": "35:55",
+    "endTime": "35:59",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we need to rely on those ground based navigation aids again.",
+    "startTime": "35:59",
+    "endTime": "36:01",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But if they've all been retired because they're too expensive, we've got no way to have a hybrid GPS system.",
+    "startTime": "36:01",
+    "endTime": "36:06",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I guess in these attacks of spoofing, because you have two GPS systems, right?",
+    "startTime": "36:07",
+    "endTime": "36:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You have, I forgot what they call the different types of GPS systems.",
+    "startTime": "36:10",
+    "endTime": "36:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like it's like even the smartwatches, like for athletes, like they use dual systems, right.",
+    "startTime": "36:13",
+    "endTime": "36:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "In these attack vectors.",
+    "startTime": "36:18",
+    "endTime": "36:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Are they spoofing both systems or are planes using both systems or how does that look like?",
+    "startTime": "36:21",
+    "endTime": "36:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, so we talk about gps, but gps, we're typically talking about the US Global positioning system.",
+    "startTime": "36:26",
+    "endTime": "36:31",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But actually it would better to talk about gnss, which is all of the various countries satellite systems.",
+    "startTime": "36:31",
+    "endTime": "36:42",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So for example GLONASS I believe is on the Russian ones, you've got European version, you've got us one.",
+    "startTime": "36:42",
+    "endTime": "36:46",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think there's a Chinese version too, which name escapes me.",
+    "startTime": "36:46",
+    "endTime": "36:49",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we talk about GNSS as being the aggregation actually pretty much every receiver on every plane.",
+    "startTime": "36:49",
+    "endTime": "36:54",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And most used to art watches will pick up every one of those if they need to for precise reasons.",
+    "startTime": "36:54",
+    "endTime": "36:59",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "36:59",
+    "endTime": "36:59",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But the fundamental principles are the same.",
+    "startTime": "37:01",
+    "endTime": "37:03",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Are the roughly the same as well.",
+    "startTime": "37:04",
+    "endTime": "37:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That'S a great question.",
+    "startTime": "37:07",
+    "endTime": "37:07",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They operate in a similar space.",
+    "startTime": "37:08",
+    "endTime": "37:09",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The technical challenges are the same to chance.",
+    "startTime": "37:10",
+    "endTime": "37:12",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "SDR could do easily do both.",
+    "startTime": "37:12",
+    "endTime": "37:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All of them.",
+    "startTime": "37:14",
+    "endTime": "37:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "37:15",
+    "endTime": "37:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay, fair enough.",
+    "startTime": "37:16",
+    "endTime": "37:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, that's interesting.",
+    "startTime": "37:16",
+    "endTime": "37:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Oh wow, that's some interesting Cascading impacts or jamming about.",
+    "startTime": "37:18",
+    "endTime": "37:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If anyone wants to read more, what probably the best source of information right now.",
+    "startTime": "37:26",
+    "endTime": "37:30",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It wasn't available when I did my talk in the US at defcon.",
+    "startTime": "37:30",
+    "endTime": "37:33",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It is now.",
+    "startTime": "37:33",
+    "endTime": "37:33",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's from the Ops group.",
+    "startTime": "37:33",
+    "endTime": "37:35",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's an amazing website.",
+    "startTime": "37:35",
+    "endTime": "37:36",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They've got their report.",
+    "startTime": "37:36",
+    "endTime": "37:37",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's 150 pages of stuff.",
+    "startTime": "37:37",
+    "endTime": "37:39",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Absolutely fascinating, particularly some of the cascade consequences that we're now seeing direct evidence of in certain planes.",
+    "startTime": "37:40",
+    "endTime": "37:47",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'll make sure to link that up in the show notes because that sounds like a good read and that let me switch topic to maritime security because that's another topic that you guys have been on.",
+    "startTime": "37:47",
+    "endTime": "37:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Another odd area of, I guess pen testing, right?",
+    "startTime": "37:57",
+    "endTime": "38:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because you guys have got your hands into some strange pen testing really.",
+    "startTime": "38:02",
+    "endTime": "38:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But it's super fascinating, right?",
+    "startTime": "38:06",
+    "endTime": "38:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How does that look in that world?",
+    "startTime": "38:08",
+    "endTime": "38:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is it very similar to the aviation space or completely different?",
+    "startTime": "38:10",
+    "endTime": "38:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's completely different.",
+    "startTime": "38:16",
+    "endTime": "38:17",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the reason is that back in the day, until about five, 10 years ago, ships weren't connected.",
+    "startTime": "38:17",
+    "endTime": "38:26",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So none of it mattered.",
+    "startTime": "38:27",
+    "endTime": "38:29",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It didn't really matter.",
+    "startTime": "38:30",
+    "endTime": "38:32",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you wanted to use a sat phone or you needed satellite comms, you had to use what's called fleet broadband, which was insanely expensive.",
+    "startTime": "38:32",
+    "endTime": "38:40",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it was reserved for use in emergencies only.",
+    "startTime": "38:40",
+    "endTime": "38:42",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "38:42",
+    "endTime": "38:43",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Stupidly expensive and slow.",
+    "startTime": "38:43",
+    "endTime": "38:46",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, you're talking dollars a kilobyte.",
+    "startTime": "38:46",
+    "endTime": "38:50",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was that expensive.",
+    "startTime": "38:50",
+    "endTime": "38:51",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that was your emergency stuff.",
+    "startTime": "38:52",
+    "endTime": "38:55",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But everything changed with vsat.",
+    "startTime": "38:56",
+    "endTime": "38:58",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So went from insanely expensive connectivity to always on, everywhere connectivity.",
+    "startTime": "38:58",
+    "endTime": "39:04",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it got to the point where if you wanted good crew, you had to have VSAT because they wanted to be always on, they wanted to be doing email, in touch with their families, doing social media, surfing, Internet.",
+    "startTime": "39:05",
+    "endTime": "39:16",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You had to have good VSAT and give them access to it.",
+    "startTime": "39:16",
+    "endTime": "39:19",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you didn't have good vsat, you didn't get good crews.",
+    "startTime": "39:19",
+    "endTime": "39:21",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But that changed everything.",
+    "startTime": "39:23",
+    "endTime": "39:24",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the ship's operators went, okay, we'll do vsat.",
+    "startTime": "39:24",
+    "endTime": "39:27",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's a really good idea.",
+    "startTime": "39:27",
+    "endTime": "39:27",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It means we can do least cost routing, avoiding headwinds, we can avoid storms.",
+    "startTime": "39:27",
+    "endTime": "39:31",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "At last minute we can have routing changes.",
+    "startTime": "39:31",
+    "endTime": "39:34",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we're up loading and unloading our cargoes more efficiently.",
+    "startTime": "39:35",
+    "endTime": "39:37",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Great, fantastic.",
+    "startTime": "39:37",
+    "endTime": "39:39",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they connected their ships, which frankly had such out of date technology on board.",
+    "startTime": "39:40",
+    "endTime": "39:47",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean we're talking 20 years of technical debt.",
+    "startTime": "39:47",
+    "endTime": "39:50",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Unbelievable issues.",
+    "startTime": "39:51",
+    "endTime": "39:53",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So bad.",
+    "startTime": "39:54",
+    "endTime": "39:54",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, my colleague Andrew Tierney, who's giving a talk at the International Maritime Organization this Wednesday, in fact about exit, he says in the last five years of testing ships, he's never once had to use an exploit.",
+    "startTime": "39:54",
+    "endTime": "40:05",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's that Bad?",
+    "startTime": "40:07",
+    "endTime": "40:08",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "40:09",
+    "endTime": "40:10",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's gone from public Internet through to taking control of the rudder, the helm, the engines on a vessel.",
+    "startTime": "40:10",
+    "endTime": "40:19",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Don't get me wrong, that's not easy.",
+    "startTime": "40:19",
+    "endTime": "40:21",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you typically need access to vessel to prove the attack path.",
+    "startTime": "40:21",
+    "endTime": "40:24",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But yeah, without using an exploit, taking control of a vessel remotely.",
+    "startTime": "40:24",
+    "endTime": "40:28",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That sounds like a VNC roulette almost.",
+    "startTime": "40:29",
+    "endTime": "40:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm saying nothing.",
+    "startTime": "40:34",
+    "endTime": "40:35",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh wow.",
+    "startTime": "40:39",
+    "endTime": "40:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So how does that industry respond to this?",
+    "startTime": "40:40",
+    "endTime": "40:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I guess you guys have done some responsible disclosures.",
+    "startTime": "40:46",
+    "endTime": "40:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How has that landscape looked like there?",
+    "startTime": "40:50",
+    "endTime": "40:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think there's a wonderful metaphor in terms of turning the oil tanker.",
+    "startTime": "40:54",
+    "endTime": "40:57",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Shipping takes a long time.",
+    "startTime": "40:59",
+    "endTime": "41:02",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's been some attempts AT regulation, so MSC 428 for example, there's a couple of others but they really haven't had the effect of really getting shipping operators known as to stand up.",
+    "startTime": "41:04",
+    "endTime": "41:17",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Actually this is important.",
+    "startTime": "41:17",
+    "endTime": "41:18",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There has been a regulation change just happened this summer actually.",
+    "startTime": "41:19",
+    "endTime": "41:23",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What's called IACS UR E26 and 27.",
+    "startTime": "41:23",
+    "endTime": "41:28",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "41:28",
+    "endTime": "41:29",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Have actually made cybersecurity mandatory for new build boats from start of this year, next year.",
+    "startTime": "41:29",
+    "endTime": "41:38",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Sorry.",
+    "startTime": "41:38",
+    "endTime": "41:38",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there's a little bit of hope and everyone's getting quite excited.",
+    "startTime": "41:39",
+    "endTime": "41:42",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Nope, nope.",
+    "startTime": "41:42",
+    "endTime": "41:43",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So what has to happen is those boats have to come to the end of life and sink or whatever before.",
+    "startTime": "41:43",
+    "endTime": "41:47",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No, I think I'm being facetious.",
+    "startTime": "41:47",
+    "endTime": "41:49",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So yeah, we've got huge problems.",
+    "startTime": "41:49",
+    "endTime": "41:51",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "41:51",
+    "endTime": "41:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "With these life cycle of these vessels I would imagine are in the range of 20 some years.",
+    "startTime": "41:52",
+    "endTime": "41:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "41:56",
+    "endTime": "41:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "41:56",
+    "endTime": "41:57",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "41:57",
+    "endTime": "41:57",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You want to sweat that asset for 20 years before it gets broken up.",
+    "startTime": "41:57",
+    "endTime": "42:00",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And of course even if you designed it well on day one, refits, modification, tampering and I can think of one case where we're looking at.",
+    "startTime": "42:00",
+    "endTime": "42:11",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We were working on an exploration drilling rig and one of the engineers responsible for the dynamic propulsion system had his office up on the main deck and in order to administrate things had to walk down a bunch of stairs down to the base of the vessel.",
+    "startTime": "42:11",
+    "endTime": "42:25",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Didn't want to do that, so bypassed all the segregation and as a result of that exposed the ship to remote compromise.",
+    "startTime": "42:25",
+    "endTime": "42:33",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's all very well having a good design, but was it designed correctly, was it then built correctly by the shipyard?",
+    "startTime": "42:34",
+    "endTime": "42:41",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Often they don't follow what you intended security wise.",
+    "startTime": "42:41",
+    "endTime": "42:44",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Does it then do what you intended when you shake the vessel down?",
+    "startTime": "42:45",
+    "endTime": "42:47",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Very rarely.",
+    "startTime": "42:47",
+    "endTime": "42:48",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then what happens over the life of the vessel in terms of maintaining its security?",
+    "startTime": "42:49",
+    "endTime": "42:52",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean this sounds so familiar to other industries as well.",
+    "startTime": "42:53",
+    "endTime": "42:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "42:56",
+    "endTime": "42:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because they, this tend to come from industry where they don't deem themselves as software companies.",
+    "startTime": "42:56",
+    "endTime": "43:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Obviously because they're not.",
+    "startTime": "43:02",
+    "endTime": "43:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But they also have, don't have that culture.",
+    "startTime": "43:03",
+    "endTime": "43:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They view it as, I guess a one time fee to solve software.",
+    "startTime": "43:05",
+    "endTime": "43:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then there is no ongoing maintenance or life cycle management of these things.",
+    "startTime": "43:11",
+    "endTime": "43:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "43:15",
+    "endTime": "43:16",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's when these things happen.",
+    "startTime": "43:17",
+    "endTime": "43:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "43:20",
+    "endTime": "43:21",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Where'd you go?",
+    "startTime": "43:21",
+    "endTime": "43:21",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think the really challenging bit is the acceleration that maritime's had to experience is most other industries, financial services being a great example, being a target for attck for 20 plus years.",
+    "startTime": "43:21",
+    "endTime": "43:35",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "On the cyber side, they've seen iteration and they've improved their cybersecurity little by little over the last couple of decades.",
+    "startTime": "43:35",
+    "endTime": "43:44",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The problem with maritime is they've gone from zero and need to get to 100% in the space of a year or two.",
+    "startTime": "43:45",
+    "endTime": "43:51",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's an incredible ask for a floating environment that is also safety critical, that if it ain't broken, why would you fix it?",
+    "startTime": "43:51",
+    "endTime": "43:59",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Says the average chief engineer on a ship.",
+    "startTime": "43:59",
+    "endTime": "44:01",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "44:01",
+    "endTime": "44:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And also every time that's in dock that is not generated revenue, that's a massive cost.",
+    "startTime": "44:02",
+    "endTime": "44:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "44:07",
+    "endTime": "44:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So retiring that for months, just fix security issues or perceived security issues.",
+    "startTime": "44:07",
+    "endTime": "44:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You end up with this weird race to the bottom as well.",
+    "startTime": "44:16",
+    "endTime": "44:18",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because often when you've taken a ship in after say 10 years, it might be coming in for a refit of some of the bridge systems.",
+    "startTime": "44:18",
+    "endTime": "44:22",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you get some of the advantages of the latest connected bridges which offer you much improved safety, better weather routing, saving money on fuel use for example.",
+    "startTime": "44:22",
+    "endTime": "44:32",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But they still need to work with all the grimy dirty bits down in the bowels of the ship.",
+    "startTime": "44:32",
+    "endTime": "44:36",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if they've got static credentials on that new sexy bridge, has to have static credentials too to talk to it.",
+    "startTime": "44:37",
+    "endTime": "44:42",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you introduce exactly the same vulnerability even though you put brand new kit onto that vessel.",
+    "startTime": "44:42",
+    "endTime": "44:47",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I mean this is, I think I'm usually not a massive fan of over regulation, but I think in the security space it's one of the only ways to actually make the industry changes.",
+    "startTime": "44:48",
+    "endTime": "45:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like CRA is a good example of this.",
+    "startTime": "45:00",
+    "endTime": "45:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think we might not like it, but it was the only way for our industry to change.",
+    "startTime": "45:02",
+    "endTime": "45:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I completely agree.",
+    "startTime": "45:11",
+    "endTime": "45:13",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm not a particular fan of regulation either.",
+    "startTime": "45:13",
+    "endTime": "45:15",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'd far rather see market forces drive behavior.",
+    "startTime": "45:15",
+    "endTime": "45:18",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But to use an example with IoT smart devices is the market pressure doesn't exist because the consumer isn't capable of making a buying decision based upon cybersecurity at the point of sale, therefore the driver's gone.",
+    "startTime": "45:18",
+    "endTime": "45:31",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's where I think regulation is important, where the market cannot force behaviors in a good direction.",
+    "startTime": "45:31",
+    "endTime": "45:37",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's Where I think, for example, the EU CRA will drive behaviors in a certain direction to actually benefit all of us as consumers.",
+    "startTime": "45:37",
+    "endTime": "45:45",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, Security is a weird one.",
+    "startTime": "45:45",
+    "endTime": "45:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "45:47",
+    "endTime": "45:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And you can't touch on that.",
+    "startTime": "45:47",
+    "endTime": "45:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The average user is by no means savvy enough to understand what the harm is to have static credentials in their baby cameras.",
+    "startTime": "45:49",
+    "endTime": "45:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "45:57",
+    "endTime": "45:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, oh, very convenient.",
+    "startTime": "45:57",
+    "endTime": "45:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's right here on the packaging.",
+    "startTime": "45:59",
+    "endTime": "46:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "46:00",
+    "endTime": "46:01",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But then connected Internet and there you go.",
+    "startTime": "46:02",
+    "endTime": "46:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "46:05",
+    "endTime": "46:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think that's a good segue to the work you guys have done in the IoT space because you've done some interesting work there as well.",
+    "startTime": "46:05",
+    "endTime": "46:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You found some good, interesting problem with various IoT devices.",
+    "startTime": "46:13",
+    "endTime": "46:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "By the way, I used to shout that I loved your Chromecast and Alexa hack because I think that was a very clever.",
+    "startTime": "46:19",
+    "endTime": "46:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's an old video, but it's a very clever attack vector where.",
+    "startTime": "46:24",
+    "endTime": "46:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, yeah, recap it for audience.",
+    "startTime": "46:28",
+    "endTime": "46:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think it was a.",
+    "startTime": "46:30",
+    "endTime": "46:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's a clever attack.",
+    "startTime": "46:31",
+    "endTime": "46:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Relatively simple, but clever.",
+    "startTime": "46:32",
+    "endTime": "46:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It was fun.",
+    "startTime": "46:33",
+    "endTime": "46:34",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "46:34",
+    "endTime": "46:34",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the Chromecast, which you plug into your TV to make it smart, right?",
+    "startTime": "46:34",
+    "endTime": "46:39",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Certainly for older TVs, great device, but it has this weird thing where if you deauth it over WI fi, it would spin up an open access point and you can then connect to it and then you could then cause the TV to stream arbitrary content.",
+    "startTime": "46:39",
+    "endTime": "46:52",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we thought, hang on, well, that's not very useful, is it?",
+    "startTime": "46:53",
+    "endTime": "46:55",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, you can put something rude to appear while your kids are watching the tv.",
+    "startTime": "46:55",
+    "endTime": "46:58",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you're a dodgy hacker outside, then we thought, hang on, home assistants.",
+    "startTime": "46:58",
+    "endTime": "47:02",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So what about the Echo and Google products?",
+    "startTime": "47:03",
+    "endTime": "47:07",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Actually what you could do is you could call someone's TV that was off, hit the Chromecast, it will power the TV on and you could then stream arbitrary content.",
+    "startTime": "47:08",
+    "endTime": "47:17",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So a blank YouTube video of you saying something that's then recognized by the echo and then trigger stuff to happen in your house.",
+    "startTime": "47:17",
+    "endTime": "47:24",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it was a very funny TV show where were doing this from outside and causing people.",
+    "startTime": "47:24",
+    "endTime": "47:28",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "People's lights to come on, the heating to come on, in some cases, some early smart locks, you could make the front door unlock as well.",
+    "startTime": "47:28",
+    "endTime": "47:34",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So lots of weird things.",
+    "startTime": "47:34",
+    "endTime": "47:35",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think for giggles, we also found a third party recipe that would allow you to summon your Tesla, right?",
+    "startTime": "47:35",
+    "endTime": "47:45",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No, but this is what I love with the domain of security because it's always like thinking outside the box, right.",
+    "startTime": "47:46",
+    "endTime": "47:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's like it doesn't seem very harmful, but you chain together these things, you can make unexpected things happen.",
+    "startTime": "47:54",
+    "endTime": "48:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "48:01",
+    "endTime": "48:01",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that was a really clever way of looking at that.",
+    "startTime": "48:02",
+    "endTime": "48:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And you had another interesting attack with the smart helmet level, I think they call it.",
+    "startTime": "48:05",
+    "endTime": "48:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Level.",
+    "startTime": "48:11",
+    "endTime": "48:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Oh, yeah, where's that?",
+    "startTime": "48:12",
+    "endTime": "48:13",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that might be in my bag of skiing gear at the moment.",
+    "startTime": "48:14",
+    "endTime": "48:17",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, what was the vulnerability of that?",
+    "startTime": "48:19",
+    "endTime": "48:20",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm trying to remember.",
+    "startTime": "48:20",
+    "endTime": "48:21",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think.",
+    "startTime": "48:21",
+    "endTime": "48:22",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What did it do?",
+    "startTime": "48:23",
+    "endTime": "48:24",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "yeah, I remember now.",
+    "startTime": "48:24",
+    "endTime": "48:26",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there was.",
+    "startTime": "48:26",
+    "endTime": "48:26",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's a smart helmet.",
+    "startTime": "48:26",
+    "endTime": "48:27",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Great.",
+    "startTime": "48:27",
+    "endTime": "48:28",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, do you ski?",
+    "startTime": "48:28",
+    "endTime": "48:29",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Do you board?",
+    "startTime": "48:29",
+    "endTime": "48:29",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, yeah, I do occasionally.",
+    "startTime": "48:30",
+    "endTime": "48:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay.",
+    "startTime": "48:31",
+    "endTime": "48:32",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you know what it's like is, you know, you're skiing with your buddies and you lose them and it's like this, gloves off, dial their phone and you never quite get.",
+    "startTime": "48:32",
+    "endTime": "48:39",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It never works.",
+    "startTime": "48:39",
+    "endTime": "48:40",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the idea was this smart helmet that connected to an app on your phone where you just pressed a button here and then it span up using the app using cellular data, you could then talk to your buddies.",
+    "startTime": "48:40",
+    "endTime": "48:50",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, I'll be honest, it was pretty clunky.",
+    "startTime": "48:50",
+    "endTime": "48:52",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It didn't work very well.",
+    "startTime": "48:52",
+    "endTime": "48:54",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But there was a lack of user authorization, so anyone could jump into any of the groups and just start spouting stuff to each other.",
+    "startTime": "48:54",
+    "endTime": "49:02",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you could have people creeping on you through your helmet.",
+    "startTime": "49:02",
+    "endTime": "49:04",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Weird.",
+    "startTime": "49:04",
+    "endTime": "49:05",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But then that same functionality also allowed to track people in real time.",
+    "startTime": "49:05",
+    "endTime": "49:09",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So using a very weak authorization key, you could then see where everyone was in the ski resort.",
+    "startTime": "49:09",
+    "endTime": "49:15",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So privacy invasion.",
+    "startTime": "49:15",
+    "endTime": "49:18",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Bit of fun.",
+    "startTime": "49:18",
+    "endTime": "49:19",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Good excuse to mess around with some smart connected ski gear.",
+    "startTime": "49:20",
+    "endTime": "49:23",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, absolutely.",
+    "startTime": "49:23",
+    "endTime": "49:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That brings me to another topic, which is like, you guys obviously do solve these things for shits and giggles, I would imagine, because she's like, oh, this is fun.",
+    "startTime": "49:24",
+    "endTime": "49:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But when you approach one of these projects, like, you forget a new device.",
+    "startTime": "49:33",
+    "endTime": "49:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How do you guys approach it?",
+    "startTime": "49:37",
+    "endTime": "49:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Where do you start?",
+    "startTime": "49:39",
+    "endTime": "49:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You get a new shiny IoT gear.",
+    "startTime": "49:40",
+    "endTime": "49:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How do you start poking at it?",
+    "startTime": "49:43",
+    "endTime": "49:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, what's the process like?",
+    "startTime": "49:45",
+    "endTime": "49:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is there a such thing?",
+    "startTime": "49:47",
+    "endTime": "49:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "This is going to sound really weird, but through 10 years experience of looking at smart devices, many of the team here, you get a feel for what's going to be wrong with it before you've even got the product.",
+    "startTime": "49:48",
+    "endTime": "50:01",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can often do stuff like pulling the firmware from online resources.",
+    "startTime": "50:01",
+    "endTime": "50:04",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "First, you can use open sources.",
+    "startTime": "50:04",
+    "endTime": "50:06",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the FCC Referral Communications Commission website is actually really good for getting useful data off it.",
+    "startTime": "50:06",
+    "endTime": "50:13",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You get a sixth sense of what's going to be wrong with something based upon other devices you've seen.",
+    "startTime": "50:13",
+    "endTime": "50:19",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Sometimes it'll be esoteric stuff in the firmware, other times it'll be really stupid stuff to do with lack of Bluetooth pairing security.",
+    "startTime": "50:20",
+    "endTime": "50:27",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I brought this along for reasons.",
+    "startTime": "50:28",
+    "endTime": "50:31",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You probably have one of these as a kid.",
+    "startTime": "50:32",
+    "endTime": "50:33",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I certainly did mine was made of wood though, and it certainly wasn't smart because I'm old.",
+    "startTime": "50:33",
+    "endTime": "50:36",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is the new Bluetooth connected version of the Fisher Price chatterbox phone.",
+    "startTime": "50:38",
+    "endTime": "50:43",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you can connect it to your phone over Bluetooth.",
+    "startTime": "50:43",
+    "endTime": "50:45",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I kid you not, you can genuinely then pick up and start making calls on this from your cell phone, which I love.",
+    "startTime": "50:45",
+    "endTime": "50:49",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can even use the rotary dial.",
+    "startTime": "50:49",
+    "endTime": "50:51",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And my kids looked at this going, what's one of those, Daddy?",
+    "startTime": "50:51",
+    "endTime": "50:54",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I've not used one of those.",
+    "startTime": "50:55",
+    "endTime": "50:56",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But the problem being is they put no thought into Bluetooth pairing security.",
+    "startTime": "50:56",
+    "endTime": "51:00",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it was always on.",
+    "startTime": "51:00",
+    "endTime": "51:02",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The battery lasts a couple of months and any Bluetooth device in range could just connect and wow, once that, you know, the kids are probably playing with it.",
+    "startTime": "51:02",
+    "endTime": "51:10",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If they leave the headset off, the handset off, the microphone, speaker are continuously enabled.",
+    "startTime": "51:10",
+    "endTime": "51:15",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you can just bug and spy bug on people.",
+    "startTime": "51:15",
+    "endTime": "51:17",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that's really silly that Fisher Price would make such a mistake.",
+    "startTime": "51:17",
+    "endTime": "51:21",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think my thinking on all these smart things that most things are better stupid than smart.",
+    "startTime": "51:22",
+    "endTime": "51:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There is often very little reason to make things smart because the more smart they are, the more stupid they become.",
+    "startTime": "51:29",
+    "endTime": "51:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "51:34",
+    "endTime": "51:35",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Don't get me wrong, you know, I do have some, finally have some smart products in my own home.",
+    "startTime": "51:35",
+    "endTime": "51:39",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I have a connected heating system which I use, and we haven't battered the security of it, so it's one I'm very happy with.",
+    "startTime": "51:39",
+    "endTime": "51:46",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think there's definitely a case for connectivity in certain areas.",
+    "startTime": "51:46",
+    "endTime": "51:49",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, as a result, I use less fuel, I save carbon dioxide.",
+    "startTime": "51:49",
+    "endTime": "51:53",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, the heating works for me now.",
+    "startTime": "51:53",
+    "endTime": "51:55",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think there's also a really strong case in certain areas of assisted living for our elderly.",
+    "startTime": "51:56",
+    "endTime": "52:00",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think there's a strong case for Iot there.",
+    "startTime": "52:00",
+    "endTime": "52:02",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I also think there's a strong case for IoT in healthcare.",
+    "startTime": "52:02",
+    "endTime": "52:05",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think we will live longer, better, more fulfilled lives with connectivity.",
+    "startTime": "52:05",
+    "endTime": "52:10",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But those areas that we need to be really careful of.",
+    "startTime": "52:10",
+    "endTime": "52:14",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Healthcare and elderly people.",
+    "startTime": "52:14",
+    "endTime": "52:16",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We need to be really careful about the cybersecurity of those communities.",
+    "startTime": "52:16",
+    "endTime": "52:20",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, absolutely.",
+    "startTime": "52:21",
+    "endTime": "52:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I guess to elaborate, what about smart TVs are usually worse than a dumb TV.",
+    "startTime": "52:23",
+    "endTime": "52:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And like, you guys had a post about this while doing some research before the show about.",
+    "startTime": "52:30",
+    "endTime": "52:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think it's an old post, but Samsung's Tizen asks you to do like a virus check on their TVs.",
+    "startTime": "52:37",
+    "endTime": "52:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it's just like if my TV requires me to run a virus scan, it's the wrong tool for the job.",
+    "startTime": "52:44",
+    "endTime": "52:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "52:51",
+    "endTime": "52:52",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh, this is years ago.",
+    "startTime": "52:52",
+    "endTime": "52:53",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think it's been 2014.",
+    "startTime": "52:53",
+    "endTime": "52:55",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Maybe there was a Press story that someone had read the Samson terms of use for their TV and it said something about voice data, personal data.",
+    "startTime": "52:55",
+    "endTime": "53:07",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so hang on, I remember that story.",
+    "startTime": "53:07",
+    "endTime": "53:09",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I've got one of those TVs.",
+    "startTime": "53:09",
+    "endTime": "53:11",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So literally the next morning I walked out of my home carrying my tv, much to the confusion of my wife, brought it to the office and we set it up and started looking at it in real detail to see how it was doing voice recognition.",
+    "startTime": "53:11",
+    "endTime": "53:22",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it turned out the TV was pretty much constantly listening to you.",
+    "startTime": "53:22",
+    "endTime": "53:26",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And because it didn't have enough processing power on board, it would offload the processing of voice to text to a third party in the usa.",
+    "startTime": "53:26",
+    "endTime": "53:33",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it was making.",
+    "startTime": "53:34",
+    "endTime": "53:35",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right there.",
+    "startTime": "53:35",
+    "endTime": "53:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "53:36",
+    "endTime": "53:36",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it was doing that communication over plain text.",
+    "startTime": "53:36",
+    "endTime": "53:39",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Wow.",
+    "startTime": "53:41",
+    "endTime": "53:41",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So not only was the TV listening, it was also capturing our data, sending to the US without permission, and doing it in the clear.",
+    "startTime": "53:41",
+    "endTime": "53:48",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So yeah, that was a bad day, I think.",
+    "startTime": "53:48",
+    "endTime": "53:50",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "53:51",
+    "endTime": "53:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, there have been so many bad stories about smart TVs.",
+    "startTime": "53:52",
+    "endTime": "53:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like I used to use stupid TVs because of that reason in particular, but.",
+    "startTime": "53:54",
+    "endTime": "53:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And if you do have a smart tv, never turn it on.",
+    "startTime": "53:59",
+    "endTime": "54:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Wi fi.",
+    "startTime": "54:01",
+    "endTime": "54:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "54:01",
+    "endTime": "54:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There was this story that I broke, I think two weeks ago, where I forgot which brand of TVs it was.",
+    "startTime": "54:02",
+    "endTime": "54:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But you would think that if you use an external input like an HDMI as your, like an Apple TV or something, that you're in better position.",
+    "startTime": "54:09",
+    "endTime": "54:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But turns out that this TV actually like fingerprinting content coming into hdmi.",
+    "startTime": "54:17",
+    "endTime": "54:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it could actually, even if you are not using the smart TV functionality, they could actually understand your viewing behaviors and send that off upstream, which is terrifying.",
+    "startTime": "54:23",
+    "endTime": "54:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's when you realize that actually the margins for making TVs are so tight that actually it's monetization of your data is the way that the TV manufacturers actually make money.",
+    "startTime": "54:33",
+    "endTime": "54:45",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They'd far rather sell the TV at almost no margin and make it out of the back.",
+    "startTime": "54:45",
+    "endTime": "54:50",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I've got a frustration at the moment.",
+    "startTime": "54:50",
+    "endTime": "54:51",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I've got a Samsung smart TV and it keeps spinning up Samsung's own content platforms.",
+    "startTime": "54:51",
+    "endTime": "54:58",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't want to watch that.",
+    "startTime": "54:58",
+    "endTime": "54:59",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I want to watch Netflix.",
+    "startTime": "54:59",
+    "endTime": "55:00",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Leave me alone.",
+    "startTime": "55:01",
+    "endTime": "55:02",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, yeah, exactly.",
+    "startTime": "55:02",
+    "endTime": "55:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's all upsell, right?",
+    "startTime": "55:03",
+    "endTime": "55:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, it's scary.",
+    "startTime": "55:04",
+    "endTime": "55:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "No, it's.",
+    "startTime": "55:07",
+    "endTime": "55:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I don't trust these TVs.",
+    "startTime": "55:08",
+    "endTime": "55:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's my point for good reason.",
+    "startTime": "55:10",
+    "endTime": "55:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Particularly if it has a microphone as well.",
+    "startTime": "55:12",
+    "endTime": "55:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Absolutely not.",
+    "startTime": "55:14",
+    "endTime": "55:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So they did start removing microphones not long after the piece of research that we published.",
+    "startTime": "55:16",
+    "endTime": "55:23",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I thought that was a good thing, actually.",
+    "startTime": "55:23",
+    "endTime": "55:25",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think the first step was actually make it A push button on the remote.",
+    "startTime": "55:25",
+    "endTime": "55:28",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you didn't push it, didn't listen.",
+    "startTime": "55:28",
+    "endTime": "55:29",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That was a good step.",
+    "startTime": "55:30",
+    "endTime": "55:31",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then I think they gradually realized that actually people don't want microphones on their tv.",
+    "startTime": "55:31",
+    "endTime": "55:35",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Shocking, isn't it?",
+    "startTime": "55:35",
+    "endTime": "55:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "55:36",
+    "endTime": "55:37",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Quite happy to press the button on the remote.",
+    "startTime": "55:37",
+    "endTime": "55:38",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Thank you.",
+    "startTime": "55:39",
+    "endTime": "55:39",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, exactly.",
+    "startTime": "55:39",
+    "endTime": "55:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's crazy.",
+    "startTime": "55:40",
+    "endTime": "55:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "One of the last things I wanted to cover.",
+    "startTime": "55:42",
+    "endTime": "55:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, not one last thing I want to cover is the home alarm attack factor.",
+    "startTime": "55:44",
+    "endTime": "55:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You did sometime the jamming stuff there, which kind of leads kind of a segue from the airplane spoofing, but on a much more similar level.",
+    "startTime": "55:47",
+    "endTime": "55:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "55:55",
+    "endTime": "55:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How widespread is this?",
+    "startTime": "55:56",
+    "endTime": "55:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like just to recap the story, like you could jam a gps.",
+    "startTime": "55:57",
+    "endTime": "56:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "A jam, sorry, with an SDR jab, an alarm, home alarm system, essentially.",
+    "startTime": "56:00",
+    "endTime": "56:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is that still how.",
+    "startTime": "56:05",
+    "endTime": "56:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What's the verdict of that as of 2024?",
+    "startTime": "56:06",
+    "endTime": "56:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that was a wonderful piece of research by my colleague Andrew Tierney, who goes by the hashtag of cybergibbons.",
+    "startTime": "56:10",
+    "endTime": "56:17",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So do give him a follow.",
+    "startTime": "56:17",
+    "endTime": "56:18",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "He does some amazingly clever stuff.",
+    "startTime": "56:18",
+    "endTime": "56:20",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "He had been looking at wireless house alarms.",
+    "startTime": "56:21",
+    "endTime": "56:25",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So looking at how the pir, the sensor connects to the main board and for ease of installation, a lot of companies were offering this over RF rather than wired.",
+    "startTime": "56:25",
+    "endTime": "56:35",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's a lot easier to do at radio than it is drill lots of holes.",
+    "startTime": "56:35",
+    "endTime": "56:38",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So started looking at this and realized that the way that many of the PRs were connecting was extremely vulnerable to jamming.",
+    "startTime": "56:39",
+    "endTime": "56:46",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So even if you jammed the communication, the board wouldn't do anything about it.",
+    "startTime": "56:46",
+    "endTime": "56:51",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you could literally work, turn up with an SDR or optimize something into the size of a cigarette packet and you jam the alarm.",
+    "startTime": "56:51",
+    "endTime": "56:58",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was.",
+    "startTime": "56:59",
+    "endTime": "56:59",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Certain brands were really bad.",
+    "startTime": "56:59",
+    "endTime": "57:01",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What I was impressed with is see certain higher end brands that started addressing this directly.",
+    "startTime": "57:01",
+    "endTime": "57:06",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they were having two way communication with the pirates.",
+    "startTime": "57:06",
+    "endTime": "57:09",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they were checking the integrity of the pir, checking the integrity of the signal.",
+    "startTime": "57:09",
+    "endTime": "57:12",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if one of them dropped off, it would set an alert.",
+    "startTime": "57:13",
+    "endTime": "57:15",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you could go, is the battery on out or is it actually being jammed?",
+    "startTime": "57:15",
+    "endTime": "57:19",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it would.",
+    "startTime": "57:19",
+    "endTime": "57:19",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, that's a good point because that's a valid scenario where it would drop off.",
+    "startTime": "57:19",
+    "endTime": "57:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And you don't want alarm go off every time the battery is out either.",
+    "startTime": "57:25",
+    "endTime": "57:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, absolutely.",
+    "startTime": "57:28",
+    "endTime": "57:29",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it would have a two way communication.",
+    "startTime": "57:29",
+    "endTime": "57:30",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you as a user, you could look at your mobile app and go like, okay, the battery's running down, I need to go and look at that.",
+    "startTime": "57:30",
+    "endTime": "57:36",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Or I'll disable that PIR in the interim.",
+    "startTime": "57:36",
+    "endTime": "57:39",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But yeah, we have this crazy situation where all sorts of relatively cheap alarms were Very vulnerable to attacks.",
+    "startTime": "57:39",
+    "endTime": "57:46",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There are even some funny things.",
+    "startTime": "57:46",
+    "endTime": "57:47",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think with like a remote fob, you'd have your alarm turning off and on.",
+    "startTime": "57:47",
+    "endTime": "57:53",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Actually, you could spoof that as well, so you could disable the alarm just by some spoofing and jamming.",
+    "startTime": "57:53",
+    "endTime": "57:58",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, yeah, really poor attempt by a number of manufacturers.",
+    "startTime": "57:58",
+    "endTime": "58:02",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But the good news is a number of alarms are now doing much better authorization and validation of the pirs to make sure they're actually there and doing the right thing and not being jammed.",
+    "startTime": "58:02",
+    "endTime": "58:13",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That is good indeed.",
+    "startTime": "58:15",
+    "endTime": "58:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All right, good.",
+    "startTime": "58:16",
+    "endTime": "58:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So at least it's not as bad as it used to.",
+    "startTime": "58:16",
+    "endTime": "58:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "SDRs are getting cheaper and cheaper, so hopefully that makes it a little bit harder at least to leverage these things.",
+    "startTime": "58:20",
+    "endTime": "58:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The last thing I want to wrap up on is kind of legislation, how you see kind of this playing out in particular in the IoT space.",
+    "startTime": "58:29",
+    "endTime": "58:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We mentioned CRA already from your vantage point, how will this change the industry?",
+    "startTime": "58:34",
+    "endTime": "58:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, how do you.",
+    "startTime": "58:41",
+    "endTime": "58:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Do you actually think they will have an impact?",
+    "startTime": "58:42",
+    "endTime": "58:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or do you think this is people just going to ignore this or how do you see that?",
+    "startTime": "58:44",
+    "endTime": "58:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I've been very vocal about this.",
+    "startTime": "58:50",
+    "endTime": "58:52",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the first regulation I was aware of was California Senate bill 327.",
+    "startTime": "58:52",
+    "endTime": "58:57",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Bizarrely, actually, that's the IOT one.",
+    "startTime": "58:57",
+    "endTime": "58:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "58:59",
+    "endTime": "58:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "58:59",
+    "endTime": "59:00",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I've actually quoted our work on the swearing Dolly, my friend Kayla, as the inspiration to the bill, which was lovely, but I'm not aware of any enforcement.",
+    "startTime": "59:00",
+    "endTime": "59:08",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And more recently in the uk led the world with the Product Security Telecommunications Infrastructure Bill, or psti.",
+    "startTime": "59:08",
+    "endTime": "59:14",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's a mouthful, isn't it?",
+    "startTime": "59:14",
+    "endTime": "59:16",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it came up with three basic principles which were supposed to drive behaviors.",
+    "startTime": "59:18",
+    "endTime": "59:21",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So no default passwords, a statement about length of support for the product, and a vulnerability disclosure program.",
+    "startTime": "59:21",
+    "endTime": "59:26",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So pretty light touch, but should drive behavior in the right way.",
+    "startTime": "59:27",
+    "endTime": "59:30",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm still not aware of any enforcement action and it's lovely having regulations, but if someone's not prepared to enforce and enforce publicly, then the bill's toothless EU cra.",
+    "startTime": "59:30",
+    "endTime": "59:44",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Really interested to see where that goes.",
+    "startTime": "59:44",
+    "endTime": "59:46",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You've got Psti over here in terms of complexity, pretty light.",
+    "startTime": "59:47",
+    "endTime": "59:49",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then the cra, which is huge.",
+    "startTime": "59:49",
+    "endTime": "59:51",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's going to be interesting.",
+    "startTime": "59:52",
+    "endTime": "59:54",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's got to drive behaviors, but it will only drive them if the EU and the UK and other enforcement agencies around the world actually grab some of these errant manufacturers by the scruff of the neck and go, no.",
+    "startTime": "59:54",
+    "endTime": "01:00:05",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:00:06",
+    "endTime": "01:00:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think if it does drive behavior, I mean, at least I'm starting to see a bit of behavioral change.",
+    "startTime": "01:00:07",
+    "endTime": "01:00:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think more on the proactive buyers and S bombs is something that I think is kind of a direct consequence of legislation when executive order was the one driving that to start with.",
+    "startTime": "01:00:14",
+    "endTime": "01:00:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But that's something I think would not have happened without these legal pushbacks really from the industry.",
+    "startTime": "01:00:27",
+    "endTime": "01:00:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I'm not sure how you see that.",
+    "startTime": "01:00:37",
+    "endTime": "01:00:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If that's something that you see as well or like if you're bullish on that.",
+    "startTime": "01:00:40",
+    "endTime": "01:00:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How do you see that shaping up?",
+    "startTime": "01:00:43",
+    "endTime": "01:00:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think the SBOM project has been really good.",
+    "startTime": "01:00:45",
+    "endTime": "01:00:47",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that's a massive step forward to understand what you're building off.",
+    "startTime": "01:00:47",
+    "endTime": "01:00:51",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's huge, for example, in automotive right now because the complexity of an automotive ECU is massive.",
+    "startTime": "01:00:52",
+    "endTime": "01:00:57",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You think about the number of dependencies that sit on the average ecu.",
+    "startTime": "01:00:58",
+    "endTime": "01:01:03",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think having that S bom and truly understanding it is great because you immediately go, right, well I've got a new CVE and it applies to all these different ECUs.",
+    "startTime": "01:01:03",
+    "endTime": "01:01:11",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That is huge, massive overhead on manufacturers.",
+    "startTime": "01:01:12",
+    "endTime": "01:01:15",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I hope they flow that back up their supply chains and go like, well, when you're in the procurement process, I want to know what sboms you're using, document it and send it to me.",
+    "startTime": "01:01:15",
+    "endTime": "01:01:25",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that needs to be part of the life cycle.",
+    "startTime": "01:01:26",
+    "endTime": "01:01:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think that's my biggest beef when I have a lot of conversation with people about S bombs because people think them as a one time thing, but it's actually, it's a dynamic element.",
+    "startTime": "01:01:28",
+    "endTime": "01:01:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:01:37",
+    "endTime": "01:01:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Every time you push an update, you need to push that S bomb as well as an artifact.",
+    "startTime": "01:01:37",
+    "endTime": "01:01:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And you've seen some developments in the medical space in the US actually, they've been actually pretty proactive on this stuff, at least some of the vendors there.",
+    "startTime": "01:01:43",
+    "endTime": "01:01:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But again, that only came after pretty heavy handed regulation because they didn't do anything for so long.",
+    "startTime": "01:01:53",
+    "endTime": "01:01:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "01:01:59",
+    "endTime": "01:02:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, it's certainly on the MedTech side of things.",
+    "startTime": "01:02:00",
+    "endTime": "01:02:03",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think the FDA in the US has done some really good things of late.",
+    "startTime": "01:02:03",
+    "endTime": "01:02:06",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think of any industry where cybersecurity is critical, crikey, it's got to be MedTech, right?",
+    "startTime": "01:02:07",
+    "endTime": "01:02:13",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I remember a very silly vulnerability we found in a connected hot tub.",
+    "startTime": "01:02:14",
+    "endTime": "01:02:18",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Why does it matter?",
+    "startTime": "01:02:20",
+    "endTime": "01:02:21",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But actually it was the cloud platform behind it had a bunch of authorization flaws and we found some connected medtech on the same cloud platform with very similar vulnerabilities.",
+    "startTime": "01:02:21",
+    "endTime": "01:02:30",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think one of them was in fact a cranial stimulator.",
+    "startTime": "01:02:31",
+    "endTime": "01:02:34",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we think about of any industry that needs to get cybersecurity, right, it's got to be connected medtech.",
+    "startTime": "01:02:34",
+    "endTime": "01:02:42",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I remember another vulnerability one of my colleagues found in very early 2020 he found an exposed S3 bucket read write permissions and looking at the data figured actually it was a closed loop insulin pump trial read write data.",
+    "startTime": "01:02:42",
+    "endTime": "01:02:58",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You're like holy cow.",
+    "startTime": "01:02:58",
+    "endTime": "01:02:59",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "All you have to do is tamper with the insulin readings so they're high and you auto dose a fatal dose of insulin.",
+    "startTime": "01:02:59",
+    "endTime": "01:03:06",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Thank goodness the manufacturer, they fixed that within an hour of us reporting to it, reporting it and that was on a Sunday.",
+    "startTime": "01:03:07",
+    "endTime": "01:03:13",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So yeah, the vulnerability disclosure process worked really well.",
+    "startTime": "01:03:13",
+    "endTime": "01:03:17",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's a shame because development didn't quite get there so quickly.",
+    "startTime": "01:03:17",
+    "endTime": "01:03:20",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, yeah, no it is crazy.",
+    "startTime": "01:03:20",
+    "endTime": "01:03:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think that's there are light, I think there is a light end of the tunnel and hopefully I think their next wave of legal framework, the compliance frameworks, my gut feeling is that the next generation of ISO and well NISTA just got updated this year stopped just shy of mandating it.",
+    "startTime": "01:03:23",
+    "endTime": "01:03:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I think I'm bullish on the next generation of these framework will kind of mandate a lot stronger security posture and transparency.",
+    "startTime": "01:03:46",
+    "endTime": "01:03:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Really?",
+    "startTime": "01:03:54",
+    "endTime": "01:03:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:03:55",
+    "endTime": "01:03:56",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think can only drive good behaviors.",
+    "startTime": "01:03:56",
+    "endTime": "01:03:58",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And for the large manufacturers who typically get it right because they've got a brand at stake, I cannot see why this would cause them a problem because what it does is it forces the cheaper the me too brands who aren't maybe spending as much time on cybersecurity to actually start to behave.",
+    "startTime": "01:03:58",
+    "endTime": "01:04:14",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So actually their costs for the product get it right will increase and actually it's excuse me, a good thing for larger manufacturers who do cybersecurity right.",
+    "startTime": "01:04:14",
+    "endTime": "01:04:21",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because it forces everybody to not cut corners.",
+    "startTime": "01:04:21",
+    "endTime": "01:04:25",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that's a really good thing.",
+    "startTime": "01:04:25",
+    "endTime": "01:04:27",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think so too.",
+    "startTime": "01:04:27",
+    "endTime": "01:04:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The biggest argument I've heard that I can kind of not sympathize with but understand is that why people bigger organizations, particular legacy organizations are so against S bombs is because.",
+    "startTime": "01:04:28",
+    "endTime": "01:04:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because the second they generate nest bomb that means they have no longer plausible deniability about what goes in there.",
+    "startTime": "01:04:39",
+    "endTime": "01:04:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think that's actually a big reason why there's a big pushback.",
+    "startTime": "01:04:45",
+    "endTime": "01:04:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I can see that too.",
+    "startTime": "01:04:49",
+    "endTime": "01:04:50",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Although this is going to sound crazy but I think in IoT actually cybersecurity genuinely is an enabler.",
+    "startTime": "01:04:50",
+    "endTime": "01:04:56",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I really do and I'll tell you why.",
+    "startTime": "01:04:56",
+    "endTime": "01:04:59",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I saw lots of objection during the UK IoT bill about it would get in the way of sales and it would slow the market down.",
+    "startTime": "01:05:00",
+    "endTime": "01:05:09",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Actually now hang on a minute.",
+    "startTime": "01:05:09",
+    "endTime": "01:05:10",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They did some really interesting research showing this the government did and showed that cybersecurity was actually the number two objection by many consumers for buying smart product.",
+    "startTime": "01:05:10",
+    "endTime": "01:05:18",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So hang on a minute.",
+    "startTime": "01:05:18",
+    "endTime": "01:05:19",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you can tick that box and reassure consumers they'll buy more of your products.",
+    "startTime": "01:05:19",
+    "endTime": "01:05:25",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:05:26",
+    "endTime": "01:05:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, actually, the number one objection was they didn't need it but couldn't see the benefit.",
+    "startTime": "01:05:27",
+    "endTime": "01:05:31",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But yeah.",
+    "startTime": "01:05:31",
+    "endTime": "01:05:34",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That is crazy.",
+    "startTime": "01:05:35",
+    "endTime": "01:05:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Ken, this has been super interesting.",
+    "startTime": "01:05:37",
+    "endTime": "01:05:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If somebody want to learn more about you and Pen Test Partners, can they find more information?",
+    "startTime": "01:05:40",
+    "endTime": "01:05:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Oh, sure.",
+    "startTime": "01:05:46",
+    "endTime": "01:05:46",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Hit us up pentestpartners.com There's 150 of us based around the UK and USA.",
+    "startTime": "01:05:46",
+    "endTime": "01:05:52",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We can help with pen testing, instant response and broader GRC consulting.",
+    "startTime": "01:05:53",
+    "endTime": "01:05:57",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we'd love to help out, if only to tell you lots more funny stories about hacking smart devices.",
+    "startTime": "01:05:57",
+    "endTime": "01:06:02",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Love it.",
+    "startTime": "01:06:03",
+    "endTime": "01:06:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Perfect.",
+    "startTime": "01:06:04",
+    "endTime": "01:06:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I very much appreciate this, Ken.",
+    "startTime": "01:06:04",
+    "endTime": "01:06:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So thanks so much for coming on the show.",
+    "startTime": "01:06:07",
+    "endTime": "01:06:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Have a good one.",
+    "startTime": "01:06:08",
+    "endTime": "01:06:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Cheers.",
+    "startTime": "01:06:09",
+    "endTime": "01:06:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Thank you.",
+    "startTime": "01:06:09",
+    "endTime": "01:06:10",
+    "speaker_name": "Ken Munro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Bye.",
+    "startTime": "01:06:10",
+    "endTime": "01:06:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  }
+]

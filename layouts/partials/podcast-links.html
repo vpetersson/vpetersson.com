@@ -1,0 +1,37 @@
+{{ $podcast_links := site.Data.main.podcast }}
+{{ $img_variant := "white" }}
+{{ $source := "" }}
+{{ if reflect.IsMap . }}
+  {{ $img_variant = .img_variant | default "white" }}
+  {{ $source = .source | default "" }}
+{{ end }}
+
+<div>
+  <div class="flex gap-3">
+    {{ with $podcast_links.youtube }}
+      <a href="{{ . }}" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'YouTube', '{{ $source }}')">
+        <img src="/assets/images/site/podcast-youtube-{{ $img_variant }}.svg" alt="Listen to podcast on YouTube" />
+      </a>
+    {{ end }}
+    {{ with $podcast_links.spotify }}
+      <a href="{{ . }}" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Spotify', '{{ $source }}')">
+        <img src="/assets/images/site/podcast-spotify-{{ $img_variant }}.svg" alt="Listen to podcast on Spotify" />
+      </a>
+    {{ end }}
+    {{ with $podcast_links.apple }}
+      <a href="{{ . }}" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Apple', '{{ $source }}')">
+        <img src="/assets/images/site/podcast-apple-{{ $img_variant }}.svg" alt="Listen to podcast on Apple" />
+      </a>
+    {{ end }}
+    {{ with $podcast_links.amazon }}
+      <a href="{{ . }}" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Amazon', '{{ $source }}')">
+        <img src="/assets/images/site/podcast-amazon-{{ $img_variant }}.svg" alt="Listen to podcast on Amazon music" />
+      </a>
+    {{ end }}
+    {{ with $podcast_links.rss }}
+      <a href="{{ . }}" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'RSS', '{{ $source }}')">
+        <img src="/assets/images/site/podcast-rss-{{ $img_variant }}.svg" alt="RSS Feed" />
+      </a>
+    {{ end }}
+  </div>
+</div>

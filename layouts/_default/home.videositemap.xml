@@ -1,0 +1,24 @@
+{{- printf "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  {{- range where site.RegularPages "Section" "podcast" }}
+  {{- $youtube_id := replaceRE `.*[?&]v=([^&]+).*` "$1" .Params.youtube }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/{{ $youtube_id }}/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>{{ .Title | htmlEscape }}</video:title>
+      <video:description>{{ with .Description }}{{ . | htmlEscape }}{{ end }}</video:description>
+      <video:content_loc>{{ .Params.youtube }}</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/{{ $youtube_id }}</video:player_loc>
+      <video:duration>{{ mul .Params.duration 60 }}</video:duration>
+      <video:publication_date>{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      {{- with .Params.tags }}
+      {{ range . }}<video:tag>{{ . }}</video:tag>{{ end }}
+      {{- end }}
+    </video:video>
+  </url>
+  {{- end }}
+</urlset>

@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* Custom theme extending Tailwind v4 — single source of truth for design tokens */
+@theme {
+  /* Colors — aligned with _design-tokens.scss :root vars */
+  --color-primaryBG: #000212;
+  --color-secondaryBG: #1A1B2A;
+  --color-primaryText: #D6D6D6;
+  --color-altPrimaryText: #000212;
+  --color-btnPrimary: #5D5FEF;
+  --color-btnSecondary: rgba(93, 95, 239, 0.20);
+  --color-white-alpha-10: rgba(255, 255, 255, 0.10);
+  --color-white-alpha-20: rgba(255, 255, 255, 0.20);
+  --color-white-alpha-25: rgba(255, 255, 255, 0.25);
+
+  /* Font families — 3 self-hosted families */
+  --font-display: 'Anton', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}

@@ -1,0 +1,26 @@
+# Viktor Petersson
+
+> Tech entrepreneur, security advocate, and host of "Nerding Out with Viktor" podcast. Writing about DevSecOps, cloud architecture, software supply chain security, and building scalable systems. CEO of Screenly.
+
+Viktor Petersson is based in London and has been building and running tech companies for over 15 years. He leads Screenly, the world's first developer-friendly digital signage platform powering over 10,000 screens globally.
+
+## Blog
+
+- [Blog index](https://vpetersson.com/blog/): Technical articles on DevSecOps, cloud architecture, open source, security, remote work, and entrepreneurship
+- [RSS feed](https://vpetersson.com/blog/index.xml): Blog RSS feed
+
+## Podcast
+
+- [Nerding Out with Viktor](https://vpetersson.com/podcast/): Video podcast with deep dives into technology, entrepreneurship, and security with industry experts
+- [RSS feed](https://podcast.nerdingoutwithviktor.com/podcast_feed.xml): Podcast RSS feed
+
+## Pages
+
+- [About](https://vpetersson.com/about/): Background, experience, speaking engagements, and events
+- [Projects](https://vpetersson.com/projects/): Current and past projects including Screenly, Anthias, and open-source work
+- [Consulting](https://vpetersson.com/consulting/): DevSecOps and software supply chain security consulting services
+
+## Sitemaps
+
+- [Sitemap](https://vpetersson.com/sitemap.xml): Full site sitemap
+- [Video sitemap](https://vpetersson.com/video-sitemap.xml): Video content sitemap for podcast episodes

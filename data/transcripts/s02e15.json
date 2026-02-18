@@ -1,0 +1,3621 @@
+[
+  {
+    "sentence": "Viktor, fancy meeting you here.",
+    "startTime": "00:00",
+    "endTime": "00:02",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Small world.",
+    "startTime": "00:03",
+    "endTime": "00:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I haven't seen you in a few weeks.",
+    "startTime": "00:04",
+    "endTime": "00:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's been a few weeks.",
+    "startTime": "00:05",
+    "endTime": "00:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "00:06",
+    "endTime": "00:07",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Other side of the pond.",
+    "startTime": "00:08",
+    "endTime": "00:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Outside of the pond.",
+    "startTime": "00:09",
+    "endTime": "00:10",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It was Barcelona.",
+    "startTime": "00:11",
+    "endTime": "00:13",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And London.",
+    "startTime": "00:14",
+    "endTime": "00:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And London, that's right.",
+    "startTime": "00:15",
+    "endTime": "00:16",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I forgot about London.",
+    "startTime": "00:17",
+    "endTime": "00:18",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I just bumped into you there as well.",
+    "startTime": "00:18",
+    "endTime": "00:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was a bump in moment.",
+    "startTime": "00:19",
+    "endTime": "00:20",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "00:20",
+    "endTime": "00:21",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "00:21",
+    "endTime": "00:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I got to meet you in Barcelona.",
+    "startTime": "00:21",
+    "endTime": "00:24",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's right.",
+    "startTime": "00:24",
+    "endTime": "00:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Upside Europe.",
+    "startTime": "00:24",
+    "endTime": "00:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I appreciate you and what you do and how you think, even in the short period of time we had to chat.",
+    "startTime": "00:27",
+    "endTime": "00:31",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I'm excited to see you in Vegas.",
+    "startTime": "00:32",
+    "endTime": "00:33",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Likewise.",
+    "startTime": "00:34",
+    "endTime": "00:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No, it's.",
+    "startTime": "00:34",
+    "endTime": "00:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We've been talking about doing a cross show episode.",
+    "startTime": "00:35",
+    "endTime": "00:39",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You talk about you, what you're doing.",
+    "startTime": "00:40",
+    "endTime": "00:42",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I tell you what I'm doing.",
+    "startTime": "00:42",
+    "endTime": "00:43",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "00:43",
+    "endTime": "00:44",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "But while we're here in Vegas.",
+    "startTime": "00:44",
+    "endTime": "00:47",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Hacker Summer Camp, Black Hat, DEFCON, all the other.",
+    "startTime": "00:47",
+    "endTime": "00:50",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All the other fun stuff going on here.",
+    "startTime": "00:50",
+    "endTime": "00:52",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, we'll do a little.",
+    "startTime": "00:52",
+    "endTime": "00:53",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Little recap of some of those things.",
+    "startTime": "00:53",
+    "endTime": "00:54",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Let's do it.",
+    "startTime": "00:54",
+    "endTime": "00:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So for my audience.",
+    "startTime": "00:56",
+    "endTime": "00:57",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "00:57",
+    "endTime": "00:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "A bit of background yourself.",
+    "startTime": "00:58",
+    "endTime": "00:59",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "01:00",
+    "endTime": "01:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So my name is Viktor Petersson.",
+    "startTime": "01:00",
+    "endTime": "01:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Done a few startups over the years.",
+    "startTime": "01:02",
+    "endTime": "01:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "My most recent company is an SBOM artifact platform to manage the lifecycle SBOMs called sbomify.",
+    "startTime": "01:04",
+    "endTime": "01:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's what I'm working on now.",
+    "startTime": "01:11",
+    "endTime": "01:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I've emerged myself into the world of SBOMs for a year and a half or so by now and really started nerding out about these JSON files that really shouldn't be exciting.",
+    "startTime": "01:13",
+    "endTime": "01:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it's what you could do with them.",
+    "startTime": "01:24",
+    "endTime": "01:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's what you can do with them.",
+    "startTime": "01:28",
+    "endTime": "01:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it enables.",
+    "startTime": "01:29",
+    "endTime": "01:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's exciting.",
+    "startTime": "01:30",
+    "endTime": "01:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Not so much to file themselves.",
+    "startTime": "01:31",
+    "endTime": "01:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's what I've been doing.",
+    "startTime": "01:33",
+    "endTime": "01:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I got a podcast.",
+    "startTime": "01:34",
+    "endTime": "01:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is a crossover called Nerding Out with Viktor, that you can find on all platforms where I interview basically my list of every episode is like, would I watch this myself?",
+    "startTime": "01:36",
+    "endTime": "01:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so it's all people in the security world, tech world, have had the leaders in SBOM world.",
+    "startTime": "01:46",
+    "endTime": "01:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I had people from all walks of life in tech and just nerd out with them for an hour or video.",
+    "startTime": "01:52",
+    "endTime": "01:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And.",
+    "startTime": "01:58",
+    "endTime": "01:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, and people seem to like it.",
+    "startTime": "01:58",
+    "endTime": "02:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's.",
+    "startTime": "02:00",
+    "endTime": "02:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's brief [story] for myself.",
+    "startTime": "02:01",
+    "endTime": "02:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "My backstory.",
+    "startTime": "02:02",
+    "endTime": "02:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, nice one.",
+    "startTime": "02:03",
+    "endTime": "02:04",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I'll do the same for you.",
+    "startTime": "02:04",
+    "endTime": "02:05",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, do for you.",
+    "startTime": "02:05",
+    "endTime": "02:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "02:06",
+    "endTime": "02:06",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So I have a bit of gray hair.",
+    "startTime": "02:07",
+    "endTime": "02:08",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "30 plus years tinkering in cybersecurity and some IT in there as well.",
+    "startTime": "02:08",
+    "endTime": "02:15",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Building apps, securing apps, taking them to market, and now I talk about all that stuff.",
+    "startTime": "02:16",
+    "endTime": "02:24",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's why we're here.",
+    "startTime": "02:26",
+    "endTime": "02:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't know how many hundreds of products I brought to market with Symantec and then I went to a few startups to do the same.",
+    "startTime": "02:27",
+    "endTime": "02:32",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And yeah, I think the thing I like to say is Symantec bought a lot of companies and products.",
+    "startTime": "02:32",
+    "endTime": "02:38",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, I built the homegrown stuff.",
+    "startTime": "02:39",
+    "endTime": "02:41",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Very few things got built inside.",
+    "startTime": "02:41",
+    "endTime": "02:43",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "02:44",
+    "endTime": "02:44",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "But the ones that did were you.",
+    "startTime": "02:44",
+    "endTime": "02:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Had the fun of doing that, which a lot of challenges getting budgets and teams and anyway, it was a lot of fun.",
+    "startTime": "02:46",
+    "endTime": "02:53",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Great experience.",
+    "startTime": "02:53",
+    "endTime": "02:54",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I have, I think, like a project manager.",
+    "startTime": "02:55",
+    "endTime": "02:59",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Everything looks like a project.",
+    "startTime": "02:59",
+    "endTime": "03:00",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, yeah.",
+    "startTime": "03:00",
+    "endTime": "03:01",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so that serves me well on some of the things that I talk about on my podcast, which my co founder, Marco and I started its magazine 11 years ago here at Black Hat.",
+    "startTime": "03:01",
+    "endTime": "03:11",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's a long time ago.",
+    "startTime": "03:12",
+    "endTime": "03:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That was a long time ago.",
+    "startTime": "03:13",
+    "endTime": "03:14",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You produce a lot more than I have by now.",
+    "startTime": "03:14",
+    "endTime": "03:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think I have.",
+    "startTime": "03:16",
+    "endTime": "03:17",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, there's 300, just shy of 300 on.",
+    "startTime": "03:17",
+    "endTime": "03:21",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "On the new platform and then I had maybe 100 on the previous platform.",
+    "startTime": "03:21",
+    "endTime": "03:25",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's a lot of content.",
+    "startTime": "03:25",
+    "endTime": "03:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "03:26",
+    "endTime": "03:26",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And almost 3,000 across all the shows.",
+    "startTime": "03:26",
+    "endTime": "03:29",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Oh, wow.",
+    "startTime": "03:29",
+    "endTime": "03:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So a few episodes to listen to there.",
+    "startTime": "03:30",
+    "endTime": "03:31",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "A few more than I have.",
+    "startTime": "03:32",
+    "endTime": "03:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's a lot of work, as you know.",
+    "startTime": "03:35",
+    "endTime": "03:36",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, it is.",
+    "startTime": "03:36",
+    "endTime": "03:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I, on my show, I. I look at things operationally so as a project, as a program, and how do we take cool security technologies and enable teams to get the value out of those things in a way that supports the business objective.",
+    "startTime": "03:38",
+    "endTime": "03:55",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I'm talking to CISO.",
+    "startTime": "03:55",
+    "endTime": "03:57",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm not one.",
+    "startTime": "03:57",
+    "endTime": "03:58",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I talk hopefully speak well to CISO and I'm not doing the speaking.",
+    "startTime": "03:58",
+    "endTime": "04:02",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I have guests on who have been CISOs or look at risk or look at whatever and help them hopefully educate or at a minimum make people rethink how.",
+    "startTime": "04:02",
+    "endTime": "04:12",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's the outside view.",
+    "startTime": "04:12",
+    "endTime": "04:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "04:13",
+    "endTime": "04:14",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "It's like you're looking at stuff from different angle and repackaging it.",
+    "startTime": "04:14",
+    "endTime": "04:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "04:18",
+    "endTime": "04:18",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So I have a vision that security can actually make the business better.",
+    "startTime": "04:18",
+    "endTime": "04:23",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Oh, I am strong believer in that.",
+    "startTime": "04:23",
+    "endTime": "04:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Not just be a cost center that protects the business.",
+    "startTime": "04:25",
+    "endTime": "04:29",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Timely, yeah, I think that's really.",
+    "startTime": "04:29",
+    "endTime": "04:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We have seen a shift driven largely by regulation, I would argue in the last year we spoke, whether it's Barcelona, right?",
+    "startTime": "04:32",
+    "endTime": "04:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Where security no longer is a nice job, it's shifting to a must have from a regulatory perspective.",
+    "startTime": "04:40",
+    "endTime": "04:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Particularly you see that in Europe right now with CRA coming through.",
+    "startTime": "04:49",
+    "endTime": "04:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's a big driver.",
+    "startTime": "04:53",
+    "endTime": "04:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And kind of looping that back.",
+    "startTime": "04:55",
+    "endTime": "04:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What we're saying here to like SBOMs.",
+    "startTime": "04:56",
+    "endTime": "04:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "04:58",
+    "endTime": "04:58",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "It's like I see a world where in the coming years, SBOMs will be the vehicle that would be part of all the compliance frameworks.",
+    "startTime": "04:58",
+    "endTime": "05:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So like tying into what you're saying about security not being a nice tab, security being not a tick box, but it's a mandatory thing that you do and once you get that, it becomes operational and that's important.",
+    "startTime": "05:09",
+    "endTime": "05:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Certainly from a marketing perspective, we've seen it shift from we're not going to share anything that we do with security to we want to expose.",
+    "startTime": "05:22",
+    "endTime": "05:31",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We're not that demonstrate that we do things properly, whatever that means as a differentiator.",
+    "startTime": "05:31",
+    "endTime": "05:38",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So market advantage.",
+    "startTime": "05:38",
+    "endTime": "05:40",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That has always been the problem with security.",
+    "startTime": "05:40",
+    "endTime": "05:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I've spoken about this in one model company, Screenly, we've had it as we spoke about security a lot.",
+    "startTime": "05:42",
+    "endTime": "05:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So what a company do secure signage and we talk this a lot because every single company out there, they will say they're secure.",
+    "startTime": "05:47",
+    "endTime": "05:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But what does that mean?",
+    "startTime": "05:56",
+    "endTime": "05:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Saying they're secure means absolutely nothing.",
+    "startTime": "05:58",
+    "endTime": "06:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No single company out there will say were insecure.",
+    "startTime": "06:00",
+    "endTime": "06:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "06:03",
+    "endTime": "06:03",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So quantifying that and that transparency element of that is so important and forcing that you can see things like Secure by Design.",
+    "startTime": "06:04",
+    "endTime": "06:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's a meet up here tonight in Vegas about Secure by Design.",
+    "startTime": "06:12",
+    "endTime": "06:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But these vehicles are driving change to the industry and I think that's super important.",
+    "startTime": "06:15",
+    "endTime": "06:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it goes from what does my operations look like?",
+    "startTime": "06:20",
+    "endTime": "06:23",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Am I building, picking the right software to run the business?",
+    "startTime": "06:23",
+    "endTime": "06:27",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Am I building right software to run the business?",
+    "startTime": "06:27",
+    "endTime": "06:29",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Am I monitoring all that?",
+    "startTime": "06:29",
+    "endTime": "06:30",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Am I responding properly and in time?",
+    "startTime": "06:30",
+    "endTime": "06:32",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Are we going to be in business tomorrow or are we going to hit.",
+    "startTime": "06:32",
+    "endTime": "06:35",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How your supply chain looking?",
+    "startTime": "06:35",
+    "endTime": "06:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How's your software supply chain looking?",
+    "startTime": "06:36",
+    "endTime": "06:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not a trivial problem.",
+    "startTime": "06:38",
+    "endTime": "06:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "06:39",
+    "endTime": "06:39",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And there are definitely companies out there that are proactive about this, that are really doing a good job.",
+    "startTime": "06:39",
+    "endTime": "06:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But this will not change without a regulatory change.",
+    "startTime": "06:44",
+    "endTime": "06:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "06:49",
+    "endTime": "06:49",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And the compliance change.",
+    "startTime": "06:49",
+    "endTime": "06:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "06:51",
+    "endTime": "06:51",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Because security is market failure.",
+    "startTime": "06:52",
+    "endTime": "06:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's it.",
+    "startTime": "06:56",
+    "endTime": "06:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's never gonna solve itself without a legal push.",
+    "startTime": "06:57",
+    "endTime": "07:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I think that's why it's really timely to do all these security conversations because we're finally starting to see the tide turning and it's actually becoming.",
+    "startTime": "07:01",
+    "endTime": "07:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I see this firsthand in Screenly, the conversation you're having are so different today than five years ago because people ask the right questions.",
+    "startTime": "07:10",
+    "endTime": "07:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They never used to do that.",
+    "startTime": "07:20",
+    "endTime": "07:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's a very good thing, I think.",
+    "startTime": "07:22",
+    "endTime": "07:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "07:25",
+    "endTime": "07:26",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And one of the things I'm interested in your perspective on what you've seen just being here the last couple days.",
+    "startTime": "07:26",
+    "endTime": "07:31",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I know you haven't been black hat proper, but you're heading to DEFCON soon.",
+    "startTime": "07:31",
+    "endTime": "07:35",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I want to give your perspective on that.",
+    "startTime": "07:35",
+    "endTime": "07:36",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But some of the things we.",
+    "startTime": "07:36",
+    "endTime": "07:38",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Mark and I did an episode webinar, kind of predicting what might we see in here.",
+    "startTime": "07:38",
+    "endTime": "07:43",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And of course, we couldn't avoid generic.",
+    "startTime": "07:43",
+    "endTime": "07:45",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "AI, of course, mandatory buzzword.",
+    "startTime": "07:45",
+    "endTime": "07:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now we take that off for this episode.",
+    "startTime": "07:48",
+    "endTime": "07:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Unavoidable, one thing, and certainly that was part of pretty much every conversation.",
+    "startTime": "07:49",
+    "endTime": "07:55",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I just recorded the session looking at that and my other guest, Ginny, his perspective was we really need to be focusing on securing AI.",
+    "startTime": "07:55",
+    "endTime": "08:06",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I was telling him, I'm sure there are vendors here.",
+    "startTime": "08:07",
+    "endTime": "08:10",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I didn't cross them this week, but I'm sure there are vendors here that do that.",
+    "startTime": "08:11",
+    "endTime": "08:15",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I know there are.",
+    "startTime": "08:15",
+    "endTime": "08:16",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I didn't have a chance to talk to them.",
+    "startTime": "08:17",
+    "endTime": "08:18",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "A lot of what I saw was how to use AI to secure the business and make security operations better.",
+    "startTime": "08:19",
+    "endTime": "08:25",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it ranged from very specific.",
+    "startTime": "08:26",
+    "endTime": "08:30",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I have this task.",
+    "startTime": "08:30",
+    "endTime": "08:31",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I can automate some agent or micro agent to I've built a platform where you can do anything you want, run multiple LLMs, create multiple agents, orchestrate that stuff however you like.",
+    "startTime": "08:31",
+    "endTime": "08:44",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So a wide range of what's possible.",
+    "startTime": "08:45",
+    "endTime": "08:47",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And the point I want to make with that is what's inspiring to me is that AI, in my sense or my view, allows us to explore.",
+    "startTime": "08:48",
+    "endTime": "08:57",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, allows us to explore in a fairly safe way.",
+    "startTime": "08:58",
+    "endTime": "09:02",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think we can set up environments to see by pulling this lever, creating this thing, attaching that data, orchestrating sort of, we can look at different ways to solve a problem that we may have solved previously using old technologies or bound to legacy systems that prevent us from doing certain things.",
+    "startTime": "09:02",
+    "endTime": "09:23",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I just have this view that we can take a step back and rethink how we're running the business, how we deploy all of these systems and how we deploy the data and where it's located and how we segment it and.",
+    "startTime": "09:23",
+    "endTime": "09:36",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And how we put policies around that and how we protect it and detect and monitor all this stuff.",
+    "startTime": "09:37",
+    "endTime": "09:41",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Every element of that can be rethought and potentially in a way that's not too disruptive.",
+    "startTime": "09:42",
+    "endTime": "09:47",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "09:48",
+    "endTime": "09:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, there's so much to unpack in that.",
+    "startTime": "09:49",
+    "endTime": "09:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "09:51",
+    "endTime": "09:51",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Because first of all, like, we have never lived through a time where it's cheaper, easy to produce code of various quality.",
+    "startTime": "09:51",
+    "endTime": "09:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "09:58",
+    "endTime": "09:59",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Work with any of these LLMs.",
+    "startTime": "10:00",
+    "endTime": "10:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I best describe it as you work with a bipolar person and it's simultaneously the most intelligent person you ever met and the most stupid person you've ever met, and you never know who's going to reply.",
+    "startTime": "10:02",
+    "endTime": "10:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's how I see work with these tools.",
+    "startTime": "10:13",
+    "endTime": "10:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "10:15",
+    "endTime": "10:15",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And what that means is that we can Generate so much code so quickly and we can do prototypes so quickly and that's fantastic.",
+    "startTime": "10:15",
+    "endTime": "10:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you can solve internal problems and internal.. you can build internal applications that were not cost effective priority.",
+    "startTime": "10:22",
+    "endTime": "10:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you can solve very niche problems for internal problems.",
+    "startTime": "10:30",
+    "endTime": "10:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's fantastic.",
+    "startTime": "10:33",
+    "endTime": "10:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The problem is when you try to productize those and put them on the public Internet and you like if you haven't put the right guardrails in place.",
+    "startTime": "10:35",
+    "endTime": "10:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Cause that's really where it comes.",
+    "startTime": "10:43",
+    "endTime": "10:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's kind of ties full circles to supply chain security.",
+    "startTime": "10:45",
+    "endTime": "10:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "10:48",
+    "endTime": "10:48",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Because these LLMs will happily just chuck in anything in there.",
+    "startTime": "10:48",
+    "endTime": "10:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they will depends what they're trained on too.",
+    "startTime": "10:52",
+    "endTime": "10:55",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Sure.",
+    "startTime": "10:55",
+    "endTime": "10:55",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean they're trained on GitHub and GitHub is full of both ridiculously good code, a ridiculously bad code.",
+    "startTime": "10:56",
+    "endTime": "11:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "11:01",
+    "endTime": "11:01",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So putting those plumbing framework in place is so paramount to getting a good outcome.",
+    "startTime": "11:03",
+    "endTime": "11:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I've played a lot with these tools over the last year and that's what I keep going back to.",
+    "startTime": "11:10",
+    "endTime": "11:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like you need to start with the guardrails.",
+    "startTime": "11:17",
+    "endTime": "11:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like if you start with the guardrails and you get that right, then you can start doing intertechnics and you can do.",
+    "startTime": "11:19",
+    "endTime": "11:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, because you're not going to fall off the cliff.",
+    "startTime": "11:24",
+    "endTime": "11:26",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "No, exactly.",
+    "startTime": "11:26",
+    "endTime": "11:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But like give you very stupid example package management.",
+    "startTime": "11:27",
+    "endTime": "11:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "These LLMs like they will happily just edit your log files and just like inject crap in there and you're like hold on a second.",
+    "startTime": "11:31",
+    "endTime": "11:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like I didn't, I don't want you to deal with package manager.",
+    "startTime": "11:38",
+    "endTime": "11:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There are package managers to do this and they work better for other reasons.",
+    "startTime": "11:41",
+    "endTime": "11:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like how do I know?",
+    "startTime": "11:44",
+    "endTime": "11:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like when you ask to add a package, it will add an old version for instance which is probably vulnerable to issues.",
+    "startTime": "11:45",
+    "endTime": "11:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "11:51",
+    "endTime": "11:51",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So.",
+    "startTime": "11:51",
+    "endTime": "11:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So again coming down to this guardrails to do righ,",
+    "startTime": "11:52",
+    "endTime": "11:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "and building the blueprints in a, basically the blueprint that you would do when you would by yourself but you do it in.",
+    "startTime": "11:54",
+    "endTime": "11:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You have to basically force the agents to actually do that for you.",
+    "startTime": "12:03",
+    "endTime": "12:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I think there's obviously it's a fantastic time to build software and it's amazing what these tools can do.",
+    "startTime": "12:06",
+    "endTime": "12:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is just the beginning of course.",
+    "startTime": "12:15",
+    "endTime": "12:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What how old is like these tools like Cursor and these tools they're like two years old, if not right.",
+    "startTime": "12:17",
+    "endTime": "12:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the trajectory, how we've changed how we work with these tools are fantastic.",
+    "startTime": "12:24",
+    "endTime": "12:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They're so fast.",
+    "startTime": "12:30",
+    "endTime": "12:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we are definitely seeing a world where.",
+    "startTime": "12:32",
+    "endTime": "12:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I envision a world at least it's a bit of tangential but where every engineer that I have, we'll have five 10 agents working for them.",
+    "startTime": "12:35",
+    "endTime": "12:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The way they become a supervisor of these agents rather than ICs per se, that's something that you have an agent for security.",
+    "startTime": "12:45",
+    "endTime": "12:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You have an agent for ux.",
+    "startTime": "12:52",
+    "endTime": "12:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, agent for design.",
+    "startTime": "12:54",
+    "endTime": "12:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they will combine together and work as a team essentially.",
+    "startTime": "12:55",
+    "endTime": "12:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then an engineer will actually supervise them.",
+    "startTime": "12:59",
+    "endTime": "13:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's the way.",
+    "startTime": "13:01",
+    "endTime": "13:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean.",
+    "startTime": "13:02",
+    "endTime": "13:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, well, I guess it is.",
+    "startTime": "13:04",
+    "endTime": "13:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But like it's structured vibe coding.",
+    "startTime": "13:06",
+    "endTime": "13:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "13:10",
+    "endTime": "13:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Perhaps vibe coded with guardrails.",
+    "startTime": "13:10",
+    "endTime": "13:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "13:13",
+    "endTime": "13:13",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "I think it's interesting because we'll see a lot of these capabilities.",
+    "startTime": "13:13",
+    "endTime": "13:18",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean we see it now with services and APIs.",
+    "startTime": "13:18",
+    "endTime": "13:21",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "13:21",
+    "endTime": "13:21",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "It's just the next level of that.",
+    "startTime": "13:21",
+    "endTime": "13:23",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "13:23",
+    "endTime": "13:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But at scale and because everything will be so small and purpose built, we'll use more of these things to do bigger and better things.",
+    "startTime": "13:25",
+    "endTime": "13:35",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "13:36",
+    "endTime": "13:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the engineer kind of picking and choosing and guiding and orchestrating to achieve something that is pretty cool, I would imagine.",
+    "startTime": "13:37",
+    "endTime": "13:45",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean I expect throughput and output of engineers to like 10x.",
+    "startTime": "13:46",
+    "endTime": "13:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "13:50",
+    "endTime": "13:50",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Every engineer will 10x their output because all the busy work is there.",
+    "startTime": "13:50",
+    "endTime": "13:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They become architects.",
+    "startTime": "13:55",
+    "endTime": "13:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they just.",
+    "startTime": "13:56",
+    "endTime": "13:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Here are the big picture we need to accomplish from a business logic perspective.",
+    "startTime": "13:57",
+    "endTime": "14:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Don't really care about the small details whilst having other agents to do code audits and security audits and making sure that no silly mistakes are being done there.",
+    "startTime": "14:02",
+    "endTime": "14:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like you don't have xss and you have like other silly security mistakes that these LMS will happily do for you because they solve the problem as quick as possible.",
+    "startTime": "14:10",
+    "endTime": "14:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "14:21",
+    "endTime": "14:22",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "14:22",
+    "endTime": "14:23",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So that whole.",
+    "startTime": "14:23",
+    "endTime": "14:23",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "This might be a rabbit hole, but anyway, the whole development life cycle, perhaps there's a way to bring in some checks and balances where you're using multiple things to validate and check and test.",
+    "startTime": "14:23",
+    "endTime": "14:38",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But not only that, they're also fantastic to refactor legacy code.",
+    "startTime": "14:39",
+    "endTime": "14:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "14:44",
+    "endTime": "14:45",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Because that's in the enterprise world in particular, the enterprise do not live in the JavaScript world where every framework has a three month life cycle.",
+    "startTime": "14:45",
+    "endTime": "14:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "14:53",
+    "endTime": "14:53",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "After three months you have to rewrite everything because it's not cool anymore.",
+    "startTime": "14:53",
+    "endTime": "14:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "These enterprise applications, they have a 15, 20 year life cycle.",
+    "startTime": "14:57",
+    "endTime": "15:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Rewriting that is not a trivial matter.",
+    "startTime": "15:02",
+    "endTime": "15:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "15:04",
+    "endTime": "15:05",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "It's a lot of busy work.",
+    "startTime": "15:05",
+    "endTime": "15:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But these tools, resilience is paramount.",
+    "startTime": "15:06",
+    "endTime": "15:08",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, exactly.",
+    "startTime": "15:08",
+    "endTime": "15:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "15:08",
+    "endTime": "15:09",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So.",
+    "startTime": "15:09",
+    "endTime": "15:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But these tools can help with that.",
+    "startTime": "15:10",
+    "endTime": "15:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The refactoring and update.",
+    "startTime": "15:12",
+    "endTime": "15:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I think that's the life cycle there.",
+    "startTime": "15:13",
+    "endTime": "15:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I hope the world is moving towards a more longevity framework and thinking of software and life cycle of.",
+    "startTime": "15:15",
+    "endTime": "15:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Let's not just fix this right now with a single JavaScript update.",
+    "startTime": "15:25",
+    "endTime": "15:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Just picking on JavaScript world because the JavaScript world tends to be the one where things churn quickest.",
+    "startTime": "15:30",
+    "endTime": "15:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "15:34",
+    "endTime": "15:35",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "But so I think that's hopefully what we'll see here with more people thinking more about longer life cycles.",
+    "startTime": "15:35",
+    "endTime": "15:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I want to make one more comment on this and you can chime in, of course, but kind of the guardrails thing.",
+    "startTime": "15:42",
+    "endTime": "15:47",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The other thing I pulled from this past few days is don't necessarily chase this new world and forget that you do have legacy stuff.",
+    "startTime": "15:47",
+    "endTime": "16:01",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so there was, I heard a few times, don't forget the basics.",
+    "startTime": "16:01",
+    "endTime": "16:06",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "16:06",
+    "endTime": "16:07",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Kind of along the guardrails thing.",
+    "startTime": "16:07",
+    "endTime": "16:08",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, yes.",
+    "startTime": "16:08",
+    "endTime": "16:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think it wasn't in the context of while you're doing AI, don't forget the basis.",
+    "startTime": "16:09",
+    "endTime": "16:15",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I think it's important.",
+    "startTime": "16:15",
+    "endTime": "16:15",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But it's.",
+    "startTime": "16:15",
+    "endTime": "16:16",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Don't at the.",
+    "startTime": "16:17",
+    "endTime": "16:17",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Don't take investments to secure AI and forget that you didn't get approval for budget to segment your network.",
+    "startTime": "16:18",
+    "endTime": "16:25",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's still flat or whatever.",
+    "startTime": "16:25",
+    "endTime": "16:26",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "16:26",
+    "endTime": "16:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "16:27",
+    "endTime": "16:27",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "16:27",
+    "endTime": "16:28",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So I think there's a message there for CISOs to say don't forget your real role.",
+    "startTime": "16:28",
+    "endTime": "16:34",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "16:35",
+    "endTime": "16:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In protecting the business, not just the next thing that's coming.",
+    "startTime": "16:36",
+    "endTime": "16:39",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So sprinkling AL on garbage in, garbage out.",
+    "startTime": "16:39",
+    "endTime": "16:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The end of the day.",
+    "startTime": "16:43",
+    "endTime": "16:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "16:43",
+    "endTime": "16:44",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "If sprinkling AI on garbage is still garbage.",
+    "startTime": "16:44",
+    "endTime": "16:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "16:46",
+    "endTime": "16:46",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So you still need to do the fundamentals.",
+    "startTime": "16:46",
+    "endTime": "16:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "16:48",
+    "endTime": "16:48",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And be guardrails on the network or be guardrails in your software.",
+    "startTime": "16:48",
+    "endTime": "16:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There.",
+    "startTime": "16:54",
+    "endTime": "16:54",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "There's still guardrails.",
+    "startTime": "16:54",
+    "endTime": "16:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "16:55",
+    "endTime": "16:56",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Doing new LMS might help you solve for those problems, but you as an architect must think still know what you're solving for and those must be business objectives that you're solving for.",
+    "startTime": "16:56",
+    "endTime": "17:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "More so than sprinkling the latest cool tool about.",
+    "startTime": "17:09",
+    "endTime": "17:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "17:13",
+    "endTime": "17:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Exactly.",
+    "startTime": "17:13",
+    "endTime": "17:14",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We easily get.",
+    "startTime": "17:14",
+    "endTime": "17:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We easily get caught up in hype cycles.",
+    "startTime": "17:15",
+    "endTime": "17:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I know.",
+    "startTime": "17:17",
+    "endTime": "17:17",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it's important to take a step back to your point.",
+    "startTime": "17:18",
+    "endTime": "17:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's just like what are we actually trying to solve for?",
+    "startTime": "17:20",
+    "endTime": "17:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that's where we need to go back to basics in many ways.",
+    "startTime": "17:23",
+    "endTime": "17:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Exactly.",
+    "startTime": "17:27",
+    "endTime": "17:28",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So a lot of the time talks here around research, findings of vulnerabilities, findings of flaws and business logic, finding of flaws in application, whatever it is.",
+    "startTime": "17:28",
+    "endTime": "17:39",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And even culture, even how we manage our teams gets even deeper.",
+    "startTime": "17:39",
+    "endTime": "17:47",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Oh yeah.",
+    "startTime": "17:47",
+    "endTime": "17:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "When you go to defcon.",
+    "startTime": "17:47",
+    "endTime": "17:48",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So tell me what you hope to see there.",
+    "startTime": "17:49",
+    "endTime": "17:53",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is it going to be all AI in there too?",
+    "startTime": "17:53",
+    "endTime": "17:54",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because I've read villages with the aerospace village, ics, I mean, which is a lot of hardware.",
+    "startTime": "17:55",
+    "endTime": "18:04",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I have a software for social engineering and lock picking.",
+    "startTime": "18:05",
+    "endTime": "18:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean that.",
+    "startTime": "18:09",
+    "endTime": "18:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because that's.",
+    "startTime": "18:09",
+    "endTime": "18:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's really, AI doesn't change that.",
+    "startTime": "18:10",
+    "endTime": "18:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It makes like deep fakes and stuff like that easier.",
+    "startTime": "18:12",
+    "endTime": "18:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But humans tend to always be the weakest link and like you can find vulnerabilities, that's fine.",
+    "startTime": "18:15",
+    "endTime": "18:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But if you look at many of the attacks, the humans are the weakest link.",
+    "startTime": "18:22",
+    "endTime": "18:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And to your point about culture, that's culture security is culture security software can help you mitigate that.",
+    "startTime": "18:27",
+    "endTime": "18:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But training and culture is a DNA in the culture that you must get.",
+    "startTime": "18:39",
+    "endTime": "18:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "18:44",
+    "endTime": "18:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's very difficult, you're at school scale, but you need to get it in right early.",
+    "startTime": "18:45",
+    "endTime": "18:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "18:49",
+    "endTime": "18:49",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And I think that's why I love coming to DEFCON, because it really, it makes you challenge assumptions.",
+    "startTime": "18:49",
+    "endTime": "18:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "18:57",
+    "endTime": "18:57",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that's.",
+    "startTime": "18:57",
+    "endTime": "18:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There are talks about hacking AI and hacking LLMs, jailbreaking, all that stuff you expect.",
+    "startTime": "18:58",
+    "endTime": "19:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "19:03",
+    "endTime": "19:04",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I love the hacker mindset.",
+    "startTime": "19:04",
+    "endTime": "19:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "19:07",
+    "endTime": "19:08",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that's what like drinks me back to DEFCON.",
+    "startTime": "19:08",
+    "endTime": "19:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's just that lock picking is a good example.",
+    "startTime": "19:10",
+    "endTime": "19:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "19:14",
+    "endTime": "19:14",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "It's just perception of security.",
+    "startTime": "19:14",
+    "endTime": "19:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Locks are not secure.",
+    "startTime": "19:17",
+    "endTime": "19:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like anybody with a little bit of lock picking training can pick a lot of locks.",
+    "startTime": "19:19",
+    "endTime": "19:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But we have the illusion that locks are secure being RFID lock in a hotel room or a lock at your home.",
+    "startTime": "19:23",
+    "endTime": "19:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like they're actually not that secure once you unpeel the onion.",
+    "startTime": "19:30",
+    "endTime": "19:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "19:33",
+    "endTime": "19:33",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And you see what's inside.",
+    "startTime": "19:33",
+    "endTime": "19:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's what really gets me going back here.",
+    "startTime": "19:35",
+    "endTime": "19:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's just you go to talk, you're like, huh, Right.",
+    "startTime": "19:39",
+    "endTime": "19:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Of course.",
+    "startTime": "19:44",
+    "endTime": "19:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Why, at least it's an illusion.",
+    "startTime": "19:44",
+    "endTime": "19:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Think about things differently based on that understanding.",
+    "startTime": "19:46",
+    "endTime": "19:49",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's it.",
+    "startTime": "19:49",
+    "endTime": "19:50",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And it applies to everything.",
+    "startTime": "19:50",
+    "endTime": "19:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's IoT security is another good example of that.",
+    "startTime": "19:52",
+    "endTime": "19:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There are a lot of talk Defcon about IoT security.",
+    "startTime": "19:56",
+    "endTime": "19:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's something I've been passionate about for a long time.",
+    "startTime": "19:59",
+    "endTime": "20:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I've been in the IoT space for a long time.",
+    "startTime": "20:01",
+    "endTime": "20:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And IoT security is something that we haven't really.",
+    "startTime": "20:03",
+    "endTime": "20:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's always been crap.",
+    "startTime": "20:09",
+    "endTime": "20:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Let's just call what it is.",
+    "startTime": "20:11",
+    "endTime": "20:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "20:13",
+    "endTime": "20:13",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "It's again, a market failure.",
+    "startTime": "20:13",
+    "endTime": "20:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes, very much so.",
+    "startTime": "20:17",
+    "endTime": "20:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Again, it's a market failure.",
+    "startTime": "20:18",
+    "endTime": "20:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "20:19",
+    "endTime": "20:20",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "No consumer will pay a subscription service for their smart devices.",
+    "startTime": "20:21",
+    "endTime": "20:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the security must be priced in somehow.",
+    "startTime": "20:27",
+    "endTime": "20:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's the tricky part, Right.",
+    "startTime": "20:30",
+    "endTime": "20:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's why putting my hat from screenly on the reality of the signage market is that much of the market is dominated by end of life Android players from China because they are cheapest, they get deployed, Google wash their hands because like, well, it's end of life.",
+    "startTime": "20:32",
+    "endTime": "20:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We already told you this.",
+    "startTime": "20:51",
+    "endTime": "20:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But there are no shortage of resellers out there that will happily sell you this stuff on the premise that it's secure, which in reality probably isn't.",
+    "startTime": "20:52",
+    "endTime": "21:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "21:03",
+    "endTime": "21:03",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So it security again, it's like one of those things like let's just fix it.",
+    "startTime": "21:04",
+    "endTime": "21:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like the Internet of shit has been around for too long.",
+    "startTime": "21:09",
+    "endTime": "21:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Let's fix it.",
+    "startTime": "21:12",
+    "endTime": "21:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "21:14",
+    "endTime": "21:14",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it touches, I mean touches every aspect.",
+    "startTime": "21:14",
+    "endTime": "21:17",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it gets a lot of attention Iot less ot a bit more.",
+    "startTime": "21:18",
+    "endTime": "21:25",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But if you look at all of those, they touch pretty much everything from railroads to airlines to hotels and hospitality.",
+    "startTime": "21:26",
+    "endTime": "21:37",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean I've been here where the fire alarm is going off, not because.",
+    "startTime": "21:37",
+    "endTime": "21:41",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There'S a fire, somebody here close to death having fun.",
+    "startTime": "21:41",
+    "endTime": "21:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "21:45",
+    "endTime": "21:45",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "I mean we're Vegas, right?",
+    "startTime": "21:46",
+    "endTime": "21:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So one of my favorite anecdotes for IoT security is from Vegas.",
+    "startTime": "21:47",
+    "endTime": "21:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh yeah.",
+    "startTime": "21:51",
+    "endTime": "21:52",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it's.",
+    "startTime": "21:52",
+    "endTime": "21:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was a story I don't know how many years ago.",
+    "startTime": "21:53",
+    "endTime": "21:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's quite a while.",
+    "startTime": "21:55",
+    "endTime": "21:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The fish tank.",
+    "startTime": "21:56",
+    "endTime": "21:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes, I love that story.",
+    "startTime": "21:57",
+    "endTime": "21:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "21:58",
+    "endTime": "21:59",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "That story.",
+    "startTime": "21:59",
+    "endTime": "21:59",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "It's for those who haven't heard the story.",
+    "startTime": "21:59",
+    "endTime": "22:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "One of the casinos in here in Vegas got compromised because of a smart fish tank.",
+    "startTime": "22:02",
+    "endTime": "22:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Somebody decided that they needed a smart fish tank in their casino.",
+    "startTime": "22:08",
+    "endTime": "22:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They hooked up on the WI fi and if not mistaken, now attack vector was in the Bluetooth stack.",
+    "startTime": "22:12",
+    "endTime": "22:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they managed to hack the device over to the Bluetooth stack and then they could jump on the network.",
+    "startTime": "22:17",
+    "endTime": "22:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the same goes for everything IoT device.",
+    "startTime": "22:22",
+    "endTime": "22:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "22:25",
+    "endTime": "22:26",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "It does.",
+    "startTime": "22:26",
+    "endTime": "22:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "IoT device itself may not be the target.",
+    "startTime": "22:27",
+    "endTime": "22:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's a stepping stone to the target and it can give you a persistent attack vector into the network.",
+    "startTime": "22:30",
+    "endTime": "22:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And again, if these are end of life devices, which they often are, or devices with very little consideration of security in the first place.",
+    "startTime": "22:38",
+    "endTime": "22:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is good talk about this.",
+    "startTime": "22:48",
+    "endTime": "22:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And like I know.",
+    "startTime": "22:51",
+    "endTime": "22:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it goes even for the compliance framework.",
+    "startTime": "22:52",
+    "endTime": "22:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "22:55",
+    "endTime": "22:55",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Like I was gonna write an op ed piece in one of the industry architectures about this.",
+    "startTime": "22:55",
+    "endTime": "23:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "People talk about SOC2, ISO and all these and HIPAA, all the security frameworks.",
+    "startTime": "23:00",
+    "endTime": "23:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "23:05",
+    "endTime": "23:05",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Here's the dirty secret for IoT device vendors.",
+    "startTime": "23:05",
+    "endTime": "23:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can pass all these compliance framework which a device is running Windows 95, I kid you not because none of them will actually keep check for this.",
+    "startTime": "23:09",
+    "endTime": "23:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And every single or a lot of enterprise buyers will just tick the box.",
+    "startTime": "23:20",
+    "endTime": "23:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh, they're compliant.",
+    "startTime": "23:25",
+    "endTime": "23:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Compliance, tick box.",
+    "startTime": "23:29",
+    "endTime": "23:30",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's it.",
+    "startTime": "23:30",
+    "endTime": "23:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So let's.",
+    "startTime": "23:32",
+    "endTime": "23:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We need to have more savvy conversations.",
+    "startTime": "23:33",
+    "endTime": "23:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Exactly.",
+    "startTime": "23:36",
+    "endTime": "23:37",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think this is good shining the spotlight on this problem.",
+    "startTime": "23:37",
+    "endTime": "23:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Really.",
+    "startTime": "23:40",
+    "endTime": "23:40",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So that's why we're here.",
+    "startTime": "23:41",
+    "endTime": "23:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's why we're here.",
+    "startTime": "23:42",
+    "endTime": "23:43",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's why we come to.",
+    "startTime": "23:43",
+    "endTime": "23:45",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "23:46",
+    "endTime": "23:46",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then for my audience, I think a lot of them know this already and for them it's about what's the new thing that's going to trigger me to think differently.",
+    "startTime": "23:46",
+    "endTime": "23:57",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What's the new thing?",
+    "startTime": "23:58",
+    "endTime": "23:59",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And oftentimes it's connected to new technologies that get deployed.",
+    "startTime": "23:59",
+    "endTime": "24:04",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, cloud, mobile, some of those things, people.",
+    "startTime": "24:04",
+    "endTime": "24:07",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "AI is the latest one and it's trying to stay on top of that change while keeping the business resilient, letting it grow, letting it innovate and kind of being part of that wave.",
+    "startTime": "24:07",
+    "endTime": "24:23",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "24:23",
+    "endTime": "24:24",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And yeah, hopefully these.",
+    "startTime": "24:24",
+    "endTime": "24:26",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "These talks and presentations give.",
+    "startTime": "24:26",
+    "endTime": "24:30",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "24:31",
+    "endTime": "24:32",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "A lever.",
+    "startTime": "24:32",
+    "endTime": "24:32",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "24:32",
+    "endTime": "24:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Executives.",
+    "startTime": "24:33",
+    "endTime": "24:34",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "To actually say, but this is what we're seeing.",
+    "startTime": "24:34",
+    "endTime": "24:36",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But for systems in particular.",
+    "startTime": "24:36",
+    "endTime": "24:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "24:37",
+    "endTime": "24:38",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "It's signal to noise ratio.",
+    "startTime": "24:38",
+    "endTime": "24:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's a big problem.",
+    "startTime": "24:39",
+    "endTime": "24:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, Exactly.",
+    "startTime": "24:41",
+    "endTime": "24:43",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How can you figure out what.",
+    "startTime": "24:43",
+    "endTime": "24:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Actually, you should devote your attention to this.",
+    "startTime": "24:44",
+    "endTime": "24:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's not a trailer problem.",
+    "startTime": "24:46",
+    "endTime": "24:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's definitely somewhere AI can actually.",
+    "startTime": "24:47",
+    "endTime": "24:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I think coming back to a. Yeah.",
+    "startTime": "24:50",
+    "endTime": "24:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's always back there.",
+    "startTime": "24:53",
+    "endTime": "24:54",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Always back to a. Yeah.",
+    "startTime": "24:54",
+    "endTime": "24:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Victor, it's good to see you, man.",
+    "startTime": "24:56",
+    "endTime": "24:58",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Likewise.",
+    "startTime": "24:58",
+    "endTime": "24:59",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Catch up.",
+    "startTime": "24:59",
+    "endTime": "25:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Catch up.",
+    "startTime": "25:00",
+    "endTime": "25:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The next show.",
+    "startTime": "25:00",
+    "endTime": "25:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We finally.",
+    "startTime": "25:00",
+    "endTime": "25:01",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We finally made this happen.",
+    "startTime": "25:01",
+    "endTime": "25:02",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We finally made it out.",
+    "startTime": "25:02",
+    "endTime": "25:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We will definitely do more.",
+    "startTime": "25:03",
+    "endTime": "25:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We see each other again.",
+    "startTime": "25:05",
+    "endTime": "25:06",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I don't know where you're headed next.",
+    "startTime": "25:06",
+    "endTime": "25:07",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Where am I heading next?",
+    "startTime": "25:08",
+    "endTime": "25:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm not doing any conference in the next few months, so maybe the next year.",
+    "startTime": "25:10",
+    "endTime": "25:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Next year.",
+    "startTime": "25:15",
+    "endTime": "25:15",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There's rsa.",
+    "startTime": "25:15",
+    "endTime": "25:16",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There's rsa.",
+    "startTime": "25:17",
+    "endTime": "25:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Maybe I do rsa.",
+    "startTime": "25:18",
+    "endTime": "25:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh, I. I submitted to CFP Black Hat Europe, which I think is in.",
+    "startTime": "25:20",
+    "endTime": "25:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In December.",
+    "startTime": "25:24",
+    "endTime": "25:25",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "December, yeah.",
+    "startTime": "25:25",
+    "endTime": "25:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So maybe.",
+    "startTime": "25:26",
+    "endTime": "25:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Maybe I'll do that.",
+    "startTime": "25:26",
+    "endTime": "25:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's another Black Hat event called Sector okay.",
+    "startTime": "25:27",
+    "endTime": "25:31",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "In Toronto.",
+    "startTime": "25:31",
+    "endTime": "25:32",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay, then.",
+    "startTime": "25:32",
+    "endTime": "25:34",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "25:35",
+    "endTime": "25:36",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "There's always the OAS stuff.",
+    "startTime": "25:36",
+    "endTime": "25:37",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "25:37",
+    "endTime": "25:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know what I'm bummed about?",
+    "startTime": "25:38",
+    "endTime": "25:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There is no SBOM-a-rama this year.",
+    "startTime": "25:39",
+    "endTime": "25:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No, that's a conference CISA put together, which was.",
+    "startTime": "25:42",
+    "endTime": "25:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I gave a remote talk last year, but I think they killed it this year because of the CISA restructuring.",
+    "startTime": "25:45",
+    "endTime": "25:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Our good friend has moved on.",
+    "startTime": "25:52",
+    "endTime": "25:54",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think Allan Friedman has moved on.",
+    "startTime": "25:54",
+    "endTime": "25:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm supposed to meet him sometime here.",
+    "startTime": "25:56",
+    "endTime": "25:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Mr. Sbom himself.",
+    "startTime": "25:58",
+    "endTime": "25:59",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Mr. SBOM himself.",
+    "startTime": "25:59",
+    "endTime": "26:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "He's doing a talk at DEFCON.",
+    "startTime": "26:00",
+    "endTime": "26:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I saw him in passing and I couldn't stop him because I was recording he was here.",
+    "startTime": "26:02",
+    "endTime": "26:06",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I know he's here.",
+    "startTime": "26:07",
+    "endTime": "26:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I texted him.",
+    "startTime": "26:07",
+    "endTime": "26:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I know he's here, but I haven't actually seen him yet.",
+    "startTime": "26:08",
+    "endTime": "26:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But.",
+    "startTime": "26:10",
+    "endTime": "26:11",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Yes, but that's a shame, obviously, that conference stopped.",
+    "startTime": "26:11",
+    "endTime": "26:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But that was a great way for the industry to, like, compare notes and get together and just up the barn.",
+    "startTime": "26:14",
+    "endTime": "26:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's important.",
+    "startTime": "26:21",
+    "endTime": "26:22",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'll close my final thought in that.",
+    "startTime": "26:22",
+    "endTime": "26:25",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We talked a lot about technology, research and risks.",
+    "startTime": "26:25",
+    "endTime": "26:30",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And for me, ultimately, it's about what everybody's hearing.",
+    "startTime": "26:30",
+    "endTime": "26:33",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "In the background is tens of thousands of people walking by.",
+    "startTime": "26:33",
+    "endTime": "26:37",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "26:37",
+    "endTime": "26:38",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "All getting together, thinking differently amongst themselves.",
+    "startTime": "26:38",
+    "endTime": "26:41",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Sharing with each other.",
+    "startTime": "26:41",
+    "endTime": "26:43",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "26:43",
+    "endTime": "26:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "From what they heard on stage, what they're experiencing in their own world, be it personal or business or otherwise.",
+    "startTime": "26:44",
+    "endTime": "26:50",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Oh, yeah, absolutely.",
+    "startTime": "26:50",
+    "endTime": "26:51",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "I mean, that's what we're here.",
+    "startTime": "26:51",
+    "endTime": "26:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's why we're here, and that's why challenge your assumptions.",
+    "startTime": "26:52",
+    "endTime": "26:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's it.",
+    "startTime": "26:56",
+    "endTime": "26:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Perfect.",
+    "startTime": "26:56",
+    "endTime": "26:57",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Thank you so much.",
+    "startTime": "26:57",
+    "endTime": "26:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Awesome, brother.",
+    "startTime": "26:58",
+    "endTime": "26:58",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Cheers.",
+    "startTime": "27:00",
+    "endTime": "27:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Cheers, everybody.",
+    "startTime": "27:00",
+    "endTime": "27:01",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Good.",
+    "startTime": "27:01",
+    "endTime": "27:01",
+    "speaker_name": "Sean Martin",
+    "speaker_id": 2
+  }
+]

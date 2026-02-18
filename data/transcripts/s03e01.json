@@ -1,0 +1,6477 @@
+[
+  {
+    "sentence": "Welcome back to another episode of Nerding Out with Viktor.",
+    "startTime": "00:02",
+    "endTime": "00:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Today I'm joined by my friend Marcelo.",
+    "startTime": "00:04",
+    "endTime": "00:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Welcome to the show, Marcelo.",
+    "startTime": "00:06",
+    "endTime": "00:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Thank you.",
+    "startTime": "00:10",
+    "endTime": "00:11",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Pleasure to be here.",
+    "startTime": "00:11",
+    "endTime": "00:12",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, no, excited to have you.",
+    "startTime": "00:12",
+    "endTime": "00:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You are just back from Davos where you've done quite a few things.",
+    "startTime": "00:14",
+    "endTime": "00:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Maybe we can start with who you are, what brought you through Davos, and then we gotta dive into the meat of the episode.",
+    "startTime": "00:18",
+    "endTime": "00:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's gonna be about fasting and all the exciting biohacking things you've been doing over the last few years.",
+    "startTime": "00:27",
+    "endTime": "00:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So may, like for the people who are not familiar with you, who's Marcelo?",
+    "startTime": "00:31",
+    "endTime": "00:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What should we know before we dive into the show?",
+    "startTime": "00:35",
+    "endTime": "00:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, thanks for the question.",
+    "startTime": "00:41",
+    "endTime": "00:43",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it turns out we have a lot in common in terms of my background being technology.",
+    "startTime": "00:43",
+    "endTime": "00:47",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "00:48",
+    "endTime": "00:48",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "00:48",
+    "endTime": "00:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think I mentioned to you that my grandfather was a telegraph operator of the Brazilian Navy in the 1920s, so a century ago.",
+    "startTime": "00:49",
+    "endTime": "00:57",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then he built the first commercial radio station in Rio in 1935 for rich aristocrats where he was sort of the CEO with OPM, other people's money.",
+    "startTime": "00:57",
+    "endTime": "01:06",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then my dad was his intern and with the skill set he learned, he got into analog television, broadcast equipment.",
+    "startTime": "01:06",
+    "endTime": "01:17",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then as a sheer coincidence, when I started working for Accenture way back in 1997, well, it was actually 95, but in Europe it was in 97 because I was a trainee in Rio before.",
+    "startTime": "01:18",
+    "endTime": "01:31",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And when that happened, I actually started in a project for the World Economic Forum.",
+    "startTime": "01:32",
+    "endTime": "01:39",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I've been involved with of since the last millennium.",
+    "startTime": "01:39",
+    "endTime": "01:42",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I lasted just a few days because as I had experience related to television, the project in Rio was actually building the largest television studios in the world for Hedi Global.",
+    "startTime": "01:43",
+    "endTime": "01:52",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And not many people back then with Accenture had TV in the background.",
+    "startTime": "01:53",
+    "endTime": "01:59",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They kind of kidnapped me and shipped me to London to do the analog to digital television conversion, which was the first one in the world over cable.",
+    "startTime": "02:00",
+    "endTime": "02:08",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they ended up doing that for almost a decade.",
+    "startTime": "02:08",
+    "endTime": "02:11",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "02:11",
+    "endTime": "02:11",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So from the cable and wall project, then another called Tela west, and then upc, which became Liberty Media.",
+    "startTime": "02:11",
+    "endTime": "02:20",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the first two are now a virgin in the uk.",
+    "startTime": "02:21",
+    "endTime": "02:24",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I kept on working with operators in general.",
+    "startTime": "02:24",
+    "endTime": "02:28",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The last project that I did was this enormous 1 million hotspot community wi Fi, which was one of the first in the world.",
+    "startTime": "02:28",
+    "endTime": "02:35",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In fact, the first and the second happened just a few weeks before ours, so using slightly different technology platforms.",
+    "startTime": "02:35",
+    "endTime": "02:42",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it was in Belgium and the other one was also in Belgium, but in the Dutch speaking parts and in the Netherlands.",
+    "startTime": "02:42",
+    "endTime": "02:50",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So those are the largest WI fi computers, community platform.",
+    "startTime": "02:50",
+    "endTime": "02:52",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In the world.",
+    "startTime": "02:52",
+    "endTime": "02:53",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it had never been done before, so more than a decade.",
+    "startTime": "02:53",
+    "endTime": "02:56",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Just things that would work in a lab.",
+    "startTime": "02:56",
+    "endTime": "02:58",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But we had to get it rolled out in the field and make sure that people would notice or at least be delighted with experience.",
+    "startTime": "02:58",
+    "endTime": "03:04",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's how I met.",
+    "startTime": "03:05",
+    "endTime": "03:06",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "03:06",
+    "endTime": "03:07",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The Mobile World Congress.",
+    "startTime": "03:07",
+    "endTime": "03:08",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's right.",
+    "startTime": "03:08",
+    "endTime": "03:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Quite a few years ago by now.",
+    "startTime": "03:10",
+    "endTime": "03:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "03:11",
+    "endTime": "03:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That was more than 10 years ago.",
+    "startTime": "03:11",
+    "endTime": "03:13",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "03:14",
+    "endTime": "03:14",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Probably something like that.",
+    "startTime": "03:14",
+    "endTime": "03:15",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "03:15",
+    "endTime": "03:15",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like I'm guessing 15, 16.",
+    "startTime": "03:18",
+    "endTime": "03:22",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "03:22",
+    "endTime": "03:22",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I started around that time getting involved with the United nations.",
+    "startTime": "03:23",
+    "endTime": "03:27",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I. I like telling the story because I was at Mobile World Congress.",
+    "startTime": "03:27",
+    "endTime": "03:32",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then I figured out that it was a smart cities event happening in Barcelona as well and decided to go.",
+    "startTime": "03:32",
+    "endTime": "03:39",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And what's quite peculiar is that I completely changed my life because I looked left instead of looking right.",
+    "startTime": "03:39",
+    "endTime": "03:49",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I'm walking down the alley, Art Cities events.",
+    "startTime": "03:50",
+    "endTime": "03:54",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And there are hundreds of exhibitors and there are lots of large booths, but lots of tiny ones.",
+    "startTime": "03:54",
+    "endTime": "04:00",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And one of them was the United Nations Economic Commission for Europe.",
+    "startTime": "04:00",
+    "endTime": "04:05",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They had basically no signage.",
+    "startTime": "04:06",
+    "endTime": "04:09",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There was just one dude standing there with a couple of leaflets on the tiny booth.",
+    "startTime": "04:09",
+    "endTime": "04:15",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And something caught my attention.",
+    "startTime": "04:15",
+    "endTime": "04:17",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So this is when I looked left, I was like, oh, there's some UN logo thing.",
+    "startTime": "04:17",
+    "endTime": "04:21",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Let me go and talk to the guy.",
+    "startTime": "04:21",
+    "endTime": "04:22",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it became one of the first smart cities experts.",
+    "startTime": "04:22",
+    "endTime": "04:27",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They had just started an initiative with ES at the university in Barcelona.",
+    "startTime": "04:27",
+    "endTime": "04:31",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And back then they were accepting giant corporations, mid sized companies, but they're also taking individual experts.",
+    "startTime": "04:32",
+    "endTime": "04:37",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They only had this intake for one year and that's when I got in.",
+    "startTime": "04:38",
+    "endTime": "04:42",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They had just created a thing.",
+    "startTime": "04:42",
+    "endTime": "04:44",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They tested with individual consultants.",
+    "startTime": "04:44",
+    "endTime": "04:47",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I was the right place, the right time, and I looked left instead of looking right.",
+    "startTime": "04:47",
+    "endTime": "04:50",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if something like shiny object style had pointed me into no going straight ahead, no looking elsewhere, I wouldn't have had the life I had today.",
+    "startTime": "04:50",
+    "endTime": "05:00",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Which is fascinating.",
+    "startTime": "05:00",
+    "endTime": "05:01",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "05:01",
+    "endTime": "05:01",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The serendipity of it all.",
+    "startTime": "05:02",
+    "endTime": "05:04",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "05:05",
+    "endTime": "05:05",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that kind of got me into setting up a nonprofit of focus on telecommunications.",
+    "startTime": "05:05",
+    "endTime": "05:11",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That was my very first son.",
+    "startTime": "05:11",
+    "endTime": "05:13",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that one was to honor the memory of my family.",
+    "startTime": "05:13",
+    "endTime": "05:17",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like my grandfather 100 years ago doing the wireless telegraph for the Brazilian Navy because he came from the best country in Spain.",
+    "startTime": "05:17",
+    "endTime": "05:25",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "He actually had electrotechnical skills.",
+    "startTime": "05:25",
+    "endTime": "05:27",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "My father as well, that was working this.",
+    "startTime": "05:28",
+    "endTime": "05:30",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And eventually I started working with media technologies.",
+    "startTime": "05:30",
+    "endTime": "05:34",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's kind of this uninterrupted three generational span of technologies from wireless telegraph all the way to video on demand and streaming, which is something that I was doing around 10 years ago as the CTO of the equivalent of Netflix in Switzerland.",
+    "startTime": "05:35",
+    "endTime": "05:51",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Before Netflix came into this market and was doing all the hardcore tech stuff.",
+    "startTime": "05:51",
+    "endTime": "05:55",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "05:55",
+    "endTime": "05:55",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Trying to do what Netflix was doing in other markets in Switzerland, which was very challenging because it was a very small team, but it was also a lot of fun.",
+    "startTime": "05:55",
+    "endTime": "06:04",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And yeah, so the background is initially doing pioneering projects, stuff that had never been done in the field before.",
+    "startTime": "06:05",
+    "endTime": "06:13",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Mass scales, usually very large clients, responsibility leading relatively large teams, doing the final integration.",
+    "startTime": "06:13",
+    "endTime": "06:20",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you have to be fluent enough to speak conditional access, but also broadcast, and also the logistics and know each.",
+    "startTime": "06:21",
+    "endTime": "06:32",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can't be an expert in all of those when you do integration testing.",
+    "startTime": "06:33",
+    "endTime": "06:36",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But people, that aside, they must trust that you know what you need and work together so that the whole thing is seamless.",
+    "startTime": "06:36",
+    "endTime": "06:44",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that really helps you.",
+    "startTime": "06:45",
+    "endTime": "06:47",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "When you're too much of an expert, you can be blindsided.",
+    "startTime": "06:48",
+    "endTime": "06:51",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You think you know more than you do, which is a Dunning Kruger effect.",
+    "startTime": "06:51",
+    "endTime": "06:56",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And when you're trying to interface with someone that really needs you to be flawless in your delivery, you're just assuming certain things because you're ignorant of the scope of what actually needs to be known.",
+    "startTime": "06:56",
+    "endTime": "07:07",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And my position is, basically, I'm always assuming I'm ignorant.",
+    "startTime": "07:08",
+    "endTime": "07:12",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I always have to ask lots of really tough questions to make sure that no mistakes will be made, because I'm the guy giving the key to the client saying, look, we're finished integration testing.",
+    "startTime": "07:12",
+    "endTime": "07:23",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's now time for you to prepare a team for the handover.",
+    "startTime": "07:23",
+    "endTime": "07:25",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that was at the beginning of my career.",
+    "startTime": "07:26",
+    "endTime": "07:28",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "07:28",
+    "endTime": "07:28",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I was in my mid-20s when I started doing this.",
+    "startTime": "07:28",
+    "endTime": "07:30",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I really think that it makes a huge difference, like the ability to do those events in Davos in which there are lots of moving parts, everything is expensive.",
+    "startTime": "07:30",
+    "endTime": "07:40",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, if you want to have your own bedroom in Davos during the World Economic Forum week, that's at least $10,000 for three nights.",
+    "startTime": "07:40",
+    "endTime": "07:47",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that is a basic room.",
+    "startTime": "07:48",
+    "endTime": "07:51",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, it's not even a hotel.",
+    "startTime": "07:51",
+    "endTime": "07:52",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It could be like a pension type of room.",
+    "startTime": "07:52",
+    "endTime": "07:54",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the three nights is because they always rented for seven nights and you're only using three.",
+    "startTime": "07:55",
+    "endTime": "07:59",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Not their problem.",
+    "startTime": "08:00",
+    "endTime": "08:00",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "08:00",
+    "endTime": "08:00",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They're just trying to cash it out.",
+    "startTime": "08:00",
+    "endTime": "08:03",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it is very expensive to make mistakes, which is very similar to a technology platform, which if you try to deploy something and you have version 7.3 instead of 7.4, the whole thing collapses because the other systems cannot cope with the information that has been handed over.",
+    "startTime": "08:03",
+    "endTime": "08:20",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's the idea of being extremely safe when you're deploying.",
+    "startTime": "08:21",
+    "endTime": "08:27",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's kind of this volatile type of environment.",
+    "startTime": "08:27",
+    "endTime": "08:30",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's very common in the IT industry.",
+    "startTime": "08:30",
+    "endTime": "08:32",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think most people who work in other software industries, they.",
+    "startTime": "08:32",
+    "endTime": "08:36",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They don't get it right.",
+    "startTime": "08:36",
+    "endTime": "08:37",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No.",
+    "startTime": "08:37",
+    "endTime": "08:37",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How much stress people who are responsible for those platforms are under.",
+    "startTime": "08:37",
+    "endTime": "08:41",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I guess podcast platforms as well.",
+    "startTime": "08:42",
+    "endTime": "08:44",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, when things do not go wrong, they're not go right.",
+    "startTime": "08:44",
+    "endTime": "08:47",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's it.",
+    "startTime": "08:49",
+    "endTime": "08:49",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I shifted then with the United nations connection in 2015 or so, and I started doing nonprofit work, right.",
+    "startTime": "08:49",
+    "endTime": "08:56",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the first one called Broad Lights, and I did that with a friend of mine who's a son of the United nations envoy who was killed in Baghdad when they bombed the UN building during the Iraq war.",
+    "startTime": "08:56",
+    "endTime": "09:10",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we got it together because my background is telecommunications.",
+    "startTime": "09:10",
+    "endTime": "09:16",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "His father was a diplomat, but he was working with wi fi and private jets.",
+    "startTime": "09:16",
+    "endTime": "09:20",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it was related to his professional experience as well.",
+    "startTime": "09:20",
+    "endTime": "09:23",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And for quite a few years, I was the main spokesperson and there was a talking head talking about what we could do in refugee camps and other places, but never actually delivering it right.",
+    "startTime": "09:23",
+    "endTime": "09:38",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because it doesn't matter if you're like, in my situation, I was speaking with a deputy High Commissioner of the UN Refugee Agency, a BBC anchor interviewing us with 500 people from all the different refugee NGOs.",
+    "startTime": "09:38",
+    "endTime": "09:53",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So excellent message, great conversation.",
+    "startTime": "09:53",
+    "endTime": "09:57",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Zero refugees connected.",
+    "startTime": "09:57",
+    "endTime": "09:59",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can talk as much as you want.",
+    "startTime": "10:00",
+    "endTime": "10:01",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you try to do something in a segment that is considerably politically sensitive, such as giving access to the Internet to those vulnerable populations, they'll agree that this is important and it should be done.",
+    "startTime": "10:02",
+    "endTime": "10:14",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then they'll make anything that they can to prevent you from actually making it happen.",
+    "startTime": "10:14",
+    "endTime": "10:20",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "10:20",
+    "endTime": "10:20",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they don't want the refugees to be there.",
+    "startTime": "10:20",
+    "endTime": "10:22",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They don't want them to gain skills.",
+    "startTime": "10:22",
+    "endTime": "10:23",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They don't want to be educated.",
+    "startTime": "10:23",
+    "endTime": "10:24",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Just want them to.",
+    "startTime": "10:24",
+    "endTime": "10:25",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "To go.",
+    "startTime": "10:26",
+    "endTime": "10:26",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I. I figured out that the technology was great.",
+    "startTime": "10:26",
+    "endTime": "10:31",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It could definitely work with like a mesh technology.",
+    "startTime": "10:31",
+    "endTime": "10:33",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then you have a relay points until you find some fiber connectivity that it gives you enough bandwidth.",
+    "startTime": "10:33",
+    "endTime": "10:39",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that was not an issue.",
+    "startTime": "10:40",
+    "endTime": "10:41",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The issue was political, and this time in Davos.",
+    "startTime": "10:41",
+    "endTime": "10:44",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So working with someone who is working with refugees.",
+    "startTime": "10:44",
+    "endTime": "10:47",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Curiously, we've been to many of the hot spots in the world, like, you know, Rohingya refugee camps in Bangladesh.",
+    "startTime": "10:47",
+    "endTime": "10:53",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "He lives in a slum in Rio where I was actually living as well, trying to do this technology project.",
+    "startTime": "10:53",
+    "endTime": "10:58",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And his angle was art, right?",
+    "startTime": "10:59",
+    "endTime": "11:02",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So he is amazingly successful because the governments, from a PR perspective, they want to show that they're not cruel.",
+    "startTime": "11:02",
+    "endTime": "11:10",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They are not necessarily willing to let the refugees suffer and therefore allowing them to have art and getting the supplies in and making sure that all of those processes are facilitated is something they do with pleasure.",
+    "startTime": "11:10",
+    "endTime": "11:28",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So my issue when trying to bring technology to refugee camps is that this is something the governments would never allow.",
+    "startTime": "11:28",
+    "endTime": "11:35",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I should have aligned myself with a topic such as art, which is something that makes them look good and of course does not generate any additional problems.",
+    "startTime": "11:35",
+    "endTime": "11:45",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So curiously, that nonprofit became extraordinarily useful.",
+    "startTime": "11:45",
+    "endTime": "11:51",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And all the work had done before with the designs and getting in touch with the suppliers of equipment that can operate in very remote regions.",
+    "startTime": "11:52",
+    "endTime": "11:59",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That happened when Ukraine got invaded.",
+    "startTime": "12:00",
+    "endTime": "12:03",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I was actually in Spain when I got the news.",
+    "startTime": "12:03",
+    "endTime": "12:07",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I went straight to Mobile World Congress, started talking to every single company out there, try to identify who could be a potential partner.",
+    "startTime": "12:07",
+    "endTime": "12:14",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we identified one was Airspan Network.",
+    "startTime": "12:14",
+    "endTime": "12:18",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they used to own Mimosa back then they just sold that unit to another company.",
+    "startTime": "12:18",
+    "endTime": "12:23",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But they have this WI fi relay.",
+    "startTime": "12:24",
+    "endTime": "12:27",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's basically a point to point communications or point to multipoint that uses WI fi frequency.",
+    "startTime": "12:27",
+    "endTime": "12:33",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you don't need a license.",
+    "startTime": "12:33",
+    "endTime": "12:34",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we.",
+    "startTime": "12:35",
+    "endTime": "12:36",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think it took us a month and a half to figure it out to do the fundraising to get the equipment.",
+    "startTime": "12:38",
+    "endTime": "12:43",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I was on the Kyiv frontline less than a month after the Russians were forced to leave.",
+    "startTime": "12:44",
+    "endTime": "12:54",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you had the burn tanks and the shells on the streets and everything else was very sobering to see all that.",
+    "startTime": "12:54",
+    "endTime": "13:01",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But that was exactly when all the experience I had, the family tradition and everything else and all the effort that was put into telling the world that this should happen finally became useful.",
+    "startTime": "13:01",
+    "endTime": "13:15",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we managed to deploy a number of systems close to the front lines.",
+    "startTime": "13:15",
+    "endTime": "13:20",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the Kharkiv line, which was the most dangerous one back then.",
+    "startTime": "13:20",
+    "endTime": "13:25",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the technology worked like a charm.",
+    "startTime": "13:26",
+    "endTime": "13:28",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's absolutely amazing.",
+    "startTime": "13:28",
+    "endTime": "13:28",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We have a situation where they had the specs in terms of what is the range.",
+    "startTime": "13:29",
+    "endTime": "13:37",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think it was two to three kilometers.",
+    "startTime": "13:37",
+    "endTime": "13:39",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That was a standard format.",
+    "startTime": "13:40",
+    "endTime": "13:41",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Of course, from the supplier perspective, they want you to buy as much equipment as possible.",
+    "startTime": "13:41",
+    "endTime": "13:47",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there's an agency problem saying, oh, it cannot do anymore because we want you to buy two, three times more gear.",
+    "startTime": "13:47",
+    "endTime": "13:55",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "When in fact there are some hacks around the system that allowed us to have a single point to point link that reached 15km.",
+    "startTime": "13:56",
+    "endTime": "14:04",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We basically managed to 5x their technical maximum just by using their own system with information that they have, but they do not share necessarily.",
+    "startTime": "14:04",
+    "endTime": "14:17",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you could say, well, maybe is the amount of power that is allowed depends on the jurisdiction.",
+    "startTime": "14:17",
+    "endTime": "14:23",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Everything else, it's a war zone.",
+    "startTime": "14:23",
+    "endTime": "14:25",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We just want to make sure that people get connected so they can stay alive.",
+    "startTime": "14:25",
+    "endTime": "14:28",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we had this extreme case that was interesting.",
+    "startTime": "14:28",
+    "endTime": "14:31",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "14:31",
+    "endTime": "14:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because I remember you sent me some information back where you do.",
+    "startTime": "14:32",
+    "endTime": "14:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like you were using Starlink, I think, as uplinks.",
+    "startTime": "14:34",
+    "endTime": "14:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "14:36",
+    "endTime": "14:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then at hospitals, I think it was.",
+    "startTime": "14:37",
+    "endTime": "14:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then relay that out to like basically hub and spoke, right?",
+    "startTime": "14:38",
+    "endTime": "14:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "14:45",
+    "endTime": "14:45",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the idea initially was Starlinks because we didn't have the relationships established.",
+    "startTime": "14:45",
+    "endTime": "14:52",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The final solution, once the front stabilized, you know, it doesn't shift a lot.",
+    "startTime": "14:53",
+    "endTime": "14:59",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "14:59",
+    "endTime": "14:59",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's a couple hundred meters because you have the trenches and all the minefields and so on.",
+    "startTime": "14:59",
+    "endTime": "15:03",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We ended up having the.",
+    "startTime": "15:05",
+    "endTime": "15:07",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The perfect scenario is setting up the transmitter on a TV tower.",
+    "startTime": "15:07",
+    "endTime": "15:14",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because then your equipment doesn't get stolen.",
+    "startTime": "15:14",
+    "endTime": "15:16",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "15:16",
+    "endTime": "15:16",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because TV towers protects it.",
+    "startTime": "15:16",
+    "endTime": "15:18",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's pretty high up.",
+    "startTime": "15:18",
+    "endTime": "15:19",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You have a much better line of sight.",
+    "startTime": "15:19",
+    "endTime": "15:21",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can go well above the trees.",
+    "startTime": "15:21",
+    "endTime": "15:23",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's usually connected to fiber.",
+    "startTime": "15:24",
+    "endTime": "15:27",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you don't need the Starlink in this kind of.",
+    "startTime": "15:27",
+    "endTime": "15:29",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, right.",
+    "startTime": "15:29",
+    "endTime": "15:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "15:29",
+    "endTime": "15:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Now ended up happening.",
+    "startTime": "15:30",
+    "endTime": "15:33",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's why we had up to 15 km from the TV tower, we could connect to multiple villages that were on the line of sight from the half the way up the tower.",
+    "startTime": "15:33",
+    "endTime": "15:43",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And what happened after more than a year is that during what's called the Kupyansk offensive, the Russia started bombarding all the towers.",
+    "startTime": "15:44",
+    "endTime": "15:54",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "15:54",
+    "endTime": "15:54",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So our equipment got blown up, but at least it was there for one year in the best possible configuration.",
+    "startTime": "15:54",
+    "endTime": "16:00",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And what's really interesting about that is that it can be used in disaster zones.",
+    "startTime": "16:00",
+    "endTime": "16:07",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We can deploy very quickly.",
+    "startTime": "16:07",
+    "endTime": "16:09",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you know exactly how it works.",
+    "startTime": "16:09",
+    "endTime": "16:11",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then stalling can be extremely helpful.",
+    "startTime": "16:11",
+    "endTime": "16:13",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you can have one starlink connected to the system.",
+    "startTime": "16:13",
+    "endTime": "16:15",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if it's point to multipoint, they can have from a high place, top of a building, or no mountain or whatever it is.",
+    "startTime": "16:15",
+    "endTime": "16:24",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I could literally send those beams to up to 10 different destinations.",
+    "startTime": "16:24",
+    "endTime": "16:28",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And those destinations then would have a Wi Fi mesh that allow a wider area to be connected, all of that through a single starlink.",
+    "startTime": "16:28",
+    "endTime": "16:36",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "16:36",
+    "endTime": "16:37",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we tested all that.",
+    "startTime": "16:37",
+    "endTime": "16:38",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So whenever the opportunity comes our way, we'll be able to do that again.",
+    "startTime": "16:38",
+    "endTime": "16:41",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I'm very grateful that we had the chance to do that.",
+    "startTime": "16:41",
+    "endTime": "16:44",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we had people who support with donations and had an amazing team.",
+    "startTime": "16:44",
+    "endTime": "16:49",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we're not active right now, but between 2022 and 24, it was very intense.",
+    "startTime": "16:49",
+    "endTime": "16:56",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Extremely interesting from a technological perspective as well.",
+    "startTime": "16:57",
+    "endTime": "17:00",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, absolutely.",
+    "startTime": "17:00",
+    "endTime": "17:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's super cool.",
+    "startTime": "17:01",
+    "endTime": "17:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's super cool.",
+    "startTime": "17:02",
+    "endTime": "17:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "No, it's.",
+    "startTime": "17:03",
+    "endTime": "17:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, because we spoke about back in.",
+    "startTime": "17:04",
+    "endTime": "17:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Back when you were actively doing that, and it's like, I think you were traveling with starlinks into the country in the very early days as well, right, like getting them into the country the first place.",
+    "startTime": "17:05",
+    "endTime": "17:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, it's pretty crazy.",
+    "startTime": "17:16",
+    "endTime": "17:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It was definitely not a traditional experience.",
+    "startTime": "17:20",
+    "endTime": "17:24",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "17:24",
+    "endTime": "17:24",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because they show up at the border and they tell them we're here to help.",
+    "startTime": "17:24",
+    "endTime": "17:27",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And by the way, this is a business card of one of your ministers and they go like, yeah, just whisk it through.",
+    "startTime": "17:27",
+    "endTime": "17:32",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Try to do that in a kind of sunder situation.",
+    "startTime": "17:32",
+    "endTime": "17:36",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They'll have three days worth of paperwork that you have to deal with.",
+    "startTime": "17:36",
+    "endTime": "17:40",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we are under a huge amount of stress.",
+    "startTime": "17:40",
+    "endTime": "17:42",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "When we arrive with the equipment in Lviv, which is a big city closest to the Polish border.",
+    "startTime": "17:42",
+    "endTime": "17:48",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We were staying for free in a really nice hotel.",
+    "startTime": "17:49",
+    "endTime": "17:51",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So people were extremely grateful they were there to support them.",
+    "startTime": "17:51",
+    "endTime": "17:54",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think it's 10 minutes after we arrived, the bomb, air raid sirens started blaring, so we had to go into a bunker.",
+    "startTime": "17:54",
+    "endTime": "18:05",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We drove for like 20 hours and after 10 minutes in town, we had to be in a bunker for a few hours.",
+    "startTime": "18:05",
+    "endTime": "18:10",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the whole experience is definitely unique and not always for good reasons.",
+    "startTime": "18:11",
+    "endTime": "18:14",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, definitely.",
+    "startTime": "18:15",
+    "endTime": "18:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, kudos to pulling that off.",
+    "startTime": "18:17",
+    "endTime": "18:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That sounds like maybe not a fun experiment, but definitely fascinating from a technological perspective to solve those scenarios for sure.",
+    "startTime": "18:19",
+    "endTime": "18:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's super interesting and thank you for writing some backstory there.",
+    "startTime": "18:28",
+    "endTime": "18:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The episode today is going to be the remaining of the show.",
+    "startTime": "18:32",
+    "endTime": "18:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's going to be a bit more different than most of our previous episode because you and I have something else in common more than the tech angle, which is that we are both kind of like biohacking nerds.",
+    "startTime": "18:37",
+    "endTime": "18:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You far more than I, but we.",
+    "startTime": "18:47",
+    "endTime": "18:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We share a, I guess an obsession in a way with things like fasting and, well, obsessively monitoring our bodies.",
+    "startTime": "18:49",
+    "endTime": "18:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And the reason why I ordered it up so with you is because of your latest big endeavor where you broke the world record.",
+    "startTime": "19:00",
+    "endTime": "19:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, unofficially, I guess, because there is no official Guinness World Record for it.",
+    "startTime": "19:08",
+    "endTime": "19:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But you are a big fan of fasting and I will dive into that both from a technological perspective, how you monitor.",
+    "startTime": "19:14",
+    "endTime": "19:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because a lot of things around bio is very opinionated and not very data driven.",
+    "startTime": "19:23",
+    "endTime": "19:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You take a very data driven approach to this, which I really appreciate.",
+    "startTime": "19:32",
+    "endTime": "19:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I guess before we dive into the how, let's start with the why.",
+    "startTime": "19:36",
+    "endTime": "19:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Why are you obsessed with fasting, biohacking?",
+    "startTime": "19:44",
+    "endTime": "19:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What's your like?",
+    "startTime": "19:48",
+    "endTime": "19:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What was your moment?",
+    "startTime": "19:49",
+    "endTime": "19:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Where, wow, this is something that I am really.",
+    "startTime": "19:51",
+    "endTime": "19:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, I need to do.",
+    "startTime": "19:55",
+    "endTime": "19:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So, like, where.",
+    "startTime": "19:57",
+    "endTime": "19:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Where did that start?",
+    "startTime": "19:57",
+    "endTime": "19:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you have a book called the Explorer Gene, and every community has a subset, usually quite small, of people who are especially good at Regulating fear.",
+    "startTime": "20:03",
+    "endTime": "20:15",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It doesn't mean that you don't feel fear.",
+    "startTime": "20:15",
+    "endTime": "20:17",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You just temper it.",
+    "startTime": "20:17",
+    "endTime": "20:18",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You control it.",
+    "startTime": "20:18",
+    "endTime": "20:19",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that tends to come from experience, like the wisdom of knowing that once you recognize a pattern and you have solved similar problems before you feel confident that you'll be able to find a solution.",
+    "startTime": "20:19",
+    "endTime": "20:32",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So these tend to be the people who go to the next valley to find food, just in case the valley where your band is right now would stop providing.",
+    "startTime": "20:32",
+    "endTime": "20:43",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And those risks come with severe complications.",
+    "startTime": "20:43",
+    "endTime": "20:50",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Lots of explorers died because they kind of stumbled as a problem that it couldn't solve.",
+    "startTime": "20:50",
+    "endTime": "20:55",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that I have that right.",
+    "startTime": "20:55",
+    "endTime": "20:57",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This has always been the case as a kid.",
+    "startTime": "20:57",
+    "endTime": "20:59",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They'll be the one going to the top of the hill to tell people, this is what I saw.",
+    "startTime": "20:59",
+    "endTime": "21:02",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I believe that you should consider going there.",
+    "startTime": "21:02",
+    "endTime": "21:04",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And these are the challenges.",
+    "startTime": "21:04",
+    "endTime": "21:05",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So always being the first one scouts to identify and mitigate potential risk, to de risking it for others, because a lot of fun to do that, right?",
+    "startTime": "21:05",
+    "endTime": "21:16",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So when you're confronted with puzzles that are never solved before, no one is there to help you.",
+    "startTime": "21:16",
+    "endTime": "21:21",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, you have to do it yourself.",
+    "startTime": "21:21",
+    "endTime": "21:22",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And eventually, even though, as I mentioned before, my first experiment related to what I'm doing now was actually in Davos more than 10 years ago, and it was a cold exposure.",
+    "startTime": "21:22",
+    "endTime": "21:35",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not fasting.",
+    "startTime": "21:35",
+    "endTime": "21:36",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'll quickly tell the story because it's quite amusing that I. I stay in camping cars, right?",
+    "startTime": "21:37",
+    "endTime": "21:44",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because I'm chartering a whole train with six wagons, and the only way I can be close to the train is to have my own venue.",
+    "startTime": "21:44",
+    "endTime": "21:51",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's a camping car because we're in the railway depot, right?",
+    "startTime": "21:51",
+    "endTime": "21:55",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I have to be there because the problems popping up all the time.",
+    "startTime": "21:55",
+    "endTime": "21:58",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And even if I could stay a little bit further away in a proper flat to cost like 10 grand, and that makes no sense, right?",
+    "startTime": "21:58",
+    "endTime": "22:06",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we are running this as a nonprofit.",
+    "startTime": "22:06",
+    "endTime": "22:07",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So staying camping cars in severe winter, like was down to minus 18 one year is something I have done, and you kind of learn how to cope with the challenges.",
+    "startTime": "22:07",
+    "endTime": "22:17",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But the first time, or maybe the second time I did that more than 10 years ago, I thought that because it was at a campsite, I could only get back there when the train started running at 6 in the morning.",
+    "startTime": "22:17",
+    "endTime": "22:30",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I was working the night shift.",
+    "startTime": "22:30",
+    "endTime": "22:33",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So just show up at noon and stay partying with my friends until six in the morning, then catch the train and go and get some sleep and then take the train back in one year.",
+    "startTime": "22:33",
+    "endTime": "22:42",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think it was the second year I was doing that.",
+    "startTime": "22:42",
+    "endTime": "22:44",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I decided to buy A bicycle, and then take it with me by train to Davos, get it locked at the Davos station, so that if I want to leave, say at 3 or 4 in the morning because I'm really tired, I can just ride back to the campsite, which is what I did.",
+    "startTime": "22:44",
+    "endTime": "22:58",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The issue which I could not have foreseen is that the shock police, like, no.",
+    "startTime": "22:59",
+    "endTime": "23:06",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "A group of at least 15 military police, most likely, they're fully dressed in riot gear, you know, the plastic bits and bobs to protect them against physical attack.",
+    "startTime": "23:07",
+    "endTime": "23:21",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They thought it was very strange that you have this dude riding a bicycle at 4 in the morning during the World Economic Forum week.",
+    "startTime": "23:21",
+    "endTime": "23:27",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they started to stop me to check my id, and they were there taking the time, like at least 10 or 20 minutes.",
+    "startTime": "23:27",
+    "endTime": "23:34",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It is minus 12 or minus 13.",
+    "startTime": "23:34",
+    "endTime": "23:36",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I only had a light coat because I thought it was just going to be a quick ride.",
+    "startTime": "23:36",
+    "endTime": "23:40",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I had to stand there, like, I didn't have the choice of saying, oh, I'll wait inside the car.",
+    "startTime": "23:40",
+    "endTime": "23:45",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I have a pushback.",
+    "startTime": "23:45",
+    "endTime": "23:46",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they didn't care at all.",
+    "startTime": "23:46",
+    "endTime": "23:48",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not like they told me, you can wait inside the bus.",
+    "startTime": "23:48",
+    "endTime": "23:51",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they're checking my credentials and hotel badges and everything else.",
+    "startTime": "23:51",
+    "endTime": "23:55",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And once I'm clear, they go like, yeah, you can leave.",
+    "startTime": "23:55",
+    "endTime": "23:58",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But that was actually the first time in which I had to have cold exposure against my will.",
+    "startTime": "23:59",
+    "endTime": "24:04",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I realized that it wasn't that bad.",
+    "startTime": "24:04",
+    "endTime": "24:06",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "24:07",
+    "endTime": "24:07",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that was without any training.",
+    "startTime": "24:07",
+    "endTime": "24:09",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "24:09",
+    "endTime": "24:09",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So what I'm doing now is completely different because I do it the whole winter.",
+    "startTime": "24:09",
+    "endTime": "24:14",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, I only wear a T shirt, even if it's minus 20.",
+    "startTime": "24:14",
+    "endTime": "24:18",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I only wear a T shirt usually, like this one, the black, because it helped me absorb heat from the sun when there is some sun out there.",
+    "startTime": "24:18",
+    "endTime": "24:26",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the shift was really in being curious about the limits of the human body.",
+    "startTime": "24:27",
+    "endTime": "24:39",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So trying to understand, we have a genetic code that is identical to 10,000 years ago, or 50,000, even a hundred thousand, when you go further back.",
+    "startTime": "24:40",
+    "endTime": "24:51",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, Homo sapiens started around 300,000 years ago, but it do have some variations and have things like, you know, blue eyes that didn't exist and lactose tolerance.",
+    "startTime": "24:51",
+    "endTime": "24:59",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So let's just assume 10,000 years as being reasonable.",
+    "startTime": "24:59",
+    "endTime": "25:03",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "These people back then were identical to us.",
+    "startTime": "25:03",
+    "endTime": "25:05",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "25:05",
+    "endTime": "25:06",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they could do really hardcore stuff.",
+    "startTime": "25:06",
+    "endTime": "25:09",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "25:09",
+    "endTime": "25:09",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They were, I think, 40,000 years ago you had hunters, Homo sapiens hunters in Siberia.",
+    "startTime": "25:09",
+    "endTime": "25:18",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's minus 40.",
+    "startTime": "25:19",
+    "endTime": "25:20",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's always been that cold for a very long time.",
+    "startTime": "25:20",
+    "endTime": "25:23",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not like, oh, it was a tropical paradise back then.",
+    "startTime": "25:23",
+    "endTime": "25:25",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No, it wasn't.",
+    "startTime": "25:25",
+    "endTime": "25:26",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not like the Sahara turning green every 15,000 years.",
+    "startTime": "25:26",
+    "endTime": "25:29",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No, it was really cold back then.",
+    "startTime": "25:29",
+    "endTime": "25:31",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "25:31",
+    "endTime": "25:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And they had pelts.",
+    "startTime": "25:31",
+    "endTime": "25:33",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "25:33",
+    "endTime": "25:33",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they had animal skins with the fur that acted as therm insulation.",
+    "startTime": "25:33",
+    "endTime": "25:37",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And all that is measurable.",
+    "startTime": "25:37",
+    "endTime": "25:39",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like when I am as I did, like I was in some more until yesterday for snow polo, I. I was in minus 3 with wind gusts of up to 17 kilometers per hour for three and a half hours.",
+    "startTime": "25:39",
+    "endTime": "25:53",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like if you enter that into any calculator saying you had mild to severe hypothermia based on those specifications.",
+    "startTime": "25:53",
+    "endTime": "26:03",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because your thermal insulation with the T shirt is basically zero.",
+    "startTime": "26:03",
+    "endTime": "26:06",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "26:06",
+    "endTime": "26:06",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not like I have a mammoth work worrying me.",
+    "startTime": "26:06",
+    "endTime": "26:09",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think it's really cool because it acts as a proxy for being in Siberia when it's minus 40 wearing fur.",
+    "startTime": "26:09",
+    "endTime": "26:17",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you can actually calculate that the insulation factor of the fur versus a T shirt and how much heat are you losing.",
+    "startTime": "26:17",
+    "endTime": "26:25",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And actually yesterday, so the day before yesterday, it was on Sunday.",
+    "startTime": "26:25",
+    "endTime": "26:31",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was the first time in which I was doing cold exposure without moving because it was just my friends watching polo.",
+    "startTime": "26:33",
+    "endTime": "26:40",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And usually when I'm doing that, I'm hiking with a heavy load.",
+    "startTime": "26:40",
+    "endTime": "26:42",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So your body becomes a furnace.",
+    "startTime": "26:43",
+    "endTime": "26:44",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "26:44",
+    "endTime": "26:45",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Similar to cavemen.",
+    "startTime": "26:45",
+    "endTime": "26:47",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They're looking for food.",
+    "startTime": "26:47",
+    "endTime": "26:48",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And your food is 2 meters below the snow.",
+    "startTime": "26:48",
+    "endTime": "26:51",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you have to figure out where it can go that would allow you to survive.",
+    "startTime": "26:51",
+    "endTime": "26:55",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So those were the core elements.",
+    "startTime": "26:56",
+    "endTime": "26:58",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I started imagining as a thought experiment that I am a Caveman in Switzerland 10,000 years ago, and for nine months of the year, I am living close to a glacier runoff.",
+    "startTime": "26:59",
+    "endTime": "27:13",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there's plenty of water.",
+    "startTime": "27:13",
+    "endTime": "27:15",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I can jump on nuts and find roots and get small animals and eggs.",
+    "startTime": "27:15",
+    "endTime": "27:19",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Life is good.",
+    "startTime": "27:20",
+    "endTime": "27:21",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you're not doing much.",
+    "startTime": "27:21",
+    "endTime": "27:22",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You're detraining, so your cardiac capacity goes down, your strength goes down, and you're used to having food and living in a warmish environment for most of the year.",
+    "startTime": "27:22",
+    "endTime": "27:36",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And all of a sudden winter comes, so your food disappears.",
+    "startTime": "27:36",
+    "endTime": "27:39",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You have to be extremely good at tolerating the hunger, the cold.",
+    "startTime": "27:39",
+    "endTime": "27:45",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You are in pain because being cold is damn painful.",
+    "startTime": "27:46",
+    "endTime": "27:49",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But you also have parasites and a toothache.",
+    "startTime": "27:49",
+    "endTime": "27:51",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No, I'm sure caveman had plenty of things to complain about and all of a sudden have to move with everything you own, including bring your kids.",
+    "startTime": "27:51",
+    "endTime": "28:01",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "28:01",
+    "endTime": "28:01",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because if they're age of four, they cannot walk long distances by themselves.",
+    "startTime": "28:01",
+    "endTime": "28:06",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you need to increase your cardiac capacity and your muscular strength very quickly to survive.",
+    "startTime": "28:07",
+    "endTime": "28:14",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And those are the five activities, you may want to call them sports that are called the paleolithic pentathlon.",
+    "startTime": "28:14",
+    "endTime": "28:20",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So those are the five things that our ancestors had to be exceptionally good at to survive so that we could exist today.",
+    "startTime": "28:21",
+    "endTime": "28:28",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we had direct descendants of people who had the genes tolerates those extremes.",
+    "startTime": "28:29",
+    "endTime": "28:34",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And yet no one seems to do it now.",
+    "startTime": "28:34",
+    "endTime": "28:36",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it kind of got me curious, like, you know, how hard can you push this and how can you combine fasting like 0 calories for 50 days?",
+    "startTime": "28:36",
+    "endTime": "28:44",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It is very uncommon.",
+    "startTime": "28:44",
+    "endTime": "28:45",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But usually people who got to that point they had a severe form of cancer or they're morbidly obese, as in they're diseased.",
+    "startTime": "28:46",
+    "endTime": "28:53",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that is the last choice that I have.",
+    "startTime": "28:54",
+    "endTime": "28:57",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I. I may have some mental issues because of all the things that I'm doing.",
+    "startTime": "28:57",
+    "endTime": "29:01",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Some people say I'm a bit cuckoo, but otherwise I'm very healthy.",
+    "startTime": "29:01",
+    "endTime": "29:04",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the objective is, again, I'm a scout.",
+    "startTime": "29:05",
+    "endTime": "29:08",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm going to the extreme.",
+    "startTime": "29:09",
+    "endTime": "29:10",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm getting to the edge of the cliff, I'm looking down and saying, that's what I see.",
+    "startTime": "29:10",
+    "endTime": "29:15",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then I come back and I do podcast interviews like this one.",
+    "startTime": "29:15",
+    "endTime": "29:19",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I write quite a few articles and planning to write a lot more.",
+    "startTime": "29:19",
+    "endTime": "29:21",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The last expedition is supposed to become a case report, right?",
+    "startTime": "29:22",
+    "endTime": "29:25",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because I had so much data again, showing people the.",
+    "startTime": "29:25",
+    "endTime": "29:29",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "These are 10 of the 12 gadgets I have in my body at the moment.",
+    "startTime": "29:29",
+    "endTime": "29:33",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I have a chest strap and a CGM and a few other things that are not attached to me, like impotent scales and so on and so forth.",
+    "startTime": "29:33",
+    "endTime": "29:40",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the idea is I will try to measure using wearables that are available right now that did not exist five years ago when I did a similar 50 days fast.",
+    "startTime": "29:41",
+    "endTime": "29:52",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it was very frustrating.",
+    "startTime": "29:53",
+    "endTime": "29:54",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The only thing that I could see on my scale is like, you know, proportion or weight for sure, proportion of fat and muscle, but not very precise and a few other things.",
+    "startTime": "29:54",
+    "endTime": "30:03",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I ended up losing 40 kilos over a year.",
+    "startTime": "30:03",
+    "endTime": "30:09",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was very interesting.",
+    "startTime": "30:09",
+    "endTime": "30:11",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then the project back then was reaching starvation levels like the malnourishment, the lowest level that is considered to be healthy according to the WJ standards.",
+    "startTime": "30:11",
+    "endTime": "30:25",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then I stopped, right?",
+    "startTime": "30:25",
+    "endTime": "30:26",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I've never been malnourished.",
+    "startTime": "30:26",
+    "endTime": "30:28",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I was just very close to that.",
+    "startTime": "30:28",
+    "endTime": "30:29",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And sure, apart.",
+    "startTime": "30:29",
+    "endTime": "30:30",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you've seen the pictures, that was extremely.",
+    "startTime": "30:30",
+    "endTime": "30:32",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the project was okay.",
+    "startTime": "30:33",
+    "endTime": "30:36",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now that I'm in a state of borderline malnourishment, let me try to do something that is physically very challenging.",
+    "startTime": "30:36",
+    "endTime": "30:43",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I tried to do an ultra marathon distance after 49 days without food.",
+    "startTime": "30:43",
+    "endTime": "30:49",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I couldn't.",
+    "startTime": "30:50",
+    "endTime": "30:51",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I did half right.",
+    "startTime": "30:51",
+    "endTime": "30:52",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's quite a Big deal to hike 25km in waiting terrain after no 49 days without any calories.",
+    "startTime": "30:52",
+    "endTime": "31:00",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And my ligaments and tendons, they're so weak because of course they also get used as food.",
+    "startTime": "31:01",
+    "endTime": "31:09",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the concern was causing permanent damage.",
+    "startTime": "31:10",
+    "endTime": "31:13",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the idea here is that I push really hard up to the point in which I'm concerned that this could cause grave harm.",
+    "startTime": "31:13",
+    "endTime": "31:22",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you're doing hypothermia experiments, there is a risk that you're going to have permanent nerve damage in your fingertips.",
+    "startTime": "31:22",
+    "endTime": "31:30",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "31:30",
+    "endTime": "31:30",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "When you don't have to go all the way to frostbite, you have frost snip.",
+    "startTime": "31:31",
+    "endTime": "31:35",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if your fingers are feeling waxy and you have to pay a lot of attention to those signals because there's no alarm in your apple watch saying you're about to get frostnip.",
+    "startTime": "31:35",
+    "endTime": "31:44",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You have to know what you're.",
+    "startTime": "31:45",
+    "endTime": "31:48",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I have that I have for my navy days.",
+    "startTime": "31:48",
+    "endTime": "31:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I actually have like my right pinky toe is like, it goes numb when like it gets a bit cold.",
+    "startTime": "31:50",
+    "endTime": "31:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So like I know firsthand.",
+    "startTime": "31:57",
+    "endTime": "31:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, that is probably nerve tissue damage.",
+    "startTime": "32:00",
+    "endTime": "32:05",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "32:05",
+    "endTime": "32:05",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, yeah, I am being very careful so far.",
+    "startTime": "32:05",
+    "endTime": "32:07",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Good.",
+    "startTime": "32:07",
+    "endTime": "32:08",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And when I was doing this last experiment, so to say, in St. Morris for the snow polo, I didn't notice that was getting my core so cold because I'm having conversations.",
+    "startTime": "32:08",
+    "endTime": "32:22",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I just got invited to speak at the MIT M. Tech event.",
+    "startTime": "32:22",
+    "endTime": "32:26",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I spoke in Toulouse at the European edition many years ago and now it will be the US edition.",
+    "startTime": "32:27",
+    "endTime": "32:32",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I'm talking with MIT professors and super interesting people, mountaineers and all that.",
+    "startTime": "32:32",
+    "endTime": "32:36",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And once it down on me that it was very cold, that I had to seek shelter because almost four hours with the wind blasting and you're wearing only a T shirt at some point in time, it's not like you're invincible.",
+    "startTime": "32:36",
+    "endTime": "32:51",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It just lasts much longer than anyone else.",
+    "startTime": "32:51",
+    "endTime": "32:54",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I went into the pizza tents to get some food and because that tent was quite warm, I had what's called the after drop.",
+    "startTime": "32:54",
+    "endTime": "33:06",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So once you are very cold and you get into a warm environment, it's counterintuitive.",
+    "startTime": "33:07",
+    "endTime": "33:15",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "33:15",
+    "endTime": "33:15",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because the cold blood from your limbs would rush to your core.",
+    "startTime": "33:15",
+    "endTime": "33:20",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So even though the environment is much warmer, your core temperature drop and they kind of get dizzy and confused and didn't quite go there.",
+    "startTime": "33:21",
+    "endTime": "33:27",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I recognized the after drop symptoms.",
+    "startTime": "33:28",
+    "endTime": "33:31",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I had to go to a place where I could spend an hour.",
+    "startTime": "33:32",
+    "endTime": "33:35",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then it's really interesting because the protocol is always the same.",
+    "startTime": "33:36",
+    "endTime": "33:40",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like you feel a bit wobbly and then you start shivering for half an hour and all of a sudden Your core is back in line and then it can go back again.",
+    "startTime": "33:40",
+    "endTime": "33:48",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But this can be dangerous, right?",
+    "startTime": "33:48",
+    "endTime": "33:49",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It could have heart arrhythmias and all sorts of weird things.",
+    "startTime": "33:49",
+    "endTime": "33:52",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So yeah, I went a little bit further than what I had planned to because it was just entertained or talking to amazing people.",
+    "startTime": "33:53",
+    "endTime": "34:00",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But if I am training with a heavy load, hiking nonstop, I can do up to five hours in freezing weather wearing just shorts and T shirts like this is the body generating the heat it needs.",
+    "startTime": "34:01",
+    "endTime": "34:16",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "At some point in time, in my case around five hours, those lines will cross, right?",
+    "startTime": "34:16",
+    "endTime": "34:21",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if I walk faster to generate more heat, the wind that I'm creating is going to be stealing more heat.",
+    "startTime": "34:21",
+    "endTime": "34:27",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you end up having a negative output and that's when you need sick shelter.",
+    "startTime": "34:27",
+    "endTime": "34:32",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But five hours in freezing temperature is pretty good.",
+    "startTime": "34:32",
+    "endTime": "34:35",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't think that many people today will be able to do that without getting acclimatized.",
+    "startTime": "34:35",
+    "endTime": "34:40",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No, I mean it is crazy what the body is capable of doing, right?",
+    "startTime": "34:41",
+    "endTime": "34:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I want to take a step back, right?",
+    "startTime": "34:45",
+    "endTime": "34:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "People hear about fasting, most people know it, intermittent fasting.",
+    "startTime": "34:48",
+    "endTime": "34:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And by doing like a water fast, as it's called, like you've done there.",
+    "startTime": "34:52",
+    "endTime": "34:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like I've done them myself.",
+    "startTime": "34:59",
+    "endTime": "35:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I've done seven day water fast.",
+    "startTime": "35:00",
+    "endTime": "35:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like it's when you tell normal people about that, they think you're insane in the brain, right?",
+    "startTime": "35:01",
+    "endTime": "35:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because it's just like, how can you not eat for a week?",
+    "startTime": "35:10",
+    "endTime": "35:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And how do you.",
+    "startTime": "35:15",
+    "endTime": "35:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, let's talk about the science about that because I think that's really fascinating and I think one thing I want to prefix that is that if you look at almost.",
+    "startTime": "35:18",
+    "endTime": "35:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, actually every mainstream religion, they all have a component of fasting that's not by accident, right?",
+    "startTime": "35:26",
+    "endTime": "35:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We know that fasting, controlled fasting, I presume I, I suppose is vastly beneficial to our systems for like declotting the system and so forth.",
+    "startTime": "35:35",
+    "endTime": "35:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But, but talk to me more about the science for somebody who's like, oh, that's interesting but crazy, like what does the data look like?",
+    "startTime": "35:47",
+    "endTime": "35:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And when you go into fast, like what biomarkers are you using, what are like, what are you optimizing for and so forth.",
+    "startTime": "35:54",
+    "endTime": "36:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like talk about consistent when you head into ketosis, all those things like explain like the process that the body goes through as you go into like, I guess a longer fast more than like intermittent fasting.",
+    "startTime": "36:01",
+    "endTime": "36:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "When it comes to religions, I think there's an element of compliance.",
+    "startTime": "36:15",
+    "endTime": "36:18",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Basically saying to be a member of this club, you need to do something hard.",
+    "startTime": "36:18",
+    "endTime": "36:22",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's the hard thing.",
+    "startTime": "36:22",
+    "endTime": "36:23",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That is easiest for us to do.",
+    "startTime": "36:23",
+    "endTime": "36:24",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In fact, it's funny, right?",
+    "startTime": "36:24",
+    "endTime": "36:25",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Don't have to give food to people.",
+    "startTime": "36:25",
+    "endTime": "36:27",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Just say, look, no, this is how you prove that you're a believer.",
+    "startTime": "36:27",
+    "endTime": "36:31",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm not sure if that's where it's coming from.",
+    "startTime": "36:31",
+    "endTime": "36:34",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that once they realize that people would live longer and have better labor output to go, like, yeah, this thing is definitely worth doing, is all part of a structure that makes them have this sense of belonging.",
+    "startTime": "36:34",
+    "endTime": "36:52",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I am suffering.",
+    "startTime": "36:52",
+    "endTime": "36:53",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So is everyone else here.",
+    "startTime": "36:53",
+    "endTime": "36:55",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that makes it really hard for you to do these kind of fasts when no one, you know will even understand what they're for.",
+    "startTime": "36:56",
+    "endTime": "37:05",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you're at home and you're the only member of the family doing the fasting, everybody else is like, come on, it's meal time.",
+    "startTime": "37:05",
+    "endTime": "37:11",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You should come to the table.",
+    "startTime": "37:11",
+    "endTime": "37:12",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's kind of weird.",
+    "startTime": "37:12",
+    "endTime": "37:13",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They're not eating with the rest of us or when you go friends.",
+    "startTime": "37:13",
+    "endTime": "37:15",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you need a lot of conviction to do something like this.",
+    "startTime": "37:15",
+    "endTime": "37:18",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And therefore you need to have a lot of data knowledge to figure out what.",
+    "startTime": "37:18",
+    "endTime": "37:22",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Why it makes sense to do it.",
+    "startTime": "37:22",
+    "endTime": "37:23",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it was a lot harder, I think, 10 years ago, before two Nobel prizes were awarded, related to fasting mechanisms.",
+    "startTime": "37:24",
+    "endTime": "37:35",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So autophagy and apoptosis.",
+    "startTime": "37:35",
+    "endTime": "37:38",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we now understand, right, the way that the body is going to be recycling many intracellular components and then replacing certain cells with new ones based on the fact that your energy supplies are limited.",
+    "startTime": "37:38",
+    "endTime": "37:53",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You have to tap into the fat reserves.",
+    "startTime": "37:53",
+    "endTime": "37:54",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the way I like to explain is that we all have multiple energy engines.",
+    "startTime": "37:55",
+    "endTime": "38:01",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can simplify and call one engine sugar driven.",
+    "startTime": "38:02",
+    "endTime": "38:06",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There are multiple, right?",
+    "startTime": "38:06",
+    "endTime": "38:07",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Depending on the mechanism involved.",
+    "startTime": "38:07",
+    "endTime": "38:09",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then the other one is running on fat.",
+    "startTime": "38:10",
+    "endTime": "38:12",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And fat in this case is no.",
+    "startTime": "38:12",
+    "endTime": "38:16",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The ketone bodies, like the better butyrate, acetone, acetoacetates that get broken down, and they're effectively all your body needs with the exception of 10 grams of glucose that you need for your brain and for your red blood cells and maybe for some other mechanisms as well.",
+    "startTime": "38:16",
+    "endTime": "38:37",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that glucose cannot come from fat, so you end up losing, in theory, the absolute minimum will be 30 grams of lean muscle mass to produce 10 grams of glucose through gluconeogenesis.",
+    "startTime": "38:38",
+    "endTime": "38:57",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the vast majority of what you're doing, if you're doing something really hardcore, you know, I did half a marathon a day with no food for 50 days, more than a thousand kilometers with zero calories.",
+    "startTime": "38:57",
+    "endTime": "39:09",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That is basically all you need for muscles.",
+    "startTime": "39:10",
+    "endTime": "39:15",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And for every single other system, your brain and red blood cells will need to have Some sugar.",
+    "startTime": "39:15",
+    "endTime": "39:20",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you could say there's a maximum limit of fat that a human body can oxidize to turn into energy.",
+    "startTime": "39:20",
+    "endTime": "39:28",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's an absolute minimum amount of muscle that you're going to lose if you want to feed the brain with those 10 grams of glucose.",
+    "startTime": "39:29",
+    "endTime": "39:38",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And my experiment this time, which is the outcome of many other experiments, was to figure out what is the toughest thing you can do while you fasted, and how would the body respond to that.",
+    "startTime": "39:39",
+    "endTime": "39:57",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it turns out that from my calculations, I managed to reach this maximum fat oxidation limit on average for 50 days.",
+    "startTime": "39:57",
+    "endTime": "40:07",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I have to figure out, of course, you're using wearable, not super precise.",
+    "startTime": "40:08",
+    "endTime": "40:11",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it should be doing that on a metabolic cart.",
+    "startTime": "40:11",
+    "endTime": "40:13",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't think anyone's going to hike 1000km on a metabolic cart.",
+    "startTime": "40:14",
+    "endTime": "40:17",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's going to be fairly uncomfortable.",
+    "startTime": "40:17",
+    "endTime": "40:18",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I'm okay with what I have.",
+    "startTime": "40:19",
+    "endTime": "40:21",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "40:21",
+    "endTime": "40:22",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because it was hard enough the way it was.",
+    "startTime": "40:22",
+    "endTime": "40:23",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Also, relative data is highly relevant as well, not just absolute data.",
+    "startTime": "40:24",
+    "endTime": "40:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "40:30",
+    "endTime": "40:30",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's also the trend lines.",
+    "startTime": "40:30",
+    "endTime": "40:32",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "40:32",
+    "endTime": "40:32",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's trying to figure out if all your devices are going up or and down at the same time.",
+    "startTime": "40:32",
+    "endTime": "40:39",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you have some discrepancies, I don't care if one says two and the other one says three, if they kind of go up and down more or less with the same proportions.",
+    "startTime": "40:39",
+    "endTime": "40:45",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's just an algorithm, a choice that the manufacturer decided to pick.",
+    "startTime": "40:45",
+    "endTime": "40:50",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the outcome, one of the most interesting outcomes of this last expedition, which is basically hacking the whole Camino de Santiago without any food.",
+    "startTime": "40:50",
+    "endTime": "41:02",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "41:02",
+    "endTime": "41:02",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So zero calories, but I was taking electrolytes and vitamins.",
+    "startTime": "41:02",
+    "endTime": "41:05",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That was another experiment that I call the Lost Explorer.",
+    "startTime": "41:05",
+    "endTime": "41:09",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And there's a third experiment which is basically the.",
+    "startTime": "41:09",
+    "endTime": "41:16",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The Divine inspiration, whatever you want to call it.",
+    "startTime": "41:16",
+    "endTime": "41:20",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's the fact that I understand the physiology, but where is the motivation coming from?",
+    "startTime": "41:20",
+    "endTime": "41:25",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, why would the human spend, in my case, 50 days, plus the preparation, plus the recovery.",
+    "startTime": "41:25",
+    "endTime": "41:32",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's been four months of my life to suffer every single day for 50 days.",
+    "startTime": "41:32",
+    "endTime": "41:38",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The baking sound of Spain.",
+    "startTime": "41:38",
+    "endTime": "41:40",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's counterintuitive in the sense it's like, what's in it for me, Right.",
+    "startTime": "41:41",
+    "endTime": "41:45",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Other than learning and be able to share those lessons learned.",
+    "startTime": "41:45",
+    "endTime": "41:48",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the divine inspiration angle for me is trying to find a bridge between science and spirituality.",
+    "startTime": "41:48",
+    "endTime": "41:56",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, is there something that is part of the motivation because of the greater good, like a sense of duty, Like, I can do those things.",
+    "startTime": "41:57",
+    "endTime": "42:08",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm not aware of anyone else who could do what I did.",
+    "startTime": "42:09",
+    "endTime": "42:11",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's probably the first time in the history of Humankind, that's something that happens.",
+    "startTime": "42:11",
+    "endTime": "42:15",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it just feels really important.",
+    "startTime": "42:15",
+    "endTime": "42:17",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Feels like I have to do it because I could learn so many things, like going to the next valley, you know, to figure out if there's food to feed the tribe.",
+    "startTime": "42:17",
+    "endTime": "42:24",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And those are the three main elements.",
+    "startTime": "42:25",
+    "endTime": "42:29",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think the caveman one, the outer boundaries of genetic capabilities, is the one that is the most measurable.",
+    "startTime": "42:29",
+    "endTime": "42:36",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The last explorer is, in fact, testing a stack of electrolytes of salts, potassium, and magnesium, plus lots of vitamins.",
+    "startTime": "42:37",
+    "endTime": "42:48",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I'm trying to figure out if I give a person who's lost in a field a specific number of pills that are very light and easy to carry.",
+    "startTime": "42:48",
+    "endTime": "43:01",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "When you're going through those expeditions, every single life vest and lifeboat should have that little envelope.",
+    "startTime": "43:01",
+    "endTime": "43:10",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "43:10",
+    "endTime": "43:10",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That allows you to remain cognitively functional for as long as possible if you only have access to water but not to food.",
+    "startTime": "43:10",
+    "endTime": "43:17",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "43:17",
+    "endTime": "43:18",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that is also relatively easy to measure is basically what does it look like at the end?",
+    "startTime": "43:18",
+    "endTime": "43:22",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So is it like a snapshot here, snapshot there?",
+    "startTime": "43:22",
+    "endTime": "43:24",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The caveman experiment has so many variables, like your metabolic age and biologic age and HRV and the stress proxies for cortisol.",
+    "startTime": "43:25",
+    "endTime": "43:35",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I think that from nerding out perspective, that is definitely the one that is most interesting because the spiritual one is very much about mood journals and how are you feeling?",
+    "startTime": "43:35",
+    "endTime": "43:44",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And very hard to quantify.",
+    "startTime": "43:44",
+    "endTime": "43:46",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So these are the three main angles.",
+    "startTime": "43:47",
+    "endTime": "43:48",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I think that the one that we can focus on is on the data that I managed to collect and the fact that I managed to reach theoretical maximum of fat oxidation and theoretical minimum of muscle expenditure, like, maximum of muscle sparing, which is the holy grail of fitness.",
+    "startTime": "43:48",
+    "endTime": "44:07",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, this is the hardest cut of the history of fitness in general, because please tell me if you've heard of anyone who's been burning 15 kilos of fat in seven weeks while losing only two kilos of muscle.",
+    "startTime": "44:07",
+    "endTime": "44:22",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, like, every single fitness professional I talk with, they go like, this is insane.",
+    "startTime": "44:23",
+    "endTime": "44:27",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, theoretically possible, but has never really been done in the field.",
+    "startTime": "44:27",
+    "endTime": "44:32",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And what's really curious is that lots of animal studies have been done.",
+    "startTime": "44:32",
+    "endTime": "44:36",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I'm basically the.",
+    "startTime": "44:36",
+    "endTime": "44:37",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The biggest ape that they no tested with, like, not in the lab.",
+    "startTime": "44:37",
+    "endTime": "44:42",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I feel like I'm the only human who's now showing what happens to corroborate something that has been done with animal studies to prove the maximum fat oxidation and minimum of muscle use and so on and so forth.",
+    "startTime": "44:42",
+    "endTime": "44:57",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I believe this is very relevant.",
+    "startTime": "44:57",
+    "endTime": "44:59",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, the people who don't have to do something so hardcore the message is if you're going to be doing longer fast, like more than 48 hours, you're doing seven, which is great.",
+    "startTime": "44:59",
+    "endTime": "45:10",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think this is the sweet spot.",
+    "startTime": "45:10",
+    "endTime": "45:12",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I do 50, like I've done two or 50 long day long fasts.",
+    "startTime": "45:13",
+    "endTime": "45:17",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The first one was on average, I think 5,000 steps a day.",
+    "startTime": "45:18",
+    "endTime": "45:22",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because it'll be mostly chilling at home.",
+    "startTime": "45:22",
+    "endTime": "45:23",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then you're losing a lot of muscle.",
+    "startTime": "45:23",
+    "endTime": "45:24",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "45:24",
+    "endTime": "45:25",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you're not out there.",
+    "startTime": "45:25",
+    "endTime": "45:26",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No.",
+    "startTime": "45:26",
+    "endTime": "45:27",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's signaling to your body that you're looking for food.",
+    "startTime": "45:27",
+    "endTime": "45:30",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Your body's going to use muscle as food.",
+    "startTime": "45:31",
+    "endTime": "45:32",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I was doing Nordic pole hiking, so full body workout.",
+    "startTime": "45:33",
+    "endTime": "45:38",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think this is what kept my muscles in shape.",
+    "startTime": "45:38",
+    "endTime": "45:41",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if anyone wants to do like a week long fast, I would highly recommend them to go hiking.",
+    "startTime": "45:41",
+    "endTime": "45:46",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It doesn't have to be hardcore.",
+    "startTime": "45:46",
+    "endTime": "45:48",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "45:48",
+    "endTime": "45:48",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But this is what allows them to maximize the benefits.",
+    "startTime": "45:48",
+    "endTime": "45:50",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "45:51",
+    "endTime": "45:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, for me, the reason why I got into fasting in the first place was purely about, I mean, longevity.",
+    "startTime": "45:51",
+    "endTime": "45:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "45:57",
+    "endTime": "45:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's about making sure my body is detoxed.",
+    "startTime": "45:58",
+    "endTime": "46:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "46:02",
+    "endTime": "46:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And fasting is probably the most effective way to kind of reset your body.",
+    "startTime": "46:02",
+    "endTime": "46:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "46:08",
+    "endTime": "46:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And for me, what I'm really optimizing for when I do this stuff is really, it's like I don't want to live until I'm 200, but I want to live until my 70s, 80s and really.",
+    "startTime": "46:08",
+    "endTime": "46:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, why would you not want to live into 200 if you have a healthy.",
+    "startTime": "46:19",
+    "endTime": "46:23",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh yeah, I'm not saying, I'm not saying I wouldn't want to.",
+    "startTime": "46:24",
+    "endTime": "46:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm just saying is I want my optimizing for.",
+    "startTime": "46:27",
+    "endTime": "46:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because that ultimately comes down to what the size looks like in the future.",
+    "startTime": "46:29",
+    "endTime": "46:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "46:32",
+    "endTime": "46:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Fast.",
+    "startTime": "46:33",
+    "endTime": "46:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All the amount of fasting in the world is not gonna make you live to 200.",
+    "startTime": "46:33",
+    "endTime": "46:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that always comes down to like what the size looks like in our lifetime then presumably.",
+    "startTime": "46:37",
+    "endTime": "46:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "46:43",
+    "endTime": "46:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I think for me, one thing that you mentioned recently was the pheno age, which is a real interesting calculator right off.",
+    "startTime": "46:44",
+    "endTime": "46:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, what does your actually biological age look like?",
+    "startTime": "46:52",
+    "endTime": "46:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because for me those are more interesting variables than most.",
+    "startTime": "46:57",
+    "endTime": "47:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like how do you figure out, how do you quantify every single wearable today will have some kind of like proxy for your biological age.",
+    "startTime": "47:01",
+    "endTime": "47:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "47:09",
+    "endTime": "47:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Tell me more about that.",
+    "startTime": "47:12",
+    "endTime": "47:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like photo age.",
+    "startTime": "47:13",
+    "endTime": "47:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How does it compare to what is it first of all, I guess, and how does it compare to the other benchmarks?",
+    "startTime": "47:14",
+    "endTime": "47:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And presumably you are tracking it across multiple types.",
+    "startTime": "47:20",
+    "endTime": "47:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So like, how does it actually correlate or not correlate?",
+    "startTime": "47:23",
+    "endTime": "47:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "47:27",
+    "endTime": "47:27",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The thing is Each organ will age at a different speed.",
+    "startTime": "47:27",
+    "endTime": "47:32",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I need reading glasses because my cornea is getting harder and doesn't focus as well, have trouble understanding people in very noisy environments.",
+    "startTime": "47:34",
+    "endTime": "47:48",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "47:48",
+    "endTime": "47:48",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I'm assuming that those two systems, they're aging on par or maybe a little bit slower than what other people would experience.",
+    "startTime": "47:48",
+    "endTime": "47:56",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't have a lot of gray hair.",
+    "startTime": "47:57",
+    "endTime": "47:59",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "47:59",
+    "endTime": "47:59",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, I'm 55 years old and most people are quite gray now.",
+    "startTime": "47:59",
+    "endTime": "48:03",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But inside, my body operates at a much younger age.",
+    "startTime": "48:03",
+    "endTime": "48:08",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the.",
+    "startTime": "48:08",
+    "endTime": "48:08",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The metabolic outcome that I have with Hume, because I use their scale and the band and they kind of match results to give you, I would say, one of the best, most precise results you can have because you're using two different gadgets to get us information.",
+    "startTime": "48:08",
+    "endTime": "48:28",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It says that I'm 28, right?",
+    "startTime": "48:29",
+    "endTime": "48:30",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "48:31",
+    "endTime": "48:31",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you go like, okay, no, from 55 to 28, it's a massive jump.",
+    "startTime": "48:31",
+    "endTime": "48:35",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And how does that work?",
+    "startTime": "48:35",
+    "endTime": "48:36",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, it depends on how they define the algorithm.",
+    "startTime": "48:37",
+    "endTime": "48:40",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the one thing is from two weeks ago that did a VO2 max test for the first time, a metabolic car to the mask and the measuring lactates and so on and so forth.",
+    "startTime": "48:40",
+    "endTime": "48:51",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they're first very puzzled because my lactate results were very weird.",
+    "startTime": "48:51",
+    "endTime": "48:56",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I'm coming out of 50 days of fasting, so I could be related to that.",
+    "startTime": "48:56",
+    "endTime": "48:59",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In three months, we're going to do it again and try to understand, was that a blip?",
+    "startTime": "48:59",
+    "endTime": "49:03",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it just did not make any sense.",
+    "startTime": "49:03",
+    "endTime": "49:05",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "However, my maximum heart rate, which is something that typically people say, oh, it's 220 minus or age.",
+    "startTime": "49:06",
+    "endTime": "49:15",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then when you're doing your zone two training, you should between 60 and 17% of that number.",
+    "startTime": "49:16",
+    "endTime": "49:21",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Mine is 27 years old.",
+    "startTime": "49:21",
+    "endTime": "49:24",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So bit of an issue there.",
+    "startTime": "49:25",
+    "endTime": "49:27",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "49:27",
+    "endTime": "49:27",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So my heart behaves like it's half my actual chronological age.",
+    "startTime": "49:27",
+    "endTime": "49:33",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So my whole life I've been under training because I'm assuming that once I reach a specific heartbeat that is 70% of my theoretical maximum heart rate, I'm in zone two.",
+    "startTime": "49:34",
+    "endTime": "49:47",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm not.",
+    "startTime": "49:47",
+    "endTime": "49:47",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I should be going much higher, like 27 to 28 bpm higher to actually get in zone 2.",
+    "startTime": "49:48",
+    "endTime": "49:55",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I've been struggling to get my VO2 max up.",
+    "startTime": "49:56",
+    "endTime": "49:58",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's like, you know, I'm doing everything right.",
+    "startTime": "49:58",
+    "endTime": "49:59",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What is the issue that.",
+    "startTime": "49:59",
+    "endTime": "50:00",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The issue is that I'm not normal according to that specific criteria.",
+    "startTime": "50:00",
+    "endTime": "50:05",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And when you kind of throw that in GPT, you say, well, can you tell me the maximum heart rates of master's athletes and senior masters athletes and everything else?",
+    "startTime": "50:05",
+    "endTime": "50:16",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the outcome and I learned that 10 days ago.",
+    "startTime": "50:16",
+    "endTime": "50:20",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Is that even at the highest levels, like the very best senior masters athletes of in my age group, I'm still an outlier.",
+    "startTime": "50:20",
+    "endTime": "50:32",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like I'm still 0.1% of the very best of them.",
+    "startTime": "50:32",
+    "endTime": "50:35",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Where is that coming from?",
+    "startTime": "50:36",
+    "endTime": "50:37",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't know.",
+    "startTime": "50:37",
+    "endTime": "50:37",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it does explain why Hume thinks that I'm 27 or 28 in this case.",
+    "startTime": "50:37",
+    "endTime": "50:42",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I was 27 once and now it's being most 28.",
+    "startTime": "50:43",
+    "endTime": "50:46",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So maybe that's what's being measured.",
+    "startTime": "50:47",
+    "endTime": "50:49",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "50:49",
+    "endTime": "50:50",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if the algorithm is saying, well, your heart is really good at going up very high and then coming down very fast, you get a better score, does that mean my kidneys are 27?",
+    "startTime": "50:50",
+    "endTime": "51:00",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't know.",
+    "startTime": "51:00",
+    "endTime": "51:01",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I. I do know that when you're fasting, all the trash that you have inside your cells will be processed right to become energy.",
+    "startTime": "51:01",
+    "endTime": "51:11",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the kidney doesn't really shrink that much.",
+    "startTime": "51:12",
+    "endTime": "51:15",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The liver shrinks like 15 to 20%.",
+    "startTime": "51:15",
+    "endTime": "51:17",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So your liver is being used as food because you not eating, you don't really need the liver, do you?",
+    "startTime": "51:17",
+    "endTime": "51:25",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's obviously losing the basic functions.",
+    "startTime": "51:25",
+    "endTime": "51:28",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think the gut lining and the gut cells, they get reduced by 25, 30.",
+    "startTime": "51:28",
+    "endTime": "51:35",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I have to check on those numbers, but it's significantly more than in the case of the liver and kind of similar to no more than the kidney and similar to liver.",
+    "startTime": "51:35",
+    "endTime": "51:44",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then you have the thymus, which gets reduced by up to 65%.",
+    "startTime": "51:45",
+    "endTime": "51:50",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the Times where your immune T cells are being produced shrinks by two thirds while they're doing the super long fast.",
+    "startTime": "51:51",
+    "endTime": "51:57",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's probably because of timeic involution.",
+    "startTime": "51:57",
+    "endTime": "52:02",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like as you get older, the islands that produce the immunity cells, they get surrounded by fat.",
+    "startTime": "52:02",
+    "endTime": "52:09",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you're just using that fat as food, therefore it gets much smaller.",
+    "startTime": "52:09",
+    "endTime": "52:13",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But the one thing that happens that is super interesting and not trivial is that you get that fat back, right?",
+    "startTime": "52:13",
+    "endTime": "52:20",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's not like your cell production capacity goes up, but you start producing more naive T cells.",
+    "startTime": "52:20",
+    "endTime": "52:28",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they're better at fighting infections because they are more trigger happy.",
+    "startTime": "52:29",
+    "endTime": "52:34",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So as you get older, your T cells sort of get lazy.",
+    "startTime": "52:34",
+    "endTime": "52:37",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Go like, yeah, no, we fought that battle before.",
+    "startTime": "52:37",
+    "endTime": "52:40",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So let's not, you know, move too quickly.",
+    "startTime": "52:40",
+    "endTime": "52:43",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But if your T cells are naive, they go like, no, I don't like this guy.",
+    "startTime": "52:43",
+    "endTime": "52:47",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm gonna no smash his face.",
+    "startTime": "52:47",
+    "endTime": "52:49",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that allows you to be more responsive when it comes to fighting infections.",
+    "startTime": "52:49",
+    "endTime": "52:54",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I recover from any sniffles very quickly.",
+    "startTime": "52:54",
+    "endTime": "52:57",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm not sure how that correlates with timeic involution.",
+    "startTime": "52:57",
+    "endTime": "53:00",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the fasting and everything else.",
+    "startTime": "53:00",
+    "endTime": "53:02",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm just happy that no, I recover faster than everybody else.",
+    "startTime": "53:02",
+    "endTime": "53:06",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I feel that's the very long term.",
+    "startTime": "53:06",
+    "endTime": "53:08",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Fasting is part of it.",
+    "startTime": "53:08",
+    "endTime": "53:10",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I do it once every five years.",
+    "startTime": "53:10",
+    "endTime": "53:12",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's such a massive shock in the system that I do not want to do that so too frequently.",
+    "startTime": "53:12",
+    "endTime": "53:17",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But seven day fasts throw them my way any day.",
+    "startTime": "53:17",
+    "endTime": "53:21",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I. Yeah, I do it.",
+    "startTime": "53:21",
+    "endTime": "53:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I used to do it once a year.",
+    "startTime": "53:23",
+    "endTime": "53:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That was.",
+    "startTime": "53:24",
+    "endTime": "53:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I used to do it like the weekly of my birthday.",
+    "startTime": "53:25",
+    "endTime": "53:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I used to do like a cleanse.",
+    "startTime": "53:27",
+    "endTime": "53:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like a seven day cleanse.",
+    "startTime": "53:28",
+    "endTime": "53:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I actually skipped it last year because I.",
+    "startTime": "53:29",
+    "endTime": "53:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "To your point about.",
+    "startTime": "53:31",
+    "endTime": "53:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, it's really difficult in a social environment to do a.",
+    "startTime": "53:34",
+    "endTime": "53:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "To do a.",
+    "startTime": "53:38",
+    "endTime": "53:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Particularly if you run a family.",
+    "startTime": "53:38",
+    "endTime": "53:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, it's really difficult to do.",
+    "startTime": "53:40",
+    "endTime": "53:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But the other thing that I reassessed and actually changed my strategy this past year to doing, I do one meal a day instead of keto plus one meal a day.",
+    "startTime": "53:41",
+    "endTime": "53:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I do that for a longer period.",
+    "startTime": "53:51",
+    "endTime": "53:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, that's what I did permanently instead.",
+    "startTime": "53:53",
+    "endTime": "53:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So like I switched from doing a seven day fast to like permanently doing one meal a day plus keto.",
+    "startTime": "53:55",
+    "endTime": "53:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And the reason is purely sustainability.",
+    "startTime": "54:00",
+    "endTime": "54:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "54:03",
+    "endTime": "54:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because I felt like I have so much stuff going on right now that I don't have the bandwidth to go into a seven day fast.",
+    "startTime": "54:04",
+    "endTime": "54:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because your productivity just tanks after 48 hours.",
+    "startTime": "54:09",
+    "endTime": "54:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You could probably do walking, like you mentioned.",
+    "startTime": "54:13",
+    "endTime": "54:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's fine.",
+    "startTime": "54:16",
+    "endTime": "54:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But trying to do any critical thinking or doing any hard work I find extremely difficult.",
+    "startTime": "54:16",
+    "endTime": "54:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I'm curious how you find that.",
+    "startTime": "54:23",
+    "endTime": "54:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It was actually okay.",
+    "startTime": "54:27",
+    "endTime": "54:27",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like I was on average hiking half a marathon a day.",
+    "startTime": "54:27",
+    "endTime": "54:32",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, it's an underlazing terrain, but over 50 days you go up the equivalent of 2 Everest.",
+    "startTime": "54:32",
+    "endTime": "54:39",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "54:39",
+    "endTime": "54:39",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's the 16 vertical kilometers.",
+    "startTime": "54:39",
+    "endTime": "54:41",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I was having conf calls.",
+    "startTime": "54:41",
+    "endTime": "54:44",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like I was not very active and I sounded like death incarnate.",
+    "startTime": "54:44",
+    "endTime": "54:49",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because you taught a voice.",
+    "startTime": "54:49",
+    "endTime": "54:51",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Cause like this when you're so exhausted.",
+    "startTime": "54:51",
+    "endTime": "54:53",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Everything else but cognitively it was fine.",
+    "startTime": "54:53",
+    "endTime": "54:56",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like I could definitely understand, but I would intervene whenever required.",
+    "startTime": "54:56",
+    "endTime": "55:00",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's just scary as hell.",
+    "startTime": "55:00",
+    "endTime": "55:02",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "When I open my mouth, people are like, no, are you okay?",
+    "startTime": "55:02",
+    "endTime": "55:05",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's like, define okay.",
+    "startTime": "55:05",
+    "endTime": "55:07",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I haven't eaten for five weeks.",
+    "startTime": "55:07",
+    "endTime": "55:09",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But yeah.",
+    "startTime": "55:10",
+    "endTime": "55:11",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I. I remain functional.",
+    "startTime": "55:11",
+    "endTime": "55:12",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Which is amazing.",
+    "startTime": "55:12",
+    "endTime": "55:14",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "55:14",
+    "endTime": "55:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because I mean some people, because I have a lot of friends.",
+    "startTime": "55:14",
+    "endTime": "55:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "A lot.",
+    "startTime": "55:16",
+    "endTime": "55:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I have a few friends who do also fasting.",
+    "startTime": "55:17",
+    "endTime": "55:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And some people say that once they hit the ketosis, which you happen about 48 hours into a fast.",
+    "startTime": "55:18",
+    "endTime": "55:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "55:25",
+    "endTime": "55:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Then your body switches energy source, they feel clarity I can't say that I feel that, but I know some people do say that they feel clarity after hit ketosis.",
+    "startTime": "55:25",
+    "endTime": "55:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm curious about your thought about that.",
+    "startTime": "55:38",
+    "endTime": "55:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Oh, for sure.",
+    "startTime": "55:41",
+    "endTime": "55:42",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So after two and a half days of my trick to get into full ketosis is to start on a Friday afternoon.",
+    "startTime": "55:42",
+    "endTime": "55:50",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then during the weekend, I just binge watch all the cool films and things that I wanted to see for a long time.",
+    "startTime": "55:51",
+    "endTime": "55:57",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you distract yourself during the transition phase and when you wake up on Monday, you're good to go.",
+    "startTime": "55:58",
+    "endTime": "56:03",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, as in, I know based on previous calculations in terms of weight loss over very long periods, the regression curve is very neat.",
+    "startTime": "56:03",
+    "endTime": "56:18",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, you have the straight line, even if it's zigging quite a bit.",
+    "startTime": "56:18",
+    "endTime": "56:22",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And based on all the elements I have at hand and knowing my body and how I respond to this kind of extreme fast, I could have gone 100 days.",
+    "startTime": "56:22",
+    "endTime": "56:36",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I stopped at 50, but I could have fasted for another 50 days until start having organ failure.",
+    "startTime": "56:36",
+    "endTime": "56:42",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's crazy.",
+    "startTime": "56:43",
+    "endTime": "56:44",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like for almost a third of the year, you can have no food.",
+    "startTime": "56:44",
+    "endTime": "56:48",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's what their bodies are designed to do.",
+    "startTime": "56:48",
+    "endTime": "56:50",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now we're the descendants of the people who are capable of doing that because otherwise they wouldn't be around.",
+    "startTime": "56:51",
+    "endTime": "56:56",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I was just gonna say it's crazy in the sense of what we're used to in the day to day basis, but using your narrative about the caveman, it's really not that crazy that those were the harsh realities that we lived through.",
+    "startTime": "56:56",
+    "endTime": "57:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "57:08",
+    "endTime": "57:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "57:10",
+    "endTime": "57:10",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's what I'm trying to find out.",
+    "startTime": "57:11",
+    "endTime": "57:13",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like when I'm prancing around on a T shirt and zero, like zero is easy.",
+    "startTime": "57:13",
+    "endTime": "57:20",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like I can keep on going for five hours.",
+    "startTime": "57:20",
+    "endTime": "57:22",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I know that for a fact.",
+    "startTime": "57:22",
+    "endTime": "57:23",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But when is minus three with the wind, then it starts.",
+    "startTime": "57:23",
+    "endTime": "57:28",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Once it's dangerous very fast.",
+    "startTime": "57:29",
+    "endTime": "57:31",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you have to know what you're doing and you need to understand the consequences and how to respond to those.",
+    "startTime": "57:31",
+    "endTime": "57:36",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But they had to do that because that was the only option.",
+    "startTime": "57:36",
+    "endTime": "57:41",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So what I to do is to always do it in a safe place so that I can rescue myself.",
+    "startTime": "57:41",
+    "endTime": "57:48",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, and if enough happened of me collapsing or anything more serious.",
+    "startTime": "57:48",
+    "endTime": "57:53",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But if it does happen, people are around, then they'll know what to do.",
+    "startTime": "57:54",
+    "endTime": "57:58",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that allows me to do pretty extreme things that will go to the edge of what the human can do.",
+    "startTime": "57:59",
+    "endTime": "58:07",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The fact that I'm healthy and fit and everything else is not the case of someone with this severe cancer, stage four.",
+    "startTime": "58:08",
+    "endTime": "58:14",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's the only thing they can rely on or morbid Obese, that probably helps a lot.",
+    "startTime": "58:14",
+    "endTime": "58:20",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "58:20",
+    "endTime": "58:21",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So my body is more equivalent to a standard caveman than those who have a very severe disease.",
+    "startTime": "58:21",
+    "endTime": "58:28",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that makes it more relevant.",
+    "startTime": "58:28",
+    "endTime": "58:31",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like anyone else who's not diseased should be able to benefit from lessons learned and is usually going to be a scale down version.",
+    "startTime": "58:31",
+    "endTime": "58:41",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Maybe it's like a 10x version.",
+    "startTime": "58:41",
+    "endTime": "58:44",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So don't do 50 days, do 5, don't hike for 5 hours and a T shirt, maybe remove two layers from the clothes that you usually wear for specific weather situation and feel uncomfortable.",
+    "startTime": "58:44",
+    "endTime": "58:59",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "58:59",
+    "endTime": "59:00",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Until you can figure out how your body would respond to that.",
+    "startTime": "59:00",
+    "endTime": "59:03",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then you can no evolve this metabolic adaptation to allow you to do things that you didn't believe that you could before.",
+    "startTime": "59:04",
+    "endTime": "59:12",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, but I think that ultimately this comes down to willpower.",
+    "startTime": "59:12",
+    "endTime": "59:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "59:15",
+    "endTime": "59:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean when people ask me like about like fasting or stuff like that, I'm like, it's not something I would recommend to people because it requires a very specific personality type and somebody who's like.",
+    "startTime": "59:16",
+    "endTime": "59:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because it's all like, if you're doing a seven day fast or like even longer, you need to be in a very special headspace to do that.",
+    "startTime": "59:27",
+    "endTime": "59:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because most people would give up.",
+    "startTime": "59:35",
+    "endTime": "59:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "59:36",
+    "endTime": "59:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's just the reality of it.",
+    "startTime": "59:37",
+    "endTime": "59:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "59:38",
+    "endTime": "59:38",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that's the important part.",
+    "startTime": "59:39",
+    "endTime": "59:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like I, yes, fasting is very beneficial, but you really need to be convinced intrinsically that this is something that you really want to do.",
+    "startTime": "59:42",
+    "endTime": "59:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because it would be lying.",
+    "startTime": "59:51",
+    "endTime": "59:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Say that it's easy, right?",
+    "startTime": "59:53",
+    "endTime": "59:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, you can definitely train, like zone out from the difficulties, right?",
+    "startTime": "59:57",
+    "endTime": "01:00:02",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:00:02",
+    "endTime": "01:00:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So when you're doing it with exercise, like this is really tough, but that's exactly what you're supposed to be doing.",
+    "startTime": "01:00:02",
+    "endTime": "01:00:11",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you have no food 10,000 years ago, you are desperately looking for food, meaning you're moving, you're doing hard things and so on.",
+    "startTime": "01:00:12",
+    "endTime": "01:00:21",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So my hack is binary.",
+    "startTime": "01:00:21",
+    "endTime": "01:00:26",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like that's what I have.",
+    "startTime": "01:00:27",
+    "endTime": "01:00:29",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there are no pills, there are no codes, there's nothing that could make it easier for me.",
+    "startTime": "01:00:29",
+    "endTime": "01:00:36",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's well aligned with the stoicism.",
+    "startTime": "01:00:36",
+    "endTime": "01:00:40",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like you just don't bother so much about the things you cannot change.",
+    "startTime": "01:00:40",
+    "endTime": "01:00:45",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And because now it's so easy to change things, people go lazy, they don't have as much resilience.",
+    "startTime": "01:00:46",
+    "endTime": "01:00:51",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I, I just have this thought experiments, like I'm not me, I'm a caveman.",
+    "startTime": "01:00:51",
+    "endTime": "01:00:57",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't have pills and jabs and no insulating layers.",
+    "startTime": "01:00:57",
+    "endTime": "01:01:02",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I have to cope with the scenario that I defined.",
+    "startTime": "01:01:02",
+    "endTime": "01:01:05",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think once you have those binary choices which fasting is right?",
+    "startTime": "01:01:05",
+    "endTime": "01:01:10",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's like 01.",
+    "startTime": "01:01:10",
+    "endTime": "01:01:11",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Either you're eating or you're not eating.",
+    "startTime": "01:01:11",
+    "endTime": "01:01:12",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You will force your body into hermesis.",
+    "startTime": "01:01:13",
+    "endTime": "01:01:17",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like this is very uncomfortable but yet very useful state in which you're cleansing yourself and you're kind of shocking the system.",
+    "startTime": "01:01:17",
+    "endTime": "01:01:24",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's the same as going for a jog, right, but without harming your knees in the process.",
+    "startTime": "01:01:25",
+    "endTime": "01:01:29",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the idea of walking around, what I do is rucking.",
+    "startTime": "01:01:30",
+    "endTime": "01:01:35",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm basically walking with good boots.",
+    "startTime": "01:01:35",
+    "endTime": "01:01:37",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And because we spent half of our lives or two thirds of our lives with our feet inside boxes, that is not natural, right?",
+    "startTime": "01:01:37",
+    "endTime": "01:01:48",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So our feet are all deformed.",
+    "startTime": "01:01:48",
+    "endTime": "01:01:49",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I wear boots because my feet are deformed.",
+    "startTime": "01:01:50",
+    "endTime": "01:01:53",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this is how I can compensate for deformity.",
+    "startTime": "01:01:53",
+    "endTime": "01:01:55",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That is not my fault, it's not my parents fault is the way society evolves.",
+    "startTime": "01:01:55",
+    "endTime": "01:01:59",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I tried once to hike 50 kilometers in a day wearing sandals because Roman legionnaires could.",
+    "startTime": "01:02:00",
+    "endTime": "01:02:10",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then three years later I still have to deal with the micro fractures from that stupid experience.",
+    "startTime": "01:02:12",
+    "endTime": "01:02:18",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So yes, they could because they grew up wearing sandals and the feet are not deformed.",
+    "startTime": "01:02:20",
+    "endTime": "01:02:25",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I was just trying to do the same, but using a different toolkit, which is basically modern feet.",
+    "startTime": "01:02:25",
+    "endTime": "01:02:31",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And nope, it took me a while.",
+    "startTime": "01:02:32",
+    "endTime": "01:02:34",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now finally, I don't feel it as much as before.",
+    "startTime": "01:02:34",
+    "endTime": "01:02:37",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Also, I do think what the life expectancy of Romans was like in the 30s or 40s as well, which is also a variable in the equation.",
+    "startTime": "01:02:38",
+    "endTime": "01:02:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I suppose.",
+    "startTime": "01:02:46",
+    "endTime": "01:02:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There were Romans who lived to 100.",
+    "startTime": "01:02:48",
+    "endTime": "01:02:50",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:02:50",
+    "endTime": "01:02:50",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The thing is that there's this infant mortality which is extremely high and people get to all the averages.",
+    "startTime": "01:02:51",
+    "endTime": "01:02:57",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you manage to get to your 40s or 50s, you wouldn't have many of the modern diseases, right.",
+    "startTime": "01:02:57",
+    "endTime": "01:03:04",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because these guys are not chewing on sugar sticks the whole day.",
+    "startTime": "01:03:04",
+    "endTime": "01:03:07",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they didn't have, I mean diabetes existed, but only type 1, type 2 diabetes I think is a modern disease.",
+    "startTime": "01:03:08",
+    "endTime": "01:03:15",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they didn't have any of those that are gonna.",
+    "startTime": "01:03:16",
+    "endTime": "01:03:18",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think cardiology became a specialty quite recently because heart attacks were extremely uncommon until 100 years ago.",
+    "startTime": "01:03:19",
+    "endTime": "01:03:27",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And all of a sudden you have mainly sugar, right?",
+    "startTime": "01:03:28",
+    "endTime": "01:03:31",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And no sugar in the shape of alcohol that is causing all of those issues.",
+    "startTime": "01:03:31",
+    "endTime": "01:03:36",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The Romans had none of that.",
+    "startTime": "01:03:36",
+    "endTime": "01:03:37",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They'll have parasites, they'll have infectious diseases and all sorts of things.",
+    "startTime": "01:03:37",
+    "endTime": "01:03:41",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But if they manage to survive those, they could live to a very old age.",
+    "startTime": "01:03:41",
+    "endTime": "01:03:45",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There are cases documented of Romans living more than 100 years.",
+    "startTime": "01:03:45",
+    "endTime": "01:03:48",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So.",
+    "startTime": "01:03:49",
+    "endTime": "01:03:49",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "fair enough.",
+    "startTime": "01:03:49",
+    "endTime": "01:03:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Make of that.",
+    "startTime": "01:03:50",
+    "endTime": "01:03:51",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, fair enough.",
+    "startTime": "01:03:52",
+    "endTime": "01:03:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All right, so just wrapping up here for today.",
+    "startTime": "01:03:54",
+    "endTime": "01:03:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean this has been super interesting.",
+    "startTime": "01:03:56",
+    "endTime": "01:03:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I love to learn more.",
+    "startTime": "01:03:58",
+    "endTime": "01:03:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But what I'm curious about is what's the next challenge?",
+    "startTime": "01:03:59",
+    "endTime": "01:04:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, the next challenge is packaging this in a way that is useful to people.",
+    "startTime": "01:04:04",
+    "endTime": "01:04:07",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So by doing this podcast and preparing the case report, I split it into the preparation phase, which, depending on how you look at it, could be years.",
+    "startTime": "01:04:08",
+    "endTime": "01:04:19",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I started doing this almost ten years ago, but I posted about it in April last year and then kind of forgot.",
+    "startTime": "01:04:19",
+    "endTime": "01:04:27",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I posted it as a stab, saying, this is a challenge.",
+    "startTime": "01:04:27",
+    "endTime": "01:04:35",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's now public.",
+    "startTime": "01:04:35",
+    "endTime": "01:04:36",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If I don't do that, I don't think people say, oh, you're chicken out.",
+    "startTime": "01:04:36",
+    "endTime": "01:04:41",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because of course, ridiculously difficult to hike a thousand kilometers with no food.",
+    "startTime": "01:04:41",
+    "endTime": "01:04:46",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I wanted to have something out there to say, you're gonna do this and it's right.",
+    "startTime": "01:04:46",
+    "endTime": "01:04:52",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can't really do it during summer because it's way too hot.",
+    "startTime": "01:04:52",
+    "endTime": "01:04:56",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And when winter comes, all the hotels close and you don't have the safety you would have with lots of people around.",
+    "startTime": "01:04:57",
+    "endTime": "01:05:05",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I just put myself into a situation where I had to do it between September, November.",
+    "startTime": "01:05:05",
+    "endTime": "01:05:10",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's exactly what happened.",
+    "startTime": "01:05:10",
+    "endTime": "01:05:12",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And 50 days doing 50 days recovering, right?",
+    "startTime": "01:05:12",
+    "endTime": "01:05:16",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And doing DEXA scans and checking the body proportions.",
+    "startTime": "01:05:16",
+    "endTime": "01:05:19",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I just did an in body scan yesterday, so I'm trying to use as many gold standard devices as possible for what I'm looking for because the DEXA doesn't give you a cell or a phase shift and they embody the more expensive ones they would.",
+    "startTime": "01:05:19",
+    "endTime": "01:05:33",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So collection of this day back to normal.",
+    "startTime": "01:05:34",
+    "endTime": "01:05:38",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "On 31st December, the very end of the year, I finished my recovery phase.",
+    "startTime": "01:05:38",
+    "endTime": "01:05:43",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And ever since, like the last month or so, it's being growth like it's like my body reached homeostasis.",
+    "startTime": "01:05:43",
+    "endTime": "01:05:51",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I am 10 kilos lighter than it was before.",
+    "startTime": "01:05:52",
+    "endTime": "01:05:55",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's basically all that out of the.",
+    "startTime": "01:05:55",
+    "endTime": "01:05:58",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The 15 kilos of fat that I burned, I know regained five and a bit, which is normal natural.",
+    "startTime": "01:05:59",
+    "endTime": "01:06:06",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You always have this kind of overshoots effect and then kind of bounces back a little bit.",
+    "startTime": "01:06:06",
+    "endTime": "01:06:10",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the idea now is to show how strong it can become.",
+    "startTime": "01:06:11",
+    "endTime": "01:06:17",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like the fact that having such a shock into the system does not prevent me from having a very healthy life from now on, with or without fasting, I want to keep on doing fast in terms of having.",
+    "startTime": "01:06:17",
+    "endTime": "01:06:33",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So this project hasn't wrapped yet, but the next one that could be interesting would be to hike the Everest base camp just in shorts and T shirts without food.",
+    "startTime": "01:06:34",
+    "endTime": "01:06:43",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you're going up, I think at least 5km.",
+    "startTime": "01:06:43",
+    "endTime": "01:06:46",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I have to check the specs.",
+    "startTime": "01:06:48",
+    "endTime": "01:06:49",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But you know the things that are.",
+    "startTime": "01:06:49",
+    "endTime": "01:06:51",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Going to kill you is a queue up to queue to get up.",
+    "startTime": "01:06:51",
+    "endTime": "01:06:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "No, but the base cam does not have a queue.",
+    "startTime": "01:06:55",
+    "endTime": "01:06:58",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:06:58",
+    "endTime": "01:06:58",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The queue is when you.",
+    "startTime": "01:06:58",
+    "endTime": "01:06:59",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You're closer to this.",
+    "startTime": "01:06:59",
+    "endTime": "01:07:00",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:07:01",
+    "endTime": "01:07:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think this is feasible.",
+    "startTime": "01:07:02",
+    "endTime": "01:07:05",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Usually we go there around October because you have the best possible weather.",
+    "startTime": "01:07:05",
+    "endTime": "01:07:10",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You don't go there in May when people try to do the summits because that's the best time to attempt summiting.",
+    "startTime": "01:07:11",
+    "endTime": "01:07:18",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I'm fine hiking in shorts and T shirts when it's minus five.",
+    "startTime": "01:07:18",
+    "endTime": "01:07:23",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:07:23",
+    "endTime": "01:07:23",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they're going up trails.",
+    "startTime": "01:07:23",
+    "endTime": "01:07:25",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I love to have a team that is doing the tests that I do myself with better equipment.",
+    "startTime": "01:07:25",
+    "endTime": "01:07:32",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's a frustration from the first 50 days fast in 2020, that was a very big driver to do it again.",
+    "startTime": "01:07:33",
+    "endTime": "01:07:40",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But measuring everything because now we can all the wearables that we have, even if they're not perfect, I can do a DEXA before and a DEXA after and then in between, I want to have the data points connecting those two endpoints.",
+    "startTime": "01:07:40",
+    "endTime": "01:07:57",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And yeah, so I'll say Everest Basecamp would be the one that I'll consider.",
+    "startTime": "01:07:58",
+    "endTime": "01:08:02",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not going to be 50 days because you can do it in two or three weeks.",
+    "startTime": "01:08:03",
+    "endTime": "01:08:06",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But that could be a very neat one.",
+    "startTime": "01:08:06",
+    "endTime": "01:08:08",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And lots of people, they were very reticent to be involved with my project because they're like, you're going to kill yourself.",
+    "startTime": "01:08:08",
+    "endTime": "01:08:15",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, maybe.",
+    "startTime": "01:08:16",
+    "endTime": "01:08:17",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But no, I'm not very good at killing myself and not for lack of trying.",
+    "startTime": "01:08:17",
+    "endTime": "01:08:21",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:08:21",
+    "endTime": "01:08:21",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I've been doing lots of really hardcore stuff.",
+    "startTime": "01:08:22",
+    "endTime": "01:08:24",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, some of the stories.",
+    "startTime": "01:08:25",
+    "endTime": "01:08:26",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This time it's about gathering relevant information that can benefit as many people as possible.",
+    "startTime": "01:08:27",
+    "endTime": "01:08:35",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I'm calling that the endogenous biohacking framework.",
+    "startTime": "01:08:35",
+    "endTime": "01:08:39",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Exogenous, meaning you're taking pills and jabs.",
+    "startTime": "01:08:40",
+    "endTime": "01:08:42",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the one thing that worries me is that you have people saying, oh, I'm going to live to 120 because I'm taking the right pills.",
+    "startTime": "01:08:42",
+    "endTime": "01:08:47",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, no, you want.",
+    "startTime": "01:08:47",
+    "endTime": "01:08:48",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The pills are irrelevant if you're not taking care of the core.",
+    "startTime": "01:08:49",
+    "endTime": "01:08:52",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, what I'm doing, that's everybody should consider, like the Levine pheno age.",
+    "startTime": "01:08:52",
+    "endTime": "01:08:56",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm collecting as many gold standard measurement points as possible.",
+    "startTime": "01:08:57",
+    "endTime": "01:09:02",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Blood tests and the pressure and the dexes and now the metabolic art results.",
+    "startTime": "01:09:02",
+    "endTime": "01:09:08",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I'm throwing those results into GPT and then having a conversation.",
+    "startTime": "01:09:08",
+    "endTime": "01:09:14",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "GPT based on those markers you just locked.",
+    "startTime": "01:09:14",
+    "endTime": "01:09:19",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How long is my health span supposed to be?",
+    "startTime": "01:09:19",
+    "endTime": "01:09:23",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "As in living independently, doing whatever.",
+    "startTime": "01:09:23",
+    "endTime": "01:09:25",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And right now it's 100 years old, so I should be Nope.",
+    "startTime": "01:09:26",
+    "endTime": "01:09:29",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "By myself, hopefully with the family and friends hanging out and all that.",
+    "startTime": "01:09:29",
+    "endTime": "01:09:33",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I should be able to live alone 45 years from now.",
+    "startTime": "01:09:33",
+    "endTime": "01:09:37",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I was asking about.",
+    "startTime": "01:09:38",
+    "endTime": "01:09:39",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, yeah, the things that.",
+    "startTime": "01:09:40",
+    "endTime": "01:09:43",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because I'm giving GPT more than a hundred measurement points, including the inflammation levels and the liver markers and so on.",
+    "startTime": "01:09:43",
+    "endTime": "01:09:52",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And there's so much public data there saying, oh, your GGT is fantastic, and this is the database that we're using as a reference.",
+    "startTime": "01:09:53",
+    "endTime": "01:10:00",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then it does this blend.",
+    "startTime": "01:10:00",
+    "endTime": "01:10:02",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It says, look, no, your lipid panel is great and everything else that you can see is on the sweet spot.",
+    "startTime": "01:10:02",
+    "endTime": "01:10:09",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it doesn't have to be like my maximum heart rate, which is insanely good, as in is an outlier.",
+    "startTime": "01:10:10",
+    "endTime": "01:10:18",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Even considering the elite athletes that win all the gold medals, I'm still in the 0.1% in that category.",
+    "startTime": "01:10:18",
+    "endTime": "01:10:25",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is freakish.",
+    "startTime": "01:10:26",
+    "endTime": "01:10:27",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I have an idea where it comes from.",
+    "startTime": "01:10:27",
+    "endTime": "01:10:29",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I would love to know more about that, but everything else blended gives me a longevity of 110.",
+    "startTime": "01:10:29",
+    "endTime": "01:10:34",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Maybe for 10 years of my life, I'll need to be taken care of.",
+    "startTime": "01:10:35",
+    "endTime": "01:10:38",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But then again, this is 50 years.",
+    "startTime": "01:10:38",
+    "endTime": "01:10:41",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In fact, when I turned 55, I finally entered middle age.",
+    "startTime": "01:10:41",
+    "endTime": "01:10:45",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:10:45",
+    "endTime": "01:10:45",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If I'm going to be living until 110, and that gives you a completely different perspective, I highly recommend that people collect as much data as possible.",
+    "startTime": "01:10:45",
+    "endTime": "01:10:51",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Throw that on the GPT and ask how long am I going to live independently and my total lifespan?",
+    "startTime": "01:10:52",
+    "endTime": "01:10:57",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I couldn't agree more.",
+    "startTime": "01:10:58",
+    "endTime": "01:10:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's what I've been doing.",
+    "startTime": "01:10:59",
+    "endTime": "01:11:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I've been collecting my own vault of data over the last 10 years.",
+    "startTime": "01:11:00",
+    "endTime": "01:11:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that's exactly it.",
+    "startTime": "01:11:03",
+    "endTime": "01:11:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Combine that into one data set, have a model review it, compare it to the data and the latest papers and I mean, that's.",
+    "startTime": "01:11:05",
+    "endTime": "01:11:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We couldn't do that a few years.",
+    "startTime": "01:11:14",
+    "endTime": "01:11:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Ago, which is amazing, Marcello, but it has to be.",
+    "startTime": "01:11:15",
+    "endTime": "01:11:19",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, you need to be very wealthy now.",
+    "startTime": "01:11:21",
+    "endTime": "01:11:23",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You pay 20 bucks a month and you're good to go.",
+    "startTime": "01:11:23",
+    "endTime": "01:11:25",
+    "speaker_name": "Marcelo Garcia",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's right.",
+    "startTime": "01:11:26",
+    "endTime": "01:11:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's right.",
+    "startTime": "01:11:26",
+    "endTime": "01:11:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Marcel, this has been a pleasure.",
+    "startTime": "01:11:27",
+    "endTime": "01:11:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I would love to have you on at some point in the future doing some more deep dive into your biohealth biohacking.",
+    "startTime": "01:11:28",
+    "endTime": "01:11:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But thank you so much for coming on the show today and I appreciate it.",
+    "startTime": "01:11:35",
+    "endTime": "01:11:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Have a good one.",
+    "startTime": "01:11:38",
+    "endTime": "01:11:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Talk soon.",
+    "startTime": "01:11:39",
+    "endTime": "01:11:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  }
+]

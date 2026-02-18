@@ -1,0 +1,6057 @@
+[
+  {
+    "sentence": "Welcome back to another episode of nerding out with Victor.",
+    "startTime": "00:01",
+    "endTime": "00:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Today I'm joined by Justin Cormack.",
+    "startTime": "00:04",
+    "endTime": "00:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Hey, Justin.",
+    "startTime": "00:07",
+    "endTime": "00:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Hi.",
+    "startTime": "00:07",
+    "endTime": "00:08",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Nice to nerd out with you.",
+    "startTime": "00:08",
+    "endTime": "00:10",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Amazing.",
+    "startTime": "00:10",
+    "endTime": "00:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I know Justin from, I guess, the old school London DevOps scene.",
+    "startTime": "00:11",
+    "endTime": "00:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Our paths ran across from many years ago, I guess.",
+    "startTime": "00:15",
+    "endTime": "00:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And we've been bumping into each other at various conferences.",
+    "startTime": "00:19",
+    "endTime": "00:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think last conference was state of open con, I believe.",
+    "startTime": "00:22",
+    "endTime": "00:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that's when I realized that I should have you on the show.",
+    "startTime": "00:26",
+    "endTime": "00:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So thank you for hopping on.",
+    "startTime": "00:29",
+    "endTime": "00:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "00:31",
+    "endTime": "00:32",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The London scenes.",
+    "startTime": "00:33",
+    "endTime": "00:34",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, there's a lot of people who I kind of met through those things, even from way back when, like a lot of days before, even before I joined Docker.",
+    "startTime": "00:34",
+    "endTime": "00:46",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's people I met back then in the years.",
+    "startTime": "00:46",
+    "endTime": "00:50",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's been a great place to meet people.",
+    "startTime": "00:51",
+    "endTime": "00:52",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, the London Kubernetes scene in particular.",
+    "startTime": "00:53",
+    "endTime": "00:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And obviously that spilled into the.",
+    "startTime": "00:55",
+    "endTime": "00:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well that started with the docker scene.",
+    "startTime": "00:57",
+    "endTime": "00:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The Kubernetes scene was way ahead, London pushed well, by its weight, or punched way above its weight, I would say, from that perspective.",
+    "startTime": "00:58",
+    "endTime": "01:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So there was a lot of strong DevOps people in London that really kicked things off.",
+    "startTime": "01:08",
+    "endTime": "01:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it was a really good scene to be in those days, I think.",
+    "startTime": "01:14",
+    "endTime": "01:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:16",
+    "endTime": "01:17",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And.",
+    "startTime": "01:18",
+    "endTime": "01:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All right, so let's talk a bit more about Docker, because you are the CTO of Docker.",
+    "startTime": "01:19",
+    "endTime": "01:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So let's talk about Docker.",
+    "startTime": "01:24",
+    "endTime": "01:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I have some other topics, but we're largely themed around Docker.",
+    "startTime": "01:25",
+    "endTime": "01:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So with that, let's start with a very simple question.",
+    "startTime": "01:28",
+    "endTime": "01:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What was your first docker experience?",
+    "startTime": "01:32",
+    "endTime": "01:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So my first docker experience was.",
+    "startTime": "01:34",
+    "endTime": "01:38",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, it was.",
+    "startTime": "01:39",
+    "endTime": "01:40",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was.",
+    "startTime": "01:44",
+    "endTime": "01:45",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I can't remember exactly what the first experience was.",
+    "startTime": "01:51",
+    "endTime": "01:56",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I remember roughly when it was.",
+    "startTime": "01:56",
+    "endTime": "01:58",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was.",
+    "startTime": "01:58",
+    "endTime": "01:59",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was.",
+    "startTime": "02:00",
+    "endTime": "02:01",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It must have been about ten years ago.",
+    "startTime": "02:03",
+    "endTime": "02:09",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I've been a doctor for nine years.",
+    "startTime": "02:10",
+    "endTime": "02:11",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it was.",
+    "startTime": "02:11",
+    "endTime": "02:12",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think it was around a year before that, maybe a little bit somewhere in that area, you know, as you say, there was a kind of.",
+    "startTime": "02:12",
+    "endTime": "02:20",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There was that strong London scene where, you know, things were.",
+    "startTime": "02:22",
+    "endTime": "02:27",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Things were happening.",
+    "startTime": "02:27",
+    "endTime": "02:28",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "My.",
+    "startTime": "02:28",
+    "endTime": "02:28",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I was.",
+    "startTime": "02:28",
+    "endTime": "02:29",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I had a.",
+    "startTime": "02:29",
+    "endTime": "02:30",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "My first kind of experience in the kind of DevOps space really was puppethe I was doing.",
+    "startTime": "02:31",
+    "endTime": "02:37",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I did a bunch of what we called sysadmin work back then, before it was DevOps.",
+    "startTime": "02:37",
+    "endTime": "02:42",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I came across this automation stuff, and I thought, hold on, this puppet thing that's actually different from the other stuff and this terrible manual configuration work that were doing before that.",
+    "startTime": "02:43",
+    "endTime": "02:55",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that kind of got me interested overall in what was changing.",
+    "startTime": "02:56",
+    "endTime": "03:00",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I was always interested in kind of this sort of system manageability area.",
+    "startTime": "03:01",
+    "endTime": "03:07",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I actually ran the London Coreos meetup for a while.",
+    "startTime": "03:07",
+    "endTime": "03:12",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh yeah, thats a blast of the past.",
+    "startTime": "03:12",
+    "endTime": "03:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think the next thing after puppet I got cited by was actually the kind of the really early coreos when it was ETCD.",
+    "startTime": "03:15",
+    "endTime": "03:22",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that was a thing to manage your distributed etsy which was like before it was, you know before it was actually really about containerization.",
+    "startTime": "03:23",
+    "endTime": "03:35",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And somewhere in that period I ran into Docker.",
+    "startTime": "03:35",
+    "endTime": "03:40",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean I think the first kind of formal thing I don't.",
+    "startTime": "03:43",
+    "endTime": "03:48",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We worked on a joint ebook on using Docker with a bunch of us back in somewhere in that period I wrote a Docker security chapter for that book.",
+    "startTime": "03:48",
+    "endTime": "04:01",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So.",
+    "startTime": "04:02",
+    "endTime": "04:03",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But yeah, somewhere around.",
+    "startTime": "04:04",
+    "endTime": "04:05",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So container security was something that, because I was always something I was interested in really early on and yeah so it was around that period.",
+    "startTime": "04:05",
+    "endTime": "04:19",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I don't actually remember the, I actually remember the first Docker run experience.",
+    "startTime": "04:19",
+    "endTime": "04:25",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It must have, which is kind of disappointing.",
+    "startTime": "04:25",
+    "endTime": "04:28",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I should be happy to be able to say oh yeah, the first time I did Docker run I thought this is the future and I'm going to end up working at Docker.",
+    "startTime": "04:28",
+    "endTime": "04:33",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it didn't actually work out like that at all.",
+    "startTime": "04:34",
+    "endTime": "04:35",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I mean I remember my first Docker experience and it was such a mind boggling experience from a, I guess principal perspective in the sense of like you came from vms and now you came with this concept.",
+    "startTime": "04:36",
+    "endTime": "04:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean I've been using like freebiece to JRS and whatnot in the past, which is kind of similar, but it was just this mind shift of like is a single process and that took a bit of time to get your head around, I guess.",
+    "startTime": "04:51",
+    "endTime": "05:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And you still see a lot of people trying to get their head around that, even to this day.",
+    "startTime": "05:02",
+    "endTime": "05:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "05:06",
+    "endTime": "05:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So let's talk a bit about, well obviously you have a lot of exposure to the community, I presume, with Docker.",
+    "startTime": "05:08",
+    "endTime": "05:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So what do you see as the most common like misconceptions about Docker?",
+    "startTime": "05:15",
+    "endTime": "05:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, I don't know.",
+    "startTime": "05:20",
+    "endTime": "05:22",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that there's a number of things.",
+    "startTime": "05:22",
+    "endTime": "05:25",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean it's not so much misconceptions.",
+    "startTime": "05:25",
+    "endTime": "05:28",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think it's a matter of people having different ideas about what the, you know, what the important changes that happened in the world are because of Docker or with Docker by using Docker and what the way to frame it is for so many years at the beginning, you know, beginning and it's a little bit less so now, but it still comes up, you know there's the VMS versus containers.",
+    "startTime": "05:28",
+    "endTime": "05:55",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, that's a thing.",
+    "startTime": "05:56",
+    "endTime": "05:57",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that, like.",
+    "startTime": "05:57",
+    "endTime": "05:58",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the idea that this is an important distinction, I think, is really misleading.",
+    "startTime": "05:58",
+    "endTime": "06:05",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think, you know, obviously, like, people frame things in terms of what came, what they were doing before, but it wasn't ever really a VMS versus containers in the sense it.",
+    "startTime": "06:05",
+    "endTime": "06:20",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And sometimes you got the impression that it might go down that route.",
+    "startTime": "06:20",
+    "endTime": "06:23",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I think it became a sort of, this is the way we talk about Docker thing, not a really useful thing, because I think that a lot of the VMS versus containers discussion was actually about efficiency of isolation.",
+    "startTime": "06:23",
+    "endTime": "06:39",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, were containers sufficiently isolated?",
+    "startTime": "06:39",
+    "endTime": "06:42",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And as a security boundary or not?",
+    "startTime": "06:43",
+    "endTime": "06:45",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But there were two things about that.",
+    "startTime": "06:46",
+    "endTime": "06:48",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "One is the answer for, you know, for multi tenancy purposes was no.",
+    "startTime": "06:48",
+    "endTime": "06:53",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "06:53",
+    "endTime": "06:54",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that was fairly clear for quite a long time that the answer for multi tenancy was no.",
+    "startTime": "06:55",
+    "endTime": "07:01",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "For single tenancy.",
+    "startTime": "07:01",
+    "endTime": "07:03",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, yes.",
+    "startTime": "07:03",
+    "endTime": "07:04",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, actually, single tendency.",
+    "startTime": "07:04",
+    "endTime": "07:06",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Isolation wasn't that important.",
+    "startTime": "07:06",
+    "endTime": "07:08",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's better than nothing.",
+    "startTime": "07:08",
+    "endTime": "07:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, it's better than nothing.",
+    "startTime": "07:09",
+    "endTime": "07:11",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Absolutely better than nothing.",
+    "startTime": "07:11",
+    "endTime": "07:12",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Better than running processes on the same VM without any isolation.",
+    "startTime": "07:12",
+    "endTime": "07:16",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But the security boundary wasn't what made Docker successful.",
+    "startTime": "07:17",
+    "endTime": "07:22",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the framing of containers versus VMS really was trying to frame it in terms of that.",
+    "startTime": "07:23",
+    "endTime": "07:28",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it was a very confused conversation over the.",
+    "startTime": "07:28",
+    "endTime": "07:32",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The eight years or so.",
+    "startTime": "07:32",
+    "endTime": "07:34",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was that often the main conversation about containers was containers versus vms.",
+    "startTime": "07:34",
+    "endTime": "07:38",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, it wasn't very helpful to anyone trying to, like trying to adopt, because it didn't tell you what the benefits of using containers were, which wouldn't, and what the reasons that containers around were.",
+    "startTime": "07:38",
+    "endTime": "07:52",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They weren't there to repair.",
+    "startTime": "07:52",
+    "endTime": "07:54",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Almost everyone who uses containers in a vm.",
+    "startTime": "07:55",
+    "endTime": "07:59",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like.",
+    "startTime": "07:59",
+    "endTime": "07:59",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "07:59",
+    "endTime": "07:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like many things in the.",
+    "startTime": "08:00",
+    "endTime": "08:02",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In, you know, in our ecosystem, they were largely additive, not replacing.",
+    "startTime": "08:02",
+    "endTime": "08:07",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so there wasn't really, for most people, averse at all.",
+    "startTime": "08:07",
+    "endTime": "08:12",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They were going to use both.",
+    "startTime": "08:12",
+    "endTime": "08:13",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it.",
+    "startTime": "08:15",
+    "endTime": "08:16",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But the implicit story was about security isolation.",
+    "startTime": "08:16",
+    "endTime": "08:19",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And was the security isolation good enough?",
+    "startTime": "08:19",
+    "endTime": "08:22",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But that, like, literally for most people, that really wasn't the issue.",
+    "startTime": "08:22",
+    "endTime": "08:26",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It wasn't why they were using containers.",
+    "startTime": "08:26",
+    "endTime": "08:27",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It wasn't important.",
+    "startTime": "08:27",
+    "endTime": "08:28",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, I think the.",
+    "startTime": "08:30",
+    "endTime": "08:31",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, there were, you know, there were conversations about security and security.",
+    "startTime": "08:32",
+    "endTime": "08:37",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm not saying security is not important, but it wasn't the principal part of the threat model.",
+    "startTime": "08:37",
+    "endTime": "08:43",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it wasn't, you know, the adoption of containers was entirely tied to, you know, organizational changes, the rise of microservices, the explosion in the number of developers, repeatability, you know, understandability of your environment, you know, configuration as code, and all those things that were happening at the same time.",
+    "startTime": "08:43",
+    "endTime": "09:10",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that was the important thing.",
+    "startTime": "09:10",
+    "endTime": "09:12",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And none of that was captured in the containers versus vms.",
+    "startTime": "09:12",
+    "endTime": "09:16",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think there's a sort of.",
+    "startTime": "09:16",
+    "endTime": "09:18",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think there was a sort of alternate universe in which, you know, vms could have tried to be more competitive with containers and tried to adopt some of those processes.",
+    "startTime": "09:18",
+    "endTime": "09:31",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you saw, I mean, and I kind of.",
+    "startTime": "09:32",
+    "endTime": "09:34",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I was.",
+    "startTime": "09:34",
+    "endTime": "09:35",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I was actually kind of interested in that.",
+    "startTime": "09:35",
+    "endTime": "09:37",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, over the years, we saw the little bits of that.",
+    "startTime": "09:37",
+    "endTime": "09:39",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, we had.",
+    "startTime": "09:41",
+    "endTime": "09:42",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "God, well, I've even forgotten where it's got the hashicorp tool for Packer.",
+    "startTime": "09:45",
+    "endTime": "09:49",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was probably the earliest thing for creating VM environments.",
+    "startTime": "09:50",
+    "endTime": "09:53",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Repeatably.",
+    "startTime": "09:53",
+    "endTime": "09:54",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There were other tools since then, but that was very early on, like, okay, we want to do repeatability with vms.",
+    "startTime": "09:56",
+    "endTime": "10:04",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How do we do it?",
+    "startTime": "10:04",
+    "endTime": "10:05",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I worked on Linux kit, which was shipped into Docker desktop, but that was also a way of repeatedly creating vms for running containers.",
+    "startTime": "10:07",
+    "endTime": "10:16",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But.",
+    "startTime": "10:16",
+    "endTime": "10:16",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then there was, you know, far cracker became like suddenly, oh, okay, lightweight.",
+    "startTime": "10:18",
+    "endTime": "10:24",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can run really lightweight vms.",
+    "startTime": "10:24",
+    "endTime": "10:27",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, again, there'd be more work.",
+    "startTime": "10:27",
+    "endTime": "10:28",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Before that, there was the whole CAta containers piece, like vms and kubernetes and things like that.",
+    "startTime": "10:28",
+    "endTime": "10:34",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there was actually this whole kind of timeline where a whole bunch of people were trying to make vms more like containers.",
+    "startTime": "10:34",
+    "endTime": "10:39",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And arguably, you know, when you look at the services and the cloud providers run fargate and things, they are vms as containers, but they have a container API, not a VM API.",
+    "startTime": "10:39",
+    "endTime": "10:54",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they're actually, they just went around the route of, well, containers are what people want, but they want the VM isolation.",
+    "startTime": "10:54",
+    "endTime": "11:05",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We'll make this hybrid, but it looks like from anyone's point of view, it is a container.",
+    "startTime": "11:05",
+    "endTime": "11:09",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then, like, it has all the important properties of container.",
+    "startTime": "11:10",
+    "endTime": "11:12",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's compatible with the container ecosystem, not the VM ecosystem.",
+    "startTime": "11:13",
+    "endTime": "11:16",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I mean, to me, I think the reason why Docker won in a way over that was around more packaging for me was more like, you can pull a pre configured image.",
+    "startTime": "11:17",
+    "endTime": "11:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It became more like an application packaging more than.",
+    "startTime": "11:29",
+    "endTime": "11:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, no, absolutely.",
+    "startTime": "11:32",
+    "endTime": "11:33",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that's the thing.",
+    "startTime": "11:33",
+    "endTime": "11:34",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's what I mean, like that there is maybe a.",
+    "startTime": "11:34",
+    "endTime": "11:36",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's maybe a path where vms went down that packaging route.",
+    "startTime": "11:37",
+    "endTime": "11:39",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "11:39",
+    "endTime": "11:40",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Nami kind of tried to do that.",
+    "startTime": "11:40",
+    "endTime": "11:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "11:42",
+    "endTime": "11:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And they had, I think if, you know, I think, as I said, like, there's a few of these routes towards that, but they didn't really.",
+    "startTime": "11:42",
+    "endTime": "11:50",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It never took off.",
+    "startTime": "11:50",
+    "endTime": "11:51",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And containers did, you know, very much to do a kind of reduction in complexity that made those things easier to understand because Vmsheen, you know, were just.",
+    "startTime": "11:51",
+    "endTime": "12:06",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Big, so much more surface area.",
+    "startTime": "12:06",
+    "endTime": "12:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "12:07",
+    "endTime": "12:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "12:07",
+    "endTime": "12:08",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And had, yeah.",
+    "startTime": "12:08",
+    "endTime": "12:09",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you could take out a lot of the stuff just, and just simplify it down to the application piece, not the whole system piece.",
+    "startTime": "12:09",
+    "endTime": "12:18",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, I mean, again, there's kind of, we've had discussions about minimal containers and.",
+    "startTime": "12:18",
+    "endTime": "12:24",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "12:24",
+    "endTime": "12:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But like, fundamentally, yeah, the idea was just, yeah, take the applications because that's simpler and that's also separation of concerns, whereas the VM, if you ship a whole VM image, it's not got separation of concern as well.",
+    "startTime": "12:28",
+    "endTime": "12:41",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "12:41",
+    "endTime": "12:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "12:42",
+    "endTime": "12:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Interesting.",
+    "startTime": "12:43",
+    "endTime": "12:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So let's take a step back.",
+    "startTime": "12:44",
+    "endTime": "12:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So back in 2019, some big changes had happened at Docker.",
+    "startTime": "12:46",
+    "endTime": "12:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "12:51",
+    "endTime": "12:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So the company was spun out into two.",
+    "startTime": "12:51",
+    "endTime": "12:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "One pot was sold and that was capped.",
+    "startTime": "12:54",
+    "endTime": "12:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Do you want to shed some light?",
+    "startTime": "12:57",
+    "endTime": "12:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because I think that's a bit of confusing story for people at large, what actually happened.",
+    "startTime": "12:58",
+    "endTime": "13:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Do you want to shed some light on what actually around that?",
+    "startTime": "13:01",
+    "endTime": "13:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "13:05",
+    "endTime": "13:05",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, I mean, it's a complicated story in a way.",
+    "startTime": "13:05",
+    "endTime": "13:10",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, it goes back to, you know, goes back to a number of things, I think, first of all, you know, Docker Washington, explosively successful very quickly, and that in a way that very few open source projects or products ever are.",
+    "startTime": "13:10",
+    "endTime": "13:43",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that was difficult in many ways.",
+    "startTime": "13:43",
+    "endTime": "13:46",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was such a success so fast, and it created this giant ecosystem around the cloud native ecosystem around it.",
+    "startTime": "13:48",
+    "endTime": "14:02",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And there was a huge amount of interest and money and investment in that area.",
+    "startTime": "14:02",
+    "endTime": "14:08",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that it was so unprecedented that having that huge ecosystem that it was very unclear for Docker, the company what the business that Docker should be in should be.",
+    "startTime": "14:09",
+    "endTime": "14:32",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And because everything was still really early and there was such a lot going on.",
+    "startTime": "14:33",
+    "endTime": "14:41",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The whole cloud native space was created from scratch pretty much over those years.",
+    "startTime": "14:42",
+    "endTime": "14:49",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so the business that Docker chose was, you know, I think I can see the reasons at the time, but it was like, it was kind of the, it seemed like the right thing at the time.",
+    "startTime": "14:50",
+    "endTime": "15:09",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it was basically our product was Docker Enterprise, which was, you know, a production side largely on prem, you know, run, you know, runtime production side product for Ops people.",
+    "startTime": "15:09",
+    "endTime": "15:26",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Docker Swarm, right.",
+    "startTime": "15:27",
+    "endTime": "15:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It was originally based on Docker Swarm.",
+    "startTime": "15:28",
+    "endTime": "15:30",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We migrated it to support Kubernetes and swarm, you know, so it was actually, it supported both.",
+    "startTime": "15:30",
+    "endTime": "15:38",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think there was a, that was another something we can talk about, like, internally later.",
+    "startTime": "15:39",
+    "endTime": "15:48",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that.",
+    "startTime": "15:49",
+    "endTime": "15:50",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But, yeah, because it was a production orchestrator solution, but that market at the time was still quite small back in 2018 2019, because a lot of people were still trialing these things and not really running applications at scale back then.",
+    "startTime": "15:52",
+    "endTime": "16:20",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So a lot of customers, we talked to customers and they'd have a few applications that they would try on, even, as you say, or swarm, whatever, they own containers.",
+    "startTime": "16:20",
+    "endTime": "16:31",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They agreed it was a future, but they had a lot of work to do to get there.",
+    "startTime": "16:31",
+    "endTime": "16:34",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the market size, relatively small, it was extremely competitive.",
+    "startTime": "16:34",
+    "endTime": "16:38",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh, yeah.",
+    "startTime": "16:39",
+    "endTime": "16:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Back in those days, you had a lot of people playing that game.",
+    "startTime": "16:40",
+    "endTime": "16:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, you know, red hat.",
+    "startTime": "16:43",
+    "endTime": "16:45",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Red hat was obviously a big player on the.",
+    "startTime": "16:46",
+    "endTime": "16:49",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "On Prem, but they.",
+    "startTime": "16:49",
+    "endTime": "16:52",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, they bought Coreos just really.",
+    "startTime": "16:52",
+    "endTime": "16:56",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Just to shut them down and stop them competing.",
+    "startTime": "16:56",
+    "endTime": "16:58",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, that's really disappointing, right.",
+    "startTime": "16:58",
+    "endTime": "16:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because I was.",
+    "startTime": "16:59",
+    "endTime": "17:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I was really bullish at Core Os.",
+    "startTime": "17:00",
+    "endTime": "17:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I really liked Coreos back in those days, but then they just went to die at red hat.",
+    "startTime": "17:01",
+    "endTime": "17:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But, yeah, that's a different story.",
+    "startTime": "17:06",
+    "endTime": "17:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But there was a.",
+    "startTime": "17:07",
+    "endTime": "17:08",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There was.",
+    "startTime": "17:08",
+    "endTime": "17:08",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, but that's the thing.",
+    "startTime": "17:09",
+    "endTime": "17:10",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, the market was too small to support the number of people there.",
+    "startTime": "17:10",
+    "endTime": "17:13",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I think there was another.",
+    "startTime": "17:13",
+    "endTime": "17:14",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There was another thing that I think, you know, and I didn't really, you know, so that was the kind of obvious competitive thing at the time.",
+    "startTime": "17:14",
+    "endTime": "17:20",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There was too many people in a too small a market.",
+    "startTime": "17:20",
+    "endTime": "17:23",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But the other thing I didn't really appreciate until a little later, I think, was that the early adopters who had made Docker a success and JSON Docker were not the people were selling to.",
+    "startTime": "17:23",
+    "endTime": "17:43",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They were not running on Prem.",
+    "startTime": "17:43",
+    "endTime": "17:46",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They were the people who'd gone into the cloud early as well, because containers in the cloud were part of the same thing, the whole cloud native thing.",
+    "startTime": "17:47",
+    "endTime": "17:56",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "All our early adopters were early cloud adopters.",
+    "startTime": "17:57",
+    "endTime": "18:00",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so the people were selling to who wanted on prem often actually weren't even using Docker at the time.",
+    "startTime": "18:01",
+    "endTime": "18:07",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We were trying to sell it.",
+    "startTime": "18:07",
+    "endTime": "18:07",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I remember having a meeting with one bank, and there was a lot of these meetings back then, and they'd taken a year to sign an evaluation agreement.",
+    "startTime": "18:07",
+    "endTime": "18:23",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They were going to try it out.",
+    "startTime": "18:24",
+    "endTime": "18:25",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This was a very slow sales cycle.",
+    "startTime": "18:25",
+    "endTime": "18:27",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "A lot of the time they were also coming and saying, we've heard about this Docker thing, it's amazing.",
+    "startTime": "18:27",
+    "endTime": "18:32",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this was great.",
+    "startTime": "18:32",
+    "endTime": "18:33",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We were a small startup that could sell to have these sales conversations with big companies, but they didn't use Docker, but they believed it was a magic thing that they could sprinkle on their terrible systems to make things better, but they weren't using it, whereas there were all these people who were using Docker.",
+    "startTime": "18:33",
+    "endTime": "18:57",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And were being very successful with Docker, but weren't.",
+    "startTime": "18:57",
+    "endTime": "19:00",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We weren't actually.",
+    "startTime": "19:00",
+    "endTime": "19:01",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We didn't have a product to sell to them.",
+    "startTime": "19:01",
+    "endTime": "19:02",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "19:03",
+    "endTime": "19:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But, yeah, the thing with, the thing does this was like, Docker was used by everybody, but nobody paying Docker.",
+    "startTime": "19:04",
+    "endTime": "19:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "19:10",
+    "endTime": "19:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That was like, very successful in that sense, but not.",
+    "startTime": "19:11",
+    "endTime": "19:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, like you're saying, like, not the people actually pay for it.",
+    "startTime": "19:14",
+    "endTime": "19:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "19:17",
+    "endTime": "19:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I think so, you know, when.",
+    "startTime": "19:17",
+    "endTime": "19:19",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we sold the.",
+    "startTime": "19:19",
+    "endTime": "19:20",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we sold that Docker enterprise business to Marantis because, and I think, you know, Marantis was originally big on OpenStack.",
+    "startTime": "19:21",
+    "endTime": "19:31",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They had a big Openstack customer base, but they could see the writing on the wall with kubernetes.",
+    "startTime": "19:31",
+    "endTime": "19:36",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They'd been trying to build their own kubernetes solution, I think, gradually, but acquiring ours accelerated them.",
+    "startTime": "19:36",
+    "endTime": "19:46",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think they, you know, they did quite well out of their business in the air.",
+    "startTime": "19:46",
+    "endTime": "19:52",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It took them a while, but that's still.",
+    "startTime": "19:52",
+    "endTime": "19:57",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They grew the business.",
+    "startTime": "20:00",
+    "endTime": "20:01",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It took time and patience, but they had the customer base, particularly telcos was their core market, where they knew the customers well.",
+    "startTime": "20:01",
+    "endTime": "20:17",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They already were in with them on OpenStack, and they could introduce kubernetes on top of OpenStack to them.",
+    "startTime": "20:17",
+    "endTime": "20:24",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so it kind of made sense from that point of view.",
+    "startTime": "20:24",
+    "endTime": "20:28",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we, you know, we kind of, were kind of left with this, with the other bits of the business in a way that, but with a strong desire to focus on those original customers who had made Docker successful.",
+    "startTime": "20:28",
+    "endTime": "20:49",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So Docker Hub stayed inside of this new entity, right?",
+    "startTime": "20:51",
+    "endTime": "20:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, so we had basically had Docker hub, Docker desktop, the open source Docker engine composer.",
+    "startTime": "20:55",
+    "endTime": "21:07",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that was kind of, you know, that's basically what we kind of started with.",
+    "startTime": "21:08",
+    "endTime": "21:14",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so, but we, yeah, so we had a clear desire to go back to the original customers who'd made Docker successful and who were using Docker in the cloud and also to go back, you know, to work with developers rather than just the ops side of things.",
+    "startTime": "21:14",
+    "endTime": "21:36",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because, again, the ops side of things was by, you know, by then being dominated by the cloud providers.",
+    "startTime": "21:36",
+    "endTime": "21:44",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We didn't want to do the on prem thing because we recognized that the cloud was, you know, very tied to the success of containerization and those things.",
+    "startTime": "21:44",
+    "endTime": "21:55",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we, so that's why we refocused on the developer market and on the, on people using, primarily using the cloud.",
+    "startTime": "21:55",
+    "endTime": "22:06",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Not all the customers using the cloud, but most of them.",
+    "startTime": "22:06",
+    "endTime": "22:09",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "When you talk to them, a lot of people have a very strong tie between containerization and the cloud.",
+    "startTime": "22:09",
+    "endTime": "22:15",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "These journeys go together for them sometimes they're incentivizing people.",
+    "startTime": "22:16",
+    "endTime": "22:24",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You have to move to the cloud, but you also have to use Docker containerized to do that.",
+    "startTime": "22:26",
+    "endTime": "22:30",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And because we don't want to just lift and shift to the cloud, because that's not going to give us the value.",
+    "startTime": "22:30",
+    "endTime": "22:35",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We want to do the whole cloud native route.",
+    "startTime": "22:35",
+    "endTime": "22:38",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so we very much didn't want to be in this kind of world where we're tied to this kind of on prem only and just separated from the cloud.",
+    "startTime": "22:38",
+    "endTime": "22:53",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that, you know, when I look like, again, when it's coming, kind of coming back to the conversation about containers versus vms, again, like, that wasn't the question.",
+    "startTime": "22:54",
+    "endTime": "23:03",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The things that all grew up together were the cloud, the organizational changes, the kind of, you know, the stuff that the team topologies work and the kind of like, how should we work together?",
+    "startTime": "23:06",
+    "endTime": "23:19",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How should we, you know, how should we build applications now we have hundreds of developers, nothing.",
+    "startTime": "23:20",
+    "endTime": "23:25",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Three.",
+    "startTime": "23:25",
+    "endTime": "23:25",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How do we have understandable things that people can work with that are repeatable and they can understand, you know, they can under, you know, we reduce the kind of complexity burden that people have to understand the whole kind of piece around.",
+    "startTime": "23:28",
+    "endTime": "23:44",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, I kind of, looking back, I kind of think that, you know, when you, when we, when you introduce something radical, like darker, you've got to, you have a sort of change budget where you can change some things about how people work, but not too much containers, unlike, say, serverless, you didn't have to rewrite your applications.",
+    "startTime": "23:44",
+    "endTime": "24:08",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You could just take your applications exactly as they were.",
+    "startTime": "24:08",
+    "endTime": "24:12",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But we insisted on two things roughly, neither of which were really forced by the technology they would, but they kind of, we managed to bring people along, I think one of which, as you mentioned before, is one thing perk and one process per container.",
+    "startTime": "24:12",
+    "endTime": "24:30",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "24:30",
+    "endTime": "24:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Again, people, some people know that you can run a process supervisor and run multiple things in a container, but when.",
+    "startTime": "24:31",
+    "endTime": "24:39",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You introduce Ssh into a container, that's where, you know, you can't miss the boat.",
+    "startTime": "24:39",
+    "endTime": "24:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, yeah, totally.",
+    "startTime": "24:42",
+    "endTime": "24:43",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, but, you know, it's possible, but I.",
+    "startTime": "24:44",
+    "endTime": "24:47",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That separation really helps modulize things, and it also fits the microservices thing.",
+    "startTime": "24:47",
+    "endTime": "24:54",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the other one was, you have to redeploy a container, you can't update it in place.",
+    "startTime": "24:54",
+    "endTime": "24:59",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That was really the radical one because that suddenly allowed you to understand that the thing that you built was exactly the same thing in production.",
+    "startTime": "25:00",
+    "endTime": "25:08",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Being able to track that content hash all the way through the life cycle and be able to know, like, you know, Thursday last week, it was this version that was in production, and it had this issue, and we rolled out this version to fix that issue, like, and being able to see that rather than the kind of the old, you know, before Dogra, I still, you know, I remember the FTP into production.",
+    "startTime": "25:10",
+    "endTime": "25:35",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "25:35",
+    "endTime": "25:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Change your, change your PHP code.",
+    "startTime": "25:36",
+    "endTime": "25:39",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "25:39",
+    "endTime": "25:39",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But this goes back to the whole like, pet versus cattle debate, right, with the febrile vms that kind of Amazon kind of pioneered, right, with easy to.",
+    "startTime": "25:40",
+    "endTime": "25:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Netflix pioneered.",
+    "startTime": "25:47",
+    "endTime": "25:49",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "All right, fair enough.",
+    "startTime": "25:49",
+    "endTime": "25:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay.",
+    "startTime": "25:50",
+    "endTime": "25:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, actually, although the pets versus cattle was actually a CERN presentation.",
+    "startTime": "25:50",
+    "endTime": "25:55",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Was it?",
+    "startTime": "25:55",
+    "endTime": "25:56",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes, it's actually.",
+    "startTime": "25:56",
+    "endTime": "25:57",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, it was actually CERN.",
+    "startTime": "25:57",
+    "endTime": "25:58",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So CERN's a.",
+    "startTime": "25:58",
+    "endTime": "26:00",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "CERN has actually been on the housing edge of a lot of this stuff too, because they're a really interesting organization.",
+    "startTime": "26:00",
+    "endTime": "26:05",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We went to CERN for a CNCF meeting earlier this year, and it was some time and it was there.",
+    "startTime": "26:06",
+    "endTime": "26:14",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They're really rolling out kubernetes at scale now.",
+    "startTime": "26:15",
+    "endTime": "26:18",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's a technologically, it's a fascinating organization and they've really met a lot of issues that people have in advance.",
+    "startTime": "26:18",
+    "endTime": "26:31",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I have been quite pioneering in all of this work.",
+    "startTime": "26:31",
+    "endTime": "26:34",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But they're also so weirdly different from other organizations in the kind of things they do that they also, the kind of things they do also seem very different.",
+    "startTime": "26:34",
+    "endTime": "26:42",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's a really fascinating place to visit and understand what I can imagine.",
+    "startTime": "26:42",
+    "endTime": "26:49",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But, yeah, like that.",
+    "startTime": "26:50",
+    "endTime": "26:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The whole concept of ephemeral vms, I remember back in mid two thousands, early 2010, whatever, when this console, ephemeral vms became normalized, I guess it was still, if you came from like the sysadmin world, it was still a mind boggling concept that these are throwaway vms and the whole IIC, it really took a while to get behind it mentally, I think.",
+    "startTime": "26:50",
+    "endTime": "27:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, because I worked for cloud vendor at the time and it was just hard to just get your head around.",
+    "startTime": "27:18",
+    "endTime": "27:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It was, it was fascinating because Amazon, especially in the early days, really pushed the idea, like the cloud was cloud vms were different because they are potentially ephemeral.",
+    "startTime": "27:26",
+    "endTime": "27:40",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They might go away outside your control.",
+    "startTime": "27:40",
+    "endTime": "27:43",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it was interesting when Google Cloud launched, they spent a lot of time actually making that never happen.",
+    "startTime": "27:44",
+    "endTime": "27:50",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they had vm migration behind the scenes so that your vmsheen weren't like that.",
+    "startTime": "27:50",
+    "endTime": "27:57",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then Azure did a lot more lift and shift than the other clouds as in the early days.",
+    "startTime": "27:57",
+    "endTime": "28:07",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I mean, I remember they would come to our customers and say, would you like to sell your data center that you have all your machines in to us to turn into an azure data center.",
+    "startTime": "28:07",
+    "endTime": "28:18",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We'll produce exactly the same thing for you.",
+    "startTime": "28:19",
+    "endTime": "28:21",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Running an azure, you'll never notice the difference, but it'll become an Azure data center.",
+    "startTime": "28:21",
+    "endTime": "28:24",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That was how they, that was how they grew at the early point, which is really fascinating to the customers like got these offers and it's like, it makes sense, right.",
+    "startTime": "28:24",
+    "endTime": "28:33",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because Windows never ephemeral in that sense, right?",
+    "startTime": "28:33",
+    "endTime": "28:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, but I think that, but Amazon kind of just stopped pushing that message later because the more traditional clients came along and it didn't resonate so well with them that things could be thrown away.",
+    "startTime": "28:36",
+    "endTime": "28:53",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I think those of us like me and you who grew up in the era of pets versus cattle and female vms still treat them like that and think that's a good thing and also scale them and kubernetes also forces you to treat them like that and like, you know, I think that we internalized that stuff was kind of, yeah, it was a big shift but we did internalize it.",
+    "startTime": "28:53",
+    "endTime": "29:15",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "29:15",
+    "endTime": "29:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "In that period, containers obviously were even more so.",
+    "startTime": "29:15",
+    "endTime": "29:20",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I was about to say that's, and it kind of created natural segue into containers which is just that in the next instance, I guess, or lower down.",
+    "startTime": "29:20",
+    "endTime": "29:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "29:30",
+    "endTime": "29:30",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So yeah.",
+    "startTime": "29:30",
+    "endTime": "29:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like I, I can't see a way going back to the whole nurturing and patching servers.",
+    "startTime": "29:31",
+    "endTime": "29:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That sounds like a dreadful life.",
+    "startTime": "29:36",
+    "endTime": "29:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well I'm not getting it, but a lot of it was just, it was forced by the scale of the things were trying to do, you know.",
+    "startTime": "29:39",
+    "endTime": "29:47",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "29:47",
+    "endTime": "29:47",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We just got more applications and that's never going away and you just have to automate when you get bigger.",
+    "startTime": "29:47",
+    "endTime": "29:55",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh yeah.",
+    "startTime": "29:55",
+    "endTime": "29:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Imagine running a service where you can't just say, oh, give me five replica sets of this and then where does it run?",
+    "startTime": "29:56",
+    "endTime": "30:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You don't care because it is by definition.",
+    "startTime": "30:01",
+    "endTime": "30:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But it's also philosophical difference between, I guess, how the Linux worldviews an application which the way how the Windows world I guess views an application.",
+    "startTime": "30:05",
+    "endTime": "30:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "30:18",
+    "endTime": "30:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think that is also why our cohort easily, I don't know if it's true.",
+    "startTime": "30:19",
+    "endTime": "30:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I don't, I wouldn't, well I think, I don't know.",
+    "startTime": "30:25",
+    "endTime": "30:29",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that Linux wasn't always like that.",
+    "startTime": "30:29",
+    "endTime": "30:33",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think we took a bunch, I think we took a bunch of ideas and experience.",
+    "startTime": "30:33",
+    "endTime": "30:39",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that, you know, I think that, you know, there was a, there was that period around just trying to think exactly when it, there was a period, I think it started in the late nineties where the cutting edge of hard applications and things at scale, moved to Linux.",
+    "startTime": "30:40",
+    "endTime": "31:02",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I remember I worked with for a while a long time ago with people at MySpace.",
+    "startTime": "31:03",
+    "endTime": "31:09",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "MySpace was a windows shop originally.",
+    "startTime": "31:09",
+    "endTime": "31:12",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Were they?",
+    "startTime": "31:12",
+    "endTime": "31:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I didn't know that.",
+    "startTime": "31:12",
+    "endTime": "31:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, they were kind of weird.",
+    "startTime": "31:14",
+    "endTime": "31:15",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They were based in LA, they were windows shop.",
+    "startTime": "31:15",
+    "endTime": "31:18",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I met the Linux team at MySpace who were subversively taking over a bunch of the staff and kind of rolling out more of the Linux way of thinking and that kind of disposability and like, and the performance engineering stuff was hitting Linux more and the distributed system stuff and the, you know, the kind of things like, I mean there were a bunch of language communities.",
+    "startTime": "31:18",
+    "endTime": "31:46",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Erlang was very early in their kind of disposability and process ephemerality, but in the language, not in the runtime, because.",
+    "startTime": "31:46",
+    "endTime": "31:57",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They had their VM, right, they're allowing VM to run everything so you can't just.",
+    "startTime": "31:57",
+    "endTime": "32:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But it had the whole kind of, you know, it was built for 100% uptime telco platforms where you had to.",
+    "startTime": "32:00",
+    "endTime": "32:10",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it was crash.",
+    "startTime": "32:10",
+    "endTime": "32:12",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "All the things about crash, you know, expect your processes to crash and another process is there to restart it.",
+    "startTime": "32:12",
+    "endTime": "32:20",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "All that stuff was, you know, it's been there for a long time.",
+    "startTime": "32:20",
+    "endTime": "32:24",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think it actually like, I think Erlang did.",
+    "startTime": "32:25",
+    "endTime": "32:29",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean I knew a bunch of people who were, became container people who had been Erlang people and programmed Erlang.",
+    "startTime": "32:29",
+    "endTime": "32:37",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think some of those, you know, some of those ideas definitely filtered in from there even to people who didn't, who weren't really far fetched.",
+    "startTime": "32:37",
+    "endTime": "32:49",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not that far fetched if you view the container as that boundary instead of the relying VM.",
+    "startTime": "32:49",
+    "endTime": "32:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I guess there is some overlap in terms of philosophy, I guess, you know, strange.",
+    "startTime": "32:53",
+    "endTime": "33:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I think, yeah, I think that, yeah, it's different, but yeah, definitely some philosophical overlap about, you know, what you, what's, what has to be reliable, what has, what's ephemeral, what's disposable or, you know, how you manage.",
+    "startTime": "33:00",
+    "endTime": "33:22",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean I think that, you know, being careful about how you manage data to make sure that your data has persisted when the processes crash and all those types of things and being able to just restart things and expecting to get better uptown out of unreliable system, fundamentally unreliable system.",
+    "startTime": "33:22",
+    "endTime": "33:45",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You don't expect the system to be reliable bit versus the, you know, probably the, whatever it was the seventies, eighties kind of tandem hp, tandem build, reliable hardware that never fails kind of solutions that were.",
+    "startTime": "33:45",
+    "endTime": "34:03",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, yeah.",
+    "startTime": "34:03",
+    "endTime": "34:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "These boxes are still running though.",
+    "startTime": "34:04",
+    "endTime": "34:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The old mainframes still running reliably to this day.",
+    "startTime": "34:08",
+    "endTime": "34:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "34:12",
+    "endTime": "34:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, totally.",
+    "startTime": "34:12",
+    "endTime": "34:13",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Totally.",
+    "startTime": "34:13",
+    "endTime": "34:13",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "34:13",
+    "endTime": "34:14",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Cool.",
+    "startTime": "34:15",
+    "endTime": "34:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Before we switch into more nerdery around Docker, the one thing I feel like I need to cover is, I guess the debacle around the price changes around Docker desktop because that was obviously something that blew up massively in the tech community.",
+    "startTime": "34:16",
+    "endTime": "34:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Do you want to give the vantage point from Docker?",
+    "startTime": "34:33",
+    "endTime": "34:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because that was obviously a big debate around that.",
+    "startTime": "34:35",
+    "endTime": "34:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, I think that, you know, I think the, I mean, I think that overall, I think there was a smaller number of people making noise as often the case, rather than a good reflection of the world.",
+    "startTime": "34:40",
+    "endTime": "34:59",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, I think that, you know, you know, somehow at the end, you know, companies have to charge for something to survive 100%.",
+    "startTime": "34:59",
+    "endTime": "35:19",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, absolutely.",
+    "startTime": "35:19",
+    "endTime": "35:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Of course.",
+    "startTime": "35:20",
+    "endTime": "35:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Docker desktop, you know, I think like people are, people don't like, you know, it's definitely the case that going from something that you give away for free to something that's charged for.",
+    "startTime": "35:21",
+    "endTime": "35:34",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "People do get a bit, do get upset.",
+    "startTime": "35:34",
+    "endTime": "35:38",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Although we did, you know, have a lot of exclusions as to who didn't have to pay for that.",
+    "startTime": "35:38",
+    "endTime": "35:44",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "35:44",
+    "endTime": "35:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Maybe share some light on like what the parameters were for the price increases.",
+    "startTime": "35:44",
+    "endTime": "35:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So for those not who do not remember the debate or the.",
+    "startTime": "35:49",
+    "endTime": "35:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, yeah.",
+    "startTime": "35:52",
+    "endTime": "35:53",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, you know, we, you know, we excluded a lot of people, anyone working in a small company basically with less than 250 employees or 10 million revenue, which was to basically exclude startups.",
+    "startTime": "35:53",
+    "endTime": "36:18",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And a lot of the people who were part of our community, although to be honest, a lot of them do pay anyway because they get value out of the bits that you pay.",
+    "startTime": "36:18",
+    "endTime": "36:30",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I think that our primary aim was to charge larger, which was really charge the larger companies that were getting a lot of value out of.",
+    "startTime": "36:30",
+    "endTime": "36:43",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Docker desktop had fleets often thousands of people using it.",
+    "startTime": "36:43",
+    "endTime": "36:48",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was a core part of their development environment.",
+    "startTime": "36:48",
+    "endTime": "36:51",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you know, to be honest, like we didn't charge, you know, the price was quite cheap.",
+    "startTime": "36:52",
+    "endTime": "36:59",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "36:59",
+    "endTime": "37:00",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so the kind of noise was mostly amongst people who to a large extent weren't trying to judge anywhere.",
+    "startTime": "37:00",
+    "endTime": "37:08",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that, I think we, I think in general a lot of people understood the kind of, the kind of charging people who had the ability and willingness to pay made sense.",
+    "startTime": "37:08",
+    "endTime": "37:25",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that.",
+    "startTime": "37:25",
+    "endTime": "37:26",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But yeah, overall, you know, as a strategy I would, you know, if people are asking about it, I generally say do try and avoid charging for things that were once free.",
+    "startTime": "37:27",
+    "endTime": "37:41",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I definitely avoid charging things and things that were once open source.",
+    "startTime": "37:42",
+    "endTime": "37:48",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm.",
+    "startTime": "37:48",
+    "endTime": "37:48",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Docker desktop was never open source.",
+    "startTime": "37:48",
+    "endTime": "37:49",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was always a proprietary product.",
+    "startTime": "37:50",
+    "endTime": "37:54",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think some people thought it was open source, and we've done that because some people then never really understood that.",
+    "startTime": "37:56",
+    "endTime": "38:03",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it was never open source.",
+    "startTime": "38:03",
+    "endTime": "38:05",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We never closed sourced anything.",
+    "startTime": "38:05",
+    "endTime": "38:06",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We've never.",
+    "startTime": "38:06",
+    "endTime": "38:07",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't think those routes.",
+    "startTime": "38:08",
+    "endTime": "38:10",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think those routes upset people a lot more than, you know.",
+    "startTime": "38:10",
+    "endTime": "38:14",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think it was probably more philosophical debate than an actual, like, I'm impacted by this.",
+    "startTime": "38:14",
+    "endTime": "38:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "38:18",
+    "endTime": "38:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "38:19",
+    "endTime": "38:19",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "38:19",
+    "endTime": "38:20",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that.",
+    "startTime": "38:20",
+    "endTime": "38:21",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But overall, you know, it was.",
+    "startTime": "38:23",
+    "endTime": "38:24",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think overall, you know, it's.",
+    "startTime": "38:25",
+    "endTime": "38:30",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was the right thing to do.",
+    "startTime": "38:30",
+    "endTime": "38:32",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It had a good outcome.",
+    "startTime": "38:32",
+    "endTime": "38:33",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, the people, it's allowed us to invest, continue to invest in Docker desktop, and people are happy with it, and we're providing the things that those customers want from it.",
+    "startTime": "38:34",
+    "endTime": "38:50",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "All right, so obviously you need to pay.",
+    "startTime": "38:51",
+    "endTime": "38:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I understand that.",
+    "startTime": "38:54",
+    "endTime": "38:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that brings me to a natural segue to Docker hub, which, if my understand is correct, which is probably by far biggest expense Docker has.",
+    "startTime": "38:54",
+    "endTime": "39:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Maybe, except for payroll.",
+    "startTime": "39:04",
+    "endTime": "39:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Hosting, this is a pretty significant cost that needs to be paid for somewhere.",
+    "startTime": "39:06",
+    "endTime": "39:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Can you shed some light on the sheer volume and infrastructure cost for your hosting Docker hub, which most people use for free?",
+    "startTime": "39:12",
+    "endTime": "39:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "39:21",
+    "endTime": "39:21",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, it's not as high a cost as you kind of make it.",
+    "startTime": "39:23",
+    "endTime": "39:29",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, it's not.",
+    "startTime": "39:29",
+    "endTime": "39:34",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's well down below payroll.",
+    "startTime": "39:34",
+    "endTime": "39:37",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh, okay.",
+    "startTime": "39:37",
+    "endTime": "39:38",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Fair enough.",
+    "startTime": "39:38",
+    "endTime": "39:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "39:38",
+    "endTime": "39:38",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not, it's not.",
+    "startTime": "39:38",
+    "endTime": "39:39",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, certainly when we restructured Dhaka, it was a huge, right thing, but, you know, but now we've grown, it's not so significant.",
+    "startTime": "39:40",
+    "endTime": "39:55",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, but I think that, I mean, it's interesting because it, you know, a lot of the, it's interesting how the cost of actually running a service like that has changed over the years.",
+    "startTime": "39:55",
+    "endTime": "40:09",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we, it's now, but mostly since Amazon introduced teard storage pricing, the storage costs actually are now kind of quite manageable because a lot of it ends up in cold storage because it doesn't actually get accessed very much.",
+    "startTime": "40:09",
+    "endTime": "40:37",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But we are kind of, the cloud providers still have these egress charges that are designed to keep traffic inside their own cloud.",
+    "startTime": "40:37",
+    "endTime": "40:56",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And while the European Union has been kind of pushing them a little bit about, is this uncompetitive and so on?",
+    "startTime": "40:57",
+    "endTime": "41:07",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because we run a global service that's accessible to everywhere.",
+    "startTime": "41:10",
+    "endTime": "41:15",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, egress is.",
+    "startTime": "41:17",
+    "endTime": "41:18",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Egress is difficult when you're doing something like that at scale.",
+    "startTime": "41:19",
+    "endTime": "41:22",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "41:22",
+    "endTime": "41:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We, it's a complicated thing, and, but, you know, egress charges are, you know, they're high enough that they kind of affect how people are designing services and things in a significant way.",
+    "startTime": "41:23",
+    "endTime": "41:46",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they're clearly, I mean, there's arguments about the why of inbound versus outbound.",
+    "startTime": "41:46",
+    "endTime": "41:53",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like there are some economic reasons, like in terms of traffic is not symmetric, inbound and outbound.",
+    "startTime": "41:54",
+    "endTime": "42:05",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And like they're, you know, the way it's charged it, there's some justification, but it's, you know, there's also a reasonable argument that it is purely anti competitive, competitive thing to stop people running cross data centers.",
+    "startTime": "42:05",
+    "endTime": "42:19",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They are roughly the same.",
+    "startTime": "42:19",
+    "endTime": "42:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You have symmetric lines usually in and.",
+    "startTime": "42:20",
+    "endTime": "42:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Out of symmetric lines, but doesn't mean that the binding point on your 95th percentile, it could be one direction, not the other.",
+    "startTime": "42:22",
+    "endTime": "42:32",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I mean, yeah, but yes, your lines are definitely symmetric and the charging model is very different.",
+    "startTime": "42:34",
+    "endTime": "42:42",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, it's very interesting.",
+    "startTime": "42:42",
+    "endTime": "42:46",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm curious to see what the competition authorities in various places decide about this because they clearly, it clearly makes building kind of multi cloud infrastructure extremely expensive for a lot of businesses.",
+    "startTime": "42:47",
+    "endTime": "43:05",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean it's, oh, it's a massive lock in.",
+    "startTime": "43:05",
+    "endTime": "43:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "43:07",
+    "endTime": "43:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "43:07",
+    "endTime": "43:08",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, and just for those not familiar with the kind of orchestration of Docker hub, it's essentially Docker registry, which is essentially a thin layer on top of s three.",
+    "startTime": "43:09",
+    "endTime": "43:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But it's s three compatible, I guess.",
+    "startTime": "43:21",
+    "endTime": "43:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So the vast majority of all the hub data sits at s three.",
+    "startTime": "43:23",
+    "endTime": "43:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Eventually it's tiered using istorage for less frequent.",
+    "startTime": "43:27",
+    "endTime": "43:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is that, is that a fair representation of the architecture?",
+    "startTime": "43:31",
+    "endTime": "43:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean that's a very simplified version.",
+    "startTime": "43:35",
+    "endTime": "43:37",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I mean I think that, yeah, I think that, you know, I think that, yeah, I mean it runs on kubernetes.",
+    "startTime": "43:37",
+    "endTime": "43:48",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's, there's.",
+    "startTime": "43:49",
+    "endTime": "43:53",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We do.",
+    "startTime": "43:54",
+    "endTime": "43:55",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, it is, yeah.",
+    "startTime": "43:56",
+    "endTime": "43:58",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's based on the open source distribution code that's in CF now.",
+    "startTime": "43:58",
+    "endTime": "44:02",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's, you know, we've forked it at times and gone back and merged our changes at times.",
+    "startTime": "44:02",
+    "endTime": "44:09",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's fair.",
+    "startTime": "44:10",
+    "endTime": "44:11",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, the core of it's there but we still, we have a lot of, there's a lot of other stuff around, around it.",
+    "startTime": "44:11",
+    "endTime": "44:23",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's the whole UIP.",
+    "startTime": "44:23",
+    "endTime": "44:26",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there's a whole layer with scout where we're indexing data inside the images and s bombs and things like that as well now and things like that.",
+    "startTime": "44:26",
+    "endTime": "44:37",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there's, on top of that.",
+    "startTime": "44:37",
+    "endTime": "44:39",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So yeah, it is a big Kubernetes cluster.",
+    "startTime": "44:39",
+    "endTime": "44:42",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It used to, I mean we've always, yeah, I think it, we've migrated into kubernetes probably at least five years ago now.",
+    "startTime": "44:42",
+    "endTime": "44:55",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We used to host a lot of stuff on swarm ourselves, but we moved over to Kubernetes but yes, it's an interesting thing because it's just because of the whole scale of it and that adds a lot of complexity.",
+    "startTime": "44:57",
+    "endTime": "45:21",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I remember years ago being in a meeting, this was back in 2017 or something.",
+    "startTime": "45:22",
+    "endTime": "45:26",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I remember sitting in a meeting because Hub had gone down and noticing that the meeting I was in was number one on hacker news.",
+    "startTime": "45:27",
+    "endTime": "45:35",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Soccer hub is down and it's like, look, our meetings on top of hacker news.",
+    "startTime": "45:35",
+    "endTime": "45:40",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We better fix this.",
+    "startTime": "45:40",
+    "endTime": "45:41",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But reliability is, you know, reliability is for.",
+    "startTime": "45:44",
+    "endTime": "45:47",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "45:48",
+    "endTime": "45:49",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And can you share some like sheer volume of pools per day on hub right now?",
+    "startTime": "45:49",
+    "endTime": "45:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Do you have any daytime?",
+    "startTime": "45:56",
+    "endTime": "45:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I don't have it at hand.",
+    "startTime": "45:57",
+    "endTime": "45:58",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's, I mean it's, you know, it's, you know, traffic is every, usually at Docker Connor's, I think we release them figures on how many pulls there's been.",
+    "startTime": "45:58",
+    "endTime": "46:12",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, and it's, it continues to, you know, continues to grow.",
+    "startTime": "46:14",
+    "endTime": "46:19",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, I think that.",
+    "startTime": "46:21",
+    "endTime": "46:22",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that, you know, I mean, it's another part of the, you know, it's an important part of why darker was successful Washington, you know, and, you know, as we're, you know, talking about the things that were different about doggo from what came before and since, it's like having that catalog of publicly maintained high content was a key part of what, you know, the fact that you can have that magical docker experience of like, I can just docker run Ubuntu and I get Ubuntu.",
+    "startTime": "46:26",
+    "endTime": "46:54",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, and this is kind of hundred kind of, you know, magical in.",
+    "startTime": "46:54",
+    "endTime": "47:00",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's part of that experience, but it's also part of the, you know, the whole productivity of all the components I need to build applications there and available and I can trust and rely on them.",
+    "startTime": "47:00",
+    "endTime": "47:16",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And Docker Hub, so really keep, it's a key part of that.",
+    "startTime": "47:16",
+    "endTime": "47:22",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's very different from, you know, a lot of the other registries, which are largely private registries.",
+    "startTime": "47:24",
+    "endTime": "47:29",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Tucker hub is still largely a private public registry.",
+    "startTime": "47:29",
+    "endTime": "47:32",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There are lots of customers using as private registry, but the public part is still way bigger than that.",
+    "startTime": "47:35",
+    "endTime": "47:41",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, the cloud, you look at ECR there is ECR public, but it's very small private.",
+    "startTime": "47:41",
+    "endTime": "47:47",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I mean, most cloud vendors do offer some level of caching off the public hub images as well.",
+    "startTime": "47:47",
+    "endTime": "47:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "47:53",
+    "endTime": "47:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So, yeah, I mean, that's been part of, you know, working with them to, you know, just make sure that, you know, that they are caching things effectively just because it's like, just, you know, that's, they're the source of a lot of traffic.",
+    "startTime": "47:53",
+    "endTime": "48:14",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "48:14",
+    "endTime": "48:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, that makes it work out how.",
+    "startTime": "48:15",
+    "endTime": "48:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "To make it more efficient on both sides.",
+    "startTime": "48:17",
+    "endTime": "48:20",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, that makes a lot of sense.",
+    "startTime": "48:20",
+    "endTime": "48:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you mentioned Docker Scout.",
+    "startTime": "48:21",
+    "endTime": "48:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I want to zoom into that because I don't think a lot of people are familiar with Docker Scout, but it does a lot of things.",
+    "startTime": "48:24",
+    "endTime": "48:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You mentioned s bombs.",
+    "startTime": "48:30",
+    "endTime": "48:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I had a lot of content on the podcast about s bombs already.",
+    "startTime": "48:32",
+    "endTime": "48:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And Docker Scout can generate sBoms, both Cyclone DX and SPDX, from docker image using.",
+    "startTime": "48:36",
+    "endTime": "48:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think it is a wraparound anchor.",
+    "startTime": "48:44",
+    "endTime": "48:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Sif.",
+    "startTime": "48:45",
+    "endTime": "48:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think.",
+    "startTime": "48:46",
+    "endTime": "48:46",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No, it's.",
+    "startTime": "48:47",
+    "endTime": "48:48",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, it uses a bunch of stuff and a bunch of its own code.",
+    "startTime": "48:48",
+    "endTime": "48:52",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's kind of,",
+    "startTime": "48:52",
+    "endTime": "48:53",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We do use a.",
+    "startTime": "48:54",
+    "endTime": "48:55",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We use a mix of tools internally.",
+    "startTime": "48:55",
+    "endTime": "48:57",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not just based on what thing found.",
+    "startTime": "48:57",
+    "endTime": "49:01",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We found things that.",
+    "startTime": "49:01",
+    "endTime": "49:02",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay, yeah, it's not.",
+    "startTime": "49:03",
+    "endTime": "49:04",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's,",
+    "startTime": "49:04",
+    "endTime": "49:04",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But the.",
+    "startTime": "49:07",
+    "endTime": "49:07",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But in a way that.",
+    "startTime": "49:08",
+    "endTime": "49:08",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, the.",
+    "startTime": "49:08",
+    "endTime": "49:09",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The creating s bombs bit is not like the core.",
+    "startTime": "49:09",
+    "endTime": "49:13",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The.",
+    "startTime": "49:15",
+    "endTime": "49:15",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The way we see the core value of it.",
+    "startTime": "49:15",
+    "endTime": "49:18",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The way.",
+    "startTime": "49:18",
+    "endTime": "49:18",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "49:18",
+    "endTime": "49:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like we.",
+    "startTime": "49:18",
+    "endTime": "49:19",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The.",
+    "startTime": "49:19",
+    "endTime": "49:20",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, I think that one of the things that.",
+    "startTime": "49:22",
+    "endTime": "49:24",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "One of the kind of design things about how people were managing, you know, understanding vulnerabilities was, you know, and we.",
+    "startTime": "49:27",
+    "endTime": "49:37",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, we used to do this with the services we had on Docker, things like that.",
+    "startTime": "49:37",
+    "endTime": "49:40",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was like you would.",
+    "startTime": "49:40",
+    "endTime": "49:41",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You would take an image, scan it, look at vulnerabilities, and give the user reports on that.",
+    "startTime": "49:41",
+    "endTime": "49:46",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But we really wanted to separate out the two stages of creating an SBA on what's in the image versus the bit about, is there a vulnerability?",
+    "startTime": "49:47",
+    "endTime": "49:59",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because if you separate those, that lets you actually scout is basically a real time database with live feeds from different sources.",
+    "startTime": "49:59",
+    "endTime": "50:12",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "As soon as a vulnerability happens, you can get an alert about it without having to run the image through a pipeline again, to find that.",
+    "startTime": "50:12",
+    "endTime": "50:20",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because we link the vulnerability to the SBom item that we've indexed in the database, and we say, okay, these images now, as of a minute ago, now have a vulnerability, and then we can look and see if they in production.",
+    "startTime": "50:20",
+    "endTime": "50:37",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Are they things that you're actively using?",
+    "startTime": "50:38",
+    "endTime": "50:40",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then we can help you remediate that.",
+    "startTime": "50:40",
+    "endTime": "50:42",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's like separating out what's in it and is there a problem about what's in it?",
+    "startTime": "50:42",
+    "endTime": "50:51",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Pieces.",
+    "startTime": "50:51",
+    "endTime": "50:52",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And running them separately allows this real kind of much more responsive tooling.",
+    "startTime": "50:52",
+    "endTime": "51:01",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, to talk to me, you do some interesting stuff with, I guess, at the station and embedding s bombs in kind of metadata.",
+    "startTime": "51:01",
+    "endTime": "51:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I believe that's stored in the OCI as part of the image.",
+    "startTime": "51:09",
+    "endTime": "51:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "51:12",
+    "endTime": "51:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is that correct assumption or.",
+    "startTime": "51:12",
+    "endTime": "51:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I haven't actually done a deep dive on this.",
+    "startTime": "51:14",
+    "endTime": "51:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I mean, I think that, I mean we actually, scale supports a lot of different formats as well, but yeah, we've been working on doing that because, you know, because we actually, you know, we maintain build kit, which is what the majority of people are using for doing builds.",
+    "startTime": "51:16",
+    "endTime": "51:43",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That means that we can, if we can add these s bombs at build time and then carry them, you know, all the way through, then we can, you know, then we can use that to index.",
+    "startTime": "51:43",
+    "endTime": "51:56",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So rather than, you know, if you add the s bomb at build time with buildkit, then we don't need to scan the image at all.",
+    "startTime": "51:56",
+    "endTime": "52:04",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We can just read the s bomb.",
+    "startTime": "52:04",
+    "endTime": "52:05",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we feel that having it attached to the image is helpful because it, I mean, I think that there's been discussion, you know, there's different models because, you know, six door effectively lets you attach it externally in the transparency log.",
+    "startTime": "52:07",
+    "endTime": "52:28",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But that's kind of, there's a lot of use cases where it's actually more effective, easier for people to deal with if it's on the index.",
+    "startTime": "52:28",
+    "endTime": "52:36",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like if you're in a air gapped environment where you don't want to reach out to an external thing.",
+    "startTime": "52:36",
+    "endTime": "52:41",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And to be honest, and like the transparency log is not a high performance database either.",
+    "startTime": "52:42",
+    "endTime": "52:46",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so, but we don't actually, like, we actually index that in the scout database for fast access again.",
+    "startTime": "52:47",
+    "endTime": "52:57",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that, because again we actually want to be able to alert you when there's a vulnerability change on something.",
+    "startTime": "52:57",
+    "endTime": "53:03",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we still want to maintain a copy of that in the database, but it's a copy and the source of truth is what you add to the image, what you put in the image.",
+    "startTime": "53:03",
+    "endTime": "53:13",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you can manage the s bom if you want.",
+    "startTime": "53:13",
+    "endTime": "53:19",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can use whatever tooling you want to construct the s bom that you attach to the image.",
+    "startTime": "53:19",
+    "endTime": "53:25",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you can be sure that, because I think part of the reason for doing s bombs at build time rather than by scanning is actually quite hard to retroactively work out what was used to build something after the tooling there has gone better in many cases, but it's still like, you know that at build time you've got the complete information about what went into it because it's all there to build it with.",
+    "startTime": "53:25",
+    "endTime": "53:50",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you can often you have even more information like what were the build tools, what were the internal build stages and the tools that even if they don't appear in the output they could potentially affect the output.",
+    "startTime": "53:50",
+    "endTime": "54:08",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like if you have a compiler bug, you need to know which version the compiler is even though the compiler is not necessarily linked into the final image.",
+    "startTime": "54:08",
+    "endTime": "54:14",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Although often like tools I go will put metadata about what the compiler version actually was in there.",
+    "startTime": "54:14",
+    "endTime": "54:21",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Not every language tooling will do that.",
+    "startTime": "54:22",
+    "endTime": "54:24",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And traditional C tooling doesn't put any metadata about the compiler version in there.",
+    "startTime": "54:24",
+    "endTime": "54:30",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Sboms and clay is a whole different kind of word in general.",
+    "startTime": "54:30",
+    "endTime": "54:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "54:34",
+    "endTime": "54:34",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, but I think that like, you know, so having, creating sboms at build time gives you that complete control where you can just take the image, you can take the data from the actual build tooling and the, and feed it straight into the SBom directly rather than trying to reverse engineer out of what came out of the container image.",
+    "startTime": "54:35",
+    "endTime": "54:55",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So and then if you attach it then, you know, the information is there.",
+    "startTime": "54:55",
+    "endTime": "55:02",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So then you can feed it through any tooling.",
+    "startTime": "55:02",
+    "endTime": "55:04",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And there's a broader kind of, you know, there's a broader, you know, this is broader attestation projects around, particularly around in toto which is a CNCF project which is really around, you know, it's a project around attaching build process attestations in the broadest sense, not just s bombs.",
+    "startTime": "55:04",
+    "endTime": "55:25",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How was this built?",
+    "startTime": "55:25",
+    "endTime": "55:26",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Who built it, where did they build it?",
+    "startTime": "55:27",
+    "endTime": "55:29",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so there's a lot of you can add that metadata like this was built in Docker's AWS account.",
+    "startTime": "55:30",
+    "endTime": "55:39",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, you know, we can take the assession from that, from the metadata that Amazon provides.",
+    "startTime": "55:39",
+    "endTime": "55:48",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can get it, you can get a sign, you can get assigned signature from Amazon saying that this payload was built, this boot time payload was in AWS at this point and things like that.",
+    "startTime": "55:48",
+    "endTime": "56:01",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there's a lot more data that you can really get.",
+    "startTime": "56:01",
+    "endTime": "56:04",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "A reproducible thing that gives you more information that gives you certainty about, you know, how the build process happened, where it happened, what happened and so on and that type of information, I think.",
+    "startTime": "56:04",
+    "endTime": "56:20",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And again, the GitHub assertion from GitHub actions.",
+    "startTime": "56:21",
+    "endTime": "56:25",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I was going to say, yeah.",
+    "startTime": "56:26",
+    "endTime": "56:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So all those kinds of things together give you this whole question of things that give you more certainty.",
+    "startTime": "56:27",
+    "endTime": "56:34",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that our view is generally that bundling all that together in the OCI format is useful so that it's all self contained technically from the kind of the statements are about hashes and don't have to be bundled, but the bundling convenient to keep things together.",
+    "startTime": "56:34",
+    "endTime": "56:56",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's what the sort of extensibility of the ACI format was kind of designed for.",
+    "startTime": "56:57",
+    "endTime": "57:04",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if you look at any of the official builds in Hub today, do they all have this included as metadata to all those images or is this just you can use as your toolchain?",
+    "startTime": "57:05",
+    "endTime": "57:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We're rolling it out.",
+    "startTime": "57:18",
+    "endTime": "57:20",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not, I think, on all of them yet, but it's on a lot of them now.",
+    "startTime": "57:20",
+    "endTime": "57:23",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's kind of in, you know, we're kind of going through this process and being our first customer, zero for ourselves.",
+    "startTime": "57:23",
+    "endTime": "57:33",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, I was very insistent when we're doing this that like, if it doesn't work for us, then yeah, it's not good enough for other people.",
+    "startTime": "57:33",
+    "endTime": "57:41",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, our use cases is kind of complicated, but I mean, I think that, you know, if there are, if you can't validate the attestations on Docker official images, and use them, then that's not working for people, I think because I did a talk about this many years ago in Kubecon about how, you know, with the earlier work we did like no one in practice was validating the success signatures we put on Docker official images.",
+    "startTime": "57:41",
+    "endTime": "58:10",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So because it was very hard to, and it's difficult, and you kind of see this with the adoption of HTTPs, it's hard to incrementally go from an ecosystem that doesn't have signing and security checks to one that does in a way that doesn't leave holes where, because lots of stuff is unvalidatable.",
+    "startTime": "58:10",
+    "endTime": "58:35",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so you kind of tend to be in this position where you tend to fall back to, oh, if it doesn't, you know, you can fall back to oh, we don't have to validate it because it must be part of the unvalidatable set.",
+    "startTime": "58:35",
+    "endTime": "58:47",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And trying to get to a point where you carve out things, sets of things that are known to be validatable and therefore you should validate them.",
+    "startTime": "58:47",
+    "endTime": "58:56",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, it's a kind of slow process movingly because it's a to that.",
+    "startTime": "58:56",
+    "endTime": "59:01",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so I think we're still kind of on that journey to where everything is validatable in the cloud native ecosystem.",
+    "startTime": "59:02",
+    "endTime": "59:14",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it's just, it is just a hard path going from there.",
+    "startTime": "59:14",
+    "endTime": "59:20",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's kind of weird when you look at it like there was a whole like Docker images in the earliest release all had signatures on them, but the signatures were kind of useless unless they're still there in the v one format.",
+    "startTime": "59:22",
+    "endTime": "59:37",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But they were kind of, they kind of, they were used to signatures or just hashes.",
+    "startTime": "59:37",
+    "endTime": "59:41",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They were, they were cryptographic signatures on the earliest.",
+    "startTime": "59:42",
+    "endTime": "59:45",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Weirdly, the earliest versions didn't have real content hashes, but they just have signatures.",
+    "startTime": "59:45",
+    "endTime": "59:50",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But the signatures were for keys that were just randomly generated for the user.",
+    "startTime": "59:51",
+    "endTime": "59:54",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You couldn't validate keys.",
+    "startTime": "59:54",
+    "endTime": "59:55",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So for most users.",
+    "startTime": "59:55",
+    "endTime": "01:00:00",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it was kind of, they weren't actually much use right then, but then they weren't actually content.",
+    "startTime": "01:00:00",
+    "endTime": "01:00:07",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Cryptographic hashes of content for a while.",
+    "startTime": "01:00:07",
+    "endTime": "01:00:09",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That was the first big, that was the migration to the v two format.",
+    "startTime": "01:00:09",
+    "endTime": "01:00:17",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That was real content hashes because there was a big potential security vulnerability without the content hashes of.",
+    "startTime": "01:00:17",
+    "endTime": "01:00:23",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right back in, when I joined Docker, this was just being, was in the process of being rolled out as big change in 2015.",
+    "startTime": "01:00:24",
+    "endTime": "01:00:32",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And each layer is SHA 256 sign or something like that.",
+    "startTime": "01:00:32",
+    "endTime": "01:00:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "01:00:36",
+    "endTime": "01:00:37",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:00:37",
+    "endTime": "01:00:37",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Hash 39s.",
+    "startTime": "01:00:37",
+    "endTime": "01:00:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:00:38",
+    "endTime": "01:00:39",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But they were originally, they were actually random things that looked like hashes, but they weren't in the earliest versions.",
+    "startTime": "01:00:39",
+    "endTime": "01:00:46",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You could basically poison the cache.",
+    "startTime": "01:00:47",
+    "endTime": "01:00:49",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Bye.",
+    "startTime": "01:00:49",
+    "endTime": "01:00:50",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Gracing something with the same hash as some bit of well known content.",
+    "startTime": "01:00:51",
+    "endTime": "01:00:54",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you could get someone to pull it before the well known content, it would then replace your layer, which was like.",
+    "startTime": "01:00:55",
+    "endTime": "01:01:00",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was, it was, yeah, it was a, you know, anyway, so that was where, that was what v two was about, I think, you know, we noticed that internally and that was the whole v one, v two.",
+    "startTime": "01:01:01",
+    "endTime": "01:01:13",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:01:13",
+    "endTime": "01:01:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Docker format, which is.",
+    "startTime": "01:01:14",
+    "endTime": "01:01:15",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, as I said, 2015 lost in the midst of time now.",
+    "startTime": "01:01:15",
+    "endTime": "01:01:18",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But, you know, it's kind of.",
+    "startTime": "01:01:18",
+    "endTime": "01:01:22",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But again, I think that the content hash, again, is like one of these key things enables this ecosystem, like, enables these pieces around s bombs and signing and things because you've suddenly got that.",
+    "startTime": "01:01:23",
+    "endTime": "01:01:38",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You've got this thing that has gotten an immutable content hash.",
+    "startTime": "01:01:38",
+    "endTime": "01:01:42",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You don't update it in production.",
+    "startTime": "01:01:42",
+    "endTime": "01:01:43",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, what's.",
+    "startTime": "01:01:43",
+    "endTime": "01:01:44",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you have a root of trust.",
+    "startTime": "01:01:44",
+    "endTime": "01:01:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And you have a route.",
+    "startTime": "01:01:45",
+    "endTime": "01:01:46",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, exactly.",
+    "startTime": "01:01:46",
+    "endTime": "01:01:47",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so, you know, that it's those kind of pieces that are really important to building out.",
+    "startTime": "01:01:47",
+    "endTime": "01:01:53",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Building out this ecosystem.",
+    "startTime": "01:01:53",
+    "endTime": "01:01:55",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And will there be tooling for like, exporting to like a Cyclone Dx s bomb?",
+    "startTime": "01:01:56",
+    "endTime": "01:02:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I guess, is it in one of these formats or is it agnostic to the two formats?",
+    "startTime": "01:02:01",
+    "endTime": "01:02:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because, I mean, that battleground is still being played out.",
+    "startTime": "01:02:07",
+    "endTime": "01:02:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:02:09",
+    "endTime": "01:02:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Between sports.",
+    "startTime": "01:02:09",
+    "endTime": "01:02:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I mean, I think that stuff is all kind of.",
+    "startTime": "01:02:10",
+    "endTime": "01:02:12",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, so, you know, I think that everyone's making their stuff interoperable at the moment, and I think that.",
+    "startTime": "01:02:13",
+    "endTime": "01:02:24",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And converting these things, I mean, I think that, you know, that's actually not the difficult bit.",
+    "startTime": "01:02:24",
+    "endTime": "01:02:34",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, the difficult bits are actually, like, around standardization of all sorts of other smaller pieces about like, what you.",
+    "startTime": "01:02:34",
+    "endTime": "01:02:46",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How do we name packages and things like that, like, turn out to be.",
+    "startTime": "01:02:46",
+    "endTime": "01:02:50",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I'm part of a working group with CISA for, for a bunch of this stuff.",
+    "startTime": "01:02:50",
+    "endTime": "01:02:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that's obviously something that comes up a lot.",
+    "startTime": "01:02:55",
+    "endTime": "01:02:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's just.",
+    "startTime": "01:02:57",
+    "endTime": "01:02:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How do you actually name things?",
+    "startTime": "01:02:57",
+    "endTime": "01:02:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like is it.",
+    "startTime": "01:02:59",
+    "endTime": "01:03:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is it Microsoft or is it Microsoft Inc.",
+    "startTime": "01:03:00",
+    "endTime": "01:03:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or whatever?",
+    "startTime": "01:03:02",
+    "endTime": "01:03:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How you capitalize things and like.",
+    "startTime": "01:03:04",
+    "endTime": "01:03:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And those things do have real consequences, right?",
+    "startTime": "01:03:06",
+    "endTime": "01:03:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "At scale.",
+    "startTime": "01:03:08",
+    "endTime": "01:03:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, yeah, totally.",
+    "startTime": "01:03:09",
+    "endTime": "01:03:10",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think those are the things that if we can standardize like write down all that detail, then a lot of the other stuff about the format stuff will kind of become much easier to.",
+    "startTime": "01:03:10",
+    "endTime": "01:03:23",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because you just be a conversion process.",
+    "startTime": "01:03:23",
+    "endTime": "01:03:27",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:03:27",
+    "endTime": "01:03:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think.",
+    "startTime": "01:03:28",
+    "endTime": "01:03:28",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, go ahead.",
+    "startTime": "01:03:28",
+    "endTime": "01:03:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Sorry.",
+    "startTime": "01:03:29",
+    "endTime": "01:03:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think there's like, I mean, I think there's a lot of.",
+    "startTime": "01:03:29",
+    "endTime": "01:03:32",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "A lot of.",
+    "startTime": "01:03:32",
+    "endTime": "01:03:32",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's just about trying to reflect the right amount of domain complexity.",
+    "startTime": "01:03:32",
+    "endTime": "01:03:37",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like what, you know, what is an S bomb?",
+    "startTime": "01:03:39",
+    "endTime": "01:03:42",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What do we include?",
+    "startTime": "01:03:42",
+    "endTime": "01:03:43",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What does it mean?",
+    "startTime": "01:03:44",
+    "endTime": "01:03:45",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like what do we.",
+    "startTime": "01:03:45",
+    "endTime": "01:03:46",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, you know, the example I was talking about things that are used in the build but do not appear in the artifact.",
+    "startTime": "01:03:46",
+    "endTime": "01:03:52",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Are those part of an S bomb or not?",
+    "startTime": "01:03:52",
+    "endTime": "01:03:55",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What, you know, another thing we have with containers is like layers that there's stuff that's overwritten in layers.",
+    "startTime": "01:03:55",
+    "endTime": "01:04:03",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we've had a lot of tooling issues around like some tools just index all the layers and look at what's in all the layers.",
+    "startTime": "01:04:03",
+    "endTime": "01:04:11",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so they'll show you something that is in a hidden piece because it's been overridden by another layer.",
+    "startTime": "01:04:11",
+    "endTime": "01:04:19",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And like is that, you know, technically that's not a vulnerability, but I.",
+    "startTime": "01:04:19",
+    "endTime": "01:04:27",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's potentially a vulnerability in a different image.",
+    "startTime": "01:04:27",
+    "endTime": "01:04:31",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And a lot of the stuff we did with scout was about, we do have a full layer model because we want to be able to tell you how to remediate issues.",
+    "startTime": "01:04:31",
+    "endTime": "01:04:41",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And to remediate an issue, you need to know which layer the things in.",
+    "startTime": "01:04:41",
+    "endTime": "01:04:43",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you don't have a layered model, you can't realize which bit of it you need to remediate and how the things been built up.",
+    "startTime": "01:04:44",
+    "endTime": "01:04:53",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we have a full layering model and so we can give you breakdown by layout, but we use that to say you should update the base image.",
+    "startTime": "01:04:53",
+    "endTime": "01:05:04",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You should update this image in order to fix it.",
+    "startTime": "01:05:04",
+    "endTime": "01:05:06",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because sometimes it's a different team that's responsible for updating the different images because like developers might build the application, but there's a team that builds base images and you need to know which of them to talk to.",
+    "startTime": "01:05:06",
+    "endTime": "01:05:17",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so again, like some of the thing is about reflecting the domain complexity in the model of the data that you're extracting from.",
+    "startTime": "01:05:18",
+    "endTime": "01:05:27",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "These things and.",
+    "startTime": "01:05:27",
+    "endTime": "01:05:28",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, and things like container.",
+    "startTime": "01:05:28",
+    "endTime": "01:05:30",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, layers are an interesting thing with container images because they're kind of an implementation detail, but they kind of leak into a lot of things.",
+    "startTime": "01:05:30",
+    "endTime": "01:05:37",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, absolutely.",
+    "startTime": "01:05:37",
+    "endTime": "01:05:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:05:39",
+    "endTime": "01:05:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Particularly from the voldemorty standpoint, that's obviously a very difficult one because they may or may not be relevant.",
+    "startTime": "01:05:39",
+    "endTime": "01:05:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, exactly.",
+    "startTime": "01:05:45",
+    "endTime": "01:05:46",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they're relevant to some questions and not others.",
+    "startTime": "01:05:46",
+    "endTime": "01:05:48",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:05:49",
+    "endTime": "01:05:49",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so they're kind of.",
+    "startTime": "01:05:49",
+    "endTime": "01:05:51",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And.",
+    "startTime": "01:05:51",
+    "endTime": "01:05:52",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, and they.",
+    "startTime": "01:05:52",
+    "endTime": "01:05:53",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But they, you know, the classic s bomb doesn't understand them.",
+    "startTime": "01:05:53",
+    "endTime": "01:05:57",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, exactly.",
+    "startTime": "01:05:57",
+    "endTime": "01:05:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, the classic s bomb is still to be, I would say still to be defined because we don't really.",
+    "startTime": "01:05:58",
+    "endTime": "01:06:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's still really much a moving target.",
+    "startTime": "01:06:03",
+    "endTime": "01:06:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, I think that.",
+    "startTime": "01:06:05",
+    "endTime": "01:06:06",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I think that there's been a lot of.",
+    "startTime": "01:06:06",
+    "endTime": "01:06:08",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, there's a lot of improvement and alignment in the ecosystem around.",
+    "startTime": "01:06:11",
+    "endTime": "01:06:14",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:06:14",
+    "endTime": "01:06:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The problem space and what the solutions look like.",
+    "startTime": "01:06:15",
+    "endTime": "01:06:18",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it's.",
+    "startTime": "01:06:18",
+    "endTime": "01:06:18",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, it's, you know, a lot of it is about like the domain complexity versus.",
+    "startTime": "01:06:18",
+    "endTime": "01:06:24",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, and the tooling, from my experience is very theoretical and like, when you actually started using it for real use cases, that's when it start to break down and that's.",
+    "startTime": "01:06:25",
+    "endTime": "01:06:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, but it's.",
+    "startTime": "01:06:33",
+    "endTime": "01:06:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, there are a lot of great theoretical documents about how to use this, but then when you actually try to use it, you realize that, oh, the tooling actually falls short rather than.",
+    "startTime": "01:06:34",
+    "endTime": "01:06:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, no, totally.",
+    "startTime": "01:06:44",
+    "endTime": "01:06:45",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, again, that's something that we've, you know, we spend a lot of time on with scout.",
+    "startTime": "01:06:45",
+    "endTime": "01:06:48",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Our aim is to make it work for developers.",
+    "startTime": "01:06:49",
+    "endTime": "01:06:53",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's our, you know, because developers are the people who are usually being called on to actually fix the issues.",
+    "startTime": "01:06:53",
+    "endTime": "01:07:00",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, and.",
+    "startTime": "01:07:00",
+    "endTime": "01:07:03",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it's, you know, I think a lot of the time.",
+    "startTime": "01:07:05",
+    "endTime": "01:07:08",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:07:08",
+    "endTime": "01:07:09",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "As you, as you say, the kind of theory doesn't work particularly with the scale.",
+    "startTime": "01:07:09",
+    "endTime": "01:07:14",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Organizations are big and they have a lot of stuff going on and a lot of the tools don't really scale to a large organization, a large, complex organization.",
+    "startTime": "01:07:15",
+    "endTime": "01:07:26",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They're great for greenfields, but when you actually start doing a legacy, that's when it gets really complicated.",
+    "startTime": "01:07:27",
+    "endTime": "01:07:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I mean, yeah, it's like, you know, I think this is the case with a lot of that sort of tool that the steady state.",
+    "startTime": "01:07:31",
+    "endTime": "01:07:40",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In a steady state situation in theory, when you've got to a good state, is very different from the.",
+    "startTime": "01:07:40",
+    "endTime": "01:07:47",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I've turned this tool on.",
+    "startTime": "01:07:47",
+    "endTime": "01:07:48",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It tells me I've got a million problems.",
+    "startTime": "01:07:48",
+    "endTime": "01:07:50",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What should I do?",
+    "startTime": "01:07:51",
+    "endTime": "01:07:52",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, right, absolutely.",
+    "startTime": "01:07:52",
+    "endTime": "01:07:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, there's a billion things to more talk about that, but interest of time.",
+    "startTime": "01:07:55",
+    "endTime": "01:08:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The last thing I wanted to talk a bit about, which is something I think you guys are doing some interesting moves on, is wasmouse.",
+    "startTime": "01:08:00",
+    "endTime": "01:08:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I know you've been toying with that for a bit.",
+    "startTime": "01:08:06",
+    "endTime": "01:08:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Tell me about dockers wasm story.",
+    "startTime": "01:08:10",
+    "endTime": "01:08:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And what does that mean in terms of your market?",
+    "startTime": "01:08:12",
+    "endTime": "01:08:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Go to market?",
+    "startTime": "01:08:17",
+    "endTime": "01:08:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I think wasm is already an interesting area.",
+    "startTime": "01:08:19",
+    "endTime": "01:08:23",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, I think that for, you know, for a while there was a whole kind of, like, were talking about VMS versus container.",
+    "startTime": "01:08:24",
+    "endTime": "01:08:33",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like there was a whole kind of wasm versus container, wasm versus docker kind of thing.",
+    "startTime": "01:08:33",
+    "endTime": "01:08:37",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because again, like, superficially it looks like a container.",
+    "startTime": "01:08:39",
+    "endTime": "01:08:43",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's, you know, it's a thing and it's got an isolation layer and it's a sort of package of stuff.",
+    "startTime": "01:08:44",
+    "endTime": "01:08:50",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:08:51",
+    "endTime": "01:08:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But again, a lot of that's kind of a bit superficial.",
+    "startTime": "01:08:51",
+    "endTime": "01:08:56",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And like, you know, the interesting, I think there's a lot of.",
+    "startTime": "01:08:56",
+    "endTime": "01:09:01",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's a lot of interesting things about wasm and what it could can be used for and what it will be used for and how and why.",
+    "startTime": "01:09:01",
+    "endTime": "01:09:10",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that there's, you know, I think that, and I think there's actually one of the things that's really nice about the wasm community is that there is such a diversity of use cases and very different things you can do.",
+    "startTime": "01:09:12",
+    "endTime": "01:09:31",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they're, you know, so we've seen a lot of success for things like Wasm as a plugin, you know, plug in extension language for things like envoy, for example.",
+    "startTime": "01:09:32",
+    "endTime": "01:09:44",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Lots of, lots of other projects have it.",
+    "startTime": "01:09:44",
+    "endTime": "01:09:46",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I used to do a bunch of work on Lua back in the day.",
+    "startTime": "01:09:46",
+    "endTime": "01:09:52",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And as an extension of language, I kind of interested in extension languages for things.",
+    "startTime": "01:09:52",
+    "endTime": "01:09:55",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They're really, they're really powerful way of building.",
+    "startTime": "01:09:55",
+    "endTime": "01:09:59",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Building stuff that you can extend.",
+    "startTime": "01:09:59",
+    "endTime": "01:10:02",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And, you know, I think that's.",
+    "startTime": "01:10:02",
+    "endTime": "01:10:03",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's a whole piece with people like fastly using it for that open rusty.",
+    "startTime": "01:10:03",
+    "endTime": "01:10:08",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And all that stuff.",
+    "startTime": "01:10:08",
+    "endTime": "01:10:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, well, yeah, open rusty.",
+    "startTime": "01:10:08",
+    "endTime": "01:10:10",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, yeah, open rusty was.",
+    "startTime": "01:10:10",
+    "endTime": "01:10:12",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, and the day with Lua, but anyway, but it's like that kind of area is one area, I think, that WaSM for the web is an amazing enabling technology that helps people build web applications that are just much more powerful.",
+    "startTime": "01:10:13",
+    "endTime": "01:10:36",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Again, there's been a very long story from Gmail was one of the first of these complex web applications that was largely built from, largely built in one of the JVM languages, and they can cross compile it to JavaScript to run in the browser.",
+    "startTime": "01:10:36",
+    "endTime": "01:10:57",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And there's been this whole long technology tread of that.",
+    "startTime": "01:10:57",
+    "endTime": "01:11:00",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And WASM is a much more effective and sane way of doing that.",
+    "startTime": "01:11:00",
+    "endTime": "01:11:06",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then there's this server side wasm, which is the bit that's most often compared to containers.",
+    "startTime": "01:11:07",
+    "endTime": "01:11:15",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's the bit where to a large extent, we've been working on shipping that shipping tooling to support that.",
+    "startTime": "01:11:15",
+    "endTime": "01:11:25",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, it's something that we've been looking at for a really long time.",
+    "startTime": "01:11:25",
+    "endTime": "01:11:32",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think back in, I think it was 2016 or 2017 time were experimenting with it.",
+    "startTime": "01:11:32",
+    "endTime": "01:11:39",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's when Solomon tweeted around with him.",
+    "startTime": "01:11:39",
+    "endTime": "01:11:41",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it was in his phase when he used to post a lot of stuff on Twitter and hacker news and really kind of get a lot of attention.",
+    "startTime": "01:11:41",
+    "endTime": "01:11:52",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And he tweets the thing about like, oh, if Wasm had existed, we never would have had to build Docker or something like that, which has been then since quoted in every single wasm presentation ever since.",
+    "startTime": "01:11:53",
+    "endTime": "01:12:06",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's kind of like sort of put docker on the map as like, in that kind of space, but it kind of isn't.",
+    "startTime": "01:12:06",
+    "endTime": "01:12:14",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't think it's a very, it doesn't, it's not a very useful way of looking at it.",
+    "startTime": "01:12:14",
+    "endTime": "01:12:21",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Again, like the containers versus vms, like, so what's the, you know, what is the outcome you're trying to achieve for, you know, for the developer by shipping things and wear them?",
+    "startTime": "01:12:21",
+    "endTime": "01:12:32",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And generally, you know, I think the areas that are interesting for wasm are, one, is a lot of people are building quite lightweight, serverlessly type stuff with wasm.",
+    "startTime": "01:12:32",
+    "endTime": "01:12:51",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that, I think some of the sort of wasm is smaller kind of commentary is misleading because people look at people's containers and ask and discover that people have very large containers, and then they build kind of toy applications in rust and wasm and discover they're very small and kind of say, this is much more.",
+    "startTime": "01:12:52",
+    "endTime": "01:13:18",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think a lot of the time, people don't understand why people's applications are so large in containers and people don't talk about it a lot.",
+    "startTime": "01:13:19",
+    "endTime": "01:13:28",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But, you know, there are often good reasons why people have multi gigabyte containers, despite the fact it seems a weird thing to do.",
+    "startTime": "01:13:28",
+    "endTime": "01:13:40",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Often very good.",
+    "startTime": "01:13:40",
+    "endTime": "01:13:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Bad reasons, too.",
+    "startTime": "01:13:41",
+    "endTime": "01:13:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But yes, there are bad reasons too, but those reasons are not necessarily, those reasons are not actually necessarily.",
+    "startTime": "01:13:42",
+    "endTime": "01:13:53",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They're not really about the runtime, they're about the application.",
+    "startTime": "01:13:53",
+    "endTime": "01:13:58",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it comes back to, like, the whole conversation we have about, like, how do you build your applications?",
+    "startTime": "01:13:58",
+    "endTime": "01:14:04",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Can you use the same application?",
+    "startTime": "01:14:04",
+    "endTime": "01:14:06",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Do you have to build applications again?",
+    "startTime": "01:14:06",
+    "endTime": "01:14:07",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Do you have to build them in a particular way?",
+    "startTime": "01:14:07",
+    "endTime": "01:14:09",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I think that like WAsm does have, you know, that I think there are some interesting things about the Wasm runtimes that are quite lightweight and look more like a, more like what people, what we thought the JVM might be going to look like back in the day, but it never quite ended up like that for reasons.",
+    "startTime": "01:14:12",
+    "endTime": "01:14:32",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The security model is much better understood now.",
+    "startTime": "01:14:32",
+    "endTime": "01:14:37",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The interface model, which is where the, you know, the security issues and the JVM were back in the day.",
+    "startTime": "01:14:38",
+    "endTime": "01:14:46",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:14:47",
+    "endTime": "01:14:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And this, I mean I think that there's a lot of interesting things.",
+    "startTime": "01:14:48",
+    "endTime": "01:14:53",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean I think the whole, I mean it's hard, but the whole we can write code in multiple languages and interface them together and have libraries that are security isolated from each other is a really interesting area.",
+    "startTime": "01:14:53",
+    "endTime": "01:15:13",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's kind of, it's at the moment it's very niche.",
+    "startTime": "01:15:14",
+    "endTime": "01:15:17",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean there was an attempt to do security isolated libraries in JavaScript, for example, and like, because, and there was a bunch of really good work on that, which actually shit.",
+    "startTime": "01:15:17",
+    "endTime": "01:15:32",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But like, because like libraries have high privilege levels right now.",
+    "startTime": "01:15:32",
+    "endTime": "01:15:37",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like a library that's supposed to do some calculations can also access the network and exfiltrate your data.",
+    "startTime": "01:15:37",
+    "endTime": "01:15:45",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you can't really stop this because we don't, because everything ends up in a global namespace and doesn't have least privilege.",
+    "startTime": "01:15:45",
+    "endTime": "01:15:53",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And WASM is a potential way of actually addressing that kind of issue potentially.",
+    "startTime": "01:15:53",
+    "endTime": "01:16:01",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there's a lot of interesting stuff we've really been focusing on at the moment.",
+    "startTime": "01:16:03",
+    "endTime": "01:16:07",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Enablement of kind of build and run of WASM applications in the kind of roughly similar sort of space to where we are because that's where we've seen most interest.",
+    "startTime": "01:16:09",
+    "endTime": "01:16:23",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it's such a diverse ecosystem that I think there's a lot of interesting paths about where adoption will happen.",
+    "startTime": "01:16:23",
+    "endTime": "01:16:32",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's not just going to be one thing, you know, it's not going to be one thing.",
+    "startTime": "01:16:32",
+    "endTime": "01:16:36",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you know, I think there's like, you know, these different use cases of whereas, and we talked about it at the moment, you know, kind of, you know, extension stuff is very different from in browser stuff.",
+    "startTime": "01:16:36",
+    "endTime": "01:16:50",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it was actually interesting, like when I worked on, when I did stuff with lure, I run the London lure meetup back in the day.",
+    "startTime": "01:16:50",
+    "endTime": "01:16:59",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it was really interesting because again, like there were you, it was hard to have a uniform conversation around a language that was used for so many different things.",
+    "startTime": "01:16:59",
+    "endTime": "01:17:07",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that wasm has the same thing, that there's a lot of different use cases and they're, and they're kind of pushing in slightly different directions, but they are, they're using a set of common tooling and they, you know, they're building this stuff out together for different use cases.",
+    "startTime": "01:17:07",
+    "endTime": "01:17:29",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Are you more bullish on the server side of wasm to kind of eat up node js style workloads or are you mobile on the browser side of things?",
+    "startTime": "01:17:30",
+    "endTime": "01:17:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I actually don't like.",
+    "startTime": "01:17:42",
+    "endTime": "01:17:43",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think it's in a way, I think the, I don't know, I think that there's a kind of thing you could get.",
+    "startTime": "01:17:43",
+    "endTime": "01:17:52",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean node, Washington node was kind of exciting because it was like one language for the front end and back end, and wasm potentially I think is interesting, we could do that from the other direction because it was like node was, well the one language has to be JavaScript because that's what the browser has.",
+    "startTime": "01:17:53",
+    "endTime": "01:18:13",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the backend language now has to be JavaScript.",
+    "startTime": "01:18:14",
+    "endTime": "01:18:17",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that was great for the JavaScript people and I got people who then adopted for everybody else, kind of bad for everyone else.",
+    "startTime": "01:18:18",
+    "endTime": "01:18:24",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And like, I mean I try, I tried to become a JavaScript person as a back end person at that time and I like, I kind of, I tried quite hard for quite a while and I decided it wasn't for me.",
+    "startTime": "01:18:24",
+    "endTime": "01:18:40",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I think that, I think there's an interesting thing of like how much can we go the other way of like take someone who's a, a go programmer and help them ship go via Wasm into the browser so they can build, you know, more of the application.",
+    "startTime": "01:18:40",
+    "endTime": "01:18:55",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think you can't exclusively build applications in WASM alert in the browser, although there have been some people trying to do that like I think.",
+    "startTime": "01:18:55",
+    "endTime": "01:19:04",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I ported like Libreoffice to Wasm and had it up and running like fully.",
+    "startTime": "01:19:04",
+    "endTime": "01:19:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I mean, yeah, but there's still a bit of JavaScript.",
+    "startTime": "01:19:08",
+    "endTime": "01:19:12",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There was actually a, like a really radical proposal have an index wasm, kind of like why can't the entry point into a website p wasm rather than JavaScript?",
+    "startTime": "01:19:12",
+    "endTime": "01:19:24",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I think there's still issues there.",
+    "startTime": "01:19:24",
+    "endTime": "01:19:26",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But you still need some, like you.",
+    "startTime": "01:19:26",
+    "endTime": "01:19:29",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Need to invoke it somehow.",
+    "startTime": "01:19:29",
+    "endTime": "01:19:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, but also invoking the UI from WASM story is a bit messy in terms of it's a bunch of, but in principle I think, yeah, you could, and I think the rust community are kind of pushing that direction most because they're quite, most of the WASM communities here are rust people and they don't like JavaScript.",
+    "startTime": "01:19:30",
+    "endTime": "01:19:53",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Rust people.",
+    "startTime": "01:19:53",
+    "endTime": "01:19:54",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't think you could find bigger, I mean bigger difference between programmers than rust programmers and JavaScript programmers that's probably as far apart they can get.",
+    "startTime": "01:19:56",
+    "endTime": "01:20:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:20:06",
+    "endTime": "01:20:06",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I think that a lot of them are kind of pushing in some place direction.",
+    "startTime": "01:20:06",
+    "endTime": "01:20:10",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think I know, I mean, rice is a good language for.",
+    "startTime": "01:20:11",
+    "endTime": "01:20:13",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, I think it's changed now that garbage collection in WaSm is a real thing now.",
+    "startTime": "01:20:16",
+    "endTime": "01:20:20",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it was the case that it was a good language from the, because WaSm didn't have a GC, but now with WASM GC, I think there's like, there's a.",
+    "startTime": "01:20:20",
+    "endTime": "01:20:33",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think the, because I think I joked a few years ago that you can write wasm in any language you like as long as it's rast.",
+    "startTime": "01:20:34",
+    "endTime": "01:20:41",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it kind of felt like that for a while that there were actually really strong reasons why actually it was the best language to write wasm in for almost all use cases.",
+    "startTime": "01:20:41",
+    "endTime": "01:20:53",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that's, you know, and it was kind of accidental because it wasn't what Russ was targeting either, which is kind of interesting, but it kind of was like that.",
+    "startTime": "01:20:54",
+    "endTime": "01:21:03",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I think that's, yeah, with Wasm GC and the maturity of the other language ecosystem tool chains to wasm and things, that's actually changed a lot in the last couple of years.",
+    "startTime": "01:21:03",
+    "endTime": "01:21:13",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, it's now much broader, but there are still, I still think that there's, I mean, I think that, you know, if you look at go, for example, like tiny go has been the go to way of getting into wasm for a long time.",
+    "startTime": "01:21:14",
+    "endTime": "01:21:27",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Just because the go runtime compiler wasm is big.",
+    "startTime": "01:21:27",
+    "endTime": "01:21:31",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They don't, they like their GC implementation, they don't want to use the upstream one.",
+    "startTime": "01:21:31",
+    "endTime": "01:21:36",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's become a bit, you know, I remember when, with, when cloudflare workers launched their wasm thing, like you couldn't, like Cloudflare had a very small memory allocation for workers at the, when they launched it.",
+    "startTime": "01:21:36",
+    "endTime": "01:21:58",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think it's increased now, but like, it was like you couldn't fit the go run time into a worker because it was right.",
+    "startTime": "01:21:58",
+    "endTime": "01:22:05",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Who compiled it to wasm is too big.",
+    "startTime": "01:22:05",
+    "endTime": "01:22:07",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they were like, well, we're gonna have a shared library kind of layer for the go runtime or whatever.",
+    "startTime": "01:22:07",
+    "endTime": "01:22:11",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We're gonna work around this kind of thing.",
+    "startTime": "01:22:11",
+    "endTime": "01:22:13",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it was like a lot of work.",
+    "startTime": "01:22:13",
+    "endTime": "01:22:16",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, you know, it really worked.",
+    "startTime": "01:22:16",
+    "endTime": "01:22:17",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There were these kind of barriers of like, hard to make a small wasm application in go.",
+    "startTime": "01:22:17",
+    "endTime": "01:22:22",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Tiny go filled that niche actually really well.",
+    "startTime": "01:22:23",
+    "endTime": "01:22:26",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And tiny go is a kind of fun language anyway, and quite a lot of people are using it, but it was, you know, it's kind of, you know, again, that's kind of the tool chain and kind of language ecosystem is just taking, you know, taking a long time to mature.",
+    "startTime": "01:22:26",
+    "endTime": "01:22:44",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it's really, I mean, as I said, it's really changed over the last year or year, two years, and that's really much more mature now and it's becoming more realistic for people to experiment with.",
+    "startTime": "01:22:44",
+    "endTime": "01:22:54",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So what's that?",
+    "startTime": "01:22:55",
+    "endTime": "01:22:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is there a docker angle here?",
+    "startTime": "01:22:56",
+    "endTime": "01:22:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, is there going to be like a docker hub as a CDN for browser based wasm?",
+    "startTime": "01:22:57",
+    "endTime": "01:23:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think, I don't know about browser based wasm.",
+    "startTime": "01:23:08",
+    "endTime": "01:23:11",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, for, I mean, we, because I think that the, I think that, I think we're starting with the server side because that's where the audience for Docker Hub are.",
+    "startTime": "01:23:11",
+    "endTime": "01:23:28",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The browser based wasn't people kind of come through other tooling routes at the moment but not saying never.",
+    "startTime": "01:23:28",
+    "endTime": "01:23:37",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that, I mean, I kind of think that one of the interesting things about wasm, although, is just that universality.",
+    "startTime": "01:23:37",
+    "endTime": "01:23:46",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It runs in the browser and on the server and that's like, I think that's a really interesting thing that's different from what came before.",
+    "startTime": "01:23:46",
+    "endTime": "01:23:55",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, we kind of had that very briefly with Java applets like two decades ago.",
+    "startTime": "01:23:56",
+    "endTime": "01:24:02",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Is over.",
+    "startTime": "01:24:04",
+    "endTime": "01:24:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, but I mean I think that like that, but there's, but it's actually very, like, it's actually the ecosystems are quite diverged and there are, I mean, although there are, you know, there is a community of people trying to do things that support, or rather support, you know, there's people who are supporting the web APIs on server side or on which, like for example, actually cloudflare workers is a great example of that where their core APIs are the browser APIs.",
+    "startTime": "01:24:05",
+    "endTime": "01:24:42",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so you can mostly write browser code that works there.",
+    "startTime": "01:24:42",
+    "endTime": "01:24:45",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But again, even like there's still things that they have that are, you know, because the environment is different from the browser.",
+    "startTime": "01:24:45",
+    "endTime": "01:24:54",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The biggest one has always been like inbound socket.",
+    "startTime": "01:24:54",
+    "endTime": "01:24:56",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can't listen to a socket in the browser and that's a core activity you do on a server.",
+    "startTime": "01:24:57",
+    "endTime": "01:25:03",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And arguably that one thing has been the thing that's kind of diverged those ecosystems in terms of APIs the most.",
+    "startTime": "01:25:03",
+    "endTime": "01:25:12",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so I think that, and I think that the value of WASM on the web has mostly been being able to use libraries and code that was written for other, you don't want to go and rewrite some complicated rendering library or something that you've already got in c, again in JavaScript or on the web.",
+    "startTime": "01:25:12",
+    "endTime": "01:25:37",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you can just compile it to wasm and just run it, that's great, performs well.",
+    "startTime": "01:25:38",
+    "endTime": "01:25:44",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's still not a kind of uniform, I just write things that run everywhere kind of world.",
+    "startTime": "01:25:45",
+    "endTime": "01:25:53",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:25:53",
+    "endTime": "01:25:53",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But we're starting to see that's the kind of, there's these bits of promise and ambition that WaSm has that are quite exciting.",
+    "startTime": "01:25:53",
+    "endTime": "01:26:03",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I'm super excited about WASM.",
+    "startTime": "01:26:05",
+    "endTime": "01:26:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think that could be a nice solution for a better web really.",
+    "startTime": "01:26:07",
+    "endTime": "01:26:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:26:13",
+    "endTime": "01:26:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Where we can write when a website currently is absolutely okay.",
+    "startTime": "01:26:14",
+    "endTime": "01:26:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Apparently to have a website that's like 300 megs to download and then like if that's the ballpark of data we're talking about, then writing it that in WaSM, then obviously 300 megs for a rust binary compiled is a lot more than 300 megs of JavaScript, right.",
+    "startTime": "01:26:19",
+    "endTime": "01:26:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So.",
+    "startTime": "01:26:40",
+    "endTime": "01:26:41",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, hopefully it's more optimized.",
+    "startTime": "01:26:41",
+    "endTime": "01:26:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I'm super excited about that.",
+    "startTime": "01:26:43",
+    "endTime": "01:26:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Prospects from particular on that I'm less excited about the server side, more excited about the browser side, us, honest.",
+    "startTime": "01:26:44",
+    "endTime": "01:26:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But yeah, Justin has been super interesting.",
+    "startTime": "01:26:50",
+    "endTime": "01:26:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We found a lot of ground.",
+    "startTime": "01:26:54",
+    "endTime": "01:26:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There are plenty of more things I would like to cover, but I do realize that we are kind of running up on time here, so maybe we'll do a follow up in a future episode.",
+    "startTime": "01:26:55",
+    "endTime": "01:27:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There have been more content because there are plenty more on my list here I would like to cover.",
+    "startTime": "01:27:02",
+    "endTime": "01:27:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Cool.",
+    "startTime": "01:27:06",
+    "endTime": "01:27:07",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Christ, great to talk.",
+    "startTime": "01:27:07",
+    "endTime": "01:27:08",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Thanks so much.",
+    "startTime": "01:27:08",
+    "endTime": "01:27:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Thank you.",
+    "startTime": "01:27:10",
+    "endTime": "01:27:11",
+    "speaker_name": "Justin Cormack",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Have a good one.",
+    "startTime": "01:27:11",
+    "endTime": "01:27:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Cheers, bye.",
+    "startTime": "01:27:12",
+    "endTime": "01:27:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  }
+]

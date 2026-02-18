@@ -1,0 +1,22 @@
+$base-font-size: 16px;
+
+// Colors — aligned with Tailwind @theme and :root CSS vars
+$white: #FFF;
+$purple: #5D5FEF;
+$text-heading: $white;
+$text-primary: #D6D6D6;
+$btn-primary: $purple;
+$link: $purple;
+$bg-primary: #000212;
+
+// Font families — 3 self-hosted families
+$font-display: 'Anton', system-ui, sans-serif;
+$font-body: 'Inter', system-ui, sans-serif;
+$font-mono: 'JetBrains Mono', monospace;
+
+// Breakpoints
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+$breakpoint-xl: 1400px;

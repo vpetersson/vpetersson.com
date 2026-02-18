@@ -1,15 +1,25 @@
 .DS_Store
+node_modules
+.aider*
+
+# Hugo
+public/
+resources/_gen/
+hugo_stats.json
+.hugo_build.lock
+
+# Jekyll (legacy — safe to remove after migration verified)
 .jekyll-metadata
 .sass-cache
 _site
-node_modules
-.aider*
-# WebP cache
-.webp-cache/
 _tags/*
-# Generated JavaScript from TypeScript
-assets/js/*.js
+.webp-cache/
 
-# Font Awesome files (copied from node_modules)
+# Generated assets (no longer needed — Hugo handles via pipes)
+assets/js/*.js
 assets/css/fontawesome-*.css
 assets/webfonts/
+
+# One-off migration scripts
+migrate.ts
+audit-sitemaps.py

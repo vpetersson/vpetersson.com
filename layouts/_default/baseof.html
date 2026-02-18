@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head.html" . }}
+
+  <body>
+    {{ partial "header.html" . }}
+    <main id="main-content" class="body">
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer.html" . }}
+    {{ $main := resources.Get "js/main.ts" | js.Build (dict "targetPath" "js/main.js" "minify" hugo.IsProduction) }}
+    {{ $codeBlocks := resources.Get "js/code-blocks.ts" | js.Build (dict "targetPath" "js/code-blocks.js" "minify" hugo.IsProduction) }}
+    {{ if hugo.IsProduction }}
+      {{ $main = $main | fingerprint }}
+      {{ $codeBlocks = $codeBlocks | fingerprint }}
+    {{ end }}
+    <script src="{{ $main.RelPermalink }}" defer></script>
+    <script src="{{ $codeBlocks.RelPermalink }}" defer></script>
+  </body>
+</html>
