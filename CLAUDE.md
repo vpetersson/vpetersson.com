@@ -32,6 +32,7 @@ bun install
 ## Build Pipeline
 
 Hugo handles the entire build pipeline — no separate build step needed:
+
 - **Sass**: `assets/css/main.scss` → compiled via Hugo's built-in Sass transpiler
 - **Tailwind CSS v4**: `assets/css/tailwind.css` → processed via `css.TailwindCSS` pipe
 - **TypeScript**: `assets/js/*.ts` → compiled via `js.Build` (esbuild)
@@ -41,6 +42,7 @@ Hugo handles the entire build pipeline — no separate build step needed:
 ## Content Structure
 
 **Blog posts** (`content/blog/`): `YYYY-MM-DD-slug.md` with frontmatter:
+
 ```yaml
 title: "Title"
 date: 'YYYY-MM-DDTHH:MM:SSZ'
@@ -50,6 +52,7 @@ tags:
 ```
 
 **Podcast episodes** (`content/podcast/`): `SXXEXX.md` (e.g., `S03E01.md`) with frontmatter:
+
 ```yaml
 title: "Episode Title"
 date: "YYYY-MM-DDTHH:MM:SS+00:00"
@@ -95,6 +98,7 @@ amazon: "https://..."
 ## CI/CD
 
 Two GitHub Actions workflows on `master`:
+
 - **build-deploy.yml**: Hugo + Bun setup → `bun install` → `hugo --minify` → deploy to GitHub Pages (also runs daily at 1 AM UTC)
 - **lint.yml**: Runs `bun run lint`; also runs `hugo --minify` build check
 
