@@ -51,10 +51,28 @@ jobs:
       - name: Build site
         run: hugo --minify
 
-      - name: Test Build Output
+      - name: Install lychee and xq
+        env:
+          LYCHEE_VERSION: "0.23.0"
+          XQ_VERSION: "1.3.0"
         run: |
-          test -d public || exit 1
-          test -f public/index.html || exit 1
+          wget -q "https://github.com/lycheeverse/lychee/releases/download/lychee-v${LYCHEE_VERSION}/lychee-x86_64-unknown-linux-gnu.tar.gz"
+          tar -xzf "lychee-x86_64-unknown-linux-gnu.tar.gz" lychee
+          sudo mv lychee /usr/local/bin/lychee
+          rm "lychee-x86_64-unknown-linux-gnu.tar.gz"
+          wget -q "https://github.com/sibprogrammer/xq/releases/download/v${XQ_VERSION}/xq_${XQ_VERSION}_linux_amd64.tar.gz"
+          tar -xzf "xq_${XQ_VERSION}_linux_amd64.tar.gz" xq
+          sudo mv xq /usr/local/bin/xq
+          rm "xq_${XQ_VERSION}_linux_amd64.tar.gz"
+
+      - name: Validate XML sitemaps
+        run: |
+          xq . public/sitemap.xml > /dev/null
+          xq . public/video-sitemap.xml > /dev/null
+
+      - name: Check internal links with lychee
+        run: |
+          lychee --no-progress --root-dir public public/
 
       - name: Upload Artifact
         if: github.event_name != 'pull_request'
