@@ -8,13 +8,6 @@ resources/_gen/
 hugo_stats.json
 .hugo_build.lock
 
-# Jekyll (legacy — safe to remove after migration verified)
-.jekyll-metadata
-.sass-cache
-_site
-_tags/*
-.webp-cache/
-
 # Generated assets (no longer needed — Hugo handles via pipes)
 assets/js/*.js
 assets/css/fontawesome-*.css
