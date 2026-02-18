@@ -19,7 +19,3 @@ _tags/*
 assets/js/*.js
 assets/css/fontawesome-*.css
 assets/webfonts/
-
-# One-off migration scripts
-migrate.ts
-audit-sitemaps.py
