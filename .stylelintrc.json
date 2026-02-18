@@ -7,6 +7,10 @@
     "scss/at-extend-no-missing-placeholder": null,
     "scss/at-function-pattern": null,
     "property-no-deprecated": null,
-    "media-feature-range-notation": "prefix"
+    "media-feature-range-notation": "prefix",
+    "color-function-alias-notation": null,
+    "color-function-notation": null,
+    "alpha-value-notation": null,
+    "font-family-name-quotes": null
   }
 }

@@ -54,9 +54,9 @@
   display: inline-flex;
   align-items: center;
   padding: 0.75rem 1.5rem;
-  background: rgb(93 95 239 / 15%);
+  background: rgba(93, 95, 239, 0.15);
   color: $purple;
-  border: 1px solid rgb(93 95 239 / 25%);
+  border: 1px solid rgba(93, 95, 239, 0.25);
   border-radius: 9999px;
   font-weight: 600;
   font-size: 0.875rem;
@@ -94,7 +94,7 @@
 
 .content-card {
   background: #1A1B2A;
-  border: 1px solid rgb(255 255 255 / 10%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -102,9 +102,9 @@
   flex-direction: column;
 
   &:hover {
-    border-color: rgb(93 95 239 / 30%);
+    border-color: rgba(93, 95, 239, 0.3);
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgb(0 0 0 / 20%);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 
     .content-card-play {
       opacity: 1;
@@ -141,7 +141,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(0 0 0 / 40%);
+  background: rgba(0, 0, 0, 0.4);
   opacity: 0;
   transform: scale(0.9);
   transition: all 0.3s ease;
@@ -187,7 +187,7 @@
 
 .guests-info {
   font-size: 0.8rem;
-  color: rgb(214 214 214 / 70%);
+  color: rgba(214, 214, 214, 0.7);
   font-style: italic;
 }
 
@@ -229,7 +229,7 @@
   align-items: center;
   margin-top: auto;
   padding-top: 0.75rem;
-  border-top: 1px solid rgb(255 255 255 / 6%);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .content-cta {
@@ -254,14 +254,14 @@
   display: inline-block;
   padding: 0.125rem 0.5rem;
   font-size: 0.6875rem;
-  color: rgb(214 214 214 / 80%);
-  background: rgb(255 255 255 / 6%);
+  color: rgba(214, 214, 214, 0.8);
+  background: rgba(255, 255, 255, 0.06);
   border-radius: 9999px;
   text-decoration: none;
   transition: all 0.2s ease;
 
   &:hover {
-    background: rgb(93 95 239 / 20%);
+    background: rgba(93, 95, 239, 0.2);
     color: #fff;
   }
 }
@@ -270,7 +270,7 @@
   display: inline-block;
   padding: 0.125rem 0.5rem;
   font-size: 0.6875rem;
-  color: rgb(214 214 214 / 50%);
+  color: rgba(214, 214, 214, 0.5);
 }
 
 .content-meta-bottom {
@@ -278,7 +278,7 @@
   align-items: center;
   gap: 0.75rem;
   font-size: 0.75rem;
-  color: rgb(214 214 214 / 60%);
+  color: rgba(214, 214, 214, 0.6);
 
   time {
     white-space: nowrap;
@@ -351,13 +351,13 @@
   border-radius: 12px;
   overflow: hidden;
   background: #000212;
-  border: 1px solid rgb(255 255 255 / 12%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   transition: all 0.3s ease;
 
   &:hover {
-    border-color: rgb(93 95 239 / 30%);
+    border-color: rgba(93, 95, 239, 0.3);
     transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgb(0 0 0 / 30%);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
 
     .featured-episode-play {
       opacity: 1;
@@ -395,7 +395,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(0 0 0 / 40%);
+  background: rgba(0, 0, 0, 0.4);
   opacity: 0;
   transform: scale(0.9);
   transition: all 0.3s ease;
@@ -427,7 +427,7 @@
 
 .featured-episode-info {
   font-size: 0.75rem;
-  color: rgb(214 214 214 / 60%);
+  color: rgba(214, 214, 214, 0.6);
 }
 
 .featured-episode-guest {
@@ -504,12 +504,12 @@
 
 .pagination a {
   color: $text-primary;
-  background: rgb(255 255 255 / 5%);
-  border: 1px solid rgb(255 255 255 / 10%);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 
   &:hover {
-    background: rgb(93 95 239 / 15%);
-    border-color: rgb(93 95 239 / 30%);
+    background: rgba(93, 95, 239, 0.15);
+    border-color: rgba(93, 95, 239, 0.3);
     color: $white;
   }
 }
