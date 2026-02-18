@@ -1,0 +1,18 @@
+{{ $featured_episodes := where (where site.RegularPages "Section" "podcast") ".Params.featured" true }}
+{{ $featured_episodes = sort $featured_episodes "Date" "desc" }}
+
+{{ if gt (len $featured_episodes) 0 }}
+<section class="featured-episodes-section">
+  <div class="featured-episodes-container">
+    <div class="featured-episodes-header">
+      <h2 class="featured-episodes-title">Featured Episodes</h2>
+      <p class="featured-episodes-subtitle">Some of our most popular conversations with industry leaders</p>
+    </div>
+    <div class="featured-episodes-grid">
+      {{ range $featured_episodes }}
+        {{ partial "featured-episode-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

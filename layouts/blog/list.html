@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ partial "page-header.html" (dict "title" "Blog") }}
+<div>
+  <section class="content-feed-native">
+    <div class="content-feed-container">
+      <div class="content-list">
+        {{ $paginator := .Paginate .Pages 12 }}
+        {{ range $paginator.Pages }}
+          {{ partial "content-card-native.html" (dict "content" . "type" "post") }}
+        {{ end }}
+      </div>
+
+      {{ partial "pagination.html" . }}
+    </div>
+  </section>
+</div>
+{{ end }}

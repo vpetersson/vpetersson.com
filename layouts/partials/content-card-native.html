@@ -1,0 +1,95 @@
+{{ $content := .content }}
+{{ $type := .type }}
+
+<article class="content-card">
+  {{- if and (eq $type "podcast") $content.Params.youtube -}}
+    {{ $youtube_id := replaceRE `.*[?&]v=([^&]+).*` "$1" $content.Params.youtube }}
+    <a href="{{ $content.RelPermalink }}" class="content-card-thumbnail-link">
+      <div class="content-card-thumbnail">
+        <img
+          src="https://img.youtube.com/vi/{{ $youtube_id }}/mqdefault.jpg"
+          alt="{{ $content.Title }}"
+          loading="lazy"
+          width="320"
+          height="180"
+        />
+        <div class="content-card-play">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+        </div>
+      </div>
+    </a>
+  {{- end }}
+  <div class="content-card-inner">
+    <!-- Content Type & Meta -->
+    <div class="content-meta-top">
+      {{ if eq $type "podcast" }}
+        <div class="content-type-indicator podcast">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a8 8 0 0 1 0 12M8 2a8 8 0 0 1 0 12M4 6v4"/>
+          </svg>
+          <span>Season {{ $content.Params.season }} &bull; Episode {{ $content.Params.episode }}</span>
+        </div>
+        {{ with $content.Params.guests }}
+          <div class="guests-info">
+            with {{ delimit . ", " }}
+          </div>
+        {{ end }}
+      {{ else }}
+        <div class="content-type-indicator blog">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM3 12l3-3 2 2 4-4"/>
+          </svg>
+          <span>Blog Post</span>
+        </div>
+      {{ end }}
+    </div>
+
+    <!-- Title -->
+    <h3 class="content-title">
+      <a href="{{ $content.RelPermalink }}">
+        {{ $content.Title }}
+      </a>
+    </h3>
+
+    <!-- Tags -->
+    {{ with $content.Params.tags }}
+      <div class="content-tags">
+        {{ range first 4 . }}
+          <a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
+        {{ end }}
+        {{ if gt (len .) 4 }}
+          <span class="tag-more">+{{ sub (len .) 4 }}</span>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    <!-- Description -->
+    <div class="content-description">
+      {{ if $content.Description }}
+        <p>{{ $content.Description | plainify | truncate 180 }}</p>
+      {{ else }}
+        <p>{{ $content.Summary | plainify | truncate 180 }}</p>
+      {{ end }}
+    </div>
+
+    <!-- Action & Meta -->
+    <div class="content-actions">
+      <a href="{{ $content.RelPermalink }}" class="content-cta">
+        {{ if eq $type "podcast" }}Listen{{ else }}Read More{{ end }}
+      </a>
+
+      <div class="content-meta-bottom">
+        <time datetime="{{ $content.Date.Format "2006-01-02T15:04:05Z07:00" }}">
+          {{ $content.Date.Format "02 Jan • 2006" | upper }}
+        </time>
+        {{ if and (eq $type "podcast") $content.Params.duration }}
+          <span>{{ partial "format-duration.html" $content.Params.duration }}</span>
+        {{ else if eq $type "post" }}
+          <span>{{ partial "reading-time.html" $content }}</span>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</article>

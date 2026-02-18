@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div>
+  {{ partial "hero-modern.html" . }}
+  {{ partial "subscription-block.html" . }}
+  <main id="latest-content">
+    {{ partial "content-feed-native.html" (dict "limit" 8) }}
+  </main>
+  <a rel="me" href="https://hachyderm.io/@vpetersson" class="sr-only">Mastodon</a>
+</div>
+{{ end }}

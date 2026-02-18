@@ -1,0 +1,4 @@
+{{ $title := .title | default "" }}
+<div class="page-header page-header-{{ $title | lower }}">
+  <h1 class="uppercase text-[48px] md:text-[91px] lg:text-[140px] xl:text-[186px] text-white text-center max-w-5xl mx-auto leading-none">{{ $title }}</h1>
+</div>

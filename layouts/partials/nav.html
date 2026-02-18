@@ -1,0 +1,5 @@
+<nav class="hidden lg:flex gap-6">
+  {{ range site.Data.main.nav }}
+    <a href="{{ .link }}" class="text-white uppercase">{{ .name }}</a>
+  {{ end }}
+</nav>

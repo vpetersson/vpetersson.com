@@ -1,0 +1,37 @@
+{{ $limit := .limit | default 10 }}
+
+{{/* Combine and sort posts and podcasts by date */}}
+{{ $blog := where site.RegularPages "Section" "blog" }}
+{{ $podcast := where site.RegularPages "Section" "podcast" }}
+{{ $all_content := union $blog $podcast }}
+{{ $all_content = sort $all_content "Date" "desc" }}
+
+<section class="content-feed-native" id="latest-content">
+  <div class="content-feed-container">
+    <!-- Section Header -->
+    <header class="content-feed-header">
+      <h2 class="content-feed-title">Latest Content</h2>
+      <p class="content-feed-subtitle">Exploring DevSecOps, remote work, and building secure systems</p>
+    </header>
+
+    <!-- Content List -->
+    <div class="content-list">
+      {{ range first $limit $all_content }}
+        {{ $content_type := "post" }}
+        {{ if eq .Section "podcast" }}
+          {{ $content_type = "podcast" }}
+        {{ end }}
+        {{ partial "content-card-native.html" (dict "content" . "type" $content_type) }}
+      {{ end }}
+    </div>
+
+    {{ if gt (len $all_content) $limit }}
+      <div class="content-feed-actions">
+        <div class="view-all-links">
+          <a href="/blog" class="view-all-link">All Blog Posts</a>
+          <a href="/podcast" class="view-all-link">All Podcast Episodes</a>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</section>

@@ -1,0 +1,232 @@
+{{ define "main" }}
+{{ partial "podcast-schema.html" . }}
+{{ partial "page-header.html" (dict "title" "Podcast") }}
+
+{{ $youtube_id := "" }}
+{{ with .Params.youtube }}
+  {{ $youtube_id = replaceRE `.*[?&]v=([^&]+).*` "$1" . }}
+{{ end }}
+
+<div class="bg-secondaryBG pt-[42px] pb-[60px] px-4 sm:px-6 md:px-10 lg:px-[120px] xl:pt-[80px] xl:pb-[130px]">
+  <div class="flex flex-col lg:flex-row lg:gap-[50px] xl:gap-[106px] md:max-w-[1110px] xl:mx-auto">
+    <div class="hidden lg:block lg:w-[210px] xl:w-[309px]">
+      <div class="mb-6">
+        <img src="/assets/images/site/talk-sm.webp" alt="Podcast Host" class="author-img rounded-full w-[162px] h-[162px]">
+      </div>
+      <p class="text-sm mb-6">
+        Join Viktor, a proud nerd and seasoned entrepreneur, whose academic journey at Santa Clara University in Silicon Valley sparked a career marked by innovation and foresight. From his college days, Viktor embarked on an entrepreneurial path, beginning with YippieMove, a groundbreaking email migration service, and continuing with a series of bootstrapped ventures.
+      </p>
+      <div class="mb-6">
+        <h4 class="mb-2">Links</h4>
+        <div>{{ partial "podcast-links.html" . }}</div>
+      </div>
+      <div class="mb-6">
+        <h4 class="mb-2">Follow Me</h4>
+        <div>{{ partial "social-links.html" (dict) }}</div>
+      </div>
+    </div>
+    <div class="lg:hidden">
+      <div class="flex mb-6 gap-[35px]">
+        <img src="/assets/images/site/talk-sm.webp" alt="Podcast Host" class="author-img !rounded-full !w-[64px] !h-[64px] sm:!w-[100px] sm:!h-[100px]">
+        <div>{{ partial "podcast-links.html" . }}</div>
+      </div>
+      <div>
+        <div class="mb-6 flex gap-[35px]">
+          <div>
+            <h4 class="mb-2">Follow Me</h4>
+            <div>{{ partial "social-links.html" (dict "vertical" true) }}</div>
+          </div>
+          <p class="text-sm md:text-lg mb-6 flex-1 items-center">
+            Join Viktor, a proud nerd and seasoned entrepreneur, whose academic journey at Santa Clara University in Silicon Valley sparked a career marked by innovation and foresight. From his college days, Viktor embarked on an entrepreneurial path, beginning with YippieMove, a groundbreaking email migration service, and continuing with a series of bootstrapped ventures.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <div class="mb-5 relative">
+        {{ if and .Params.youtube (ne .Params.youtube "") }}
+          <div class="video-container">
+            <iframe
+              width="100%"
+              height="400"
+              src="https://www.youtube.com/embed/{{ $youtube_id }}"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+        {{ else }}
+          {{ $image := .Params.image | default "/assets/images/site/podcast-cover.webp" }}
+          <img src="{{ $image }}" alt="Podcast Image" class="rounded-2xl" width="800" height="450" loading="lazy">
+          <div class="absolute bottom-6 left-6 uppercase text-white">
+            <div class="text-sm">Season {{ .Params.season }} &bull; Episode {{ .Params.episode }}</div>
+            <div class="text-2xl">{{ delimit .Params.guests ", " }}</div>
+          </div>
+        {{ end }}
+      </div>
+
+      <h2 class="mb-5 text-2xl md:text-4xl">{{ .Title }}</h2>
+      <div class="mb-5 flex items-center">
+        <span class="uppercase text-xl leading-normal mr-5">Play On</span>
+        <span class="flex flex-1 gap-3 flex-wrap">
+          {{ with .Params.youtube }}
+            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center min-w-[44px] min-h-[44px]">
+              <img src="/assets/images/site/podcast-youtube-dark.svg" alt="Listen to podcast on YouTube" />
+            </a>
+          {{ end }}
+          {{ with .Params.spotify }}
+            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center min-w-[44px] min-h-[44px]">
+              <img src="/assets/images/site/podcast-spotify-dark.svg" alt="Listen to podcast on Spotify" />
+            </a>
+          {{ end }}
+          {{ with .Params.apple }}
+            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center min-w-[44px] min-h-[44px]">
+              <img src="/assets/images/site/podcast-apple-dark.svg" alt="Listen to podcast on Apple" />
+            </a>
+          {{ end }}
+          {{ with .Params.amazon }}
+            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center min-w-[44px] min-h-[44px]">
+              <img src="/assets/images/site/podcast-amazon-dark.svg" alt="Listen to podcast on Amazon music" />
+            </a>
+          {{ end }}
+        </span>
+      </div>
+
+      <div class="mb-5 flex gap-4 text-xs uppercase font-body">
+        <span>{{ .Date.Format "02 Jan • 2006" | upper }}</span>
+        {{ with .Params.duration }}
+          <span>{{ partial "format-duration.html" . }}</span>
+        {{ end }}
+      </div>
+
+      <div class="mb-6">{{ partial "share-buttons.html" . }}</div>
+
+      <div class="podcast-page">
+        {{ .Content }}
+
+        {{/* Load transcript from data */}}
+        {{ $episode_key := .File.BaseFileName | lower }}
+        {{ $transcript := index site.Data.transcripts $episode_key }}
+        {{ if $transcript }}
+          <div class="transcript">
+            <h2>Transcript</h2>
+            <details>
+              <summary>Show/Hide Transcript</summary>
+              <div class="transcript-entries">
+                {{ range $transcript }}
+                  <div class="transcript-entry">
+                    <div class="transcript-meta">
+                      <span class="timestamp">[{{ .startTime }}]</span>
+                      <span class="speaker">{{ .speaker_name }}</span>
+                    </div>
+                    <div class="text">{{ .sentence }}</div>
+                  </div>
+                {{ end }}
+              </div>
+            </details>
+          </div>
+        {{ end }}
+
+        {{ $github_base := "https://github.com/vpetersson/vpetersson.com/blob/master" }}
+        <p class="file-pr">
+          Found an error or typo? File PR against <a href="{{ $github_base }}/{{ .File.Path }}">this file</a>{{ if $transcript }} or the <a href="{{ $github_base }}/data/transcripts/{{ $episode_key }}.json">transcript</a>{{ end }}.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .transcript {
+    margin: 2em 0;
+    width: 100%;
+  }
+
+  .transcript h2 {
+    margin-bottom: 1em;
+    color: #fff;
+  }
+
+  .transcript details {
+    margin-bottom: 1em;
+  }
+
+  .transcript summary {
+    cursor: pointer;
+    color: #fff;
+    padding: 0.5em 0;
+  }
+
+  .transcript summary:hover {
+    opacity: 0.8;
+  }
+
+  .transcript-entry {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+    margin: 1em 0;
+    padding: 0.5em 0;
+  }
+
+  @media (min-width: 768px) {
+    .transcript-entry {
+      grid-template-columns: 150px 1fr;
+      gap: 1em;
+    }
+  }
+
+  .transcript-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5em;
+  }
+
+  .timestamp {
+    color: #fff;
+    font-family: monospace;
+    font-size: 0.9em;
+    white-space: nowrap;
+  }
+
+  .speaker {
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+  }
+
+  .text {
+    line-height: 1.5;
+    font-style: italic;
+    color: #fff;
+  }
+
+  @media (max-width: 767px) {
+    .transcript-meta {
+      margin-bottom: 0.25em;
+    }
+
+    .text {
+      padding-left: 1em;
+    }
+  }
+</style>
+{{ end }}
