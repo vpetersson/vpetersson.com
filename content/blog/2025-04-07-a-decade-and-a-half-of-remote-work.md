@@ -10,6 +10,8 @@ tags:
 - leadership
 - productivity
 - teams
+aliases:
+  - /2025/04/07/a-decade-and-a-half-of-remote-work/
 ---
 
 When I wrote [A Decade of Remote Work](/2019/05/18/a-decade-of-remote/) back in 2019, I had no idea a global pandemic would soon thrust remote work into the spotlight, turning it from niche to necessity overnight. Now, as I mark 15 years of building and running remote teams, I find myself revisiting and refining many of the lessons from the past and adding new insights gathered from recent experiences. This article is for tech startup founders and remote leaders, sharing practical advice for navigating the challenges and opportunities of long-term remote work.

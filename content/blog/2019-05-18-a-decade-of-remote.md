@@ -11,6 +11,7 @@ tags:
 - digital-nomad
 aliases:
   - /2019/05/18/a-decade-of-remote.html
+  - /2019/05/18/a-decade-of-remote/
 ---
 
 ## Intro
