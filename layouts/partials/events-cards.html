@@ -1,0 +1,55 @@
+{{- $events := site.Data.events -}}
+<h2 class="about-events-title">Press, Mentions and Interviews</h2>
+
+{{ range $events }}
+<div class="events-year-group">
+  <div class="events-year-divider">
+    <span class="events-year-label">{{ .year }}</span>
+    <span class="events-year-line"></span>
+  </div>
+
+  <div class="events-card-grid">
+    {{ range .events }}
+    <div class="event-card{{ if .upcoming }} event-card-upcoming{{ end }}">
+      <div class="event-pills">
+        <span class="event-pill event-pill-{{ .type | replaceRE ` ` `-` }}">{{ .type }}</span>
+        {{ if .upcoming }}<span class="event-pill event-pill-upcoming">Upcoming</span>{{ end }}
+      </div>
+
+      {{ if or .event .publication }}
+        <div class="event-card-name">{{ .event | default .publication }}</div>
+        {{ with .location }}<div class="event-card-location">{{ . }}</div>{{ end }}
+        {{ with .title }}<p class="event-card-title">{{ . | markdownify }}</p>{{ end }}
+      {{ else }}
+        <p class="event-card-title">{{ .title | markdownify }}</p>
+      {{ end }}
+
+      {{ if or .deck .video .spotify .link }}
+      <div class="event-card-links">
+        {{ with .deck }}
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="event-card-link" title="View deck">
+            <img src="/assets/images/site/deck.svg" alt="deck" />
+          </a>
+        {{ end }}
+        {{ with .video }}
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="event-card-link" title="Watch video">
+            <img src="/assets/images/site/video.svg" alt="video" />
+          </a>
+        {{ end }}
+        {{ with .spotify }}
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="event-card-link" title="Listen on Spotify">
+            <img src="/assets/images/site/spotify.svg" alt="spotify" />
+          </a>
+        {{ end }}
+        {{ with .link }}
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="event-card-link" title="Visit link">
+            <img src="/assets/images/site/link.svg" alt="link" />
+          </a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

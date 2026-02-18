@@ -1,0 +1,413 @@
+// _about.scss — About page styles
+// stylelint-disable color-function-notation, color-function-alias-notation, alpha-value-notation
+
+// ========================================
+// Bio Section
+// ========================================
+
+.about-bio {
+  background-color: var(--color-gray-800);
+}
+
+.about-bio-container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-3);
+
+  @media (min-width: $breakpoint-sm) {
+    padding: var(--space-8) var(--space-4);
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    padding: var(--space-10) var(--space-8);
+  }
+}
+
+.about-bio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  align-items: center;
+
+  @media (min-width: $breakpoint-sm) {
+    grid-template-columns: 280px 1fr;
+    gap: var(--space-8);
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: 340px 1fr;
+    gap: var(--space-10);
+  }
+}
+
+.about-portrait {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  border-radius: var(--radius-xl);
+  border: 3px solid $purple;
+  box-shadow: 0 8px 32px rgba(93, 95, 239, 0.2);
+
+  @media (min-width: $breakpoint-sm) {
+    max-width: 100%;
+  }
+}
+
+.about-name {
+  font-family: $font-display;
+  font-size: var(--font-size-3xl);
+  color: $white;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: var(--space-1);
+}
+
+.about-tagline {
+  font-family: $font-body;
+  font-size: var(--font-size-lg);
+  color: $text-primary;
+  line-height: 1.6;
+  margin-bottom: var(--space-3);
+}
+
+.about-social {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-lg);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all var(--transition-fast);
+
+    &:hover {
+      background: rgba(93, 95, 239, 0.15);
+      border-color: $purple;
+      transform: translateY(-2px);
+    }
+
+    img,
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+// ========================================
+// Journey Cards
+// ========================================
+
+.about-journey {
+  padding: var(--space-6) 0 0;
+}
+
+.about-section-title {
+  font-family: $font-display;
+  font-size: var(--font-size-2xl);
+  color: $white;
+  text-transform: uppercase;
+  margin-bottom: var(--space-4);
+}
+
+.about-journey-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+
+  @media (min-width: $breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.about-journey-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3);
+  transition: all var(--transition-fast);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(93, 95, 239, 0.3);
+    transform: translateY(-2px);
+  }
+
+  .journey-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    background: rgba(93, 95, 239, 0.15);
+    margin-bottom: var(--space-2);
+
+    svg {
+      width: 22px;
+      height: 22px;
+      color: $purple;
+    }
+  }
+
+  h3 {
+    font-family: $font-body;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: $white;
+    margin-bottom: var(--space-1);
+  }
+
+  p {
+    font-family: $font-body;
+    font-size: var(--font-size-sm);
+    color: $text-primary;
+    line-height: 1.6;
+    margin: 0;
+  }
+}
+
+// ========================================
+// Events Section
+// ========================================
+
+.about-events {
+  background-color: $bg-primary;
+}
+
+.about-events-container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-3);
+
+  @media (min-width: $breakpoint-sm) {
+    padding: var(--space-8) var(--space-4);
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    padding: var(--space-10) var(--space-8);
+  }
+}
+
+.about-events-title {
+  font-family: $font-display;
+  font-size: var(--font-size-2xl);
+  color: $white;
+  text-transform: uppercase;
+  margin-bottom: var(--space-6);
+  text-align: center;
+
+  @media (min-width: $breakpoint-sm) {
+    text-align: left;
+  }
+}
+
+// ========================================
+// Year Dividers
+// ========================================
+
+.events-year-group {
+  margin-bottom: var(--space-8);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.events-year-divider {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.events-year-label {
+  font-family: $font-display;
+  font-size: var(--font-size-2xl);
+  color: $purple;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.events-year-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, $purple, transparent);
+}
+
+// ========================================
+// Events Card Grid
+// ========================================
+
+.events-card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+
+  @media (min-width: $breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// ========================================
+// Event Card
+// ========================================
+
+.event-card {
+  background: var(--color-gray-800);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-fast);
+
+  &:hover {
+    transform: translateY(-3px);
+    border-color: rgba(93, 95, 239, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.event-card-upcoming {
+  border-color: rgba(34, 197, 94, 0.3);
+}
+
+// ========================================
+// Event Pill Badges
+// ========================================
+
+.event-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: var(--space-2);
+}
+
+.event-pill {
+  display: inline-block;
+  border-radius: var(--radius-full);
+  font-family: $font-body;
+  font-size: rem(12px);
+  font-weight: 500;
+  padding: rem(2px) rem(12px);
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.event-pill-talk {
+  color: #efbd5d;
+  background: rgba(239, 189, 93, 0.12);
+  border: 1px solid rgba(239, 189, 93, 0.3);
+}
+
+.event-pill-podcast {
+  color: #8b8dff;
+  background: rgba(93, 95, 239, 0.12);
+  border: 1px solid rgba(93, 95, 239, 0.3);
+}
+
+.event-pill-press {
+  color: #5def7d;
+  background: rgba(93, 239, 125, 0.1);
+  border: 1px solid rgba(93, 239, 125, 0.3);
+}
+
+.event-pill-panel {
+  color: #ef955d;
+  background: rgba(239, 149, 93, 0.12);
+  border: 1px solid rgba(239, 149, 93, 0.3);
+}
+
+.event-pill-guest-post {
+  color: #5dbeef;
+  background: rgba(93, 190, 239, 0.1);
+  border: 1px solid rgba(93, 190, 239, 0.3);
+}
+
+.event-pill-other {
+  color: #ef5dca;
+  background: rgba(239, 93, 202, 0.1);
+  border: 1px solid rgba(239, 93, 202, 0.3);
+}
+
+.event-pill-upcoming {
+  color: #fff;
+  background: #22c55e;
+  border: 1px solid #22c55e;
+}
+
+// ========================================
+// Event Card Content
+// ========================================
+
+.event-card-name {
+  font-family: $font-body;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: $white;
+  margin-bottom: rem(4px);
+}
+
+.event-card-location {
+  font-family: $font-body;
+  font-size: var(--font-size-xs);
+  color: rgba(214, 214, 214, 0.6);
+  margin-bottom: rem(6px);
+}
+
+.event-card-title {
+  font-family: $font-body;
+  font-size: var(--font-size-sm);
+  color: $text-primary;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0;
+}
+
+// ========================================
+// Event Card Links
+// ========================================
+
+.event-card-links {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: var(--space-2);
+}
+
+.event-card-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all var(--transition-fast);
+
+  &:hover {
+    background: rgba(93, 95, 239, 0.15);
+    border-color: $purple;
+  }
+
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
