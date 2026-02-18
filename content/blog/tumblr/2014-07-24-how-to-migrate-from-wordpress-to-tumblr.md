@@ -24,7 +24,7 @@ Now, you’re likely reading this post because you’re interested in the subjec
 
 Yet, before we start, there are a few pre-requisites for this to work:
 
-- You’re moving from one subdomain (or domain) to another. In my case, I'm moving from 'viktorpetersson.com' to 'vpetersson.com'
+- You’re moving from one subdomain (or domain) to another. In my case, I’m moving from ‘viktorpetersson.com’ to 'blog.viktorpetersson.com’
 - Your old blog will still be online (the redirect and images will still be served from here)
 - You use Nginx as your web server (but this can probably be changed pretty easily by adjusting the rewrite rules in the script).
 - You already have Tumblr up and running with your subdomain/domain.
