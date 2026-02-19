@@ -42,15 +42,19 @@
     "name": "Nerding Out with Viktor",
     "url": "{{ "podcast/" | absURL }}"
   },
-  "partOfSeries": {
-    "@type": "PodcastSeries",
-    "name": "Nerding Out with Viktor",
-    "url": "{{ "podcast/" | absURL }}",
-    "inLanguage": "en",
-    "isAccessibleForFree": true
+  "partOfSeason": {
+    "@type": "PodcastSeason",
+    "seasonNumber": {{ .Params.season }},
+    "name": "Season {{ .Params.season }}",
+    "partOfSeries": {
+      "@type": "PodcastSeries",
+      "name": "Nerding Out with Viktor",
+      "url": "{{ "podcast/" | absURL }}",
+      "inLanguage": "en",
+      "isAccessibleForFree": true
+    }
   },
   "episodeNumber": {{ .Params.episode }},
-  "seasonNumber": {{ .Params.season }},
   "sameAs": [
     {{ $first := true }}
     {{- with .Params.spotify }}{{ if not $first }},{{ end }}"{{ . }}"{{ $first = false }}{{ end -}}
