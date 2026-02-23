@@ -1,0 +1,4608 @@
+[
+  {
+    "sentence": "But what's really got people upset in the UK is not so much around, you know, the concept of having a digital wallet that could hold credentials.",
+    "startTime": "00:00",
+    "endTime": "00:08",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's the kind of tracking and centralization that goes behind it.",
+    "startTime": "00:08",
+    "endTime": "00:13",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What, what has been labeled really the database state, you know, some tool to help you.",
+    "startTime": "00:14",
+    "endTime": "00:19",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's actually a kind of like a state that uses information about you, shares information about you, data about you, to do things to you rather than you kind of ask the state to do something to.",
+    "startTime": "00:19",
+    "endTime": "00:29",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You're kind of almost there to be kind of like the state does these things to you.",
+    "startTime": "00:29",
+    "endTime": "00:34",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Welcome back to Nerding Out with Viktor.",
+    "startTime": "00:37",
+    "endTime": "00:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Today I'm joined by James Baker.",
+    "startTime": "00:39",
+    "endTime": "00:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Welcome, James.",
+    "startTime": "00:42",
+    "endTime": "00:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Hey, welcome.",
+    "startTime": "00:42",
+    "endTime": "00:43",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Thank you for coming on the show today.",
+    "startTime": "00:45",
+    "endTime": "00:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We're going to talk about more on the policy than we usually do.",
+    "startTime": "00:47",
+    "endTime": "00:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So today is going to be about Online Safety Act and Digital ID in the UK.",
+    "startTime": "00:50",
+    "endTime": "00:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So a bit of a UK centric episode today before we dive into the actual show.",
+    "startTime": "00:56",
+    "endTime": "01:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "James, maybe you can give the viewers a bit of backstory about yourself so we have some more context about the conversation.",
+    "startTime": "01:02",
+    "endTime": "01:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Absolutely, yeah.",
+    "startTime": "01:08",
+    "endTime": "01:08",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, I'm someone who's been like campaigning on privacy and tech issues in the UK for kind of over 20 years now.",
+    "startTime": "01:08",
+    "endTime": "01:14",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Used to work for a campaign called Notary back in the day and we helped defeat the ID cards the last time around and a lot of kind of surveillance pro issues then.",
+    "startTime": "01:15",
+    "endTime": "01:25",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Since then I've had a bit of a spell.",
+    "startTime": "01:26",
+    "endTime": "01:28",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I worked in local government for a bit.",
+    "startTime": "01:28",
+    "endTime": "01:30",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I was a representative in local government.",
+    "startTime": "01:30",
+    "endTime": "01:33",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Did a bit of time working for some MEPs in Europe when the UK was still in the European Parliament.",
+    "startTime": "01:33",
+    "endTime": "01:39",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And the last few years I've been at the Open Rights Group kind of campaigning again on tech and digital issues and I guess like Open Rights Group is really like the UK's version of EFF.",
+    "startTime": "01:39",
+    "endTime": "01:50",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right, right.",
+    "startTime": "01:52",
+    "endTime": "01:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:53",
+    "endTime": "01:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So EFF I'm a big fan of but so I'm glad to have somebody representing those same issues on this side of the pond today.",
+    "startTime": "01:54",
+    "endTime": "02:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We are dive deep into these issues and there are a lot to unpack and I think most people have at least seen this on their radar, both Digital ID and Online Safety Act.",
+    "startTime": "02:03",
+    "endTime": "02:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I, I want to start off with the digital id.",
+    "startTime": "02:15",
+    "endTime": "02:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, at the face value this seems like a very sensible thing, like having an ID in your phone.",
+    "startTime": "02:19",
+    "endTime": "02:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Seems like a fairly non controversial concept, fairly straightforward idea but there's a lot brewing under the hood here or on the behind the scenes.",
+    "startTime": "02:26",
+    "endTime": "02:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So maybe for those not familiar with the concept and the controversies, I guess, around this.",
+    "startTime": "02:39",
+    "endTime": "02:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Let's start there, let's start unpacking, like why this is such a big deal.",
+    "startTime": "02:47",
+    "endTime": "02:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Why it's a controversial issue.",
+    "startTime": "02:50",
+    "endTime": "02:52",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Sure.",
+    "startTime": "02:52",
+    "endTime": "02:52",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think a lot of this stuff, like the devil is in the detail of how digital id.",
+    "startTime": "02:52",
+    "endTime": "02:57",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "02:57",
+    "endTime": "02:57",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is done.",
+    "startTime": "02:57",
+    "endTime": "02:58",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, we are used to an age, aren't we, where we will have an app on our phone, perhaps like a digital wallet app, and that can store credentials every.",
+    "startTime": "02:58",
+    "endTime": "03:06",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We can kind of use that.",
+    "startTime": "03:06",
+    "endTime": "03:07",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But like if any app on your phone, Right.",
+    "startTime": "03:08",
+    "endTime": "03:09",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's kind of who controls the app, what app is, you know, what data is that app collecting?",
+    "startTime": "03:09",
+    "endTime": "03:14",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, how's it being run?",
+    "startTime": "03:15",
+    "endTime": "03:17",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Who's in control of how that identity issued or revoked, you know, who has power over that?",
+    "startTime": "03:17",
+    "endTime": "03:25",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, at the essence of it, with anything digital, it's done at the flick of a switch.",
+    "startTime": "03:25",
+    "endTime": "03:31",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "03:31",
+    "endTime": "03:32",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So your credentials exist or they don't exist based on a, you know, a decision.",
+    "startTime": "03:32",
+    "endTime": "03:37",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Mix could be made of a click of your fist, click of your fingers.",
+    "startTime": "03:37",
+    "endTime": "03:41",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you can kind of, you can like lose access to your identity as well as you can gain it easily.",
+    "startTime": "03:41",
+    "endTime": "03:48",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And you see that, I guess, around issues of like dist exclusion and people kind of losing it, where if you have something physical, there is a sense of it's there, it's in your back pocket.",
+    "startTime": "03:48",
+    "endTime": "03:59",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, if the tech goes down, if there's a systems failure, you've got that as a kind of hard copy backup.",
+    "startTime": "03:59",
+    "endTime": "04:05",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, I am like a total tech nerd.",
+    "startTime": "04:05",
+    "endTime": "04:06",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I love tech things, but I don't travel without like a physical backup of things as well because like stuff does break and stuff does go down.",
+    "startTime": "04:06",
+    "endTime": "04:16",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I guess I'm like one essence, there's as a general sense of like, is this going to replace other methods that I've known and trusted for a long time and are kind of like pretty secure and resilient to failure?",
+    "startTime": "04:16",
+    "endTime": "04:28",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So there's that whole aspect of it.",
+    "startTime": "04:29",
+    "endTime": "04:31",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But what's really got people upset in the UK is not so much around the concept of having a digital wallet that could hold credentials.",
+    "startTime": "04:32",
+    "endTime": "04:40",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's the kind of tracking and centralization that goes behind it.",
+    "startTime": "04:40",
+    "endTime": "04:45",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What has been labeled really the database state.",
+    "startTime": "04:46",
+    "endTime": "04:48",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And you see that really being advocated strongly through organization.",
+    "startTime": "04:49",
+    "endTime": "04:54",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Tony Blair Institute, Obviously, Tony Blair, UK's former prime minister, he's now been running the Tony Blair Institute and he's been essentially, it's a huge organization.",
+    "startTime": "04:54",
+    "endTime": "05:05",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Tony Blanche, like employs over 400 people and they kind of lobby at this international level.",
+    "startTime": "05:05",
+    "endTime": "05:10",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "For this concept of, like, how AI can work in order to create a kind of AI smart state that delivers public services for you before you even know you do it.",
+    "startTime": "05:10",
+    "endTime": "05:20",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So when ID cards, digital ID again got announced, I was like, they're doing tours of like the press circuit on kind of radio, on tv, up against Tony Blair Institute.",
+    "startTime": "05:20",
+    "endTime": "05:31",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And they're not talking about some kind of identity credential issued to a wallet, and that's it.",
+    "startTime": "05:31",
+    "endTime": "05:38",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They're talking about a kind of radical transformation of how the British state works.",
+    "startTime": "05:38",
+    "endTime": "05:43",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So the example they gave was, you know, imagine ladies just had a baby, she can now claim child benefits to get access to, like, what the state offers to help people with children without even having to apply for it.",
+    "startTime": "05:43",
+    "endTime": "05:56",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that whole concept is not, you know, some.",
+    "startTime": "05:56",
+    "endTime": "05:59",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Some tool to help you.",
+    "startTime": "05:59",
+    "endTime": "06:00",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's actually a kind of like a state that uses information about you, shares information about you, data about you, to do things to you, rather than you kind of ask the state to do something to you.",
+    "startTime": "06:00",
+    "endTime": "06:10",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You're kind of almost there to be.",
+    "startTime": "06:10",
+    "endTime": "06:12",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "To be kind of like the state does these things to you.",
+    "startTime": "06:12",
+    "endTime": "06:15",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that is what is really, I think, alarmed a lot of us who care about these issues around privacy and data.",
+    "startTime": "06:15",
+    "endTime": "06:23",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Not so much actual digital credential, but that kind of revolution of how the state would work.",
+    "startTime": "06:23",
+    "endTime": "06:29",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "06:30",
+    "endTime": "06:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think one thing that's important to kind of highlight here for at least for international listeners, is that unlike most, I guess, European and international states, the UK doesn't have any form of ID outside of driver's license.",
+    "startTime": "06:31",
+    "endTime": "06:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Which is for me, as somebody who moved to the uk was kind of a weird one.",
+    "startTime": "06:45",
+    "endTime": "06:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "06:50",
+    "endTime": "06:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I think this ties together in some ways.",
+    "startTime": "06:51",
+    "endTime": "06:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "06:54",
+    "endTime": "06:54",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "06:54",
+    "endTime": "06:54",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I guess, I mean, like quite a lot of common law countries, through that common law tradition, identity is established through your interactions with.",
+    "startTime": "06:55",
+    "endTime": "07:04",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "With other people.",
+    "startTime": "07:04",
+    "endTime": "07:05",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you have ways to prove your identity, but they're not officially done centrally by the state.",
+    "startTime": "07:05",
+    "endTime": "07:11",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You might have like a birth certificate or you might have a license that proves you're that person to drive, or you might have a passport that improves your entitlement to travel.",
+    "startTime": "07:11",
+    "endTime": "07:20",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But none of these things in and of themselves are proof of your identity.",
+    "startTime": "07:20",
+    "endTime": "07:23",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You can also, in the uk, I mean, you can like change your name freely when you want to.",
+    "startTime": "07:24",
+    "endTime": "07:29",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So at the moment I'm called James Baker, but I could myself sign a bit of paper tomorrow and call myself like John Barnes and just change my identity.",
+    "startTime": "07:29",
+    "endTime": "07:38",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So we have that kind of freedom to change.",
+    "startTime": "07:38",
+    "endTime": "07:40",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Identity isn't something that is, you know, determined by a central authority, but the Other thing the UK doesn't have, which a lot of countries do have this digital ID have, is a written constitution and those strong protections for privacy.",
+    "startTime": "07:40",
+    "endTime": "07:55",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I talk about this with, you know, an example of Germany, for example, where they do have ID cards in Germany, but then they also have very strong like written constitution that protects a lot of their privacy rights, which gives them some future protection about like, you know, an authoritarian misuse of those ID cards in the future.",
+    "startTime": "07:55",
+    "endTime": "08:15",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But in the uk, because we don't have that kind of written constitution, you actually see, you know, the threat of these.",
+    "startTime": "08:16",
+    "endTime": "08:22",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Some of these systems I think are kind of bigger potentially to the UK than they are.",
+    "startTime": "08:22",
+    "endTime": "08:26",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, some other countries already have them.",
+    "startTime": "08:26",
+    "endTime": "08:27",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "08:29",
+    "endTime": "08:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I, I'm from Scandinavia and in Scandinavia we've been using something called Bank ID for a very long time.",
+    "startTime": "08:30",
+    "endTime": "08:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm sure you're familiar with that product.",
+    "startTime": "08:35",
+    "endTime": "08:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that was not controversial by any means when that was rolled out.",
+    "startTime": "08:37",
+    "endTime": "08:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's now essentially your ID to interface with any banking system or any governmental system which for good or bad, I actually myself was in a pickle for that because my bank ID expired and I don't live there and I could only I had to go to the fiscal bank to like renew it when I was in Sweden.",
+    "startTime": "08:42",
+    "endTime": "09:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that highlights what are the problems faced there.",
+    "startTime": "09:01",
+    "endTime": "09:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But, but the thing that kind of worked there was that Bank ID was created as a unit between all the banks.",
+    "startTime": "09:03",
+    "endTime": "09:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they basically had, because of KYC, they knew their customers, so therefore they could issue bank id, which is slightly different than the narrative coming from the uk.",
+    "startTime": "09:12",
+    "endTime": "09:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "09:22",
+    "endTime": "09:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the model that the bank id.",
+    "startTime": "09:23",
+    "endTime": "09:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Sorry, sorry, the model that the digital ID has been modeled around, I, I don't think is coming from that model, but rather from.",
+    "startTime": "09:26",
+    "endTime": "09:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I, I think if I'm correct, if I'm wrong, but I think from the.",
+    "startTime": "09:32",
+    "endTime": "09:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "More like the Estonian side of that side of how the Estonian E-Citizenship works, for instance.",
+    "startTime": "09:35",
+    "endTime": "09:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Is that correct or is where the.",
+    "startTime": "09:40",
+    "endTime": "09:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Inspiration drawn from this, it's been talked about.",
+    "startTime": "09:42",
+    "endTime": "09:44",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, politicians have referenced Estonia quite a lot for this.",
+    "startTime": "09:44",
+    "endTime": "09:48",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I think their idea is something that like, you know, government centrally creates and then is going to be a kind of government wallet which they then issue credentials to.",
+    "startTime": "09:50",
+    "endTime": "10:03",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, the only slight bit of good news I've heard coming out about this is that they're talking about using the W3C standards for digital identity wallets and digital credentials, which if you apply those properly, and again, like the devil is in the detail, but if you did apply those standards correctly, you could create a fairly privacy friendly way of doing digital id.",
+    "startTime": "10:03",
+    "endTime": "10:21",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's really, I think it's going to be like, what happens to the data behind the scenes?",
+    "startTime": "10:22",
+    "endTime": "10:26",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is the, is all the data in government going to be merged into a central authority within government then issues these IDs or is our different government departments and local authorities and maybe even like private sector able to kind of issue their credentials themselves to these schemes?",
+    "startTime": "10:26",
+    "endTime": "10:42",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So to give you example, like here in the uk, if you wanted to become a, perhaps up a pub, that would be like your local authority would issue your alcohol license rather than central government.",
+    "startTime": "10:44",
+    "endTime": "10:55",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So is it going to be a kind of a system that say, like every separate part of government can issue a digital credential to that wallet or is it going to be kind of centralized data sharing and that kind of control that goes with it?",
+    "startTime": "10:55",
+    "endTime": "11:07",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that's kind of really where we're at with a lot of the concerns around it.",
+    "startTime": "11:07",
+    "endTime": "11:10",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, it's interesting, like, you know, the banking example, like the UK's banking is pretty advanced as a country.",
+    "startTime": "11:11",
+    "endTime": "11:17",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, our fintech is kind of up there.",
+    "startTime": "11:17",
+    "endTime": "11:19",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We've got a lot of mobile banking applications and things that can kind of do some form of identity.",
+    "startTime": "11:19",
+    "endTime": "11:26",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, it's very integrated now with like credit reference checks and stuff.",
+    "startTime": "11:26",
+    "endTime": "11:29",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If you're opening up new accounts for like, this is where we're kind of, you know, some of the examples of government says, oh, it's such a hassle, you have to get your paper bills out to open up an account.",
+    "startTime": "11:29",
+    "endTime": "11:39",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like no one does that anymore.",
+    "startTime": "11:40",
+    "endTime": "11:41",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "This is, this is true though.",
+    "startTime": "11:41",
+    "endTime": "11:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is, this is true though.",
+    "startTime": "11:42",
+    "endTime": "11:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I am so frustrated with KYC checks for everything because I feel like multiple times a year between bank accounts you have to like, oh, now you have to do kyc, scan your council tax bill, set it in and it's just like, guys, this is not a sol.",
+    "startTime": "11:43",
+    "endTime": "11:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Should be a solved problem by now in a modern country.",
+    "startTime": "11:56",
+    "endTime": "11:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, there is that repetition.",
+    "startTime": "11:59",
+    "endTime": "12:01",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I had it with one of my accounts, I hadn't done it and then a payment went through and it's like, oh no, we've not been able to like process this subscription payment because you haven't done your like updated check.",
+    "startTime": "12:01",
+    "endTime": "12:11",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And there is that kind of element of control with some of that as well.",
+    "startTime": "12:12",
+    "endTime": "12:15",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And you see it, you know, like it's increasingly difficult to use cryptocurrencies, for example, in the UK because they keep trying to like constantly, you know, tell us your data, tell us what you wanted to use this cryptocurrency for and they're just kind of increasingly making it I guess like increase of financial surveillance.",
+    "startTime": "12:15",
+    "endTime": "12:31",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "12:34",
+    "endTime": "12:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean but you mentioned devils in the detail which I completely agree with.",
+    "startTime": "12:35",
+    "endTime": "12:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "12:40",
+    "endTime": "12:40",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean when companies like Palantir have been surfaced as being part of these projects, that ought to make people nervous.",
+    "startTime": "12:40",
+    "endTime": "12:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "My list pellet is involved, something is sketchy is happening.",
+    "startTime": "12:51",
+    "endTime": "12:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's that my litmus test generally speaking.",
+    "startTime": "12:55",
+    "endTime": "12:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "12:57",
+    "endTime": "12:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But yeah, where's your head around with regards to that?",
+    "startTime": "12:59",
+    "endTime": "13:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, I mean I think you know, you can go online.",
+    "startTime": "13:02",
+    "endTime": "13:05",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I say that this video is on YouTube or what have you of like Tony Blair, speaker of Larry Ellson of Oracle about like this future of digital ID and where AI and this tech can go.",
+    "startTime": "13:05",
+    "endTime": "13:18",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that really tells you what their vision is or what some people's vision is with digital id.",
+    "startTime": "13:18",
+    "endTime": "13:23",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think yeah, the big tech company involved, the company itself could be problematic.",
+    "startTime": "13:24",
+    "endTime": "13:29",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But it's you know, about what the laws and what they're going to do with that and where they see this kind of, where they see government going with AI and technology really is it going to be like a future where we as an individual kind of have some ownership of digital id?",
+    "startTime": "13:29",
+    "endTime": "13:44",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean you could do it, right?",
+    "startTime": "13:45",
+    "endTime": "13:46",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You could, you could issue like a system where other people could create the wallet.",
+    "startTime": "13:46",
+    "endTime": "13:51",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You wouldn't even necessarily need to be a government owned wallet.",
+    "startTime": "13:51",
+    "endTime": "13:54",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like people could issue credentials to it, private sector could use it as well.",
+    "startTime": "13:54",
+    "endTime": "13:57",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Actually quite kind of decentralized in the way it works and not kind of centralize the control.",
+    "startTime": "13:58",
+    "endTime": "14:03",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or you can see this thing where like you have a really big tech company involved in it, Palantir, Oracle, someone like that and like your data is being held by them and it's pulling data across government from like health.",
+    "startTime": "14:03",
+    "endTime": "14:17",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because we have like a nationalized health service in uk so all of that public health data is available quite easily to suck up and like crime data, health data, like your tax data, your social data, all of that then goes into like a centralized system which can then be interrogated with an AI because that's what is changing in recent years is that ability to interrogate huge data sets is expanding and that.",
+    "startTime": "14:17",
+    "endTime": "14:43",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And with that I guess like the risks of kind of control come along with it.",
+    "startTime": "14:43",
+    "endTime": "14:48",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's this is like entirely different right to something like the open banking system which is run by the banks or not necessarily just the government or like Germany's ID card which is like you know, a card and has these strong protections around merging like the large data sets in Germany.",
+    "startTime": "14:48",
+    "endTime": "15:06",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that's the kind of risk with digital ID in the uk really, is that kind of database state and then like the AI state that goes along with that?",
+    "startTime": "15:06",
+    "endTime": "15:14",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, yeah.",
+    "startTime": "15:14",
+    "endTime": "15:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How do you see, I mean, the obvious one you mentioned already is that it's an app on your phone, right.",
+    "startTime": "15:16",
+    "endTime": "15:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's your wallet or your phone.",
+    "startTime": "15:22",
+    "endTime": "15:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That obviously draws the thinking to Apple and Google being able to issue these on your phone.",
+    "startTime": "15:24",
+    "endTime": "15:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "15:31",
+    "endTime": "15:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You already seen this.",
+    "startTime": "15:32",
+    "endTime": "15:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like Microsoft Authenticator can do this to some degree already.",
+    "startTime": "15:33",
+    "endTime": "15:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How do you see, like, is there some kind of, like in dialogue or some kind of pushback and them trying to control that side against their governments or, and to create some kind of like global ID system or how do you see that playing out?",
+    "startTime": "15:38",
+    "endTime": "15:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I mean, the global aspect of it, there's an element of it being part of a global agenda.",
+    "startTime": "15:54",
+    "endTime": "16:01",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "This isn't like some kind of weird conspiracy thing.",
+    "startTime": "16:01",
+    "endTime": "16:04",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like you can go on the WS website and they've got like a document around, you know, smart cities of the future digital id.",
+    "startTime": "16:04",
+    "endTime": "16:13",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it's essentially like encouraging different national governments to kind of go down this route of issuing digital ID for their citizens.",
+    "startTime": "16:13",
+    "endTime": "16:21",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think it's born out of this kind of sense of it's the future, it's an easier way of doing it.",
+    "startTime": "16:21",
+    "endTime": "16:26",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We help to like identify people's credentials.",
+    "startTime": "16:26",
+    "endTime": "16:30",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I do think there's an element of this, it's like there is an element of control.",
+    "startTime": "16:32",
+    "endTime": "16:36",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it's also, I think, quite highly linked into issues of taxation as well.",
+    "startTime": "16:36",
+    "endTime": "16:42",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So yes, I always joke, like in the uk, like governments have wanted to know more about people since William the Conqueror, like invaded and created this doomsday book of every Saxons farm and how many sheep they had and how many chickens and cows they had and how much land in order to tax them.",
+    "startTime": "16:42",
+    "endTime": "17:00",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so you see with digital ID in the uk, it being proposed, like, notionally alongside this idea that people are perhaps working illegally and if they're working illegally, kind of not paying tax.",
+    "startTime": "17:01",
+    "endTime": "17:13",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So there's this attempt to tackle, you know, the gray market of people working outside of what the government knows about.",
+    "startTime": "17:13",
+    "endTime": "17:21",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But at the same time alongside that, you see AI tools being developed to help like, catch people who aren't paying the right amount of tax.",
+    "startTime": "17:22",
+    "endTime": "17:30",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So our tax authority, hmrc, has just started scanning people's social media posts to try and detect life skull discrepancies between the kind of lifestyle they appear to have on their social media accounts and what they're reporting to government through taxation.",
+    "startTime": "17:30",
+    "endTime": "17:43",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So this kind of like what the concern is that actually AI here is going to be used to essentially, you know, police people and stop people doing things that they ought not to.",
+    "startTime": "17:43",
+    "endTime": "17:54",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's a very, I mean it's hard to have this conversation without thinking about the social credit system that's being rolled out in part of China, right.",
+    "startTime": "17:56",
+    "endTime": "18:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Where if you have a central identity and you have a score and then well, if your score drops a certain level because you've done something that the government deemed to be bad, you might not be able to leave the country or you might not be able to use the public transport or whatever it may be, you may be penalized.",
+    "startTime": "18:05",
+    "endTime": "18:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "However they seem fit as per the scheme.",
+    "startTime": "18:22",
+    "endTime": "18:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "18:24",
+    "endTime": "18:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That I, I mean that side of me is terrifying because it goes against so much our Western values in general.",
+    "startTime": "18:26",
+    "endTime": "18:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I mean it is terrifying.",
+    "startTime": "18:32",
+    "endTime": "18:34",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think, you know, and I think people ought to be a bit more terrified.",
+    "startTime": "18:34",
+    "endTime": "18:38",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think it's so scary that sometimes, you know, we like to just not think about it too much or the risk it might happen here.",
+    "startTime": "18:38",
+    "endTime": "18:45",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I mean already it started there's kind of AI tools that are used because we do a whole project at Open Rights Group, we call this like pre crime.",
+    "startTime": "18:45",
+    "endTime": "18:55",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you know, from that, that kind of sense that the technology be used to kind of predict people's likelihood of committing offense as well.",
+    "startTime": "18:55",
+    "endTime": "19:06",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But there's already like programs for like perpetrators so like risk offending tools which is used by, in rehabilitation of criminals in the UK where they'll enter people's data and then they'll predict their likelihood of, that they're going to be someone who's going to go and recommit a crime after they get released.",
+    "startTime": "19:06",
+    "endTime": "19:25",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that's used in assessments around whether people should be, you know, released on license from prison or not.",
+    "startTime": "19:25",
+    "endTime": "19:32",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So in some ways like those kind of risk profiling tools exist at this point.",
+    "startTime": "19:32",
+    "endTime": "19:36",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There isn't like a centralized credit score that everyone has.",
+    "startTime": "19:36",
+    "endTime": "19:40",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well there is financially, you know, everyone has a financial credit score in the UK but you know, there isn't a kind of behavior credit score yet.",
+    "startTime": "19:40",
+    "endTime": "19:49",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But there are organizations that use data to create risk profiles of people.",
+    "startTime": "19:49",
+    "endTime": "19:54",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you're not that far away from that then becoming, you know, more centralized I guess.",
+    "startTime": "19:54",
+    "endTime": "20:00",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Which is terrifying because we all know how much AI today hallucinates and there have already been cases, I don't have the notes here, but I believe there was one, at least one reported incorrect arrest in the US where they had used tools like this where they like predicted somebody but due to poor training they Arrest the wrong person.",
+    "startTime": "20:01",
+    "endTime": "20:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, and we've had it.",
+    "startTime": "20:21",
+    "endTime": "20:23",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So we've had recently, UK trials of live facial recognition scanning.",
+    "startTime": "20:23",
+    "endTime": "20:27",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So essentially the police have been given a load of funding for the Home Office and they go and set up vans outside, like Tube stations and busy places, and they start using live facial recognition technology to try and identify people who are kind of essentially like, wanted by the police.",
+    "startTime": "20:27",
+    "endTime": "20:44",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that.",
+    "startTime": "20:44",
+    "endTime": "20:44",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That has already resulted in, like, one or two incorrect arrests, where the kind of algorithm gets it wrong.",
+    "startTime": "20:44",
+    "endTime": "20:51",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And as you kind of scale these systems up, you know, the more people you've got involved in it, the kind of bigger the mistakes will be.",
+    "startTime": "20:51",
+    "endTime": "20:59",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And also the other problem is it becomes, like, impossible for the police is, like, capacity to actually keep up with the amount of data they have.",
+    "startTime": "20:59",
+    "endTime": "21:08",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So to give you an example, like, the UK has this really widespread AMPR automatic number plate recognition surveillance system set up all across the country.",
+    "startTime": "21:09",
+    "endTime": "21:19",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So if you drive a car and you're in the uk, it will scan your number plate.",
+    "startTime": "21:19",
+    "endTime": "21:22",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think.",
+    "startTime": "21:23",
+    "endTime": "21:23",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm not sure, I think it's like one of the biggest databases in Europe at the moment.",
+    "startTime": "21:23",
+    "endTime": "21:26",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It has, like, ridiculous number of entries added to that database every year.",
+    "startTime": "21:26",
+    "endTime": "21:29",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You think of all the.",
+    "startTime": "21:29",
+    "endTime": "21:30",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The traffic.",
+    "startTime": "21:31",
+    "endTime": "21:31",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But then at the same time, I've got a friend who's like, training to be a detective in the police force.",
+    "startTime": "21:32",
+    "endTime": "21:36",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "He's like, yeah, well, you know, if we're doing a patrol, we get so many pings off the system, we haven't actually got the time to, you know, stop everyone on.",
+    "startTime": "21:36",
+    "endTime": "21:42",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "On the system.",
+    "startTime": "21:42",
+    "endTime": "21:43",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you kind of have this sense of, like, on the one hand, the UK is like a very high surveillance society, but on the other hand, we're kind of like low enforcement because we've not got, like, effective court system or effective, like, police investigation.",
+    "startTime": "21:43",
+    "endTime": "21:58",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, yeah.",
+    "startTime": "21:58",
+    "endTime": "22:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Between ANPR and.",
+    "startTime": "22:00",
+    "endTime": "22:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, London has probably the highest density of civilians in the Western world.",
+    "startTime": "22:01",
+    "endTime": "22:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "22:06",
+    "endTime": "22:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And sprinkle digital ID on top of that with all the data sets.",
+    "startTime": "22:08",
+    "endTime": "22:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like, that's pretty terrifying.",
+    "startTime": "22:11",
+    "endTime": "22:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Lost you for a little bit there, Victor.",
+    "startTime": "22:16",
+    "endTime": "22:18",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "On the.",
+    "startTime": "22:18",
+    "endTime": "22:18",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Oh, yeah.",
+    "startTime": "22:20",
+    "endTime": "22:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Are you back now?",
+    "startTime": "22:21",
+    "endTime": "22:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You're back now?",
+    "startTime": "22:21",
+    "endTime": "22:22",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "22:22",
+    "endTime": "22:22",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "22:24",
+    "endTime": "22:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I was just saying, between the amount of cameras available in London with ANPR systems deployed, combine that with digital id, it's a pretty terrifying idea, even if it's not done today.",
+    "startTime": "22:24",
+    "endTime": "22:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But what could be done?",
+    "startTime": "22:38",
+    "endTime": "22:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, what could be done?",
+    "startTime": "22:40",
+    "endTime": "22:41",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then at the same time, if you speak to a lot of British people, they'll tell you about rising fear and Conservative crime and London, I think, you know, those some of the kind of like stabbing and homicide rates are slightly, you know, the spin on that is slightly worse than the actual data is in terms of like phone theft.",
+    "startTime": "22:41",
+    "endTime": "23:02",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That, that is a real problem in London at the moment.",
+    "startTime": "23:02",
+    "endTime": "23:04",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so we have kind of like in the UK all of this surveillance, but we don't have the kind of, you know, the low crime that goes with some other cultures which are also kind of like have authoritarian tendencies.",
+    "startTime": "23:04",
+    "endTime": "23:18",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's like the surveillance is there but it doesn't also like help ordinary people struggle with crime, if that makes sense.",
+    "startTime": "23:18",
+    "endTime": "23:24",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It hasn't stopped crime.",
+    "startTime": "23:24",
+    "endTime": "23:26",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think that's the real lesson.",
+    "startTime": "23:26",
+    "endTime": "23:28",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'd say like, you know, it hasn't been the solution to crime in the uk.",
+    "startTime": "23:28",
+    "endTime": "23:32",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, then that's a very good point.",
+    "startTime": "23:33",
+    "endTime": "23:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And obviously like you can see these people with just bar clavos, like zooming around town on like scooters and bikes.",
+    "startTime": "23:35",
+    "endTime": "23:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "23:42",
+    "endTime": "23:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's, yeah, just easy way to mitigate that.",
+    "startTime": "23:43",
+    "endTime": "23:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "23:45",
+    "endTime": "23:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, that's it.",
+    "startTime": "23:46",
+    "endTime": "23:47",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, you kind of, at some point you even need like police patrols on the ground or you need kind of community interventions to stop people going into crime in the first place.",
+    "startTime": "23:47",
+    "endTime": "23:56",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There's like none of that prevention or community funding's all been stripped away.",
+    "startTime": "23:56",
+    "endTime": "24:00",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Instead we've got like loads of cameras everywhere.",
+    "startTime": "24:00",
+    "endTime": "24:02",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean London's interesting as well because they kind of put up cameras there for like policing like car emissions as well, like low emission zones.",
+    "startTime": "24:03",
+    "endTime": "24:10",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And you saw like this real kind of grassroots, this movement of people actually just like coming out and trying to cut down these surveillance cameras and just kind of, you know, rebellion against that kind of surveillance because it was being used again it was being used essentially like fine people for a fairly kind of like low level offense rather than actually help people with their day to day struggles with crime.",
+    "startTime": "24:10",
+    "endTime": "24:32",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right, yeah.",
+    "startTime": "24:34",
+    "endTime": "24:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we've talked about digital ID and why maybe a bad idea and like what.",
+    "startTime": "24:36",
+    "endTime": "24:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But let's wrap up that conversation with where would you like to see this going?",
+    "startTime": "24:44",
+    "endTime": "24:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Obviously you're involved with the policy side of things, with the lobbying sort of that like how can we get this done?",
+    "startTime": "24:48",
+    "endTime": "24:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, Because I think it is not a bad idea.",
+    "startTime": "24:54",
+    "endTime": "24:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But the devil is in the detail.",
+    "startTime": "24:57",
+    "endTime": "24:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "24:59",
+    "endTime": "25:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like how can we get this Right?",
+    "startTime": "25:00",
+    "endTime": "25:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I think you have to start with like your legal protections and your legal that you have there for privacy.",
+    "startTime": "25:01",
+    "endTime": "25:10",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So what save like the UK is like, well we don't have a written constitution.",
+    "startTime": "25:10",
+    "endTime": "25:14",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We have the Human Rights act which is just a piece of Statute passed by parliament.",
+    "startTime": "25:15",
+    "endTime": "25:21",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But one problem, because we don't have a written constitution, you only require like a parliamentary majority to change anything that's there already.",
+    "startTime": "25:21",
+    "endTime": "25:27",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's not like some countries where you have to have some kind of like super majority to change the constitution.",
+    "startTime": "25:28",
+    "endTime": "25:32",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So we have a kind of broken democracy problem in the uk.",
+    "startTime": "25:33",
+    "endTime": "25:36",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So part of like if you want digital ID done in a way which like isn't going to be authoritarian or isn't going to strip people of their rights, so you need to have that kind of system of rights in place in the first place.",
+    "startTime": "25:37",
+    "endTime": "25:48",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think part of the countries that have done that well are countries that have got a very strong constitutional protection for some of these things and privacy and courts that will kind of defend it.",
+    "startTime": "25:48",
+    "endTime": "26:00",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And within that environment it's probably safer to think about developing something like a digital ID system.",
+    "startTime": "26:00",
+    "endTime": "26:07",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then I think you also need like polarity and decentralization rather than kind of centralization.",
+    "startTime": "26:08",
+    "endTime": "26:13",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So try to create a system which is not all just on like one set of servers that could go down, you know, not under one authority's control.",
+    "startTime": "26:13",
+    "endTime": "26:24",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Something that like is more decentralized, where the code is open source.",
+    "startTime": "26:24",
+    "endTime": "26:27",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We can see how it works.",
+    "startTime": "26:27",
+    "endTime": "26:29",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like different people can choose to operate wallets, be that you know, Apple, the state, even like an NGO or a charity or a bank could maybe kind of operate the wallet software themselves.",
+    "startTime": "26:29",
+    "endTime": "26:41",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It doesn't have to just be centralized.",
+    "startTime": "26:41",
+    "endTime": "26:43",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then I think, you know, working to develop those international standards like the W3C standards around decentralized digital identity and kind of work to make those as privacy friendly as possible and kind of working on those, I guess like more the tech solutions around kind of you know, zero knowledge proofs and just kind of developing like privacy friendly tech around encryption and how you do that.",
+    "startTime": "26:44",
+    "endTime": "27:10",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think that's like how I would go about it.",
+    "startTime": "27:11",
+    "endTime": "27:13",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm always a bit wary of saying like it could be done in a privacy friendly way because like politicians will take that and then not do it.",
+    "startTime": "27:14",
+    "endTime": "27:21",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I tend to like be more critical.",
+    "startTime": "27:21",
+    "endTime": "27:23",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But yeah, I mean I think with my little insight on this like zero knowledge proof seem to be the by far best solution to do this so that you can actually prove who you are without disclosing information.",
+    "startTime": "27:23",
+    "endTime": "27:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "27:35",
+    "endTime": "27:35",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think we've seen terrible things that happen when you hand over data to any sort of entity.",
+    "startTime": "27:35",
+    "endTime": "27:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, yeah.",
+    "startTime": "27:43",
+    "endTime": "27:44",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And, and there are, I mean I know there's people like within.",
+    "startTime": "27:44",
+    "endTime": "27:48",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Org as an organization who would like be like critical of zero knowledge proofs because there are kind of academic papers out there that kind of show in real world applications they're not always possible.",
+    "startTime": "27:48",
+    "endTime": "27:58",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And maybe like one example of that is like the recent like Discord breach around.",
+    "startTime": "28:00",
+    "endTime": "28:05",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I was going to mention that.",
+    "startTime": "28:05",
+    "endTime": "28:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, yeah.",
+    "startTime": "28:06",
+    "endTime": "28:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Around like online age assurance stuff.",
+    "startTime": "28:07",
+    "endTime": "28:11",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like even if the age assurance systems secure itself and even if that was like using zero knowledge proof or whatever, then actually what your systems around that system, you know, when you start to think of processes which involve like the wider process, it then gets even harder to kind of keep all of that privacy friendly.",
+    "startTime": "28:11",
+    "endTime": "28:29",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think like the Discord breach wasn't, you know, the actual age assurance provider, but it was through people who then had problems with that and then went onto a different customer service system, then that customer service system had a breach.",
+    "startTime": "28:29",
+    "endTime": "28:39",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's a lot harder, you know, even if you get like the privacy right on like one part of our entire system, kind of getting it across your whole process is much more of a challenge.",
+    "startTime": "28:39",
+    "endTime": "28:49",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "On the best way to protect it is not to have it at all.",
+    "startTime": "28:50",
+    "endTime": "28:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, there is that like don't.",
+    "startTime": "28:52",
+    "endTime": "28:54",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If you don't need it, don't.",
+    "startTime": "28:54",
+    "endTime": "28:55",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Don't collect it or use it, don't store it.",
+    "startTime": "28:55",
+    "endTime": "28:58",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "28:58",
+    "endTime": "28:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well that gives us a nice segue over to the second topic for today's conversation with which is the Online Safety act, which is highly controversial regulation that went into ratification earlier this year.",
+    "startTime": "28:59",
+    "endTime": "29:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "For those not familiar with it, or maybe those who are maybe don't have maybe those familiar with the terminology, but with the name, but not really what it implies.",
+    "startTime": "29:13",
+    "endTime": "29:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Let's.",
+    "startTime": "29:23",
+    "endTime": "29:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Can you give the viewers kind of like a recap of what that is and how it impacts our lives?",
+    "startTime": "29:23",
+    "endTime": "29:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay, so the very basics of the Online Safety act is I guess it was an attempt to or is an attempt to apply to providers of online services.",
+    "startTime": "29:28",
+    "endTime": "29:41",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that's quite broad.",
+    "startTime": "29:41",
+    "endTime": "29:42",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, anyone doing a website, but any kind of online service where users can interact, place upon them certain legal duties to prevent and mitigate harms.",
+    "startTime": "29:42",
+    "endTime": "29:53",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it comes instead of, you know, the old way of conceptualizing the Internet was you're providing a service.",
+    "startTime": "29:53",
+    "endTime": "29:59",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What people do on that service is down to them.",
+    "startTime": "29:59",
+    "endTime": "30:02",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, they're doing something illegal, it's them who's done something illegal.",
+    "startTime": "30:02",
+    "endTime": "30:05",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You're just the facilitator of the space.",
+    "startTime": "30:05",
+    "endTime": "30:07",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But the individual liability is kind of, you know, if you publish something.",
+    "startTime": "30:08",
+    "endTime": "30:11",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's moving from that to kind of trying to put general duties of care and legal responsibility upon service providers.",
+    "startTime": "30:11",
+    "endTime": "30:20",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And perhaps the closest analogy I can think of is Something like we have health and safety law in the UK where if you're like providing an activity in the real world, you kind of have a duty of care to people in the real world that it's safe.",
+    "startTime": "30:20",
+    "endTime": "30:34",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's a bit like trying to apply health and safety law to the entire issue of the Internet, but with the major problem that like people who run services are based all over the world, whereas the UK is just like one jurisdiction.",
+    "startTime": "30:34",
+    "endTime": "30:48",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's got that kind of massive problem, it's extraterritoriality.",
+    "startTime": "30:48",
+    "endTime": "30:51",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then the other problem with it is just like the complexity of the duties that are placed upon you are kind of mind boggling really.",
+    "startTime": "30:52",
+    "endTime": "30:59",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that's where we've kind of run into problems is that unless you're a really big tech organization with specialists employed working on this, it is pretty incomprehensible for most people to really understand the law and all the codes that have been created.",
+    "startTime": "30:59",
+    "endTime": "31:19",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So legislators, they passed the law back in 2023 and then Ofcom had this period of trying to get their heads around it and implement it.",
+    "startTime": "31:21",
+    "endTime": "31:29",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I almost feel a bit sorry for Ofcom because they've been given a kind of almost impossible task event.",
+    "startTime": "31:29",
+    "endTime": "31:34",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "OFCOM has just been spitting out like these hundred page, you know, hundreds and hundreds of pages of codes of practice and guidance for.",
+    "startTime": "31:34",
+    "endTime": "31:43",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Honestly, you would like lose the will to live if you had to read through all of this stuff.",
+    "startTime": "31:43",
+    "endTime": "31:48",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I kind of think it's like UK has created like a kind of magnus opus international bureaucracy with this piece of legislation.",
+    "startTime": "31:48",
+    "endTime": "31:57",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean like they did an update of it, right?",
+    "startTime": "31:58",
+    "endTime": "32:00",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It was a consultation, 310 pages of consultation, asked like 60 question.",
+    "startTime": "32:00",
+    "endTime": "32:06",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I had 17 annexes now that like, how can anyone seriously.",
+    "startTime": "32:06",
+    "endTime": "32:10",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It took me like weeks to go through it and I'm kind of doing this.",
+    "startTime": "32:11",
+    "endTime": "32:15",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But you've read it, you've read painfully.",
+    "startTime": "32:15",
+    "endTime": "32:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I mean I got, thankfully Org employed me to read it.",
+    "startTime": "32:17",
+    "endTime": "32:21",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It would not have been something.",
+    "startTime": "32:21",
+    "endTime": "32:22",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But yeah, all those donations to Org, they're used.",
+    "startTime": "32:24",
+    "endTime": "32:27",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, it enables someone who cares about digital rights to get their head around this stuff.",
+    "startTime": "32:27",
+    "endTime": "32:31",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But it's.",
+    "startTime": "32:31",
+    "endTime": "32:33",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, so that's the kind of problem with the active and the.",
+    "startTime": "32:34",
+    "endTime": "32:36",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Some of the main things that have come out of it are obviously like age insurance, this idea that not just for pornographic websites but actually for a whole host of other websites people are having to do now like age checks on their users.",
+    "startTime": "32:36",
+    "endTime": "32:48",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's kind of one of the things that's come out of it.",
+    "startTime": "32:48",
+    "endTime": "32:50",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But also with the next round of it, we see increasingly proposals to start deploying perceptual hash matching technologies across whole range of services, including file storage and file sharing.",
+    "startTime": "32:51",
+    "endTime": "33:07",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So your Google Drive as well here in your kind of private documents could be covered by this to start kind of scanning either content that you produce or content that you're sharing for a whole host of types of content which is kind of covered by the app.",
+    "startTime": "33:07",
+    "endTime": "33:25",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There's.",
+    "startTime": "33:27",
+    "endTime": "33:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, there's so much to unpack here.",
+    "startTime": "33:27",
+    "endTime": "33:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But let's start with the age verification thing because I think that's ties into what we started with digital id.",
+    "startTime": "33:29",
+    "endTime": "33:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there are these conversations very tangential, I guess, and very much interdepend.",
+    "startTime": "33:36",
+    "endTime": "33:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think it's important to kind of prefix this conversation with the fact that I think there's a lot of like the intents are somewhat good, I guess, but as always, the road to is paid with good intentions.",
+    "startTime": "33:40",
+    "endTime": "33:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "33:56",
+    "endTime": "33:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, I think it's important to acknowledge that we are living in a problem time where kids are exposed to pornography and like the are a lot of things that are bad, objectively bad.",
+    "startTime": "33:56",
+    "endTime": "34:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "34:11",
+    "endTime": "34:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The question is not, I don't think anybody, including you and your organization you work for, say that's not bad.",
+    "startTime": "34:11",
+    "endTime": "34:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Everybody agrees that's bad.",
+    "startTime": "34:19",
+    "endTime": "34:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The question is how that how we go about to mitigate that and solve that.",
+    "startTime": "34:20",
+    "endTime": "34:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "34:25",
+    "endTime": "34:25",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So based on where like what's like if you were to recap your biggest beef with this entire piece of legend legislation, what would you say that is your biggest issue with it?",
+    "startTime": "34:26",
+    "endTime": "34:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh, I think my biggest beef, honestly, and I say this as a father, there's nothing in there about educating, there's nothing about educating young people around risks of lc and there's nothing in it about giving users better technical tools to prevent them seeing the stuff themselves.",
+    "startTime": "34:37",
+    "endTime": "34:54",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's like you're trying to place all the responsibility onto the platform to try and manage content for people rather than empowering people to one be able to like manage the content they see themselves and to when they inevitably see content, learn how to deal with that psychologically.",
+    "startTime": "34:54",
+    "endTime": "35:14",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like where you can get help, where you can get support, what you might see the impact of that.",
+    "startTime": "35:14",
+    "endTime": "35:20",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I say that some.",
+    "startTime": "35:20",
+    "endTime": "35:21",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, I grew up in the early days of the Internet, the days of like rotten.com the days when like the large porn sites had total, you know, like when I was younger and you went on to a porn site, there was just all types of content on that site, which you just wouldn't see today.",
+    "startTime": "35:21",
+    "endTime": "35:39",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It was like far more extreme and that was kind of like normal stuff.",
+    "startTime": "35:39",
+    "endTime": "35:44",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And like Rosten.com you know, it's a group of teenage boys, we all went online and we all just like looked up gore stuff as a group of teenage boys.",
+    "startTime": "35:44",
+    "endTime": "35:51",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Haha, isn't this funny?",
+    "startTime": "35:51",
+    "endTime": "35:52",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Whereas actually like, you know, your mates left and then like the stuff you've seen then replays in your mind later that evening.",
+    "startTime": "35:53",
+    "endTime": "35:59",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And actually I've been exposed some pretty like horrific content which has had an emotional impact, but then there's no one to speak to about it.",
+    "startTime": "35:59",
+    "endTime": "36:07",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There's no kind of support mechanism within society.",
+    "startTime": "36:07",
+    "endTime": "36:09",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think that's what we're getting wrong is that we're trying to rely on platforms to kind of police the Internet when actually it's all of our responsibility as a society.",
+    "startTime": "36:10",
+    "endTime": "36:21",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And in trying to police the Internet they're also kind of wrongfully censoring stuff that shouldn't be censored.",
+    "startTime": "36:23",
+    "endTime": "36:30",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And they're also kind of causing some of the best bits of the Internet to shut down because they can't just like deal with the kind of compliance side of it.",
+    "startTime": "36:31",
+    "endTime": "36:39",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So they're actually kind of like forcing people onto big tech platforms.",
+    "startTime": "36:39",
+    "endTime": "36:42",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, so that's super interesting, right?",
+    "startTime": "36:45",
+    "endTime": "36:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, I think the biggest element, the biggest beef I have is kind of like you're pushing onto the platforms rather than parental responsibilities, for instance.",
+    "startTime": "36:47",
+    "endTime": "36:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean to make analogy, right, if you as a parent show your kids porn, that's a sex offense.",
+    "startTime": "36:57",
+    "endTime": "37:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But if you are a negligent parent and you let your kids freely browse the Internet and the end result is the same, you have not done any, for anything wrong in the eyes of the law.",
+    "startTime": "37:05",
+    "endTime": "37:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's, I think that's an interesting way of thinking about it where the responsibility of the parent, ultimately who is the person who issues the device to the person who is impacted by this, I mean, where their responsibility lives.",
+    "startTime": "37:19",
+    "endTime": "37:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I know it's a difficult problem as a nerd myself to, to enforce this, but I do feel like there should be more onus on parents more so than trying to just turn this around and brush it off and say, hey, big tech companies, you solve this for us.",
+    "startTime": "37:35",
+    "endTime": "37:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, certainly.",
+    "startTime": "37:51",
+    "endTime": "37:52",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think there should be like more of an effort to give parents better tools.",
+    "startTime": "37:52",
+    "endTime": "37:56",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And there are tools out there.",
+    "startTime": "37:56",
+    "endTime": "37:57",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean it is hard.",
+    "startTime": "37:57",
+    "endTime": "37:58",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, I'm a dad of a kind of 7 year old and a 13 year old and I can stop like the 7 year old seeing stuff they probably ought not to.",
+    "startTime": "37:58",
+    "endTime": "38:08",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I struggle to be able to put stuff in place that my 13 year old couldn't get around if they're really determined to do so.",
+    "startTime": "38:08",
+    "endTime": "38:15",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So at that point it becomes around like talking to them, education going, look, you're going to see some of this stuff.",
+    "startTime": "38:15",
+    "endTime": "38:21",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "This is what, you know, how it might impact you.",
+    "startTime": "38:21",
+    "endTime": "38:23",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's okay to talk about it if it does.",
+    "startTime": "38:23",
+    "endTime": "38:24",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like not making it a taboo thing.",
+    "startTime": "38:24",
+    "endTime": "38:27",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But a lot more could be done in terms of like education and support for parents who's through like kind of schools as well.",
+    "startTime": "38:29",
+    "endTime": "38:35",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean I always had this idea of like, well why couldn't like the government put some funding into like open source software solutions for like parental control or like filtering technology and then it could like you know, run a system through libraries, through like education, through the BBC, through radio.",
+    "startTime": "38:35",
+    "endTime": "38:53",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You could like tell parents about these tools and help people kind of use them and it could become like an embedded thing.",
+    "startTime": "38:53",
+    "endTime": "38:59",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And in some ways always thought like that was probably a better solution.",
+    "startTime": "38:59",
+    "endTime": "39:04",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "A lot of this stuff kind of did happen already though.",
+    "startTime": "39:04",
+    "endTime": "39:06",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So already in the uk, you know, if you get out an ISP by default parental control blocking will exist at the ISP level.",
+    "startTime": "39:06",
+    "endTime": "39:15",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So they will block certain websites at the ISP level.",
+    "startTime": "39:15",
+    "endTime": "39:20",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And the ISPs run these kind of blocks, block filters, but you have to kind of actively get that taken off.",
+    "startTime": "39:20",
+    "endTime": "39:25",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But again like there's ways you could do it.",
+    "startTime": "39:28",
+    "endTime": "39:29",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, if you're a tech nerd you can go, okay, right, well I'm gonna set up my network and then I'm gonna have like one wireless network which doesn't have the blocks.",
+    "startTime": "39:29",
+    "endTime": "39:38",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm going to run this other one through by a load of filters.",
+    "startTime": "39:38",
+    "endTime": "39:41",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And therefore the children have got this kind of like blocked safer network.",
+    "startTime": "39:42",
+    "endTime": "39:46",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And me as an adult can access the kind of unrestricted one that's like pretty, you know, it requires a certain level of kind of networking skill in order to kind of set up that network.",
+    "startTime": "39:46",
+    "endTime": "39:56",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think there's more that could have been done there.",
+    "startTime": "39:56",
+    "endTime": "39:58",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You could create products which are like, you know, here's a router and off the shelf there's like one password you've got which is not got the block list and you can log on to as an adult and here's like another login that you can give to your children and you can get their devices logged onto like a WI FI network that has like filters and like parental controls and blocks built into it.",
+    "startTime": "39:58",
+    "endTime": "40:20",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Which are age appropriate for the age of that child.",
+    "startTime": "40:20",
+    "endTime": "40:23",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But you're never going to stop information.",
+    "startTime": "40:25",
+    "endTime": "40:26",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, that's the other thing like that child will still, at some point, you know, they could go out there, they could buy a device off a high street secondhand, they will come across a mate who's got that content on their phone.",
+    "startTime": "40:26",
+    "endTime": "40:37",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So which is why I always think it has to come back to a certain extent to education.",
+    "startTime": "40:37",
+    "endTime": "40:40",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think about like information control.",
+    "startTime": "40:41",
+    "endTime": "40:43",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think like even North Korea, people smuggle memory sticks into to North Korea.",
+    "startTime": "40:43",
+    "endTime": "40:47",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, I just think the idea that you can entirely control information and solve a problem is, is not feasible.",
+    "startTime": "40:47",
+    "endTime": "40:56",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's why I kind of go back to education a lot of the time.",
+    "startTime": "40:56",
+    "endTime": "40:58",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think that's very sensible.",
+    "startTime": "41:00",
+    "endTime": "41:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think this ties into the school, obviously plays an active role in this.",
+    "startTime": "41:01",
+    "endTime": "41:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In particular on, I mean we've seen kind of a big push towards banning smartphones in schools and I think that I'm a big proponent of that.",
+    "startTime": "41:07",
+    "endTime": "41:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "41:15",
+    "endTime": "41:15",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because I think that plays into like these things happen all around the clock.",
+    "startTime": "41:15",
+    "endTime": "41:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "41:19",
+    "endTime": "41:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Not only that, but again, going back to education I think is important, but also not letting kids have like a smartphone that they can have unlimited access to in their bedroom after hours.",
+    "startTime": "41:19",
+    "endTime": "41:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "41:35",
+    "endTime": "41:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "When they're supposed to be sleeping.",
+    "startTime": "41:36",
+    "endTime": "41:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "41:37",
+    "endTime": "41:37",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think that's where again, this comes back to like responsible parenting.",
+    "startTime": "41:37",
+    "endTime": "41:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I think it's going to be difficult to sell that narrative to the public because most people don't want to acknowledge that's the problem.",
+    "startTime": "41:41",
+    "endTime": "41:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No.",
+    "startTime": "41:49",
+    "endTime": "41:50",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And how do you know, how do you say to a parent who's like, had something horrible happen to their kid because, you know, they've been influenced perhaps by website, something like.",
+    "startTime": "41:50",
+    "endTime": "42:00",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, actually, you know, it's your, its parental responsibility.",
+    "startTime": "42:00",
+    "endTime": "42:03",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's a hard sell, isn't it, to parents and it's easier to kind of like say it's the government's responsibility or it's easier.",
+    "startTime": "42:03",
+    "endTime": "42:14",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think it's like wave a stick at big tech and go, oh, it's all, you know, these nasty tech billionaires fault that this stuff is happening.",
+    "startTime": "42:14",
+    "endTime": "42:22",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And you know, big techs are kind of easy, an easy blame target.",
+    "startTime": "42:23",
+    "endTime": "42:26",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And you saw, I think a lot of the debates in UK Parliament, UK know, the way MPS were talking about big tech.",
+    "startTime": "42:26",
+    "endTime": "42:33",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's like kind of like vilification is basically, I think there's a loss that actually like it has, there has, there are problems of it, but there are also kind of huge benefits to young people and society generally by Having access to this technology, it's not all bad.",
+    "startTime": "42:34",
+    "endTime": "42:47",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like there's this kind of sense, I mean, to give you an example, there's a story that was recently UK press around a teenager who really tragically had like seen some online craze thing around sniffing aerosols and then they.",
+    "startTime": "42:47",
+    "endTime": "43:06",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They'd overdosed from inhaling aerosol fumes and tragically passed away.",
+    "startTime": "43:06",
+    "endTime": "43:11",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean that's just like awful.",
+    "startTime": "43:11",
+    "endTime": "43:12",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I can't imagine that as like a father myself that happened to like one of my kids would just be devastating.",
+    "startTime": "43:12",
+    "endTime": "43:18",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I also remember growing up in the 90s before the Internet and that kind of thing happened then they were like teenagers did crazy, these dangerous stunts and crazes isn't like wasn't created by the Internet.",
+    "startTime": "43:18",
+    "endTime": "43:30",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That was something that rent around just schools as kind of memes and ideas.",
+    "startTime": "43:30",
+    "endTime": "43:34",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think sometimes we've lost a sense of like proportion around risk and it's now easy I think to like blame.",
+    "startTime": "43:34",
+    "endTime": "43:42",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Blame the medium that oh, it's happened because they saw something on the Internet.",
+    "startTime": "43:43",
+    "endTime": "43:46",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It must be like the Internet, a big text fault rather than going, actually this is a like a bigger problem around adolescents doing risky.",
+    "startTime": "43:46",
+    "endTime": "43:53",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Engaging in risky, stupid behaviors that sometimes end tragically.",
+    "startTime": "43:53",
+    "endTime": "43:57",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, it's the easiest scapegoat, no doubt.",
+    "startTime": "44:00",
+    "endTime": "44:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And let's go further.",
+    "startTime": "44:04",
+    "endTime": "44:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like we talked about a little bit about potential.",
+    "startTime": "44:06",
+    "endTime": "44:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We can talk a bit about potential solutions later on.",
+    "startTime": "44:08",
+    "endTime": "44:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But you talked about something else which I think is important, which is like the case of jurisdiction.",
+    "startTime": "44:11",
+    "endTime": "44:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think OFCOM has been, I guess, been ridiculed, I guess, to say the least from not the least 4chan about the fact that they think they are a global authority, Whereas in reality, 4chan, whatever you may think of them, is not a part of the UK entity.",
+    "startTime": "44:16",
+    "endTime": "44:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, so I think that was.",
+    "startTime": "44:36",
+    "endTime": "44:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's an interesting narrative around like global enforcement because yes, some people and some entities will play ball, but I think it's naive to assume that the inter will bend over backwards for saying and.",
+    "startTime": "44:39",
+    "endTime": "44:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And adhere to what Ofcom suggests they should be adhering to.",
+    "startTime": "44:51",
+    "endTime": "44:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "44:54",
+    "endTime": "44:55",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, yeah.",
+    "startTime": "44:55",
+    "endTime": "44:56",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean you really see like a class of speech culture between UK and US and you go back to the history of this and I mean for starters, like America fought a war to get its independence not to be covered by UK jurisdiction.",
+    "startTime": "44:56",
+    "endTime": "45:15",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And out of that with, you know, the Enlightenment, this idea of free speech was like integral to that whole the founding of America and having that kind of First Amendment right based on those kind of principles of individual liberty and free speech from all of those kind of Intellectual speakers, people like Thomas Paine.",
+    "startTime": "45:16",
+    "endTime": "45:39",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And now you're kind of seeing a situation where the UK is just trying to impose its model of speech back onto.",
+    "startTime": "45:40",
+    "endTime": "45:47",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Back onto the world and kind of issuing fines as if they've got the power to enforce those.",
+    "startTime": "45:47",
+    "endTime": "45:54",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And they've done that without seeking a, you know, a treaty, which is how you'd normally kind of enforce laws between countries.",
+    "startTime": "45:54",
+    "endTime": "46:01",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You've had a, you know, reciprocal agreement for certain crimes and offenses that you could be extradited and charged between countries.",
+    "startTime": "46:01",
+    "endTime": "46:09",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But there's.",
+    "startTime": "46:09",
+    "endTime": "46:11",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because there's that breakdown around speech.",
+    "startTime": "46:11",
+    "endTime": "46:12",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You have this kind of bizarre thing where you see, like, you know, Donald Trump and Keir Starmer getting questioned about it.",
+    "startTime": "46:12",
+    "endTime": "46:18",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And Starmer's going, oh, no, we're not.",
+    "startTime": "46:18",
+    "endTime": "46:20",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We're not trying to censor Americans free speech.",
+    "startTime": "46:20",
+    "endTime": "46:22",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then a couple of weeks later, Ofcom issue a letter to an American company saying, we're.",
+    "startTime": "46:22",
+    "endTime": "46:27",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We're fining you for your failure to regulate speech on your platform.",
+    "startTime": "46:27",
+    "endTime": "46:31",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "46:33",
+    "endTime": "46:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And what I don't understand is, like, why Ofcom didn't go straight to the kind of blocking stage.",
+    "startTime": "46:33",
+    "endTime": "46:38",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Surely it'd make more sense.",
+    "startTime": "46:38",
+    "endTime": "46:39",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But if they did that, they'd have to kind of admit they don't have the power around the world to enforce this.",
+    "startTime": "46:39",
+    "endTime": "46:43",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's a bit like the Emperor's New Clothes they're trying to, like, make out they've got this power because it's been written into UK law.",
+    "startTime": "46:43",
+    "endTime": "46:49",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I don't think it, you know, it's not actually a power that exists.",
+    "startTime": "46:49",
+    "endTime": "46:54",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's not enforceable in the American courts.",
+    "startTime": "46:54",
+    "endTime": "46:57",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, it.",
+    "startTime": "47:00",
+    "endTime": "47:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The.",
+    "startTime": "47:01",
+    "endTime": "47:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The.",
+    "startTime": "47:02",
+    "endTime": "47:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "When I read that 4Com.",
+    "startTime": "47:02",
+    "endTime": "47:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "OfCom 4chan narrative, the.",
+    "startTime": "47:04",
+    "endTime": "47:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The thing that sprang to mind for me directly was, I'm not sure you remember, but the Pirate Bay used to publish these letters that they have received from US lawyers and saying, oh, in case you didn't know, Sweden is not a state in the US and now you have kind of like the opposite.",
+    "startTime": "47:06",
+    "endTime": "47:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "47:20",
+    "endTime": "47:20",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "47:20",
+    "endTime": "47:21",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "In.",
+    "startTime": "47:21",
+    "endTime": "47:21",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "In ofcom try to enforce outside of their own territory.",
+    "startTime": "47:21",
+    "endTime": "47:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, I mean, do you see any international.",
+    "startTime": "47:26",
+    "endTime": "47:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "International kind of consensus?",
+    "startTime": "47:30",
+    "endTime": "47:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because, I mean, I very much doubt the U.S. would bend over backwards and start enforcing something from Ofcon.",
+    "startTime": "47:33",
+    "endTime": "47:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "47:38",
+    "endTime": "47:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In the.",
+    "startTime": "47:39",
+    "endTime": "47:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That completely goes against the First Amendment right.",
+    "startTime": "47:39",
+    "endTime": "47:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How do you see that playing out?",
+    "startTime": "47:42",
+    "endTime": "47:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, there's attempts by people who want this type of regulation by the Internet to create an international consensus.",
+    "startTime": "47:44",
+    "endTime": "47:51",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So there's organizations, I guess, trying to create similar laws in other countries and kind of lobby for that.",
+    "startTime": "47:51",
+    "endTime": "47:59",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And, you know, like, Australia, I think, is like another country which is kind of following the UK down this kind of path of like, kind of, you know, censorship and stuff online.",
+    "startTime": "48:00",
+    "endTime": "48:12",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Stop it all under 16 year olds.",
+    "startTime": "48:12",
+    "endTime": "48:14",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think there will be some consensus between some countries around the stuff and some companies will comply because they just want to like do business in the UK and you know, for them it's like, you know, we're not going to pull out of the UK market and lose all that business, so we're just gonna do it.",
+    "startTime": "48:15",
+    "endTime": "48:33",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And for some of them it benefits them because it's like, well, actually we're big enough that we can comply with this and some of our smaller competitors are going to pull out.",
+    "startTime": "48:33",
+    "endTime": "48:40",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "48:40",
+    "endTime": "48:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, but it's never, I don't think it's.",
+    "startTime": "48:41",
+    "endTime": "48:44",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The problem is with like the uk, like the First Amendment is just such a strong protection for speech in America.",
+    "startTime": "48:44",
+    "endTime": "48:50",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And also there's such a cultural tradition of it, like, and America is such a huge market, but I just don't think they're ever going to get, you know, all of that compliance from a lot of the US sites.",
+    "startTime": "48:50",
+    "endTime": "49:06",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, what Ofcom can do is then issue a court order to get ISPs to kind of block that, block the IPS and the domains.",
+    "startTime": "49:06",
+    "endTime": "49:16",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So, like what will eventually happen with this, I suspect, is that Ofcom will just issue one of those orders and four chan boards that should be blocked off from the UK and any, and some sites have already voluntarily blocked themselves on the UK to avoid risks of stuff happening.",
+    "startTime": "49:16",
+    "endTime": "49:33",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So what will happen is the UK won't have full access to the Internet.",
+    "startTime": "49:33",
+    "endTime": "49:37",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It will have a UK version of the Internet which is more censored than other countries.",
+    "startTime": "49:38",
+    "endTime": "49:43",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Not, not to the extent of China's great firewall, but to a lesser extent we will have a kind of UK Hadrian's firewall as it's been.",
+    "startTime": "49:43",
+    "endTime": "49:52",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, that's terrifying.",
+    "startTime": "49:54",
+    "endTime": "49:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's terrifying to me for many reasons, but not the least because even if the objective today is to save children, it's a slippery slope.",
+    "startTime": "49:56",
+    "endTime": "50:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "50:08",
+    "endTime": "50:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The second that is enforced as it is now is the scope will always keep expanding.",
+    "startTime": "50:08",
+    "endTime": "50:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It would never shrink.",
+    "startTime": "50:17",
+    "endTime": "50:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that as with all these surveillance laws and kind of moderation laws, their scope never creeps back, they only expand.",
+    "startTime": "50:18",
+    "endTime": "50:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, and it's like, well, there's a couple reasons why that happens.",
+    "startTime": "50:27",
+    "endTime": "50:31",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "One is there's just a lot of people employed in jobs doing this stuff now.",
+    "startTime": "50:31",
+    "endTime": "50:35",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it's like having succeeded in getting the Online Safety act, they weren't all like, well, I'm now going to go work on something else.",
+    "startTime": "50:35",
+    "endTime": "50:41",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They're like, how can I get funding to do the next proposal from people who care about this stuff?",
+    "startTime": "50:41",
+    "endTime": "50:47",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you know, they kind of carry on in their jobs and roles, kind of trying to push for the next solution.",
+    "startTime": "50:47",
+    "endTime": "50:52",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You see that with like VPNs is like the next battleground in the UK.",
+    "startTime": "50:52",
+    "endTime": "50:56",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So after the Online Safety act got implemented because a lot of people A, like didn't trust all these age assurance companies with their personal data and B, just wanted to carry on using Internet as I had before they went and got VPNs to access content as people in Russia do, as people in Iran and China do.",
+    "startTime": "50:56",
+    "endTime": "51:14",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, I think tells you what you want.",
+    "startTime": "51:14",
+    "endTime": "51:16",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "People in the UK are now in the same boat as people in like China or Russia, but they need to have a VPN in order to fully access like an uncensored version of the Internet.",
+    "startTime": "51:16",
+    "endTime": "51:27",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's.",
+    "startTime": "51:28",
+    "endTime": "51:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, it's that funny meme I've seen where like of a Russian guy is using a VPN in the UK tax the Internet, then a UK guys are using a VPN into Russia tax the Internet.",
+    "startTime": "51:28",
+    "endTime": "51:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Just that they want different sides of it.",
+    "startTime": "51:40",
+    "endTime": "51:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, pretty much that is the case.",
+    "startTime": "51:43",
+    "endTime": "51:46",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, it's quite funny.",
+    "startTime": "51:47",
+    "endTime": "51:50",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I've not heard that one before.",
+    "startTime": "51:50",
+    "endTime": "51:51",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But you know, I mean I had to just for like Reddit I didn't want to give my personal details I hope, I hope Reddit don't hear this and like shut down my account.",
+    "startTime": "51:51",
+    "endTime": "51:57",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Maybe they don't know what my account is.",
+    "startTime": "51:57",
+    "endTime": "52:00",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But like, you know, I didn't want to give my personal details to Persona like a US company.",
+    "startTime": "52:00",
+    "endTime": "52:05",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like I didn't want them to have my things.",
+    "startTime": "52:06",
+    "endTime": "52:08",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I was like, okay, I use a vpn.",
+    "startTime": "52:08",
+    "endTime": "52:10",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But literally it was like one day I could look at like a subreddit about like alcohol or sexual health advice or like violence and it would literally just, it was just like if you're in the UK that disappear.",
+    "startTime": "52:10",
+    "endTime": "52:25",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If you hadn't got age verified, you could search for it in your Reddit, like search you just.",
+    "startTime": "52:25",
+    "endTime": "52:28",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The subreddit wouldn't even pop up.",
+    "startTime": "52:28",
+    "endTime": "52:30",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It didn't even like tell you it was missing because you haven't been age checked and then you could go log on.",
+    "startTime": "52:30",
+    "endTime": "52:35",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Oh, I'm back in like France, Netherlands.",
+    "startTime": "52:35",
+    "endTime": "52:37",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I can now access this like these subreddits again.",
+    "startTime": "52:37",
+    "endTime": "52:40",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So like that censorship to me was just like awful.",
+    "startTime": "52:40",
+    "endTime": "52:43",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Someone who's like growing up loving the Internet and the ability to access all these ideas, information around the world to then feel like I've been cut off from.",
+    "startTime": "52:43",
+    "endTime": "52:51",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That was.",
+    "startTime": "52:51",
+    "endTime": "52:52",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean that's the other thing.",
+    "startTime": "52:53",
+    "endTime": "52:54",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, I've had a lot of friends as well kind of go well it's made me pretty depressed this online safety act.",
+    "startTime": "52:54",
+    "endTime": "52:58",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It hasn't improved my mental health or well being, you know and that designed to protect people has actually caused a number of people kind of mental anguish really through having technology cut off, through like anxiety of handing over data as well.",
+    "startTime": "52:58",
+    "endTime": "53:15",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I was chatting about this especially like you know people like certain neurodiversity, perhaps you're autistic and you've been told throughout your life, you know, don't hand over your personal data.",
+    "startTime": "53:15",
+    "endTime": "53:28",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then someone's saying now you have to hand over your personal data.",
+    "startTime": "53:29",
+    "endTime": "53:31",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's like what should I do?",
+    "startTime": "53:32",
+    "endTime": "53:33",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I've been told conflicting things and it's causing me like stress and anxiety over like what is the best thing to do?",
+    "startTime": "53:34",
+    "endTime": "53:40",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Am I going to be subject to a data breach now?",
+    "startTime": "53:40",
+    "endTime": "53:42",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, if you're.",
+    "startTime": "53:44",
+    "endTime": "53:45",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "53:45",
+    "endTime": "53:45",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "53:48",
+    "endTime": "53:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean I want to switch over before we wrap up for today to another thing which I, I don't think has been discussed too much at least in the UK domain and we have seen a lot about this in Europe around Chat Control which I, I put out of scope for this conversation because I think it's enough topic just cover an entire episode on by itself.",
+    "startTime": "53:49",
+    "endTime": "54:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But, but you mentioned already about this creep of scanning messages around image hashes and so forth which is driven to a great degree by lobbyists that representing very strong financial incentives.",
+    "startTime": "54:06",
+    "endTime": "54:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "One of them being Thorne, which is co founded by Ashley Kutcher and D. Moore for instance.",
+    "startTime": "54:23",
+    "endTime": "54:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like they've been very vocal by lobbying for these things.",
+    "startTime": "54:28",
+    "endTime": "54:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So not from a altruistic perspective per se but because there is big financial incentive despite what the narrative around that might be.",
+    "startTime": "54:30",
+    "endTime": "54:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But let's unpack a little bit.",
+    "startTime": "54:39",
+    "endTime": "54:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What have you seen around that and how.",
+    "startTime": "54:41",
+    "endTime": "54:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What's your head around this?",
+    "startTime": "54:43",
+    "endTime": "54:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Hash matching technologies.",
+    "startTime": "54:46",
+    "endTime": "54:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's part of this.",
+    "startTime": "54:48",
+    "endTime": "54:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "54:49",
+    "endTime": "54:49",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it came in as part of the Online Safety Act I think clause one two one it was like snuck in and thought well that's not very exciting.",
+    "startTime": "54:49",
+    "endTime": "54:55",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I kind of coined the term the spy clause for it and we managed to get some attention at the time around it.",
+    "startTime": "54:55",
+    "endTime": "55:01",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We had some great help from Meredith at Signal.",
+    "startTime": "55:01",
+    "endTime": "55:05",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Really helped to kind of boost the profile of the issue in the UK press.",
+    "startTime": "55:05",
+    "endTime": "55:09",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We had like you know, WhatsApp getting involved a bit as.",
+    "startTime": "55:10",
+    "endTime": "55:13",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "As well to had sort of a bit of help from Meta to kind of raise the profile of it.",
+    "startTime": "55:13",
+    "endTime": "55:20",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And we caused like a bit of a political fuss.",
+    "startTime": "55:20",
+    "endTime": "55:23",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I mean the law still ultimately passed.",
+    "startTime": "55:23",
+    "endTime": "55:27",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We won like the smallest concession.",
+    "startTime": "55:27",
+    "endTime": "55:29",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But before they could do it, they had to get like an independent person's report on its technical feasibility.",
+    "startTime": "55:29",
+    "endTime": "55:34",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But it's kind of there in UK law that Ofcom now have this power.",
+    "startTime": "55:35",
+    "endTime": "55:39",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They can issue any provider of a service the requirement to start like developing and deploying kind of like, yeah, Perceptual has matching of messages to try and detect certain types of content.",
+    "startTime": "55:39",
+    "endTime": "55:56",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And they kind of believe, I mean proponents of believe that you can do that and not break kind of end to end encryption, which is kind of nonsense.",
+    "startTime": "55:57",
+    "endTime": "56:05",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that's kind of where we're at in the UK really.",
+    "startTime": "56:07",
+    "endTime": "56:10",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, I think like the UK is almost like too small alone to try and break end to end encrypted messages.",
+    "startTime": "56:10",
+    "endTime": "56:18",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I don't think OFCOM are kind of like, I think they realize they can't kind of take that on.",
+    "startTime": "56:18",
+    "endTime": "56:22",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think proponents of it were like hoping that they'd get the EU and chat controls done at the EU and then if that were to happen it'd be a lot harder really to kind of resist it.",
+    "startTime": "56:22",
+    "endTime": "56:35",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But what we've got in the meantime is like Ofcom have announced proposals not for like end to end encrypted private messaging, but they're talking now about doing Perceptual has matching for certain file storage systems as well as social media.",
+    "startTime": "56:35",
+    "endTime": "56:53",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that would mean, you know, if you're sharing a Google Drive document and they talk about like certain categories of scanning such as like CSAM or terrorist content and then like scanning, you know, even like your Google Drives getting scanned flat if you were to kind of share it.",
+    "startTime": "56:53",
+    "endTime": "57:12",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But the problem is of this stuff is it's like a lot of the time it's not easy to like it's very contextual whether something is or isn't promoting terrorism or whether you're reporting on it.",
+    "startTime": "57:12",
+    "endTime": "57:24",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, it's a fine line between a human rights journalist documenting, you know, abuses, human rights abuses in Gaza for example, and depictions of Hamas terrorism.",
+    "startTime": "57:24",
+    "endTime": "57:39",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You know, it's not always a clear line, it's not always easy to distinguish.",
+    "startTime": "57:39",
+    "endTime": "57:43",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you get lots of examples where people kind of get content wrongly flagged.",
+    "startTime": "57:43",
+    "endTime": "57:47",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So as this kind of rolls out, unfortunately we're going to see more and more of that.",
+    "startTime": "57:48",
+    "endTime": "57:52",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And at the same time the law in the UK can be expanded by a minister can just add something else as a priority offense.",
+    "startTime": "57:52",
+    "endTime": "57:59",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We've already seen like three or four New priority offenses added to my safety act since July.",
+    "startTime": "57:59",
+    "endTime": "58:04",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think cyber flashing has been added, I think choking porns now being added and self harm's been added.",
+    "startTime": "58:04",
+    "endTime": "58:13",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So like when that gets added it will follow on.",
+    "startTime": "58:13",
+    "endTime": "58:16",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But you know, Perceptual has Matching will try to kick in on social media platforms and others to try and censor that content.",
+    "startTime": "58:16",
+    "endTime": "58:22",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you really see what they've put in place is a kind of censorship regime that could be very easily expanded and they believe that like at the moment they've just got duties to kind of take this content down.",
+    "startTime": "58:23",
+    "endTime": "58:35",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But now Ofcom is saying, oh, you know, we think that like Perceptual has matching technology can be used to kind of automate this and take that stuff down.",
+    "startTime": "58:35",
+    "endTime": "58:42",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so you'll kind of see it being rolled out to social media and then at some point they've got this like bridge to tackle when it's end to end encrypted environments because it's just not at this point technically feasible to do that deployed appetra smashing within an entered encrypted enclosure environment.",
+    "startTime": "58:43",
+    "endTime": "58:58",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you that will be the kind of the future, I guess, battleground and showdown between that.",
+    "startTime": "58:58",
+    "endTime": "59:04",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I mean I'm pretty confident that a company like Meta would bend over backwards for that if they were to be pushed.",
+    "startTime": "59:07",
+    "endTime": "59:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Whereas there are more vocal opponents to it.",
+    "startTime": "59:14",
+    "endTime": "59:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like Signal being a good example of that.",
+    "startTime": "59:17",
+    "endTime": "59:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "59:19",
+    "endTime": "59:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Where well they've explicitly stated if chat control were to be deployed to Europe they will pull out.",
+    "startTime": "59:19",
+    "endTime": "59:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "59:25",
+    "endTime": "59:26",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Which is a pretty vocal position.",
+    "startTime": "59:26",
+    "endTime": "59:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I doubt Meta would do such like that because of financial interests.",
+    "startTime": "59:28",
+    "endTime": "59:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Probably not.",
+    "startTime": "59:32",
+    "endTime": "59:33",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean real car fight was pretty good for WhatsApp in terms of saying strongly about its impact on WhatsApp.",
+    "startTime": "59:33",
+    "endTime": "59:39",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then WhatsApp ran this like whole ad campaign in the UK around like enter the importance of end to end encrypted messages.",
+    "startTime": "59:39",
+    "endTime": "59:45",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Then they turned on Enter and decryption for like Facebook messenger, even though like the UK government hated that.",
+    "startTime": "59:46",
+    "endTime": "59:52",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So they've done some stuff which is like not too bad in fairness to Meta.",
+    "startTime": "59:53",
+    "endTime": "59:57",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I think that like that threat of wherever you pull out, I mean Meredith has been very clear that like Signal just like won't do that and break over.",
+    "startTime": "59:59",
+    "endTime": "01:00:08",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Whereas I think Meta's almost said you don't need to worry about end to end encryption because we'll give you all the metadata and actually that's what you want.",
+    "startTime": "01:00:08",
+    "endTime": "01:00:13",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So.",
+    "startTime": "01:00:14",
+    "endTime": "01:00:15",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, you know, but then I mean what frustrates me at this point, other end of the scale, there's so many reports from platforms of content like csam that just the police don't have the capacity to follow up.",
+    "startTime": "01:00:15",
+    "endTime": "01:00:30",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So again, like you could actually make a real difference in stuff if you just had more resources going into the teams that work on it and you followed up like the leads that platforms were already giving you and you had a proper criminal justice system of like, you know, like Sweden saying like Swedish prison system, I think world leader in terms of reforming criminals and reoffending rates and stuff.",
+    "startTime": "01:00:30",
+    "endTime": "01:00:53",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like if you tackled that stuff, you could actually address a lot of the harms in a perhaps a more constructive manner.",
+    "startTime": "01:00:53",
+    "endTime": "01:00:59",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:01:00",
+    "endTime": "01:01:01",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I mean, I had Nick Selby on my last episode.",
+    "startTime": "01:01:01",
+    "endTime": "01:01:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "He used to run cyber security and cyber investigations at NYPD and he is a vocal opponent of chat control and kind of resonating what you're saying, like these tools are not necessary.",
+    "startTime": "01:01:04",
+    "endTime": "01:01:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There are ways to do this without the massive breach of privacy.",
+    "startTime": "01:01:17",
+    "endTime": "01:01:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:01:21",
+    "endTime": "01:01:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because I think again, this is, to me, this is a line sand.",
+    "startTime": "01:01:22",
+    "endTime": "01:01:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, like there must be some privacy.",
+    "startTime": "01:01:26",
+    "endTime": "01:01:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We can't just hand over and assume everything can be backdoored and, and just there not must be some sense of privacy in a functioning democracy otherwise redeemed.",
+    "startTime": "01:01:29",
+    "endTime": "01:01:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, yeah.",
+    "startTime": "01:01:39",
+    "endTime": "01:01:40",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think, you know, it's a real risk to.",
+    "startTime": "01:01:40",
+    "endTime": "01:01:42",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I say this like mps, I say, but you're the sort of people who are going to get blackmailed or you're going to suffer, you know, if you don't use engine encryption on a secure platform.",
+    "startTime": "01:01:43",
+    "endTime": "01:01:53",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You're the ones that are going to be like leaking data to China.",
+    "startTime": "01:01:53",
+    "endTime": "01:01:57",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, there's been a massive scandal in the UK about like Chinese spying and the amount of like infosec or the lack of it amongst our establishment in UK has been shocking.",
+    "startTime": "01:01:57",
+    "endTime": "01:02:06",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But it's like you guys should be defending end to end encryption because it's in your interest that we're not just opening up data to like Russia or China or you know, criminals who are out there to do like ransomware stuff.",
+    "startTime": "01:02:06",
+    "endTime": "01:02:22",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You want to be protecting your data and like, as soon as you start backdooring this stuff, you're going to just undermine that security for everyone.",
+    "startTime": "01:02:22",
+    "endTime": "01:02:31",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, I think it is quite mixed.",
+    "startTime": "01:02:33",
+    "endTime": "01:02:34",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, within like, you know, cyber security professionals and even like former people who've worked for intelligence services.",
+    "startTime": "01:02:34",
+    "endTime": "01:02:42",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, we've had like former, you know, professionals involved in GCHQ in the UK come out against this and kind of say, you know, there's risks here.",
+    "startTime": "01:02:42",
+    "endTime": "01:02:51",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "A lot of their own, you know, intelligence services, a lot of our own operatives will rely on different like end to End encrypted protocols to you know, like the CIA will entirely rely on that for all their operatives.",
+    "startTime": "01:02:51",
+    "endTime": "01:03:05",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you're going to like undermine systems that help Western like democracies defend their values, you know, but that's it.",
+    "startTime": "01:03:05",
+    "endTime": "01:03:15",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You, you can't have it both ways.",
+    "startTime": "01:03:15",
+    "endTime": "01:03:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You either have interned decrypton or you don't.",
+    "startTime": "01:03:16",
+    "endTime": "01:03:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I, I, I, I love, I think it was in chat control in one of the draft.",
+    "startTime": "01:03:18",
+    "endTime": "01:03:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was so kind of aster say like yeah, we, we warned back and encryption.",
+    "startTime": "01:03:22",
+    "endTime": "01:03:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We want backdoor everything.",
+    "startTime": "01:03:26",
+    "endTime": "01:03:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We want to backdoor everything but we want to be excluded the political class.",
+    "startTime": "01:03:27",
+    "endTime": "01:03:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's just like hold on.",
+    "startTime": "01:03:32",
+    "endTime": "01:03:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, that's not how it works.",
+    "startTime": "01:03:34",
+    "endTime": "01:03:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You want a special version of the app which hasn't got the backdoor on it, right?",
+    "startTime": "01:03:36",
+    "endTime": "01:03:41",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, that's pretty terrible.",
+    "startTime": "01:03:42",
+    "endTime": "01:03:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean that's, this goes to show that it's us, we're excluded, but the rest of them don't need privacy.",
+    "startTime": "01:03:44",
+    "endTime": "01:03:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's fine.",
+    "startTime": "01:03:51",
+    "endTime": "01:03:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, like, yeah, the asymmetry of privacy is a real issue, isn't it, whether you can, if you have to buy privacy or have the power to obtain it.",
+    "startTime": "01:03:52",
+    "endTime": "01:04:01",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, exactly.",
+    "startTime": "01:04:02",
+    "endTime": "01:04:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "All right, so as we're wrapping up here, James, I'm curious.",
+    "startTime": "01:04:04",
+    "endTime": "01:04:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How do you see the future of Online Safety Act?",
+    "startTime": "01:04:07",
+    "endTime": "01:04:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Are we doomed?",
+    "startTime": "01:04:10",
+    "endTime": "01:04:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Is there a light down a tunnel?",
+    "startTime": "01:04:12",
+    "endTime": "01:04:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What can we do to kind of like take back control and take back like a, a more sensible narrative when it comes to this whole spiel domain?",
+    "startTime": "01:04:14",
+    "endTime": "01:04:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Sorry.",
+    "startTime": "01:04:26",
+    "endTime": "01:04:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I sometimes joke that like the UK government is going to like raise the most like tech savvy generation of any country now because like every British teenager will be like familiar in how to use Tor, how to use VPNs, how to like find alternative ways.",
+    "startTime": "01:04:26",
+    "endTime": "01:04:42",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They'll be like kind of thinking up new protocols like share whatever data mesh nets or what have you.",
+    "startTime": "01:04:42",
+    "endTime": "01:04:49",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think there's like, there's always that kind of like opposition creates innovation.",
+    "startTime": "01:04:49",
+    "endTime": "01:04:53",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You look at like the long view of communication technology.",
+    "startTime": "01:04:53",
+    "endTime": "01:04:56",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There's been like a pattern of new type of communication comes out, have a burst of freedom.",
+    "startTime": "01:04:57",
+    "endTime": "01:05:02",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Suddenly governments panic, they want to try and control it.",
+    "startTime": "01:05:02",
+    "endTime": "01:05:05",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It happened with the printing press, it's happening again now with the Internet.",
+    "startTime": "01:05:05",
+    "endTime": "01:05:08",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So like my long view is optimistic that people will always find ways to communicate and share information freely.",
+    "startTime": "01:05:08",
+    "endTime": "01:05:16",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And my hope with privacy, I mean is that we're able to, you know, for thousands of years, people just able to walk into a field and have privacy because they're able to have a kind of private chat and that was normal.",
+    "startTime": "01:05:16",
+    "endTime": "01:05:27",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think it's like a normal part of human society that we have that ability to have private chat.",
+    "startTime": "01:05:28",
+    "endTime": "01:05:33",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So again, I, I remain optimistic that like eventually we will kind of realize this.",
+    "startTime": "01:05:33",
+    "endTime": "01:05:38",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There's always, there's always hope.",
+    "startTime": "01:05:38",
+    "endTime": "01:05:40",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I don't think you can get like too pessimistic about the dystopian visions of future.",
+    "startTime": "01:05:40",
+    "endTime": "01:05:44",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think you need to kind of have some hope and faith in the human spirit.",
+    "startTime": "01:05:44",
+    "endTime": "01:05:48",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "In the meantime, use VPN and use signal.",
+    "startTime": "01:05:50",
+    "endTime": "01:05:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Use signal, Use the VPN and protect your bits.",
+    "startTime": "01:05:53",
+    "endTime": "01:05:56",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, James, this has been a great pleasure.",
+    "startTime": "01:05:57",
+    "endTime": "01:06:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Maybe we'll have you back and no doubt about chat control and various other things and perhaps a follow up to this one in terms of the development going forward.",
+    "startTime": "01:06:00",
+    "endTime": "01:06:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So thank you so much for coming on the show today.",
+    "startTime": "01:06:08",
+    "endTime": "01:06:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Much appreciated.",
+    "startTime": "01:06:11",
+    "endTime": "01:06:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Great, thanks.",
+    "startTime": "01:06:12",
+    "endTime": "01:06:12",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's been a pleasure.",
+    "startTime": "01:06:12",
+    "endTime": "01:06:13",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Cheers.",
+    "startTime": "01:06:15",
+    "endTime": "01:06:15",
+    "speaker_name": "James Baker",
+    "speaker_id": 0
+  }
+]

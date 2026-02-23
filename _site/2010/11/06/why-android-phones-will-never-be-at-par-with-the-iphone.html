@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="content-language" content="en">
+
+  <!-- Resource Hints -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="/assets/css/styles.css" as="style">
+  <link rel="preload" href="/assets/css/main.css" as="style">
+
+  <title>Why Android-phones will never be at par with the iPhone (but still win)</title>
+  <meta name="description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://vpetersson.com/2010/11/06/why-android-phones-will-never-be-at-par-with-the-iphone.html">
+  <meta property="og:title" content="Why Android-phones will never be at par with the iPhone (but still win)">
+  <meta property="og:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta property="og:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- LinkedIn -->
+  <meta property="og:site_name" content="Viktor's Tech Musings & Security Paranoia">
+  <meta property="article:author" content="https://www.linkedin.com/in/vpetersson/">
+  
+  <meta property="article:published_time" content="2010-11-06T12:10:08+00:00">
+  
+
+  <!-- X (formerly Twitter) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@vpetersson">
+  <meta name="twitter:creator" content="@vpetersson">
+  <meta name="twitter:title" content="Why Android-phones will never be at par with the iPhone (but still win)">
+  <meta name="twitter:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta name="twitter:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- Social Profile Links -->
+  <link rel="me" href="https://github.com/vpetersson">
+  <link rel="me" href="https://www.linkedin.com/in/vpetersson/">
+  <link rel="me" href="https://hachyderm.io/@vpetersson@hachyderm.io">
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com",
+    "image": "https://vpetersson.com/assets/images/site/talk.webp",
+    "sameAs": [
+      "https://github.com/vpetersson",
+      "https://www.linkedin.com/in/vpetersson/",
+      "https://hachyderm.io/@vpetersson@hachyderm.io",
+      "https://twitter.com/vpetersson"
+    ]
+  }
+  </script>
+
+  <!-- Custom meta tags -->
+  
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Anton|DM Sans|Roboto|Hanken+Grotesk"
+    />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/native.css">
+  
+  <!-- Font Awesome (bundled from node_modules) -->
+  <link rel="stylesheet" href="/assets/css/fontawesome-core.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-solid.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-brands.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZY6ZNLNNC8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZY6ZNLNNC8');
+
+  // Track outbound links and CTAs
+  function trackEvent(category, action, label, source) {
+    gtag('event', action, {
+      'event_category': category,
+      'event_label': label,
+      'source': source
+    });
+  }
+</script>
+
+
+  <link rel="canonical" href="https://vpetersson.com/2010/11/06/why-android-phones-will-never-be-at-par-with-the-iphone.html" />
+</head>
+
+  <body>
+    <!-- Skip Navigation -->
+<a href="#main-content" class="skip-navigation">Skip to main content</a>
+
+<header class="p-8 flex justify-between bg-primaryBG border-b border-white-alpha-20" role="banner">
+  <div class="flex gap-10 justify-between items-center">
+    <a href="/" aria-label="Viktor Petersson - Home">
+      <img src="/assets/images/site/logo-white.svg" alt="Viktor Petersson logo" width="120" height="40" />
+    </a>
+    <nav class="hidden lg:flex gap-6">
+  
+    <a href="/" class="text-white uppercase">HOME</a>
+  
+    <a href="/about" class="text-white uppercase">ABOUT</a>
+  
+    <a href="/consulting" class="text-white uppercase">CONSULTING</a>
+  
+    <a href="/podcast" class="text-white uppercase">PODCAST</a>
+  
+    <a href="/blog" class="text-white uppercase">BLOG</a>
+  
+    <a href="https://studio.viktopia.io/" class="text-white uppercase">VIKTOPIA STUDIO</a>
+  
+</nav>
+
+  </div>
+  <div class="flex gap-2 justify-between items-center">
+    <div class="header-search hidden lg:block">
+      <form action="/search" method="get" role="search">
+        <label for="searchright" class="sr-only">Search the site</label>
+        <input
+          class="search expandright"
+          id="searchright"
+          type="search"
+          name="query"
+          placeholder="Search"
+          aria-label="Search"
+        >
+        <button class="button searchbutton" type="submit" aria-label="Submit search">
+          <span class="mglass" aria-hidden="true">&#9906;</span>
+        </button>
+      </form>
+    </div>
+
+    <div class="hidden lg:block">
+      <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+    </div>
+
+    <!-- Use modern mobile navigation -->
+    <!-- Modern Mobile Navigation -->
+<div class="mobile-nav-container lg:hidden">
+  <!-- Menu Toggle Button -->
+  <button
+    class="mobile-menu-toggle btn-reset touch-target"
+    aria-label="Toggle navigation menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+    data-menu-toggle
+  >
+    <span class="hamburger-icon" aria-hidden="true">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </span>
+  </button>
+
+  <!-- Mobile Menu Backdrop -->
+  <div
+    class="mobile-menu-backdrop"
+    data-menu-backdrop
+    aria-hidden="true"
+  ></div>
+
+  <!-- Mobile Menu Panel -->
+  <nav
+    class="mobile-menu"
+    id="mobile-menu"
+    aria-labelledby="mobile-menu-label"
+    data-menu-panel
+  >
+    <!-- Menu Header -->
+    <div class="mobile-menu-header">
+      <h2 id="mobile-menu-label" class="sr-only">Navigation Menu</h2>
+      <button
+        class="mobile-menu-close btn-reset touch-target"
+        aria-label="Close navigation menu"
+        data-menu-close
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="mobile-menu-list" role="list">
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            HOME
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/about"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            ABOUT
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/consulting"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            CONSULTING
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/podcast"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            PODCAST
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/blog"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            BLOG
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="https://studio.viktopia.io/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            VIKTOPIA STUDIO
+          </a>
+        </li>
+      
+    </ul>
+
+    <!-- Social Links -->
+    <div class="mobile-menu-footer">
+      <div class="mobile-social-links">
+        <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<style>
+/* Mobile Navigation Styles */
+.mobile-nav-container {
+  position: relative;
+}
+
+.mobile-menu-toggle {
+  position: relative;
+  z-index: var(--z-fixed);
+  color: var(--color-white);
+  transition: transform var(--transition-normal);
+
+  &[aria-expanded="true"] {
+    transform: rotate(90deg);
+  }
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 18px;
+  justify-content: space-between;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  transition: all var(--transition-normal);
+  transform-origin: center;
+}
+
+.mobile-menu-toggle[aria-expanded="true"] .hamburger-line {
+  &:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  &:nth-child(2) {
+    opacity: 0;
+  }
+
+  &:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+
+.mobile-menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+  z-index: var(--z-modal);
+}
+
+.mobile-menu-backdrop.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(400px, 100vw);
+  height: 100vh;
+  background: var(--color-gray-900);
+  border-left: 1px solid var(--color-gray-200);
+  transform: translateX(100%);
+  transition: transform var(--transition-normal);
+  z-index: var(--z-modal);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.mobile-menu-close {
+  color: var(--color-white);
+}
+
+.mobile-menu-list {
+  flex: 1;
+  padding: var(--space-4) 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu-item {
+  margin: 0;
+}
+
+.mobile-menu-link {
+  display: block;
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-normal);
+  border-left: 3px solid transparent;
+
+  &:hover {
+    background: var(--color-gray-800);
+    border-left-color: var(--color-primary);
+  }
+
+  &[aria-current="page"] {
+    color: var(--color-primary);
+    border-left-color: var(--color-primary);
+    background: var(--color-gray-800);
+  }
+}
+
+.mobile-menu-footer {
+  padding: var(--space-4);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.mobile-social-links {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+}
+
+/* Simple instant display */
+.mobile-menu-item {
+  opacity: 1;
+}
+</style>
+
+<script>
+// Modern Mobile Navigation JavaScript
+(function() {
+  const menuToggle = document.querySelector('[data-menu-toggle]');
+  const menuPanel = document.querySelector('[data-menu-panel]');
+  const menuBackdrop = document.querySelector('[data-menu-backdrop]');
+  const menuClose = document.querySelector('[data-menu-close]');
+  const menuLinks = document.querySelectorAll('.mobile-menu-link');
+
+  let isOpen = false;
+
+  function openMenu() {
+    isOpen = true;
+    menuToggle.setAttribute('aria-expanded', 'true');
+    menuPanel.classList.add('is-open');
+    menuBackdrop.classList.add('is-visible');
+    document.body.style.overflow = 'hidden';
+
+    // Focus first menu item
+    const firstLink = menuPanel.querySelector('.mobile-menu-link');
+    if (firstLink) {
+      firstLink.focus();
+    }
+  }
+
+  function closeMenu() {
+    isOpen = false;
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuPanel.classList.remove('is-open');
+    menuBackdrop.classList.remove('is-visible');
+    document.body.style.overflow = '';
+
+    // Return focus to toggle button
+    menuToggle.focus();
+  }
+
+  function toggleMenu() {
+    isOpen ? closeMenu() : openMenu();
+  }
+
+  // Event listeners
+  menuToggle.addEventListener('click', toggleMenu);
+  menuClose.addEventListener('click', closeMenu);
+  menuBackdrop.addEventListener('click', closeMenu);
+
+  // Close on link click
+  menuLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isOpen) {
+      closeMenu();
+    }
+  });
+
+  // Trap focus in menu when open
+  menuPanel.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') {
+      const focusableElements = menuPanel.querySelectorAll(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (e.shiftKey && document.activeElement === firstElement) {
+        e.preventDefault();
+        lastElement.focus();
+      } else if (!e.shiftKey && document.activeElement === lastElement) {
+        e.preventDefault();
+        firstElement.focus();
+      }
+    }
+  });
+})();
+</script>
+  </div>
+</header>
+
+    <main id="main-content" class="body">
+      <!-- Blog post schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://vpetersson.com/2010/11/06/why-android-phones-will-never-be-at-par-with-the-iphone.html"
+  },
+  "headline": "Why Android-phones will never be at par with the iPhone (but still win)",
+  "description": null,
+  "datePublished": "2010-11-06T12:10:08+00:00",
+  "dateModified": "2010-11-06T12:10:08+00:00",
+  "author": {
+    "@type": "Person",
+    "@id": "https://vpetersson.com/about/#person",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://vpetersson.com/assets/images/site/talk.webp"
+    }
+  },
+  
+  "inLanguage": "en",
+  "wordCount": "1335",
+  "keywords": ["Android","iOS","iPhone"]
+}
+</script>
+
+<!-- Breadcrumbs schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://vpetersson.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://vpetersson.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Why Android-phones will never be at par with the iPhone (but still win)",
+      "item": "https://vpetersson.com/2010/11/06/why-android-phones-will-never-be-at-par-with-the-iphone.html"
+    }
+  ]
+}
+</script>
+<div class="page-header page-header-blog">
+  <h2 class="uppercase text-[48px] md:text-[91px] lg:text-[140px] xl:text-[186px] text-white text-center">Blog</h2>
+</div>
+<div class="bg-secondaryBG blog-post">
+  <div class="md:max-w-[665px] mx-4 sm:mx-6 md:mx-auto py-8 md:py-10 lg:py-20">
+    <h2 class="mb-6">Why Android-phones will never be at par with the iPhone (but still win)</h2>
+    <div class="flex mb-6 gap-6 text-xs">
+      <span class="uppercase">
+        06 NOV • 2010
+      </span>
+      <span class="blog-time">
+        8 minutes
+      </span>
+    </div>
+    <article class="leading-[26px]">
+      <p>Yesterday I read an article titled “<a href="http://venturebeat.com/2010/11/05/why-apple-cant-beat-android/">Why Apple can’t beat Android</a>” over at VentureBeat. It was an interesting read, and Mr. Grim argued in the article that Android is here to stay, and that Android will soon dominate the smartphone market. I do not disagree with Mr. Grim. It makes a whole lot of sense. In the opening of the article, Mr. Grim states that Windows is ‘Big, ugly, buggy, clunky, and everywhere.’ I think that’s spot on, and I also think this is where Android is heading.</p>
+
+<p>I got my hand on a Nexus One about six months ago. I’ve been using it as my primary phone since. However, I’ve never really liked Android. Surely, there are some really awesome features in Android 2.2 (Froyo), like a WiFi Hotspot-feature, Over-the-air contact/calendar-sync, a deep Google Voice integration pretty good Skype integration. Yet, I can enjoy all of those features because the Nexus One is pure Android. My network operator cannot restrict features on my device. If you for instance purchased an Android phone from a network operator (and managed, against all odds, to find one with Android 2.2), chances are the WiFi Hotspot-feature has been disabled.</p>
+
+<p>In this article I’m going to try to explain why Android will never be at par with the iPhone (or rather, iOS). There are two parts to this argument. The first one relates to Google, and the second relates to the network operators and hardware manufacturers. Let’s start with Google itself.</p>
+
+<p>If you’re a User Interface (UI) and User-Experience (UX) junkie like me, you’re not very fond of Google’s design-work. Look at any Google product, and you will find that, while it does the job very well (in most cases at least), you never look at a Google product and think “Wow, this is a really beautiful product.” Why is that? Most Google products use <a href="http://code.google.com/webtoolkit/">Google Web Toolkit</a> (GWT) to render the user elements. From a technical stand, GWT is a pretty neat idea, but it’s clearly an engineer-driven product, not a designer-driven product. Now let’s tie this back to Android. Similar to any other Google products, you do not look at Android and think ‘Wow, this is really beautiful.’ You may look at Android and say, ‘This is cool from a technical stand and I can [insert geeky task]‘ (which is quite frankly why I gave Android a shot).</p>
+
+<p>If you use Android for some time, there are a lot of things that start to bug you (or at least me). For instance, the UI is very inconsistent (and often plain ugly). I can tell that Google tried to make Android pretty. Some parts of Android is pretty decent, but then once in a while you’ll find a window or setting that looks plain ugly (such as the Alarm clock). The bottom line is that Google is an engineering-driven company. No matter how hard they try, when you have engineers deciding over UI/UX, you simply cannot make a beautiful product. This is why iOS will always be ahead of Android. At Apple, the designers makes the final decisions about UI/UX, not the engineers. This is also why the first version of iOS (the very first iPhone) had a better UI/UX than the most recent version of Android.</p>
+
+<p>Now let’s move on to the second reason why Android will never be at par with iOS: The hardware vendors and the network operators. Let’s start with the hardware vendors.</p>
+
+<p>Since Android is freely available, anyone can (at least in theory) build their own Android phone. Just put together the required hardware, install Android, and you’re set. This leads to a problem for hardware vendors: How do they differentiate themselves? Many vendors, such as HTC and SonyEricsson, thought the answer to that question was to build their own version of Android. Or to be more precise, to customize the UI. Unfortunately, most of the hardware vendors tend to be even more engineer-driven than Google and even less talented than Google when it comes to UI and UX. As a result, you end up with a product that is worse than what they started with. All in the name of differentiation. It should probably be said that HTC did a few improvements with their Sense UI, but in the end, these forks are bad for the Android eco-system. Another result of these customizations is that it creates a significant lag between the main Android-branch and these custom versions of Android. For instance, just a few months ago SonyEricsson released a new Android-phone (X10 Mini). At the time of the release, Android 2.2 was the latest stable Android version. Yet, SonyEricsson’s phone came with Android 1.6, which was released on September 15, 2009 [<a href="http://en.wikipedia.org/wiki/Android_(operating_system)#Update_history">wiki</a>], almost a year older than the phone. Yet this is nothing unique with SonyEricsson. If you look at Android phones today, very few phones actually run Android 2.2 (which was released on May 20, 2010 [<a href="http://en.wikipedia.org/wiki/Android_(operating_system)#Update_history">wiki</a>]). The Nexus One is one of the few phones on the market who is running Android 2.2, and it has been out for more than six months. My guess is that in the porting-issue doesn’t tell the whole truth to why most hardware vendors are so far behind. I think another reason is that these companies are used to operating with a ‘release and forget’ kind of workflow. Once the phone is out, forget about it and move on to the next one. That used to work fine when they developed their own proprietary operating system, but that all changed now, and these companies haven’t really realized that they need to change their operations.</p>
+
+<p>Now let’s move on to the network operators. Historically (at least in the U.S.), they’ve been able to have absolute control over all devices that they sell. They’ve pre-loaded them with crapware (both operator-specific and from software vendors who paid for having their apps installed). These crapware was a part of the phone, and the user wasn’t able to uninstall them. They were also able to explicitly set what your phone could and could not do (regardless of its actual capacity). When Android came along, the network operators realized that they could do the same thing with Android. It is a very lucrative business, so why wouldn’t they? The hardware vendors, who are used to this, simply accepted this and customized their own forks even further. This led to two things: even more latency between the main-branch of Android and the custom-fork, but perhaps more importantly, a far worse user experience. Some network operators took things even further and restricted Marketplace (which is used to obtain 3rd party apps).</p>
+
+<p>So how is this different from iOS? First, Apple control both the hardware and the software. While we cannot determine exactly how much AT&amp;T have held back Apple from features to iOS, they have at least not bended over for AT&amp;T and allowed them to pre-load the iPhone with AT&amp;T-specific apps. Second, Since Apple also control both the operating system and the hardware, there is not latency in the releases. The day Apple release a new update to iOS, you can upgrade your device. You do not have to wait six months or more for it to be ported to your particular fork of iOS.</p>
+
+<p>With all of this in mind, it doesn’t change the fact that Android will become the largest operating system for smartphones over the next few years. There are far too many users out there who do not understand the difference (nor do they care). They only want a smartphone and they’ll ask the sales rep at their local [insert favorite network operator] for advice. The sales rep will obviously not tell them all of this. They will only tell them to buy their own phones because X, Y and Z (while in reality, it is the phone they make most commission from). Also, it’s hardly the fist time in history where an inferior product manages to capture the largest market share.</p>
+
+
+      <div class="mt-12 mb-8 p-8 bg-blue-50 border border-blue-100 rounded-xl">
+        <h4 class="text-2xl font-semibold mb-4 text-blue-900">Enjoyed this post? Check out my podcast!</h4>
+        <p class="mb-6 text-blue-800">If you found this interesting, you might enjoy <a href="/podcast" class="text-blue-600 hover:text-blue-800 underline" onclick="trackEvent('Blog CTA', 'Click', 'Podcast Link', 'Why Android-phones will never be at par with the iPhone (but still win)')">"Nerding Out with Viktor"</a> - my podcast where I dive deep into tech, entrepreneurship, and security with industry experts.</p>
+        <div>
+          <h5 class="font-medium mb-4 text-blue-900">Listen on:</h5>
+          
+
+
+
+<div>
+  <div class="flex gap-3">
+    
+      <a href="https://www.youtube.com/@nerdingoutwithviktor" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'YouTube', 'Why Android-phones will never be at par with the iPhone (but still win)')">
+        <img src="/assets/images/site/podcast-youtube-white.svg" alt="Listen to podcast on YouTube" />
+      </a>
+    
+    
+      <a href="https://open.spotify.com/show/7C6yipdVPWgBc6Bwikgo8g" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Spotify', 'Why Android-phones will never be at par with the iPhone (but still win)')">
+        <img src="/assets/images/site/podcast-spotify-white.svg" alt="Listen to podcast on Spotify" />
+      </a>
+    
+    
+      <a href="https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Apple', 'Why Android-phones will never be at par with the iPhone (but still win)')">
+        <img src="/assets/images/site/podcast-apple-white.svg" alt="Listen to podcast on Apple" />
+      </a>
+    
+    
+    
+      <a href="https://podcast.nerdingoutwithviktor.com/podcast_feed.xml" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'RSS', 'Why Android-phones will never be at par with the iPhone (but still win)')">
+        <img src="/assets/images/site/podcast-rss-white.svg" alt="RSS Feed" />
+      </a>
+    
+  </div>
+</div>
+
+        </div>
+      </div>
+
+      <i>Found an error or typo? File PR against <a href="https://github.com/vpetersson/vpetersson.com/tree/master/_posts/tumblr/2010-11-06-why-android-phones-will-never-be-at-par-with-the-iphone.md" rel="nofollow">this file</a>.</i>
+    </article>
+    <div class="mt-6">
+      
+  <div class="tags">
+    
+      <a href="/tags/android" class="tag">
+        Android
+      </a>
+    
+      <a href="/tags/ios" class="tag">
+        iOS
+      </a>
+    
+      <a href="/tags/iphone" class="tag">
+        iPhone
+      </a>
+    
+  </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+    </main>
+    <footer class="py-[60px] md:pt-[74px] md:pb-[40px] px-[25px] md:px-[120px] text-altPrimaryText">
+  <div class="mb-[60px]">
+    <a href="/">
+      <img class="w-[200px] md:w-[320px]" src="/assets/images/site/logo.svg" alt="logo" />
+    </a>
+  </div>
+  <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-8 lg:mb-6">
+    <nav class="flex flex-col md:flex-row gap-6 md:gap-8 mb-20 lg:mb-0">
+      
+        <a href="/" class="">HOME</a>
+      
+        <a href="/about" class="">ABOUT</a>
+      
+        <a href="/consulting" class="">CONSULTING</a>
+      
+        <a href="/podcast" class="">PODCAST</a>
+      
+        <a href="/blog" class="">BLOG</a>
+      
+        <a href="https://studio.viktopia.io/" class="">VIKTOPIA STUDIO</a>
+      
+    </nav>
+    <div class="flex gap-[13px]">
+      <a href="https://twitter.com/vpetersson">
+        <img src="/assets/images/site/x.svg" alt="x logo" />
+      </a>
+      <a href="https://github.com/vpetersson">
+        <img src="/assets/images/site/github.svg" alt="github logo" />
+      </a>
+      <a href="https://www.linkedin.com/in/vpetersson/">
+        <img src="/assets/images/site/linkedin.svg" alt="linkedIn logo" />
+      </a>
+    </div>
+  </div>
+  <hr class="mb-8 lg:mb-10 bg-[#000212] h-[3px] bg-opacity-20 border-0" />
+  <div>
+    <p class="font-[Inter] text-base">&copy; Viktor Petersson</p>
+  </div>
+</footer>
+
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/code-blocks.js" defer></script>
+  </body>
+</html>

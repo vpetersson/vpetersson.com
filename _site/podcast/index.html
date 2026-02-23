@@ -1,0 +1,2825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="content-language" content="en">
+
+  <!-- Resource Hints -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="/assets/css/styles.css" as="style">
+  <link rel="preload" href="/assets/css/main.css" as="style">
+
+  <title>Nerding Out with Viktor | The Podcast</title>
+  <meta name="description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vpetersson.com/podcast/index.html">
+  <meta property="og:title" content="Nerding Out with Viktor | The Podcast">
+  <meta property="og:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta property="og:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- LinkedIn -->
+  <meta property="og:site_name" content="Viktor's Tech Musings & Security Paranoia">
+  <meta property="article:author" content="https://www.linkedin.com/in/vpetersson/">
+  
+
+  <!-- X (formerly Twitter) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@vpetersson">
+  <meta name="twitter:creator" content="@vpetersson">
+  <meta name="twitter:title" content="Nerding Out with Viktor | The Podcast">
+  <meta name="twitter:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta name="twitter:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- Social Profile Links -->
+  <link rel="me" href="https://github.com/vpetersson">
+  <link rel="me" href="https://www.linkedin.com/in/vpetersson/">
+  <link rel="me" href="https://hachyderm.io/@vpetersson@hachyderm.io">
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com",
+    "image": "https://vpetersson.com/assets/images/site/talk.webp",
+    "sameAs": [
+      "https://github.com/vpetersson",
+      "https://www.linkedin.com/in/vpetersson/",
+      "https://hachyderm.io/@vpetersson@hachyderm.io",
+      "https://twitter.com/vpetersson"
+    ]
+  }
+  </script>
+
+  <!-- Custom meta tags -->
+  
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Anton|DM Sans|Roboto|Hanken+Grotesk"
+    />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/native.css">
+  
+  <!-- Font Awesome (bundled from node_modules) -->
+  <link rel="stylesheet" href="/assets/css/fontawesome-core.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-solid.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-brands.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZY6ZNLNNC8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZY6ZNLNNC8');
+
+  // Track outbound links and CTAs
+  function trackEvent(category, action, label, source) {
+    gtag('event', action, {
+      'event_category': category,
+      'event_label': label,
+      'source': source
+    });
+  }
+</script>
+
+
+  <link rel="canonical" href="https://vpetersson.com/podcast/index.html" />
+</head>
+
+  <body>
+    <!-- Skip Navigation -->
+<a href="#main-content" class="skip-navigation">Skip to main content</a>
+
+<header class="p-8 flex justify-between bg-primaryBG border-b border-white-alpha-20" role="banner">
+  <div class="flex gap-10 justify-between items-center">
+    <a href="/" aria-label="Viktor Petersson - Home">
+      <img src="/assets/images/site/logo-white.svg" alt="Viktor Petersson logo" width="120" height="40" />
+    </a>
+    <nav class="hidden lg:flex gap-6">
+  
+    <a href="/" class="text-white uppercase">HOME</a>
+  
+    <a href="/about" class="text-white uppercase">ABOUT</a>
+  
+    <a href="/consulting" class="text-white uppercase">CONSULTING</a>
+  
+    <a href="/podcast" class="text-white uppercase">PODCAST</a>
+  
+    <a href="/blog" class="text-white uppercase">BLOG</a>
+  
+    <a href="https://studio.viktopia.io/" class="text-white uppercase">VIKTOPIA STUDIO</a>
+  
+</nav>
+
+  </div>
+  <div class="flex gap-2 justify-between items-center">
+    <div class="header-search hidden lg:block">
+      <form action="/search" method="get" role="search">
+        <label for="searchright" class="sr-only">Search the site</label>
+        <input
+          class="search expandright"
+          id="searchright"
+          type="search"
+          name="query"
+          placeholder="Search"
+          aria-label="Search"
+        >
+        <button class="button searchbutton" type="submit" aria-label="Submit search">
+          <span class="mglass" aria-hidden="true">&#9906;</span>
+        </button>
+      </form>
+    </div>
+
+    <div class="hidden lg:block">
+      <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+    </div>
+
+    <!-- Use modern mobile navigation -->
+    <!-- Modern Mobile Navigation -->
+<div class="mobile-nav-container lg:hidden">
+  <!-- Menu Toggle Button -->
+  <button
+    class="mobile-menu-toggle btn-reset touch-target"
+    aria-label="Toggle navigation menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+    data-menu-toggle
+  >
+    <span class="hamburger-icon" aria-hidden="true">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </span>
+  </button>
+
+  <!-- Mobile Menu Backdrop -->
+  <div
+    class="mobile-menu-backdrop"
+    data-menu-backdrop
+    aria-hidden="true"
+  ></div>
+
+  <!-- Mobile Menu Panel -->
+  <nav
+    class="mobile-menu"
+    id="mobile-menu"
+    aria-labelledby="mobile-menu-label"
+    data-menu-panel
+  >
+    <!-- Menu Header -->
+    <div class="mobile-menu-header">
+      <h2 id="mobile-menu-label" class="sr-only">Navigation Menu</h2>
+      <button
+        class="mobile-menu-close btn-reset touch-target"
+        aria-label="Close navigation menu"
+        data-menu-close
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="mobile-menu-list" role="list">
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            HOME
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/about"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            ABOUT
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/consulting"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            CONSULTING
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/podcast"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            PODCAST
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/blog"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            BLOG
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="https://studio.viktopia.io/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            VIKTOPIA STUDIO
+          </a>
+        </li>
+      
+    </ul>
+
+    <!-- Social Links -->
+    <div class="mobile-menu-footer">
+      <div class="mobile-social-links">
+        <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<style>
+/* Mobile Navigation Styles */
+.mobile-nav-container {
+  position: relative;
+}
+
+.mobile-menu-toggle {
+  position: relative;
+  z-index: var(--z-fixed);
+  color: var(--color-white);
+  transition: transform var(--transition-normal);
+
+  &[aria-expanded="true"] {
+    transform: rotate(90deg);
+  }
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 18px;
+  justify-content: space-between;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  transition: all var(--transition-normal);
+  transform-origin: center;
+}
+
+.mobile-menu-toggle[aria-expanded="true"] .hamburger-line {
+  &:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  &:nth-child(2) {
+    opacity: 0;
+  }
+
+  &:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+
+.mobile-menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+  z-index: var(--z-modal);
+}
+
+.mobile-menu-backdrop.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(400px, 100vw);
+  height: 100vh;
+  background: var(--color-gray-900);
+  border-left: 1px solid var(--color-gray-200);
+  transform: translateX(100%);
+  transition: transform var(--transition-normal);
+  z-index: var(--z-modal);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.mobile-menu-close {
+  color: var(--color-white);
+}
+
+.mobile-menu-list {
+  flex: 1;
+  padding: var(--space-4) 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu-item {
+  margin: 0;
+}
+
+.mobile-menu-link {
+  display: block;
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-normal);
+  border-left: 3px solid transparent;
+
+  &:hover {
+    background: var(--color-gray-800);
+    border-left-color: var(--color-primary);
+  }
+
+  &[aria-current="page"] {
+    color: var(--color-primary);
+    border-left-color: var(--color-primary);
+    background: var(--color-gray-800);
+  }
+}
+
+.mobile-menu-footer {
+  padding: var(--space-4);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.mobile-social-links {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+}
+
+/* Simple instant display */
+.mobile-menu-item {
+  opacity: 1;
+}
+</style>
+
+<script>
+// Modern Mobile Navigation JavaScript
+(function() {
+  const menuToggle = document.querySelector('[data-menu-toggle]');
+  const menuPanel = document.querySelector('[data-menu-panel]');
+  const menuBackdrop = document.querySelector('[data-menu-backdrop]');
+  const menuClose = document.querySelector('[data-menu-close]');
+  const menuLinks = document.querySelectorAll('.mobile-menu-link');
+
+  let isOpen = false;
+
+  function openMenu() {
+    isOpen = true;
+    menuToggle.setAttribute('aria-expanded', 'true');
+    menuPanel.classList.add('is-open');
+    menuBackdrop.classList.add('is-visible');
+    document.body.style.overflow = 'hidden';
+
+    // Focus first menu item
+    const firstLink = menuPanel.querySelector('.mobile-menu-link');
+    if (firstLink) {
+      firstLink.focus();
+    }
+  }
+
+  function closeMenu() {
+    isOpen = false;
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuPanel.classList.remove('is-open');
+    menuBackdrop.classList.remove('is-visible');
+    document.body.style.overflow = '';
+
+    // Return focus to toggle button
+    menuToggle.focus();
+  }
+
+  function toggleMenu() {
+    isOpen ? closeMenu() : openMenu();
+  }
+
+  // Event listeners
+  menuToggle.addEventListener('click', toggleMenu);
+  menuClose.addEventListener('click', closeMenu);
+  menuBackdrop.addEventListener('click', closeMenu);
+
+  // Close on link click
+  menuLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isOpen) {
+      closeMenu();
+    }
+  });
+
+  // Trap focus in menu when open
+  menuPanel.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') {
+      const focusableElements = menuPanel.querySelectorAll(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (e.shiftKey && document.activeElement === firstElement) {
+        e.preventDefault();
+        lastElement.focus();
+      } else if (!e.shiftKey && document.activeElement === lastElement) {
+        e.preventDefault();
+        firstElement.focus();
+      }
+    }
+  });
+})();
+</script>
+  </div>
+</header>
+
+    <main id="main-content" class="body">
+      <div class="page-header page-header-podcast">
+  <h2 class="uppercase text-[48px] md:text-[91px] lg:text-[140px] xl:text-[186px] text-white text-center">Podcast</h2>
+</div>
+
+<!-- Hero section with backstory -->
+<section class="podcast-hero">
+  <div class="podcast-hero-container">
+    <div class="podcast-hero-content">
+      <h2 class="podcast-hero-title">The story behind the podcast</h2>
+      <p class="podcast-hero-text">
+        Hey there! I'm Viktor, a proud nerd and seasoned entrepreneur with a knack for quirky innovation. From launching YippieMove, a pioneering email migration service, to co-creating Blotter, a top 10 Mac App Store productivity app, my journey has been all about embracing uncharted opportunities. Now, I lead Screenly, a leading secure digital signage product trusted by NASA, and developed Anthias, a top-ranked open-source digital signage solution. "Nerding Out with Viktor" is where I dive into the tech world, breaking down complex concepts with leading experts. Join me for some fun and insightful conversations!
+      </p>
+      <div class="podcast-hero-links">
+        <h5 class="podcast-hero-links-title">Play On</h5>
+        
+
+
+
+<div>
+  <div class="flex gap-3">
+    
+      <a href="https://www.youtube.com/@nerdingoutwithviktor" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'YouTube', 'Nerding Out with Viktor | The Podcast')">
+        <img src="/assets/images/site/podcast-youtube-white.svg" alt="Listen to podcast on YouTube" />
+      </a>
+    
+    
+      <a href="https://open.spotify.com/show/7C6yipdVPWgBc6Bwikgo8g" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Spotify', 'Nerding Out with Viktor | The Podcast')">
+        <img src="/assets/images/site/podcast-spotify-white.svg" alt="Listen to podcast on Spotify" />
+      </a>
+    
+    
+      <a href="https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Apple', 'Nerding Out with Viktor | The Podcast')">
+        <img src="/assets/images/site/podcast-apple-white.svg" alt="Listen to podcast on Apple" />
+      </a>
+    
+    
+    
+      <a href="https://podcast.nerdingoutwithviktor.com/podcast_feed.xml" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'RSS', 'Nerding Out with Viktor | The Podcast')">
+        <img src="/assets/images/site/podcast-rss-white.svg" alt="RSS Feed" />
+      </a>
+    
+  </div>
+</div>
+
+      </div>
+    </div>
+    <div class="podcast-hero-image">
+      <img
+        src="/assets/user-gray.webp"
+        alt="Viktor Petersson"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- Featured episodes -->
+
+
+
+<section class="featured-episodes-section">
+  <div class="featured-episodes-container">
+    <div class="featured-episodes-header">
+      <h2 class="featured-episodes-title">Featured Episodes</h2>
+      <p class="featured-episodes-subtitle">Some of our most popular conversations with industry leaders</p>
+    </div>
+    <div class="featured-episodes-grid">
+      
+        
+
+
+<article class="featured-episode-card">
+  <a href="/podcast/S01E17.html" class="featured-episode-link">
+    <div class="featured-episode-thumbnail">
+      <img
+        src="https://img.youtube.com/vi/bTb_Rf_qkq8/maxresdefault.jpg"
+        alt="Daniel Stenberg on Curl&#39;s Journey: From C64 Demos to Internet Transfers"
+        loading="lazy"
+      />
+      <div class="featured-episode-play">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+      </div>
+    </div>
+    <div class="featured-episode-content">
+      <div class="featured-episode-meta">
+        <span class="featured-episode-badge">Featured</span>
+        <span class="featured-episode-info">S1E17 • 1 hour 26 mins</span>
+      </div>
+      <h3 class="featured-episode-guest">
+        Daniel Stenberg
+      </h3>
+      <p class="featured-episode-title">Daniel Stenberg on Curl&#39;s Journey: From C64 Demos to Internet Transfers</p>
+    </div>
+  </a>
+</article>
+
+<style>
+.featured-episode-card {
+  background: var(--color-gray-800);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+
+  &:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-xl);
+    transform: translateY(-4px);
+  }
+}
+
+.featured-episode-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.featured-episode-thumbnail {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+  }
+
+  .featured-episode-card:hover & img {
+    transform: scale(1.05);
+  }
+}
+
+.featured-episode-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  background: rgba(93, 95, 239, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+
+  .featured-episode-card:hover & {
+    opacity: 1;
+  }
+}
+
+.featured-episode-content {
+  padding: var(--space-4);
+}
+
+.featured-episode-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.featured-episode-badge {
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.featured-episode-info {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-300);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.featured-episode-guest {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-white);
+  margin: 0 0 var(--space-1) 0;
+  line-height: 1.3;
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+.featured-episode-title {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-300);
+  margin: 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+</style>
+
+      
+        
+
+
+<article class="featured-episode-card">
+  <a href="/podcast/S01E15.html" class="featured-episode-link">
+    <div class="featured-episode-thumbnail">
+      <img
+        src="https://img.youtube.com/vi/yCyhPvLyJdY/maxresdefault.jpg"
+        alt="Past, Present, and Future of Computing with Bryan Cantrill, CTO of Oxide Computer Company"
+        loading="lazy"
+      />
+      <div class="featured-episode-play">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+      </div>
+    </div>
+    <div class="featured-episode-content">
+      <div class="featured-episode-meta">
+        <span class="featured-episode-badge">Featured</span>
+        <span class="featured-episode-info">S1E15 • 1 hour 23 mins</span>
+      </div>
+      <h3 class="featured-episode-guest">
+        Bryan Cantrill
+      </h3>
+      <p class="featured-episode-title">Past, Present, and Future of Computing with Bryan Cantrill, CTO of Oxide Computer Company</p>
+    </div>
+  </a>
+</article>
+
+<style>
+.featured-episode-card {
+  background: var(--color-gray-800);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+
+  &:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-xl);
+    transform: translateY(-4px);
+  }
+}
+
+.featured-episode-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.featured-episode-thumbnail {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+  }
+
+  .featured-episode-card:hover & img {
+    transform: scale(1.05);
+  }
+}
+
+.featured-episode-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  background: rgba(93, 95, 239, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+
+  .featured-episode-card:hover & {
+    opacity: 1;
+  }
+}
+
+.featured-episode-content {
+  padding: var(--space-4);
+}
+
+.featured-episode-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.featured-episode-badge {
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.featured-episode-info {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-300);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.featured-episode-guest {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-white);
+  margin: 0 0 var(--space-1) 0;
+  line-height: 1.3;
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+.featured-episode-title {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-300);
+  margin: 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+</style>
+
+      
+        
+
+
+<article class="featured-episode-card">
+  <a href="/podcast/S01E13.html" class="featured-episode-link">
+    <div class="featured-episode-thumbnail">
+      <img
+        src="https://img.youtube.com/vi/2PBkQK5gWOY/maxresdefault.jpg"
+        alt="Exploring the Depths of Linux and Open Source Innovation with Mark Shuttleworth"
+        loading="lazy"
+      />
+      <div class="featured-episode-play">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+      </div>
+    </div>
+    <div class="featured-episode-content">
+      <div class="featured-episode-meta">
+        <span class="featured-episode-badge">Featured</span>
+        <span class="featured-episode-info">S1E13 • 1 hour 4 mins</span>
+      </div>
+      <h3 class="featured-episode-guest">
+        Mark Shuttleworth
+      </h3>
+      <p class="featured-episode-title">Exploring the Depths of Linux and Open Source Innovation with Mark Shuttleworth</p>
+    </div>
+  </a>
+</article>
+
+<style>
+.featured-episode-card {
+  background: var(--color-gray-800);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+
+  &:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-xl);
+    transform: translateY(-4px);
+  }
+}
+
+.featured-episode-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.featured-episode-thumbnail {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+  }
+
+  .featured-episode-card:hover & img {
+    transform: scale(1.05);
+  }
+}
+
+.featured-episode-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  background: rgba(93, 95, 239, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+
+  .featured-episode-card:hover & {
+    opacity: 1;
+  }
+}
+
+.featured-episode-content {
+  padding: var(--space-4);
+}
+
+.featured-episode-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.featured-episode-badge {
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.featured-episode-info {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-300);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.featured-episode-guest {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-white);
+  margin: 0 0 var(--space-1) 0;
+  line-height: 1.3;
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+.featured-episode-title {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-300);
+  margin: 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+</style>
+
+      
+        
+
+
+<article class="featured-episode-card">
+  <a href="/podcast/S01E12.html" class="featured-episode-link">
+    <div class="featured-episode-thumbnail">
+      <img
+        src="https://img.youtube.com/vi/LI7poeZ3FxI/maxresdefault.jpg"
+        alt="Transforming Tech with Eben Upton: Exploring Raspberry Pi&#39;s Global Impact"
+        loading="lazy"
+      />
+      <div class="featured-episode-play">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+      </div>
+    </div>
+    <div class="featured-episode-content">
+      <div class="featured-episode-meta">
+        <span class="featured-episode-badge">Featured</span>
+        <span class="featured-episode-info">S1E12 • 1 hour 21 mins</span>
+      </div>
+      <h3 class="featured-episode-guest">
+        Eben Upton
+      </h3>
+      <p class="featured-episode-title">Transforming Tech with Eben Upton: Exploring Raspberry Pi&#39;s Global Impact</p>
+    </div>
+  </a>
+</article>
+
+<style>
+.featured-episode-card {
+  background: var(--color-gray-800);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+
+  &:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-xl);
+    transform: translateY(-4px);
+  }
+}
+
+.featured-episode-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.featured-episode-thumbnail {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+  }
+
+  .featured-episode-card:hover & img {
+    transform: scale(1.05);
+  }
+}
+
+.featured-episode-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  background: rgba(93, 95, 239, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+
+  .featured-episode-card:hover & {
+    opacity: 1;
+  }
+}
+
+.featured-episode-content {
+  padding: var(--space-4);
+}
+
+.featured-episode-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.featured-episode-badge {
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.featured-episode-info {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-300);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.featured-episode-guest {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-white);
+  margin: 0 0 var(--space-1) 0;
+  line-height: 1.3;
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+.featured-episode-title {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-300);
+  margin: 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+</style>
+
+      
+        
+
+
+<article class="featured-episode-card">
+  <a href="/podcast/S01E11.html" class="featured-episode-link">
+    <div class="featured-episode-thumbnail">
+      <img
+        src="https://img.youtube.com/vi/V5nmfDoiFys/maxresdefault.jpg"
+        alt="Demystifying eBPF with Liz Rice: A Deep Dive into Kernel Programming and Security"
+        loading="lazy"
+      />
+      <div class="featured-episode-play">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+      </div>
+    </div>
+    <div class="featured-episode-content">
+      <div class="featured-episode-meta">
+        <span class="featured-episode-badge">Featured</span>
+        <span class="featured-episode-info">S1E11 • 51 mins</span>
+      </div>
+      <h3 class="featured-episode-guest">
+        Liz Rice
+      </h3>
+      <p class="featured-episode-title">Demystifying eBPF with Liz Rice: A Deep Dive into Kernel Programming and Security</p>
+    </div>
+  </a>
+</article>
+
+<style>
+.featured-episode-card {
+  background: var(--color-gray-800);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+
+  &:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-xl);
+    transform: translateY(-4px);
+  }
+}
+
+.featured-episode-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.featured-episode-thumbnail {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+  }
+
+  .featured-episode-card:hover & img {
+    transform: scale(1.05);
+  }
+}
+
+.featured-episode-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  background: rgba(93, 95, 239, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+
+  .featured-episode-card:hover & {
+    opacity: 1;
+  }
+}
+
+.featured-episode-content {
+  padding: var(--space-4);
+}
+
+.featured-episode-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.featured-episode-badge {
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.featured-episode-info {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-300);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.featured-episode-guest {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-white);
+  margin: 0 0 var(--space-1) 0;
+  line-height: 1.3;
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+.featured-episode-title {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-300);
+  margin: 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+</style>
+
+      
+    </div>
+  </div>
+</section>
+
+
+<style>
+.featured-episodes-section {
+  background: var(--color-gray-900);
+  padding: var(--space-12) var(--space-4);
+
+  @media (min-width: 768px) {
+    padding: var(--space-16) var(--space-6);
+  }
+}
+
+.featured-episodes-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featured-episodes-header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.featured-episodes-title {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--color-white);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.featured-episodes-subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-300);
+  margin: 0;
+}
+
+.featured-episodes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+</style>
+
+
+<!-- Subscription block -->
+
+<div class="bg-secondaryBG subscription-block">
+
+  <div class="flex flex-col items-center gap-6 max-w-4xl mx-auto px-6">
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="https://nerdingoutwithviktor.com/" target="_blank" rel="noopener noreferrer" class="subscription-cta">
+        <i class="fas fa-envelope text-xl"></i>
+        <span>Subscribe to Newsletter</span>
+      </a>
+      <a href="https://www.youtube.com/@nerdingoutwithviktor" target="_blank" rel="noopener noreferrer" class="subscription-cta">
+        <i class="fab fa-youtube text-xl"></i>
+        <span>Subscribe on YouTube</span>
+      </a>
+      <a href="https://open.spotify.com/show/7C6yipdVPWgBc6Bwikgo8g" target="_blank" rel="noopener noreferrer" class="subscription-cta">
+        <i class="fab fa-spotify text-xl"></i>
+        <span>Subscribe on Spotify</span>
+      </a>
+      <a href="https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295" target="_blank" rel="noopener noreferrer" class="subscription-cta">
+        <i class="fab fa-apple text-xl"></i>
+        <span>Subscribe on Apple Podcast</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- All episodes heading -->
+<section class="all-episodes-header">
+  <div class="all-episodes-header-container">
+    <h2 class="all-episodes-title">All Episodes</h2>
+    <p class="all-episodes-subtitle">Browse all episodes from Season 1 and Season 2</p>
+  </div>
+</section>
+
+<!-- All episodes feed -->
+<div>
+  
+
+<section class="content-feed-native">
+  <div class="content-feed-container">
+    <!-- Content List -->
+    <div class="content-list">
+      
+        
+          
+
+
+<article class="content-card">
+  <div class="content-card-inner">
+    <!-- Content Type & Meta -->
+    <div class="content-meta-top">
+      
+        <div class="content-type-indicator podcast">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a8 8 0 0 1 0 12M8 2a8 8 0 0 1 0 12M4 6v4"/>
+          </svg>
+          <span>Season 2 • Episode 21</span>
+        </div>
+        
+          <div class="guests-info">
+            with Sarah Fluchs
+          </div>
+        
+      
+    </div>
+
+    <!-- Title -->
+    <h3 class="content-title">
+      <a href="/podcast/S02E21.html">
+        CRA Explained: What the Cyber Resilience Act Means for Device Manufacturers with Sarah Fluchs
+      </a>
+    </h3>
+
+    <!-- Tags -->
+    
+
+    <!-- Description -->
+    <div class="content-description">
+      
+        <p>What happens when long-lifecycle hardware meets modern cybersecurity expectations? In this episode of Nerding Out with Viktor, we're joined by Sarah Fluchs, CTO and OT cybersecurity expert, to break down...</p>
+      
+    </div>
+
+    <!-- Action & Meta -->
+    <div class="content-actions">
+      <a href="/podcast/S02E21.html" class="content-cta">
+        Listen
+      </a>
+
+      <div class="content-meta-bottom">
+        <time datetime="2025-12-16T23:00:00+00:00">
+          16 DEC • 2025
+        </time>
+        
+          <span>1 hour 6 mins</span>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+<style>
+.content-card {
+  width: 100%;
+  background: var(--color-gray-800);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  margin-bottom: var(--space-6);
+
+  &:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+  }
+}
+
+.content-card-inner {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+
+  @media (min-width: 768px) {
+    padding: var(--space-8);
+    gap: var(--space-5);
+  }
+}
+
+.content-meta-top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.content-type-indicator {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  &.podcast {
+    color: #10b981; /* Green for podcasts */
+  }
+
+  &.blog {
+    color: var(--color-primary); /* Purple for blog posts */
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+.guests-info {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-300);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.content-title {
+  margin: 0;
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-white);
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-2xl);
+    line-height: 1.3;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--transition-fast);
+
+    &:hover {
+      color: var(--color-primary);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+      border-radius: var(--radius-sm);
+    }
+  }
+}
+
+.content-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+}
+
+.content-description {
+  flex: 1;
+
+  p {
+    margin: 0;
+    color: var(--color-gray-300);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    font-weight: 400;
+  }
+}
+
+.content-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.content-cta {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-normal);
+  align-self: flex-start;
+
+  &:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+    transform: translateY(-1px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}
+
+.content-meta-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-300);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: var(--space-4);
+    align-items: center;
+  }
+
+  time {
+    color: var(--color-white);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .content-card-inner {
+    padding: var(--space-4);
+    gap: var(--space-3);
+  }
+
+  .content-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .content-description p {
+    font-size: var(--font-size-sm);
+  }
+}
+</style>
+        
+          
+
+
+<article class="content-card">
+  <div class="content-card-inner">
+    <!-- Content Type & Meta -->
+    <div class="content-meta-top">
+      
+        <div class="content-type-indicator podcast">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a8 8 0 0 1 0 12M8 2a8 8 0 0 1 0 12M4 6v4"/>
+          </svg>
+          <span>Season 2 • Episode 20</span>
+        </div>
+        
+          <div class="guests-info">
+            with James Baker
+          </div>
+        
+      
+    </div>
+
+    <!-- Title -->
+    <h3 class="content-title">
+      <a href="/podcast/S02E20.html">
+        UK Online Safety Act: Digital ID and the Risks of a Database State with James Baker
+      </a>
+    </h3>
+
+    <!-- Tags -->
+    
+
+    <!-- Description -->
+    <div class="content-description">
+      
+        <p>What happens when a government's push for "safety" starts reshaping the architecture of the internet? In this episode of Nerding Out with Viktor, we're joined by James Baker, Policy and...</p>
+      
+    </div>
+
+    <!-- Action & Meta -->
+    <div class="content-actions">
+      <a href="/podcast/S02E20.html" class="content-cta">
+        Listen
+      </a>
+
+      <div class="content-meta-bottom">
+        <time datetime="2025-11-18T23:00:00+00:00">
+          18 NOV • 2025
+        </time>
+        
+          <span>1 hour 6 mins</span>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+<style>
+.content-card {
+  width: 100%;
+  background: var(--color-gray-800);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  margin-bottom: var(--space-6);
+
+  &:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+  }
+}
+
+.content-card-inner {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+
+  @media (min-width: 768px) {
+    padding: var(--space-8);
+    gap: var(--space-5);
+  }
+}
+
+.content-meta-top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.content-type-indicator {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  &.podcast {
+    color: #10b981; /* Green for podcasts */
+  }
+
+  &.blog {
+    color: var(--color-primary); /* Purple for blog posts */
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+.guests-info {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-300);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.content-title {
+  margin: 0;
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-white);
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-2xl);
+    line-height: 1.3;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--transition-fast);
+
+    &:hover {
+      color: var(--color-primary);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+      border-radius: var(--radius-sm);
+    }
+  }
+}
+
+.content-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+}
+
+.content-description {
+  flex: 1;
+
+  p {
+    margin: 0;
+    color: var(--color-gray-300);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    font-weight: 400;
+  }
+}
+
+.content-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.content-cta {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-normal);
+  align-self: flex-start;
+
+  &:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+    transform: translateY(-1px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}
+
+.content-meta-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-300);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: var(--space-4);
+    align-items: center;
+  }
+
+  time {
+    color: var(--color-white);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .content-card-inner {
+    padding: var(--space-4);
+    gap: var(--space-3);
+  }
+
+  .content-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .content-description p {
+    font-size: var(--font-size-sm);
+  }
+}
+</style>
+        
+          
+
+
+<article class="content-card">
+  <div class="content-card-inner">
+    <!-- Content Type & Meta -->
+    <div class="content-meta-top">
+      
+        <div class="content-type-indicator podcast">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a8 8 0 0 1 0 12M8 2a8 8 0 0 1 0 12M4 6v4"/>
+          </svg>
+          <span>Season 2 • Episode 19</span>
+        </div>
+        
+          <div class="guests-info">
+            with Nick Selby
+          </div>
+        
+      
+    </div>
+
+    <!-- Title -->
+    <h3 class="content-title">
+      <a href="/podcast/S02E19.html">
+        Rethinking Software Security Compliance in the Age of AI with Nick Selby
+      </a>
+    </h3>
+
+    <!-- Tags -->
+    
+
+    <!-- Description -->
+    <div class="content-description">
+      
+        <p>Nick Selby, a veteran security leader known for his clear-eyed approach to building practical, human-centered security programs, joins Viktor to tackle a central question that haunts many growing tech companies:...</p>
+      
+    </div>
+
+    <!-- Action & Meta -->
+    <div class="content-actions">
+      <a href="/podcast/S02E19.html" class="content-cta">
+        Listen
+      </a>
+
+      <div class="content-meta-bottom">
+        <time datetime="2025-11-04T23:00:00+00:00">
+          04 NOV • 2025
+        </time>
+        
+          <span>57 mins</span>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+<style>
+.content-card {
+  width: 100%;
+  background: var(--color-gray-800);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  margin-bottom: var(--space-6);
+
+  &:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+  }
+}
+
+.content-card-inner {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+
+  @media (min-width: 768px) {
+    padding: var(--space-8);
+    gap: var(--space-5);
+  }
+}
+
+.content-meta-top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.content-type-indicator {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  &.podcast {
+    color: #10b981; /* Green for podcasts */
+  }
+
+  &.blog {
+    color: var(--color-primary); /* Purple for blog posts */
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+.guests-info {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-300);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.content-title {
+  margin: 0;
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-white);
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-2xl);
+    line-height: 1.3;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--transition-fast);
+
+    &:hover {
+      color: var(--color-primary);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+      border-radius: var(--radius-sm);
+    }
+  }
+}
+
+.content-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+}
+
+.content-description {
+  flex: 1;
+
+  p {
+    margin: 0;
+    color: var(--color-gray-300);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    font-weight: 400;
+  }
+}
+
+.content-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.content-cta {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-normal);
+  align-self: flex-start;
+
+  &:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+    transform: translateY(-1px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}
+
+.content-meta-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-300);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: var(--space-4);
+    align-items: center;
+  }
+
+  time {
+    color: var(--color-white);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .content-card-inner {
+    padding: var(--space-4);
+    gap: var(--space-3);
+  }
+
+  .content-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .content-description p {
+    font-size: var(--font-size-sm);
+  }
+}
+</style>
+        
+          
+
+
+<article class="content-card">
+  <div class="content-card-inner">
+    <!-- Content Type & Meta -->
+    <div class="content-meta-top">
+      
+        <div class="content-type-indicator podcast">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a8 8 0 0 1 0 12M8 2a8 8 0 0 1 0 12M4 6v4"/>
+          </svg>
+          <span>Season 2 • Episode 18</span>
+        </div>
+        
+          <div class="guests-info">
+            with Patrick Walker
+          </div>
+        
+      
+    </div>
+
+    <!-- Title -->
+    <h3 class="content-title">
+      <a href="/podcast/S02E18.html">
+        The Quiet Power of Digital Minimalism with Patrick Walker
+      </a>
+    </h3>
+
+    <!-- Tags -->
+    
+
+    <!-- Description -->
+    <div class="content-description">
+      
+        <p>Patrick Walker, former YouTube and Facebook executive turned conscious tech founder, shares his journey from shaping the early internet video landscape to building tools that prioritize intention over engagement. From...</p>
+      
+    </div>
+
+    <!-- Action & Meta -->
+    <div class="content-actions">
+      <a href="/podcast/S02E18.html" class="content-cta">
+        Listen
+      </a>
+
+      <div class="content-meta-bottom">
+        <time datetime="2025-10-21T23:00:00+00:00">
+          21 OCT • 2025
+        </time>
+        
+          <span>1 hour 12 mins</span>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+<style>
+.content-card {
+  width: 100%;
+  background: var(--color-gray-800);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  margin-bottom: var(--space-6);
+
+  &:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+  }
+}
+
+.content-card-inner {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+
+  @media (min-width: 768px) {
+    padding: var(--space-8);
+    gap: var(--space-5);
+  }
+}
+
+.content-meta-top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.content-type-indicator {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  &.podcast {
+    color: #10b981; /* Green for podcasts */
+  }
+
+  &.blog {
+    color: var(--color-primary); /* Purple for blog posts */
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+.guests-info {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-300);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.content-title {
+  margin: 0;
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-white);
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-2xl);
+    line-height: 1.3;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--transition-fast);
+
+    &:hover {
+      color: var(--color-primary);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+      border-radius: var(--radius-sm);
+    }
+  }
+}
+
+.content-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+}
+
+.content-description {
+  flex: 1;
+
+  p {
+    margin: 0;
+    color: var(--color-gray-300);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    font-weight: 400;
+  }
+}
+
+.content-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.content-cta {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-normal);
+  align-self: flex-start;
+
+  &:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+    transform: translateY(-1px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}
+
+.content-meta-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-300);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: var(--space-4);
+    align-items: center;
+  }
+
+  time {
+    color: var(--color-white);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .content-card-inner {
+    padding: var(--space-4);
+    gap: var(--space-3);
+  }
+
+  .content-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .content-description p {
+    font-size: var(--font-size-sm);
+  }
+}
+</style>
+        
+          
+
+
+<article class="content-card">
+  <div class="content-card-inner">
+    <!-- Content Type & Meta -->
+    <div class="content-meta-top">
+      
+        <div class="content-type-indicator podcast">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a8 8 0 0 1 0 12M8 2a8 8 0 0 1 0 12M4 6v4"/>
+          </svg>
+          <span>Season 2 • Episode 17</span>
+        </div>
+        
+          <div class="guests-info">
+            with Sean Rhodes
+          </div>
+        
+      
+    </div>
+
+    <!-- Title -->
+    <h3 class="content-title">
+      <a href="/podcast/S02E17.html">
+        Coreboot and Linux Hardware: Inside Star Labs with Sean Rhodes
+      </a>
+    </h3>
+
+    <!-- Tags -->
+    
+
+    <!-- Description -->
+    <div class="content-description">
+      
+        <p>Sean Rhodes, Firmware Engineer at Star Labs, shares the journey of building Linux-first laptops and mini PCs backed by open firmware. From the early days as a side project to...</p>
+      
+    </div>
+
+    <!-- Action & Meta -->
+    <div class="content-actions">
+      <a href="/podcast/S02E17.html" class="content-cta">
+        Listen
+      </a>
+
+      <div class="content-meta-bottom">
+        <time datetime="2025-09-16T23:00:00+00:00">
+          16 SEP • 2025
+        </time>
+        
+          <span>50 mins</span>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+<style>
+.content-card {
+  width: 100%;
+  background: var(--color-gray-800);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  margin-bottom: var(--space-6);
+
+  &:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+  }
+}
+
+.content-card-inner {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+
+  @media (min-width: 768px) {
+    padding: var(--space-8);
+    gap: var(--space-5);
+  }
+}
+
+.content-meta-top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.content-type-indicator {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  &.podcast {
+    color: #10b981; /* Green for podcasts */
+  }
+
+  &.blog {
+    color: var(--color-primary); /* Purple for blog posts */
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+.guests-info {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-300);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.content-title {
+  margin: 0;
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-white);
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-2xl);
+    line-height: 1.3;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--transition-fast);
+
+    &:hover {
+      color: var(--color-primary);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+      border-radius: var(--radius-sm);
+    }
+  }
+}
+
+.content-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+}
+
+.content-description {
+  flex: 1;
+
+  p {
+    margin: 0;
+    color: var(--color-gray-300);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    font-weight: 400;
+  }
+}
+
+.content-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.content-cta {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-normal);
+  align-self: flex-start;
+
+  &:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+    transform: translateY(-1px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}
+
+.content-meta-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-300);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: var(--space-4);
+    align-items: center;
+  }
+
+  time {
+    color: var(--color-white);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .content-card-inner {
+    padding: var(--space-4);
+    gap: var(--space-3);
+  }
+
+  .content-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .content-description p {
+    font-size: var(--font-size-sm);
+  }
+}
+</style>
+        
+      
+    </div>
+
+    <!-- Pagination -->
+    
+      
+
+<div class="flex justify-center lg:justify-end">
+  
+  
+    <a href="/podcast/page/2/" class="button text-white rounded-full text-center uppercase">Next</a>
+  
+</div>
+    
+  </div>
+</section>
+
+<style>
+.content-feed-native {
+  background: var(--color-gray-900);
+  padding: var(--space-16) var(--space-6);
+}
+
+.content-feed-container {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* Gap is handled by margin-bottom in cards */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content-feed-native {
+    padding: var(--space-12) var(--space-4);
+  }
+}
+</style>
+</div>
+
+<style>
+.podcast-hero {
+  background: var(--color-gray-800);
+  padding: var(--space-10) var(--space-4);
+
+  @media (min-width: 768px) {
+    padding: var(--space-12) var(--space-6);
+  }
+}
+
+.podcast-hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1110px;
+  margin: 0 auto;
+  gap: var(--space-8);
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: var(--space-12);
+  }
+
+  @media (min-width: 1024px) {
+    gap: 155px;
+  }
+}
+
+.podcast-hero-content {
+  flex: 1;
+}
+
+.podcast-hero-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-white);
+  margin: 0 0 var(--space-6) 0;
+
+  @media (min-width: 640px) {
+    font-size: var(--font-size-3xl);
+  }
+
+  @media (min-width: 1024px) {
+    font-size: clamp(2rem, 1.6rem + 2vw, 3rem);
+  }
+}
+
+.podcast-hero-text {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-300);
+  line-height: 1.7;
+  margin: 0 0 var(--space-6) 0;
+}
+
+.podcast-hero-links {
+  margin-top: var(--space-4);
+}
+
+.podcast-hero-links-title {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--color-white);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.podcast-hero-image {
+  flex: 1;
+  max-width: 480px;
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--radius-xl);
+  }
+}
+
+.all-episodes-header {
+  background: var(--color-gray-900);
+  padding: var(--space-10) var(--space-4) var(--space-6);
+
+  @media (min-width: 768px) {
+    padding: var(--space-12) var(--space-6) var(--space-8);
+  }
+}
+
+.all-episodes-header-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.all-episodes-title {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--color-white);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.all-episodes-subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-300);
+  margin: 0;
+}
+</style>
+
+    </main>
+    <footer class="py-[60px] md:pt-[74px] md:pb-[40px] px-[25px] md:px-[120px] text-altPrimaryText">
+  <div class="mb-[60px]">
+    <a href="/">
+      <img class="w-[200px] md:w-[320px]" src="/assets/images/site/logo.svg" alt="logo" />
+    </a>
+  </div>
+  <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-8 lg:mb-6">
+    <nav class="flex flex-col md:flex-row gap-6 md:gap-8 mb-20 lg:mb-0">
+      
+        <a href="/" class="">HOME</a>
+      
+        <a href="/about" class="">ABOUT</a>
+      
+        <a href="/consulting" class="">CONSULTING</a>
+      
+        <a href="/podcast" class="">PODCAST</a>
+      
+        <a href="/blog" class="">BLOG</a>
+      
+        <a href="https://studio.viktopia.io/" class="">VIKTOPIA STUDIO</a>
+      
+    </nav>
+    <div class="flex gap-[13px]">
+      <a href="https://twitter.com/vpetersson">
+        <img src="/assets/images/site/x.svg" alt="x logo" />
+      </a>
+      <a href="https://github.com/vpetersson">
+        <img src="/assets/images/site/github.svg" alt="github logo" />
+      </a>
+      <a href="https://www.linkedin.com/in/vpetersson/">
+        <img src="/assets/images/site/linkedin.svg" alt="linkedIn logo" />
+      </a>
+    </div>
+  </div>
+  <hr class="mb-8 lg:mb-10 bg-[#000212] h-[3px] bg-opacity-20 border-0" />
+  <div>
+    <p class="font-[Inter] text-base">&copy; Viktor Petersson</p>
+  </div>
+</footer>
+
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/code-blocks.js" defer></script>
+  </body>
+</html>

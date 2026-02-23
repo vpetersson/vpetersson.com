@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="content-language" content="en">
+
+  <!-- Resource Hints -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="/assets/css/styles.css" as="style">
+  <link rel="preload" href="/assets/css/main.css" as="style">
+
+  <title>Achieving success with Home Assistant, Flux and sensors</title>
+  <meta name="description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://vpetersson.com/2020/05/25/homeassistant-ikea-tradfri-flux-sensors.html">
+  <meta property="og:title" content="Achieving success with Home Assistant, Flux and sensors">
+  <meta property="og:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta property="og:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- LinkedIn -->
+  <meta property="og:site_name" content="Viktor's Tech Musings & Security Paranoia">
+  <meta property="article:author" content="https://www.linkedin.com/in/vpetersson/">
+  
+  <meta property="article:published_time" content="2020-05-25T12:00:00+00:00">
+  
+
+  <!-- X (formerly Twitter) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@vpetersson">
+  <meta name="twitter:creator" content="@vpetersson">
+  <meta name="twitter:title" content="Achieving success with Home Assistant, Flux and sensors">
+  <meta name="twitter:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta name="twitter:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- Social Profile Links -->
+  <link rel="me" href="https://github.com/vpetersson">
+  <link rel="me" href="https://www.linkedin.com/in/vpetersson/">
+  <link rel="me" href="https://hachyderm.io/@vpetersson@hachyderm.io">
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com",
+    "image": "https://vpetersson.com/assets/images/site/talk.webp",
+    "sameAs": [
+      "https://github.com/vpetersson",
+      "https://www.linkedin.com/in/vpetersson/",
+      "https://hachyderm.io/@vpetersson@hachyderm.io",
+      "https://twitter.com/vpetersson"
+    ]
+  }
+  </script>
+
+  <!-- Custom meta tags -->
+  
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Anton|DM Sans|Roboto|Hanken+Grotesk"
+    />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/native.css">
+  
+  <!-- Font Awesome (bundled from node_modules) -->
+  <link rel="stylesheet" href="/assets/css/fontawesome-core.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-solid.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-brands.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZY6ZNLNNC8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZY6ZNLNNC8');
+
+  // Track outbound links and CTAs
+  function trackEvent(category, action, label, source) {
+    gtag('event', action, {
+      'event_category': category,
+      'event_label': label,
+      'source': source
+    });
+  }
+</script>
+
+
+  <link rel="canonical" href="https://vpetersson.com/2020/05/25/homeassistant-ikea-tradfri-flux-sensors.html" />
+</head>
+
+  <body>
+    <!-- Skip Navigation -->
+<a href="#main-content" class="skip-navigation">Skip to main content</a>
+
+<header class="p-8 flex justify-between bg-primaryBG border-b border-white-alpha-20" role="banner">
+  <div class="flex gap-10 justify-between items-center">
+    <a href="/" aria-label="Viktor Petersson - Home">
+      <img src="/assets/images/site/logo-white.svg" alt="Viktor Petersson logo" width="120" height="40" />
+    </a>
+    <nav class="hidden lg:flex gap-6">
+  
+    <a href="/" class="text-white uppercase">HOME</a>
+  
+    <a href="/about" class="text-white uppercase">ABOUT</a>
+  
+    <a href="/consulting" class="text-white uppercase">CONSULTING</a>
+  
+    <a href="/podcast" class="text-white uppercase">PODCAST</a>
+  
+    <a href="/blog" class="text-white uppercase">BLOG</a>
+  
+    <a href="https://studio.viktopia.io/" class="text-white uppercase">VIKTOPIA STUDIO</a>
+  
+</nav>
+
+  </div>
+  <div class="flex gap-2 justify-between items-center">
+    <div class="header-search hidden lg:block">
+      <form action="/search" method="get" role="search">
+        <label for="searchright" class="sr-only">Search the site</label>
+        <input
+          class="search expandright"
+          id="searchright"
+          type="search"
+          name="query"
+          placeholder="Search"
+          aria-label="Search"
+        >
+        <button class="button searchbutton" type="submit" aria-label="Submit search">
+          <span class="mglass" aria-hidden="true">&#9906;</span>
+        </button>
+      </form>
+    </div>
+
+    <div class="hidden lg:block">
+      <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+    </div>
+
+    <!-- Use modern mobile navigation -->
+    <!-- Modern Mobile Navigation -->
+<div class="mobile-nav-container lg:hidden">
+  <!-- Menu Toggle Button -->
+  <button
+    class="mobile-menu-toggle btn-reset touch-target"
+    aria-label="Toggle navigation menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+    data-menu-toggle
+  >
+    <span class="hamburger-icon" aria-hidden="true">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </span>
+  </button>
+
+  <!-- Mobile Menu Backdrop -->
+  <div
+    class="mobile-menu-backdrop"
+    data-menu-backdrop
+    aria-hidden="true"
+  ></div>
+
+  <!-- Mobile Menu Panel -->
+  <nav
+    class="mobile-menu"
+    id="mobile-menu"
+    aria-labelledby="mobile-menu-label"
+    data-menu-panel
+  >
+    <!-- Menu Header -->
+    <div class="mobile-menu-header">
+      <h2 id="mobile-menu-label" class="sr-only">Navigation Menu</h2>
+      <button
+        class="mobile-menu-close btn-reset touch-target"
+        aria-label="Close navigation menu"
+        data-menu-close
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="mobile-menu-list" role="list">
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            HOME
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/about"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            ABOUT
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/consulting"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            CONSULTING
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/podcast"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            PODCAST
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/blog"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            BLOG
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="https://studio.viktopia.io/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            VIKTOPIA STUDIO
+          </a>
+        </li>
+      
+    </ul>
+
+    <!-- Social Links -->
+    <div class="mobile-menu-footer">
+      <div class="mobile-social-links">
+        <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<style>
+/* Mobile Navigation Styles */
+.mobile-nav-container {
+  position: relative;
+}
+
+.mobile-menu-toggle {
+  position: relative;
+  z-index: var(--z-fixed);
+  color: var(--color-white);
+  transition: transform var(--transition-normal);
+
+  &[aria-expanded="true"] {
+    transform: rotate(90deg);
+  }
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 18px;
+  justify-content: space-between;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  transition: all var(--transition-normal);
+  transform-origin: center;
+}
+
+.mobile-menu-toggle[aria-expanded="true"] .hamburger-line {
+  &:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  &:nth-child(2) {
+    opacity: 0;
+  }
+
+  &:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+
+.mobile-menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+  z-index: var(--z-modal);
+}
+
+.mobile-menu-backdrop.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(400px, 100vw);
+  height: 100vh;
+  background: var(--color-gray-900);
+  border-left: 1px solid var(--color-gray-200);
+  transform: translateX(100%);
+  transition: transform var(--transition-normal);
+  z-index: var(--z-modal);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.mobile-menu-close {
+  color: var(--color-white);
+}
+
+.mobile-menu-list {
+  flex: 1;
+  padding: var(--space-4) 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu-item {
+  margin: 0;
+}
+
+.mobile-menu-link {
+  display: block;
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-normal);
+  border-left: 3px solid transparent;
+
+  &:hover {
+    background: var(--color-gray-800);
+    border-left-color: var(--color-primary);
+  }
+
+  &[aria-current="page"] {
+    color: var(--color-primary);
+    border-left-color: var(--color-primary);
+    background: var(--color-gray-800);
+  }
+}
+
+.mobile-menu-footer {
+  padding: var(--space-4);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.mobile-social-links {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+}
+
+/* Simple instant display */
+.mobile-menu-item {
+  opacity: 1;
+}
+</style>
+
+<script>
+// Modern Mobile Navigation JavaScript
+(function() {
+  const menuToggle = document.querySelector('[data-menu-toggle]');
+  const menuPanel = document.querySelector('[data-menu-panel]');
+  const menuBackdrop = document.querySelector('[data-menu-backdrop]');
+  const menuClose = document.querySelector('[data-menu-close]');
+  const menuLinks = document.querySelectorAll('.mobile-menu-link');
+
+  let isOpen = false;
+
+  function openMenu() {
+    isOpen = true;
+    menuToggle.setAttribute('aria-expanded', 'true');
+    menuPanel.classList.add('is-open');
+    menuBackdrop.classList.add('is-visible');
+    document.body.style.overflow = 'hidden';
+
+    // Focus first menu item
+    const firstLink = menuPanel.querySelector('.mobile-menu-link');
+    if (firstLink) {
+      firstLink.focus();
+    }
+  }
+
+  function closeMenu() {
+    isOpen = false;
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuPanel.classList.remove('is-open');
+    menuBackdrop.classList.remove('is-visible');
+    document.body.style.overflow = '';
+
+    // Return focus to toggle button
+    menuToggle.focus();
+  }
+
+  function toggleMenu() {
+    isOpen ? closeMenu() : openMenu();
+  }
+
+  // Event listeners
+  menuToggle.addEventListener('click', toggleMenu);
+  menuClose.addEventListener('click', closeMenu);
+  menuBackdrop.addEventListener('click', closeMenu);
+
+  // Close on link click
+  menuLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isOpen) {
+      closeMenu();
+    }
+  });
+
+  // Trap focus in menu when open
+  menuPanel.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') {
+      const focusableElements = menuPanel.querySelectorAll(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (e.shiftKey && document.activeElement === firstElement) {
+        e.preventDefault();
+        lastElement.focus();
+      } else if (!e.shiftKey && document.activeElement === lastElement) {
+        e.preventDefault();
+        firstElement.focus();
+      }
+    }
+  });
+})();
+</script>
+  </div>
+</header>
+
+    <main id="main-content" class="body">
+      <!-- Blog post schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://vpetersson.com/2020/05/25/homeassistant-ikea-tradfri-flux-sensors.html"
+  },
+  "headline": "Achieving success with Home Assistant, Flux and sensors",
+  "description": null,
+  "datePublished": "2020-05-25T12:00:00+00:00",
+  "dateModified": "2020-05-25T12:00:00+00:00",
+  "author": {
+    "@type": "Person",
+    "@id": "https://vpetersson.com/about/#person",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://vpetersson.com/assets/images/site/talk.webp"
+    }
+  },
+  
+  "inLanguage": "en",
+  "wordCount": "2171",
+  "keywords": ["home-assistant","home-automation","virtualization","ikea-tradfri","iot","sensors"]
+}
+</script>
+
+<!-- Breadcrumbs schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://vpetersson.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://vpetersson.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Achieving success with Home Assistant, Flux and sensors",
+      "item": "https://vpetersson.com/2020/05/25/homeassistant-ikea-tradfri-flux-sensors.html"
+    }
+  ]
+}
+</script>
+<div class="page-header page-header-blog">
+  <h2 class="uppercase text-[48px] md:text-[91px] lg:text-[140px] xl:text-[186px] text-white text-center">Blog</h2>
+</div>
+<div class="bg-secondaryBG blog-post">
+  <div class="md:max-w-[665px] mx-4 sm:mx-6 md:mx-auto py-8 md:py-10 lg:py-20">
+    <h2 class="mb-6">Achieving success with Home Assistant, Flux and sensors</h2>
+    <div class="flex mb-6 gap-6 text-xs">
+      <span class="uppercase">
+        25 MAY • 2020
+      </span>
+      <span class="blog-time">
+        12 minutes
+      </span>
+    </div>
+    <article class="leading-[26px]">
+      <p>My philosophy for home automation from the start has been that <strong>the best UI is no UI</strong>, meaning that I just want things to work automagically. I don’t want to fiddle buttons or software on a day-to-day basis. Sensors and automations should do most of the work.</p>
+
+<p>In addition to automation, I wanted <a href="https://justgetflux.com/">f.lux</a>/Flux/Night Shift for my lights, meaning that the lights should follow my <a href="https://nigms.nih.gov/education/fact-sheets/Pages/Circadian-Rhythms.aspx">circadian rhythm</a> and change color over the course of the day to mimic the sun.</p>
+
+<p>As often happens with tech projects, this turned out to be a lot more complicated.</p>
+
+<p><img src="/assets/home-assisant-overview.webp" alt="" />
+<em>Screenshot of one of the views in Home Assistant</em></p>
+
+<p>I must now admit that I’ve spent/wasted (depending on how you look at it) countless hours getting things to a state where I’m happy. Hopefully this article will save you some time if you’re looking to accomplish the same.</p>
+
+<p>At the end of this article, you should be able to:</p>
+
+<ul>
+  <li>Not screw up your <a href="https://www.home-assistant.io/">Home Assistant</a> setup like I did</li>
+  <li>Configure Home Assistant to work with your IKEA Tradfri lights</li>
+  <li>Setup Flux with IKEA Tradfri lights</li>
+  <li>Monitor air quality in all your rooms and be able to take actions on this (e.g. turn on a fan when the CO2/humidity/temperature level gets above/below a threshold)</li>
+  <li>Integrate Home Assistant with Unifi to determine presence based on WiFi connection (e.g. when my phone disconnects from the WiFi I’m considered away)</li>
+</ul>
+
+<h2 id="picking-your-home-automation-software">Picking your home automation software</h2>
+
+<p>If you’re just diving into home automation, you will likely be somewhat overwhelmed with the amount of options out there. In addition to all hardware vendor’s solutions (e.g. IKEA, Philips Hue etc), Apple also threw themselves into the game with their Home.app. My advice is that you should try to keep things simple, and stay with any of these if you can, as it will save you countless of hours.</p>
+
+<p>Unfortunately, neither the IKEA app, nor Apple’s Home.app provided me what I wanted, so I had to keep looking. What I landed on was Home Assistant (HA), which has arguably become the most popular (open source) home automation platform.</p>
+
+<p>I must admit that I have a love-hate relationship with HA. While it is a very powerful platform that integrates with almost anything under the sun, it suffers from the same problem as many open source projects do:</p>
+
+<ul>
+  <li>(Sometimes) outdated documentation</li>
+  <li>Poor quality control</li>
+</ul>
+
+<p>I’m not blaming the developers for this, as it is a complex product that is fast moving. It is likely very hard to test all integrations (as it connects to hardware after all). Without going into a rant about my issues, it’s suffice to say that my home setup has been broken countless times by updates (either because of bugs or non-backward compatible changes), and that I’m very reluctant to update the system these days.</p>
+
+<h2 id="setting-up-home-assistant">Setting up Home Assistant</h2>
+
+<p>Judging by the forums, the most popular way to run HA is using a Raspberry Pi. This is probably fine if you have a very simple setup (in which case, IKEA/Hue/Apple might be easier). However, if you’re aspiring to setup something similar to what I will be describing here, I strongly discourage using a Raspberry Pi. While the Pi 4 with a sufficient amount of RAM might provide you with sufficient amount of resources, the storage will likely be both too slow and fragile (i.e. the SD card is likely to wear out quickly). In addition, the way I’ve setup HA requires that you have access to the host directly to launch additional Docker containers, which is something the Raspberry Pi version of HA doesn’t allow for. In theory, you might run multiple Raspberry Pis instead, but I decided to simply throw it all into a single VM on an x86 server instead.</p>
+
+<p>In summary, I strongly recommend that you setup HA in a VM rather than a Raspberry Pi. When we’re done, we will be running tools like InfluxDB and MySQL/MariaDB side-by-side with HA, which is likely to bring a Raspberry Pi to its knees (in particular from an I/O perspective).</p>
+
+<p>Launching HA on a VM with Docker installed is very straight forward. Here’s the launch script that I’m using:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+
+VERSION=stable
+
+echo "Upgrading from: $(docker inspect home-assistant | jq '.[0].Image')"
+docker pull homeassistant/home-assistant:${VERSION}
+docker kill home-assistant
+docker rm home-assistant
+docker run \
+    --init -d \
+    --restart always \
+    --name="home-assistant" \
+    -v /usr/local/homeassistant:/config \
+    -v /etc/localtime:/etc/localtime:ro \
+    --net=host \
+    homeassistant/home-assistant:${VERSION}
+
+# These steps may no longer be needed
+docker exec home-assistant pip3 install --no-cache-dir -q --upgrade pip
+docker exec home-assistant pip3 install --no-cache-dir -q -U pymysql
+
+echo "Now running: $(docker inspect home-assistant | jq '.[0].Image')"
+docker system prune -f
+</code></pre></div></div>
+
+<p>You can find more information on how to run HA with Docker <a href="https://www.home-assistant.io/docs/installation/docker/">here</a>.</p>
+
+<h2 id="configure-home-assistant-to-store-events-in-mysqlmariadb">Configure Home Assistant to store events in MySQL/MariaDB</h2>
+
+<p>One of the issues I ran into relatively early was the limitation of the built-in database. By default, HA is using an SQLite database. This is perfectly fine if you have a simple setup. However, as we start pushing more and more events to HA, such as sensor data and network device data (from Unifi in my case), what you will notice is that at some point is that the HA UI will grind to a halt and become extremely slow. For me, the Logbook and History tabs would not even load. After taking a closer look, I discovered that my SQLite database was several hundred megabytes, which explained the timeout.</p>
+
+<p>Fortunately, HA does support MySQL/MariaDB out-of-the box. All you need to do is to setup a MySQL/MariaDB database and reconfigure the <a href="https://www.home-assistant.io/integrations/recorder/">recorder</a> to instead use the database. This had a tremendous effect on performance.</p>
+
+<p>My recommendation is that you start with MySQL/MariaDB right away, as you will have to jump through a number of hoops to migrate your SQLite data into the new database later. It’s possible (I did it), but just not a straight forward process.</p>
+
+<h2 id="configure-home-assistant-to-send-metrics-to-influxdb">Configure Home Assistant to send metrics to InfluxDB</h2>
+
+<p>While we’re on the topic of databases, I’ve also configured my HA to send metric data to <a href="https://www.home-assistant.io/integrations/influxdb/">InfluxDB</a>. Using this configuration, I’m able to visualize HA data (such as temperature) in Grafana (which can retrieve data from InfluxDB).</p>
+
+<p><img src="/assets/grafana-home-assistant.webp" alt="" />
+<em>Example of Home Assistant sensor data being rendered in Grafana (via InfluxDB)</em></p>
+
+<h2 id="notes-on-ikea-lights">Notes on IKEA lights</h2>
+
+<p>While there are countless “smart bulbs” out there, I settled on the IKEA Tradfri, largely because they were cost effective (a fraction of the cost of Philips Hue). When you setup something like Flux, it’s important to know which lights you have. For instance, the setup for Philips Hue uses a different <code class="language-plaintext highlighter-rouge">mode</code>.</p>
+
+<p>What’s important to point out is that IKEA lights come in two different versions (as far as I know):</p>
+
+<ul>
+  <li>One that only provides shades of warm white (e.g. <a href="https://www.ikea.com/gb/en/p/tradfri-led-bulb-gu10-400-lumen-wireless-dimmable-warm-white-60420041/">this one</a>)</li>
+  <li>One that provides shades of white <em>and</em> yellow (e.g. <a href="https://www.ikea.com/gb/en/p/tradfri-led-bulb-gu10-400-lumen-wireless-dimmable-white-spectrum-90408603/">this one</a>)</li>
+</ul>
+
+<p>It’s important that you know which one(s) you are using, as you cannot mix them in the same Flux group. I unfortunately bought both types, but in retrospect, I should have stuck to a single type. It is also worth noting that neither of these are RGB (unlike say the Philips Hue), which is why they are a lot cheaper. Personally, I don’t care for RGB lights, so this was fine by me.</p>
+
+<p>It’s also worth saying that you will need the IKEA Gateway for this to work.</p>
+
+<p>As a side-note, I must stress that under no circumstances do you want to re-scan the QR code of your gateway after the setup, even if the app will prompt for it. By doing so, you reset the IDs of the lights, and you will need to do the mapping again.</p>
+
+<h2 id="setting-up-flux-with-ikea-lights">Setting up Flux with IKEA lights</h2>
+
+<p>I’m not going to waste cycles in this article on how to setup the IKEA lights in HA, as that’s a very straight forward process. Instead, let’s focus on getting the circadian rhythm configuration to work.</p>
+
+<p>As noted in the previous section, before you begin, you need to know what lights you have. If you’re having a combination of both, do make sure you know which light is which. It will break the Flux if you include the wrong type.</p>
+
+<p><a href="https://www.home-assistant.io/integrations/flux/">Flux</a> is built directly into HA. All we need to do is to configure and enable it. While that sounds easy, I have banged my head against the wall for countless hours trying to get it to work, and hopefully this will save you the effort (because I used the wrong <code class="language-plaintext highlighter-rouge">mode</code> and tried to group all my lights together).</p>
+
+<p>Since I have both types of IKEA lights, I need to have two distinct Flux configurations.</p>
+
+<p>For the yellow+white spectrum lights, the configuration looks like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>switch:
+  - platform: flux
+    lights:
+      - light.tradfri_bulb_10
+        [...]
+    name: Flux Mired
+    start_time: '8:00'
+    stop_time: '22:00'
+    mode: mired
+</code></pre></div></div>
+
+<p>For the yellow-only lights, the configuration looks like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- platform: flux
+  lights:
+    - light.tradfri_bulb
+    [...]
+  name: Flux XY
+  start_time: '8:00'
+  stop_time: '22:00'
+  brightness: 200
+  mode: xy
+</code></pre></div></div>
+
+<p>(Note that both of these goes into the same <code class="language-plaintext highlighter-rouge">switch</code> block above)</p>
+
+<h2 id="monitoring-air-quality">Monitoring air quality</h2>
+
+<p>As someone that <a href="/remote-work/">works from home</a>, I’m in control of my work environment. I want to ensure that it is optimized both for ergonomics and for health at large. One thing that I’ve been curious about for some time has been the impact of air quality. Many moons ago, I purchased a <a href="https://foobot.io/">Foobot</a> to get some insight into this. While it did the job, and it does indeed integrate with HA, it was a bit cost prohibitive to put one of these in every room (not to mention that it is rather large). To solve this problem, I decided to <a href="https://blog.viktorpetersson.com/2019/11/16/home-assistant-and-esphome.html">build my own</a> that is both smaller and cheaper.</p>
+
+<p>(Since publishing the blog post, I’ve received a number of requests from people who wanted the same. As many users just wanted this off-the-shelf and not solder together the components, I’ve teamed up with the fine folks at Pi Supply to manufacture the sensor. You can pre-order from <a href="https://uk.pi-supply.com/products/iot-home-air-quality-sensor-for-home-assistant">here</a>.)</p>
+
+<p>With these sensors live, I’m able to do things like:</p>
+
+<ul>
+  <li>Visualize the historical temperature/humidity/VOC/CO2 values</li>
+  <li>Automate the fan in my office, such that it turns on/off automatically when either the temperature or CO2 level reaches a certain threshold</li>
+</ul>
+
+<p><img src="/assets/home-assistant-history.webp" alt="" /></p>
+
+<p>Again, make sure you’ve configured the MySQL/MariaDB recorder before you start adding sensors, as your HA will quickly become sluggish as the data builds up (in particular if you’re trying to get a histogram or similar).</p>
+
+<h2 id="setting-up-unifi-with-home-assistant">Setting up Unifi with Home Assistant</h2>
+
+<p>One neat thing about HA is that it integrates with the Unifi Controller, such that you can configure actions (<a href="https://www.home-assistant.io/getting-started/presence-detection/">Presence Detection</a>) based on who’s connected to the WiFi, which in turn maps to HA’s own “Persons” feature. There are other ways to accomplish this, including Bluetooth and HA’s mobile app, but given that I’m already using Unifi hardware, this was the obvious choice for me.</p>
+
+<p>Setting this up was straight forward, and the details can be found <a href="https://www.home-assistant.io/integrations/unifi/">here</a>. I must however note that I have had this integration break multiple times due to bugs.</p>
+
+<p>The reason why I wanted to setup Presence Detection was such that I can trigger automation when arriving or leaving the home.</p>
+
+<p>For instance, when I leave, the following things happen:</p>
+
+<ul>
+  <li>All lights turn off</li>
+  <li>The music is paused on my Sonos</li>
+  <li>I turn off all outlets with smart plugs</li>
+</ul>
+
+<p>Similarly, when I arrive home, the following thing happens:</p>
+
+<ul>
+  <li>Flux gets re-enabled (disabled when away)</li>
+  <li>All lights turn on</li>
+  <li>The outlets are turn on again</li>
+</ul>
+
+<h2 id="sonos-integration">Sonos integration</h2>
+
+<p>Finally, I got speakers in basically every room, as I love being able to have some low background music on all day. HA integrates nicely with Sonos, and there’s not much to speak about it as far as the setup goes. If your Sonos is on the same VLAN as your HA node, it will be detected automatically when you enable the <a href="https://www.home-assistant.io/integrations/sonos/">Sonos integration</a>.</p>
+
+<p>With the integration enabled, you will display what’s being played in the UI, as well as automate actions (such as pausing music when you leave your house).</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>HA is a powerful platform. While it will likely take you some time to set it up to your likings, I have run into few limitations. There is an <a href="https://community.home-assistant.io/">active community</a> that is quick to answer questions if you run into issues.</p>
+
+<p>After about 1.5 years with HA, I am now at a point where I almost have no complaints. It took me some time to get here, but these days I only interact with HA a few times a week. The rest is handled by automation, which is exactly what I was looking for.</p>
+
+
+      <div class="mt-12 mb-8 p-8 bg-blue-50 border border-blue-100 rounded-xl">
+        <h4 class="text-2xl font-semibold mb-4 text-blue-900">Enjoyed this post? Check out my podcast!</h4>
+        <p class="mb-6 text-blue-800">If you found this interesting, you might enjoy <a href="/podcast" class="text-blue-600 hover:text-blue-800 underline" onclick="trackEvent('Blog CTA', 'Click', 'Podcast Link', 'Achieving success with Home Assistant, Flux and sensors')">"Nerding Out with Viktor"</a> - my podcast where I dive deep into tech, entrepreneurship, and security with industry experts.</p>
+        <div>
+          <h5 class="font-medium mb-4 text-blue-900">Listen on:</h5>
+          
+
+
+
+<div>
+  <div class="flex gap-3">
+    
+      <a href="https://www.youtube.com/@nerdingoutwithviktor" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'YouTube', 'Achieving success with Home Assistant, Flux and sensors')">
+        <img src="/assets/images/site/podcast-youtube-white.svg" alt="Listen to podcast on YouTube" />
+      </a>
+    
+    
+      <a href="https://open.spotify.com/show/7C6yipdVPWgBc6Bwikgo8g" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Spotify', 'Achieving success with Home Assistant, Flux and sensors')">
+        <img src="/assets/images/site/podcast-spotify-white.svg" alt="Listen to podcast on Spotify" />
+      </a>
+    
+    
+      <a href="https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Apple', 'Achieving success with Home Assistant, Flux and sensors')">
+        <img src="/assets/images/site/podcast-apple-white.svg" alt="Listen to podcast on Apple" />
+      </a>
+    
+    
+    
+      <a href="https://podcast.nerdingoutwithviktor.com/podcast_feed.xml" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'RSS', 'Achieving success with Home Assistant, Flux and sensors')">
+        <img src="/assets/images/site/podcast-rss-white.svg" alt="RSS Feed" />
+      </a>
+    
+  </div>
+</div>
+
+        </div>
+      </div>
+
+      <i>Found an error or typo? File PR against <a href="https://github.com/vpetersson/vpetersson.com/tree/master/_posts/2020-05-27-homeassistant-ikea-tradfri-flux-sensors.md" rel="nofollow">this file</a>.</i>
+    </article>
+    <div class="mt-6">
+      
+  <div class="tags">
+    
+      <a href="/tags/home-assistant" class="tag">
+        home-assistant
+      </a>
+    
+      <a href="/tags/home-automation" class="tag">
+        home-automation
+      </a>
+    
+      <a href="/tags/virtualization" class="tag">
+        virtualization
+      </a>
+    
+      <a href="/tags/ikea-tradfri" class="tag">
+        ikea-tradfri
+      </a>
+    
+      <a href="/tags/iot" class="tag">
+        iot
+      </a>
+    
+      <a href="/tags/sensors" class="tag">
+        sensors
+      </a>
+    
+  </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+    </main>
+    <footer class="py-[60px] md:pt-[74px] md:pb-[40px] px-[25px] md:px-[120px] text-altPrimaryText">
+  <div class="mb-[60px]">
+    <a href="/">
+      <img class="w-[200px] md:w-[320px]" src="/assets/images/site/logo.svg" alt="logo" />
+    </a>
+  </div>
+  <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-8 lg:mb-6">
+    <nav class="flex flex-col md:flex-row gap-6 md:gap-8 mb-20 lg:mb-0">
+      
+        <a href="/" class="">HOME</a>
+      
+        <a href="/about" class="">ABOUT</a>
+      
+        <a href="/consulting" class="">CONSULTING</a>
+      
+        <a href="/podcast" class="">PODCAST</a>
+      
+        <a href="/blog" class="">BLOG</a>
+      
+        <a href="https://studio.viktopia.io/" class="">VIKTOPIA STUDIO</a>
+      
+    </nav>
+    <div class="flex gap-[13px]">
+      <a href="https://twitter.com/vpetersson">
+        <img src="/assets/images/site/x.svg" alt="x logo" />
+      </a>
+      <a href="https://github.com/vpetersson">
+        <img src="/assets/images/site/github.svg" alt="github logo" />
+      </a>
+      <a href="https://www.linkedin.com/in/vpetersson/">
+        <img src="/assets/images/site/linkedin.svg" alt="linkedIn logo" />
+      </a>
+    </div>
+  </div>
+  <hr class="mb-8 lg:mb-10 bg-[#000212] h-[3px] bg-opacity-20 border-0" />
+  <div>
+    <p class="font-[Inter] text-base">&copy; Viktor Petersson</p>
+  </div>
+</footer>
+
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/code-blocks.js" defer></script>
+  </body>
+</html>

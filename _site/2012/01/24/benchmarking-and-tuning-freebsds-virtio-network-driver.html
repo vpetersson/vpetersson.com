@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="content-language" content="en">
+
+  <!-- Resource Hints -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="/assets/css/styles.css" as="style">
+  <link rel="preload" href="/assets/css/main.css" as="style">
+
+  <title>Benchmarking and tuning FreeBSD's VirtIO network driver. </title>
+  <meta name="description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://vpetersson.com/2012/01/24/benchmarking-and-tuning-freebsds-virtio-network-driver.html">
+  <meta property="og:title" content="Benchmarking and tuning FreeBSD's VirtIO network driver. ">
+  <meta property="og:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta property="og:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- LinkedIn -->
+  <meta property="og:site_name" content="Viktor's Tech Musings & Security Paranoia">
+  <meta property="article:author" content="https://www.linkedin.com/in/vpetersson/">
+  
+  <meta property="article:published_time" content="2012-01-24T18:34:54+00:00">
+  
+
+  <!-- X (formerly Twitter) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@vpetersson">
+  <meta name="twitter:creator" content="@vpetersson">
+  <meta name="twitter:title" content="Benchmarking and tuning FreeBSD's VirtIO network driver. ">
+  <meta name="twitter:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta name="twitter:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- Social Profile Links -->
+  <link rel="me" href="https://github.com/vpetersson">
+  <link rel="me" href="https://www.linkedin.com/in/vpetersson/">
+  <link rel="me" href="https://hachyderm.io/@vpetersson@hachyderm.io">
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com",
+    "image": "https://vpetersson.com/assets/images/site/talk.webp",
+    "sameAs": [
+      "https://github.com/vpetersson",
+      "https://www.linkedin.com/in/vpetersson/",
+      "https://hachyderm.io/@vpetersson@hachyderm.io",
+      "https://twitter.com/vpetersson"
+    ]
+  }
+  </script>
+
+  <!-- Custom meta tags -->
+  
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Anton|DM Sans|Roboto|Hanken+Grotesk"
+    />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/native.css">
+  
+  <!-- Font Awesome (bundled from node_modules) -->
+  <link rel="stylesheet" href="/assets/css/fontawesome-core.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-solid.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-brands.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZY6ZNLNNC8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZY6ZNLNNC8');
+
+  // Track outbound links and CTAs
+  function trackEvent(category, action, label, source) {
+    gtag('event', action, {
+      'event_category': category,
+      'event_label': label,
+      'source': source
+    });
+  }
+</script>
+
+
+  <link rel="canonical" href="https://vpetersson.com/2012/01/24/benchmarking-and-tuning-freebsds-virtio-network-driver.html" />
+</head>
+
+  <body>
+    <!-- Skip Navigation -->
+<a href="#main-content" class="skip-navigation">Skip to main content</a>
+
+<header class="p-8 flex justify-between bg-primaryBG border-b border-white-alpha-20" role="banner">
+  <div class="flex gap-10 justify-between items-center">
+    <a href="/" aria-label="Viktor Petersson - Home">
+      <img src="/assets/images/site/logo-white.svg" alt="Viktor Petersson logo" width="120" height="40" />
+    </a>
+    <nav class="hidden lg:flex gap-6">
+  
+    <a href="/" class="text-white uppercase">HOME</a>
+  
+    <a href="/about" class="text-white uppercase">ABOUT</a>
+  
+    <a href="/consulting" class="text-white uppercase">CONSULTING</a>
+  
+    <a href="/podcast" class="text-white uppercase">PODCAST</a>
+  
+    <a href="/blog" class="text-white uppercase">BLOG</a>
+  
+    <a href="https://studio.viktopia.io/" class="text-white uppercase">VIKTOPIA STUDIO</a>
+  
+</nav>
+
+  </div>
+  <div class="flex gap-2 justify-between items-center">
+    <div class="header-search hidden lg:block">
+      <form action="/search" method="get" role="search">
+        <label for="searchright" class="sr-only">Search the site</label>
+        <input
+          class="search expandright"
+          id="searchright"
+          type="search"
+          name="query"
+          placeholder="Search"
+          aria-label="Search"
+        >
+        <button class="button searchbutton" type="submit" aria-label="Submit search">
+          <span class="mglass" aria-hidden="true">&#9906;</span>
+        </button>
+      </form>
+    </div>
+
+    <div class="hidden lg:block">
+      <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+    </div>
+
+    <!-- Use modern mobile navigation -->
+    <!-- Modern Mobile Navigation -->
+<div class="mobile-nav-container lg:hidden">
+  <!-- Menu Toggle Button -->
+  <button
+    class="mobile-menu-toggle btn-reset touch-target"
+    aria-label="Toggle navigation menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+    data-menu-toggle
+  >
+    <span class="hamburger-icon" aria-hidden="true">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </span>
+  </button>
+
+  <!-- Mobile Menu Backdrop -->
+  <div
+    class="mobile-menu-backdrop"
+    data-menu-backdrop
+    aria-hidden="true"
+  ></div>
+
+  <!-- Mobile Menu Panel -->
+  <nav
+    class="mobile-menu"
+    id="mobile-menu"
+    aria-labelledby="mobile-menu-label"
+    data-menu-panel
+  >
+    <!-- Menu Header -->
+    <div class="mobile-menu-header">
+      <h2 id="mobile-menu-label" class="sr-only">Navigation Menu</h2>
+      <button
+        class="mobile-menu-close btn-reset touch-target"
+        aria-label="Close navigation menu"
+        data-menu-close
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="mobile-menu-list" role="list">
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            HOME
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/about"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            ABOUT
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/consulting"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            CONSULTING
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/podcast"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            PODCAST
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/blog"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            BLOG
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="https://studio.viktopia.io/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            VIKTOPIA STUDIO
+          </a>
+        </li>
+      
+    </ul>
+
+    <!-- Social Links -->
+    <div class="mobile-menu-footer">
+      <div class="mobile-social-links">
+        <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<style>
+/* Mobile Navigation Styles */
+.mobile-nav-container {
+  position: relative;
+}
+
+.mobile-menu-toggle {
+  position: relative;
+  z-index: var(--z-fixed);
+  color: var(--color-white);
+  transition: transform var(--transition-normal);
+
+  &[aria-expanded="true"] {
+    transform: rotate(90deg);
+  }
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 18px;
+  justify-content: space-between;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  transition: all var(--transition-normal);
+  transform-origin: center;
+}
+
+.mobile-menu-toggle[aria-expanded="true"] .hamburger-line {
+  &:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  &:nth-child(2) {
+    opacity: 0;
+  }
+
+  &:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+
+.mobile-menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+  z-index: var(--z-modal);
+}
+
+.mobile-menu-backdrop.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(400px, 100vw);
+  height: 100vh;
+  background: var(--color-gray-900);
+  border-left: 1px solid var(--color-gray-200);
+  transform: translateX(100%);
+  transition: transform var(--transition-normal);
+  z-index: var(--z-modal);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.mobile-menu-close {
+  color: var(--color-white);
+}
+
+.mobile-menu-list {
+  flex: 1;
+  padding: var(--space-4) 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu-item {
+  margin: 0;
+}
+
+.mobile-menu-link {
+  display: block;
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-normal);
+  border-left: 3px solid transparent;
+
+  &:hover {
+    background: var(--color-gray-800);
+    border-left-color: var(--color-primary);
+  }
+
+  &[aria-current="page"] {
+    color: var(--color-primary);
+    border-left-color: var(--color-primary);
+    background: var(--color-gray-800);
+  }
+}
+
+.mobile-menu-footer {
+  padding: var(--space-4);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.mobile-social-links {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+}
+
+/* Simple instant display */
+.mobile-menu-item {
+  opacity: 1;
+}
+</style>
+
+<script>
+// Modern Mobile Navigation JavaScript
+(function() {
+  const menuToggle = document.querySelector('[data-menu-toggle]');
+  const menuPanel = document.querySelector('[data-menu-panel]');
+  const menuBackdrop = document.querySelector('[data-menu-backdrop]');
+  const menuClose = document.querySelector('[data-menu-close]');
+  const menuLinks = document.querySelectorAll('.mobile-menu-link');
+
+  let isOpen = false;
+
+  function openMenu() {
+    isOpen = true;
+    menuToggle.setAttribute('aria-expanded', 'true');
+    menuPanel.classList.add('is-open');
+    menuBackdrop.classList.add('is-visible');
+    document.body.style.overflow = 'hidden';
+
+    // Focus first menu item
+    const firstLink = menuPanel.querySelector('.mobile-menu-link');
+    if (firstLink) {
+      firstLink.focus();
+    }
+  }
+
+  function closeMenu() {
+    isOpen = false;
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuPanel.classList.remove('is-open');
+    menuBackdrop.classList.remove('is-visible');
+    document.body.style.overflow = '';
+
+    // Return focus to toggle button
+    menuToggle.focus();
+  }
+
+  function toggleMenu() {
+    isOpen ? closeMenu() : openMenu();
+  }
+
+  // Event listeners
+  menuToggle.addEventListener('click', toggleMenu);
+  menuClose.addEventListener('click', closeMenu);
+  menuBackdrop.addEventListener('click', closeMenu);
+
+  // Close on link click
+  menuLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isOpen) {
+      closeMenu();
+    }
+  });
+
+  // Trap focus in menu when open
+  menuPanel.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') {
+      const focusableElements = menuPanel.querySelectorAll(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (e.shiftKey && document.activeElement === firstElement) {
+        e.preventDefault();
+        lastElement.focus();
+      } else if (!e.shiftKey && document.activeElement === lastElement) {
+        e.preventDefault();
+        firstElement.focus();
+      }
+    }
+  });
+})();
+</script>
+  </div>
+</header>
+
+    <main id="main-content" class="body">
+      <!-- Blog post schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://vpetersson.com/2012/01/24/benchmarking-and-tuning-freebsds-virtio-network-driver.html"
+  },
+  "headline": "Benchmarking and tuning FreeBSD's VirtIO network driver. ",
+  "description": null,
+  "datePublished": "2012-01-24T18:34:54+00:00",
+  "dateModified": "2012-01-24T18:34:54+00:00",
+  "author": {
+    "@type": "Person",
+    "@id": "https://vpetersson.com/about/#person",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://vpetersson.com/assets/images/site/talk.webp"
+    }
+  },
+  
+  "inLanguage": "en",
+  "wordCount": "622",
+  "keywords": ["CloudSigma","FreeBSD","KVM","QEMU","Virtualization"]
+}
+</script>
+
+<!-- Breadcrumbs schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://vpetersson.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://vpetersson.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Benchmarking and tuning FreeBSD's VirtIO network driver. ",
+      "item": "https://vpetersson.com/2012/01/24/benchmarking-and-tuning-freebsds-virtio-network-driver.html"
+    }
+  ]
+}
+</script>
+<div class="page-header page-header-blog">
+  <h2 class="uppercase text-[48px] md:text-[91px] lg:text-[140px] xl:text-[186px] text-white text-center">Blog</h2>
+</div>
+<div class="bg-secondaryBG blog-post">
+  <div class="md:max-w-[665px] mx-4 sm:mx-6 md:mx-auto py-8 md:py-10 lg:py-20">
+    <h2 class="mb-6">Benchmarking and tuning FreeBSD's VirtIO network driver. </h2>
+    <div class="flex mb-6 gap-6 text-xs">
+      <span class="uppercase">
+        24 JAN • 2012
+      </span>
+      <span class="blog-time">
+        4 minutes
+      </span>
+    </div>
+    <article class="leading-[26px]">
+      <p>In the <a href="https://vpetersson.com/2012/01/23/benchmarking-virtual-network-drivers-under-freebsd-9/">previous post</a>, I benchmarked three different virtual network drivers under FreeBSD. The clear winner was, perhaps not very surprisingly, the VirtIO network driver.</p>
+
+<p>In this article I will do some further benchmarking and try to optimize the driver further. Similarly to in the last post, I will use two FreeBSD 9.0 boxes with 2GB RAM and 2GHz CPU. Both nodes are set up with a private network and running in a public cloud (at CloudSigma).</p>
+
+<p>As many of you might know, running tests in a public cloud is difficult. For instance, you can’t control the load other nodes puts on the host resources and network architecture. To cope with this, I ran all tests five times with a 60 second sleep in between. This of course, isn’t perfect, but it is at least better than a single test.</p>
+
+<h2 id="the-tests">The tests</h2>
+
+<p>For each test, I ran five different sub-tests, namely one wich each of the following TCP window sizes:</p>
+
+<ul>
+  <li>64K</li>
+  <li>128K</li>
+  <li>512K</li>
+  <li>1024K</li>
+  <li>1536K</li>
+</ul>
+
+<p>The actual tests used Iperf, and ran the following command on the server:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>iperf -s -w $WINDOW
+</code></pre></div></div>
+
+<p>and then the following Bash-script on the client:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/usr/local/bin/bash
+WINDOW=$1
+OUT=$2
+x=1
+while \[ $x -le 5 \]
+do
+	echo "Starting test $x"
+	iperf -i 1 -t 30 -w $WINDOW -c TheOtherNode &gt;&gt; $OUT
+	sleep 60
+	x=$(( $x + 1 ))
+done
+</code></pre></div></div>
+
+<p>The variable ‘$WINDOW’ is, as you might have already figured out, the TCP window size for the given test. This test gives me a total of 155 data-points for each test (31*5).</p>
+
+<p>The three tuning-variables I wanted to benchmark in this tests were:</p>
+
+<ul>
+  <li>kern.ipc.maxsockbuf</li>
+  <li>net.inet.tcp.sendbuf_max</li>
+  <li>net.inet.tcp.recvbuf_max</li>
+</ul>
+
+<p>The reason I chose these variables were simply because the article <a href="http://www.psc.edu/networking/projects/tcptune/#FreeBSD">Enabling High Performance Data Transfers</a> recommended that one should start there.</p>
+
+<h3 id="test-1">Test 1</h3>
+
+<p>In test 1, I wanted to benchmark a vanilla FreeBSD 9 installation with the VirtIO network driver. The default values for the tuning-variables were used. These were:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kern.ipc.maxsockbuf=2097152
+net.inet.tcp.sendbuf_max=2097152
+net.inet.tcp.recvbuf_max=2097152
+</code></pre></div></div>
+
+<p>[easychart type=“vertbar” height=“400” title=“Throughput in MBits/sec” groupnames=“Average, Median, Min, Max” valuenames=“64k,128k,512k,1024k,1536k” group1values=“209.98,220.12,227.74,237.30,212.92” group2values=“180.00,200.00,216.00,234.00,200.00” group3values=“145.00,161.00,132.00,105.00,139.00” group4values=“304.00,373.00,402.00,422.00,349.00”]</p>
+
+<h3 id="test-2">Test 2</h3>
+
+<p>In test 2, I increased the kern.ipc.maxsockbuf see what impact that would have on the performance. The new settings would then be:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kern.ipc.maxsockbuf=4000000
+net.inet.tcp.sendbuf_max=2097152
+net.inet.tcp.recvbuf_max=2097152
+</code></pre></div></div>
+
+<p>The change was made to both servers.</p>
+
+<p>[easychart type=“vertbar” height=“400” title=“Throughput in MBits/sec” groupnames=“Average, Median, Min, Max” valuenames=“64k,128k,512k,1024k,1536k” group1values=“217.74,164.54,163.05,163.08,145.51” group2values=“226.00,158.00,166.00,165.00,146.00” group3values=“134.00,106.00,93.30,0.20,59.80” group4values=“305.00,298.00,229.00,277.00,257.00”]</p>
+
+<h3 id="test-3">Test 3</h3>
+
+<p>The last test, I left kern.ipc.maxsockbuf set the above value, but I also increased net.inet.tcp.sendbuf_max and net.inet.tcp.recvbuf_max. The settings were then:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kern.ipc.maxsockbuf=4000000
+net.inet.tcp.sendbuf_max=16777216
+net.inet.tcp.recvbuf_max=16777216
+</code></pre></div></div>
+
+<p>Similarly to in test 2, the change was applied to both servers.</p>
+
+<p>[easychart type=“vertbar” height=“400” title=“Throughput in MBits/sec” groupnames=“Average, Median, Min, Max” valuenames=“64k,128k,512k,1024k,1536k” group1values=“128.51,151.89,141.17,157.74,152.62” group2values=“132.00,155.00,136.00,158.00,154.00” group3values=“79.70,94.40,70.30,69.20,81.80” group4values=“191.00,241.00,233.00,230.00,234.00”]</p>
+
+<h2 id="comparing-the-results">Comparing the results</h2>
+
+<p>[easychart type=“vertbar” height=“300” width=“350” title=“Average performance (MBits/sec)” groupnames=“Test 1, Test 2, Test 3” valuenames=“64k,128k,512k,1024k,1536k” group1values=“209.98,220.12,227.74,237.30,212.92” group2values=“217.74,164.54,163.05,163.08,145.51” group3values=“128.51,151.89,141.17,157.74,152.62”]</p>
+
+<p>So what kind of conclusion can we draw from this? I’m inclined to say nothing.</p>
+
+<p>The numbers appears to hint at that the systems performs best out-of-the box. Maybe the values I tuned turned out to have very little impact in a virtual environment. Maybe the uncontrollable variables in a public cloud (eg. load from other nodes on the hardware and networking architecture) impacted the data and invalidated the data. Perhaps another explanation is that we’re pushing the capped limit upstream, and hence are unable to see any significant difference between the tests.</p>
+
+<p>Since I’m by no means a TCP/IP expert, I’d be curious to learn what other people with more experience think about this test, and where I should look to push performance further.</p>
+
+
+      <div class="mt-12 mb-8 p-8 bg-blue-50 border border-blue-100 rounded-xl">
+        <h4 class="text-2xl font-semibold mb-4 text-blue-900">Enjoyed this post? Check out my podcast!</h4>
+        <p class="mb-6 text-blue-800">If you found this interesting, you might enjoy <a href="/podcast" class="text-blue-600 hover:text-blue-800 underline" onclick="trackEvent('Blog CTA', 'Click', 'Podcast Link', 'Benchmarking and tuning FreeBSD\'s VirtIO network driver. ')">"Nerding Out with Viktor"</a> - my podcast where I dive deep into tech, entrepreneurship, and security with industry experts.</p>
+        <div>
+          <h5 class="font-medium mb-4 text-blue-900">Listen on:</h5>
+          
+
+
+
+<div>
+  <div class="flex gap-3">
+    
+      <a href="https://www.youtube.com/@nerdingoutwithviktor" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'YouTube', 'Benchmarking and tuning FreeBSD\'s VirtIO network driver. ')">
+        <img src="/assets/images/site/podcast-youtube-white.svg" alt="Listen to podcast on YouTube" />
+      </a>
+    
+    
+      <a href="https://open.spotify.com/show/7C6yipdVPWgBc6Bwikgo8g" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Spotify', 'Benchmarking and tuning FreeBSD\'s VirtIO network driver. ')">
+        <img src="/assets/images/site/podcast-spotify-white.svg" alt="Listen to podcast on Spotify" />
+      </a>
+    
+    
+      <a href="https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Apple', 'Benchmarking and tuning FreeBSD\'s VirtIO network driver. ')">
+        <img src="/assets/images/site/podcast-apple-white.svg" alt="Listen to podcast on Apple" />
+      </a>
+    
+    
+    
+      <a href="https://podcast.nerdingoutwithviktor.com/podcast_feed.xml" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'RSS', 'Benchmarking and tuning FreeBSD\'s VirtIO network driver. ')">
+        <img src="/assets/images/site/podcast-rss-white.svg" alt="RSS Feed" />
+      </a>
+    
+  </div>
+</div>
+
+        </div>
+      </div>
+
+      <i>Found an error or typo? File PR against <a href="https://github.com/vpetersson/vpetersson.com/tree/master/_posts/tumblr/2012-01-24-benchmarking-and-tuning-freebsds-virtio-network-driver.md" rel="nofollow">this file</a>.</i>
+    </article>
+    <div class="mt-6">
+      
+  <div class="tags">
+    
+      <a href="/tags/cloudsigma" class="tag">
+        CloudSigma
+      </a>
+    
+      <a href="/tags/freebsd" class="tag">
+        FreeBSD
+      </a>
+    
+      <a href="/tags/kvm" class="tag">
+        KVM
+      </a>
+    
+      <a href="/tags/qemu" class="tag">
+        QEMU
+      </a>
+    
+      <a href="/tags/virtualization" class="tag">
+        Virtualization
+      </a>
+    
+  </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+    </main>
+    <footer class="py-[60px] md:pt-[74px] md:pb-[40px] px-[25px] md:px-[120px] text-altPrimaryText">
+  <div class="mb-[60px]">
+    <a href="/">
+      <img class="w-[200px] md:w-[320px]" src="/assets/images/site/logo.svg" alt="logo" />
+    </a>
+  </div>
+  <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-8 lg:mb-6">
+    <nav class="flex flex-col md:flex-row gap-6 md:gap-8 mb-20 lg:mb-0">
+      
+        <a href="/" class="">HOME</a>
+      
+        <a href="/about" class="">ABOUT</a>
+      
+        <a href="/consulting" class="">CONSULTING</a>
+      
+        <a href="/podcast" class="">PODCAST</a>
+      
+        <a href="/blog" class="">BLOG</a>
+      
+        <a href="https://studio.viktopia.io/" class="">VIKTOPIA STUDIO</a>
+      
+    </nav>
+    <div class="flex gap-[13px]">
+      <a href="https://twitter.com/vpetersson">
+        <img src="/assets/images/site/x.svg" alt="x logo" />
+      </a>
+      <a href="https://github.com/vpetersson">
+        <img src="/assets/images/site/github.svg" alt="github logo" />
+      </a>
+      <a href="https://www.linkedin.com/in/vpetersson/">
+        <img src="/assets/images/site/linkedin.svg" alt="linkedIn logo" />
+      </a>
+    </div>
+  </div>
+  <hr class="mb-8 lg:mb-10 bg-[#000212] h-[3px] bg-opacity-20 border-0" />
+  <div>
+    <p class="font-[Inter] text-base">&copy; Viktor Petersson</p>
+  </div>
+</footer>
+
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/code-blocks.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<h1 id="lint-and-test">Lint and test</h1>
+
+<h2 id="install-dependencies">Install Dependencies</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bun <span class="nb">install
+</span>bundle <span class="nb">install</span>
+</code></pre></div></div>
+
+<h2 id="lint">Lint</h2>
+
+<h3 id="lint-markdown">Lint Markdown</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dprint check <span class="s2">"**/*.md"</span>
+</code></pre></div></div>
+
+<h3 id="lint-scss">Lint SCSS</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bun run lint:scss
+</code></pre></div></div>
+
+<h3 id="type-check-typescript">Type Check TypeScript</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bun run typecheck
+</code></pre></div></div>
+
+<h3 id="run-all-lints">Run All Lints</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bun run lint
+</code></pre></div></div>
+
+<h2 id="build">Build</h2>
+
+<h3 id="build-typescript-sass-and-css">Build TypeScript, Sass, and CSS</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bun run build
+</code></pre></div></div>
+
+<p>This generates:</p>
+
+<ul>
+  <li>TypeScript → JavaScript in <code class="language-plaintext highlighter-rouge">assets/js/</code></li>
+  <li>Font Awesome CSS in <code class="language-plaintext highlighter-rouge">assets/css/</code></li>
+  <li>Font Awesome webfonts in <code class="language-plaintext highlighter-rouge">assets/webfonts/</code></li>
+  <li>Compiled Sass and PostCSS</li>
+</ul>
+
+<h3 id="build-jekyll-site">Build Jekyll site</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll build
+</code></pre></div></div>
+
+<p>Jekyll will automatically include the generated files because they’re listed in <code class="language-plaintext highlighter-rouge">_config.yml</code> under <code class="language-plaintext highlighter-rouge">include</code>.</p>
+
+<h3 id="full-build-cicd">Full build (CI/CD)</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Build assets first, then Jekyll</span>
+bun run build <span class="o">&amp;&amp;</span> bundle <span class="nb">exec </span>jekyll build
+</code></pre></div></div>
+
+<h2 id="optional-validation">Optional validation</h2>
+
+<p>Optional page validation using:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>htmlproofer ./_site
+</code></pre></div></div>

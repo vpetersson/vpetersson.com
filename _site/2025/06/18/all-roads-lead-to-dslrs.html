@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="content-language" content="en">
+
+  <!-- Resource Hints -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="/assets/css/styles.css" as="style">
+  <link rel="preload" href="/assets/css/main.css" as="style">
+
+  <title>All Roads Lead to DSLRs</title>
+  <meta name="description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://vpetersson.com/2025/06/18/all-roads-lead-to-dslrs.html">
+  <meta property="og:title" content="All Roads Lead to DSLRs">
+  <meta property="og:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta property="og:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- LinkedIn -->
+  <meta property="og:site_name" content="Viktor's Tech Musings & Security Paranoia">
+  <meta property="article:author" content="https://www.linkedin.com/in/vpetersson/">
+  
+  <meta property="article:published_time" content="2025-06-18T00:00:00+00:00">
+  
+
+  <!-- X (formerly Twitter) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@vpetersson">
+  <meta name="twitter:creator" content="@vpetersson">
+  <meta name="twitter:title" content="All Roads Lead to DSLRs">
+  <meta name="twitter:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta name="twitter:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- Social Profile Links -->
+  <link rel="me" href="https://github.com/vpetersson">
+  <link rel="me" href="https://www.linkedin.com/in/vpetersson/">
+  <link rel="me" href="https://hachyderm.io/@vpetersson@hachyderm.io">
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com",
+    "image": "https://vpetersson.com/assets/images/site/talk.webp",
+    "sameAs": [
+      "https://github.com/vpetersson",
+      "https://www.linkedin.com/in/vpetersson/",
+      "https://hachyderm.io/@vpetersson@hachyderm.io",
+      "https://twitter.com/vpetersson"
+    ]
+  }
+  </script>
+
+  <!-- Custom meta tags -->
+  
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Anton|DM Sans|Roboto|Hanken+Grotesk"
+    />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/native.css">
+  
+  <!-- Font Awesome (bundled from node_modules) -->
+  <link rel="stylesheet" href="/assets/css/fontawesome-core.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-solid.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-brands.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZY6ZNLNNC8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZY6ZNLNNC8');
+
+  // Track outbound links and CTAs
+  function trackEvent(category, action, label, source) {
+    gtag('event', action, {
+      'event_category': category,
+      'event_label': label,
+      'source': source
+    });
+  }
+</script>
+
+
+  <link rel="canonical" href="https://vpetersson.com/2025/06/18/all-roads-lead-to-dslrs.html" />
+</head>
+
+  <body>
+    <!-- Skip Navigation -->
+<a href="#main-content" class="skip-navigation">Skip to main content</a>
+
+<header class="p-8 flex justify-between bg-primaryBG border-b border-white-alpha-20" role="banner">
+  <div class="flex gap-10 justify-between items-center">
+    <a href="/" aria-label="Viktor Petersson - Home">
+      <img src="/assets/images/site/logo-white.svg" alt="Viktor Petersson logo" width="120" height="40" />
+    </a>
+    <nav class="hidden lg:flex gap-6">
+  
+    <a href="/" class="text-white uppercase">HOME</a>
+  
+    <a href="/about" class="text-white uppercase">ABOUT</a>
+  
+    <a href="/consulting" class="text-white uppercase">CONSULTING</a>
+  
+    <a href="/podcast" class="text-white uppercase">PODCAST</a>
+  
+    <a href="/blog" class="text-white uppercase">BLOG</a>
+  
+    <a href="https://studio.viktopia.io/" class="text-white uppercase">VIKTOPIA STUDIO</a>
+  
+</nav>
+
+  </div>
+  <div class="flex gap-2 justify-between items-center">
+    <div class="header-search hidden lg:block">
+      <form action="/search" method="get" role="search">
+        <label for="searchright" class="sr-only">Search the site</label>
+        <input
+          class="search expandright"
+          id="searchright"
+          type="search"
+          name="query"
+          placeholder="Search"
+          aria-label="Search"
+        >
+        <button class="button searchbutton" type="submit" aria-label="Submit search">
+          <span class="mglass" aria-hidden="true">&#9906;</span>
+        </button>
+      </form>
+    </div>
+
+    <div class="hidden lg:block">
+      <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+    </div>
+
+    <!-- Use modern mobile navigation -->
+    <!-- Modern Mobile Navigation -->
+<div class="mobile-nav-container lg:hidden">
+  <!-- Menu Toggle Button -->
+  <button
+    class="mobile-menu-toggle btn-reset touch-target"
+    aria-label="Toggle navigation menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+    data-menu-toggle
+  >
+    <span class="hamburger-icon" aria-hidden="true">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </span>
+  </button>
+
+  <!-- Mobile Menu Backdrop -->
+  <div
+    class="mobile-menu-backdrop"
+    data-menu-backdrop
+    aria-hidden="true"
+  ></div>
+
+  <!-- Mobile Menu Panel -->
+  <nav
+    class="mobile-menu"
+    id="mobile-menu"
+    aria-labelledby="mobile-menu-label"
+    data-menu-panel
+  >
+    <!-- Menu Header -->
+    <div class="mobile-menu-header">
+      <h2 id="mobile-menu-label" class="sr-only">Navigation Menu</h2>
+      <button
+        class="mobile-menu-close btn-reset touch-target"
+        aria-label="Close navigation menu"
+        data-menu-close
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="mobile-menu-list" role="list">
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            HOME
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/about"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            ABOUT
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/consulting"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            CONSULTING
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/podcast"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            PODCAST
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/blog"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            BLOG
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="https://studio.viktopia.io/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            VIKTOPIA STUDIO
+          </a>
+        </li>
+      
+    </ul>
+
+    <!-- Social Links -->
+    <div class="mobile-menu-footer">
+      <div class="mobile-social-links">
+        <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<style>
+/* Mobile Navigation Styles */
+.mobile-nav-container {
+  position: relative;
+}
+
+.mobile-menu-toggle {
+  position: relative;
+  z-index: var(--z-fixed);
+  color: var(--color-white);
+  transition: transform var(--transition-normal);
+
+  &[aria-expanded="true"] {
+    transform: rotate(90deg);
+  }
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 18px;
+  justify-content: space-between;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  transition: all var(--transition-normal);
+  transform-origin: center;
+}
+
+.mobile-menu-toggle[aria-expanded="true"] .hamburger-line {
+  &:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  &:nth-child(2) {
+    opacity: 0;
+  }
+
+  &:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+
+.mobile-menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+  z-index: var(--z-modal);
+}
+
+.mobile-menu-backdrop.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(400px, 100vw);
+  height: 100vh;
+  background: var(--color-gray-900);
+  border-left: 1px solid var(--color-gray-200);
+  transform: translateX(100%);
+  transition: transform var(--transition-normal);
+  z-index: var(--z-modal);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.mobile-menu-close {
+  color: var(--color-white);
+}
+
+.mobile-menu-list {
+  flex: 1;
+  padding: var(--space-4) 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu-item {
+  margin: 0;
+}
+
+.mobile-menu-link {
+  display: block;
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-normal);
+  border-left: 3px solid transparent;
+
+  &:hover {
+    background: var(--color-gray-800);
+    border-left-color: var(--color-primary);
+  }
+
+  &[aria-current="page"] {
+    color: var(--color-primary);
+    border-left-color: var(--color-primary);
+    background: var(--color-gray-800);
+  }
+}
+
+.mobile-menu-footer {
+  padding: var(--space-4);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.mobile-social-links {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+}
+
+/* Simple instant display */
+.mobile-menu-item {
+  opacity: 1;
+}
+</style>
+
+<script>
+// Modern Mobile Navigation JavaScript
+(function() {
+  const menuToggle = document.querySelector('[data-menu-toggle]');
+  const menuPanel = document.querySelector('[data-menu-panel]');
+  const menuBackdrop = document.querySelector('[data-menu-backdrop]');
+  const menuClose = document.querySelector('[data-menu-close]');
+  const menuLinks = document.querySelectorAll('.mobile-menu-link');
+
+  let isOpen = false;
+
+  function openMenu() {
+    isOpen = true;
+    menuToggle.setAttribute('aria-expanded', 'true');
+    menuPanel.classList.add('is-open');
+    menuBackdrop.classList.add('is-visible');
+    document.body.style.overflow = 'hidden';
+
+    // Focus first menu item
+    const firstLink = menuPanel.querySelector('.mobile-menu-link');
+    if (firstLink) {
+      firstLink.focus();
+    }
+  }
+
+  function closeMenu() {
+    isOpen = false;
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuPanel.classList.remove('is-open');
+    menuBackdrop.classList.remove('is-visible');
+    document.body.style.overflow = '';
+
+    // Return focus to toggle button
+    menuToggle.focus();
+  }
+
+  function toggleMenu() {
+    isOpen ? closeMenu() : openMenu();
+  }
+
+  // Event listeners
+  menuToggle.addEventListener('click', toggleMenu);
+  menuClose.addEventListener('click', closeMenu);
+  menuBackdrop.addEventListener('click', closeMenu);
+
+  // Close on link click
+  menuLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isOpen) {
+      closeMenu();
+    }
+  });
+
+  // Trap focus in menu when open
+  menuPanel.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') {
+      const focusableElements = menuPanel.querySelectorAll(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (e.shiftKey && document.activeElement === firstElement) {
+        e.preventDefault();
+        lastElement.focus();
+      } else if (!e.shiftKey && document.activeElement === lastElement) {
+        e.preventDefault();
+        firstElement.focus();
+      }
+    }
+  });
+})();
+</script>
+  </div>
+</header>
+
+    <main id="main-content" class="body">
+      <!-- Blog post schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://vpetersson.com/2025/06/18/all-roads-lead-to-dslrs.html"
+  },
+  "headline": "All Roads Lead to DSLRs",
+  "description": null,
+  "datePublished": "2025-06-18T00:00:00+00:00",
+  "dateModified": "2025-06-18T00:00:00+00:00",
+  "author": {
+    "@type": "Person",
+    "@id": "https://vpetersson.com/about/#person",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://vpetersson.com/assets/images/site/talk.webp"
+    }
+  },
+  
+  "inLanguage": "en",
+  "wordCount": "1015",
+  "keywords": ["podcast","video","equipment"]
+}
+</script>
+
+<!-- Breadcrumbs schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://vpetersson.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://vpetersson.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "All Roads Lead to DSLRs",
+      "item": "https://vpetersson.com/2025/06/18/all-roads-lead-to-dslrs.html"
+    }
+  ]
+}
+</script>
+<div class="page-header page-header-blog">
+  <h2 class="uppercase text-[48px] md:text-[91px] lg:text-[140px] xl:text-[186px] text-white text-center">Blog</h2>
+</div>
+<div class="bg-secondaryBG blog-post">
+  <div class="md:max-w-[665px] mx-4 sm:mx-6 md:mx-auto py-8 md:py-10 lg:py-20">
+    <h2 class="mb-6">All Roads Lead to DSLRs</h2>
+    <div class="flex mb-6 gap-6 text-xs">
+      <span class="uppercase">
+        18 JUN • 2025
+      </span>
+      <span class="blog-time">
+        6 minutes
+      </span>
+    </div>
+    <article class="leading-[26px]">
+      <p>I’ve been running my video podcast <a href="https://vpetersson.com/podcast/">Nerding out with Viktor</a> for about a year and a half now, with just under 50 episodes published.</p>
+
+<p>When I <a href="https://vpetersson.com/2024/06/20/on-launching-a-video-podcast-in-2024.html">started out</a>, I tried to keep things simple and cheap. I used my Logitech Brio 4K webcam - a webcam that I picked up during COVID. Not long after, I upgraded the audio by adding a dedicated microphone, the Audio-Technica ATR2100x-USB. It did the job early on, but the sound still wasn’t quite crisp. Eventually, I gave in and bought the Shure MV7 (USB), which is the go-to mic for many podcasters. That one stuck and I’ve had no audio issues since.</p>
+
+<p><img src="/assets/logitech-brio.webp" alt="Logitech Brio 4K webcam" /></p>
+
+<h2 id="attempt-1-iphone">Attempt 1: iPhone</h2>
+
+<p>Video was more of a headache. The Brio was okay for video calls, but the color balance was always a bit off, and Riverside <a href="https://support.riverside.fm/hc/en-us/articles/9684909831325-Camera-Logitech-Brio-Logitech-4K-Pro">didn’t support 4K recording using it</a>. I figured I cracked it when Apple released Continuity Camera, which let me use my iPhone as a webcam. It looked great…until it didn’t. Twice it dropped a bunch of frames during recordings, and once it randomly shut down (probably overheated). This was on top of the fact that my computer just refused to connect to it occasionally. After a few episodes with sub-bar quality, I gave up and started looking for alternatives.</p>
+
+<p><img src="/assets/continuity-camera.webp" alt="Continuity Camera in action" /></p>
+
+<p>By now, I’d also had a bunch of guests on the show. The difference between setups is clear as day. People using DSLRs just look better. Even the best webcams can’t compete to even an entry-level DSLR when it comes to sharpness and depth of field. Here are some examples of people I’ve interviewed who have great DSLR setups:</p>
+
+<ul>
+  <li><a href="https://vpetersson.com/podcast/S02E11.html">The Systems Behind Managing High-Performing Remote Teams with Jon Seager</a></li>
+  <li><a href="https://vpetersson.com/podcast/S01E13.html">Exploring the Depths of Linux and Open Source Innovation with Mark Shuttleworth</a></li>
+  <li><a href="https://vpetersson.com/podcast/S01E02.html">Nerding out about Prometheus and Observability with Julius Volz</a></li>
+</ul>
+
+<h2 id="attempt-2-gopro">Attempt 2: GoPro</h2>
+
+<p>At this point, I thought I’d found a clever workaround: a GoPro Hero 13. On paper, it’s a 4K camera packed with features, and I could use it for events too. So I bought one. That’s when the trouble started.</p>
+
+<p><img src="/assets/go-pro-hero-13.webp" alt="GoPro Hero 13" /></p>
+
+<p>In theory, you can connect a GoPro via USB and use it as a webcam. <strong>In theory.</strong> The <a href="https://apps.apple.com/gb/app/gopro-webcam/id6477835262?">reviews</a> on the App Store say otherwise. I didn’t realize that until after I got it. Technically speaking, I think it completely broke as webcam when Apple started to put more restrictions on webcams and GoPro simply didn’t want to play ball. Apparently you can get it to work by <a href="https://discussions.apple.com/thread/255256244?sortBy=rank">turning on legacy camera mode</a>, but I wasn’t really interested in dropping the security of macOS just because GoPro wont fix their software/firmware.</p>
+
+<p>But I was already committed, so I tried a workaround: buying the Media Mod (which gives you HDMI output) and hooking it up to an HDMI capture card.</p>
+
+<p>Technically, it worked. But the video looked terrible. It was mirrored (easy fix), but the image was blurry, distorted, and had that GoPro fisheye vibe. Not exactly what you want for a podcast. I get it, the GoPro is made for people jumping out of planes, not people sitting in front of a bookshelf. Still, for something that cost close to £500 with all the add-ons, I expected better.</p>
+
+<p>I returned it and went back to the drawing board.</p>
+
+<h2 id="attempt-3-elgato-facecam-pro">Attempt 3: Elgato Facecam Pro</h2>
+
+<p>Next up was the Elgato Facecam Pro. It looked promising and had solid reviews. I placed the order. And waited. Two weeks later, it still hadn’t shipped out. So I cancelled it. Maybe it’s great. I’ll never know.</p>
+
+<h2 id="attempt-4-sony-zv-e10">Attempt 4: Sony ZV-E10</h2>
+
+<p>Eventually, I gave in and bought a dedicated camera. I went with the Sony ZV-E10—technically a mirrorless camera rather than a DSLR. And wow. What a difference.</p>
+
+<p><img src="/assets/sony-zv-e10.webp" alt="Sony ZV-E10" /></p>
+
+<p>There’s no comparison. The video quality is on a completely different level. I picked it because ChatGPT recommended it (yes, really), and also because it was discounted at the time. It might be getting a bit old, but it’s still a fantastic camera.</p>
+
+<p>It’s not cheap. You’ll spend more than you would on any webcam or GoPro, but you’re getting a proper camera—technically mirrorless, but in the same league as a DSLR—not just a webcam. You can grab the kit with the lens for £699 directly from Sony. I opted to buy the body only and paired it with the Sigma 16mm f/1.4 DC DN Contemporary lens. That pushed the price up a bit, but I think it was worth it.</p>
+
+<p>What surprised me the most was how easy it was to get going. I figured I’d need an HDMI capture card, but plugging it in via USB just worked. macOS detected it right away - no drivers, no fuss.</p>
+
+<p><strong>Update:</strong> I can’t belive it took me this long to figure it out but if you have a “Mark I” (i.e. first iteration) of the ZV-E10, it will only do 720p over USB. If you want 4k, you need to use a HDMI capturing card. It took me several months to realize this, as I was convinced it was a limitation in Riverside (which I use for podcast recordings). Only when I tested this hypothesis did I realize that the limitation was on my end.</p>
+
+<h2 id="the-takeaway">The takeaway</h2>
+
+<p>If you care about image quality, all roads really do lead to a DSLR – or at least a mirrorless camera. Webcams just can’t compete, no matter the price. There are some decent ones out there, but they all come with compromises. Lenses are big (and heavy) for a reason. You can’t fake physics in software. At least not yet.</p>
+
+<p>Don’t get me wrong - if all you just want something that looks OK on a video call, a webcam is sufficient. But if you want to have something that really comes across as crisp and professional in 4K, you’ll end up with a DSLR or a mirrorless camera.</p>
+
+
+      <div class="mt-12 mb-8 p-8 bg-blue-50 border border-blue-100 rounded-xl">
+        <h4 class="text-2xl font-semibold mb-4 text-blue-900">Enjoyed this post? Check out my podcast!</h4>
+        <p class="mb-6 text-blue-800">If you found this interesting, you might enjoy <a href="/podcast" class="text-blue-600 hover:text-blue-800 underline" onclick="trackEvent('Blog CTA', 'Click', 'Podcast Link', 'All Roads Lead to DSLRs')">"Nerding Out with Viktor"</a> - my podcast where I dive deep into tech, entrepreneurship, and security with industry experts.</p>
+        <div>
+          <h5 class="font-medium mb-4 text-blue-900">Listen on:</h5>
+          
+
+
+
+<div>
+  <div class="flex gap-3">
+    
+      <a href="https://www.youtube.com/@nerdingoutwithviktor" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'YouTube', 'All Roads Lead to DSLRs')">
+        <img src="/assets/images/site/podcast-youtube-white.svg" alt="Listen to podcast on YouTube" />
+      </a>
+    
+    
+      <a href="https://open.spotify.com/show/7C6yipdVPWgBc6Bwikgo8g" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Spotify', 'All Roads Lead to DSLRs')">
+        <img src="/assets/images/site/podcast-spotify-white.svg" alt="Listen to podcast on Spotify" />
+      </a>
+    
+    
+      <a href="https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Apple', 'All Roads Lead to DSLRs')">
+        <img src="/assets/images/site/podcast-apple-white.svg" alt="Listen to podcast on Apple" />
+      </a>
+    
+    
+    
+      <a href="https://podcast.nerdingoutwithviktor.com/podcast_feed.xml" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'RSS', 'All Roads Lead to DSLRs')">
+        <img src="/assets/images/site/podcast-rss-white.svg" alt="RSS Feed" />
+      </a>
+    
+  </div>
+</div>
+
+        </div>
+      </div>
+
+      <i>Found an error or typo? File PR against <a href="https://github.com/vpetersson/vpetersson.com/tree/master/_posts/2025-06-18-all-roads-lead-to-dslrs.md" rel="nofollow">this file</a>.</i>
+    </article>
+    <div class="mt-6">
+      
+  <div class="tags">
+    
+      <a href="/tags/podcast" class="tag">
+        podcast
+      </a>
+    
+      <a href="/tags/video" class="tag">
+        video
+      </a>
+    
+      <a href="/tags/equipment" class="tag">
+        equipment
+      </a>
+    
+  </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+    </main>
+    <footer class="py-[60px] md:pt-[74px] md:pb-[40px] px-[25px] md:px-[120px] text-altPrimaryText">
+  <div class="mb-[60px]">
+    <a href="/">
+      <img class="w-[200px] md:w-[320px]" src="/assets/images/site/logo.svg" alt="logo" />
+    </a>
+  </div>
+  <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-8 lg:mb-6">
+    <nav class="flex flex-col md:flex-row gap-6 md:gap-8 mb-20 lg:mb-0">
+      
+        <a href="/" class="">HOME</a>
+      
+        <a href="/about" class="">ABOUT</a>
+      
+        <a href="/consulting" class="">CONSULTING</a>
+      
+        <a href="/podcast" class="">PODCAST</a>
+      
+        <a href="/blog" class="">BLOG</a>
+      
+        <a href="https://studio.viktopia.io/" class="">VIKTOPIA STUDIO</a>
+      
+    </nav>
+    <div class="flex gap-[13px]">
+      <a href="https://twitter.com/vpetersson">
+        <img src="/assets/images/site/x.svg" alt="x logo" />
+      </a>
+      <a href="https://github.com/vpetersson">
+        <img src="/assets/images/site/github.svg" alt="github logo" />
+      </a>
+      <a href="https://www.linkedin.com/in/vpetersson/">
+        <img src="/assets/images/site/linkedin.svg" alt="linkedIn logo" />
+      </a>
+    </div>
+  </div>
+  <hr class="mb-8 lg:mb-10 bg-[#000212] h-[3px] bg-opacity-20 border-0" />
+  <div>
+    <p class="font-[Inter] text-base">&copy; Viktor Petersson</p>
+  </div>
+</footer>
+
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/code-blocks.js" defer></script>
+  </body>
+</html>

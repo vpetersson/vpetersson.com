@@ -1,0 +1,4587 @@
+[
+  {
+    "sentence": "Hello and welcome to this episode of Nerding up with Victor, where we delve into the intricate world of technology and its implication on our lives.",
+    "startTime": "00:00",
+    "endTime": "00:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm Victor, your host, and today we have a particular insightful discussion planned for you.",
+    "startTime": "00:06",
+    "endTime": "00:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Last year, my interest was piqued by the evolving landscape of Web3, particularly around the concept of data sovereignty.",
+    "startTime": "00:12",
+    "endTime": "00:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The idea that individuals could have ownership and control of their digital data is not just transformative, but increasingly critical in an AI centric world.",
+    "startTime": "00:18",
+    "endTime": "00:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Our guest today, Simon from the company Kin, is at the heart of this.",
+    "startTime": "00:28",
+    "endTime": "00:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Kin is a company at the forefront of privacy in the world of artificial intelligence and machine learning.",
+    "startTime": "00:32",
+    "endTime": "00:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Whether you're deeply involved in the tech industry, interested in the ethics of AI, or simply curious about the future of digital privacy, today's episode promises to be a compelling exploration of these critical issues.",
+    "startTime": "00:40",
+    "endTime": "00:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Stay with us as we engage in a discussion with Simon, unpacking the challenges and opportunities that lies at the intersection of AI, machine learning and privacy.",
+    "startTime": "00:52",
+    "endTime": "01:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Welcome, Simon.",
+    "startTime": "01:02",
+    "endTime": "01:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, thanks a lot, Victor, and thanks for having me on your podcast.",
+    "startTime": "01:04",
+    "endTime": "01:08",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We're excited to talk a little bit about the personal AI and privacy and Kin and everything that's, you know, around that about myself, I'm your, like, classical software engineering background from like IT University in Copenhagen and always been doing different tech startups, trying to bootstrap my own companies.",
+    "startTime": "01:08",
+    "endTime": "01:32",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "A handful, definitely.",
+    "startTime": "01:33",
+    "endTime": "01:35",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Most of them failed.",
+    "startTime": "01:35",
+    "endTime": "01:36",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:36",
+    "endTime": "01:36",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "A few that are still alive.",
+    "startTime": "01:36",
+    "endTime": "01:38",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But then I realized, I think during my bachelor on ITU actually that I have been coding since I was, I don't know, sev 7, 8, 9, 10, doing websites in Microsoft front page and all the stuff.",
+    "startTime": "01:39",
+    "endTime": "01:55",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And, you know, I thought this was, you know, the perfect thing for me in the first year at ITU was great, you know, I, you know, I was ahead of most people.",
+    "startTime": "01:57",
+    "endTime": "02:05",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There were of course, others like me for the first time.",
+    "startTime": "02:05",
+    "endTime": "02:08",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "02:08",
+    "endTime": "02:09",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But then during the second year where we started to have like really complicated, like mathematics and discrete math, really, you know, the deep computer science stuff, I saw that, okay, maybe it's not this, so this.",
+    "startTime": "02:10",
+    "endTime": "02:30",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Maybe it's not the like nitty gritty details of the science that gets me turned on.",
+    "startTime": "02:30",
+    "endTime": "02:36",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Maybe it's building something with software.",
+    "startTime": "02:36",
+    "endTime": "02:40",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that also came together with seeing people that started, you know, together with me completely blank, no experience.",
+    "startTime": "02:41",
+    "endTime": "02:49",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "02:49",
+    "endTime": "02:49",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then by the end of those three years, actually overtaking me in there, I would say like programming skills.",
+    "startTime": "02:50",
+    "endTime": "02:55",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "02:55",
+    "endTime": "02:56",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So during those years, I started at Danish travel company with my cousin actually, who's been in the business for a long time about Basically Dynamic Packaging, it's called.",
+    "startTime": "02:57",
+    "endTime": "03:11",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you put together like any hotel that you get from APIs, flights that you get, you know, the same flights from Mondo Packaging, it, selling it online.",
+    "startTime": "03:11",
+    "endTime": "03:18",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was kind of new back then.",
+    "startTime": "03:18",
+    "endTime": "03:20",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We kind of started to get that off the ground and I worked on that in the year.",
+    "startTime": "03:20",
+    "endTime": "03:25",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I took a year between my bachelor's and my master's and worked on that and got that up and running.",
+    "startTime": "03:25",
+    "endTime": "03:30",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I decided to take a master's in a business IT mix from Copenhagen Business School, which was way less about actually programming and much more about how do you manage software projects, how do you manage like creative people?",
+    "startTime": "03:30",
+    "endTime": "03:50",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Which was super interesting.",
+    "startTime": "03:51",
+    "endTime": "03:53",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I learned some new skills.",
+    "startTime": "03:54",
+    "endTime": "03:56",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then after that I was like, what am I gonna do now?",
+    "startTime": "03:57",
+    "endTime": "04:00",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In that time, the Danish travel company had actually merged with a Swedish company and split up again.",
+    "startTime": "04:00",
+    "endTime": "04:07",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I had another company that was doing festival management software that was, you know, I could also go in and do full time in.",
+    "startTime": "04:07",
+    "endTime": "04:14",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I decided to go all in on the Swedish travel company and build a team, got it off the ground, went really well, grew to quite a big company.",
+    "startTime": "04:14",
+    "endTime": "04:26",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, it's pretty big numbers in the travel industry because you need a lot of revenue and small profit margins.",
+    "startTime": "04:26",
+    "endTime": "04:33",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it was working really good until Covid hit and were like talking to investment bankers and you know, about to finally cash in like a 10 years journey, right?",
+    "startTime": "04:33",
+    "endTime": "04:45",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then suddenly from one day to the next it was like, should we just, you know, go bankrupt and call it a day?",
+    "startTime": "04:45",
+    "endTime": "04:52",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, because we had to pay back hundreds of millions of krona, Swedish krona to customers, money that we already paid to, you know, our suppliers, right?",
+    "startTime": "04:52",
+    "endTime": "05:02",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because were in the end just a middleman.",
+    "startTime": "05:02",
+    "endTime": "05:04",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that was kind of tough.",
+    "startTime": "05:04",
+    "endTime": "05:06",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think if we knew that Covid was going to last like two years at least in this industry, we probably not would have fought through.",
+    "startTime": "05:06",
+    "endTime": "05:13",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But you know, luckily were optimistic and we did and all is well and it's alive now.",
+    "startTime": "05:13",
+    "endTime": "05:20",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But that just made me realize that it's time to try something new.",
+    "startTime": "05:20",
+    "endTime": "05:25",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that was then about the time where the whole web3 space with NFTs and stuff were taking off.",
+    "startTime": "05:26",
+    "endTime": "05:35",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I've always been interested in blockchain technology more from the technical side than from the investment side of it.",
+    "startTime": "05:35",
+    "endTime": "05:44",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I've always found that it was very much like a closed society in a way.",
+    "startTime": "05:44",
+    "endTime": "05:50",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Or, you know, it was always, you know, crypto products for crypto people defi, you know, NFTs and stuff like that.",
+    "startTime": "05:50",
+    "endTime": "05:56",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It wasn't really Something that my sister would be interested in.",
+    "startTime": "05:56",
+    "endTime": "05:59",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, right.",
+    "startTime": "05:59",
+    "endTime": "06:00",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But the technology is so amazing and it enables so many things that we need.",
+    "startTime": "06:01",
+    "endTime": "06:05",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So when I saw that Casper, my co founder and CEO in kin, started to wanted to basically build a company together with MOF Capital about Web3, they wasn't exactly sure, but it was like, let's take this new technology and see if we can build something like a real consumer product.",
+    "startTime": "06:06",
+    "endTime": "06:26",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that was two years ago, basically.",
+    "startTime": "06:28",
+    "endTime": "06:31",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And were on this journey to figure out started with the technology, basically.",
+    "startTime": "06:32",
+    "endTime": "06:38",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "06:38",
+    "endTime": "06:39",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then trying to find a problem that we could solve with it, which is not what you're supposed to do when you're.",
+    "startTime": "06:39",
+    "endTime": "06:44",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The other way around.",
+    "startTime": "06:44",
+    "endTime": "06:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "06:45",
+    "endTime": "06:45",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But okay, so it was very research ish and we did a lot of things and we just, were really excited about the data ownership part of it.",
+    "startTime": "06:46",
+    "endTime": "06:57",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "06:57",
+    "endTime": "06:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because what we saw back then and also see is that the Internet is really centered around these giants that hold your data and basically do whatever they want with it.",
+    "startTime": "06:59",
+    "endTime": "07:14",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "07:14",
+    "endTime": "07:15",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's like that's the exchange that we're used to.",
+    "startTime": "07:15",
+    "endTime": "07:17",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You get this product for free, but the reason is free.",
+    "startTime": "07:17",
+    "endTime": "07:22",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We all know if you're not paying.",
+    "startTime": "07:22",
+    "endTime": "07:24",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You are the product.",
+    "startTime": "07:24",
+    "endTime": "07:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right, exactly.",
+    "startTime": "07:25",
+    "endTime": "07:27",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So how can we turn that around?",
+    "startTime": "07:27",
+    "endTime": "07:30",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And from our point of view, that required that you were actually able to hold your own data and decide who gets accessed and have the incentives of sharing your data yourself so that you would get that benefit of sharing your data instead of someone else getting the benefit of sharing the data.",
+    "startTime": "07:30",
+    "endTime": "07:50",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we're exploring many different ways.",
+    "startTime": "07:51",
+    "endTime": "07:55",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "A wallet that has a private key, like a blockchain crypto wallet, but could then also store data in different formats.",
+    "startTime": "07:56",
+    "endTime": "08:05",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So about this, around that time, the World Wide Web Consortium was coming out with new standards around decentralized identifiers and verifiable credentials, which was kind of big because it was the first time I think in like 10 years that the consortium was actually bringing standards from a draft into a real finalized version.",
+    "startTime": "08:05",
+    "endTime": "08:28",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it was like, okay, maybe there is something here that's actually going to be part of the Internet going forward.",
+    "startTime": "08:29",
+    "endTime": "08:35",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "08:35",
+    "endTime": "08:36",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not just an idea anymore.",
+    "startTime": "08:36",
+    "endTime": "08:38",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we built identity, what's called an identity wallet, where you could store verifiable credentials and stuff like that.",
+    "startTime": "08:39",
+    "endTime": "08:47",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it turned out that first of all, no one knows what verifiable credentials are.",
+    "startTime": "08:47",
+    "endTime": "08:52",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And to get people to understand and businesses to understand that first of all, we need someone that can issue the verifiable credentials.",
+    "startTime": "08:54",
+    "endTime": "09:02",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And why should a company issue verifiable credential what's the benefit for them then?",
+    "startTime": "09:02",
+    "endTime": "09:09",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We need the users that need to hold them and present them to some verifiers and the whole ecosystem.",
+    "startTime": "09:09",
+    "endTime": "09:16",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Sorry to interrupt.",
+    "startTime": "09:17",
+    "endTime": "09:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Do you want to take a few seconds and explain what's VCS and just explain the core concept just for people not familiar with what that is?",
+    "startTime": "09:18",
+    "endTime": "09:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, So a verifiable credential is.",
+    "startTime": "09:25",
+    "endTime": "09:29",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can kind of think of it as like a credential in the real world, or think of it as like a card that's in your wallet that has some data on it, like your driver's license, for example, tell something about you.",
+    "startTime": "09:29",
+    "endTime": "09:43",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It could be your name and your birthday and stuff like that.",
+    "startTime": "09:44",
+    "endTime": "09:46",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it can also be, you know, some access levels or something.",
+    "startTime": "09:46",
+    "endTime": "09:50",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It could be like an employee card, but it could also be your loyalty card from the coffee shop or something like that.",
+    "startTime": "09:50",
+    "endTime": "09:59",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then the idea is that you can have this wallet with these different credentials in it and you can then go and present it to someone.",
+    "startTime": "10:00",
+    "endTime": "10:08",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, for example, I could have my employer credential and I could go and present it in the taxi because I know that the taxi company has some kind of discount thing with my company.",
+    "startTime": "10:08",
+    "endTime": "10:21",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the special thing here is that the taxi company would be able to verify that my company actually issued it without going to my company through some kind of API or something because of the cryptographic signature that is, you know, embedded into the verifiable credential.",
+    "startTime": "10:22",
+    "endTime": "10:44",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So now we're back to, you know, private keys, but that my company that issued the employer card would have a private key and they would do a signature embedded into my verifiable credential so that I can, when I show my verifiable credential, the verifiers can just check that signature and see if that is a valid signature, that is a valid employer credential, that I have no other checks needed.",
+    "startTime": "10:44",
+    "endTime": "11:10",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I believe there's also a concept of being able to prove who you are without disclosing the actual information of that payload as well.",
+    "startTime": "11:11",
+    "endTime": "11:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "11:18",
+    "endTime": "11:18",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "11:18",
+    "endTime": "11:19",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's kind of the next step.",
+    "startTime": "11:19",
+    "endTime": "11:22",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And what is also supported by at least let's say modern verifiable credentials is zero knowledge proofs.",
+    "startTime": "11:22",
+    "endTime": "11:28",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "11:28",
+    "endTime": "11:29",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that is being able to prove something about you without actually showing the underlying data.",
+    "startTime": "11:29",
+    "endTime": "11:35",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's like kyc, for instance.",
+    "startTime": "11:36",
+    "endTime": "11:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, that's maybe a bad example, but some.",
+    "startTime": "11:38",
+    "endTime": "11:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, the classic example is like you're walking up, you know, to a bar and they ask to see your ID because they want us to know that you're above 18.",
+    "startTime": "11:40",
+    "endTime": "11:49",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But instead of showing them your actual birth date, you can generate a proof that shows that you are above 18.",
+    "startTime": "11:50",
+    "endTime": "11:57",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's all they want to know.",
+    "startTime": "11:57",
+    "endTime": "11:58",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they can then verify that proof without getting the actual underlying data.",
+    "startTime": "11:58",
+    "endTime": "12:02",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's cool.",
+    "startTime": "12:05",
+    "endTime": "12:06",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes, very cool.",
+    "startTime": "12:06",
+    "endTime": "12:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that takes you into a hyphen.",
+    "startTime": "12:08",
+    "endTime": "12:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, yes.",
+    "startTime": "12:10",
+    "endTime": "12:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Long journey.",
+    "startTime": "12:12",
+    "endTime": "12:14",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we're trying to figure out can we use this kind of thing.",
+    "startTime": "12:14",
+    "endTime": "12:17",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "For example, take your Strava data and then generate some credentials about how good you are at running.",
+    "startTime": "12:17",
+    "endTime": "12:25",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like you can run a 5k in this than whatever.",
+    "startTime": "12:25",
+    "endTime": "12:28",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then you could take that and you can go to the shoe store and you could prove that you're a good runner.",
+    "startTime": "12:28",
+    "endTime": "12:32",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And because you're a good runner, you might be a potential really good future customer.",
+    "startTime": "12:32",
+    "endTime": "12:36",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they might want to offer you some discount.",
+    "startTime": "12:36",
+    "endTime": "12:38",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But like this almost like three sided marketplace that were trying to establish very hard when it's, you know, it's both like new business, let's say model concept that are very different from what they're used to.",
+    "startTime": "12:39",
+    "endTime": "12:54",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This new technology, it just didn't take off at all.",
+    "startTime": "12:54",
+    "endTime": "13:00",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But we learned a lot about the technology and what you can do with cryptography and all this kind of stuff.",
+    "startTime": "13:00",
+    "endTime": "13:08",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then ChatGPT came up and it took us a few months of basically using ChatGPT every day like everyone else to realize that what we learned over in what we can call the self summoned identity space that encapsulates all of the verifiable credentials, decentralized identifiers and all this stuff solves so many of the problems that were seeing in the AI world around privacy, around verifiability and just like trust in general and the LLM or the AI, it gave us basically the opportunity to build a product directly with the user that they would find super interesting because now we could build an AI that they could engage with directly with their data.",
+    "startTime": "13:08",
+    "endTime": "14:00",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that was kind of for us like the perfect combination.",
+    "startTime": "14:01",
+    "endTime": "14:05",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We did a demo and everyone was just, that was a demo uso.",
+    "startTime": "14:05",
+    "endTime": "14:10",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Everyone was really excited, investors, everything.",
+    "startTime": "14:10",
+    "endTime": "14:13",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then it's just like that was April last year and then it just took off.",
+    "startTime": "14:13",
+    "endTime": "14:19",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We got an investment in August of $1.1 million and hired some amazing people to our team.",
+    "startTime": "14:19",
+    "endTime": "14:29",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And just yeah, it has been like a race since then to get something out and now we have the, since December we have like a closed beta.",
+    "startTime": "14:29",
+    "endTime": "14:42",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think we have around 250 users.",
+    "startTime": "14:42",
+    "endTime": "14:44",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You are one of them in the beta that are testing and giving us feedback.",
+    "startTime": "14:44",
+    "endTime": "14:49",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's been an amazing journey and it's Just incredible to see how people are engaging and how excited people are about this personal AI future.",
+    "startTime": "14:49",
+    "endTime": "15:04",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "15:05",
+    "endTime": "15:06",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we chatted sometime in the fall about this and one thing that I got super excited about this was this concept of an AI assistant.",
+    "startTime": "15:08",
+    "endTime": "15:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "15:15",
+    "endTime": "15:15",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Where well, I should say privacy first AI assistant that back then we spoke by having something running locally that.",
+    "startTime": "15:16",
+    "endTime": "15:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean my Pipe team is essentially having a system that runs locally on my hardware that has access to my contacts, my calendar, my messages on all platforms, my email, my bank account statements, credit card statements, but like unlimited access essentially because it never leaves my whole data set and then be able to query that just like I would do chatgpt.",
+    "startTime": "15:25",
+    "endTime": "15:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That that was like I.",
+    "startTime": "15:47",
+    "endTime": "15:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That vision I think is still the long term vision for.",
+    "startTime": "15:48",
+    "endTime": "15:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "For.",
+    "startTime": "15:51",
+    "endTime": "15:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "For kin.",
+    "startTime": "15:52",
+    "endTime": "15:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "15:53",
+    "endTime": "15:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think that is super fascinating because once you have that data set and that database or ll call it, but that enables so many interesting use cases.",
+    "startTime": "15:53",
+    "endTime": "16:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Do you want to speak a bit more that how what, how you're thinking on the future?",
+    "startTime": "16:04",
+    "endTime": "16:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Looks like that, Yeah.",
+    "startTime": "16:07",
+    "endTime": "16:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I would say, you know, when we speak to people about personal AI, you can speak to 10 people and they have 10 different ideas and mission of you know, how this should be.",
+    "startTime": "16:09",
+    "endTime": "16:17",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And everyone immediately jumps to this crazy future that you also just described.",
+    "startTime": "16:18",
+    "endTime": "16:23",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "16:23",
+    "endTime": "16:23",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Where you just have this AGI like thing that can interact with all your data and other people's agents and you can plan your hours.",
+    "startTime": "16:23",
+    "endTime": "16:31",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yet Holiday can ask when are Victor available?",
+    "startTime": "16:31",
+    "endTime": "16:34",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And go and find hotels and flights and book everything.",
+    "startTime": "16:34",
+    "endTime": "16:37",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's gonna happen 100%.",
+    "startTime": "16:38",
+    "endTime": "16:40",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's just not where it starts.",
+    "startTime": "16:40",
+    "endTime": "16:43",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, of course.",
+    "startTime": "16:43",
+    "endTime": "16:44",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So a big challenge has been to kind of stop talking about that future vision because we really want to get there and we believe in it, but take it down to some use cases and something that we can build with today that people can get value of today.",
+    "startTime": "16:45",
+    "endTime": "17:04",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's what we have been trying to do.",
+    "startTime": "17:06",
+    "endTime": "17:08",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "17:08",
+    "endTime": "17:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I presume having things that runs locally on your hardware requires pretty beefy hardware to start with.",
+    "startTime": "17:09",
+    "endTime": "17:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you would cut out like 99.9% of the user base.",
+    "startTime": "17:17",
+    "endTime": "17:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I presume from a pragmatic standpoint you went down the mobile first route instead because that allows you attract a much bigger user base, obviously.",
+    "startTime": "17:21",
+    "endTime": "17:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And.",
+    "startTime": "17:29",
+    "endTime": "17:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "17:30",
+    "endTime": "17:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "17:31",
+    "endTime": "17:32",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So.",
+    "startTime": "17:32",
+    "endTime": "17:33",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So maybe I could just explain what we're trying to build now and then why we took that specific local first approach.",
+    "startTime": "17:35",
+    "endTime": "17:43",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So kind of what we're trying to build now, the product is this combination of imagine a life coach that you have confidentiality with.",
+    "startTime": "17:43",
+    "endTime": "17:53",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "He's got some mental frameworks, you trust that he is knowledgeable in different areas can help you.",
+    "startTime": "17:54",
+    "endTime": "18:00",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And also maybe because you went there a few times, he kind of understands how you're thinking and stuff like that.",
+    "startTime": "18:00",
+    "endTime": "18:05",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Then combine it with a close friend that is always there to support you, no matter how stupid you are, knows you really well because 10 years of relationship or whatever and it's easy for you guys to relate to each other.",
+    "startTime": "18:05",
+    "endTime": "18:20",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then combined with this new technology that are the generative AI models that are incredibly knowledgeable, they are non judgmental and they are just always available and there when you need it.",
+    "startTime": "18:22",
+    "endTime": "18:35",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We're trying to combine this into a product that can help you in the everyday.",
+    "startTime": "18:36",
+    "endTime": "18:41",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because I think that's a huge difference between ChatGPT, for instance, where you have ephemeral chat essential, you have threads, I guess they have context, but you have no shared context between them unless you do a custom knowledge base in ChatGPT.",
+    "startTime": "18:42",
+    "endTime": "18:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "18:58",
+    "endTime": "18:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Which I've used it quite heavily as well, which I think is great.",
+    "startTime": "18:58",
+    "endTime": "19:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But it doesn't have the shared context that you would have in something like kin.",
+    "startTime": "19:01",
+    "endTime": "19:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "19:08",
+    "endTime": "19:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "19:09",
+    "endTime": "19:09",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you want to build personal AI as we see it, there's kind of two pillars for us.",
+    "startTime": "19:09",
+    "endTime": "19:17",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's the privacy part and we can talk, you know, we'll talk much more about that.",
+    "startTime": "19:17",
+    "endTime": "19:20",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "19:20",
+    "endTime": "19:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And there's the personal side of it.",
+    "startTime": "19:20",
+    "endTime": "19:23",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How do we make it personal?",
+    "startTime": "19:23",
+    "endTime": "19:25",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And a big part of the personal is what people are now calling long term memory.",
+    "startTime": "19:25",
+    "endTime": "19:31",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you think about ChatGPT, it has memory within that single thread that you're in, Right.",
+    "startTime": "19:31",
+    "endTime": "19:37",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You start a new thread and then it's gone.",
+    "startTime": "19:37",
+    "endTime": "19:38",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We call it short term memory, if you want to put some fancy words to it.",
+    "startTime": "19:39",
+    "endTime": "19:42",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How do we build long term memory where it actually gets to know you more and more as you go?",
+    "startTime": "19:42",
+    "endTime": "19:49",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's a really big part of it.",
+    "startTime": "19:50",
+    "endTime": "19:54",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if we're talking about, you know, the local first approach, then why do we do this?",
+    "startTime": "19:56",
+    "endTime": "20:04",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We, we're going back then to looking at the whole privacy angle.",
+    "startTime": "20:04",
+    "endTime": "20:09",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we believe that first of all, in future personal AIs are going to be the most valuable digital asset that everyone will own.",
+    "startTime": "20:10",
+    "endTime": "20:24",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And because of that, it must transcend ecosystem.",
+    "startTime": "20:25",
+    "endTime": "20:31",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It should not be locked into walled gardens.",
+    "startTime": "20:31",
+    "endTime": "20:33",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's really like our manifest in Kin, because like Elon Musk said a few weeks ago on an interview, he said, don't take away, my friend.",
+    "startTime": "20:34",
+    "endTime": "20:45",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like imagine that you have built up this, let's call it relationship because that's basically what it is over many years and it knows you really well, you use it every day.",
+    "startTime": "20:45",
+    "endTime": "20:56",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Maybe your life is 10% better because you have this helper that can help you and guide you.",
+    "startTime": "20:56",
+    "endTime": "21:03",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then because you preach some terms that you didn't even read, Google or whoever is providing the air just takes it away from you.",
+    "startTime": "21:04",
+    "endTime": "21:11",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, right.",
+    "startTime": "21:11",
+    "endTime": "21:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then suddenly you are, you know, your life is worse.",
+    "startTime": "21:12",
+    "endTime": "21:18",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "21:18",
+    "endTime": "21:18",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "21:18",
+    "endTime": "21:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And all that investment is just gone.",
+    "startTime": "21:19",
+    "endTime": "21:23",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we have seen it, we know it happens.",
+    "startTime": "21:23",
+    "endTime": "21:25",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "21:25",
+    "endTime": "21:26",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It happens with Twitter accounts.",
+    "startTime": "21:26",
+    "endTime": "21:27",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It happens all kind of things for Gmail.",
+    "startTime": "21:27",
+    "endTime": "21:30",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "As far as a good example, accounts.",
+    "startTime": "21:30",
+    "endTime": "21:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, yeah, it's.",
+    "startTime": "21:32",
+    "endTime": "21:33",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's so scary.",
+    "startTime": "21:33",
+    "endTime": "21:33",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they don't give a right.",
+    "startTime": "21:33",
+    "endTime": "21:36",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "21:36",
+    "endTime": "21:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So we need an alternative to that.",
+    "startTime": "21:37",
+    "endTime": "21:39",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's why we need privacy and we need data ownership.",
+    "startTime": "21:41",
+    "endTime": "21:46",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the privacy is really.",
+    "startTime": "21:47",
+    "endTime": "21:52",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Why do we need privacy?",
+    "startTime": "21:52",
+    "endTime": "21:53",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Do people even care about privacy?",
+    "startTime": "21:53",
+    "endTime": "21:54",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that's a big whole discussion and I think privacy in itself is not a product.",
+    "startTime": "21:54",
+    "endTime": "22:01",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But we also believe, and we can see that with our users, that it becomes very tangible.",
+    "startTime": "22:03",
+    "endTime": "22:11",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "When you're sitting there with your AI and you can see everything it knows about you get a little bit freaked out thinking about someone else might access that when it's Facebook and Meta and whatever.",
+    "startTime": "22:11",
+    "endTime": "22:25",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In a way it's a little bit more abstract.",
+    "startTime": "22:26",
+    "endTime": "22:28",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You're like, I don't really care and I'm just one out of a million.",
+    "startTime": "22:28",
+    "endTime": "22:32",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And now they're actually really going to use it for anything because you don't see all the data that they have on you, they don't surface it to you in a view.",
+    "startTime": "22:32",
+    "endTime": "22:42",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But we do that.",
+    "startTime": "22:42",
+    "endTime": "22:43",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we can see, we have asked some of our users, if something went wrong, can we do an export of your data and debug?",
+    "startTime": "22:43",
+    "endTime": "22:51",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then they're like, no, it's so private.",
+    "startTime": "22:51",
+    "endTime": "22:55",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that's a good point.",
+    "startTime": "22:56",
+    "endTime": "22:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because the reason why, I guess I haven't really been too concerned with the privacy element of ChatGPT is because there is no long term memory.",
+    "startTime": "22:58",
+    "endTime": "23:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So the way you put it, right, it's like, it's just, yeah, sure, there's context about this particular thread, but it's not that sensitive.",
+    "startTime": "23:08",
+    "endTime": "23:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But if I were to start chucking a lot of personal data into an aggregate in a long term memory, I'll be a lot more wary about where that data is processed, how it's processed and so on.",
+    "startTime": "23:15",
+    "endTime": "23:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And even where are the data centers sitting, what jurisdiction are the data centers in?",
+    "startTime": "23:26",
+    "endTime": "23:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All those things become really important.",
+    "startTime": "23:31",
+    "endTime": "23:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Let's talk a bit about that.",
+    "startTime": "23:35",
+    "endTime": "23:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Let's talk about data sovereignty and data in kin.",
+    "startTime": "23:37",
+    "endTime": "23:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's a Local first approach.",
+    "startTime": "23:42",
+    "endTime": "23:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you have an iOS and android app.",
+    "startTime": "23:44",
+    "endTime": "23:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I presume that's using iCloud storage, presumably on iOS, I would imagine for the local data set.",
+    "startTime": "23:46",
+    "endTime": "23:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Actually not.",
+    "startTime": "23:55",
+    "endTime": "23:56",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's completely local.",
+    "startTime": "23:56",
+    "endTime": "23:57",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So let's see, like where to begin?",
+    "startTime": "23:57",
+    "endTime": "24:04",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think it's important maybe to understand if you want to build anything that handles private data and do computations on private data, that is challenging, right?",
+    "startTime": "24:04",
+    "endTime": "24:17",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We have, you know, if you're working with private or encrypted data, you know, you have to encrypt it at rest.",
+    "startTime": "24:17",
+    "endTime": "24:24",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That is a problem we know you know how to solve.",
+    "startTime": "24:24",
+    "endTime": "24:26",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You have to encrypt it in transit.",
+    "startTime": "24:26",
+    "endTime": "24:28",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's also, you know, fairly easy.",
+    "startTime": "24:28",
+    "endTime": "24:31",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But when it comes to computation, that is really, you know, the holy grail.",
+    "startTime": "24:31",
+    "endTime": "24:37",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And there's different approaches that you can go to.",
+    "startTime": "24:37",
+    "endTime": "24:42",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's like the actually the holy grail, fully homomorphic encryption which is actually doing computation without decrypting the data.",
+    "startTime": "24:42",
+    "endTime": "24:51",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So doing computations on encrypt data, which.",
+    "startTime": "24:51",
+    "endTime": "24:53",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Is insanely.",
+    "startTime": "24:53",
+    "endTime": "24:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Cool and amazing and there's actually a lot of work on it in the past few years.",
+    "startTime": "24:56",
+    "endTime": "25:02",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's really moving even on machine learning models, but it's still like a thousand times slower than without.",
+    "startTime": "25:02",
+    "endTime": "25:09",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's not really feasible.",
+    "startTime": "25:09",
+    "endTime": "25:11",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you want to build, you know, a mainstream application, right.",
+    "startTime": "25:11",
+    "endTime": "25:14",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's very small use cases still and then you can do, keep everything local, like don't send it anywhere, right.",
+    "startTime": "25:14",
+    "endTime": "25:26",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "100% local.",
+    "startTime": "25:26",
+    "endTime": "25:27",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's also, you know, that's a great option if you can do that.",
+    "startTime": "25:28",
+    "endTime": "25:31",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's simple and you know, it's a, it's a really good option.",
+    "startTime": "25:31",
+    "endTime": "25:35",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Then you have other options like zero knowledge proofs that we just talked about, which is more for these kind of one off proofs.",
+    "startTime": "25:36",
+    "endTime": "25:48",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's not really a feasible way if it's live data that is updating all the time because it's too heavy to generate all these circuits and prove them and so on.",
+    "startTime": "25:49",
+    "endTime": "25:57",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Another way is confidential computing.",
+    "startTime": "25:58",
+    "endTime": "26:03",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And here we are talking about trusted execution environments, trusted platform modules, whatever the names are.",
+    "startTime": "26:03",
+    "endTime": "26:14",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And to briefly explain what it is, it's like an isolated part of different chipsets.",
+    "startTime": "26:14",
+    "endTime": "26:23",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's been around for, on all modern CPUs for the past 10 years.",
+    "startTime": "26:23",
+    "endTime": "26:28",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They come with electrostatic exclusion and it's like an isolated environment within the CPU that the host cannot access.",
+    "startTime": "26:28",
+    "endTime": "26:39",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So usually if I build an application and I put it on a machine or a VM or something like that, it loads some data into memory and the Host environment can do a memory dump of the process and see the data.",
+    "startTime": "26:39",
+    "endTime": "26:53",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "26:53",
+    "endTime": "26:53",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because it's staring to your text.",
+    "startTime": "26:53",
+    "endTime": "26:55",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What you get with this trusted excuse environment is that you get this isolated environment where the host cannot actually do a memory dump and you also get away.",
+    "startTime": "26:55",
+    "endTime": "27:07",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they are born with a private key and public key, of course, from the manufacturer, like from Insul, for example.",
+    "startTime": "27:07",
+    "endTime": "27:14",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's like put inside the chip, Amazon, whatever.",
+    "startTime": "27:14",
+    "endTime": "27:17",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No one knows it further up the manufacturing or supply chain.",
+    "startTime": "27:17",
+    "endTime": "27:21",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "27:21",
+    "endTime": "27:22",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you only know the public key.",
+    "startTime": "27:22",
+    "endTime": "27:24",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So what you can do is you can actually encrypt data with the public key and you can send it into the trusted execution environment.",
+    "startTime": "27:24",
+    "endTime": "27:32",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you know, the only place that you know data can be decrypted is if it reaches inside of that environment.",
+    "startTime": "27:32",
+    "endTime": "27:40",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "27:40",
+    "endTime": "27:41",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And, and bringing this back into the mobile world.",
+    "startTime": "27:41",
+    "endTime": "27:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And Apple's been doing quite good leaps in terms of these things on later generations iPhones, both on the cryptographic side of things, but also on the computational side of things.",
+    "startTime": "27:44",
+    "endTime": "27:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What's the current state of that right now?",
+    "startTime": "27:59",
+    "endTime": "28:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How much of these models can you run locally?",
+    "startTime": "28:01",
+    "endTime": "28:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I believe you can run even one of the big LLMs, somebody showed they could actually run that on a modern iPhone today.",
+    "startTime": "28:04",
+    "endTime": "28:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How far away are you from able to do all this locally?",
+    "startTime": "28:13",
+    "endTime": "28:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I would both say quite far, but also quite close.",
+    "startTime": "28:19",
+    "endTime": "28:23",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It kind of depends on how you think about it or how or what you need.",
+    "startTime": "28:23",
+    "endTime": "28:28",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we, our goal is to run as much locally as we want because it's safest, it's the fastest we have, it's cheaper, people already paid for the computation power.",
+    "startTime": "28:28",
+    "endTime": "28:42",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "28:42",
+    "endTime": "28:42",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They don't have to pay us as well or some cloud.",
+    "startTime": "28:42",
+    "endTime": "28:45",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, but.",
+    "startTime": "28:45",
+    "endTime": "28:48",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the devices are, you know, amazing.",
+    "startTime": "28:48",
+    "endTime": "28:51",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The chips that are in iPhones and modern Androids, you can do so much amazing stuff.",
+    "startTime": "28:51",
+    "endTime": "28:57",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But the very big models, you still can't run there.",
+    "startTime": "28:57",
+    "endTime": "29:02",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we kind of had to decide, okay, well, if we want to leverage the biggest and best models, which we need because we want to make a good product, then we can't only be on your phone.",
+    "startTime": "29:02",
+    "endTime": "29:16",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We need to have a hybrid solution that can run as much of the phone as possible, but also offload some stuff to the cloud when necessary.",
+    "startTime": "29:16",
+    "endTime": "29:26",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But an example of what we actually can do on the device is, well, first of all, if you want to run machine learning on the device, you also need the data onto device.",
+    "startTime": "29:27",
+    "endTime": "29:40",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "29:40",
+    "endTime": "29:41",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's a whole challenge in itself because you need a data structure or database that is highly performant.",
+    "startTime": "29:41",
+    "endTime": "29:51",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "For us, we are building like a graph database.",
+    "startTime": "29:51",
+    "endTime": "29:57",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we wanted to support graph operations like think Neo4J or something like that.",
+    "startTime": "29:57",
+    "endTime": "30:01",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "30:01",
+    "endTime": "30:01",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Then we also need typical like transactional data SQL, like we need support for vector embeddings and you know, similarity search algorithms.",
+    "startTime": "30:02",
+    "endTime": "30:13",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then we want to run it on a phone.",
+    "startTime": "30:14",
+    "endTime": "30:18",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "30:18",
+    "endTime": "30:19",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we want to be able to sync it across devices as well at some point.",
+    "startTime": "30:19",
+    "endTime": "30:24",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the options that you are left with those requirements are basically none.",
+    "startTime": "30:24",
+    "endTime": "30:30",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So even like if you could use the cloud or you could pick between any database, you're limited to a few with these requirements.",
+    "startTime": "30:32",
+    "endTime": "30:40",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But if you run and run it performantly on the phone, there's really no databases.",
+    "startTime": "30:40",
+    "endTime": "30:46",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we kind of had to pick a database that kind of fulfills some of our requirements and then build on top of it integrated into the mobile, build it so we can import it into react native, all these kind of things and work on the sync as well.",
+    "startTime": "30:46",
+    "endTime": "31:00",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's a big part of it.",
+    "startTime": "31:01",
+    "endTime": "31:04",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then when it comes to the machine learning models, what we can do is.",
+    "startTime": "31:04",
+    "endTime": "31:12",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So for example, right now we're sitting and working on an embeddings model to do vector embeddings.",
+    "startTime": "31:12",
+    "endTime": "31:20",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if some of you have tried to use OpenAI's ADA embeddings model, it's great.",
+    "startTime": "31:20",
+    "endTime": "31:28",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's, you know, it's pretty fast.",
+    "startTime": "31:28",
+    "endTime": "31:29",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's like 100 milliseconds if you are, you know, on a decent network connection.",
+    "startTime": "31:29",
+    "endTime": "31:32",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "31:32",
+    "endTime": "31:33",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But if you're out in the Metro or something, it might be 200 or 300 milliseconds and you do a lot of vector embeddings in these kind of applications, like a lot.",
+    "startTime": "31:33",
+    "endTime": "31:43",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we want to bring a vector model locally and we can actually do that.",
+    "startTime": "31:44",
+    "endTime": "31:50",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "A model is like, you know, maybe 100 megabyte ish, and you can do vector embeddings in 5 milliseconds locally, no network round trips.",
+    "startTime": "31:50",
+    "endTime": "31:59",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "31:59",
+    "endTime": "31:59",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that just enables so much more.",
+    "startTime": "32:01",
+    "endTime": "32:04",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can do so many more embeddings, you can do so many more like searches.",
+    "startTime": "32:04",
+    "endTime": "32:07",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So here, like this is actually something that the user can really feel when it comes to the performance.",
+    "startTime": "32:08",
+    "endTime": "32:14",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "32:14",
+    "endTime": "32:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it's.",
+    "startTime": "32:15",
+    "endTime": "32:16",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's really important to get that latency down and get that better experience.",
+    "startTime": "32:16",
+    "endTime": "32:22",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "32:22",
+    "endTime": "32:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Talk to me a bit more about device transfers.",
+    "startTime": "32:23",
+    "endTime": "32:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You say data is local in the device, so it's not synced to icloud or wherever equivalent on Android.",
+    "startTime": "32:27",
+    "endTime": "32:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If you were to move the data between devices, then is there a similar model to signal where you do device to device transfer rather than through a cloud service?",
+    "startTime": "32:34",
+    "endTime": "32:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or how is that anticipated?",
+    "startTime": "32:44",
+    "endTime": "32:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "To be working.",
+    "startTime": "32:46",
+    "endTime": "32:47",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Assume you, I assume you haven't actually built that out yet, but it's something.",
+    "startTime": "32:47",
+    "endTime": "32:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That you have planned out that is not built out yet.",
+    "startTime": "32:50",
+    "endTime": "32:52",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But one of the technologies that were researching a lot through these two years is a technology called decentralized web nodes.",
+    "startTime": "32:52",
+    "endTime": "33:02",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay.",
+    "startTime": "33:02",
+    "endTime": "33:02",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's actually a standard that came out of.",
+    "startTime": "33:02",
+    "endTime": "33:05",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we can think of it as a personal database where you can store your information data and it's all encrypted with your private key.",
+    "startTime": "33:05",
+    "endTime": "33:15",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you have control of it, you decide who you want to share it to.",
+    "startTime": "33:15",
+    "endTime": "33:19",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can have like shared schemas and protocols.",
+    "startTime": "33:19",
+    "endTime": "33:21",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if, for example, think of a music application like Spotify or something like that, Spotify has all its own data and music and that's great, but it also has my user data playlists and stuff like that.",
+    "startTime": "33:21",
+    "endTime": "33:37",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if I go to Apple Music and I want to play some music, I sit there and I have to start over again, right?",
+    "startTime": "33:37",
+    "endTime": "33:44",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Why should I not have my data?",
+    "startTime": "33:45",
+    "endTime": "33:47",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Hence Spotify can have their data and then we agree on some shared protocols for the data.",
+    "startTime": "33:47",
+    "endTime": "33:54",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That makes it easy to jump around and use the services that you want to do.",
+    "startTime": "33:54",
+    "endTime": "33:59",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Obviously there's a lot of incentives and all kinds of things we can talk about.",
+    "startTime": "33:59",
+    "endTime": "34:03",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Maybe Spotify would not want to do that, but that's kind of the vision of these decentralized web nodes.",
+    "startTime": "34:04",
+    "endTime": "34:10",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So this is the web3 concept of essentially of data portability, right?",
+    "startTime": "34:10",
+    "endTime": "34:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, exactly.",
+    "startTime": "34:16",
+    "endTime": "34:17",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then it's kind of taken to the next step because with web3 you are very focused on, you have the private key part of it.",
+    "startTime": "34:17",
+    "endTime": "34:25",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Of course, that's what enables everything.",
+    "startTime": "34:25",
+    "endTime": "34:27",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But then it's like NFTs or basically transactions on some blockchain, more or less private or anonymous or you know, most people kind of mix those two a little bit together.",
+    "startTime": "34:28",
+    "endTime": "34:44",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think it's very important to separate them.",
+    "startTime": "34:44",
+    "endTime": "34:46",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it's not a place to store your conversations, private conversations or your health data or whatever.",
+    "startTime": "34:47",
+    "endTime": "34:54",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "34:54",
+    "endTime": "34:55",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That needs to go somewhere else.",
+    "startTime": "34:55",
+    "endTime": "34:57",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's what this, that's the vision of these decentralized web nodes.",
+    "startTime": "34:57",
+    "endTime": "35:02",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it started like, I don't know, five years ago or something like that at Microsoft Research.",
+    "startTime": "35:02",
+    "endTime": "35:06",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then it was kind of taking over by a group that left Microsoft and became tbd, which is a company under Block xyz, this Jack Dorsey conglomerate of companies.",
+    "startTime": "35:06",
+    "endTime": "35:20",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's some very geeky people that are also super into self serve and identity and ownership and stuff like that are building out like the first implementation of the standard.",
+    "startTime": "35:20",
+    "endTime": "35:31",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the standard actually lives at Decentralized identity foundation.",
+    "startTime": "35:31",
+    "endTime": "35:35",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But TBD is doing the first implementation of it and we are working with them and trying to get that off the ground.",
+    "startTime": "35:35",
+    "endTime": "35:45",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it's still, it's a work in progress.",
+    "startTime": "35:45",
+    "endTime": "35:48",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But the promise is amazing right now.",
+    "startTime": "35:48",
+    "endTime": "35:52",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I mean I love the idea of that, right, because that's.",
+    "startTime": "35:52",
+    "endTime": "35:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's kind of the best of both worlds.",
+    "startTime": "35:55",
+    "endTime": "35:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You control your data, but you can still.",
+    "startTime": "35:57",
+    "endTime": "35:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There is data portability like the traditional web3 use case has always been.",
+    "startTime": "35:59",
+    "endTime": "36:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You buy a gun in some game, right?",
+    "startTime": "36:04",
+    "endTime": "36:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then.",
+    "startTime": "36:06",
+    "endTime": "36:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, or something in a game and then you start another game.",
+    "startTime": "36:07",
+    "endTime": "36:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "He's like, well, I want to bring my own inventory over.",
+    "startTime": "36:09",
+    "endTime": "36:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm not very bullish on that use case, but I am bullish on the fact that I can control my data in this concept.",
+    "startTime": "36:12",
+    "endTime": "36:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "36:19",
+    "endTime": "36:19",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If that be preferences for application or even health data or chat data for that sake.",
+    "startTime": "36:19",
+    "endTime": "36:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "36:26",
+    "endTime": "36:26",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that's really interesting.",
+    "startTime": "36:26",
+    "endTime": "36:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay, so the other thing I want to chat about, and we've kind of spoken about this already before, is the whole privacy element around cryptographic identities.",
+    "startTime": "36:29",
+    "endTime": "36:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because that's a tricky one, right?",
+    "startTime": "36:40",
+    "endTime": "36:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We all know how to secure, properly secure your self hosted crypto with hardware.",
+    "startTime": "36:41",
+    "endTime": "36:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All that stuff is kind of table stick, but.",
+    "startTime": "36:47",
+    "endTime": "36:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "For some people.",
+    "startTime": "36:51",
+    "endTime": "36:52",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, correct.",
+    "startTime": "36:53",
+    "endTime": "36:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I was going to get to that.",
+    "startTime": "36:54",
+    "endTime": "36:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's table stakes of people who have been around that world for a long time.",
+    "startTime": "36:55",
+    "endTime": "36:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But for the vast majority there's a reason why the exchanges exist, right.",
+    "startTime": "36:58",
+    "endTime": "37:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because most people do not want to mess around with their own hardware, wallets.",
+    "startTime": "37:03",
+    "endTime": "37:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And if you do not have a self governed private key for your data set, be that a some kind of sovereign data storage somewhere, then you kind of the whole concept kind of void if somebody else controls that key.",
+    "startTime": "37:08",
+    "endTime": "37:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you guys opted for a third party solution for that right now, which is very pragmatic.",
+    "startTime": "37:24",
+    "endTime": "37:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How do you guys make that decision?",
+    "startTime": "37:31",
+    "endTime": "37:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How do you think about that and on all those.",
+    "startTime": "37:33",
+    "endTime": "37:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because that's kind of key to the whole privacy debate.",
+    "startTime": "37:35",
+    "endTime": "37:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, it's a really good question and it's something that we have been thinking about a lot.",
+    "startTime": "37:38",
+    "endTime": "37:47",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think.",
+    "startTime": "37:47",
+    "endTime": "37:47",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "First of all, you have to understand that privacy and security in general is not a binary thing.",
+    "startTime": "37:48",
+    "endTime": "37:55",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not either you have no security or you have 100% security.",
+    "startTime": "37:55",
+    "endTime": "37:59",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's a scale.",
+    "startTime": "38:00",
+    "endTime": "38:01",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you can look at Facebook messenger versus WhatsApp versus Signal, they're all on the scale.",
+    "startTime": "38:01",
+    "endTime": "38:08",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you have to decide between security versus convenience.",
+    "startTime": "38:08",
+    "endTime": "38:14",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "At least that's been the classic trade off.",
+    "startTime": "38:14",
+    "endTime": "38:17",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Things are happening now that of course kind of break down some of the Barriers a little bit.",
+    "startTime": "38:17",
+    "endTime": "38:23",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But our take is that we could go all in and create something that is as secure and private as possible.",
+    "startTime": "38:23",
+    "endTime": "38:30",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Key generation locally on the device, seed phrases under the pillow, the classic stuff, right?",
+    "startTime": "38:30",
+    "endTime": "38:37",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But if that lowers the convenience to a point where people are not going to use it, what do we win of that?",
+    "startTime": "38:37",
+    "endTime": "38:44",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "38:44",
+    "endTime": "38:44",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Then people stay with big tech because the alternatives are too cumbersome and then we win nothing.",
+    "startTime": "38:44",
+    "endTime": "38:52",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "38:52",
+    "endTime": "38:52",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's no progress towards that future where we want to go.",
+    "startTime": "38:52",
+    "endTime": "38:56",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We have to have some pragmatic approach to it.",
+    "startTime": "38:57",
+    "endTime": "39:00",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The vast majority of people can barely remember their passwords and if they do remember them, then they probably reuse them over 20 different services, which is why I haven't pawn.",
+    "startTime": "39:00",
+    "endTime": "39:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And things like that just like flare up every time there's a leak because people reuse passwords.",
+    "startTime": "39:08",
+    "endTime": "39:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So if people can't really even use a password manager to generate passwords uniquely, the faith in them being able to be custodians of their own private keys is slim to nil.",
+    "startTime": "39:14",
+    "endTime": "39:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "39:25",
+    "endTime": "39:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "39:26",
+    "endTime": "39:27",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think there's so much work on this Also in the web3world, right.",
+    "startTime": "39:28",
+    "endTime": "39:35",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "With account abstraction and all these social recovery methods and stuff like that.",
+    "startTime": "39:35",
+    "endTime": "39:40",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we will have more options in the future and we're probably also going to implement some different options and probably also that you can, if you want, connect your existing wallet, metamask or whatever and then, you know, go from there.",
+    "startTime": "39:40",
+    "endTime": "39:54",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "39:54",
+    "endTime": "39:54",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But if I need my sister to sign up tomorrow and start using kin, that's not the way to go.",
+    "startTime": "39:55",
+    "endTime": "40:02",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we need to get to a place where we actually are allowed to survive.",
+    "startTime": "40:03",
+    "endTime": "40:08",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "40:08",
+    "endTime": "40:09",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because if we don't get any users, then we can have the best vision in the world, but it doesn't matter.",
+    "startTime": "40:09",
+    "endTime": "40:15",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No, I mean, I completely understand the decision that trade off you guys been making because that makes a lot of sense.",
+    "startTime": "40:16",
+    "endTime": "40:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "40:22",
+    "endTime": "40:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I, I personally, like, if.",
+    "startTime": "40:22",
+    "endTime": "40:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If you get to a point where you do chuck all your calendar data, all your emails, all your messages or your bank statements, like I personally would not be confident unless I can provide my own private key.",
+    "startTime": "40:23",
+    "endTime": "40:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "40:35",
+    "endTime": "40:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I, I do also appreciate that I'm a extreme outlier in the use.",
+    "startTime": "40:36",
+    "endTime": "40:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "40:42",
+    "endTime": "40:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I wanted to bring up another thing that we spoke about some months ago, which I think this is super interesting.",
+    "startTime": "40:44",
+    "endTime": "40:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Once you start to build this data set, and you kind of alluded to it before already, is this console of agents, and it kind of dawned on me when we had this conversation about calendly is a good example of this where you're like, well, you can broadcast your calendar And I can pick a schedule that works for me.",
+    "startTime": "40:51",
+    "endTime": "41:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's great, but it's kind of a halfway point, right?",
+    "startTime": "41:10",
+    "endTime": "41:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's better than two people emailing back and forth.",
+    "startTime": "41:12",
+    "endTime": "41:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But you are halfway point.",
+    "startTime": "41:14",
+    "endTime": "41:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What I really found fascinating was this whole concept of agents that can chat to each other without disclosing too much information.",
+    "startTime": "41:16",
+    "endTime": "41:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think the interesting part there is we can definitely deep dive into this.",
+    "startTime": "41:25",
+    "endTime": "41:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But one of the interesting part here is it doesn't matter if it takes a thousand messages back and forth to come to a consensus, because they can happen over the span of 200 milliseconds or, I don't know, a few seconds.",
+    "startTime": "41:28",
+    "endTime": "41:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "41:40",
+    "endTime": "41:41",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So let's.",
+    "startTime": "41:41",
+    "endTime": "41:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I would love to, like, unpack that and dive into, like, details on how you guys see that world.",
+    "startTime": "41:42",
+    "endTime": "41:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I believe that's gonna happen, but it's not gonna happen before we have some trust and verifiability in these interactions.",
+    "startTime": "41:48",
+    "endTime": "41:59",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Cause let's imagine that, you know, you send your AI out to book a table at a restaurant, right?",
+    "startTime": "41:59",
+    "endTime": "42:06",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's.",
+    "startTime": "42:06",
+    "endTime": "42:06",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's a use case that a lot of people bring up in podcasts, stuff like that.",
+    "startTime": "42:07",
+    "endTime": "42:10",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's great.",
+    "startTime": "42:11",
+    "endTime": "42:11",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But how does the restaurant know that it's coming from a real human?",
+    "startTime": "42:12",
+    "endTime": "42:15",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It could be like an army of earbuds that are just out to book all the tables and whatever.",
+    "startTime": "42:16",
+    "endTime": "42:23",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's so much that can go wrong.",
+    "startTime": "42:23",
+    "endTime": "42:25",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "42:25",
+    "endTime": "42:25",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And right now you call and they kind of verify you have a human voice.",
+    "startTime": "42:25",
+    "endTime": "42:31",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's also changing.",
+    "startTime": "42:31",
+    "endTime": "42:32",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We have AIs calling now.",
+    "startTime": "42:32",
+    "endTime": "42:33",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Google can prove this.",
+    "startTime": "42:33",
+    "endTime": "42:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Prove IO like what, five years ago?",
+    "startTime": "42:34",
+    "endTime": "42:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But yes.",
+    "startTime": "42:36",
+    "endTime": "42:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, exactly.",
+    "startTime": "42:37",
+    "endTime": "42:38",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But even booking online, you are required to sit there, and there's maybe a captcha that checks that maybe there's actually something that looks like a human at the computer.",
+    "startTime": "42:38",
+    "endTime": "42:47",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, but if it's AI is communicating to each other.",
+    "startTime": "42:47",
+    "endTime": "42:51",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Exactly.",
+    "startTime": "42:51",
+    "endTime": "42:52",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we need a way for the AIs to prove that they're acting on behalf of a human.",
+    "startTime": "42:53",
+    "endTime": "42:58",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that is something that we believe in a lot.",
+    "startTime": "43:00",
+    "endTime": "43:04",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And.",
+    "startTime": "43:04",
+    "endTime": "43:04",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's where the technologies around decentralized identifiers and verified credentials and signatures and stuff come into play.",
+    "startTime": "43:04",
+    "endTime": "43:11",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "43:11",
+    "endTime": "43:12",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then there's the question about how do they communicate to each other?",
+    "startTime": "43:13",
+    "endTime": "43:18",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because I think we're seeing different concepts kind of emerging.",
+    "startTime": "43:20",
+    "endTime": "43:25",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there's some people that are trying to do, like, agent communication protocols that are mapping out different schemas, like this is how they should talk to each other and stuff like that.",
+    "startTime": "43:25",
+    "endTime": "43:35",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think some of them are taking a little bit more classical protocol approach that are mapping out a lot of schemas of how data should look and stuff like that.",
+    "startTime": "43:35",
+    "endTime": "43:46",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's fine.",
+    "startTime": "43:47",
+    "endTime": "43:49",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's also what we're very used to from the API world.",
+    "startTime": "43:49",
+    "endTime": "43:53",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But now we have this different entity, the LLM, that can actually communicate in plain text.",
+    "startTime": "43:54",
+    "endTime": "44:01",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "44:01",
+    "endTime": "44:01",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You don't actually need schemas to do these kind of things.",
+    "startTime": "44:02",
+    "endTime": "44:05",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's, I think that's really interesting.",
+    "startTime": "44:07",
+    "endTime": "44:09",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think it's both going to be agents that are interacting with each other.",
+    "startTime": "44:10",
+    "endTime": "44:16",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But one of the use cases that we're also looking at is you might want to share some of the data that you have in kin with other people.",
+    "startTime": "44:16",
+    "endTime": "44:26",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "44:26",
+    "endTime": "44:27",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because data really gets value when it's shared.",
+    "startTime": "44:27",
+    "endTime": "44:30",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we don't want to, you know, there's no point in locking it down.",
+    "startTime": "44:31",
+    "endTime": "44:33",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's, that's wrong.",
+    "startTime": "44:33",
+    "endTime": "44:35",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We need to be able to share it and use our data to our advantage.",
+    "startTime": "44:35",
+    "endTime": "44:39",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So imagine that, you know, I go to my therapist every two weeks and my therapist could ask my AI to generate a little summary of what happened in Simon's life over the past two years.",
+    "startTime": "44:39",
+    "endTime": "44:52",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Up to two weeks.",
+    "startTime": "44:52",
+    "endTime": "44:53",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like what physical activities did you do?",
+    "startTime": "44:54",
+    "endTime": "44:56",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What interesting conversations did you have together that we can maybe dive into?",
+    "startTime": "44:56",
+    "endTime": "45:01",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that therapist can just send a request to my AI in plain text asking what they want.",
+    "startTime": "45:02",
+    "endTime": "45:08",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "My AI can, of course, with my permission, prepare response.",
+    "startTime": "45:08",
+    "endTime": "45:13",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I can approve it or automatically approve that it's sent back and she can decide what format she wants it in.",
+    "startTime": "45:13",
+    "endTime": "45:19",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "45:19",
+    "endTime": "45:19",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, maybe she just wants it in plain text on an email, but in another scenario where you're maybe on a website, you want to buy some clothes.",
+    "startTime": "45:19",
+    "endTime": "45:29",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And website is like, I'd really like to know, what does Simon like?",
+    "startTime": "45:29",
+    "endTime": "45:33",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What's his favorite style of clothing, what his size is, what did he buy last?",
+    "startTime": "45:33",
+    "endTime": "45:38",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we don't suggest him to buy a winter jacket because maybe he just bought one or maybe he talked about he want this.",
+    "startTime": "45:38",
+    "endTime": "45:44",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And in that case, the websites or the web service could ask my AI to prepare some data in a JSON schema that they can interpret automatically.",
+    "startTime": "45:44",
+    "endTime": "45:54",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And my AI can do that because they can do it in any format that you request.",
+    "startTime": "45:55",
+    "endTime": "46:00",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that just enables a whole new world of personalization and actually using your data for your advantage.",
+    "startTime": "46:00",
+    "endTime": "46:10",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I found that the whole debate about schemas being somewhat redundant is super fascinating.",
+    "startTime": "46:10",
+    "endTime": "46:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "46:17",
+    "endTime": "46:17",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because we're so used to the web paradigm of schemas and how you define data and just throwing that out the window is.",
+    "startTime": "46:17",
+    "endTime": "46:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, it's a big paradigm shift in how we interface with data.",
+    "startTime": "46:27",
+    "endTime": "46:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "46:33",
+    "endTime": "46:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I Find that fascinating.",
+    "startTime": "46:34",
+    "endTime": "46:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so the other thing I wanted to cover is the whole identity piece that you mentioned before.",
+    "startTime": "46:35",
+    "endTime": "46:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You want to book a restaurant, you want to prove that you are who you are or whatever.",
+    "startTime": "46:43",
+    "endTime": "46:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think in the last few years in crypto in general, we've seen a big push, obviously for kyc, for instance, but you always have this massive friction between the OGs of the crypto world, where there's a massive libertarian over tone of like, privacy versus the exchanges, where they're bound by legal requirements for whatever jurisdiction they're in.",
+    "startTime": "46:50",
+    "endTime": "47:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "47:15",
+    "endTime": "47:16",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How do you see that changing?",
+    "startTime": "47:18",
+    "endTime": "47:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is the privacy dead?",
+    "startTime": "47:21",
+    "endTime": "47:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is that something that is just going to die out, or are we going to see two parallel universes inside of this agent world?",
+    "startTime": "47:24",
+    "endTime": "47:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or if we apply to that?",
+    "startTime": "47:33",
+    "endTime": "47:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I definitely don't think privacy is dead.",
+    "startTime": "47:37",
+    "endTime": "47:39",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think there have been taking really.",
+    "startTime": "47:40",
+    "endTime": "47:42",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So one of the challenges with.",
+    "startTime": "47:42",
+    "endTime": "47:44",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's many things here, but KYC has always been really cumbersome to go through.",
+    "startTime": "47:45",
+    "endTime": "47:52",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "47:52",
+    "endTime": "47:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then you get this kind of approval that is like very specific to that application that we're using.",
+    "startTime": "47:52",
+    "endTime": "47:58",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then you go to the next application and then you need to do a new kyc, which is really annoying.",
+    "startTime": "47:58",
+    "endTime": "48:03",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But what if we could do like we do in the real world and we just rely on some identities or some, you know, credentials that are issued to us by trusted issuers.",
+    "startTime": "48:04",
+    "endTime": "48:15",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like the government issued my, you know, driver's license, for example, and I can use that, you know, for KYC in a lot of different places.",
+    "startTime": "48:15",
+    "endTime": "48:23",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "48:23",
+    "endTime": "48:23",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because they trust that privacy.",
+    "startTime": "48:23",
+    "endTime": "48:25",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We see that EU is actually, you know, this year starting to roll out what they called identity wallets.",
+    "startTime": "48:27",
+    "endTime": "48:35",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's based on verifiable credentials and decentralized identifiers.",
+    "startTime": "48:37",
+    "endTime": "48:41",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we are going to have, you know, in Denmark, we already have like a digital driver's license, but you can't really use it for anything.",
+    "startTime": "48:41",
+    "endTime": "48:48",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can pull up the app and then you can show it.",
+    "startTime": "48:48",
+    "endTime": "48:50",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But we actually going to have these verifiable credentials that can be issued to any wallet that supports the standard, and you can hold that credential and you can use that to prove who you are.",
+    "startTime": "48:50",
+    "endTime": "49:02",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that could be also in an agent interaction where you say, okay, my agent is allowed to derive a proof from my driver's license or basically like present it to that destination or that other party and they can verify that this is actually a transaction that is first of all coming from a human.",
+    "startTime": "49:02",
+    "endTime": "49:25",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the human is above 18 or whatever else I want to check and verify.",
+    "startTime": "49:25",
+    "endTime": "49:30",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "49:30",
+    "endTime": "49:31",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "49:31",
+    "endTime": "49:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think again, the schemas is probably going to be.",
+    "startTime": "49:31",
+    "endTime": "49:34",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We will need some kind of schemas and some standards for doing these kind of exchanges.",
+    "startTime": "49:34",
+    "endTime": "49:39",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "49:39",
+    "endTime": "49:40",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But then it's probably a combination of some lightweight schemas that handles these verifications and then.",
+    "startTime": "49:40",
+    "endTime": "49:47",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And how to establish connections and stuff like that.",
+    "startTime": "49:47",
+    "endTime": "49:50",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then exchanges in text format or whatever format that is now the most relevant for that exchange.",
+    "startTime": "49:50",
+    "endTime": "49:59",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, yeah.",
+    "startTime": "49:59",
+    "endTime": "50:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because the KYC stuff is even like LinkedIn is doing KYC now.",
+    "startTime": "50:00",
+    "endTime": "50:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like you can connect your account to your passport.",
+    "startTime": "50:04",
+    "endTime": "50:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I understand why they're doing that because obviously to counter fraud accounts or whatnot, but having to upload your passport to LinkedIn doesn't quite feel like kosher to me, just to verify my account.",
+    "startTime": "50:07",
+    "endTime": "50:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "50:21",
+    "endTime": "50:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So having a party like that would definitely work.",
+    "startTime": "50:22",
+    "endTime": "50:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I know you mentioned the Danish government is doing digital driver license.",
+    "startTime": "50:25",
+    "endTime": "50:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think bank ID is also a thing in Denmark, I believe, and that's been around in Sweden at least for almost like a decade, I want to say, for accessing all government services and all those things.",
+    "startTime": "50:29",
+    "endTime": "50:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And do you anticipate these kind of government entities being kind of the authority for identity or how do you think they have a place to play in this kind of realm?",
+    "startTime": "50:41",
+    "endTime": "50:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think they have a big place to play because they are in the end organizations and entities that we trust and we are used to trusting.",
+    "startTime": "50:57",
+    "endTime": "51:06",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So what we need is some standards that go cross border.",
+    "startTime": "51:07",
+    "endTime": "51:13",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "51:13",
+    "endTime": "51:14",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That are global and that is what EU wants to do now.",
+    "startTime": "51:14",
+    "endTime": "51:17",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because let's say we have experimented, especially in the Nordics, with these different digital identities and verification stuff like that.",
+    "startTime": "51:17",
+    "endTime": "51:26",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I had a company in Sweden and I couldn't use my Danish Nemida, as it was called back then.",
+    "startTime": "51:26",
+    "endTime": "51:34",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now it's called MIDI Day because it's a different system.",
+    "startTime": "51:34",
+    "endTime": "51:37",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "51:37",
+    "endTime": "51:38",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I couldn't get actually a Swedish one because I was not a Swedish citizen.",
+    "startTime": "51:38",
+    "endTime": "51:42",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, right.",
+    "startTime": "51:42",
+    "endTime": "51:43",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I had to rely on like the old little yellow device where scan a QR code and you enter some, you know, codes and stuff like that to verify.",
+    "startTime": "51:43",
+    "endTime": "51:53",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So in order for this to take off, we need these globally adopted standards and that's what at least EU is pushing out of that.",
+    "startTime": "51:54",
+    "endTime": "52:01",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I know that US is also doing it with driver's license in different states.",
+    "startTime": "52:01",
+    "endTime": "52:06",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we will have now these like call them credentials or objects that are no longer like bound to a specific ecosystem because it's an open standard and everyone can work with these credentials.",
+    "startTime": "52:07",
+    "endTime": "52:23",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's just going to enable a lot of creativity, I think, and reduce a lot of friction and a lot of interactions.",
+    "startTime": "52:24",
+    "endTime": "52:31",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, no, I Think that is key.",
+    "startTime": "52:31",
+    "endTime": "52:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Finding that balance between revealing privacy and I think that's being able to do a KYC without actually revealing the private data.",
+    "startTime": "52:34",
+    "endTime": "52:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That that would go a long way in a lot of these systems and standardizing it.",
+    "startTime": "52:41",
+    "endTime": "52:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The last thing I want to cover was AI hallucination, which is a real thing.",
+    "startTime": "52:46",
+    "endTime": "52:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "52:52",
+    "endTime": "52:52",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What have you guys seen that?",
+    "startTime": "52:52",
+    "endTime": "52:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because it's obviously if you use it as a private personal assistant, those things can be.",
+    "startTime": "52:55",
+    "endTime": "53:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Have pretty significant consequences.",
+    "startTime": "53:01",
+    "endTime": "53:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Where's your head around that?",
+    "startTime": "53:03",
+    "endTime": "53:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And AI safety at large.",
+    "startTime": "53:04",
+    "endTime": "53:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And probably hallucination is just one of those.",
+    "startTime": "53:06",
+    "endTime": "53:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Obviously.",
+    "startTime": "53:08",
+    "endTime": "53:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "53:09",
+    "endTime": "53:10",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think hallucinations are quite tricky because you can go one way and limit your model so much that it's only using the data that you provided it.",
+    "startTime": "53:11",
+    "endTime": "53:24",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But then it also becomes much less usable because you want that full knowledge that it was trained on.",
+    "startTime": "53:25",
+    "endTime": "53:35",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And in that span is where it's very difficult to not have hallucinations.",
+    "startTime": "53:35",
+    "endTime": "53:42",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So what people try to do is use.",
+    "startTime": "53:42",
+    "endTime": "53:45",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's called retrieval augmented generation.",
+    "startTime": "53:46",
+    "endTime": "53:48",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's like use that large model and then feed in some data from some data source into it and then try to prompt it or fine tune it to really use that.",
+    "startTime": "53:48",
+    "endTime": "54:00",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But still being able to kind of, let's say, also pull upon its larger knowledge of what it was trained on.",
+    "startTime": "54:00",
+    "endTime": "54:08",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "54:08",
+    "endTime": "54:08",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the challenge is really mixing those two together and reducing hallucinations.",
+    "startTime": "54:09",
+    "endTime": "54:15",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And there's a lot of work on that.",
+    "startTime": "54:16",
+    "endTime": "54:17",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you can, there's many different approaches, but it's not a solved problem.",
+    "startTime": "54:17",
+    "endTime": "54:24",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think in general, people have to learn that these LLMs are a new type of interaction that they have to understand a little bit the technology behind it and that if it tells you something, it's not necessarily the, you know, ground truth.",
+    "startTime": "54:24",
+    "endTime": "54:47",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "54:47",
+    "endTime": "54:47",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That you can rely on.",
+    "startTime": "54:47",
+    "endTime": "54:48",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Just like if some guy on the Internet writes something, it's not, you can't trust it 100 right.",
+    "startTime": "54:48",
+    "endTime": "54:53",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If it tells you to jump out of a bridge, maybe like reconsider that thing.",
+    "startTime": "54:53",
+    "endTime": "54:58",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But that's a, that's a big challenge when you're trying to make, you know, personal AIs that become so human.",
+    "startTime": "54:58",
+    "endTime": "55:05",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like.",
+    "startTime": "55:05",
+    "endTime": "55:06",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "55:06",
+    "endTime": "55:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But are still not human.",
+    "startTime": "55:06",
+    "endTime": "55:08",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "55:08",
+    "endTime": "55:08",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's something else.",
+    "startTime": "55:08",
+    "endTime": "55:09",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we have to understand what is this new technology and this new relationship and how do I use it and not use it.",
+    "startTime": "55:09",
+    "endTime": "55:16",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that's the hard part.",
+    "startTime": "55:17",
+    "endTime": "55:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "55:18",
+    "endTime": "55:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because I hardcore chatgpt user uses it every day for a lot of things.",
+    "startTime": "55:18",
+    "endTime": "55:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And quite frequently you do have these halls nature.",
+    "startTime": "55:23",
+    "endTime": "55:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It just gives you something that's plain wrong.",
+    "startTime": "55:26",
+    "endTime": "55:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But it's so Convincing.",
+    "startTime": "55:28",
+    "endTime": "55:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "When it tells you it, you're like, no, I know for fact that is wrong.",
+    "startTime": "55:30",
+    "endTime": "55:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then it's like you correct it.",
+    "startTime": "55:34",
+    "endTime": "55:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's like, oh, yeah, I'm wrong.",
+    "startTime": "55:35",
+    "endTime": "55:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that's obviously a massive one to cover.",
+    "startTime": "55:37",
+    "endTime": "55:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Are you doing like a B?",
+    "startTime": "55:42",
+    "endTime": "55:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I know in GPT4, at least they give you two responses and you can rate that because I guess that's kind of a quasi way to kind of solve that as well, indirectly.",
+    "startTime": "55:43",
+    "endTime": "55:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "55:54",
+    "endTime": "55:54",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's another big challenge when you're working with private Data.",
+    "startTime": "55:54",
+    "endTime": "55:59",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So unlike ChatGPT, we can't just use all the conversations that people have and their feedback on those conversations to improve our models.",
+    "startTime": "56:00",
+    "endTime": "56:10",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we are brainstorming different ways to kind of get feedback from the user and feed that back into the model without having to necessarily see the whole conversation.",
+    "startTime": "56:11",
+    "endTime": "56:23",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And maybe we can incentivize people to share some part of their conversation.",
+    "startTime": "56:24",
+    "endTime": "56:30",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Another track that we are slowly looking at is can we simulate users on our platform?",
+    "startTime": "56:30",
+    "endTime": "56:39",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So imagine that we create 100 users that are actually AIs that have maybe learned a lot from some data that we have shared with it about how users are interacting that we can generate.",
+    "startTime": "56:39",
+    "endTime": "56:51",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then we just let these Users or these AIs interact with our system every day.",
+    "startTime": "56:51",
+    "endTime": "56:56",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And based on the responses here, we kind of.",
+    "startTime": "56:56",
+    "endTime": "56:58",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That was a good conversation.",
+    "startTime": "56:58",
+    "endTime": "57:00",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That was a bad conversation.",
+    "startTime": "57:00",
+    "endTime": "57:01",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That was a good answer.",
+    "startTime": "57:01",
+    "endTime": "57:02",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That was a bad answer.",
+    "startTime": "57:02",
+    "endTime": "57:03",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we kind of simulate that data that we need to feed back into the model to improve it.",
+    "startTime": "57:03",
+    "endTime": "57:10",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "57:10",
+    "endTime": "57:10",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So generating fake data is a big thing.",
+    "startTime": "57:11",
+    "endTime": "57:14",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So similar to what DeepMind was doing in the early days, like having AI playing against AI in games, but in a different context, I guess.",
+    "startTime": "57:15",
+    "endTime": "57:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, yes, exactly.",
+    "startTime": "57:24",
+    "endTime": "57:26",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Cool.",
+    "startTime": "57:26",
+    "endTime": "57:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "This has been super interesting.",
+    "startTime": "57:27",
+    "endTime": "57:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Simon, I'm very happy that I got you on the show here.",
+    "startTime": "57:29",
+    "endTime": "57:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Do you want to do a quick shout out to.",
+    "startTime": "57:33",
+    "endTime": "57:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, to kin and what people, working people can learn more about kin.",
+    "startTime": "57:35",
+    "endTime": "57:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And when you guys are expected to go ga, I guess that might not be a hard date yet.",
+    "startTime": "57:39",
+    "endTime": "57:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So people can learn more at least.",
+    "startTime": "57:44",
+    "endTime": "57:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or at least at very least join their waitlist.",
+    "startTime": "57:46",
+    "endTime": "57:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "57:49",
+    "endTime": "57:49",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you can go to our website, which is Mykin AI and read a little bit more.",
+    "startTime": "57:49",
+    "endTime": "57:54",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can sign up for the beta.",
+    "startTime": "57:54",
+    "endTime": "57:56",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We are letting in people as we go.",
+    "startTime": "57:56",
+    "endTime": "57:58",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But if you write in the like, where did I hear about your field?",
+    "startTime": "57:58",
+    "endTime": "58:02",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That it was on the Learning out with Victor podcast.",
+    "startTime": "58:02",
+    "endTime": "58:06",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'll be sure to kind of let you in, fast track you.",
+    "startTime": "58:06",
+    "endTime": "58:09",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then I just want to say that if you are an engineer that are also considering some of these different concepts, working with them.",
+    "startTime": "58:10",
+    "endTime": "58:22",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's very few people that are thinking about these kind of things.",
+    "startTime": "58:22",
+    "endTime": "58:27",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "A lot of software engineers have experience with, let's say, now, implementing some LLM stuff, but usually it's like, go to OpenAI's website, check the docs, integrate an AI, integrate the API, and do a chatbot or something like that.",
+    "startTime": "58:27",
+    "endTime": "58:43",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we've been trying to hire people, and that's usually the experience.",
+    "startTime": "58:43",
+    "endTime": "58:47",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if you want to go like one level deeper is the understanding of what can the technology do.",
+    "startTime": "58:48",
+    "endTime": "58:56",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We talked about these different abstractions of agents and agents communicating together, and it's very experimental.",
+    "startTime": "58:56",
+    "endTime": "59:04",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's so many research papers coming out.",
+    "startTime": "59:04",
+    "endTime": "59:05",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you're one of the people that are actually really interested and really into that, reach out.",
+    "startTime": "59:06",
+    "endTime": "59:12",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And yeah, we're looking for bright minds to join us.",
+    "startTime": "59:12",
+    "endTime": "59:16",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If I was not busy with other things, I think I would definitely contemplate joining you guys because it is a really cool space you guys are working in.",
+    "startTime": "59:16",
+    "endTime": "59:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Cool.",
+    "startTime": "59:24",
+    "endTime": "59:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Thanks so much, Simon.",
+    "startTime": "59:25",
+    "endTime": "59:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Have a good one.",
+    "startTime": "59:27",
+    "endTime": "59:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Talk to you soon.",
+    "startTime": "59:28",
+    "endTime": "59:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Thank you.",
+    "startTime": "59:28",
+    "endTime": "59:29",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Thanks, Victor.",
+    "startTime": "59:29",
+    "endTime": "59:30",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Bye.",
+    "startTime": "59:30",
+    "endTime": "59:30",
+    "speaker_name": "Simon Westh Henriksen",
+    "speaker_id": 1
+  }
+]

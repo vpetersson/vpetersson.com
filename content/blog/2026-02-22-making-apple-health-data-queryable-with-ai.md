@@ -21,7 +21,7 @@ I tried [neiltron/apple-health-mcp](https://github.com/neiltron/apple-health-mcp
 
 ## Building My Own
 
-So I built [apple-health-mcp](https://github.com/vpetersson/apple-health-mcp)—a Rust-based MCP server that works directly with Apple Health's native export. It operates in two steps:
+So I built [apple-health-mcp-server](https://github.com/vpetersson/apple-health-mcp-server)—a Rust-based MCP server that works directly with Apple Health's native export. It operates in two steps:
 
 **Import**: Parses the raw XML export (plus ECG CSVs and GPX route files) and loads everything into a local DuckDB database. The Rust implementation handles multi-gigabyte exports efficiently—my 2.5GB decompressed dataset imports in under a minute on a laptop. Content-hash deduplication means re-imports are safe and only add the delta.
 
@@ -41,4 +41,4 @@ _A health audit where Claude combines years of blood work with Apple Health data
 
 ## Try It
 
-The project is open source and available on [GitHub](https://github.com/vpetersson/apple-health-mcp). Export your Apple Health data, point the tool at it, and start asking questions you've always wanted answers to.
+The project is open source and available on [GitHub](https://github.com/vpetersson/apple-health-mcp-server). Export your Apple Health data, point the tool at it, and start asking questions you've always wanted answers to.

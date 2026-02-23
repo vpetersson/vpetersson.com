@@ -1,0 +1,2793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="content-language" content="en">
+
+  <!-- Resource Hints -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="/assets/css/styles.css" as="style">
+  <link rel="preload" href="/assets/css/main.css" as="style">
+
+  <title>Viktor's ramblings | Viktor on entrepreneurship, Dev(Sec)Ops, remote work, and other geeky stuff.</title>
+  <meta name="description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vpetersson.com/about/">
+  <meta property="og:title" content="Viktor's ramblings | Viktor on entrepreneurship, Dev(Sec)Ops, remote work, and other geeky stuff.">
+  <meta property="og:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta property="og:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- LinkedIn -->
+  <meta property="og:site_name" content="Viktor's Tech Musings & Security Paranoia">
+  <meta property="article:author" content="https://www.linkedin.com/in/vpetersson/">
+  
+
+  <!-- X (formerly Twitter) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@vpetersson">
+  <meta name="twitter:creator" content="@vpetersson">
+  <meta name="twitter:title" content="Viktor's ramblings | Viktor on entrepreneurship, Dev(Sec)Ops, remote work, and other geeky stuff.">
+  <meta name="twitter:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta name="twitter:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- Social Profile Links -->
+  <link rel="me" href="https://github.com/vpetersson">
+  <link rel="me" href="https://www.linkedin.com/in/vpetersson/">
+  <link rel="me" href="https://hachyderm.io/@vpetersson@hachyderm.io">
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com",
+    "image": "https://vpetersson.com/assets/images/site/talk.webp",
+    "sameAs": [
+      "https://github.com/vpetersson",
+      "https://www.linkedin.com/in/vpetersson/",
+      "https://hachyderm.io/@vpetersson@hachyderm.io",
+      "https://twitter.com/vpetersson"
+    ]
+  }
+  </script>
+
+  <!-- Custom meta tags -->
+  
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Anton|DM Sans|Roboto|Hanken+Grotesk"
+    />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/native.css">
+  
+  <!-- Font Awesome (bundled from node_modules) -->
+  <link rel="stylesheet" href="/assets/css/fontawesome-core.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-solid.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-brands.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZY6ZNLNNC8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZY6ZNLNNC8');
+
+  // Track outbound links and CTAs
+  function trackEvent(category, action, label, source) {
+    gtag('event', action, {
+      'event_category': category,
+      'event_label': label,
+      'source': source
+    });
+  }
+</script>
+
+
+  <link rel="canonical" href="https://vpetersson.com/about/" />
+</head>
+
+  <body>
+    <!-- Skip Navigation -->
+<a href="#main-content" class="skip-navigation">Skip to main content</a>
+
+<header class="p-8 flex justify-between bg-primaryBG border-b border-white-alpha-20" role="banner">
+  <div class="flex gap-10 justify-between items-center">
+    <a href="/" aria-label="Viktor Petersson - Home">
+      <img src="/assets/images/site/logo-white.svg" alt="Viktor Petersson logo" width="120" height="40" />
+    </a>
+    <nav class="hidden lg:flex gap-6">
+  
+    <a href="/" class="text-white uppercase">HOME</a>
+  
+    <a href="/about" class="text-white uppercase">ABOUT</a>
+  
+    <a href="/consulting" class="text-white uppercase">CONSULTING</a>
+  
+    <a href="/podcast" class="text-white uppercase">PODCAST</a>
+  
+    <a href="/blog" class="text-white uppercase">BLOG</a>
+  
+    <a href="https://studio.viktopia.io/" class="text-white uppercase">VIKTOPIA STUDIO</a>
+  
+</nav>
+
+  </div>
+  <div class="flex gap-2 justify-between items-center">
+    <div class="header-search hidden lg:block">
+      <form action="/search" method="get" role="search">
+        <label for="searchright" class="sr-only">Search the site</label>
+        <input
+          class="search expandright"
+          id="searchright"
+          type="search"
+          name="query"
+          placeholder="Search"
+          aria-label="Search"
+        >
+        <button class="button searchbutton" type="submit" aria-label="Submit search">
+          <span class="mglass" aria-hidden="true">&#9906;</span>
+        </button>
+      </form>
+    </div>
+
+    <div class="hidden lg:block">
+      <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+    </div>
+
+    <!-- Use modern mobile navigation -->
+    <!-- Modern Mobile Navigation -->
+<div class="mobile-nav-container lg:hidden">
+  <!-- Menu Toggle Button -->
+  <button
+    class="mobile-menu-toggle btn-reset touch-target"
+    aria-label="Toggle navigation menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+    data-menu-toggle
+  >
+    <span class="hamburger-icon" aria-hidden="true">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </span>
+  </button>
+
+  <!-- Mobile Menu Backdrop -->
+  <div
+    class="mobile-menu-backdrop"
+    data-menu-backdrop
+    aria-hidden="true"
+  ></div>
+
+  <!-- Mobile Menu Panel -->
+  <nav
+    class="mobile-menu"
+    id="mobile-menu"
+    aria-labelledby="mobile-menu-label"
+    data-menu-panel
+  >
+    <!-- Menu Header -->
+    <div class="mobile-menu-header">
+      <h2 id="mobile-menu-label" class="sr-only">Navigation Menu</h2>
+      <button
+        class="mobile-menu-close btn-reset touch-target"
+        aria-label="Close navigation menu"
+        data-menu-close
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="mobile-menu-list" role="list">
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            HOME
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/about"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            ABOUT
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/consulting"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            CONSULTING
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/podcast"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            PODCAST
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/blog"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            BLOG
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="https://studio.viktopia.io/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            VIKTOPIA STUDIO
+          </a>
+        </li>
+      
+    </ul>
+
+    <!-- Social Links -->
+    <div class="mobile-menu-footer">
+      <div class="mobile-social-links">
+        <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<style>
+/* Mobile Navigation Styles */
+.mobile-nav-container {
+  position: relative;
+}
+
+.mobile-menu-toggle {
+  position: relative;
+  z-index: var(--z-fixed);
+  color: var(--color-white);
+  transition: transform var(--transition-normal);
+
+  &[aria-expanded="true"] {
+    transform: rotate(90deg);
+  }
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 18px;
+  justify-content: space-between;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  transition: all var(--transition-normal);
+  transform-origin: center;
+}
+
+.mobile-menu-toggle[aria-expanded="true"] .hamburger-line {
+  &:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  &:nth-child(2) {
+    opacity: 0;
+  }
+
+  &:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+
+.mobile-menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+  z-index: var(--z-modal);
+}
+
+.mobile-menu-backdrop.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(400px, 100vw);
+  height: 100vh;
+  background: var(--color-gray-900);
+  border-left: 1px solid var(--color-gray-200);
+  transform: translateX(100%);
+  transition: transform var(--transition-normal);
+  z-index: var(--z-modal);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.mobile-menu-close {
+  color: var(--color-white);
+}
+
+.mobile-menu-list {
+  flex: 1;
+  padding: var(--space-4) 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu-item {
+  margin: 0;
+}
+
+.mobile-menu-link {
+  display: block;
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-normal);
+  border-left: 3px solid transparent;
+
+  &:hover {
+    background: var(--color-gray-800);
+    border-left-color: var(--color-primary);
+  }
+
+  &[aria-current="page"] {
+    color: var(--color-primary);
+    border-left-color: var(--color-primary);
+    background: var(--color-gray-800);
+  }
+}
+
+.mobile-menu-footer {
+  padding: var(--space-4);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.mobile-social-links {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+}
+
+/* Simple instant display */
+.mobile-menu-item {
+  opacity: 1;
+}
+</style>
+
+<script>
+// Modern Mobile Navigation JavaScript
+(function() {
+  const menuToggle = document.querySelector('[data-menu-toggle]');
+  const menuPanel = document.querySelector('[data-menu-panel]');
+  const menuBackdrop = document.querySelector('[data-menu-backdrop]');
+  const menuClose = document.querySelector('[data-menu-close]');
+  const menuLinks = document.querySelectorAll('.mobile-menu-link');
+
+  let isOpen = false;
+
+  function openMenu() {
+    isOpen = true;
+    menuToggle.setAttribute('aria-expanded', 'true');
+    menuPanel.classList.add('is-open');
+    menuBackdrop.classList.add('is-visible');
+    document.body.style.overflow = 'hidden';
+
+    // Focus first menu item
+    const firstLink = menuPanel.querySelector('.mobile-menu-link');
+    if (firstLink) {
+      firstLink.focus();
+    }
+  }
+
+  function closeMenu() {
+    isOpen = false;
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuPanel.classList.remove('is-open');
+    menuBackdrop.classList.remove('is-visible');
+    document.body.style.overflow = '';
+
+    // Return focus to toggle button
+    menuToggle.focus();
+  }
+
+  function toggleMenu() {
+    isOpen ? closeMenu() : openMenu();
+  }
+
+  // Event listeners
+  menuToggle.addEventListener('click', toggleMenu);
+  menuClose.addEventListener('click', closeMenu);
+  menuBackdrop.addEventListener('click', closeMenu);
+
+  // Close on link click
+  menuLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isOpen) {
+      closeMenu();
+    }
+  });
+
+  // Trap focus in menu when open
+  menuPanel.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') {
+      const focusableElements = menuPanel.querySelectorAll(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (e.shiftKey && document.activeElement === firstElement) {
+        e.preventDefault();
+        lastElement.focus();
+      } else if (!e.shiftKey && document.activeElement === lastElement) {
+        e.preventDefault();
+        firstElement.focus();
+      }
+    }
+  });
+})();
+</script>
+  </div>
+</header>
+
+    <main id="main-content" class="body">
+      <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://vpetersson.com/about/#person",
+  "name": "Viktor Petersson",
+  "url": "https://vpetersson.com/about/",
+  "image": "https://vpetersson.com/assets/user-gray.webp",
+  "jobTitle": "Tech Entrepreneur",
+  "sameAs": [
+    "https://twitter.com/vpetersson",
+    "https://www.linkedin.com/in/vpetersson/",
+    "https://github.com/vpetersson",
+    "https://hachyderm.io/@vpetersson@hachyderm.io",
+    "https://www.youtube.com/@nerdingoutwithviktor",
+    "https://open.spotify.com/show/7C6yipdVPWgBc6Bwikgo8g",
+    "https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295"
+  ]
+}
+</script>
+<div class="page-header page-header-about">
+  <h2 class="uppercase text-[48px] md:text-[91px] lg:text-[140px] xl:text-[186px] text-white text-center">About</h2>
+</div>
+<div class="bg-secondaryBG">
+  <div class="flex flex-col xl:flex-row gap-[34px] xl:gap-[135px] xl:max-w-[1110px] xl:mx-auto mx-4 sm:mx-6 md:mx-[120px] pt-[40px] xl:pt-[107px] pb-[60px]">
+    <div class="md:max-w-[400px]">
+      <img src="/assets/user-gray.webp" alt="Viktor Petersson" class="rounded-2xl">
+    </div>
+    <div class="flex-1">
+      <p class="text-lg mb-3">
+        My journey into tech entrepreneurship started during my college years, fueled by an obsession with computers and security. I launched YippieMove, an email migration service that tackled the complex challenge of moving data between email providers. From day one, I built it as a remote-first company, giving us the flexibility to hire the best talent regardless of location.
+      </p>
+
+      <p class="text-lg mb-3">
+        After YippieMove, I created Blotter, a productivity app for macOS that I bootstrapped from scratch. The app resonated with users immediately, climbing to the top 10 in the Mac App Store and teaching me valuable lessons about product-market fit and user experience.
+      </p>
+
+      <p class="text-lg mb-3">
+        I dove deep into cloud computing early on, working closely with major cloud providers and becoming an early adopter of containerization with Docker and Kubernetes. My hands-on experience with DevSecOps and security has led me to advise companies and speak at industry events, sharing practical insights from the trenches.
+      </p>
+
+      <p class="text-lg mb-3">
+        My biggest venture has been Screenly, which started with Anthias - now the most popular open-source digital signage solution on GitHub. Building on that foundation, I've grown Screenly into a comprehensive digital signage platform used by organizations like NASA, Lowe's, and Capital One. When I'm not coding or building products, I'm sharing my experiences through my blog and podcast, aiming to help others navigate the intersection of technology and entrepreneurship.
+      </p>
+    </div>
+  </div>
+  
+<div class="subscription-block">
+
+  <div class="flex flex-col items-center gap-6 max-w-4xl mx-auto px-6">
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="https://nerdingoutwithviktor.com/" target="_blank" rel="noopener noreferrer" class="subscription-cta">
+        <i class="fas fa-envelope text-xl"></i>
+        <span>Subscribe to Newsletter</span>
+      </a>
+      <a href="https://www.youtube.com/@nerdingoutwithviktor" target="_blank" rel="noopener noreferrer" class="subscription-cta">
+        <i class="fab fa-youtube text-xl"></i>
+        <span>Subscribe on YouTube</span>
+      </a>
+      <a href="https://open.spotify.com/show/7C6yipdVPWgBc6Bwikgo8g" target="_blank" rel="noopener noreferrer" class="subscription-cta">
+        <i class="fab fa-spotify text-xl"></i>
+        <span>Subscribe on Spotify</span>
+      </a>
+      <a href="https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295" target="_blank" rel="noopener noreferrer" class="subscription-cta">
+        <i class="fab fa-apple text-xl"></i>
+        <span>Subscribe on Apple Podcast</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+</div>
+<div class="bg-primaryBG">
+  <div class="xl:max-w-[1110px] mx-auto px-4 sm:px-6 md:px-[120px] py-[60px]">
+    <h2 class="text-left xl:text-center mb-12">Press, mentions and interviews</h2>
+
+  <div class="flex flex-col xl:flex-row gap-6 xl:gap-[200px] mb-20">
+    <h3 class="text-[#5D5FEF] text-[32px]">2026</h3>
+    <ul>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  FOSDEM
+                  <span class="event-upcoming" style="background-color: #22c55e; color: #fff; padding: 2px 12px; border-radius: 32px; font-size: 12px; font-weight: 500; margin-left: 8px;">Upcoming</span>
+                </div>
+                <div class="text-sm text-gray-500">Brussels, Belgium</div>
+                <div class="mt-1"><p>CRA-Ready SBOMs: A Practical Blueprint for High-Quality Generation</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://fosdem.org/2026/schedule/event/UYTGWA-sbom-generation/" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  QCon London
+                  <span class="event-upcoming" style="background-color: #22c55e; color: #fff; padding: 2px 12px; border-radius: 32px; font-size: 12px; font-weight: 500; margin-left: 8px;">Upcoming</span>
+                </div>
+                <div class="text-sm text-gray-500">London, UK</div>
+                <div class="mt-1"><p>From Chaos to Clarity: Modern SBOM Practices That Actually Work</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://qconlondon.com/presentation/mar2026/chaos-clarity-modern-sbom-practices-actually-work" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="flex flex-col xl:flex-row gap-6 xl:gap-[200px] mb-20">
+    <h3 class="text-[#5D5FEF] text-[32px]">2025</h3>
+    <ul>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-podcast event-type uppercase text-center text-sm">
+              podcast
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  System76 Transmission Log
+                  
+                </div>
+                
+                <div class="mt-1"><p>Linux Hardware, Open Source Summit, and a chat with Screenly</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://system76.transistor.fm/19" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-panel event-type uppercase text-center text-sm">
+              panel
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Digital Signage Summit Europe
+                  
+                </div>
+                <div class="text-sm text-gray-500">Munich, Germany</div>
+                <div class="mt-1"><p>AI &amp; Trust / Cybersecurity / Challenges</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://digitalsignagesummit.org/newfront/sessions/560" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-podcast event-type uppercase text-center text-sm">
+              podcast
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Founder Mode
+                  
+                </div>
+                
+                <div class="mt-1"><p>Remote Boundaries – Saying No Without Burning Bridges with Viktor Petersson</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+                <a href="https://www.youtube.com/watch?v=EaHqs_WCvfU" target="_new">
+                  <img src="/assets/images/site/video.svg" alt="view video" />
+                </a>
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  DevOps Exchange
+                  
+                </div>
+                <div class="text-sm text-gray-500">London, UK</div>
+                <div class="mt-1"><p>Securing Your Software Supply Chain: Why SBOMs Are Essential for DevOps and Compliance</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+                <a href="https://www.youtube.com/watch?v=O0Xmoxtd0-w" target="_new">
+                  <img src="/assets/images/site/video.svg" alt="view video" />
+                </a>
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-guest-post event-type uppercase text-center text-sm">
+              guest post
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Sixteen:Nine
+                  
+                </div>
+                
+                <div class="mt-1"><p>Op-Ed: The Dirty Secret About Compliance And Digital Signage Security</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://www.sixteen-nine.net/2025/08/23/op-ed-the-dirty-secret-about-compliance-and-digital-signage-security/" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Dependency Track Community Meeting
+                  
+                </div>
+                
+                <div class="mt-1"><p>sbomify @ Dependency Track Community Meeting (2025-11-05)</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+                <a href="https://www.youtube.com/watch?v=-mushNOtEPM" target="_new">
+                  <img src="/assets/images/site/video.svg" alt="view video" />
+                </a>
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="flex flex-col xl:flex-row gap-6 xl:gap-[200px] mb-20">
+    <h3 class="text-[#5D5FEF] text-[32px]">2024</h3>
+    <ul>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  State of Open Con
+                  
+                </div>
+                <div class="text-sm text-gray-500">London, UK</div>
+                <div class="mt-1"><p>Screenly’s Journey: Raspberry Pi to x86, BIOS, Coreboot, RISC-V</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+                <a href="https://speakerdeck.com/vpetersson/state-of-open-con-24" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              
+              
+                <a href="https://www.youtube.com/watch?v=vX-qK9mxKZI" target="_new">
+                  <img src="/assets/images/site/video.svg" alt="view video" />
+                </a>
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  BSides
+                  
+                </div>
+                <div class="text-sm text-gray-500">Bristol, UK</div>
+                <div class="mt-1"><p>Navigating The SBOM Landscape: Formats, Relevance, And Tooling In 2024</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+                <a href="https://speakerdeck.com/vpetersson/navigating-the-sbom-landscape-formats-relevance-and-tooling-in-2024-at-bsides-bristol-24" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              
+              
+                <a href="https://www.youtube.com/watch?v=XcNepd1A7Ek" target="_new">
+                  <img src="/assets/images/site/video.svg" alt="view video" />
+                </a>
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  SBOM-a-Rama
+                  
+                </div>
+                <div class="text-sm text-gray-500">Denver, US</div>
+                
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+                <a href="https://github.com/vpetersson/vpetersson.com/blob/master/presentations/2024/sbom-a-rama.pdf" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              
+              
+              
+              
+                <a href="https://www.cisa.gov/news-events/events/sbom-rama-fall-2024" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-press event-type uppercase text-center text-sm">
+              press
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  InfoQ
+                  
+                </div>
+                
+                <div class="mt-1"><p>New Platform sbomify Streamlines Making Software Inventories for SBOMs</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://www.infoq.com/news/2024/09/sbomify-inventories-sboms/" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  London DevOps #85
+                  
+                </div>
+                <div class="text-sm text-gray-500">London, UK</div>
+                <div class="mt-1"><p>The Essential Role of SBOMs</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+                <a href="https://github.com/vpetersson/vpetersson.com/blob/master/presentations/2024/london_devops_85.pdf" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              
+              
+                <a href="https://www.youtube.com/watch?v=AHwLGAeh2ts" target="_new">
+                  <img src="/assets/images/site/video.svg" alt="view video" />
+                </a>
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-press event-type uppercase text-center text-sm">
+              press
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  TechTarget
+                  
+                </div>
+                
+                <div class="mt-1"><p>U.S. Army, Lockheed Martin detail SBOM progress</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://www.techtarget.com/searchitoperations/feature/366611692/US-Army-Lockheed-Martin-detail-SBOM-progress" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Canonical (Ubuntu) Engineering Sprint
+                  
+                </div>
+                <div class="text-sm text-gray-500">The Hague, Netherlands</div>
+                
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+                <a href="https://www.youtube.com/watch?v=5mlR1lPz1no" target="_new">
+                  <img src="/assets/images/site/video.svg" alt="view video" />
+                </a>
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-press event-type uppercase text-center text-sm">
+              press
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  EE Times Europe Magazine
+                  
+                </div>
+                
+                <div class="mt-1"><p>Cybersecurity Legislation Driving SBOMs</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://www.eetimes.eu/cybersecurity-legislation-driving-sboms/" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  CycloneDX / Transparency Exchange API (TEA)'s KoalaCon
+                  
+                </div>
+                
+                
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+                <a href="https://www.youtube.com/watch?v=NStzYW4WnEE" target="_new">
+                  <img src="/assets/images/site/video.svg" alt="view video" />
+                </a>
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="flex flex-col xl:flex-row gap-6 xl:gap-[200px] mb-20">
+    <h3 class="text-[#5D5FEF] text-[32px]">2023</h3>
+    <ul>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Ubuntu Summit
+                  
+                </div>
+                <div class="text-sm text-gray-500">Riga, Latvia</div>
+                <div class="mt-1"><p>From Pets to Cattle: Revolutionizing Edge Computing with Screenly’s Edge Apps</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+                <a href="https://speakerdeck.com/vpetersson/from-pets-to-cattle" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              
+              
+                <a href="https://www.youtube.com/watch?v=oeIkJD3cTtw" target="_new">
+                  <img src="/assets/images/site/video.svg" alt="view video" />
+                </a>
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  #QSRNext
+                  
+                </div>
+                <div class="text-sm text-gray-500">Virtual</div>
+                <div class="mt-1"><p>Beyond Just a Menu Display</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+                <a href="https://speakerdeck.com/vpetersson/beyond-just-a-menu-display" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              
+              
+                <a href="https://www.youtube.com/watch?v=bkzFDTh_DdI" target="_new">
+                  <img src="/assets/images/site/video.svg" alt="view video" />
+                </a>
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-podcast event-type uppercase text-center text-sm">
+              podcast
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  The Shobeir Show
+                  
+                </div>
+                
+                <div class="mt-1"><p>Episode 27</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+                <a href="https://open.spotify.com/episode/2EMPYfIfS7RfBXdmGRMb3P?si=6286b660053e482d&nd=1" target="_new">
+                  <img src="/assets/images/site/spotify.svg" alt="listen to podcast" />
+                </a>
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-podcast event-type uppercase text-center text-sm">
+              podcast
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Default Global
+                  
+                </div>
+                
+                <div class="mt-1"><p>Powering 10K Screens Worldwide: The Screenly Journey with Viktor Petersson</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://www.youtube.com/watch?v=xUi7R_pBc8g" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-press event-type uppercase text-center text-sm">
+              press
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  TechCrunch
+                  
+                </div>
+                
+                <div class="mt-1"><p>Screenly makes it easier to build interactive apps for its digital signage platform</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://techcrunch.com/2023/08/30/screenly-makes-it-easier-to-build-interactive-apps-for-its-digital-signage-platform/" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="flex flex-col xl:flex-row gap-6 xl:gap-[200px] mb-20">
+    <h3 class="text-[#5D5FEF] text-[32px]">2022</h3>
+    <ul>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-press event-type uppercase text-center text-sm">
+              press
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  The Register
+                  
+                </div>
+                
+                <div class="mt-1"><p>Strong support for Snap and Ubuntu Core as Canonical meet IRL</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://www.theregister.com/2022/11/09/canonical_conference/" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Ubuntu Summit
+                  
+                </div>
+                <div class="text-sm text-gray-500">Prague, Czech Republic</div>
+                <div class="mt-1"><p>Five Years of Ubuntu Core</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+                <a href="https://www.youtube.com/watch?v=fVkDqJzXKa0" target="_new">
+                  <img src="/assets/images/site/video.svg" alt="view video" />
+                </a>
+              
+              
+              
+                <a href="https://www.screenly.io/blog/2022/11/29/five-years-of-ubuntu-core/" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="flex flex-col xl:flex-row gap-6 xl:gap-[200px] mb-20">
+    <h3 class="text-[#5D5FEF] text-[32px]">2021</h3>
+    <ul>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-guest-post event-type uppercase text-center text-sm">
+              guest post
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Docker
+                  
+                </div>
+                
+                <div class="mt-1"><p>Compiling Qt with Docker Using Caching</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://www.docker.com/blog/compiling-qt-with-docker-using-caching/" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="flex flex-col xl:flex-row gap-6 xl:gap-[200px] mb-20">
+    <h3 class="text-[#5D5FEF] text-[32px]">2020</h3>
+    <ul>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Cloud Native London
+                  
+                </div>
+                <div class="text-sm text-gray-500">London, UK</div>
+                <div class="mt-1"><p>The DevSecOps Iceberg</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+                <a href="https://speakerdeck.com/vpetersson/the-devsecops-iceberg-at-cloud-native-london" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              
+              
+                <a href="https://youtu.be/BNnP4AmMdQE?t=130" target="_new">
+                  <img src="/assets/images/site/video.svg" alt="view video" />
+                </a>
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-podcast event-type uppercase text-center text-sm">
+              podcast
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Balena's IoT Happy Hour
+                  
+                </div>
+                
+                
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+                <a href="https://www.youtube.com/watch?v=SgCRvEP2KyA" target="_new">
+                  <img src="/assets/images/site/video.svg" alt="view video" />
+                </a>
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-guest-post event-type uppercase text-center text-sm">
+              guest post
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Docker
+                  
+                </div>
+                
+                <div class="mt-1"><p>Compiling Qt with Docker multi-stage and multi-platform</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://www.docker.com/blog/compiling-qt-with-docker-multi-stage-and-multi-platform/" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="flex flex-col xl:flex-row gap-6 xl:gap-[200px] mb-20">
+    <h3 class="text-[#5D5FEF] text-[32px]">2019</h3>
+    <ul>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Docker London
+                  
+                </div>
+                <div class="text-sm text-gray-500">London, UK</div>
+                
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+                <a href="https://speakerdeck.com/vpetersson/whats-mtls-at-docker-london" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Open Source Summit Europe
+                  
+                </div>
+                <div class="text-sm text-gray-500">Lyon, France</div>
+                <div class="mt-1"><p>The ‘S’ in IoT Stands for Security</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+                <a href="https://speakerdeck.com/vpetersson/the-s-in-iot-stands-for-security" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              
+              
+                <a href="https://www.youtube.com/watch?v=7yN999B11Ms&list=PLbzoR-pLrL6pamOj4UifcMJf560Ph6mJp&index=43&t=0s" target="_new">
+                  <img src="/assets/images/site/video.svg" alt="view video" />
+                </a>
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Kubernetes London
+                  
+                </div>
+                <div class="text-sm text-gray-500">London, UK</div>
+                
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+                <a href="https://speakerdeck.com/vpetersson/living-on-the-edge-at-kubernetes-london" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  InfoSecurity Europe
+                  
+                </div>
+                <div class="text-sm text-gray-500">London, UK</div>
+                
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="flex flex-col xl:flex-row gap-6 xl:gap-[200px] mb-20">
+    <h3 class="text-[#5D5FEF] text-[32px]">2018</h3>
+    <ul>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-press event-type uppercase text-center text-sm">
+              press
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  DailyDOOH
+                  
+                </div>
+                
+                <div class="mt-1"><p>Screenly + NEC interview</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+                <a href="https://www.youtube.com/watch?v=LtFCOHrgvs4" target="_new">
+                  <img src="/assets/images/site/video.svg" alt="view video" />
+                </a>
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Open Source Summit North America
+                  
+                </div>
+                <div class="text-sm text-gray-500">Vancouver, Canada</div>
+                <div class="mt-1"><p>The ‘S’ in IoT Stands for Security</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+                <a href="https://events.linuxfoundation.org/wp-content/uploads/2017/11/The-S-in-IoT-Stands-for-Security-Viktor-Petersson-Screenly-Andrew-Martin-Control-Plane.pdf" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Container Camp
+                  
+                </div>
+                <div class="text-sm text-gray-500">Melbourne, Australia</div>
+                <div class="mt-1"><p>The ‘S’ in IoT Stands for Security</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+                <a href="https://docs.google.com/presentation/d/1E1ZzkMmytOoW-aLkWlJzFT1MYLWE2RyAv0qOjQkxDt8/edit?usp=sharing" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              
+              
+                <a href="https://www.youtube.com/watch?v=PmWYTjr_Xso" target="_new">
+                  <img src="/assets/images/site/video.svg" alt="view video" />
+                </a>
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Ansible London
+                  
+                </div>
+                <div class="text-sm text-gray-500">London, UK</div>
+                
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+                <a href="https://speakerdeck.com/vpetersson/provisioner-at-ansible-london" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-guest-post event-type uppercase text-center text-sm">
+              guest post
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Rave Publications
+                  
+                </div>
+                
+                <div class="mt-1"><p>Why Are We Not Talking About Digital Signage Security?</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://www.ravepubs.com/not-talking-digital-signage-security/" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="flex flex-col xl:flex-row gap-6 xl:gap-[200px] mb-20">
+    <h3 class="text-[#5D5FEF] text-[32px]">2016</h3>
+    <ul>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-podcast event-type uppercase text-center text-sm">
+              podcast
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Sixteen:Nine
+                  
+                </div>
+                
+                <div class="mt-1"><p>Podcast Interview</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="http://sixteennine.podbean.com/e/viktor-petersson-screenly/" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-press event-type uppercase text-center text-sm">
+              press
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Ubuntu Insights
+                  
+                </div>
+                
+                <div class="mt-1"><p>Digital signage solution, Screenly, chooses Canonical’s Ubuntu Core</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://blog.ubuntu.com/2016/05/18/digital-signage-solution-screenly-chooses-canonicals-ubuntu-core" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-press event-type uppercase text-center text-sm">
+              press
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Sixteen:Nine
+                  
+                </div>
+                
+                <div class="mt-1"><p>Screenly’s Raspberry Pi-Powered Platform Shifting To New IoT Version Of Ubuntu Linux</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://www.sixteen-nine.net/2016/05/18/screenlys-raspberry-pi-powered-platform-shifting-to-new-iot-version-of-ubuntu-linux/" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-panel event-type uppercase text-center text-sm">
+              panel
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  CloudExpo Europe
+                  
+                </div>
+                <div class="text-sm text-gray-500">London, UK</div>
+                
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  IoT London
+                  
+                </div>
+                <div class="text-sm text-gray-500">London, UK</div>
+                
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+                <a href="https://speakerdeck.com/vpetersson/screenly-at-iot-london" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="flex flex-col xl:flex-row gap-6 xl:gap-[200px] mb-20">
+    <h3 class="text-[#5D5FEF] text-[32px]">2015</h3>
+    <ul>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-press event-type uppercase text-center text-sm">
+              press
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Syncsort
+                  
+                </div>
+                
+                <div class="mt-1"><p>Interview with Viktor Petersson, VP of Business Development for IAAS provider CloudSigma</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://blog.syncsort.com/2015/01/big-data/interview-viktor-petersson-vp-business-development-iaas-provider-cloudsigma/" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  IoT Day @ BBVA Innovation Center
+                  
+                </div>
+                <div class="text-sm text-gray-500">Madrid, Spain</div>
+                
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+                <a href="https://speakerdeck.com/vpetersson/iot-use-case-screenly" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Open Cloud Day
+                  
+                </div>
+                <div class="text-sm text-gray-500">Bern, Switzerland</div>
+                
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+                <a href="https://speakerdeck.com/vpetersson/server-evolution-from-mainframes-to-containers-and-paas" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              
+              
+                <a href="https://www.youtube.com/watch?v=pHdc3f98Kxs&index=11&list=PLofS3lNZckseu0v_CP4XjgDUQxRKfF6gA" target="_new">
+                  <img src="/assets/images/site/video.svg" alt="view video" />
+                </a>
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  ApacheCon North America
+                  
+                </div>
+                <div class="text-sm text-gray-500">Austin, TX</div>
+                
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+                <a href="https://speakerdeck.com/vpetersson/an-introduction-to-cgroups-and-cgroupspy" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  CloudExpo Europe
+                  
+                </div>
+                <div class="text-sm text-gray-500">London, UK</div>
+                
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+                <a href="https://www.youtube.com/watch?v=BfCzbD1WXO8" target="_new">
+                  <img src="/assets/images/site/video.svg" alt="view video" />
+                </a>
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-panel event-type uppercase text-center text-sm">
+              panel
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  CloudExpo Europe
+                  
+                </div>
+                <div class="text-sm text-gray-500">London, UK</div>
+                
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="flex flex-col xl:flex-row gap-6 xl:gap-[200px] mb-20">
+    <h3 class="text-[#5D5FEF] text-[32px]">2014</h3>
+    <ul>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-press event-type uppercase text-center text-sm">
+              press
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Sixteen:Nine
+                  
+                </div>
+                
+                <div class="mt-1"><p>Screenly Q&amp;A: Optimization Crucial For Raspberry Pi Digital Signage</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://www.sixteen-nine.net/2014/03/24/screenly-qa-optimization-crucial-raspberry-pi-digital-signage/" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-press event-type uppercase text-center text-sm">
+              press
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Ubuntu Insights
+                  
+                </div>
+                
+                <div class="mt-1"><p>CloudSigma joins Ubuntu Certified Public Cloud</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://blog.ubuntu.com/2014/10/15/cloudsigma-joins-ubuntu-certified-public-cloud" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Zadara Summit
+                  
+                </div>
+                <div class="text-sm text-gray-500">Las Vegas, NV</div>
+                
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://speakerdeck.com/vpetersson/cloudsigma-zadara-summit" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="flex flex-col xl:flex-row gap-6 xl:gap-[200px] mb-20">
+    <h3 class="text-[#5D5FEF] text-[32px]">2013</h3>
+    <ul>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-press event-type uppercase text-center text-sm">
+              press
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Sixteen:Nine
+                  
+                </div>
+                
+                <div class="mt-1"><p>Screenly Serves Up Raspberry Pi As Alternative To Android Players</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://www.sixteen-nine.net/2013/05/03/screenly-serves-raspberry-pi-alternative-android-players/" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Pi And More 3
+                  
+                </div>
+                <div class="text-sm text-gray-500">Trier, Germany</div>
+                
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+                <a href="https://speakerdeck.com/vpetersson/screenly-at-pi-and-more-3" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  gSocial 2
+                  
+                </div>
+                <div class="text-sm text-gray-500">Sunnyvale, CA</div>
+                
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+                <a href="https://speakerdeck.com/vpetersson/email-migration-best-practices" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="flex flex-col xl:flex-row gap-6 xl:gap-[200px] mb-20">
+    <h3 class="text-[#5D5FEF] text-[32px]">2012</h3>
+    <ul>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-press event-type uppercase text-center text-sm">
+              press
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Data Center Knowledge
+                  
+                </div>
+                
+                <div class="mt-1"><p>Currency Miners Cause Spot Shortages of Dedicated Servers</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://www.informationweek.com/cloud/cloud-storage/cloudsigma-one-tool-for-many-cloud-workloads/d/d-id/1114055" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-press event-type uppercase text-center text-sm">
+              press
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Information Week
+                  
+                </div>
+                
+                <div class="mt-1"><p>CloudSigma: One Tool For Many Cloud Workloads</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://www.informationweek.com/cloud/cloud-storage/cloudsigma-one-tool-for-many-cloud-workloads/d/d-id/1114055" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-press event-type uppercase text-center text-sm">
+              press
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  TechCrunch
+                  
+                </div>
+                
+                <div class="mt-1"><p>YippieMove Wants To Become The Twilio Of Email Migration</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://techcrunch.com/2012/02/07/yippiemove-wants-to-become-the-twilio-of-email-migration/" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-talk event-type uppercase text-center text-sm">
+              talk
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  NoSQL Road Show
+                  
+                </div>
+                <div class="text-sm text-gray-500">Basel, Switzerland</div>
+                
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+                <a href="https://speakerdeck.com/vpetersson/mongodbs-replica-sets-painless-scaling-and-high-availability-ha" target="_new">
+                  <img src="/assets/images/site/deck.svg" alt="view deck" />
+                </a>
+              
+              
+              
+              
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="flex flex-col xl:flex-row gap-6 xl:gap-[200px] mb-20">
+    <h3 class="text-[#5D5FEF] text-[32px]">2009</h3>
+    <ul>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-press event-type uppercase text-center text-sm">
+              press
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  NyTeknik
+                  
+                </div>
+                
+                <div class="mt-1"><p>Flyttgubbe på nätet för över din e-post (Swedish)</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://www.nyteknik.se/digitalisering/flyttgubbe-pa-natet-for-over-din-e-post-6408650" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="flex flex-col xl:flex-row gap-6 xl:gap-[200px] mb-20">
+    <h3 class="text-[#5D5FEF] text-[32px]">2008</h3>
+    <ul>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-press event-type uppercase text-center text-sm">
+              press
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  CNET
+                  
+                </div>
+                
+                <div class="mt-1"><p>Yippie Move migrates all your e-mail for ten bucks</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://www.cnet.com/news/yippie-move-migrates-all-your-e-mail-for-ten-bucks/" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-press event-type uppercase text-center text-sm">
+              press
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  GigaOM
+                  
+                </div>
+                
+                <div class="mt-1"><p>YippieMove Offers Email Portability</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://gigaom.com/2008/08/14/yippiemove-email-portability/" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="flex flex-col xl:flex-row gap-6 xl:gap-[200px] ">
+    <h3 class="text-[#5D5FEF] text-[32px]">Other</h3>
+    <ul>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-other event-type uppercase text-center text-sm">
+              other
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <p>FreeBSD’s - Highly Available Storage (HAST)</p>
+
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://www.freebsd.org/doc/en/books/handbook/disks-hast.html" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-guest-post event-type uppercase text-center text-sm">
+              guest post
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  BitTorrent - Sync Dev
+                  
+                </div>
+                
+                <div class="mt-1"><p>Securely Deploying Sync</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://www.resilio.com/blog/sync-dev-securely-deploying-sync" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-guest-post event-type uppercase text-center text-sm">
+              guest post
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Weave
+                  
+                </div>
+                
+                <div class="mt-1"><p>How Weave Net Enables a Global Docker Cluster with OnApp</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://www.weave.works/blog/weave-global-docker-cluster/" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+        <li class="flex mb-6 gap-3 justify-start">
+          <div class="w-[110px]">
+            <span class="event-guest-post event-type uppercase text-center text-sm">
+              guest post
+            </span>
+          </div>
+          <div class="event-title flex flex-col md:flex-row items-start gap-3 flex-1">
+            <div class="flex-1">
+              
+                <div class="font-semibold">
+                  Weave
+                  
+                </div>
+                
+                <div class="mt-1"><p>Living on the Edge - How Screenly Monitors Edge IoT Devices with Prometheus</p>
+</div>
+              
+            </div>
+            <div class="flex gap-2 items-center shrink-0">
+              
+              
+              
+              
+                <a href="https://www.weave.works/blog/living-on-the-edge-how-screenly-monitors-edge-iot-devices-with-prometheus" target="_new">
+                  <img src="/assets/images/site/link.svg" alt="visit link" />
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+
+  </div>
+</div>
+
+    </main>
+    <footer class="py-[60px] md:pt-[74px] md:pb-[40px] px-[25px] md:px-[120px] text-altPrimaryText">
+  <div class="mb-[60px]">
+    <a href="/">
+      <img class="w-[200px] md:w-[320px]" src="/assets/images/site/logo.svg" alt="logo" />
+    </a>
+  </div>
+  <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-8 lg:mb-6">
+    <nav class="flex flex-col md:flex-row gap-6 md:gap-8 mb-20 lg:mb-0">
+      
+        <a href="/" class="">HOME</a>
+      
+        <a href="/about" class="">ABOUT</a>
+      
+        <a href="/consulting" class="">CONSULTING</a>
+      
+        <a href="/podcast" class="">PODCAST</a>
+      
+        <a href="/blog" class="">BLOG</a>
+      
+        <a href="https://studio.viktopia.io/" class="">VIKTOPIA STUDIO</a>
+      
+    </nav>
+    <div class="flex gap-[13px]">
+      <a href="https://twitter.com/vpetersson">
+        <img src="/assets/images/site/x.svg" alt="x logo" />
+      </a>
+      <a href="https://github.com/vpetersson">
+        <img src="/assets/images/site/github.svg" alt="github logo" />
+      </a>
+      <a href="https://www.linkedin.com/in/vpetersson/">
+        <img src="/assets/images/site/linkedin.svg" alt="linkedIn logo" />
+      </a>
+    </div>
+  </div>
+  <hr class="mb-8 lg:mb-10 bg-[#000212] h-[3px] bg-opacity-20 border-0" />
+  <div>
+    <p class="font-[Inter] text-base">&copy; Viktor Petersson</p>
+  </div>
+</footer>
+
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/code-blocks.js" defer></script>
+  </body>
+</html>

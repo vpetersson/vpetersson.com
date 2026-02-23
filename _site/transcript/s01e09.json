@@ -1,0 +1,3740 @@
+[
+  {
+    "sentence": "Today's guest on the show is Chris Swan, an OG from the London tech world and we first met many years back and I bumped into him most recently at State of OpenCon in London where we're both speaking at State of OpenCon.",
+    "startTime": "00:02",
+    "endTime": "00:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Chris gave a talk about Open SSF scorecards and I really got intrigued by this concept and afterwards I had a lot of questions so I asked him to come on the show to explore this subject a bit further.",
+    "startTime": "00:17",
+    "endTime": "00:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So welcome to the show, Chris.",
+    "startTime": "00:29",
+    "endTime": "00:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Thanks Victor.",
+    "startTime": "00:32",
+    "endTime": "00:33",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And perhaps for the viewers, perhaps you can give a bit of backstory about yourself, your experience in tech and basically who you are for sure.",
+    "startTime": "00:33",
+    "endTime": "00:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I'm presently an engineer atSign, that's a company where we're building a Networking 2.0 platform that helps people connect to things and entities and other people over end to end encrypted channels through personal data services.",
+    "startTime": "00:44",
+    "endTime": "01:02",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's obviously security critical functionality which is what got us into OpenSSF and scorecards.",
+    "startTime": "01:03",
+    "endTime": "01:12",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Going back a little further, I started my career in the Royal Navy as a combat systems engineer, found my way from there into sort of the end of the dot com bubble doing.com consulting which took me into financial services.",
+    "startTime": "01:13",
+    "endTime": "01:30",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Spent a bunch of time in banks building large scale systems and then found my way into the startup world which I think is when our paths first crossed when I was at Cohesive Networks, so my first time around building next generation networky things.",
+    "startTime": "01:30",
+    "endTime": "01:50",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So at the time networking for the cloud and bringing containers into networking.",
+    "startTime": "01:50",
+    "endTime": "01:55",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Since then I spent a bunch of time at CSE and then DXE in the IT services world, but kind of happy to be back at the coalface cutting code in startup land.",
+    "startTime": "01:56",
+    "endTime": "02:09",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, definitely got a lot of experience there to bring to the table, so maybe we can start.",
+    "startTime": "02:10",
+    "endTime": "02:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "For people not familiar with OpenSSF, it's a relatively new organization or entity I guess maybe.",
+    "startTime": "02:15",
+    "endTime": "02:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Can you give some more backstory what OpenSSF is?",
+    "startTime": "02:21",
+    "endTime": "02:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I know you're not directly involved, but just to give some more backstory of what that is to start with.",
+    "startTime": "02:23",
+    "endTime": "02:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "02:27",
+    "endTime": "02:27",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So OpenSSF is the open Source Security Foundation.",
+    "startTime": "02:27",
+    "endTime": "02:31",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It sits within Linux foundation, so it's kind of there alongside of perhaps more familiar organizations like Cloud Native Compute Foundation.",
+    "startTime": "02:31",
+    "endTime": "02:41",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If I kind of look at the primary movers, there's an awful lot of energy initially seems to have come from Google and so I think Google has been on a mission to lift the bar for everybody on security, but also to show that what they're doing and what they're building is secure.",
+    "startTime": "02:43",
+    "endTime": "03:07",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So this is where I first came across Scorecard.",
+    "startTime": "03:07",
+    "endTime": "03:11",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So A little while back, the Dart and Flutter projects, which we make a great deal of use of at Sign, did a blog post about how they'd adopted Scorecard and put scorecards onto their repos.",
+    "startTime": "03:11",
+    "endTime": "03:26",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this immediately seemed to us like a good way of showing people that we care about security.",
+    "startTime": "03:26",
+    "endTime": "03:33",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I saw Google using this as a way of saying, here is a badge on our repo, which is showing you a visual indicator of we care about the security of what we're putting in front of you here.",
+    "startTime": "03:33",
+    "endTime": "03:47",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so we adopted it for similar purposes as a way of showing that we care.",
+    "startTime": "03:48",
+    "endTime": "03:56",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And when I'm talking to our sales guys about this, they say they get questions from potential customers about security and they point at the scorecards, and that's very often the end of that conversation.",
+    "startTime": "03:56",
+    "endTime": "04:11",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The prospect's happy that they've been shown something that gives them confidence that we're doing the right things.",
+    "startTime": "04:11",
+    "endTime": "04:19",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's really interesting.",
+    "startTime": "04:20",
+    "endTime": "04:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then you guys at Sign, those are open source repos, correct?",
+    "startTime": "04:21",
+    "endTime": "04:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, they are.",
+    "startTime": "04:26",
+    "endTime": "04:27",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So in that sense, it makes a lot of sense.",
+    "startTime": "04:28",
+    "endTime": "04:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What about for private repos?",
+    "startTime": "04:30",
+    "endTime": "04:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Can this be used for the same methodology for private repos and just show the scorecard number or some kind of manifestation of that?",
+    "startTime": "04:32",
+    "endTime": "04:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or is it purely open source?",
+    "startTime": "04:38",
+    "endTime": "04:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I guess if it's a private repo, who are you showing that you care?",
+    "startTime": "04:40",
+    "endTime": "04:45",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It can be the insiders in your own organization.",
+    "startTime": "04:46",
+    "endTime": "04:49",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there's really very little to stop you from using the scorecard on a private repo.",
+    "startTime": "04:49",
+    "endTime": "04:56",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think the discipline that comes from kind of going through the exercise of getting a decent score on a scorecard is something that you would want to do as an organization anyway.",
+    "startTime": "04:57",
+    "endTime": "05:10",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so, yeah, doing it for private repos makes a ton of sense.",
+    "startTime": "05:10",
+    "endTime": "05:14",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If I look at our own practice, a lot of the things that we do in our public repositories have now become sort of so baked into the culture of the organization that they're just part of how we do private repos.",
+    "startTime": "05:15",
+    "endTime": "05:29",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Anyway.",
+    "startTime": "05:30",
+    "endTime": "05:30",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We've not gone as far as actually implementing Scorecard on private repos, but we're sort of beneficiaries of having done it on a chunk of the public repos.",
+    "startTime": "05:30",
+    "endTime": "05:41",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's more like it has driven a cultural shift or a behavioral shift across the teams to even to apply the same methodology across private repositories.",
+    "startTime": "05:41",
+    "endTime": "05:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "05:49",
+    "endTime": "05:50",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "05:50",
+    "endTime": "05:51",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay, so that's really interesting.",
+    "startTime": "05:51",
+    "endTime": "05:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Let's dive in and unpack a little bit what an SF scorecard is.",
+    "startTime": "05:52",
+    "endTime": "05:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I know we probably gotta dive into demo in a little bit, but before we dive into the actual demo.",
+    "startTime": "05:57",
+    "endTime": "06:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Maybe we can start with like what constitutes the scorecard, what goes into it, what are the criterias and what's been picked up and so on.",
+    "startTime": "06:01",
+    "endTime": "06:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's looking at a bunch of different measures to produce a composite score.",
+    "startTime": "06:10",
+    "endTime": "06:17",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So things like dependencies.",
+    "startTime": "06:18",
+    "endTime": "06:21",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Are you diligently managing your dependencies?",
+    "startTime": "06:22",
+    "endTime": "06:25",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And one of the things that it can go and measure there is are you pinning your dependencies to Shars?",
+    "startTime": "06:25",
+    "endTime": "06:31",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, right.",
+    "startTime": "06:31",
+    "endTime": "06:32",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So not only version, but even sha's.",
+    "startTime": "06:33",
+    "endTime": "06:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "06:35",
+    "endTime": "06:36",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay.",
+    "startTime": "06:36",
+    "endTime": "06:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so it's looking then into your GitHub action workflows, your lock files for the package managers that supported, and checking that you've got things pinned to Shars there.",
+    "startTime": "06:39",
+    "endTime": "06:55",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so you need to do that to get a score of 10.",
+    "startTime": "06:56",
+    "endTime": "07:00",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's just one piece.",
+    "startTime": "07:01",
+    "endTime": "07:03",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Another piece would be are you running CI and doing automated testing, are you doing static source code analysis or are you doing dynamic source analysis?",
+    "startTime": "07:03",
+    "endTime": "07:17",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And how does it do this?",
+    "startTime": "07:18",
+    "endTime": "07:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Does it look at like, oh, I'm using Sonar Cloud for automatic audit, or I'm using Dependabot for mobility scanning.",
+    "startTime": "07:19",
+    "endTime": "07:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like how does it actually pick up on those variables?",
+    "startTime": "07:27",
+    "endTime": "07:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's got a bunch of, I guess, the commonly used tools applying to the commonly used language and frameworks that it's able to go and measure things.",
+    "startTime": "07:30",
+    "endTime": "07:42",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There are definitely white spaces around that.",
+    "startTime": "07:43",
+    "endTime": "07:48",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And being an open source project itself, there are routes for people to contribute and get their preferred tools into the fold.",
+    "startTime": "07:48",
+    "endTime": "08:01",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's not entirely covering every single possibility, but with the stuff we've done, and we're a little bit off the beaten path with a lot of stuff in Dart and Flutter, we quite often find that there's not, for example, tool support in LaunchDarkly or Honeycomb or Snyk for Dart.",
+    "startTime": "08:01",
+    "endTime": "08:29",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And yet we've found that, and maybe because of the effort within Google to get Dart scorecarded, it is actually reasonably well covered by the Scorecard framework.",
+    "startTime": "08:30",
+    "endTime": "08:42",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so the only place that we really run into trouble there is on dynamic analysis, because that's normally third party tools.",
+    "startTime": "08:42",
+    "endTime": "08:52",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so if you look at Dart itself, it's using an open fuzzing project.",
+    "startTime": "08:52",
+    "endTime": "08:58",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But that's kind of unique to Dart itself.",
+    "startTime": "08:59",
+    "endTime": "09:03",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not like I can pick up that open fuzzing project and apply it to my use of Dart.",
+    "startTime": "09:03",
+    "endTime": "09:07",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you end up with a few things that are difficult to accomplish.",
+    "startTime": "09:09",
+    "endTime": "09:14",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that kind of leads me into one of the measures is compliance to OpenSSF best practices, which were previously called CII best practices.",
+    "startTime": "09:14",
+    "endTime": "09:25",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's quite an extensive questionnaire that you can sort of fill in on an online form.",
+    "startTime": "09:26",
+    "endTime": "09:33",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And there's three levels there.",
+    "startTime": "09:33",
+    "endTime": "09:37",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there's a sort of passing level which gets you, I think a score of five and then there's a silver level and your score goes up a bit more and then there's a gold level.",
+    "startTime": "09:37",
+    "endTime": "09:45",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And even just getting a passing score is a lot of spade work.",
+    "startTime": "09:45",
+    "endTime": "09:52",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that was one of the things as were implementing it initially.",
+    "startTime": "09:53",
+    "endTime": "09:58",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We kind of filled out those forms as a sort of first pass at here's where we are.",
+    "startTime": "09:58",
+    "endTime": "10:04",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it gave us a measure of okay, there's a bunch of things we're going to have to go and do to actually finish here.",
+    "startTime": "10:04",
+    "endTime": "10:11",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And these are like, yes, we're using CI more like a subjective assessment or like, yes, we have a unit test, yes, we have integration tests.",
+    "startTime": "10:11",
+    "endTime": "10:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Are they actually going like, what's your code coverage or to what degree?",
+    "startTime": "10:19",
+    "endTime": "10:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So a lot of it is simply questionnaire.",
+    "startTime": "10:24",
+    "endTime": "10:28",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It does ask for evidence and I think where people provide evidence, then that provides a bit of an audit trail for anybody coming and checking their homework, especially where it is open source and they can go and look at the repo and see that thing has actually been implemented.",
+    "startTime": "10:28",
+    "endTime": "10:45",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "10:46",
+    "endTime": "10:46",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you take something like testing, one of the questions would be, are you doing tests?",
+    "startTime": "10:47",
+    "endTime": "10:53",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you can say yes.",
+    "startTime": "10:53",
+    "endTime": "10:54",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But another question might be something like, do you have a policy that new tests should be added every time you add new functionality and you may have a document that contains a written down version of that policy?",
+    "startTime": "10:54",
+    "endTime": "11:10",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Or you might more informally have an expectation in a dev team that's just how we do things around here.",
+    "startTime": "11:10",
+    "endTime": "11:16",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "11:16",
+    "endTime": "11:17",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It might even be evidenced in not one place, but in a series of PRs where it's sort of, you can see the tests are there or you can see that when the tests weren't there, the PR reviewer was saying, what about tests?",
+    "startTime": "11:17",
+    "endTime": "11:32",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, right.",
+    "startTime": "11:33",
+    "endTime": "11:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay.",
+    "startTime": "11:34",
+    "endTime": "11:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "11:35",
+    "endTime": "11:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because I think, I mean, we are starting to emerge more like a blueprint for how software is built on GitHub today, with GitHub Actions now becoming kind of the blueprint for at least for a lot of companies out there using.",
+    "startTime": "11:36",
+    "endTime": "11:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I guess you can infer a lot from.",
+    "startTime": "11:48",
+    "endTime": "11:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Based on just parsing the YAML files from GitHub Action, see what you're doing.",
+    "startTime": "11:51",
+    "endTime": "11:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But it sounds like you're almost getting into compliance territory like socarize or whatever when they ask for evidence and so on.",
+    "startTime": "11:56",
+    "endTime": "12:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And with regards to, with these workflows, does it infer things like you require pull requests and you require to merge to master, you require more than One review sign commits.",
+    "startTime": "12:04",
+    "endTime": "12:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Does it go into that territory as well, or is that.",
+    "startTime": "12:17",
+    "endTime": "12:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "12:19",
+    "endTime": "12:20",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So one of the areas that it looks at is branch protection.",
+    "startTime": "12:20",
+    "endTime": "12:23",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay.",
+    "startTime": "12:23",
+    "endTime": "12:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so it'll actually look at the detail of the branch protection config on your repo and it'll specifically award marks based on a bunch of the things that you just rattled off there.",
+    "startTime": "12:24",
+    "endTime": "12:36",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you are not mandating reviews, then that's a big thing.",
+    "startTime": "12:36",
+    "endTime": "12:44",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you're not having mandatory tests, that's another one, and so on.",
+    "startTime": "12:44",
+    "endTime": "12:50",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there's certain things that it's not very pushy about.",
+    "startTime": "12:51",
+    "endTime": "12:54",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So signed commits.",
+    "startTime": "12:54",
+    "endTime": "12:56",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I could choose to have mandated signed commits.",
+    "startTime": "12:57",
+    "endTime": "13:02",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that's not something that's particularly friendly in an open source community.",
+    "startTime": "13:02",
+    "endTime": "13:08",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "With the new changes at GitHub though, where you can actually use your SSH key to sign, which I think is kind of moot, but you can do it.",
+    "startTime": "13:09",
+    "endTime": "13:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I guess the bar is slightly lower than having to set up PGP for that, I guess.",
+    "startTime": "13:15",
+    "endTime": "13:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But yes, it absolutely is.",
+    "startTime": "13:18",
+    "endTime": "13:20",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And certainly that's my preferred way of signing commits these days.",
+    "startTime": "13:20",
+    "endTime": "13:24",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, but that's some.",
+    "startTime": "13:24",
+    "endTime": "13:28",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's one of the areas where I'm glad it's not a measure in the scorecard as yet, because it's.",
+    "startTime": "13:28",
+    "endTime": "13:34",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's something that I'm not super keen on inflicting upon, you know, every.",
+    "startTime": "13:34",
+    "endTime": "13:40",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Everybody that wants to come along and make a pr, especially when we get into, you know, the Hacktoberfest type of contributors, where you're very often dealing with people who are new to open source and just trying to get started.",
+    "startTime": "13:40",
+    "endTime": "13:58",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I mean, and that's spot on, I guess, for open source projects.",
+    "startTime": "13:58",
+    "endTime": "14:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Probably less important, more like as a corporate policy, for instance, that's cleanly.",
+    "startTime": "14:02",
+    "endTime": "14:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We require signed commits for everything that goes into our repos, but we can control that because they're all employees.",
+    "startTime": "14:06",
+    "endTime": "14:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Whereas if it's an open source project.",
+    "startTime": "14:13",
+    "endTime": "14:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Very different.",
+    "startTime": "14:15",
+    "endTime": "14:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I completely agree with that.",
+    "startTime": "14:15",
+    "endTime": "14:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then talk to me for a bit about language support, because a lot of these things are language specific.",
+    "startTime": "14:19",
+    "endTime": "14:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "14:24",
+    "endTime": "14:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You mentioned Dart and Rust, but Dart and Flutter.",
+    "startTime": "14:24",
+    "endTime": "14:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How about other languages like Rust, Python, Go?",
+    "startTime": "14:28",
+    "endTime": "14:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What's the ecosystem like for those level of features?",
+    "startTime": "14:31",
+    "endTime": "14:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's reasonably well covered.",
+    "startTime": "14:35",
+    "endTime": "14:39",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If I look at the languages we've been working in, we're quite polyglot because we're building a protocol and a platform and providing a whole bunch of SDKs to support that.",
+    "startTime": "14:39",
+    "endTime": "14:51",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I've been working with stuff in C C, Java, Rust, Go, Python, Micropython, and so all of those seem to be reasonably well understood by the scorecard.",
+    "startTime": "14:52",
+    "endTime": "15:12",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Some of those are challenging in terms of again things like dynamic analysis tools.",
+    "startTime": "15:13",
+    "endTime": "15:21",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So where you're kind of on the well trodden path with languages like say Java, then the route is very clear.",
+    "startTime": "15:22",
+    "endTime": "15:31",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You could go and pick from a whole range of dynamic analysis tools and you'd be good with that.",
+    "startTime": "15:32",
+    "endTime": "15:37",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "15:37",
+    "endTime": "15:38",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Whereas with some of the less traveled areas, Micropython springs to mind, you're a bit more sort of on your own with that.",
+    "startTime": "15:39",
+    "endTime": "15:53",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Or it may just be that you can't actually do dynamic analysis and you just have to accept that.",
+    "startTime": "15:53",
+    "endTime": "16:02",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you getting a score of 8 which gets you a green badge.",
+    "startTime": "16:02",
+    "endTime": "16:09",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think there's a bit of a Pareto thing to this.",
+    "startTime": "16:10",
+    "endTime": "16:13",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I think it's kind of 20% of the effort to get 80% of the score.",
+    "startTime": "16:13",
+    "endTime": "16:17",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "16:17",
+    "endTime": "16:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then it's all uphill from there because it's 80% of the effort to get the other residual 20%.",
+    "startTime": "16:18",
+    "endTime": "16:26",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so yeah, I'm quite happy that our range of scorecards is all sort of in the eights.",
+    "startTime": "16:26",
+    "endTime": "16:35",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Eight upwards.",
+    "startTime": "16:35",
+    "endTime": "16:36",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Getting nines and above is really super hard.",
+    "startTime": "16:37",
+    "endTime": "16:43",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you don't even see that on the Google Repos or even the OpenSSF's own repos.",
+    "startTime": "16:43",
+    "endTime": "16:51",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so good luck to people trying to accomplish that.",
+    "startTime": "16:52",
+    "endTime": "16:58",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And 10 kind of is almost a horizon objective.",
+    "startTime": "16:58",
+    "endTime": "17:02",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You could do it in hello World, but a real project might be difficult.",
+    "startTime": "17:02",
+    "endTime": "17:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "17:05",
+    "endTime": "17:06",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, so actually even hello World, you'd have to put so much stuff around hello World to get that.",
+    "startTime": "17:06",
+    "endTime": "17:17",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How are you going to test hello World?",
+    "startTime": "17:18",
+    "endTime": "17:20",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Where's your it prints it.",
+    "startTime": "17:21",
+    "endTime": "17:22",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Great.",
+    "startTime": "17:22",
+    "endTime": "17:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "17:23",
+    "endTime": "17:23",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So yeah, actually you can test hello World pretty easily, but how are you going to fuzz it?",
+    "startTime": "17:24",
+    "endTime": "17:31",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so if you've got the right language, then of course you can just wheel out a fuzzer and say I'm going to fuzz my hello World.",
+    "startTime": "17:32",
+    "endTime": "17:38",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But if not, a bunch of these things are fairly challenging and a lot of the stuff, especially when it gets to how are you going to get gold on the best practices is getting into questions of organization and culture and policy about how you do development as much as it is artifacts in front of you.",
+    "startTime": "17:40",
+    "endTime": "18:06",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh.",
+    "startTime": "18:06",
+    "endTime": "18:06",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it goes into how you run your team, how you do agile and so on as well.",
+    "startTime": "18:06",
+    "endTime": "18:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Not quite that invasive because I think it has to be very accommodating to, you know, different strokes for different folks.",
+    "startTime": "18:12",
+    "endTime": "18:20",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But then again, as I kind of go through those questionnaires, it feels to me like there's a lot of bias towards sea, for instance, that there's a whole bunch of sins of the past have been committed in C development.",
+    "startTime": "18:21",
+    "endTime": "18:38",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so there's a whole bunch of best practices to make sure that we're not repeating those sins of the past.",
+    "startTime": "18:39",
+    "endTime": "18:44",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And of course, if you're using something other than C like Rust and so memory safety isn't the same concern as it was before, then you're maybe answering not applicable to those questions, rather than, yes, we're doing this stuff to make sure that we're not repeating the sins of the past.",
+    "startTime": "18:45",
+    "endTime": "19:05",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "19:06",
+    "endTime": "19:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it sounds like it's opinionated by a lot of things with regard to things like linting and best practices.",
+    "startTime": "19:07",
+    "endTime": "19:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is that also covered or is that separate entirely?",
+    "startTime": "19:14",
+    "endTime": "19:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So linting is definitely a piece of the puzzle.",
+    "startTime": "19:18",
+    "endTime": "19:23",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's one of the things that's got me doing markdown linting for our docs repos.",
+    "startTime": "19:23",
+    "endTime": "19:31",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That is a pain in the ass.",
+    "startTime": "19:33",
+    "endTime": "19:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I've done that.",
+    "startTime": "19:34",
+    "endTime": "19:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it's definitely counterintuitive.",
+    "startTime": "19:35",
+    "endTime": "19:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "When you start doing it, you get.",
+    "startTime": "19:37",
+    "endTime": "19:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Used to it, but yes, exactly.",
+    "startTime": "19:38",
+    "endTime": "19:41",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think you do get used to it.",
+    "startTime": "19:41",
+    "endTime": "19:43",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then these become sort of norms in the organization.",
+    "startTime": "19:44",
+    "endTime": "19:47",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so I've recently seen colleagues now submitting nicely linted markdown.",
+    "startTime": "19:48",
+    "endTime": "19:55",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Even in the repos where we don't have automated markdown linting because it's becoming part of their standard tool workflow, it's sort of, oh, I've written some markdown, so let's just lint it before I do a commit with it.",
+    "startTime": "19:56",
+    "endTime": "20:10",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's kind of great to see that discipline taking hold.",
+    "startTime": "20:10",
+    "endTime": "20:15",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If I go back to sort of earlier in our journey, then we introduced conventional commits and semantic PR to check that people were doing conventional commits.",
+    "startTime": "20:15",
+    "endTime": "20:28",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And at first that was a bit of a lift for the organization.",
+    "startTime": "20:28",
+    "endTime": "20:36",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And especially as we had new people coming on board, less experienced interns and the like, it was sort of, oh, I don't understand what this thing is, and so I'm not going to do it.",
+    "startTime": "20:36",
+    "endTime": "20:51",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Whereas now it's just so embedded in how we do things.",
+    "startTime": "20:51",
+    "endTime": "20:56",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "My favorite definition of culture is the way things work around here.",
+    "startTime": "20:56",
+    "endTime": "21:00",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so conventional commits is part of the way things work around here at Sign.",
+    "startTime": "21:01",
+    "endTime": "21:06",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so even though we've never mandated it, we have the Somatic PR check installed as an app, and it'll show the horrible little red cross for anybody that hasn't done a conventional commitment.",
+    "startTime": "21:06",
+    "endTime": "21:22",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we've then seen that as a whole generation of interns has flown through the organization, the people before them, kind of getting them started, just said, this is part of how we work around here.",
+    "startTime": "21:22",
+    "endTime": "21:38",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it kind of happened much more organically the other thing thinking back a bit was the implementation of All Star, and this is another OpenSSF project and it's something that I think is a good foundation to doing scorecards.",
+    "startTime": "21:39",
+    "endTime": "22:01",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So this is again, an app that can be installed into a GitHub organization.",
+    "startTime": "22:02",
+    "endTime": "22:08",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's a certain amount of config can be applied to it from a dot repo, but it's looking for some of the same things as a scorecard is.",
+    "startTime": "22:09",
+    "endTime": "22:19",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So do you have brand protection?",
+    "startTime": "22:19",
+    "endTime": "22:21",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Do you make sure that you don't have binaries in your repos, have you got a security MD and these kinds of questions.",
+    "startTime": "22:22",
+    "endTime": "22:32",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So a bunch of it is about repo content and a bunch of it is about repo config.",
+    "startTime": "22:32",
+    "endTime": "22:38",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so it's checking across those areas and it'll automatically raise issues if something is found or if something reoccurs.",
+    "startTime": "22:38",
+    "endTime": "22:51",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, for example, start of the year we had the CES show in Vegas.",
+    "startTime": "22:52",
+    "endTime": "23:03",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "One of my colleagues went off to there.",
+    "startTime": "23:03",
+    "endTime": "23:05",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We were demoing some stuff with our partners at qt and he came back and very enthusiastically kind of checked in all of the demo code.",
+    "startTime": "23:05",
+    "endTime": "23:14",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And in amongst that, I think it was Python, was a whole bunch of compiled Python.",
+    "startTime": "23:14",
+    "endTime": "23:22",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "23:23",
+    "endTime": "23:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so immediately the All Star checker kind of then reopens the issue on the demo repo as a, we shouldn't have binaries in here.",
+    "startTime": "23:24",
+    "endTime": "23:36",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's kind of, do we need that binary there?",
+    "startTime": "23:37",
+    "endTime": "23:39",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No, we don't actually need that binary there.",
+    "startTime": "23:39",
+    "endTime": "23:41",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we can go and purge it.",
+    "startTime": "23:41",
+    "endTime": "23:43",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So one of the things that, in my experience, at least when applying security, or I should say automated security, I guess, with pull request checks and whatnot, is that it always, at least in the beginning, introduce a fair bit of friction before people are used to it.",
+    "startTime": "23:44",
+    "endTime": "23:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "23:59",
+    "endTime": "24:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And in particular, when you need to get things out fast, it's always a trade off between speed of delivery and being secure.",
+    "startTime": "24:00",
+    "endTime": "24:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What has been your experience around that?",
+    "startTime": "24:07",
+    "endTime": "24:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because I mean, at least in my experience that there is a pain point around that as you start, at least before it becomes how we do things around here, but at least before you get that point in terms of how much did you feel it slowed things down.",
+    "startTime": "24:09",
+    "endTime": "24:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So we've not done much to the sort of mainline path through, you know, continuous delivery pipelines.",
+    "startTime": "24:24",
+    "endTime": "24:35",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I've always had a target of 10 minutes, the sort of Dave Foley approach.",
+    "startTime": "24:37",
+    "endTime": "24:43",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "People should be getting feedback quickly enough that they're not context switching out of the work that they were doing.",
+    "startTime": "24:44",
+    "endTime": "24:50",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "24:50",
+    "endTime": "24:51",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And actually, you know, I generally try and orchestrate the pipeline so that they're Completing in less than five minutes.",
+    "startTime": "24:52",
+    "endTime": "25:00",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's doable for smaller projects.",
+    "startTime": "25:02",
+    "endTime": "25:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But if like a very big project, it's very difficult target to meet if you have a lot of code needs to be compiled, for instance across platforms and whatnot.",
+    "startTime": "25:03",
+    "endTime": "25:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "25:10",
+    "endTime": "25:11",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so we try and carve things up into small enough chunks that we are looking at small pieces and getting that quick feedback.",
+    "startTime": "25:12",
+    "endTime": "25:21",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The scorecard itself is just another parallel GitHub action workflow.",
+    "startTime": "25:22",
+    "endTime": "25:28",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "25:28",
+    "endTime": "25:29",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's non disruptive.",
+    "startTime": "25:29",
+    "endTime": "25:31",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What's occasionally happening there is, you know, colleagues are doing work that ends up digging the scorecard and then there's some follow up remedial work to get the score back to where we want it to be.",
+    "startTime": "25:32",
+    "endTime": "25:48",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "25:48",
+    "endTime": "25:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you don't have as an acceptance criteria, you block it.",
+    "startTime": "25:48",
+    "endTime": "25:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If somebody pushes something that drops a score, you would do as a follow up task rather than a hold on, you cannot allow to merge this pr.",
+    "startTime": "25:51",
+    "endTime": "25:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "25:59",
+    "endTime": "25:59",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's not implemented as a kind of pre check on a pr.",
+    "startTime": "25:59",
+    "endTime": "26:05",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's more as things are being merged to trunk.",
+    "startTime": "26:06",
+    "endTime": "26:09",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's constantly updating to reflect the reality of what it finds there.",
+    "startTime": "26:09",
+    "endTime": "26:13",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "26:13",
+    "endTime": "26:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay, that's fair enough.",
+    "startTime": "26:14",
+    "endTime": "26:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So we covered a couple of the basics of what it is.",
+    "startTime": "26:16",
+    "endTime": "26:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Do you want to dive into maybe a demo how this actually works?",
+    "startTime": "26:19",
+    "endTime": "26:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because I think that would be a super interesting way to show people how this actually works in the real world.",
+    "startTime": "26:22",
+    "endTime": "26:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because we talk about theory behind it, but seeing the code always makes it easy to understand it.",
+    "startTime": "26:28",
+    "endTime": "26:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "At least I find it.",
+    "startTime": "26:33",
+    "endTime": "26:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I can do sort of a quick walkthrough.",
+    "startTime": "26:34",
+    "endTime": "26:38",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So let me figure out how to do a screen share with this thing.",
+    "startTime": "26:39",
+    "endTime": "26:42",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There we go.",
+    "startTime": "26:44",
+    "endTime": "26:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All right, so this is a summary page that we have off the profile for at.",
+    "startTime": "26:45",
+    "endTime": "26:53",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And these are the repos that I kind of called out from that profile.",
+    "startTime": "26:54",
+    "endTime": "26:59",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so each of those has got an accompanying scorecard and we just do a little table here to show them all off.",
+    "startTime": "27:00",
+    "endTime": "27:09",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so I'll jump into.",
+    "startTime": "27:09",
+    "endTime": "27:12",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So this is the implementation of our personal data service.",
+    "startTime": "27:13",
+    "endTime": "27:18",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this was the first thing that I implemented scorecard on.",
+    "startTime": "27:19",
+    "endTime": "27:24",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I suggest to people that they kind of find a representative repo when they're kind of first doing this and cut their teeth on that representative repo and then kind of rinse and repeat the same processes across the rest of the repos that they want to do in their organization.",
+    "startTime": "27:24",
+    "endTime": "27:43",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Actually this one turned out to be maybe a bit harder than being representative.",
+    "startTime": "27:45",
+    "endTime": "27:53",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the work involved in doing this one was maybe more than some of the others that I could have chosen, but perhaps actually that did make it a good place to start because once I'd done this one, it was pretty much all of the rest after that were actually easier.",
+    "startTime": "27:54",
+    "endTime": "28:11",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I can see the scorecard itself here and that's showing a nice green badge and a score of 8.9.",
+    "startTime": "28:11",
+    "endTime": "28:20",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If I was to click on that scorecard, it'll take you into this results file.",
+    "startTime": "28:21",
+    "endTime": "28:28",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So this is a SARIF file that's been generated by the last actions run.",
+    "startTime": "28:28",
+    "endTime": "28:34",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Obviously this is just an eye chart of JSON, which is pretty difficult to make sense of unless you have got tools to pick it apart.",
+    "startTime": "28:35",
+    "endTime": "28:50",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we can also look at how that got generated in the first place.",
+    "startTime": "28:51",
+    "endTime": "28:57",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So going into my GitHub actions here, we can see that we've got the scorecards supply chain security action that's running every time we're having a commit being merged into trunk.",
+    "startTime": "28:58",
+    "endTime": "29:14",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so all of our PRs are doing this scorecard analysis.",
+    "startTime": "29:14",
+    "endTime": "29:19",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I can have a look at what actually went on in that.",
+    "startTime": "29:20",
+    "endTime": "29:25",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you know, it's pulling the action from Google's cloud registry.",
+    "startTime": "29:25",
+    "endTime": "29:32",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The main sort of work is happening here as it does run analysis.",
+    "startTime": "29:33",
+    "endTime": "29:38",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that entire analysis only took 31 seconds.",
+    "startTime": "29:38",
+    "endTime": "29:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's pretty quick, actually.",
+    "startTime": "29:41",
+    "endTime": "29:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is there a separate work?",
+    "startTime": "29:43",
+    "endTime": "29:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, and it's because it's not doing the tests, it's looking for the evidence that the tests are being done.",
+    "startTime": "29:44",
+    "endTime": "29:55",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "29:56",
+    "endTime": "29:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so if I was to take something like static source analysis, it's not doing the static source analysis, it's looking for the fact that the static source analysis is happening.",
+    "startTime": "29:56",
+    "endTime": "30:09",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it parses your GitHub Actions workflows, I presume to look for that.",
+    "startTime": "30:10",
+    "endTime": "30:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "30:14",
+    "endTime": "30:15",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And yeah, so you could be.",
+    "startTime": "30:15",
+    "endTime": "30:17",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If I go into one of the other repositories I think might be a good example here.",
+    "startTime": "30:18",
+    "endTime": "30:25",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If I look at closed PRs on this and actually I've picked the wrong one.",
+    "startTime": "30:26",
+    "endTime": "30:36",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I knew it was a C language one, but I think it's this one here.",
+    "startTime": "30:37",
+    "endTime": "30:40",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this is just a docs one.",
+    "startTime": "30:46",
+    "endTime": "30:48",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But we're using SonarCloud.",
+    "startTime": "30:48",
+    "endTime": "30:49",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "30:49",
+    "endTime": "30:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And some of the tests that we wanted to do for this ESP32 flavor of C, I wasn't finding an open source tool that I was comfortable with.",
+    "startTime": "30:50",
+    "endTime": "31:08",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so we're using the sort of open source enabled version of the Sonar cloud service in this case.",
+    "startTime": "31:08",
+    "endTime": "31:16",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so the scorecard is consuming the output of Sonar cloud as part of building.",
+    "startTime": "31:16",
+    "endTime": "31:24",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay, so using.",
+    "startTime": "31:25",
+    "endTime": "31:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So if that quality gate failed, it would pick up on that.",
+    "startTime": "31:26",
+    "endTime": "31:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay.",
+    "startTime": "31:30",
+    "endTime": "31:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, it would.",
+    "startTime": "31:30",
+    "endTime": "31:31",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay, so that makes it slightly more intelligent.",
+    "startTime": "31:32",
+    "endTime": "31:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Than just checking that you actually do have some tooling in place.",
+    "startTime": "31:34",
+    "endTime": "31:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "31:37",
+    "endTime": "31:38",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh yeah.",
+    "startTime": "31:38",
+    "endTime": "31:39",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not just looking have I got the tooling?",
+    "startTime": "31:39",
+    "endTime": "31:41",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But what is the tooling saying about the environment that it's finding?",
+    "startTime": "31:41",
+    "endTime": "31:45",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so it's going through that whole range of checks and actually it's good to visualize them.",
+    "startTime": "31:46",
+    "endTime": "31:55",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So one of the Linux foundation folks put together this Scorecard report app which visualizes them on a radar chart here.",
+    "startTime": "31:55",
+    "endTime": "32:06",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this gives us quite a nice way of walking through the various things it's looking for and the score that's kind of coming out of this particular run that happened.",
+    "startTime": "32:06",
+    "endTime": "32:20",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So binary artifacts.",
+    "startTime": "32:20",
+    "endTime": "32:22",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We touched upon branch protection.",
+    "startTime": "32:23",
+    "endTime": "32:24",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We talked about CII best practices are those questionnaires.",
+    "startTime": "32:24",
+    "endTime": "32:30",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so you can see there that there's a passing score but not gold, whereas pretty much the rest of it is looking 10 out of 10 there.",
+    "startTime": "32:30",
+    "endTime": "32:42",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So code review contributors, dangerous workflows, dependency update tool.",
+    "startTime": "32:42",
+    "endTime": "32:47",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So all of those checks have passed fuzzing were absolutely nowhere.",
+    "startTime": "32:48",
+    "endTime": "32:52",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this kind of comes to that.",
+    "startTime": "32:52",
+    "endTime": "32:57",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There isn't really a fuzzing tool I can deploy against Dart code at the moment.",
+    "startTime": "32:57",
+    "endTime": "33:01",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's found a license, it's found evidence that the whole thing's maintained.",
+    "startTime": "33:01",
+    "endTime": "33:05",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's happy with how we're doing.",
+    "startTime": "33:06",
+    "endTime": "33:08",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Packaging PIN dependencies is almost a 10, so there's a slight ding there.",
+    "startTime": "33:08",
+    "endTime": "33:16",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Static source code analysis is happening.",
+    "startTime": "33:16",
+    "endTime": "33:19",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In that case, Dart has a built in Dart analyze and so we can simply run that and feed it that we have a security policy.",
+    "startTime": "33:21",
+    "endTime": "33:35",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We're not doing signed releases.",
+    "startTime": "33:36",
+    "endTime": "33:38",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so that might get us into some of the other OpenSSF projects like Salsa and various tools around building software, bills of material and signing artifacts and.",
+    "startTime": "33:39",
+    "endTime": "33:55",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Those sorts of things and signing releases.",
+    "startTime": "33:55",
+    "endTime": "33:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that's just not merely like signing a git tag, it's more than that or it's more comprehensive than that.",
+    "startTime": "33:58",
+    "endTime": "34:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If you do it git tag it and release and that sign, that's not sufficient for the signing process.",
+    "startTime": "34:06",
+    "endTime": "34:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It requires to go further than that.",
+    "startTime": "34:11",
+    "endTime": "34:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, that's about taking the package that's the result of what you're building here and signing that package in a way that's going to be meaningful to a consumer of that package.",
+    "startTime": "34:12",
+    "endTime": "34:26",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay, so it can still be used standalone to inspect, essentially.",
+    "startTime": "34:27",
+    "endTime": "34:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, got it.",
+    "startTime": "34:30",
+    "endTime": "34:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay.",
+    "startTime": "34:32",
+    "endTime": "34:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay.",
+    "startTime": "34:33",
+    "endTime": "34:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So this obviously gives you a good overview of where you stand.",
+    "startTime": "34:35",
+    "endTime": "34:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And you said this is an open source project from the OpenSSF project.",
+    "startTime": "34:38",
+    "endTime": "34:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "34:42",
+    "endTime": "34:43",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay, that's really cool.",
+    "startTime": "34:43",
+    "endTime": "34:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So the other thing I wanted to dive in on, which is kind of, you gave me a really Good segue into that is sboms.",
+    "startTime": "34:45",
+    "endTime": "34:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "34:51",
+    "endTime": "34:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because that's.",
+    "startTime": "34:52",
+    "endTime": "34:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, there are a lot of talks around that.",
+    "startTime": "34:53",
+    "endTime": "34:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And not least at the conference at the State of Open, there were a lot of talks around sbombs and where.",
+    "startTime": "34:56",
+    "endTime": "35:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, I guess maybe we should start with what's SBOMs and why should people care?",
+    "startTime": "35:03",
+    "endTime": "35:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So an SBOM is a software bill of materials.",
+    "startTime": "35:09",
+    "endTime": "35:13",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And what it's doing is saying, these are the components that I've used within the software that I am providing to you.",
+    "startTime": "35:13",
+    "endTime": "35:24",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Whether that's open source or whether that's a commercial product.",
+    "startTime": "35:24",
+    "endTime": "35:28",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "People should care because you don't want to be using things that have got known vulnerabilities in there.",
+    "startTime": "35:29",
+    "endTime": "35:36",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the SBOM really provides the mechanics for knowing about those known vulnerabilities and whether a given thing is carrying known vulnerabilities with it.",
+    "startTime": "35:36",
+    "endTime": "35:52",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This really came about from a number of people in the security side of the industry focusing their attention on the US Federal government.",
+    "startTime": "35:53",
+    "endTime": "36:05",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Initially, what they were trying to do was get a law passed through Congress which would essentially say if the federal government is buying something, then the federal government is going to insist on a software bill of materials.",
+    "startTime": "36:06",
+    "endTime": "36:22",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if inside of that software bill of materials, it's clear that you're selling something that has known vulnerabilities in it, then that's probably going to be a.",
+    "startTime": "36:22",
+    "endTime": "36:30",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Problem that would most certainly annoy a lot of legacy vendors.",
+    "startTime": "36:30",
+    "endTime": "36:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, so that's not what happened.",
+    "startTime": "36:36",
+    "endTime": "36:39",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What ended up happening was rather than a law being passed through Congress, there was an executive order issued by the Biden administration which is having essentially the same effect.",
+    "startTime": "36:41",
+    "endTime": "36:57",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's still providing a mandate for federal purchasers to.",
+    "startTime": "36:57",
+    "endTime": "37:04",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "To require software bill of materials from their suppliers.",
+    "startTime": "37:04",
+    "endTime": "37:07",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so swinging the searchlight onto our suppliers, selling things to the government that contain known vulnerabilities, and what are they doing about that?",
+    "startTime": "37:08",
+    "endTime": "37:21",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, this was done from the very start with the sort of notion that if this was being done for the federal government, then it would drag kind of everybody else along with it.",
+    "startTime": "37:23",
+    "endTime": "37:36",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If everybody supplying the federal government had to do this, then they might as well make their software bill of materials available to all of their other customers.",
+    "startTime": "37:36",
+    "endTime": "37:47",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so everybody would benefit from supply chain transparency and knowledge of what's inside my stuff and what's got known vulnerabilities in it.",
+    "startTime": "37:47",
+    "endTime": "37:59",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This then gets you into building a set of tooling and processes around.",
+    "startTime": "38:00",
+    "endTime": "38:06",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay, when I looked, when I bought the thing, it had no known vulnerabilities in.",
+    "startTime": "38:07",
+    "endTime": "38:11",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But we're discovering new vulnerabilities every day.",
+    "startTime": "38:11",
+    "endTime": "38:14",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so are there now vulnerabilities in because there's new stuff being found and if so, you know what's happening to resolve that.",
+    "startTime": "38:14",
+    "endTime": "38:25",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "38:25",
+    "endTime": "38:26",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, is the thing being patched and am I having to redeploy the patch version or am I having to put other mitigations in place in order to compensate for the known vulnerabilities that I've got in the overall environment?",
+    "startTime": "38:26",
+    "endTime": "38:41",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I mean, and from my understanding there are like debates happening right now about what the NASPEN should look like.",
+    "startTime": "38:42",
+    "endTime": "38:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There is no gold standard to this date about what NSPOM looks like.",
+    "startTime": "38:49",
+    "endTime": "38:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's some form of JSON usually, but I don't think there is a complete standard for how that looks like to this day.",
+    "startTime": "38:53",
+    "endTime": "39:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "39:00",
+    "endTime": "39:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So there's a couple of popular representations of SBoMS.",
+    "startTime": "39:01",
+    "endTime": "39:07",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so the tooling as it stands today tends to use one or other or both of those as an input and will normally be consuming a vulnerability feed which will be based upon CVEs but may also be including other sources of vulnerability.",
+    "startTime": "39:07",
+    "endTime": "39:35",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so that's helping people take a look at what they know that they have and what they think is potentially going to be wrong with it and then make risk based decisions according to the vulnerability that reveals and then their overall threat model and risk posture and other considerations that are going along with that.",
+    "startTime": "39:37",
+    "endTime": "40:04",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "40:05",
+    "endTime": "40:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And if you generate, I mean I would imagine you would always generate these files in your CI CD pipeline as part of your release build, right?",
+    "startTime": "40:05",
+    "endTime": "40:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Where you build a, well, semantic versioning and you have, as part of that release you have an SBoM, right?",
+    "startTime": "40:14",
+    "endTime": "40:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then you provide that to your customer essentially and say here is the SBOM for this particular version and I would imagine then fast forward into the future a little bit.",
+    "startTime": "40:20",
+    "endTime": "40:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That file would then be uploaded to some kind of monitoring tool.",
+    "startTime": "40:32",
+    "endTime": "40:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that would use data like sneak or something similar to scan that dependency list against then and then flag that there are vulnerabilities.",
+    "startTime": "40:36",
+    "endTime": "40:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But with every new version of the software, imagine in the case of Screenly, for instance, our signage players upgrade automatically as soon as we push.",
+    "startTime": "40:45",
+    "endTime": "40:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Essentially there's a canary place to it.",
+    "startTime": "40:55",
+    "endTime": "40:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But that snapshot was only relevant for that release, so that you have to constantly provide new SBOMs with every new release.",
+    "startTime": "40:57",
+    "endTime": "41:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "41:05",
+    "endTime": "41:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So there's a lot of moving parts.",
+    "startTime": "41:06",
+    "endTime": "41:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Have you seen any tooling around that accommodate for that moving part of it?",
+    "startTime": "41:07",
+    "endTime": "41:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, I have.",
+    "startTime": "41:13",
+    "endTime": "41:14",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So this is a very sort of hot area at the moment.",
+    "startTime": "41:15",
+    "endTime": "41:21",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there's a lot of developments happening with tooling to help people understand what they've got Understand where the vulnerabilities lie and what they've got.",
+    "startTime": "41:21",
+    "endTime": "41:32",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Keep up to date with both.",
+    "startTime": "41:32",
+    "endTime": "41:34",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So as you say, the SBOMs are going to be constantly iterating, especially where people are consuming stuff from the end of somebody else's continuous delivery pipeline.",
+    "startTime": "41:34",
+    "endTime": "41:46",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So in something like your case, where you're making very frequent updates to production systems, the SBOM associated with that is going to be, you know, tumbling over pretty rapidly.",
+    "startTime": "41:46",
+    "endTime": "42:00",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so one of your customers concerned about vulnerability would hopefully see a process where a CVE gets raised.",
+    "startTime": "42:00",
+    "endTime": "42:12",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's a known vulnerability in probably not even the code that you're writing, but a whole bunch of the underlying dependencies.",
+    "startTime": "42:12",
+    "endTime": "42:21",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so that will initially raise a red flag and say, I'm now dealing with vulnerable software.",
+    "startTime": "42:21",
+    "endTime": "42:30",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But at the same time you'll be getting notifications into say, dependabot saying there's a known vulnerability, you need to bump to this version.",
+    "startTime": "42:31",
+    "endTime": "42:40",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You crank the continuous delivery pipeline handle, it spits out a new set of artifacts, it's got a new SBoM saying, I'm now using the known non vulnerable version.",
+    "startTime": "42:40",
+    "endTime": "42:51",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We're all good here.",
+    "startTime": "42:51",
+    "endTime": "42:53",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now that's a very simplistic telling of the story though, because where all of this gets problematic is if I'm using an underlying dependency as part of software that I'm shipping and it becomes a known vulnerability, but it's not fixed immediately.",
+    "startTime": "42:53",
+    "endTime": "43:15",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I'm not even using the bit of it that's broken.",
+    "startTime": "43:15",
+    "endTime": "43:19",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, right.",
+    "startTime": "43:19",
+    "endTime": "43:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "This comes back to like the vulnerability checks in general.",
+    "startTime": "43:20",
+    "endTime": "43:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "43:23",
+    "endTime": "43:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that's where it gets really murky.",
+    "startTime": "43:24",
+    "endTime": "43:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "43:26",
+    "endTime": "43:26",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so that more sort of nuanced analysis of I've got a known vulnerability, it's not getting fixed immediately, but it doesn't matter because my code isn't using the methods that are understood to be problematic, then actually all is still well in terms of that particular product.",
+    "startTime": "43:27",
+    "endTime": "43:53",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But the ability to measure that and articulate that is because of that additional nuance, much harder to reach at the moment.",
+    "startTime": "43:53",
+    "endTime": "44:04",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so I think because we're in the early days after the executive order and the early days of building tools to deal with that, we're still in sort of the black and white case of are there vulnerabilities or are they not?",
+    "startTime": "44:04",
+    "endTime": "44:20",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think there's a whole bunch of especially open source, where things are moving pretty quick and that stuff gets fixed.",
+    "startTime": "44:22",
+    "endTime": "44:32",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's great.",
+    "startTime": "44:32",
+    "endTime": "44:32",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So say Python cryptography, you know, we use Python cryptography is at the heart of what we do.",
+    "startTime": "44:33",
+    "endTime": "44:42",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So of course we use the cryptography library.",
+    "startTime": "44:42",
+    "endTime": "44:45",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "44:45",
+    "endTime": "44:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That thing is being patched on an almost daily basis.",
+    "startTime": "44:45",
+    "endTime": "44:50",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, we use it too.",
+    "startTime": "44:50",
+    "endTime": "44:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I know.",
+    "startTime": "44:51",
+    "endTime": "44:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so, yeah, CVEs happen.",
+    "startTime": "44:53",
+    "endTime": "44:57",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The team are super responsive to that and new patch releases come along to deal with OCVs.",
+    "startTime": "44:59",
+    "endTime": "45:05",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And as I look at those, you know, it's not quite daily, but it's probably a few a week bumps to Python cryptography.",
+    "startTime": "45:05",
+    "endTime": "45:15",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's maybe half of them are security related and half of them are functionality related.",
+    "startTime": "45:15",
+    "endTime": "45:20",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And sometimes it's like, oh, they fixed the security bug yesterday and that led to some other corner case functionality stuff that, you know, maybe wasn't being highlighted in the previous test coverage.",
+    "startTime": "45:20",
+    "endTime": "45:34",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you know, everybody will learn and get better going forward.",
+    "startTime": "45:34",
+    "endTime": "45:37",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "45:37",
+    "endTime": "45:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so there's another bump the following day which is dealing with the fallout rather than actually fixing a security vulnerability.",
+    "startTime": "45:38",
+    "endTime": "45:46",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But those things are moving forward really super fast.",
+    "startTime": "45:47",
+    "endTime": "45:50",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But then you get other dependencies where they're not as actively maintained and somebody flags up a security critical piece of problematic code, but the maintainer doesn't do anything about that at all or for months or whatever.",
+    "startTime": "45:51",
+    "endTime": "46:11",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that then gets you into, well, is it actually a problem for how I'm using that?",
+    "startTime": "46:11",
+    "endTime": "46:17",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "46:19",
+    "endTime": "46:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean that brings us up to the whole big debate on of all open source project builds, another open source project.",
+    "startTime": "46:20",
+    "endTime": "46:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And at the end of the day there's always like one or two libraries that everybody uses that there are like two maintainers.",
+    "startTime": "46:29",
+    "endTime": "46:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like OpenSL stands like a good example of that when there were their vulnerabilities last year or the year before.",
+    "startTime": "46:34",
+    "endTime": "46:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And there are like handful of maintainers that basically support all of the Internet.",
+    "startTime": "46:41",
+    "endTime": "46:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "46:45",
+    "endTime": "46:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "46:46",
+    "endTime": "46:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And there are similar libraries that are used everywhere, but there's like one guy doing this on an evening and 500 or like 140500 depending on this.",
+    "startTime": "46:47",
+    "endTime": "46:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "As for their production environments.",
+    "startTime": "46:58",
+    "endTime": "47:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "47:00",
+    "endTime": "47:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Which raises debate on like how do we solve that for the future because somebody got to pay for this and a lot of people that make a lot of money are using them but not contributing whatsoever.",
+    "startTime": "47:01",
+    "endTime": "47:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right, yeah.",
+    "startTime": "47:12",
+    "endTime": "47:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think that's probably a whole nother podcast's worth.",
+    "startTime": "47:14",
+    "endTime": "47:16",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh yeah, absolutely.",
+    "startTime": "47:16",
+    "endTime": "47:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The funding model for Open Source is fundamentally broken today.",
+    "startTime": "47:20",
+    "endTime": "47:25",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, it's problematic.",
+    "startTime": "47:25",
+    "endTime": "47:27",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think one of the parts of the opening keynote at State of opencon kind of addressed that.",
+    "startTime": "47:27",
+    "endTime": "47:35",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The whole question of what does a post open source landscape look like?",
+    "startTime": "47:35",
+    "endTime": "47:40",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think enterprise users of open source and you know, services companies that build their value on top of open source could be doing more.",
+    "startTime": "47:41",
+    "endTime": "47:58",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, no, I mean, I think you're right.",
+    "startTime": "47:58",
+    "endTime": "48:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "This should be another episode about licensing like Redis Springs to mind as a good kind of like David Goliath story.",
+    "startTime": "48:00",
+    "endTime": "48:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "48:07",
+    "endTime": "48:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Fighting against the cloud vendors.",
+    "startTime": "48:08",
+    "endTime": "48:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "48:11",
+    "endTime": "48:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I mean the whole supply chain security side, I think it's very interesting and I think what we really, I mean, at least I'm envisioning a future workflow where as part of your CICD pipeline, you submit your SBOM to like a third party that you tag it with your sember or whatever and then that system will then integrate with enterprise vendors that you sell to.",
+    "startTime": "48:12",
+    "endTime": "48:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then if there is a vulnerability in something, your security staff at your company can sign off that say, hey, actually this doesn't matter because we don't use this code path and that's perhaps you can get around it.",
+    "startTime": "48:38",
+    "endTime": "48:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's at least how I would envision a workflow look like.",
+    "startTime": "48:49",
+    "endTime": "48:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There's certainly going to be, I think, commercial opportunities on top of what people are building as open source.",
+    "startTime": "48:53",
+    "endTime": "49:01",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I also like the vision at GitHub on this, which was articulated when Nat was their CEO, that since most open source is in GitHub, they can actually see the dependency graph from end to end.",
+    "startTime": "49:01",
+    "endTime": "49:16",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so it's within their gift to build tooling which can track a taint all the way through the sort of various layers of dependency.",
+    "startTime": "49:17",
+    "endTime": "49:27",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh, I would most certainly envision a future scenario where either GitHub built this or they acquire someone who has built it.",
+    "startTime": "49:28",
+    "endTime": "49:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like just to do with the dependable guys, right?",
+    "startTime": "49:34",
+    "endTime": "49:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, because it just slots straight into their portfolio and makes a lot of sense for them to actually have an offering like this.",
+    "startTime": "49:36",
+    "endTime": "49:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The last thing I wanted to cover, which is something that I'm not sure, you might have not covered that, but might not have seen that.",
+    "startTime": "49:46",
+    "endTime": "49:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But NIST 2.0 was released last week or this week.",
+    "startTime": "49:52",
+    "endTime": "49:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Was it the new NIST framework?",
+    "startTime": "49:56",
+    "endTime": "49:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm not sure that you have any thoughts around that, given that it's the first Updates is like 97 to NIST, I believe.",
+    "startTime": "49:58",
+    "endTime": "50:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm not sure you had a chance to look at that.",
+    "startTime": "50:04",
+    "endTime": "50:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I've very briefly taken a look at it.",
+    "startTime": "50:06",
+    "endTime": "50:10",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It came up in one of the Zero Trust working groups that I participate in the other day.",
+    "startTime": "50:10",
+    "endTime": "50:16",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And yeah, I've also been looking at various commentaries on what's different about 2.0.",
+    "startTime": "50:17",
+    "endTime": "50:26",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's worth just articulating what is the NIST Cybersecurity Framework.",
+    "startTime": "50:27",
+    "endTime": "50:32",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so this is really an almanac of security practices pieced together from NIST guidance.",
+    "startTime": "50:32",
+    "endTime": "50:45",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So NIST in the past has released a whole bunch of guidance around things like authentication and authorization, but there's also a whole bunch of other industry standards in various areas.",
+    "startTime": "50:46",
+    "endTime": "50:58",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So ISO 27000 series, COBIT, and so all of these things had things to say about organizations and approaches to security.",
+    "startTime": "50:59",
+    "endTime": "51:12",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the original NIST cybersecurity framework pulled them all together.",
+    "startTime": "51:13",
+    "endTime": "51:17",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so I always viewed it really as an almanac, having consolidated NIST and COBIT and ISO 27000 series and a few other things into one place.",
+    "startTime": "51:19",
+    "endTime": "51:33",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was in many ways the sort of building code for securing an organization.",
+    "startTime": "51:35",
+    "endTime": "51:45",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I saw the primary consumer of that as being CISO or CISO being able to pick it up and say, if I'm doing everything that's in the cybersecurity framework, then I'm doing everything that could possibly be expected of me.",
+    "startTime": "51:45",
+    "endTime": "52:04",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I first came across it sort of in earnest back in cohesive days because at that time there was a certain amount of dialogue going on that the cybersecurity framework was really put out by NIST to be for government and especially federal government.",
+    "startTime": "52:04",
+    "endTime": "52:25",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I think it's been widely adopted by, in the US at least, a lot of state governments and local governments.",
+    "startTime": "52:25",
+    "endTime": "52:33",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Again, I've seen it being picked up a fair bit up from the medical industry as well, so hospital and so on, like people that actually care about security.",
+    "startTime": "52:33",
+    "endTime": "52:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They.",
+    "startTime": "52:41",
+    "endTime": "52:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think at least my advantage point is, I think I covered this in one of the other episodes.",
+    "startTime": "52:42",
+    "endTime": "52:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like for me, ISO and SOC2, they are security for salespeople, but NIST is security for actual security engineers.",
+    "startTime": "52:47",
+    "endTime": "52:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think that's how I see that.",
+    "startTime": "52:56",
+    "endTime": "52:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so it was being waved at the financial services industry in a way that there was some notion that the financial services regulators would start demanding cybersecurity framework compliance from the organizations that they were regulating.",
+    "startTime": "52:59",
+    "endTime": "53:21",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That didn't actually happen.",
+    "startTime": "53:21",
+    "endTime": "53:22",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think it largely didn't actually happen because the banks, et cetera, were mostly doing pretty much all of what was in there anyway.",
+    "startTime": "53:23",
+    "endTime": "53:32",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I don't think it would have substantially changed the dialogue.",
+    "startTime": "53:32",
+    "endTime": "53:36",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that was a decade ago.",
+    "startTime": "53:36",
+    "endTime": "53:39",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And SO Cybersecurity Framework 2.0 released in the last few days is a refresh of cybersecurity framework.",
+    "startTime": "53:39",
+    "endTime": "53:49",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Some are arguing not enough of a refresh.",
+    "startTime": "53:49",
+    "endTime": "53:53",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think this is perhaps because Bruce Schneier observed many years ago, it's like the old attacks never die, and the old regulation that was born from the old attacks is also a permanent fixture.",
+    "startTime": "53:54",
+    "endTime": "54:14",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so if you're making an almanac, there's none of the old stuff that you really get to cut out.",
+    "startTime": "54:14",
+    "endTime": "54:20",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so when you get into conversations about shiny new stuff like zero trust networks or software builds of material or whatever else you may or may not add it in.",
+    "startTime": "54:20",
+    "endTime": "54:32",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so if I take something like zero trust, can I use a zero trust approach to put in place controls and monitoring regimes for those controls that will allow me to show evidence for achieving certain areas of the NIST framework?",
+    "startTime": "54:32",
+    "endTime": "54:51",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "54:52",
+    "endTime": "54:53",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Does the NIST framework still mostly read like it's expecting you to do traditional networking with firewalls and hard on the outside, soft in the middle?",
+    "startTime": "54:53",
+    "endTime": "55:03",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Maybe it does, because not a great deal has changed there.",
+    "startTime": "55:04",
+    "endTime": "55:08",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The big change is the introduction of a governance section to the framework.",
+    "startTime": "55:08",
+    "endTime": "55:15",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think if you go back to the initial release, there was a sense that was a missed opportunity and it's one that's been resolved.",
+    "startTime": "55:16",
+    "endTime": "55:25",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And of course, sorry, what does that.",
+    "startTime": "55:25",
+    "endTime": "55:28",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Actually mean in this context?",
+    "startTime": "55:28",
+    "endTime": "55:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What do you mean by governance in that context?",
+    "startTime": "55:30",
+    "endTime": "55:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So if you look at the framework and the areas it addressed could be portrayed as a wheel.",
+    "startTime": "55:33",
+    "endTime": "55:41",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And as he moved around the wheel, there were different things.",
+    "startTime": "55:41",
+    "endTime": "55:43",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So a bit like the radar chart I was showing for the scorecard a few Minutes ago with CSF2, there's now an inner wheel of governance, which is to say all of the aspects of the cybersecurity framework relate to a set of governance activities and supporting processes to bring everything together.",
+    "startTime": "55:43",
+    "endTime": "56:09",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay, so in terms of SBOMs, you said that's kind of.",
+    "startTime": "56:10",
+    "endTime": "56:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's still.",
+    "startTime": "56:15",
+    "endTime": "56:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Flaggers are nice to have or is it something that you reckon is going to be pushed?",
+    "startTime": "56:16",
+    "endTime": "56:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Haven't got into that detail.",
+    "startTime": "56:19",
+    "endTime": "56:20",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the SBOM is being pushed by the executive order.",
+    "startTime": "56:20",
+    "endTime": "56:27",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The NIST Cybersecurity Framework 2.0 was something else that NIST were told that they had to get 2.0 out by, I think, April next year.",
+    "startTime": "56:29",
+    "endTime": "56:40",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they are way ahead of schedule.",
+    "startTime": "56:41",
+    "endTime": "56:43",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But this is a final version, it's not a draft.",
+    "startTime": "56:44",
+    "endTime": "56:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "56:46",
+    "endTime": "56:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So yeah, this is the final version.",
+    "startTime": "56:47",
+    "endTime": "56:49",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is 2.0.",
+    "startTime": "56:50",
+    "endTime": "56:51",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I think it's gone from 1.0 to 1.1 and it stayed the same for a very long time.",
+    "startTime": "56:52",
+    "endTime": "56:58",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then not directly from the, I think the same executive order that brought us SBoM, but from a related executive order.",
+    "startTime": "56:58",
+    "endTime": "57:10",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "NIST were tasked to update the cybersecurity framework.",
+    "startTime": "57:10",
+    "endTime": "57:13",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Job done.",
+    "startTime": "57:13",
+    "endTime": "57:14",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They have.",
+    "startTime": "57:15",
+    "endTime": "57:15",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Have I had the opportunity to delve in to see whether things like SBOM are now being explicitly referenced in there?",
+    "startTime": "57:16",
+    "endTime": "57:23",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No, that's not an opportunity I've had yet.",
+    "startTime": "57:23",
+    "endTime": "57:26",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And again, I don't think it matters much either way because the SBOM has got, I think, enough momentum behind it with the executive order.",
+    "startTime": "57:27",
+    "endTime": "57:40",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But also everything that's happening at Caesar in order to help ease the implementation of the executive order.",
+    "startTime": "57:40",
+    "endTime": "57:49",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, we actually had our first customer request for nestbom at Screenly last week.",
+    "startTime": "57:49",
+    "endTime": "57:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it is actually starting to happen with a big medical group.",
+    "startTime": "57:55",
+    "endTime": "57:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it is starting to happen.",
+    "startTime": "57:58",
+    "endTime": "57:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's actually not only theoretical anymore, it's actually part of compliance for very savvy customers, I guess.",
+    "startTime": "57:59",
+    "endTime": "58:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But very early days still, I would imagine.",
+    "startTime": "58:07",
+    "endTime": "58:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you probably saw the panel at state of OpenCon that was preceding my talk about scorecards and there was a handful of practitioners who were each working inside of organizations on their security.",
+    "startTime": "58:10",
+    "endTime": "58:29",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And what I was hearing from all of them is that they had mechanisms already in place to consume SBOMs, to analyze SBOMs against their vulnerability feeds, and to take various actions against their threat models and risk profiles to deal with what they were receiving from that.",
+    "startTime": "58:29",
+    "endTime": "58:53",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it is early days and they were probably there on that panel because they're advanced practitioners and not.",
+    "startTime": "58:53",
+    "endTime": "59:00",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh yeah, those are very savvy companies, all of them.",
+    "startTime": "59:00",
+    "endTime": "59:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "59:02",
+    "endTime": "59:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So they're not like your average company.",
+    "startTime": "59:02",
+    "endTime": "59:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "59:05",
+    "endTime": "59:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Chris, this has been super interesting.",
+    "startTime": "59:08",
+    "endTime": "59:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Thank you so much for coming on the show.",
+    "startTime": "59:11",
+    "endTime": "59:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Do you want to do a quick shout out to Sign where people can learn more and perhaps learn more about anything you want, really, before we wrap up the show?",
+    "startTime": "59:13",
+    "endTime": "59:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "59:23",
+    "endTime": "59:23",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think something that the audience for this will really appreciate is a thing that began as a demo that we built at Sign for the platform, but has turned into a product.",
+    "startTime": "59:23",
+    "endTime": "59:38",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So SSH no Ports is a tool we've built for people to do remote admin.",
+    "startTime": "59:38",
+    "endTime": "59:45",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We've got people using it for things like home labs, but we've also got organizations using it to deal with field deployed Internet of Things type devices.",
+    "startTime": "59:45",
+    "endTime": "59:57",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And as the name suggests, you can get an SSH console onto a device with no ports open, but also things that move around networks and stuff.",
+    "startTime": "59:57",
+    "endTime": "01:00:09",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I'd encourage people to just check that out and have a play.",
+    "startTime": "01:00:10",
+    "endTime": "01:00:14",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it is also open source, which I think is important to highlight in this context.",
+    "startTime": "01:00:14",
+    "endTime": "01:00:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "For sure it is open source.",
+    "startTime": "01:00:17",
+    "endTime": "01:00:20",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:00:20",
+    "endTime": "01:00:20",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Perfect.",
+    "startTime": "01:00:20",
+    "endTime": "01:00:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Again, thank you so much for coming on the show, Chris.",
+    "startTime": "01:00:21",
+    "endTime": "01:00:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Very much appreciate it.",
+    "startTime": "01:00:23",
+    "endTime": "01:00:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Talk to you soon.",
+    "startTime": "01:00:24",
+    "endTime": "01:00:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Thanks, Chris.",
+    "startTime": "01:00:25",
+    "endTime": "01:00:26",
+    "speaker_name": "Chris Swan",
+    "speaker_id": 1
+  }
+]

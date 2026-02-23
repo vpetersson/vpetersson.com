@@ -1,0 +1,3943 @@
+[
+  {
+    "sentence": "Welcome back to another episode of nerding out with Victor.",
+    "startTime": "00:01",
+    "endTime": "00:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Today I'm joined by Massy Gorau, who is an authentication expert.",
+    "startTime": "00:04",
+    "endTime": "00:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Hey, Massey.",
+    "startTime": "00:09",
+    "endTime": "00:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Hello.",
+    "startTime": "00:11",
+    "endTime": "00:11",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Hi, Viktor.",
+    "startTime": "00:11",
+    "endTime": "00:12",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How are you doing?",
+    "startTime": "00:12",
+    "endTime": "00:12",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Good, good.",
+    "startTime": "00:13",
+    "endTime": "00:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I have been wanting to do an episode about authentication or authorization.",
+    "startTime": "00:13",
+    "endTime": "00:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We'll dive into difference in a second for some time now, in particular in light of Paschi, which is something that has taken the world by storm in the last year and a half or so, I think.",
+    "startTime": "00:18",
+    "endTime": "00:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So today we got to talk about all things authentication and maybe start a little bit with background on yourself.",
+    "startTime": "00:27",
+    "endTime": "00:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Martin, you've been in this space for quite some time.",
+    "startTime": "00:36",
+    "endTime": "00:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You work at Canonical, but talk a little bit more about your backstory and how you ended up in this domain.",
+    "startTime": "00:39",
+    "endTime": "00:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "00:47",
+    "endTime": "00:48",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So by the way, first of all, hello, everyone.",
+    "startTime": "00:48",
+    "endTime": "00:51",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, it's a pleasure to be here.",
+    "startTime": "00:51",
+    "endTime": "00:53",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So right now, canonical, I am a staff product manager looking after our operator framework, that is juju, but also our elements of our authentication.",
+    "startTime": "00:53",
+    "endTime": "01:05",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So out of all the roles that I've done in the past, this is, in a way, the one where I've been like the least focused on the domain.",
+    "startTime": "01:05",
+    "endTime": "01:12",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Having said that, my first foray in the world of software development and that he was now 17 years ago, and it was primarily focused on the area of authentication.",
+    "startTime": "01:12",
+    "endTime": "01:25",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I cannot say that I willingly, like, ended up in there, just so happened to be the, you know, once you join, like, a very large company, you're put on a project that happened to be in my case, Oracle access manager.",
+    "startTime": "01:25",
+    "endTime": "01:41",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like a product that is now defunct but still used to be very popular back in the days in the early two thousands.",
+    "startTime": "01:42",
+    "endTime": "01:51",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then, yeah, from there I sort of like taken multiple roles, first in the area of consumer identity, then more enterprise identity, then more on the governance side of the identity space, Porta Tokta and my own startup, and then eventually landed at canonical.",
+    "startTime": "01:51",
+    "endTime": "02:11",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's an interesting subject, very niche, but yet kind of like a fundamental one for the whole world of security.",
+    "startTime": "02:11",
+    "endTime": "02:20",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "02:20",
+    "endTime": "02:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's one of those things that so much of the world stood back and still run on LDAP, right?",
+    "startTime": "02:21",
+    "endTime": "02:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Oh, yeah.",
+    "startTime": "02:26",
+    "endTime": "02:27",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, and if you look at, I think that Verizon published their latest data breach report, I think they've been doing that for more than 20 years now.",
+    "startTime": "02:27",
+    "endTime": "02:34",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And identity compromises, whether intentional or unintentional because of malware, remain still at the top of the number one entry point for data breaches.",
+    "startTime": "02:34",
+    "endTime": "02:50",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think it's far from a sole problem, as we will discuss today.",
+    "startTime": "02:50",
+    "endTime": "02:54",
+    "speaker_name": "Massi Gori",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "02:54",
+    "endTime": "02:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All right, let's start with, I guess, a history lesson.",
+    "startTime": "02:55",
+    "endTime": "02:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think so.",
+    "startTime": "02:58",
+    "endTime": "02:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Kind of alluded to LDAP before.",
+    "startTime": "02:59",
+    "endTime": "03:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I guess LDAP kind of is where a lot of authentication kind of started.",
+    "startTime": "03:00",
+    "endTime": "03:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Maybe we start with there.",
+    "startTime": "03:05",
+    "endTime": "03:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or if you want to go even further back in history, I'm happy to go down there just to have some foundation here.",
+    "startTime": "03:06",
+    "endTime": "03:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I think that the.",
+    "startTime": "03:13",
+    "endTime": "03:15",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm not an historian by any means, but the topic of authentication really dates back as the history of the first computers were effectively that needed to be shown in the beginning.",
+    "startTime": "03:16",
+    "endTime": "03:30",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not like today where we have smartphones and laptops and they are ubiquitous, but they need to be shared between different people in research institutes and universities.",
+    "startTime": "03:30",
+    "endTime": "03:40",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's where the idea of having different user spaces came into the picture.",
+    "startTime": "03:40",
+    "endTime": "03:48",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now in terms of the protocol and names that everybody knows, if I'm not mistaken.",
+    "startTime": "03:49",
+    "endTime": "03:55",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Good old days.",
+    "startTime": "03:55",
+    "endTime": "03:56",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Kerberos.",
+    "startTime": "03:56",
+    "endTime": "03:57",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think it was an MIT project in the middle to late eighties.",
+    "startTime": "03:57",
+    "endTime": "04:01",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, probably definitely way before my time.",
+    "startTime": "04:02",
+    "endTime": "04:05",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But in the war where Internet was not in the picture, I think it was the, and still is to a certain extent the de facto standard for federation.",
+    "startTime": "04:05",
+    "endTime": "04:16",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, if we approach more of the, like early 2000, that's when the fundamental concepts of how you do authentication are you handle sessions.",
+    "startTime": "04:16",
+    "endTime": "04:25",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The part like never really changed, but what changed was like a growing interest in establishing federation standards so effectively how to represent identity and authorization of a specific person or system across the boundaries of a system or the boundaries of an enterprise.",
+    "startTime": "04:25",
+    "endTime": "04:45",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so early two thousands sort of like saw the rise, or even before that, saw the rise of SaMl first, then first SAML 1.01.12 .0 and like Shiba La in the middle.",
+    "startTime": "04:45",
+    "endTime": "04:59",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Those were the years sort of like where I started my infra into authentication.",
+    "startTime": "04:59",
+    "endTime": "05:04",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But then at the same time, Openid and Oauth sort of like started gaining grounds all the way to the modern days were effectively, they are gaining ever increasing share of the market.",
+    "startTime": "05:04",
+    "endTime": "05:19",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, open idea, that's something you don't hear about every day, though.",
+    "startTime": "05:19",
+    "endTime": "05:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They had a very popular days.",
+    "startTime": "05:23",
+    "endTime": "05:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It must been early two thousands.",
+    "startTime": "05:26",
+    "endTime": "05:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There was a big wave of that.",
+    "startTime": "05:27",
+    "endTime": "05:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then it didn't go away, of course.",
+    "startTime": "05:29",
+    "endTime": "05:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Still a big part of the backstory, but yeah, not something you're exposed to back in the day before SSO, you could do like log into webpage using OpenID, which is.",
+    "startTime": "05:31",
+    "endTime": "05:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I mean, I don't think that there are many companies that still maintain their OpenID servers.",
+    "startTime": "05:42",
+    "endTime": "05:47",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Canonical does, that's all I can say.",
+    "startTime": "05:48",
+    "endTime": "05:49",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, which I find very, very curious.",
+    "startTime": "05:49",
+    "endTime": "05:53",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But yeah, indeed.",
+    "startTime": "05:53",
+    "endTime": "05:54",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, right now, most of the sign in with x buttons that you see, they tend to use openid connect behind the scenes, with the exception of Facebook being a very peculiar case.",
+    "startTime": "05:54",
+    "endTime": "06:06",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But that's a little bit of a different backstory of its own.",
+    "startTime": "06:06",
+    "endTime": "06:12",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "06:12",
+    "endTime": "06:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All right, cool.",
+    "startTime": "06:13",
+    "endTime": "06:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So we talked a bit about backstory, and one of the core concepts, I guess, in authentication, or permission structure, I should say, as a bigger umbrella term, is the concept authentication versus authorization.",
+    "startTime": "06:14",
+    "endTime": "06:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So maybe we spend a few second minutes on like, why is it different?",
+    "startTime": "06:28",
+    "endTime": "06:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What does it matter?",
+    "startTime": "06:32",
+    "endTime": "06:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And why is it important to differentiate that term?",
+    "startTime": "06:33",
+    "endTime": "06:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I mean, I'm glad you asked, because normally when we talk about identity management, it's one of those terms where it means different things to different people.",
+    "startTime": "06:36",
+    "endTime": "06:45",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, when I approach the subject with my coworkers or newer team members that are not necessarily exposed to the domain, I tend to explain that in my opinion, there are five macro functional areas that fall under the realm of identity management.",
+    "startTime": "06:46",
+    "endTime": "07:02",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "First one being authentication.",
+    "startTime": "07:03",
+    "endTime": "07:04",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That is the act of verifying that the users are who they claim they are.",
+    "startTime": "07:04",
+    "endTime": "07:09",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Whether they are like people or personal users, it doesn't really matter.",
+    "startTime": "07:10",
+    "endTime": "07:14",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Then there is the concept of authorization that is sort of like the act of verifying what the person can do.",
+    "startTime": "07:14",
+    "endTime": "07:24",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Sorry, what the actor can do, on which resource.",
+    "startTime": "07:24",
+    "endTime": "07:27",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that this is important.",
+    "startTime": "07:27",
+    "endTime": "07:28",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So an authorization is nothing.",
+    "startTime": "07:28",
+    "endTime": "07:30",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I have certain permissions, and these are ethereal or abstract.",
+    "startTime": "07:30",
+    "endTime": "07:34",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Permissions are always to be tied to resources.",
+    "startTime": "07:34",
+    "endTime": "07:38",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And even when you say like that, you install a new system and you have a super admin, that doesn't mean that, I mean, the person can still perform administrative tasks on all the resources of the application.",
+    "startTime": "07:38",
+    "endTime": "07:55",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So again, important what you can do on which resource.",
+    "startTime": "07:55",
+    "endTime": "07:59",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Then there is a concept of federation.",
+    "startTime": "07:59",
+    "endTime": "08:01",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, that's what were discussing in the beginning, whether it is with Kerberos, with Samo, with OAuth and whatnot.",
+    "startTime": "08:01",
+    "endTime": "08:10",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's sort of like the act of representing identity information, whether they are authentication or authorization, across multiple system boundaries.",
+    "startTime": "08:10",
+    "endTime": "08:20",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that's also the area where there is the highest amount of standardization.",
+    "startTime": "08:20",
+    "endTime": "08:24",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Out of those, then number four, user management.",
+    "startTime": "08:24",
+    "endTime": "08:29",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Again, sort of like adding, removing access, permissions, identities and whatnot.",
+    "startTime": "08:29",
+    "endTime": "08:35",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It is a part of every identity management system.",
+    "startTime": "08:35",
+    "endTime": "08:38",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then the fifth is sort of like what underpins all the aforementioned ones, and is the identity governance.",
+    "startTime": "08:38",
+    "endTime": "08:45",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "08:45",
+    "endTime": "08:45",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the idea that is that especially in enterprise use cases, but also in personal one, you need to make sure that you have attribution and so that you're able to say who did what and whether that action was authorized.",
+    "startTime": "08:45",
+    "endTime": "09:01",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, okay.",
+    "startTime": "09:02",
+    "endTime": "09:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So we have like a bigger picture of these terminology because I think they are important building blocks for this.",
+    "startTime": "09:03",
+    "endTime": "09:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So kind of SAML, which is, we also have single sign on where SSL maybe let's talk a few moments on like these building blocks, because unless you worked in enterprise or you build software for enterprise, SAML is something probably you never touched.",
+    "startTime": "09:09",
+    "endTime": "09:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You should probably be happy for that.",
+    "startTime": "09:29",
+    "endTime": "09:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But let's talk a bit about why, how SAML so is different, and the building blocks, what makes up the two of those?",
+    "startTime": "09:30",
+    "endTime": "09:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, indeed.",
+    "startTime": "09:41",
+    "endTime": "09:42",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "SAML is in a way the sort of, I want to say the granddaddies of those kind of protocols.",
+    "startTime": "09:43",
+    "endTime": "09:51",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it is fundamentally like a XML based protocol.",
+    "startTime": "09:51",
+    "endTime": "09:56",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the one that you normally encounter to this day is the 2.0 version of the spec, which was, I think became popular around 2006.",
+    "startTime": "09:56",
+    "endTime": "10:08",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there are a couple of.",
+    "startTime": "10:09",
+    "endTime": "10:11",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the way normally works is that there are three actors.",
+    "startTime": "10:13",
+    "endTime": "10:17",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the service provider, which is normally that, the kind of like the server that you are trying to get access to a specific resource, there is a user agent, which normally is a physical person with a browser, and then there is an identity provider.",
+    "startTime": "10:17",
+    "endTime": "10:33",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That is the system where you prove that you are who you say you are.",
+    "startTime": "10:33",
+    "endTime": "10:37",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "10:37",
+    "endTime": "10:37",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So in the case of SAML, it's a fairly complex protocol with a bunch of back and forth and chapter that first happens between the service provider and the user agent, where there is a request for a specific resource that followed by a redirection to the identity provider, and then subject to a successful authentication request that responds in a specific like XHTML form that includes, as I said, like an XML structure with things that are called assertions that represent certain attributes of a specific person.",
+    "startTime": "10:37",
+    "endTime": "11:25",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Those are things that sort of like need to be previously agreed upon between the service provider and their entity provider at the point of integration.",
+    "startTime": "11:25",
+    "endTime": "11:34",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So like something that normally the system administrator configures a little bit before all of this dance, all of this back and forth happens.",
+    "startTime": "11:34",
+    "endTime": "11:46",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then you have two types of SAML, you have IDP initiated and what's the other one?",
+    "startTime": "11:46",
+    "endTime": "11:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm blanking.",
+    "startTime": "11:51",
+    "endTime": "11:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You have two types of SAML dances, right?",
+    "startTime": "11:51",
+    "endTime": "11:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "11:56",
+    "endTime": "11:56",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, the most common one that you normally tend to find is the one where there is a user hitting a specific service provider.",
+    "startTime": "11:56",
+    "endTime": "12:05",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, I have an application x, whether it is, I don't know, SAP for example, I want to be able to look at that purchase order, right?",
+    "startTime": "12:06",
+    "endTime": "12:15",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So from my client, I'm trying to access that, and that's what effectively triggers the process.",
+    "startTime": "12:15",
+    "endTime": "12:20",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Normally that is what we see.",
+    "startTime": "12:20",
+    "endTime": "12:23",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Of course you can also have the reverse, but normally, I mean the whole, I mean, you do authentication because you want to get access to a resource that is owned by the something else or someone else.",
+    "startTime": "12:23",
+    "endTime": "12:35",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "12:35",
+    "endTime": "12:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "12:35",
+    "endTime": "12:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All right, so that's SAML and then I guess SSO is the modern version of that essentially.",
+    "startTime": "12:36",
+    "endTime": "12:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "12:43",
+    "endTime": "12:44",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Which is what if you have login with Google or with Azure or whatever, that's essentially necessary and behind the scenes, that's oauth two, I believe it is.",
+    "startTime": "12:44",
+    "endTime": "12:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's for the actual authentication piece, right?",
+    "startTime": "12:56",
+    "endTime": "12:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, yeah.",
+    "startTime": "12:58",
+    "endTime": "12:59",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So today for the most part that is openid connect, which is like a protocol.",
+    "startTime": "12:59",
+    "endTime": "13:05",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like it is an identity layer that is built on top of O two, which is against like another important standard that started gaining ground in the early two thousand ten s to basically allow for delegated authorization to systems.",
+    "startTime": "13:05",
+    "endTime": "13:26",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if we go back to the beginning of the millennium, so the early two thousands, you tended to have OpenID.",
+    "startTime": "13:27",
+    "endTime": "13:37",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Openid one.",
+    "startTime": "13:38",
+    "endTime": "13:39",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It is different from openid connect.",
+    "startTime": "13:39",
+    "endTime": "13:41",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, I understand that they share the first part of the name, but they are fundamentally different protocols.",
+    "startTime": "13:41",
+    "endTime": "13:46",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So OpenID was what, effectively what you were using to represent different identity across system boundaries.",
+    "startTime": "13:47",
+    "endTime": "13:59",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "OAuth was something that kind of like started initially as a separate project in 2006, 2007 where there were people from Manolia, from Twitter, from Google, they were getting together to sort of find the standardized way to saying, hey, just you want user to selectively give access to certain specific attributes to their profile.",
+    "startTime": "13:59",
+    "endTime": "14:31",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't know if you remember like the early days of Facebook or the social media where you effectively were providing the credentials of for example like your email, for Facebook to recognize the word, your contacts.",
+    "startTime": "14:31",
+    "endTime": "14:45",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, horrible security.",
+    "startTime": "14:45",
+    "endTime": "14:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "14:47",
+    "endTime": "14:47",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, now 20 years later, we say like, oh my God, what were we doing 20 years ago?",
+    "startTime": "14:47",
+    "endTime": "14:53",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But yeah, I mean, back in the days I think that there was like a necessary solution to a problem that was how can I only grant access to my contacts but not everywhere else before the, you know, Facebook needed to scrape your entire, I mean, basically get access to your email in order to do that.",
+    "startTime": "14:53",
+    "endTime": "15:13",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's why Oauth was like, it was primarily born out of that, out of that suboptimal experience.",
+    "startTime": "15:14",
+    "endTime": "15:21",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then because of the fact that unlike SAML that relies on soap again, people that have been in the sector for a long time know what it is.",
+    "startTime": "15:21",
+    "endTime": "15:34",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think they usually have a lot.",
+    "startTime": "15:35",
+    "endTime": "15:36",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Of great hair, probably reason why neurosoftware.",
+    "startTime": "15:36",
+    "endTime": "15:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Engineers, I don't think that they necessarily know what was so pace.",
+    "startTime": "15:39",
+    "endTime": "15:41",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But the point is, it's something that wasn't very suited, especially for an API driven world, which is the one in which we live today or in the background usage AWT's.",
+    "startTime": "15:41",
+    "endTime": "15:55",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that is a type of format a technology that is sort of like way better suited for an API.",
+    "startTime": "15:55",
+    "endTime": "16:05",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "First word.",
+    "startTime": "16:05",
+    "endTime": "16:05",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That is the one for today.",
+    "startTime": "16:05",
+    "endTime": "16:07",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's why first people started to building o two before then, you know, the openid connect try to bring those two worlds together.",
+    "startTime": "16:07",
+    "endTime": "16:21",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And right now I think it is, you know, if you go to ignite event, for example like the Okta developer conference, they will tell you that it is by far the most used federation protocol out there in the world, both in the area of enterprise and consumer identity as well.",
+    "startTime": "16:21",
+    "endTime": "16:42",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then Okta and authorshare is now part of Okta.",
+    "startTime": "16:42",
+    "endTime": "16:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "16:46",
+    "endTime": "16:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But they offer both.",
+    "startTime": "16:46",
+    "endTime": "16:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I guess they kind of solve the problem of this dual world that we kind of lived in where you kind need to be both if you're building software, right.",
+    "startTime": "16:49",
+    "endTime": "16:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I can see firsthand, like SAML is still as painful of a protocol.",
+    "startTime": "16:57",
+    "endTime": "17:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It is still very widely used in the enterprise realm, right?",
+    "startTime": "17:02",
+    "endTime": "17:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "17:06",
+    "endTime": "17:07",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that's a primarily like compliance.",
+    "startTime": "17:07",
+    "endTime": "17:10",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean that scenario is primarily not driven by compliance.",
+    "startTime": "17:10",
+    "endTime": "17:14",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "17:14",
+    "endTime": "17:14",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So especially in those large organizations or in government enterprises, there are this very complex, you know, control framework and this internal audit driven world where obviously if you try to explain to a non technologist, you know, option a and option b, they both functionally do the same thing.",
+    "startTime": "17:14",
+    "endTime": "17:37",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So why do we need to evolve, you know, even if the world, even if there are like very competitive reason to do so?",
+    "startTime": "17:37",
+    "endTime": "17:44",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I think that's, that's what we are seeing.",
+    "startTime": "17:45",
+    "endTime": "17:48",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I also think that as like Oauth opened the connect, it's also bridging into the world of servers and on devices.",
+    "startTime": "17:48",
+    "endTime": "18:02",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, you see that, you know, for example, a little tv and Google box behind me, you know, those frameworks, they are much more flexible.",
+    "startTime": "18:02",
+    "endTime": "18:16",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "18:16",
+    "endTime": "18:16",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that as more and more use cases, especially like CLI based use cases or I places where you need robotic access coming to the picture, they come under the supervision of internal audit apartments.",
+    "startTime": "18:16",
+    "endTime": "18:32",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm sure that will also shift away because doing those making the top an under SAML is, yeah, huge pain.",
+    "startTime": "18:32",
+    "endTime": "18:40",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, that's a very good point.",
+    "startTime": "18:41",
+    "endTime": "18:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "In particular, when you start to issue service, like you say, like survey service accounts for IoT devices and so on, where that's not really compatible with the SAML life cycle, which is very person heavy.",
+    "startTime": "18:42",
+    "endTime": "18:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then as part of, I guess, authentication, MFA or multifactor authentication or two FActor authentication has become, I mean, has been a thing forever in the enterprise world.",
+    "startTime": "18:56",
+    "endTime": "19:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, if you worked for any security oriented industry for the last 20 years, you've probably had some kind of hardware token that you had to carry with you to log into your systems with.",
+    "startTime": "19:09",
+    "endTime": "19:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "In the last ten years, I guess it's become more common for people to understand, even though they don't really understand it behind the scenes.",
+    "startTime": "19:20",
+    "endTime": "19:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But Google Authenticator was probably the one that, well, is one of the one that people still have got introduced to the concept of two fa with.",
+    "startTime": "19:27",
+    "endTime": "19:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "19:37",
+    "endTime": "19:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So behind the scenes it's using, I think it's top t, Google Authenticator.",
+    "startTime": "19:37",
+    "endTime": "19:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So maybe talk about top t and hop t, which are two of the most common rolling past, rolling tokens, I guess.",
+    "startTime": "19:43",
+    "endTime": "19:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, sure.",
+    "startTime": "19:53",
+    "endTime": "19:54",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that we owe it to the, let me just say, the big companies out there, the massive educational, sort of like role that they've played to make millions of normal people and professional alike understand the importance of all of that.",
+    "startTime": "19:54",
+    "endTime": "20:11",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now.",
+    "startTime": "20:12",
+    "endTime": "20:12",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, whether we are talking about the underlying protocol, I mean, the, back in the days, I think were all using the little like RSA keys, you know, that the sort of like underlying technology or the algorithm side of it that hasn't really evolved.",
+    "startTime": "20:12",
+    "endTime": "20:31",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, that's not necessarily a bad thing because, you know, it's something that has been working for a long time and still, just like everything else, insecurity is about not building an impenetrable wall, but building a wall that is high enough that discourages people to sort of like try to jump over it and maybe go to our neighbor and try to do the same thing.",
+    "startTime": "20:31",
+    "endTime": "20:53",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "20:53",
+    "endTime": "20:54",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, you know, like time based, like MFA tokens, I think that they have their value and they represent like a significant step up, especially compared to, the username and password.",
+    "startTime": "20:54",
+    "endTime": "21:10",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But however, if we look about, if we consider them in the context of today's world where you have, what you're seeing much more and more like adversary in the middle type of attacks with, that are very easy to automate at scale.",
+    "startTime": "21:10",
+    "endTime": "21:27",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like if you, I don't know if you're familiar with frameworks like Marina or evil jinx, I mean, just to name a few of the very popular ones, they are not enough, right?",
+    "startTime": "21:27",
+    "endTime": "21:38",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it is, I don't want to say very easy, but like not very hard to sort of like synchronize these protections and effectively act on the next weakling of the chain that is stealing cookies and sessions.",
+    "startTime": "21:39",
+    "endTime": "21:55",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "21:55",
+    "endTime": "21:56",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because oftentimes we forgot that those sort of like opaque tokens live for a very long time in our browser.",
+    "startTime": "21:56",
+    "endTime": "22:03",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "22:03",
+    "endTime": "22:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, yeah, you're absolutely right.",
+    "startTime": "22:04",
+    "endTime": "22:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's about raising the bar.",
+    "startTime": "22:06",
+    "endTime": "22:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "22:07",
+    "endTime": "22:07",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I think that's.",
+    "startTime": "22:07",
+    "endTime": "22:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's good that we start to see more acceptance of that and understand that.",
+    "startTime": "22:09",
+    "endTime": "22:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I remember when I first moved to the US, I grew up in Scandinavia and hardware tokens were a thing like in the early two thousands.",
+    "startTime": "22:14",
+    "endTime": "22:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All the scandinavian banks used them back then.",
+    "startTime": "22:23",
+    "endTime": "22:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I remember moving to the US and I, I signed up for the bank account and it was just like, oh, here's your username and password.",
+    "startTime": "22:26",
+    "endTime": "22:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I was like, but surely there is more protection to my actual bank account.",
+    "startTime": "22:31",
+    "endTime": "22:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But no, that was like essentially thing for us, banks, like, they are order of magnitude behind when it comes to security.",
+    "startTime": "22:36",
+    "endTime": "22:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And obviously two factor raised the bar there a lot.",
+    "startTime": "22:44",
+    "endTime": "22:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So going back then to.",
+    "startTime": "22:48",
+    "endTime": "22:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So we have rolling tokens and then that's something.",
+    "startTime": "22:51",
+    "endTime": "22:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, it goes back to the fundamental principle behind MFA and two FA, which is something you have and something, you know.",
+    "startTime": "22:56",
+    "endTime": "23:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "23:03",
+    "endTime": "23:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Which is the building block for a lot of security.",
+    "startTime": "23:03",
+    "endTime": "23:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I think it's.",
+    "startTime": "23:06",
+    "endTime": "23:08",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You tend to talk about the three.",
+    "startTime": "23:08",
+    "endTime": "23:10",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The three main factor, right.",
+    "startTime": "23:10",
+    "endTime": "23:12",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there is like knowledge, right.",
+    "startTime": "23:12",
+    "endTime": "23:15",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That is the password.",
+    "startTime": "23:15",
+    "endTime": "23:16",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like the password is something, you know, there is the concept of like inheritance.",
+    "startTime": "23:16",
+    "endTime": "23:21",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That is something that you are, right.",
+    "startTime": "23:21",
+    "endTime": "23:25",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So like the fingerprint, your face and whatnot.",
+    "startTime": "23:25",
+    "endTime": "23:31",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then there is the concept of possession and the hardware tokens in the case, or whether we're talking, I mean, those yubikeys or something that they tend to like, at least loosely, sort of like fall into their broader category.",
+    "startTime": "23:31",
+    "endTime": "23:50",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the idea is that, I mean, having two or more factors sort of like, tend to be like.",
+    "startTime": "23:50",
+    "endTime": "23:59",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Tend to present a much higher wall to an adversary.",
+    "startTime": "23:59",
+    "endTime": "24:02",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That doesn't mean that all second factors or all factors are created equal, right.",
+    "startTime": "24:03",
+    "endTime": "24:07",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There are obviously ones that prefer that present a much higher assurance level.",
+    "startTime": "24:07",
+    "endTime": "24:13",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And by the way, the concept of assurance levels, inauthentication is something that you can research about.",
+    "startTime": "24:13",
+    "endTime": "24:20",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It is a formalized console, like what constitutes like a assurance level, like one or two of a specific authentication.",
+    "startTime": "24:20",
+    "endTime": "24:29",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But again, I think it's a kind of like academic compliance concept, but nevertheless an important one to mention.",
+    "startTime": "24:30",
+    "endTime": "24:39",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so that's why after those hardware tokens, companies like, I think that there was duo Okta, Microsoft, they sort of started coming out with their own authentication apps, which in a way, they were a way of presenting a richer picture of the authentication event.",
+    "startTime": "24:39",
+    "endTime": "25:02",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So adding just not two point in time signals.",
+    "startTime": "25:02",
+    "endTime": "25:07",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, the password, boom, input, it's a post request.",
+    "startTime": "25:07",
+    "endTime": "25:11",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The TOtp, it's a single post request.",
+    "startTime": "25:11",
+    "endTime": "25:12",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But maybe if you have an app on the phone with sufficient permissions, you can sort of like for example, understand or also log what is, whether the IP address is consistent with the one from the browser.",
+    "startTime": "25:12",
+    "endTime": "25:28",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "25:28",
+    "endTime": "25:28",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, is the phone in China and the person in America as an example?",
+    "startTime": "25:28",
+    "endTime": "25:33",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Or likewise, there are in certain cases also certain behavioral data points that are added into the mix.",
+    "startTime": "25:33",
+    "endTime": "25:43",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "25:43",
+    "endTime": "25:43",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the accelerometer, was it recording the phone going up and down or sitting on a desk or.",
+    "startTime": "25:43",
+    "endTime": "25:49",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So?",
+    "startTime": "25:49",
+    "endTime": "25:50",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Again, I think that the point is it's all about, just like with everything in security is do I have reasonable assurance about a certain specific event?",
+    "startTime": "25:50",
+    "endTime": "26:02",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And what is reasonable?",
+    "startTime": "26:02",
+    "endTime": "26:03",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The idea is that as time goes by, that what reasonable is sort of like keeps going up.",
+    "startTime": "26:03",
+    "endTime": "26:09",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "26:09",
+    "endTime": "26:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you kind of hinted at the whole zero trust model where you have to use behavioral metrics and to figure out if something makes sense.",
+    "startTime": "26:10",
+    "endTime": "26:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "In the case of Google, with their beyond the core, they drop permission if they find that you are not passing all the checks and having that kind of, that's a very sophisticated level of permission which most companies will not have the resource to do.",
+    "startTime": "26:21",
+    "endTime": "26:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, I mean, you say that, but I don't fundamentally agree.",
+    "startTime": "26:40",
+    "endTime": "26:44",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "26:44",
+    "endTime": "26:44",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because I think that those kind of frameworks and technology, I think that they, thanks to companies like Cloudflare, that not affiliated with me, but I'm a big fan of their technologies.",
+    "startTime": "26:44",
+    "endTime": "26:58",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I use them for my own lab or tail scale or whatever.",
+    "startTime": "26:58",
+    "endTime": "27:02",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that they present some very cost effective and extremely capable solutions that also offer a relatively shallow knowledge barrier to entry.",
+    "startTime": "27:02",
+    "endTime": "27:14",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "As an it administrator, they would like to adopt them for the users.",
+    "startTime": "27:14",
+    "endTime": "27:18",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And another crucial thing, they don't get in the way of the day to day activities of colleagues and employees in China.",
+    "startTime": "27:18",
+    "endTime": "27:26",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, don't get me wrong, I'm a big fan of both tail scale and offcloudflare, and they have definitely reduced the barrier to doing zero trust esque workloads with mtls and all those things.",
+    "startTime": "27:26",
+    "endTime": "27:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But, yeah, so the lowest barrier is of course some kind of rotating token or soft token, and then if we go one step up to there, you have the hardware token.",
+    "startTime": "27:39",
+    "endTime": "27:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you mentioned Yubikeye, also a huge fan of Yubikey.",
+    "startTime": "27:50",
+    "endTime": "27:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'll be using them since I think I got, they sent me like a beta version of the first Yubikey, for whatever reason, way back when, and I've been using it ever since.",
+    "startTime": "27:54",
+    "endTime": "28:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And we use them at screen that we use them.",
+    "startTime": "28:02",
+    "endTime": "28:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Everybody uses Yubikeys for anything to get into our systems and they've kind of gone into a standard now.",
+    "startTime": "28:04",
+    "endTime": "28:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So there's some gold feedo alliance, right?",
+    "startTime": "28:11",
+    "endTime": "28:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Which standard I think they standardize under web auth end.",
+    "startTime": "28:13",
+    "endTime": "28:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is that correct or did I get that right?",
+    "startTime": "28:19",
+    "endTime": "28:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "28:20",
+    "endTime": "28:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So if we talk about, and then I, you know, let me first address this point and address the benefits of it.",
+    "startTime": "28:21",
+    "endTime": "28:28",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So when we talk about Fido, we are really talking about two parts.",
+    "startTime": "28:29",
+    "endTime": "28:34",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we are talking about setup that is sort of like the underlying protocol that enables the communication between the client and the authenticator.",
+    "startTime": "28:34",
+    "endTime": "28:44",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then Webauthn, which is the API layer.",
+    "startTime": "28:45",
+    "endTime": "28:48",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's sort of like API that allows web application to leverage setup and utilize authenticator for user authentication.",
+    "startTime": "28:48",
+    "endTime": "28:55",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, normal users, they don't necess, I mean you and I as end users of the technology, we will never interact with setup.",
+    "startTime": "28:55",
+    "endTime": "29:04",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We will see like we will participate in the web auth dance.",
+    "startTime": "29:05",
+    "endTime": "29:10",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it's all, I mean, I think it's useful to understand the distinction between the two because in the, let me just say, many years in authentication has been around for a very long time and this is the most effective initiative that we as the companies had to unify around a specific standard.",
+    "startTime": "29:10",
+    "endTime": "29:35",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So just to explain it with analogy, I think that the one that is normally presented is, I mean, if you want to do like an online food order sit up, it's sort of like the phone line that connects you to your favorite pizza place.",
+    "startTime": "29:36",
+    "endTime": "29:52",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then webb ten is sort of like the pizza menu, right?",
+    "startTime": "29:52",
+    "endTime": "29:55",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that allows you to sort of choose what is the specific food that you want for your route.",
+    "startTime": "29:55",
+    "endTime": "30:04",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now in terms of the benefit, was the first part of your question, in addition to the standardization, there is at least like one security and one privacy element that I want to mention.",
+    "startTime": "30:06",
+    "endTime": "30:21",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the security one we discussed doing adversary in the middle attacks, even when there are hardware tokens or authenticator apps, is becoming more and more commonplace.",
+    "startTime": "30:21",
+    "endTime": "30:34",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And as I said, there is lot of automation for even novice wannabe hackers to pull it off.",
+    "startTime": "30:35",
+    "endTime": "30:44",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "30:44",
+    "endTime": "30:45",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the great thing about Webautin and Fido is that the origin is a part of the challenge response mechanism.",
+    "startTime": "30:45",
+    "endTime": "30:55",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So even when you are doing this, let me just say, transparent proxy style attacks, the system cannot be gained that easily, effectively because it is one of the elements that are exchanged between the client and the backend API.",
+    "startTime": "30:56",
+    "endTime": "31:17",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The second part is the privacy element is a little bit of an interesting one because it really depends of what we use to store our passkeys.",
+    "startTime": "31:18",
+    "endTime": "31:31",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Generally speaking, it adds a layer of opacity to your credentials.",
+    "startTime": "31:31",
+    "endTime": "31:40",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, like having said that, obviously if you do value convenience, that might not necessarily be the case if you use Google or Apple or all Microsoft sort of like those platform to sync, you know, pass keys across all of your device.",
+    "startTime": "31:41",
+    "endTime": "31:59",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm not saying that is insecure, and I don't want to suggest that data is misused, but it might be.",
+    "startTime": "32:00",
+    "endTime": "32:07",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Again, those are things that the fact that it doesn't happen today doesn't mean that it might not happen in the future.",
+    "startTime": "32:07",
+    "endTime": "32:12",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you're a privacy conscious person, this might be a better choice.",
+    "startTime": "32:12",
+    "endTime": "32:17",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But for hardware tokens in Webauthn, ASCII is next generation of that.",
+    "startTime": "32:17",
+    "endTime": "32:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So the initial feeder was just physically hardware tokens, like Yubikey style hardware token that you have to present.",
+    "startTime": "32:23",
+    "endTime": "32:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Then it has some kind of string it returns.",
+    "startTime": "32:31",
+    "endTime": "32:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you registered your passkey in there and then Passkey is the next generation that we are exposed to.",
+    "startTime": "32:34",
+    "endTime": "32:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Now let's come back to that part, because I'm curious about, and I have a lot of things about passkey.",
+    "startTime": "32:41",
+    "endTime": "32:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I wanted to focus on the hardware tokens out of that first, which I think is different from the passkey part of it.",
+    "startTime": "32:46",
+    "endTime": "32:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yep, go for it.",
+    "startTime": "32:54",
+    "endTime": "32:55",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you had the web offend, which was Yubico.",
+    "startTime": "32:56",
+    "endTime": "33:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yubico, the company behind Yubikey, was one of the first, one of the guys in that, and became an open standard.",
+    "startTime": "33:00",
+    "endTime": "33:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You could today buy a kind of a federated compliant device.",
+    "startTime": "33:06",
+    "endTime": "33:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Then there was Fido two.",
+    "startTime": "33:09",
+    "endTime": "33:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I don't actually know enough about the difference between Fido one and Fido two.",
+    "startTime": "33:11",
+    "endTime": "33:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is that something, is there any worthwhile conversation to have about those two?",
+    "startTime": "33:15",
+    "endTime": "33:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or.",
+    "startTime": "33:18",
+    "endTime": "33:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, I think that it's a set of like subsequent iteration on the idea.",
+    "startTime": "33:19",
+    "endTime": "33:24",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the point is that if you look at the Fido project, I mean there are.",
+    "startTime": "33:24",
+    "endTime": "33:30",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It is an umbrella that actually includes different standards and specifications.",
+    "startTime": "33:31",
+    "endTime": "33:37",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So to the point about.",
+    "startTime": "33:37",
+    "endTime": "33:39",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there was the beginning of it was the universal authentication factor at UAF was proposed, I think 2014, 2015 or something along those lines.",
+    "startTime": "33:40",
+    "endTime": "33:57",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And together with that there was the U two f, the universal second factor, sort of like spec, which informed part of the FIDO two standard that came around a year later.",
+    "startTime": "33:57",
+    "endTime": "34:12",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the idea is that sort of like a single project or initiative split into two, which are the two ones that I mentioned before.",
+    "startTime": "34:12",
+    "endTime": "34:19",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the FIDO two that then resulted in the webo ten draft, that is something that is shepherded directly by the WTC and the SITA was the sort of way to standardize the communication, like the protocol that standardized communication between the client and the authenticator.",
+    "startTime": "34:19",
+    "endTime": "34:48",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I think it's been like an incremental, an evolution journey of a concept.",
+    "startTime": "34:48",
+    "endTime": "34:58",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So what we have right now is fairly stable.",
+    "startTime": "34:58",
+    "endTime": "35:02",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "35:02",
+    "endTime": "35:02",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that like empirically I don't have hard data on this, but like as an end user and consumer, I see it adopted on more and more websites.",
+    "startTime": "35:02",
+    "endTime": "35:15",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I remember in the beginning it was just like only a few enlightened people, like companies like Google or PayPal, they were sort of doing that.",
+    "startTime": "35:15",
+    "endTime": "35:23",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And now, I mean, even my italian bank, as you can imagine it's not at the forefront of technology, is actually doing it.",
+    "startTime": "35:23",
+    "endTime": "35:32",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, think that.",
+    "startTime": "35:33",
+    "endTime": "35:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that was great.",
+    "startTime": "35:36",
+    "endTime": "35:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like they raised the bar significantly.",
+    "startTime": "35:36",
+    "endTime": "35:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Now, you could still argue that this is still very tech product, right.",
+    "startTime": "35:38",
+    "endTime": "35:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's something that companies would issue and very few consumers would go out and buy because if you want to buy Yubikey, they're pretty expensive for like a consumer.",
+    "startTime": "35:42",
+    "endTime": "35:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like very few consumers buy.",
+    "startTime": "35:50",
+    "endTime": "35:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think they're like the five c.",
+    "startTime": "35:52",
+    "endTime": "35:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think they're like $70 or something like that, right?",
+    "startTime": "35:54",
+    "endTime": "35:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I think all of us have like a very powerful and capable device that we carry around everywhere we go in our pocket.",
+    "startTime": "35:56",
+    "endTime": "36:05",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, yes, I mean, you obviously us as technologists need to be aware of the trade off that we do when using, let me just say, our Android net perform to as a credential wallet, like if you can call it that way.",
+    "startTime": "36:05",
+    "endTime": "36:22",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But fundamentally it is.",
+    "startTime": "36:23",
+    "endTime": "36:25",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that also from a user experience perspective, again, I'm nothing, I'm a backend person, I'm not a uxer.",
+    "startTime": "36:25",
+    "endTime": "36:32",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But the simplicity, the simplification of especially the registration part of the user journey is immense.",
+    "startTime": "36:32",
+    "endTime": "36:44",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You don't have to create and remember secret, or even for example, registering TOTP, there needs to be sharing, even taking a picture of the QR code or entering the password, depending on what you use, still has a much higher friction than right now.",
+    "startTime": "36:44",
+    "endTime": "37:05",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Clicking a button and putting a fingerprint or Face ID, it just reduces the number of steps.",
+    "startTime": "37:05",
+    "endTime": "37:14",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the easier it is, the more normally users and clients a certain service can register.",
+    "startTime": "37:14",
+    "endTime": "37:21",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, you can't touch on something before, which is one of the issues with Yubikey is that if you lose it, you're kind of screwed unless you have multiple.",
+    "startTime": "37:21",
+    "endTime": "37:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I use them extensively, I have three of them, I think, and I have backup keys that are locked up, but I am fully aware of that.",
+    "startTime": "37:31",
+    "endTime": "37:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's hardly how the average user would treat their authentication.",
+    "startTime": "37:39",
+    "endTime": "37:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Obviously, I have a lot higher stakes with my systems than the average user too, of course.",
+    "startTime": "37:43",
+    "endTime": "37:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But the trade off, as you alluded to, between having this cloud sync between your devices is tremendously valuable because if you lose your phone, you can still recover this because you can sync it up.",
+    "startTime": "37:48",
+    "endTime": "38:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that, I guess, gives us a good segue into passkey.",
+    "startTime": "38:00",
+    "endTime": "38:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Passkey.",
+    "startTime": "38:03",
+    "endTime": "38:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How is that different from a technological perspective, from Fido and that umbrella of a hardware token?",
+    "startTime": "38:05",
+    "endTime": "38:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They share a lot of similarities.",
+    "startTime": "38:13",
+    "endTime": "38:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But let's talk about first of all how they are different.",
+    "startTime": "38:14",
+    "endTime": "38:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If you go for this standards that are tensor, if nothing, hundreds of pages.",
+    "startTime": "38:21",
+    "endTime": "38:26",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, you sort of like find the seeds of that, like all the way since the very beginning.",
+    "startTime": "38:26",
+    "endTime": "38:33",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, the point is that when you complete, like especially with the current, with the current standard, when you complete your registration, effectively, your authenticator stores a set of information.",
+    "startTime": "38:33",
+    "endTime": "38:48",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So your credential id, your public and private key, I mean, in this case, for the specific service user information, I mean, like your information, and crucially, like a domain name, that is what gives you the resistance to adversarial in the middle attacks that are like becoming more popular these days.",
+    "startTime": "38:49",
+    "endTime": "39:09",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "39:09",
+    "endTime": "39:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think that it's a way to standardize something that, let me just say, some public key cryptography methodologies that have been tried by several different companies.",
+    "startTime": "39:10",
+    "endTime": "39:26",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So fundamentally it's different because you have, it's a public private key arrangement rather than a second factor authentication keys.",
+    "startTime": "39:28",
+    "endTime": "39:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Just for the avoidance of that FidO, two keys and pass keys, the same thing.",
+    "startTime": "39:43",
+    "endTime": "39:47",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's just like a different way of calling.",
+    "startTime": "39:47",
+    "endTime": "39:49",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay, fair enough.",
+    "startTime": "39:50",
+    "endTime": "39:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "39:51",
+    "endTime": "39:51",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, but you, it's important.",
+    "startTime": "39:51",
+    "endTime": "39:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "For instance, with the Yubikey, it can do Fido too.",
+    "startTime": "39:54",
+    "endTime": "39:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "With passkey, however, I think it only has like five or ten slots, I believe.",
+    "startTime": "39:59",
+    "endTime": "40:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I guess it depends on which model they buy.",
+    "startTime": "40:05",
+    "endTime": "40:07",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, yeah, you know, they definitely, I mean, there are different makers and right now that are also like a yemenite.",
+    "startTime": "40:07",
+    "endTime": "40:13",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Again, if you don't like Yubico, there are a lot of like white label providers that are, I think I remember like seeing on GitHub, like open source projects of like, if you want to do and create your own.",
+    "startTime": "40:13",
+    "endTime": "40:25",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, so I think that the DIY enthusiast market is.",
+    "startTime": "40:25",
+    "endTime": "40:28",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "40:28",
+    "endTime": "40:29",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "40:30",
+    "endTime": "40:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "My criticism was not against Yubico and Yubikey.",
+    "startTime": "40:31",
+    "endTime": "40:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm a big fan of them, but rather the fact that because of the fact that you enrolling, you're rolling a separate key pair per service you're authenticating with, you have constraints on the device versus in fido one, you have the same two factors, so to speak, against every service you enrolled it against.",
+    "startTime": "40:33",
+    "endTime": "40:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "40:53",
+    "endTime": "40:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that's a big distinction in how they work.",
+    "startTime": "40:53",
+    "endTime": "40:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "40:56",
+    "endTime": "40:56",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, I mean, I'm sure that there are in the works or there are like in the future sort of like ways to standardize, like how you do the syncing of that.",
+    "startTime": "40:56",
+    "endTime": "41:05",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, but just like with every.",
+    "startTime": "41:05",
+    "endTime": "41:07",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Every standard, like, it takes multiple iterations and especially with something that is so security sensitive before that sort of like, gets adopted by multiple people.",
+    "startTime": "41:07",
+    "endTime": "41:22",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Having said that, it is an interesting standard.",
+    "startTime": "41:22",
+    "endTime": "41:26",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It would be interesting to have a look at the actual adoption.",
+    "startTime": "41:26",
+    "endTime": "41:29",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "41:29",
+    "endTime": "41:30",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But, you know, already the fact that we.",
+    "startTime": "41:30",
+    "endTime": "41:35",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't think that there are like any more sensitive, you know, websites that only username and password, I think that's already like a very big win.",
+    "startTime": "41:35",
+    "endTime": "41:43",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "41:43",
+    "endTime": "41:44",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We are obviously like five to ten years ahead of what the general public will see and we're experiencing their day to day life.",
+    "startTime": "41:46",
+    "endTime": "41:53",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I mean, we are unfortunately still seeing customer or still seeing websites using SMS as a two factor authentication, including all the UK government services, which is not great.",
+    "startTime": "41:53",
+    "endTime": "42:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "42:08",
+    "endTime": "42:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "At least in the UK compared to the US, we are less aggressive in recycling phone numbers.",
+    "startTime": "42:10",
+    "endTime": "42:16",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that is, again, there is the spoofing use case, obviously.",
+    "startTime": "42:18",
+    "endTime": "42:24",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But like in the US, this is even like a much more problematic because in the space of literally a month from when you stopped using your or you stopped paying for your phone service, someone else might effectively have it.",
+    "startTime": "42:24",
+    "endTime": "42:42",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's very interesting.",
+    "startTime": "42:43",
+    "endTime": "42:44",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You're still subject to Sim swapping, though, which is a whole different attack vector, which is probably a bigger reason to not use SMS in the first place, to fa because.",
+    "startTime": "42:44",
+    "endTime": "42:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, terrible for that reason.",
+    "startTime": "42:54",
+    "endTime": "42:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All right, so I won't go further down the path key route because I think there's a lot to unpack there because I think it's a paradigm shift in how we do authentication because now you don't really have a username and password as you used to.",
+    "startTime": "42:58",
+    "endTime": "43:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You now have a.",
+    "startTime": "43:12",
+    "endTime": "43:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, from a technical perspective, you have a public key pair, even though the end user would never know that because it's all obfuscated from you.",
+    "startTime": "43:13",
+    "endTime": "43:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But that means that you create a much more seamless onboarding flow for end user.",
+    "startTime": "43:21",
+    "endTime": "43:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "In particular on iOS, I don't know how it is on Android because I've had android phone in a while, but on iOS, if you go out to a website, you sign up with Passkey, you say create an account and that's it.",
+    "startTime": "43:26",
+    "endTime": "43:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It doesn't ask for a password, it doesn't ask for anything.",
+    "startTime": "43:35",
+    "endTime": "43:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's it's done with the flow that's available across all my iOS devices.",
+    "startTime": "43:38",
+    "endTime": "43:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think that's such a faster shift that I think adoption has been really rapid in the last passkey is only what, two years old if that as a standard.",
+    "startTime": "43:44",
+    "endTime": "43:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think a little bit we need to double check, but like, definitely, like a little bit more than that.",
+    "startTime": "43:55",
+    "endTime": "44:00",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that the latest setup, I think it was approved in 2018.",
+    "startTime": "44:00",
+    "endTime": "44:06",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I mean, it's been okay, fair enough.",
+    "startTime": "44:06",
+    "endTime": "44:08",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay.",
+    "startTime": "44:08",
+    "endTime": "44:08",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, it's been a little bit of years, right.",
+    "startTime": "44:09",
+    "endTime": "44:11",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it's also true, I think, that there was around the same time probably when like secure elements were being installed on, not only on phones, but also on laptop and windows.",
+    "startTime": "44:11",
+    "endTime": "44:24",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Hello.",
+    "startTime": "44:24",
+    "endTime": "44:24",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And whatnot.",
+    "startTime": "44:24",
+    "endTime": "44:24",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that they, like, everything sort of started coming around the same time.",
+    "startTime": "44:24",
+    "endTime": "44:29",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "44:29",
+    "endTime": "44:30",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "44:30",
+    "endTime": "44:30",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And let's not forget that it's not just a matter of like the capability of the device, but as an application developer, right.",
+    "startTime": "44:30",
+    "endTime": "44:37",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, you need to have the right set of libraries, the right set of SDKs, and potentially the system that you're using needs to enable the use of that technology.",
+    "startTime": "44:37",
+    "endTime": "44:52",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there are a chain set of dependencies that to be considered when it comes down to the adoption, 100%.",
+    "startTime": "44:52",
+    "endTime": "45:06",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, at least as an end user, what I've seen last few years that you definitely see the massive push for passkey because I think it just makes sense from an end user's perspective.",
+    "startTime": "45:06",
+    "endTime": "45:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And Apple obviously doubled down on passkey relatively recently.",
+    "startTime": "45:16",
+    "endTime": "45:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "One password, they've been pretty aggressive on getting their passkey support.",
+    "startTime": "45:20",
+    "endTime": "45:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that's something that's been prompted with.",
+    "startTime": "45:25",
+    "endTime": "45:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And now you're almost in a problem where you have a problem dealing with where you store your passkeys because now you have multiple places where you can store your passkeys.",
+    "startTime": "45:28",
+    "endTime": "45:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So now you're almost back to password management, but with passkeys instead.",
+    "startTime": "45:36",
+    "endTime": "45:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "45:41",
+    "endTime": "45:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I mean, it seems like that's going to become the norm I think, going forward.",
+    "startTime": "45:42",
+    "endTime": "45:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think it's a very welcomed transition for authentication because it raises the bar significantly for an attacker.",
+    "startTime": "45:49",
+    "endTime": "45:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "45:56",
+    "endTime": "45:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "45:57",
+    "endTime": "45:58",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, so this is on the concept of security.",
+    "startTime": "45:58",
+    "endTime": "46:03",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That is something that, I mean, personally it's very dear to me, but, and I think like also to many of the people that are reading this, that is also like the privacy angle.",
+    "startTime": "46:03",
+    "endTime": "46:12",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that there are like two, let me just say two elements that are not necessary, that are not directly addressed by this as an authentication standard, but they are more in the realm of federation that we don't talk about it enough, but we probably should talk about it a little bit more.",
+    "startTime": "46:13",
+    "endTime": "46:34",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the first one is sort of like the traceability and the linkability from an identity perspective that is done either the identity provider side or let me just say on the underlying party side, the kind of place where the application that you want to access.",
+    "startTime": "46:34",
+    "endTime": "47:00",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, so those are whether we are using username and password or pass keys or something like that.",
+    "startTime": "47:00",
+    "endTime": "47:05",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They are sort of like two macro problem categories that for various reasons they don't have a clear path or a clear solution to that.",
+    "startTime": "47:05",
+    "endTime": "47:19",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's a very good question because I never thought about that, where it's like who actually manage identity of pascuas?",
+    "startTime": "47:19",
+    "endTime": "47:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If I say I'm foor.com, who can verify that?",
+    "startTime": "47:25",
+    "endTime": "47:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because I can issue a token against that.",
+    "startTime": "47:30",
+    "endTime": "47:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then you would enroll the public token so the authentication dance would work just fine.",
+    "startTime": "47:32",
+    "endTime": "47:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I.",
+    "startTime": "47:35",
+    "endTime": "47:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There is no verification flow against that email address or whatever identifier you're using.",
+    "startTime": "47:36",
+    "endTime": "47:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How is actually the identifier stacked in that scenario?",
+    "startTime": "47:43",
+    "endTime": "47:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because that's an important one.",
+    "startTime": "47:47",
+    "endTime": "47:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think it's more about the fact that whether we like it or not, there is a large amount of consolidation on the identity provider side especially.",
+    "startTime": "47:51",
+    "endTime": "48:01",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm talking about the consumer identity use case, not for enterprises but for, let me just say, people shopping around the Internet and whatnot.",
+    "startTime": "48:01",
+    "endTime": "48:08",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so there aren't a lot of players in that space.",
+    "startTime": "48:09",
+    "endTime": "48:12",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The market is fairly concentrated.",
+    "startTime": "48:12",
+    "endTime": "48:14",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "48:15",
+    "endTime": "48:15",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And again, I mean, you know, I'm not suggesting that anyone is acting in bad faith or whatever, but first of all, there are threat actors and you never know where the information might end up.",
+    "startTime": "48:16",
+    "endTime": "48:28",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then second of all, the fact that something isn't happening today doesn't mean that it might not happen in the future.",
+    "startTime": "48:28",
+    "endTime": "48:34",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you have this sort of like fairly large players that have a lot of information around like our behavior and what we do and the websites and where do we authenticate to the point that potentially don't say they could impersonate you, but they could know a lot on the ten.",
+    "startTime": "48:34",
+    "endTime": "48:55",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And by the way, the same happens on the other side.",
+    "startTime": "48:55",
+    "endTime": "48:57",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "48:58",
+    "endTime": "48:58",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if there was a large enough number of colluding relying parties, again, you might potentially be able to profile or understand a lot about the behavior of a single specific person by his or her own activity on such websites.",
+    "startTime": "48:58",
+    "endTime": "49:19",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that the main enabler for that is that regardless of what you use, you know, the way normally works is that you would use a, like a passkey against Google or against, you know what, zero.",
+    "startTime": "49:19",
+    "endTime": "49:32",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Ok, pick your favorite.",
+    "startTime": "49:32",
+    "endTime": "49:35",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But then that system would be federated with the actual system that you're trying to access by means of, you know, potentially like a o two token, which is something that wasn't really, it was designed with previous in mind, but with the different type of previously.",
+    "startTime": "49:35",
+    "endTime": "49:52",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "49:52",
+    "endTime": "49:52",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it was differential access to information rather than kind of like non leaking details about, let me just say about the specific user account or the behavior in aggregate.",
+    "startTime": "49:52",
+    "endTime": "50:08",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "All right, so in that scenario then my identity provider that I'm issuing from this, from like Apple or Oct zero or Okta, they are the one that I'm communicating with.",
+    "startTime": "50:09",
+    "endTime": "50:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then behind the scenes it's then probably oauth two.",
+    "startTime": "50:22",
+    "endTime": "50:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right, okay, that's interesting.",
+    "startTime": "50:26",
+    "endTime": "50:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that brings us into like Passkey in the enterprise.",
+    "startTime": "50:27",
+    "endTime": "50:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, right.",
+    "startTime": "50:33",
+    "endTime": "50:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How would a scenario like that work?",
+    "startTime": "50:34",
+    "endTime": "50:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How would, well, let me ask you a different question.",
+    "startTime": "50:36",
+    "endTime": "50:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is passkey something that can replace SAML or SSO or would it sit on top of that layer as identified prior to the SSO?",
+    "startTime": "50:41",
+    "endTime": "50:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's, that's a very good question.",
+    "startTime": "50:52",
+    "endTime": "50:53",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "50:53",
+    "endTime": "50:53",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's not going to replace it.",
+    "startTime": "50:53",
+    "endTime": "50:55",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "50:55",
+    "endTime": "50:55",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because if you recall the macro functional areas that we discussed at the beginning of the episode, puskies have very much to do with authentication.",
+    "startTime": "50:55",
+    "endTime": "51:09",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "51:09",
+    "endTime": "51:10",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So with the way you prove who you say you are, which, you know, whether you use Okta, whether you use, I don't know, keycloak that you sell for whatever your sort of identity provider of choices, that's what you use against that.",
+    "startTime": "51:10",
+    "endTime": "51:25",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then the how, you know, keycloak or Okta or whatever, Google communicates certain information about yourself like the groups that you belong to or whatever, to the target system.",
+    "startTime": "51:25",
+    "endTime": "51:38",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That is where SAML comes in.",
+    "startTime": "51:38",
+    "endTime": "51:40",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That is where OAuth comes in.",
+    "startTime": "51:40",
+    "endTime": "51:42",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What I can say, I mean, like one of the things that I've tried to push really hard at Okta in particular is just making sure that those fundamentally web standard, they are also adopted on servers in particular while the web application world as you know, evolved and sort of like keeping the pace with the general consumer world on CLI based applications.",
+    "startTime": "51:42",
+    "endTime": "52:13",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And also like when you authenticate towards servers, the user experience is very poor right now.",
+    "startTime": "52:14",
+    "endTime": "52:24",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, absolutely.",
+    "startTime": "52:24",
+    "endTime": "52:26",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that usually sort of like you normally need to operate a trade off between, let me just say, having a good user experience and compromising on security in the sense of like how do you connect the two systems?",
+    "startTime": "52:26",
+    "endTime": "52:41",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So again, on Azure, for example, you were able to use your Azure ad credentials for a very long time rather than a certificate to authenticate to the servers.",
+    "startTime": "52:41",
+    "endTime": "52:56",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And now, I mean, every Ubuntu server from 2404, for example, every ubuntu server in the world is also able to make sense of a JWT natively, meaning that you can use the device flow, which is what you use, for example, to authenticate to Netflix on your tv or Disney plus whatever.",
+    "startTime": "52:56",
+    "endTime": "53:17",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, the sort of case where with the second device you either take a picture of QR code or you put the URL and then you input the challenge.",
+    "startTime": "53:17",
+    "endTime": "53:27",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you can sort of like use the same mechanics to reuse the same credentials that you have in your enterprise identity provider.",
+    "startTime": "53:27",
+    "endTime": "53:37",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So in your opt in your Google Drive, rather than a certificate that is managed completely independently of that to authenticate to your servers.",
+    "startTime": "53:37",
+    "endTime": "53:45",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that applies on the CLI when you're doing openssh sessions and whatnot.",
+    "startTime": "53:45",
+    "endTime": "53:50",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I think that privileged access management or access to back end infrastructure is right now where I personally see that we need to step up.",
+    "startTime": "53:50",
+    "endTime": "54:00",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There is a lot more to be done to bring the same assurance level that we have when we authenticate to Salesforce or SAP.",
+    "startTime": "54:00",
+    "endTime": "54:10",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Also, when you authenticate to that, rather than resorting to esoteric VPN's and all that stuff only frustrates users.",
+    "startTime": "54:10",
+    "endTime": "54:18",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's a really interesting one, right?",
+    "startTime": "54:18",
+    "endTime": "54:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because the server application world is done very differently.",
+    "startTime": "54:20",
+    "endTime": "54:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's usually like, I mean, we use h keys usually to manage access, which then in turn needs to be managed.",
+    "startTime": "54:23",
+    "endTime": "54:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And if you're a really savvy SOP, like I know, Facebook or meta, for instance, they use PGP keys for authentication over Ssh with like time expiry and all that stuff.",
+    "startTime": "54:30",
+    "endTime": "54:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, I personally think that the best solution is openSSh certificates.",
+    "startTime": "54:44",
+    "endTime": "54:49",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that is what I wish more people knew about it.",
+    "startTime": "54:50",
+    "endTime": "54:54",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh, sorry.",
+    "startTime": "54:54",
+    "endTime": "54:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, that's what I meant.",
+    "startTime": "54:55",
+    "endTime": "54:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So openSSh certificates, I mean, they are great because they also allow you to encode what are the commands, for example, that the user can.",
+    "startTime": "54:56",
+    "endTime": "55:05",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's there, but like setting it up.",
+    "startTime": "55:05",
+    "endTime": "55:08",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that whenever you have multiple authoritative source of identity, I think that's where there is a much higher risk of things getting out of sync.",
+    "startTime": "55:08",
+    "endTime": "55:20",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And what happens when there is a lever or a mover in the enterprise.",
+    "startTime": "55:20",
+    "endTime": "55:23",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "While if you can centralize, if you can make it easier for extremely overwhelmed with a ton of different tasks to take care of this specific issue, I think that, yeah, I guess it's fundamentally.",
+    "startTime": "55:23",
+    "endTime": "55:37",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Different thing between the web and the server is that a server needs to work in offline mode.",
+    "startTime": "55:37",
+    "endTime": "55:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that's where a lot of the off flows break.",
+    "startTime": "55:41",
+    "endTime": "55:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If you can just make an API call and see.",
+    "startTime": "55:44",
+    "endTime": "55:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is this a valid claim?",
+    "startTime": "55:46",
+    "endTime": "55:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Relatively straightforward.",
+    "startTime": "55:47",
+    "endTime": "55:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But if you have an outage and your network is down on your server, or your egress is down, your Internet link is down, you still need to authenticate to that server.",
+    "startTime": "55:49",
+    "endTime": "56:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think that's what makes a huge difference because it needs to work in offline mode.",
+    "startTime": "56:00",
+    "endTime": "56:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean, though, the big, the optimist of the world, they all have their own proxy solution.",
+    "startTime": "56:06",
+    "endTime": "56:14",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Let's say you're using one of those.",
+    "startTime": "56:16",
+    "endTime": "56:18",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You always have the sort of solution that do a certain amount of sync and replication offline.",
+    "startTime": "56:18",
+    "endTime": "56:26",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's fair.",
+    "startTime": "56:26",
+    "endTime": "56:30",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But even when you're using OpenSSH certificates, for example, you will normally resort to something like vault as the store, the database sort of for that.",
+    "startTime": "56:30",
+    "endTime": "56:45",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I think that similar challenges applies.",
+    "startTime": "56:45",
+    "endTime": "56:50",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There are obviously cases where you literally have just one server in the wild disconnected for everything.",
+    "startTime": "56:50",
+    "endTime": "56:55",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes, but I think that those are more niche scenarios rather than the, I have my, I don't know, vMware, Openstack, whatever sort of like infrastructure.",
+    "startTime": "56:56",
+    "endTime": "57:09",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I need access to that.",
+    "startTime": "57:09",
+    "endTime": "57:11",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I need to distribute keys.",
+    "startTime": "57:11",
+    "endTime": "57:13",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I need to tell like Joe can only access one, two, three and marry four, five keys.",
+    "startTime": "57:13",
+    "endTime": "57:18",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's, I mean, I know tailscale got some offerings around that.",
+    "startTime": "57:18",
+    "endTime": "57:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I haven't toyed with that, but I know they have like an sh, you can sh through tailscale and they issue keys for you, which I presume are short lived, but I haven't actually looked at that.",
+    "startTime": "57:21",
+    "endTime": "57:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's an interesting one, because what they do is effectively they spin up like a goss server in the back.",
+    "startTime": "57:32",
+    "endTime": "57:40",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They don't use the native opensSh server of the host, but they actually spin up their own one, which is what they use to effectively do all the dance that their solution does, which I think is, again, it's very interesting, it's not too dissimilar from what Cloudflare with access is doing on the ran call for the.",
+    "startTime": "57:41",
+    "endTime": "58:07",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Whatever it's called.",
+    "startTime": "58:07",
+    "endTime": "58:08",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So those are, they are like interesting solution.",
+    "startTime": "58:08",
+    "endTime": "58:12",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They take in a way that they kind of like detach a little bit themselves from the server, but they bring like an exponentially better user experience to the mix.",
+    "startTime": "58:12",
+    "endTime": "58:23",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I mean, I like that approach because essentially then passkey becomes your source of truth, if that makes sense.",
+    "startTime": "58:23",
+    "endTime": "58:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And then you issue, based on that, you issue a short lived token, which I mean, let's be real, a lot of people, even developers, they don't even have passphrase on their sage keys and nor do they rotate them very frequently.",
+    "startTime": "58:31",
+    "endTime": "58:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So one of those has saved keys leak and game over.",
+    "startTime": "58:43",
+    "endTime": "58:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You have production access.",
+    "startTime": "58:48",
+    "endTime": "58:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "58:49",
+    "endTime": "58:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So if we can enforce more short lived certificates, that's a massive win for security, right?",
+    "startTime": "58:51",
+    "endTime": "59:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "59:01",
+    "endTime": "59:02",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I mean even if you want to live in the like, in a world of just opensSh Certs manage vault because you know, you don't want to try this sort of like new age, you know, passing JWT's to servers because it's too novel, you know, for you.",
+    "startTime": "59:02",
+    "endTime": "59:18",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean like Vault does offer integration.",
+    "startTime": "59:18",
+    "endTime": "59:21",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean I don't know which one is in the free version, but definitely all of is in the free version, meaning that you can federate it with your identity provider of choice.",
+    "startTime": "59:21",
+    "endTime": "59:33",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Let's say it's Okta and you can use, you know, pusky is a talk that, you know, unseals the vaults, gets you desert and whatever.",
+    "startTime": "59:33",
+    "endTime": "59:40",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "59:41",
+    "endTime": "59:41",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Everything else sort of like happens after that.",
+    "startTime": "59:41",
+    "endTime": "59:44",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "59:44",
+    "endTime": "59:44",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there are ways and I think that from a company perspective it is a no brainer.",
+    "startTime": "59:44",
+    "endTime": "59:53",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They should be used everywhere else.",
+    "startTime": "59:53",
+    "endTime": "59:56",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think again, pass keys in conjunction with an identity provider that is federated either directly with the server or with something like vault for back end access, you could achieve the same level of security, obviously just load inserts on yubikeys.",
+    "startTime": "59:56",
+    "endTime": "01:00:15",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But, but again, revocation management at scale when you have a thousand people and whatnot, I think it suits more individual use case rather than an enterprise one, in my personal opinion.",
+    "startTime": "01:00:15",
+    "endTime": "01:00:29",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh yeah, no, I agree with that.",
+    "startTime": "01:00:29",
+    "endTime": "01:00:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Even PGP, which kind of the gold standard of security that's been.",
+    "startTime": "01:00:32",
+    "endTime": "01:00:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There's never ever going to die, it's managing that as an individual is hard if you want to do it right, but trying to do that at scale as an organization is extremely difficult.",
+    "startTime": "01:00:36",
+    "endTime": "01:00:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So absolutely, you don't want to have to fly in everybody to do key signing parties and whatnot, because that's probably not the best use of your company resources.",
+    "startTime": "01:00:49",
+    "endTime": "01:00:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So absolutely, if we can fold that into.",
+    "startTime": "01:00:58",
+    "endTime": "01:01:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But it's interesting how these actually come full circle with server management and how that ties together.",
+    "startTime": "01:01:00",
+    "endTime": "01:01:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I never actually thought about them together, but actually tail scale is actually in a very unique position to actually do something really clever on that.",
+    "startTime": "01:01:05",
+    "endTime": "01:01:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Even though I guess Google could as well if they wanted to for that.",
+    "startTime": "01:01:13",
+    "endTime": "01:01:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, yeah.",
+    "startTime": "01:01:15",
+    "endTime": "01:01:16",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean the Google doesn't offer the server component in their commercial option.",
+    "startTime": "01:01:16",
+    "endTime": "01:01:23",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that they are like Yamcorp Zero Trust solution is a lot little bit more focused towards web use cases.",
+    "startTime": "01:01:23",
+    "endTime": "01:01:33",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There are a lot of companies, I mean, you know, Calfare and TeSL, they are the two names that are on top of my mind.",
+    "startTime": "01:01:34",
+    "endTime": "01:01:39",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But again, I'm sure that there are a lot more and as I said, we've taken a similar but different approach where we use the openssh, we use a component that talks directly with palm, with NSS to sort of like make that negotiation happen if we're talking about obviously Linux server in the case.",
+    "startTime": "01:01:39",
+    "endTime": "01:02:03",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But fundamentally I do believe, and as canonical we do believe that's where the world is going.",
+    "startTime": "01:02:04",
+    "endTime": "01:02:12",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:02:12",
+    "endTime": "01:02:12",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because ease of use wins over everything else always like no matter what session, right?",
+    "startTime": "01:02:12",
+    "endTime": "01:02:19",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "01:02:19",
+    "endTime": "01:02:20",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "All right.",
+    "startTime": "01:02:20",
+    "endTime": "01:02:21",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's something I would curious to zoom in on at some future point because I never actually played with that side of the server.",
+    "startTime": "01:02:21",
+    "endTime": "01:02:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But that's interesting to see that there is stuff happening around that as well because I think, yeah, hopefully the days of managing users with ansible puppet or chef and the likes off are over.",
+    "startTime": "01:02:26",
+    "endTime": "01:02:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's never fun.",
+    "startTime": "01:02:42",
+    "endTime": "01:02:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Marcy, this has been super interesting to me.",
+    "startTime": "01:02:45",
+    "endTime": "01:02:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I've learned a lot about these topics and particularly how both server management and how Fido and all these thinking fit together into a wholesome strategy.",
+    "startTime": "01:02:48",
+    "endTime": "01:02:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think if there is anything else you want to add before we wrap up.",
+    "startTime": "01:02:59",
+    "endTime": "01:03:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If not, I think it's been super help for me and I've learned quite a lot.",
+    "startTime": "01:03:03",
+    "endTime": "01:03:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I mean it was great to talk about, let me just say this new set of trends.",
+    "startTime": "01:03:06",
+    "endTime": "01:03:13",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that we didn't talk about it because there is a lot of heterogeneity in the area of authorization.",
+    "startTime": "01:03:13",
+    "endTime": "01:03:20",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's another interesting area that I think it's ripe for change, maybe for another day, but representing authorization as a directly seeker graph rather than a tree, I think that's, that's part of some sort of like new wave of solutions that are coming onto the market.",
+    "startTime": "01:03:20",
+    "endTime": "01:03:41",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Again, spirited by Google and one of the research papers.",
+    "startTime": "01:03:42",
+    "endTime": "01:03:45",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But nevertheless, I think that's another, that's another interesting topic.",
+    "startTime": "01:03:45",
+    "endTime": "01:03:50",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I'm sure that, you know, you can pass along some links or whatever, just make sure that there is enough reading material to compliment on that because very interesting.",
+    "startTime": "01:03:50",
+    "endTime": "01:04:04",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Very like, you know, beer nerding out sort of conversation topic.",
+    "startTime": "01:04:04",
+    "endTime": "01:04:09",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I intentionally left out the whole topic of service accounts and I am because I think that's a topic by itself.",
+    "startTime": "01:04:10",
+    "endTime": "01:04:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I intentionally left those topics out.",
+    "startTime": "01:04:16",
+    "endTime": "01:04:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So perfect.",
+    "startTime": "01:04:19",
+    "endTime": "01:04:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Again, thanks much for coming on the show, Marcy, I really appreciate it.",
+    "startTime": "01:04:20",
+    "endTime": "01:04:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Thank you so much.",
+    "startTime": "01:04:24",
+    "endTime": "01:04:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Likewise.",
+    "startTime": "01:04:24",
+    "endTime": "01:04:25",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Have a good one.",
+    "startTime": "01:04:25",
+    "endTime": "01:04:25",
+    "speaker_name": "Massi Goro",
+    "speaker_id": 1
+  }
+]

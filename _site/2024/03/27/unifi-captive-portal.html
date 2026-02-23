@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="content-language" content="en">
+
+  <!-- Resource Hints -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="/assets/css/styles.css" as="style">
+  <link rel="preload" href="/assets/css/main.css" as="style">
+
+  <title>On UniFi Captive Portals</title>
+  <meta name="description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://vpetersson.com/2024/03/27/unifi-captive-portal.html">
+  <meta property="og:title" content="On UniFi Captive Portals">
+  <meta property="og:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta property="og:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- LinkedIn -->
+  <meta property="og:site_name" content="Viktor's Tech Musings & Security Paranoia">
+  <meta property="article:author" content="https://www.linkedin.com/in/vpetersson/">
+  
+  <meta property="article:published_time" content="2024-03-27T00:00:00+00:00">
+  
+
+  <!-- X (formerly Twitter) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@vpetersson">
+  <meta name="twitter:creator" content="@vpetersson">
+  <meta name="twitter:title" content="On UniFi Captive Portals">
+  <meta name="twitter:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta name="twitter:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- Social Profile Links -->
+  <link rel="me" href="https://github.com/vpetersson">
+  <link rel="me" href="https://www.linkedin.com/in/vpetersson/">
+  <link rel="me" href="https://hachyderm.io/@vpetersson@hachyderm.io">
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com",
+    "image": "https://vpetersson.com/assets/images/site/talk.webp",
+    "sameAs": [
+      "https://github.com/vpetersson",
+      "https://www.linkedin.com/in/vpetersson/",
+      "https://hachyderm.io/@vpetersson@hachyderm.io",
+      "https://twitter.com/vpetersson"
+    ]
+  }
+  </script>
+
+  <!-- Custom meta tags -->
+  
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Anton|DM Sans|Roboto|Hanken+Grotesk"
+    />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/native.css">
+  
+  <!-- Font Awesome (bundled from node_modules) -->
+  <link rel="stylesheet" href="/assets/css/fontawesome-core.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-solid.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-brands.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZY6ZNLNNC8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZY6ZNLNNC8');
+
+  // Track outbound links and CTAs
+  function trackEvent(category, action, label, source) {
+    gtag('event', action, {
+      'event_category': category,
+      'event_label': label,
+      'source': source
+    });
+  }
+</script>
+
+
+  <link rel="canonical" href="https://vpetersson.com/2024/03/27/unifi-captive-portal.html" />
+</head>
+
+  <body>
+    <!-- Skip Navigation -->
+<a href="#main-content" class="skip-navigation">Skip to main content</a>
+
+<header class="p-8 flex justify-between bg-primaryBG border-b border-white-alpha-20" role="banner">
+  <div class="flex gap-10 justify-between items-center">
+    <a href="/" aria-label="Viktor Petersson - Home">
+      <img src="/assets/images/site/logo-white.svg" alt="Viktor Petersson logo" width="120" height="40" />
+    </a>
+    <nav class="hidden lg:flex gap-6">
+  
+    <a href="/" class="text-white uppercase">HOME</a>
+  
+    <a href="/about" class="text-white uppercase">ABOUT</a>
+  
+    <a href="/consulting" class="text-white uppercase">CONSULTING</a>
+  
+    <a href="/podcast" class="text-white uppercase">PODCAST</a>
+  
+    <a href="/blog" class="text-white uppercase">BLOG</a>
+  
+    <a href="https://studio.viktopia.io/" class="text-white uppercase">VIKTOPIA STUDIO</a>
+  
+</nav>
+
+  </div>
+  <div class="flex gap-2 justify-between items-center">
+    <div class="header-search hidden lg:block">
+      <form action="/search" method="get" role="search">
+        <label for="searchright" class="sr-only">Search the site</label>
+        <input
+          class="search expandright"
+          id="searchright"
+          type="search"
+          name="query"
+          placeholder="Search"
+          aria-label="Search"
+        >
+        <button class="button searchbutton" type="submit" aria-label="Submit search">
+          <span class="mglass" aria-hidden="true">&#9906;</span>
+        </button>
+      </form>
+    </div>
+
+    <div class="hidden lg:block">
+      <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+    </div>
+
+    <!-- Use modern mobile navigation -->
+    <!-- Modern Mobile Navigation -->
+<div class="mobile-nav-container lg:hidden">
+  <!-- Menu Toggle Button -->
+  <button
+    class="mobile-menu-toggle btn-reset touch-target"
+    aria-label="Toggle navigation menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+    data-menu-toggle
+  >
+    <span class="hamburger-icon" aria-hidden="true">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </span>
+  </button>
+
+  <!-- Mobile Menu Backdrop -->
+  <div
+    class="mobile-menu-backdrop"
+    data-menu-backdrop
+    aria-hidden="true"
+  ></div>
+
+  <!-- Mobile Menu Panel -->
+  <nav
+    class="mobile-menu"
+    id="mobile-menu"
+    aria-labelledby="mobile-menu-label"
+    data-menu-panel
+  >
+    <!-- Menu Header -->
+    <div class="mobile-menu-header">
+      <h2 id="mobile-menu-label" class="sr-only">Navigation Menu</h2>
+      <button
+        class="mobile-menu-close btn-reset touch-target"
+        aria-label="Close navigation menu"
+        data-menu-close
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="mobile-menu-list" role="list">
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            HOME
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/about"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            ABOUT
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/consulting"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            CONSULTING
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/podcast"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            PODCAST
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/blog"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            BLOG
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="https://studio.viktopia.io/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            VIKTOPIA STUDIO
+          </a>
+        </li>
+      
+    </ul>
+
+    <!-- Social Links -->
+    <div class="mobile-menu-footer">
+      <div class="mobile-social-links">
+        <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<style>
+/* Mobile Navigation Styles */
+.mobile-nav-container {
+  position: relative;
+}
+
+.mobile-menu-toggle {
+  position: relative;
+  z-index: var(--z-fixed);
+  color: var(--color-white);
+  transition: transform var(--transition-normal);
+
+  &[aria-expanded="true"] {
+    transform: rotate(90deg);
+  }
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 18px;
+  justify-content: space-between;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  transition: all var(--transition-normal);
+  transform-origin: center;
+}
+
+.mobile-menu-toggle[aria-expanded="true"] .hamburger-line {
+  &:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  &:nth-child(2) {
+    opacity: 0;
+  }
+
+  &:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+
+.mobile-menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+  z-index: var(--z-modal);
+}
+
+.mobile-menu-backdrop.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(400px, 100vw);
+  height: 100vh;
+  background: var(--color-gray-900);
+  border-left: 1px solid var(--color-gray-200);
+  transform: translateX(100%);
+  transition: transform var(--transition-normal);
+  z-index: var(--z-modal);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.mobile-menu-close {
+  color: var(--color-white);
+}
+
+.mobile-menu-list {
+  flex: 1;
+  padding: var(--space-4) 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu-item {
+  margin: 0;
+}
+
+.mobile-menu-link {
+  display: block;
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-normal);
+  border-left: 3px solid transparent;
+
+  &:hover {
+    background: var(--color-gray-800);
+    border-left-color: var(--color-primary);
+  }
+
+  &[aria-current="page"] {
+    color: var(--color-primary);
+    border-left-color: var(--color-primary);
+    background: var(--color-gray-800);
+  }
+}
+
+.mobile-menu-footer {
+  padding: var(--space-4);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.mobile-social-links {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+}
+
+/* Simple instant display */
+.mobile-menu-item {
+  opacity: 1;
+}
+</style>
+
+<script>
+// Modern Mobile Navigation JavaScript
+(function() {
+  const menuToggle = document.querySelector('[data-menu-toggle]');
+  const menuPanel = document.querySelector('[data-menu-panel]');
+  const menuBackdrop = document.querySelector('[data-menu-backdrop]');
+  const menuClose = document.querySelector('[data-menu-close]');
+  const menuLinks = document.querySelectorAll('.mobile-menu-link');
+
+  let isOpen = false;
+
+  function openMenu() {
+    isOpen = true;
+    menuToggle.setAttribute('aria-expanded', 'true');
+    menuPanel.classList.add('is-open');
+    menuBackdrop.classList.add('is-visible');
+    document.body.style.overflow = 'hidden';
+
+    // Focus first menu item
+    const firstLink = menuPanel.querySelector('.mobile-menu-link');
+    if (firstLink) {
+      firstLink.focus();
+    }
+  }
+
+  function closeMenu() {
+    isOpen = false;
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuPanel.classList.remove('is-open');
+    menuBackdrop.classList.remove('is-visible');
+    document.body.style.overflow = '';
+
+    // Return focus to toggle button
+    menuToggle.focus();
+  }
+
+  function toggleMenu() {
+    isOpen ? closeMenu() : openMenu();
+  }
+
+  // Event listeners
+  menuToggle.addEventListener('click', toggleMenu);
+  menuClose.addEventListener('click', closeMenu);
+  menuBackdrop.addEventListener('click', closeMenu);
+
+  // Close on link click
+  menuLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isOpen) {
+      closeMenu();
+    }
+  });
+
+  // Trap focus in menu when open
+  menuPanel.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') {
+      const focusableElements = menuPanel.querySelectorAll(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (e.shiftKey && document.activeElement === firstElement) {
+        e.preventDefault();
+        lastElement.focus();
+      } else if (!e.shiftKey && document.activeElement === lastElement) {
+        e.preventDefault();
+        firstElement.focus();
+      }
+    }
+  });
+})();
+</script>
+  </div>
+</header>
+
+    <main id="main-content" class="body">
+      <!-- Blog post schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://vpetersson.com/2024/03/27/unifi-captive-portal.html"
+  },
+  "headline": "On UniFi Captive Portals",
+  "description": null,
+  "datePublished": "2024-03-27T00:00:00+00:00",
+  "dateModified": "2024-03-27T00:00:00+00:00",
+  "author": {
+    "@type": "Person",
+    "@id": "https://vpetersson.com/about/#person",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://vpetersson.com/assets/images/site/talk.webp"
+    }
+  },
+  
+  "inLanguage": "en",
+  "wordCount": "1006",
+  "keywords": ["unifi","open-source","devops"]
+}
+</script>
+
+<!-- Breadcrumbs schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://vpetersson.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://vpetersson.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "On UniFi Captive Portals",
+      "item": "https://vpetersson.com/2024/03/27/unifi-captive-portal.html"
+    }
+  ]
+}
+</script>
+<div class="page-header page-header-blog">
+  <h2 class="uppercase text-[48px] md:text-[91px] lg:text-[140px] xl:text-[186px] text-white text-center">Blog</h2>
+</div>
+<div class="bg-secondaryBG blog-post">
+  <div class="md:max-w-[665px] mx-4 sm:mx-6 md:mx-auto py-8 md:py-10 lg:py-20">
+    <h2 class="mb-6">On UniFi Captive Portals</h2>
+    <div class="flex mb-6 gap-6 text-xs">
+      <span class="uppercase">
+        27 MAR • 2024
+      </span>
+      <span class="blog-time">
+        6 minutes
+      </span>
+    </div>
+    <article class="leading-[26px]">
+      <h2 id="what-are-captive-portals">What are captive portals?</h2>
+
+<p>Lately, I’ve been doing some digging into captive portals - you know, these things that pop up when you try to connect to the WiFi at a coffee shop or hotel. In essence, they are very simple:</p>
+
+<ul>
+  <li>You load a web page that usually requires you to tick a box or enter your email.</li>
+  <li>If the system is satisfied with the input above, you are sent to a page that returns HTTP status 200 (and usually a <code class="language-plaintext highlighter-rouge">success</code> message in the body), which tells the system that you’re online.</li>
+</ul>
+
+<p>Now, I’m a massive UniFi fan. Over the years, I’ve migrated most of my networks over to UniFi equipment with <a href="https://store.ui.com/us/en/collections/unifi-dream-machine/products/udm-pro">Dream Machine Pros</a> as the firewall. It’s a great turn-key solution that largely just works. Prior to this, I usually relied on either a <a href="https://www.pfsense.org/">pfSense</a> (and later <a href="https://opnsense.org/">OPNsense</a>), but frankly, the UDM is just a great device that integrates seamlessly with all other UniFi hardware. That means provisioning a whole network is done in a few clicks.</p>
+
+<h2 id="captive-portals-and-unifi">Captive portals and UniFi</h2>
+
+<p>Bringing this back to the topic of captive portals, UniFi’s console does allow you to provision captive portals out-of-the-box (called ‘Hotspot Portal’). However, their support is rather limited. Usually, the reason any commercial WiFi deployment would want to use a captive portal for their WiFi is to capture email addresses (for marketing), or to set tracking pixels (for remarketing). UniFi’s default captive portal does not allow you to do either of this, making it somewhat moot to enable.</p>
+
+<p><img src="/assets/unifi-built-in-captive-portal.webp" alt="UniFi's built-in hotspot/captive portal" /></p>
+
+<p>What they do support, however, is something they call ‘External Portal Server,’ which allows you to integrate a third-party captive portal with the UniFi hardware. This is all neat until you start digging into the details. Or should I say, the lack of details. You see, UniFi provides absolutely <em>zero</em> documentation on this. There are, however, third-party services/libraries that have reverse-engineered how this flow works, but it’s less than ideal.</p>
+
+<h2 id="using-external-portal-servers">Using External Portal Servers</h2>
+
+<p>What you notice when you start digging into these third-party tools is that they all ask you for admin access to your UniFi Console (which also needs to be publicly accessible). That should be a pretty big red flag right there, as this essentially gives them full control over your network. In theory, they could own your entire network and do all sorts of mischief, like redirecting <code class="language-plaintext highlighter-rouge">gmail.com</code> to a phishing site.</p>
+
+<p>There is, however, a good reason why they ask for this. As it turns out, this is required for an External Portal Server to work; they need the ability to approve guests by issuing an API call to the console.</p>
+
+<p>When a user tries to access the WiFi, a GET request is sent to the external server that looks like this:
+<code class="language-plaintext highlighter-rouge">http://externalportal.example.com?ap=access_point_mac&amp;user_mac=user_mac_address&amp;ssid=network_ssid&amp;url=original_url_requested</code></p>
+
+<p>Notice all those GET parameters:</p>
+
+<ul>
+  <li>ap=access_point_mac</li>
+  <li>user_mac=user_mac_address</li>
+  <li>ssid=network_ssid</li>
+  <li>url=original_url_requested</li>
+</ul>
+
+<p>With that information, the external portal then needs to issue back a POST request to the console that looks something like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST /api/s/&lt;site_name&gt;/cmd/stamgr
+Authorization: Bearer &lt;API_Token&gt;
+Content-Type: application/json
+{
+   "cmd": "authorize-guest",
+   "mac": "&lt;user_mac_address&gt;",
+   "minutes": &lt;authorization_duration&gt;
+}
+</code></pre></div></div>
+
+<p>Notice that we need to pass the MAC address back, along with how long the session should be open.</p>
+
+<p>Now, there are a few problems with this:</p>
+
+<ul>
+  <li>We need to be able to talk directly to the console (i.e., this is <strong>not</strong> unifi.ui.com), but rather the console directly.</li>
+  <li>We need to acquire a Bearer token (which is done by issuing a call to the <code class="language-plaintext highlighter-rouge">/api/auth/login</code> with a set of admin-level credentials).</li>
+</ul>
+
+<p>As you can see, this is why these tools need both direct access to your UniFi console and a set of credentials. Some of them also use this to provision the External Portal Server configuration, which is somewhat neat.</p>
+
+<h2 id="is-it-possible-to-use-external-portal-sensibly">Is it possible to use External Portal sensibly?</h2>
+
+<p>The short answer is that the only sensible way to do this is if you run your External Portal on the local network. It’s still far from ideal, but that way, you can at least avoid having to expose your console to the public internet. It wouldn’t be very difficult to implement the above flow, but I don’t think anyone who cares even the slightest about security should a) expose their console to the public internet and b) hand over admin credentials to a third party.</p>
+
+<p>What I’m really hoping for is that UniFi will allow API access to their cloud-based console (unifi.ui.com), and provide proper API documentation. Currently, the implementation is prone to breakage, especially since the API isn’t even versioned. Additionally, the lack of ACL/permissions for user accounts is a significant issue. Ideally, one should be able to issue an API token that can only approve clients. Solving these issues would make it viable to offer this as a cloud-based service.</p>
+
+<p>For now, I might develop a simple Python application to test the waters, as you can access the console’s API over the LAN. Or I might just give the NodeJS implementation below a go.</p>
+
+<p>My initial idea of creating a SaaS product around this (I even bought the domain <a href="https://captiveportalconnect.com/">CaptivePortalConnect.com</a> for the purpose) is likely not worth pursuing due to the fragile (and insecure) approach required.</p>
+
+<h2 id="update-2024-07-01">Update (2024-07-01)</h2>
+
+<p>I <em>thought</em> I had made a <a href="https://github.com/woodjme/unifi-hotspot/issues/68#issuecomment-2143952594">breakthrough</a> in the API access confinement by leveraging the new (and of course undocumented) ‘hotspotoperator’ permission (rather than having to use a full-blown admin account), it turned out that this <a href="https://github.com/woodjme/unifi-hotspot/issues/68#event-13343000818">didn’t work</a> in the end (kudos to <a href="https://github.com/woodjme">@woodjme</a>)..</p>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li><a href="https://github.com/woodjme/unifi-hotspot">unifi-hotspot</a> - NodeJS based captive portal that can feed to Google Sheets. Looks very promising.</li>
+  <li><a href="https://github.com/Art-of-WiFi/UniFi-API-client">UniFi API Client</a> - A PHP based UniFi client that is actively maintained by <a href="https://artofwifi.net">Art of WiFi</a>, who offer captive portals as a service (based on the library).</li>
+  <li><a href="https://github.com/Kane610/aiounifi">aiounifi</a> - Python based UniFi library used by Home Assistant.</li>
+  <li><a href="https://github.com/nickovs/unificontrol">unificontrol</a> - Another Python based UniFi library.</li>
+</ul>
+
+
+      <div class="mt-12 mb-8 p-8 bg-blue-50 border border-blue-100 rounded-xl">
+        <h4 class="text-2xl font-semibold mb-4 text-blue-900">Enjoyed this post? Check out my podcast!</h4>
+        <p class="mb-6 text-blue-800">If you found this interesting, you might enjoy <a href="/podcast" class="text-blue-600 hover:text-blue-800 underline" onclick="trackEvent('Blog CTA', 'Click', 'Podcast Link', 'On UniFi Captive Portals')">"Nerding Out with Viktor"</a> - my podcast where I dive deep into tech, entrepreneurship, and security with industry experts.</p>
+        <div>
+          <h5 class="font-medium mb-4 text-blue-900">Listen on:</h5>
+          
+
+
+
+<div>
+  <div class="flex gap-3">
+    
+      <a href="https://www.youtube.com/@nerdingoutwithviktor" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'YouTube', 'On UniFi Captive Portals')">
+        <img src="/assets/images/site/podcast-youtube-white.svg" alt="Listen to podcast on YouTube" />
+      </a>
+    
+    
+      <a href="https://open.spotify.com/show/7C6yipdVPWgBc6Bwikgo8g" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Spotify', 'On UniFi Captive Portals')">
+        <img src="/assets/images/site/podcast-spotify-white.svg" alt="Listen to podcast on Spotify" />
+      </a>
+    
+    
+      <a href="https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Apple', 'On UniFi Captive Portals')">
+        <img src="/assets/images/site/podcast-apple-white.svg" alt="Listen to podcast on Apple" />
+      </a>
+    
+    
+    
+      <a href="https://podcast.nerdingoutwithviktor.com/podcast_feed.xml" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'RSS', 'On UniFi Captive Portals')">
+        <img src="/assets/images/site/podcast-rss-white.svg" alt="RSS Feed" />
+      </a>
+    
+  </div>
+</div>
+
+        </div>
+      </div>
+
+      <i>Found an error or typo? File PR against <a href="https://github.com/vpetersson/vpetersson.com/tree/master/_posts/2024-03-27-unifi-captive-portal.md" rel="nofollow">this file</a>.</i>
+    </article>
+    <div class="mt-6">
+      
+  <div class="tags">
+    
+      <a href="/tags/unifi" class="tag">
+        unifi
+      </a>
+    
+      <a href="/tags/open-source" class="tag">
+        open-source
+      </a>
+    
+      <a href="/tags/devops" class="tag">
+        devops
+      </a>
+    
+  </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+    </main>
+    <footer class="py-[60px] md:pt-[74px] md:pb-[40px] px-[25px] md:px-[120px] text-altPrimaryText">
+  <div class="mb-[60px]">
+    <a href="/">
+      <img class="w-[200px] md:w-[320px]" src="/assets/images/site/logo.svg" alt="logo" />
+    </a>
+  </div>
+  <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-8 lg:mb-6">
+    <nav class="flex flex-col md:flex-row gap-6 md:gap-8 mb-20 lg:mb-0">
+      
+        <a href="/" class="">HOME</a>
+      
+        <a href="/about" class="">ABOUT</a>
+      
+        <a href="/consulting" class="">CONSULTING</a>
+      
+        <a href="/podcast" class="">PODCAST</a>
+      
+        <a href="/blog" class="">BLOG</a>
+      
+        <a href="https://studio.viktopia.io/" class="">VIKTOPIA STUDIO</a>
+      
+    </nav>
+    <div class="flex gap-[13px]">
+      <a href="https://twitter.com/vpetersson">
+        <img src="/assets/images/site/x.svg" alt="x logo" />
+      </a>
+      <a href="https://github.com/vpetersson">
+        <img src="/assets/images/site/github.svg" alt="github logo" />
+      </a>
+      <a href="https://www.linkedin.com/in/vpetersson/">
+        <img src="/assets/images/site/linkedin.svg" alt="linkedIn logo" />
+      </a>
+    </div>
+  </div>
+  <hr class="mb-8 lg:mb-10 bg-[#000212] h-[3px] bg-opacity-20 border-0" />
+  <div>
+    <p class="font-[Inter] text-base">&copy; Viktor Petersson</p>
+  </div>
+</footer>
+
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/code-blocks.js" defer></script>
+  </body>
+</html>

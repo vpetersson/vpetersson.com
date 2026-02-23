@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="content-language" content="en">
+
+  <!-- Resource Hints -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="/assets/css/styles.css" as="style">
+  <link rel="preload" href="/assets/css/main.css" as="style">
+
+  <title>Setting up a redundant NAS with HAST and CARP</title>
+  <meta name="description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://vpetersson.com/2010/09/27/setting-up-a-redundant-nas-with-hast-with-carp.html">
+  <meta property="og:title" content="Setting up a redundant NAS with HAST and CARP">
+  <meta property="og:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta property="og:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- LinkedIn -->
+  <meta property="og:site_name" content="Viktor's Tech Musings & Security Paranoia">
+  <meta property="article:author" content="https://www.linkedin.com/in/vpetersson/">
+  
+  <meta property="article:published_time" content="2010-09-27T10:53:42+00:00">
+  
+
+  <!-- X (formerly Twitter) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@vpetersson">
+  <meta name="twitter:creator" content="@vpetersson">
+  <meta name="twitter:title" content="Setting up a redundant NAS with HAST and CARP">
+  <meta name="twitter:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta name="twitter:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- Social Profile Links -->
+  <link rel="me" href="https://github.com/vpetersson">
+  <link rel="me" href="https://www.linkedin.com/in/vpetersson/">
+  <link rel="me" href="https://hachyderm.io/@vpetersson@hachyderm.io">
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com",
+    "image": "https://vpetersson.com/assets/images/site/talk.webp",
+    "sameAs": [
+      "https://github.com/vpetersson",
+      "https://www.linkedin.com/in/vpetersson/",
+      "https://hachyderm.io/@vpetersson@hachyderm.io",
+      "https://twitter.com/vpetersson"
+    ]
+  }
+  </script>
+
+  <!-- Custom meta tags -->
+  
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Anton|DM Sans|Roboto|Hanken+Grotesk"
+    />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/native.css">
+  
+  <!-- Font Awesome (bundled from node_modules) -->
+  <link rel="stylesheet" href="/assets/css/fontawesome-core.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-solid.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-brands.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZY6ZNLNNC8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZY6ZNLNNC8');
+
+  // Track outbound links and CTAs
+  function trackEvent(category, action, label, source) {
+    gtag('event', action, {
+      'event_category': category,
+      'event_label': label,
+      'source': source
+    });
+  }
+</script>
+
+
+  <link rel="canonical" href="https://vpetersson.com/2010/09/27/setting-up-a-redundant-nas-with-hast-with-carp.html" />
+</head>
+
+  <body>
+    <!-- Skip Navigation -->
+<a href="#main-content" class="skip-navigation">Skip to main content</a>
+
+<header class="p-8 flex justify-between bg-primaryBG border-b border-white-alpha-20" role="banner">
+  <div class="flex gap-10 justify-between items-center">
+    <a href="/" aria-label="Viktor Petersson - Home">
+      <img src="/assets/images/site/logo-white.svg" alt="Viktor Petersson logo" width="120" height="40" />
+    </a>
+    <nav class="hidden lg:flex gap-6">
+  
+    <a href="/" class="text-white uppercase">HOME</a>
+  
+    <a href="/about" class="text-white uppercase">ABOUT</a>
+  
+    <a href="/consulting" class="text-white uppercase">CONSULTING</a>
+  
+    <a href="/podcast" class="text-white uppercase">PODCAST</a>
+  
+    <a href="/blog" class="text-white uppercase">BLOG</a>
+  
+    <a href="https://studio.viktopia.io/" class="text-white uppercase">VIKTOPIA STUDIO</a>
+  
+</nav>
+
+  </div>
+  <div class="flex gap-2 justify-between items-center">
+    <div class="header-search hidden lg:block">
+      <form action="/search" method="get" role="search">
+        <label for="searchright" class="sr-only">Search the site</label>
+        <input
+          class="search expandright"
+          id="searchright"
+          type="search"
+          name="query"
+          placeholder="Search"
+          aria-label="Search"
+        >
+        <button class="button searchbutton" type="submit" aria-label="Submit search">
+          <span class="mglass" aria-hidden="true">&#9906;</span>
+        </button>
+      </form>
+    </div>
+
+    <div class="hidden lg:block">
+      <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+    </div>
+
+    <!-- Use modern mobile navigation -->
+    <!-- Modern Mobile Navigation -->
+<div class="mobile-nav-container lg:hidden">
+  <!-- Menu Toggle Button -->
+  <button
+    class="mobile-menu-toggle btn-reset touch-target"
+    aria-label="Toggle navigation menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+    data-menu-toggle
+  >
+    <span class="hamburger-icon" aria-hidden="true">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </span>
+  </button>
+
+  <!-- Mobile Menu Backdrop -->
+  <div
+    class="mobile-menu-backdrop"
+    data-menu-backdrop
+    aria-hidden="true"
+  ></div>
+
+  <!-- Mobile Menu Panel -->
+  <nav
+    class="mobile-menu"
+    id="mobile-menu"
+    aria-labelledby="mobile-menu-label"
+    data-menu-panel
+  >
+    <!-- Menu Header -->
+    <div class="mobile-menu-header">
+      <h2 id="mobile-menu-label" class="sr-only">Navigation Menu</h2>
+      <button
+        class="mobile-menu-close btn-reset touch-target"
+        aria-label="Close navigation menu"
+        data-menu-close
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="mobile-menu-list" role="list">
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            HOME
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/about"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            ABOUT
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/consulting"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            CONSULTING
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/podcast"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            PODCAST
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/blog"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            BLOG
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="https://studio.viktopia.io/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            VIKTOPIA STUDIO
+          </a>
+        </li>
+      
+    </ul>
+
+    <!-- Social Links -->
+    <div class="mobile-menu-footer">
+      <div class="mobile-social-links">
+        <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<style>
+/* Mobile Navigation Styles */
+.mobile-nav-container {
+  position: relative;
+}
+
+.mobile-menu-toggle {
+  position: relative;
+  z-index: var(--z-fixed);
+  color: var(--color-white);
+  transition: transform var(--transition-normal);
+
+  &[aria-expanded="true"] {
+    transform: rotate(90deg);
+  }
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 18px;
+  justify-content: space-between;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  transition: all var(--transition-normal);
+  transform-origin: center;
+}
+
+.mobile-menu-toggle[aria-expanded="true"] .hamburger-line {
+  &:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  &:nth-child(2) {
+    opacity: 0;
+  }
+
+  &:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+
+.mobile-menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+  z-index: var(--z-modal);
+}
+
+.mobile-menu-backdrop.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(400px, 100vw);
+  height: 100vh;
+  background: var(--color-gray-900);
+  border-left: 1px solid var(--color-gray-200);
+  transform: translateX(100%);
+  transition: transform var(--transition-normal);
+  z-index: var(--z-modal);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.mobile-menu-close {
+  color: var(--color-white);
+}
+
+.mobile-menu-list {
+  flex: 1;
+  padding: var(--space-4) 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu-item {
+  margin: 0;
+}
+
+.mobile-menu-link {
+  display: block;
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-normal);
+  border-left: 3px solid transparent;
+
+  &:hover {
+    background: var(--color-gray-800);
+    border-left-color: var(--color-primary);
+  }
+
+  &[aria-current="page"] {
+    color: var(--color-primary);
+    border-left-color: var(--color-primary);
+    background: var(--color-gray-800);
+  }
+}
+
+.mobile-menu-footer {
+  padding: var(--space-4);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.mobile-social-links {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+}
+
+/* Simple instant display */
+.mobile-menu-item {
+  opacity: 1;
+}
+</style>
+
+<script>
+// Modern Mobile Navigation JavaScript
+(function() {
+  const menuToggle = document.querySelector('[data-menu-toggle]');
+  const menuPanel = document.querySelector('[data-menu-panel]');
+  const menuBackdrop = document.querySelector('[data-menu-backdrop]');
+  const menuClose = document.querySelector('[data-menu-close]');
+  const menuLinks = document.querySelectorAll('.mobile-menu-link');
+
+  let isOpen = false;
+
+  function openMenu() {
+    isOpen = true;
+    menuToggle.setAttribute('aria-expanded', 'true');
+    menuPanel.classList.add('is-open');
+    menuBackdrop.classList.add('is-visible');
+    document.body.style.overflow = 'hidden';
+
+    // Focus first menu item
+    const firstLink = menuPanel.querySelector('.mobile-menu-link');
+    if (firstLink) {
+      firstLink.focus();
+    }
+  }
+
+  function closeMenu() {
+    isOpen = false;
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuPanel.classList.remove('is-open');
+    menuBackdrop.classList.remove('is-visible');
+    document.body.style.overflow = '';
+
+    // Return focus to toggle button
+    menuToggle.focus();
+  }
+
+  function toggleMenu() {
+    isOpen ? closeMenu() : openMenu();
+  }
+
+  // Event listeners
+  menuToggle.addEventListener('click', toggleMenu);
+  menuClose.addEventListener('click', closeMenu);
+  menuBackdrop.addEventListener('click', closeMenu);
+
+  // Close on link click
+  menuLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isOpen) {
+      closeMenu();
+    }
+  });
+
+  // Trap focus in menu when open
+  menuPanel.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') {
+      const focusableElements = menuPanel.querySelectorAll(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (e.shiftKey && document.activeElement === firstElement) {
+        e.preventDefault();
+        lastElement.focus();
+      } else if (!e.shiftKey && document.activeElement === lastElement) {
+        e.preventDefault();
+        firstElement.focus();
+      }
+    }
+  });
+})();
+</script>
+  </div>
+</header>
+
+    <main id="main-content" class="body">
+      <!-- Blog post schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://vpetersson.com/2010/09/27/setting-up-a-redundant-nas-with-hast-with-carp.html"
+  },
+  "headline": "Setting up a redundant NAS with HAST and CARP",
+  "description": null,
+  "datePublished": "2010-09-27T10:53:42+00:00",
+  "dateModified": "2010-09-27T10:53:42+00:00",
+  "author": {
+    "@type": "Person",
+    "@id": "https://vpetersson.com/about/#person",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://vpetersson.com/assets/images/site/talk.webp"
+    }
+  },
+  
+  "inLanguage": "en",
+  "wordCount": "1303",
+  "keywords": ["CARP","FreeBSD","HAST","NAS","NFS","Samba"]
+}
+</script>
+
+<!-- Breadcrumbs schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://vpetersson.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://vpetersson.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Setting up a redundant NAS with HAST and CARP",
+      "item": "https://vpetersson.com/2010/09/27/setting-up-a-redundant-nas-with-hast-with-carp.html"
+    }
+  ]
+}
+</script>
+<div class="page-header page-header-blog">
+  <h2 class="uppercase text-[48px] md:text-[91px] lg:text-[140px] xl:text-[186px] text-white text-center">Blog</h2>
+</div>
+<div class="bg-secondaryBG blog-post">
+  <div class="md:max-w-[665px] mx-4 sm:mx-6 md:mx-auto py-8 md:py-10 lg:py-20">
+    <h2 class="mb-6">Setting up a redundant NAS with HAST and CARP</h2>
+    <div class="flex mb-6 gap-6 text-xs">
+      <span class="uppercase">
+        27 SEP • 2010
+      </span>
+      <span class="blog-time">
+        8 minutes
+      </span>
+    </div>
+    <article class="leading-[26px]">
+      <p>One of the coolest new features in FreeBSD is <a href="http://wiki.freebsd.org/HAST">HAST</a> (Highly Available Storage). In simple terms, it can be described as RAID1 (mirror) over TCP/IP (similar to DRBD on Linux, but native). You can simply have two physical nodes replicate data over the network. If you throw in <a href="http://www.freebsd.org/doc/handbook/carp.html">CARP</a> (Common Address Redundancy Protocol) to the mix, you can create a very robust storage system on commodity hardware with automatic failover.</p>
+
+<p>After reading trough the official HAST wiki, I decided that the approach outlined there wasn’t the ideal approach for us. They use UCARP, which is a userland implementation of CARP. I prefer to use the real deal, as it is known to be extremely robust. The only downside with using CARP instead of UCARP is that it requires that you recompile the kernel.</p>
+
+<p>In order to get this working, you need two FreeBSD 8.1 machines connected with gigabit ethernet (at least gigabit is preferred) and one spare partition or disk on each machine (preferably same size).</p>
+
+<p>Here are the steps:</p>
+
+<ul>
+  <li>Recompile the kernel with CARP-support on both nodes</li>
+  <li>Set up CARP</li>
+  <li>Configure and set up HAST</li>
+  <li>Configure the failover</li>
+</ul>
+
+<h3 id="recompile-the-kernel">Recompile the kernel</h3>
+
+<p>I’m going to run trough this process real quick. You can find more details in the official documentation <a href="http://www.freebsd.org/doc/handbook/kernelconfig-building.html">here</a>.</p>
+
+<p><strong>Install CSVup</strong></p>
+
+<p>cd /usr/ports/net/cvsup-without-gui
+make install</p>
+
+<p>Edit the CSVup config-file (/usr/share/examples/cvsup/stable-supfile)</p>
+
+<ul>
+  <li>Add a mirror close to the servers from <a href="http://www.freebsd.org/doc/en/books/handbook/cvsup.html">here</a>.</li>
+  <li>Change “*default release=cvs tag=” to your version of FreeBSD (eg. RELENG_8_1).</li>
+</ul>
+
+<p>Update/retrieve the source:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cvsup -L 2 /usr/share/examples/cvsup/stable-supfile
+</code></pre></div></div>
+
+<p>Configure the kernel. In this case we use an AMD64 CPU, but you can replace that with i386 if that’s what you have:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /usr/src/sys/amd64/conf
+mkdir /root/kernels/
+cp GENERIC /root/kernels/MYKERNEL
+ln -s /root/kernels/MYKERNEL
+joe MYKERNEL
+</code></pre></div></div>
+
+<p>To enable CARP, add the following</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\# CARP
+device carp
+</code></pre></div></div>
+
+<p>When done configuring, build and install the kernel.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /usr/src
+make buildkernel KERNCONF=MYKERNEL
+make installkernel KERNCONF=MYKERNEL
+</code></pre></div></div>
+
+<p>If everything went fine, reboot your system into the new kernel</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shutdown -r now
+</code></pre></div></div>
+
+<h3 id="set-up-carp">Set up CARP</h3>
+
+<p>With the CARP kernel module installed, setting up CARP is super easy. All you need to do to add two lines in rc.conf on each node.</p>
+
+<p>We will create a virtual IP address (192.168.10.10) that automatically points to the primary node (or secondary node if the primary is down). We use the password ‘MyPassword’ for the session. The primary node has an advskew value set to 10 and the secondary node to 20. CARP will automatically use the node with the lowest advskew as the primary node.</p>
+
+<p>On the primary node, add this to /etc/rc.conf:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cloned_interfaces="carp0"
+ifconfig_carp0="vhid 1 pass MyPassword advskew 10 192.168.10.10 netmask 255.255.0.0"
+hastd_enable="YES"
+</code></pre></div></div>
+
+<p>And then run the following (the preempt makes the primary node the default primary):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ifconfig carp0 create
+sysctl -w net.inet.carp.preempt=1
+echo -e "\\nnet.inet.carp.preempt=1" &gt;&gt; /etc/sysctl.conf
+</code></pre></div></div>
+
+<p>On the secondary node, add this to /etc/rc.conf:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cloned_interfaces="carp0"
+ifconfig_carp0="vhid 1 pass MyPassword advskew 20 192.168.10.10 netmask 255.255.0.0"
+hastd_enable="YES"
+</code></pre></div></div>
+
+<p>And run:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ifconfig carp0 create
+</code></pre></div></div>
+
+<p>if you run ‘ifconfig carp0′ on either node, you will see if it is the primary or secondary node. Here’s from my secondary node.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>carp0: flags=49 metric 0 mtu 1500
+inet 192.168.10.10 netmask 0xffff0000
+carp: BACKUP vhid 1 advbase 1 advskew 20
+</code></pre></div></div>
+
+<p>You should also be able to ping 192.168.10.10 from a different host and have the primary node respond to the ping. If you restart the primary node, the secondary node should automatically be promoted to the primary node (eg. you can ping 192.168.10.10 from a different host and only lose one or two packages when you reboot the primary node).</p>
+
+<h3 id="configure-and-set-up-hast">Configure and set up HAST</h3>
+
+<p>Configuring HAST is also pretty straight forward. In my case, I have two nodes: s1 and s2. They both have a separate disk (ad6) that I will dedicate to HAST. s1 has the IP address 192.168.10.11 and s2 192.168.10.12. Also make sure that you have these hosts added in /etc/hosts (or in your local DNS). As you can see in my hast.conf, I decided to call my HAST pool ‘hast0′.</p>
+
+<p>Now create the file /etc/hast.conf with the following on both nodes:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>resource hast0 {
+	on s1 {
+		local /dev/ad6
+		remote 192.168.10.12
+	}
+	on s2 {
+			local /dev/ad6
+		remote 192.168.10.11
+	}
+}
+</code></pre></div></div>
+
+<p>Once you’ve created the file on both nodes, you need to run the following on each node (replace hast0 if you named it something else in hast.conf):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hastctl create hast0
+hastd
+</code></pre></div></div>
+
+<p>Now move over to your primary node, and run the following command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hastctl role primary hast0
+</code></pre></div></div>
+
+<p>On the secondary node, run the following command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hastctl role secondary hast0
+</code></pre></div></div>
+
+<p>Verify the result by running the following on each node:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hastctl status hast0
+</code></pre></div></div>
+
+<p>Pay attention to the ‘status’ line. It should say ‘complete’ on both sides. If it says ‘degraded,’ you’ve done something wrong.</p>
+
+<p>Lastly, we need to create a filesystem for HAST. On the primary node, run:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>newfs -U /dev/hast/hast0
+</code></pre></div></div>
+
+<p>Depending on the size of your disk/partition, this may take a few minutes. Once it is done, you should be able to mount your HAST pool with something like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir /mnt/hast0
+mount /dev/hast/hast0 /mnt/hast0
+</code></pre></div></div>
+
+<p>It is also likely that you will see that ‘hastd’ will consume 10-20% of your CPU on both nodes as it replicates the data across the systems for the initial sync. You know that it has replicated the data completely when ‘hastctl status’ on the primary node reports 0 bytes of ‘dirty’. Again, depending on the size of your disk/partition, this can take a long time (perhaps hours if you have a large drive). I suggest you do not move forward in this guide until you have your disks completely in sync.</p>
+
+<h3 id="configure-the-failover">Configure the failover</h3>
+
+<p>Now we need to configure HAST and CARP to work together. What we want to accomplish is if the primary node goes down, the secondary node should take over seamlessly. To do this, we will use ‘devd.’ We will use the carp0 link up and down status as the trigger.</p>
+
+<p>Open /etc/devd.conf and add the following on both nodes:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>notify 30 {
+	match "system"          "IFNET";
+	match "subsystem"       "carp0";
+	match "type"            "LINK_UP";
+	action "/usr/local/sbin/carp-hast-switch master";
+};
+
+notify 30 {
+	match "system"          "IFNET";
+	match "subsystem"       "carp0";
+	match "type"            "LINK_DOWN";
+	action "/usr/local/sbin/carp-hast-switch slave";
+};
+</code></pre></div></div>
+
+<p>When the link goes up or down, we call on the script carp-hast-switch. You can find the script <a href="https://vpetersson.com/upload/carp-hast-switch">here</a>. The only thing you should need to modify is the ‘resources’-line.</p>
+
+<p>Here are the commands for fetching the file, if you’re lazy:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget [https://vpetersson.com/upload/carp-hast-switch](https://vpetersson.com/upload/carp-hast-switch) -O /usr/local/sbin/carp-hast-switch
+chmod +x /usr/local/sbin/carp-hast-switch
+</code></pre></div></div>
+
+<p>When you’ve added the dev.d configs, restart the devd demon on both nodes:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/etc/rc.d/devd restart
+</code></pre></div></div>
+
+<p>Here’s what the script does when a node becomes master (or primary):</p>
+
+<ul>
+  <li>Promotes itself to primary in to HAST</li>
+  <li>Mount the HAST disk (eg. /mnt/hast0)</li>
+</ul>
+
+<p>Here’s what the script does when it becomes slave (or secondary)</p>
+
+<ul>
+  <li>Umounts the HAST disk</li>
+  <li>Degrades itself to secondary in HAST</li>
+</ul>
+
+<p>That’s it. You should now be able to restart the primary node, and the secondary node should automatically be promoted to the primary node. You can now configure your two nodes to share the HAST disk (/mnt/hast0) using Samba or NFS with the shared IP address.</p>
+
+<p><strong>Credits</strong>: <a href="http://blather.michaelwlucas.com">Michael W. Lucas</a> for the HAST master/slave script.</p>
+
+
+      <div class="mt-12 mb-8 p-8 bg-blue-50 border border-blue-100 rounded-xl">
+        <h4 class="text-2xl font-semibold mb-4 text-blue-900">Enjoyed this post? Check out my podcast!</h4>
+        <p class="mb-6 text-blue-800">If you found this interesting, you might enjoy <a href="/podcast" class="text-blue-600 hover:text-blue-800 underline" onclick="trackEvent('Blog CTA', 'Click', 'Podcast Link', 'Setting up a redundant NAS with HAST and CARP')">"Nerding Out with Viktor"</a> - my podcast where I dive deep into tech, entrepreneurship, and security with industry experts.</p>
+        <div>
+          <h5 class="font-medium mb-4 text-blue-900">Listen on:</h5>
+          
+
+
+
+<div>
+  <div class="flex gap-3">
+    
+      <a href="https://www.youtube.com/@nerdingoutwithviktor" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'YouTube', 'Setting up a redundant NAS with HAST and CARP')">
+        <img src="/assets/images/site/podcast-youtube-white.svg" alt="Listen to podcast on YouTube" />
+      </a>
+    
+    
+      <a href="https://open.spotify.com/show/7C6yipdVPWgBc6Bwikgo8g" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Spotify', 'Setting up a redundant NAS with HAST and CARP')">
+        <img src="/assets/images/site/podcast-spotify-white.svg" alt="Listen to podcast on Spotify" />
+      </a>
+    
+    
+      <a href="https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Apple', 'Setting up a redundant NAS with HAST and CARP')">
+        <img src="/assets/images/site/podcast-apple-white.svg" alt="Listen to podcast on Apple" />
+      </a>
+    
+    
+    
+      <a href="https://podcast.nerdingoutwithviktor.com/podcast_feed.xml" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'RSS', 'Setting up a redundant NAS with HAST and CARP')">
+        <img src="/assets/images/site/podcast-rss-white.svg" alt="RSS Feed" />
+      </a>
+    
+  </div>
+</div>
+
+        </div>
+      </div>
+
+      <i>Found an error or typo? File PR against <a href="https://github.com/vpetersson/vpetersson.com/tree/master/_posts/tumblr/2010-09-27-setting-up-a-redundant-nas-with-hast-with-carp.md" rel="nofollow">this file</a>.</i>
+    </article>
+    <div class="mt-6">
+      
+  <div class="tags">
+    
+      <a href="/tags/carp" class="tag">
+        CARP
+      </a>
+    
+      <a href="/tags/freebsd" class="tag">
+        FreeBSD
+      </a>
+    
+      <a href="/tags/hast" class="tag">
+        HAST
+      </a>
+    
+      <a href="/tags/nas" class="tag">
+        NAS
+      </a>
+    
+      <a href="/tags/nfs" class="tag">
+        NFS
+      </a>
+    
+      <a href="/tags/samba" class="tag">
+        Samba
+      </a>
+    
+  </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+    </main>
+    <footer class="py-[60px] md:pt-[74px] md:pb-[40px] px-[25px] md:px-[120px] text-altPrimaryText">
+  <div class="mb-[60px]">
+    <a href="/">
+      <img class="w-[200px] md:w-[320px]" src="/assets/images/site/logo.svg" alt="logo" />
+    </a>
+  </div>
+  <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-8 lg:mb-6">
+    <nav class="flex flex-col md:flex-row gap-6 md:gap-8 mb-20 lg:mb-0">
+      
+        <a href="/" class="">HOME</a>
+      
+        <a href="/about" class="">ABOUT</a>
+      
+        <a href="/consulting" class="">CONSULTING</a>
+      
+        <a href="/podcast" class="">PODCAST</a>
+      
+        <a href="/blog" class="">BLOG</a>
+      
+        <a href="https://studio.viktopia.io/" class="">VIKTOPIA STUDIO</a>
+      
+    </nav>
+    <div class="flex gap-[13px]">
+      <a href="https://twitter.com/vpetersson">
+        <img src="/assets/images/site/x.svg" alt="x logo" />
+      </a>
+      <a href="https://github.com/vpetersson">
+        <img src="/assets/images/site/github.svg" alt="github logo" />
+      </a>
+      <a href="https://www.linkedin.com/in/vpetersson/">
+        <img src="/assets/images/site/linkedin.svg" alt="linkedIn logo" />
+      </a>
+    </div>
+  </div>
+  <hr class="mb-8 lg:mb-10 bg-[#000212] h-[3px] bg-opacity-20 border-0" />
+  <div>
+    <p class="font-[Inter] text-base">&copy; Viktor Petersson</p>
+  </div>
+</footer>
+
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/code-blocks.js" defer></script>
+  </body>
+</html>

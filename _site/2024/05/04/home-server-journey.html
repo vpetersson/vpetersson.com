@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="content-language" content="en">
+
+  <!-- Resource Hints -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="/assets/css/styles.css" as="style">
+  <link rel="preload" href="/assets/css/main.css" as="style">
+
+  <title>My Home Server Journey - From Raspberry Pi to Ryzen</title>
+  <meta name="description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://vpetersson.com/2024/05/04/home-server-journey.html">
+  <meta property="og:title" content="My Home Server Journey - From Raspberry Pi to Ryzen">
+  <meta property="og:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta property="og:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- LinkedIn -->
+  <meta property="og:site_name" content="Viktor's Tech Musings & Security Paranoia">
+  <meta property="article:author" content="https://www.linkedin.com/in/vpetersson/">
+  
+  <meta property="article:published_time" content="2024-05-04T00:00:00+00:00">
+  
+
+  <!-- X (formerly Twitter) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@vpetersson">
+  <meta name="twitter:creator" content="@vpetersson">
+  <meta name="twitter:title" content="My Home Server Journey - From Raspberry Pi to Ryzen">
+  <meta name="twitter:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta name="twitter:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- Social Profile Links -->
+  <link rel="me" href="https://github.com/vpetersson">
+  <link rel="me" href="https://www.linkedin.com/in/vpetersson/">
+  <link rel="me" href="https://hachyderm.io/@vpetersson@hachyderm.io">
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com",
+    "image": "https://vpetersson.com/assets/images/site/talk.webp",
+    "sameAs": [
+      "https://github.com/vpetersson",
+      "https://www.linkedin.com/in/vpetersson/",
+      "https://hachyderm.io/@vpetersson@hachyderm.io",
+      "https://twitter.com/vpetersson"
+    ]
+  }
+  </script>
+
+  <!-- Custom meta tags -->
+  
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Anton|DM Sans|Roboto|Hanken+Grotesk"
+    />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/native.css">
+  
+  <!-- Font Awesome (bundled from node_modules) -->
+  <link rel="stylesheet" href="/assets/css/fontawesome-core.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-solid.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-brands.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZY6ZNLNNC8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZY6ZNLNNC8');
+
+  // Track outbound links and CTAs
+  function trackEvent(category, action, label, source) {
+    gtag('event', action, {
+      'event_category': category,
+      'event_label': label,
+      'source': source
+    });
+  }
+</script>
+
+
+  <link rel="canonical" href="https://vpetersson.com/2024/05/04/home-server-journey.html" />
+</head>
+
+  <body>
+    <!-- Skip Navigation -->
+<a href="#main-content" class="skip-navigation">Skip to main content</a>
+
+<header class="p-8 flex justify-between bg-primaryBG border-b border-white-alpha-20" role="banner">
+  <div class="flex gap-10 justify-between items-center">
+    <a href="/" aria-label="Viktor Petersson - Home">
+      <img src="/assets/images/site/logo-white.svg" alt="Viktor Petersson logo" width="120" height="40" />
+    </a>
+    <nav class="hidden lg:flex gap-6">
+  
+    <a href="/" class="text-white uppercase">HOME</a>
+  
+    <a href="/about" class="text-white uppercase">ABOUT</a>
+  
+    <a href="/consulting" class="text-white uppercase">CONSULTING</a>
+  
+    <a href="/podcast" class="text-white uppercase">PODCAST</a>
+  
+    <a href="/blog" class="text-white uppercase">BLOG</a>
+  
+    <a href="https://studio.viktopia.io/" class="text-white uppercase">VIKTOPIA STUDIO</a>
+  
+</nav>
+
+  </div>
+  <div class="flex gap-2 justify-between items-center">
+    <div class="header-search hidden lg:block">
+      <form action="/search" method="get" role="search">
+        <label for="searchright" class="sr-only">Search the site</label>
+        <input
+          class="search expandright"
+          id="searchright"
+          type="search"
+          name="query"
+          placeholder="Search"
+          aria-label="Search"
+        >
+        <button class="button searchbutton" type="submit" aria-label="Submit search">
+          <span class="mglass" aria-hidden="true">&#9906;</span>
+        </button>
+      </form>
+    </div>
+
+    <div class="hidden lg:block">
+      <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+    </div>
+
+    <!-- Use modern mobile navigation -->
+    <!-- Modern Mobile Navigation -->
+<div class="mobile-nav-container lg:hidden">
+  <!-- Menu Toggle Button -->
+  <button
+    class="mobile-menu-toggle btn-reset touch-target"
+    aria-label="Toggle navigation menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+    data-menu-toggle
+  >
+    <span class="hamburger-icon" aria-hidden="true">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </span>
+  </button>
+
+  <!-- Mobile Menu Backdrop -->
+  <div
+    class="mobile-menu-backdrop"
+    data-menu-backdrop
+    aria-hidden="true"
+  ></div>
+
+  <!-- Mobile Menu Panel -->
+  <nav
+    class="mobile-menu"
+    id="mobile-menu"
+    aria-labelledby="mobile-menu-label"
+    data-menu-panel
+  >
+    <!-- Menu Header -->
+    <div class="mobile-menu-header">
+      <h2 id="mobile-menu-label" class="sr-only">Navigation Menu</h2>
+      <button
+        class="mobile-menu-close btn-reset touch-target"
+        aria-label="Close navigation menu"
+        data-menu-close
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="mobile-menu-list" role="list">
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            HOME
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/about"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            ABOUT
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/consulting"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            CONSULTING
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/podcast"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            PODCAST
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/blog"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            BLOG
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="https://studio.viktopia.io/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            VIKTOPIA STUDIO
+          </a>
+        </li>
+      
+    </ul>
+
+    <!-- Social Links -->
+    <div class="mobile-menu-footer">
+      <div class="mobile-social-links">
+        <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<style>
+/* Mobile Navigation Styles */
+.mobile-nav-container {
+  position: relative;
+}
+
+.mobile-menu-toggle {
+  position: relative;
+  z-index: var(--z-fixed);
+  color: var(--color-white);
+  transition: transform var(--transition-normal);
+
+  &[aria-expanded="true"] {
+    transform: rotate(90deg);
+  }
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 18px;
+  justify-content: space-between;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  transition: all var(--transition-normal);
+  transform-origin: center;
+}
+
+.mobile-menu-toggle[aria-expanded="true"] .hamburger-line {
+  &:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  &:nth-child(2) {
+    opacity: 0;
+  }
+
+  &:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+
+.mobile-menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+  z-index: var(--z-modal);
+}
+
+.mobile-menu-backdrop.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(400px, 100vw);
+  height: 100vh;
+  background: var(--color-gray-900);
+  border-left: 1px solid var(--color-gray-200);
+  transform: translateX(100%);
+  transition: transform var(--transition-normal);
+  z-index: var(--z-modal);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.mobile-menu-close {
+  color: var(--color-white);
+}
+
+.mobile-menu-list {
+  flex: 1;
+  padding: var(--space-4) 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu-item {
+  margin: 0;
+}
+
+.mobile-menu-link {
+  display: block;
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-normal);
+  border-left: 3px solid transparent;
+
+  &:hover {
+    background: var(--color-gray-800);
+    border-left-color: var(--color-primary);
+  }
+
+  &[aria-current="page"] {
+    color: var(--color-primary);
+    border-left-color: var(--color-primary);
+    background: var(--color-gray-800);
+  }
+}
+
+.mobile-menu-footer {
+  padding: var(--space-4);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.mobile-social-links {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+}
+
+/* Simple instant display */
+.mobile-menu-item {
+  opacity: 1;
+}
+</style>
+
+<script>
+// Modern Mobile Navigation JavaScript
+(function() {
+  const menuToggle = document.querySelector('[data-menu-toggle]');
+  const menuPanel = document.querySelector('[data-menu-panel]');
+  const menuBackdrop = document.querySelector('[data-menu-backdrop]');
+  const menuClose = document.querySelector('[data-menu-close]');
+  const menuLinks = document.querySelectorAll('.mobile-menu-link');
+
+  let isOpen = false;
+
+  function openMenu() {
+    isOpen = true;
+    menuToggle.setAttribute('aria-expanded', 'true');
+    menuPanel.classList.add('is-open');
+    menuBackdrop.classList.add('is-visible');
+    document.body.style.overflow = 'hidden';
+
+    // Focus first menu item
+    const firstLink = menuPanel.querySelector('.mobile-menu-link');
+    if (firstLink) {
+      firstLink.focus();
+    }
+  }
+
+  function closeMenu() {
+    isOpen = false;
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuPanel.classList.remove('is-open');
+    menuBackdrop.classList.remove('is-visible');
+    document.body.style.overflow = '';
+
+    // Return focus to toggle button
+    menuToggle.focus();
+  }
+
+  function toggleMenu() {
+    isOpen ? closeMenu() : openMenu();
+  }
+
+  // Event listeners
+  menuToggle.addEventListener('click', toggleMenu);
+  menuClose.addEventListener('click', closeMenu);
+  menuBackdrop.addEventListener('click', closeMenu);
+
+  // Close on link click
+  menuLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isOpen) {
+      closeMenu();
+    }
+  });
+
+  // Trap focus in menu when open
+  menuPanel.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') {
+      const focusableElements = menuPanel.querySelectorAll(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (e.shiftKey && document.activeElement === firstElement) {
+        e.preventDefault();
+        lastElement.focus();
+      } else if (!e.shiftKey && document.activeElement === lastElement) {
+        e.preventDefault();
+        firstElement.focus();
+      }
+    }
+  });
+})();
+</script>
+  </div>
+</header>
+
+    <main id="main-content" class="body">
+      <!-- Blog post schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://vpetersson.com/2024/05/04/home-server-journey.html"
+  },
+  "headline": "My Home Server Journey - From Raspberry Pi to Ryzen",
+  "description": null,
+  "datePublished": "2024-05-04T00:00:00+00:00",
+  "dateModified": "2024-05-04T00:00:00+00:00",
+  "author": {
+    "@type": "Person",
+    "@id": "https://vpetersson.com/about/#person",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://vpetersson.com/assets/images/site/talk.webp"
+    }
+  },
+  
+  "inLanguage": "en",
+  "wordCount": "2013",
+  "keywords": ["proxmox","linux","raspberry-pi","zfs"]
+}
+</script>
+
+<!-- Breadcrumbs schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://vpetersson.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://vpetersson.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "My Home Server Journey - From Raspberry Pi to Ryzen",
+      "item": "https://vpetersson.com/2024/05/04/home-server-journey.html"
+    }
+  ]
+}
+</script>
+<div class="page-header page-header-blog">
+  <h2 class="uppercase text-[48px] md:text-[91px] lg:text-[140px] xl:text-[186px] text-white text-center">Blog</h2>
+</div>
+<div class="bg-secondaryBG blog-post">
+  <div class="md:max-w-[665px] mx-4 sm:mx-6 md:mx-auto py-8 md:py-10 lg:py-20">
+    <h2 class="mb-6">My Home Server Journey - From Raspberry Pi to Ryzen</h2>
+    <div class="flex mb-6 gap-6 text-xs">
+      <span class="uppercase">
+        04 MAY • 2024
+      </span>
+      <span class="blog-time">
+        11 minutes
+      </span>
+    </div>
+    <article class="leading-[26px]">
+      <h3 id="introduction">Introduction</h3>
+
+<p>Back when I was living in a snug studio flat in London, I began my home server adventure with a Raspberry Pi 3. This move to a settled lifestyle came after years of living as a digital nomad, during which I had fully minimized my personal belongings to adapt to a constantly mobile life. The shift to a more permanent base in London marked a new chapter where I could explore more stationary tech projects like setting up a home server.</p>
+
+<h3 id="early-stages">Early Stages</h3>
+
+<p>Around that time, WD Labs - a now defunct R&amp;D division of Western Digital focused on innovative projects for the Raspberry Pi - sent me a Pi Drive. They were a great bunch to collaborate with at <a href="https://www.screenly.io">Screenly</a>, always pushing the envelope on what could be achieved with Pi.</p>
+
+<p><img src="/assets/wd-pi-drive-open.webp" alt="WD Labs Pi Drive (opened)" /></p>
+
+<p>The Pi Drive was designed for a single 2.5” drive. I decided to mod it to hold two 1TB drives, set up as ZFS mirrors for redundancy. Running <a href="https://www.openmediavault.org/">OpenMediaVault</a> (OMV), this setup worked alright, albeit the Pi 3’s USB 2.0 ports were a bottleneck, maxing out at 480mbps across both drives. Although slow, it was a solid entry into the world of network-attached storage using ZFS raid.</p>
+
+<p><img src="/assets/wd-pi-drive-closed.webp" alt="WD Labs Pi Drive (closed)" /></p>
+
+<p>I still see discussions on Reddit and other forums where people consider using a Pi for NAS solutions. Based on my experiences, my advice would be to steer clear of using a Pi for this purpose—it’s much more practical and efficient to invest in a cheap NUC instead.</p>
+
+<h3 id="upgrading-and-expanding">Upgrading and Expanding</h3>
+
+<p>As my tinkering expanded (including my <a href="https://vpetersson.com/2020/05/25/homeassistant-ikea-tradfri-flux-sensors.html">home automation</a>), the Pi’s limitations became apparent. I needed a more robust system, so I upgraded to a NUC equipped with an i5 processor and 32GB of RAM running <a href="https://proxmox.com/en/">Proxmox</a>. I migrated the ZFS pool from the Pi, expanded it by adding another drive while maintaining the original drives. In order to keep things tidy (and get good air flow), my friend <a href="https://twitter.com/ipedrazas">Ivan</a> 3D printed a great stand that could hold up to four 2.5” drives.</p>
+
+<p><img src="/assets/3d-printed-drive-stand.webp" alt="3D printed 2.5&quot; drive stand" /></p>
+
+<p>Over the years, I’ve had to replace at least four dead/failing 2.5” drives, but ZFS made these changes seamless without any data loss. Despite adding an SSD as cache, the setup underperformed due to USB bandwidth limitations, and the NUC eventually succumbed to the constant heavy load.</p>
+
+<h3 id="nuc-to-protectli">NUC to Protectli</h3>
+
+<p>When my NUC eventually gave in, I just happened to have a Protectli <a href="https://eu.protectli.com/product/fw6e/">FW6E-0</a> on hand from another project. It came equipped with an Intel i7 processor and I had added 32GB of RAM, making it a suitable candidate to take over my home server duties. I moved my ZFS pool to this new machine and continued running Proxmox. This setup proved robust, handling my requirements well for about two years, but eventually, I felt the need for a more integrated solution to consolidate several devices into one solid, future-proof system.</p>
+
+<p><img src="/assets/protectli-fw6e-0.webp" alt="Protectli FW6e-0" /></p>
+
+<h3 id="evaluating-and-finalizing-the-new-setup">Evaluating and Finalizing the New Setup</h3>
+
+<p>In my search for a consolidated solution, I evaluated setting up a beefy compute node alongside something like a Synology NAS. However, I decided against this arrangement due to my previous (bad) experiences with running VMs on Synology NASes over iSCSI. Since my VMs can comfortably fit across a few SSDs, I decided to look for an all-in-one solution, where I’d use the spinning drives for backups. Perhaps equally importantly, a decent spec’d Synology NAS would cost me almost as much as the final setup I ended up with (but then I’d still have to add the compute node).</p>
+
+<p>After extensive research, I chose the Jonsbo N2 case for its compact yet accommodating form factor that could hold up to 5x 3.5” SATA drives. As a nice bonus, the 3.5” drives are also easily swappable from the front, removing the need to open the case when a drive eventually dies.</p>
+
+<p>The next challenge was selecting the right motherboard. All the options I considered required some form of compromise. I was particularly looking for a motherboard with at least two PCI slots to accommodate an additional NIC for Link Aggregation Group (LAGG) with the onboard NIC and an M2 expansion card. Ultimately, I had to make a tough choice and forego LAGG due to slot limitations, settling on the ASROCK B550M-ITX/ac, which could handle my AMD Ryzen 7 5700G after a crucial BIOS update (more on that below).</p>
+
+<p><img src="/assets/jonsbo-n2.webp" alt="Jonsbo N2" /></p>
+
+<h3 id="and-of-course-something-went-wrong">And of Course Something Went Wrong</h3>
+
+<p>While this should have been flagged in my research, it turns out the B550M-ITX/ac supports the AMD Ryzen 7 5700G, but not without a BIOS update. The motherboard supports “instant flash,” a straightforward method, but lacks support for more sophisticated flashing methods like “BIOS Flashback” or “Q-Flash.” These methods would have allowed me to update the BIOS without needing a supported CPU installed. After scouring countless Reddit threads and tech forums for a solution, I realized that my only option was to procure a cheaper Ryzen 3 processor solely to perform the BIOS update. This workaround, although not ideal, was necessary to get my server running with the intended CPU.</p>
+
+<p>I also evaluated the Ryzen 9, but since the motherboard only had one PCIe port, I was unable to fit a dedicated GPU. This left me to choose from AMD CPUs with built-in GPUs, where the 5700G is currently one of the fastest options available. The decision aligns with a future upgrade path, where I plan to swap out the CPU and motherboard for newer ITX models as they become available, ensuring that the server can continue to meet evolving performance demands.</p>
+
+<p><img src="/assets/jonsbo-n2-top.webp" alt="Jonsbo N2 (top)" /></p>
+
+<h3 id="security-considerations-and-future-plans">Security Considerations and Future Plans</h3>
+
+<p>In my pursuit of a secure and efficient server, I really wanted TPM-backed Full Disk Encryption (FDE) for all drives along with Secure Boot (which is now supported natively in Proxmox). The complexities of implementation and reliability issues led me to give up on FDE for the root drive for now. The state of TPM-backed FDE in Linux is depressingly primitive compared to macOS and Windows, where such security measures “just work” seamlessly.</p>
+
+<p>After spending a few hours both with Debian and Proxmox (which is based on Debian), I deemed it too unreliable for a headless server. LUKS based FDE with a passphrase works great, and I’ve used that for years on non-headless devices. However, once you try to use the TPM to unlock the FDE, things get complicated (and very hackish).</p>
+
+<p>I briefly entertained going down the <a href="https://nixos.org/">NixOS</a> route instead of Proxmox, after having my friend Jon sold me on the benefits of Nix and NixOS over beers (and on <a href="https://www.youtube.com/watch?v=9l-U2NwbKOc">my podcast</a>) for some time. His post “<a href="https://jnsgr.uk/2024/04/nixos-secure-boot-tpm-fde/">Secure Boot &amp; TPM-backed Full Disk Encryption on NixOS</a>” definitely makes for a compelling argument, but I ended up sticking to Proxmox for now due to time limitations.</p>
+
+<p>I’m also still using my external USB drive setup as I haven’t gotten around to ordering the 3.5” drives yet. My plan is to configure ZFS across these new drives with TPM-backed Full Disk Encryption for added security (and to save time on shredding drives when they start failing). I will add an update later with details about this.</p>
+
+<h3 id="final-bill-of-materials-bom-for-the-new-server-setup">Final Bill of Materials (BOM) for the New Server Setup:</h3>
+
+<ul>
+  <li><strong>Case</strong>: <a href="https://www.aliexpress.com/item/1005004980577095.html">Jonsbo N2</a>
+    <ul>
+      <li>Compact form factor ideal for multiple internal drives.</li>
+    </ul>
+  </li>
+  <li><strong>Motherboard</strong>: <a href="https://www.aliexpress.com/item/1005006480641176.html">ASROCK B550M-ITX/ac</a>
+    <ul>
+      <li>Supports AMD Ryzen CPUs, compact ITX form factor, essential for limited space setups.</li>
+    </ul>
+  </li>
+  <li><strong>CPU</strong>: AMD Ryzen 7 5700G
+    <ul>
+      <li>Powerful processor with 16 cores - suitable for heavy loads, with integrated graphics.</li>
+    </ul>
+  </li>
+  <li><strong>RAM</strong>: 2x 32GB DDR4</li>
+  <li><strong>Power Supply</strong>: CWT 650W Modular 80 Plus Gold</li>
+  <li><strong>Boot/Root drive</strong>: 500GB M2 NVMe (plugged into the motherboard)</li>
+  <li><strong>Additional Storage</strong>:
+    <ul>
+      <li>3x M2 NVME drives for VMs in a <a href="https://www.aliexpress.com/item/1005003877778925.html">Linkreal PCIe x16 to 4-Port M.2 NVMe SSD Adapter</a>.
+        <ul>
+          <li>Due to a limitation in the BIOS/motherboard, it appears as I’m only able to use 3 out of the 4 M2 drive slots.</li>
+        </ul>
+      </li>
+      <li>4x 4TB 3.5” SATA 7200 RPM drives (connected straight to the motherboard).
+        <ul>
+          <li>This will either be a Stripe + Mirror ZFS pool (or possibly RAIDZ1 with a hot spare).</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>KVM</strong>: PiKVM V4 Mini</li>
+</ul>
+
+<p>This compact setup is designed to be robust, scalable, and capable of handling substantial data loads and various server tasks efficiently. The choice of components ensures that the server is future-proofed and can accommodate additional expansions or upgrades as needed.</p>
+
+<p>As things stand, the only thing that bothers me (other than the lack of TPM based FDE) is the noise level. Compared to its predecessor, it is a lot louder. This can probably be rectified with a quieter CPU fan, but that’s a problem for the future.</p>
+
+<h3 id="update">Update</h3>
+
+<p>I’ve now added 4x 4TB 3.5” SATA (7200 RPM) drives to the system. So far everything seems to work great.</p>
+
+<p>This is what I used to create my tank:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>zpool create <span class="nt">-o</span> <span class="nv">ashift</span><span class="o">=</span>12 &lt;my tank name&gt; <span class="se">\</span>
+    mirror <span class="se">\</span>
+        /dev/disk/by-id/&lt;disk 1&gt; <span class="se">\</span>
+        /dev/disk/by-id/&lt;disk 2&gt; <span class="se">\</span>
+    mirror <span class="se">\</span>
+        /dev/disk/by-id/&lt;disk 3&gt; <span class="se">\</span>
+        /dev/disk/by-id/&lt;disk 4&gt;
+</code></pre></div></div>
+
+<p>If you want to learn more about ZFS and its capabilities, I highly recommend checking out <a href="https://vpetersson.com/podcast/S01E25.html">my podcast episode with Allan Jude</a>, where we dive deep into ZFS architecture, features, and best practices.</p>
+
+<p>I also ended up setting up an encrypted dataset that I use for some VMs, as well as for backups.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>zfs create <span class="se">\</span>
+    <span class="nt">-o</span> <span class="nv">encryption</span><span class="o">=</span>on <span class="se">\</span>
+    <span class="nt">-o</span> <span class="nv">keylocation</span><span class="o">=</span>prompt <span class="se">\</span>
+    <span class="nt">-o</span> <span class="nv">keyformat</span><span class="o">=</span>passphrase <span class="se">\</span>
+    &lt;my tank name&gt;/encrypted
+</code></pre></div></div>
+
+<p>When you reboot the box, you now need to run:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>zfs load-key <span class="nt">-r</span> &lt;my tank name&gt;/encrypted
+</code></pre></div></div>
+
+<p>The performance so far looks very reasonable with a max at ~250MB/s (for writes), which is sufficient for backups and some less read/write intensive VMs.</p>
+
+<p>To migrate over the data from my old ZFS tank, I just used the built-in tool in Proxmox. It was just a matter of stopping the VM/CT, move it and start it back up.</p>
+
+<p>So far, the only drawback is that I need to manually enter the passphrase to mount the encrypted ZFS volume, which prevents some VMs from booting up automatically on say a power failure.</p>
+
+<h3 id="update-2">Update 2</h3>
+
+<p>One of the drawbacks with using a consumer grade motherboard/server is that they generally speaking do not come with an IPMI. This can be a bit of a PITA when you want to tweak BIOS settings (or fix a boot problem).</p>
+
+<p>To solve for this, I decided to get myself a <a href="https://pikvm.org/">PiKVM</a> V4 Mini and attach to the server. So far I’m pretty impressed with it. The UI works well and you are even able to connect it to Tailscale. If you’re looking to solve for this problem, I can definitely recommend one of these.</p>
+
+<h3 id="update-3">Update 3</h3>
+
+<p>Remember how I mentioned the noise level being a problem? Well, the fan that came with the Jonsbo case has been driving me crazy for ages. Not only is it incredibly loud, but it also doesn’t do any fan control—it just runs at full blast all the time.</p>
+
+<p>However, when I came across <a href="https://blog.briancmoses.com/2025/11/diy-nas-2026-edition.html">Brian Moses’ DIY NAS: 2026 Edition</a>, I realized I could swap my fan for a <a href="https://www.amazon.com/dp/B09C6DQDNT?tag=diynas2026-20&amp;language=en_US">Noctua NF-A12x25 PWM</a>.</p>
+
+<p>The only caveat was that in my Jonsbo case, the Noctua fan was too thick to fit inside the case, so I had to mount it on the outside where it pokes out a bit. However, when I connected this fan directly to the motherboard, the noise level went down to almost nothing. It’s been a game-changer for my home server setup, and I can now barely hear it running.</p>
+
+
+      <div class="mt-12 mb-8 p-8 bg-blue-50 border border-blue-100 rounded-xl">
+        <h4 class="text-2xl font-semibold mb-4 text-blue-900">Enjoyed this post? Check out my podcast!</h4>
+        <p class="mb-6 text-blue-800">If you found this interesting, you might enjoy <a href="/podcast" class="text-blue-600 hover:text-blue-800 underline" onclick="trackEvent('Blog CTA', 'Click', 'Podcast Link', 'My Home Server Journey - From Raspberry Pi to Ryzen')">"Nerding Out with Viktor"</a> - my podcast where I dive deep into tech, entrepreneurship, and security with industry experts.</p>
+        <div>
+          <h5 class="font-medium mb-4 text-blue-900">Listen on:</h5>
+          
+
+
+
+<div>
+  <div class="flex gap-3">
+    
+      <a href="https://www.youtube.com/@nerdingoutwithviktor" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'YouTube', 'My Home Server Journey - From Raspberry Pi to Ryzen')">
+        <img src="/assets/images/site/podcast-youtube-white.svg" alt="Listen to podcast on YouTube" />
+      </a>
+    
+    
+      <a href="https://open.spotify.com/show/7C6yipdVPWgBc6Bwikgo8g" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Spotify', 'My Home Server Journey - From Raspberry Pi to Ryzen')">
+        <img src="/assets/images/site/podcast-spotify-white.svg" alt="Listen to podcast on Spotify" />
+      </a>
+    
+    
+      <a href="https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Apple', 'My Home Server Journey - From Raspberry Pi to Ryzen')">
+        <img src="/assets/images/site/podcast-apple-white.svg" alt="Listen to podcast on Apple" />
+      </a>
+    
+    
+    
+      <a href="https://podcast.nerdingoutwithviktor.com/podcast_feed.xml" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'RSS', 'My Home Server Journey - From Raspberry Pi to Ryzen')">
+        <img src="/assets/images/site/podcast-rss-white.svg" alt="RSS Feed" />
+      </a>
+    
+  </div>
+</div>
+
+        </div>
+      </div>
+
+      <i>Found an error or typo? File PR against <a href="https://github.com/vpetersson/vpetersson.com/tree/master/_posts/2024-05-04-home-server-journey.md" rel="nofollow">this file</a>.</i>
+    </article>
+    <div class="mt-6">
+      
+  <div class="tags">
+    
+      <a href="/tags/proxmox" class="tag">
+        proxmox
+      </a>
+    
+      <a href="/tags/linux" class="tag">
+        linux
+      </a>
+    
+      <a href="/tags/raspberry-pi" class="tag">
+        raspberry-pi
+      </a>
+    
+      <a href="/tags/zfs" class="tag">
+        zfs
+      </a>
+    
+  </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+    </main>
+    <footer class="py-[60px] md:pt-[74px] md:pb-[40px] px-[25px] md:px-[120px] text-altPrimaryText">
+  <div class="mb-[60px]">
+    <a href="/">
+      <img class="w-[200px] md:w-[320px]" src="/assets/images/site/logo.svg" alt="logo" />
+    </a>
+  </div>
+  <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-8 lg:mb-6">
+    <nav class="flex flex-col md:flex-row gap-6 md:gap-8 mb-20 lg:mb-0">
+      
+        <a href="/" class="">HOME</a>
+      
+        <a href="/about" class="">ABOUT</a>
+      
+        <a href="/consulting" class="">CONSULTING</a>
+      
+        <a href="/podcast" class="">PODCAST</a>
+      
+        <a href="/blog" class="">BLOG</a>
+      
+        <a href="https://studio.viktopia.io/" class="">VIKTOPIA STUDIO</a>
+      
+    </nav>
+    <div class="flex gap-[13px]">
+      <a href="https://twitter.com/vpetersson">
+        <img src="/assets/images/site/x.svg" alt="x logo" />
+      </a>
+      <a href="https://github.com/vpetersson">
+        <img src="/assets/images/site/github.svg" alt="github logo" />
+      </a>
+      <a href="https://www.linkedin.com/in/vpetersson/">
+        <img src="/assets/images/site/linkedin.svg" alt="linkedIn logo" />
+      </a>
+    </div>
+  </div>
+  <hr class="mb-8 lg:mb-10 bg-[#000212] h-[3px] bg-opacity-20 border-0" />
+  <div>
+    <p class="font-[Inter] text-base">&copy; Viktor Petersson</p>
+  </div>
+</footer>
+
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/code-blocks.js" defer></script>
+  </body>
+</html>

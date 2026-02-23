@@ -1,0 +1,5896 @@
+[
+  {
+    "sentence": "Welcome back to another episode of nerding out with Victor.",
+    "startTime": "00:00",
+    "endTime": "00:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Today I'm joined by Christian Walter from nine elements and many other things.",
+    "startTime": "00:04",
+    "endTime": "00:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And today we'll be diving deep into the world of firmware and hardware.",
+    "startTime": "00:09",
+    "endTime": "00:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So welcome to the show, Christian.",
+    "startTime": "00:14",
+    "endTime": "00:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Hey, thanks.",
+    "startTime": "00:16",
+    "endTime": "00:17",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Hi, Victor.",
+    "startTime": "00:18",
+    "endTime": "00:18",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Thanks for having me.",
+    "startTime": "00:19",
+    "endTime": "00:20",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So maybe for the audience, do you do a quick introduction to yourself so people understand a bit more your background and just paint a little bit of the conversation I guess we'll be having in the next 45 minutes an hour?",
+    "startTime": "00:20",
+    "endTime": "00:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, sure.",
+    "startTime": "00:33",
+    "endTime": "00:35",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "00:35",
+    "endTime": "00:36",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "My name is Chris, obviously, and I'm, you know, I've been around vmware for a couple of years now, six years, seven years now.",
+    "startTime": "00:37",
+    "endTime": "00:46",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So my background is a little bit on it security.",
+    "startTime": "00:46",
+    "endTime": "00:50",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "00:50",
+    "endTime": "00:50",
+    "speaker_name": "Speaker 1",
+    "speaker_id": 3
+  },
+  {
+    "sentence": "I studied it security a decade ago now and, yeah, worked, but I was always amazed by hardware.",
+    "startTime": "00:50",
+    "endTime": "00:59",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I did like a lot of hardware security in terms of side channel techs and this kind of stuff, and then kind of emerged into the firmware space.",
+    "startTime": "00:59",
+    "endTime": "01:08",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And since five, six years, I'm at nine elements now leading the department that does firmware development and also do a bunch of other things there.",
+    "startTime": "01:08",
+    "endTime": "01:20",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I founded another company now that does firmware testing as a product.",
+    "startTime": "01:20",
+    "endTime": "01:25",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "A couple of years ago, we founded the open Source Firmware foundation, which is a nonprofit organization in the US and all these kind of things.",
+    "startTime": "01:26",
+    "endTime": "01:35",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So basically my day, my week, Monday to Sunday, that's all about firmware and everything in between.",
+    "startTime": "01:35",
+    "endTime": "01:43",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the focus is really on open source, pushing open source firmware forward.",
+    "startTime": "01:43",
+    "endTime": "01:50",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's kind of the amazing.",
+    "startTime": "01:50",
+    "endTime": "01:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:53",
+    "endTime": "01:53",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I was introduced to you by David Hendricks from Coreboot and the reason why initially I wanted to have you on the show before knowing more about your background, which made me even more interested in having you on the show, was around bias security because I asked David, who I should speak to kind of chat about the whole new wave of bias vulnerabilities that we've seen in the last 18 months or so by now.",
+    "startTime": "01:53",
+    "endTime": "02:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And your name came up as a good person that can both speak about it from a technical perspective, but it's also good at understanding the big picture of the whole ecosystem.",
+    "startTime": "02:22",
+    "endTime": "02:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So maybe that's a good starting point.",
+    "startTime": "02:32",
+    "endTime": "02:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So we've seen in last twelve months, we've seen logo fail, we've seen pixie fail.",
+    "startTime": "02:36",
+    "endTime": "02:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Let's just start there.",
+    "startTime": "02:41",
+    "endTime": "02:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Let's talk a bit about them.",
+    "startTime": "02:42",
+    "endTime": "02:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How did they, what happened?",
+    "startTime": "02:44",
+    "endTime": "02:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What are they?",
+    "startTime": "02:47",
+    "endTime": "02:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Let's start with Logofell, perhaps just describing what that is and why it's so, I guess, so critical and.",
+    "startTime": "02:48",
+    "endTime": "02:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, like why it really should be drawn more attention to.",
+    "startTime": "02:55",
+    "endTime": "02:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, yeah.",
+    "startTime": "02:59",
+    "endTime": "03:01",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay.",
+    "startTime": "03:01",
+    "endTime": "03:01",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's a lot of pressure now that you're bringing in here from David, right?",
+    "startTime": "03:01",
+    "endTime": "03:05",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "03:05",
+    "endTime": "03:06",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So logo fail is a vulnerability that got, you know, recently published I think from binary really on a couple of firmware winners allow you to know, customize your bios, right.",
+    "startTime": "03:06",
+    "endTime": "03:22",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Firmware that is basically, and how they, how you can do that is that if you boot up machines you probably want your own, you know, boot logo showed in the boot process.",
+    "startTime": "03:22",
+    "endTime": "03:34",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "03:34",
+    "endTime": "03:35",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's nice for, I don't know, corporate companies let's say, right, you're a big company and you want all your corporate machines having the same logos, right?",
+    "startTime": "03:35",
+    "endTime": "03:44",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you want customize that it's.",
+    "startTime": "03:44",
+    "endTime": "03:47",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right or it's nice for people like us, right.",
+    "startTime": "03:47",
+    "endTime": "03:50",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You want your hacker logo shown why you're putting up your Lenovo instead of the red Lenovo sign.",
+    "startTime": "03:50",
+    "endTime": "03:58",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so, and these companies actually give you a way on how you could customize that by uploading basically images into the firmware, right.",
+    "startTime": "03:58",
+    "endTime": "04:11",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Saying we have a couple of restrictions, it needs to be that in that format and that's the only restriction and resolution.",
+    "startTime": "04:11",
+    "endTime": "04:23",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Probably two resolution.",
+    "startTime": "04:24",
+    "endTime": "04:25",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Probably two, exactly.",
+    "startTime": "04:25",
+    "endTime": "04:27",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "However, there is a vulnerability in the parser of the images.",
+    "startTime": "04:28",
+    "endTime": "04:34",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How that works is you write that into a specific partition in your firmware, in your flash drive where the firmware is stored and it picks it up from there and tries to display.",
+    "startTime": "04:36",
+    "endTime": "04:49",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And while parsing it doesn't check the boundaries of the image.",
+    "startTime": "04:49",
+    "endTime": "04:54",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It only cares about is it a png, is the file N png?",
+    "startTime": "04:54",
+    "endTime": "05:00",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if not, off you go.",
+    "startTime": "05:00",
+    "endTime": "05:03",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This leads to that.",
+    "startTime": "05:03",
+    "endTime": "05:07",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can basically execute any code there because you can trick, you can work around the parser and you can basically execute code out of that memory space that is dedicated for that.",
+    "startTime": "05:07",
+    "endTime": "05:23",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you didn't even need to fake the mime type.",
+    "startTime": "05:23",
+    "endTime": "05:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's just so naive.",
+    "startTime": "05:25",
+    "endTime": "05:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It just looks file extensions, that's how rudimentary these checks were.",
+    "startTime": "05:27",
+    "endTime": "05:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, exactly.",
+    "startTime": "05:31",
+    "endTime": "05:32",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is a huge problem and I think that has been there for many many years.",
+    "startTime": "05:34",
+    "endTime": "05:39",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this was recently discovered by binary, which is part of the, or who are part of the current development that so many vulnerabilities actually get exposed.",
+    "startTime": "05:40",
+    "endTime": "05:56",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, because they are doing a pretty good job in actually doing.",
+    "startTime": "05:56",
+    "endTime": "06:00",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Absolutely, yeah.",
+    "startTime": "06:00",
+    "endTime": "06:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that's, and the blast radius for this vulnerability is pretty massive, right, because it's basically game over once you can get to that level of intrusion in the device, right, exactly.",
+    "startTime": "06:02",
+    "endTime": "06:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean if you think about it from a security perspective, right?",
+    "startTime": "06:14",
+    "endTime": "06:17",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You have a couple of let's say measurements in firmware that you can then actually can do to counter any attacks that are happening in firmware.",
+    "startTime": "06:17",
+    "endTime": "06:27",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's like the whole secure boot process, right?",
+    "startTime": "06:27",
+    "endTime": "06:29",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's these, you know, into boot guard and all these kind of technologies that you have, however you circumvent all of them basically because you are not implanting anything in firmware as you're not overriding anything, but rather you're just executing it in memory.",
+    "startTime": "06:29",
+    "endTime": "06:46",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "06:46",
+    "endTime": "06:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And then, and that means it's really not preventable in that sense.",
+    "startTime": "06:47",
+    "endTime": "06:52",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you don't catch it with any other, with any of the technologies that are actually there.",
+    "startTime": "06:52",
+    "endTime": "06:58",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So.",
+    "startTime": "06:58",
+    "endTime": "06:58",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this really like has a massive impact on your, on the security of your systems.",
+    "startTime": "06:58",
+    "endTime": "07:04",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "07:04",
+    "endTime": "07:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And as you said, I think all big ipvs basically were affected by that.",
+    "startTime": "07:04",
+    "endTime": "07:11",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "07:11",
+    "endTime": "07:11",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then that shows you that some probably share the same code base, right.",
+    "startTime": "07:12",
+    "endTime": "07:19",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, and that's like a huge issue.",
+    "startTime": "07:20",
+    "endTime": "07:22",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "07:22",
+    "endTime": "07:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And this, this image pardon algorithm, let's say, that gets used on, you know, all platforms basically, right.",
+    "startTime": "07:22",
+    "endTime": "07:30",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's one of the core things basically that is, which is part of the value add that you get by going through these ipvs.",
+    "startTime": "07:30",
+    "endTime": "07:40",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that is really, that has a mess of it.",
+    "startTime": "07:40",
+    "endTime": "07:43",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that was something that came up in the episode I had with coreboot.",
+    "startTime": "07:44",
+    "endTime": "07:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So with David and Matt.",
+    "startTime": "07:50",
+    "endTime": "07:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And one thing I didn't really quite know about the bias structures is how much of this code base that is reused cross vendors.",
+    "startTime": "07:53",
+    "endTime": "08:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's not just like AMi would have their set of binaries, they share across their biases, but it's almost like open source components that are dealt between vendors as well.",
+    "startTime": "08:00",
+    "endTime": "08:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So the blast radius span so many vendors.",
+    "startTime": "08:11",
+    "endTime": "08:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And to make matters worse, I guess at least from an audit perspective, is there's no easy way to tell if you were affected by it because there's no s bomb or something that you can say, oh, this component is used in my bios.",
+    "startTime": "08:16",
+    "endTime": "08:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's just like you were affected.",
+    "startTime": "08:30",
+    "endTime": "08:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Maybe, maybe if you have a good bios vendor they will tell you.",
+    "startTime": "08:32",
+    "endTime": "08:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But more often than not, if you bought your device through an ODM or some supplier, you would most likely not even know that you're available.",
+    "startTime": "08:35",
+    "endTime": "08:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "08:45",
+    "endTime": "08:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Which is biosecurity is fascinating that way.",
+    "startTime": "08:45",
+    "endTime": "08:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, exactly.",
+    "startTime": "08:49",
+    "endTime": "08:50",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "08:50",
+    "endTime": "08:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And this is, I think David explained that pretty good in the other episode, right.",
+    "startTime": "08:50",
+    "endTime": "08:54",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is how because of the whole supply chain on what you have.",
+    "startTime": "08:54",
+    "endTime": "08:58",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "08:59",
+    "endTime": "08:59",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, and actually there's an interesting paper from the uefi.org, right.",
+    "startTime": "08:59",
+    "endTime": "09:05",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That talks about this as well.",
+    "startTime": "09:05",
+    "endTime": "09:07",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But what they're trying to do is trying to make a case to.",
+    "startTime": "09:07",
+    "endTime": "09:11",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you fight a CVE.",
+    "startTime": "09:12",
+    "endTime": "09:14",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "09:14",
+    "endTime": "09:14",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's normally something like a 90 day period.",
+    "startTime": "09:14",
+    "endTime": "09:17",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "09:17",
+    "endTime": "09:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Where after 90 days it gets disclosed.",
+    "startTime": "09:17",
+    "endTime": "09:20",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "09:20",
+    "endTime": "09:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And, yeah.",
+    "startTime": "09:20",
+    "endTime": "09:21",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You have to fix it for U of I security vulnerabilities.",
+    "startTime": "09:21",
+    "endTime": "09:28",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's 300 days.",
+    "startTime": "09:29",
+    "endTime": "09:30",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "09:30",
+    "endTime": "09:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So that's like, wow, three and a half.",
+    "startTime": "09:30",
+    "endTime": "09:33",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "09:33",
+    "endTime": "09:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Or something like that.",
+    "startTime": "09:33",
+    "endTime": "09:34",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "09:34",
+    "endTime": "09:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that paper kind of talks about this.",
+    "startTime": "09:34",
+    "endTime": "09:36",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "09:36",
+    "endTime": "09:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Why this is exactly the case.",
+    "startTime": "09:37",
+    "endTime": "09:39",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this is because there are so many parties involved in that ecosystem.",
+    "startTime": "09:39",
+    "endTime": "09:43",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That supply chain is so complex, basically that tracking down who owns the code.",
+    "startTime": "09:43",
+    "endTime": "09:49",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "09:49",
+    "endTime": "09:50",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then it has to be fixed somewhere.",
+    "startTime": "09:50",
+    "endTime": "09:52",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then it has to kind of flow back through all the stations again until you can actually release it.",
+    "startTime": "09:52",
+    "endTime": "09:59",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It takes so long that 300 days should be like the period until we disclose or they disclose these kind of things.",
+    "startTime": "10:00",
+    "endTime": "10:09",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "10:09",
+    "endTime": "10:09",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that means a security issue that gets discovered now, right.",
+    "startTime": "10:09",
+    "endTime": "10:14",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "10:14",
+    "endTime": "10:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They fix it next year.",
+    "startTime": "10:15",
+    "endTime": "10:16",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "10:16",
+    "endTime": "10:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "In March.",
+    "startTime": "10:17",
+    "endTime": "10:17",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So this is, and this is pretty amazing.",
+    "startTime": "10:17",
+    "endTime": "10:21",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "10:21",
+    "endTime": "10:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And I think David really explained that a lot.",
+    "startTime": "10:21",
+    "endTime": "10:24",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "10:24",
+    "endTime": "10:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "You got like the silicon vendors right there doing code.",
+    "startTime": "10:24",
+    "endTime": "10:27",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "10:27",
+    "endTime": "10:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "You got like the ibvs, they do value audio.",
+    "startTime": "10:27",
+    "endTime": "10:30",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The oems.",
+    "startTime": "10:30",
+    "endTime": "10:31",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The Oems, right.",
+    "startTime": "10:31",
+    "endTime": "10:31",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then it goes happen, then you burn it on flash at the end.",
+    "startTime": "10:31",
+    "endTime": "10:34",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this is like, that whole chain is extremely complex.",
+    "startTime": "10:34",
+    "endTime": "10:38",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Everything is proprietary in that.",
+    "startTime": "10:39",
+    "endTime": "10:40",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "10:40",
+    "endTime": "10:41",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Sharing code is really sometimes on a zip file basis and this kind of stuff.",
+    "startTime": "10:41",
+    "endTime": "10:47",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that supply chain is brutal.",
+    "startTime": "10:47",
+    "endTime": "10:49",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if you find an issue there, it has a huge impact because fixing that issue takes so much time and so much effort that sometimes it's not worth it in that sense, because they say, okay, it's an ado machine, whatever.",
+    "startTime": "10:50",
+    "endTime": "11:06",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And also one thing that was fascinating to me is the amount of regressions you're dealing with as well, because you might fix something, but then because things are not version, we're not talking to git repo here.",
+    "startTime": "11:07",
+    "endTime": "11:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The most sophisticated vendors, they might have a git repo for their source code, but so much of this just dealt with files on some file share.",
+    "startTime": "11:18",
+    "endTime": "11:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you pick that and you patch it, but then you forgot the other patch and then you have a regression instead, right?",
+    "startTime": "11:26",
+    "endTime": "11:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, yes.",
+    "startTime": "11:31",
+    "endTime": "11:32",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "11:32",
+    "endTime": "11:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "I mean, we're all humans, right?",
+    "startTime": "11:33",
+    "endTime": "11:34",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And naturally we make these mistakes.",
+    "startTime": "11:34",
+    "endTime": "11:36",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "11:36",
+    "endTime": "11:37",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "11:37",
+    "endTime": "11:37",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But we have some tooling that could help us to prevent these kind of things.",
+    "startTime": "11:38",
+    "endTime": "11:43",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I want to dive.",
+    "startTime": "11:43",
+    "endTime": "11:44",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I want to dive into that in a second.",
+    "startTime": "11:44",
+    "endTime": "11:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I want to kick that kind of liver down the episode.",
+    "startTime": "11:46",
+    "endTime": "11:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But, yeah, absolutely.",
+    "startTime": "11:48",
+    "endTime": "11:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's, that's another thing that I wanted to cover here.",
+    "startTime": "11:49",
+    "endTime": "11:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So the other thing is pixie fail, which is another one that happened.",
+    "startTime": "11:51",
+    "endTime": "11:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think it was disclosed what, three months after logo fail or something along those lines I would imagine.",
+    "startTime": "11:57",
+    "endTime": "12:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Talk a bit more about what that is and how that attack vector looked like.",
+    "startTime": "12:04",
+    "endTime": "12:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "12:10",
+    "endTime": "12:10",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So pixie fail, I think it's a bunch of vulnerabilities.",
+    "startTime": "12:10",
+    "endTime": "12:13",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think they released nine in total or eight.",
+    "startTime": "12:13",
+    "endTime": "12:18",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Eight or nine in total.",
+    "startTime": "12:18",
+    "endTime": "12:19",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it was a chained attack.",
+    "startTime": "12:19",
+    "endTime": "12:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "No, it's different vulnerabilities that have impacts basically, but they kind of all, I guess explore the same concept, let's say as probably know how to pixie boot a device, right.",
+    "startTime": "12:21",
+    "endTime": "12:36",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that's kind of the DHCP server.",
+    "startTime": "12:36",
+    "endTime": "12:39",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's basically network booting.",
+    "startTime": "12:40",
+    "endTime": "12:41",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "12:41",
+    "endTime": "12:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "That's like the core thing on pixie booting and what happens under the hood is the DHCP server when they send out their responses.",
+    "startTime": "12:42",
+    "endTime": "12:51",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Basically there are fields in that response that tell your device where the PKC server is.",
+    "startTime": "12:51",
+    "endTime": "13:00",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So where can I load my images from and this kind of things.",
+    "startTime": "13:00",
+    "endTime": "13:02",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And there again, Washington, you could craft a DHCP message that when the, when your firmware parses this message you can kind of escape the parlor and do code execution again because they're also, again, we didn't check for, or they didn't check for boundaries correctly and you're kind of escaping that and can basically execute everything.",
+    "startTime": "13:03",
+    "endTime": "13:33",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the crucial thing here is you don't have to have access to the device rather to the network.",
+    "startTime": "13:33",
+    "endTime": "13:39",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "13:40",
+    "endTime": "13:40",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is kind of, which makes it for me at least a little bit more critical in that sense because for logo failed you have to have access to the device and probably elevated access in terms of you need to be able to run the tooling that you can update the boot logo for Pixie fair.",
+    "startTime": "13:40",
+    "endTime": "14:04",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You don't have to do that.",
+    "startTime": "14:04",
+    "endTime": "14:05",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You have to be, you know, part of the network and you have to be able to send these messages out and so on and so forth.",
+    "startTime": "14:05",
+    "endTime": "14:12",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And, but this gives you just like whole other privileges that you need basically, and access that you need to device.",
+    "startTime": "14:12",
+    "endTime": "14:21",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "14:21",
+    "endTime": "14:21",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's basically remote code execution which is pretty brutal, right?",
+    "startTime": "14:21",
+    "endTime": "14:26",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "14:26",
+    "endTime": "14:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Again it's, I think the vulnerability was found in the upstream EDK tool repository and EDK two is an open source implementation of the UFI spac and that also gets consumed by the SoC vendors and then again drips down the supply chain basically and lands in your device.",
+    "startTime": "14:27",
+    "endTime": "14:55",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's again one of these attacks that has huge blast of, you know, really everyone is affected on that and we need to fix the supply chain, you know, walking up the whole thing chain, fix up the upstream repos and then it kind of drips down into each and every device.",
+    "startTime": "14:55",
+    "endTime": "15:14",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And was this an attack vector purely exploitable by the fact that I guess most modern motherboards have built in NIcs on the motherboard.",
+    "startTime": "15:15",
+    "endTime": "15:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If you had say an external network interface, would you still be vulnerable?",
+    "startTime": "15:27",
+    "endTime": "15:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or is that kind of like that tag vector is that you get in and because it's kind of in the biospace so to speak, why it's vulnerable or is that unrelated entirely?",
+    "startTime": "15:33",
+    "endTime": "15:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think it's not related to if you have a NiC on board or if you have a separate PCI card that has a NIC on it.",
+    "startTime": "15:43",
+    "endTime": "15:51",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "15:51",
+    "endTime": "15:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Because once you, I mean, UEFI is a whole operating system basically, right?",
+    "startTime": "15:51",
+    "endTime": "15:56",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You have all the drivers available.",
+    "startTime": "15:56",
+    "endTime": "15:58",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You.",
+    "startTime": "16:00",
+    "endTime": "16:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Have all nics available most of the time.",
+    "startTime": "16:00",
+    "endTime": "16:03",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You have all the USB ports available.",
+    "startTime": "16:03",
+    "endTime": "16:05",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So basically you could also, if you have these USB dongles that you can plug in the network cable, you can basically boot from that as well.",
+    "startTime": "16:05",
+    "endTime": "16:14",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's really not bound to one of the nics.",
+    "startTime": "16:15",
+    "endTime": "16:18",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can in firmware, of course you can dictate everything and said, okay, we only do pixie boot from that specific nic.",
+    "startTime": "16:19",
+    "endTime": "16:27",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is for sure possible.",
+    "startTime": "16:27",
+    "endTime": "16:28",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "However the attack itself is not limited to that.",
+    "startTime": "16:30",
+    "endTime": "16:35",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "16:35",
+    "endTime": "16:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's just a channel into the BIOS essentially boots into a special boot shell essentially that you then have direct access to the BIOS essentially, yeah.",
+    "startTime": "16:35",
+    "endTime": "16:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay.",
+    "startTime": "16:44",
+    "endTime": "16:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay, so the most interesting question to me when we look at both logofile and Pixi fail is why now?",
+    "startTime": "16:45",
+    "endTime": "16:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We've been having biases for ages.",
+    "startTime": "16:53",
+    "endTime": "16:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But then over the span of eight weeks, eight months or six months, whatever it was between them, we had two that are like, holy shit.",
+    "startTime": "16:56",
+    "endTime": "17:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Vulnerabilities in the BIOS space after.",
+    "startTime": "17:05",
+    "endTime": "17:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think Logofair was the first real severe BIOS vulnerability that I ever heard of.",
+    "startTime": "17:08",
+    "endTime": "17:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And now we have two in the span of like six to eight months.",
+    "startTime": "17:14",
+    "endTime": "17:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So why now?",
+    "startTime": "17:17",
+    "endTime": "17:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What changed?",
+    "startTime": "17:17",
+    "endTime": "17:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is it just more eyes on it?",
+    "startTime": "17:18",
+    "endTime": "17:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is there something that changed in general or.",
+    "startTime": "17:19",
+    "endTime": "17:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, what do you make out of that?",
+    "startTime": "17:22",
+    "endTime": "17:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think it's more eyes on it.",
+    "startTime": "17:25",
+    "endTime": "17:27",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "17:27",
+    "endTime": "17:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So really I do see that.",
+    "startTime": "17:27",
+    "endTime": "17:31",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So for a very long time, firmware, you know, had one job, right?",
+    "startTime": "17:32",
+    "endTime": "17:35",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Boot up the device.",
+    "startTime": "17:35",
+    "endTime": "17:36",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's right.",
+    "startTime": "17:36",
+    "endTime": "17:37",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And no one cared about it.",
+    "startTime": "17:37",
+    "endTime": "17:39",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "17:39",
+    "endTime": "17:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "You have it there, right.",
+    "startTime": "17:39",
+    "endTime": "17:40",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Everyone cared about.",
+    "startTime": "17:40",
+    "endTime": "17:41",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Once you hand it off to the bootloader or to your operating system, you know, you care about that stack basically that is running there.",
+    "startTime": "17:42",
+    "endTime": "17:47",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Everyone tried to make that as secure as possible, as open as possible.",
+    "startTime": "17:47",
+    "endTime": "17:51",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But firmware was just there, I think, and it was just, you know, it had the job on booting the device that.",
+    "startTime": "17:51",
+    "endTime": "17:59",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "17:59",
+    "endTime": "17:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think the us government, you know, made was there was like a presidential act that stated firmware is critical software.",
+    "startTime": "18:00",
+    "endTime": "18:12",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, right.",
+    "startTime": "18:12",
+    "endTime": "18:13",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We should look at it, right.",
+    "startTime": "18:13",
+    "endTime": "18:14",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And there's this nisten, I think it's called the NIST 800 paper or guidelines, which kind of stack.",
+    "startTime": "18:14",
+    "endTime": "18:22",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay.",
+    "startTime": "18:22",
+    "endTime": "18:22",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We need to take care more security firmware.",
+    "startTime": "18:23",
+    "endTime": "18:26",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "18:26",
+    "endTime": "18:26",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There should be certain things that firmware needs to deliver.",
+    "startTime": "18:26",
+    "endTime": "18:30",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "18:30",
+    "endTime": "18:30",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Or there are certain promises that firmware needs to stand upright.",
+    "startTime": "18:30",
+    "endTime": "18:33",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you need to be able to downgrade, upgrade and all these kind of things, transfer of ownership and so on and so forth.",
+    "startTime": "18:33",
+    "endTime": "18:40",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That whole topic just gets more attention.",
+    "startTime": "18:42",
+    "endTime": "18:44",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "18:44",
+    "endTime": "18:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "There are a couple of companies, binary for example, did like a huge financial round, right.",
+    "startTime": "18:44",
+    "endTime": "18:52",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And did some marketing around there, finding exploits and this kind of stuff.",
+    "startTime": "18:52",
+    "endTime": "18:58",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there's really more going on in that space, I think.",
+    "startTime": "18:58",
+    "endTime": "19:02",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, so firmware.",
+    "startTime": "19:02",
+    "endTime": "19:03",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But firmware attacks themselves, right?",
+    "startTime": "19:03",
+    "endTime": "19:04",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They're here for years already.",
+    "startTime": "19:05",
+    "endTime": "19:06",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "19:06",
+    "endTime": "19:07",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I saw, I think I saw a talk about 1012 years ago where they were attacking AMD Cube, this kind of things, right?",
+    "startTime": "19:07",
+    "endTime": "19:18",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, yeah, it's there for a very long time.",
+    "startTime": "19:18",
+    "endTime": "19:21",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I just think that people care more about it now, right.",
+    "startTime": "19:21",
+    "endTime": "19:25",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because it slowly drips down into the brains of the people that security starts in firmware, right.",
+    "startTime": "19:25",
+    "endTime": "19:34",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It has to, because everything is rooted there.",
+    "startTime": "19:34",
+    "endTime": "19:36",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if you don't take care of that part and do it in a right way, basically, then it will get you.",
+    "startTime": "19:36",
+    "endTime": "19:43",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "19:43",
+    "endTime": "19:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And there's no way to circumvent that.",
+    "startTime": "19:43",
+    "endTime": "19:45",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's no way against this.",
+    "startTime": "19:46",
+    "endTime": "19:47",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I think that's, for me at least one of the main reasons.",
+    "startTime": "19:47",
+    "endTime": "19:53",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I mean, that's the reason why at least I got excited about things like coreboot and various tool open source buyers and all these things like last year when you started to look into exactly this user space.",
+    "startTime": "19:53",
+    "endTime": "20:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Security is completely moot if you can't protect the first boot process and biases and all things firmware, really.",
+    "startTime": "20:09",
+    "endTime": "20:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think it's very good that we've seen a lot more attention drawn towards this in particular around tpms as well, because that's tightly coupled with the bias, at least with discrete tpms.",
+    "startTime": "20:17",
+    "endTime": "20:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So maybe that's a good segue into tpms because I saw a post, you post on LinkedIn the other day, which I think was really interesting about Intel TPM attacks.",
+    "startTime": "20:32",
+    "endTime": "20:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But maybe let's start with a TPM like what's the primer like?",
+    "startTime": "20:40",
+    "endTime": "20:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Talk about the different types of tpms, and then we can dive slightly deeper into this news that you shared with these attack vectors.",
+    "startTime": "20:43",
+    "endTime": "20:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So TPM itself is a trusted platform module.",
+    "startTime": "20:54",
+    "endTime": "20:57",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So.",
+    "startTime": "20:57",
+    "endTime": "20:57",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And what it is, it's a specifically hardened chip, let's say, which should anchor your security, right?",
+    "startTime": "20:57",
+    "endTime": "21:07",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the idea is that, okay, all you have on your normal cpu and whatsoever, right, that's like general proposed stuff.",
+    "startTime": "21:07",
+    "endTime": "21:16",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you need to have something that is specially made for security, which is tamper proof, at least tamper evident things.",
+    "startTime": "21:16",
+    "endTime": "21:24",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "When it comes to security, you probably need that.",
+    "startTime": "21:25",
+    "endTime": "21:28",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you use that as anchor for your whole boot process.",
+    "startTime": "21:28",
+    "endTime": "21:32",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you think about booting a platform, it's always that you need some kind of anchor or root of trust where you start from.",
+    "startTime": "21:32",
+    "endTime": "21:40",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's always something that you need to trust.",
+    "startTime": "21:40",
+    "endTime": "21:43",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's basically no way around it.",
+    "startTime": "21:43",
+    "endTime": "21:46",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's always something that you need to trust.",
+    "startTime": "21:46",
+    "endTime": "21:47",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then you build up your chain of trust basically from there.",
+    "startTime": "21:47",
+    "endTime": "21:52",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the TPM has a couple of interfaces to your cpu, let's say.",
+    "startTime": "21:53",
+    "endTime": "22:00",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And from a functionality point of view, you can actually measure things into a TPM.",
+    "startTime": "22:00",
+    "endTime": "22:06",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there are a couple of registers in the TPM.",
+    "startTime": "22:06",
+    "endTime": "22:09",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And how that works is you basically write a hash to the TPM.",
+    "startTime": "22:09",
+    "endTime": "22:16",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And what it does under the hood is it takes the value of the register that is already there, concatenate the new hash with it, and hash it all together again, so that you just do not just copy hashes over, but this should prevent replay attacks in that sense of.",
+    "startTime": "22:16",
+    "endTime": "22:38",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And yeah, so you have these couple of registers, you have like an NVRAm where you can store stuff.",
+    "startTime": "22:38",
+    "endTime": "22:44",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And TPM has a couple of functionalities that you can use to do that.",
+    "startTime": "22:45",
+    "endTime": "22:50",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And there's of course like a discrete TPM, which is like a dedicated chip, right, that you have there.",
+    "startTime": "22:51",
+    "endTime": "22:57",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There are firmware tpms which are, for example, intel provides that they have in the intel me, right, they have a software emulated TPM, basically that you can use, or you can use root of trust modules, which are more than just the TPM.",
+    "startTime": "22:57",
+    "endTime": "23:20",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They provide a little bit more functionality around to basically secure your boot process.",
+    "startTime": "23:20",
+    "endTime": "23:27",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so this vulnerability that you mentioned was in that LinkedIn post, maybe talk a bit about that.",
+    "startTime": "23:29",
+    "endTime": "23:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But intel tpms being essentially you could unseal the Intel TPM by reassigning some pins from user space.",
+    "startTime": "23:36",
+    "endTime": "23:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So maybe that, I think that was fascinating.",
+    "startTime": "23:44",
+    "endTime": "23:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "23:47",
+    "endTime": "23:48",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the concept of sealing and unsealing secrets in tpms is basically.",
+    "startTime": "23:48",
+    "endTime": "23:53",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we have a bunch of registers that what I explained before.",
+    "startTime": "23:53",
+    "endTime": "23:56",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, where you can measure things into.",
+    "startTime": "23:56",
+    "endTime": "23:59",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "23:59",
+    "endTime": "23:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So you write hash waves into that, get conkey, they get updated.",
+    "startTime": "23:59",
+    "endTime": "24:04",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the process of sealing and unsealing is that you can put a secret key into the TPM and seal it against the current values of the pcrs.",
+    "startTime": "24:04",
+    "endTime": "24:15",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "These are how these registers are called, right, and they call platform configuration registers.",
+    "startTime": "24:15",
+    "endTime": "24:21",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so that means you have to imagine that like a lock, right?",
+    "startTime": "24:21",
+    "endTime": "24:24",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you have like all the numbers, right, basically on them.",
+    "startTime": "24:24",
+    "endTime": "24:27",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you have like 61160, right?",
+    "startTime": "24:28",
+    "endTime": "24:30",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's.",
+    "startTime": "24:30",
+    "endTime": "24:31",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you see your secret key again.",
+    "startTime": "24:31",
+    "endTime": "24:34",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And to unseal that key again from the TPM, that would only work if you have the same PCR values again and you can unsee it, right?",
+    "startTime": "24:34",
+    "endTime": "24:46",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this is essentially how bitlocker works from windows, right?",
+    "startTime": "24:46",
+    "endTime": "24:49",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you boot into windows, there's Bitlocker, which has like, which encrypts your whole hard drive.",
+    "startTime": "24:49",
+    "endTime": "24:55",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they measure, firmware measures the boot process, right?",
+    "startTime": "24:55",
+    "endTime": "25:00",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you always take the chunk of the code, put that into the TPM, right, and they sealed a key prior in the TPM.",
+    "startTime": "25:00",
+    "endTime": "25:08",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if all the registers are right, so that means your firmware is in the state that you want it to be, and they unseal it, right, and then boot it.",
+    "startTime": "25:08",
+    "endTime": "25:16",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this, the TPM itself is connected to pins to your, you know, to your SoC.",
+    "startTime": "25:17",
+    "endTime": "25:27",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The SoC has to have a way, you know, there's like LPC or Espy to actually talk to that TPM, right?",
+    "startTime": "25:27",
+    "endTime": "25:34",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And send these measurements over.",
+    "startTime": "25:34",
+    "endTime": "25:36",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And on intersocs, you have a couple of gpios, right?",
+    "startTime": "25:36",
+    "endTime": "25:41",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they have, they are multifunction gpios.",
+    "startTime": "25:41",
+    "endTime": "25:45",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So these gpios have multiple functionalities.",
+    "startTime": "25:45",
+    "endTime": "25:49",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they can either be an espy reset line or they can be anything, something else.",
+    "startTime": "25:49",
+    "endTime": "25:57",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you can basically define that on what you want that to be.",
+    "startTime": "25:57",
+    "endTime": "26:01",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And what that guy found out in the article that I posted there was that majority of the firmwares, or he couldn't find any that are actually locking down the GPIO configuration.",
+    "startTime": "26:01",
+    "endTime": "26:14",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So this is written in firmware, but it needs to be locked down saying, okay, this cannot be changed anymore.",
+    "startTime": "26:14",
+    "endTime": "26:20",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then this is not done on more or less any of the devices.",
+    "startTime": "26:21",
+    "endTime": "26:26",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that means you can reset the TPM at any state, and you can basically try to replay the, writing the hashes again into the TPM, try to replay what the firmware actually does, and then kind of unseal what secrets are in the TPM.",
+    "startTime": "26:26",
+    "endTime": "26:47",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you can do that from the operating system, because intel gives you guidelines on how to lock this configuration down.",
+    "startTime": "26:48",
+    "endTime": "26:58",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But if you haven't done that.",
+    "startTime": "26:58",
+    "endTime": "26:59",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can do that from the operating system.",
+    "startTime": "27:00",
+    "endTime": "27:02",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so whatever is in your TPM that's not safe anymore.",
+    "startTime": "27:02",
+    "endTime": "27:05",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And imagine you have access to one device where TPM is basically attached to.",
+    "startTime": "27:06",
+    "endTime": "27:13",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you can boot into any other live operating system whatsoever, you just reset the TPM and replay the whole thing and get the key out of it.",
+    "startTime": "27:15",
+    "endTime": "27:26",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then you can boot into your other operating system which is basically encrypted maybe, or for whatever you use the key for.",
+    "startTime": "27:26",
+    "endTime": "27:34",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then you have it.",
+    "startTime": "27:35",
+    "endTime": "27:35",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "27:35",
+    "endTime": "27:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Because normally you store something like a symmetric key.",
+    "startTime": "27:36",
+    "endTime": "27:39",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "27:39",
+    "endTime": "27:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that means that screenly we use the tpms for our mtls, that's where we store the private key for all mtls.",
+    "startTime": "27:42",
+    "endTime": "27:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that means that if you're vulnerable to this kind of attack vector, you could extract that private key and you could mimic mtls or not mimic even, you would actually do proper mtls traffic based on that private key and mimic the device.",
+    "startTime": "27:51",
+    "endTime": "28:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I guess it also means that it completely spans encryption technologies, I guess in the sense that it spans encrypted technologies in the sense that it doesn't matter if you're using looks or something on Linux stack, if it's Bitlocker, it's all the same under the hood.",
+    "startTime": "28:06",
+    "endTime": "28:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's just some kind of certificate that you have or privacy that you have stored in there, which makes it kind of terrifying from attack vector.",
+    "startTime": "28:24",
+    "endTime": "28:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right, yeah, exactly.",
+    "startTime": "28:32",
+    "endTime": "28:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "28:33",
+    "endTime": "28:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And this is someone just handed you over the key.",
+    "startTime": "28:34",
+    "endTime": "28:37",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "28:37",
+    "endTime": "28:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "It doesn't matter, you know, whatever you have afterwards.",
+    "startTime": "28:37",
+    "endTime": "28:39",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "28:39",
+    "endTime": "28:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "You have the secret.",
+    "startTime": "28:39",
+    "endTime": "28:41",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "28:41",
+    "endTime": "28:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And this is.",
+    "startTime": "28:41",
+    "endTime": "28:42",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "28:42",
+    "endTime": "28:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Your cipher or how you encrypt, it doesn't really matter at that point.",
+    "startTime": "28:43",
+    "endTime": "28:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "28:46",
+    "endTime": "28:47",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, right.",
+    "startTime": "28:47",
+    "endTime": "28:48",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It really doesn't matter anymore.",
+    "startTime": "28:48",
+    "endTime": "28:49",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "28:49",
+    "endTime": "28:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So if someone handed you the keys, you know, to my house.",
+    "startTime": "28:49",
+    "endTime": "28:52",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "28:52",
+    "endTime": "28:53",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The lock doesn't matter anymore.",
+    "startTime": "28:53",
+    "endTime": "28:54",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, you got the key.",
+    "startTime": "28:54",
+    "endTime": "28:56",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, and this is why it's, it's for me I think critical.",
+    "startTime": "28:57",
+    "endTime": "29:00",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And what I find even more astonishing is, you know, he explains, you know, in the article, you know, on how it works and you know, what he did to actually, you know, find that out and he, you know, he contacted intel.",
+    "startTime": "29:00",
+    "endTime": "29:16",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, saying I found this.",
+    "startTime": "29:16",
+    "endTime": "29:19",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "29:19",
+    "endTime": "29:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And I think it's a security issue.",
+    "startTime": "29:19",
+    "endTime": "29:22",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "29:22",
+    "endTime": "29:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And inter kind of responded.",
+    "startTime": "29:23",
+    "endTime": "29:25",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, no, we have in the BIOS writer guide which you have on the NDA, there's a section which says this is how you lock it down if you don't do it.",
+    "startTime": "29:25",
+    "endTime": "29:36",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "29:36",
+    "endTime": "29:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "That's not our problem anymore.",
+    "startTime": "29:36",
+    "endTime": "29:37",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there's no CVE for that.",
+    "startTime": "29:37",
+    "endTime": "29:39",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then they agreed on the disclosure date, right.",
+    "startTime": "29:42",
+    "endTime": "29:45",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And he said, okay, I think, like two months ago or something like that.",
+    "startTime": "29:45",
+    "endTime": "29:48",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "He said, yeah, I will disclose things June 1.",
+    "startTime": "29:48",
+    "endTime": "29:51",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And everyone was like, yep, fine, right.",
+    "startTime": "29:51",
+    "endTime": "29:53",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then.",
+    "startTime": "29:53",
+    "endTime": "29:54",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then there was no disclosure process.",
+    "startTime": "29:54",
+    "endTime": "29:56",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this is.",
+    "startTime": "29:56",
+    "endTime": "29:58",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't know.",
+    "startTime": "29:58",
+    "endTime": "29:58",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "29:58",
+    "endTime": "29:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So I would have hoped for more responsibility on, you know, on an intern side, saying maybe it's not our problem, right.",
+    "startTime": "29:59",
+    "endTime": "30:05",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But we are getting in the people because we see in the wild, no one is doing that.",
+    "startTime": "30:05",
+    "endTime": "30:10",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "30:10",
+    "endTime": "30:11",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we are going to our vendors saying, this is an issue, guys, can we fix that up?",
+    "startTime": "30:11",
+    "endTime": "30:18",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It basically comes down to sensible defaults at the end of the day, why is this a default configuration when it will have massive security implications for the vast majority of the odms and oems that do not reconfigure these super low level settings?",
+    "startTime": "30:18",
+    "endTime": "30:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I guess that brings me over to one of the projects that you've been working on, the firmware CI project.",
+    "startTime": "30:39",
+    "endTime": "30:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So maybe we can speak a bit about that and speak a bit about what it is in the first place, how that fits into trying to solve for problems like this and similar attack vectors in general, and bringing modern tooling into the firmware world, I guess.",
+    "startTime": "30:46",
+    "endTime": "31:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "31:02",
+    "endTime": "31:03",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, I mean, nine elements is an ifv, right?",
+    "startTime": "31:03",
+    "endTime": "31:09",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's how we call independent.",
+    "startTime": "31:09",
+    "endTime": "31:11",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And while we work on a lot of firmware and with a lot of customers, we notice that not a lot of customers actually have a proper CI system for their firmware, because firmware is.",
+    "startTime": "31:12",
+    "endTime": "31:27",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because firmware is the first code that starts on every device.",
+    "startTime": "31:28",
+    "endTime": "31:30",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that means there is no abstraction layer between firmware and the hardware, because firmware is the abstraction layer.",
+    "startTime": "31:30",
+    "endTime": "31:39",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But everything that you test on the operating system run on the operating system.",
+    "startTime": "31:39",
+    "endTime": "31:42",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You have an abstraction layer, drivers that abstract the hardware for you and for firmware, that's just not possible.",
+    "startTime": "31:42",
+    "endTime": "31:50",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that means firmware has to be tested on hardware.",
+    "startTime": "31:50",
+    "endTime": "31:54",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's no way around it.",
+    "startTime": "31:54",
+    "endTime": "31:56",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you can test limited things, you know, in QMU and this kind of things, right.",
+    "startTime": "31:56",
+    "endTime": "32:01",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if you have enough money and people, you can write your own simulator for your hardware that you build.",
+    "startTime": "32:02",
+    "endTime": "32:07",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But if you are a normal company, that's kind of out of scope.",
+    "startTime": "32:07",
+    "endTime": "32:10",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But even if you do, like, you're still building those assumptions.",
+    "startTime": "32:10",
+    "endTime": "32:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Assumptions essentially.",
+    "startTime": "32:15",
+    "endTime": "32:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's still not as valid.",
+    "startTime": "32:16",
+    "endTime": "32:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Of course.",
+    "startTime": "32:18",
+    "endTime": "32:18",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, of course.",
+    "startTime": "32:18",
+    "endTime": "32:19",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, you get certainty, I think, to a very high degree.",
+    "startTime": "32:19",
+    "endTime": "32:22",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "32:22",
+    "endTime": "32:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "If you build your own simulator.",
+    "startTime": "32:22",
+    "endTime": "32:24",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But, yeah, it's not the real deal.",
+    "startTime": "32:25",
+    "endTime": "32:26",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "32:26",
+    "endTime": "32:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Because in the end it has to.",
+    "startTime": "32:27",
+    "endTime": "32:29",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And, yeah, that's why we thought of.",
+    "startTime": "32:30",
+    "endTime": "32:32",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay, maybe we can come up with a test framework that makes this easier.",
+    "startTime": "32:32",
+    "endTime": "32:38",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "32:38",
+    "endTime": "32:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So certainly there are test frameworks already out there, a lot of out there.",
+    "startTime": "32:38",
+    "endTime": "32:43",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And, you know, some are used for testing firmware, right?",
+    "startTime": "32:43",
+    "endTime": "32:48",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there's the open BMC test automation.",
+    "startTime": "32:48",
+    "endTime": "32:51",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Tool.",
+    "startTime": "32:51",
+    "endTime": "32:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And other things that you can actually test firmware with.",
+    "startTime": "32:53",
+    "endTime": "32:56",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "However, my view on this was always, okay, it has to be easy for the end user.",
+    "startTime": "32:57",
+    "endTime": "33:02",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the end user is the guy or the girl that we're actually working with, and he or she needs to be able to easily set up the whole thing and write tests and things.",
+    "startTime": "33:03",
+    "endTime": "33:13",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we built a framework that makes this much easier.",
+    "startTime": "33:13",
+    "endTime": "33:17",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we.",
+    "startTime": "33:19",
+    "endTime": "33:20",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's a server client model, right.",
+    "startTime": "33:20",
+    "endTime": "33:22",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the server orchestrates everything and the client is there to interface with the hardware.",
+    "startTime": "33:22",
+    "endTime": "33:29",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "33:29",
+    "endTime": "33:30",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you have a new image, you write to it, you get like the serial logs or you get display output or whatever you have from the device under test, and you perform your tests.",
+    "startTime": "33:30",
+    "endTime": "33:44",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And with that, we saw that this is useful for us, nine elements in the first place, because this really helps us scale better.",
+    "startTime": "33:44",
+    "endTime": "33:55",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we also see that for customers that there was a need actually that they wanted to have that, because reality was the customers that we talked to, a lot of them do manual testing.",
+    "startTime": "33:57",
+    "endTime": "34:12",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We are talking to one company that every, they're not even doing firmware development, but they want to validate the firmware that is running on their devices.",
+    "startTime": "34:12",
+    "endTime": "34:20",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "34:20",
+    "endTime": "34:20",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that means when they get a new firmware drop from their, you know, OEM, dell, Inovo, whatever, they want to put that on the machines, and then they have like tests that they want to run on that seeing, you know, does this, does everything still make sense?",
+    "startTime": "34:20",
+    "endTime": "34:35",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "34:35",
+    "endTime": "34:35",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Is it configured the way that we want it to be?",
+    "startTime": "34:35",
+    "endTime": "34:37",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "34:37",
+    "endTime": "34:38",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Can I switch the variables that if I turn on secure boot, can I still turn on things on and off, or is that prohibited the way it should be made?",
+    "startTime": "34:38",
+    "endTime": "34:51",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So basically writing unit tests against hardware.",
+    "startTime": "34:52",
+    "endTime": "34:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Essentially, yeah.",
+    "startTime": "34:55",
+    "endTime": "34:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right, right.",
+    "startTime": "34:56",
+    "endTime": "34:57",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You could say that.",
+    "startTime": "34:57",
+    "endTime": "34:58",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that helped them.",
+    "startTime": "34:58",
+    "endTime": "35:00",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "For example, that was like a process for each firmware drop, for each hardware.",
+    "startTime": "35:00",
+    "endTime": "35:04",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Five days, one guy kind of sitting there and trying to do all the tests.",
+    "startTime": "35:04",
+    "endTime": "35:12",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, I have some extra seats and this kind of stuff and writing it all down.",
+    "startTime": "35:12",
+    "endTime": "35:15",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they automated the whole thing down to 36 hours, 40 hours, because the test still need to run.",
+    "startTime": "35:15",
+    "endTime": "35:23",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "35:23",
+    "endTime": "35:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "This takes time, but no one needs to sit there.",
+    "startTime": "35:23",
+    "endTime": "35:27",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that was like the overall goal that we are aiming for.",
+    "startTime": "35:28",
+    "endTime": "35:32",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's starting out pretty good because we see a lot of feedback that this is something that people want and that they help them.",
+    "startTime": "35:32",
+    "endTime": "35:41",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Everything is very user friendly.",
+    "startTime": "35:42",
+    "endTime": "35:44",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that's what we're trying to do is here really the tools that have been used for many years already on the higher level stacks, websites development and back end frontend.",
+    "startTime": "35:46",
+    "endTime": "36:00",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you write an iOS application, I think you have a whole simulator and you run tests all over again.",
+    "startTime": "36:02",
+    "endTime": "36:09",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this kind of stuff for firmware that's just not there.",
+    "startTime": "36:09",
+    "endTime": "36:12",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so we try to break that and say, okay, there's an easy way to do that.",
+    "startTime": "36:12",
+    "endTime": "36:17",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We still need hardware for sure, but you can easily get.",
+    "startTime": "36:17",
+    "endTime": "36:21",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I think that has been a recurring theme in a lot of the episodes that we've done around hardware is around fact that hardware firmware build development, testing and distribution is really just so far behind modern software development.",
+    "startTime": "36:22",
+    "endTime": "36:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like it's like it's kind of the works on my machine kind of setup for a lot of these.",
+    "startTime": "36:39",
+    "endTime": "36:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like some guy built the firmware on his machine, sent it to some file share and then well that's a release and that's just obviously miles away from how like away from how modern software development is done in general.",
+    "startTime": "36:44",
+    "endTime": "36:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Totally.",
+    "startTime": "37:00",
+    "endTime": "37:00",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I mean, and this is not Joe, right.",
+    "startTime": "37:00",
+    "endTime": "37:03",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Zip fights is still like one of the standards, right?",
+    "startTime": "37:03",
+    "endTime": "37:06",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this is, I don't know, you are getting, you know, I'm panicking, right.",
+    "startTime": "37:06",
+    "endTime": "37:13",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Sometimes if I see that saying this is like where the world runs on, right?",
+    "startTime": "37:13",
+    "endTime": "37:18",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And with all the cloud stuff that is happening nowadays, right, with all the push to AI now where this, all the whole infrastructure gets, just gets more and bigger, right?",
+    "startTime": "37:18",
+    "endTime": "37:29",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And there's still, you know, two people sitting there.",
+    "startTime": "37:30",
+    "endTime": "37:33",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't say that they're not smart people, right?",
+    "startTime": "37:33",
+    "endTime": "37:35",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They're probably good, but still two people sitting there, right, for I principle sending zip files with the dash underline, you know, find or whatever, right?",
+    "startTime": "37:35",
+    "endTime": "37:45",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, and this is, yeah, and we have to think about that, right?",
+    "startTime": "37:45",
+    "endTime": "37:48",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If we make want to lift that into 2024 and say let's do modern software development.",
+    "startTime": "37:48",
+    "endTime": "37:55",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "37:55",
+    "endTime": "37:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think I remember first exposure that I had to working with firmware or even embedded code base was like modern coding principles like linting your code base.",
+    "startTime": "37:56",
+    "endTime": "38:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And these things are like, they are completely foreign concept and like unit testing, they were like completely foreign concept for the traditional firmware developer, right?",
+    "startTime": "38:07",
+    "endTime": "38:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that's kind of like it's terrifying when you do see the real implication of that with things like poke, pixie fail, logo fail, all these problems, right?",
+    "startTime": "38:15",
+    "endTime": "38:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, totally.",
+    "startTime": "38:24",
+    "endTime": "38:25",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean to be fair, right, for example, unit tests are hard also in feature sometimes, right?",
+    "startTime": "38:25",
+    "endTime": "38:32",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It really?",
+    "startTime": "38:32",
+    "endTime": "38:33",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because for unit test you need to also be able to abstract interfaces.",
+    "startTime": "38:33",
+    "endTime": "38:38",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "38:38",
+    "endTime": "38:38",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "To any other hardware that you have.",
+    "startTime": "38:39",
+    "endTime": "38:42",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this is not easily possible in firmware always, right?",
+    "startTime": "38:42",
+    "endTime": "38:46",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not always easily possible, right.",
+    "startTime": "38:46",
+    "endTime": "38:47",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So UEFI, in UFi it's better possible because they have these protocols and these handles and can easily hand that in for coreboot, for example.",
+    "startTime": "38:47",
+    "endTime": "38:58",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's also harder, right.",
+    "startTime": "38:59",
+    "endTime": "39:00",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because we have a different concept on how we access the hardware.",
+    "startTime": "39:00",
+    "endTime": "39:06",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There are efforts and we have unit testing for parts of the code, but some parts are just not effectively, just not possible.",
+    "startTime": "39:07",
+    "endTime": "39:18",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then the only way is testing on real hardware.",
+    "startTime": "39:18",
+    "endTime": "39:21",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then I think you need something that you can easily get going.",
+    "startTime": "39:21",
+    "endTime": "39:24",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Instead of everyone writing their own python or bash scripts again, you try to punch that into your own GitLab runner and see how then someone else does something else again.",
+    "startTime": "39:24",
+    "endTime": "39:37",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if we can unify on that a little bit, I think that's good.",
+    "startTime": "39:37",
+    "endTime": "39:41",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, we've had the same exact problem at screenly, right?",
+    "startTime": "39:41",
+    "endTime": "39:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like we build a device that's an end to end device that does something on a screen, but like doing that in automated end to end fashion is very difficult because like you basically end up having to like do some kind of HDMI capturing device, do assertion on the image.",
+    "startTime": "39:44",
+    "endTime": "39:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It gets very complicated very quickly to do that well at scale.",
+    "startTime": "40:00",
+    "endTime": "40:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "40:06",
+    "endTime": "40:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because you are chested across like ten different types of devices.",
+    "startTime": "40:06",
+    "endTime": "40:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, that gets very difficult very quickly.",
+    "startTime": "40:09",
+    "endTime": "40:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, totally understand that.",
+    "startTime": "40:12",
+    "endTime": "40:13",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "40:13",
+    "endTime": "40:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And finger.",
+    "startTime": "40:13",
+    "endTime": "40:15",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's exactly the same problems.",
+    "startTime": "40:15",
+    "endTime": "40:17",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "40:17",
+    "endTime": "40:18",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And for example, to give you an example, right, when we do this firmware validation, basically.",
+    "startTime": "40:18",
+    "endTime": "40:25",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So what we're doing is we, for example, testing secure boot and we are also enrolling broken certificates.",
+    "startTime": "40:25",
+    "endTime": "40:33",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we're trying to see if the machine recognized that.",
+    "startTime": "40:33",
+    "endTime": "40:37",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And from time to time we are breaking the machines along.",
+    "startTime": "40:37",
+    "endTime": "40:40",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then you have, depending on the vendor that you're working with, there's a more or less complicated process which involves copying over text from the screen and punching it into the third party tool and then getting the secret again and punching that into the device again and so on and so forth.",
+    "startTime": "40:41",
+    "endTime": "41:01",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you need to screen capture, right.",
+    "startTime": "41:01",
+    "endTime": "41:03",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You need to be able to read the text that is actually displayed on the screen.",
+    "startTime": "41:03",
+    "endTime": "41:07",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "41:07",
+    "endTime": "41:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So you have serial console capturing probably as well.",
+    "startTime": "41:07",
+    "endTime": "41:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "41:10",
+    "endTime": "41:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And this is, and it's insane how complex this kind of stuff is, actually.",
+    "startTime": "41:11",
+    "endTime": "41:16",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "41:16",
+    "endTime": "41:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I of course understand that this is a hard thing to do.",
+    "startTime": "41:17",
+    "endTime": "41:21",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "41:21",
+    "endTime": "41:21",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Think that working with hardware is indeed hard, right?",
+    "startTime": "41:21",
+    "endTime": "41:25",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "41:25",
+    "endTime": "41:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think everyone that works in the hardware field kind of agrees with that.",
+    "startTime": "41:27",
+    "endTime": "41:31",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And sometimes I would wish for a much higher level stack.",
+    "startTime": "41:31",
+    "endTime": "41:35",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But yeah, that's what it is.",
+    "startTime": "41:36",
+    "endTime": "41:37",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we just have to make it more easy for people to use that because I think it all comes down to usability and how low can you actually put the barrier for people to, you know, get into that?",
+    "startTime": "41:38",
+    "endTime": "41:50",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "41:51",
+    "endTime": "41:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "This is part of the problem.",
+    "startTime": "41:51",
+    "endTime": "41:52",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Why, why really the whole security is in such a crucial state.",
+    "startTime": "41:52",
+    "endTime": "41:57",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Let's say because the barrier is so high and everyone is looking on the budget.",
+    "startTime": "41:57",
+    "endTime": "42:03",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "42:03",
+    "endTime": "42:03",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's always of course, no budget for testing and especially this extensive testing that you have to do on hardware.",
+    "startTime": "42:03",
+    "endTime": "42:12",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Everything, you know, is cost, if cost intensive to set up and so on and so forth.",
+    "startTime": "42:12",
+    "endTime": "42:18",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's like a huge pain.",
+    "startTime": "42:19",
+    "endTime": "42:20",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "42:20",
+    "endTime": "42:20",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we have to really look into that and see how we can solve that.",
+    "startTime": "42:21",
+    "endTime": "42:25",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "42:25",
+    "endTime": "42:26",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So looking back a little bit, what we spoke about a few minutes ago about the push towards security in software and it seems like a lot of these pushes, they've come from the executive order.",
+    "startTime": "42:26",
+    "endTime": "42:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It seems like that was like the first like force for hardware vendors to actually, I guess take security serious.",
+    "startTime": "42:39",
+    "endTime": "42:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "42:46",
+    "endTime": "42:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it seems to kind of go hand in hand with the whole s bomb requirements as well.",
+    "startTime": "42:47",
+    "endTime": "42:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think that has kind of shook in the hardware industry significantly.",
+    "startTime": "42:53",
+    "endTime": "42:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I've had quite a few conversations with BIOS vendors and firmware vendors that are really like, they are, it was a rude awakening for them to like really get into like, oh, we actually need to start doing this now.",
+    "startTime": "42:58",
+    "endTime": "43:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's like secure has been brushed under the rug for decades and now it's like these are smart people.",
+    "startTime": "43:11",
+    "endTime": "43:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They knew they had a problem, right.",
+    "startTime": "43:17",
+    "endTime": "43:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That just was never prioritized.",
+    "startTime": "43:18",
+    "endTime": "43:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But now with these new mandates from the us government and you see the same thing in other like follow on legislation in other countries.",
+    "startTime": "43:21",
+    "endTime": "43:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But that's, it seems that was the tipping point that was needed for people to start paying attention, I feel.",
+    "startTime": "43:30",
+    "endTime": "43:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yddeh I'm usually not one for over regulation, but security feels like one of these spaces where it was needed to change the status quo to get to where we actually need to go.",
+    "startTime": "43:37",
+    "endTime": "43:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "43:51",
+    "endTime": "43:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's almost like where the invisible hand will fail otherwise because there is no market.",
+    "startTime": "43:52",
+    "endTime": "43:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well, there's no demand otherwise.",
+    "startTime": "43:58",
+    "endTime": "43:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Otherwise it's a race to the bottom.",
+    "startTime": "43:59",
+    "endTime": "44:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "44:00",
+    "endTime": "44:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, but sometimes I think these things have to come basically top to bottom.",
+    "startTime": "44:02",
+    "endTime": "44:07",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "44:07",
+    "endTime": "44:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Let's say like that because security is always like why do people do security, right.",
+    "startTime": "44:07",
+    "endTime": "44:14",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, why do you care about security?",
+    "startTime": "44:15",
+    "endTime": "44:17",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "44:17",
+    "endTime": "44:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "44:17",
+    "endTime": "44:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And you don't.",
+    "startTime": "44:18",
+    "endTime": "44:20",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "44:20",
+    "endTime": "44:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "The majority of the people don't care about it, right.",
+    "startTime": "44:20",
+    "endTime": "44:23",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it either has to be, you have to be, you know, compliant with something, right.",
+    "startTime": "44:23",
+    "endTime": "44:29",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Very little part of, you know, of the developers or, you know, companies or whatever do security out of their own strong belief that it has to be like that, right.",
+    "startTime": "44:31",
+    "endTime": "44:42",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Most of the people is, okay, we need to be compliant with that, right.",
+    "startTime": "44:42",
+    "endTime": "44:44",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because someone else is dictating that on us.",
+    "startTime": "44:45",
+    "endTime": "44:46",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "44:46",
+    "endTime": "44:47",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if we don't, if we're not compliant, we're not able to sell it.",
+    "startTime": "44:47",
+    "endTime": "44:50",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's the main driver along, you know, with all of these kind of things.",
+    "startTime": "44:51",
+    "endTime": "44:56",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And yes, it's, you know, it's terrifying to see this exploits, right.",
+    "startTime": "44:56",
+    "endTime": "45:01",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's.",
+    "startTime": "45:01",
+    "endTime": "45:02",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's terrifying to see what, in what state famous security is.",
+    "startTime": "45:02",
+    "endTime": "45:06",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But if there's no mandate, right.",
+    "startTime": "45:06",
+    "endTime": "45:08",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If no one is mandating it from the top saying, okay, if you want to sell something here, right, there has to be, you know, a bottom line that you have to fulfill.",
+    "startTime": "45:08",
+    "endTime": "45:16",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "45:17",
+    "endTime": "45:17",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Otherwise, you know, take your stuff and, you know, go somewhere else that it will not change.",
+    "startTime": "45:17",
+    "endTime": "45:22",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "45:22",
+    "endTime": "45:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And that's, that's a fact because everything is running on business and we see that in the US a lot.",
+    "startTime": "45:23",
+    "endTime": "45:30",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "45:30",
+    "endTime": "45:30",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The European Union also, there's like the sovereignty cloud kind of things.",
+    "startTime": "45:30",
+    "endTime": "45:37",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "45:37",
+    "endTime": "45:37",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we have to own and so on and so forth.",
+    "startTime": "45:37",
+    "endTime": "45:40",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "45:40",
+    "endTime": "45:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And they also slowly get to the point that probably starts in firmware.",
+    "startTime": "45:41",
+    "endTime": "45:44",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I'm also not really a fan of, you know, as you said, over regulating everything and so on and so forth.",
+    "startTime": "45:44",
+    "endTime": "45:51",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I think sometimes it's necessary to push the companies that are responsible for that basically into the rent.",
+    "startTime": "45:51",
+    "endTime": "46:01",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "46:01",
+    "endTime": "46:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think there is a similar one on the EU side with the EU cybersecurity law because a lot of these things, they come from the Iot world, right?",
+    "startTime": "46:01",
+    "endTime": "46:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They are like, oh, your baby camera cannot have a default password.",
+    "startTime": "46:09",
+    "endTime": "46:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's like, yeah, we all know this.",
+    "startTime": "46:14",
+    "endTime": "46:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, anybody who has any sense of, like, understanding of security understands that.",
+    "startTime": "46:17",
+    "endTime": "46:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yes, of course you don't do this, but unless there is a legal push for this, the cheapest vendor in China will kind of gain market share.",
+    "startTime": "46:20",
+    "endTime": "46:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So there needs to be some kind of force in the market to make that happen.",
+    "startTime": "46:29",
+    "endTime": "46:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, but this also only makes sense to us.",
+    "startTime": "46:35",
+    "endTime": "46:37",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "46:37",
+    "endTime": "46:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So for us, yeah, of course you don't.",
+    "startTime": "46:38",
+    "endTime": "46:40",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There should be default.",
+    "startTime": "46:40",
+    "endTime": "46:41",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "46:41",
+    "endTime": "46:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Or you probably change that or whatever.",
+    "startTime": "46:42",
+    "endTime": "46:43",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "46:43",
+    "endTime": "46:43",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But to 90% of the other people that are just using the baby camera.",
+    "startTime": "46:43",
+    "endTime": "46:49",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "All right.",
+    "startTime": "46:50",
+    "endTime": "46:50",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's easy.",
+    "startTime": "46:50",
+    "endTime": "46:51",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "46:51",
+    "endTime": "46:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "The password is like 1235.",
+    "startTime": "46:51",
+    "endTime": "46:52",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "46:52",
+    "endTime": "46:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "That's good.",
+    "startTime": "46:53",
+    "endTime": "46:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "I can remember that.",
+    "startTime": "46:53",
+    "endTime": "46:54",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "46:54",
+    "endTime": "46:55",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I can accidentally remotely.",
+    "startTime": "46:56",
+    "endTime": "46:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, right.",
+    "startTime": "46:58",
+    "endTime": "46:59",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh, that's great.",
+    "startTime": "46:59",
+    "endTime": "46:59",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "46:59",
+    "endTime": "47:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "I can see my kid basically when I'm at work.",
+    "startTime": "47:00",
+    "endTime": "47:02",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "47:02",
+    "endTime": "47:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Yes, it's good.",
+    "startTime": "47:02",
+    "endTime": "47:03",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But everyone else as well.",
+    "startTime": "47:03",
+    "endTime": "47:04",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "47:04",
+    "endTime": "47:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And maybe it has an implication on, they know when you are home, probably break into your home and this kind of stuff.",
+    "startTime": "47:04",
+    "endTime": "47:10",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think this, I mean, it's footwork basically.",
+    "startTime": "47:11",
+    "endTime": "47:15",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "47:15",
+    "endTime": "47:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So you have to explain that to the people why you're actually doing that, because I think sometimes this feels like you are making things more complicated than they have to be.",
+    "startTime": "47:15",
+    "endTime": "47:26",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "47:26",
+    "endTime": "47:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "I mean, my mother would say it worked that way before.",
+    "startTime": "47:26",
+    "endTime": "47:30",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "47:30",
+    "endTime": "47:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So why do I have to now have like 20 characters.",
+    "startTime": "47:30",
+    "endTime": "47:34",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "47:34",
+    "endTime": "47:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And digits and this kind of stuff.",
+    "startTime": "47:34",
+    "endTime": "47:36",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "47:36",
+    "endTime": "47:37",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's like.",
+    "startTime": "47:37",
+    "endTime": "47:37",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, until their bank account get compromised and.",
+    "startTime": "47:37",
+    "endTime": "47:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, right, exactly.",
+    "startTime": "47:40",
+    "endTime": "47:42",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They're a real consequence stake.",
+    "startTime": "47:42",
+    "endTime": "47:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "47:43",
+    "endTime": "47:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And I think that's, and I think that the California law, I'm blanking on the name for the californian Iot provisions that started this whole wave.",
+    "startTime": "47:44",
+    "endTime": "47:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And now, I mean, I see that as a positive thing, but I don't want to take too much time on that because there are so many things I want to cover with you as well because you have a lot of interesting things you've been working on.",
+    "startTime": "47:52",
+    "endTime": "48:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I mentioned, you mentioned open source firmware foundation already.",
+    "startTime": "48:04",
+    "endTime": "48:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You are my founders for that.",
+    "startTime": "48:08",
+    "endTime": "48:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Let's talk about that.",
+    "startTime": "48:10",
+    "endTime": "48:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What's the goal?",
+    "startTime": "48:11",
+    "endTime": "48:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What are you guys doing?",
+    "startTime": "48:13",
+    "endTime": "48:14",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think that's a foundation that should get a good shout out.",
+    "startTime": "48:14",
+    "endTime": "48:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "48:18",
+    "endTime": "48:19",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Thanks.",
+    "startTime": "48:19",
+    "endTime": "48:20",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "First of all, as I said, we are working a lot in the open source ecosystem.",
+    "startTime": "48:20",
+    "endTime": "48:27",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That means we are reactive in all the communities, and we are really trying to advance the state of open source firmware.",
+    "startTime": "48:28",
+    "endTime": "48:37",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And what we see is that firmware gets very little love and very little attention from a lot of people.",
+    "startTime": "48:37",
+    "endTime": "48:46",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so with that, okay, there needs to be one point of contact, one umbrella kind of thing, where we can place everything under, in that sense, where people can go, where people can educate themselves on what is firmware, why open source and so on and so forth, and where they can reach out to the individual projects.",
+    "startTime": "48:46",
+    "endTime": "49:08",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And one thing that I deeply believe in is if we want to drive adoption in open source firmware.",
+    "startTime": "49:09",
+    "endTime": "49:16",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you want to have open source firmware running on each and every device, that needs specification, right.",
+    "startTime": "49:17",
+    "endTime": "49:24",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that needs like.",
+    "startTime": "49:24",
+    "endTime": "49:26",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, we need to specify interfaces, right.",
+    "startTime": "49:27",
+    "endTime": "49:30",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How do we talk to other software?",
+    "startTime": "49:30",
+    "endTime": "49:32",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How do we talk to hardware and these kind of things?",
+    "startTime": "49:32",
+    "endTime": "49:35",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because this is not existent right now.",
+    "startTime": "49:35",
+    "endTime": "49:37",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "49:38",
+    "endTime": "49:38",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we have UFI as one big body, let's say.",
+    "startTime": "49:38",
+    "endTime": "49:42",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's just a SPAC, right.",
+    "startTime": "49:42",
+    "endTime": "49:44",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's per se, not proprietary.",
+    "startTime": "49:44",
+    "endTime": "49:46",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "However, majority of the implementations are.",
+    "startTime": "49:46",
+    "endTime": "49:49",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's one implementation which is EDK, two, which is not and which is, you know, which is not great, let's say.",
+    "startTime": "49:50",
+    "endTime": "49:57",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "49:57",
+    "endTime": "49:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So it's okay.",
+    "startTime": "49:57",
+    "endTime": "49:58",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so I think, and the UFI sPac is rather complicated for a lot of use cases.",
+    "startTime": "49:59",
+    "endTime": "50:06",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think we can simplify a lot of things.",
+    "startTime": "50:06",
+    "endTime": "50:08",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And, yeah, with all these kind of things, we said, okay, we have to have a foundation that incorporates all the players that are in the ecosystem.",
+    "startTime": "50:08",
+    "endTime": "50:20",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the OEMs, the stock vendors, the open source firmware projects, the ibvs, and of course the communities.",
+    "startTime": "50:20",
+    "endTime": "50:29",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Everyone needs to get on board, basically.",
+    "startTime": "50:29",
+    "endTime": "50:31",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we have to bring everyone together so that we work towards one common goal.",
+    "startTime": "50:31",
+    "endTime": "50:36",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we're trying to push that, basically.",
+    "startTime": "50:37",
+    "endTime": "50:40",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we have like working groups that care about, for example, firmware security, where the founder of Binary is also involved.",
+    "startTime": "50:40",
+    "endTime": "50:52",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We have a work stream or working group that is around silicon incentivization.",
+    "startTime": "50:53",
+    "endTime": "50:59",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you initialize silicon, there are different interfaces, or every software builds their own interfaces on how you do that.",
+    "startTime": "50:59",
+    "endTime": "51:06",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It would be great if you have a.",
+    "startTime": "51:06",
+    "endTime": "51:08",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that makes it easier for adoption and this kind of thing.",
+    "startTime": "51:08",
+    "endTime": "51:11",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we're trying to drive that through a nonprofit foundation because I think this specs shouldn't be owned by a company because that's also the standard.",
+    "startTime": "51:12",
+    "endTime": "51:22",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right now, intel has the FSP, like the firmware support package specification.",
+    "startTime": "51:22",
+    "endTime": "51:28",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they specify how their FSP looks like and what interface it has.",
+    "startTime": "51:28",
+    "endTime": "51:34",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Naturally, no other SoC vendors will adopt that spec because, you know, AMD will never ever adopt the spec that is coming from intel in its own way.",
+    "startTime": "51:35",
+    "endTime": "51:45",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we have to find a neutral ground, basically, where we can play and work this kind of things out.",
+    "startTime": "51:45",
+    "endTime": "51:51",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And yeah, the OSFf can be one of this bodies, basically, and it's tied.",
+    "startTime": "51:52",
+    "endTime": "52:02",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "To licensing or how do you think about those things?",
+    "startTime": "52:02",
+    "endTime": "52:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Obviously, licensing is a hot topic right now.",
+    "startTime": "52:05",
+    "endTime": "52:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Source world, how do you view that side of the firmware?",
+    "startTime": "52:08",
+    "endTime": "52:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Where is that something that is yet to be kind of emerging in the open source firmware world?",
+    "startTime": "52:12",
+    "endTime": "52:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So the foundation itself, we don't care about licensing this kind of thing because that's of course nothing that we want to push.",
+    "startTime": "52:19",
+    "endTime": "52:30",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Our model is basically that the members that are, we have different tiers basically in the foundation.",
+    "startTime": "52:33",
+    "endTime": "52:38",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "52:39",
+    "endTime": "52:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "And depending on the tier, you can kind of be part of the conversation on, you know, what specifications should be drawn, should be driven and, you know, making decisions on that part.",
+    "startTime": "52:39",
+    "endTime": "52:51",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "52:51",
+    "endTime": "52:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So you have influence on the spec, let's say.",
+    "startTime": "52:51",
+    "endTime": "52:54",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "However, licensing in general is an interesting topic in the.",
+    "startTime": "52:55",
+    "endTime": "53:01",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "For open source firmware as well.",
+    "startTime": "53:01",
+    "endTime": "53:02",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "53:02",
+    "endTime": "53:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So we have to think about what's the business model for the companies that develop open source firmware or that have open source firmware on the devices.",
+    "startTime": "53:03",
+    "endTime": "53:14",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And for example there's a polish company, three MDAP, they are running a business model where they pay a fee basically to get the newest core boot version.",
+    "startTime": "53:14",
+    "endTime": "53:31",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they have downstream fork of that and you have to pay fee basically to get the newest version for your device.",
+    "startTime": "53:31",
+    "endTime": "53:37",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's one way to go.",
+    "startTime": "53:38",
+    "endTime": "53:40",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now elements takes another approach saying okay, we are just an agency and we provide support and this kind of stuff, we don't care how many devices you are, but for sure that's an interesting topic in open source firmware.",
+    "startTime": "53:40",
+    "endTime": "53:55",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "something where we can all do business.",
+    "startTime": "53:55",
+    "endTime": "53:58",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "53:58",
+    "endTime": "53:59",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean naturally again, right.",
+    "startTime": "53:59",
+    "endTime": "54:01",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Even if it's open source, we have to think about how can we do business that is good for everyone, right.",
+    "startTime": "54:01",
+    "endTime": "54:06",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Which is fair for everyone.",
+    "startTime": "54:07",
+    "endTime": "54:08",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "54:08",
+    "endTime": "54:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And licensing is one of them.",
+    "startTime": "54:08",
+    "endTime": "54:13",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Absolutely, yeah, I think, I mean, and also like, I guess it's worth doing a shout out to the people actually involved in the foundation.",
+    "startTime": "54:14",
+    "endTime": "54:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You got some big names in there.",
+    "startTime": "54:21",
+    "endTime": "54:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Do you want to speak a bit about who are actually part of the members and who are part of that?",
+    "startTime": "54:22",
+    "endTime": "54:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because you got some big brands engaged in the actual foundation.",
+    "startTime": "54:25",
+    "endTime": "54:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think it's worth doing a shout out as well.",
+    "startTime": "54:29",
+    "endTime": "54:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, totally.",
+    "startTime": "54:31",
+    "endTime": "54:32",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So one of our co founding members is Siemens for example, which is pretty cool.",
+    "startTime": "54:32",
+    "endTime": "54:41",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Very, very big company and they give us a lot of trust in terms of coming in so early so that we can do what we can do basically, and backing us up.",
+    "startTime": "54:42",
+    "endTime": "54:56",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because basically when Siemens joined there were only plans, let's say, but their execution was still undergoing and we're still doing things and still moving forward.",
+    "startTime": "54:56",
+    "endTime": "55:10",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Siemens actually provides us a lot of trust there and we have a couple of companies that are actually using open source female in their products and that are actually trying to push for open source.",
+    "startTime": "55:10",
+    "endTime": "55:20",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "One of the biggest there for sure is Google, of course, Supermicro, one of.",
+    "startTime": "55:20",
+    "endTime": "55:26",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The big ones are super macro using coreboot on their servers or is that something on the roadmap or do you.",
+    "startTime": "55:26",
+    "endTime": "55:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Know, I was curious, they have a proof of concept where they run coreboot on their servers.",
+    "startTime": "55:33",
+    "endTime": "55:42",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Interesting.",
+    "startTime": "55:42",
+    "endTime": "55:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They are eventually doing business.",
+    "startTime": "55:43",
+    "endTime": "55:45",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Nice.",
+    "startTime": "55:47",
+    "endTime": "55:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Potentially, yeah, they have it on their roadmap, right.",
+    "startTime": "55:47",
+    "endTime": "55:50",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean you would be.",
+    "startTime": "55:50",
+    "endTime": "55:51",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think Supermicro is smart enough at least to, you know, look left and right and see UK, we have, you know, our standard proprietary vendor and there are options.",
+    "startTime": "55:51",
+    "endTime": "56:03",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "56:03",
+    "endTime": "56:03",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we should, you know, look, what does that, what implications does that have on our business if we go for open source firmware?",
+    "startTime": "56:03",
+    "endTime": "56:10",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Is there other markets that we can kind of tackle?",
+    "startTime": "56:10",
+    "endTime": "56:12",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How does that work from a royalty kind of view?",
+    "startTime": "56:13",
+    "endTime": "56:18",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What does it mean money wise for us and this kind of thing?",
+    "startTime": "56:18",
+    "endTime": "56:20",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So supermarket, I think looking into that for sure.",
+    "startTime": "56:20",
+    "endTime": "56:23",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I imagine they are starting to get more and more nervous from another one on your roster, which is oxide taking them from the left field in terms of that.",
+    "startTime": "56:24",
+    "endTime": "56:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So yeah, maybe that's a.",
+    "startTime": "56:34",
+    "endTime": "56:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Oxide is.",
+    "startTime": "56:35",
+    "endTime": "56:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean oxide is extremely radical in how they do it.",
+    "startTime": "56:36",
+    "endTime": "56:41",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "56:41",
+    "endTime": "56:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So I mean, if you ever hear Brian speak about it, right.",
+    "startTime": "56:41",
+    "endTime": "56:48",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Brian, if you are listening to this, I would love to have you on the show, by the way.",
+    "startTime": "56:49",
+    "endTime": "56:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I got my.",
+    "startTime": "56:53",
+    "endTime": "56:54",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "56:55",
+    "endTime": "56:55",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if you listen to him, right, he's like very radical in a good way, right.",
+    "startTime": "56:55",
+    "endTime": "57:02",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "On his views on how things should be handled and why it should be open source and this kind of things.",
+    "startTime": "57:02",
+    "endTime": "57:08",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And actually I saw the racks in person, so I visited them a couple of times in there in the headquarters and they look neat.",
+    "startTime": "57:08",
+    "endTime": "57:18",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So everything is custom made from the boards, from the blends basically in front of the rack, the whole rack, the bars, I don't know, everything's custom made.",
+    "startTime": "57:19",
+    "endTime": "57:32",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And everything looks proper nerd porn, right?",
+    "startTime": "57:33",
+    "endTime": "57:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "57:35",
+    "endTime": "57:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Really?",
+    "startTime": "57:35",
+    "endTime": "57:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "I mean you see that.",
+    "startTime": "57:36",
+    "endTime": "57:36",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's great.",
+    "startTime": "57:36",
+    "endTime": "57:37",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't need it.",
+    "startTime": "57:37",
+    "endTime": "57:38",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "57:38",
+    "endTime": "57:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "I mean I will never ever buy such a rag, right.",
+    "startTime": "57:38",
+    "endTime": "57:41",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I have no use case for that, but I want one, right.",
+    "startTime": "57:41",
+    "endTime": "57:44",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because it just looks great.",
+    "startTime": "57:45",
+    "endTime": "57:46",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And yeah, they are long term supporters on that.",
+    "startTime": "57:47",
+    "endTime": "57:52",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I met Brian like three years ago on the foundation did some mini summit which was in parallel to the OCP, the open project Global summit.",
+    "startTime": "57:52",
+    "endTime": "58:03",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was like a half day in the back of a conference.",
+    "startTime": "58:04",
+    "endTime": "58:07",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We had peanut and nuts and Brian was giving a talk about Oxide and there's where we met him.",
+    "startTime": "58:07",
+    "endTime": "58:16",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it's great to see how they actually evolved right now.",
+    "startTime": "58:16",
+    "endTime": "58:20",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And of course a couple of other companies as well.",
+    "startTime": "58:20",
+    "endTime": "58:23",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "58:23",
+    "endTime": "58:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Ss three, MDEP, of course.",
+    "startTime": "58:23",
+    "endTime": "58:24",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Is there system 76, is there Nova custom, is there.",
+    "startTime": "58:24",
+    "endTime": "58:30",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So yeah, it's really great to see them board and you know, if some company is listening to this, right.",
+    "startTime": "58:31",
+    "endTime": "58:37",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Said, okay, we are doing open source firmware, right.",
+    "startTime": "58:37",
+    "endTime": "58:39",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we want to be a part of the foundation.",
+    "startTime": "58:39",
+    "endTime": "58:40",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I want to at least show up on that website.",
+    "startTime": "58:40",
+    "endTime": "58:42",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can always reach out to Victor and he then reaches out to me.",
+    "startTime": "58:43",
+    "endTime": "58:47",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right in for happy to do introductions.",
+    "startTime": "58:47",
+    "endTime": "58:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The last thing I wanted to cover before we wrap up, because we're running up on time here is, I'm sure this made the news to you as well.",
+    "startTime": "58:50",
+    "endTime": "58:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I'm curious about your take, your hot take on this is insides AI bios because they were being a bit ridiculed in the press.",
+    "startTime": "58:59",
+    "endTime": "59:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm kind of curious about what your whole take on that is.",
+    "startTime": "59:07",
+    "endTime": "59:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, no, I saw the news.",
+    "startTime": "59:12",
+    "endTime": "59:13",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Wait a, I think at Computex, they announced it that they have AI.",
+    "startTime": "59:13",
+    "endTime": "59:17",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Don't really understand what it is.",
+    "startTime": "59:17",
+    "endTime": "59:21",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How I read it is that they, I think the customization of the whole thing is now through AI, or you can interact with an MI and it customizes the bios for your needs.",
+    "startTime": "59:24",
+    "endTime": "59:36",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I have no clue how that would practically look like.",
+    "startTime": "59:36",
+    "endTime": "59:40",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I totally think that this is not a good idea because I couldn't think of a thing why you would need AI in firmware.",
+    "startTime": "59:40",
+    "endTime": "59:50",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I think firmware should do very little.",
+    "startTime": "59:50",
+    "endTime": "59:55",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's just the basic minimum, exactly what you need.",
+    "startTime": "59:56",
+    "endTime": "01:00:00",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That should be very strict.",
+    "startTime": "01:00:00",
+    "endTime": "01:00:02",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There should be no room for AI's to interpret whatever they want in between.",
+    "startTime": "01:00:02",
+    "endTime": "01:00:07",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But rather than I want to do this and exactly this, and yeah, I'm curious to see what they're doing, but my gut feeling really says I'm not entirely sure if that's a good idea.",
+    "startTime": "01:00:07",
+    "endTime": "01:00:22",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "To me, it sounds like, it feels like taking the current AI hype.",
+    "startTime": "01:00:23",
+    "endTime": "01:00:33",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We need to do something with AI, right?",
+    "startTime": "01:00:34",
+    "endTime": "01:00:35",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Every, every hardware vendors does something with AI, right?",
+    "startTime": "01:00:35",
+    "endTime": "01:00:38",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They, everywhere, they put Nvidia right in building like the new next AI machines.",
+    "startTime": "01:00:38",
+    "endTime": "01:00:43",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this now, and every software stack basically, which is, you know, on top of firmware does AI.",
+    "startTime": "01:00:43",
+    "endTime": "01:00:49",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So whether you want or not.",
+    "startTime": "01:00:50",
+    "endTime": "01:00:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, if you want it or not.",
+    "startTime": "01:00:52",
+    "endTime": "01:00:53",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Exactly.",
+    "startTime": "01:00:53",
+    "endTime": "01:00:54",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so we have to do something as well.",
+    "startTime": "01:00:54",
+    "endTime": "01:00:57",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "01:00:57",
+    "endTime": "01:00:57",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So let's go.",
+    "startTime": "01:00:57",
+    "endTime": "01:00:58",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It sounds like a terrifying attack vector from a security perspective, but yeah, let's see what happens with that.",
+    "startTime": "01:00:59",
+    "endTime": "01:01:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Totally, right?",
+    "startTime": "01:01:06",
+    "endTime": "01:01:07",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, all the models that they're running on is probably proprietary.",
+    "startTime": "01:01:07",
+    "endTime": "01:01:11",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No one actually knows what's happening inside.",
+    "startTime": "01:01:11",
+    "endTime": "01:01:13",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think you can perfectly.",
+    "startTime": "01:01:14",
+    "endTime": "01:01:16",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I talked to a colleague of mine a couple of days ago and he said what an interesting attack vector would be.",
+    "startTime": "01:01:16",
+    "endTime": "01:01:23",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you have an LMMe, which you kind of train to inject exploits in the code that it writes.",
+    "startTime": "01:01:23",
+    "endTime": "01:01:30",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:01:30",
+    "endTime": "01:01:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "Because you're asking an NI, write me a parser for XYZ, whatever.",
+    "startTime": "01:01:30",
+    "endTime": "01:01:35",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then who is looking at the code, right.",
+    "startTime": "01:01:35",
+    "endTime": "01:01:38",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you copy the code, see if it builds.",
+    "startTime": "01:01:38",
+    "endTime": "01:01:40",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "it does what it does.",
+    "startTime": "01:01:40",
+    "endTime": "01:01:41",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:01:41",
+    "endTime": "01:01:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "That's great.",
+    "startTime": "01:01:41",
+    "endTime": "01:01:42",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And what if you have elements that are actually injecting exploits there.",
+    "startTime": "01:01:42",
+    "endTime": "01:01:48",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:01:48",
+    "endTime": "01:01:48",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And maybe they are learned and trained on code which had exploits in it and this kind of stuff.",
+    "startTime": "01:01:48",
+    "endTime": "01:01:54",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:01:54",
+    "endTime": "01:01:54",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, and this kind of, you know, makes up a whole new channel or vector of, you know, possible attacks where you wouldn't even know who injected the code right in the first place.",
+    "startTime": "01:01:54",
+    "endTime": "01:02:06",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And.",
+    "startTime": "01:02:07",
+    "endTime": "01:02:07",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, that really, I think that's terrifying.",
+    "startTime": "01:02:08",
+    "endTime": "01:02:11",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:02:11",
+    "endTime": "01:02:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "To see.",
+    "startTime": "01:02:12",
+    "endTime": "01:02:13",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I would be surprised if the likes of binary and these guys who have done some great research are not using this for similar like fuzzing attacks and similar, I would imagine, at least.",
+    "startTime": "01:02:13",
+    "endTime": "01:02:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But yeah, it's definitely, yeah.",
+    "startTime": "01:02:24",
+    "endTime": "01:02:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "When we get into like obfuscation off backdoors and whatnot, using AI, that's where it gets really dangerous and crazy.",
+    "startTime": "01:02:27",
+    "endTime": "01:02:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So.",
+    "startTime": "01:02:36",
+    "endTime": "01:02:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Totally.",
+    "startTime": "01:02:37",
+    "endTime": "01:02:38",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This has been really great.",
+    "startTime": "01:02:39",
+    "endTime": "01:02:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Christian, is there anything else you want to do a shout out about before we wrap up?",
+    "startTime": "01:02:40",
+    "endTime": "01:02:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think you have a conference coming up in the fall, so maybe that's.",
+    "startTime": "01:02:45",
+    "endTime": "01:02:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, that's definitely.",
+    "startTime": "01:02:48",
+    "endTime": "01:02:50",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you.",
+    "startTime": "01:02:50",
+    "endTime": "01:02:51",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The open source firmware conference is coming up in September, 3 to fifth.",
+    "startTime": "01:02:52",
+    "endTime": "01:02:57",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's annual conference surprise around open source firmware and, you know, current developments there.",
+    "startTime": "01:02:57",
+    "endTime": "01:03:04",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's very developer centric.",
+    "startTime": "01:03:04",
+    "endTime": "01:03:06",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:03:06",
+    "endTime": "01:03:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 2
+  },
+  {
+    "sentence": "So really, if you want to get your hands on the topic, that's the conference where you should be.",
+    "startTime": "01:03:06",
+    "endTime": "01:03:12",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you want to find people who can do it.",
+    "startTime": "01:03:12",
+    "endTime": "01:03:15",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:03:15",
+    "endTime": "01:03:15",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's the place where you can find these people.",
+    "startTime": "01:03:15",
+    "endTime": "01:03:17",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It will be in Germany.",
+    "startTime": "01:03:18",
+    "endTime": "01:03:19",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it will be at the, you know, home at our hometown.",
+    "startTime": "01:03:20",
+    "endTime": "01:03:23",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:03:23",
+    "endTime": "01:03:24",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Where everything.",
+    "startTime": "01:03:24",
+    "endTime": "01:03:25",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Where the foundation was born, where the conference was born, when an elements was born.",
+    "startTime": "01:03:25",
+    "endTime": "01:03:29",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And yeah, if you want to.",
+    "startTime": "01:03:29",
+    "endTime": "01:03:31",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you want to check that out, you know, have like through our offices and all this kind of stuff, we would be happy to host you.",
+    "startTime": "01:03:31",
+    "endTime": "01:03:39",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Osefc IO is the website that you need to check out.",
+    "startTime": "01:03:39",
+    "endTime": "01:03:43",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, it would be great if we can see a couple of more faces there.",
+    "startTime": "01:03:44",
+    "endTime": "01:03:49",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Amazing.",
+    "startTime": "01:03:49",
+    "endTime": "01:03:50",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'll make sure to link that in the show descriptions.",
+    "startTime": "01:03:50",
+    "endTime": "01:03:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And thank you so much for coming to the show, Christian and I'll talk to you soon.",
+    "startTime": "01:03:52",
+    "endTime": "01:03:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Thanks so much.",
+    "startTime": "01:03:57",
+    "endTime": "01:03:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Bye.",
+    "startTime": "01:03:58",
+    "endTime": "01:03:58",
+    "speaker_name": "Christian Walter",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Cheers.",
+    "startTime": "01:03:58",
+    "endTime": "01:03:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Bye.",
+    "startTime": "01:03:59",
+    "endTime": "01:03:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  }
+]

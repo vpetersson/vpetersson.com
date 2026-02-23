@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://vpetersson.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vpetersson.com/" rel="alternate" type="text/html" /><updated>2026-01-14T11:41:36+00:00</updated><id>https://vpetersson.com/feed.xml</id><title type="html">Viktor’s Tech Musings &amp;amp; Security Paranoia</title><subtitle>Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.</subtitle><entry><title type="html">AI is Eating SaaS: Building an IP Geolocation API in Two Hours</title><link href="https://vpetersson.com/2026/01/09/ai-is-eating-saas-building-an-ip-geolocation-api-in-two-hours.html" rel="alternate" type="text/html" title="AI is Eating SaaS: Building an IP Geolocation API in Two Hours" /><published>2026-01-09T12:00:00+00:00</published><updated>2026-01-09T12:00:00+00:00</updated><id>https://vpetersson.com/2026/01/09/ai-is-eating-saas-building-an-ip-geolocation-api-in-two-hours</id><content type="html" xml:base="https://vpetersson.com/2026/01/09/ai-is-eating-saas-building-an-ip-geolocation-api-in-two-hours.html"><![CDATA[<p>We’ve all heard the saying that AI is eating SaaS. For some simple products, it’s certainly becoming true.</p>
+
+<p>At <a href="https://www.screenly.io">Screenly</a>, we’ve been using <a href="https://ipgeolocation.io">ipgeolocation.io</a> for a while. It’s a solid service, but at its core, it’s just a frontend for a GeoIP database. This morning, I saw yet another monthly invoice from them and decided to run an experiment: how far can <a href="https://cursor.sh">Cursor</a> with Claude Opus 4.5 go in terms of recreating their API with feature parity?</p>
+
+<p>Turns out, it can do it in under two hours. In Rust.</p>
+
+<h2 id="the-problem">The Problem</h2>
+
+<p>Many applications need to know where their users are located - for timezone detection, localization, or analytics. Services like ipgeolocation.io provide this, but they come with drawbacks: API rate limits, recurring costs, latency from external calls, and dependency on third-party uptime.</p>
+
+<h2 id="the-solution">The Solution</h2>
+
+<p>I built a drop-in replacement that runs entirely self-hosted. It’s a single binary that bundles all the data it needs - no external API calls, no API keys to manage, and responses in microseconds instead of milliseconds.</p>
+
+<p><strong>Demo</strong>: <a href="https://geoip.vpetersson.com">geoip.vpetersson.com</a> (available until it gets too much load)
+<strong>Source</strong>: <a href="https://github.com/vpetersson/ipgeolocation">github.com/vpetersson/ipgeolocation</a></p>
+
+<h2 id="why-its-cool-technically">Why It’s Cool (Technically)</h2>
+
+<h3 id="zero-external-dependencies-at-runtime">Zero External Dependencies at Runtime</h3>
+
+<p>The service embeds two datasets directly:</p>
+
+<ul>
+  <li><strong>MaxMind GeoLite2-City</strong> (~70MB database) for IP-to-location lookups</li>
+  <li><strong>tzf-rs</strong> compiles timezone boundary polygons (~15MB) directly into the binary</li>
+</ul>
+
+<p>This means the 17MB binary contains everything needed to resolve any IP address to its location and any coordinates to their timezone - offline, airgapped, whatever.</p>
+
+<h3 id="rust--axum--blazing-fast">Rust + Axum = Blazing Fast</h3>
+
+<p>Built on <a href="https://github.com/tokio-rs/axum">Axum</a> and <a href="https://tokio.rs/">Tokio</a>, the async runtime handles thousands of concurrent requests efficiently. The in-memory LRU cache (via <a href="https://github.com/moka-rs/moka">Moka</a>) means repeated lookups are nearly instant.</p>
+
+<h3 id="aggressive-caching-strategy">Aggressive Caching Strategy</h3>
+
+<p>IP geolocation data rarely changes. The service returns <code class="language-plaintext highlighter-rouge">Cache-Control: public, max-age=1209600</code> (2 weeks), making it perfect behind a CDN like Cloudflare.</p>
+
+<h3 id="minimal-attack-surface">Minimal Attack Surface</h3>
+
+<p>The Docker image uses <a href="https://www.chainguard.dev/">Chainguard</a> images:</p>
+
+<ul>
+  <li><strong>Build stage</strong>: <code class="language-plaintext highlighter-rouge">cgr.dev/chainguard/rust</code> (with <code class="language-plaintext highlighter-rouge">cargo-auditable</code> for SBOM)</li>
+  <li><strong>Runtime</strong>: <code class="language-plaintext highlighter-rouge">cgr.dev/chainguard/glibc-dynamic</code> (minimal, CVE-free base)</li>
+</ul>
+
+<p>The final image contains just the binary, the GeoIP database, and country flag SVGs. No shell, no package manager, minimal attack surface.</p>
+
+<h3 id="api-compatibility">API Compatibility</h3>
+
+<p>Two API formats are supported:</p>
+
+<ul>
+  <li><strong>Simple format</strong> (<code class="language-plaintext highlighter-rouge">/ipgeo</code>, <code class="language-plaintext highlighter-rouge">/timezone</code>) - backward compatible, minimal response</li>
+  <li><strong>Full format</strong> (<code class="language-plaintext highlighter-rouge">/v1/ipgeo</code>, <code class="language-plaintext highlighter-rouge">/v1/timezone</code>) - rich metadata including country info, currency, calling codes, DST details</li>
+</ul>
+
+<h2 id="the-numbers">The Numbers</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Binary size</td>
+      <td>17MB (includes all timezone boundary data)</td>
+    </tr>
+    <tr>
+      <td>Docker image</td>
+      <td>140MB on disk, 44.5MB content</td>
+    </tr>
+    <tr>
+      <td>Response time</td>
+      <td>Sub-millisecond for cached lookups</td>
+    </tr>
+    <tr>
+      <td>Memory</td>
+      <td>~100MB runtime (GeoIP DB loaded into memory)</td>
+    </tr>
+    <tr>
+      <td>Startup</td>
+      <td>&lt;1 second</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Most of the disk image is the GeoIP database and country flag SVGs. The Rust binary itself is about 17MB, which includes everything.</p>
+
+<h2 id="what-this-means">What This Means</h2>
+
+<p>For simple, data-lookup SaaS products, the economics are shifting. When an AI coding assistant can recreate your entire product in a couple of hours, the value proposition needs to be more than just “we host it for you.”</p>
+
+<p>The project is MIT licensed and available on <a href="https://github.com/vpetersson/ipgeolocation">GitHub</a>. The only requirement is a free <a href="https://www.maxmind.com">MaxMind</a> account to download the GeoLite2 database during Docker build.</p>]]></content><author><name></name></author><category term="rust" /><category term="ai" /><category term="cursor" /><category term="self-hosted" /><summary type="html"><![CDATA[We’ve all heard the saying that AI is eating SaaS. For some simple products, it’s certainly becoming true.]]></summary></entry><entry><title type="html">How I Streamlined My Jekyll Diagram Workflow with D2 and Bun</title><link href="https://vpetersson.com/2025/11/30/redesigning-the-sbomify-site-and-falling-deeper-into-d2.html" rel="alternate" type="text/html" title="How I Streamlined My Jekyll Diagram Workflow with D2 and Bun" /><published>2025-11-30T12:00:00+00:00</published><updated>2025-11-30T12:00:00+00:00</updated><id>https://vpetersson.com/2025/11/30/redesigning-the-sbomify-site-and-falling-deeper-into-d2</id><content type="html" xml:base="https://vpetersson.com/2025/11/30/redesigning-the-sbomify-site-and-falling-deeper-into-d2.html"><![CDATA[<p>Over the last few days, I gave the <a href="https://sbomify.com">sbomify website</a> a much-needed overhaul. The previous iteration didn’t really reflect what we’re doing, especially as the product has matured. The new version leans heavily on diagrams to communicate concepts more clearly.</p>
+
+<p>For the past year, I’ve more or less standardized on <a href="https://d2lang.com/"><code class="language-plaintext highlighter-rouge">d2</code></a> for diagrams. I’ve gone through the usual journey: Lucidchart, Mermaid, UML, and a few others. They all work and have their own strengths and weaknesses, but each brought its own annoyances that made me eventually drop them. <code class="language-plaintext highlighter-rouge">d2</code>, on the other hand, instantly clicked. It’s readable, intuitive, and produces diagrams that actually look good without wrestling with the tool. It’s not perfect, but it’s the closest I’ve found to something that fits the way I think.</p>
+
+<p>One of the things I enjoy most is that I can quickly write out the basic diagrams due to its simple syntax and “vibe-code” them into something more elaborate. They live alongside my notes in <a href="https://obsidian.md/">Obsidian</a> (which I’ve recently fallen in love with), where the <code class="language-plaintext highlighter-rouge">d2</code> plugin renders everything nicely. It’s a surprisingly satisfying workflow.</p>
+
+<h2 id="the-problem-keeping-diagrams-in-sync">The Problem: Keeping Diagrams in Sync</h2>
+
+<p>The sbomify site itself is a fairly unorthodox Jekyll setup running on GitHub Pages. Over the last year, I’ve added more and more rendered <code class="language-plaintext highlighter-rouge">d2</code> diagrams across articles and pages. That created a maintenance headache: keeping SVGs in sync across posts is tedious. Yes, you <em>can</em> reuse assets, but minor edits accumulate, and the overhead grows quickly.</p>
+
+<p>The obvious question became: <em>why not just use <code class="language-plaintext highlighter-rouge">d2</code> directly in the content?</em></p>
+
+<h2 id="experimenting-with-native-d2-in-markdown">Experimenting With Native <code class="language-plaintext highlighter-rouge">d2</code> in Markdown</h2>
+
+<p>My first idea was to treat <code class="language-plaintext highlighter-rouge">d2</code> like any other fenced code block, similar to how I use it in Obsidian. Simple in theory, but tricky in practice. Injecting <code class="language-plaintext highlighter-rouge">d2</code> into Jekyll’s Markdown pipeline through the <code class="language-plaintext highlighter-rouge">rouge</code> syntax highlighter, proved far more complex than I’d hoped.</p>
+
+<p>Instead, I took a more pragmatic path.</p>
+
+<h2 id="the-pipeline-approach">The Pipeline Approach</h2>
+
+<p>I added a build step that runs during CI (and locally) to render <code class="language-plaintext highlighter-rouge">d2</code> diagrams using <a href="https://github.com/sbomify/sbomify.com/#building-diagrams"><code class="language-plaintext highlighter-rouge">bun run build:d2</code></a>, which in turn calls on <a href="https://github.com/sbomify/sbomify.com/blob/master/scripts/watch-d2.ts"><code class="language-plaintext highlighter-rouge">watch-d2.ts</code></a>. While I was at it, I moved all diagram styling into a <a href="https://github.com/sbomify/sbomify.com/blob/master/_d2/theme.d2">theme</a>. That means:</p>
+
+<ul>
+  <li>Diagrams are significantly smaller</li>
+  <li>The style is consistent everywhere</li>
+  <li>Updating the styling automatically updates every diagram site-wide</li>
+</ul>
+
+<p>It’s a clean setup, and it removes an entire class of maintenance problems.</p>
+
+<p>Everything now runs as part of the CI pipeline, along with the rest of the linting and checks. The workflow feels solid, and more importantly, sustainable.</p>]]></content><author><name></name></author><category term="sbomify" /><category term="d2" /><category term="diagrams" /><category term="jekyll" /><category term="automation" /><category term="ci-cd" /><summary type="html"><![CDATA[Over the last few days, I gave the sbomify website a much-needed overhaul. The previous iteration didn’t really reflect what we’re doing, especially as the product has matured. The new version leans heavily on diagrams to communicate concepts more clearly.]]></summary></entry><entry><title type="html">PostgreSQL Replication Troubleshooting: War Stories from the Field</title><link href="https://vpetersson.com/2025/11/12/postgresql-replication-troubleshooting-war-stories.html" rel="alternate" type="text/html" title="PostgreSQL Replication Troubleshooting: War Stories from the Field" /><published>2025-11-12T00:00:00+00:00</published><updated>2025-11-12T00:00:00+00:00</updated><id>https://vpetersson.com/2025/11/12/postgresql-replication-troubleshooting-war-stories</id><content type="html" xml:base="https://vpetersson.com/2025/11/12/postgresql-replication-troubleshooting-war-stories.html"><![CDATA[<p>I recently wrapped up a consulting gig helping a client troubleshoot some gnarly PostgreSQL replication issues. What started as a “quick performance tune” turned into a deep dive through WAL checkpoints, replication slots, and the delicate dance of logical replication workers.</p>
+
+<p>Here are the war stories from the trenches, complete with the errors we hit and how we solved them. If you’re dealing with PostgreSQL logical replication at scale, you might find these useful.</p>
+
+<h2 id="the-setup">The Setup</h2>
+
+<p>The client was running a PostgreSQL logical replication setup between two servers using publication/subscription. The source server was running PostgreSQL 14, while the target server was on PostgreSQL 18. Everything was working, but performance was suffering, and the logs were filling up with concerning messages.</p>
+
+<p>An important constraint: we could <strong>not restart the source server</strong>—it was a live production system handling real traffic. This limitation would prove crucial later when we hit replication slot limits.</p>
+
+<p>Time to roll up the sleeves.</p>
+
+<h2 id="war-story-1-the-checkpoint-chaos">War Story #1: The Checkpoint Chaos</h2>
+
+<h3 id="the-problem">The Problem</h3>
+
+<p>The first red flag was in the logs on the receiving node:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>...]
+Nov 11 16:26:56 <span class="o">[</span>redacted].internal postgres[9307]: <span class="o">[</span>102-1] 2025-11-11 16:26:56 UTC <span class="o">[</span>9307] LOG: checkpoints are occurring too frequently <span class="o">(</span>11 seconds apart<span class="o">)</span>
+Nov 11 16:26:56 <span class="o">[</span>redacted].internal postgres[9307]: <span class="o">[</span>102-2] 2025-11-11 16:26:56 UTC <span class="o">[</span>9307] HINT: Consider increasing the configuration parameter <span class="s2">"max_wal_size"</span><span class="nb">.</span>
+Nov 11 16:26:56 <span class="o">[</span>redacted].internal postgres[9307]: <span class="o">[</span>103-1] 2025-11-11 16:26:56 UTC <span class="o">[</span>9307] LOG: checkpoint starting: wal
+Nov 11 16:27:05 <span class="o">[</span>redacted].internal postgres[9307]: <span class="o">[</span>104-1] 2025-11-11 16:27:05 UTC <span class="o">[</span>9307] LOG: checkpoint <span class="nb">complete</span>: wrote 1382 buffers <span class="o">(</span>8.4%<span class="o">)</span>, wrote 0 SLRU buffers<span class="p">;</span> 0 WAL file<span class="o">(</span>s<span class="o">)</span> added, 5 removed, 96 recycled<span class="p">;</span> <span class="nv">write</span><span class="o">=</span>8.387 s, <span class="nb">sync</span><span class="o">=</span>0.943 s, <span class="nv">total</span><span class="o">=</span>9.559 s<span class="p">;</span> <span class="nb">sync </span><span class="nv">files</span><span class="o">=</span>19, <span class="nv">longest</span><span class="o">=</span>0.437 s, <span class="nv">average</span><span class="o">=</span>0.050 s<span class="p">;</span> <span class="nv">distance</span><span class="o">=</span>1656483 kB, <span class="nv">estimate</span><span class="o">=</span>1656642 kB<span class="p">;</span> <span class="nv">lsn</span><span class="o">=</span>D/194EB50, redo <span class="nv">lsn</span><span class="o">=</span>C/A2256A78
+<span class="o">[</span>...]
+</code></pre></div></div>
+
+<p>Checkpoints every 11 seconds? That’s way too frequent. PostgreSQL was basically spending all its time doing housekeeping instead of actual work.</p>
+
+<h3 id="the-solution">The Solution</h3>
+
+<p>The fix was straightforward — increase the <code class="language-plaintext highlighter-rouge">max_wal_size</code> parameter:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">ALTER</span> <span class="k">SYSTEM</span> <span class="k">SET</span> <span class="n">max_wal_size</span> <span class="o">=</span> <span class="s1">'8GB'</span><span class="p">;</span>
+<span class="k">SELECT</span> <span class="n">pg_reload_conf</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>This gave PostgreSQL more breathing room before triggering checkpoints. The frequency dropped dramatically, and performance improved immediately.</p>
+
+<p>But we weren’t done yet. Looking at resource utilization, we noticed something interesting: CPU cores were maxed out on the receiving server, but the workload on the sending server was pretty low. When we checked <code class="language-plaintext highlighter-rouge">max_sync_workers_per_subscription</code>, it was set to just 2, explaining why we were only using two CPU cores for replication work.</p>
+
+<p>To squeeze out more throughput, we bumped up the sync workers on the receiving node:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">ALTER</span> <span class="k">SYSTEM</span> <span class="k">SET</span> <span class="n">max_sync_workers_per_subscription</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span>
+<span class="k">SELECT</span> <span class="n">pg_reload_conf</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>This was previously set to 2, so we quadrupled the parallelism. More workers should mean faster replication, right? Well, not so fast…</p>
+
+<h2 id="war-story-2-the-replication-slot-shortage">War Story #2: The Replication Slot Shortage</h2>
+
+<h3 id="the-problem-1">The Problem</h3>
+
+<p>After increasing the sync workers, we started seeing a different set of errors on the <strong>sending</strong> node:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>...]
+2025-11-11 17:52:33 UTC <span class="o">[</span>358108] postgres@[redacted] STATEMENT:  CREATE_REPLICATION_SLOT <span class="s2">"pg_21465_sync_18014_7571499740820591239"</span> LOGICAL pgoutput USE_SNAPSHOT
+2025-11-11 17:52:33 UTC <span class="o">[</span>358109] postgres@[redacted] ERROR:  replication slot <span class="s2">"pg_21465_sync_18449_7571499740820591239"</span> does not exist
+2025-11-11 17:52:33 UTC <span class="o">[</span>358109] postgres@[redacted] STATEMENT:  DROP_REPLICATION_SLOT pg_21465_sync_18449_7571499740820591239 WAIT
+2025-11-11 17:52:33 UTC <span class="o">[</span>358109] postgres@[redacted] ERROR:  all replication slots are <span class="k">in </span>use
+2025-11-11 17:52:33 UTC <span class="o">[</span>358109] postgres@[redacted] HINT:  Free one or increase max_replication_slots.
+2025-11-11 17:52:33 UTC <span class="o">[</span>358109] postgres@[redacted] STATEMENT:  CREATE_REPLICATION_SLOT <span class="s2">"pg_21465_sync_18449_7571499740820591239"</span> LOGICAL pgoutput USE_SNAPSHOT
+<span class="o">[</span>...]
+</code></pre></div></div>
+
+<p>The pattern repeated over and over. PostgreSQL was trying to create replication slots but kept hitting the limit.</p>
+
+<h3 id="the-root-cause">The Root Cause</h3>
+
+<p>After some head-scratching, we figured out the math:</p>
+
+<ul>
+  <li>The sending server had <strong>4 replication slots</strong> total</li>
+  <li>PostgreSQL reserves <strong>1 slot</strong> internally</li>
+  <li>That left us with <strong>3 available slots</strong></li>
+  <li>But we had configured <strong>8 sync workers</strong> on the receiving end</li>
+</ul>
+
+<p>Each sync worker needs its own replication slot on the sender. 8 workers, 3 slots. The math doesn’t work.</p>
+
+<h3 id="the-solution-1">The Solution</h3>
+
+<p>We had two options:</p>
+
+<p><strong>Option 1: Dial back the sync workers</strong> (what we did):</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">ALTER</span> <span class="k">SYSTEM</span> <span class="k">SET</span> <span class="n">max_sync_workers_per_subscription</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="k">SELECT</span> <span class="n">pg_reload_conf</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>This immediately fixed the slot shortage since we now had exactly the right number of workers for available slots.</p>
+
+<p><strong>Option 2: Increase replication slots on the sender</strong> (requires restart):</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">ALTER</span> <span class="k">SYSTEM</span> <span class="k">SET</span> <span class="n">max_replication_slots</span> <span class="o">=</span> <span class="mi">32</span><span class="p">;</span>   <span class="c1">-- pick a number that fits your needs</span>
+<span class="k">ALTER</span> <span class="k">SYSTEM</span> <span class="k">SET</span> <span class="n">max_wal_senders</span> <span class="o">=</span> <span class="mi">32</span><span class="p">;</span>         <span class="c1">-- keep this in step with parallelism</span>
+</code></pre></div></div>
+
+<p>The catch? These parameters require a full PostgreSQL restart to take effect. In our case, that was off the table, but if you have the flexibility, this gives you much more headroom for scaling.</p>
+
+<h2 id="the-lessons">The Lessons</h2>
+
+<ol>
+  <li><strong>WAL checkpoint frequency matters</strong>: If you’re seeing frequent checkpoints, bump up <code class="language-plaintext highlighter-rouge">max_wal_size</code>. Your disks (and performance) will thank you.</li>
+  <li><strong>Replication slots are finite</strong>: Every sync worker needs a replication slot on the sender. Do the math before cranking up parallelism.</li>
+  <li><strong>Some parameters need restarts</strong>: <code class="language-plaintext highlighter-rouge">max_replication_slots</code> and <code class="language-plaintext highlighter-rouge">max_wal_senders</code> are restart-required parameters. Plan accordingly.</li>
+  <li><strong>Monitor your logs</strong>: Both nodes will tell you what’s wrong, but sometimes the error shows up on the opposite end from where you’d expect.</li>
+</ol>
+
+<h2 id="the-takeaway">The Takeaway</h2>
+
+<p>PostgreSQL logical replication is powerful, but it has limits. Understanding the relationship between sync workers, replication slots, and WAL management is crucial when you’re trying to scale throughput.</p>]]></content><author><name></name></author><category term="postgresql" /><category term="database" /><category term="consulting" /><category term="replication" /><category term="troubleshooting" /><summary type="html"><![CDATA[I recently wrapped up a consulting gig helping a client troubleshoot some gnarly PostgreSQL replication issues. What started as a “quick performance tune” turned into a deep dive through WAL checkpoints, replication slots, and the delicate dance of logical replication workers.]]></summary></entry><entry><title type="html">DSLF – a rust hacking, cheaper hosting, and two HTTP codes I didn’t know about</title><link href="https://vpetersson.com/2025/07/11/dslf-a-rust-hacking-cheaper-hosting-and-two-http-codes-i-didnt-know-about.html" rel="alternate" type="text/html" title="DSLF – a rust hacking, cheaper hosting, and two HTTP codes I didn’t know about" /><published>2025-07-11T00:00:00+00:00</published><updated>2025-07-11T00:00:00+00:00</updated><id>https://vpetersson.com/2025/07/11/dslf-a-rust-hacking-cheaper-hosting-and-two-http-codes-i-didnt-know-about</id><content type="html" xml:base="https://vpetersson.com/2025/07/11/dslf-a-rust-hacking-cheaper-hosting-and-two-http-codes-i-didnt-know-about.html"><![CDATA[<p>I hacked together <a href="https://github.com/vpetersson/dslf">DSLF</a> today because paying a monthly fee for a plain 301 felt silly.
+It’s a tiny Rust service that reads a CSV and spits out redirects—nothing more.</p>
+
+<p>In the process I learned that HTTP has two “new” redirect codes that slipped past me years ago.</p>
+
+<h2 id="four-ways-to-say-go-over-there">Four ways to say “go over there”</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Old code</th>
+      <th>New code</th>
+      <th>Keeps the HTTP method?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>301</td>
+      <td>308</td>
+      <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+      <td>302</td>
+      <td>307</td>
+      <td><strong>Yes</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>301</em> and <em>302</em> can turn a POST into a GET.
+<em>307</em> and <em>308</em> guarantee the original method sticks. Neat.</p>
+
+<p>DSLF defaults to the classic pair, but you can switch to the modern ones with a single flag.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./dslf <span class="nt">--modern</span>
+</code></pre></div></div>
+
+<h2 id="quick-start">Quick start</h2>
+
+<ol>
+  <li>
+    <p>Drop your links in <code class="language-plaintext highlighter-rouge">redirects.csv</code>:</p>
+
+    <pre><code class="language-csv">url,target,status
+/gh,https://github.com/vpetersson,301
+/blog,https://vpetersson.com,301
+</code></pre>
+  </li>
+  <li>
+    <p>Run the binary:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./dslf
+</code></pre></div>    </div>
+
+    <p>It listens on <code class="language-plaintext highlighter-rouge">0.0.0.0:3000</code>.</p>
+  </li>
+  <li>
+    <p>Or run it in Docker:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-p</span> 3000:3000 <span class="se">\</span>
+  <span class="nt">-v</span> <span class="si">$(</span><span class="nb">pwd</span><span class="si">)</span>/redirects.csv:/redirects.csv <span class="se">\</span>
+  vpetersson/dslf <span class="nt">--modern</span>
+</code></pre></div>    </div>
+
+    <p>(<code class="language-plaintext highlighter-rouge">dslf</code> is already the entrypoint, so just pass the flag.)</p>
+  </li>
+</ol>
+
+<h2 id="cheap-hosting-on-flyio">Cheap hosting on Fly.io</h2>
+
+<p>Fly’s smallest instance plus their free credit is often enough for a personal short-link service.
+Point <code class="language-plaintext highlighter-rouge">fly.toml</code> at <code class="language-plaintext highlighter-rouge">vpetersson/dslf</code>, hit <code class="language-plaintext highlighter-rouge">fly deploy</code>, and you’re live for pennies—or free if your traffic is tiny.</p>
+
+<h2 id="what-i-havent-done-yet">What I haven’t done yet</h2>
+
+<ul>
+  <li><strong>Load testing</strong> – numbers will come later once I point k6 at it.</li>
+  <li><strong>Click counts</strong> – might add an optional flag, but only if it stays lightweight.</li>
+</ul>
+
+<hr />
+
+<p>Grab the code:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/vpetersson/dslf
+</code></pre></div></div>
+
+<p>If you need a no-nonsense, self-hosted link shortener—and want to use those shiny 307/308 codes—give DSLF a spin and tell me what you think.</p>]]></content><author><name></name></author><category term="rust" /><category term="http" /><category term="fly.io" /><category term="open-source" /><summary type="html"><![CDATA[I hacked together DSLF today because paying a monthly fee for a plain 301 felt silly. It’s a tiny Rust service that reads a CSV and spits out redirects—nothing more.]]></summary></entry><entry><title type="html">Codex manages my podcast</title><link href="https://vpetersson.com/2025/07/02/codex-manages-my-podcast.html" rel="alternate" type="text/html" title="Codex manages my podcast" /><published>2025-07-02T00:00:00+00:00</published><updated>2025-07-02T00:00:00+00:00</updated><id>https://vpetersson.com/2025/07/02/codex-manages-my-podcast</id><content type="html" xml:base="https://vpetersson.com/2025/07/02/codex-manages-my-podcast.html"><![CDATA[<p>When I started my podcast a year and a half ago, I looked at the tools available. For those not familiar, for many platforms (like Amazon Music and Apple Podcasts) you need to provide an RSS feed with your podcast. Now, there is no shortage of platforms that will gladly sell you this. But essentially, what you’re paying for is a thin layer on top of S3 with FFmpeg and some duct tape.</p>
+
+<p>Long story short, I didn’t want to pay for that, so I wrote and open sourced <a href="https://github.com/vpetersson/podcast-rss-generator">podcast-rss-generator</a>. It’s a small script that takes a YAML file and turns it into an RSS feed. This can then be copied to your block storage of choice (like S3 or R2).
+It can even run as a GitHub Action.</p>
+
+<p>Over the last year I’ve tweaked it and made it pretty complete against the RSS standard.</p>
+
+<p>For the last few months, I’ve had Cursor populate this for me based on the transcript. That was fine, but I wanted to automate it further.</p>
+
+<p>Enter <a href="https://openai.com/blog/openai-codex">OpenAI Codex</a>. With Codex I can take this a step further. By just adding a simple <code class="language-plaintext highlighter-rouge">agents.md</code> that tells Codex how to verify the file, I can now just tell it to add a new episode. Give it the title and description. Everything else it will infer from previous episodes. It then spits out a pull request that I can just press merge on.</p>
+
+<p>So here’s the takeaway: machine-readable and writable toolkits, like podcast-rss-generator, will become increasingly useful and important. These tools slot perfectly into the new wave of AI agents that will automate our lives.</p>
+
+<p>Oh and PS, this blog post was written on my phone in Notes.app, and then deployed to my website using, yep you guessed it, Codex.</p>]]></content><author><name></name></author><category term="podcast" /><category term="automation" /><summary type="html"><![CDATA[When I started my podcast a year and a half ago, I looked at the tools available. For those not familiar, for many platforms (like Amazon Music and Apple Podcasts) you need to provide an RSS feed with your podcast. Now, there is no shortage of platforms that will gladly sell you this. But essentially, what you’re paying for is a thin layer on top of S3 with FFmpeg and some duct tape.]]></summary></entry><entry><title type="html">All Roads Lead to DSLRs</title><link href="https://vpetersson.com/2025/06/18/all-roads-lead-to-dslrs.html" rel="alternate" type="text/html" title="All Roads Lead to DSLRs" /><published>2025-06-18T00:00:00+00:00</published><updated>2025-06-18T00:00:00+00:00</updated><id>https://vpetersson.com/2025/06/18/all-roads-lead-to-dslrs</id><content type="html" xml:base="https://vpetersson.com/2025/06/18/all-roads-lead-to-dslrs.html"><![CDATA[<p>I’ve been running my video podcast <a href="https://vpetersson.com/podcast/">Nerding out with Viktor</a> for about a year and a half now, with just under 50 episodes published.</p>
+
+<p>When I <a href="https://vpetersson.com/2024/06/20/on-launching-a-video-podcast-in-2024.html">started out</a>, I tried to keep things simple and cheap. I used my Logitech Brio 4K webcam - a webcam that I picked up during COVID. Not long after, I upgraded the audio by adding a dedicated microphone, the Audio-Technica ATR2100x-USB. It did the job early on, but the sound still wasn’t quite crisp. Eventually, I gave in and bought the Shure MV7 (USB), which is the go-to mic for many podcasters. That one stuck and I’ve had no audio issues since.</p>
+
+<p><img src="/assets/logitech-brio.webp" alt="Logitech Brio 4K webcam" /></p>
+
+<h2 id="attempt-1-iphone">Attempt 1: iPhone</h2>
+
+<p>Video was more of a headache. The Brio was okay for video calls, but the color balance was always a bit off, and Riverside <a href="https://support.riverside.fm/hc/en-us/articles/9684909831325-Camera-Logitech-Brio-Logitech-4K-Pro">didn’t support 4K recording using it</a>. I figured I cracked it when Apple released Continuity Camera, which let me use my iPhone as a webcam. It looked great…until it didn’t. Twice it dropped a bunch of frames during recordings, and once it randomly shut down (probably overheated). This was on top of the fact that my computer just refused to connect to it occasionally. After a few episodes with sub-bar quality, I gave up and started looking for alternatives.</p>
+
+<p><img src="/assets/continuity-camera.webp" alt="Continuity Camera in action" /></p>
+
+<p>By now, I’d also had a bunch of guests on the show. The difference between setups is clear as day. People using DSLRs just look better. Even the best webcams can’t compete to even an entry-level DSLR when it comes to sharpness and depth of field. Here are some examples of people I’ve interviewed who have great DSLR setups:</p>
+
+<ul>
+  <li><a href="https://vpetersson.com/podcast/S02E11.html">The Systems Behind Managing High-Performing Remote Teams with Jon Seager</a></li>
+  <li><a href="https://vpetersson.com/podcast/S01E13.html">Exploring the Depths of Linux and Open Source Innovation with Mark Shuttleworth</a></li>
+  <li><a href="https://vpetersson.com/podcast/S01E02.html">Nerding out about Prometheus and Observability with Julius Volz</a></li>
+</ul>
+
+<h2 id="attempt-2-gopro">Attempt 2: GoPro</h2>
+
+<p>At this point, I thought I’d found a clever workaround: a GoPro Hero 13. On paper, it’s a 4K camera packed with features, and I could use it for events too. So I bought one. That’s when the trouble started.</p>
+
+<p><img src="/assets/go-pro-hero-13.webp" alt="GoPro Hero 13" /></p>
+
+<p>In theory, you can connect a GoPro via USB and use it as a webcam. <strong>In theory.</strong> The <a href="https://apps.apple.com/gb/app/gopro-webcam/id6477835262?">reviews</a> on the App Store say otherwise. I didn’t realize that until after I got it. Technically speaking, I think it completely broke as webcam when Apple started to put more restrictions on webcams and GoPro simply didn’t want to play ball. Apparently you can get it to work by <a href="https://discussions.apple.com/thread/255256244?sortBy=rank">turning on legacy camera mode</a>, but I wasn’t really interested in dropping the security of macOS just because GoPro wont fix their software/firmware.</p>
+
+<p>But I was already committed, so I tried a workaround: buying the Media Mod (which gives you HDMI output) and hooking it up to an HDMI capture card.</p>
+
+<p>Technically, it worked. But the video looked terrible. It was mirrored (easy fix), but the image was blurry, distorted, and had that GoPro fisheye vibe. Not exactly what you want for a podcast. I get it, the GoPro is made for people jumping out of planes, not people sitting in front of a bookshelf. Still, for something that cost close to £500 with all the add-ons, I expected better.</p>
+
+<p>I returned it and went back to the drawing board.</p>
+
+<h2 id="attempt-3-elgato-facecam-pro">Attempt 3: Elgato Facecam Pro</h2>
+
+<p>Next up was the Elgato Facecam Pro. It looked promising and had solid reviews. I placed the order. And waited. Two weeks later, it still hadn’t shipped out. So I cancelled it. Maybe it’s great. I’ll never know.</p>
+
+<h2 id="attempt-4-sony-zv-e10">Attempt 4: Sony ZV-E10</h2>
+
+<p>Eventually, I gave in and bought a dedicated camera. I went with the Sony ZV-E10—technically a mirrorless camera rather than a DSLR. And wow. What a difference.</p>
+
+<p><img src="/assets/sony-zv-e10.webp" alt="Sony ZV-E10" /></p>
+
+<p>There’s no comparison. The video quality is on a completely different level. I picked it because ChatGPT recommended it (yes, really), and also because it was discounted at the time. It might be getting a bit old, but it’s still a fantastic camera.</p>
+
+<p>It’s not cheap. You’ll spend more than you would on any webcam or GoPro, but you’re getting a proper camera—technically mirrorless, but in the same league as a DSLR—not just a webcam. You can grab the kit with the lens for £699 directly from Sony. I opted to buy the body only and paired it with the Sigma 16mm f/1.4 DC DN Contemporary lens. That pushed the price up a bit, but I think it was worth it.</p>
+
+<p>What surprised me the most was how easy it was to get going. I figured I’d need an HDMI capture card, but plugging it in via USB just worked. macOS detected it right away - no drivers, no fuss.</p>
+
+<p><strong>Update:</strong> I can’t belive it took me this long to figure it out but if you have a “Mark I” (i.e. first iteration) of the ZV-E10, it will only do 720p over USB. If you want 4k, you need to use a HDMI capturing card. It took me several months to realize this, as I was convinced it was a limitation in Riverside (which I use for podcast recordings). Only when I tested this hypothesis did I realize that the limitation was on my end.</p>
+
+<h2 id="the-takeaway">The takeaway</h2>
+
+<p>If you care about image quality, all roads really do lead to a DSLR – or at least a mirrorless camera. Webcams just can’t compete, no matter the price. There are some decent ones out there, but they all come with compromises. Lenses are big (and heavy) for a reason. You can’t fake physics in software. At least not yet.</p>
+
+<p>Don’t get me wrong - if all you just want something that looks OK on a video call, a webcam is sufficient. But if you want to have something that really comes across as crisp and professional in 4K, you’ll end up with a DSLR or a mirrorless camera.</p>]]></content><author><name></name></author><category term="podcast" /><category term="video" /><category term="equipment" /><summary type="html"><![CDATA[I’ve been running my video podcast Nerding out with Viktor for about a year and a half now, with just under 50 episodes published.]]></summary></entry><entry><title type="html">From Gateway to Dongle: Lessons from My Home Assistant Overhaul</title><link href="https://vpetersson.com/2025/06/07/home-assistant-revamp.html" rel="alternate" type="text/html" title="From Gateway to Dongle: Lessons from My Home Assistant Overhaul" /><published>2025-06-07T00:00:00+00:00</published><updated>2025-06-07T00:00:00+00:00</updated><id>https://vpetersson.com/2025/06/07/home-assistant-revamp</id><content type="html" xml:base="https://vpetersson.com/2025/06/07/home-assistant-revamp.html"><![CDATA[<p>I’ve previously written about my experiences with Home Assistant <a href="https://vpetersson.com/2020/05/25/homeassistant-ikea-tradfri-flux-sensors.html">here</a> and <a href="https://vpetersson.com/2025/01/22/how-i-use-home-assistant-in-2025.html">here</a>. This article follows up on those posts and describes my current setup.</p>
+
+<p>Today, my stack includes Home Assistant (HA), Zigbee2MQTT (Z2M) and the Mosquitto MQTT server, all running in Docker with Docker Compose on a VM.</p>
+
+<p>Here are some things I’ve learned, which would might save others time and effort.</p>
+
+<hr />
+
+<h2 id="the-best-ui-is-no-ui">The best UI is no UI</h2>
+
+<p>I wrote this in my first HA article years ago, but it still holds true: ideally, you never touch a button or, worse, the HA app. I only reach for a light switch or HA when something unusual happens. Everything else is driven by motion sensors or time-based automations.</p>
+
+<h2 id="never-cut-power-to-zigbee-lights">Never cut power to Zigbee lights</h2>
+
+<p>Zigbee is a mesh network. Turning off one or more nodes at the wall disrupts the mesh, and it can take a while to rebuild. Use Zigbee-based wall switches instead, especially if you live with other people.</p>
+
+<h2 id="use-groups-not-individual-devices">Use groups, not individual devices</h2>
+
+<p>If you run a Zigbee adapter, group your lights in Z2M. This cuts network chatter and speeds up actions.</p>
+
+<h2 id="push-actions-as-far-down-the-stack-as-possible">Push actions as far down the stack as possible</h2>
+
+<p>If something can be handled in Z2M it will be faster and more reliable than doing it in HA. Latency matters: a delay of a few hundred milliseconds on a motion sensor is the difference between a seamless experience and wondering if something is broken. Sometimes you must move logic up to HA (for example, different actions by time of day or day of week), but keep simple, binary triggers in Z2M whenever you can.</p>
+
+<h2 id="version-control-your-configuration">Version-control your configuration</h2>
+
+<p>If you’re “vibe-coding” your config, put the entire thing under <code class="language-plaintext highlighter-rouge">git</code>. Gen-AI tools love to invent syntax and spit out invalid YAML. I added two Git hooks to guard against this:</p>
+
+<ol>
+  <li>Lint the YAML to catch obvious errors.</li>
+  <li>Validate the config with HA to catch subtler ones.</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="c"># Get list of staged YAML files</span>
+<span class="nv">STAGED_YAML_FILES</span><span class="o">=</span><span class="si">$(</span>git diff <span class="nt">--cached</span> <span class="nt">--name-only</span> <span class="nt">--diff-filter</span><span class="o">=</span>ACM | <span class="nb">grep</span> <span class="nt">-E</span> <span class="s1">'\.ya?ml$'</span><span class="si">)</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="nt">-n</span> <span class="s2">"</span><span class="nv">$STAGED_YAML_FILES</span><span class="s2">"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+    </span><span class="nb">echo</span> <span class="s2">"Running yamllint on staged YAML files..."</span>
+
+    <span class="c"># Run yamllint on each staged YAML file</span>
+    <span class="k">for </span>file <span class="k">in</span> <span class="nv">$STAGED_YAML_FILES</span><span class="p">;</span> <span class="k">do</span>
+        <span class="c"># Let's try to autofix first</span>
+        docker run <span class="nt">-v</span> <span class="s2">"</span><span class="si">$(</span><span class="nb">pwd</span><span class="si">)</span><span class="s2">:/project"</span> ghcr.io/google/yamlfmt:latest <span class="s2">"</span><span class="nv">$file</span><span class="s2">"</span>
+
+        <span class="k">if</span> <span class="o">!</span> yamllint <span class="s2">"</span><span class="nv">$file</span><span class="s2">"</span><span class="p">;</span> <span class="k">then
+            </span><span class="nb">echo</span> <span class="s2">"❌ yamllint failed on </span><span class="nv">$file</span><span class="s2">"</span>
+            <span class="nb">exit </span>1
+        <span class="k">fi
+    done
+
+    </span><span class="nb">echo</span> <span class="s2">"✅ All YAML files passed yamllint"</span>
+<span class="k">fi</span>
+
+<span class="c"># Run Home Assistant configuration check</span>
+docker <span class="nb">exec </span>home-assistant hass <span class="nt">--script</span> check_config <span class="nt">-c</span> /config
+
+<span class="c"># If either check fails, prevent the commit</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> <span class="nt">-ne</span> 0 <span class="o">]</span><span class="p">;</span> <span class="k">then
+    </span><span class="nb">echo</span> <span class="s2">"Pre-commit checks failed. Please fix the issues before committing."</span>
+    <span class="nb">exit </span>1
+<span class="k">fi</span>
+</code></pre></div></div>
+
+<p>If both hooks pass, most easy mistakes are eliminated.</p>
+
+<p>I still use the UI for some automations and checks – it’s not either vibe-coding or the UI; there’s room for both.</p>
+
+<h2 id="choose-your-path-wisely">Choose your path wisely</h2>
+
+<p>If you want full control and don’t mind a steep learning curve, skip gateways and use a Zigbee dongle. You’ll gain flexibility at the cost of complexity; even a simple motion-controlled light takes real effort.</p>
+
+<p>The easy route is a gateway such as IKEA’s. It works out of the box and is user-friendly, but locks you to one vendor. If you don’t have grandiose plans, this path serves well. I switched only because adaptive lighting kept nagging me and I wanted smart radiator controllers, but the migration was anything but painless.</p>
+
+<p>If you go down the HA+Z2A appaorach, here’s my <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> file that I use to setup the stack:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">services</span><span class="pi">:</span>
+  <span class="na">homeassistant</span><span class="pi">:</span>
+    <span class="na">container_name</span><span class="pi">:</span> <span class="s">home-assistant</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">homeassistant/home-assistant:stable</span>
+    <span class="na">pull_policy</span><span class="pi">:</span> <span class="s">always</span>
+    <span class="na">network_mode</span><span class="pi">:</span> <span class="s">host</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">/usr/local/homeassistant:/config</span>
+      <span class="pi">-</span> <span class="s">/etc/localtime:/etc/localtime:ro</span>
+    <span class="na">restart</span><span class="pi">:</span> <span class="s">always</span>
+    <span class="na">logging</span><span class="pi">:</span>
+      <span class="na">driver</span><span class="pi">:</span> <span class="s">journald</span>
+
+  <span class="na">zigbee2mqtt</span><span class="pi">:</span>
+    <span class="na">container_name</span><span class="pi">:</span> <span class="s">zigbee2mqtt</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">koenkk/zigbee2mqtt</span>
+    <span class="na">pull_policy</span><span class="pi">:</span> <span class="s">always</span>
+    <span class="na">restart</span><span class="pi">:</span> <span class="s">unless-stopped</span>
+    <span class="na">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">127.0.0.1:8080:8080"</span>
+    <span class="na">devices</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">/dev/serial/by-id/[...]:/dev/ttyACM0</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">/usr/local/zigbee2mqtt:/app/data</span>
+      <span class="pi">-</span> <span class="s">/run/udev:/run/udev:ro</span>
+      <span class="pi">-</span> <span class="s">/etc/localtime:/etc/localtime:ro</span>
+    <span class="na">environment</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">TZ=Europe/London</span>
+
+  <span class="na">mqtt</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">eclipse-mosquitto:2</span>
+    <span class="na">container_name</span><span class="pi">:</span> <span class="s">mqtt</span>
+    <span class="na">restart</span><span class="pi">:</span> <span class="s">unless-stopped</span>
+    <span class="na">pull_policy</span><span class="pi">:</span> <span class="s">always</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">/usr/local/mosquitto:/mosquitto</span>
+      <span class="pi">-</span> <span class="s">/etc/localtime:/etc/localtime:ro</span>
+    <span class="na">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">127.0.0.1:1883:1883"</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">127.0.0.1:9001:9001"</span>
+    <span class="na">command</span><span class="pi">:</span> <span class="s2">"</span><span class="s">mosquitto</span><span class="nv"> </span><span class="s">-c</span><span class="nv"> </span><span class="s">/mosquitto-no-auth.conf"</span>
+</code></pre></div></div>
+
+<p>This is then exposed using Nginx and a <a href="https://vpetersson.com/2022/12/23/securing-services-with-tailscale.html">Tailscale issued TLS certificate</a>.</p>
+
+<h2 id="adaptive-lighting-is-the-killer-feature">Adaptive lighting is the killer feature</h2>
+
+<p>HA can do a lot, yet adaptive lighting is the biggest quality-of-life boost for me. Every light in my house is Zigbee, most are on motion sensors or timers, and all adjust color and brightness automatically. If you get up at 3 a.m., the bathroom lights come on in “night mode” (triggerd by an automation) – minimum brightness, warm tint. Going back to static bulbs or flipping switches dozens of times a day would be a major step backward.</p>
+
+<hr />
+
+<p>That’s my current setup and the hard-won lessons behind it. I hope they save you a few headaches on your own Home Assistant journey.</p>]]></content><author><name></name></author><category term="homeassisstant" /><category term="iot" /><summary type="html"><![CDATA[I’ve previously written about my experiences with Home Assistant here and here. This article follows up on those posts and describes my current setup.]]></summary></entry><entry><title type="html">Sonar Is Back: A Fresh Take on BLE Device Counting</title><link href="https://vpetersson.com/projects/bluetooth/2025/05/07/sonar-is-back.html" rel="alternate" type="text/html" title="Sonar Is Back: A Fresh Take on BLE Device Counting" /><published>2025-05-07T12:00:00+00:00</published><updated>2025-05-07T12:00:00+00:00</updated><id>https://vpetersson.com/projects/bluetooth/2025/05/07/sonar-is-back</id><content type="html" xml:base="https://vpetersson.com/projects/bluetooth/2025/05/07/sonar-is-back.html"><![CDATA[<p>I’m excited to share that I’ve just given Sonar—a FastAPI-based BLE device counter I built years ago—a full overhaul and relaunched it as an open-source project on GitHub: <a href="https://github.com/viktopia/sonar">https://github.com/viktopia/sonar</a></p>
+
+<h3 id="why-sonar">Why Sonar?</h3>
+
+<p>When I first created Sonar, the goal was simple: track Bluetooth Low Energy devices nearby to estimate foot traffic in a space without specialized hardware. Over time, the codebase drifted, dependencies aged, and the project paused. Now, with modern Python tooling and container best practices, Sonar is leaner, easier to deploy, and more powerful than ever.</p>
+
+<h3 id="whats-new">What’s New</h3>
+
+<ul>
+  <li>
+    <p><strong>Modern service architecture</strong>
+Sonar has been fully migrated from its original Django codebase to a lean FastAPI service, with the old <code class="language-plaintext highlighter-rouge">manage.py</code> and Django apps removed and a new <code class="language-plaintext highlighter-rouge">app/main.py</code> powering all BLE scanning logic.</p>
+  </li>
+  <li>
+    <p><strong>Improved code quality</strong>
+We’ve adopted Ruff for linting and import sorting, and fortified the test suite with Pytest (including async tests and coverage checks). The new <code class="language-plaintext highlighter-rouge">requirements-test.txt</code> lists <code class="language-plaintext highlighter-rouge">pytest</code>, <code class="language-plaintext highlighter-rouge">pytest-asyncio</code>, <code class="language-plaintext highlighter-rouge">pytest-cov</code>, and <code class="language-plaintext highlighter-rouge">ruff</code>, ensuring consistent style and at least 80 percent coverage.</p>
+  </li>
+  <li>
+    <p><strong>Docker-first deployments</strong>
+Sonar now ships with a production <code class="language-plaintext highlighter-rouge">Dockerfile</code> for building a container image and a simplified <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> that sets up the BLE scanner with persistent storage and hardware access.</p>
+  </li>
+  <li>
+    <p><strong>Simplified API</strong>
+A new set of REST endpoints in <code class="language-plaintext highlighter-rouge">app/api/endpoints.py</code> provides comprehensive device monitoring capabilities. The <code class="language-plaintext highlighter-rouge">/latest</code> endpoint returns current scan results and historical statistics, <code class="language-plaintext highlighter-rouge">/time-series</code> offers detailed 24-hour data with customizable intervals, and <code class="language-plaintext highlighter-rouge">/health</code> provides system status checks. All endpoints return well-structured JSON responses with robust error handling.</p>
+  </li>
+  <li>
+    <p><strong>Removed legacy code</strong>
+The old Django analytics application, static assets (like jQuery bundles), and deprecated Balena/Raspbian scripts have been stripped away, leaving a focused, modern codebase.</p>
+  </li>
+</ul>
+
+<h3 id="getting-started">Getting Started</h3>
+
+<ol>
+  <li><strong>Clone the repo</strong></li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/viktopia/sonar.git
+<span class="nb">cd </span>sonar
+</code></pre></div></div>
+
+<ol>
+  <li><strong>Run with Docker Compose (recommended)</strong></li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose up <span class="nt">-d</span> <span class="nt">--build</span>
+</code></pre></div></div>
+
+<ol>
+  <li><strong>Verify it’s working</strong></li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://localhost:8000/health
+<span class="c"># Expect: { "status": "healthy", "message": "System requirements met" }</span>
+</code></pre></div></div>
+
+<p>While Sonar is primarily designed for Raspberry Pi, it should be compatible with most other boards and devices that have Bluez-compatible Bluetooth hardware. Feel free to dive into the API endpoints, inspect the source, and contribute—issues and pull requests are very welcome. Happy scanning!</p>]]></content><author><name></name></author><category term="projects" /><category term="bluetooth" /><category term="sonar" /><category term="bluetooth" /><category term="ble" /><category term="fastapi" /><category term="python" /><category term="raspberry-pi" /><summary type="html"><![CDATA[I’m excited to share that I’ve just given Sonar—a FastAPI-based BLE device counter I built years ago—a full overhaul and relaunched it as an open-source project on GitHub: https://github.com/viktopia/sonar]]></summary></entry><entry><title type="html">Saving My Wrists - A 20-Year Quest for the Perfect Keyboard Setup</title><link href="https://vpetersson.com/2025/04/18/saving-my-wrists-a-20-year-quest-for-the-perfect-keyboard-setup.html" rel="alternate" type="text/html" title="Saving My Wrists - A 20-Year Quest for the Perfect Keyboard Setup" /><published>2025-04-18T00:52:44+00:00</published><updated>2025-04-18T00:52:44+00:00</updated><id>https://vpetersson.com/2025/04/18/saving-my-wrists-a-20-year-quest-for-the-perfect-keyboard-setup</id><content type="html" xml:base="https://vpetersson.com/2025/04/18/saving-my-wrists-a-20-year-quest-for-the-perfect-keyboard-setup.html"><![CDATA[<p>I’ve been using split keyboards for about 20 years now, a journey sparked by the all-too-common wrist pain that plagues many a nerd hunched over a standard keyboard. This quest for ergonomic nirvana led me down a rabbit hole of different keyboards, culminating in my current mechanical setup, and even prompted me to switch my mouse to my <em>left</em> hand (more on that curious habit later). My first split keyboard was the Microsoft Natural Keyboard back in the late 90s.</p>
+
+<p><img src="/assets/dreamhack.webp" alt="Microsoft Natural Keyboard" />
+<em>Me asleep at Dreamhack (circa) ‘98 on my MS Natural Keyboard with a Jolt Cola tower in the backdrop. This was back when Dreamhack was cool, i.e. before it was taken over by gamers.</em></p>
+
+<p>When I started college (go <a href="https://www.scu.edu/">Broncos</a>!) and moved to the US, I left my split keyboard at home in favor of a shiny new PowerBook G4 (replacing my trusty old ThinkPad T20 running <a href="https://www.gentoo.org/">Gentoo</a>).</p>
+
+<p>Not long after, my wrists started acting up from typing too much on the built-in keyboard. That eventually led to a <a href="https://www.nhs.uk/conditions/ganglion/">ganglion cyst</a>. After having that treated a few times, I figured it was time to revisit the keyboard situation.</p>
+
+<p>What I really needed was a portable, split keyboard that could fit in my bag alongside my laptop. It had to be small and light. I ended up getting a Goldtouch Go.</p>
+
+<p><img src="/assets/goldtouch-go.webp" alt="Goldtouch Go Keyboard" />
+<em>The portable Goldtouch Go keyboard.</em></p>
+
+<p>This keyboard served me well. It was small and portable. But when I wrapped up college and started working more from a regular desk (instead of hopping between coffee shops and class), it was time to upgrade. I wanted something heavier that could also tilt upwards to reduce strain on my wrists. I ended up getting another Goldtouch keyboard — this time the big brother of the Go, with the incredibly catchy name SKR-4200U Mac. It was a step up and lasted me another few years. Unfortunately, the lever for locking the keyboard into position eventually snapped off, which meant the keyboard would move slightly when typing. This mechanical failure, combined with the ever-present desire for better ergonomics, pushed me towards the next evolution.</p>
+
+<p><img src="/assets/goldtouch.webp" alt="Goldtouch" />
+<em>My beaten up Goldtouch keyboard with the leaver broken.</em></p>
+
+<h2 id="enter-mechanical-keyboards">Enter mechanical keyboards</h2>
+
+<p>Every nerd worth their salt has at some point a) toyed with switching to Dvorak and b) gone down the deep rabbit hole of mechanical keyboards and switches. I’ve never seriously tried a), but I’ve definitely spent more time than I’d like to admit on b).</p>
+
+<p>There’s something magical about typing on a mechanical keyboard. Yes, it’s the clicky sound that will probably drive your coworkers insane (yay for <a href="https://vpetersson.com//remote-work/">remote work</a>!), but it’s also the tactile feedback.</p>
+
+<p>So now we’ve narrowed the keyboard selection to split keyboards that are also mechanical. Thankfully, that Venn diagram has a decent overlap once you’re deep into keyboard nerd land.</p>
+
+<p>What I ended up with was a Kinesis Freestyle Pro with Cherry MX Brown switches. I went all-in and got the extras (wrist padding and the tilt kit) to optimize the setup. I’ve had this keyboard for about five years now, and I really rate it. It’s solid. But recently, the itch to try something new came back after a few folks around me got new keyboards.</p>
+
+<p><img src="/assets/freestyle_pro.webp" alt="Kinesis Freestyle Pro" />
+<em>This is my current setup. Kinesis Frestyle Pro with a Magic Trackpad on the left (see below).</em></p>
+
+<p>I’ve heard great things about Bastard Keyboard’s <a href="https://bastardkb.com/product/charybdis-mk2-prebuilt-preorder/">Charybdis MK2</a> and splitkb’s <a href="https://splitkb.com/collections/keyboard-kits/products/halcyon-corne">Halcyon Corne</a>. Then there’s ZSA’s <a href="https://www.zsa.io/moonlander">Moonlander</a> and a bunch of other DIY kits.</p>
+
+<p>If you keep going down the keyboard rabbit hole, many roads lead to soldering your own keyboard or going ultra-minimal and using “layers” instead of having a full set of physical keys. As much as I geek out over that stuff, that’s probably where I draw the line — even if it is objectively more efficient.</p>
+
+<p>In summary, here’s the gear I’ve used over the years:</p>
+
+<ul>
+  <li>Microsoft Natural Keyboard (from the late 90s)</li>
+  <li>A split Logitech keyboard (from the early 00s)</li>
+  <li>Goldtouch Go</li>
+  <li>Goldtouch SKR-4200U Mac</li>
+  <li>Kinesis Freestyle Pro</li>
+</ul>
+
+<p>But the keyboard is only half the ergonomic equation. What about the other crucial input device?</p>
+
+<h2 id="what-about-the-mouse">What about the mouse?</h2>
+
+<p>One of the cool things about keyboards like the Charybdis is that it includes a built-in mouse (technically a trackball), which is great for reducing wrist movement. That setup is still pretty rare though.</p>
+
+<p>Generally, the best thing for ergonomics is to navigate using just the keyboard. I use <code class="language-plaintext highlighter-rouge">tmux</code> and <code class="language-plaintext highlighter-rouge">vim</code> a lot, and they rely purely on keyboard shortcuts. Tiling window managers like i3 (or <a href="https://github.com/nikitabobko/AeroSpace">Aerospace</a> for macOS) help with that too. Still, chances are you’ll end up using a mouse at some point.</p>
+
+<p>I’ve used various versions of the Magic Trackpad for years, mainly because of the smooth scrolling and gesture support in macOS.</p>
+
+<h2 id="mousing-with-the-left-hand">Mousing with the Left Hand</h2>
+
+<h3 id="an-ergonomic-experiment-that-stuck">An Ergonomic Experiment (That Stuck)</h3>
+
+<p>Despite being right-handed, I made the switch to using my mouse left-handed about a decade ago. The motivation came from reading about how practicing skilled movements with your non-dominant hand can rewire motor networks. While it took some getting used to, the habit eventually stuck.</p>
+
+<p>For example:</p>
+
+<ul>
+  <li>Six weeks of left-hand mouse training in right-handers improved speed and accuracy in both hands (<a href="https://www.nature.com/articles/s41598-021-83770-4">Schweiger 2021</a>).</li>
+  <li>Ten days of left-hand drawing strengthened links between cortical hand areas and the praxis network (<a href="https://pubmed.ncbi.nlm.nih.gov/27212059/">Philip &amp; Frey 2016</a>).</li>
+  <li>Six weeks of chopstick training with the left hand shifted control from effort-heavy prefrontal regions to more efficient premotor circuits (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8536892/">Sawamura 2021</a>).</li>
+  <li>fMRI studies show that off-hand training reorganizes a distributed motor network (<a href="https://pubmed.ncbi.nlm.nih.gov/30741701/">Jung 2019</a>).</li>
+</ul>
+
+<p>Neuroscience folks are quick to point out that this kind of neuroplasticity sharpens specific skills but doesn’t magically increase IQ or memory (<a href="https://www.brainfacts.org/thinking-sensing-and-behaving/thinking-and-awareness/2019/does-using-your-non-dominant-hand-make-you-smarter-080919">BrainFacts 2019</a>).</p>
+
+<p>I can’t say if the switch helped me beyond having smoother left-hand control, but the habit stuck.</p>
+
+<h2 id="so-what-keyboard-am-i-switching-to">So what keyboard am I switching to?</h2>
+
+<p>Honestly, I’m still undecided. My ergonomic quest continues, and what I <em>think</em> I want to try next is a dropped keyboard. I’m currently eyeing the Kinesis <a href="https://kinesis-ergo.com/shop/advantage360-signature/">Advantage 360 Signature</a> with blank keycaps and will probably provide an update shortly.</p>]]></content><author><name></name></author><category term="keyboard" /><category term="ergonomics" /><category term="mechanical-keyboard" /><category term="split-keyboard" /><category term="gear" /><category term="hardware" /><summary type="html"><![CDATA[I’ve been using split keyboards for about 20 years now, a journey sparked by the all-too-common wrist pain that plagues many a nerd hunched over a standard keyboard. This quest for ergonomic nirvana led me down a rabbit hole of different keyboards, culminating in my current mechanical setup, and even prompted me to switch my mouse to my left hand (more on that curious habit later). My first split keyboard was the Microsoft Natural Keyboard back in the late 90s.]]></summary></entry><entry><title type="html">A Decade and a Half of Remote Work</title><link href="https://vpetersson.com/remote-work/2025/04/07/a-decade-and-a-half-of-remote-work.html" rel="alternate" type="text/html" title="A Decade and a Half of Remote Work" /><published>2025-04-07T01:00:00+00:00</published><updated>2025-04-07T01:00:00+00:00</updated><id>https://vpetersson.com/remote-work/2025/04/07/a-decade-and-a-half-of-remote-work</id><content type="html" xml:base="https://vpetersson.com/remote-work/2025/04/07/a-decade-and-a-half-of-remote-work.html"><![CDATA[<p>When I wrote <a href="https://vpetersson.com/remote-work/2019/05/18/a-decade-of-remote.html">A Decade of Remote Work</a> back in 2019, I had no idea a global pandemic would soon thrust remote work into the spotlight, turning it from niche to necessity overnight. Now, as I mark 15 years of building and running remote teams, I find myself revisiting and refining many of the lessons from the past and adding new insights gathered from recent experiences. This article is for tech startup founders and remote leaders, sharing practical advice for navigating the challenges and opportunities of long-term remote work.</p>
+
+<p>In the following sections, I’ll explore how remote work has evolved, discuss the essential principles that remain constant, and share practical strategies for building and maintaining effective remote teams. From hiring practices to documentation systems, from team cohesion to personal boundaries, these insights are drawn from real-world experience managing distributed teams across multiple time zones and cultures.</p>
+
+<h2 id="remote-work-still-isnt-for-everyone">Remote Work Still Isn’t for Everyone</h2>
+
+<p>A core belief from my original article still stands true: remote work isn’t suited to everyone. It demands discipline, strong self-management skills, and the ability to thrive without constant supervision.</p>
+
+<p>Over the past five years, I’ve encountered hires who mistakenly thought remote work meant they could take care of their toddler <em>while</em> working, to save on childcare costs. Remote work isn’t different from office-based work regarding expectations. Yes, I encourage flexible schedules (feel free to handle errands midday to beat the crowds), but when you’re at your desk, you’re expected to perform effectively and reliably (without distractions!). Discipline and clear boundaries are non-negotiable. It’s not an excuse to do other things or hang out on the sofa watching Netflix all day.</p>
+
+<p>During COVID lockdowns, many young professionals who moved to large cities were suddenly confined in small apartments or stuck with roommates they barely tolerated. These circumstances highlighted that the environment matters significantly in remote productivity and mental health. It’s a stark reminder that successful remote work needs an appropriate (and dedicated) workspace, something often overlooked.</p>
+
+<p>When hiring remote workers, ensure they have the resources to invest in a proper workspace. We give our staff a budget to set up their home office. If bringing people into an office, you wouldn’t have them work on the floor: you’d give them an appropriate desk and setup. Remote is no different. But even the best equipment in the world can’t solve for the lack of self-discipline.</p>
+
+<h2 id="career-development-and-growth">Career Development and Growth</h2>
+
+<p>The transition from basic remote work principles to career development is natural, as the environment in which people work significantly impacts their professional growth. Some people argue that remote work is great for senior staff, but hinders junior team members’ abilities to grow in their careers. One could certainly argue that a lot of knowledge transfer happens by osmosis (or by the watercooler) in an in-office setup. Many things are not written down and information just lives in someone’s head. When you want to know, you walk over to Bob’s desk and ask him how <code class="language-plaintext highlighter-rouge">$RANDOM_PROCESS</code> works. If you have built a good relationship with Bob, he will probably tell you all about it. But if you haven’t, he’ll probably shoo you away saying that he’s too busy.</p>
+
+<p>Now, if we compare that to a remote organization where there is well-maintained documentation and carefully crafted SOPs (see below), you are not at the mercy of your relationship to Bob to learn about <code class="language-plaintext highlighter-rouge">$RANDOM_PROCESS</code>. You just pull up the document and glance over it. Thus I would argue that when it comes to knowledge transfer, in many ways remote is actually <em>better</em> than in-office. Assuming it’s done right.</p>
+
+<p>Now knowledge transfer and career development/growth are perhaps not exactly the same, but they are very much related. If you can read the SOPs and understand how and why decisions were made (see ADRs below), that can help you both understand the thinking and current processes of people further up in the ranks.</p>
+
+<p>When it comes to actual career development and growth, we’re living in an interesting time. At no point previously in history has information been as accessible as it is today. For anything you’d like to learn about (professionally or personally), you have a wealth of fantastic content on YouTube, or you can use ChatGPT (or the likes of) as your own personal tutor. No question is too small or dumb. Thus traditional career development and growth is kind of moot. It’s not about sending people off to pay for silly courses and get a piece of paper that you did it. It’s about actually <em>learning</em> something.</p>
+
+<p>When we do performance reviews, we of course cover career development. If a team member wants to learn something, we make a note of it and then devise a plan (largely based on publicly available content) on how to achieve that. You want to learn more about project management and planning to become a squad leader? Great, there are thousands (or probably hundreds of thousands) of hours of content readily available on YouTube for this. There is no longer <em>one</em> way to learn and develop.</p>
+
+<p>Moreover, with well-crafted SOPs and ADRs (see below), you can integrate them with an LLM such that anyone in the company can ask questions and learn both how and why things are done the way they are.</p>
+
+<h2 id="increased-regulation">Increased regulation</h2>
+
+<p>As remote work has become more mainstream, the regulatory landscape has evolved significantly. Since the initial article, a lot of things have changed on the legal side of running a remote-first company that spans numerous countries. With the rise of legislation like IR35 in the UK and AB5 in California, it’s increasingly hard to hire staff as contractors in many regions. In response to this, we’ve seen a large wave of Employer of Record (EoR) companies, like Remote.com and Deel to address this. Given that we have headcount in both UK and California, as a remote-only company hiring in any of these regions, you’re either forced to open a subsidiary in this country, or go through an EoR company. Both of which add a substantial premium.</p>
+
+<h2 id="remote-first-vs-hybrid-choose-wisely">Remote-First vs. Hybrid: Choose Wisely</h2>
+
+<p>Post-pandemic, many organizations rushed back to hybrid or fully office-based setups. I’m still firmly convinced that a fully remote model is superior to hybrid. Hybrid models create unnecessary complexity, with neither remote nor in-office employees fully satisfied.</p>
+
+<p>A remote-first approach demands intentionality, especially around documentation and asynchronous communication. It compels teams to write decisions and processes down clearly, which avoids confusion and ambiguity. After years of experimenting, I’ve found that intentional, remote-first workflows foster greater clarity and fairness across the entire organization.</p>
+
+<h2 id="documentation-make-it-a-living-resource">Documentation: Make It a Living Resource</h2>
+
+<p>Documentation is the backbone of successful remote teams. It ensures transparency and preserves institutional knowledge. However, writing things down isn’t enough. Documentation must be actively maintained and integrated into daily workflows. Otherwise, it quickly becomes outdated and irrelevant.</p>
+
+<p>We’ve integrated note-taking bots into nearly every meeting. These automatic notes are then reviewed, summarized, and stored within our documentation system, or referenced when disputes arise. Our primary tools include Google Docs, which has improved dramatically with pageless documents, and Phabricator (now Phorge) for wikis. The tools matter less than ensuring documentation is a living, constantly evolving resource.</p>
+
+<h2 id="standard-operating-procedures-sops-clarity-and-consistency">Standard Operating Procedures (SOPs): Clarity and Consistency</h2>
+
+<p>As the team grows, SOPs become critical. They detail exactly how key tasks, from onboarding new hires to software releases, are performed. However, SOPs only add value when people actually use and update them regularly. Assigning clear ownership for updates and regular reviews ensures they don’t become outdated or ignored.</p>
+
+<p>SOPs also address a different challenge: the bus factor. By having well-defined SOPs for how your organization does things, you are less at the mercy of a single stakeholder deciding to go AWOL, quit, or just go on vacation. Currently, we’re making significant investments at Screenly to develop a Company Manual that holds SOPs for as many processes as possible.</p>
+
+<h2 id="architecture-decision-records-capturing-why">Architecture Decision Records: Capturing “Why”</h2>
+
+<p>We’ve adopted <a href="https://adr.github.io/">Architecture Decision Records</a> (ADRs), stored in a dedicated GitHub repository. ADRs document significant technical decisions and the context, along with the reasoning behind them. This approach provides a clear record, enabling new team members to understand past choices without rehashing old debates. ADRs are concise and easy to maintain, serving as a crucial knowledge base for long-term technical clarity.</p>
+
+<h2 id="in-person-summits-essential-for-team-cohesion">In-Person Summits: Essential for Team Cohesion</h2>
+
+<p>Despite being remote-first, regular in-person meetups remain invaluable. Annual summits lasting five to seven days have proven ideal for us, providing enough time for meaningful work and team-building without being overly rushed.</p>
+
+<p>Why 5-7 days? Well, the first and the last day are write-offs. On the first day, people will be landing at different times, and you’re just settling into the accommodation. Other people might even be jetlagged. On the last day, people will be departing at different times, and if you have enough people, there will be a steady stream of people dropping off throughout the day. Thus if you do three days, you only really have one day of working/hanging out together (and some might even be jetlagged).</p>
+
+<p>As far as locations, we’ve done a number of countries by now. One of the biggest deciding factors (beyond good weather) has always been visa accessibility, but your mileage may vary depending on where you have team members.</p>
+
+<p>Also please note that these summits aren’t just meetings; they’re a chance to deepen connections that strengthen remote collaboration throughout the year.</p>
+
+<h2 id="health-and-well-being-promoting-a-balanced-lifestyle">Health and Well-Being: Promoting a Balanced Lifestyle</h2>
+
+<p>Promoting physical health is crucial for remote workers. We’ve set up a Strava group integrated with Slack, creating friendly competitions and encouraging team members to stay active. It’s a simple, engaging way to support fitness and healthy habits. Exercise isn’t just a productivity booster, it’s a mental health necessity, especially when working remotely.</p>
+
+<h2 id="remote-hiring-in-the-age-of-ai">Remote Hiring in the Age of AI</h2>
+
+<p>The challenges of remote hiring have evolved significantly with the rise of AI tools. Hiring remotely has become significantly more challenging today. Back when I wrote the initial article, you could relatively quickly place candidates in either a reject or interview bucket. However, today the candidates that previously could barely string a sentence together or answer even basic screening questions will use ChatGPT (or the likes of) to ace these questions.</p>
+
+<p>This makes it incredibly difficult (and time-consuming) to weed out qualified vs. unqualified candidates. Now, we’re hardly the first ones to call this out, but when you’re a remote-only company your pool of ‘spray and pray’ candidates is an order of magnitude higher than an in-office interview due to the sheer volume of possible candidates.</p>
+
+<p>We’ve since tweaked our hiring methods a fair bit, but I’d lie if I said it is a solved problem today.</p>
+
+<h2 id="saving-time-and-setting-boundaries">Saving Time and Setting Boundaries</h2>
+
+<p>Remote work’s biggest ongoing advantage remains the elimination of commuting, freeing significant time each day so that you can spend more time with your family (or for your hobbies or whatever). However, the saved time can disappear without proper boundaries. Maintaining consistent routines and setting firm limits on working hours protects against burnout. Personal routines and rituals help signal the start and end of the workday, maintaining productivity and balance.</p>
+
+<h2 id="looking-ahead">Looking Ahead</h2>
+
+<p>After fifteen years, remote work continues to evolve, but foundational principles remain constant: hire disciplined, trustworthy individuals, document extensively, foster healthy routines, and intentionally build culture. Embracing asynchronous work, investing in mentorship and onboarding, and clearly communicating remain crucial to sustained remote success.</p>
+
+<p>In conclusion, remote work isn’t easy, but it offers unmatched flexibility and freedom when done correctly. It requires continuous refinement, thoughtful adaptation, and clear, intentional practices. As remote work matures further, I’m excited to see how teams worldwide continue to adapt and thrive.</p>
+
+<p>And for the love of god, don’t force your team to use Microsoft Teams.</p>]]></content><author><name></name></author><category term="remote-work" /><category term="remote-work" /><category term="management" /><category term="leadership" /><category term="productivity" /><category term="teams" /><summary type="html"><![CDATA[When I wrote A Decade of Remote Work back in 2019, I had no idea a global pandemic would soon thrust remote work into the spotlight, turning it from niche to necessity overnight. Now, as I mark 15 years of building and running remote teams, I find myself revisiting and refining many of the lessons from the past and adding new insights gathered from recent experiences. This article is for tech startup founders and remote leaders, sharing practical advice for navigating the challenges and opportunities of long-term remote work.]]></summary></entry></feed>

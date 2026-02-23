@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E01.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/X3cgc4RF_dQ/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Nerding out about Security with Andrew Martin</video:title>
+      <video:description>I explore the world of Cloud Native security with Andy Martin from ControlPlane, diving into everything from penetration testing to zero trust architecture. From practical risk assessments to social engineering insights, we unpack what it takes to secure modern infrastructure.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=X3cgc4RF_dQ</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/X3cgc4RF_dQ</video:player_loc>
+      <video:duration>3540</video:duration>
+      <video:publication_date>2024-01-01T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E02.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/gaUopdFlgko/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Nerding out about Prometheus and Observability with Julius Volz</video:title>
+      <video:description>I explore the world of system monitoring with Julius Volz, co-founder of Prometheus and PromLabs. From technical deep dives to practical implementations, we unpack what makes Prometheus the gold standard for metrics-based monitoring and get hands-on with PromQL demonstrations.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=gaUopdFlgko</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/gaUopdFlgko</video:player_loc>
+      <video:duration>3900</video:duration>
+      <video:publication_date>2024-01-15T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E03.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/9l-U2NwbKOc/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Nerding out about Nix and NixOS with Jon Seager</video:title>
+      <video:description>I explore the powerful world of Nix with Jon Seager from Canonical, diving into how this functional programming language and package manager is revolutionizing system reproducibility. From practical applications to advanced configurations, we unpack what makes Nix a game-changer for modern development.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=9l-U2NwbKOc</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/9l-U2NwbKOc</video:player_loc>
+      <video:duration>3420</video:duration>
+      <video:publication_date>2024-01-29T13:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E04.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/ukBfOT2DaoI/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Exploring the C2PA Standard with Dom Guinard from Digimarc</video:title>
+      <video:description>I explore the revolutionary C2PA standard with Dom Guinard from Digimarc, diving into how this technology is reshaping digital content authenticity. From combating deepfakes to protecting creator rights, we unpack what this means for the future of online content in the age of generative AI.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=ukBfOT2DaoI</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/ukBfOT2DaoI</video:player_loc>
+      <video:duration>3660</video:duration>
+      <video:publication_date>2024-02-12T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E05.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/viBq51UGi40/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>A Global Mission to Connect: Unveiling Giga&apos;s Journey with Chris Fabian</video:title>
+      <video:description>I explore the ambitious mission of connecting every school to the internet with Chris Fabian, co-founder of Giga. From leveraging blockchain to machine learning, we dive into how technology can help bridge the digital divide and transform education globally.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=viBq51UGi40</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/viBq51UGi40</video:player_loc>
+      <video:duration>4200</video:duration>
+      <video:publication_date>2024-02-25T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E06.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/G4nEREpTZGc/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>The Future of 5G and 4G: A Deep Dive with Guillaume Bélanger</video:title>
+      <video:description>I explore the evolving world of telecom with Guillaume Bélanger from Canonical, diving into how open source is transforming the industry. From e-SIMs to private 5G networks, we unpack the technologies that are reshaping our connected future.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=G4nEREpTZGc</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/G4nEREpTZGc</video:player_loc>
+      <video:duration>2520</video:duration>
+      <video:publication_date>2024-03-10T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E07.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/swWDUT7NITE/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>coreboot Uncovered: BIOS Security and Vulnerabilities with Matt DeVillier and David Hendricks</video:title>
+      <video:description>I explore the world of coreboot with experts Matt DeVillier and David Hendricks, diving into how this open-source BIOS technology is reshaping firmware security. From Chromebooks to servers, we discuss the mechanics, security features, and what this means for the future of sustainable computing.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=swWDUT7NITE</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/swWDUT7NITE</video:player_loc>
+      <video:duration>4260</video:duration>
+      <video:publication_date>2024-03-24T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E08.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/341_FLnhe5s/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>The Future of Personal AI and Privacy: A Deep Dive with Kin Co-Founder Simon Westh Henriksen</video:title>
+      <video:description>I explore the intersection of AI, machine learning, and digital privacy with Simon Westh Henriksen, co-founder of Kin. We dive into data sovereignty, personal AI assistants, and how decentralization could reshape the web, all while keeping privacy at the forefront.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=341_FLnhe5s</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/341_FLnhe5s</video:player_loc>
+      <video:duration>3540</video:duration>
+      <video:publication_date>2024-04-07T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E09.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/KdgkiWdhpZ8/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Mastering OpenSSF Scorecards &amp; SBOMs with Chris Swan</video:title>
+      <video:description>I dive into the world of Software Bill of Materials (SBOMs) and OpenSSF Scorecards with Chris Swan from Atsign. We explore how these tools are transforming open source security, from dependency management to secure coding practices, and what this means for building trust in the tech industry.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=KdgkiWdhpZ8</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/KdgkiWdhpZ8</video:player_loc>
+      <video:duration>3540</video:duration>
+      <video:publication_date>2024-04-21T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E10.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/EU4I0cxYnso/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Revolutionizing Firmware Updates in Linux: A Deep Dive with Experts</video:title>
+      <video:description>I explore the world of firmware updates with Richard Hughes from Red Hat and Mario Limonciello from AMD, diving into their work on the fwupd project and Linux Vendor Firmware Service (LVFS). We discuss how they&apos;re tackling the challenges of deploying updates across millions of Linux devices and what this means for system security.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=EU4I0cxYnso</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/EU4I0cxYnso</video:player_loc>
+      <video:duration>3480</video:duration>
+      <video:publication_date>2024-05-05T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E11.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/V5nmfDoiFys/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Demystifying eBPF with Liz Rice: A Deep Dive into Kernel Programming and Security</video:title>
+      <video:description>I explore the transformative world of eBPF with Liz Rice, diving into how this technology is revolutionizing observability, security, and networking. From Netflix&apos;s pioneering work to Isovalent&apos;s innovations, we unpack what makes eBPF a game-changer for modern infrastructure.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=V5nmfDoiFys</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/V5nmfDoiFys</video:player_loc>
+      <video:duration>3060</video:duration>
+      <video:publication_date>2024-05-19T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E12.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/LI7poeZ3FxI/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Transforming Tech with Eben Upton: Exploring Raspberry Pi&apos;s Global Impact</video:title>
+      <video:description>I dive deep with Eben Upton into the Raspberry Pi journey, from its origins in computer science education to its impact on industrial applications. We explore everything from SD card durability to the future of RISC-V, and how Screenly leverages Pi for digital signage.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=LI7poeZ3FxI</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/LI7poeZ3FxI</video:player_loc>
+      <video:duration>4860</video:duration>
+      <video:publication_date>2024-06-02T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E13.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/2PBkQK5gWOY/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Exploring the Depths of Linux and Open Source Innovation with Mark Shuttleworth</video:title>
+      <video:description>I explore the evolution of Linux and open source with Mark Shuttleworth, diving into his journey from South African tech entrepreneur to Ubuntu founder. We discuss everything from the early days of digital certificates to space tourism, and how these experiences shaped his vision for Ubuntu and open source software.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=2PBkQK5gWOY</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/2PBkQK5gWOY</video:player_loc>
+      <video:duration>3840</video:duration>
+      <video:publication_date>2024-06-16T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E14.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/0tvZ6jTgt1k/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Unlocking Firmware Secrets with Christian Walter: BIOS Vulnerabilities &amp; Security Insights</video:title>
+      <video:description>I explore the intricate world of firmware and hardware security with Christian Walter from 9Elements. We dive into recent vulnerabilities like LogoFail and PixieFail, examine the complexities of BIOS security, and discuss how Trusted Platform Modules (TPMs) are reshaping hardware security.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=0tvZ6jTgt1k</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/0tvZ6jTgt1k</video:player_loc>
+      <video:duration>3840</video:duration>
+      <video:publication_date>2024-06-30T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E15.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/yCyhPvLyJdY/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Past, Present, and Future of Computing with Bryan Cantrill, CTO of Oxide Computer Company</video:title>
+      <video:description>I explore the evolution of computing with Bryan Cantrill, diving into his journey from developing DTrace at Sun Microsystems to revolutionizing on-premises cloud computing at Oxide. We discuss the challenges of cloud infrastructure, the impact of Moore&apos;s Law slowdown, and how integrated hardware-software design is reshaping the industry.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=yCyhPvLyJdY</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/yCyhPvLyJdY</video:player_loc>
+      <video:duration>4980</video:duration>
+      <video:publication_date>2024-07-14T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E16.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/E77ohYZA2vo/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Unveiling SBOMs: Insights from Allan Friedman of CISA</video:title>
+      <video:description>I explore the critical role of Software Bill of Materials (SBOMs) with Allan Friedman from CISA, diving into how these tools are reshaping software supply chain security. We discuss everything from practical implementation challenges to their impact on international policy, offering insights for developers and security professionals alike.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=E77ohYZA2vo</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/E77ohYZA2vo</video:player_loc>
+      <video:duration>5160</video:duration>
+      <video:publication_date>2024-07-28T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E17.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/bTb_Rf_qkq8/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Daniel Stenberg on Curl&apos;s Journey: From C64 Demos to Internet Transfers</video:title>
+      <video:description>I explore Daniel Stenberg&apos;s remarkable journey from coding C64 demos to creating Curl, diving into the challenges of maintaining a critical open-source project for over two decades. We discuss everything from community building to security measures, with fascinating insights into how Curl became essential internet infrastructure.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=bTb_Rf_qkq8</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/bTb_Rf_qkq8</video:player_loc>
+      <video:duration>5160</video:duration>
+      <video:publication_date>2024-07-28T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E18.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/6iudG6Sxnag/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Exploring the Future of AI: Luke Marsden Unveils Helix and the Open Source Revolution</video:title>
+      <video:description>I explore the world of practical AI deployment with Luke Marsden, diving into Helix, an open-source platform that enables secure, local AI implementation. We discuss how Helix works with tools like Olama and Rag, and examine the real implications of decentralized AI decision-making.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=6iudG6Sxnag</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/6iudG6Sxnag</video:player_loc>
+      <video:duration>4800</video:duration>
+      <video:publication_date>2024-08-25T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E19.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/4YIZqdfUJW4/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Unpacking Docker&apos;s Journey: Justin Cormack, on DevOps, Containerization, and the Future of Wasm</video:title>
+      <video:description>In this episode, I sit down with Justin Cormack, Docker&apos;s CTO, to explore the evolution of Docker from its cloud-native roots to its current innovations. We dive into the real challenges of container adoption, discuss Docker Hub&apos;s growth journey, and explore how WebAssembly is shaping the future of development.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=4YIZqdfUJW4</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/4YIZqdfUJW4</video:player_loc>
+      <video:duration>5220</video:duration>
+      <video:publication_date>2024-09-08T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E20.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/SOa_sr-Ea_k/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Uncovering Firmware Security: A Deep Dive with Binarly&apos;s Philipp Deppenwiese</video:title>
+      <video:description>I dive deep into firmware security with Philipp Deppenwiese from Binarly, exploring how attestation ensures system integrity from boot to runtime. We discuss their groundbreaking work in finding BIOS vulnerabilities and how modern computing systems can better protect against firmware-level attacks.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=SOa_sr-Ea_k</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/SOa_sr-Ea_k</video:player_loc>
+      <video:duration>3600</video:duration>
+      <video:publication_date>2024-09-21T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E21.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/mbz_8y9gmXU/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>RFID Hacking with Iceman: Exploring RFID Security</video:title>
+      <video:description>I explore the fascinating world of RF hacking with Iceman, diving into everything from Bluetooth signal capture to mobile credential vulnerabilities. From Proxmark experimentation to practical applications, we unpack what makes RFID security both challenging and crucial.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=mbz_8y9gmXU</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/mbz_8y9gmXU</video:player_loc>
+      <video:duration>4020</video:duration>
+      <video:publication_date>2024-09-21T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E22.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/oSBDSJf0FeA/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>SBOMs, CycloneDX, and Software Security with Steve Springett</video:title>
+      <video:description>I explore the evolving world of software security and compliance with Steve Springett, diving into how SBOMs and CycloneDX are reshaping how we track and secure our software supply chains. We discuss practical approaches to implementing these tools and the real impact they&apos;re having on enterprise security.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=oSBDSJf0FeA</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/oSBDSJf0FeA</video:player_loc>
+      <video:duration>4320</video:duration>
+      <video:publication_date>2024-10-20T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E23.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/SrcRtQCjqDM/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>From Passwords to Passkeys: Exploring the Future of Authentication with Massi Gori</video:title>
+      <video:description>I explore the changing landscape of authentication with Massi Gori, diving into practical applications of FIDO2 and modern security solutions. We discuss how technologies like passkeys, OpenSSH certificates, and Vault are reshaping enterprise security, with real-world examples from Massi&apos;s extensive experience.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=SrcRtQCjqDM</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/SrcRtQCjqDM</video:player_loc>
+      <video:duration>3840</video:duration>
+      <video:publication_date>2024-11-03T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E24.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/rkhCN7taMK4/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Hacking airplanes, ships and IoT devices with Ken Munro</video:title>
+      <video:description>I dive into the world of GPS systems and maritime security with Ken Munro, exploring the vulnerabilities in critical infrastructure. We discuss everything from different types of GPS systems to the alarming ease of compromising ships remotely. Ken shares eye-opening insights from his penetration testing experience and the implications for global security.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=rkhCN7taMK4</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/rkhCN7taMK4</video:player_loc>
+      <video:duration>3840</video:duration>
+      <video:publication_date>2024-11-03T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S01E25.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/hTbqEf9LRGE/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>All things ZFS and FreeBSD with Allan Jude</video:title>
+      <video:description>I explore the technical depths of ZFS and FreeBSD with Allan Jude, diving into everything from filesystem architecture to operating system development. From copy-on-write design to advanced storage capabilities, we unpack what makes these technologies crucial for modern infrastructure.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=hTbqEf9LRGE</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/hTbqEf9LRGE</video:player_loc>
+      <video:duration>4680</video:duration>
+      <video:publication_date>2024-12-01T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E01.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/fJS7_VO_Was/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>A deep dive into the SBOM format SPDX</video:title>
+      <video:description>In my conversation with Kate Stewart and Gary O&apos;Neall, we explore the evolution and impact of SPDX in software transparency. From its origins in license compliance to its current role in security and vulnerability tracking, we unpack how this open standard is shaping modern software development practices. The discussion reveals fascinating insights into SBOM generation challenges and how SPDX 3.0 is being designed to meet the demands of today&apos;s CI/CD environments.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=fJS7_VO_Was</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/fJS7_VO_Was</video:player_loc>
+      <video:duration>3000</video:duration>
+      <video:publication_date>2025-01-16T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E02.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/NP4XoZxyj1g/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Pentesting 101: Hacking Legally with Warren Houghton</video:title>
+      <video:description>In my conversation with Warren Houghton, he shows exactly how a penetration test unfolds: starting with scoping and permission paperwork, then moving into reconnaissance and tooling. He demonstrates how a tester uses Kali Linux alongside Nmap for port scanning, Metasploit for exploiting vulnerabilities, and Burp Suite for intercepting and manipulating web traffic. He also highlights the risks of overlooked exposures—like a public .git directory or outdated WordPress plugins—and stresses how secure configurations and network segmentation can prevent lateral movement. Throughout, he emphasizes the constant need for learning and vigilance against ever-evolving threats.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=NP4XoZxyj1g</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/NP4XoZxyj1g</video:player_loc>
+      <video:duration>3660</video:duration>
+      <video:publication_date>2025-01-31T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E03.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/sgqWJM788vw/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Dustin Kirkland on Chainguard, Zero-CVE Containers, and Supply Chain Security</video:title>
+      <video:description>In this episode, I sit down with Dustin Kirkland to discuss the critical topic of supply chain security and the innovative work being done at Chainguard. We delve into the concept of zero-CVE containers, exploring how this approach is revolutionizing container security. Dustin shares insights on modern supply chain threats, the importance of software bill of materials (SBOM), and practical strategies for maintaining secure container environments. The conversation covers both the technical challenges and solutions in today&apos;s rapidly evolving security landscape.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=sgqWJM788vw</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/sgqWJM788vw</video:player_loc>
+      <video:duration>3540</video:duration>
+      <video:publication_date>2025-02-14T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E04.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/Xp855jv5l2s/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Balena, IoT Security, and the Future of Connected Devices</video:title>
+      <video:description>I sit down with Marc Pous of Balena to explore the ever-evolving world of IoT, from remote management and fleet updates to security legislation and software bills of materials (SBOMs). Marc reveals how Balena pioneered container-based deployments on devices like Raspberry Pi, explains why over-the-air (OTA) updates are critical for any hardware project, and offers insights into upcoming regulations such as the Cyber Resilience Act (CRA). Discover why IoT is quickly becoming &quot;just connected products,&quot; how businesses can adapt to this new era, and why it&apos;s time to rethink everything from SD cards to DevOps workflows. Whether you&apos;re an IoT veteran or curious about the future of connected tech, this episode offers a deep dive into managing devices at scale and keeping them secure.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=Xp855jv5l2s</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/Xp855jv5l2s</video:player_loc>
+      <video:duration>3840</video:duration>
+      <video:publication_date>2025-02-28T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E05.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/GYdtod6BEpQ/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Physical Pen Testing Secrets: Covert Building Infiltration Explained</video:title>
+      <video:description>I delve into the fascinating world of physical penetration testing with expert Warren Houghton. This eye-opening episode reveals the techniques and tools used by professional pen testers to bypass building security systems and gain unauthorized access to secure facilities. Warren shares his real-world experiences breaking into banks, arenas, and corporate buildings, explaining everything from badge cloning and lock picking to social engineering tactics that exploit human psychology. Learn about the vulnerabilities in common access control systems, why HID proximity cards should be avoided, and why security awareness among staff is the most critical defense against physical breaches. Whether you&apos;re responsible for facility security or simply curious about how physical pen testers operate, this episode offers rare insights into the covert methods used to test and improve physical security postures.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=GYdtod6BEpQ</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/GYdtod6BEpQ</video:player_loc>
+      <video:duration>3960</video:duration>
+      <video:publication_date>2025-03-14T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E06.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/yq_AWq24-IM/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Europe&apos;s Battle for Tech Sovereignty: Why OpenStack Matters</video:title>
+      <video:description>In this timely conversation with Johan Christenson, founder of Cleura and board member of OpenInfra (overseeing Kata Containers and OpenStack), we dive into Europe&apos;s growing urgency around digital sovereignty and what it will actually take to build a competitive, homegrown cloud ecosystem. Johan, a long-time advocate for open source infrastructure, pulls back the curtain on why progress has been so slow and where things can shift.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=yq_AWq24-IM</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/yq_AWq24-IM</video:player_loc>
+      <video:duration>4320</video:duration>
+      <video:publication_date>2025-03-28T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E07.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/BOBFYCJGW9w/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Reimagining CI/CD and Engineering Culture at Scale with Vlad A. Ionescu</video:title>
+      <video:description>In this deep-dive conversation, I sit down with Vlad Ionescu, founder and CEO of Earthly, to unpack the evolution of CI/CD, why developer experience is broken, and what it will take to bring sanity back to software delivery at scale.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=BOBFYCJGW9w</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/BOBFYCJGW9w</video:player_loc>
+      <video:duration>4320</video:duration>
+      <video:publication_date>2025-04-11T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E08.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/7b-FDgQBbzY/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Startup Founder Lessons on Scaling Teams, Systems, and Culture with Kevin Henrikson</video:title>
+      <video:description>Learn how to scale your startup from 10 to 1500 people with Kevin Henrikson (Zimbra, Microsoft, Instacart). Discover proven strategies for managing acquisitions, building distributed teams, and creating scalable engineering cultures. Essential insights for technical founders and CTOs.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=7b-FDgQBbzY</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/7b-FDgQBbzY</video:player_loc>
+      <video:duration>4560</video:duration>
+      <video:publication_date>2025-04-23T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E09.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/bU-79VgoYws/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Inside the Yocto Project&apos;s Evolving Tooling: SBOMs, SPDX 3.0, and Secure Embedded Systems</video:title>
+      <video:description>In this deep-dive conversation, I sit down with Joshua Watt (Garmin) and Ross Burton (ARM) to explore how the Yocto Project is redefining how we build, secure, and maintain embedded Linux systems at scale.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=bU-79VgoYws</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/bU-79VgoYws</video:player_loc>
+      <video:duration>3000</video:duration>
+      <video:publication_date>2025-05-07T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E10.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/n7T60iHRONc/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Why Web3, Crypto, and Blockchain Still Struggle in the Real World</video:title>
+      <video:description>In this episode, I talk with Vlad Trifa, founder of Zimt and co-founder of EVRYTHNG, about the challenges of applying Web3, crypto, and blockchain in real-world systems.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=n7T60iHRONc</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/n7T60iHRONc</video:player_loc>
+      <video:duration>4680</video:duration>
+      <video:publication_date>2025-05-22T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E11.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/LttkqlgC8Vo/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>The Systems Behind Managing High-Performing Remote Teams with Jon Seager</video:title>
+      <video:description>I explore the systems and practices that make remote teams thrive with Jon Seager from Canonical. We dive into measuring output over activity, calendar ownership as a performance indicator, and how to build trust and autonomy in distributed organizations.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=LttkqlgC8Vo</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/LttkqlgC8Vo</video:player_loc>
+      <video:duration>3960</video:duration>
+      <video:publication_date>2025-06-03T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E12.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/eiMaL8e1tAU/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Inside System76: Building Open Hardware and a Linux-First Future</video:title>
+      <video:description>I&apos;m joined by Carl Richell, founder and CEO of System76, for an in-depth look at what it takes to build an open source hardware company from the ground up. Carl&apos;s journey, from launching Ubuntu laptops before Linux was mainstream to building open firmware, a desktop environment, and even their own factory, is one of the most hands-on stories in open source computing.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=eiMaL8e1tAU</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/eiMaL8e1tAU</video:player_loc>
+      <video:duration>4140</video:duration>
+      <video:publication_date>2025-06-17T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E13.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/KFB462s7bYc/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Rethinking Startups: Inside the Venture Studio Model with Thorbjørn Rønje</video:title>
+      <video:description>I&apos;m joined by Thorbjørn Rønje, founder of Bifrost Studios, to discuss why venture studios are the most effective path to building companies. Drawing from nearly 50 startups, he shows how repeatable systems beat lone heroics when launching new products.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=KFB462s7bYc</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/KFB462s7bYc</video:player_loc>
+      <video:duration>4080</video:duration>
+      <video:publication_date>2025-07-01T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E14.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/ulIUEwb4xnY/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Navigating SBOMs at Scale: Inside DependencyTrack with Niklas Düster</video:title>
+      <video:description>I&apos;m joined by Niklas Düster, co-lead of OWASP Dependency Track, to explore how teams manage software bill of materials (SBOMs) at scale. From solving vulnerability scan overload to becoming a project co-lead alongside Steve Springett, Niklas shares how Dependency Track enables continuous visibility across thousands of components.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=ulIUEwb4xnY</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/ulIUEwb4xnY</video:player_loc>
+      <video:duration>2460</video:duration>
+      <video:publication_date>2025-07-15T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E15.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/KZzWxU9gUWs/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Nerding Out on Software Supply Chain Security with ITSPmagazine&apos;s Sean Martin</video:title>
+      <video:description>I&apos;m joined by Sean Martin, co-founder of ITSPmagazine and veteran security expert, to explore the evolving landscape of software supply chain security. Recorded live at Hacker Summer Camp, we dive into how transparency is replacing vague security claims and why SBOMs are becoming real-time operational assets.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=KZzWxU9gUWs</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/KZzWxU9gUWs</video:player_loc>
+      <video:duration>1620</video:duration>
+      <video:publication_date>2025-08-17T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E16.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/F2auU6f_S5g/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Lessons in Building Niche Hardware and Networks with Planet Computers&apos; Marcus Taylor</video:title>
+      <video:description>Marcus Taylor, co-founder of Planet Computers, has lived through multiple waves of computing revolutions - from early natural language systems at IBM in the &apos;90s to pioneering mobile commerce and secure communications well before the smartphone era. In this episode of Nerding Out with Viktor, he shares the lessons learned from a career at the intersection of hardware, networks, and resilient systems.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=F2auU6f_S5g</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/F2auU6f_S5g</video:player_loc>
+      <video:duration>3540</video:duration>
+      <video:publication_date>2025-09-02T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E17.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/2joFBnBmbp8/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Coreboot and Linux Hardware: Inside Star Labs with Sean Rhodes</video:title>
+      <video:description>Sean Rhodes, Firmware Engineer at Star Labs, shares the journey of building Linux-first laptops and mini PCs backed by open firmware. From the early days as a side project to surviving supply chain crises and choosing coreboot over AMI BIOS, Sean explains what it takes to create reliable hardware for the open source community.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=2joFBnBmbp8</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/2joFBnBmbp8</video:player_loc>
+      <video:duration>3000</video:duration>
+      <video:publication_date>2025-09-16T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E18.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/kxAdMNl3Lxg/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>The Quiet Power of Digital Minimalism with Patrick Walker</video:title>
+      <video:description>Patrick Walker, former YouTube and Facebook executive turned conscious tech founder, shares his journey from shaping the early internet video landscape to building tools that prioritize intention over engagement. From YouTube&apos;s copyright wars to Facebook&apos;s ethical friction around live video and algorithms, Patrick reflects on the psychological toll of attention-based products and his pivot to digital wellness through Uptime, a micro-learning app designed to fight passive consumption.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=kxAdMNl3Lxg</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/kxAdMNl3Lxg</video:player_loc>
+      <video:duration>4320</video:duration>
+      <video:publication_date>2025-10-21T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E19.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/T_wqD351GJs/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Rethinking Software Security Compliance in the Age of AI with Nick Selby</video:title>
+      <video:description>Nick Selby, a veteran security leader known for his clear-eyed approach to building practical, human-centered security programs, joins Viktor to tackle a central question that haunts many growing tech companies: why do so many teams treat software security compliance as a box-ticking exercise, and what does that mindset cost them? Drawing from decades of experience, Nick brings both humor and hard-won lessons to an issue that often feels more bureaucratic than technical.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=T_wqD351GJs</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/T_wqD351GJs</video:player_loc>
+      <video:duration>3420</video:duration>
+      <video:publication_date>2025-11-04T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E20.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/YFNPAv-qtzc/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>UK Online Safety Act: Digital ID and the Risks of a Database State with James Baker</video:title>
+      <video:description>What happens when a government&apos;s push for &quot;safety&quot; starts reshaping the architecture of the internet? In this episode of Nerding Out with Viktor, we&apos;re joined by James Baker, Policy and Campaigns Manager at Open Rights Group, to unpack the deeper implications of the UK Online Safety Act and the country&apos;s evolving approach to Digital ID. With two decades of work in privacy advocacy, James offers a grounded but no less urgent perspective on how these policies affect builders, platforms, and users alike.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=YFNPAv-qtzc</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/YFNPAv-qtzc</video:player_loc>
+      <video:duration>3960</video:duration>
+      <video:publication_date>2025-11-18T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://vpetersson.com/podcast/S02E21.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/e9_bpsJKOL0/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>CRA Explained: What the Cyber Resilience Act Means for Device Manufacturers with Sarah Fluchs</video:title>
+      <video:description>What happens when long-lifecycle hardware meets modern cybersecurity expectations? In this episode of Nerding Out with Viktor, we&apos;re joined by Sarah Fluchs, CTO and OT cybersecurity expert, to break down how the Cyber Resilience Act (CRA) is shifting the way secure products are built, maintained, and supported across the EU market. With first-hand involvement in the EU Commission&apos;s CRA expert group, Sarah brings a rare blend of technical and policy perspective to an issue that touches every device manufacturer.
+</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=e9_bpsJKOL0</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/e9_bpsJKOL0</video:player_loc>
+      <video:duration>3960</video:duration>
+      <video:publication_date>2025-12-16T23:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      
+      <video:tag></video:tag>
+      
+    </video:video>
+  </url>
+  
+</urlset>

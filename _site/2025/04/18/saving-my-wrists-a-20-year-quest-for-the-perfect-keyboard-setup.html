@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="content-language" content="en">
+
+  <!-- Resource Hints -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="/assets/css/styles.css" as="style">
+  <link rel="preload" href="/assets/css/main.css" as="style">
+
+  <title>Saving My Wrists - A 20-Year Quest for the Perfect Keyboard Setup</title>
+  <meta name="description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://vpetersson.com/2025/04/18/saving-my-wrists-a-20-year-quest-for-the-perfect-keyboard-setup.html">
+  <meta property="og:title" content="Saving My Wrists - A 20-Year Quest for the Perfect Keyboard Setup">
+  <meta property="og:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta property="og:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- LinkedIn -->
+  <meta property="og:site_name" content="Viktor's Tech Musings & Security Paranoia">
+  <meta property="article:author" content="https://www.linkedin.com/in/vpetersson/">
+  
+  <meta property="article:published_time" content="2025-04-18T00:52:44+00:00">
+  
+
+  <!-- X (formerly Twitter) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@vpetersson">
+  <meta name="twitter:creator" content="@vpetersson">
+  <meta name="twitter:title" content="Saving My Wrists - A 20-Year Quest for the Perfect Keyboard Setup">
+  <meta name="twitter:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta name="twitter:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- Social Profile Links -->
+  <link rel="me" href="https://github.com/vpetersson">
+  <link rel="me" href="https://www.linkedin.com/in/vpetersson/">
+  <link rel="me" href="https://hachyderm.io/@vpetersson@hachyderm.io">
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com",
+    "image": "https://vpetersson.com/assets/images/site/talk.webp",
+    "sameAs": [
+      "https://github.com/vpetersson",
+      "https://www.linkedin.com/in/vpetersson/",
+      "https://hachyderm.io/@vpetersson@hachyderm.io",
+      "https://twitter.com/vpetersson"
+    ]
+  }
+  </script>
+
+  <!-- Custom meta tags -->
+  
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Anton|DM Sans|Roboto|Hanken+Grotesk"
+    />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/native.css">
+  
+  <!-- Font Awesome (bundled from node_modules) -->
+  <link rel="stylesheet" href="/assets/css/fontawesome-core.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-solid.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-brands.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZY6ZNLNNC8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZY6ZNLNNC8');
+
+  // Track outbound links and CTAs
+  function trackEvent(category, action, label, source) {
+    gtag('event', action, {
+      'event_category': category,
+      'event_label': label,
+      'source': source
+    });
+  }
+</script>
+
+
+  <link rel="canonical" href="https://vpetersson.com/2025/04/18/saving-my-wrists-a-20-year-quest-for-the-perfect-keyboard-setup.html" />
+</head>
+
+  <body>
+    <!-- Skip Navigation -->
+<a href="#main-content" class="skip-navigation">Skip to main content</a>
+
+<header class="p-8 flex justify-between bg-primaryBG border-b border-white-alpha-20" role="banner">
+  <div class="flex gap-10 justify-between items-center">
+    <a href="/" aria-label="Viktor Petersson - Home">
+      <img src="/assets/images/site/logo-white.svg" alt="Viktor Petersson logo" width="120" height="40" />
+    </a>
+    <nav class="hidden lg:flex gap-6">
+  
+    <a href="/" class="text-white uppercase">HOME</a>
+  
+    <a href="/about" class="text-white uppercase">ABOUT</a>
+  
+    <a href="/consulting" class="text-white uppercase">CONSULTING</a>
+  
+    <a href="/podcast" class="text-white uppercase">PODCAST</a>
+  
+    <a href="/blog" class="text-white uppercase">BLOG</a>
+  
+    <a href="https://studio.viktopia.io/" class="text-white uppercase">VIKTOPIA STUDIO</a>
+  
+</nav>
+
+  </div>
+  <div class="flex gap-2 justify-between items-center">
+    <div class="header-search hidden lg:block">
+      <form action="/search" method="get" role="search">
+        <label for="searchright" class="sr-only">Search the site</label>
+        <input
+          class="search expandright"
+          id="searchright"
+          type="search"
+          name="query"
+          placeholder="Search"
+          aria-label="Search"
+        >
+        <button class="button searchbutton" type="submit" aria-label="Submit search">
+          <span class="mglass" aria-hidden="true">&#9906;</span>
+        </button>
+      </form>
+    </div>
+
+    <div class="hidden lg:block">
+      <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+    </div>
+
+    <!-- Use modern mobile navigation -->
+    <!-- Modern Mobile Navigation -->
+<div class="mobile-nav-container lg:hidden">
+  <!-- Menu Toggle Button -->
+  <button
+    class="mobile-menu-toggle btn-reset touch-target"
+    aria-label="Toggle navigation menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+    data-menu-toggle
+  >
+    <span class="hamburger-icon" aria-hidden="true">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </span>
+  </button>
+
+  <!-- Mobile Menu Backdrop -->
+  <div
+    class="mobile-menu-backdrop"
+    data-menu-backdrop
+    aria-hidden="true"
+  ></div>
+
+  <!-- Mobile Menu Panel -->
+  <nav
+    class="mobile-menu"
+    id="mobile-menu"
+    aria-labelledby="mobile-menu-label"
+    data-menu-panel
+  >
+    <!-- Menu Header -->
+    <div class="mobile-menu-header">
+      <h2 id="mobile-menu-label" class="sr-only">Navigation Menu</h2>
+      <button
+        class="mobile-menu-close btn-reset touch-target"
+        aria-label="Close navigation menu"
+        data-menu-close
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="mobile-menu-list" role="list">
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            HOME
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/about"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            ABOUT
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/consulting"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            CONSULTING
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/podcast"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            PODCAST
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/blog"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            BLOG
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="https://studio.viktopia.io/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            VIKTOPIA STUDIO
+          </a>
+        </li>
+      
+    </ul>
+
+    <!-- Social Links -->
+    <div class="mobile-menu-footer">
+      <div class="mobile-social-links">
+        <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<style>
+/* Mobile Navigation Styles */
+.mobile-nav-container {
+  position: relative;
+}
+
+.mobile-menu-toggle {
+  position: relative;
+  z-index: var(--z-fixed);
+  color: var(--color-white);
+  transition: transform var(--transition-normal);
+
+  &[aria-expanded="true"] {
+    transform: rotate(90deg);
+  }
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 18px;
+  justify-content: space-between;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  transition: all var(--transition-normal);
+  transform-origin: center;
+}
+
+.mobile-menu-toggle[aria-expanded="true"] .hamburger-line {
+  &:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  &:nth-child(2) {
+    opacity: 0;
+  }
+
+  &:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+
+.mobile-menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+  z-index: var(--z-modal);
+}
+
+.mobile-menu-backdrop.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(400px, 100vw);
+  height: 100vh;
+  background: var(--color-gray-900);
+  border-left: 1px solid var(--color-gray-200);
+  transform: translateX(100%);
+  transition: transform var(--transition-normal);
+  z-index: var(--z-modal);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.mobile-menu-close {
+  color: var(--color-white);
+}
+
+.mobile-menu-list {
+  flex: 1;
+  padding: var(--space-4) 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu-item {
+  margin: 0;
+}
+
+.mobile-menu-link {
+  display: block;
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-normal);
+  border-left: 3px solid transparent;
+
+  &:hover {
+    background: var(--color-gray-800);
+    border-left-color: var(--color-primary);
+  }
+
+  &[aria-current="page"] {
+    color: var(--color-primary);
+    border-left-color: var(--color-primary);
+    background: var(--color-gray-800);
+  }
+}
+
+.mobile-menu-footer {
+  padding: var(--space-4);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.mobile-social-links {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+}
+
+/* Simple instant display */
+.mobile-menu-item {
+  opacity: 1;
+}
+</style>
+
+<script>
+// Modern Mobile Navigation JavaScript
+(function() {
+  const menuToggle = document.querySelector('[data-menu-toggle]');
+  const menuPanel = document.querySelector('[data-menu-panel]');
+  const menuBackdrop = document.querySelector('[data-menu-backdrop]');
+  const menuClose = document.querySelector('[data-menu-close]');
+  const menuLinks = document.querySelectorAll('.mobile-menu-link');
+
+  let isOpen = false;
+
+  function openMenu() {
+    isOpen = true;
+    menuToggle.setAttribute('aria-expanded', 'true');
+    menuPanel.classList.add('is-open');
+    menuBackdrop.classList.add('is-visible');
+    document.body.style.overflow = 'hidden';
+
+    // Focus first menu item
+    const firstLink = menuPanel.querySelector('.mobile-menu-link');
+    if (firstLink) {
+      firstLink.focus();
+    }
+  }
+
+  function closeMenu() {
+    isOpen = false;
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuPanel.classList.remove('is-open');
+    menuBackdrop.classList.remove('is-visible');
+    document.body.style.overflow = '';
+
+    // Return focus to toggle button
+    menuToggle.focus();
+  }
+
+  function toggleMenu() {
+    isOpen ? closeMenu() : openMenu();
+  }
+
+  // Event listeners
+  menuToggle.addEventListener('click', toggleMenu);
+  menuClose.addEventListener('click', closeMenu);
+  menuBackdrop.addEventListener('click', closeMenu);
+
+  // Close on link click
+  menuLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isOpen) {
+      closeMenu();
+    }
+  });
+
+  // Trap focus in menu when open
+  menuPanel.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') {
+      const focusableElements = menuPanel.querySelectorAll(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (e.shiftKey && document.activeElement === firstElement) {
+        e.preventDefault();
+        lastElement.focus();
+      } else if (!e.shiftKey && document.activeElement === lastElement) {
+        e.preventDefault();
+        firstElement.focus();
+      }
+    }
+  });
+})();
+</script>
+  </div>
+</header>
+
+    <main id="main-content" class="body">
+      <!-- Blog post schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://vpetersson.com/2025/04/18/saving-my-wrists-a-20-year-quest-for-the-perfect-keyboard-setup.html"
+  },
+  "headline": "Saving My Wrists - A 20-Year Quest for the Perfect Keyboard Setup",
+  "description": null,
+  "datePublished": "2025-04-18T00:52:44+00:00",
+  "dateModified": "2025-04-18T00:52:44+00:00",
+  "author": {
+    "@type": "Person",
+    "@id": "https://vpetersson.com/about/#person",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://vpetersson.com/assets/images/site/talk.webp"
+    }
+  },
+  
+  "inLanguage": "en",
+  "wordCount": "1055",
+  "keywords": ["keyboard","ergonomics","mechanical-keyboard","split-keyboard","gear","hardware"]
+}
+</script>
+
+<!-- Breadcrumbs schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://vpetersson.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://vpetersson.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Saving My Wrists - A 20-Year Quest for the Perfect Keyboard Setup",
+      "item": "https://vpetersson.com/2025/04/18/saving-my-wrists-a-20-year-quest-for-the-perfect-keyboard-setup.html"
+    }
+  ]
+}
+</script>
+<div class="page-header page-header-blog">
+  <h2 class="uppercase text-[48px] md:text-[91px] lg:text-[140px] xl:text-[186px] text-white text-center">Blog</h2>
+</div>
+<div class="bg-secondaryBG blog-post">
+  <div class="md:max-w-[665px] mx-4 sm:mx-6 md:mx-auto py-8 md:py-10 lg:py-20">
+    <h2 class="mb-6">Saving My Wrists - A 20-Year Quest for the Perfect Keyboard Setup</h2>
+    <div class="flex mb-6 gap-6 text-xs">
+      <span class="uppercase">
+        18 APR • 2025
+      </span>
+      <span class="blog-time">
+        6 minutes
+      </span>
+    </div>
+    <article class="leading-[26px]">
+      <p>I’ve been using split keyboards for about 20 years now, a journey sparked by the all-too-common wrist pain that plagues many a nerd hunched over a standard keyboard. This quest for ergonomic nirvana led me down a rabbit hole of different keyboards, culminating in my current mechanical setup, and even prompted me to switch my mouse to my <em>left</em> hand (more on that curious habit later). My first split keyboard was the Microsoft Natural Keyboard back in the late 90s.</p>
+
+<p><img src="/assets/dreamhack.webp" alt="Microsoft Natural Keyboard" />
+<em>Me asleep at Dreamhack (circa) ‘98 on my MS Natural Keyboard with a Jolt Cola tower in the backdrop. This was back when Dreamhack was cool, i.e. before it was taken over by gamers.</em></p>
+
+<p>When I started college (go <a href="https://www.scu.edu/">Broncos</a>!) and moved to the US, I left my split keyboard at home in favor of a shiny new PowerBook G4 (replacing my trusty old ThinkPad T20 running <a href="https://www.gentoo.org/">Gentoo</a>).</p>
+
+<p>Not long after, my wrists started acting up from typing too much on the built-in keyboard. That eventually led to a <a href="https://www.nhs.uk/conditions/ganglion/">ganglion cyst</a>. After having that treated a few times, I figured it was time to revisit the keyboard situation.</p>
+
+<p>What I really needed was a portable, split keyboard that could fit in my bag alongside my laptop. It had to be small and light. I ended up getting a Goldtouch Go.</p>
+
+<p><img src="/assets/goldtouch-go.webp" alt="Goldtouch Go Keyboard" />
+<em>The portable Goldtouch Go keyboard.</em></p>
+
+<p>This keyboard served me well. It was small and portable. But when I wrapped up college and started working more from a regular desk (instead of hopping between coffee shops and class), it was time to upgrade. I wanted something heavier that could also tilt upwards to reduce strain on my wrists. I ended up getting another Goldtouch keyboard — this time the big brother of the Go, with the incredibly catchy name SKR-4200U Mac. It was a step up and lasted me another few years. Unfortunately, the lever for locking the keyboard into position eventually snapped off, which meant the keyboard would move slightly when typing. This mechanical failure, combined with the ever-present desire for better ergonomics, pushed me towards the next evolution.</p>
+
+<p><img src="/assets/goldtouch.webp" alt="Goldtouch" />
+<em>My beaten up Goldtouch keyboard with the leaver broken.</em></p>
+
+<h2 id="enter-mechanical-keyboards">Enter mechanical keyboards</h2>
+
+<p>Every nerd worth their salt has at some point a) toyed with switching to Dvorak and b) gone down the deep rabbit hole of mechanical keyboards and switches. I’ve never seriously tried a), but I’ve definitely spent more time than I’d like to admit on b).</p>
+
+<p>There’s something magical about typing on a mechanical keyboard. Yes, it’s the clicky sound that will probably drive your coworkers insane (yay for <a href="https://vpetersson.com//remote-work/">remote work</a>!), but it’s also the tactile feedback.</p>
+
+<p>So now we’ve narrowed the keyboard selection to split keyboards that are also mechanical. Thankfully, that Venn diagram has a decent overlap once you’re deep into keyboard nerd land.</p>
+
+<p>What I ended up with was a Kinesis Freestyle Pro with Cherry MX Brown switches. I went all-in and got the extras (wrist padding and the tilt kit) to optimize the setup. I’ve had this keyboard for about five years now, and I really rate it. It’s solid. But recently, the itch to try something new came back after a few folks around me got new keyboards.</p>
+
+<p><img src="/assets/freestyle_pro.webp" alt="Kinesis Freestyle Pro" />
+<em>This is my current setup. Kinesis Frestyle Pro with a Magic Trackpad on the left (see below).</em></p>
+
+<p>I’ve heard great things about Bastard Keyboard’s <a href="https://bastardkb.com/product/charybdis-mk2-prebuilt-preorder/">Charybdis MK2</a> and splitkb’s <a href="https://splitkb.com/collections/keyboard-kits/products/halcyon-corne">Halcyon Corne</a>. Then there’s ZSA’s <a href="https://www.zsa.io/moonlander">Moonlander</a> and a bunch of other DIY kits.</p>
+
+<p>If you keep going down the keyboard rabbit hole, many roads lead to soldering your own keyboard or going ultra-minimal and using “layers” instead of having a full set of physical keys. As much as I geek out over that stuff, that’s probably where I draw the line — even if it is objectively more efficient.</p>
+
+<p>In summary, here’s the gear I’ve used over the years:</p>
+
+<ul>
+  <li>Microsoft Natural Keyboard (from the late 90s)</li>
+  <li>A split Logitech keyboard (from the early 00s)</li>
+  <li>Goldtouch Go</li>
+  <li>Goldtouch SKR-4200U Mac</li>
+  <li>Kinesis Freestyle Pro</li>
+</ul>
+
+<p>But the keyboard is only half the ergonomic equation. What about the other crucial input device?</p>
+
+<h2 id="what-about-the-mouse">What about the mouse?</h2>
+
+<p>One of the cool things about keyboards like the Charybdis is that it includes a built-in mouse (technically a trackball), which is great for reducing wrist movement. That setup is still pretty rare though.</p>
+
+<p>Generally, the best thing for ergonomics is to navigate using just the keyboard. I use <code class="language-plaintext highlighter-rouge">tmux</code> and <code class="language-plaintext highlighter-rouge">vim</code> a lot, and they rely purely on keyboard shortcuts. Tiling window managers like i3 (or <a href="https://github.com/nikitabobko/AeroSpace">Aerospace</a> for macOS) help with that too. Still, chances are you’ll end up using a mouse at some point.</p>
+
+<p>I’ve used various versions of the Magic Trackpad for years, mainly because of the smooth scrolling and gesture support in macOS.</p>
+
+<h2 id="mousing-with-the-left-hand">Mousing with the Left Hand</h2>
+
+<h3 id="an-ergonomic-experiment-that-stuck">An Ergonomic Experiment (That Stuck)</h3>
+
+<p>Despite being right-handed, I made the switch to using my mouse left-handed about a decade ago. The motivation came from reading about how practicing skilled movements with your non-dominant hand can rewire motor networks. While it took some getting used to, the habit eventually stuck.</p>
+
+<p>For example:</p>
+
+<ul>
+  <li>Six weeks of left-hand mouse training in right-handers improved speed and accuracy in both hands (<a href="https://www.nature.com/articles/s41598-021-83770-4">Schweiger 2021</a>).</li>
+  <li>Ten days of left-hand drawing strengthened links between cortical hand areas and the praxis network (<a href="https://pubmed.ncbi.nlm.nih.gov/27212059/">Philip &amp; Frey 2016</a>).</li>
+  <li>Six weeks of chopstick training with the left hand shifted control from effort-heavy prefrontal regions to more efficient premotor circuits (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8536892/">Sawamura 2021</a>).</li>
+  <li>fMRI studies show that off-hand training reorganizes a distributed motor network (<a href="https://pubmed.ncbi.nlm.nih.gov/30741701/">Jung 2019</a>).</li>
+</ul>
+
+<p>Neuroscience folks are quick to point out that this kind of neuroplasticity sharpens specific skills but doesn’t magically increase IQ or memory (<a href="https://www.brainfacts.org/thinking-sensing-and-behaving/thinking-and-awareness/2019/does-using-your-non-dominant-hand-make-you-smarter-080919">BrainFacts 2019</a>).</p>
+
+<p>I can’t say if the switch helped me beyond having smoother left-hand control, but the habit stuck.</p>
+
+<h2 id="so-what-keyboard-am-i-switching-to">So what keyboard am I switching to?</h2>
+
+<p>Honestly, I’m still undecided. My ergonomic quest continues, and what I <em>think</em> I want to try next is a dropped keyboard. I’m currently eyeing the Kinesis <a href="https://kinesis-ergo.com/shop/advantage360-signature/">Advantage 360 Signature</a> with blank keycaps and will probably provide an update shortly.</p>
+
+
+      <div class="mt-12 mb-8 p-8 bg-blue-50 border border-blue-100 rounded-xl">
+        <h4 class="text-2xl font-semibold mb-4 text-blue-900">Enjoyed this post? Check out my podcast!</h4>
+        <p class="mb-6 text-blue-800">If you found this interesting, you might enjoy <a href="/podcast" class="text-blue-600 hover:text-blue-800 underline" onclick="trackEvent('Blog CTA', 'Click', 'Podcast Link', 'Saving My Wrists - A 20-Year Quest for the Perfect Keyboard Setup')">"Nerding Out with Viktor"</a> - my podcast where I dive deep into tech, entrepreneurship, and security with industry experts.</p>
+        <div>
+          <h5 class="font-medium mb-4 text-blue-900">Listen on:</h5>
+          
+
+
+
+<div>
+  <div class="flex gap-3">
+    
+      <a href="https://www.youtube.com/@nerdingoutwithviktor" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'YouTube', 'Saving My Wrists - A 20-Year Quest for the Perfect Keyboard Setup')">
+        <img src="/assets/images/site/podcast-youtube-white.svg" alt="Listen to podcast on YouTube" />
+      </a>
+    
+    
+      <a href="https://open.spotify.com/show/7C6yipdVPWgBc6Bwikgo8g" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Spotify', 'Saving My Wrists - A 20-Year Quest for the Perfect Keyboard Setup')">
+        <img src="/assets/images/site/podcast-spotify-white.svg" alt="Listen to podcast on Spotify" />
+      </a>
+    
+    
+      <a href="https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Apple', 'Saving My Wrists - A 20-Year Quest for the Perfect Keyboard Setup')">
+        <img src="/assets/images/site/podcast-apple-white.svg" alt="Listen to podcast on Apple" />
+      </a>
+    
+    
+    
+      <a href="https://podcast.nerdingoutwithviktor.com/podcast_feed.xml" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'RSS', 'Saving My Wrists - A 20-Year Quest for the Perfect Keyboard Setup')">
+        <img src="/assets/images/site/podcast-rss-white.svg" alt="RSS Feed" />
+      </a>
+    
+  </div>
+</div>
+
+        </div>
+      </div>
+
+      <i>Found an error or typo? File PR against <a href="https://github.com/vpetersson/vpetersson.com/tree/master/_posts/2025-04-18-saving-my-wrists-a-20-year-quest-for-the-perfect-keyboard-setup.md" rel="nofollow">this file</a>.</i>
+    </article>
+    <div class="mt-6">
+      
+  <div class="tags">
+    
+      <a href="/tags/keyboard" class="tag">
+        keyboard
+      </a>
+    
+      <a href="/tags/ergonomics" class="tag">
+        ergonomics
+      </a>
+    
+      <a href="/tags/mechanical-keyboard" class="tag">
+        mechanical-keyboard
+      </a>
+    
+      <a href="/tags/split-keyboard" class="tag">
+        split-keyboard
+      </a>
+    
+      <a href="/tags/gear" class="tag">
+        gear
+      </a>
+    
+      <a href="/tags/hardware" class="tag">
+        hardware
+      </a>
+    
+  </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+    </main>
+    <footer class="py-[60px] md:pt-[74px] md:pb-[40px] px-[25px] md:px-[120px] text-altPrimaryText">
+  <div class="mb-[60px]">
+    <a href="/">
+      <img class="w-[200px] md:w-[320px]" src="/assets/images/site/logo.svg" alt="logo" />
+    </a>
+  </div>
+  <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-8 lg:mb-6">
+    <nav class="flex flex-col md:flex-row gap-6 md:gap-8 mb-20 lg:mb-0">
+      
+        <a href="/" class="">HOME</a>
+      
+        <a href="/about" class="">ABOUT</a>
+      
+        <a href="/consulting" class="">CONSULTING</a>
+      
+        <a href="/podcast" class="">PODCAST</a>
+      
+        <a href="/blog" class="">BLOG</a>
+      
+        <a href="https://studio.viktopia.io/" class="">VIKTOPIA STUDIO</a>
+      
+    </nav>
+    <div class="flex gap-[13px]">
+      <a href="https://twitter.com/vpetersson">
+        <img src="/assets/images/site/x.svg" alt="x logo" />
+      </a>
+      <a href="https://github.com/vpetersson">
+        <img src="/assets/images/site/github.svg" alt="github logo" />
+      </a>
+      <a href="https://www.linkedin.com/in/vpetersson/">
+        <img src="/assets/images/site/linkedin.svg" alt="linkedIn logo" />
+      </a>
+    </div>
+  </div>
+  <hr class="mb-8 lg:mb-10 bg-[#000212] h-[3px] bg-opacity-20 border-0" />
+  <div>
+    <p class="font-[Inter] text-base">&copy; Viktor Petersson</p>
+  </div>
+</footer>
+
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/code-blocks.js" defer></script>
+  </body>
+</html>

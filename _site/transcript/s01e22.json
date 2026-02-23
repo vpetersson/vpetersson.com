@@ -1,0 +1,5693 @@
+[
+  {
+    "sentence": "Before we dive into the show, I want to do a quick mention of a product that I've created called Spomify.",
+    "startTime": "00:04",
+    "endTime": "00:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Spomify is an SBOM hub.",
+    "startTime": "00:08",
+    "endTime": "00:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It integrates directly into your CI cd pipeline, so you can upload all your sboms straight into Spomify, and from there, you can share sboms with all your relevant stakeholders.",
+    "startTime": "00:11",
+    "endTime": "00:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So check out spomify@spomify.com.",
+    "startTime": "00:21",
+    "endTime": "00:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "and now onto the show.",
+    "startTime": "00:25",
+    "endTime": "00:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Welcome back to another episode of Nerding out with Victor.",
+    "startTime": "00:27",
+    "endTime": "00:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Today I have Steve Spriggit on the episode.",
+    "startTime": "00:31",
+    "endTime": "00:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Welcome to the show, Steve.",
+    "startTime": "00:34",
+    "endTime": "00:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Hey, Victor.",
+    "startTime": "00:35",
+    "endTime": "00:36",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Thanks for having me.",
+    "startTime": "00:36",
+    "endTime": "00:37",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Appreciate it.",
+    "startTime": "00:37",
+    "endTime": "00:37",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Super excited to have you.",
+    "startTime": "00:38",
+    "endTime": "00:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You're one of the most prominent figures in the Cyclone DX s bomb world.",
+    "startTime": "00:39",
+    "endTime": "00:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I'm really excited to kind of do almost like a follow up to my episode with Alan Friedman and kind of dive into more like applied s bombs, more so than s bombs in theory.",
+    "startTime": "00:44",
+    "endTime": "00:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And we've our path run across such a few different things around the sbom world.",
+    "startTime": "00:55",
+    "endTime": "01:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So we have a lot of grounds to cover.",
+    "startTime": "01:00",
+    "endTime": "01:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So maybe a good starting point is you obviously have used Sbom for a long time in your day job, so maybe give a backstory like your day job and how you kind of started using SBOn for sbons for a thing.",
+    "startTime": "01:02",
+    "endTime": "01:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Really?",
+    "startTime": "01:17",
+    "endTime": "01:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:18",
+    "endTime": "01:18",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:18",
+    "endTime": "01:18",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No, thanks.",
+    "startTime": "01:18",
+    "endTime": "01:20",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't know if prominent figure is.",
+    "startTime": "01:20",
+    "endTime": "01:22",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't know how to take that.",
+    "startTime": "01:22",
+    "endTime": "01:23",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That just means I have a target on my back at some point.",
+    "startTime": "01:23",
+    "endTime": "01:26",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But no, I had a prior employer of mine.",
+    "startTime": "01:28",
+    "endTime": "01:32",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We had some really basic requirements, right?",
+    "startTime": "01:32",
+    "endTime": "01:35",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I had a requirement to track the inventory of things that were delivering to market.",
+    "startTime": "01:35",
+    "endTime": "01:43",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that thing that were most concerned about just because of the use cases that it was, you know, used in and who those customers were, was full stack.",
+    "startTime": "01:43",
+    "endTime": "01:54",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "01:54",
+    "endTime": "01:54",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was a server appliance.",
+    "startTime": "01:54",
+    "endTime": "01:56",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so I had, you know, full stack requirements where I needed to track the.",
+    "startTime": "01:56",
+    "endTime": "02:02",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "All the individual hardware components.",
+    "startTime": "02:02",
+    "endTime": "02:04",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Not going down to the, you know, resistor capacitor type level, but, you know, going down to maybe the mainboard type level, right.",
+    "startTime": "02:05",
+    "endTime": "02:13",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What are the kind of cards that are in this system?",
+    "startTime": "02:13",
+    "endTime": "02:16",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What is the firmware that's on this thing?",
+    "startTime": "02:16",
+    "endTime": "02:19",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What is the operating system?",
+    "startTime": "02:19",
+    "endTime": "02:20",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the packages for that OS?",
+    "startTime": "02:20",
+    "endTime": "02:23",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What is the application and the application libraries?",
+    "startTime": "02:23",
+    "endTime": "02:27",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I had a need to track that entire thing, and what resulted in that was essentially the very first version of OAuth's dependency track.",
+    "startTime": "02:28",
+    "endTime": "02:40",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was horrible.",
+    "startTime": "02:40",
+    "endTime": "02:41",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was absolutely horrible.",
+    "startTime": "02:41",
+    "endTime": "02:43",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I hired an intern, and, you know, we kind of hashed it out because there was nothing on the market that really allowed me to do this.",
+    "startTime": "02:43",
+    "endTime": "02:51",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "02:51",
+    "endTime": "02:52",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, there wasn't even a file format that allowed me to do this, but I had this requirement, I couldn't say no.",
+    "startTime": "02:52",
+    "endTime": "02:59",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you had to invent something.",
+    "startTime": "03:00",
+    "endTime": "03:02",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But that was around, sorry, this was around.",
+    "startTime": "03:02",
+    "endTime": "03:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "This is around 2012.",
+    "startTime": "03:06",
+    "endTime": "03:08",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay, so this is twelve years ago, and I had been doing supply chain stuff before that, right.",
+    "startTime": "03:08",
+    "endTime": "03:14",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I had gotten into physical supply chain starting in 2008.",
+    "startTime": "03:14",
+    "endTime": "03:18",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I was working on, not on the specification itself, but one of the implementations, it was a specification called epedigree.",
+    "startTime": "03:19",
+    "endTime": "03:27",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And epedigree was an EPC global standard that really tracked the inventory and the, how would you say all those raw materials eventually came to be pharmaceuticals, and where those pharmaceuticals were then delivered.",
+    "startTime": "03:28",
+    "endTime": "03:50",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "03:50",
+    "endTime": "03:51",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Who were the different parties in the supply chain?",
+    "startTime": "03:51",
+    "endTime": "03:53",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What flowed to whom and in what form did that flow, right.",
+    "startTime": "03:54",
+    "endTime": "03:59",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it was capturing both the inventory as well as the time aspect of not quite time series.",
+    "startTime": "03:59",
+    "endTime": "04:07",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it was complicated enough, which is actually one of the reasons why that specification failed.",
+    "startTime": "04:07",
+    "endTime": "04:12",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was really complicated and I learned a tremendous amount from that experience because I basically learned what works and what doesn't when developing a spec.",
+    "startTime": "04:12",
+    "endTime": "04:23",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "04:23",
+    "endTime": "04:23",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The state of California and the state of Florida at the time were the only states that really did it, and it was too bloody expensive for them to keep doing it.",
+    "startTime": "04:23",
+    "endTime": "04:34",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "04:34",
+    "endTime": "04:35",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The, you know, the manufacturing industry in pharmaceuticals, they push back, and rightfully so, because it was way too costly for them to do it.",
+    "startTime": "04:35",
+    "endTime": "04:46",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And anyway, so I had some experience doing some supply chain stuff.",
+    "startTime": "04:47",
+    "endTime": "04:51",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So when I was asked to do this task back in 2012, you know, I kind of knew what I needed to do and what I needed to stay away from.",
+    "startTime": "04:51",
+    "endTime": "05:01",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so that was good.",
+    "startTime": "05:02",
+    "endTime": "05:04",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That kind of gave me a good starting point.",
+    "startTime": "05:04",
+    "endTime": "05:07",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But basically what I did in 2012 with that full stack inventory eventually became the data model for dependency track, which that very first version was horrible, but it did the job, right?",
+    "startTime": "05:07",
+    "endTime": "05:21",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It did.",
+    "startTime": "05:21",
+    "endTime": "05:21",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Okay.",
+    "startTime": "05:21",
+    "endTime": "05:22",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I maybe had a dozen users.",
+    "startTime": "05:22",
+    "endTime": "05:24",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "05:24",
+    "endTime": "05:24",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's it.",
+    "startTime": "05:25",
+    "endTime": "05:25",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, right.",
+    "startTime": "05:26",
+    "endTime": "05:27",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And, but that data model kind of still exists today, and it exists in the, you know, the completely rewritten, you know, widely used dependency track, but it also exists in the cycle and the specification.",
+    "startTime": "05:27",
+    "endTime": "05:45",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "05:45",
+    "endTime": "05:45",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's, there's a lot of synergies between these things because, you know, while we needed a portable format, these things were ultimately designed to work together, right.",
+    "startTime": "05:45",
+    "endTime": "05:59",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "A solution, not a specific solution, but a solution was designed to very easily work with the specification.",
+    "startTime": "05:59",
+    "endTime": "06:08",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And so that's kind of the story of how I got into this and why.",
+    "startTime": "06:09",
+    "endTime": "06:15",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And the s bomb community is certainly not perfect.",
+    "startTime": "06:15",
+    "endTime": "06:20",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I know, NTIA started their effort in 2018.",
+    "startTime": "06:20",
+    "endTime": "06:24",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I had no idea s bomb was a thing.",
+    "startTime": "06:25",
+    "endTime": "06:27",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, to me, why would you limit yourself to just software?",
+    "startTime": "06:28",
+    "endTime": "06:32",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That doesn't make any sense to me.",
+    "startTime": "06:32",
+    "endTime": "06:33",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I posted an article on medium, like a couple of years ago, and I basically equated that to, like, the physical supply chain folks.",
+    "startTime": "06:34",
+    "endTime": "06:44",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think I equated it to, like, maybe an automobile manufacturer.",
+    "startTime": "06:44",
+    "endTime": "06:48",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "06:48",
+    "endTime": "06:49",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Having a bomb specific for, you know, carbon fiber parts and another bomb specific for the aluminum parts and another.",
+    "startTime": "06:49",
+    "endTime": "06:57",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That doesn't make any sense.",
+    "startTime": "06:57",
+    "endTime": "06:58",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, right, yeah.",
+    "startTime": "06:59",
+    "endTime": "07:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And at the time, predating the whole, I guess, s bomb tipping point that happened around the executive order being announced, where everybody jumped on it.",
+    "startTime": "07:01",
+    "endTime": "07:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Prior to that, like the googles of the world, they already have something equivalent to this internally.",
+    "startTime": "07:13",
+    "endTime": "07:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like all the really sophisticated tech shops, they had these inventory systems in house, right.",
+    "startTime": "07:18",
+    "endTime": "07:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That were completely developed in house and did not adhere to any standard whatsoever.",
+    "startTime": "07:23",
+    "endTime": "07:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, what kind of, like, were there any inspiration from that you drew from?",
+    "startTime": "07:28",
+    "endTime": "07:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or like, did you kind of work in the silo, or how did you think about that back in those days?",
+    "startTime": "07:32",
+    "endTime": "07:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "No, no.",
+    "startTime": "07:38",
+    "endTime": "07:38",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's a great point.",
+    "startTime": "07:39",
+    "endTime": "07:40",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "A lot of these tech firms, even my own one today, I mean, we have all this data.",
+    "startTime": "07:40",
+    "endTime": "07:46",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It just wasn't in a standardized format and still isn't, and it's never going to be, which is kind of the point.",
+    "startTime": "07:46",
+    "endTime": "07:54",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now we can, which means that we can kind of spit out whatever format that exists today or in the future without issue.",
+    "startTime": "07:54",
+    "endTime": "08:01",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "For me, for my employer, that also includes all the services.",
+    "startTime": "08:03",
+    "endTime": "08:06",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "When we spit out an S bomb, you get the software, but you also get all the hundreds of services that you can optionally enable as well.",
+    "startTime": "08:07",
+    "endTime": "08:14",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And other vendors that other software manufacturers that have an inventory of either software services, in some cases, hardware that they deliver to market.",
+    "startTime": "08:14",
+    "endTime": "08:27",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "08:28",
+    "endTime": "08:28",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Producing these types of bills and materials is relatively elementary.",
+    "startTime": "08:29",
+    "endTime": "08:34",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "08:34",
+    "endTime": "08:34",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's just a matter of conforming to the whatever specification, assuming that specification can actually capture what it is that you want to communicate.",
+    "startTime": "08:35",
+    "endTime": "08:45",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "08:45",
+    "endTime": "08:46",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, yeah, so, Cyclone Washington, one of the things I learned early on from that epedigree experience is that the perfect standard will eventually be too complex, too costly to implement.",
+    "startTime": "08:46",
+    "endTime": "09:05",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'll give you an example.",
+    "startTime": "09:05",
+    "endTime": "09:06",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There was about a dozen or so valid use cases.",
+    "startTime": "09:07",
+    "endTime": "09:12",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I had my entire team spend, I don't know, six, eight months developing hundreds of negative test cases, things that you can do with a spec that should never happen in real life.",
+    "startTime": "09:13",
+    "endTime": "09:27",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That tells me that the specification is just too complex.",
+    "startTime": "09:27",
+    "endTime": "09:31",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "One of the things that we wanted to do with Cyclone early on, and we carry this philosophy today, is that we are not trying to create the perfect object model, because that will obviously be too costly, etcetera.",
+    "startTime": "09:33",
+    "endTime": "09:51",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What we wanted to do was create a good enough object model whereby it is a little bit prescriptive and by which it would be a little bit more difficult for adopters to shoot themselves in the foot.",
+    "startTime": "09:51",
+    "endTime": "10:11",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's really only one way to do something in Cyclone DX, whatever it is that you want to do.",
+    "startTime": "10:11",
+    "endTime": "10:16",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's usually only one, maybe two ways to do something, and that's by design, that we wanted to limit the flexibility in order to save the users a bunch of hurt down the road.",
+    "startTime": "10:16",
+    "endTime": "10:33",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "At the same time, we really wanted the specification to be highly automatable.",
+    "startTime": "10:33",
+    "endTime": "10:39",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, anything could be automated.",
+    "startTime": "10:39",
+    "endTime": "10:40",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "10:40",
+    "endTime": "10:40",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I can automate stuff all day, however, and I'm sure we're going to get into this in a bit, because I know you've been working on some of this stuff with some of the CiSA stuff, but I've never ever considered s bomb creation as a one time thing.",
+    "startTime": "10:40",
+    "endTime": "10:56",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I consider it a process.",
+    "startTime": "10:56",
+    "endTime": "10:58",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And when you consider it a process, you need lots and lots of really small tools that focus on really small things.",
+    "startTime": "10:58",
+    "endTime": "11:08",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Maybe you're building an S bomb and maybe you need to enhance it with some information.",
+    "startTime": "11:09",
+    "endTime": "11:14",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, I don't need that one little tool that does the enrichment to understand the entirety of the specification.",
+    "startTime": "11:14",
+    "endTime": "11:21",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I just needed to concentrate on that one little aspect and that's what it was.",
+    "startTime": "11:21",
+    "endTime": "11:26",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Cyclone.",
+    "startTime": "11:26",
+    "endTime": "11:27",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's like the Unix philosophy, right?",
+    "startTime": "11:27",
+    "endTime": "11:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Do one thing I do well.",
+    "startTime": "11:28",
+    "endTime": "11:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "11:29",
+    "endTime": "11:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "11:30",
+    "endTime": "11:30",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It could be chained together, and I think that's.",
+    "startTime": "11:30",
+    "endTime": "11:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I merged myself in Sbomwell for the last eight months or so now.",
+    "startTime": "11:34",
+    "endTime": "11:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think that's one of the huge difference between.",
+    "startTime": "11:38",
+    "endTime": "11:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I don't want to get into the format war, but between SPDX and Cyclone DX is more pragmatic and easier to understand.",
+    "startTime": "11:41",
+    "endTime": "11:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You can probably do things in SPDX that could not do in cycling DX, for instance, and probably vice versa too.",
+    "startTime": "11:53",
+    "endTime": "11:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But the bar to get into it, to your point, is a lot lower with Cyclo DX, and it's just a JSON file.",
+    "startTime": "11:59",
+    "endTime": "12:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Sure, a recipe can also be adjacent file, but it's a much more programmatic object rather than a JSON file, if that makes sense.",
+    "startTime": "12:09",
+    "endTime": "12:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yep.",
+    "startTime": "12:18",
+    "endTime": "12:18",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yep, absolutely.",
+    "startTime": "12:18",
+    "endTime": "12:20",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I've read the entirety of the SPDX specification multiple times.",
+    "startTime": "12:20",
+    "endTime": "12:24",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I know it very well.",
+    "startTime": "12:25",
+    "endTime": "12:26",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, I have not done the same with SPDX three, but we actually consider SPDX three to be a competing bomb format.",
+    "startTime": "12:26",
+    "endTime": "12:33",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "SPDX two is not really that keep in mind that even though people can use it for such things, the NTIA effort that kicked this whole thing off, they didn't start with let's find out existing bills and materials formats.",
+    "startTime": "12:34",
+    "endTime": "12:55",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's not what they did.",
+    "startTime": "12:56",
+    "endTime": "12:57",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What they did was let's figure out do formats exist that can meet our use case.",
+    "startTime": "12:57",
+    "endTime": "13:03",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And there were three of those formats.",
+    "startTime": "13:03",
+    "endTime": "13:05",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Obviously the worst example of misuse would be s wid.",
+    "startTime": "13:06",
+    "endTime": "13:10",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Completely not designed for this.",
+    "startTime": "13:11",
+    "endTime": "13:13",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It is by name software identity.",
+    "startTime": "13:13",
+    "endTime": "13:16",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "13:16",
+    "endTime": "13:17",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So can you misuse s wid four s bom?",
+    "startTime": "13:17",
+    "endTime": "13:19",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Sure.",
+    "startTime": "13:20",
+    "endTime": "13:20",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And you really have to stretch yourself to do that.",
+    "startTime": "13:21",
+    "endTime": "13:24",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Not even part of the debate anymore.",
+    "startTime": "13:25",
+    "endTime": "13:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's not.",
+    "startTime": "13:27",
+    "endTime": "13:28",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But at the same time, if you actually, and I would encourage folks to actually read SPDX version two because that's the most widely used specification.",
+    "startTime": "13:28",
+    "endTime": "13:37",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Read it, read it, read the specification.",
+    "startTime": "13:38",
+    "endTime": "13:41",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Truly understand the words that are on the page because you might have a little bit different perspective when you do.",
+    "startTime": "13:41",
+    "endTime": "13:47",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I mean they are.",
+    "startTime": "13:49",
+    "endTime": "13:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think they're coming from two philosophical, different approaches to solving that problem.",
+    "startTime": "13:51",
+    "endTime": "13:55",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "13:55",
+    "endTime": "13:55",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I think that's, well, we can get into formats later, but I mean, I think the format in long run will probably be an implementation detail, hopefully.",
+    "startTime": "13:55",
+    "endTime": "14:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Exactly.",
+    "startTime": "14:05",
+    "endTime": "14:05",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think we're going to be talking about exchanging and stuff like that later on.",
+    "startTime": "14:06",
+    "endTime": "14:10",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I do believe I agree with you.",
+    "startTime": "14:10",
+    "endTime": "14:13",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If we're still arguing about formats in five years, we failed as an industry.",
+    "startTime": "14:13",
+    "endTime": "14:18",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "My opinion.",
+    "startTime": "14:18",
+    "endTime": "14:18",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, yeah, absolutely.",
+    "startTime": "14:18",
+    "endTime": "14:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So in your day job going back to like early days of s bombs and bringing that you started with, I presume you started with a pain point around security, I believe.",
+    "startTime": "14:21",
+    "endTime": "14:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I mean that's dependency track does do licensing audit as well, but it's coming from the strong side of security audits.",
+    "startTime": "14:32",
+    "endTime": "14:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "14:39",
+    "endTime": "14:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that was the actual business need you were trying to solve for.",
+    "startTime": "14:39",
+    "endTime": "14:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's like give me my entire stack, show me the cv's I'm affected by.",
+    "startTime": "14:41",
+    "endTime": "14:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I presume that was the advantage you came correct.",
+    "startTime": "14:45",
+    "endTime": "14:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, well, we had two requirements, again, because of the customers that were selling into, we first and foremost had to have an inventory of everything that were delivering.",
+    "startTime": "14:49",
+    "endTime": "15:00",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That was use case number one.",
+    "startTime": "15:00",
+    "endTime": "15:02",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then once you actually have that inventory.",
+    "startTime": "15:02",
+    "endTime": "15:04",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes, security was that secondary use case because we also had additional requirements on informing those customers on any kind of vulnerabilities.",
+    "startTime": "15:04",
+    "endTime": "15:15",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then of course when we do, you know, that starts the whole stopwatch.",
+    "startTime": "15:15",
+    "endTime": "15:20",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "15:21",
+    "endTime": "15:21",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So there was some other use cases built on top of that.",
+    "startTime": "15:21",
+    "endTime": "15:24",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But yeah, licensing really wasn't too much of a concern for those customers at that time.",
+    "startTime": "15:24",
+    "endTime": "15:31",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But yeah, s bombs obviously can be used for licensing as well.",
+    "startTime": "15:31",
+    "endTime": "15:35",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "One of the interesting things that I feel that kind of gets overlooked with licensing is that while most of us talk about licensing from, like, open source perspective, one of the really interesting things is that once you get a lot of really ingrained adoption in some large organizations, suddenly they actually care.",
+    "startTime": "15:35",
+    "endTime": "16:01",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Depending on where they're located in the world, it might vary, but they care a lot about commercial licensing.",
+    "startTime": "16:01",
+    "endTime": "16:08",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And, you know, tracking the type of license it is, whether it's per seat, per server, you know, if it's an embedded type of license, if it's a service, if it's a subscription.",
+    "startTime": "16:08",
+    "endTime": "16:19",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "16:19",
+    "endTime": "16:20",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What actually happens to that software when that subscription or license expires?",
+    "startTime": "16:20",
+    "endTime": "16:25",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, that's no longer a legal thing.",
+    "startTime": "16:25",
+    "endTime": "16:27",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's a security thing.",
+    "startTime": "16:27",
+    "endTime": "16:28",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you look at the CIA triad now, availability is impacted.",
+    "startTime": "16:28",
+    "endTime": "16:32",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we're having a lot of folks voice interest in the commercial licensing support.",
+    "startTime": "16:32",
+    "endTime": "16:38",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we delivered that, like, a couple of.",
+    "startTime": "16:38",
+    "endTime": "16:41",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Couple of versions ago in Cyclone DX.",
+    "startTime": "16:41",
+    "endTime": "16:44",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "16:44",
+    "endTime": "16:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I've been toying with quite a bit of these metadata elements in, well, both in cycling DX and SPDX.",
+    "startTime": "16:46",
+    "endTime": "16:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it is a complicated matter.",
+    "startTime": "16:53",
+    "endTime": "16:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "16:57",
+    "endTime": "16:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it's kind of like you're getting into not only security, but also discoverability and inventory tracking.",
+    "startTime": "16:57",
+    "endTime": "17:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So it's kind of like it's.",
+    "startTime": "17:05",
+    "endTime": "17:06",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that's.",
+    "startTime": "17:07",
+    "endTime": "17:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We'll get into the whole O bomb structure later on, but it's kind of like, where do you draw the line between S bomb and when is an S bomb no longer an S bomb?",
+    "startTime": "17:08",
+    "endTime": "17:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "17:16",
+    "endTime": "17:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because all of a sudden, are you tracking your network infrastructure, your clusters, in an S bomb?",
+    "startTime": "17:16",
+    "endTime": "17:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, is that really the right toll for job?",
+    "startTime": "17:22",
+    "endTime": "17:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I know there are elements there.",
+    "startTime": "17:25",
+    "endTime": "17:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So maybe.",
+    "startTime": "17:26",
+    "endTime": "17:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Maybe that's a good kind of transition into the whole concept of O bombs, which, first time I discovered that, I was like, yeah, that just makes sense.",
+    "startTime": "17:27",
+    "endTime": "17:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "17:35",
+    "endTime": "17:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "S bomb is just, like the starting point towards something much greater.",
+    "startTime": "17:35",
+    "endTime": "17:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So maybe start with, like, laying out the foundation for what.",
+    "startTime": "17:40",
+    "endTime": "17:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What's.",
+    "startTime": "17:44",
+    "endTime": "17:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What's O bombs?",
+    "startTime": "17:45",
+    "endTime": "17:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And, like, how do s bombs fit into that bigger picture?",
+    "startTime": "17:46",
+    "endTime": "17:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "17:49",
+    "endTime": "17:50",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the.",
+    "startTime": "17:50",
+    "endTime": "17:50",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Your s bomb for any given piece of software is essentially, well, it should be immutable.",
+    "startTime": "17:51",
+    "endTime": "17:56",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It should never change for a version of a piece of software, that inventory doesn't change.",
+    "startTime": "17:56",
+    "endTime": "18:02",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, if you apply a patch, if you update it, well, that's a new piece of software.",
+    "startTime": "18:02",
+    "endTime": "18:07",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's a new s bomb.",
+    "startTime": "18:07",
+    "endTime": "18:09",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But your s bomb for a given version should not change.",
+    "startTime": "18:09",
+    "endTime": "18:12",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, when that s bom is ultimately.",
+    "startTime": "18:12",
+    "endTime": "18:16",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "When that software is ultimately deployed somewhere, whether it's like an on prem server.",
+    "startTime": "18:16",
+    "endTime": "18:20",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Whether it's in your Kubernetes cluster doesn't matter, right.",
+    "startTime": "18:20",
+    "endTime": "18:24",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's deployed somewhere.",
+    "startTime": "18:24",
+    "endTime": "18:26",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well now you have to take into consideration what is the configuration of that thing.",
+    "startTime": "18:26",
+    "endTime": "18:32",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What other kind of environmental attributes do I need to take into consideration for that inventory, for example, I'll give you an example in the Java world just because, you know, even though folks love to harp on Java for being entirely verbose, and I will note disagree with that, it still is widely used in enterprise.",
+    "startTime": "18:32",
+    "endTime": "18:58",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I'll give you an example in Java.",
+    "startTime": "18:59",
+    "endTime": "19:02",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Say for example, I get a web application from a vendor, well I deploy that thing maybe out to a Tomcat container or whatever it is.",
+    "startTime": "19:02",
+    "endTime": "19:14",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well Tomcat wasn't actually delivered by the vendor, right.",
+    "startTime": "19:14",
+    "endTime": "19:16",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That thing, that runtime component, Tomcat and the JVM, well that's part of my stack as well.",
+    "startTime": "19:18",
+    "endTime": "19:24",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So when I need to know vulnerabilities, well you know, so that's the addition part of the vulnerabilities.",
+    "startTime": "19:25",
+    "endTime": "19:33",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now the interesting thing about Obom, depending on the ecosystem that you're working in Java, let's take log four shell as an example.",
+    "startTime": "19:33",
+    "endTime": "19:45",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well if that same piece of software had a vulnerable version of log four j, I honestly don't need the vendor to patch anything.",
+    "startTime": "19:45",
+    "endTime": "19:56",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's a way in Java to say, well, here's my extended class path, I want you to use this thing first.",
+    "startTime": "19:56",
+    "endTime": "20:03",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I can literally deploy fixed versions of log four j out to my entire enterprise and not actually have the vendors actually modify their R's or the wires or their R's, their web archives.",
+    "startTime": "20:03",
+    "endTime": "20:18",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that additional version of log four j that might be safe, that is now also now part of my inventory.",
+    "startTime": "20:18",
+    "endTime": "20:29",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So essentially you have more of a fluid type of specification for representing the obom.",
+    "startTime": "20:29",
+    "endTime": "20:40",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This, this is not a static thing, right.",
+    "startTime": "20:40",
+    "endTime": "20:42",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is a living breathing document because it could change day to day, hour to hour based on, you know, organizational need.",
+    "startTime": "20:42",
+    "endTime": "20:51",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then you can then tie that into the whole sauce bombs, ML bombs.",
+    "startTime": "20:52",
+    "endTime": "20:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There's like, there's a whole like this diagram on the cycling Dx website about like how they all link together essentially.",
+    "startTime": "20:58",
+    "endTime": "21:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And you have these reference like Vex files is not a good example of that.",
+    "startTime": "21:05",
+    "endTime": "21:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's like, it's not really part of the S bomb, but it's kind of referenced in S bomb.",
+    "startTime": "21:09",
+    "endTime": "21:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So like maybe like how does your worldview look like assuming that s bombs do take off and that becomes like, which I think at least I'm very bullish on, it's gonna be the standard for anybody who's like security oriented, needs to meet any compliance.",
+    "startTime": "21:13",
+    "endTime": "21:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "21:27",
+    "endTime": "21:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That's gonna be the world that we live in.",
+    "startTime": "21:27",
+    "endTime": "21:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Five years.",
+    "startTime": "21:29",
+    "endTime": "21:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So now that we have S bombs, that's one big piece of the puzzle.",
+    "startTime": "21:30",
+    "endTime": "21:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How do you see the next stepping stone from that?",
+    "startTime": "21:33",
+    "endTime": "21:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Assuming we do have that, how would that world look like for you?",
+    "startTime": "21:37",
+    "endTime": "21:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Ten years out?",
+    "startTime": "21:41",
+    "endTime": "21:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I think that ten year out perspective, I think, in my opinion, s bomb will be basically just, oh, well, of course you need that.",
+    "startTime": "21:43",
+    "endTime": "21:53",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's kind of like unit testing, right?",
+    "startTime": "21:53",
+    "endTime": "21:55",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, of course.",
+    "startTime": "21:55",
+    "endTime": "21:56",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Technology testing.",
+    "startTime": "21:56",
+    "endTime": "21:57",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "21:57",
+    "endTime": "21:58",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So, I mean, it's.",
+    "startTime": "21:58",
+    "endTime": "21:59",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's.",
+    "startTime": "21:59",
+    "endTime": "22:00",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's a new thing to the software industry.",
+    "startTime": "22:00",
+    "endTime": "22:02",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Relatively new.",
+    "startTime": "22:02",
+    "endTime": "22:03",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, our hardware counterparts have been, parts have been doing that for 50 years.",
+    "startTime": "22:04",
+    "endTime": "22:08",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "22:08",
+    "endTime": "22:08",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's, you know, it was very common in the.",
+    "startTime": "22:09",
+    "endTime": "22:10",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In the 1970s, for example.",
+    "startTime": "22:10",
+    "endTime": "22:12",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "22:13",
+    "endTime": "22:13",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Just knowing what you have right now, the hardware world has some interesting things that we don't necessarily have to deal with.",
+    "startTime": "22:13",
+    "endTime": "22:21",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So a lot of their maturity is kind of built around their reality, which is very different than ours.",
+    "startTime": "22:21",
+    "endTime": "22:26",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "For example, if they're delivering a specific model of maybe a router, right?",
+    "startTime": "22:26",
+    "endTime": "22:31",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I guess you would say router.",
+    "startTime": "22:31",
+    "endTime": "22:33",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You're delivering an electronic device to market that has software, and you might have a hardware component in that particular device that.",
+    "startTime": "22:35",
+    "endTime": "22:46",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That maybe that supplier is out of.",
+    "startTime": "22:47",
+    "endTime": "22:49",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you have an alternative supplier that you haven't changed the model number, but technically, this is a different inventory than the one next to it because you ran out and you had replacement.",
+    "startTime": "22:49",
+    "endTime": "23:03",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This happens in hardware all the time.",
+    "startTime": "23:04",
+    "endTime": "23:06",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I understand why the hardware folks don't want software in their stuff, because they've.",
+    "startTime": "23:06",
+    "endTime": "23:14",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They've got processes that have been fully vetted, fully baked for many decades, and they don't want us.",
+    "startTime": "23:15",
+    "endTime": "23:22",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Oh, with our s bombs coming around and mucking it up, I don't blame them.",
+    "startTime": "23:22",
+    "endTime": "23:27",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But at the same time, I think it's increasingly important that we understand that software and s bomb is just one part of the equation.",
+    "startTime": "23:27",
+    "endTime": "23:41",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And manufacturers specifically, like IoT devices, they should deliver h bombs.",
+    "startTime": "23:41",
+    "endTime": "23:49",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They should deliver s bombs to market.",
+    "startTime": "23:49",
+    "endTime": "23:52",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I believe in ten years, having services information will be just.",
+    "startTime": "23:53",
+    "endTime": "23:58",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, of course you would.",
+    "startTime": "23:58",
+    "endTime": "24:00",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I get questions all the time.",
+    "startTime": "24:01",
+    "endTime": "24:03",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Even for the open source stuff like dependency track, organizations might want to lock it down and they come out with a list.",
+    "startTime": "24:03",
+    "endTime": "24:11",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, what does it need to connect to so I can have my firewall guys ensure that.",
+    "startTime": "24:11",
+    "endTime": "24:18",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, here's my services bomb for that.",
+    "startTime": "24:18",
+    "endTime": "24:21",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Here's my bomb that has just the services information.",
+    "startTime": "24:21",
+    "endTime": "24:24",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It has all the URL, the endpoint URL's, it has all the data classifications that directional flow of data in there.",
+    "startTime": "24:24",
+    "endTime": "24:33",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is everything your firewall guys need.",
+    "startTime": "24:33",
+    "endTime": "24:36",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean that's beautiful.",
+    "startTime": "24:36",
+    "endTime": "24:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Imagine you can plug this into your Kubernetes cluster and it does automatically provisioning all your routing rules, for instance, automatically.",
+    "startTime": "24:37",
+    "endTime": "24:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And say if this service tries to talk to something else.",
+    "startTime": "24:45",
+    "endTime": "24:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Well I know there are ways to define this in the Kubernetes world, but having agnostic format for this that can be pluggable, that describes.",
+    "startTime": "24:48",
+    "endTime": "24:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "These are the ways I need to talk to, and at least in my experience in my other company where network requirements for an IoT device is like a very frequent talking point in enterprise, they're like, okay, tell me exactly which ports this device on.",
+    "startTime": "24:58",
+    "endTime": "25:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "These endpoints these devices need to talk to because we need to open up our firewalls for this.",
+    "startTime": "25:13",
+    "endTime": "25:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And the current solution for that in the IoT world is like well here's a wiki page, we will update that at some point.",
+    "startTime": "25:17",
+    "endTime": "25:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We will try not to, but the reality is that we might need to change that.",
+    "startTime": "25:26",
+    "endTime": "25:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But there's no dynamic discovery process of that at all.",
+    "startTime": "25:30",
+    "endTime": "25:33",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "25:33",
+    "endTime": "25:33",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right, exactly.",
+    "startTime": "25:33",
+    "endTime": "25:34",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, it's very static.",
+    "startTime": "25:34",
+    "endTime": "25:35",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you know, in ten years time, you know, I kind of see software and services kind of being.",
+    "startTime": "25:35",
+    "endTime": "25:42",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well of course you would.",
+    "startTime": "25:42",
+    "endTime": "25:43",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "25:43",
+    "endTime": "25:43",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Just part of what we do in developing software.",
+    "startTime": "25:43",
+    "endTime": "25:46",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But hopefully in ten years time.",
+    "startTime": "25:46",
+    "endTime": "25:49",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right now, right now we have kind of a, I would describe the industry as just very immature.",
+    "startTime": "25:50",
+    "endTime": "26:01",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We're trying to drive model t's down the Nurburgring.",
+    "startTime": "26:01",
+    "endTime": "26:07",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We have a long way to go.",
+    "startTime": "26:08",
+    "endTime": "26:10",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And what I predict or where I envision the industry going to is not having a bunch of these tools that kind of produce and generate s bombs.",
+    "startTime": "26:10",
+    "endTime": "26:24",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "26:24",
+    "endTime": "26:24",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's if we're still there in ten years.",
+    "startTime": "26:25",
+    "endTime": "26:27",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think again, we've failed as an industry.",
+    "startTime": "26:27",
+    "endTime": "26:29",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Where I see this going is kind of like you mentioned cloud a lot.",
+    "startTime": "26:30",
+    "endTime": "26:35",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I'll give you a cloud example.",
+    "startTime": "26:35",
+    "endTime": "26:38",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In cloud you have this concept of observability, which is essentially looking at the real time performance of all your microservices across your entire deployment, right.",
+    "startTime": "26:39",
+    "endTime": "26:48",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And trying to pinpoint things that are either going wrong or could go wrong, right?",
+    "startTime": "26:49",
+    "endTime": "26:54",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I believe that in order for us to do this right, we're essentially going to need some kind of observability layer on top of our existing build infrastructure that automatically starts doing this stuff for us, not just the generation of the bills and materials, but in some cases accounting for the deficiencies in some of our infrastructure as well.",
+    "startTime": "26:54",
+    "endTime": "27:22",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now I'll give you an example of the deficiencies right now.",
+    "startTime": "27:23",
+    "endTime": "27:27",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you sell to the us federal government.",
+    "startTime": "27:27",
+    "endTime": "27:28",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "27:28",
+    "endTime": "27:29",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "SSDF is a hard requirement.",
+    "startTime": "27:29",
+    "endTime": "27:31",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You have to do it.",
+    "startTime": "27:31",
+    "endTime": "27:33",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And part of SSDF is providence.",
+    "startTime": "27:33",
+    "endTime": "27:35",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I'm not talking about salsa providence.",
+    "startTime": "27:35",
+    "endTime": "27:37",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's something entirely different.",
+    "startTime": "27:37",
+    "endTime": "27:38",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm talking about actual provenance.",
+    "startTime": "27:38",
+    "endTime": "27:40",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So knowing where your chain of custody, where you got something from.",
+    "startTime": "27:40",
+    "endTime": "27:45",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, many organizations have like on prem, like repository servers, whether it's something like artifactory or nexus repo or one of the many others.",
+    "startTime": "27:46",
+    "endTime": "27:56",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "27:56",
+    "endTime": "27:57",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, the use of those repos speeds things up.",
+    "startTime": "27:58",
+    "endTime": "28:01",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It also hides where you actually got something in many cases, because those repos are usually out of the box, set up as the easy button.",
+    "startTime": "28:01",
+    "endTime": "28:11",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "28:11",
+    "endTime": "28:11",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They proxy maven central, they proxy NPM, J s, they proxy pypod.",
+    "startTime": "28:11",
+    "endTime": "28:17",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Did you actually get those components from there?",
+    "startTime": "28:17",
+    "endTime": "28:20",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't know.",
+    "startTime": "28:20",
+    "endTime": "28:21",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So part of that observability layer would be to account for some of the DNS changes that might happen.",
+    "startTime": "28:22",
+    "endTime": "28:30",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because if you get something from one mirror versus another, sometimes that matters.",
+    "startTime": "28:30",
+    "endTime": "28:35",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Not always, but sometimes it does.",
+    "startTime": "28:35",
+    "endTime": "28:37",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It accounts for things like, you know, organizations with local repository servers.",
+    "startTime": "28:37",
+    "endTime": "28:43",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "28:43",
+    "endTime": "28:44",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And not being able to track where the province actually lies.",
+    "startTime": "28:44",
+    "endTime": "28:48",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I think as an industry, that's something we need to get to eventually.",
+    "startTime": "28:49",
+    "endTime": "28:54",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I haven't seen any tools come around or any, or even any papers that I can kind of look at that kind of discuss this kind of challenge and possible ways to solve it.",
+    "startTime": "28:54",
+    "endTime": "29:08",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But isn't that in part solved with hashes in the s bomb, like in the NTIA minimum elements, for instance, which kind of like considered somewhat of the gold standard for like what you should look like in theory, but only in reality, because it's really hard to do in reality, as it turns out.",
+    "startTime": "29:08",
+    "endTime": "29:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But I, one of the things they call for is hashing all the dependencies.",
+    "startTime": "29:25",
+    "endTime": "29:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you say, well, here's my SHA 256 for this python package.",
+    "startTime": "29:29",
+    "endTime": "29:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If I have that, assuming there is no collision in the SHA 256 hash, which is, I don't think there are any known ones because I don't think anybody uses MD five anymore.",
+    "startTime": "29:34",
+    "endTime": "29:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You can, regardless where you procure that, you can trust that it is the file that you anticipate or a package anticipate to get.",
+    "startTime": "29:45",
+    "endTime": "29:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So the repository where you retrieve it from is somewhat irrelevant, but I'm not sure.",
+    "startTime": "29:54",
+    "endTime": "30:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Oh, okay.",
+    "startTime": "30:00",
+    "endTime": "30:01",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'll give you some examples.",
+    "startTime": "30:01",
+    "endTime": "30:03",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So this has actually happened, and I can't tell you where it happened, but I know that it has occurred and it probably still is occurring to this day.",
+    "startTime": "30:03",
+    "endTime": "30:14",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So some nation states have a very long tail long strategy, right?",
+    "startTime": "30:14",
+    "endTime": "30:22",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In terms of getting into organizations not really doing anything that would suggest that they were in their networks, whatever.",
+    "startTime": "30:22",
+    "endTime": "30:37",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "One thing that I know many government agencies are interested in is, of course they're interested in Providence.",
+    "startTime": "30:40",
+    "endTime": "30:49",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it is possible, for example, for a nation state adversary to compromise your build infrastructure in a way where instead of resolving dependencies from your local repository server, you're resolving it from one of theirs that they control.",
+    "startTime": "30:49",
+    "endTime": "31:05",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, they can control that repository server that you're fetching all your artifacts from.",
+    "startTime": "31:06",
+    "endTime": "31:13",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And when you eventually need to upgrade those, first of all, now they have.",
+    "startTime": "31:13",
+    "endTime": "31:21",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now that nation state adversary has a complete list of not only the stuff that you have in your s bomb, but all the stuff that you use for testing, unit testing, integration testing, all the other things that you rely on that is not in your s bomb.",
+    "startTime": "31:21",
+    "endTime": "31:37",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So first and foremost, right.",
+    "startTime": "31:37",
+    "endTime": "31:40",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But when you eventually need to upgrade your components, when you upgrade that component, now it becomes a challenge.",
+    "startTime": "31:40",
+    "endTime": "31:49",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They've got you.",
+    "startTime": "31:50",
+    "endTime": "31:51",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So knowing where you actually get an artifact from is highly important.",
+    "startTime": "31:51",
+    "endTime": "31:57",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Interesting.",
+    "startTime": "31:58",
+    "endTime": "31:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Okay, that's an interesting attack vector.",
+    "startTime": "31:58",
+    "endTime": "32:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, I haven't thought of that.",
+    "startTime": "32:00",
+    "endTime": "32:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, that's fair enough.",
+    "startTime": "32:01",
+    "endTime": "32:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "32:02",
+    "endTime": "32:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And going back to what you said before about knowing what you have, and we kind of getting into service discovery, which is, I know, it's like Wally Gartner's buzzword they used, like a few years ago, like everything was about service discovery, blah.",
+    "startTime": "32:04",
+    "endTime": "32:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I feel like this has a potential to become like the future of service discovery, right?",
+    "startTime": "32:19",
+    "endTime": "32:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "A standardized, like, if SaaS bombs become a thing that the industry kind of backs, and I guess Cod native foundation, all those guys back get behind and support, then it could become like the de facto service discovery mechanism that describes all your classes, all your services, including external services, right?",
+    "startTime": "32:26",
+    "endTime": "32:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, absolutely.",
+    "startTime": "32:50",
+    "endTime": "32:50",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's an interesting prospect, right?",
+    "startTime": "32:51",
+    "endTime": "32:53",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because then you tie it together to your s pumps, and now you start to have this, like, really beautiful map of what actually goes into your deliverables, right?",
+    "startTime": "32:53",
+    "endTime": "33:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "33:01",
+    "endTime": "33:01",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think as an industry, we, the s bombs, a lot of the NTIA, and now the CISA framing for s bombs is really about sharing files.",
+    "startTime": "33:02",
+    "endTime": "33:12",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But when we start talking about O bombs and SAS bombs and all these very dynamic things, right, my SAS bomb could change 50 times a day because maybe that's how many times I deployed to production, right?",
+    "startTime": "33:12",
+    "endTime": "33:23",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "These are very dynamic things.",
+    "startTime": "33:23",
+    "endTime": "33:25",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So a file based approach is not what you want.",
+    "startTime": "33:25",
+    "endTime": "33:30",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You actually want more of an API for these types of things.",
+    "startTime": "33:30",
+    "endTime": "33:34",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "100%.",
+    "startTime": "33:34",
+    "endTime": "33:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That was one of the earliest beefs I had when I started getting to the world of sboms, where people really treated s bombs like as static elements.",
+    "startTime": "33:35",
+    "endTime": "33:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And they are static in the sense, like, they are static for that particular revision of whatever you're doing.",
+    "startTime": "33:43",
+    "endTime": "33:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But it's like, if you're a modern company, you can Google deploy, what, 10,000 times a day?",
+    "startTime": "33:48",
+    "endTime": "33:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You got to email that file 10,000 times to your customers.",
+    "startTime": "33:57",
+    "endTime": "33:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It doesn't work.",
+    "startTime": "34:02",
+    "endTime": "34:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "34:02",
+    "endTime": "34:02",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's just completely unrealistic.",
+    "startTime": "34:02",
+    "endTime": "34:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right, right.",
+    "startTime": "34:04",
+    "endTime": "34:05",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So getting into the whole, like, collaboration part of sboms, like, that was one of the most obvious things that I figured out when I started actually doing sboms at squidling in the real world, it's like, cool.",
+    "startTime": "34:05",
+    "endTime": "34:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But if my customer asked for an S bomb, like, how am I going to share it with them?",
+    "startTime": "34:19",
+    "endTime": "34:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like the S bomb sharing primer from scisha.",
+    "startTime": "34:23",
+    "endTime": "34:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, they call this out, what, two years ago?",
+    "startTime": "34:25",
+    "endTime": "34:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it's like.",
+    "startTime": "34:28",
+    "endTime": "34:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that has been very much reflected in conversation I have with cisos around the world.",
+    "startTime": "34:30",
+    "endTime": "34:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, people are like, well, yeah, my vendors sent me sboms.",
+    "startTime": "34:35",
+    "endTime": "34:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I chucked them into sharepoint.",
+    "startTime": "34:37",
+    "endTime": "34:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Cool.",
+    "startTime": "34:39",
+    "endTime": "34:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Now what?",
+    "startTime": "34:41",
+    "endTime": "34:42",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think that gives us a really good transition into Project Wala, or the transparency exchange API, which you and Ola has been working on for quite some time that I'm kind of newcomer to, but I really like the idea of the project.",
+    "startTime": "34:44",
+    "endTime": "34:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So maybe give a kind of a big primer or a little bit of a primer on what's project Walla and how does it solve the whole discovery and sharing element?",
+    "startTime": "34:57",
+    "endTime": "35:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "35:05",
+    "endTime": "35:06",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So Project Koala, which is also called the transparency exchange API, by the way, interesting fact.",
+    "startTime": "35:06",
+    "endTime": "35:13",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Chris Gates.",
+    "startTime": "35:13",
+    "endTime": "35:14",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Christopher Gates, who's big in the sbom world from the medical device.",
+    "startTime": "35:14",
+    "endTime": "35:18",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "35:18",
+    "endTime": "35:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Perspective.",
+    "startTime": "35:19",
+    "endTime": "35:19",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "35:19",
+    "endTime": "35:20",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We have this group within Cyclone DX called the Industry Working Group.",
+    "startTime": "35:21",
+    "endTime": "35:24",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We've got a bunch of different working groups, right?",
+    "startTime": "35:24",
+    "endTime": "35:26",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We've got feature working groups, a core working group, but we have an industry working group, and they're the ones that sometimes we get some really lofty ideas, and they're the ones that's, like, no ranging back, you know, they provide a lot of guardrails for us in some way.",
+    "startTime": "35:26",
+    "endTime": "35:43",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "35:43",
+    "endTime": "35:44",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They also provide us some opportunities, like, what kinds of things are they seeing in the real world?",
+    "startTime": "35:44",
+    "endTime": "35:48",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So they provide feedback to us a lot.",
+    "startTime": "35:48",
+    "endTime": "35:50",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it was Christopher Gates who actually coined the term Project Koala, like, a couple of years ago, and it just kind of stuck.",
+    "startTime": "35:50",
+    "endTime": "35:57",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "He didn't think I would actually go forward and, like, actually do it, but now.",
+    "startTime": "36:00",
+    "endTime": "36:04",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now it's just kind of there.",
+    "startTime": "36:04",
+    "endTime": "36:06",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's cute.",
+    "startTime": "36:06",
+    "endTime": "36:07",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's.",
+    "startTime": "36:07",
+    "endTime": "36:07",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, for the people who actually don't know Koalas in person, it's cute.",
+    "startTime": "36:07",
+    "endTime": "36:12",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But it's essentially this effort.",
+    "startTime": "36:13",
+    "endTime": "36:16",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It started initially for a Cyclone DX.",
+    "startTime": "36:16",
+    "endTime": "36:19",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't want to say Cyclone DX only, but it was certainly geared more towards Cyclone.",
+    "startTime": "36:20",
+    "endTime": "36:25",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it was really intended to focus on that last mile.",
+    "startTime": "36:25",
+    "endTime": "36:30",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I have an S bomb now.",
+    "startTime": "36:30",
+    "endTime": "36:32",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What?",
+    "startTime": "36:32",
+    "endTime": "36:32",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because logging into 10,000 support portals in different ways to get S bombs for different versions of different software, that's not scalable, right.",
+    "startTime": "36:33",
+    "endTime": "36:42",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If I have to hire an army of interns to do that.",
+    "startTime": "36:42",
+    "endTime": "36:45",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We failed as an industry 100%.",
+    "startTime": "36:46",
+    "endTime": "36:48",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, absolutely.",
+    "startTime": "36:48",
+    "endTime": "36:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We're trying to work on that whole last mile.",
+    "startTime": "36:50",
+    "endTime": "36:52",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "How do we publish, how do we search, how do we retrieve these s bombs in a standardized way?",
+    "startTime": "36:53",
+    "endTime": "37:00",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It has over the last couple of years that idea, which has been kind of percolating in our GitHub repository, which has largely remained unused until more recently.",
+    "startTime": "37:02",
+    "endTime": "37:16",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We've been primarily working in Google Docs, but we've expanded that scope and our approach to that over the years.",
+    "startTime": "37:16",
+    "endTime": "37:26",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We are, we recognize that.",
+    "startTime": "37:28",
+    "endTime": "37:31",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And this kind of goes, I guess, with the evolution of cyclone itself.",
+    "startTime": "37:31",
+    "endTime": "37:36",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "37:36",
+    "endTime": "37:36",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Cyclone was never a NS bomb format.",
+    "startTime": "37:36",
+    "endTime": "37:39",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Never was, never will be.",
+    "startTime": "37:39",
+    "endTime": "37:40",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was a full stack bills of materials format, but is now kind of morphing into a format for, or a way to represent software and system transparency.",
+    "startTime": "37:41",
+    "endTime": "37:59",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's really what it is.",
+    "startTime": "38:00",
+    "endTime": "38:01",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's a transparency expression language.",
+    "startTime": "38:01",
+    "endTime": "38:04",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you look at the capabilities of Cyclone DX, there is probably, if I had to guess, 60% of its capabilities actually have nothing to do with bills and materials.",
+    "startTime": "38:04",
+    "endTime": "38:15",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And a lot of the stuff that we're doing in the next version also have nothing to do with bills and materials.",
+    "startTime": "38:16",
+    "endTime": "38:23",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's really about transparency.",
+    "startTime": "38:23",
+    "endTime": "38:24",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we wanted the API to be able to support these artifacts that kind of represent transparency, whether they're s bombs or different types of attestations, like legal attestations, not like the in total kind, but all these different types of things that you might want to share out with customers in a.",
+    "startTime": "38:26",
+    "endTime": "38:49",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In a standardized kind of way where you can search and you can publish and search and retrieve these things not just automatically, but autonomously.",
+    "startTime": "38:49",
+    "endTime": "39:00",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because if we want to scale, right, if I'm a company and I have 10,000 vendors that I do business with, plugging in even the URL's 10,000 times, that's also a failure.",
+    "startTime": "39:01",
+    "endTime": "39:14",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we needed it to be as autonomous as humanly possible.",
+    "startTime": "39:14",
+    "endTime": "39:18",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The other aspect of this is, and I'll probably get a lot of flack from, you know, maybe the federal government, whatever, but when you actually talk to organizations, either the software producers that are delivering bills and materials or the organizations that want to retrieve this type of information.",
+    "startTime": "39:19",
+    "endTime": "39:41",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What they actually want has nothing to do with bills and materials, and nor do they want them, nor do they want to share them.",
+    "startTime": "39:41",
+    "endTime": "39:51",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What we see in the market when I talk to companies is that they want very specific types of questions answered.",
+    "startTime": "39:51",
+    "endTime": "40:00",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if you think about, you brought up Vex earlier.",
+    "startTime": "40:00",
+    "endTime": "40:02",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "40:02",
+    "endTime": "40:03",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well, think about how Vex works.",
+    "startTime": "40:03",
+    "endTime": "40:05",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And for the folks that are listening to this who have what's Vex?",
+    "startTime": "40:05",
+    "endTime": "40:09",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm vexed.",
+    "startTime": "40:09",
+    "endTime": "40:10",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm going to give Alan so much heat for that.",
+    "startTime": "40:14",
+    "endTime": "40:17",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I love Alan, but, yeah, horrible name for a thing.",
+    "startTime": "40:19",
+    "endTime": "40:23",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But think about what you have to do for Vex, right?",
+    "startTime": "40:24",
+    "endTime": "40:28",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You have to consume an S bomb.",
+    "startTime": "40:28",
+    "endTime": "40:30",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You have to process it, then you have to, and that's going to turn on a bunch of lights.",
+    "startTime": "40:31",
+    "endTime": "40:36",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then you have to process this other thing that nobody is giving you today, nobody even has called a vex, which then turns the lights off.",
+    "startTime": "40:37",
+    "endTime": "40:45",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And all the customers from all the different software vendors basically have to do the exact same thing over and over again.",
+    "startTime": "40:47",
+    "endTime": "40:56",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's also a failure in my mind.",
+    "startTime": "40:57",
+    "endTime": "40:59",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "40:59",
+    "endTime": "41:00",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because now you have to have really complex tools on the consumption end and you have to have this additional level of transparency provided by the vendors just to be able to make ANy sense out of it.",
+    "startTime": "41:00",
+    "endTime": "41:13",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What organizations really want is to ask questions such as, hey, are you using a vulnerable version of log four j?",
+    "startTime": "41:14",
+    "endTime": "41:22",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Great.",
+    "startTime": "41:22",
+    "endTime": "41:23",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Since I know that you're vulnerable.",
+    "startTime": "41:24",
+    "endTime": "41:25",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What kind of things do I need to do as a workaround, right.",
+    "startTime": "41:26",
+    "endTime": "41:29",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Or where I should need an sbom or a vex to do that?",
+    "startTime": "41:29",
+    "endTime": "41:33",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we've built in this concept into koala called insights, which allows for this limited transparency option.",
+    "startTime": "41:33",
+    "endTime": "41:42",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if you want to, for example, provide a list of inventory, but maybe not the full inventory, or if you want to provide vulnerability information, but not all of it.",
+    "startTime": "41:42",
+    "endTime": "41:58",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is a way for organizations to do this limited transparency use case.",
+    "startTime": "41:58",
+    "endTime": "42:04",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It makes asking and answering the questions much more useful, much more expedient.",
+    "startTime": "42:04",
+    "endTime": "42:11",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can automate this stuff all day and it ultimately makes the lawyers happy, which they, I mean, let's face it, they have a, many organizations have a problem with s bombs today.",
+    "startTime": "42:12",
+    "endTime": "42:24",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And when it comes to Vex, here's my besides all the technical issues that we have with Vex today, including like, including even the, including some of the cost effects because nobody's really talking about the cost of that today.",
+    "startTime": "42:24",
+    "endTime": "42:46",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You have some challenges in terms of now your development team, who's sitting close to that code, is now responsible for essentially doing the type of messaging out to customers that historically a p Cert team would do.",
+    "startTime": "42:47",
+    "endTime": "43:05",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If I'm auditing my code base and I'm saying, oh, that's not exploitable because of this.",
+    "startTime": "43:06",
+    "endTime": "43:10",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "43:10",
+    "endTime": "43:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Those types of statements from your development team now go out to your customers, which usually involve legal, usually involve PCERT.",
+    "startTime": "43:12",
+    "endTime": "43:19",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And now you're introducing some process into these organizations that they've never had before, which is a challenge.",
+    "startTime": "43:20",
+    "endTime": "43:28",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I think that, yeah, there's even a bigger one there, which is by, I think, I've had a conversation with cisos and people industry around their sports that I think one of the biggest reasons why many organizations are reluctant to s bombs is because they can no longer plead ignorant to the fact that they have security vulnerabilities.",
+    "startTime": "43:29",
+    "endTime": "43:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "43:47",
+    "endTime": "43:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "As long as you have no hard evidence for the fact that, you know, you have vulnerabilities in your codebase, you can like, oh, I didn't know that as a SISo, the second you have an s bomb for your entire organization.",
+    "startTime": "43:50",
+    "endTime": "43:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Kind of hard to.",
+    "startTime": "44:00",
+    "endTime": "44:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "44:03",
+    "endTime": "44:04",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "44:05",
+    "endTime": "44:05",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, I think that's kind of the point.",
+    "startTime": "44:05",
+    "endTime": "44:07",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, if I had to guess why s bombs became a thing, it was.",
+    "startTime": "44:09",
+    "endTime": "44:14",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's probably because of breach fatigue.",
+    "startTime": "44:14",
+    "endTime": "44:18",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "44:18",
+    "endTime": "44:19",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "People were JuST tired of libraries being vulnerable, not being updated.",
+    "startTime": "44:19",
+    "endTime": "44:24",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This was a way to kind of force the industry to kind of grow uP.",
+    "startTime": "44:24",
+    "endTime": "44:28",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "44:28",
+    "endTime": "44:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Which, you know, it has some growing pains, but, you know, some of the most challenging things about s bomb actually have nothing to do with, like, even vulnerabilities.",
+    "startTime": "44:28",
+    "endTime": "44:43",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It really comes down to what the lawyers want to do BecauSE I've seen some really interesting perspectives from legal teams at different organizations.",
+    "startTime": "44:43",
+    "endTime": "44:55",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I bet because you're exposing yourself to love of legal risk.",
+    "startTime": "44:55",
+    "endTime": "45:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "45:00",
+    "endTime": "45:00",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The second you expose that.",
+    "startTime": "45:00",
+    "endTime": "45:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right, exactly.",
+    "startTime": "45:02",
+    "endTime": "45:03",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I want to go back to, like, protocol in general because I think that's really interesting because I stumbled across protocol after I had kind of built Spotify for the same kind of solution, really.",
+    "startTime": "45:04",
+    "endTime": "45:15",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it was just a good mAp.",
+    "startTime": "45:15",
+    "endTime": "45:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, we've BaSicallY come up with the same, I guess, not everything, but kind of the same building blocks, called them different things.",
+    "startTime": "45:18",
+    "endTime": "45:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I'm like, I aspire to become compatible with Project Koala because I think it's great to have it open.",
+    "startTime": "45:25",
+    "endTime": "45:31",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But one thing you mentioned that you consider probably quality.",
+    "startTime": "45:31",
+    "endTime": "45:34",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "The last mile.",
+    "startTime": "45:34",
+    "endTime": "45:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I don't think it's the last mile.",
+    "startTime": "45:35",
+    "endTime": "45:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think it's the building block in the middle.",
+    "startTime": "45:36",
+    "endTime": "45:38",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's the middleman.",
+    "startTime": "45:38",
+    "endTime": "45:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's the distribution transportation layer that is then consumed by the last piece, which is the analysis part.",
+    "startTime": "45:39",
+    "endTime": "45:47",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that could be dependence track that can be guac or insert blank proprietary analysis tool.",
+    "startTime": "45:47",
+    "endTime": "45:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "45:56",
+    "endTime": "45:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And so I think that by standardizing a framework around that, it will make communication.",
+    "startTime": "45:57",
+    "endTime": "46:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think in the SaISA documents they call it transportation, I think is the la, the word they use for it.",
+    "startTime": "46:04",
+    "endTime": "46:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But having a standardized framework for that is a key building block for being able to actually execute the greater vision without this manual work.",
+    "startTime": "46:09",
+    "endTime": "46:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "46:18",
+    "endTime": "46:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think that's fantastic.",
+    "startTime": "46:18",
+    "endTime": "46:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, exactly.",
+    "startTime": "46:20",
+    "endTime": "46:21",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we've, you know, we're taking an approach that's very, very similar to how we, you know, develop cyclone.",
+    "startTime": "46:21",
+    "endTime": "46:27",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So for cyclone, basically we have, we spin up feature working groups that work on major features of whatever it is that we're trying to build.",
+    "startTime": "46:28",
+    "endTime": "46:37",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right now we've got three and.",
+    "startTime": "46:38",
+    "endTime": "46:40",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No, actually we've got four feature working groups for Cyclone DX 1.7.",
+    "startTime": "46:40",
+    "endTime": "46:44",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And they basically are essentially task groups.",
+    "startTime": "46:44",
+    "endTime": "46:47",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They work on this big piece of work and they disband and we work on something else.",
+    "startTime": "46:47",
+    "endTime": "46:54",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And ultimately it's all community driven.",
+    "startTime": "46:55",
+    "endTime": "46:58",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that eventually gets approved by a core working group, which are essentially the stewards of the specification.",
+    "startTime": "46:59",
+    "endTime": "47:07",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm one of five now.",
+    "startTime": "47:07",
+    "endTime": "47:09",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then that gets promoted up to TC 54 within ECMA International, we're taking the exact same approach with Project Koala.",
+    "startTime": "47:10",
+    "endTime": "47:19",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "All the community work is happening now.",
+    "startTime": "47:19",
+    "endTime": "47:22",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's free for anyone to join.",
+    "startTime": "47:22",
+    "endTime": "47:24",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Maybe we can post a link to that in the show notes.",
+    "startTime": "47:26",
+    "endTime": "47:30",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So free for open for folks to join that community work will then feed into the efforts going for a TC 54 TG one, which is task group one within ECMA International, which there's a path to standardization.",
+    "startTime": "47:31",
+    "endTime": "47:50",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And that's exactly what we're going for.",
+    "startTime": "47:51",
+    "endTime": "47:53",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because when I attend these things, I'm kind of wearing my OWasp hat, but I'm also wearing a little bit of my employer's hat as well, because commercial enterprise y type stuff.",
+    "startTime": "47:53",
+    "endTime": "48:05",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Lots of different ways that we can share this information and trying to figure out ways that we can get like all these disparate systems, dependency track s bomify, you know, all these different things.",
+    "startTime": "48:06",
+    "endTime": "48:19",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "To ultimately communicate autonomously in the future is kind of the end reason.",
+    "startTime": "48:19",
+    "endTime": "48:25",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's where we want to, that's where we want to be, right?",
+    "startTime": "48:25",
+    "endTime": "48:28",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Absolutely.",
+    "startTime": "48:28",
+    "endTime": "48:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Do you see a world where the big cloud vendors would just adopt the standard as part of their, like, is it the new s three, like for block story?",
+    "startTime": "48:29",
+    "endTime": "48:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like is how do you like now?",
+    "startTime": "48:37",
+    "endTime": "48:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because that would be like one big play, right, of actually having mainstream option there if it's an open standard.",
+    "startTime": "48:39",
+    "endTime": "48:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "now that's that's really cool.",
+    "startTime": "48:45",
+    "endTime": "48:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like one thing I think is interesting, kind of going with a way from the price quality, but going into something I just remember that you mentioned earlier is the whole thing of like separation of responsibilities in sboms.",
+    "startTime": "48:48",
+    "endTime": "49:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I'm probably considered kind of a purist in the sense of deciding sbons.",
+    "startTime": "49:01",
+    "endTime": "49:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "You see a lot of people doing an SBOM for an entire thing.",
+    "startTime": "49:07",
+    "endTime": "49:10",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Here's my service, and it has one sbom.",
+    "startTime": "49:10",
+    "endTime": "49:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But in the concept, in Cyclone DX, you have a concept of different types of sboms.",
+    "startTime": "49:12",
+    "endTime": "49:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like you have a container SBOM, you have an application SBom, and they can't be combined into one document.",
+    "startTime": "49:19",
+    "endTime": "49:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So they are, even in a very small deployment, you end up with many S bombs.",
+    "startTime": "49:25",
+    "endTime": "49:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "49:30",
+    "endTime": "49:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like how, what triggered that thought was what you're saying about the Java application.",
+    "startTime": "49:30",
+    "endTime": "49:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like you have one for a runtime, one for the actual application.",
+    "startTime": "49:35",
+    "endTime": "49:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How do you see the best practice around that today?",
+    "startTime": "49:41",
+    "endTime": "49:45",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Whatever is the simplest way to produce and consume those, should I be used?",
+    "startTime": "49:47",
+    "endTime": "49:55",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Cyclone DX has this concept of life cycles, and it's built into the specification and lifecycles in Cyclone DX very closely represent both SDLC and software asset management lifecycles.",
+    "startTime": "49:56",
+    "endTime": "50:16",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So these are things that either development shops or I enterprise it organizations use today, right?",
+    "startTime": "50:16",
+    "endTime": "50:25",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We didn't invent a new kind of thing, so it mixes well with the vocabulary that developers and folks in ITAM and SAm already use.",
+    "startTime": "50:26",
+    "endTime": "50:40",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I view Cyclone DX.",
+    "startTime": "50:40",
+    "endTime": "50:44",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Cyclone DX can represent all kinds of things, hardware, software, containers, services, it can represent it all.",
+    "startTime": "50:44",
+    "endTime": "50:53",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if you want to put all of that into a single bomb, fine.",
+    "startTime": "50:54",
+    "endTime": "50:58",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's plenty of organizations that do that.",
+    "startTime": "50:58",
+    "endTime": "51:01",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If it's easier for you to separate it out and make everything linkable, fine.",
+    "startTime": "51:01",
+    "endTime": "51:07",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can do that as well.",
+    "startTime": "51:07",
+    "endTime": "51:09",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "On the consumption side, it makes things a little bit more challenging when you do that.",
+    "startTime": "51:09",
+    "endTime": "51:14",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "On the creation side, it's usually a little bit easier.",
+    "startTime": "51:15",
+    "endTime": "51:19",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But if you take a few steps, if you take those additional steps, you can get an entire deployment represented in a single bills of materials.",
+    "startTime": "51:19",
+    "endTime": "51:30",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not only difficult to do.",
+    "startTime": "51:31",
+    "endTime": "51:33",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What you probably shouldn't do is represent all of your like SAS bomb type stuff or all of your services and your interdependencies of services along with the inventory of those services.",
+    "startTime": "51:34",
+    "endTime": "51:48",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's kind of, that's crossing the line in my view, not just from a idealistic perspective, but ultimately you're going to want to share this information.",
+    "startTime": "51:48",
+    "endTime": "52:03",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if I'm a cloud vendor, I am not going to give you the inventory of things that are in my microservices, it's not going to happen because that micro service that I have, maybe it gets stock quotes, maybe that's the service.",
+    "startTime": "52:04",
+    "endTime": "52:20",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I've got ten different versions of that thing in production at any given time.",
+    "startTime": "52:21",
+    "endTime": "52:25",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Which version would you like?",
+    "startTime": "52:26",
+    "endTime": "52:27",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because I have no idea what version you're going to hit.",
+    "startTime": "52:27",
+    "endTime": "52:30",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's the reality of cloud.",
+    "startTime": "52:31",
+    "endTime": "52:32",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm never going to give you that, but I will give you the services that are outwardly exposed to the consumers.",
+    "startTime": "52:32",
+    "endTime": "52:42",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "These things you need to, I think, understand maybe, and draw the line on what you're going to share and what you're not going to share.",
+    "startTime": "52:43",
+    "endTime": "52:52",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that kind of is the same approach that I take to operational bills and materials as well.",
+    "startTime": "52:52",
+    "endTime": "53:00",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Here's my software.",
+    "startTime": "53:00",
+    "endTime": "53:01",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This doesn't change.",
+    "startTime": "53:01",
+    "endTime": "53:02",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm going to share that with you.",
+    "startTime": "53:02",
+    "endTime": "53:04",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Here's my operational stuff on the back end, and you're not getting it.",
+    "startTime": "53:04",
+    "endTime": "53:07",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So on that note, secure by design is another one of these initiatives that driving transparency in the supply chain.",
+    "startTime": "53:08",
+    "endTime": "53:16",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And they are called for radical transparency, I think is the terminology that use in their document.",
+    "startTime": "53:16",
+    "endTime": "53:23",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And you can interpret that in many ways.",
+    "startTime": "53:23",
+    "endTime": "53:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "One interpretation is, well, it should be including everything, including my internals, not just the firmware that goes on my device.",
+    "startTime": "53:27",
+    "endTime": "53:37",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I saw my customer, but also what's sitting on the back end and what supported that back and even is not publicly exposed.",
+    "startTime": "53:37",
+    "endTime": "53:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "53:43",
+    "endTime": "53:44",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So how do you see that?",
+    "startTime": "53:44",
+    "endTime": "53:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because I feel like there is a push in the industry to kind of like take it all the way and have like, well, tell me everything that sits in your cluster, essentially.",
+    "startTime": "53:46",
+    "endTime": "53:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think that's a horrible idea, in my opinion.",
+    "startTime": "53:58",
+    "endTime": "54:00",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm all for transparency.",
+    "startTime": "54:00",
+    "endTime": "54:02",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "54:02",
+    "endTime": "54:02",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I work in a standards body.",
+    "startTime": "54:02",
+    "endTime": "54:04",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I develop standards.",
+    "startTime": "54:04",
+    "endTime": "54:05",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We're open all the time.",
+    "startTime": "54:05",
+    "endTime": "54:07",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We record meetings all the time.",
+    "startTime": "54:07",
+    "endTime": "54:08",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I'm a big fan of transparency, but not at the expense of helping my adversaries do whatever it is that they want to do.",
+    "startTime": "54:08",
+    "endTime": "54:17",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And ultimately, if you're too transparent, you are basically giving them the.",
+    "startTime": "54:17",
+    "endTime": "54:23",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You're giving your adversaries the keys to the car along with a map on how to get there.",
+    "startTime": "54:23",
+    "endTime": "54:31",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "No, I think lawyers and everyone else will just say no.",
+    "startTime": "54:32",
+    "endTime": "54:37",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if the industry pushes too far and too hard in that approach, I think it's going to backfire on us.",
+    "startTime": "54:38",
+    "endTime": "54:47",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "54:47",
+    "endTime": "54:47",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We're going to, you know, we're going to have be set back quite a bit in terms of our transparency efforts.",
+    "startTime": "54:47",
+    "endTime": "54:54",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If that idealistic view, you know, keeps on, you know, if they keep on beating their drum because it's.",
+    "startTime": "54:54",
+    "endTime": "55:01",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's going to be a big setback.",
+    "startTime": "55:01",
+    "endTime": "55:03",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "For us, there's some things that we just don't want to be transparent about and.",
+    "startTime": "55:03",
+    "endTime": "55:08",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, how do you, I mean, executive order is another one that, I mean, for those not familiar, essentially if you're selling software to the government, you need to provide an S bomb.",
+    "startTime": "55:10",
+    "endTime": "55:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "It's the TL doctor.",
+    "startTime": "55:18",
+    "endTime": "55:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "But that's also a bit ambiguous.",
+    "startTime": "55:19",
+    "endTime": "55:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "55:22",
+    "endTime": "55:22",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like what if I'm selling a SaaS service to the government?",
+    "startTime": "55:22",
+    "endTime": "55:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "What's their spom there?",
+    "startTime": "55:26",
+    "endTime": "55:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Is it, where do you draw the line there?",
+    "startTime": "55:27",
+    "endTime": "55:29",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because it's kind of the same argument, but I'm not sure if you've seen anything, debates around that in the industry, like where do people draw the line?",
+    "startTime": "55:29",
+    "endTime": "55:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And like, and also, I guess on the other side, like where would the government be happy?",
+    "startTime": "55:36",
+    "endTime": "55:40",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Withdraw the line?",
+    "startTime": "55:40",
+    "endTime": "55:41",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm not sure if you have any insights on that.",
+    "startTime": "55:41",
+    "endTime": "55:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There was, for a little while, there was a services s bomb working group, and I don't think we, I mean, you can read the papers from CISA, they talk a little bit about services.",
+    "startTime": "55:44",
+    "endTime": "55:59",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They talk a little bit about, there was one group that focused on including services in a traditional s bomb, which, yes, of course you should.",
+    "startTime": "55:59",
+    "endTime": "56:09",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then there was another group that was talking about just services, just like cloud native type of things.",
+    "startTime": "56:10",
+    "endTime": "56:17",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it started getting really complex because we started discussing things like, well, this is only available in this region because this customer is, it gets really complex.",
+    "startTime": "56:17",
+    "endTime": "56:28",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What does an Sbom look like from a pure cloud perspective?",
+    "startTime": "56:28",
+    "endTime": "56:32",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And I encourage folks to read the paper, but essentially we don't really have a clear, definitive thing where you can point to some resource and say, I want that.",
+    "startTime": "56:32",
+    "endTime": "56:49",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We don't have a minimum elements for SAS bombs.",
+    "startTime": "56:50",
+    "endTime": "56:54",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It doesn't exist.",
+    "startTime": "56:54",
+    "endTime": "56:55",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There's obviously a lot of complexity.",
+    "startTime": "56:57",
+    "endTime": "56:59",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The dynamicism of cloud, you know, adds to that complexity.",
+    "startTime": "56:59",
+    "endTime": "57:05",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The fact that I might have canary builds and maybe ten different versions of some thing in production adds to that.",
+    "startTime": "57:05",
+    "endTime": "57:13",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "What version of that thing would you like?",
+    "startTime": "57:13",
+    "endTime": "57:15",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Do you want all ten of them?",
+    "startTime": "57:15",
+    "endTime": "57:17",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And when do you want the updates?",
+    "startTime": "57:18",
+    "endTime": "57:20",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Do you want them 10,000 times a day?",
+    "startTime": "57:20",
+    "endTime": "57:23",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because something in my environment of 100 microservices, those things are, you know, all that are going to be updated all the time.",
+    "startTime": "57:23",
+    "endTime": "57:32",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I'm not going to give you 10,000 files a day.",
+    "startTime": "57:32",
+    "endTime": "57:35",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "57:35",
+    "endTime": "57:36",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I don't know.",
+    "startTime": "57:36",
+    "endTime": "57:38",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "From my personal perspective, I believe that the industry should move forward with this concept of essentially tracking the outward bound services that these services that as a consumer I can directly interact with along with the data.",
+    "startTime": "57:38",
+    "endTime": "58:03",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now here's the thing about Sbom s Bom is s bomb became a thing because ultimately, it's your environment that you need to protect.",
+    "startTime": "58:03",
+    "endTime": "58:14",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And in order to protect that environment, you kind of need to know what's running in it.",
+    "startTime": "58:14",
+    "endTime": "58:19",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So if I've got a vulnerable version of, like, log four shell again, right, if I know that this thing has a vulnerable version of log four j, and I also know that maybe it connects to LDAP, well, now I can deploy some very specific WAF rules and put a WAF in that service with a WAF temporarily to reduce my risk while that vendor actually replaced.",
+    "startTime": "58:19",
+    "endTime": "58:43",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that s Bom provides me a lot of things that I can do to protect my organization and its data because it's running in my environment.",
+    "startTime": "58:43",
+    "endTime": "58:53",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now, when we talk about the cloud, that's not my environment, that's somebody else's.",
+    "startTime": "58:53",
+    "endTime": "58:59",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And as a consumer of a cloud service, let's go back to a stock quotes example.",
+    "startTime": "59:00",
+    "endTime": "59:06",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Maybe it's a thing where not only are you getting public stock quotes, but maybe you're getting all kinds of other personally identifyable financial information, right?",
+    "startTime": "59:06",
+    "endTime": "59:16",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Maybe it's a whole suite of different services that I get, and ultimately, it's the outbound services that I consume, and it's the data that I care about, not necessarily the environment.",
+    "startTime": "59:16",
+    "endTime": "59:26",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the things that I care about dramatically change.",
+    "startTime": "59:27",
+    "endTime": "59:31",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And in my opinion, that's kind of the conversation that, as an industry, we probably need to have, because it's the data that's most important.",
+    "startTime": "59:31",
+    "endTime": "59:39",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Like what types of data are going to what services that way, if I know if that vendor has a breach, I have a pretty clear idea on what that impact is going to be, and especially as it relates to the type of data that I care about.",
+    "startTime": "59:39",
+    "endTime": "59:56",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's an interesting approach.",
+    "startTime": "59:57",
+    "endTime": "59:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, definitely a lot more murky when you're talking about SaaS services rather than deploying on prem or like a hardware device.",
+    "startTime": "59:58",
+    "endTime": "01:00:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:00:05",
+    "endTime": "01:00:05",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And we kind of coming back to service discovery again and SBOM discovery almost full circle.",
+    "startTime": "01:00:06",
+    "endTime": "01:00:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And one thing that I did find rather clever in Project Quad is the discovery process.",
+    "startTime": "01:00:13",
+    "endTime": "01:00:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:00:21",
+    "endTime": "01:00:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And mapping kind of like skews to our URL to DNS patterns, essentially.",
+    "startTime": "01:00:21",
+    "endTime": "01:00:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So you could do discovery that way.",
+    "startTime": "01:00:27",
+    "endTime": "01:00:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I really like that example because it's like, I think Alan used the example of in the podcast I had Nomis.",
+    "startTime": "01:00:28",
+    "endTime": "01:00:35",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, does he describe sbos like a recipe list for a physical product?",
+    "startTime": "01:00:35",
+    "endTime": "01:00:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And that fits well into the analogy here, right?",
+    "startTime": "01:00:39",
+    "endTime": "01:00:43",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, if you buy, like, here's a screening box, right?",
+    "startTime": "01:00:43",
+    "endTime": "01:00:48",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, you can buy these and resellers, like they have a barcode, right?",
+    "startTime": "01:00:48",
+    "endTime": "01:00:51",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "If I scan that barcode, getting that spam is a pretty natural thing to do, right?",
+    "startTime": "01:00:52",
+    "endTime": "01:00:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I like that discovery because it's like it's tapping into something already exists.",
+    "startTime": "01:00:58",
+    "endTime": "01:01:03",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like everybody who does physical boxes, they have some kind of skew or some kind of like identifier.",
+    "startTime": "01:01:03",
+    "endTime": "01:01:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Because I mean, if you do retail, you have to have that anyways.",
+    "startTime": "01:01:09",
+    "endTime": "01:01:12",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So how you map it towards cloud is different.",
+    "startTime": "01:01:12",
+    "endTime": "01:01:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like aws, they have skews.",
+    "startTime": "01:01:17",
+    "endTime": "01:01:18",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I guess in cloud managers, they have skews on the products.",
+    "startTime": "01:01:18",
+    "endTime": "01:01:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm not sure there is a mapping there conversations around that have you thought about that at all?",
+    "startTime": "01:01:20",
+    "endTime": "01:01:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or.",
+    "startTime": "01:01:25",
+    "endTime": "01:01:25",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That was one of the challenges that we had when were taught, when were, when we had that CISA working group for cloud is what is the identity of the services?",
+    "startTime": "01:01:26",
+    "endTime": "01:01:34",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, a URL is not identity because again, my URL might be a load balancer and there might be ten different versions of that microservices behind that load balancer URL, is not it.",
+    "startTime": "01:01:34",
+    "endTime": "01:01:46",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So what is the identifier?",
+    "startTime": "01:01:47",
+    "endTime": "01:01:48",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not package URL, it's not CPE, it's what is it?",
+    "startTime": "01:01:48",
+    "endTime": "01:01:51",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I don't know.",
+    "startTime": "01:01:51",
+    "endTime": "01:01:52",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's hard.",
+    "startTime": "01:01:53",
+    "endTime": "01:01:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I don't have answer for that.",
+    "startTime": "01:01:54",
+    "endTime": "01:01:56",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, no, it is one interesting one to make that work at scale.",
+    "startTime": "01:01:56",
+    "endTime": "01:02:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "All right, let's kind of running out of time, but I want to last kind of finish off with the state of dependency track today because I think next to Guac, which is like a new entry in the audit space, dependency track is kind of the OG in that space.",
+    "startTime": "01:02:02",
+    "endTime": "01:02:17",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Maybe people who are not familiar with dependent track give them kind of like a state of affairs today.",
+    "startTime": "01:02:17",
+    "endTime": "01:02:24",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How can it be used?",
+    "startTime": "01:02:24",
+    "endTime": "01:02:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Why does it matter?",
+    "startTime": "01:02:25",
+    "endTime": "01:02:26",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And how you see that?",
+    "startTime": "01:02:26",
+    "endTime": "01:02:27",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, sure.",
+    "startTime": "01:02:27",
+    "endTime": "01:02:28",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So dependency track is essentially almost like the reference implementation for how all the other entries in this market are kind of compared to essentially dependency track consumes and analyzes bills and materials and VACs VDRs.",
+    "startTime": "01:02:29",
+    "endTime": "01:02:46",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It is used by tens of thousands of organizations, you know, some of the largest organizations in the world, governments of the world.",
+    "startTime": "01:02:47",
+    "endTime": "01:02:57",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You rely on dependency track on a daily basis.",
+    "startTime": "01:02:57",
+    "endTime": "01:03:00",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it is, it connects to a lot of different sources of vulnerability intelligence.",
+    "startTime": "01:03:01",
+    "endTime": "01:03:07",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You know, the free ones like the National Vulnerability Database, the freely available ones like OSB and OSS index.",
+    "startTime": "01:03:07",
+    "endTime": "01:03:16",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And then it supports a few different commercial sources of vulnerability intelligence as well.",
+    "startTime": "01:03:16",
+    "endTime": "01:03:21",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So you consume and analyze bills and materials.",
+    "startTime": "01:03:22",
+    "endTime": "01:03:27",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It supports licensing and EPSS scores and a bunch of other things that you would need as either a development team to track, you know, your s bombs and the, the risk of that inventory over time, as well as in procurement.",
+    "startTime": "01:03:27",
+    "endTime": "01:03:44",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:03:44",
+    "endTime": "01:03:45",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you're procuring software, you know, getting, you know, getting.",
+    "startTime": "01:03:45",
+    "endTime": "01:03:50",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you get an S bomb from, you know, a vendor, you know, put it in dependency track.",
+    "startTime": "01:03:50",
+    "endTime": "01:03:54",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We did an informal poll.",
+    "startTime": "01:03:55",
+    "endTime": "01:03:57",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Roughly 30% of users were using it for procurement use cases.",
+    "startTime": "01:03:57",
+    "endTime": "01:04:01",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The other 70% were using it for purely development purposes.",
+    "startTime": "01:04:01",
+    "endTime": "01:04:06",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "The current state is that dependency track is old.",
+    "startTime": "01:04:07",
+    "endTime": "01:04:10",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It is eleven years old, and it predates the executive order.",
+    "startTime": "01:04:12",
+    "endTime": "01:04:16",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It predates s bomb being a thing.",
+    "startTime": "01:04:16",
+    "endTime": "01:04:19",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:04:19",
+    "endTime": "01:04:19",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It wasn't designed for s bomb.",
+    "startTime": "01:04:19",
+    "endTime": "01:04:21",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It was designed for full stack inventory.",
+    "startTime": "01:04:21",
+    "endTime": "01:04:23",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And it was designed so in a way where it's a monolith, it wasn't designed to scale.",
+    "startTime": "01:04:24",
+    "endTime": "01:04:32",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So a lot of the work, and again, there's tens of thousands of organizations using it in production, but we are running into situations where some of the adopters, they want 100,000, we've got one that wants a million, we've got another one that wants 10 million s bombs.",
+    "startTime": "01:04:32",
+    "endTime": "01:04:51",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "This is the type of scale that we're trying to redesign for.",
+    "startTime": "01:04:52",
+    "endTime": "01:04:56",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So we are currently working on project hiatus, which is kind of a, it's a.",
+    "startTime": "01:04:56",
+    "endTime": "01:05:03",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Not a rewrite, but it's certainly a major reorganization and refactor of how dependency track internals actually work.",
+    "startTime": "01:05:03",
+    "endTime": "01:05:12",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So that is, it is much more horizontally scalable.",
+    "startTime": "01:05:13",
+    "endTime": "01:05:16",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And we've got, you know, you can roll it out yourself and test it today, but we've got just some users in pension track community that have already tested it, kind of in their own little environments.",
+    "startTime": "01:05:17",
+    "endTime": "01:05:30",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They're getting upwards of 20,000s bombs being consumed per hour, and it's going well over 100,000s bombs today.",
+    "startTime": "01:05:30",
+    "endTime": "01:05:38",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I don't know if we've actually tested it to a million.",
+    "startTime": "01:05:38",
+    "endTime": "01:05:42",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Getting a million s bombs is hard.",
+    "startTime": "01:05:42",
+    "endTime": "01:05:44",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I mean, there's 60,000s bombs on Maven Central, right?",
+    "startTime": "01:05:44",
+    "endTime": "01:05:47",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We can get those, but getting, you know, getting a million s bombs is, and making them, you know, kind of different is kind of challenging, but that's basically where it's going.",
+    "startTime": "01:05:47",
+    "endTime": "01:05:58",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So it's with all this enterprise use, lots of organizations are starting to contribute to it, which is great if people want to contribute to it.",
+    "startTime": "01:05:58",
+    "endTime": "01:06:08",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Again, it's an open source project.",
+    "startTime": "01:06:08",
+    "endTime": "01:06:10",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's freely available, you know, come and, you know, provide, you know, GitHub issues, provide feedback, no contribution is too small.",
+    "startTime": "01:06:10",
+    "endTime": "01:06:20",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Documentation, you know, changes.",
+    "startTime": "01:06:20",
+    "endTime": "01:06:22",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, are highly encouraged.",
+    "startTime": "01:06:22",
+    "endTime": "01:06:25",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "We need to update our docs, but.",
+    "startTime": "01:06:25",
+    "endTime": "01:06:27",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, they're not that bad.",
+    "startTime": "01:06:27",
+    "endTime": "01:06:28",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I read through them, they're not that bad.",
+    "startTime": "01:06:29",
+    "endTime": "01:06:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I've seen a lot worse.",
+    "startTime": "01:06:30",
+    "endTime": "01:06:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, yeah.",
+    "startTime": "01:06:32",
+    "endTime": "01:06:33",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But docs, that docs can be challenging for any open source.",
+    "startTime": "01:06:34",
+    "endTime": "01:06:36",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, but, and when people use the vetture track, do they tend to consume it over an API or do they tend to consume it as a web interface?",
+    "startTime": "01:06:36",
+    "endTime": "01:06:46",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "No, most of its usage is over APIs.",
+    "startTime": "01:06:47",
+    "endTime": "01:06:50",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Think about how your build server might interact with other things that it does.",
+    "startTime": "01:06:50",
+    "endTime": "01:06:56",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "When you release software, it automatically deploys it.",
+    "startTime": "01:06:57",
+    "endTime": "01:07:00",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Well in our case it automatically pushes things to dependency track.",
+    "startTime": "01:07:00",
+    "endTime": "01:07:04",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's how most organizations use it.",
+    "startTime": "01:07:05",
+    "endTime": "01:07:07",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Now for the procurement use case, I know that some organizations have actually built it into their CMDB's.",
+    "startTime": "01:07:08",
+    "endTime": "01:07:14",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So when they do procurement.",
+    "startTime": "01:07:14",
+    "endTime": "01:07:16",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:07:16",
+    "endTime": "01:07:17",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "They do have some API integration to depends track.",
+    "startTime": "01:07:17",
+    "endTime": "01:07:20",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But honestly I think most of the procurement use cases are going to be manual because there is that manual use case, right.",
+    "startTime": "01:07:20",
+    "endTime": "01:07:26",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "You can upload manually the SBOM.",
+    "startTime": "01:07:26",
+    "endTime": "01:07:28",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "In fact, you can actually author.",
+    "startTime": "01:07:28",
+    "endTime": "01:07:31",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yes.",
+    "startTime": "01:07:31",
+    "endTime": "01:07:32",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Bomb manually if you want to using dependency track because that was going back to the original use case back in 2012.",
+    "startTime": "01:07:32",
+    "endTime": "01:07:40",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "There was no file formats that did what I needed it to do.",
+    "startTime": "01:07:40",
+    "endTime": "01:07:43",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I basically had a web interface that allowed me to manually add components that use case still exists because there's still a need for that today.",
+    "startTime": "01:07:43",
+    "endTime": "01:07:52",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:07:52",
+    "endTime": "01:07:53",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Interesting last question I have for you is how do you think the future generation of compliance framework would look like?",
+    "startTime": "01:07:53",
+    "endTime": "01:08:04",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "We saw NIST 2.0 came out earlier this year.",
+    "startTime": "01:08:05",
+    "endTime": "01:08:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Stop just try.",
+    "startTime": "01:08:07",
+    "endTime": "01:08:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Of mandating s bombs.",
+    "startTime": "01:08:08",
+    "endTime": "01:08:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "They call for transparency.",
+    "startTime": "01:08:09",
+    "endTime": "01:08:11",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "How do you see this?",
+    "startTime": "01:08:12",
+    "endTime": "01:08:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "When do you think we will see SBOM hard requirements for compliance?",
+    "startTime": "01:08:13",
+    "endTime": "01:08:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Will the next ISO update?",
+    "startTime": "01:08:19",
+    "endTime": "01:08:21",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Or how do you see that changing and what's your timeline for that?",
+    "startTime": "01:08:21",
+    "endTime": "01:08:25",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "That is a great question.",
+    "startTime": "01:08:27",
+    "endTime": "01:08:28",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If I could get out my crystal ball, I would likely say because there's a lot more conservative countries out there, I would guess that within the next three years you're going to see s bomb as kind of a hard requirement to do business either in most world, major world governments or as a regulation.",
+    "startTime": "01:08:29",
+    "endTime": "01:08:57",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you look at PCI, it doesn't specifically like PCI 401 for example.",
+    "startTime": "01:08:58",
+    "endTime": "01:09:03",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It doesn't specifically say sbom I think, but it does say software and services.",
+    "startTime": "01:09:03",
+    "endTime": "01:09:09",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So the inventory of your services are required for PCI 4.0.",
+    "startTime": "01:09:09",
+    "endTime": "01:09:13",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:09:13",
+    "endTime": "01:09:14",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I think some specifications, some industries, we're slowly getting there and I think that's okay, right.",
+    "startTime": "01:09:14",
+    "endTime": "01:09:23",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Because getting there too quickly is going to be too much change for many organizations.",
+    "startTime": "01:09:23",
+    "endTime": "01:09:29",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I do, I think commend the us government for, I know they're kind of the 800 pound gorilla, right.",
+    "startTime": "01:09:29",
+    "endTime": "01:09:37",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "But I do kind of commend them for trying to work with a lot of our allies.",
+    "startTime": "01:09:37",
+    "endTime": "01:09:42",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If you look at like the Quad, which is the United States, Japan, Australia, India, they're trying to line those folks on SSDF.",
+    "startTime": "01:09:42",
+    "endTime": "01:09:54",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:09:54",
+    "endTime": "01:09:54",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And if you go to like the.",
+    "startTime": "01:09:54",
+    "endTime": "01:09:56",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It's not the ASD website, it's one of the other australian websites, but they refer to SSDF as well because again, these are NIST standards.",
+    "startTime": "01:09:56",
+    "endTime": "01:10:06",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right?",
+    "startTime": "01:10:06",
+    "endTime": "01:10:06",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:10:06",
+    "endTime": "01:10:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I think they've been doing a lot of harmonization because the last thing software vendors want is if I'm selling to this region, well, I need this standard.",
+    "startTime": "01:10:07",
+    "endTime": "01:10:18",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "If I'm selling into this other country, I've got this.",
+    "startTime": "01:10:18",
+    "endTime": "01:10:20",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's too much.",
+    "startTime": "01:10:20",
+    "endTime": "01:10:22",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:10:22",
+    "endTime": "01:10:22",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "It becomes too costly.",
+    "startTime": "01:10:22",
+    "endTime": "01:10:23",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Organizations will eventually say no.",
+    "startTime": "01:10:24",
+    "endTime": "01:10:26",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "So I think the us government has been doing a phenomenal job trying to harmonize and get everybody on the same page, which is phenomenal.",
+    "startTime": "01:10:26",
+    "endTime": "01:10:33",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "That's what we want, to keep costs down.",
+    "startTime": "01:10:33",
+    "endTime": "01:10:35",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And as part of that slow roll, I think you're going to start seeing more and more, either industry or regional regulations requiring transparency and SBam specifically become more popular over the next three years would be like us.",
+    "startTime": "01:10:35",
+    "endTime": "01:10:56",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that's a reasonable guess.",
+    "startTime": "01:10:57",
+    "endTime": "01:10:59",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I would agree with that as well.",
+    "startTime": "01:10:59",
+    "endTime": "01:11:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And it's.",
+    "startTime": "01:11:00",
+    "endTime": "01:11:01",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah.",
+    "startTime": "01:11:01",
+    "endTime": "01:11:02",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And I'm really happy that it hopefully will spam span, suck to nist, all those things.",
+    "startTime": "01:11:02",
+    "endTime": "01:11:07",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like, you don't have to redo the effort.",
+    "startTime": "01:11:07",
+    "endTime": "01:11:08",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:11:08",
+    "endTime": "01:11:08",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "I think that's the key.",
+    "startTime": "01:11:08",
+    "endTime": "01:11:09",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Like it could tick so many boxes in an automated way.",
+    "startTime": "01:11:09",
+    "endTime": "01:11:13",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Yeah, absolutely.",
+    "startTime": "01:11:13",
+    "endTime": "01:11:14",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Keep on fighting the good fight.",
+    "startTime": "01:11:15",
+    "endTime": "01:11:17",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Yeah, no, I think it's fantastic.",
+    "startTime": "01:11:17",
+    "endTime": "01:11:19",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I think it's.",
+    "startTime": "01:11:19",
+    "endTime": "01:11:20",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "I'm very bullish in S bombs and I think we'll get there and there will be hiccups along the way and lost speed bumps, but at least we are moving the wrong right direction.",
+    "startTime": "01:11:20",
+    "endTime": "01:11:30",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So that's very exciting.",
+    "startTime": "01:11:30",
+    "endTime": "01:11:32",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "And as long as we learn from those mistakes going forward.",
+    "startTime": "01:11:32",
+    "endTime": "01:11:34",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Right.",
+    "startTime": "01:11:34",
+    "endTime": "01:11:35",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "And not being too theoretical about it, I think that's one of the issues.",
+    "startTime": "01:11:35",
+    "endTime": "01:11:39",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "There are a lot of white papers out there saying how you should do things, but as long if there are no tools out there that will actually do them, they're not worth the paper they're written on.",
+    "startTime": "01:11:39",
+    "endTime": "01:11:49",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "So I think that's something that is changing.",
+    "startTime": "01:11:49",
+    "endTime": "01:11:52",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Good.",
+    "startTime": "01:11:53",
+    "endTime": "01:11:53",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Awesome.",
+    "startTime": "01:11:53",
+    "endTime": "01:11:54",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Perfect.",
+    "startTime": "01:11:54",
+    "endTime": "01:11:54",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Thank you so much, Steve, for coming on the show.",
+    "startTime": "01:11:55",
+    "endTime": "01:11:56",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Very much.",
+    "startTime": "01:11:56",
+    "endTime": "01:11:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Appreciate it.",
+    "startTime": "01:11:57",
+    "endTime": "01:11:57",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Have a good one.",
+    "startTime": "01:11:57",
+    "endTime": "01:11:58",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Thanks so much.",
+    "startTime": "01:11:58",
+    "endTime": "01:11:59",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Cheers.",
+    "startTime": "01:11:59",
+    "endTime": "01:11:59",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  },
+  {
+    "sentence": "Cheers.",
+    "startTime": "01:11:59",
+    "endTime": "01:12:00",
+    "speaker_name": "Viktor Petersson",
+    "speaker_id": 0
+  },
+  {
+    "sentence": "Bye.",
+    "startTime": "01:12:00",
+    "endTime": "01:12:00",
+    "speaker_name": "Steve Springett",
+    "speaker_id": 1
+  }
+]

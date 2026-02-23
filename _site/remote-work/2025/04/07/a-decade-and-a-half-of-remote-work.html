@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="content-language" content="en">
+
+  <!-- Resource Hints -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="/assets/css/styles.css" as="style">
+  <link rel="preload" href="/assets/css/main.css" as="style">
+
+  <title>A Decade and a Half of Remote Work</title>
+  <meta name="description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://vpetersson.com/remote-work/2025/04/07/a-decade-and-a-half-of-remote-work.html">
+  <meta property="og:title" content="A Decade and a Half of Remote Work">
+  <meta property="og:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta property="og:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- LinkedIn -->
+  <meta property="og:site_name" content="Viktor's Tech Musings & Security Paranoia">
+  <meta property="article:author" content="https://www.linkedin.com/in/vpetersson/">
+  
+  <meta property="article:published_time" content="2025-04-07T01:00:00+00:00">
+  
+
+  <!-- X (formerly Twitter) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@vpetersson">
+  <meta name="twitter:creator" content="@vpetersson">
+  <meta name="twitter:title" content="A Decade and a Half of Remote Work">
+  <meta name="twitter:description" content="Insights on DevSecOps, cloud architecture, and building secure, scalable systems. Sharing practical experience from running tech companies and implementing software supply chain security at scale.">
+  <meta name="twitter:image" content="https://vpetersson.com/assets/images/site/talk.webp">
+
+  <!-- Social Profile Links -->
+  <link rel="me" href="https://github.com/vpetersson">
+  <link rel="me" href="https://www.linkedin.com/in/vpetersson/">
+  <link rel="me" href="https://hachyderm.io/@vpetersson@hachyderm.io">
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com",
+    "image": "https://vpetersson.com/assets/images/site/talk.webp",
+    "sameAs": [
+      "https://github.com/vpetersson",
+      "https://www.linkedin.com/in/vpetersson/",
+      "https://hachyderm.io/@vpetersson@hachyderm.io",
+      "https://twitter.com/vpetersson"
+    ]
+  }
+  </script>
+
+  <!-- Custom meta tags -->
+  
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Anton|DM Sans|Roboto|Hanken+Grotesk"
+    />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/native.css">
+  
+  <!-- Font Awesome (bundled from node_modules) -->
+  <link rel="stylesheet" href="/assets/css/fontawesome-core.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-solid.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome-brands.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZY6ZNLNNC8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZY6ZNLNNC8');
+
+  // Track outbound links and CTAs
+  function trackEvent(category, action, label, source) {
+    gtag('event', action, {
+      'event_category': category,
+      'event_label': label,
+      'source': source
+    });
+  }
+</script>
+
+
+  <link rel="canonical" href="https://vpetersson.com/remote-work/2025/04/07/a-decade-and-a-half-of-remote-work.html" />
+</head>
+
+  <body>
+    <!-- Skip Navigation -->
+<a href="#main-content" class="skip-navigation">Skip to main content</a>
+
+<header class="p-8 flex justify-between bg-primaryBG border-b border-white-alpha-20" role="banner">
+  <div class="flex gap-10 justify-between items-center">
+    <a href="/" aria-label="Viktor Petersson - Home">
+      <img src="/assets/images/site/logo-white.svg" alt="Viktor Petersson logo" width="120" height="40" />
+    </a>
+    <nav class="hidden lg:flex gap-6">
+  
+    <a href="/" class="text-white uppercase">HOME</a>
+  
+    <a href="/about" class="text-white uppercase">ABOUT</a>
+  
+    <a href="/consulting" class="text-white uppercase">CONSULTING</a>
+  
+    <a href="/podcast" class="text-white uppercase">PODCAST</a>
+  
+    <a href="/blog" class="text-white uppercase">BLOG</a>
+  
+    <a href="https://studio.viktopia.io/" class="text-white uppercase">VIKTOPIA STUDIO</a>
+  
+</nav>
+
+  </div>
+  <div class="flex gap-2 justify-between items-center">
+    <div class="header-search hidden lg:block">
+      <form action="/search" method="get" role="search">
+        <label for="searchright" class="sr-only">Search the site</label>
+        <input
+          class="search expandright"
+          id="searchright"
+          type="search"
+          name="query"
+          placeholder="Search"
+          aria-label="Search"
+        >
+        <button class="button searchbutton" type="submit" aria-label="Submit search">
+          <span class="mglass" aria-hidden="true">&#9906;</span>
+        </button>
+      </form>
+    </div>
+
+    <div class="hidden lg:block">
+      <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+    </div>
+
+    <!-- Use modern mobile navigation -->
+    <!-- Modern Mobile Navigation -->
+<div class="mobile-nav-container lg:hidden">
+  <!-- Menu Toggle Button -->
+  <button
+    class="mobile-menu-toggle btn-reset touch-target"
+    aria-label="Toggle navigation menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+    data-menu-toggle
+  >
+    <span class="hamburger-icon" aria-hidden="true">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </span>
+  </button>
+
+  <!-- Mobile Menu Backdrop -->
+  <div
+    class="mobile-menu-backdrop"
+    data-menu-backdrop
+    aria-hidden="true"
+  ></div>
+
+  <!-- Mobile Menu Panel -->
+  <nav
+    class="mobile-menu"
+    id="mobile-menu"
+    aria-labelledby="mobile-menu-label"
+    data-menu-panel
+  >
+    <!-- Menu Header -->
+    <div class="mobile-menu-header">
+      <h2 id="mobile-menu-label" class="sr-only">Navigation Menu</h2>
+      <button
+        class="mobile-menu-close btn-reset touch-target"
+        aria-label="Close navigation menu"
+        data-menu-close
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="mobile-menu-list" role="list">
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            HOME
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/about"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            ABOUT
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/consulting"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            CONSULTING
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/podcast"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            PODCAST
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="/blog"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            BLOG
+          </a>
+        </li>
+      
+        <li class="mobile-menu-item">
+          <a
+            href="https://studio.viktopia.io/"
+            class="mobile-menu-link keyboard-focusable"
+            
+          >
+            VIKTOPIA STUDIO
+          </a>
+        </li>
+      
+    </ul>
+
+    <!-- Social Links -->
+    <div class="mobile-menu-footer">
+      <div class="mobile-social-links">
+        <div class="flex gap-[13px] ">
+  <a href="https://twitter.com/vpetersson" target="_new">
+    <img src="/assets/images/site/x-white.svg" alt="x logo" />
+  </a>
+  <a href="https://github.com/vpetersson" target="_new">
+    <img src="/assets/images/site/github-white.svg" alt="github logo" />
+  </a>
+  <a href="https://www.linkedin.com/in/vpetersson/" target="_new">
+    <img src="/assets/images/site/linkedin-white.svg" alt="linkedIn logo" />
+  </a>
+</div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<style>
+/* Mobile Navigation Styles */
+.mobile-nav-container {
+  position: relative;
+}
+
+.mobile-menu-toggle {
+  position: relative;
+  z-index: var(--z-fixed);
+  color: var(--color-white);
+  transition: transform var(--transition-normal);
+
+  &[aria-expanded="true"] {
+    transform: rotate(90deg);
+  }
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 18px;
+  justify-content: space-between;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  transition: all var(--transition-normal);
+  transform-origin: center;
+}
+
+.mobile-menu-toggle[aria-expanded="true"] .hamburger-line {
+  &:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  &:nth-child(2) {
+    opacity: 0;
+  }
+
+  &:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+
+.mobile-menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+  z-index: var(--z-modal);
+}
+
+.mobile-menu-backdrop.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(400px, 100vw);
+  height: 100vh;
+  background: var(--color-gray-900);
+  border-left: 1px solid var(--color-gray-200);
+  transform: translateX(100%);
+  transition: transform var(--transition-normal);
+  z-index: var(--z-modal);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.mobile-menu-close {
+  color: var(--color-white);
+}
+
+.mobile-menu-list {
+  flex: 1;
+  padding: var(--space-4) 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu-item {
+  margin: 0;
+}
+
+.mobile-menu-link {
+  display: block;
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-normal);
+  border-left: 3px solid transparent;
+
+  &:hover {
+    background: var(--color-gray-800);
+    border-left-color: var(--color-primary);
+  }
+
+  &[aria-current="page"] {
+    color: var(--color-primary);
+    border-left-color: var(--color-primary);
+    background: var(--color-gray-800);
+  }
+}
+
+.mobile-menu-footer {
+  padding: var(--space-4);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.mobile-social-links {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+}
+
+/* Simple instant display */
+.mobile-menu-item {
+  opacity: 1;
+}
+</style>
+
+<script>
+// Modern Mobile Navigation JavaScript
+(function() {
+  const menuToggle = document.querySelector('[data-menu-toggle]');
+  const menuPanel = document.querySelector('[data-menu-panel]');
+  const menuBackdrop = document.querySelector('[data-menu-backdrop]');
+  const menuClose = document.querySelector('[data-menu-close]');
+  const menuLinks = document.querySelectorAll('.mobile-menu-link');
+
+  let isOpen = false;
+
+  function openMenu() {
+    isOpen = true;
+    menuToggle.setAttribute('aria-expanded', 'true');
+    menuPanel.classList.add('is-open');
+    menuBackdrop.classList.add('is-visible');
+    document.body.style.overflow = 'hidden';
+
+    // Focus first menu item
+    const firstLink = menuPanel.querySelector('.mobile-menu-link');
+    if (firstLink) {
+      firstLink.focus();
+    }
+  }
+
+  function closeMenu() {
+    isOpen = false;
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuPanel.classList.remove('is-open');
+    menuBackdrop.classList.remove('is-visible');
+    document.body.style.overflow = '';
+
+    // Return focus to toggle button
+    menuToggle.focus();
+  }
+
+  function toggleMenu() {
+    isOpen ? closeMenu() : openMenu();
+  }
+
+  // Event listeners
+  menuToggle.addEventListener('click', toggleMenu);
+  menuClose.addEventListener('click', closeMenu);
+  menuBackdrop.addEventListener('click', closeMenu);
+
+  // Close on link click
+  menuLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isOpen) {
+      closeMenu();
+    }
+  });
+
+  // Trap focus in menu when open
+  menuPanel.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') {
+      const focusableElements = menuPanel.querySelectorAll(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (e.shiftKey && document.activeElement === firstElement) {
+        e.preventDefault();
+        lastElement.focus();
+      } else if (!e.shiftKey && document.activeElement === lastElement) {
+        e.preventDefault();
+        firstElement.focus();
+      }
+    }
+  });
+})();
+</script>
+  </div>
+</header>
+
+    <main id="main-content" class="body">
+      <!-- Blog post schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://vpetersson.com/remote-work/2025/04/07/a-decade-and-a-half-of-remote-work.html"
+  },
+  "headline": "A Decade and a Half of Remote Work",
+  "description": null,
+  "datePublished": "2025-04-07T01:00:00+00:00",
+  "dateModified": "2025-04-07T01:00:00+00:00",
+  "author": {
+    "@type": "Person",
+    "@id": "https://vpetersson.com/about/#person",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Viktor Petersson",
+    "url": "https://vpetersson.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://vpetersson.com/assets/images/site/talk.webp"
+    }
+  },
+  
+  "inLanguage": "en",
+  "wordCount": "1973",
+  "keywords": ["remote-work","management","leadership","productivity","teams"]
+}
+</script>
+
+<!-- Breadcrumbs schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://vpetersson.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://vpetersson.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "A Decade and a Half of Remote Work",
+      "item": "https://vpetersson.com/remote-work/2025/04/07/a-decade-and-a-half-of-remote-work.html"
+    }
+  ]
+}
+</script>
+<div class="page-header page-header-blog">
+  <h2 class="uppercase text-[48px] md:text-[91px] lg:text-[140px] xl:text-[186px] text-white text-center">Blog</h2>
+</div>
+<div class="bg-secondaryBG blog-post">
+  <div class="md:max-w-[665px] mx-4 sm:mx-6 md:mx-auto py-8 md:py-10 lg:py-20">
+    <h2 class="mb-6">A Decade and a Half of Remote Work</h2>
+    <div class="flex mb-6 gap-6 text-xs">
+      <span class="uppercase">
+        07 APR • 2025
+      </span>
+      <span class="blog-time">
+        11 minutes
+      </span>
+    </div>
+    <article class="leading-[26px]">
+      <p>When I wrote <a href="https://vpetersson.com/remote-work/2019/05/18/a-decade-of-remote.html">A Decade of Remote Work</a> back in 2019, I had no idea a global pandemic would soon thrust remote work into the spotlight, turning it from niche to necessity overnight. Now, as I mark 15 years of building and running remote teams, I find myself revisiting and refining many of the lessons from the past and adding new insights gathered from recent experiences. This article is for tech startup founders and remote leaders, sharing practical advice for navigating the challenges and opportunities of long-term remote work.</p>
+
+<p>In the following sections, I’ll explore how remote work has evolved, discuss the essential principles that remain constant, and share practical strategies for building and maintaining effective remote teams. From hiring practices to documentation systems, from team cohesion to personal boundaries, these insights are drawn from real-world experience managing distributed teams across multiple time zones and cultures.</p>
+
+<h2 id="remote-work-still-isnt-for-everyone">Remote Work Still Isn’t for Everyone</h2>
+
+<p>A core belief from my original article still stands true: remote work isn’t suited to everyone. It demands discipline, strong self-management skills, and the ability to thrive without constant supervision.</p>
+
+<p>Over the past five years, I’ve encountered hires who mistakenly thought remote work meant they could take care of their toddler <em>while</em> working, to save on childcare costs. Remote work isn’t different from office-based work regarding expectations. Yes, I encourage flexible schedules (feel free to handle errands midday to beat the crowds), but when you’re at your desk, you’re expected to perform effectively and reliably (without distractions!). Discipline and clear boundaries are non-negotiable. It’s not an excuse to do other things or hang out on the sofa watching Netflix all day.</p>
+
+<p>During COVID lockdowns, many young professionals who moved to large cities were suddenly confined in small apartments or stuck with roommates they barely tolerated. These circumstances highlighted that the environment matters significantly in remote productivity and mental health. It’s a stark reminder that successful remote work needs an appropriate (and dedicated) workspace, something often overlooked.</p>
+
+<p>When hiring remote workers, ensure they have the resources to invest in a proper workspace. We give our staff a budget to set up their home office. If bringing people into an office, you wouldn’t have them work on the floor: you’d give them an appropriate desk and setup. Remote is no different. But even the best equipment in the world can’t solve for the lack of self-discipline.</p>
+
+<h2 id="career-development-and-growth">Career Development and Growth</h2>
+
+<p>The transition from basic remote work principles to career development is natural, as the environment in which people work significantly impacts their professional growth. Some people argue that remote work is great for senior staff, but hinders junior team members’ abilities to grow in their careers. One could certainly argue that a lot of knowledge transfer happens by osmosis (or by the watercooler) in an in-office setup. Many things are not written down and information just lives in someone’s head. When you want to know, you walk over to Bob’s desk and ask him how <code class="language-plaintext highlighter-rouge">$RANDOM_PROCESS</code> works. If you have built a good relationship with Bob, he will probably tell you all about it. But if you haven’t, he’ll probably shoo you away saying that he’s too busy.</p>
+
+<p>Now, if we compare that to a remote organization where there is well-maintained documentation and carefully crafted SOPs (see below), you are not at the mercy of your relationship to Bob to learn about <code class="language-plaintext highlighter-rouge">$RANDOM_PROCESS</code>. You just pull up the document and glance over it. Thus I would argue that when it comes to knowledge transfer, in many ways remote is actually <em>better</em> than in-office. Assuming it’s done right.</p>
+
+<p>Now knowledge transfer and career development/growth are perhaps not exactly the same, but they are very much related. If you can read the SOPs and understand how and why decisions were made (see ADRs below), that can help you both understand the thinking and current processes of people further up in the ranks.</p>
+
+<p>When it comes to actual career development and growth, we’re living in an interesting time. At no point previously in history has information been as accessible as it is today. For anything you’d like to learn about (professionally or personally), you have a wealth of fantastic content on YouTube, or you can use ChatGPT (or the likes of) as your own personal tutor. No question is too small or dumb. Thus traditional career development and growth is kind of moot. It’s not about sending people off to pay for silly courses and get a piece of paper that you did it. It’s about actually <em>learning</em> something.</p>
+
+<p>When we do performance reviews, we of course cover career development. If a team member wants to learn something, we make a note of it and then devise a plan (largely based on publicly available content) on how to achieve that. You want to learn more about project management and planning to become a squad leader? Great, there are thousands (or probably hundreds of thousands) of hours of content readily available on YouTube for this. There is no longer <em>one</em> way to learn and develop.</p>
+
+<p>Moreover, with well-crafted SOPs and ADRs (see below), you can integrate them with an LLM such that anyone in the company can ask questions and learn both how and why things are done the way they are.</p>
+
+<h2 id="increased-regulation">Increased regulation</h2>
+
+<p>As remote work has become more mainstream, the regulatory landscape has evolved significantly. Since the initial article, a lot of things have changed on the legal side of running a remote-first company that spans numerous countries. With the rise of legislation like IR35 in the UK and AB5 in California, it’s increasingly hard to hire staff as contractors in many regions. In response to this, we’ve seen a large wave of Employer of Record (EoR) companies, like Remote.com and Deel to address this. Given that we have headcount in both UK and California, as a remote-only company hiring in any of these regions, you’re either forced to open a subsidiary in this country, or go through an EoR company. Both of which add a substantial premium.</p>
+
+<h2 id="remote-first-vs-hybrid-choose-wisely">Remote-First vs. Hybrid: Choose Wisely</h2>
+
+<p>Post-pandemic, many organizations rushed back to hybrid or fully office-based setups. I’m still firmly convinced that a fully remote model is superior to hybrid. Hybrid models create unnecessary complexity, with neither remote nor in-office employees fully satisfied.</p>
+
+<p>A remote-first approach demands intentionality, especially around documentation and asynchronous communication. It compels teams to write decisions and processes down clearly, which avoids confusion and ambiguity. After years of experimenting, I’ve found that intentional, remote-first workflows foster greater clarity and fairness across the entire organization.</p>
+
+<h2 id="documentation-make-it-a-living-resource">Documentation: Make It a Living Resource</h2>
+
+<p>Documentation is the backbone of successful remote teams. It ensures transparency and preserves institutional knowledge. However, writing things down isn’t enough. Documentation must be actively maintained and integrated into daily workflows. Otherwise, it quickly becomes outdated and irrelevant.</p>
+
+<p>We’ve integrated note-taking bots into nearly every meeting. These automatic notes are then reviewed, summarized, and stored within our documentation system, or referenced when disputes arise. Our primary tools include Google Docs, which has improved dramatically with pageless documents, and Phabricator (now Phorge) for wikis. The tools matter less than ensuring documentation is a living, constantly evolving resource.</p>
+
+<h2 id="standard-operating-procedures-sops-clarity-and-consistency">Standard Operating Procedures (SOPs): Clarity and Consistency</h2>
+
+<p>As the team grows, SOPs become critical. They detail exactly how key tasks, from onboarding new hires to software releases, are performed. However, SOPs only add value when people actually use and update them regularly. Assigning clear ownership for updates and regular reviews ensures they don’t become outdated or ignored.</p>
+
+<p>SOPs also address a different challenge: the bus factor. By having well-defined SOPs for how your organization does things, you are less at the mercy of a single stakeholder deciding to go AWOL, quit, or just go on vacation. Currently, we’re making significant investments at Screenly to develop a Company Manual that holds SOPs for as many processes as possible.</p>
+
+<h2 id="architecture-decision-records-capturing-why">Architecture Decision Records: Capturing “Why”</h2>
+
+<p>We’ve adopted <a href="https://adr.github.io/">Architecture Decision Records</a> (ADRs), stored in a dedicated GitHub repository. ADRs document significant technical decisions and the context, along with the reasoning behind them. This approach provides a clear record, enabling new team members to understand past choices without rehashing old debates. ADRs are concise and easy to maintain, serving as a crucial knowledge base for long-term technical clarity.</p>
+
+<h2 id="in-person-summits-essential-for-team-cohesion">In-Person Summits: Essential for Team Cohesion</h2>
+
+<p>Despite being remote-first, regular in-person meetups remain invaluable. Annual summits lasting five to seven days have proven ideal for us, providing enough time for meaningful work and team-building without being overly rushed.</p>
+
+<p>Why 5-7 days? Well, the first and the last day are write-offs. On the first day, people will be landing at different times, and you’re just settling into the accommodation. Other people might even be jetlagged. On the last day, people will be departing at different times, and if you have enough people, there will be a steady stream of people dropping off throughout the day. Thus if you do three days, you only really have one day of working/hanging out together (and some might even be jetlagged).</p>
+
+<p>As far as locations, we’ve done a number of countries by now. One of the biggest deciding factors (beyond good weather) has always been visa accessibility, but your mileage may vary depending on where you have team members.</p>
+
+<p>Also please note that these summits aren’t just meetings; they’re a chance to deepen connections that strengthen remote collaboration throughout the year.</p>
+
+<h2 id="health-and-well-being-promoting-a-balanced-lifestyle">Health and Well-Being: Promoting a Balanced Lifestyle</h2>
+
+<p>Promoting physical health is crucial for remote workers. We’ve set up a Strava group integrated with Slack, creating friendly competitions and encouraging team members to stay active. It’s a simple, engaging way to support fitness and healthy habits. Exercise isn’t just a productivity booster, it’s a mental health necessity, especially when working remotely.</p>
+
+<h2 id="remote-hiring-in-the-age-of-ai">Remote Hiring in the Age of AI</h2>
+
+<p>The challenges of remote hiring have evolved significantly with the rise of AI tools. Hiring remotely has become significantly more challenging today. Back when I wrote the initial article, you could relatively quickly place candidates in either a reject or interview bucket. However, today the candidates that previously could barely string a sentence together or answer even basic screening questions will use ChatGPT (or the likes of) to ace these questions.</p>
+
+<p>This makes it incredibly difficult (and time-consuming) to weed out qualified vs. unqualified candidates. Now, we’re hardly the first ones to call this out, but when you’re a remote-only company your pool of ‘spray and pray’ candidates is an order of magnitude higher than an in-office interview due to the sheer volume of possible candidates.</p>
+
+<p>We’ve since tweaked our hiring methods a fair bit, but I’d lie if I said it is a solved problem today.</p>
+
+<h2 id="saving-time-and-setting-boundaries">Saving Time and Setting Boundaries</h2>
+
+<p>Remote work’s biggest ongoing advantage remains the elimination of commuting, freeing significant time each day so that you can spend more time with your family (or for your hobbies or whatever). However, the saved time can disappear without proper boundaries. Maintaining consistent routines and setting firm limits on working hours protects against burnout. Personal routines and rituals help signal the start and end of the workday, maintaining productivity and balance.</p>
+
+<h2 id="looking-ahead">Looking Ahead</h2>
+
+<p>After fifteen years, remote work continues to evolve, but foundational principles remain constant: hire disciplined, trustworthy individuals, document extensively, foster healthy routines, and intentionally build culture. Embracing asynchronous work, investing in mentorship and onboarding, and clearly communicating remain crucial to sustained remote success.</p>
+
+<p>In conclusion, remote work isn’t easy, but it offers unmatched flexibility and freedom when done correctly. It requires continuous refinement, thoughtful adaptation, and clear, intentional practices. As remote work matures further, I’m excited to see how teams worldwide continue to adapt and thrive.</p>
+
+<p>And for the love of god, don’t force your team to use Microsoft Teams.</p>
+
+
+      <div class="mt-12 mb-8 p-8 bg-blue-50 border border-blue-100 rounded-xl">
+        <h4 class="text-2xl font-semibold mb-4 text-blue-900">Enjoyed this post? Check out my podcast!</h4>
+        <p class="mb-6 text-blue-800">If you found this interesting, you might enjoy <a href="/podcast" class="text-blue-600 hover:text-blue-800 underline" onclick="trackEvent('Blog CTA', 'Click', 'Podcast Link', 'A Decade and a Half of Remote Work')">"Nerding Out with Viktor"</a> - my podcast where I dive deep into tech, entrepreneurship, and security with industry experts.</p>
+        <div>
+          <h5 class="font-medium mb-4 text-blue-900">Listen on:</h5>
+          
+
+
+
+<div>
+  <div class="flex gap-3">
+    
+      <a href="https://www.youtube.com/@nerdingoutwithviktor" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'YouTube', 'A Decade and a Half of Remote Work')">
+        <img src="/assets/images/site/podcast-youtube-white.svg" alt="Listen to podcast on YouTube" />
+      </a>
+    
+    
+      <a href="https://open.spotify.com/show/7C6yipdVPWgBc6Bwikgo8g" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Spotify', 'A Decade and a Half of Remote Work')">
+        <img src="/assets/images/site/podcast-spotify-white.svg" alt="Listen to podcast on Spotify" />
+      </a>
+    
+    
+      <a href="https://podcasts.apple.com/us/podcast/nerding-out-with-viktor/id1722663295" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'Apple', 'A Decade and a Half of Remote Work')">
+        <img src="/assets/images/site/podcast-apple-white.svg" alt="Listen to podcast on Apple" />
+      </a>
+    
+    
+    
+      <a href="https://podcast.nerdingoutwithviktor.com/podcast_feed.xml" target="_blank" rel="noopener noreferrer" onclick="trackEvent('Podcast', 'Click', 'RSS', 'A Decade and a Half of Remote Work')">
+        <img src="/assets/images/site/podcast-rss-white.svg" alt="RSS Feed" />
+      </a>
+    
+  </div>
+</div>
+
+        </div>
+      </div>
+
+      <i>Found an error or typo? File PR against <a href="https://github.com/vpetersson/vpetersson.com/tree/master/_posts/2025-04-07-a-decade-and-a-half-of-remote-work.md" rel="nofollow">this file</a>.</i>
+    </article>
+    <div class="mt-6">
+      
+  <div class="tags">
+    
+      <a href="/tags/remote-work" class="tag">
+        remote-work
+      </a>
+    
+      <a href="/tags/management" class="tag">
+        management
+      </a>
+    
+      <a href="/tags/leadership" class="tag">
+        leadership
+      </a>
+    
+      <a href="/tags/productivity" class="tag">
+        productivity
+      </a>
+    
+      <a href="/tags/teams" class="tag">
+        teams
+      </a>
+    
+  </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+    </main>
+    <footer class="py-[60px] md:pt-[74px] md:pb-[40px] px-[25px] md:px-[120px] text-altPrimaryText">
+  <div class="mb-[60px]">
+    <a href="/">
+      <img class="w-[200px] md:w-[320px]" src="/assets/images/site/logo.svg" alt="logo" />
+    </a>
+  </div>
+  <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-8 lg:mb-6">
+    <nav class="flex flex-col md:flex-row gap-6 md:gap-8 mb-20 lg:mb-0">
+      
+        <a href="/" class="">HOME</a>
+      
+        <a href="/about" class="">ABOUT</a>
+      
+        <a href="/consulting" class="">CONSULTING</a>
+      
+        <a href="/podcast" class="">PODCAST</a>
+      
+        <a href="/blog" class="">BLOG</a>
+      
+        <a href="https://studio.viktopia.io/" class="">VIKTOPIA STUDIO</a>
+      
+    </nav>
+    <div class="flex gap-[13px]">
+      <a href="https://twitter.com/vpetersson">
+        <img src="/assets/images/site/x.svg" alt="x logo" />
+      </a>
+      <a href="https://github.com/vpetersson">
+        <img src="/assets/images/site/github.svg" alt="github logo" />
+      </a>
+      <a href="https://www.linkedin.com/in/vpetersson/">
+        <img src="/assets/images/site/linkedin.svg" alt="linkedIn logo" />
+      </a>
+    </div>
+  </div>
+  <hr class="mb-8 lg:mb-10 bg-[#000212] h-[3px] bg-opacity-20 border-0" />
+  <div>
+    <p class="font-[Inter] text-base">&copy; Viktor Petersson</p>
+  </div>
+</footer>
+
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/code-blocks.js" defer></script>
+  </body>
+</html>
