@@ -19,8 +19,8 @@
     {{- range $i, $page := $all -}}
     {{- if $i }},{{ end }}
     "{{ $page.RelPermalink | urlize }}": {
-      "title": {{ $page.Title | jsonify }},
-      "content": {{ $page.Plain | jsonify }},
+      "title": {{ $page.Title | htmlUnescape | jsonify }},
+      "content": {{ $page.Plain | htmlUnescape | jsonify }},
       "url": "{{ $page.RelPermalink }}",
       "type": "{{ $page.Section }}"
     }
