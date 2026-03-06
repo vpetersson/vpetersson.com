@@ -1,12 +1,14 @@
 {{ define "main" }}
 {{ partial "page-header.html" (dict "title" "404") }}
 
-<div class="max-w-2xl mx-auto px-6 py-16 text-center">
-  <p class="text-2xl text-white font-body mb-4">Looks like this page has gone off-grid.</p>
-  <p class="text-gray-300 font-body mb-8">Maybe it's on a beach somewhere, living its best life. In the meantime, let's get you back on track.</p>
-  <div class="flex justify-center gap-4 flex-wrap">
-    <a href="/" class="cta-primary">Go Home</a>
-    <a href="/blog/" class="cta-secondary">Browse Blog</a>
+<div class="bg-secondaryBG">
+  <div class="max-w-2xl mx-auto px-6 py-16 text-center">
+    <p class="text-2xl text-white font-body mb-4">Well, this is awkward.</p>
+    <p class="text-gray-300 font-body mb-8">Whatever was here has vanished into the void. Perhaps it was abducted by aliens, or maybe it just 404'd itself out of existence.</p>
+    <div class="flex justify-center gap-4 flex-wrap">
+      <a href="/" class="cta-primary">Take Me Home</a>
+      <a href="/blog/" class="cta-secondary">Browse Blog</a>
+    </div>
   </div>
 </div>
 {{ end }}
