@@ -6,7 +6,7 @@
       location: London, UK
       title: "From Chaos to Clarity: Modern SBOM Practices That Actually Work"
       link: https://qconlondon.com/presentation/mar2026/chaos-clarity-modern-sbom-practices-actually-work
-      upcoming: true
+      deck: /presentations/2026/QCon-2026.pdf
     - type: talk
       event: FOSDEM
       location: Brussels, Belgium
@@ -59,7 +59,7 @@
     - type: talk
       event: SBOM-a-Rama
       location: Denver, US
-      deck: https://github.com/vpetersson/vpetersson.com/blob/master/presentations/2024/sbom-a-rama.pdf
+      deck: /presentations/2024/sbom-a-rama.pdf
       link: https://www.cisa.gov/news-events/events/sbom-rama-fall-2024
     - type: press
       publication: InfoQ
@@ -69,7 +69,7 @@
       event: "London DevOps #85"
       location: London, UK
       title: "The Essential Role of SBOMs"
-      deck: https://github.com/vpetersson/vpetersson.com/blob/master/presentations/2024/london_devops_85.pdf
+      deck: /presentations/2024/london_devops_85.pdf
       video: https://www.youtube.com/watch?v=AHwLGAeh2ts
     - type: press
       publication: TechTarget

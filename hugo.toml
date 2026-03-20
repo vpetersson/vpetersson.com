@@ -74,6 +74,9 @@ timeout = "60s"
     source = "static"
     target = "static"
   [[module.mounts]]
+    source = "presentations"
+    target = "static/presentations"
+  [[module.mounts]]
     source = "content"
     target = "content"
   [[module.mounts]]
