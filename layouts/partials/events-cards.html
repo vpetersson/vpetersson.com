@@ -24,7 +24,7 @@
         <p class="event-card-title">{{ .title | markdownify }}</p>
       {{ end }}
 
-      {{ if or .deck .video .spotify .link }}
+      {{ if or .deck .video .youtube .spotify .apple .link }}
       <div class="event-card-links">
         {{ with .deck }}
           <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="event-card-link" title="View deck">
@@ -36,9 +36,19 @@
             <img src="/assets/images/site/video.svg" alt="video" />
           </a>
         {{ end }}
+        {{ with .youtube }}
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="event-card-link" title="Watch on YouTube">
+            <img src="/assets/images/site/podcast-youtube-dark.svg" alt="YouTube" />
+          </a>
+        {{ end }}
         {{ with .spotify }}
           <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="event-card-link" title="Listen on Spotify">
             <img src="/assets/images/site/spotify.svg" alt="spotify" />
+          </a>
+        {{ end }}
+        {{ with .apple }}
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="event-card-link" title="Listen on Apple Podcasts">
+            <img src="/assets/images/site/podcast-apple-dark.svg" alt="Apple Podcasts" />
           </a>
         {{ end }}
         {{ with .link }}
