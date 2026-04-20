@@ -2,16 +2,40 @@
 - year: 2026
   events:
     - type: talk
+      event: FOSDEM
+      location: Brussels, Belgium
+      title: "CRA-Ready SBOMs: A Practical Blueprint for High-Quality Generation"
+      video: https://video.fosdem.org/2026/ud2208/UYTGWA-sbom-generation.av1.webm
+    - type: talk
       event: QCon London
       location: London, UK
       title: "From Chaos to Clarity: Modern SBOM Practices That Actually Work"
       link: https://qconlondon.com/presentation/mar2026/chaos-clarity-modern-sbom-practices-actually-work
       deck: /presentations/2026/QCon-2026.pdf
-    - type: talk
-      event: FOSDEM
-      location: Brussels, Belgium
-      title: "CRA-Ready SBOMs: A Practical Blueprint for High-Quality Generation"
-      video: https://video.fosdem.org/2026/ud2208/UYTGWA-sbom-generation.av1.webm
+    - type: podcast
+      publication: InfoQ
+      title: "How SBOMs and Engineering Discipline Can Help You"
+      spotify: https://open.spotify.com/episode/5wzJM6Sk3ZRbvC8sfmFBPb
+      youtube: https://www.youtube.com/watch?v=thfUpenosBs
+      apple: https://podcasts.apple.com/gb/podcast/how-sboms-and-engineering-discipline-can-help-you/id1106971805?i=1000761075185
+    - type: panel
+      event: Digital Signage Summit Europe
+      location: Munich, Germany
+      title: "Cybersecurity in Digital Signage - Unpatched, Unsecured, Unprotected"
+      link: https://digitalsignagesummit.org/newfront/sessions/1897
+      upcoming: true
+    - type: panel
+      event: Digital Signage Summit Europe
+      location: Munich, Germany
+      title: "AI Spotlight"
+      link: https://digitalsignagesummit.org/newfront/sessions/1894
+      upcoming: true
+    - type: panel
+      event: Digital Signage Summit Europe
+      location: Munich, Germany
+      title: "Security Reality Check: 90% of Signage Software Is Not Secure"
+      link: https://digitalsignagesummit.org/newfront/sessions/2016
+      upcoming: true
 
 - year: 2025
   events:
@@ -27,12 +51,12 @@
     - type: podcast
       publication: Founder Mode
       title: "Remote Boundaries – Saying No Without Burning Bridges with Viktor Petersson"
-      video: https://www.youtube.com/watch?v=EaHqs_WCvfU
+      youtube: https://www.youtube.com/watch?v=EaHqs_WCvfU
     - type: talk
       event: DevOps Exchange
       location: London, UK
       title: "Securing Your Software Supply Chain: Why SBOMs Are Essential for DevOps and Compliance"
-      video: https://www.youtube.com/watch?v=O0Xmoxtd0-w
+      youtube: https://www.youtube.com/watch?v=O0Xmoxtd0-w
     - type: guest post
       publication: "Sixteen:Nine"
       title: "Op-Ed: The Dirty Secret About Compliance And Digital Signage Security"
@@ -40,7 +64,7 @@
     - type: talk
       event: Dependency Track Community Meeting
       title: "sbomify @ Dependency Track Community Meeting (2025-11-05)"
-      video: https://www.youtube.com/watch?v=-mushNOtEPM
+      youtube: https://www.youtube.com/watch?v=-mushNOtEPM
 
 - year: 2024
   events:
@@ -49,13 +73,13 @@
       location: London, UK
       title: "Screenly's Journey: Raspberry Pi to x86, BIOS, Coreboot, RISC-V"
       deck: https://speakerdeck.com/vpetersson/state-of-open-con-24
-      video: https://www.youtube.com/watch?v=vX-qK9mxKZI
+      youtube: https://www.youtube.com/watch?v=vX-qK9mxKZI
     - type: talk
       event: BSides
       location: Bristol, UK
       title: "Navigating The SBOM Landscape: Formats, Relevance, And Tooling In 2024"
       deck: https://speakerdeck.com/vpetersson/navigating-the-sbom-landscape-formats-relevance-and-tooling-in-2024-at-bsides-bristol-24
-      video: https://www.youtube.com/watch?v=XcNepd1A7Ek
+      youtube: https://www.youtube.com/watch?v=XcNepd1A7Ek
     - type: talk
       event: SBOM-a-Rama
       location: Denver, US
@@ -70,7 +94,7 @@
       location: London, UK
       title: "The Essential Role of SBOMs"
       deck: /presentations/2024/london_devops_85.pdf
-      video: https://www.youtube.com/watch?v=AHwLGAeh2ts
+      youtube: https://www.youtube.com/watch?v=AHwLGAeh2ts
     - type: press
       publication: TechTarget
       title: "U.S. Army, Lockheed Martin detail SBOM progress"
@@ -78,14 +102,14 @@
     - type: talk
       event: Canonical (Ubuntu) Engineering Sprint
       location: The Hague, Netherlands
-      video: https://www.youtube.com/watch?v=5mlR1lPz1no
+      youtube: https://www.youtube.com/watch?v=5mlR1lPz1no
     - type: press
       publication: EE Times Europe Magazine
       title: "Cybersecurity Legislation Driving SBOMs"
       link: https://www.eetimes.com/cybersecurity-legislation-driving-sboms/
     - type: talk
       event: "CycloneDX / Transparency Exchange API (TEA)'s KoalaCon"
-      video: https://www.youtube.com/watch?v=NStzYW4WnEE
+      youtube: https://www.youtube.com/watch?v=NStzYW4WnEE
 
 - year: 2023
   events:
@@ -94,13 +118,13 @@
       location: Riga, Latvia
       title: "From Pets to Cattle: Revolutionizing Edge Computing with Screenly's Edge Apps"
       deck: https://speakerdeck.com/vpetersson/from-pets-to-cattle
-      video: https://www.youtube.com/watch?v=oeIkJD3cTtw
+      youtube: https://www.youtube.com/watch?v=oeIkJD3cTtw
     - type: talk
       event: "#QSRNext"
       location: Virtual
       title: "Beyond Just a Menu Display"
       deck: https://speakerdeck.com/vpetersson/beyond-just-a-menu-display
-      video: https://www.youtube.com/watch?v=bkzFDTh_DdI
+      youtube: https://www.youtube.com/watch?v=bkzFDTh_DdI
     - type: podcast
       publication: The Shobeir Show
       title: "Episode 27"
@@ -124,7 +148,7 @@
       event: Ubuntu Summit
       location: Prague, Czech Republic
       title: "Five Years of Ubuntu Core"
-      video: https://www.youtube.com/watch?v=fVkDqJzXKa0
+      youtube: https://www.youtube.com/watch?v=fVkDqJzXKa0
       link: https://www.screenly.io/blog/2022/11/29/five-years-of-ubuntu-core/
 
 - year: 2021
@@ -141,10 +165,10 @@
       location: London, UK
       title: "The DevSecOps Iceberg"
       deck: https://speakerdeck.com/vpetersson/the-devsecops-iceberg-at-cloud-native-london
-      video: https://youtu.be/BNnP4AmMdQE?t=130
+      youtube: https://youtu.be/BNnP4AmMdQE?t=130
     - type: podcast
       publication: Balena's IoT Happy Hour
-      video: https://www.youtube.com/watch?v=SgCRvEP2KyA
+      youtube: https://www.youtube.com/watch?v=SgCRvEP2KyA
     - type: guest post
       publication: Docker
       title: "Compiling Qt with Docker multi-stage and multi-platform"
@@ -161,7 +185,7 @@
       location: Lyon, France
       title: "The 'S' in IoT Stands for Security"
       deck: https://speakerdeck.com/vpetersson/the-s-in-iot-stands-for-security
-      video: https://www.youtube.com/watch?v=7yN999B11Ms&list=PLbzoR-pLrL6pamOj4UifcMJf560Ph6mJp&index=43&t=0s
+      youtube: https://www.youtube.com/watch?v=7yN999B11Ms&list=PLbzoR-pLrL6pamOj4UifcMJf560Ph6mJp&index=43&t=0s
     - type: talk
       event: Kubernetes London
       location: London, UK
@@ -175,7 +199,7 @@
     - type: press
       publication: DailyDOOH
       title: "Screenly + NEC interview"
-      video: https://www.youtube.com/watch?v=LtFCOHrgvs4
+      youtube: https://www.youtube.com/watch?v=LtFCOHrgvs4
     - type: talk
       event: Open Source Summit North America
       location: Vancouver, Canada
@@ -186,7 +210,7 @@
       location: Melbourne, Australia
       title: "The 'S' in IoT Stands for Security"
       deck: https://docs.google.com/presentation/d/1E1ZzkMmytOoW-aLkWlJzFT1MYLWE2RyAv0qOjQkxDt8/edit?usp=sharing
-      video: https://www.youtube.com/watch?v=PmWYTjr_Xso
+      youtube: https://www.youtube.com/watch?v=PmWYTjr_Xso
     - type: talk
       event: Ansible London
       location: London, UK
@@ -231,7 +255,7 @@
       event: Open Cloud Day
       location: Bern, Switzerland
       deck: https://speakerdeck.com/vpetersson/server-evolution-from-mainframes-to-containers-and-paas
-      video: https://www.youtube.com/watch?v=pHdc3f98Kxs&index=11&list=PLofS3lNZckseu0v_CP4XjgDUQxRKfF6gA
+      youtube: https://www.youtube.com/watch?v=pHdc3f98Kxs&index=11&list=PLofS3lNZckseu0v_CP4XjgDUQxRKfF6gA
     - type: talk
       event: ApacheCon North America
       location: Austin, TX
