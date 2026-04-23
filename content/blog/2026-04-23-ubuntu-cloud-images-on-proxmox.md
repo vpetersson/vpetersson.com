@@ -98,7 +98,10 @@ set -euo pipefail
 # Usage: ./launch-vm.sh <vmid> <name> [disk_size]
 VMID=${1:?Usage: $0 <vmid> <name> [disk_size]}
 NAME=${2:?Usage: $0 <vmid> <name> [disk_size]}
-EXTRA_DISK=${3:-20G}
+DISK_SIZE=${3:-20G}
+
+# Accept a bare number as gigabytes
+[[ "$DISK_SIZE" =~ ^[0-9]+$ ]] && DISK_SIZE="${DISK_SIZE}G"
 
 TEMPLATE_ID=${TEMPLATE_ID:-9000}
 STORAGE=${STORAGE:-local-lvm}
@@ -118,13 +121,13 @@ qm set $VMID \
   --ipconfig0 ip=dhcp \
   --cicustom "user=${CLOUDINIT_SNIPPET}"
 
-# Resize disk
-qm resize $VMID virtio0 +${EXTRA_DISK}
+# Resize disk to absolute size (qm resize grows, never shrinks)
+qm resize $VMID virtio0 $DISK_SIZE
 
 # Start
 qm start $VMID
 
-echo "VM $VMID ($NAME) started."
+echo "VM $VMID ($NAME) started with ${DISK_SIZE} disk."
 echo "Watch boot: qm terminal $VMID"
 ```
 
