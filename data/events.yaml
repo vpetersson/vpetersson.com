@@ -18,6 +18,10 @@
       spotify: https://open.spotify.com/episode/5wzJM6Sk3ZRbvC8sfmFBPb
       youtube: https://www.youtube.com/watch?v=thfUpenosBs
       apple: https://podcasts.apple.com/gb/podcast/how-sboms-and-engineering-discipline-can-help-you/id1106971805?i=1000761075185
+    - type: press
+      publication: InfoQ
+      title: "QCon London 2026: SBOMs Move from Best Practice to Legal Obligation as CRA Enforcement Looms"
+      link: https://www.infoq.com/news/2026/03/sbom-viktor-petersson/
     - type: panel
       event: Digital Signage Summit Europe
       location: Munich, Germany
