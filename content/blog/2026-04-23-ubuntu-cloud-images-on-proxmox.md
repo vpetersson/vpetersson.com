@@ -166,6 +166,8 @@ My actual snippet layers more on top -- `uv`, `bun`, `gh`, Claude Code -- for th
 
 Since this post opened with me abandoning Multipass, let me close the loop honestly: Multipass is a great tool, and I still use it on my laptop. `multipass launch --cloud-init init.yaml 24.04` is the fastest way to get a throwaway Ubuntu shell on bare-metal Linux or macOS, and the same cloud-init file works in both worlds.
 
+The other thing Multipass gets right is the ergonomics around ephemeral workflows. `multipass launch`, `multipass shell`, `multipass transfer <file> instance:/path`, `multipass delete --purge` -- shunting files in and out of a short-lived instance is basically a one-liner in each direction. On a full Proxmox VM you're back to `scp`, SSH keys, firewall rules, and (if the VM is short-lived) orchestrating all of that around a clone/destroy cycle. It's doable, but there's real overhead. For a quick "spin up an Ubuntu sandbox, poke at it, grab the output, throw it away" loop, Multipass wins on sheer friction.
+
 The mismatch was the _context_. Running Multipass inside a Proxmox VM means nesting KVM twice, fighting snap confinement on every file transfer, and reinventing primitives Proxmox already gives you -- templates, cloning, per-VM cloud-init injection. The heuristic I landed on: if your workstation is the host, Multipass. If Proxmox is the host, use the templates.
 
 ## What's Next
