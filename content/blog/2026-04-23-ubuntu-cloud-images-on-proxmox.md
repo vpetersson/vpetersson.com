@@ -55,7 +55,7 @@ qm create $VMID \
   --ostype l26 \
   --memory 1024 \
   --agent 1 \
-  --bios ovmf --machine q35 --efidisk0 ${STORAGE}:0,pre-enrolled-keys=0 \
+  --bios ovmf --machine q35 --efidisk0 ${STORAGE}:0,pre-enrolled-keys=1 \
   --cpu host --sockets 1 --cores 1 \
   --vga serial0 --serial0 socket \
   --net0 virtio,bridge=${BRIDGE}
@@ -80,6 +80,8 @@ echo "Template $VMID ready."
 ```
 
 A few of the choices worth calling out: `--agent 1` enables the QEMU guest agent (graceful shutdown, IP reporting). `--vga serial0 --serial0 socket` routes the console to serial, which means `qm terminal $VMID` gives you a working shell -- essential when cloud-init falls over and you need to see what happened. And the `SHA256SUMS` check is not optional; you're baking this image into every future VM.
+
+The image is also shim-signed, so `pre-enrolled-keys=1` on the efidisk gets you secure boot out of the box -- the same posture you'd get on AWS or GCP. Flip it to `0` if you want to enroll your own keys instead.
 
 ## The efidisk Gotcha
 
