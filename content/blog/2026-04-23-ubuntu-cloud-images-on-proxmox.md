@@ -17,7 +17,7 @@ What finally pushed me to fix it was wanting ephemeral Ubuntu VMs for developmen
 
 ## Cloud Images vs ISOs
 
-Ubuntu ships a [cloud image](https://cloud-images.ubuntu.com/) as a pre-installed qcow2 disk: `noble-server-cloudimg-amd64.img`. No installer. No locale picker. No partitioning. Boot it and `cloud-init` runs on first start, reading a user-data file you provide and configuring the machine -- users, SSH keys, packages, arbitrary commands.
+Ubuntu ships a [cloud image](https://cloud-images.ubuntu.com/) as a pre-installed qcow2 disk: `noble-server-cloudimg-amd64.img`. No installer. No locale picker. No partitioning. Boot it and `cloud-init` runs on first start, reading a user-data file you provide and configuring the machine -- users, SSH keys, packages, arbitrary commands. This is the exact same image AWS, GCP, Azure, and DigitalOcean hand you when you spin up an Ubuntu instance; Canonical just happens to publish it for the rest of us too.
 
 Turn that image into a Proxmox template, and every new VM is a `qm clone` away. Attach a per-VM `cicustom` snippet with your cloud-init YAML, resize the disk, start the VM. First shell prompt in under a minute.
 
@@ -83,7 +83,7 @@ A few of the choices worth calling out: `--agent 1` enables the QEMU guest agent
 
 ## The efidisk Gotcha
 
-One subtle thing: when you add `--efidisk0` _before_ importing the cloud image, the EFI vars disk takes `disk-0` and the imported OS disk lands on `disk-1`. If you mindlessly script `--virtio0 ${STORAGE}:vm-${VMID}-disk-0` you'll "successfully" boot the EFI variable partition, watch it fail silently, and spend twenty minutes running `qm config` trying to figure out why. The script above references `disk-1` for a reason.
+The gotcha: when you add `--efidisk0` _before_ importing the cloud image, the EFI vars disk takes `disk-0` and the imported OS disk lands on `disk-1`. If you mindlessly script `--virtio0 ${STORAGE}:vm-${VMID}-disk-0` you'll "successfully" boot the EFI variable partition, watch it fail silently, and spend twenty minutes running `qm config` trying to figure out why. The script above references `disk-1` for a reason.
 
 ## Cloning and Customizing
 
@@ -158,9 +158,9 @@ runcmd:
 final_message: "Bootstrap complete."
 ```
 
-The nicest trick in the whole post is `ssh_import_id: gh:vpetersson`. Cloud-init pulls your public SSH keys straight from GitHub at first boot. No more copying `authorized_keys` around, no key-wrangling scripts.
+The coolest bit here is `ssh_import_id: gh:vpetersson`. Cloud-init pulls your public SSH keys straight from GitHub at first boot. No more copying `authorized_keys` around, no key-wrangling scripts.
 
-My actual snippet layers more on top -- `uv`, `bun`, `gh`, Claude Code -- for the AI-agent sandbox use case, but that's incidental. The pattern is the interesting bit; swap in whatever toolchain your VMs need.
+My production snippet adds `uv`, `bun`, `gh`, and Claude Code for the AI-agent sandbox -- the pattern is the interesting bit; swap in whatever toolchain your VMs need.
 
 ## Why a VM Per Project
 
@@ -170,7 +170,7 @@ So the pattern I've settled on is one VM (or LXC container on Proxmox) per proje
 
 Each environment also gets its own SSH key pair -- fresh keys for git operations and commit signing, never a copy of my personal key. If an agent ever does go rogue, the git history tells me exactly which environment pushed what. The audit trail survives even if the VM doesn't.
 
-For what it's worth, this post was drafted by Claude Code running in an LXC container set up exactly this way -- dedicated, scoped SSH keys, happy to run in dangerous mode because the blast radius stops at the container boundary.
+This post was drafted by Claude Code running in an LXC container set up exactly this way -- dedicated, scoped SSH keys, happy to run in dangerous mode because the blast radius stops at the container boundary.
 
 ## Multipass Still Has a Place
 
