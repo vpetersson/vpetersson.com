@@ -162,6 +162,16 @@ The nicest trick in the whole post is `ssh_import_id: gh:vpetersson`. Cloud-init
 
 My actual snippet layers more on top -- `uv`, `bun`, `gh`, Claude Code -- for the AI-agent sandbox use case, but that's incidental. The pattern is the interesting bit; swap in whatever toolchain your VMs need.
 
+## Why a VM Per Project
+
+The reason this workflow matters more than it used to is simple: I don't trust the sandboxing in AI coding agents. Every agent I've used has, at some point, done something I didn't ask for -- misread an instruction, skipped a confirmation, or blasted past an allow-list it was supposed to respect. Treating the agent's built-in sandbox as a real security boundary is a bet I've stopped making.
+
+So the pattern I've settled on is one VM (or LXC container on Proxmox) per project. Inside that VM I'm happy to let the agent run in whatever "dangerous" / auto-approve mode the tool offers, because the blast radius is bounded by the VM itself. If something goes sideways -- rewrites my shell config, `rm -rf`s the wrong directory, pushes junk to a remote -- it's confined to a box I can `qm destroy` and rebuild from the template in seconds.
+
+Each environment also gets its own SSH key pair -- fresh keys for git operations and commit signing, never a copy of my personal key. If an agent ever does go rogue, the git history tells me exactly which environment pushed what. The audit trail survives even if the VM doesn't.
+
+For what it's worth, this post was drafted by Claude Code running in an LXC container set up exactly this way -- dedicated, scoped SSH keys, happy to run in dangerous mode because the blast radius stops at the container boundary.
+
 ## Multipass Still Has a Place
 
 Since this post opened with me abandoning Multipass, let me close the loop honestly: Multipass is a great tool, and I still use it on my laptop. `multipass launch --cloud-init init.yaml 24.04` is the fastest way to get a throwaway Ubuntu shell on bare-metal Linux or macOS, and the same cloud-init file works in both worlds.
