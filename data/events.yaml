@@ -18,6 +18,12 @@
       spotify: https://open.spotify.com/episode/5wzJM6Sk3ZRbvC8sfmFBPb
       youtube: https://www.youtube.com/watch?v=thfUpenosBs
       apple: https://podcasts.apple.com/gb/podcast/how-sboms-and-engineering-discipline-can-help-you/id1106971805?i=1000761075185
+    - type: podcast
+      publication: Risk First
+      title: "Risk-First: Stars of Software #7 - Viktor Petersson"
+      spotify: https://open.spotify.com/episode/1p7whQIKc1Rf7NyDBf2Ruc
+      apple: https://podcasts.apple.com/us/podcast/risk-first-stars-of-software-7-viktor-petersson/id1877357373?i=1000763545244
+      youtube: https://www.youtube.com/watch?v=rF9PwuQFkgQ
     - type: press
       publication: InfoQ
       title: "QCon London 2026: SBOMs Move from Best Practice to Legal Obligation as CRA Enforcement Looms"
