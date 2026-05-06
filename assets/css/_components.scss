@@ -93,7 +93,7 @@
    ======================================== */
 
 .content-card {
-  background: #1A1B2A;
+  background: $bg-secondary;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   overflow: hidden;
@@ -223,6 +223,10 @@
   }
 }
 
+.content-card-no-thumbnail .content-description p {
+  -webkit-line-clamp: 10;
+}
+
 .content-actions {
   display: flex;
   justify-content: space-between;
@@ -290,7 +294,7 @@
    ======================================== */
 
 .featured-episodes-section {
-  background: #1A1B2A;
+  background: $bg-secondary;
   padding: 3rem 1rem;
 
   @media (min-width: $breakpoint-sm) {
@@ -350,7 +354,7 @@
 .featured-episode-card {
   border-radius: 12px;
   overflow: hidden;
-  background: #000212;
+  background: $bg-primary;
   border: 1px solid rgba(255, 255, 255, 0.12);
   transition: all 0.3s ease;
 
@@ -450,28 +454,48 @@
 }
 
 /* ========================================
+   BULLET LIST (used on consulting page)
+   ======================================== */
+
+.bullet-list {
+  list-style: none;
+
+  li::before {
+    content: "\2022";
+    padding-right: 0.5em;
+  }
+}
+
+/* ========================================
    PAGE HEADER
    ======================================== */
 
 .page-header {
   background: $bg-primary;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   text-align: center;
   overflow: hidden;
+  position: relative;
 
   @media (min-width: $breakpoint-sm) {
-    padding: 4rem 1.5rem;
+    padding: 2.5rem 1.5rem;
   }
 
   @media (min-width: $breakpoint-md) {
-    padding: 5rem 2rem;
+    padding: 3rem 2rem;
   }
+}
 
-  h2 {
-    max-width: 100%;
-    overflow-wrap: break-word;
-    margin: 0;
-  }
+.page-header-title {
+  font-family: $font-display;
+  font-weight: 400;
+  color: $white;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow-wrap: break-word;
+  font-size: clamp(2.5rem, 8vw, 6rem);
 }
 
 /* ========================================

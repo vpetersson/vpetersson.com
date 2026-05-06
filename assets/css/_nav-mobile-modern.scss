@@ -125,7 +125,8 @@
     border-left-color: var(--color-primary);
   }
 
-  &[aria-current="page"] {
+  &[aria-current="page"],
+  &--active {
     color: var(--color-primary);
     border-left-color: var(--color-primary);
     background: var(--color-gray-800);

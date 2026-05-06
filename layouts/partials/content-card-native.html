@@ -1,8 +1,9 @@
 {{ $content := .content }}
 {{ $type := .type }}
+{{ $hasThumbnail := and (eq $type "podcast") $content.Params.youtube }}
 
-<article class="content-card">
-  {{- if and (eq $type "podcast") $content.Params.youtube -}}
+<article class="content-card{{ if not $hasThumbnail }} content-card-no-thumbnail{{ end }}">
+  {{- if $hasThumbnail -}}
     {{ $youtube_id := replaceRE `.*[?&]v=([^&]+).*` "$1" $content.Params.youtube }}
     <a href="{{ $content.RelPermalink }}" class="content-card-thumbnail-link">
       <div class="content-card-thumbnail">
@@ -67,10 +68,11 @@
 
     <!-- Description -->
     <div class="content-description">
+      {{ $truncLen := cond $hasThumbnail 180 360 }}
       {{ if $content.Description }}
-        <p>{{ $content.Description | plainify | truncate 180 }}</p>
+        <p>{{ $content.Description | plainify | truncate $truncLen }}</p>
       {{ else }}
-        <p>{{ $content.Summary | plainify | truncate 180 }}</p>
+        <p>{{ $content.Summary | plainify | truncate $truncLen }}</p>
       {{ end }}
     </div>
 

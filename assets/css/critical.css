@@ -9,7 +9,7 @@
   font-family: 'Anton';
   font-style: normal;
   font-weight: 400;
-  font-display: optional;
+  font-display: swap;
   src: url('/fonts/anton-v25-latin-regular.woff2') format('woff2');
 }
 @font-face {
@@ -61,7 +61,7 @@
 html { scroll-behavior: smooth; }
 body {
   color: #D6D6D6;
-  font-family: 'Anton', system-ui, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
   min-width: 320px;
   overflow-x: hidden;
   margin: 0;
@@ -216,7 +216,7 @@ p {
   gap: 0.75rem;
   transition: all 0.2s ease;
   position: relative;
-  z-index: 100;
+  z-index: 5;
   cursor: pointer;
   border: none;
 }
@@ -232,7 +232,7 @@ p {
   font-size: 1rem;
   transition: all 0.2s ease;
   position: relative;
-  z-index: 100;
+  z-index: 5;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -257,4 +257,3 @@ p {
 }
 @media (min-width: 480px) { .hero-image { max-width: 300px; } }
 @media (min-width: 768px) { .hero-image { max-width: 400px; } }
-.hero-actions a { pointer-events: auto !important; display: inline-flex !important; }

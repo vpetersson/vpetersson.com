@@ -43,13 +43,29 @@
       </button>
     </div>
 
+    <!-- Search -->
+    <div class="mobile-menu-search">
+      <form action="/search" method="get" role="search" class="px-4 py-3">
+        <label for="mobile-search" class="sr-only">Search the site</label>
+        <input
+          class="w-full px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-white text-sm placeholder-gray-400 focus:border-[#5D5FEF] focus:outline-none"
+          id="mobile-search"
+          type="search"
+          name="query"
+          placeholder="Search..."
+          aria-label="Search"
+        >
+      </form>
+    </div>
+
     <!-- Navigation Links -->
     <ul class="mobile-menu-list" role="list">
       {{ range site.Data.main.nav }}
+        {{ $isActive := or (and (eq .link "/") ($.IsHome)) (and (ne .link "/") (hasPrefix ($.RelPermalink) .link)) }}
         <li class="mobile-menu-item">
           <a
             href="{{ .link }}"
-            class="mobile-menu-link keyboard-focusable"
+            class="mobile-menu-link keyboard-focusable{{ if $isActive }} mobile-menu-link--active{{ end }}"
           >
             {{ .name }}
           </a>

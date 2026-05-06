@@ -1,5 +1,7 @@
 <nav class="hidden lg:flex gap-6">
+  {{ $currentPath := urls.AbsURL $.RelPermalink }}
   {{ range site.Data.main.nav }}
-    <a href="{{ .link }}" class="text-white uppercase">{{ .name }}</a>
+    {{ $isActive := or (and (eq .link "/") ($.IsHome)) (and (ne .link "/") (hasPrefix ($.RelPermalink) .link)) }}
+    <a href="{{ .link }}" class="text-white uppercase{{ if $isActive }} border-b-2 border-[#5D5FEF] pb-0.5{{ end }}">{{ .name }}</a>
   {{ end }}
 </nav>
