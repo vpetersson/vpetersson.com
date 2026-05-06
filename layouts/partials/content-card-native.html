@@ -2,7 +2,7 @@
 {{ $type := .type }}
 {{ $hasThumbnail := and (eq $type "podcast") $content.Params.youtube }}
 
-<article class="content-card{{ if not $hasThumbnail }} content-card--no-thumbnail{{ end }}">
+<article class="content-card{{ if not $hasThumbnail }} content-card-no-thumbnail{{ end }}">
   {{- if $hasThumbnail -}}
     {{ $youtube_id := replaceRE `.*[?&]v=([^&]+).*` "$1" $content.Params.youtube }}
     <a href="{{ $content.RelPermalink }}" class="content-card-thumbnail-link">
