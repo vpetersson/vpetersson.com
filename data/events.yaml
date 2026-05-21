@@ -1,6 +1,9 @@
 ---
 - year: 2026
   events:
+    - type: award
+      event: Invidis Strategy Award 2026
+      title: "Winner in the category Business Critical / Cybersecurity for Screenly"
     - type: talk
       event: FOSDEM
       location: Brussels, Belgium
@@ -37,19 +40,16 @@
       location: Munich, Germany
       title: "Cybersecurity in Digital Signage - Unpatched, Unsecured, Unprotected"
       link: https://digitalsignagesummit.org/newfront/sessions/1897
-      upcoming: true
     - type: panel
       event: Digital Signage Summit Europe
       location: Munich, Germany
       title: "AI Spotlight"
       link: https://digitalsignagesummit.org/newfront/sessions/1894
-      upcoming: true
     - type: panel
       event: Digital Signage Summit Europe
       location: Munich, Germany
       title: "Security Reality Check: 90% of Signage Software Is Not Secure"
       link: https://digitalsignagesummit.org/newfront/sessions/2016
-      upcoming: true
 
 - year: 2025
   events:
