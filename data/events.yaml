@@ -4,6 +4,7 @@
     - type: award
       event: Invidis Strategy Award 2026
       title: "Winner in the category Business Critical / Cybersecurity for Screenly"
+      link: https://invidis.com/news/2026/05/invidis-strategy-awards-2026-the-winners-of-2026/
     - type: talk
       event: FOSDEM
       location: Brussels, Belgium
@@ -35,6 +36,10 @@
       publication: RedMonk
       title: "AI Slop & the Vulnerability Treadmill"
       link: https://redmonk.com/kholterhoff/2026/05/05/ai-slop-vulnerability-treadmill/
+    - type: press
+      publication: InfoQ
+      title: "Leading Open Source Author Calls for Verification over Trust in Software Supply Chains"
+      link: https://www.infoq.com/news/2026/05/stenberg-curl-verification-trust/
     - type: panel
       event: Digital Signage Summit Europe
       location: Munich, Germany
