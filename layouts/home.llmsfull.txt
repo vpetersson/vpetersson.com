@@ -1,0 +1,39 @@
+# Viktor Petersson — Full Content
+
+> {{ .Site.Params.description }}
+
+This file contains the full text of {{ .Site.BaseURL }} in Markdown, intended for consumption by large language models. A shorter index is available at {{ "llms.txt" | absURL }}
+{{- $sections := slice
+  (dict "title" "Pages" "pages" (where .Site.RegularPages "Section" ""))
+  (dict "title" "Podcast Episodes" "pages" (where .Site.RegularPages "Section" "podcast").ByDate.Reverse)
+  (dict "title" "Blog Posts" "pages" (where .Site.RegularPages "Section" "blog").ByDate.Reverse)
+}}
+{{- range $sections }}
+{{- range .pages }}
+{{- $body := "" }}
+{{- if and .File (eq .File.Ext "md") }}
+{{- /* Markdown pages: raw Markdown with Hugo shortcodes stripped */ -}}
+{{- $body = .RawContent | replaceRE `(?s)\{\{[<%].*?[>%]\}\}` "" | strings.TrimSpace }}
+{{- else }}
+{{- /* Raw-HTML pages: plain text, with inline SVG diagrams removed */ -}}
+{{- $body = .Content | replaceRE `(?s)<\?xml.*?\?>` " " | replaceRE `(?s)<svg.*?</svg>` " " | plainify | htmlUnescape | strings.TrimSpace }}
+{{- end }}
+{{- /* Pages whose content lives in layout templates (about, projects, ...) have no content body — skip them; they are covered in llms.txt */ -}}
+{{- if $body }}
+
+---
+
+# {{ .Title }}
+
+URL: {{ .Permalink }}
+{{- if not .Date.IsZero }}
+Date: {{ .Date.Format "2006-01-02" }}
+{{- end }}
+{{- with .Description }}
+Description: {{ . | plainify | replaceRE `\s+` " " | strings.TrimSpace }}
+{{- end }}
+
+{{ $body }}
+{{- end }}
+{{- end }}
+{{- end }}

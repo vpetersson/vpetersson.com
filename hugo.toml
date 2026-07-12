@@ -48,10 +48,20 @@ timeout = "60s"
     baseName = "video-sitemap"
     mediaType = "application/xml"
     isPlainText = true
+  # llms.txt (index) and llms-full.txt (full content) per https://llmstxt.org
+  # Rendered from layouts/home.llms.txt and layouts/home.llmsfull.txt
+  [outputFormats.llms]
+    baseName = "llms"
+    mediaType = "text/plain"
+    isPlainText = true
+  [outputFormats.llmsfull]
+    baseName = "llms-full"
+    mediaType = "text/plain"
+    isPlainText = true
 
 # Home page output formats
 [outputs]
-  home = ["HTML", "RSS", "VideoSitemap"]
+  home = ["HTML", "RSS", "VideoSitemap", "llms", "llmsfull"]
   section = ["HTML", "RSS"]
 
 # Minification
