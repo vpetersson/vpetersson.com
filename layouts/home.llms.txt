@@ -22,12 +22,12 @@ A full-content version of this file is available at {{ "llms-full.txt" | absURL 
 
 ## Podcast Episodes
 {{ range (where .Site.RegularPages "Section" "podcast").ByDate.Reverse }}
-- [{{ .Title }}]({{ .Permalink }}){{ with .Description }}: {{ . | plainify | replaceRE `\s+` " " | strings.TrimSpace }}{{ end }}
+- [{{ .Title | replaceRE `\s+` " " | strings.TrimSpace }}]({{ .Permalink }}){{ with .Description }}: {{ . | plainify | replaceRE `\s+` " " | strings.TrimSpace }}{{ end }}
 {{- end }}
 
 ## Blog Posts
 {{ range (where .Site.RegularPages "Section" "blog").ByDate.Reverse }}
-- [{{ .Title }}]({{ .Permalink }}) ({{ .Date.Format "2006-01-02" }}){{ with .Description }}: {{ . | plainify | replaceRE `\s+` " " | strings.TrimSpace }}{{ end }}
+- [{{ .Title | replaceRE `\s+` " " | strings.TrimSpace }}]({{ .Permalink }}) ({{ .Date.Format "2006-01-02" }}){{ with .Description }}: {{ . | plainify | replaceRE `\s+` " " | strings.TrimSpace }}{{ end }}
 {{- end }}
 
 ## Contact

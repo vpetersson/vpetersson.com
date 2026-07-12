@@ -12,8 +12,8 @@ This file contains the full text of {{ .Site.BaseURL }} in Markdown, intended fo
 {{- range .pages }}
 {{- $body := "" }}
 {{- if and .File (eq .File.Ext "md") }}
-{{- /* Markdown pages: raw Markdown with Hugo shortcodes stripped */ -}}
-{{- $body = .RawContent | replaceRE `(?s)\{\{[<%].*?[>%]\}\}` "" | strings.TrimSpace }}
+{{- /* Markdown pages: raw Markdown with Hugo shortcodes and text-free HTML embeds (video objects, script/iframe embeds in legacy posts) stripped */ -}}
+{{- $body = .RawContent | replaceRE `(?s)\{\{[<%].*?[>%]\}\}` "" | replaceRE `(?s)<script.*?</script>` " " | replaceRE `(?s)<iframe.*?</iframe>` " " | replaceRE `(?s)<object.*?</object>` " " | strings.TrimSpace }}
 {{- else }}
 {{- /* Raw-HTML pages: plain text, with inline SVG diagrams removed */ -}}
 {{- $body = .Content | replaceRE `(?s)<\?xml.*?\?>` " " | replaceRE `(?s)<svg.*?</svg>` " " | plainify | htmlUnescape | strings.TrimSpace }}
@@ -23,7 +23,7 @@ This file contains the full text of {{ .Site.BaseURL }} in Markdown, intended fo
 
 ---
 
-# {{ .Title }}
+# {{ .Title | replaceRE `\s+` " " | strings.TrimSpace }}
 
 URL: {{ .Permalink }}
 {{- if not .Date.IsZero }}
