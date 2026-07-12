@@ -1,0 +1,40 @@
+# Viktor Petersson
+
+> {{ .Site.Params.description }}
+
+Viktor Petersson is a tech entrepreneur, security advocate, and host of the "Nerding Out with Viktor" podcast. He is based in London and has been building and running tech companies for over 15 years. He leads Screenly, the world's first developer-friendly digital signage platform powering over 10,000 screens globally.
+
+Key facts:
+
+- Blog: technical articles on DevSecOps, cloud architecture, open source, security, remote work, and entrepreneurship (RSS: {{ "blog/index.xml" | absURL }})
+- Podcast: "Nerding Out with Viktor" — video podcast with deep dives into technology, entrepreneurship, and security with industry experts (RSS: {{ .Site.Data.main.podcast.rss }})
+- Sitemaps: {{ "sitemap.xml" | absURL }} (full site), {{ "video-sitemap.xml" | absURL }} (video content for podcast episodes)
+
+A full-content version of this file is available at {{ "llms-full.txt" | absURL }}
+
+## Key Pages
+
+- [About]({{ "about/" | absURL }}): Background, experience, speaking engagements, and events
+- [Projects]({{ "projects/" | absURL }}): Current and past projects including Screenly, Anthias, and open-source work
+- [Consulting]({{ "consulting/" | absURL }}): DevSecOps and software supply chain security consulting services
+- [Reading Log]({{ "reading-log/" | absURL }}): Books read by year
+- [Remote Work]({{ "remote-work/" | absURL }}): Talks, articles, and podcasts on remote work
+
+## Podcast Episodes
+{{ range (where .Site.RegularPages "Section" "podcast").ByDate.Reverse }}
+- [{{ .Title | replaceRE `\s+` " " | strings.TrimSpace }}]({{ .Permalink }}){{ with .Description }}: {{ . | plainify | replaceRE `\s+` " " | strings.TrimSpace }}{{ end }}
+{{- end }}
+
+## Blog Posts
+{{ range (where .Site.RegularPages "Section" "blog").ByDate.Reverse }}
+- [{{ .Title | replaceRE `\s+` " " | strings.TrimSpace }}]({{ .Permalink }}) ({{ .Date.Format "2006-01-02" }}){{ with .Description }}: {{ . | plainify | replaceRE `\s+` " " | strings.TrimSpace }}{{ end }}
+{{- end }}
+
+## Contact
+
+- Website: {{ .Site.BaseURL }}
+- GitHub: {{ .Site.Data.main.social.github }}
+- X/Twitter: {{ .Site.Data.main.social.x }}
+- LinkedIn: {{ .Site.Data.main.social.linkedIn }}
+- Mastodon: {{ .Site.Data.main.social.mastodon }}
+- YouTube: {{ .Site.Data.main.social.youtube }}
