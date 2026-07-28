@@ -52,7 +52,13 @@
   <title>{{ .Title }} | {{ site.Title }}</title>
   {{ end }}
 
+  {{/* Thin tag pages, /tags/, /search/ and paginated pages are noindex —
+       see partials/seo-noindex.html for the reasoning. */}}
+  {{ if partial "seo-noindex.html" . }}
+  <meta name="robots" content="noindex, follow">
+  {{ else }}
   <meta name="robots" content="index, follow">
+  {{ end }}
   <meta http-equiv="content-language" content="en">
 
   {{/* Description: use page description, then summary, then site default */}}

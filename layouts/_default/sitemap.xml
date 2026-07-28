@@ -1,0 +1,22 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+{{- /*
+  Same rule as the robots meta tag: a page that is noindex has no business
+  in the sitemap. A sitemap is a list of URLs you are asking Google to
+  index, so listing noindex URLs sends two contradictory signals.
+
+  <changefreq> and <priority> are deliberately omitted. Google has stated
+  it ignores both, and every page here carried the identical site-wide
+  default (monthly / 0.5), so they conveyed no information at all.
+*/ -}}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {{- range .Data.Pages -}}
+    {{- if and .Permalink (not (partial "seo-noindex.html" .)) }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    {{- if not .Lastmod.IsZero }}
+    <lastmod>{{ safeHTML ( .Lastmod.Format "2006-01-02T15:04:05-07:00" ) }}</lastmod>
+    {{- end }}
+  </url>
+    {{- end -}}
+  {{- end }}
+</urlset>

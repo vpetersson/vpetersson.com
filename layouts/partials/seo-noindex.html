@@ -1,0 +1,49 @@
+{{- /*
+  Returns "true" for pages that should not be indexed, and is the single
+  source of truth for both the robots meta tag (partials/head.html) and
+  which URLs reach the sitemap (_default/sitemap.xml).
+
+  Why these rules:
+
+  - Thin tag pages. 246 of 370 tags are used by exactly one post, so those
+    term pages are near-duplicates of the single article they list. They
+    add nothing a searcher wants and dilute crawl budget across the site.
+    Tags covering 3+ posts are genuine hubs and stay indexable.
+  - /tags/ itself is a bare index of tag names, not content.
+  - /search/ is a client-side search UI with no content of its own.
+  - Paginated pages (/page/2/ onwards) duplicate the listing they follow.
+
+  Frontmatter always wins: set `noindex: true` to force it, or
+  `noindex: false` to keep a page indexable despite the rules above.
+*/ -}}
+{{- $noindex := false -}}
+
+{{- /* explicit frontmatter opt-out/opt-in */ -}}
+{{- if isset .Params "noindex" -}}
+  {{- $noindex = .Params.noindex -}}
+{{- else -}}
+
+  {{- $minPostsPerTag := 3 -}}
+
+  {{- if eq .Kind "term" -}}
+    {{- if lt (len .Pages) $minPostsPerTag -}}
+      {{- $noindex = true -}}
+    {{- end -}}
+  {{- else if eq .Kind "taxonomy" -}}
+    {{- $noindex = true -}}
+  {{- else if or (eq .Type "search") (eq .RelPermalink "/search/") -}}
+    {{- $noindex = true -}}
+  {{- end -}}
+
+  {{- /* Any page beyond the first in a paginated series. .Paginator errors
+         outright on regular pages, so only list kinds may ask for it. */ -}}
+  {{- if in (slice "home" "section" "taxonomy" "term") .Kind -}}
+    {{- with .Paginator -}}
+      {{- if gt .PageNumber 1 -}}
+        {{- $noindex = true -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+{{- end -}}
+{{- return $noindex -}}
