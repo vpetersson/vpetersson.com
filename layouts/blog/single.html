@@ -17,7 +17,7 @@
 
       <div class="mt-12 mb-8 p-8 bg-primaryBG border border-white-alpha-20 rounded-xl">
         <h4 class="text-2xl font-semibold mb-4 text-white">Enjoyed this post? Check out my podcast!</h4>
-        <p class="mb-6 text-primaryText">If you found this interesting, you might enjoy <a href="/podcast" class="text-btnPrimary hover:underline" onclick="trackEvent('Blog CTA', 'Click', 'Podcast Link', '{{ .Title }}')">"Nerding Out with Viktor"</a> - my podcast where I dive deep into tech, entrepreneurship, and security with industry experts.</p>
+        <p class="mb-6 text-primaryText">If you found this interesting, you might enjoy <a href="/podcast" class="text-btnPrimaryUi hover:underline" onclick="trackEvent('Blog CTA', 'Click', 'Podcast Link', '{{ .Title }}')">"Nerding Out with Viktor"</a> - my podcast where I dive deep into tech, entrepreneurship, and security with industry experts.</p>
         <div>
           <h5 class="font-medium mb-4 text-white">Listen on:</h5>
           {{ partial "podcast-links.html" (dict "source" .Title) }}

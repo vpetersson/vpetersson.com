@@ -29,6 +29,10 @@
 :root {
   /* Colors */
   --color-primary: #5D5FEF;
+
+  /* Text-safe variant. --color-primary as small text measures 3.07–4.27:1 across our
+     dark backdrops, under the 4.5:1 AA floor; this clears it at 5.21–7.26:1. */
+  --color-primary-ui: #8E8FF4;
   --color-white: #FFF;
   --color-gray-900: #000212;
   --color-gray-800: #1A1B2A;

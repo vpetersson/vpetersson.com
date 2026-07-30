@@ -3,6 +3,12 @@ $base-font-size: 16px;
 // Colors — aligned with Tailwind @theme and :root CSS vars
 $white: #FFF;
 $purple: #5D5FEF;
+
+// $purple is a display colour. As small text on our darks it measures 4.27:1 on the
+// page background, 3.52:1 on cards and 3.07:1 on a tag chip — all short of the 4.5:1
+// AA floor. $purple-ui clears it everywhere (7.26:1 / 5.98:1 / 5.21:1 on the same
+// three). Use $purple-ui for text; keep $purple for fills, borders and large type.
+$purple-ui: #8E8FF4;
 $text-heading: $white;
 $text-primary: #D6D6D6;
 $btn-primary: $purple;
