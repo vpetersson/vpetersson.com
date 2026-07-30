@@ -55,7 +55,7 @@
   align-items: center;
   padding: 0.75rem 1.5rem;
   background: rgba(93, 95, 239, 0.15);
-  color: $purple;
+  color: $purple-ui;
   border: 1px solid rgba(93, 95, 239, 0.25);
   border-radius: 9999px;
   font-weight: 600;
@@ -173,7 +173,7 @@
   letter-spacing: 0.05em;
 
   &.podcast {
-    color: $purple;
+    color: $purple-ui;
   }
 
   &.blog {
@@ -239,7 +239,7 @@
 .content-cta {
   font-size: 0.8125rem;
   font-weight: 600;
-  color: $purple;
+  color: $purple-ui;
   text-decoration: none;
   transition: color 0.2s ease;
 
@@ -274,7 +274,9 @@
   display: inline-block;
   padding: 0.125rem 0.5rem;
   font-size: 0.6875rem;
-  color: rgba(214, 214, 214, 0.5);
+
+  // Matches the 0.8 alpha of the sibling .tag; 0.5 measured 3.66:1 on the chip.
+  color: rgba(214, 214, 214, 0.8);
 }
 
 .content-meta-bottom {

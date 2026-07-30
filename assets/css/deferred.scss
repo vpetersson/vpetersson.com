@@ -155,7 +155,7 @@
     transition: all 0.2s ease;
 
     &:hover {
-      color: $purple;
+      color: $purple-ui;
       text-decoration-color: $white;
       text-decoration-thickness: 2px;
     }
@@ -163,7 +163,7 @@
 
   .tag {
     text-decoration: none;
-    color: var(--color-primary);
+    color: var(--color-primary-ui);
 
     &:hover {
       color: var(--color-white);
@@ -196,7 +196,7 @@
       padding: 0.5rem 0;
 
       &:hover {
-        color: $purple;
+        color: $purple-ui;
       }
     }
 
@@ -471,20 +471,27 @@
       }
     }
 
-    /* Syntax highlighting tokens */
-    .k, .kn, .kp, .kr, .kv { color: var(--color-primary); font-weight: 600; }
+    /* Syntax highlighting tokens.
+       Measured on rendered posts against both code backgrounds (#000212 and #1A1B2A).
+       Keywords were 4.27/3.52:1, comments 3.95/3.91:1 and operators 4.87/4.02:1 — all
+       under the 4.5:1 AA floor for this 14px text. The values below clear it while
+       keeping each token's role distinct and comments recessive. */
+    .k, .kn, .kp, .kr, .kv { color: var(--color-primary-ui); font-weight: 600; }
     .s, .s1, .s2, .sa, .sb, .sc, .dl, .sd, .se, .sh, .si, .sx { color: #7dd3fc; }
     .m, .mf, .mh, .mi, .mo, .mb, .il { color: #a78bfa; }
-    .c, .c1, .cm, .cp, .cs { color: rgba(214, 214, 214, 0.5); font-style: italic; }
+    .c, .c1, .cm, .cp, .cs { color: rgba(214, 214, 214, 0.7); font-style: italic; }
     .nf, .fm { color: #c084fc; font-weight: 500; }
     .n, .na, .nb, .nc, .no, .nd, .ni, .ne, .nl, .nn, .nx, .py, .nt, .nv, .vc, .vg, .vi, .vm { color: var(--color-gray-300); }
     .nc { color: #fbbf24; font-weight: 500; }
-    .o, .ow { color: #8b5cf6; }
+    .o, .ow { color: #9d7cf8; }
     .bp { color: #60a5fa; }
     .err { background: rgba(239, 68, 68, 0.15); color: #f87171; }
 
     .lineno {
-      color: rgba(214, 214, 214, 0.4);
+      // 0.4 measures 2.87:1 on the code background. Chroma line numbers are off in
+      // hugo.toml so this does not currently render, but the value would fail AA
+      // the moment lineNos is enabled.
+      color: rgba(214, 214, 214, 0.6);
       user-select: none;
       margin-right: 1rem;
       padding-right: 0.5rem;
@@ -508,7 +515,7 @@
     font-size: 0.875rem;
 
     .language-label {
-      color: var(--color-primary);
+      color: var(--color-primary-ui);
       font-weight: 500;
       font-family: $font-mono;
       text-transform: uppercase;

@@ -8,6 +8,10 @@
   --color-primaryText: #D6D6D6;
   --color-altPrimaryText: #000212;
   --color-btnPrimary: #5D5FEF;
+  /* Text-safe variant of btnPrimary. The fill colour as small text measures
+     3.07–4.27:1 across our dark backdrops, under the 4.5:1 AA floor; this clears
+     it at 5.21–7.26:1. Keep btnPrimary for fills, borders and large type. */
+  --color-btnPrimaryUi: #8E8FF4;
   --color-btnSecondary: rgba(93, 95, 239, 0.20);
   --color-white-alpha-10: rgba(255, 255, 255, 0.10);
   --color-white-alpha-20: rgba(255, 255, 255, 0.20);
