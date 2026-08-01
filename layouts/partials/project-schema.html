@@ -1,0 +1,44 @@
+{{/* SoftwareSourceCode + SoftwareApplication for a project page. Both are accurate
+     here: these projects are a public repository and a runnable container image. */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": {{ .Title | jsonify }},
+  "description": {{ (.Params.description | default .Params.summary) | jsonify }},
+  "url": "{{ .Permalink }}",
+  "codeRepository": "https://github.com/{{ .Params.repo }}",
+  {{ with .Params.language }}"programmingLanguage": {{ . | jsonify }},{{ end }}
+  {{ with .Params.license }}"license": {{ . | jsonify }},{{ end }}
+  "author": {
+    "@type": "Person",
+    "name": "Viktor Petersson",
+    "url": "{{ site.BaseURL }}"
+  },
+  "isPartOf": {
+    "@type": "CollectionPage",
+    "name": "Projects",
+    "url": "{{ "projects/" | absURL }}"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Projects",
+      "item": "{{ "projects/" | absURL }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ .Title | jsonify }},
+      "item": "{{ .Permalink }}"
+    }
+  ]
+}
+</script>

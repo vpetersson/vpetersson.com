@@ -1,0 +1,463 @@
+// Project detail pages (/projects/<name>/).
+// These pages document self-hosted tools whose entire interface is a text file,
+// so JetBrains Mono carries structural weight here rather than being reserved
+// for code samples: the eyebrow, the spec line and both halves of the exchange
+// are set in it. Anton stays restrained, on the title and section headings only.
+// Colours are the site palette, unchanged. $purple-ui is used wherever an accent
+// lands on small text, since $purple itself is under the 4.5:1 AA floor there.
+
+.project {
+  padding-top: rem(32px);
+}
+
+/* Breadcrumb back to the grid */
+
+.project-back {
+  display: inline-block;
+  font-family: $font-mono;
+  font-size: rem(12px);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(214, 214, 214, 0.65);
+  text-decoration: none;
+  margin-bottom: rem(32px);
+  transition: color var(--transition-fast);
+
+  &::before {
+    content: '\2190';
+    margin-right: 0.5em;
+  }
+
+  &:hover {
+    color: $purple-ui;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $purple;
+    outline-offset: 3px;
+  }
+}
+
+/* Hero */
+
+.project-hero {
+  margin-bottom: rem(40px);
+}
+
+.project-title {
+  font-family: $font-display;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.95;
+  color: $white;
+  font-size: clamp(2.75rem, 9vw, 5rem);
+  margin: 0 0 rem(16px);
+}
+
+.project-tagline {
+  font-family: $font-body;
+  font-weight: 500;
+  color: $white;
+  font-size: clamp(1.25rem, 3.5vw, 1.75rem);
+  line-height: 1.25;
+  margin: 0 0 rem(20px);
+  max-width: 26ch;
+}
+
+.project-summary {
+  max-width: 62ch;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* The exchange: what you write, and what comes back */
+
+.exchange {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(12px);
+  align-items: stretch;
+  margin-bottom: rem(28px);
+
+  @media (min-width: $breakpoint-sm) {
+    grid-template-columns: 1fr auto 1fr;
+    gap: rem(16px);
+  }
+}
+
+.exchange-pane {
+  background: $bg-primary;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: rem(12px);
+  overflow: hidden;
+  min-width: 0;
+}
+
+.exchange-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: rem(12px);
+  font-family: $font-mono;
+  font-size: rem(11px);
+  line-height: 1;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(214, 214, 214, 0.6);
+  margin: 0;
+  padding: rem(12px) rem(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+// Signals that the rows opposite are selectable, which the panes alone do not.
+.exchange-hint {
+  color: $purple-ui;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+
+  &::after {
+    content: '\2193';
+    margin-left: 0.5em;
+  }
+}
+
+.exchange-body {
+  padding: rem(12px);
+}
+
+.exchange-head {
+  font-family: $font-mono;
+  font-size: rem(12px);
+  margin: 0 0 rem(8px);
+  padding: 0 rem(8px);
+}
+
+.exchange-rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    padding-left: 0;
+    margin: 0;
+  }
+
+  li + li {
+    margin-top: rem(4px);
+  }
+}
+
+.exchange-row {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: rem(8px);
+  padding: rem(10px) rem(8px);
+  margin: 0;
+  font-family: $font-mono;
+  font-size: rem(13px);
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-transform: none;
+  color: $text-primary;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+
+  &:hover {
+    background: rgba(93, 95, 239, 0.12);
+    opacity: 1;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $purple;
+    outline-offset: 2px;
+  }
+
+  &[aria-current='true'] {
+    background: rgba(93, 95, 239, 0.18);
+    border-color: $purple;
+  }
+}
+
+.exchange-code {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.exchange-note {
+  display: block;
+  font-family: $font-body;
+  font-size: rem(12px);
+  line-height: 1.45;
+  color: rgba(214, 214, 214, 0.6);
+  margin-top: rem(6px);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.exchange-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $purple-ui;
+  font-size: rem(22px);
+  line-height: 1;
+  transform: rotate(90deg);
+
+  @media (min-width: $breakpoint-sm) {
+    transform: none;
+  }
+}
+
+.exchange-out-block {
+  margin: 0;
+  padding: rem(8px);
+  font-family: $font-mono;
+  font-size: rem(13px);
+  line-height: 1.6;
+  color: $text-primary;
+  overflow-x: auto;
+
+  code {
+    font-family: inherit;
+    background: none;
+    padding: 0;
+  }
+}
+
+.exchange-live-out {
+  color: rgba(214, 214, 214, 0.6);
+  white-space: pre-wrap;
+}
+
+/* Wire and config syntax tokens, built from the existing palette */
+
+// 0.62 rather than 0.5: at half alpha this composites to 3.95:1 on the pane and
+// 3.91:1 on the page, both under the 4.5:1 AA floor for text this size.
+.tok-dim {
+  color: rgba(214, 214, 214, 0.62);
+}
+
+.tok-path,
+.tok-fn {
+  color: $purple-ui;
+}
+
+.tok-arg {
+  color: $white;
+}
+
+.tok-status {
+  color: $white;
+  font-weight: 600;
+}
+
+/* Datasheet line, in place of a strip of stat cards */
+
+.project-spec {
+  font-family: $font-mono;
+  font-size: rem(12px);
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: rgba(214, 214, 214, 0.6);
+  margin: 0 0 rem(28px);
+}
+
+.project-spec-sep {
+  color: rgba(255, 255, 255, 0.25);
+  margin: 0 0.6em;
+}
+
+/* Actions */
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(12px);
+  margin-bottom: rem(56px);
+}
+
+.project-cta {
+  display: inline-block;
+  background: $purple;
+  color: $white;
+  border: 1px solid $purple;
+  border-radius: 9999px;
+  font-family: $font-display;
+  font-size: rem(15px);
+  line-height: 1.5;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  padding: rem(11px) rem(24px);
+  transition: opacity var(--transition-fast), background-color var(--transition-fast);
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $purple-ui;
+    outline-offset: 3px;
+  }
+}
+
+.project-cta-quiet {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.25);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.06);
+    opacity: 1;
+  }
+}
+
+/* Prose body */
+
+.project-body {
+  max-width: 68ch;
+  margin-bottom: rem(56px);
+
+  h2 {
+    font-family: $font-display;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $white;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    line-height: 1.1;
+    margin: rem(40px) 0 rem(16px);
+  }
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  p {
+    line-height: 1.7;
+    margin-bottom: rem(16px);
+  }
+
+  code {
+    font-family: $font-mono;
+    font-size: 0.9em;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: rem(4px);
+    padding: 0.15em 0.4em;
+  }
+
+  // Hugo wraps highlighted code in .highlight > pre.chroma. native.css paints
+  // that pre with monokai's own #272822, which is olive against this navy, so
+  // the container carries the palette background and the pre goes transparent.
+  // Same treatment .blog-post and .podcast-page already apply.
+  .highlight {
+    background: $bg-primary;
+    border: 1px solid rgba(93, 95, 239, 0.2);
+    border-radius: rem(10px);
+    overflow: hidden;
+    margin: 0 0 rem(20px);
+  }
+
+  .highlight pre {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: rem(16px);
+    overflow-x: auto;
+    font-family: $font-mono;
+    font-size: rem(13px);
+    line-height: 1.65;
+    color: $text-primary;
+
+    code {
+      background: none;
+      padding: 0;
+    }
+  }
+}
+
+/* Feature grid */
+
+.project-section-heading {
+  font-family: $font-display;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $white;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  line-height: 1.1;
+  margin: 0 0 rem(24px);
+}
+
+.project-features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(20px);
+  margin-bottom: rem(48px);
+
+  @media (min-width: $breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-feature {
+  background: $bg-primary;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: rem(10px);
+  padding: rem(20px);
+
+  h3 {
+    font-family: $font-body;
+    font-weight: 600;
+    font-size: rem(16px);
+    line-height: 1.35;
+    color: $white;
+    margin: 0 0 rem(8px);
+  }
+
+  p {
+    font-size: rem(14px);
+    line-height: 1.6;
+    margin: 0;
+  }
+}
+
+/* Footnote */
+
+.project-footnote {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: rem(24px);
+  font-size: rem(13px);
+  line-height: 1.7;
+  color: rgba(214, 214, 214, 0.7);
+  margin: 0;
+
+  a {
+    color: $purple-ui;
+    text-decoration: underline;
+
+    &:focus-visible {
+      outline: 2px solid $purple;
+      outline-offset: 2px;
+    }
+  }
+
+  code {
+    font-family: $font-mono;
+    font-size: 0.9em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-back,
+  .exchange-row,
+  .project-cta {
+    transition: none;
+  }
+}
