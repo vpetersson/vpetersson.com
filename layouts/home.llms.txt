@@ -20,6 +20,11 @@ A full-content version of this file is available at {{ "llms-full.txt" | absURL 
 - [Reading Log]({{ "reading-log/" | absURL }}): Books read by year
 - [Remote Work]({{ "remote-work/" | absURL }}): Talks, articles, and podcasts on remote work
 
+## Project Pages
+{{ range (where .Site.RegularPages "Section" "projects") }}
+- [{{ .Title | replaceRE `\s+` " " | strings.TrimSpace }}]({{ .Permalink }}){{ with .Description }}: {{ . | plainify | replaceRE `\s+` " " | strings.TrimSpace }}{{ end }}{{ with .Params.repo }} (source: https://github.com/{{ . }}){{ end }}
+{{- end }}
+
 ## Podcast Episodes
 {{ range (where .Site.RegularPages "Section" "podcast").ByDate.Reverse }}
 - [{{ .Title | replaceRE `\s+` " " | strings.TrimSpace }}]({{ .Permalink }}){{ with .Description }}: {{ . | plainify | replaceRE `\s+` " " | strings.TrimSpace }}{{ end }}
