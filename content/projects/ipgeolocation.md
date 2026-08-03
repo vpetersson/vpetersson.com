@@ -22,6 +22,7 @@ spec:
   - GeoLite2 in the image
   - amd64 and arm64
 exchange:
+  kind: request
   input_label: request
   output_label: response
   # Responses below are verbatim from the live instance, not illustrations.

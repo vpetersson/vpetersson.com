@@ -24,7 +24,22 @@
           <span class="exchange-hint">pick one</span>
         </p>
         <div class="exchange-body">
-          {{ if $.Params.live_endpoint }}
+          {{/* Three input shapes so far: a request you send (`request`), a CSV row
+               you author (`csv`), and a block of config you write (`config`). */}}
+          {{ $kind := .kind | default "csv" }}
+          {{ if eq $kind "config" }}
+            {{/* jeha: the config block is the whole interface. */}}
+            <ul class="exchange-rows" role="list">
+              {{ range $i, $row := .rows }}
+              <li>
+                <button type="button" class="exchange-row exchange-row-block" data-row="{{ $row.id }}"{{ if eq $i 0 }} aria-current="true"{{ end }}>
+                  <span class="exchange-code">{{ $row.config }}</span>
+                  <span class="exchange-note">{{ $row.label }}</span>
+                </button>
+              </li>
+              {{ end }}
+            </ul>
+          {{ else if eq $kind "request" }}
             {{/* ipgeolocation: pick an address, or offer your own. */}}
             <ul class="exchange-rows" role="list">
               {{ range $i, $row := .rows }}
@@ -72,7 +87,13 @@
       <div class="exchange-pane exchange-out">
         <p class="exchange-label">{{ .output_label }}</p>
         <div class="exchange-body">
-          {{ if $.Params.live_endpoint }}
+          {{ $kind := .kind | default "csv" }}
+          {{ if eq $kind "config" }}
+            {{ range $i, $row := .rows }}
+            <pre class="exchange-out-block"{{ if ne $i 0 }} hidden{{ end }} data-for="{{ $row.id }}"><code><span class="tok-dim">{{ $row.topic }}</span>
+{{ $row.payload }}</code></pre>
+            {{ end }}
+          {{ else if eq $kind "request" }}
             {{ range $i, $row := .rows }}
             <pre class="exchange-out-block"{{ if ne $i 0 }} hidden{{ end }} data-for="{{ $row.id }}"><code>{{ $row.response }}</code></pre>
             {{ end }}
