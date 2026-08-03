@@ -19,6 +19,7 @@ spec:
   - 0 databases
   - amd64 and arm64
 exchange:
+  kind: csv
   input_label: redirects.csv
   output_label: on the wire
   header: url,target,status

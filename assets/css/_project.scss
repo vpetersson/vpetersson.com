@@ -61,7 +61,7 @@
   font-size: clamp(1.25rem, 3.5vw, 1.75rem);
   line-height: 1.25;
   margin: 0 0 rem(20px);
-  max-width: 26ch;
+  max-width: 34ch;
 }
 
 .project-summary {
@@ -186,6 +186,13 @@
   overflow-wrap: anywhere;
 }
 
+// Config rows carry several lines of TOML, so their whitespace has to survive.
+// pre-wrap rather than pre so a long value still folds on a narrow screen.
+.exchange-row-block .exchange-code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
 .exchange-note {
   display: block;
   font-family: $font-body;
@@ -218,6 +225,11 @@
   font-size: rem(13px);
   line-height: 1.6;
   color: $text-primary;
+
+  // A single-line JSON payload would otherwise be clipped at the pane edge, and
+  // this pane is the point of the hero. Authored line breaks are still honoured.
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
   overflow-x: auto;
 
   code {
