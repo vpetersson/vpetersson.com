@@ -4,6 +4,7 @@ title: Databat is back!
 date: '2020-06-04T13:00:00+01:00'
 aliases:
   - /2020/06/05/databat-is-back/
+  - /2020/06/04/databat-is-back.html
 tags:
 - raspberry-pi
 - iot
