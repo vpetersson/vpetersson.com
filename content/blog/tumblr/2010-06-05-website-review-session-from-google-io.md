@@ -4,7 +4,9 @@ title: Website review session from Google I/O
 date: '2010-06-04T21:27:01+00:00'
 tags:
 - SEO
-aliases: /post/92729916619/website-review-session-from-google-io
+aliases:
+  - /post/92729916619/website-review-session-from-google-io
+  - /2010/06/04/website-review-session-from-google-io.html
 ---
 
 If you are new to SEO, or just want to learn more about SEO, Matt Cutts and a few colleagues did a really good presentation on Google I/O where they went through several websites and reviewd them from an SEO perspective. The whole presentation is about an hour long, but well worth watching.

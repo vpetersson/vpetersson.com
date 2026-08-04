@@ -4,6 +4,7 @@ title: Building a Pwnagotchi for WiFi penetration testing (with a PaPiRus Zero d
 date: '2019-11-21T13:00:00+01:00'
 aliases:
   - /2019/11/24/building-a-pwnagotchi-with-papirus/
+  - /2019/11/21/building-a-pwnagotchi-with-papirus.html
 tags:
 - opsec
 - security

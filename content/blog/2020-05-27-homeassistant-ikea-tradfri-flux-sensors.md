@@ -4,6 +4,7 @@ title: Achieving success with Home Assistant, Flux and sensors
 date: '2020-05-25T13:00:00+01:00'
 aliases:
   - /2020/05/27/homeassistant-ikea-tradfri-flux-sensors/
+  - /2020/05/25/homeassistant-ikea-tradfri-flux-sensors.html
 tags:
 - home-assistant
 - home-automation
