@@ -7,7 +7,9 @@ tags:
 - productivity
 - google
 - google hangout
-aliases: /post/113947203631/are-they-using-google-apps
+aliases:
+  - /post/113947203631/are-they-using-google-apps
+  - /2015/03/18/are-they-using-google-apps.html
 ---
 
 [Are they using Google Apps?](http://aretheyusinggoogleapps.com/)

@@ -6,7 +6,9 @@ tags:
 - IMAP
 - POP3
 - SMTP
-aliases: /post/92729910299/new-email-troubleshooting-guide
+aliases:
+  - /post/92729910299/new-email-troubleshooting-guide
+  - /2010/02/04/new-email-troubleshooting-guide.html
 ---
 
 I just published a guide on how to troubleshoot email over at [Email Service Guide](http://www.emailserviceguide.com/email-troubleshooting-guide/). It’s fairly straight forward, but does require a bit of technical skills.

@@ -4,7 +4,9 @@ title: Trouble with ZoneMinder VA 0.2 and VMware Server 2
 date: '2010-05-17T13:53:57+03:00'
 tags:
 - ZoneMinder
-aliases: /post/92729915584/trouble-with-zoneminder-va-0-2-and-vmware-server-2
+aliases:
+  - /post/92729915584/trouble-with-zoneminder-va-0-2-and-vmware-server-2
+  - /2010/05/17/trouble-with-zoneminder-va-0-2-and-vmware-server-2.html
 ---
 
 Last week I launched [ZoneMinder VA 0.2](https://vpetersson.com/open-source/zoneminder-virtual-appliance/). Unfortunately there is an issue with the image that prevents it from loading properly into VMware Server 2. The root of the problem is actually an incompatibility issue between VMware Fusion and VMware Server, but that doesn’t matter. Fortunately the workaround is pretty simple.

@@ -6,6 +6,8 @@ tags:
 - podcast
 - rss
 - github
+aliases:
+  - /2024/01/02/new-podcast.html
 ---
 
 Hello folks, Viktor here! I'm thrilled to bring two exciting updates to you all today.

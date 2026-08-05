@@ -7,7 +7,9 @@ tags:
 - Google Apps
 - Google Hangout
 - UberConference
-aliases: /post/92719088149/are-they-using-google-apps
+aliases:
+  - /post/92719088149/are-they-using-google-apps
+  - /2013/08/02/are-they-using-google-apps.html
 ---
 
 In the past few months, I’ve started moved most of my conference calls from Skype to Google Hangout. The video and audio quality is a lot better, and it’s more convenient to manage. There is however one problem: If the other party isn’t using Google Apps or Gmail, they cannot join the Hangout. This has delayed many conferences calls for me.

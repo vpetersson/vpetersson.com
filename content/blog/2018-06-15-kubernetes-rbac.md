@@ -7,6 +7,8 @@ tags:
 - linux
 - devops
 - security
+aliases:
+  - /2018/06/15/kubernetes-rbac.html
 ---
 
 In Kubernetes 1.8, RBAC was introduced to improve the security. Prior RBAC, any pod is more or less able to interact with the rest of the cluster without constraints. This means you can create new pods, delete other deployments etc from any other pod. Needless to say, this is not ideal and RBAC sets out to address this.

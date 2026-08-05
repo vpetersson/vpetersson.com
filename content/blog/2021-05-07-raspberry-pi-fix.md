@@ -8,6 +8,8 @@ tags:
 - raspberry-pi
 - raspbian
 - note-to-self
+aliases:
+  - /2021/05/07/raspberry-pi-fix.html
 ---
 
 I've run into the following error myself a number of time in recent time, and just wanted to document the solution for this in case other people run into it too:

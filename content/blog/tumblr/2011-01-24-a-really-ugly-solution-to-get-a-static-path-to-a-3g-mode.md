@@ -5,7 +5,9 @@ date: '2011-01-24T21:34:56+02:00'
 tags:
 - Linux
 - Ubuntu
-aliases: /post/92729943404/a-really-ugly-solution-to-get-a-static-path-to-a-3g-mode
+aliases:
+  - /post/92729943404/a-really-ugly-solution-to-get-a-static-path-to-a-3g-mode
+  - /2011/01/24/a-really-ugly-solution-to-get-a-static-path-to-a-3g-mode.html
 ---
 
 This solution is so ugly that I felt that I had to post it =).

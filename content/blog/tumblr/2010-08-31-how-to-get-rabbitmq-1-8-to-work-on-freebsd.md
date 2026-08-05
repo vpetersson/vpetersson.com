@@ -5,7 +5,9 @@ date: '2010-08-31T14:40:41+03:00'
 tags:
 - FreeBSD
 - RabbitMQ
-aliases: /post/92729924064/how-to-get-rabbitmq-1-8-to-work-on-freebsd
+aliases:
+  - /post/92729924064/how-to-get-rabbitmq-1-8-to-work-on-freebsd
+  - /2010/08/31/how-to-get-rabbitmq-1-8-to-work-on-freebsd.html
 ---
 
 **Update:** Thanks to Phillip (the maintainer of the package), this issue has now been resolved for RabbitMQ 2.0. The instructions below still applies if you for some reason prefer to run RabbitMQ 1.8.

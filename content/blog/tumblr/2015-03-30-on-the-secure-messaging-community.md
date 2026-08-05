@@ -3,7 +3,9 @@ slug: on-the-secure-messaging-community
 title: On the Secure Messaging Community
 date: '2015-03-30T08:41:00+03:00'
 tags: []
-aliases: /post/115011708124/on-the-secure-messaging-community
+aliases:
+  - /post/115011708124/on-the-secure-messaging-community
+  - /2015/03/30/on-the-secure-messaging-community.html
 ---
 
 [On the Secure Messaging Community](http://blog.nadim.computer/post/114970275623/on-the-secure-messaging-community)

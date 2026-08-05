@@ -8,6 +8,8 @@ tags:
 - phabricator
 - phorge
 - migration
+aliases:
+  - /2025/04/02/migrating-git-repositories-from-phabricator-to-github.html
 ---
 
 I recently helped a team migrate their Git repositories from Phabricator to GitHub. While Phabricator was a great tool that combined code reviews, task management, and repository hosting, its official deprecation in 2021 has left many teams looking for alternatives.

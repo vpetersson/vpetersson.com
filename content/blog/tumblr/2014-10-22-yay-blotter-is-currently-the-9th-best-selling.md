@@ -7,7 +7,9 @@ tags:
 - mac os x
 - productivity
 - calendar
-aliases: /post/100680257859/yay-blotter-is-currently-the-9th-best-selling
+aliases:
+  - /post/100680257859/yay-blotter-is-currently-the-9th-best-selling
+  - /2014/10/22/yay-blotter-is-currently-the-9th-best-selling.html
 ---
 
 ![](/tumblr_files/tumblr_ndupg9oYsS1thwdtao1_1280.webp)

@@ -4,7 +4,9 @@ title: HP ProLiant-hacking. Powerful rack server on the cheap.
 date: '2012-12-22T22:14:58+02:00'
 tags:
 - Lifehack
-aliases: /post/92729972129/hp-proliant-hacking-powerful-rack-server-on-the-cheap
+aliases:
+  - /post/92729972129/hp-proliant-hacking-powerful-rack-server-on-the-cheap
+  - /2012/12/22/hp-proliant-hacking-powerful-rack-server-on-the-cheap.html
 ---
 
 Rack-servers make your life easier. They allow you to stack a bunch of servers into a small area while still keeping them well organized. Unfortunately, most server-vendors know this, and will charge you an arm and a leg for them. I recently had to build up a small virtualization-farm, and I really wanted to keep all server in a rack without having to spend a fortune on servers.

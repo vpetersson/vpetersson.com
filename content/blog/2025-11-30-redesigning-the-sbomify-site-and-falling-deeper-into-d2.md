@@ -3,6 +3,8 @@ slug: redesigning-the-sbomify-site-and-falling-deeper-into-d2
 title: "How I Streamlined My Jekyll Diagram Workflow with D2 and Bun"
 date: '2025-11-30T12:00:00Z'
 tags: [sbomify, d2, diagrams, jekyll, automation, ci-cd]
+aliases:
+  - /2025/11/30/redesigning-the-sbomify-site-and-falling-deeper-into-d2.html
 ---
 
 Over the last few days, I gave the [sbomify website](https://sbomify.com) a much-needed overhaul. The previous iteration didn’t really reflect what we’re doing, especially as the product has matured. The new version leans heavily on diagrams to communicate concepts more clearly.

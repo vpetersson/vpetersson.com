@@ -10,7 +10,9 @@ tags:
 - fleet
 - etcd
 - systemd
-aliases: /post/92940969784/devops-toolstrends-that-i-really-like-right
+aliases:
+  - /post/92940969784/devops-toolstrends-that-i-really-like-right
+  - /2014/07/26/devops-toolstrends-that-i-really-like-right.html
 ---
 
 - [**Docker**](https://www.docker.com/) and **Docker Hub** \- It’s awesome and it removes a lot of the complexity from traditional DevOps work. What’s funny is that while doing my migration to Tumblr, I found this [three year blog post](/2010/08/28/shouldnt-dependencies-on-core-components-be-isolated/) that pretty much describes Docker. Yes, it’s not too far from FreeBSD’s Jails, but it never had this momentum nor the toolset (which of course is a result of the momentum).

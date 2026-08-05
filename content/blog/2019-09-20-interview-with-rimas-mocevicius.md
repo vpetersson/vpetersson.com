@@ -9,6 +9,8 @@ tags:
 - remote-work
 - productivity
 - digital-nomad
+aliases:
+  - /remote-work/2019/09/20/interview-with-rimas-mocevicius.html
 ---
 
 First out in this interview series, we have [Rimas Mocevicius](https://twitter.com/rimusz). Rimas is someone that I got to know from the London Kubernetes scene some time ago. He worked on Deis (before it got acquired by Microsoft) and is the co-creator of the popular Kubernetes packaging tool [Helm](https://helm.sh/). These days, Rimas works at JFrog and on their various Kubernetes tooling.

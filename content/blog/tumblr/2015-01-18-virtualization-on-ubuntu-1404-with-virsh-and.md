@@ -10,7 +10,9 @@ tags:
 - virsh
 - virtualization
 - hypervisor
-aliases: /post/108451140634/virtualization-on-ubuntu-1404-with-virsh-and
+aliases:
+  - /post/108451140634/virtualization-on-ubuntu-1404-with-virsh-and
+  - /2015/01/18/virtualization-on-ubuntu-1404-with-virsh-and.html
 ---
 
 While I’ve switched most of my workloads to [Docker](https://www.docker.com), there are still some situations where you need to manage and set up Virtual Machines (VM). These days, KVM+QEMU has more or less been established as the virtualization standard, so we’ll be using that.

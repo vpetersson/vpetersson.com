@@ -3,6 +3,8 @@ slug: all-roads-lead-to-dslrs
 title: "All Roads Lead to DSLRs"
 date: '2025-06-18T01:00:00+00:00'
 tags: [podcast, video, equipment]
+aliases:
+  - /2025/06/18/all-roads-lead-to-dslrs.html
 ---
 
 I've been running my video podcast [Nerding out with Viktor](/podcast/) for about a year and a half now, with just under 50 episodes published.

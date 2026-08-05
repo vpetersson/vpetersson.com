@@ -12,6 +12,7 @@ tags:
 aliases:
   - /2019/05/18/a-decade-of-remote.html
   - /2019/05/18/a-decade-of-remote/
+  - /remote-work/2019/05/18/a-decade-of-remote.html
 ---
 
 ## Intro

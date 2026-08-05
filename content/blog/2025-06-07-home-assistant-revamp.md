@@ -3,6 +3,8 @@ slug: home-assistant-revamp
 title: "From Gateway to Dongle: Lessons from My Home Assistant Overhaul"
 date: '2025-06-07T01:00:00+00:00'
 tags: [homeassisstant, iot]
+aliases:
+  - /2025/06/07/home-assistant-revamp.html
 ---
 
 I’ve previously written about my experiences with Home Assistant [here](/2020/05/25/homeassistant-ikea-tradfri-flux-sensors/) and [here](/2025/01/22/how-i-use-home-assistant-in-2025/). This article follows up on those posts and describes my current setup.

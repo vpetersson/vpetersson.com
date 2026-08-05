@@ -6,7 +6,9 @@ tags:
 - zoneminder
 - linux
 - video surveillance
-aliases: /post/109783642994/zoneminder-as-a-people-counter
+aliases:
+  - /post/109783642994/zoneminder-as-a-people-counter
+  - /2015/02/01/zoneminder-as-a-people-counter.html
 ---
 
 In recent years, it has become fairly common within the retail space to use (IP-based) surveillance cameras to track foot traffic (this can also be referred to as a “people counter”). This is a great idea, as it allows you to re-use existing hardware instead of having to install additional sensors.

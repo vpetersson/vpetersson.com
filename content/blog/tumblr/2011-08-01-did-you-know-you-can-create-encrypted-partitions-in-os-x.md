@@ -5,7 +5,9 @@ date: '2011-08-01T12:00:46+03:00'
 tags:
 - Encryption
 - OS X
-aliases: /post/92729948399/did-you-know-you-can-create-encrypted-partitions-in-os-x
+aliases:
+  - /post/92729948399/did-you-know-you-can-create-encrypted-partitions-in-os-x
+  - /2011/08/01/did-you-know-you-can-create-encrypted-partitions-in-os-x.html
 ---
 
 The most exciting new feature in OS X Lion for all paranoid techies out there was the introduction of full-disk encryption (FileVault 2). The previous version of FileVault only enabled you to encrypt your home directory. That was a good start, but it forced you to log out once in a while to recover disk space. This was extra painful if you were using a small SSD-drive.

@@ -15,7 +15,9 @@ tags:
 - paranoia
 - ubuntu linux
 - linux
-aliases: /post/99231293399/how-to-install-yosemite-and-ubuntu-linux
+aliases:
+  - /post/99231293399/how-to-install-yosemite-and-ubuntu-linux
+  - /2014/10/05/how-to-install-yosemite-and-ubuntu-linux.html
 ---
 
 This weekend I spent a bit of time playing around with my old MacBook Pro. My goal was to set it up as a backup/test laptop. What I wanted to accomplish was the following:

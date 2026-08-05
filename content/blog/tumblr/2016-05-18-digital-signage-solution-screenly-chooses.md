@@ -5,7 +5,9 @@ date: '2016-05-18T13:23:06+03:00'
 tags:
 - Digital Signage
 - raspberry pi
-aliases: /post/144548958109/digital-signage-solution-screenly-chooses
+aliases:
+  - /post/144548958109/digital-signage-solution-screenly-chooses
+  - /2016/05/18/digital-signage-solution-screenly-chooses.html
 ---
 
 [Digital signage solution, Screenly, chooses Canonical’s Ubuntu Core](https://insights.ubuntu.com/2016/05/18/digital-signage-solution-screenly-chooses-canonicals-ubuntu-core/)

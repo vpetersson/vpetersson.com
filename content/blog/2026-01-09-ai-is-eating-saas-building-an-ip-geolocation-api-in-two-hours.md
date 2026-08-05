@@ -7,6 +7,8 @@ tags:
 - ai
 - cursor
 - self-hosted
+aliases:
+  - /2026/01/09/ai-is-eating-saas-building-an-ip-geolocation-api-in-two-hours.html
 ---
 
 We've all heard the saying that AI is eating SaaS. For some simple products, it's certainly becoming true.

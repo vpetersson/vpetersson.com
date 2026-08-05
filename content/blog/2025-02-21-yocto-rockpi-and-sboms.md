@@ -10,6 +10,8 @@ tags:
 - rockpi
 - sbom
 - security
+aliases:
+  - /2025/02/21/yocto-rockpi-and-sboms.html
 ---
 
 **TLDR**: _I wanted to generate an up-to-date disk image for a Rock Pi 4 using Yocto that included CUPS and Docker to both get a better understanding of Yocto and test the new SBOM generation feature._

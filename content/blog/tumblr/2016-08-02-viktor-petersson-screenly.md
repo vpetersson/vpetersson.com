@@ -4,7 +4,9 @@ title: Viktor Petersson, Screenly
 date: '2016-08-02T10:00:56+03:00'
 tags:
 - Digital Signage
-aliases: /post/148339711188/viktor-petersson-screenly
+aliases:
+  - /post/148339711188/viktor-petersson-screenly
+  - /2016/08/02/viktor-petersson-screenly.html
 ---
 
 [Viktor Petersson, Screenly](http://sixteennine.podbean.com/e/viktor-petersson-screenly/)

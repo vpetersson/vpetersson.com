@@ -8,7 +8,9 @@ tags:
 - DevOps
 - shell
 - terminal
-aliases: /post/99041141869/autojump-blazing-fast-filesystem-navigation
+aliases:
+  - /post/99041141869/autojump-blazing-fast-filesystem-navigation
+  - /2014/10/03/autojump-blazing-fast-filesystem-navigation.html
 ---
 
 [Autojump: blazing fast filesystem navigation](https://github.com/joelthelion/autojump)

@@ -7,6 +7,8 @@ tags:
   - home-assistant
   - smart-home
   - note-to-self
+aliases:
+  - /2019/11/16/home-assistant-and-esphome.html
 ---
 
 Long story short, I've pimped out my apartment with a lot of Ikea Smart products, such that I can control (and automate) everything from [Home Assistant](https://www.home-assistant.io/). While I admittedly have a love-hate relationship with Home Assistant, it is generally speaking a pretty impressive software.

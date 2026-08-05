@@ -6,7 +6,9 @@ tags:
 - Conference
 - Presentation
 - YippieMove
-aliases: /post/92729970279/join-me-at-gsocial-2-0
+aliases:
+  - /post/92729970279/join-me-at-gsocial-2-0
+  - /2012/10/14/join-me-at-gsocial-2-0.html
 ---
 
 ![](https://vpetersson.com/wp-content/uploads/2012/10/gSocial-NEW.jpg "gSocial")\

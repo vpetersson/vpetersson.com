@@ -5,7 +5,9 @@ date: '2016-04-21T10:21:39+03:00'
 tags:
 - iot
 - raspberry pi
-aliases: /post/143156256479/deck-from-iot-london
+aliases:
+  - /post/143156256479/deck-from-iot-london
+  - /2016/04/21/deck-from-iot-london.html
 ---
 
 Here&rsquo;s my deck from my recent IoT London talk:

@@ -8,6 +8,8 @@ tags:
 - devops
 - note-to-self
 - postgresql
+aliases:
+  - /2020/05/22/restoring-helm-postgress-access.html
 ---
 
 If you've used PostgreSQL in Kubernetes with Helm, chance are you've [locked yourself out](https://github.com/helm/charts/tree/master/stable/sentry#postgressql) after performing an upgrade. The reason for this is that if you do not specify a password explicitly using `postgresqlPassword`, Helm will rotate this password for you when you run `helm upgrade`. Not ideal. This has happened to me a few times over the years.

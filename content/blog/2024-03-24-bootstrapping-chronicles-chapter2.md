@@ -6,6 +6,8 @@ tags:
 - boostrapping
 - startup
 - investment
+aliases:
+  - /2024/03/24/bootstrapping-chronicles-chapter2.html
 ---
 
 In 2011, when Apple launched the Mac App Store, it opened doors for developers. Around the same time, our project, YippieMove, had plateaued because Google released its own email migration tools, taking away a lot of our customers.

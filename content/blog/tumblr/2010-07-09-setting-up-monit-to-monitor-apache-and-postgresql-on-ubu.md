@@ -8,7 +8,9 @@ tags:
 - Monit
 - PostgreSQL
 - Ubuntu
-aliases: /post/92729917189/setting-up-monit-to-monitor-apache-and-postgresql-on-ubu
+aliases:
+  - /post/92729917189/setting-up-monit-to-monitor-apache-and-postgresql-on-ubu
+  - /2010/07/09/setting-up-monit-to-monitor-apache-and-postgresql-on-ubu.html
 ---
 
 [Monit](http://mmonit.com/monit/) is a great little utility that monitors your daemons. If a daemon fails, Monit will start the daemon it will automatically restart the process. It comes in very handy if for web-servers, such as Apache.

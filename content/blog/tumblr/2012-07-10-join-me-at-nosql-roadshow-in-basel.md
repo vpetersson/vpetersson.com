@@ -5,7 +5,9 @@ date: '2012-07-10T12:27:59+03:00'
 tags:
 - Conference
 - MongoDB
-aliases: /post/92729965149/join-me-at-nosql-roadshow-in-basel
+aliases:
+  - /post/92729965149/join-me-at-nosql-roadshow-in-basel
+  - /2012/07/10/join-me-at-nosql-roadshow-in-basel.html
 ---
 
 ![](https://vpetersson.com/wp-content/uploads/2012/07/nosql-basel-2012-600x109.png "nosql-basel-2012")

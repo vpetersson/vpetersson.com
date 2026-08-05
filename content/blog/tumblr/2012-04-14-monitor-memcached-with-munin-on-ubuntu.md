@@ -5,7 +5,9 @@ date: '2012-04-14T21:41:29+03:00'
 tags:
 - Munin
 - Ubuntu
-aliases: /post/92729962289/monitor-memcached-with-munin-on-ubuntu
+aliases:
+  - /post/92729962289/monitor-memcached-with-munin-on-ubuntu
+  - /2012/04/14/monitor-memcached-with-munin-on-ubuntu.html
 ---
 
 Let me first admit that I am new to Munin. I’ve played around with most monitoring tool, but never Munin for some reason. I really don’t know why, since it appears to be a great tool. As a result, this might be obvious to seasoned Munin-users, but it wasn’t to me at least.

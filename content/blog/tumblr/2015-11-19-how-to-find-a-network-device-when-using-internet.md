@@ -8,7 +8,9 @@ tags:
 - IoT
 - mac os x
 - el capitan
-aliases: /post/133534209969/how-to-find-a-network-device-when-using-internet
+aliases:
+  - /post/133534209969/how-to-find-a-network-device-when-using-internet
+  - /2015/11/19/how-to-find-a-network-device-when-using-internet.html
 ---
 
 The built-in Internet Sharing in OS X is very handy. When I’m on the road, I frequently use this to share my laptops WiFi connection with other devices over a wired connection (such as a Raspberry Pi, when I work on [Screenly](http://www.screenlyapp.com)).

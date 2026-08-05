@@ -6,7 +6,9 @@ tags:
 - docker
 - devops
 - linux
-aliases: /post/144456547364/how-weave-net-enables-a-global-docker-cluster-with
+aliases:
+  - /post/144456547364/how-weave-net-enables-a-global-docker-cluster-with
+  - /2016/05/16/how-weave-net-enables-a-global-docker-cluster-with.html
 ---
 
 [How Weave Net Enables a Global Docker Cluster with OnApp](https://www.weave.works/weave-global-docker-cluster/)

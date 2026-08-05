@@ -8,6 +8,8 @@ tags:
 - nuc
 - pfsense
 - ubuntu
+aliases:
+  - /2020/11/27/pxe-booting-nuc.html
 ---
 
 I recently wanted to reinstall my trusty old Linux workstation with Debian 10. I imagined this would be a straight-forward thing to do. Just download the ISO and flash it out to a USB stick and be off to the races.

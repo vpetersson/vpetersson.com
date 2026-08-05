@@ -4,7 +4,9 @@ title: Introducing the brand new YippieMove
 date: '2012-01-31T14:07:26+02:00'
 tags:
 - YippieMove
-aliases: /post/92729957884/introducing-the-brand-new-yippiemove
+aliases:
+  - /post/92729957884/introducing-the-brand-new-yippiemove
+  - /2012/01/31/introducing-the-brand-new-yippiemove.html
 ---
 
 ![The new YippieMove front-page](https://vpetersson.com/wp-content/uploads/2012/01/frontpage_small-600x432.png "The new YippieMove front-page")\

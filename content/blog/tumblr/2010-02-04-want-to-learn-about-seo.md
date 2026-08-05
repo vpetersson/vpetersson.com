@@ -4,7 +4,9 @@ title: Want to learn about SEO?
 date: '2010-02-04T22:42:37+02:00'
 tags:
 - SEO
-aliases: /post/92729910909/want-to-learn-about-seo
+aliases:
+  - /post/92729910909/want-to-learn-about-seo
+  - /2010/02/04/want-to-learn-about-seo.html
 ---
 
 If you’re new to Search Engine Optimization, or SEO, you might want to take a look at [this](http://www.google.com/webmasters/docs/search-engine-optimization-starter-guide.pdf) brief e-book from Google.

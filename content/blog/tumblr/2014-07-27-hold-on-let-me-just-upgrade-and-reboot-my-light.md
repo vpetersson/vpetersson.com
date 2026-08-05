@@ -7,7 +7,9 @@ tags:
 - geek
 - lifx
 - internet of things
-aliases: /post/93033295389/hold-on-let-me-just-upgrade-and-reboot-my-light
+aliases:
+  - /post/93033295389/hold-on-let-me-just-upgrade-and-reboot-my-light
+  - /2014/07/27/hold-on-let-me-just-upgrade-and-reboot-my-light.html
 ---
 
 ![](/tumblr_files/tumblr_n9dwt7mk481thwdtao1_1280.webp)

@@ -3,6 +3,8 @@ slug: dslf-a-rust-hacking-cheaper-hosting-and-two-http-codes-i-didnt-know-about
 title: "DSLF – a rust hacking, cheaper hosting, and two HTTP codes I didn’t know about"
 date: '2025-07-11T00:00:00Z'
 tags: [rust, http, fly.io, open-source]
+aliases:
+  - /2025/07/11/dslf-a-rust-hacking-cheaper-hosting-and-two-http-codes-i-didnt-know-about.html
 ---
 
 I hacked together [DSLF](https://github.com/vpetersson/dslf) today because paying a monthly fee for a plain 301 felt silly.

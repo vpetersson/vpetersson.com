@@ -3,7 +3,9 @@ slug: manage-docker-resources-with-cgroups
 title: Manage Docker resources with Cgroups
 date: '2015-05-12T17:00:40+03:00'
 tags: []
-aliases: /post/118783333054/manage-docker-resources-with-cgroups
+aliases:
+  - /post/118783333054/manage-docker-resources-with-cgroups
+  - /2015/05/12/manage-docker-resources-with-cgroups.html
 ---
 
 [Manage Docker resources with Cgroups](https://www.cloudsigma.com/manage-docker-resources-with-cgroups/)

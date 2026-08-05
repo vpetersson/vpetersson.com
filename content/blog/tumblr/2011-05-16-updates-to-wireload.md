@@ -3,7 +3,9 @@ slug: updates-to-wireload
 title: Updates to WireLoad
 date: '2011-05-16T21:38:35+03:00'
 tags: []
-aliases: /post/92729945794/updates-to-wireload
+aliases:
+  - /post/92729945794/updates-to-wireload
+  - /2011/05/16/updates-to-wireload.html
 ---
 
 2011 has been a big year for WireLoad. We have launched two brand new products ([Blotter](http://www.blotterapp.com/) and [Quiet](http://wireload.net/products/quiet/)) in a completely new vertical, namely the desktop market for Mac OS X. It has been a very interesting experience, and we certainly did not foresee the success we’ve had. Just a few weeks ago, Blotter was named [‘App of the Week](http://wiki.twit.tv/wiki/MacBreak_Weekly_239)‘ in Leo Leporte’s show MacBreak Weekly. Blotter has also been on the Top-10 list for productivity apps in the Mac App Store, and we’ve been the #2 app in the entire Korean Mac App Store (and top 10 in the entire Japanese Mac App Store).

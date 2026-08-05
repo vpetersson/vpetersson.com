@@ -10,7 +10,9 @@ tags:
 - Ubuntu Linux
 - cgroups
 - cgroupspy
-aliases: /post/116736549864/an-introduction-to-cgroups-and-cgroupspy
+aliases:
+  - /post/116736549864/an-introduction-to-cgroups-and-cgroupspy
+  - /2015/04/18/an-introduction-to-cgroups-and-cgroupspy.html
 ---
 
 Here’s my presentation from [ApacheCon](http://apachecon.com/) in Austin, TX.

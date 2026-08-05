@@ -6,7 +6,9 @@ tags:
 - KISS-surveillance
 - Video Surveillance
 - ZoneMinder
-aliases: /post/92729953989/introducing-kiss-surveillance-the-dead-simple-surveillan
+aliases:
+  - /post/92729953989/introducing-kiss-surveillance-the-dead-simple-surveillan
+  - /2012/01/08/introducing-kiss-surveillance-the-dead-simple-surveillan.html
 ---
 
 You’ve probably already noticed that I’ve used [ZoneMinder](http://www.zoneminder.com/) a bit. I published a few [blog-posts](https://vpetersson.com/tag/zoneminder/) on how to set up ZoneMinder, and even posted full [virtual appliance](https://vpetersson.com/open-source/zoneminder-virtual-appliance/) for ZoneMinder.

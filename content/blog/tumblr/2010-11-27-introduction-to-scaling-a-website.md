@@ -7,7 +7,9 @@ tags:
 - Load Balancing
 - MySQL
 - Scaling
-aliases: /post/92729932814/introduction-to-scaling-a-website
+aliases:
+  - /post/92729932814/introduction-to-scaling-a-website
+  - /2010/11/27/introduction-to-scaling-a-website.html
 ---
 
 Scaling architecture and web sites is really something I find exciting. I’ve playing with scaling various software for many years, but it is just recent years I’ve come to use this in production (primarily through [YippieMove](http://www.yippiemove.com)).

@@ -7,6 +7,8 @@ tags:
 - home-automation
 - smart-home
 - iot
+aliases:
+  - /2025/01/22/how-i-use-home-assistant-in-2025.html
 ---
 
 I've been using Home Assistant for about seven years now, starting back when I was living in a small apartment. At the time, my setup was modest: I used the **IKEA Smart Hub** (when it first launched) to tie together all my apartment's lights. As I got more comfortable with automations, I also began building [custom hardware like temperature and humidity sensors](/2019/11/16/home-assistant-and-esphome/).

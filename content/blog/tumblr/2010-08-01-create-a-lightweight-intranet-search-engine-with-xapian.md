@@ -5,7 +5,9 @@ date: '2010-08-01T23:42:50+03:00'
 tags:
 - FreeBSD
 - Xapian
-aliases: /post/92729920634/create-a-lightweight-intranet-search-engine-with-xapian
+aliases:
+  - /post/92729920634/create-a-lightweight-intranet-search-engine-with-xapian
+  - /2010/08/01/create-a-lightweight-intranet-search-engine-with-xapian.html
 ---
 
 Recently I had to set up an intranet search engine to crawl trough thousands of PDF files. There are a ton of commercial solutions (read: $$$$

@@ -8,7 +8,9 @@ tags:
 - alarm system
 - home alarm
 - fail
-aliases: /post/129162297409/a-case-study-in-failed-uxui-aka-dsc-please-get
+aliases:
+  - /post/129162297409/a-case-study-in-failed-uxui-aka-dsc-please-get
+  - /2015/09/15/a-case-study-in-failed-uxui-aka-dsc-please-get.html
 ---
 
 Dear Digital Security Controls (DSC),

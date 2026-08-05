@@ -8,6 +8,8 @@ tags:
 - apache
 - lets-encrypt
 - note-to-self
+aliases:
+  - /2022/09/29/response-is-not-a-valid-json.html
 ---
 
 In the last 24 hours, I've spent an embarrassing amount of time trying to debug a simple WordPress installation. When saving any changes, I received `The response is not a valid JSON response`. In addition, I also received weird symptoms I received was:

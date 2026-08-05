@@ -5,6 +5,8 @@ date: '2024-05-16T01:00:00+01:00'
 tags:
 - sales
 - open-source
+aliases:
+  - /2024/05/16/email-service-checker.html
 ---
 
 A decade ago, I created "Are They Using Google Apps" to address a simple yet crucial need: determining whether a remote party was using Google Apps (now Google Workspace) to decide if I should send them a Hangout invite for a meeting (or something else). Fast forward to today, and I am thrilled to introduce a revitalized and enhanced version of this concept – [Email Service Checker](https://emailservicechecker.com).

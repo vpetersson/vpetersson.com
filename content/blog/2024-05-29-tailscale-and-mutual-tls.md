@@ -6,6 +6,8 @@ tags:
 - tailscale
 - devops
 - linux
+aliases:
+  - /2024/05/29/tailscale-and-mutual-tls.html
 ---
 
 A while back, I wrote about how I'm using Tailscale to [secure my local service](/2022/12/23/securing-services-with-tailscale/), thanks to Tailscale's built-in certificates. This greatly improved the security of my local environment. Combined with the rather sophisticated ACL policies, you can lock things down pretty well.

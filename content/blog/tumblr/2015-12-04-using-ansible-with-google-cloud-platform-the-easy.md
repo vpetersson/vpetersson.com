@@ -11,7 +11,9 @@ tags:
 - gce
 - google cloud
 - google compute engine
-aliases: /post/134533191074/using-ansible-with-google-cloud-platform-the-easy
+aliases:
+  - /post/134533191074/using-ansible-with-google-cloud-platform-the-easy
+  - /2015/12/04/using-ansible-with-google-cloud-platform-the-easy.html
 ---
 
 For some time, [Ansible](http://www.ansible.com/) has been my configuration management of choice and we use it for both [Screenly](http://www.screenlyapp.com) and [YippieMove](http://www.yippiemove.com). Since both of these services are running on Google Compute Engine, we’re using Ansible’s [dynamic inventory](http://docs.ansible.com/ansible/intro_dynamic_inventory.html) for GCE.

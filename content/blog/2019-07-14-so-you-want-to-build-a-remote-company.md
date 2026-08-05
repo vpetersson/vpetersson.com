@@ -9,6 +9,8 @@ tags:
 - remote-work
 - productivity
 - digital-nomad
+aliases:
+  - /remote-work/2019/07/14/so-you-want-to-build-a-remote-company.html
 ---
 
 Little did I know when I wrote [A Decade of Remote Work](/2019/05/18/a-decade-of-remote/) that it would completely blow up. After being featured on Hacker News, the article to this day keeps driving a significant amount of traffic from all kind of sources (including Twitter).

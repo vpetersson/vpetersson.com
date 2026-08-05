@@ -4,7 +4,9 @@ title: Just launched Red iGone
 date: '2010-04-21T21:29:40+03:00'
 tags:
 - Red iGone
-aliases: /post/92729912264/just-launched-red-igone
+aliases:
+  - /post/92729912264/just-launched-red-igone
+  - /2010/04/21/just-launched-red-igone.html
 ---
 
 Two days ago we launched [Red iGone](http://www.redigone.com) — the easiest way to remove red-eyes out of you photos. It’s a dead-simple tool. Just upload your photo, select the red eye, let Red iGone work its magic, and download the enhanced photo.

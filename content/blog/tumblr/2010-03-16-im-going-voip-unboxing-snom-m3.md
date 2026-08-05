@@ -3,7 +3,9 @@ slug: im-going-voip-unboxing-snom-m3
 title: "I'm going VoIP - Unboxing Snom M3. "
 date: '2010-03-16T17:44:23+02:00'
 tags: []
-aliases: /post/92729911829/im-going-voip-unboxing-snom-m3
+aliases:
+  - /post/92729911829/im-going-voip-unboxing-snom-m3
+  - /2010/03/16/im-going-voip-unboxing-snom-m3.html
 ---
 
 For many years I’ve been excited about VoIP. I attended a seminar on Asterisk 7 years or so ago, and remember thinking: Wow, this is the future. Unfortunately there were many things holding VoIP back then (bandwidth being the most obvious one). However, today most companies can get a decent internet connection (10Mbit up and down will do). Moreover, you won’t even have to get dirty with setting up your own Asterisk server today, you can simply go for a hosted PBX-solution. This is both cheaper (assuming you can’t do it yourself) and probably more reliable.

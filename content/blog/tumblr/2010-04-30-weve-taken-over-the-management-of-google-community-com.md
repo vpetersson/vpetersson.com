@@ -6,7 +6,9 @@ tags:
 - Google Community
 - vBSEO
 - vBulletin
-aliases: /post/92729913249/weve-taken-over-the-management-of-google-community-com
+aliases:
+  - /post/92729913249/weve-taken-over-the-management-of-google-community-com
+  - /2010/04/30/weve-taken-over-the-management-of-google-community-com.html
 ---
 
 A while back, WireLoad took over the management for the forum [Google Community.com](http://www.googlecommunity.com). I've been a member of the forum for a few years, and seen how it has gone from a lively forum to a spam-infested forum with hardly any active members. As the spam increased, all the serious and senior members went away.

@@ -6,6 +6,8 @@ tags:
 - unifi
 - open-source
 - devops
+aliases:
+  - /2024/03/27/unifi-captive-portal.html
 ---
 
 ## What are captive portals?
