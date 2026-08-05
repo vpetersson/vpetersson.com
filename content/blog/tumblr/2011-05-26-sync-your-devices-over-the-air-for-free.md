@@ -13,6 +13,7 @@ aliases:
   - /post/92729946309/sync-your-devices-over-the-air-for-free
   - /2011/05/25/sync-your-devices-over-the-air-for-free.html
   - /2011/05/26/sync-your-devices-over-the-air-for-free.html
+  - /2011/05/26/sync-your-devices-over-the-air-for-free/
 ---
 
 I hate wires. I particular hate having to use wires to syncing devices.
