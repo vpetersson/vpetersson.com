@@ -11,6 +11,7 @@ tags:
 aliases:
   - /post/119310288199/modern-document-management-for-your-startup
   - /2015/05/18/modern-document-management-for-your-startup.html
+  - /2015/05/19/modern-document-management-for-your-startup.html
 ---
 
 [Modern document management for your startup](http://wireload.net/news/2015/05/modern_document_management.html)

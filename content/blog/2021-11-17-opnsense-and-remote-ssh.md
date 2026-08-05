@@ -7,6 +7,8 @@ tags:
 - pfsense
 - ssh
 - note-to-self
+aliases:
+  - /2021/11/17/opnsense-and-remote-ssh.html
 ---
 
 I was working on trying to grant a 'regular' user SSH access in [OPNsense](https://opnsense.org/) last night. After banging my head against the wall for some time (partially because the [official documentation](https://docs.opnsense.org/manual/how-tos/user-local.html) is outdated), I was able to figure it out.

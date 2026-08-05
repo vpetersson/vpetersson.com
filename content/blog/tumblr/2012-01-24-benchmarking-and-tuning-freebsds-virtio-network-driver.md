@@ -8,7 +8,9 @@ tags:
 - KVM
 - QEMU
 - Virtualization
-aliases: /post/92729955554/benchmarking-and-tuning-freebsds-virtio-network-driver
+aliases:
+  - /post/92729955554/benchmarking-and-tuning-freebsds-virtio-network-driver
+  - /2012/01/24/benchmarking-and-tuning-freebsds-virtio-network-driver.html
 ---
 
 In the [previous post](https://vpetersson.com/2012/01/23/benchmarking-virtual-network-drivers-under-freebsd-9/), I benchmarked three different virtual network drivers under FreeBSD. The clear winner was, perhaps not very surprisingly, the VirtIO network driver.

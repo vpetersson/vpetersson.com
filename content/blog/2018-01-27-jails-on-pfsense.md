@@ -7,6 +7,8 @@ tags:
 - freebsd
 - devops
 - jails
+aliases:
+  - /2018/01/27/jails-on-pfsense.html
 ---
 
 **Disclosure:** _I have no idea how this impact the security of pfSense. There is probably a good reason why the jail service is disabled by default. Hence, beware that this might cause unexpected security issues as it is not a supported package._

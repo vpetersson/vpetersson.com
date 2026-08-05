@@ -5,6 +5,8 @@ title: "Sonar Is Back: A Fresh Take on BLE Device Counting"
 date: 2025-05-07 12:00:00 +0000
 categories: [projects, bluetooth]
 tags: [sonar, bluetooth, ble, fastapi, python, raspberry-pi]
+aliases:
+  - /projects/bluetooth/2025/05/07/sonar-is-back.html
 ---
 
 I'm excited to share that I've just given Sonar—a FastAPI-based BLE device counter I built years ago—a full overhaul and relaunched it as an open-source project on GitHub: [https://github.com/viktopia/sonar](https://github.com/viktopia/sonar)

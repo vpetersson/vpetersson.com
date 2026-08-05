@@ -7,6 +7,8 @@ tags:
 - linux
 - analytics
 - ble
+aliases:
+  - /2018/03/19/sonar-databat-people-counter.html
 ---
 
 Over the last year, I've been hacking on-and-off on a little project called [Sonar](https://github.com/databat-io/sonar).

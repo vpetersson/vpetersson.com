@@ -6,7 +6,9 @@ tags:
 - Carbon Copy Cloner
 - Mac OS X
 - Time Machine
-aliases: /post/92729929934/is-carbon-copy-cloner-better-than-time-machine
+aliases:
+  - /post/92729929934/is-carbon-copy-cloner-better-than-time-machine
+  - /2010/10/27/is-carbon-copy-cloner-better-than-time-machine.html
 ---
 
 When Apple announced Time Machine, I was overwhelmed and thought it was the best invention since sliced bread. I’ve been using it since then in setups both with a dedicated external hard drive and a Network Attached Storage (NAS).

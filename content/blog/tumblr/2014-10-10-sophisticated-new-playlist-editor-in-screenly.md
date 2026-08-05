@@ -10,7 +10,9 @@ tags:
 - raspberry pi
 - raspi
 - screenly
-aliases: /post/99639459484/sophisticated-new-playlist-editor-in-screenly
+aliases:
+  - /post/99639459484/sophisticated-new-playlist-editor-in-screenly
+  - /2014/10/10/sophisticated-new-playlist-editor-in-screenly.html
 ---
 
 [Sophisticated new playlist editor in Screenly](http://wireload.net/news/2014/10/sophisticated_new_playlist_editor_in_screenly.html)

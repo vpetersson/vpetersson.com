@@ -7,7 +7,9 @@ tags:
 - Facebook
 - Hitwise
 - Privacy
-aliases: /post/92729950349/facebook-will-soon-know-exactly-how-many-visitors-you-go
+aliases:
+  - /post/92729950349/facebook-will-soon-know-exactly-how-many-visitors-you-go
+  - /2011/09/03/facebook-will-soon-know-exactly-how-many-visitors-you-go.html
 ---
 
 Is it possible that Facebook know more about how many visitors a given website has than Alexa or Hitwise? I’m not talking about people sharing a link on Facebook and then tracking outbound clicks. I’m talking about capturing all visitors. Both Alexa and Hitwise used to both rely on browser-addons to capture this data. Since only a small percentage of users will install this add-on, they will have really rough data (and skewed towards non-technical users).

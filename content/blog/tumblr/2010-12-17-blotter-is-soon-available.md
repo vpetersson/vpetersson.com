@@ -7,7 +7,9 @@ tags:
 - Blotter
 - Mac OS X
 - WireLoad
-aliases: /post/92729941739/blotter-is-soon-available
+aliases:
+  - /post/92729941739/blotter-is-soon-available
+  - /2010/12/17/blotter-is-soon-available.html
 ---
 
 One of the biggest announcement Apple made in recent time was the announcement of the [App Store for Mac](http://www.apple.com/mac/app-store/). If you didn’t see the initial pitch, it is similar to iTunes App Store for iOS (iPad, iPhone, iPod Touch etc), but for native Mac OS X desktop applications.

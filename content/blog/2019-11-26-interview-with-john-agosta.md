@@ -9,6 +9,8 @@ tags:
 - remote-work
 - productivity
 - digital-nomad
+aliases:
+  - /remote-work/2019/11/26/interview-with-john-agosta.html
 ---
 
 In this interview on [remote work](/remote-work/), I'm speaking to John Agosta from Canonical (the company behind Ubuntu). As a long-time Canonical team member, John and my paths have crossed multiple times over the years, starting when I was at a cloud company, and he was at the server division at Canonical, to more recently when he moved to the Ubuntu Core (formerly known as Snappy) side, as I was building out [Screenly](https://www.screenly.io) where John now is the Program Manager.

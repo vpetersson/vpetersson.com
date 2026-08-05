@@ -9,6 +9,7 @@ tags:
 aliases:
   - /post/113642397894/getcanaryio-intelligent-notifications
   - /2015/03/14/getcanaryio-intelligent-notifications.html
+  - /2015/03/15/getcanaryio-intelligent-notifications.html
 ---
 
 [GetCanary.io - Intelligent notifications](http://getcanary.io/)

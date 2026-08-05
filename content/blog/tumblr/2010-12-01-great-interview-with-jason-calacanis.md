@@ -6,7 +6,9 @@ tags:
 - Entrepreneurship
 - Fowa
 - Startup
-aliases: /post/92729938994/great-interview-with-jason-calacanis
+aliases:
+  - /post/92729938994/great-interview-with-jason-calacanis
+  - /2010/12/01/great-interview-with-jason-calacanis.html
 ---
 
 If you’re into startups and technology, you should really watch the following interview with Jason Calacanis from the Fowa-conference in London. I really like how Jason describes the way he and his team work. I completely agree with him. There is no such thing as ‘balance’ in a startup. You’re either in to do it all the way, or you might as well go home.

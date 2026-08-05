@@ -8,6 +8,8 @@ tags:
 - ubuntu
 - pfsense
 - linux
+aliases:
+  - /2018/01/28/openvswitch-and-kvm.html
 ---
 
 If you're reading the [KVM/Networking documentation](https://help.ubuntu.com/community/KVM/Networking) for Ubuntu, you'll see that the recommended way to expose VMs to the world (public or private interface) is to use a Bridge. This was what I have been doing over the years. What you do realize however is that it becomes less than ideal when the network configuration is becoming complex. For instance, imagine that you're using two bonded interfaces (LACP) that you then expose to a bridge, which you in turn want to configure a set of VLANs on top of. That gets very messy using this method (and not to even mention the performance is poor in general).

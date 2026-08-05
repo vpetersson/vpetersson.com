@@ -6,7 +6,9 @@ tags:
 - linux
 - optimization
 - devops
-aliases: /post/95355880919/linux-performance-tools
+aliases:
+  - /post/95355880919/linux-performance-tools
+  - /2014/08/21/linux-performance-tools.html
 ---
 
 [Linux Performance Tools](http://www.slideshare.net/brendangregg/linux-performance-tools)

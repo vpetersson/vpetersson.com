@@ -6,7 +6,9 @@ tags:
 - ansible
 - docker
 - devops
-aliases: /post/148341424869/provisioner
+aliases:
+  - /post/148341424869/provisioner
+  - /2016/08/02/provisioner.html
 ---
 
 [Provisioner](https://provisioner.vpetersson.com/)

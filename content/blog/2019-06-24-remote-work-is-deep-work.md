@@ -11,6 +11,7 @@ tags:
 - digital-nomad
 aliases:
   - /2019/06/24/remote-work-is-deep-work.html
+  - /remote-work/2019/06/24/remote-work-is-deep-work.html
 ---
 
 Over the last few years, two things that I’ve paid close attention to are Deep Work and Remote Work. In this article we will explore this and discover how closely these to concepts overlap.

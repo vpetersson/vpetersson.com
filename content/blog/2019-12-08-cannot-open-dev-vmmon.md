@@ -7,6 +7,8 @@ tags:
 - fusion
 - virtualization
 - note-to-self
+aliases:
+  - /2019/12/08/cannot-open-dev-vmmon.html
 ---
 
 This weekend I needed to use Fusion for the first time since I upgraded to macOS Mojave. Having run Fusion 8 for many years and being happy with it, I was somewhat annoyed with needing to upgrade to Fusion 11. At least that appeared to be the consensus on the interwebs. In retrospect, I'm not 100% sure. That said, I've received great value from Fusion, and I don't mind paying money for good software.

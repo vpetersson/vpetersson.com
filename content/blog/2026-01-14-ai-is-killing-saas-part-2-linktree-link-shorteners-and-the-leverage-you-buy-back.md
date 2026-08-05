@@ -8,6 +8,8 @@ tags:
 - cursor
 - self-hosted
 - open-source
+aliases:
+  - /2026/01/14/ai-is-killing-saas-part-2-linktree-link-shorteners-and-the-leverage-you-buy-back.html
 ---
 
 In [Part 1](/2026/01/09/ai-is-eating-saas-building-an-ip-geolocation-api-in-two-hours), I replaced ipgeolocation.io with a self-hosted Rust service in under two hours. That was just one piece of a larger pattern we've been following at [Screenly](https://www.screenly.io).

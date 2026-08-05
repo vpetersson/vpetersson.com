@@ -6,6 +6,8 @@ tags:
 - google-forms
 - javascript
 - web-development
+aliases:
+  - /2025/01/14/using-google-forms-for-waitlists.html
 ---
 
 Over the last decade, I've spun up quite a few landing pages to gauge interest for upcoming products and features. Back in the day, there were platforms like [Launchrock](https://www.launchrock.com/) that made it simple to collect email addresses and maintain a waitlist. While Launchrock (and later [Typeform](https://www.typeform.com/), etc.) provided decent user experiences at the time, the end goal was always the same: **collect user data into a spreadsheet (or CRM).**

@@ -2,7 +2,9 @@
 slug: bootstrapping-chronicles-chapter1
 title: Boostrapping Chronicles - Chapter 1
 date: '2024-03-22T01:00:00+01:00'
-aliases: /2024/03/22/boostrapping-chronicles-chapter1.html
+aliases:
+  - /2024/03/22/boostrapping-chronicles-chapter1.html
+  - /2024/03/22/bootstrapping-chronicles-chapter1.html
 tags:
 - boostrapping
 - startup

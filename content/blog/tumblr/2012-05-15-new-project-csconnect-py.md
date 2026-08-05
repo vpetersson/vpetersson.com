@@ -6,7 +6,9 @@ tags:
 - CloudSigma
 - Python
 - SSH
-aliases: /post/92729963354/new-project-csconnect-py
+aliases:
+  - /post/92729963354/new-project-csconnect-py
+  - /2012/05/15/new-project-csconnect-py.html
 ---
 
 In the last few years, [we](http://wireload.net)‘ve spent a lot of time migrating away from all our physical servers and into the cloud. This has been a very interesting task, that presented its own set of challenges, but it has certainly been worth it.

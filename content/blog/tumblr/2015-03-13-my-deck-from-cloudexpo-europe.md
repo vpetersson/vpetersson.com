@@ -8,7 +8,9 @@ tags:
 - coreos
 - kvm
 - linux
-aliases: /post/113513591649/my-deck-from-cloudexpo-europe
+aliases:
+  - /post/113513591649/my-deck-from-cloudexpo-europe
+  - /2015/03/13/my-deck-from-cloudexpo-europe.html
 ---
 
 Here’s the presentation deck from CloudExpo Europe 2015. The title of the talk was “Server Evolution: From mainframes to containers and PaaS.” Enjoy!

@@ -6,7 +6,9 @@ tags:
 - Blotter
 - OS X
 - WireLoad
-aliases: /post/92729942194/blotter-is-now-available
+aliases:
+  - /post/92729942194/blotter-is-now-available
+  - /2011/01/06/blotter-is-now-available.html
 ---
 
 As of a few hours, [Blotter](http://www.blotterapp.com/) is [available](http://itunes.apple.com/us/app/blotter/id406580224?mt=12) in the App Store for Mac. We are super excited and this launch, and the App Store is really impressive.

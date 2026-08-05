@@ -5,7 +5,9 @@ date: '2010-09-30T20:17:58+03:00'
 tags:
 - FreeBSD
 - Note-to-self
-aliases: /post/92729926614/copying-usersgroups-between-freebsd-servers
+aliases:
+  - /post/92729926614/copying-usersgroups-between-freebsd-servers
+  - /2010/09/30/copying-usersgroups-between-freebsd-servers.html
 ---
 
 Sometimes you want to move **all** users and groups from one server to another without having to recreate all users. Let’s say you are retiring an old server and moving to a new server. If you’ve had the server for a while and have lots of users on it, the last thing you want to do is to recreate all users and assign new passwords.

@@ -3,7 +3,9 @@ slug: an-update-on-yippiemove
 title: An update on YippieMove
 date: '2015-07-17T16:01:37+03:00'
 tags: []
-aliases: /post/124326329619/an-update-on-yippiemove
+aliases:
+  - /post/124326329619/an-update-on-yippiemove
+  - /2015/07/17/an-update-on-yippiemove.html
 ---
 
 [An update on YippieMove](http://wireload.net/news/2015/07/an-update-on-yippiemove.html)

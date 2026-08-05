@@ -5,6 +5,8 @@ date: '2025-07-02T01:00:00+01:00'
 tags:
 - podcast
 - automation
+aliases:
+  - /2025/07/02/codex-manages-my-podcast.html
 ---
 
 When I started my podcast a year and a half ago, I looked at the tools available. For those not familiar, for many platforms (like Amazon Music and Apple Podcasts) you need to provide an RSS feed with your podcast. Now, there is no shortage of platforms that will gladly sell you this. But essentially, what you're paying for is a thin layer on top of S3 with FFmpeg and some duct tape.

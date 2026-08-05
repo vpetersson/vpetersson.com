@@ -6,7 +6,9 @@ tags:
 - Last.FM
 - Lastify
 - Spotify
-aliases: /post/92729942774/get-better-music-recommendations-in-spotify-with-lastify
+aliases:
+  - /post/92729942774/get-better-music-recommendations-in-spotify-with-lastify
+  - /2011/01/23/get-better-music-recommendations-in-spotify-with-lastify.html
 ---
 
 [Spotify](http://www.spotify.com/) is probably one of the greatest apps I’ve used in recent years. It is the sole reason why I barely ever use iTunes anymore. Why would I bother downloading music when I can have access to a far larger music library at any given moment?

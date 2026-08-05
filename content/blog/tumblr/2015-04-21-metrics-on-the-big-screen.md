@@ -3,7 +3,9 @@ slug: metrics-on-the-big-screen
 title: Metrics on the big screen
 date: '2015-04-21T17:23:23+03:00'
 tags: []
-aliases: /post/117003117299/metrics-on-the-big-screen
+aliases:
+  - /post/117003117299/metrics-on-the-big-screen
+  - /2015/04/21/metrics-on-the-big-screen.html
 ---
 
 [hosted-graphite](http://blog.hostedgraphite.com/post/117001786117/metrics-on-the-big-screen):

@@ -3,7 +3,9 @@ slug: whats-in-your-bag-viktor
 title: What's in your bag, Viktor?
 date: '2014-08-03T23:18:02+03:00'
 tags: []
-aliases: /post/93712480644/whats-in-your-bag-viktor
+aliases:
+  - /post/93712480644/whats-in-your-bag-viktor
+  - /2014/08/03/whats-in-your-bag-viktor.html
 ---
 
 [What's in your bag, Viktor?](http://leannomads.tumblr.com/post/93698602869/whats-in-your-bag-viktor)

@@ -4,7 +4,9 @@ title: Annoying SEO scam
 date: '2010-09-27T17:43:49+03:00'
 tags:
 - SEO
-aliases: /post/92729926064/annoying-seo-scam
+aliases:
+  - /post/92729926064/annoying-seo-scam
+  - /2010/09/27/annoying-seo-scam.html
 ---
 
 So I’m not 100% confident that this is a scam, but it sure looks like it. I’ve been contacted by this guy a few times by now. Here’s the email he sent out. Also, I’m pretty sure there is no such thing as the “reverse google pagerank algorithm”.

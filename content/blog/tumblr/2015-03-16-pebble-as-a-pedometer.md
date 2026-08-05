@@ -7,7 +7,9 @@ tags:
 - health
 - digital nomad
 - smartwatch
-aliases: /post/113789570969/pebble-as-a-pedometer
+aliases:
+  - /post/113789570969/pebble-as-a-pedometer
+  - /2015/03/16/pebble-as-a-pedometer.html
 ---
 
 For some time, I’ve worn both my Pebble and a Fitbit Flex. Since the Pebble comes with a built-in pedometer, this bothered me a lot. As a digital nomad, you’re always looking at ways to reduce the things you carry around and I’m now happy to report that I have retired my Fitbit.

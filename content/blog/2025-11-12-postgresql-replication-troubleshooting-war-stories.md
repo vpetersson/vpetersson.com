@@ -3,6 +3,8 @@ slug: postgresql-replication-troubleshooting-war-stories
 title: "PostgreSQL Replication Troubleshooting: War Stories from the Field"
 date: '2025-11-12T00:00:00Z'
 tags: [postgresql, database, consulting, replication, troubleshooting]
+aliases:
+  - /2025/11/12/postgresql-replication-troubleshooting-war-stories.html
 ---
 
 I recently wrapped up a consulting gig helping a client troubleshoot some gnarly PostgreSQL replication issues. What started as a "quick performance tune" turned into a deep dive through WAL checkpoints, replication slots, and the delicate dance of logical replication workers.

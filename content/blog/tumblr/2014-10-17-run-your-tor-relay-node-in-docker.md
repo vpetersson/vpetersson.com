@@ -10,6 +10,7 @@ tags:
 aliases:
   - /post/100192280434/run-your-tor-relay-node-in-docker
   - /2014/10/16/run-your-tor-relay-node-in-docker.html
+  - /2014/10/17/run-your-tor-relay-node-in-docker.html
 ---
 
 [Tor](https://www.torproject.org) is a project that I really love to support. In this age of increased surveillance, Tor is needed more than ever.

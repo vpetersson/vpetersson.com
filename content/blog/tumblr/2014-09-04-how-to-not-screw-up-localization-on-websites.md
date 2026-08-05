@@ -7,7 +7,9 @@ tags:
 - localization
 - localisation
 - seo
-aliases: /post/96629746439/how-to-not-screw-up-localization-on-websites
+aliases:
+  - /post/96629746439/how-to-not-screw-up-localization-on-websites
+  - /2014/09/04/how-to-not-screw-up-localization-on-websites.html
 ---
 
 Poorly implemented translations ‘logic’ is something that really grinds my gear. Today I ran across the new [Dyson 360 Eye](http://www.dyson360eye.com/) and it is a case study in how to **not** do website translations.

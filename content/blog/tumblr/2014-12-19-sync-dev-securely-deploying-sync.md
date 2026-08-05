@@ -6,7 +6,9 @@ tags:
 - BitTorrent
 - BittTorrent Sync
 - backup
-aliases: /post/105631466134/sync-dev-securely-deploying-sync
+aliases:
+  - /post/105631466134/sync-dev-securely-deploying-sync
+  - /2014/12/19/sync-dev-securely-deploying-sync.html
 ---
 
 [Sync Dev: Securely Deploying Sync](http://blog.bittorrent.com/2014/12/18/sync-dev-securely-deploying-sync/)

@@ -7,6 +7,8 @@ tags:
 - linux
 - devops
 - note-to-self
+aliases:
+  - /2019/10/03/ubuntu-core-on-proxmox.html
 ---
 
 Today I was trying to get Ubuntu Core 18/22 working on Proxmox. Given that it is a KVM based tool, it's fairly straight-forward, but took me a bit of time go get working (thus this write-up).

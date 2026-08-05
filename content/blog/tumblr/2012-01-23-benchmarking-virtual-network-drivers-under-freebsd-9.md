@@ -8,7 +8,9 @@ tags:
 - KVM
 - QEMU
 - VirtIO
-aliases: /post/92729955009/benchmarking-virtual-network-drivers-under-freebsd-9
+aliases:
+  - /post/92729955009/benchmarking-virtual-network-drivers-under-freebsd-9
+  - /2012/01/23/benchmarking-virtual-network-drivers-under-freebsd-9.html
 ---
 
 With the launch of FreeBSD 9, I was curious to learn how the VirtIO driver performed. I’ve seen a significant boost in disk performance, but how about the network driver?

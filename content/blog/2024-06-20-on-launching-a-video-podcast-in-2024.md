@@ -7,6 +7,8 @@ tags:
 - podcast
 - startup
 - entrepreneurship
+aliases:
+  - /2024/06/20/on-launching-a-video-podcast-in-2024.html
 ---
 
 **Update:** Check out my blog post [All Roads Lead to DSLRs](/2025/06/18/all-roads-lead-to-dslrs/)

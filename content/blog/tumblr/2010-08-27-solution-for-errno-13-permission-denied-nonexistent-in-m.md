@@ -10,6 +10,7 @@ tags:
 aliases:
   - /post/92729922964/solution-for-errno-13-permission-denied-nonexistent-in-m
   - /2010/08/26/solution-for-errno-13-permission-denied-nonexistent-in-m.html
+  - /2010/08/27/solution-for-errno-13-permission-denied-nonexistent-in-m.html
 ---
 
 While upgrading to Python 2.7 on one of our development servers (FreeBSD 7.2), I ran across a somewhat strange error with Django (or rather mod_wsgi). Since I didn’t find a whole lot useful results when I Googled for it, I decided to do a brief write-up about it.

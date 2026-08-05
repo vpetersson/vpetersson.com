@@ -6,7 +6,9 @@ tags:
 - TechCrunch
 - WireLoad
 - YippieMove
-aliases: /post/92729958389/interviewed-by-techcrunch
+aliases:
+  - /post/92729958389/interviewed-by-techcrunch
+  - /2012/02/07/interviewed-by-techcrunch.html
 ---
 
 I’ve already posted about the fact that we’ve released a massive update to [YippieMove](http://www.yippiemove.com). Today the legendary Silicon Valley-blog TechCrunch covered this in form of an interview with me.

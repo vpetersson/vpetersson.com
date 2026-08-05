@@ -9,7 +9,9 @@ tags:
 - DevOps
 - ubuntu
 - Ubuntu Linux
-aliases: /post/115562026784/using-cgroups-with-docker-on-ubuntu-1404
+aliases:
+  - /post/115562026784/using-cgroups-with-docker-on-ubuntu-1404
+  - /2015/04/05/using-cgroups-with-docker-on-ubuntu-1404.html
 ---
 
 As I was working on my upcoming presentation at [ApacheCon](http://www.apachecon.com/), I was playing a little bit with cgroups inside Docker.

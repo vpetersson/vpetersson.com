@@ -4,7 +4,9 @@ title: I'm quoted in the December-issue of Computerworld
 date: '2011-12-15T13:26:43+02:00'
 tags:
 - Press
-aliases: /post/92729952254/im-quoted-in-the-december-issue-of-computerworld
+aliases:
+  - /post/92729952254/im-quoted-in-the-december-issue-of-computerworld
+  - /2011/12/15/im-quoted-in-the-december-issue-of-computerworld.html
 ---
 
 ![](https://vpetersson.com/wp-content/uploads/2011/12/Computerworld.png "Computerworld")\

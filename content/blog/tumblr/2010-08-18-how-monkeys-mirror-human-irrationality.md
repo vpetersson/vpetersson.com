@@ -4,7 +4,9 @@ title: How monkeys mirror human irrationality
 date: '2010-08-18T15:09:53+03:00'
 tags:
 - TED
-aliases: /post/92729921789/how-monkeys-mirror-human-irrationality
+aliases:
+  - /post/92729921789/how-monkeys-mirror-human-irrationality
+  - /2010/08/18/how-monkeys-mirror-human-irrationality.html
 ---
 
 I watched a really interesting [TED](http://www.ted.com/)-talk last night that I wanted to share with all of you. It’s on the topic of human irrationality and how it is mirrored in monkeys. The verdict is that monkeys make the same irrational decisions as humans make, despite the fact that we know they’re irrational decisions.

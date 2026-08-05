@@ -7,7 +7,9 @@ tags:
 - bittorrent
 - cloud
 - backup
-aliases: /post/99988607029/sync-dev-using-sync-for-backups-in-the-cloud
+aliases:
+  - /post/99988607029/sync-dev-using-sync-for-backups-in-the-cloud
+  - /2014/10/14/sync-dev-using-sync-for-backups-in-the-cloud.html
 ---
 
 [Sync Dev: Using Sync For Backups In The Cloud (With Docker)](http://blog.bittorrent.com/2014/07/17/sync-dev-using-sync-for-backups-in-the-cloud-with-docker/)

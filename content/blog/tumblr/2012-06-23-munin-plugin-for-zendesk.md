@@ -8,7 +8,9 @@ tags:
 - Munin
 - Ubuntu
 - Zendesk
-aliases: /post/92729963844/munin-plugin-for-zendesk
+aliases:
+  - /post/92729963844/munin-plugin-for-zendesk
+  - /2012/06/23/munin-plugin-for-zendesk.html
 ---
 
 In recent time, I’ve really started to appreciate Munin. I’ve deployed Munin in multiple architectures already, and I still get impressed every time by how easy it is to setup.

@@ -6,7 +6,9 @@ tags:
 - Windows
 - note to self
 - printers
-aliases: /post/149023688109/hp-laserjet-500-colormfp-m570dn-windows-server
+aliases:
+  - /post/149023688109/hp-laserjet-500-colormfp-m570dn-windows-server
+  - /2016/08/16/hp-laserjet-500-colormfp-m570dn-windows-server.html
 ---
 
 (I try hard to stay away from Windows environments, but sometimes it’s unavoidable.)

@@ -6,7 +6,9 @@ tags:
 - iOS
 - iPad
 - Red iGone
-aliases: /post/92729940639/red-igone-for-ipad-is-now-available
+aliases:
+  - /post/92729940639/red-igone-for-ipad-is-now-available
+  - /2010/12/15/red-igone-for-ipad-is-now-available.html
 ---
 
 I’m really excited about this. [Red iGone](http://www.redigone.com), the red-eye removal tool I’ve been working on for some time, is [now available on the iPad](http://blog.redigone.com/red-igone-for-ipad-now-available).

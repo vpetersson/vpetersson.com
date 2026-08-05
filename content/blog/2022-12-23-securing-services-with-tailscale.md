@@ -8,6 +8,8 @@ tags:
 - tls
 - lets-encrypt
 - cups
+aliases:
+  - /2022/12/23/securing-services-with-tailscale.html
 ---
 
 Securing and encrypting communication on local network devices is a hard problem. Plenty of people tried, including myself in our now sunsetted company [WoTT](https://wott.io/). The root of the problem is a combination of DNS and routing to local IPs, which means you can't use automated certificate issuers, like Let's Encrypt. The solution, it seems, comes from an unexpected source: the VPN/Wireguard service provider Tailscale.

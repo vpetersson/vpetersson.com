@@ -4,7 +4,9 @@ title: Red iGone screencast/demo
 date: '2010-05-15T22:43:44+03:00'
 tags:
 - Red iGone
-aliases: /post/92729914854/red-igone-screencastdemo
+aliases:
+  - /post/92729914854/red-igone-screencastdemo
+  - /2010/05/15/red-igone-screencastdemo.html
 ---
 
 I just recorded a screencast of [Red iGone](http://www.redigone.com) in action. The video is a bit rough (in particular the audio), but I hope it gets the message across. Enjoy.

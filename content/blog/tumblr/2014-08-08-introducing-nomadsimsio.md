@@ -10,7 +10,9 @@ tags:
 - lte
 - tmob
 - remote working
-aliases: /post/94148699589/introducing-nomadsimsio
+aliases:
+  - /post/94148699589/introducing-nomadsimsio
+  - /2014/08/08/introducing-nomadsimsio.html
 ---
 
 A while back, I stumbled across [NomadList](http://nomadlist.io/). It’s basically a crowd sourced list of cities around the world ranked by how good they are for remote working.

@@ -7,6 +7,8 @@ tags:
 - raspberry-pi
 - linux
 - performance
+aliases:
+  - /2018/03/15/rapsberry-pi-model-b-vs-raspberry-pi-model-b+.html
 ---
 
 Today I got my hands on the new Raspberry Pi 3 Model B+. One of the most notable new features is Gigabit Ethernet. Given that the Raspberry Pi still uses the USB 2 interface for the Ethernet controller, I was curious to see what kind of bandwidth it could handle (I know the MagPi [already published this](https://www.raspberrypi.org/magpi/raspberry-pi-3-specs-benchmarks/), but I wanted some independent numbers). To do that, I setup a simple experiment:

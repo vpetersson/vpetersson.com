@@ -6,7 +6,9 @@ tags:
 - Linux
 - Ubuntu
 - ZoneMinder
-aliases: /post/92729916079/how-to-install-zoneminder-1-24-2-on-ubuntu-10-04-lts-ser
+aliases:
+  - /post/92729916079/how-to-install-zoneminder-1-24-2-on-ubuntu-10-04-lts-ser
+  - /2010/05/23/how-to-install-zoneminder-1-24-2-on-ubuntu-10-04-lts-ser.html
 ---
 
 Last week I published a new version of my [ZoneMinder Virtual Appliance](https://vpetersson.com/open-source/zoneminder-virtual-appliance). The virtual appliance is great if you want to easily deploy ZoneMinder without having to spend time setting it up. However, in some situations, you want to run ZoneMinder directly on the hardware. Perhaps you need better performance or simply need to capture video streams from V4L-devices.

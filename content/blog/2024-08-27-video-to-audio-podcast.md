@@ -5,6 +5,7 @@ title: |
 date: '2024-06-27T01:00:00+01:00'
 aliases:
   - /2024/08/27/video-to-audio-podcast/
+  - /2024/06/27/video-to-audio-podcast.html
 tags:
 - podcast
 - startup

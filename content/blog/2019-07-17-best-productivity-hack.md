@@ -9,6 +9,8 @@ tags:
 - remote-work
 - productivity
 - digital-nomad
+aliases:
+  - /remote-work/2019/07/17/best-productivity-hack.html
 ---
 
 People love talking about productivity hacks (a.k.a. productivity porn). The "hacks" usually range from the latest tools (todo-lists, email clients) to workflow improvements.

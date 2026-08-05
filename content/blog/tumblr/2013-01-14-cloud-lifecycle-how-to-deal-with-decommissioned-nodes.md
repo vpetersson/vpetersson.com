@@ -5,7 +5,9 @@ date: '2013-01-14T12:54:48+02:00'
 tags:
 - Security
 - Virtualization
-aliases: /post/92729973189/cloud-lifecycle-how-to-deal-with-decommissioned-nodes
+aliases:
+  - /post/92729973189/cloud-lifecycle-how-to-deal-with-decommissioned-nodes
+  - /2013/01/14/cloud-lifecycle-how-to-deal-with-decommissioned-nodes.html
 ---
 
 There’s no doubt that virtualization and the cloud is here to stay. So you migrated your entire architecture to the cloud and everyone is happy. Eventually, you’ll come to a point where you start decommission servers.

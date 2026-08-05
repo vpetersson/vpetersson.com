@@ -8,7 +8,9 @@ tags:
 - hacks
 - lifehack
 - tweak
-aliases: /post/100669319779/keyboard-hacks-for-os-x
+aliases:
+  - /post/100669319779/keyboard-hacks-for-os-x
+  - /2014/10/22/keyboard-hacks-for-os-x.html
 ---
 
 Every time I install OS X, I get very frustrated with the default keyboard settings. Perhaps the most frustrating one is how slow the navigation is when you’re using the arrow keys to move around in text blocks.

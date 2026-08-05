@@ -3,7 +3,9 @@ slug: my-presentation-deck-from-gsocial
 title: My presentation deck from gSocial
 date: '2012-11-14T23:52:36+02:00'
 tags: []
-aliases: /post/92729971359/my-presentation-deck-from-gsocial
+aliases:
+  - /post/92729971359/my-presentation-deck-from-gsocial
+  - /2012/11/14/my-presentation-deck-from-gsocial.html
 ---
 
 Yesterday I delivered a speech at the gSocial. If you haven’t heard of gSocial, it is the largest independent event for the Google Apps Channel Community. My talk was about email migration, and what we have learned since launching YippieMove back in 2008.

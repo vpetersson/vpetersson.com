@@ -7,6 +7,8 @@ tags:
 - linux
 - raspberry-pi
 - zfs
+aliases:
+  - /2024/05/04/home-server-journey.html
 ---
 
 ### Introduction

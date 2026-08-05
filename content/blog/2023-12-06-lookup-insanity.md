@@ -4,6 +4,8 @@ title: Enough is Enough - Killing the Annoying macOS Word Definition Pop-Up Once
 date: '2023-12-06T13:00:00+01:00'
 tags:
 - macos
+aliases:
+  - /2023/12/06/lookup-insanity.html
 ---
 
 Ever been deep in your workflow on your Mac, meticulously selecting text in Apple Mail or iTerm, only to be ambushed by some random word definition pop-up? Yeah, me too. And frankly, it's been driving me up the wall. It’s like playing Whac-A-Mole with dictionary entries you never asked for – the same annoyance as right-clicking a word and accidentally hitting "Look Up".

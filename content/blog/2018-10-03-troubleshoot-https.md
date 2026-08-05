@@ -7,6 +7,8 @@ tags:
 - linux
 - devops
 - note-to-self
+aliases:
+  - /2018/10/03/troubleshoot-https.html
 ---
 
 Troubleshooting an HTTPS connection can be somewhat challenging at times (in particular if Cloudflare is involved).

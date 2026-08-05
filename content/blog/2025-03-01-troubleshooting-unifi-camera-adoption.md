@@ -7,6 +7,8 @@ tags:
 - cameras
 - troubleshooting
 - networking
+aliases:
+  - /2025/03/01/troubleshooting-unifi-camera-adoption.html
 ---
 
 I recently got a few affordable G3 Pro cameras to replace some less-than-stellar G4 Dome units I had in my setup. Once I hooked these cameras up to the network, they appeared in my UniFi Console (Dream Machine Pro) without issue. However, after clicking the "Adopt" button, they became stuck in "Restoring" mode for quite some time.
