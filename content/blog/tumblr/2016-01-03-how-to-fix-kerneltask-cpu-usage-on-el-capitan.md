@@ -9,6 +9,7 @@ aliases:
   - /post/136535061619/how-to-fix-kerneltask-cpu-usage-on-el-capitan
   - /2017/12/21/2016-01-03-how-to-fix-kerneltask-cpu-usage-on-el-capitan.html
   - /2016/01/03/how-to-fix-kerneltask-cpu-usage-on-el-capitan.html
+  - /2017/12/21/2016-01-03-how-to-fix-kerneltask-cpu-usage-on-el-capitan/
 ---
 
 Sometime ago, I wrote the blog post [How to fix kernel_task CPU usage on Yosemite](/2014/10/16/how-to-fix-kerneltask-cpu-usage-on-yosemite/). This post still receives a great amount of traction, so I wanted to post an update that reflects the covers how to do this on El Capitan.
