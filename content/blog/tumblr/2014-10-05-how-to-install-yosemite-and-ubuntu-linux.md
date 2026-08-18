@@ -18,6 +18,7 @@ tags:
 aliases:
   - /post/99231293399/how-to-install-yosemite-and-ubuntu-linux
   - /2014/10/05/how-to-install-yosemite-and-ubuntu-linux.html
+  - /2014/10/05/how-to-install-yosemite-and-ubuntu-linux-side-by-side-with-full-disk-encryption/
 ---
 
 This weekend I spent a bit of time playing around with my old MacBook Pro. My goal was to set it up as a backup/test laptop. What I wanted to accomplish was the following:

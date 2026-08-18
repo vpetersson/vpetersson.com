@@ -10,6 +10,7 @@ tags:
 aliases:
   - /post/101437364464/how-to-get-bittorrent-sync-to-stop-syncing-finder
   - /2014/10/31/how-to-get-bittorrent-sync-to-stop-syncing-finder.html
+  - /2014/10/31/how-to-get-bittorrent-sync-to-stop-syncing-finder-meta-data/
 ---
 
 I really like [BitTorrent Sync](https://www.btsync.com/en/). It’s a great alternative to Dropbox et al, without having to hand over your unencrypted data to a third party.

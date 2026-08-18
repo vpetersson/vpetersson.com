@@ -13,6 +13,7 @@ aliases:
   - /2014/09/18/create-a-bootable-usb-drive-for-yosemite-the-easy.html
   - /2014/09/19/create-a-bootable-usb-drive-for-yosemite-the-easy.html
   - /2014/09/19/create-a-bootable-usb-drive-for-yosemite-the-easy/
+  - /2014/09/18/create-a-bootable-usb-drive-for-yosemite-the-easy-way/
 ---
 
 Today I decided to take Yosemite for a spin on my old laptop.

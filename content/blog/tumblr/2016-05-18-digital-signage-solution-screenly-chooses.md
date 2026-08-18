@@ -8,6 +8,7 @@ tags:
 aliases:
   - /post/144548958109/digital-signage-solution-screenly-chooses
   - /2016/05/18/digital-signage-solution-screenly-chooses.html
+  - /2016/05/18/digital-signage-solution-screenly-chooses-canonical-s-ubuntu-core/
 ---
 
 [Digital signage solution, Screenly, chooses Canonical’s Ubuntu Core](https://insights.ubuntu.com/2016/05/18/digital-signage-solution-screenly-chooses-canonicals-ubuntu-core/)
