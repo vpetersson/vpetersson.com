@@ -7,6 +7,7 @@ tags:
 aliases:
   - /post/92729921194/how-to-avoid-monthly-service-fees-with-wells-fargo-busin
   - /2010/08/03/how-to-avoid-monthly-service-fees-with-wells-fargo-busin.html
+  - /2010/08/03/how-to-avoid-monthly-service-fees-with-wells-fargo-business-and-personal/
 ---
 
 I will rant a bit about how pathetic the U.S. banks are, so if you don’t want to read about that, jump down to ‘End Rant.’

@@ -10,6 +10,7 @@ tags:
 aliases:
   - /post/108669415024/interview-with-viktor-petersson-vp-of-business
   - /2015/01/20/interview-with-viktor-petersson-vp-of-business.html
+  - /2015/01/20/interview-with-viktor-petersson-vp-of-business-development-for-iaas-provider/
 ---
 
 [Interview with Viktor Petersson, VP of Business Development for IAAS provider CloudSigma](http://blog.syncsort.com/2015/01/interview-viktor-petersson-vp-business-development-iaas-provider-cloudsigma/)

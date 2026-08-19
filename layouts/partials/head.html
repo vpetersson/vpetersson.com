@@ -2,6 +2,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  {{/* Icons. favicon.svg is the source of truth; the .ico and .png are raster
+       fallbacks generated from it by scripts/make-favicon.py. Without these the
+       site served a 404 for every /favicon.ico request. */}}
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
   {{/* Critical CSS inlined for fast FCP */}}
   {{ $critical := resources.Get "css/critical.css" }}
   {{ if hugo.IsProduction }}{{ $critical = $critical | minify }}{{ end }}

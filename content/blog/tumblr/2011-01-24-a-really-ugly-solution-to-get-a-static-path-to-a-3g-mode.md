@@ -8,6 +8,7 @@ tags:
 aliases:
   - /post/92729943404/a-really-ugly-solution-to-get-a-static-path-to-a-3g-mode
   - /2011/01/24/a-really-ugly-solution-to-get-a-static-path-to-a-3g-mode.html
+  - /2011/01/24/a-really-ugly-solution-to-get-a-static-path-to-a-3g-modem/
 ---
 
 This solution is so ugly that I felt that I had to post it =).

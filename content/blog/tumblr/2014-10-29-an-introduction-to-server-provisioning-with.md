@@ -11,6 +11,7 @@ tags:
 aliases:
   - /post/101267106239/an-introduction-to-server-provisioning-with
   - /2014/10/29/an-introduction-to-server-provisioning-with.html
+  - /2014/10/29/an-introduction-to-server-provisioning-with-cloudinit/
 ---
 
 [» An introduction to server provisioning with CloudInit](https://www.cloudsigma.com/2014/10/29/an-introduction-to-server-provisioning-with-cloudinit/)
