@@ -16,7 +16,7 @@ The other day my friend Chris pinged me on a [Twitter thread](https://x.com/vpet
 
 But it got me thinking. Everyone is talking about how AI is going to kill every industry. Anyone with a Claude subscription is apparently going to replace every SaaS tool they pay for with something they vibe coded themselves. It's a compelling story. We all like to think we can build something better than the incumbent. Now we have the tool.
 
-Don't get me wrong. I have been vocal about enshittification and how shitty much of the software world is. The more niche the vertical, the shittier the product. Historically you could get away with it, because of the moat of insights (and to some degree, resources).
+Don't get me wrong. I have been [vocal about enshittification](https://www.linkedin.com/pulse/enshittification-viktor-petersson-zovhe) and how shitty much of the software world is. The more niche the vertical, the shittier the product. Historically you could get away with it, because of the moat of insights (and to some degree, resources).
 
 So gather round, kids. Let me tell you about this exact thing.
 
