@@ -2,12 +2,15 @@
 slug: the-last-20-percent
 title: "The Last 20%"
 date: '2026-08-21T09:00:00Z'
+image: /assets/claude-replace-xero.png
 tags:
 - ai
 - entrepreneurship
 - startups
 - migration
 ---
+
+![A Claude prompt box reading "Hey Claude, build me a new accounting software to replace Xero. Don't make any mistakes."](/assets/claude-replace-xero.png)
 
 The other day my friend Chris pinged me on a [Twitter thread](https://x.com/vpetersson/status/2089637913709465773). Someone was making the case that digital signage is a huge industry selling bad products with high subscription fees, and that with a $40 e-ink ESP32 board you could just go build your own conference room signage with AI. Fair point. I'd add that the security posture across the industry is pretty terrible too.
 
