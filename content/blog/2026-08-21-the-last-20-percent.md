@@ -12,7 +12,7 @@ tags:
 
 ![A Claude prompt box reading "Hey Claude, build me a new accounting software to replace Xero. Don't make any mistakes."](/assets/claude-replace-xero.png)
 
-The other day my friend Chris pinged me on a [Twitter thread](https://x.com/vpetersson/status/2089637913709465773). Someone was making the case that digital signage is a huge industry selling bad products with high subscription fees, and that with a $40 e-ink ESP32 board you could just go build your own conference room signage with AI. Fair point. I'd add that the security posture across the industry is pretty terrible too.
+The other day my friend Chris pinged me on a [Twitter thread](https://x.com/vpetersson/status/2089637913709465773). [Todd Dailey](https://x.com/twid/status/2085407667556614259) was making the case that digital signage is a huge industry selling bad products with high subscription fees, and that with a $40 e-ink ESP32 board you could just go build your own conference room signage with AI. Fair point. I'd add that the security posture across the industry is pretty terrible too.
 
 But it got me thinking. Everyone is talking about how AI is going to kill every industry. Anyone with a Claude subscription is apparently going to replace every SaaS tool they pay for with something they vibe coded themselves. It's a compelling story. We all like to think we can build something better than the incumbent. Now we have the tool.
 
