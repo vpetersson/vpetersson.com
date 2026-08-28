@@ -8,6 +8,7 @@ tags:
 - os x
 aliases:
   - /post/100148585299/how-to-fix-kerneltask-cpu-usage-on-yosemite
+  - /post/100148585299/how-to-fix-kernel-task-cpu-usage-on-yosemite
   - /2017/12/21/2014-10-16-how-to-fix-kerneltask-cpu-usage-on-yosemite.html
   - /2014/10/16/how-to-fix-kerneltask-cpu-usage-on-yosemite.html
   - /2017/12/21/2014-10-16-how-to-fix-kerneltask-cpu-usage-on-yosemite/
