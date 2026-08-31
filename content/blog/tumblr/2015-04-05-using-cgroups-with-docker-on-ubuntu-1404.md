@@ -11,6 +11,7 @@ tags:
 - Ubuntu Linux
 aliases:
   - /post/115562026784/using-cgroups-with-docker-on-ubuntu-1404
+  - /post/115562026784/using-cgroups-with-docker-on-ubuntu-14-04
   - /2015/04/05/using-cgroups-with-docker-on-ubuntu-1404.html
 ---
 

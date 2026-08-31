@@ -12,7 +12,7 @@ aliases:
   - /2012/01/08/introducing-kiss-surveillance-the-dead-simple-surveillance-solution/
 ---
 
-You’ve probably already noticed that I’ve used [ZoneMinder](http://www.zoneminder.com/) a bit. I published a few [blog-posts](https://vpetersson.com/tag/zoneminder/) on how to set up ZoneMinder, and even posted full [virtual appliance](https://vpetersson.com/open-source/zoneminder-virtual-appliance/) for ZoneMinder.
+You’ve probably already noticed that I’ve used [ZoneMinder](http://www.zoneminder.com/) a bit. I published a few [blog-posts](https://vpetersson.com/tags/zoneminder/) on how to set up ZoneMinder, and even posted full [virtual appliance](https://vpetersson.com/open-source/zoneminder-virtual-appliance/) for ZoneMinder.
 
 The problem with ZoneMinder though, in my opinion, is that it is overkill for most users. Yes, it comes with some really cool features, but if all you want to do is to snap one image per second from an IP-camera for instance, it is way too complex. Don’t get me wrong, ZoneMinder is a great application if you have complicated surveillance needs. This just wasn’t my case.
 
