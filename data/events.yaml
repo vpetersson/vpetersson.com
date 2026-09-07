@@ -1,6 +1,11 @@
 ---
 - year: 2026
   events:
+    - type: talk
+      event: Nordic Software Security Summit Fall '26
+      location: Stockholm, Sweden
+      link: https://nsss.se/f2026/speakers/viktor-petersson/
+      upcoming: true
     - type: award
       event: Invidis Strategy Award 2026
       title: "Winner in the category Business Critical / Cybersecurity for Screenly"
