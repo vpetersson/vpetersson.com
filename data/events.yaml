@@ -6,6 +6,12 @@
       location: Stockholm, Sweden
       link: https://nsss.se/f2026/speakers/viktor-petersson/
       upcoming: true
+    - type: panel
+      event: "You're STILL not ready for the CRA"
+      location: London, UK
+      title: "Article 14 in practice"
+      link: https://www.iotsecurityfoundation.org/youre-still-not-ready-for-the-cra-8th-october-in-london-agenda-confirmed/
+      upcoming: true
     - type: award
       event: Invidis Strategy Award 2026
       title: "Winner in the category Business Critical / Cybersecurity for Screenly"
