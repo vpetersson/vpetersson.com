@@ -1,6 +1,7 @@
 {{ define "main" }}
 <div>
   {{ partial "hero-modern.html" . }}
+  {{ partial "speaking-highlight.html" . }}
   {{ partial "subscription-block.html" . }}
   <main id="latest-content">
     {{ partial "content-feed-native.html" (dict "limit" 8) }}

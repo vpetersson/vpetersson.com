@@ -208,6 +208,18 @@
   }
 }
 
+.about-events-note {
+  font-family: $font-body;
+  font-size: var(--font-size-sm);
+  color: rgba(214, 214, 214, 0.7);
+  margin-top: var(--space-6);
+
+  a {
+    color: $purple;
+    text-decoration: underline;
+  }
+}
+
 // ========================================
 // Year Dividers
 // ========================================
@@ -340,6 +352,12 @@
   color: #ef5dca;
   background: rgba(239, 93, 202, 0.1);
   border: 1px solid rgba(239, 93, 202, 0.3);
+}
+
+.event-pill-host {
+  color: #5de8ef;
+  background: rgba(93, 232, 239, 0.12);
+  border: 1px solid rgba(93, 232, 239, 0.3);
 }
 
 .event-pill-award {

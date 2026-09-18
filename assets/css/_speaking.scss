@@ -1,0 +1,290 @@
+// _speaking.scss — Speaking page and the homepage speaking band
+// stylelint-disable color-function-notation, color-function-alias-notation, alpha-value-notation
+
+// ========================================
+// Shared container
+// ========================================
+
+.speaking-container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-3);
+
+  @media (min-width: $breakpoint-sm) {
+    padding: var(--space-8) var(--space-4);
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    padding: var(--space-10) var(--space-8);
+  }
+}
+
+// ========================================
+// Intro + stats
+// ========================================
+
+.speaking-intro {
+  background-color: var(--color-gray-800);
+}
+
+.speaking-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  align-items: center;
+
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: 1.35fr 1fr;
+    gap: var(--space-8);
+  }
+}
+
+.speaking-lead {
+  font-family: $font-body;
+  font-size: var(--font-size-lg);
+  color: $text-primary;
+  line-height: 1.6;
+  margin-bottom: var(--space-3);
+}
+
+.speaking-lead-secondary {
+  font-family: $font-body;
+  font-size: var(--font-size-base);
+  color: rgba(214, 214, 214, 0.75);
+  line-height: 1.6;
+  margin-bottom: var(--space-4);
+}
+
+.speaking-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+
+  .cta-primary,
+  .cta-secondary {
+    padding: 0.875rem 1.75rem;
+    font-size: var(--font-size-base);
+  }
+}
+
+.speaking-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2);
+}
+
+.speaking-stat {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3) var(--space-2);
+  text-align: center;
+}
+
+.speaking-stat-number {
+  font-family: $font-display;
+  font-size: var(--font-size-2xl);
+  line-height: 1.1;
+  color: $purple;
+}
+
+.speaking-stat-label {
+  font-family: $font-body;
+  font-size: var(--font-size-xs);
+  color: rgba(214, 214, 214, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: rem(4px);
+}
+
+// ========================================
+// Sections
+// ========================================
+
+.speaking-upcoming-section {
+  background-color: $bg-primary;
+}
+
+.speaking-archive {
+  background-color: var(--color-gray-800);
+}
+
+.speaking-section-title {
+  font-family: $font-display;
+  font-size: var(--font-size-2xl);
+  color: $white;
+  text-transform: uppercase;
+  margin-bottom: var(--space-6);
+}
+
+.speaking-archive-note {
+  font-family: $font-body;
+  font-size: var(--font-size-sm);
+  color: rgba(214, 214, 214, 0.7);
+  margin-top: var(--space-6);
+
+  a {
+    color: $purple;
+    text-decoration: underline;
+  }
+}
+
+// ========================================
+// Homepage band
+// ========================================
+
+.speaking-highlight {
+  background-color: var(--color-gray-800);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.speaking-highlight-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+
+  @media (min-width: $breakpoint-sm) {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.speaking-highlight-title {
+  font-family: $font-display;
+  font-size: var(--font-size-2xl);
+  color: $white;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: rem(6px);
+}
+
+.speaking-highlight-subtitle {
+  font-family: $font-body;
+  font-size: var(--font-size-sm);
+  color: rgba(214, 214, 214, 0.7);
+  max-width: 60ch;
+  margin: 0;
+}
+
+.speaking-highlight-link {
+  display: inline-flex;
+  align-items: center;
+  gap: rem(6px);
+  flex-shrink: 0;
+  font-family: $font-body;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: $purple;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color var(--transition-fast);
+
+  &:hover {
+    color: $white;
+  }
+
+  svg {
+    transition: transform var(--transition-fast);
+  }
+
+  &:hover svg {
+    transform: translateX(3px);
+  }
+}
+
+// ========================================
+// Card grid
+// ========================================
+
+.speaking-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+
+  @media (min-width: $breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.speaking-card {
+  background: $bg-primary;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-fast);
+
+  &:hover {
+    transform: translateY(-3px);
+    border-color: rgba(93, 95, 239, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.speaking-card-upcoming {
+  border-color: rgba(34, 197, 94, 0.35);
+  background: linear-gradient(180deg, rgba(34, 197, 94, 0.06), transparent 60%), $bg-primary;
+}
+
+.speaking-card-pills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: var(--space-2);
+}
+
+.speaking-card-year {
+  margin-left: auto;
+  font-family: $font-body;
+  font-size: rem(12px);
+  color: rgba(214, 214, 214, 0.5);
+}
+
+.speaking-card-event {
+  font-family: $font-body;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: $white;
+  margin-bottom: rem(4px);
+}
+
+.speaking-card-location {
+  display: flex;
+  align-items: center;
+  gap: rem(5px);
+  font-family: $font-body;
+  font-size: var(--font-size-xs);
+  color: rgba(214, 214, 214, 0.6);
+  margin-bottom: rem(6px);
+
+  svg {
+    width: 13px;
+    height: 13px;
+    flex-shrink: 0;
+  }
+}
+
+.speaking-card-title {
+  font-family: $font-body;
+  font-size: var(--font-size-sm);
+  color: $text-primary;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.speaking-card-links {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: var(--space-2);
+}
