@@ -1,0 +1,54 @@
+{{/*
+  Derives the speaking subset of site.Data.events (talks, panels and hosting
+  gigs — not press, podcasts or guest posts) and returns it in a few shapes the
+  speaking page and the homepage highlight both need.
+
+  Returns a dict:
+    all        — flat slice of speaking events, each with a "year" key added
+    upcoming   — the ones flagged `upcoming: true`, in data order
+    past       — everything else, newest year first (data file is reverse-chron)
+    pastByYear — slice of {year, events} groups over `past`, empty years dropped
+    years      — how many distinct years have a speaking event
+    cities     — distinct city names ("Virtual" excluded)
+*/}}
+{{- $types := slice "talk" "panel" "host" -}}
+{{- $all := slice -}}
+{{- $upcoming := slice -}}
+{{- $past := slice -}}
+{{- $pastByYear := slice -}}
+{{- $years := 0 -}}
+
+{{- range site.Data.events -}}
+  {{- $year := .year -}}
+  {{- $yearPast := slice -}}
+  {{- $yearHasSpeaking := false -}}
+  {{- range .events -}}
+    {{- if in $types .type -}}
+      {{- $event := merge . (dict "year" $year) -}}
+      {{- $all = $all | append $event -}}
+      {{- $yearHasSpeaking = true -}}
+      {{- if .upcoming -}}
+        {{- $upcoming = $upcoming | append $event -}}
+      {{- else -}}
+        {{- $past = $past | append $event -}}
+        {{- $yearPast = $yearPast | append $event -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if $yearHasSpeaking -}}{{- $years = add $years 1 -}}{{- end -}}
+  {{- if $yearPast -}}
+    {{- $pastByYear = $pastByYear | append (dict "year" $year "events" $yearPast) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $cities := slice -}}
+{{- range $all -}}
+  {{- with .location -}}
+    {{- $city := index (split . ",") 0 | strings.TrimSpace -}}
+    {{- if and (ne $city "Virtual") (not (in $cities $city)) -}}
+      {{- $cities = $cities | append $city -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return (dict "all" $all "upcoming" $upcoming "past" $past "pastByYear" $pastByYear "years" $years "cities" $cities) -}}

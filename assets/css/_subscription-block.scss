@@ -71,6 +71,10 @@
   @include page-header('/assets/images/site/bg-home.webp');
 }
 
+.page-header-speaking {
+  @include page-header('/assets/images/site/bg-home.webp');
+}
+
 .page-header-podcast {
   @include page-header('/assets/images/site/bg-podcast.webp');
 }

@@ -1,0 +1,50 @@
+{{/*
+  One speaking engagement.
+  Context: dict with "event" (a map from "speaking-events.html") and "showYear"
+  — false where the surrounding markup already labels the year.
+*/}}
+{{- $e := .event -}}
+{{- $showYear := .showYear -}}
+<article class="speaking-card{{ if $e.upcoming }} speaking-card-upcoming{{ end }}">
+  <div class="speaking-card-pills">
+    <span class="event-pill event-pill-{{ $e.type | replaceRE ` ` `-` }}">{{ $e.type }}</span>
+    {{ if $e.upcoming }}<span class="event-pill event-pill-upcoming">Upcoming</span>{{ end }}
+    {{ if $showYear }}<span class="speaking-card-year">{{ $e.year }}</span>{{ end }}
+  </div>
+
+  <h3 class="speaking-card-event">{{ $e.event | default $e.publication }}</h3>
+
+  {{ with $e.location }}
+    <div class="speaking-card-location">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      {{ . }}
+    </div>
+  {{ end }}
+
+  {{ with $e.title }}<p class="speaking-card-title">{{ . | markdownify }}</p>{{ end }}
+
+  {{ if or $e.deck $e.video $e.youtube $e.link }}
+    <div class="speaking-card-links">
+      {{ with $e.deck }}
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="event-card-link" title="View deck">
+          <img src="/assets/images/site/deck.svg" alt="deck" width="16" height="16" />
+        </a>
+      {{ end }}
+      {{ with $e.video }}
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="event-card-link" title="Watch video">
+          <img src="/assets/images/site/video.svg" alt="video" width="16" height="16" />
+        </a>
+      {{ end }}
+      {{ with $e.youtube }}
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="event-card-link" title="Watch on YouTube">
+          <img src="/assets/images/site/podcast-youtube-dark.svg" alt="YouTube" width="16" height="16" />
+        </a>
+      {{ end }}
+      {{ with $e.link }}
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="event-card-link" title="Visit event page">
+          <img src="/assets/images/site/link.svg" alt="link" width="16" height="16" />
+        </a>
+      {{ end }}
+    </div>
+  {{ end }}
+</article>

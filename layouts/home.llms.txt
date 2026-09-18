@@ -14,7 +14,8 @@ A full-content version of this file is available at {{ "llms-full.txt" | absURL 
 
 ## Key Pages
 
-- [About]({{ "about/" | absURL }}): Background, experience, speaking engagements, and events
+- [About]({{ "about/" | absURL }}): Background, experience, press, and interviews
+- [Speaking]({{ "speaking/" | absURL }}): Conference talks, panels, and workshops, including upcoming engagements
 - [Projects]({{ "projects/" | absURL }}): Current and past projects including Screenly, Anthias, and open-source work
 - [Consulting]({{ "consulting/" | absURL }}): DevSecOps and software supply chain security consulting services
 - [Reading Log]({{ "reading-log/" | absURL }}): Books read by year

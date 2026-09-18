@@ -1,0 +1,77 @@
+{{ define "main" }}
+{{ $speaking := partial "speaking-events.html" . }}
+
+{{ partial "page-header.html" (dict "title" "Speaking") }}
+
+{{/* ===== Intro + stats ===== */}}
+<div class="speaking-intro">
+  <div class="speaking-container">
+    <div class="speaking-intro-grid">
+      <div>
+        <p class="speaking-lead">
+          I speak at conferences and industry events about software supply chain security — SBOMs, the EU Cyber Resilience Act, DevSecOps, and what it actually takes to ship secure software. The material comes out of running Screenly and sbomify, and out of co-leading one of CISA's SBOM tiger teams.
+        </p>
+        <p class="speaking-lead-secondary">
+          Keynotes, conference talks, workshops and panels — plus the occasional stint as MC. If you're putting a programme together and one of those would be useful, get in touch.
+        </p>
+        <div class="speaking-cta">
+          <a href="mailto:info@viktopia.io?subject=Speaking%20enquiry" class="cta-primary">Invite me to speak</a>
+          <a href="/about/" class="cta-secondary">Press &amp; interviews</a>
+        </div>
+      </div>
+
+      <div class="speaking-stats">
+        <div class="speaking-stat">
+          <div class="speaking-stat-number">{{ len $speaking.all }}</div>
+          <div class="speaking-stat-label">Talks &amp; Panels</div>
+        </div>
+        <div class="speaking-stat">
+          <div class="speaking-stat-number">{{ len $speaking.cities }}</div>
+          <div class="speaking-stat-label">Cities</div>
+        </div>
+        <div class="speaking-stat">
+          <div class="speaking-stat-number">{{ $speaking.years }}</div>
+          <div class="speaking-stat-label">Years on Stage</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{/* ===== Upcoming ===== */}}
+{{ with $speaking.upcoming }}
+<div class="speaking-upcoming-section">
+  <div class="speaking-container">
+    <h2 class="speaking-section-title">Where to find me next</h2>
+    <div class="speaking-grid">
+      {{ range . }}{{ partial "speaking-card.html" (dict "event" . "showYear" true) }}{{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{/* ===== Archive ===== */}}
+<div class="speaking-archive">
+  <div class="speaking-container">
+    <h2 class="speaking-section-title">Previous appearances</h2>
+
+    {{ range $speaking.pastByYear }}
+      <div class="events-year-group">
+        <div class="events-year-divider">
+          <span class="events-year-label">{{ .year }}</span>
+          <span class="events-year-line"></span>
+        </div>
+        <div class="speaking-grid">
+          {{ range .events }}{{ partial "speaking-card.html" (dict "event" . "showYear" false) }}{{ end }}
+        </div>
+      </div>
+    {{ end }}
+
+    <p class="speaking-archive-note">
+      Looking for press coverage, interviews and podcast appearances instead? Those live on the <a href="/about/">about page</a>.
+    </p>
+  </div>
+</div>
+
+{{ partial "subscription-block.html" (dict "no_bg" true) }}
+{{ end }}

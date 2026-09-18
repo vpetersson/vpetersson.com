@@ -1,0 +1,38 @@
+{{/*
+  Homepage speaking band. Leads with confirmed upcoming engagements and tops the
+  row up with the most recent past ones, so the section never renders empty or
+  half-full between conference seasons.
+*/}}
+{{- $speaking := partial "speaking-events.html" . -}}
+{{- $featured := $speaking.upcoming -}}
+{{- $hasUpcoming := gt (len $featured) 0 -}}
+{{- if lt (len $featured) 3 -}}
+  {{- $featured = $featured | append (first (sub 3 (len $featured)) $speaking.past) -}}
+{{- end -}}
+
+{{- with $featured -}}
+<section class="speaking-highlight" aria-labelledby="speaking-highlight-title">
+  <div class="speaking-container">
+    <header class="speaking-highlight-header">
+      <div>
+        <h2 class="speaking-highlight-title" id="speaking-highlight-title">
+          {{ if $hasUpcoming }}Catch me speaking{{ else }}Speaking &amp; events{{ end }}
+        </h2>
+        <p class="speaking-highlight-subtitle">
+          Conference talks and panels on SBOMs, the Cyber Resilience Act, and securing the software supply chain
+        </p>
+      </div>
+      <a href="/speaking/" class="speaking-highlight-link">
+        All speaking
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M4 8h8M8 4l4 4-4 4"/>
+        </svg>
+      </a>
+    </header>
+
+    <div class="speaking-grid">
+      {{ range . }}{{ partial "speaking-card.html" (dict "event" . "showYear" true) }}{{ end }}
+    </div>
+  </div>
+</section>
+{{- end -}}
