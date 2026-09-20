@@ -12,10 +12,10 @@
       title: "Article 14 in practice"
       link: https://www.iotsecurityfoundation.org/youre-still-not-ready-for-the-cra-8th-october-in-london-agenda-confirmed/
       upcoming: true
-    - type: panel
+    - type: host
       event: 44CON
       location: London, UK
-      title: "Being a CISO in 2026 - panel with Wendy Nather"
+      title: "Fireside chat with Wendy Nather on being a CISO in 2026"
       link: https://44con.com/44con-2026-schedule/
     - type: host
       event: 44CON
