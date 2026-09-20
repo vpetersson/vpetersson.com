@@ -1,23 +1,16 @@
 {{/*
-  Homepage speaking band. Leads with confirmed upcoming engagements and tops the
-  row up with the most recent past ones, so the section never renders empty or
-  half-full between conference seasons.
+  Homepage speaking band. Confirmed upcoming engagements only — nothing already
+  in the past gets promoted here, so the section drops off the homepage entirely
+  when there is nothing on the calendar.
 */}}
 {{- $speaking := partial "speaking-events.html" . -}}
-{{- $featured := $speaking.upcoming -}}
-{{- $hasUpcoming := gt (len $featured) 0 -}}
-{{- if lt (len $featured) 3 -}}
-  {{- $featured = $featured | append (first (sub 3 (len $featured)) $speaking.past) -}}
-{{- end -}}
 
-{{- with $featured -}}
+{{- with $speaking.upcoming -}}
 <section class="speaking-highlight" aria-labelledby="speaking-highlight-title">
   <div class="speaking-container">
     <header class="speaking-highlight-header">
       <div>
-        <h2 class="speaking-highlight-title" id="speaking-highlight-title">
-          {{ if $hasUpcoming }}Catch me speaking{{ else }}Speaking &amp; events{{ end }}
-        </h2>
+        <h2 class="speaking-highlight-title" id="speaking-highlight-title">Catch me speaking</h2>
         <p class="speaking-highlight-subtitle">
           Conference talks and panels on SBOMs, the Cyber Resilience Act, and securing the software supply chain
         </p>
