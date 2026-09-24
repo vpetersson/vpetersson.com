@@ -12,8 +12,6 @@ tags:
 - open-source
 ---
 
-![Agent IAP's approval prompt in the terminal, asking whether the agent arm64-claude may GET /v1/stt on xai, with "1 hour" and the narrowest scope selected](/assets/agent-iap-approval-prompt.webp)
-
 These days I run all my agents in ephemeral VMs on a dedicated VLAN, managed with Terraform and Ansible on top of [Proxmox](/2026/05/14/proxmox-imgctl/). Each VM runs Claude Code and Codex, talks to a dedicated GitHub account that only the agents use, and signs its commits with its own SSH key. I orchestrate the whole thing through [Multica](https://multica.ai), which lets me manage agents a bit like a Kanban board. Queue up a task, review the findings, move on.
 
 The reason I'm comfortable letting that run unattended is that there's nothing on that VLAN worth stealing. No API keys, no secrets, nothing. If an agent goes off the rails or swallows a prompt injection, the blast radius is a throwaway VM and a repo I can revert.
@@ -32,39 +30,26 @@ So I built [Agent IAP](https://github.com/vpetersson/agent-iap) instead. It's an
 4. Once I approve it, the proxy strips the agent's token, attaches the real credential and forwards the call. The credential never goes anywhere near the agent. That's the 1Password part.
 5. Every decision gets written to a hash-chained audit log that names the agent and the rule that let it through.
 
-It works with both plain APIs and MCP servers. Enrolling PostHog takes one command, and pointing an agent at it takes another. The key itself stays in 1Password, and the policy file only holds a pointer to it:
+It works with both plain APIs and MCP servers. Enrolling a service takes one command, and pointing an agent at it takes another. The key itself stays in 1Password, and the policy file only holds a pointer to it:
 
 ```bash
-agent-iap upstream add posthog --profile posthog \
-    --secret "op://Private/PostHog/credential" --var region=eu
-agent-iap agent add claude-code --target posthog
+agent-iap upstream add xai --profile xai \
+    --secret "op://Private/xAI/credential"
+agent-iap agent add arm64-claude --target xai
 ```
 
-The agent then calls PostHog through the proxy using its own token:
+The agent then calls xAI through the proxy using its own token:
 
 ```bash
 curl -H "Authorization: Bearer $IAP_TOKEN" \
-    http://127.0.0.1:8080/posthog/api/projects/
+    http://127.0.0.1:8080/xai/v1/stt
 ```
 
 No rule allows that yet, so the call stops at my terminal:
 
-```
-┌ Claude Code is asking ───────────────────────────────────────┐
-│  Claude Code  (claude-code)                                  │
-│  wants to GET /api/projects/ on posthog                      │
-│                                                              │
-│    Once   5 min   1 hour   1 day   Until quit   From now on  │
-│                                                              │
-│      ( ) anything on posthog                                 │
-│      ( ) → GET on posthog                                    │
-│      (•) → GET /api/projects/ on posthog                     │
-│                                                              │
-│       d  Deny     a  Allow     esc  leave it waiting         │
-└──────────────────────────────────────────────── waiting 4s ──┘
-```
+![Agent IAP's approval prompt in the terminal, asking whether the agent arm64-claude may GET /v1/stt on xai, with "1 hour" and the narrowest scope selected](/assets/agent-iap-approval-prompt.webp)
 
-You pick how long and how broad, and your answer becomes the rule. Picking "5 min" writes an ACL rule with a deadline on it, and once that lapses the next call asks again. A parked request rings the terminal bell, and one that nobody gets around to answering is denied.
+You pick how long and how broad, and your answer becomes the rule. Picking "1 hour" there writes an ACL rule with a deadline on it, and once that lapses the next call asks again. A parked request rings the terminal bell, and one that nobody gets around to answering is denied.
 
 Or you can skip the curl entirely and just hand the agent the proxy as an MCP server, in which case it discovers what it's allowed to reach on its own.
 
@@ -90,7 +75,7 @@ Where the upstream lets you scope the key itself, do that as well. An xAI key, f
 
 This is also how human approval manages to coexist with unattended agents. Standing rules keep the routine work flowing while I'm asleep or away, and the prompts are reserved for the calls I'd want to be interrupted for anyway.
 
-There are around 50 built-in profiles at the moment, covering Google, Cloudflare, PostHog, Sentry, GitHub and Stripe among others. A profile knows the base URL, the auth scheme and a set of sensible access levels. Do however note that enrolling a service grants nothing on its own. The first call still stops at your terminal.
+There are around 50 built-in profiles at the moment, covering Google, Cloudflare, PostHog, Sentry, GitHub and Stripe among others. A profile knows the base URL, the auth scheme and a set of sensible access levels, and anything that's yours rather than the vendor's goes in as a `--var` (`--var region=eu` for PostHog, say, or a hostname for a self-hosted Sentry). Do however note that enrolling a service grants nothing on its own. The first call still stops at your terminal.
 
 ## Why not just use...
 
