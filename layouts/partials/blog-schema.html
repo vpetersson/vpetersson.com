@@ -28,7 +28,7 @@
   },
   "image": {
     "@type": "ImageObject",
-    "url": "{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ site.Data.main.social.image | absURL }}{{ end }}"
+    "url": "{{ $i := .Params.image | default site.Data.main.social.image }}{{ $r := resources.Get (strings.TrimPrefix "/assets/" $i) }}{{ with $r }}{{ (resources.Copy $i .).Permalink }}{{ else }}{{ $i | absURL }}{{ end }}"
   },
   "inLanguage": "en",
   "wordCount": "{{ .WordCount }}",
