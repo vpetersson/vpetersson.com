@@ -82,7 +82,7 @@
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:title" content="{{ .Title }}">
   <meta property="og:description" content="{{ $description }}">
-  <meta property="og:image" content="{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ site.Data.main.social.image | absURL }}{{ end }}">
+  <meta property="og:image" content="{{ $i := .Params.image | default site.Data.main.social.image }}{{ $r := resources.Get (strings.TrimPrefix "/assets/" $i) }}{{ with $r }}{{ (resources.Copy $i .).Permalink }}{{ else }}{{ $i | absURL }}{{ end }}">
 
   <!-- LinkedIn -->
   <meta property="og:site_name" content="{{ site.Title }}">
@@ -97,7 +97,7 @@
   <meta name="twitter:creator" content="@{{ site.Data.main.social.twitter }}">
   <meta name="twitter:title" content="{{ .Title }}">
   <meta name="twitter:description" content="{{ $description }}">
-  <meta name="twitter:image" content="{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ site.Data.main.social.image | absURL }}{{ end }}">
+  <meta name="twitter:image" content="{{ $i := .Params.image | default site.Data.main.social.image }}{{ $r := resources.Get (strings.TrimPrefix "/assets/" $i) }}{{ with $r }}{{ (resources.Copy $i .).Permalink }}{{ else }}{{ $i | absURL }}{{ end }}">
 
   <!-- Social Profile Links -->
   <link rel="me" href="{{ site.Data.main.social.github }}">
