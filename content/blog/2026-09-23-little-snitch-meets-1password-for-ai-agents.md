@@ -2,6 +2,7 @@
 slug: little-snitch-meets-1password-for-ai-agents
 title: "Introducing Agent IAP - Little Snitch meets 1Password for AI agents"
 date: '2026-09-23T10:00:00Z'
+image: /assets/agent-iap-approval-prompt.webp
 tags:
 - ai
 - security
@@ -10,6 +11,8 @@ tags:
 - 1password
 - open-source
 ---
+
+![Agent IAP's approval prompt in the terminal, asking whether the agent arm64-claude may GET /v1/stt on xai, with "1 hour" and the narrowest scope selected](/assets/agent-iap-approval-prompt.webp)
 
 These days I run all my agents in ephemeral VMs on a dedicated VLAN, managed with Terraform and Ansible on top of [Proxmox](/2026/05/14/proxmox-imgctl/). Each VM runs Claude Code and Codex, talks to a dedicated GitHub account that only the agents use, and signs its commits with its own SSH key. I orchestrate the whole thing through [Multica](https://multica.ai), which lets me manage agents a bit like a Kanban board. Queue up a task, review the findings, move on.
 
