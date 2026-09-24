@@ -71,9 +71,15 @@ So the defaults push the other way. The cursor starts on the narrowest scope and
 
 Not every credential deserves the same treatment.
 
-Low-stakes credentials, like a read-only service account for Google Analytics or PostHog, can be permanently available to every agent. No prompts, no friction.
+Low-stakes credentials, like a read-only service account for Google Analytics or PostHog, can be permanently available to every agent. No prompts, no friction. That covers most of what an agent actually does all day.
 
-Anything that can burn money gets locked down. Take xAI: one key covers text, image, and video generation. The built-in xAI profile only allows text by default. Image and video generation cost per asset, so enabling them is something a human does deliberately.
+Everything else gets granted deliberately. Three things make a call worth thinking about, and none of them are legible from the URL:
+
+- **It writes.** Sentry's `triage` level allows every read and exactly one write: the PUT that resolves, ignores, or assigns an issue. That's the whole job of an agent watching errors. The same credential doesn't also get to edit projects, alert rules, and members, and DELETE is denied outright rather than prompted.
+- **It burns tokens or credits.** DataForSEO bills per call, and its `live` endpoints cost more than the queued ones. Nothing in the method or the path says so, and an agent has no way to know. The default level allows the queued endpoints and makes `live` ask. Semrush's MCP server is the same shape, except there the expensive call has a name you can write a rule against: `execute_report`.
+- **It's destructive.** Cloudflare's `ask-writes` allows GET, denies DELETE outright, and parks everything else for a human. An ACL can't tell a reasonable POST from one that takes a zone offline.
+
+Where the upstream already lets you scope a key, do that as well. An xAI key, for instance, carries its own allow-list of endpoints and models, chosen in the console when you mint it and checked before the proxy's policy is ever consulted. The ACL narrows what's left of it. It can never widen it.
 
 This is also how human approval coexists with unattended agents. Standing rules keep routine work flowing while you're away. Prompts are reserved for the calls where you'd want to be interrupted anyway.
 
