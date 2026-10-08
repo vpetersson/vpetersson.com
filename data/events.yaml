@@ -11,7 +11,6 @@
       location: London, UK
       title: "Article 14 in practice"
       link: https://www.iotsecurityfoundation.org/youre-still-not-ready-for-the-cra-8th-october-in-london-agenda-confirmed/
-      upcoming: true
     - type: host
       event: 44CON
       location: London, UK
@@ -37,6 +36,10 @@
       title: "From Chaos to Clarity: Modern SBOM Practices That Actually Work"
       link: https://qconlondon.com/presentation/mar2026/chaos-clarity-modern-sbom-practices-actually-work
       deck: /presentations/2026/QCon-2026.pdf
+    - type: podcast
+      publication: Founder Mode
+      title: "Cage or Release Your Agents? With Viktor Petersson & Alex Finn"
+      youtube: https://www.youtube.com/watch?v=z_uit225IlY
     - type: podcast
       publication: InfoQ
       title: "How SBOMs and Engineering Discipline Can Help You"
