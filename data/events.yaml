@@ -1,158 +1,192 @@
 ---
+# Years are listed newest first, and so are the events within each year.
+#
+# `date` is an optional ISO-8601 string: "YYYY-MM-DD" when the exact day is
+# known, "YYYY-MM" when only the month is. Quote it so Hugo keeps it a string —
+# the about page sorts on it lexicographically. Entries without a `date` sort
+# after the dated ones in their year, in file order.
 - year: 2026
   events:
     - type: talk
       event: Nordic Software Security Summit Fall '26
       location: Stockholm, Sweden
+      date: "2026-11-04"
       link: https://nsss.se/f2026/speakers/viktor-petersson/
       upcoming: true
     - type: panel
       event: "You're STILL not ready for the CRA"
       location: London, UK
       title: "Article 14 in practice"
+      date: "2026-10-08"
       link: https://www.iotsecurityfoundation.org/youre-still-not-ready-for-the-cra-8th-october-in-london-agenda-confirmed/
+    - type: podcast
+      publication: Founder Mode
+      title: "Cage or Release Your Agents? With Viktor Petersson & Alex Finn"
+      date: "2026-10-08"
+      youtube: https://www.youtube.com/watch?v=z_uit225IlY
     - type: host
       event: 44CON
       location: London, UK
       title: "Fireside chat with Wendy Nather on being a CISO in 2026"
+      date: "2026-09"
       link: https://44con.com/44con-2026-schedule/
     - type: host
       event: 44CON
       location: London, UK
       title: "MC for Hacker Jeopardy"
+      date: "2026-09"
       link: https://44con.com/44con-2026-schedule/
-    - type: award
-      event: Invidis Strategy Award 2026
-      title: "Winner in the category Business Critical / Cybersecurity for Screenly"
-      link: https://invidis.com/news/2026/05/invidis-strategy-awards-2026-the-winners-of-2026/
-    - type: talk
-      event: FOSDEM
-      location: Brussels, Belgium
-      title: "CRA-Ready SBOMs: A Practical Blueprint for High-Quality Generation"
-      video: https://video.fosdem.org/2026/ud2208/UYTGWA-sbom-generation.av1.webm
-    - type: talk
-      event: QCon London
-      location: London, UK
-      title: "From Chaos to Clarity: Modern SBOM Practices That Actually Work"
-      link: https://qconlondon.com/presentation/mar2026/chaos-clarity-modern-sbom-practices-actually-work
-      deck: /presentations/2026/QCon-2026.pdf
-    - type: podcast
-      publication: Founder Mode
-      title: "Cage or Release Your Agents? With Viktor Petersson & Alex Finn"
-      youtube: https://www.youtube.com/watch?v=z_uit225IlY
-    - type: podcast
-      publication: InfoQ
-      title: "How SBOMs and Engineering Discipline Can Help You"
-      spotify: https://open.spotify.com/episode/5wzJM6Sk3ZRbvC8sfmFBPb
-      youtube: https://www.youtube.com/watch?v=thfUpenosBs
-      apple: https://podcasts.apple.com/gb/podcast/how-sboms-and-engineering-discipline-can-help-you/id1106971805?i=1000761075185
-    - type: podcast
-      publication: Risk First
-      title: "Risk-First: Stars of Software #7 - Viktor Petersson"
-      spotify: https://open.spotify.com/episode/1p7whQIKc1Rf7NyDBf2Ruc
-      apple: https://podcasts.apple.com/us/podcast/risk-first-stars-of-software-7-viktor-petersson/id1877357373?i=1000763545244
-      youtube: https://www.youtube.com/watch?v=rF9PwuQFkgQ
-    - type: press
-      publication: InfoQ
-      title: "QCon London 2026: SBOMs Move from Best Practice to Legal Obligation as CRA Enforcement Looms"
-      link: https://www.infoq.com/news/2026/03/sbom-viktor-petersson/
-    - type: press
-      publication: RedMonk
-      title: "AI Slop & the Vulnerability Treadmill"
-      link: https://redmonk.com/kholterhoff/2026/05/05/ai-slop-vulnerability-treadmill/
-    - type: press
-      publication: InfoQ
-      title: "Leading Open Source Author Calls for Verification over Trust in Software Supply Chains"
-      link: https://www.infoq.com/news/2026/05/stenberg-curl-verification-trust/
-    - type: panel
-      event: Digital Signage Summit Europe
-      location: Munich, Germany
-      title: "Cybersecurity in Digital Signage - Unpatched, Unsecured, Unprotected"
-      link: https://digitalsignagesummit.org/newfront/sessions/1897
     - type: panel
       event: Digital Signage Summit Europe
       location: Munich, Germany
       title: "AI Spotlight"
+      date: "2026-05-21"
       link: https://digitalsignagesummit.org/newfront/sessions/1894
     - type: panel
       event: Digital Signage Summit Europe
       location: Munich, Germany
       title: "Security Reality Check: 90% of Signage Software Is Not Secure"
+      date: "2026-05-21"
       link: https://digitalsignagesummit.org/newfront/sessions/2016
+    - type: panel
+      event: Digital Signage Summit Europe
+      location: Munich, Germany
+      title: "Cybersecurity in Digital Signage - Unpatched, Unsecured, Unprotected"
+      date: "2026-05-20"
+      link: https://digitalsignagesummit.org/newfront/sessions/1897
+    - type: press
+      publication: InfoQ
+      title: "Leading Open Source Author Calls for Verification over Trust in Software Supply Chains"
+      date: "2026-05-07"
+      link: https://www.infoq.com/news/2026/05/stenberg-curl-verification-trust/
+    - type: press
+      publication: RedMonk
+      title: "AI Slop & the Vulnerability Treadmill"
+      date: "2026-05-05"
+      link: https://redmonk.com/kholterhoff/2026/05/05/ai-slop-vulnerability-treadmill/
+    - type: award
+      event: Invidis Strategy Award 2026
+      title: "Winner in the category Business Critical / Cybersecurity for Screenly"
+      date: "2026-05"
+      link: https://invidis.com/news/2026/05/invidis-strategy-awards-2026-the-winners-of-2026/
+    - type: podcast
+      publication: Risk First
+      title: "Risk-First: Stars of Software #7 - Viktor Petersson"
+      date: "2026-04-25"
+      spotify: https://open.spotify.com/episode/1p7whQIKc1Rf7NyDBf2Ruc
+      apple: https://podcasts.apple.com/us/podcast/risk-first-stars-of-software-7-viktor-petersson/id1877357373?i=1000763545244
+      youtube: https://www.youtube.com/watch?v=rF9PwuQFkgQ
+    - type: podcast
+      publication: InfoQ
+      title: "How SBOMs and Engineering Discipline Can Help You"
+      date: "2026-04-13"
+      spotify: https://open.spotify.com/episode/5wzJM6Sk3ZRbvC8sfmFBPb
+      youtube: https://www.youtube.com/watch?v=thfUpenosBs
+      apple: https://podcasts.apple.com/gb/podcast/how-sboms-and-engineering-discipline-can-help-you/id1106971805?i=1000761075185
+    - type: press
+      publication: InfoQ
+      title: "QCon London 2026: SBOMs Move from Best Practice to Legal Obligation as CRA Enforcement Looms"
+      date: "2026-03-18"
+      link: https://www.infoq.com/news/2026/03/sbom-viktor-petersson/
+    - type: talk
+      event: QCon London
+      location: London, UK
+      title: "From Chaos to Clarity: Modern SBOM Practices That Actually Work"
+      date: "2026-03-17"
+      link: https://qconlondon.com/presentation/mar2026/chaos-clarity-modern-sbom-practices-actually-work
+      deck: /presentations/2026/QCon-2026.pdf
+    - type: talk
+      event: FOSDEM
+      location: Brussels, Belgium
+      title: "CRA-Ready SBOMs: A Practical Blueprint for High-Quality Generation"
+      date: "2026-02-01"
+      video: https://video.fosdem.org/2026/ud2208/UYTGWA-sbom-generation.av1.webm
 
 - year: 2025
   events:
-    - type: podcast
-      publication: System76 Transmission Log
-      title: "Linux Hardware, Open Source Summit, and a chat with Screenly"
-      spotify: https://open.spotify.com/episode/7w3q7K75vSukYJFN8XWMsC
+    - type: talk
+      event: Dependency Track Community Meeting
+      title: "sbomify @ Dependency Track Community Meeting (2025-11-05)"
+      date: "2025-11-05"
+      youtube: https://www.youtube.com/watch?v=-mushNOtEPM
+    - type: guest post
+      publication: "Sixteen:Nine"
+      title: "Op-Ed: The Dirty Secret About Compliance And Digital Signage Security"
+      date: "2025-08-23"
+      link: https://www.sixteen-nine.net/2025/08/23/op-ed-the-dirty-secret-about-compliance-and-digital-signage-security/
     - type: panel
       event: Digital Signage Summit Europe
       location: Munich, Germany
       title: "AI & Trust / Cybersecurity / Challenges"
+      date: "2025-05"
       link: https://digitalsignagesummit.org/newfront/sessions/560
     - type: podcast
       publication: Founder Mode
       title: "Remote Boundaries – Saying No Without Burning Bridges with Viktor Petersson"
+      date: "2025-04-29"
       youtube: https://www.youtube.com/watch?v=EaHqs_WCvfU
     - type: talk
       event: DevOps Exchange
       location: London, UK
       title: "Securing Your Software Supply Chain: Why SBOMs Are Essential for DevOps and Compliance"
+      date: "2025-04"
       youtube: https://www.youtube.com/watch?v=O0Xmoxtd0-w
-    - type: guest post
-      publication: "Sixteen:Nine"
-      title: "Op-Ed: The Dirty Secret About Compliance And Digital Signage Security"
-      link: https://www.sixteen-nine.net/2025/08/23/op-ed-the-dirty-secret-about-compliance-and-digital-signage-security/
-    - type: talk
-      event: Dependency Track Community Meeting
-      title: "sbomify @ Dependency Track Community Meeting (2025-11-05)"
-      youtube: https://www.youtube.com/watch?v=-mushNOtEPM
+    - type: podcast
+      publication: System76 Transmission Log
+      title: "Linux Hardware, Open Source Summit, and a chat with Screenly"
+      spotify: https://open.spotify.com/episode/7w3q7K75vSukYJFN8XWMsC
 
 - year: 2024
   events:
+    - type: press
+      publication: EE Times Europe Magazine
+      title: "Cybersecurity Legislation Driving SBOMs"
+      date: "2024-11-25"
+      link: https://www.eetimes.com/cybersecurity-legislation-driving-sboms/
     - type: talk
-      event: State of Open Con
-      location: London, UK
-      title: "Screenly's Journey: Raspberry Pi to x86, BIOS, Coreboot, RISC-V"
-      deck: https://speakerdeck.com/vpetersson/state-of-open-con-24
-      youtube: https://www.youtube.com/watch?v=vX-qK9mxKZI
+      event: "CycloneDX / Transparency Exchange API (TEA)'s KoalaCon"
+      date: "2024-11-13"
+      youtube: https://www.youtube.com/watch?v=NStzYW4WnEE
+    - type: press
+      publication: TechTarget
+      title: "U.S. Army, Lockheed Martin detail SBOM progress"
+      date: "2024-09-24"
+      link: https://www.techtarget.com/searchitoperations/feature/366611692/US-Army-Lockheed-Martin-detail-SBOM-progress
+    - type: press
+      publication: InfoQ
+      title: "New Platform sbomify Streamlines Making Software Inventories for SBOMs"
+      date: "2024-09-19"
+      link: "https://www.infoq.com/news/2024/09/sbomify-inventories-sboms/"
+    - type: talk
+      event: SBOM-a-Rama
+      location: Denver, US
+      date: "2024-09-11"
+      deck: /presentations/2024/sbom-a-rama.pdf
+      link: https://www.cisa.gov/news-events/events/sbom-rama-fall-2024
     - type: talk
       event: BSides
       location: Bristol, UK
       title: "Navigating The SBOM Landscape: Formats, Relevance, And Tooling In 2024"
+      date: "2024-08-30"
       deck: https://speakerdeck.com/vpetersson/navigating-the-sbom-landscape-formats-relevance-and-tooling-in-2024-at-bsides-bristol-24
       youtube: https://www.youtube.com/watch?v=XcNepd1A7Ek
     - type: talk
-      event: SBOM-a-Rama
-      location: Denver, US
-      deck: /presentations/2024/sbom-a-rama.pdf
-      link: https://www.cisa.gov/news-events/events/sbom-rama-fall-2024
-    - type: press
-      publication: InfoQ
-      title: "New Platform sbomify Streamlines Making Software Inventories for SBOMs"
-      link: "https://www.infoq.com/news/2024/09/sbomify-inventories-sboms/"
+      event: State of Open Con
+      location: London, UK
+      title: "Screenly's Journey: Raspberry Pi to x86, BIOS, Coreboot, RISC-V"
+      date: "2024-02-06"
+      deck: https://speakerdeck.com/vpetersson/state-of-open-con-24
+      youtube: https://www.youtube.com/watch?v=vX-qK9mxKZI
     - type: talk
       event: "London DevOps #85"
       location: London, UK
       title: "The Essential Role of SBOMs"
       deck: /presentations/2024/london_devops_85.pdf
       youtube: https://www.youtube.com/watch?v=AHwLGAeh2ts
-    - type: press
-      publication: TechTarget
-      title: "U.S. Army, Lockheed Martin detail SBOM progress"
-      link: https://www.techtarget.com/searchitoperations/feature/366611692/US-Army-Lockheed-Martin-detail-SBOM-progress
     - type: talk
       event: Canonical (Ubuntu) Engineering Sprint
       location: The Hague, Netherlands
       youtube: https://www.youtube.com/watch?v=5mlR1lPz1no
-    - type: press
-      publication: EE Times Europe Magazine
-      title: "Cybersecurity Legislation Driving SBOMs"
-      link: https://www.eetimes.com/cybersecurity-legislation-driving-sboms/
-    - type: talk
-      event: "CycloneDX / Transparency Exchange API (TEA)'s KoalaCon"
-      youtube: https://www.youtube.com/watch?v=NStzYW4WnEE
 
 - year: 2023
   events:
@@ -160,8 +194,14 @@
       event: Ubuntu Summit
       location: Riga, Latvia
       title: "From Pets to Cattle: Revolutionizing Edge Computing with Screenly's Edge Apps"
+      date: "2023-11-03"
       deck: https://speakerdeck.com/vpetersson/from-pets-to-cattle
       youtube: https://www.youtube.com/watch?v=oeIkJD3cTtw
+    - type: press
+      publication: TechCrunch
+      title: "Screenly makes it easier to build interactive apps for its digital signage platform"
+      date: "2023-08-30"
+      link: https://techcrunch.com/2023/08/30/screenly-makes-it-easier-to-build-interactive-apps-for-its-digital-signage-platform/
     - type: talk
       event: "#QSRNext"
       location: Virtual
@@ -176,21 +216,19 @@
       publication: Default Global
       title: "Powering 10K Screens Worldwide: The Screenly Journey with Viktor Petersson"
       link: https://www.youtube.com/watch?v=xUi7R_pBc8g
-    - type: press
-      publication: TechCrunch
-      title: "Screenly makes it easier to build interactive apps for its digital signage platform"
-      link: https://techcrunch.com/2023/08/30/screenly-makes-it-easier-to-build-interactive-apps-for-its-digital-signage-platform/
 
 - year: 2022
   events:
     - type: press
       publication: The Register
       title: "Strong support for Snap and Ubuntu Core as Canonical meet IRL"
+      date: "2022-11-09"
       link: https://www.theregister.com/2022/11/09/canonical_conference/
     - type: talk
       event: Ubuntu Summit
       location: Prague, Czech Republic
       title: "Five Years of Ubuntu Core"
+      date: "2022-11-07"
       youtube: https://www.youtube.com/watch?v=fVkDqJzXKa0
       link: https://www.screenly.io/blog/2022/11/29/five-years-of-ubuntu-core/
 
@@ -199,110 +237,128 @@
     - type: guest post
       publication: Docker
       title: "Compiling Qt with Docker Using Caching"
+      date: "2021-02-23"
       link: https://www.docker.com/blog/compiling-qt-with-docker-using-caching/
 
 - year: 2020
   events:
+    - type: guest post
+      publication: Docker
+      title: "Compiling Qt with Docker multi-stage and multi-platform"
+      date: "2020-12-23"
+      link: https://www.docker.com/blog/compiling-qt-with-docker-multi-stage-and-multi-platform/
     - type: talk
       event: Cloud Native London
       location: London, UK
       title: "The DevSecOps Iceberg"
+      date: "2020-01"
       deck: https://speakerdeck.com/vpetersson/the-devsecops-iceberg-at-cloud-native-london
       youtube: https://youtu.be/BNnP4AmMdQE?t=130
     - type: podcast
       publication: Balena's IoT Happy Hour
       youtube: https://www.youtube.com/watch?v=SgCRvEP2KyA
-    - type: guest post
-      publication: Docker
-      title: "Compiling Qt with Docker multi-stage and multi-platform"
-      link: https://www.docker.com/blog/compiling-qt-with-docker-multi-stage-and-multi-platform/
 
 - year: 2019
   events:
     - type: talk
       event: Docker London
       location: London, UK
+      date: "2019-11"
       deck: https://speakerdeck.com/vpetersson/whats-mtls-at-docker-london
     - type: talk
       event: Open Source Summit Europe
       location: Lyon, France
       title: "The 'S' in IoT Stands for Security"
+      date: "2019-10-28"
       deck: https://speakerdeck.com/vpetersson/the-s-in-iot-stands-for-security
       youtube: https://www.youtube.com/watch?v=7yN999B11Ms&list=PLbzoR-pLrL6pamOj4UifcMJf560Ph6mJp&index=43&t=0s
     - type: talk
       event: Kubernetes London
       location: London, UK
+      date: "2019-09"
       deck: https://speakerdeck.com/vpetersson/living-on-the-edge-at-kubernetes-london
     - type: talk
       event: InfoSecurity Europe
       location: London, UK
+      date: "2019-06-04"
 
 - year: 2018
   events:
+    - type: talk
+      event: Open Source Summit North America
+      location: Vancouver, Canada
+      title: "The 'S' in IoT Stands for Security"
+      date: "2018-08-29"
+      deck: https://events.linuxfoundation.org/wp-content/uploads/2017/11/The-S-in-IoT-Stands-for-Security-Viktor-Petersson-Screenly-Andrew-Martin-Control-Plane.pdf
+    - type: guest post
+      publication: Rave Publications
+      title: "Why Are We Not Talking About Digital Signage Security?"
+      date: "2018-08-06"
+      link: https://www.ravepubs.com/not-talking-digital-signage-security/
+    - type: talk
+      event: Container Camp
+      location: Melbourne, Australia
+      title: "The 'S' in IoT Stands for Security"
+      date: "2018-05-24"
+      deck: https://docs.google.com/presentation/d/1E1ZzkMmytOoW-aLkWlJzFT1MYLWE2RyAv0qOjQkxDt8/edit?usp=sharing
+      youtube: https://www.youtube.com/watch?v=PmWYTjr_Xso
     - type: press
       publication: DailyDOOH
       title: "Screenly + NEC interview"
       youtube: https://www.youtube.com/watch?v=LtFCOHrgvs4
     - type: talk
-      event: Open Source Summit North America
-      location: Vancouver, Canada
-      title: "The 'S' in IoT Stands for Security"
-      deck: https://events.linuxfoundation.org/wp-content/uploads/2017/11/The-S-in-IoT-Stands-for-Security-Viktor-Petersson-Screenly-Andrew-Martin-Control-Plane.pdf
-    - type: talk
-      event: Container Camp
-      location: Melbourne, Australia
-      title: "The 'S' in IoT Stands for Security"
-      deck: https://docs.google.com/presentation/d/1E1ZzkMmytOoW-aLkWlJzFT1MYLWE2RyAv0qOjQkxDt8/edit?usp=sharing
-      youtube: https://www.youtube.com/watch?v=PmWYTjr_Xso
-    - type: talk
       event: Ansible London
       location: London, UK
       deck: https://speakerdeck.com/vpetersson/provisioner-at-ansible-london
-    - type: guest post
-      publication: Rave Publications
-      title: "Why Are We Not Talking About Digital Signage Security?"
-      link: https://www.ravepubs.com/not-talking-digital-signage-security/
 
 - year: 2016
   events:
     - type: podcast
       publication: "Sixteen:Nine"
       title: "Podcast Interview"
+      date: "2016-06-08"
       link: http://sixteennine.podbean.com/e/viktor-petersson-screenly/
     - type: press
       publication: Ubuntu Insights
       title: "Digital signage solution, Screenly, chooses Canonical's Ubuntu Core"
+      date: "2016-05-18"
       link: https://blog.ubuntu.com/2016/05/18/digital-signage-solution-screenly-chooses-canonicals-ubuntu-core
     - type: press
       publication: "Sixteen:Nine"
       title: "Screenly's Raspberry Pi-Powered Platform Shifting To New IoT Version Of Ubuntu Linux"
+      date: "2016-05-18"
       link: https://www.sixteen-nine.net/2016/05/18/screenlys-raspberry-pi-powered-platform-shifting-to-new-iot-version-of-ubuntu-linux/
     - type: panel
       event: CloudExpo Europe
       location: London, UK
+      date: "2016-04-12"
     - type: talk
       event: IoT London
       location: London, UK
+      date: "2016-03"
       deck: https://speakerdeck.com/vpetersson/screenly-at-iot-london
 
 - year: 2015
   events:
-    - type: press
-      publication: Syncsort
-      title: "Interview with Viktor Petersson, VP of Business Development for IAAS provider CloudSigma"
     - type: talk
       event: IoT Day @ BBVA Innovation Center
       location: Madrid, Spain
+      date: "2015-11"
       deck: https://speakerdeck.com/vpetersson/iot-use-case-screenly
     - type: talk
       event: Open Cloud Day
       location: Bern, Switzerland
+      date: "2015-06"
       deck: https://speakerdeck.com/vpetersson/server-evolution-from-mainframes-to-containers-and-paas
       youtube: https://www.youtube.com/watch?v=pHdc3f98Kxs&index=11&list=PLofS3lNZckseu0v_CP4XjgDUQxRKfF6gA
     - type: talk
       event: ApacheCon North America
       location: Austin, TX
+      date: "2015-04"
       deck: https://speakerdeck.com/vpetersson/an-introduction-to-cgroups-and-cgroupspy
+    - type: press
+      publication: Syncsort
+      title: "Interview with Viktor Petersson, VP of Business Development for IAAS provider CloudSigma"
     - type: talk
       event: CloudExpo Europe
       location: London, UK
@@ -313,28 +369,33 @@
 - year: 2014
   events:
     - type: press
-      publication: "Sixteen:Nine"
-      title: "Screenly Q&A: Optimization Crucial For Raspberry Pi Digital Signage"
-      link: https://www.sixteen-nine.net/2014/03/24/screenly-qa-optimization-crucial-raspberry-pi-digital-signage/
-    - type: press
       publication: Ubuntu Insights
       title: "CloudSigma joins Ubuntu Certified Public Cloud"
+      date: "2014-10-15"
       link: https://blog.ubuntu.com/2014/10/15/cloudsigma-joins-ubuntu-certified-public-cloud
     - type: talk
       event: Zadara Summit
       location: Las Vegas, NV
+      date: "2014-06"
       link: https://speakerdeck.com/vpetersson/cloudsigma-zadara-summit
+    - type: press
+      publication: "Sixteen:Nine"
+      title: "Screenly Q&A: Optimization Crucial For Raspberry Pi Digital Signage"
+      date: "2014-03-24"
+      link: https://www.sixteen-nine.net/2014/03/24/screenly-qa-optimization-crucial-raspberry-pi-digital-signage/
 
 - year: 2013
   events:
-    - type: press
-      publication: "Sixteen:Nine"
-      title: "Screenly Serves Up Raspberry Pi As Alternative To Android Players"
-      link: https://www.sixteen-nine.net/2013/05/03/screenly-serves-raspberry-pi-alternative-android-players/
     - type: talk
       event: Pi And More 3
       location: Trier, Germany
+      date: "2013-06-15"
       deck: https://speakerdeck.com/vpetersson/screenly-at-pi-and-more-3
+    - type: press
+      publication: "Sixteen:Nine"
+      title: "Screenly Serves Up Raspberry Pi As Alternative To Android Players"
+      date: "2013-05-03"
+      link: https://www.sixteen-nine.net/2013/05/03/screenly-serves-raspberry-pi-alternative-android-players/
     - type: talk
       event: gSocial 2
       location: Sunnyvale, CA
@@ -342,6 +403,16 @@
 
 - year: 2012
   events:
+    - type: talk
+      event: NoSQL Road Show
+      location: Basel, Switzerland
+      date: "2012-08"
+      deck: https://speakerdeck.com/vpetersson/mongodbs-replica-sets-painless-scaling-and-high-availability-ha
+    - type: press
+      publication: TechCrunch
+      title: "YippieMove Wants To Become The Twilio Of Email Migration"
+      date: "2012-02-07"
+      link: https://techcrunch.com/2012/02/07/yippiemove-wants-to-become-the-twilio-of-email-migration/
     - type: press
       publication: Data Center Knowledge
       title: "Currency Miners Cause Spot Shortages of Dedicated Servers"
@@ -350,32 +421,26 @@
       publication: Information Week
       title: "CloudSigma: One Tool For Many Cloud Workloads"
       link: https://www.informationweek.com/cloud/cloud-storage/cloudsigma-one-tool-for-many-cloud-workloads/d/d-id/1114055
-    - type: press
-      publication: TechCrunch
-      title: "YippieMove Wants To Become The Twilio Of Email Migration"
-      link: https://techcrunch.com/2012/02/07/yippiemove-wants-to-become-the-twilio-of-email-migration/
-    - type: talk
-      event: NoSQL Road Show
-      location: Basel, Switzerland
-      deck: https://speakerdeck.com/vpetersson/mongodbs-replica-sets-painless-scaling-and-high-availability-ha
 
 - year: 2009
   events:
     - type: press
       publication: NyTeknik
       title: "Flyttgubbe på nätet för över din e-post (Swedish)"
+      date: "2009-10-20"
       link: https://www.nyteknik.se/digitalisering/flyttgubbe-pa-natet-for-over-din-e-post-6408650
 
 - year: 2008
   events:
     - type: press
+      publication: GigaOM
+      title: "YippieMove Offers Email Portability"
+      date: "2008-08-14"
+      link: https://gigaom.com/2008/08/14/yippiemove-email-portability/
+    - type: press
       publication: CNET
       title: "Yippie Move migrates all your e-mail for ten bucks"
       link: https://www.cnet.com/news/yippie-move-migrates-all-your-e-mail-for-ten-bucks/
-    - type: press
-      publication: GigaOM
-      title: "YippieMove Offers Email Portability"
-      link: https://gigaom.com/2008/08/14/yippiemove-email-portability/
 
 - year: Other
   events:

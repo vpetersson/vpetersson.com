@@ -2,6 +2,23 @@
 <h2 class="about-events-title">Press, Mentions and Interviews</h2>
 
 {{ range $events }}
+{{/* Newest first within the year. `date` is an ISO string ("YYYY-MM-DD" or
+     "YYYY-MM"), so a descending lexicographic sort is chronological. Entries
+     without a date keep their file order, after the dated ones. */}}
+{{- $dated := slice -}}
+{{- $undated := slice -}}
+{{- range .events -}}
+  {{- if .date -}}
+    {{- $dated = $dated | append . -}}
+  {{- else -}}
+    {{- $undated = $undated | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $ordered := $undated -}}
+{{- if $dated -}}
+  {{- $ordered = sort $dated "date" "desc" -}}
+  {{- with $undated }}{{ $ordered = $ordered | append . }}{{ end -}}
+{{- end -}}
 <div class="events-year-group">
   <div class="events-year-divider">
     <span class="events-year-label">{{ .year }}</span>
@@ -9,7 +26,7 @@
   </div>
 
   <div class="events-card-grid">
-    {{ range .events }}
+    {{ range $ordered }}
     <div class="event-card{{ if .upcoming }} event-card-upcoming{{ end }}">
       <div class="event-pills">
         <span class="event-pill event-pill-{{ .type | replaceRE ` ` `-` }}">{{ .type }}</span>

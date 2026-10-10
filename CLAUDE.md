@@ -71,7 +71,9 @@ amazon: "https://..."
 
 **Podcast transcripts** (`data/transcripts/`): JSON files accessed via `site.Data.transcripts`.
 
-**Events** (`data/events.yaml`): Speaking engagements, panels, and external podcast appearances organized by year. Set `upcoming: true` for future events.
+**Events** (`data/events.yaml`): Speaking engagements, panels, and external podcast appearances organized by year, newest year first. Set `upcoming: true` for future events.
+
+Each event takes an optional `date`, a quoted ISO-8601 string — `"YYYY-MM-DD"` when the exact day is known, `"YYYY-MM"` when only the month is. The about page sorts each year's events on it, newest first; undated events render after the dated ones, in file order. Keep the file itself newest-first too, since `/speaking` and the homepage highlight read it in file order.
 
 **Data** (`data/main.yaml`): Site-wide config — navigation, social links, podcast links, header image.
 
