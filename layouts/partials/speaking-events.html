@@ -5,7 +5,7 @@
 
   Returns a dict:
     all        — flat slice of speaking events, each with a "year" key added
-    upcoming   — the ones flagged `upcoming: true`, in data order
+    upcoming   — the ones flagged `upcoming: true`, soonest first (undated last)
     past       — everything else, newest year first (data file is reverse-chron)
     pastByYear — slice of {year, events} groups over `past`, empty years dropped
     years      — how many distinct years have a speaking event
@@ -39,6 +39,23 @@
   {{- if $yearPast -}}
     {{- $pastByYear = $pastByYear | append (dict "year" $year "events" $yearPast) -}}
   {{- end -}}
+{{- end -}}
+
+{{/* Soonest first. `date` is an ISO string ("YYYY-MM-DD" or "YYYY-MM"), so an
+     ascending lexicographic sort is chronological. Undated entries keep their
+     data order, after the dated ones. */}}
+{{- $upcomingDated := slice -}}
+{{- $upcomingUndated := slice -}}
+{{- range $upcoming -}}
+  {{- if .date -}}
+    {{- $upcomingDated = $upcomingDated | append . -}}
+  {{- else -}}
+    {{- $upcomingUndated = $upcomingUndated | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- if $upcomingDated -}}
+  {{- $upcoming = sort $upcomingDated "date" "asc" -}}
+  {{- with $upcomingUndated }}{{ $upcoming = $upcoming | append . }}{{ end -}}
 {{- end -}}
 
 {{- $cities := slice -}}
