@@ -463,6 +463,11 @@
       publication: CNET
       title: "Yippie Move migrates all your e-mail for ten bucks"
       link: https://www.cnet.com/news/yippie-move-migrates-all-your-e-mail-for-ten-bucks/
+    - type: press
+      publication: San Jose Mercury News
+      title: "Tech titans of tomorrow"
+      date: "2008-05-13"
+      link: https://www.mercurynews.com/2008/05/13/teen-ceos-network-impress/
 
 - year: Other
   events:
