@@ -34,7 +34,7 @@
       youtube: https://www.youtube.com/watch?v=z_uit225IlY
     - type: press
       publication: Professional System
-      title: "„Die gefährlichsten Angriffe sind unsichtbar“ (issue 5/2026)"
+      title: "The most dangerous attacks are invisible (in German, issue 5/2026)"
       date: "2026-09"
       link: https://www.professional-system.de/shop/professional-system-5-2026/
     - type: host
@@ -357,7 +357,7 @@
       deck: https://speakerdeck.com/vpetersson/screenly-at-iot-london
     - type: press
       publication: "Linux User & Developer"
-      title: "Screenly featured in issue 161"
+      title: "Interview: Digital signage with Screenly (issue 161)"
       date: "2016-01"
 
 - year: 2015
