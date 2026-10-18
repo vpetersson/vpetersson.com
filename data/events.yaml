@@ -32,6 +32,11 @@
       title: "Cage or Release Your Agents? With Viktor Petersson & Alex Finn"
       date: "2026-10-08"
       youtube: https://www.youtube.com/watch?v=z_uit225IlY
+    - type: press
+      publication: Professional System
+      title: "The most dangerous attacks are invisible (in German, issue 5/2026)"
+      date: "2026-09"
+      link: https://www.professional-system.de/shop/professional-system-5-2026/
     - type: host
       event: 44CON
       location: London, UK
@@ -155,6 +160,11 @@
       event: "CycloneDX / Transparency Exchange API (TEA)'s KoalaCon"
       date: "2024-11-13"
       youtube: https://www.youtube.com/watch?v=NStzYW4WnEE
+    - type: press
+      publication: Linux Format
+      title: "Anthias review (issue 322)"
+      date: "2024-11-12"
+      link: https://linuxformat.com/archives?issue=322
     - type: press
       publication: TechTarget
       title: "U.S. Army, Lockheed Martin detail SBOM progress"
@@ -345,6 +355,10 @@
       location: London, UK
       date: "2016-03"
       deck: https://speakerdeck.com/vpetersson/screenly-at-iot-london
+    - type: press
+      publication: "Linux User & Developer"
+      title: "Interview: Digital signage with Screenly (issue 161)"
+      date: "2016-01"
 
 - year: 2015
   events:
