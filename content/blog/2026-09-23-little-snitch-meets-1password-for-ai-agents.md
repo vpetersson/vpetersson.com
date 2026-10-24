@@ -12,6 +12,8 @@ tags:
 - open-source
 ---
 
+**Update:** One month after publishing this article, 1Password released its dedicated [agent integration](https://1password.com/personal-ai-agent-integrations). Although the names sound alike, they address distinct issues. I have included a section explaining [the differences between them](#what-about-1password-for-agents) further down.
+
 These days I run all my agents in ephemeral VMs on a dedicated VLAN, managed with Terraform and Ansible on top of [Proxmox](/2026/05/14/proxmox-imgctl/). Each VM runs Claude Code and Codex, talks to a dedicated GitHub account that only the agents use, and signs its commits with its own SSH key. I orchestrate the whole thing through [Multica](https://multica.ai), which lets me manage agents a bit like a Kanban board. Queue up a task, review the findings, move on.
 
 The reason I'm comfortable letting that run unattended is that there's nothing on that VLAN worth stealing. No API keys, no secrets, nothing. If an agent goes off the rails or swallows a prompt injection, the blast radius is a throwaway VM and a repo I can revert.
@@ -84,6 +86,21 @@ _Vault or OpenBao?_ Agent IAP isn't a secrets manager, it reads from yours. A se
 _`op run`?_ That injects the secrets straight into the process environment. The agent still ends up holding them.
 
 _Scoped, expiring API keys?_ Use them wherever you can, they're great. Plenty of services don't offer them though, and Agent IAP narrows whatever the key does allow on top of that.
+
+## What about 1Password for Agents?
+
+Since writing this, 1Password released [1Password for Agents](https://1password.com/personal-ai-agent-integrations). Considering my post's title, I should clarify how the two connect.
+
+1Password's offering handles autofill for web sign-ins. When a compatible agent (Meta's Muse and Grok Bot at launch, with Claude and ChatGPT also listed) encounters a login form, it requests a credential; you approve it on your device, and 1Password enters the password or one-time code. The agent never views the secret, which is excellent. However, once logged in, 1Password drops out of the picture. It has no visibility into what the agent does during that session and cannot halt it. Furthermore, it functions only with agents integrated into 1Password and targets Individual and Family plans. For anything beyond the browser, 1Password's solution remains `op run`, service accounts and SDKs, all of which place the key directly into the agent's environment. That is precisely what I sought to prevent.
+
+Agent IAP occupies a completely different space:
+
+- **It operates within the request path, not the browser.** The agent invokes APIs and MCP servers via the proxy, which attaches the actual credential before the request leaves.
+- **It focuses on API keys and tokens, not website passwords.** The agent retains only a scoped proxy token.
+- **The policy continues to apply after the initial call.** Every request passes through the ACL, whether standing or time-boxed, prompting a human if required, and is recorded in the audit log. Control does not stop at login.
+- **It functions with any agent.** If it can communicate with a proxy, it works. Whether using Claude Code, Codex, Cursor, or something you built yourself. It is open source and self-hosted.
+
+Therefore, I do not view them as rivals. 1Password safeguards your web logins and stores the secrets, while Agent IAP manages API access using those very same secrets. Or, more concisely: 1Password fills in the form and steps away, while Agent IAP stays in the request path.
 
 ## What it doesn't do
 
