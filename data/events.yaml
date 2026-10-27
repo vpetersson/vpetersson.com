@@ -20,6 +20,10 @@
       date: "2026-10-28"
       link: https://www.meetup.com/devsecops-london-gathering/events/316267481/
       upcoming: true
+    - type: award
+      event: CTO Craft 100 2026
+      title: "Named one of 100 technology leaders recognised in the CTO Craft 100"
+      link: https://ctocraft.com/blog/cto-craft-100-2026/
     - type: panel
       event: "You're STILL not ready for the CRA"
       location: London, UK
