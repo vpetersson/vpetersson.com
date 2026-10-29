@@ -462,9 +462,14 @@
 .bullet-list {
   list-style: none;
 
+  li {
+    display: flex;
+    gap: 0.5em;
+  }
+
   li::before {
     content: "\2022";
-    padding-right: 0.5em;
+    flex-shrink: 0;
   }
 }
 
