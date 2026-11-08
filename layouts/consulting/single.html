@@ -4,20 +4,72 @@
   <div class="xl:max-w-[1110px] xl:mx-auto mx-4 sm:mx-6 md:mx-10 lg:mx-[120px] pt-[40px] xl:pt-[107px] pb-[60px]">
     <div class="flex-1">
       <p class="text-lg mb-8">
-        While primarily focused on running my own companies, I occasionally take on select consulting and advisory engagements where I can make a meaningful impact. I help companies navigate complex technical challenges in cloud architecture, DevSecOps, and remote-first engineering. With over 15 years of hands-on experience building and scaling products, I bring practical insights from running successful SaaS companies and open-source projects. As a co-lead for one of CISA's SBOM tiger teams, I've helped shape the future of software supply chain security.
+        While primarily focused on running my own companies, I occasionally take on select consulting and advisory engagements where I can make a meaningful impact. Most of my career has been spent putting Linux devices in the field and keeping them running there. With Screenly, I built a platform that powers 10,000+ Raspberry Pi-based screens worldwide for customers like NASA, Lowe's, and Capital One, and I maintain Anthias, the most popular open-source digital signage project on GitHub. That means I've lived through the parts of IoT that don't show up in the vendor pitch decks: SD cards dying in the field, OTA updates that brick devices, boards going end-of-life mid-rollout, and security teams asking what's actually running on a fleet nobody can physically reach.
+      </p>
+
+      <p class="text-lg mb-8">
+        I help companies navigate that journey — from choosing hardware and an update strategy, to getting a pilot into real production, to keeping a fleet patched and compliant for the next decade. Alongside the device work, I advise on cloud architecture and software supply chain security; as a co-lead for one of CISA's SBOM tiger teams, I've helped shape the standards that connected-product companies now have to meet.
       </p>
 
       <h2 class="text-2xl font-bold mb-4">Areas of Expertise</h2>
 
       <div class="grid md:grid-cols-2 gap-8 mb-12">
         <div>
-          <h3 class="text-xl font-semibold mb-3">Cloud Architecture & DevSecOps</h3>
+          <h3 class="text-xl font-semibold mb-3">IoT &amp; IIoT Strategy</h3>
           <ul class="blog-post bullet-list space-y-2">
+            <li>Navigating the IoT/IIoT vendor and platform landscape</li>
+            <li>Build vs. buy: device platforms, fleet tooling, connectivity</li>
+            <li>Hardware selection — SBC, industrial gateway, or custom board</li>
+            <li>Where to draw the line between edge and cloud processing</li>
+            <li>Connectivity trade-offs: WiFi, cellular, LoRaWAN, wired</li>
+            <li>Total cost of ownership across a 5–10 year device lifetime</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Raspberry Pi &amp; Embedded Linux in Production</h3>
+          <ul class="blog-post bullet-list space-y-2">
+            <li>What breaks when a fleet goes from 10 devices to 10,000</li>
+            <li>Storage reality: SD card wear, eMMC, industrial-grade media</li>
+            <li>Yocto vs. Debian-based images, and read-only root filesystems</li>
+            <li>Device provisioning, identity, and first-boot onboarding</li>
+            <li>Remote monitoring and observability for unattended devices</li>
+            <li>Component sourcing and end-of-life planning for boards</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-3">OTA &amp; Fleet Management</h3>
+          <ul class="blog-post bullet-list space-y-2">
+            <li>Comparing OTA approaches: A/B image, container, and package-based</li>
+            <li>Evaluating Mender, RAUC, SWUpdate, balena, and rolling your own</li>
+            <li>Atomic updates, rollback, and recovering bricked devices</li>
+            <li>Staged rollouts, canary fleets, and release management</li>
+            <li>Keeping years-old devices patchable and supportable</li>
+            <li>Migrating off a device platform without touching the hardware</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Device Security &amp; Compliance</h3>
+          <ul class="blog-post bullet-list space-y-2">
+            <li>Cyber Resilience Act (CRA) readiness for connected products</li>
+            <li>SBOMs for embedded builds, including Yocto-generated images</li>
+            <li>Secure boot, disk encryption, and secrets provisioning</li>
+            <li>Vulnerability management across a long device lifetime</li>
+            <li>Threat modelling for devices you can't physically reach</li>
+            <li>Coordinated disclosure and update policies for hardware products</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Cloud Architecture &amp; DevSecOps</h3>
+          <ul class="blog-post bullet-list space-y-2">
+            <li>The backend that a device fleet phones home to</li>
             <li>Software Bill of Materials (SBOM) implementation and tooling</li>
             <li>Supply chain security and SBOM integration in CI/CD</li>
             <li>Kubernetes architecture and deployment strategies</li>
             <li>Container security and supply chain hardening</li>
-            <li>CI/CD pipeline optimization</li>
             <li>Cloud cost optimization and infrastructure scaling</li>
           </ul>
         </div>
@@ -38,13 +90,23 @@
 
       <div class="grid md:grid-cols-2 gap-8 mb-12">
         <div>
-          <h3 class="text-xl font-semibold mb-3">Technical Advisory</h3>
-          <p class="mb-4">I provide strategic guidance on architecture decisions, technology selection, and scaling strategies. My approach is hands-on, drawing from real experiences building and scaling products like Screenly and YippieMove.</p>
+          <h3 class="text-xl font-semibold mb-3">From Prototype to Production Fleet</h3>
+          <p class="mb-4">A device that works on your desk is not a product. I help teams close the gap — hardware and OS choices that survive procurement and the field, provisioning that scales past manual imaging, an update path you can trust, and the monitoring you'll wish you had the first time a rollout goes sideways.</p>
         </div>
 
         <div>
-          <h3 class="text-xl font-semibold mb-3">Security Reviews & SBOM Implementation</h3>
-          <p class="mb-4">I conduct thorough security assessments of cloud infrastructure, container deployments, and CI/CD pipelines. With a healthy dose of paranoia and a deep passion for security, I help organizations build robust defenses and secure their software supply chains. Having co-led CISA's SBOM tiger team, I bring both expertise and a security-first mindset to every engagement. My focus is on practical, actionable recommendations that balance security with operational efficiency.</p>
+          <h3 class="text-xl font-semibold mb-3">IoT Landscape &amp; Architecture Reviews</h3>
+          <p class="mb-4">The IoT tooling space is crowded, and a lot of it is solving someone else's problem. I offer an independent read on where your architecture will hurt, which platforms and OTA strategies actually fit your constraints, and what it will cost you to live with that decision for the next decade.</p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Device Security, SBOM &amp; CRA Readiness</h3>
+          <p class="mb-4">Connected products are now regulated products. I assess device and infrastructure security end to end — boot chain, update mechanism, backend, and CI/CD — and help you produce the SBOMs and processes the CRA expects. Having co-led CISA's SBOM tiger team, I focus on practical, actionable recommendations that balance security with shipping.</p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Strategic &amp; Investor Advisory</h3>
+          <p class="mb-4">I provide guidance on architecture decisions, technology selection, and scaling strategies, drawing on real experience building products like Screenly and YippieMove. For investors, I run technical due diligence on hardware and IoT companies, where the risk usually sits in the parts that never get demoed.</p>
         </div>
       </div>
 
